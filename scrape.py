@@ -61,17 +61,27 @@ def ScrapeProblemPage(driver: webdriver, url: str) -> dict:
     return data
 
 
-def Main():
+
+def Scrape() -> list[dict]:
     driver = StartupSelenium()
     scraped_results = []
     
+    sitemap = LoadSitemapFile()
     try:
-        sitemap = BuildSitemap(driver)
-        WriteSitemapFile(sitemap)
-        
+        if sitemap is None:
+            print("sitemap not found; building sitemap")
+            sitemap = BuildSitemap(driver)
+            WriteSitemapFile(sitemap)
+    except Exception as E:
+        print(f"failed to write sitemap exception: {E}")
+        driver.quit()
+        return scraped_results
+    
+    try:
         for (section, problem_map) in sitemap.items():
             for (problem, link) in problem_map.items():
                 scraped_data = ScrapeProblemPage(driver, link)
+                SaveFile(scraped_data, section, problem)
                 scraped_results.append({
                     "url": link,
                     "section": section,
@@ -81,15 +91,18 @@ def Main():
     except Exception as E:
         print(f"exception: {E}")
         driver.quit()
-        return
+        return scraped_results
     
     driver.quit()
     return scraped_results
 
 
+
+
+
 if __name__ == "__main__":
-    results = Main()
-    for result in results:
-        SaveFile(result, result["section"], result["problem"])
+    results = Scrape()
+    #for result in results:
+        #SaveFile(result, result["section"], result["problem"])
         #WriteJavaFile(result["section"], result)
     

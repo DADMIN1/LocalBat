@@ -42,6 +42,16 @@ def WriteSitemapFile(sitemap_data: dict):
     return
 
 
+def LoadSitemapFile() -> dict | None:
+    print("loading sitemap")
+    sitemap_file = cwd / 'sitemap.json'
+    sitemap_dict = None
+    if sitemap_file.exists():
+        with open(sitemap_file, "r", encoding="utf-8") as file:
+            sitemap_dict = json.load(file)
+    return sitemap_dict
+
+
 def IsolateArrayParameters(functionCall: str):
     found_arrays = []
     current_string = functionCall.partition('[')[2]
