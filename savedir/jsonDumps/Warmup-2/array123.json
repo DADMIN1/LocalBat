@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p136041",
+  "section": "Warmup-2",
+  "problem": "array123",
+  "title": "array123",
+  "prompt": "Given an array of ints, return true if the sequence of numbers 1, 2, 3 appears in the array somewhere.",
+  "testcases": [
+    "array123([1, 1, 2, 3, 1]) \u2192 true",
+    "array123([1, 1, 2, 4, 1]) \u2192 false",
+    "array123([1, 1, 2, 1, 2, 3]) \u2192 true"
+  ],
+  "provided_code": "public boolean array123(int[] nums) {\n  }"
+}

@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p180759",
+  "section": "String-2",
+  "problem": "zipZap",
+  "title": "zipZap",
+  "prompt": "Look for patterns like \"zip\" and \"zap\" in the string -- length-3, starting with 'z' and ending with 'p'. Return a string where for all such words, the middle letter is gone, so \"zipXzap\" yields \"zpXzp\".",
+  "testcases": [
+    "zipZap(\"zipXzap\") \u2192 \"zpXzp\"",
+    "zipZap(\"zopzop\") \u2192 \"zpzp\"",
+    "zipZap(\"zzzopzop\") \u2192 \"zzzpzp\""
+  ],
+  "provided_code": "public String zipZap(String str) {\n  }"
+}

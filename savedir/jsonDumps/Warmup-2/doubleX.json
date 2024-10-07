@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p186759",
+  "section": "Warmup-2",
+  "problem": "doubleX",
+  "title": "doubleX",
+  "prompt": "Given a string, return true if the first instance of \"x\" in the string is immediately followed by another \"x\".",
+  "testcases": [
+    "doubleX(\"axxbb\") \u2192 true",
+    "doubleX(\"axaxax\") \u2192 false",
+    "doubleX(\"xxxxx\") \u2192 true"
+  ],
+  "provided_code": "boolean doubleX(String str) {\n  }"
+}

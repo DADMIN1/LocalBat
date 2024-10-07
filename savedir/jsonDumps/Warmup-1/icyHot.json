@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p192082",
+  "section": "Warmup-1",
+  "problem": "icyHot",
+  "title": "icyHot",
+  "prompt": "Given two temperatures, return true if one is less than 0 and the other is greater than 100.",
+  "testcases": [
+    "icyHot(120, -1) \u2192 true",
+    "icyHot(-1, 120) \u2192 true",
+    "icyHot(2, 120) \u2192 false"
+  ],
+  "provided_code": "public boolean icyHot(int temp1, int temp2) {\n  }"
+}

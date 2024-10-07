@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p122943",
+  "section": "String-2",
+  "problem": "oneTwo",
+  "title": "oneTwo",
+  "prompt": "Given a string, compute a new string by moving the first char to come after the next two chars, so \"abc\" yields \"bca\". Repeat this process for each subsequent group of 3 chars, so \"abcdef\" yields \"bcaefd\". Ignore any group of fewer than 3 chars at the end.",
+  "testcases": [
+    "oneTwo(\"abc\") \u2192 \"bca\"",
+    "oneTwo(\"tca\") \u2192 \"cat\"",
+    "oneTwo(\"tcagdo\") \u2192 \"catdog\""
+  ],
+  "provided_code": "public String oneTwo(String str) {\n  }"
+}

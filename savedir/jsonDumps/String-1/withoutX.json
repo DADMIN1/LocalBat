@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p151940",
+  "section": "String-1",
+  "problem": "withoutX",
+  "title": "withoutX",
+  "prompt": "Given a string, if the first or last chars are 'x', return the string without those 'x' chars, and otherwise return the string unchanged.",
+  "testcases": [
+    "withoutX(\"xHix\") \u2192 \"Hi\"",
+    "withoutX(\"xHi\") \u2192 \"Hi\"",
+    "withoutX(\"Hxix\") \u2192 \"Hxi\""
+  ],
+  "provided_code": "public String withoutX(String str) {\n  }"
+}

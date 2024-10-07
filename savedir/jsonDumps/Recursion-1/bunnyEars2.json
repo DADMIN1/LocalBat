@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p107330",
+  "section": "Recursion-1",
+  "problem": "bunnyEars2",
+  "title": "bunnyEars2",
+  "prompt": "We have bunnies standing in a line, numbered 1, 2, ... The odd bunnies (1, 3, ..) have the normal 2 ears. The even bunnies (2, 4, ..) we'll say have 3 ears, because they each have a raised foot. Recursively return the number of \"ears\" in the bunny line 1, 2, ... n (without loops or multiplication).",
+  "testcases": [
+    "bunnyEars2(0) \u2192 0",
+    "bunnyEars2(1) \u2192 2",
+    "bunnyEars2(2) \u2192 5"
+  ],
+  "provided_code": "public int bunnyEars2(int bunnies) {\n  }"
+}

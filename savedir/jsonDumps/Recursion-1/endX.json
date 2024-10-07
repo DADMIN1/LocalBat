@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p105722",
+  "section": "Recursion-1",
+  "problem": "endX",
+  "title": "endX",
+  "prompt": "Given a string, compute recursively a new string where all the lowercase 'x' chars have been moved to the end of the string.",
+  "testcases": [
+    "endX(\"xxre\") \u2192 \"rexx\"",
+    "endX(\"xxhixx\") \u2192 \"hixxxx\"",
+    "endX(\"xhixhix\") \u2192 \"hihixxx\""
+  ],
+  "provided_code": "public String endX(String str) {\n  }"
+}

@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p186031",
+  "section": "Warmup-2",
+  "problem": "arrayFront9",
+  "title": "arrayFront9",
+  "prompt": "Given an array of ints, return true if one of the first 4 elements in the array is a 9. The array length may be less than 4.",
+  "testcases": [
+    "arrayFront9([1, 2, 9, 3, 4]) \u2192 true",
+    "arrayFront9([1, 2, 3, 4, 9]) \u2192 false",
+    "arrayFront9([1, 2, 3, 4, 5]) \u2192 false"
+  ],
+  "provided_code": "public boolean arrayFront9(int[] nums) {\n  }"
+}

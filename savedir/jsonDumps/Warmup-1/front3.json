@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p136351",
+  "section": "Warmup-1",
+  "problem": "front3",
+  "title": "front3",
+  "prompt": "Given a string, we'll say that the front is the first 3 chars of the string. If the string length is less than 3, the front is whatever is there. Return a new string which is 3 copies of the front.",
+  "testcases": [
+    "front3(\"Java\") \u2192 \"JavJavJav\"",
+    "front3(\"Chocolate\") \u2192 \"ChoChoCho\"",
+    "front3(\"abc\") \u2192 \"abcabcabc\""
+  ],
+  "provided_code": "public String front3(String str) {\n  }"
+}

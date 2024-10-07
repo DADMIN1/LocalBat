@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p104029",
+  "section": "Recursion-1",
+  "problem": "stringClean",
+  "title": "stringClean",
+  "prompt": "Given a string, return recursively a \"cleaned\" string where adjacent chars that are the same have been reduced to a single char. So \"yyzzza\" yields \"yza\".",
+  "testcases": [
+    "stringClean(\"yyzzza\") \u2192 \"yza\"",
+    "stringClean(\"abbbcdd\") \u2192 \"abcd\"",
+    "stringClean(\"Hello\") \u2192 \"Helo\""
+  ],
+  "provided_code": "public String stringClean(String str) {\n  }"
+}

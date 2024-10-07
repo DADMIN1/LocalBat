@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p172267",
+  "section": "String-1",
+  "problem": "firstHalf",
+  "title": "firstHalf",
+  "prompt": "Given a string of even length, return the first half. So the string \"WooHoo\" yields \"Woo\".",
+  "testcases": [
+    "firstHalf(\"WooHoo\") \u2192 \"Woo\"",
+    "firstHalf(\"HelloThere\") \u2192 \"Hello\"",
+    "firstHalf(\"abcdef\") \u2192 \"abc\""
+  ],
+  "provided_code": "public String firstHalf(String str) {\n  }"
+}

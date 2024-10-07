@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p144535",
+  "section": "Warmup-1",
+  "problem": "in1020",
+  "title": "in1020",
+  "prompt": "Given 2 int values, return true if either of them is in the range 10..20 inclusive.",
+  "testcases": [
+    "in1020(12, 99) \u2192 true",
+    "in1020(21, 12) \u2192 true",
+    "in1020(8, 99) \u2192 false"
+  ],
+  "provided_code": "public boolean in1020(int a, int b) {\n  }"
+}

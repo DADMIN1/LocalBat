@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p142270",
+  "section": "Warmup-2",
+  "problem": "stringTimes",
+  "title": "stringTimes",
+  "prompt": "Given a string and a non-negative int n, return a larger string that is n copies of the original string.",
+  "testcases": [
+    "stringTimes(\"Hi\", 2) \u2192 \"HiHi\"",
+    "stringTimes(\"Hi\", 3) \u2192 \"HiHiHi\"",
+    "stringTimes(\"Hi\", 1) \u2192 \"Hi\""
+  ],
+  "provided_code": "public String stringTimes(String str, int n) {\n  }"
+}

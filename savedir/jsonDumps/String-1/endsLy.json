@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p103895",
+  "section": "String-1",
+  "problem": "endsLy",
+  "title": "endsLy",
+  "prompt": "Given a string, return true if it ends in \"ly\".",
+  "testcases": [
+    "endsLy(\"oddly\") \u2192 true",
+    "endsLy(\"y\") \u2192 false",
+    "endsLy(\"oddy\") \u2192 false"
+  ],
+  "provided_code": "public boolean endsLy(String str) {\n  }"
+}

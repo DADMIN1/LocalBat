@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p183174",
+  "section": "Recursion-1",
+  "problem": "nestParen",
+  "title": "nestParen",
+  "prompt": "Given a string, return true if it is a nesting of zero or more pairs of parenthesis, like \"(())\" or \"((()))\". Suggestion: check the first and last chars, and then recur on what's inside them.",
+  "testcases": [
+    "nestParen(\"(())\") \u2192 true",
+    "nestParen(\"((()))\") \u2192 true",
+    "nestParen(\"(((x))\") \u2192 false"
+  ],
+  "provided_code": "public boolean nestParen(String str) {\n  }"
+}

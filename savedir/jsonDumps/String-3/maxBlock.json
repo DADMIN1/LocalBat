@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p179479",
+  "section": "String-3",
+  "problem": "maxBlock",
+  "title": "maxBlock",
+  "prompt": "Given a string, return the length of the largest \"block\" in the string. A block is a run of adjacent chars that are the same.",
+  "testcases": [
+    "maxBlock(\"hoopla\") \u2192 2",
+    "maxBlock(\"abbCCCddBBBxx\") \u2192 3",
+    "maxBlock(\"\") \u2192 0"
+  ],
+  "provided_code": "public int maxBlock(String str) {\n  }"
+}

@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p104627",
+  "section": "Array-2",
+  "problem": "more14",
+  "title": "more14",
+  "prompt": "Given an array of ints, return true if the number of 1's is greater than the number of 4's",
+  "testcases": [
+    "more14([1, 4, 1]) \u2192 true",
+    "more14([1, 4, 1, 4]) \u2192 false",
+    "more14([1, 1]) \u2192 true"
+  ],
+  "provided_code": "public boolean more14(int[] nums) {\n  }"
+}

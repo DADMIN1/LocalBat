@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p199720",
+  "section": "Warmup-1",
+  "problem": "startOz",
+  "title": "startOz",
+  "prompt": "Given a string, return a string made of the first 2 chars (if present), however include first char only if it is 'o' and include the second only if it is 'z', so \"ozymandias\" yields \"oz\".",
+  "testcases": [
+    "startOz(\"ozymandias\") \u2192 \"oz\"",
+    "startOz(\"bzoo\") \u2192 \"z\"",
+    "startOz(\"oxx\") \u2192 \"o\""
+  ],
+  "provided_code": "public String startOz(String str) {\n  }"
+}

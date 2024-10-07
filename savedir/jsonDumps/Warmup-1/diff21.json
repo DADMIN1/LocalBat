@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p116624",
+  "section": "Warmup-1",
+  "problem": "diff21",
+  "title": "diff21",
+  "prompt": "Given an int n, return the absolute difference between n and 21, except return double the absolute difference if n is over 21.",
+  "testcases": [
+    "diff21(19) \u2192 2",
+    "diff21(10) \u2192 11",
+    "diff21(21) \u2192 0"
+  ],
+  "provided_code": "public int diff21(int n) {\n  }"
+}

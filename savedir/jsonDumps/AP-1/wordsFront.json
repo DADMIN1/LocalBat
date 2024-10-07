@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p183837",
+  "section": "AP-1",
+  "problem": "wordsFront",
+  "title": "wordsFront",
+  "prompt": "Given an array of strings, return a new array containing the first N strings. N will be in the range 1..length.",
+  "testcases": [
+    "wordsFront([\"a\", \"b\", \"c\", \"d\"], 1) \u2192 [\"a\"]",
+    "wordsFront([\"a\", \"b\", \"c\", \"d\"], 2) \u2192 [\"a\", \"b\"]",
+    "wordsFront([\"a\", \"b\", \"c\", \"d\"], 3) \u2192 [\"a\", \"b\", \"c\"]"
+  ],
+  "provided_code": "public String[] wordsFront(String[] words, int n) {\n  }"
+}

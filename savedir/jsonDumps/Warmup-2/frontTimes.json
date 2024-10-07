@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p101475",
+  "section": "Warmup-2",
+  "problem": "frontTimes",
+  "title": "frontTimes",
+  "prompt": "Given a string and a non-negative int n, we'll say that the front of the string is the first 3 chars, or whatever is there if the string is less than length 3. Return n copies of the front;",
+  "testcases": [
+    "frontTimes(\"Chocolate\", 2) \u2192 \"ChoCho\"",
+    "frontTimes(\"Chocolate\", 3) \u2192 \"ChoChoCho\"",
+    "frontTimes(\"Abc\", 3) \u2192 \"AbcAbcAbc\""
+  ],
+  "provided_code": "public String frontTimes(String str, int n) {\n  }"
+}

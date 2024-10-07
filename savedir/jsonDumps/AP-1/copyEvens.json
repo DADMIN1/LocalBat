@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p134174",
+  "section": "AP-1",
+  "problem": "copyEvens",
+  "title": "copyEvens",
+  "prompt": "Given an array of positive ints, return a new array of length \"count\" containing the first even numbers from the original array. The original array will contain at least \"count\" even numbers.",
+  "testcases": [
+    "copyEvens([3, 2, 4, 5, 8], 2) \u2192 [2, 4]",
+    "copyEvens([3, 2, 4, 5, 8], 3) \u2192 [2, 4, 8]",
+    "copyEvens([6, 1, 2, 4, 5, 8], 3) \u2192 [6, 2, 4]"
+  ],
+  "provided_code": "public int[] copyEvens(int[] nums, int count) {\n  }"
+}

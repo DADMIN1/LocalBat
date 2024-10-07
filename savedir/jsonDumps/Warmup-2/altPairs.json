@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p121596",
+  "section": "Warmup-2",
+  "problem": "altPairs",
+  "title": "altPairs",
+  "prompt": "Given a string, return a string made of the chars at indexes 0,1, 4,5, 8,9 ... so \"kittens\" yields \"kien\".",
+  "testcases": [
+    "altPairs(\"kitten\") \u2192 \"kien\"",
+    "altPairs(\"Chocolate\") \u2192 \"Chole\"",
+    "altPairs(\"CodingHorror\") \u2192 \"Congrr\""
+  ],
+  "provided_code": "public String altPairs(String str) {\n  }"
+}

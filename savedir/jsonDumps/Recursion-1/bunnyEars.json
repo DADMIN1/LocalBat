@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p183649",
+  "section": "Recursion-1",
+  "problem": "bunnyEars",
+  "title": "bunnyEars",
+  "prompt": "We have a number of bunnies and each bunny has two big floppy ears. We want to compute the total number of ears across all the bunnies recursively (without loops or multiplication).",
+  "testcases": [
+    "bunnyEars(0) \u2192 0",
+    "bunnyEars(1) \u2192 2",
+    "bunnyEars(2) \u2192 4"
+  ],
+  "provided_code": "public int bunnyEars(int bunnies) {\n  }"
+}

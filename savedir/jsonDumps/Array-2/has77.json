@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p168357",
+  "section": "Array-2",
+  "problem": "has77",
+  "title": "has77",
+  "prompt": "Given an array of ints, return true if the array contains two 7's next to each other, or there are two 7's separated by one element, such as with {7, 1, 7}.",
+  "testcases": [
+    "has77([1, 7, 7]) \u2192 true",
+    "has77([1, 7, 1, 7]) \u2192 true",
+    "has77([1, 7, 1, 1, 7]) \u2192 false"
+  ],
+  "provided_code": "public boolean has77(int[] nums) {\n  }"
+}

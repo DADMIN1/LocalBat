@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p161124",
+  "section": "Recursion-1",
+  "problem": "countAbc",
+  "title": "countAbc",
+  "prompt": "Count recursively the total number of \"abc\" and \"aba\" substrings that appear in the given string.",
+  "testcases": [
+    "countAbc(\"abc\") \u2192 1",
+    "countAbc(\"abcxxabc\") \u2192 2",
+    "countAbc(\"abaxxaba\") \u2192 2"
+  ],
+  "provided_code": "public int countAbc(String str) {\n  }"
+}

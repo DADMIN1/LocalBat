@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p171896",
+  "section": "String-1",
+  "problem": "helloName",
+  "title": "helloName",
+  "prompt": "Given a string name, e.g. \"Bob\", return a greeting of the form \"Hello Bob!\".",
+  "testcases": [
+    "helloName(\"Bob\") \u2192 \"Hello Bob!\"",
+    "helloName(\"Alice\") \u2192 \"Hello Alice!\"",
+    "helloName(\"X\") \u2192 \"Hello X!\""
+  ],
+  "provided_code": "public String helloName(String name) {\n  }"
+}

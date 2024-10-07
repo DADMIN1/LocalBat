@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p126212",
+  "section": "Warmup-2",
+  "problem": "stringYak",
+  "title": "stringYak",
+  "prompt": "Suppose the string \"yak\" is unlucky. Given a string, return a version where all the \"yak\" are removed, but the \"a\" can be any char. The \"yak\" strings will not overlap.",
+  "testcases": [
+    "stringYak(\"yakpak\") \u2192 \"pak\"",
+    "stringYak(\"pakyak\") \u2192 \"pak\"",
+    "stringYak(\"yak123ya\") \u2192 \"123ya\""
+  ],
+  "provided_code": "public String stringYak(String str) {\n  }"
+}

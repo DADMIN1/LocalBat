@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p170221",
+  "section": "Warmup-2",
+  "problem": "noTriples",
+  "title": "noTriples",
+  "prompt": "Given an array of ints, we'll say that a triple is a value appearing 3 times in a row in the array. Return true if the array does not contain any triples.",
+  "testcases": [
+    "noTriples([1, 1, 2, 2, 1]) \u2192 true",
+    "noTriples([1, 1, 2, 2, 2, 1]) \u2192 false",
+    "noTriples([1, 1, 1, 2, 2, 2, 1]) \u2192 false"
+  ],
+  "provided_code": "public boolean noTriples(int[] nums) {\n  }"
+}

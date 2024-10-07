@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p139564",
+  "section": "String-2",
+  "problem": "starOut",
+  "title": "starOut",
+  "prompt": "Return a version of the given string, where for every star (*) in the string the star and the chars immediately to its left and right are gone. So \"ab*cd\" yields \"ad\" and \"ab**cd\" also yields \"ad\".",
+  "testcases": [
+    "starOut(\"ab*cd\") \u2192 \"ad\"",
+    "starOut(\"ab**cd\") \u2192 \"ad\"",
+    "starOut(\"sm*eilly\") \u2192 \"silly\""
+  ],
+  "provided_code": "public String starOut(String str) {\n  }"
+}

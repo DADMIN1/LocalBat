@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p158888",
+  "section": "Recursion-1",
+  "problem": "powerN",
+  "title": "powerN",
+  "prompt": "Given base and n that are both 1 or more, compute recursively (no loops) the value of base to the n power, so powerN(3, 2) is 9 (3 squared).",
+  "testcases": [
+    "powerN(3, 1) \u2192 3",
+    "powerN(3, 2) \u2192 9",
+    "powerN(3, 3) \u2192 27"
+  ],
+  "provided_code": "public int powerN(int base, int n) {\n  }"
+}

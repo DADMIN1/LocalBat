@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p138183",
+  "section": "String-1",
+  "problem": "lastChars",
+  "title": "lastChars",
+  "prompt": "Given 2 strings, a and b, return a new string made of the first char of a and the last char of b, so \"yo\" and \"java\" yields \"ya\". If either string is length 0, use '@' for its missing char.",
+  "testcases": [
+    "lastChars(\"last\", \"chars\") \u2192 \"ls\"",
+    "lastChars(\"yo\", \"java\") \u2192 \"ya\"",
+    "lastChars(\"hi\", \"\") \u2192 \"h@\""
+  ],
+  "provided_code": "public String lastChars(String a, String b) {\n  }"
+}

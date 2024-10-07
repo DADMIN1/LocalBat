@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p139075",
+  "section": "String-1",
+  "problem": "hasBad",
+  "title": "hasBad",
+  "prompt": "Given a string, return true if \"bad\" appears starting at index 0 or 1 in the string, such as with \"badxxx\" or \"xbadxx\" but not \"xxbadxx\". The string may be any length, including 0. Note: use .equals() to compare 2 strings.",
+  "testcases": [
+    "hasBad(\"badxx\") \u2192 true",
+    "hasBad(\"xbadxx\") \u2192 true",
+    "hasBad(\"xxbadxx\") \u2192 false"
+  ],
+  "provided_code": "public boolean hasBad(String str) {\n  }"
+}

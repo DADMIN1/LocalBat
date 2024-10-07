@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p142247",
+  "section": "String-1",
+  "problem": "without2",
+  "title": "without2",
+  "prompt": "Given a string, if a length 2 substring appears at both its beginning and end, return a string without the substring at the beginning, so \"HelloHe\" yields \"lloHe\". The substring may overlap with itself, so \"Hi\" yields \"\". Otherwise, return the original string unchanged.",
+  "testcases": [
+    "without2(\"HelloHe\") \u2192 \"lloHe\"",
+    "without2(\"HelloHi\") \u2192 \"HelloHi\"",
+    "without2(\"Hi\") \u2192 \"\""
+  ],
+  "provided_code": "public String without2(String str) {\n  }"
+}

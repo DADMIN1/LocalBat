@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p184031",
+  "section": "Warmup-2",
+  "problem": "arrayCount9",
+  "title": "arrayCount9",
+  "prompt": "Given an array of ints, return the number of 9's in the array.",
+  "testcases": [
+    "arrayCount9([1, 2, 9]) \u2192 1",
+    "arrayCount9([1, 9, 9]) \u2192 2",
+    "arrayCount9([1, 9, 9, 3, 9]) \u2192 3"
+  ],
+  "provided_code": "public int arrayCount9(int[] nums) {\n  }"
+}

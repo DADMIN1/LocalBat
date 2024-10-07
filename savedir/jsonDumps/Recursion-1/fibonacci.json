@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p120015",
+  "section": "Recursion-1",
+  "problem": "fibonacci",
+  "title": "fibonacci",
+  "prompt": "The fibonacci sequence is a famous bit of mathematics, and it happens to have a recursive definition. The first two values in the sequence are 0 and 1 (essentially 2 base cases). Each subsequent value is the sum of the previous two values, so the whole sequence is: 0, 1, 1, 2, 3, 5, 8, 13, 21 and so on. Define a recursive fibonacci(n) method that returns the nth fibonacci number, with n=0 representing the start of the sequence.",
+  "testcases": [
+    "fibonacci(0) \u2192 0",
+    "fibonacci(1) \u2192 1",
+    "fibonacci(2) \u2192 1"
+  ],
+  "provided_code": "public int fibonacci(int n) {\n  }"
+}

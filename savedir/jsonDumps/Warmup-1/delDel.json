@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p100905",
+  "section": "Warmup-1",
+  "problem": "delDel",
+  "title": "delDel",
+  "prompt": "Given a string, if the string \"del\" appears starting at index 1, return a string where that \"del\" has been deleted. Otherwise, return the string unchanged.",
+  "testcases": [
+    "delDel(\"adelbc\") \u2192 \"abc\"",
+    "delDel(\"adelHello\") \u2192 \"aHello\"",
+    "delDel(\"adedbc\") \u2192 \"adedbc\""
+  ],
+  "provided_code": "public String delDel(String str) {\n  }"
+}

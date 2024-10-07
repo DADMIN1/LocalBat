@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p175762",
+  "section": "String-2",
+  "problem": "bobThere",
+  "title": "bobThere",
+  "prompt": "Return true if the given string contains a \"bob\" string, but where the middle 'o' char can be any char.",
+  "testcases": [
+    "bobThere(\"abcbob\") \u2192 true",
+    "bobThere(\"b9b\") \u2192 true",
+    "bobThere(\"bac\") \u2192 false"
+  ],
+  "provided_code": "public boolean bobThere(String str) {\n  }"
+}

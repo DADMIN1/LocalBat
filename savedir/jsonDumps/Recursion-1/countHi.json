@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p184029",
+  "section": "Recursion-1",
+  "problem": "countHi",
+  "title": "countHi",
+  "prompt": "Given a string, compute recursively (no loops) the number of times lowercase \"hi\" appears in the string.",
+  "testcases": [
+    "countHi(\"xxhixx\") \u2192 1",
+    "countHi(\"xhixhix\") \u2192 2",
+    "countHi(\"hi\") \u2192 1"
+  ],
+  "provided_code": "public int countHi(String str) {\n  }"
+}

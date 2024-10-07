@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p159227",
+  "section": "Warmup-1",
+  "problem": "posNeg",
+  "title": "posNeg",
+  "prompt": "Given 2 int values, return true if one is negative and one is positive. Except if the parameter \"negative\" is true, then return true only if both are negative.",
+  "testcases": [
+    "posNeg(1, -1, false) \u2192 true",
+    "posNeg(-1, 1, false) \u2192 true",
+    "posNeg(-4, -5, true) \u2192 true"
+  ],
+  "provided_code": "public boolean posNeg(int a, int b, boolean negative) {\n  }"
+}

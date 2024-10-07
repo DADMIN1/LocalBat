@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p144623",
+  "section": "String-1",
+  "problem": "twoChar",
+  "title": "twoChar",
+  "prompt": "Given a string and an index, return a string length 2 starting at the given index. If the index is too big or too small to define a string length 2, use the first 2 chars. The string length will be at least 2.",
+  "testcases": [
+    "twoChar(\"java\", 0) \u2192 \"ja\"",
+    "twoChar(\"java\", 2) \u2192 \"va\"",
+    "twoChar(\"java\", 3) \u2192 \"ja\""
+  ],
+  "provided_code": "public String twoChar(String str, int index) {\n  }"
+}

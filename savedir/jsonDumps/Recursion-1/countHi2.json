@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p143900",
+  "section": "Recursion-1",
+  "problem": "countHi2",
+  "title": "countHi2",
+  "prompt": "Given a string, compute recursively the number of times lowercase \"hi\" appears in the string, however do not count \"hi\" that have an 'x' immedately before them.",
+  "testcases": [
+    "countHi2(\"ahixhi\") \u2192 1",
+    "countHi2(\"ahibhi\") \u2192 2",
+    "countHi2(\"xhixhi\") \u2192 0"
+  ],
+  "provided_code": "public int countHi2(String str) {\n  }"
+}

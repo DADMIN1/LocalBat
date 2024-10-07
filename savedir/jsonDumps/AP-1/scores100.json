@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p179487",
+  "section": "AP-1",
+  "problem": "scores100",
+  "title": "scores100",
+  "prompt": "Given an array of scores, return true if there are scores of 100 next to each other in the array. The array length will be at least 2.",
+  "testcases": [
+    "scores100([1, 100, 100]) \u2192 true",
+    "scores100([1, 100, 99, 100]) \u2192 false",
+    "scores100([100, 1, 100, 100]) \u2192 true"
+  ],
+  "provided_code": "public boolean scores100(int[] scores) {\n  }"
+}

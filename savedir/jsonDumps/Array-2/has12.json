@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p169260",
+  "section": "Array-2",
+  "problem": "has12",
+  "title": "has12",
+  "prompt": "Given an array of ints, return true if there is a 1 in the array with a 2 somewhere later in the array.",
+  "testcases": [
+    "has12([1, 3, 2]) \u2192 true",
+    "has12([3, 1, 2]) \u2192 true",
+    "has12([3, 1, 4, 5, 2]) \u2192 true"
+  ],
+  "provided_code": "public boolean has12(int[] nums) {\n  }"
+}

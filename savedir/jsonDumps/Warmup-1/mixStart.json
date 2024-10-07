@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p151713",
+  "section": "Warmup-1",
+  "problem": "mixStart",
+  "title": "mixStart",
+  "prompt": "Return true if the given string begins with \"mix\", except the 'm' can be anything, so \"pix\", \"9ix\" .. all count.",
+  "testcases": [
+    "mixStart(\"mix snacks\") \u2192 true",
+    "mixStart(\"pix snacks\") \u2192 true",
+    "mixStart(\"piz snacks\") \u2192 false"
+  ],
+  "provided_code": "public boolean mixStart(String str) {\n  }"
+}

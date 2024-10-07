@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p108853",
+  "section": "String-1",
+  "problem": "extraEnd",
+  "title": "extraEnd",
+  "prompt": "Given a string, return a new string made of 3 copies of the last 2 chars of the original string. The string length will be at least 2.",
+  "testcases": [
+    "extraEnd(\"Hello\") \u2192 \"lololo\"",
+    "extraEnd(\"ab\") \u2192 \"ababab\"",
+    "extraEnd(\"Hi\") \u2192 \"HiHiHi\""
+  ],
+  "provided_code": "public String extraEnd(String str) {\n  }"
+}

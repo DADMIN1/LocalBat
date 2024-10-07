@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p198664",
+  "section": "String-3",
+  "problem": "gHappy",
+  "title": "gHappy",
+  "prompt": "We'll say that a lowercase 'g' in a string is \"happy\" if there is another 'g' immediately to its left or right. Return true if all the g's in the given string are happy.",
+  "testcases": [
+    "gHappy(\"xxggxx\") \u2192 true",
+    "gHappy(\"xxgxx\") \u2192 false",
+    "gHappy(\"xxggyygxx\") \u2192 false"
+  ],
+  "provided_code": "public boolean gHappy(String str) {\n  }"
+}

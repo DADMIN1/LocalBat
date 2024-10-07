@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p191022",
+  "section": "Warmup-1",
+  "problem": "startHi",
+  "title": "startHi",
+  "prompt": "Given a string, return true if the string starts with \"hi\" and false otherwise.",
+  "testcases": [
+    "startHi(\"hi there\") \u2192 true",
+    "startHi(\"hi\") \u2192 true",
+    "startHi(\"hello hi\") \u2192 false"
+  ],
+  "provided_code": "public boolean startHi(String str) {\n  }"
+}

@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p178728",
+  "section": "Logic-1",
+  "problem": "teenSum",
+  "title": "teenSum",
+  "prompt": "Given 2 ints, a and b, return their sum. However, \"teen\" values in the range 13..19 inclusive, are extra lucky. So if either value is a teen, just return 19.",
+  "testcases": [
+    "teenSum(3, 4) \u2192 7",
+    "teenSum(10, 13) \u2192 19",
+    "teenSum(13, 2) \u2192 19"
+  ],
+  "provided_code": "public int teenSum(int a, int b) {\n  }"
+}

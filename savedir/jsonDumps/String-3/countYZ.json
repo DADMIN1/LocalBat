@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p199171",
+  "section": "String-3",
+  "problem": "countYZ",
+  "title": "countYZ",
+  "prompt": "Given a string, count the number of words ending in 'y' or 'z' -- so the 'y' in \"heavy\" and the 'z' in \"fez\" count, but not the 'y' in \"yellow\" (not case sensitive). We'll say that a y or z is at the end of a word if there is not an alphabetic letter immediately following it. (Note: Character.isLetter(char) tests if a char is an alphabetic letter.)",
+  "testcases": [
+    "countYZ(\"fez day\") \u2192 2",
+    "countYZ(\"day fez\") \u2192 2",
+    "countYZ(\"day fyyyz\") \u2192 2"
+  ],
+  "provided_code": "public int countYZ(String str) {\n  }"
+}

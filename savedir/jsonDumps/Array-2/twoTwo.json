@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p102145",
+  "section": "Array-2",
+  "problem": "twoTwo",
+  "title": "twoTwo",
+  "prompt": "Given an array of ints, return true if every 2 that appears in the array is next to another 2.",
+  "testcases": [
+    "twoTwo([4, 2, 2, 3]) \u2192 true",
+    "twoTwo([2, 2, 4]) \u2192 true",
+    "twoTwo([2, 2, 4, 2]) \u2192 false"
+  ],
+  "provided_code": "public boolean twoTwo(int[] nums) {\n  }"
+}

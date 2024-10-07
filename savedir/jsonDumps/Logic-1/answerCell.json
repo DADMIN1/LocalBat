@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p110973",
+  "section": "Logic-1",
+  "problem": "answerCell",
+  "title": "answerCell",
+  "prompt": "Your cell phone rings. Return true if you should answer it. Normally you answer, except in the morning you only answer if it is your mom calling. In all cases, if you are asleep, you do not answer.",
+  "testcases": [
+    "answerCell(false, false, false) \u2192 true",
+    "answerCell(false, false, true) \u2192 false",
+    "answerCell(true, false, false) \u2192 false"
+  ],
+  "provided_code": "public boolean answerCell(boolean isMorning, boolean isMom, boolean isAsleep) {\n  }"
+}

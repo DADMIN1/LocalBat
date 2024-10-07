@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p136648",
+  "section": "Array-2",
+  "problem": "no14",
+  "title": "no14",
+  "prompt": "Given an array of ints, return true if it contains no 1's or it contains no 4's.",
+  "testcases": [
+    "no14([1, 2, 3]) \u2192 true",
+    "no14([1, 2, 3, 4]) \u2192 false",
+    "no14([2, 3, 4]) \u2192 true"
+  ],
+  "provided_code": "public boolean no14(int[] nums) {\n  }"
+}

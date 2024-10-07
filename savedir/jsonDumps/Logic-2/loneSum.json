@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p148972",
+  "section": "Logic-2",
+  "problem": "loneSum",
+  "title": "loneSum",
+  "prompt": "Given 3 int values, a b c, return their sum. However, if one of the values is the same as another of the values, it does not count towards the sum.",
+  "testcases": [
+    "loneSum(1, 2, 3) \u2192 6",
+    "loneSum(3, 2, 3) \u2192 2",
+    "loneSum(3, 3, 3) \u2192 0"
+  ],
+  "provided_code": "public int loneSum(int a, int b, int c) {\n  }"
+}

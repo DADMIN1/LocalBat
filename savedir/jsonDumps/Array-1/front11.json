@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p128270",
+  "section": "Array-1",
+  "problem": "front11",
+  "title": "front11",
+  "prompt": "Given 2 int arrays, a and b, of any length, return a new array with the first element of each array. If either array is length 0, ignore that array.",
+  "testcases": [
+    "front11([1, 2, 3], [7, 9, 8]) \u2192 [1, 7]",
+    "front11([1], [2]) \u2192 [1, 2]",
+    "front11([1, 7], []) \u2192 [1]"
+  ],
+  "provided_code": "public int[] front11(int[] a, int[] b) {\n  }"
+}

@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p111624",
+  "section": "String-2",
+  "problem": "catDog",
+  "title": "catDog",
+  "prompt": "Return true if the string \"cat\" and \"dog\" appear the same number of times in the given string.",
+  "testcases": [
+    "catDog(\"catdog\") \u2192 true",
+    "catDog(\"catcat\") \u2192 false",
+    "catDog(\"1cat1cadodog\") \u2192 true"
+  ],
+  "provided_code": "public boolean catDog(String str) {\n  }"
+}

@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p171260",
+  "section": "Warmup-2",
+  "problem": "stringX",
+  "title": "stringX",
+  "prompt": "Given a string, return a version where all the \"x\" have been removed. Except an \"x\" at the very start or end should not be removed.",
+  "testcases": [
+    "stringX(\"xxHxix\") \u2192 \"xHix\"",
+    "stringX(\"abxxxcd\") \u2192 \"abcd\"",
+    "stringX(\"xabxxxcdx\") \u2192 \"xabcdx\""
+  ],
+  "provided_code": "public String stringX(String str) {\n  }"
+}

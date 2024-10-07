@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p136254",
+  "section": "Array-2",
+  "problem": "matchUp",
+  "title": "matchUp",
+  "prompt": "Given arrays nums1 and nums2 of the same length, for every element in nums1, consider the corresponding element in nums2 (at the same index). Return the count of the number of times that the two elements differ by 2 or less, but are not equal.",
+  "testcases": [
+    "matchUp([1, 2, 3], [2, 3, 10]) \u2192 2",
+    "matchUp([1, 2, 3], [2, 3, 5]) \u2192 3",
+    "matchUp([1, 2, 3], [2, 3, 3]) \u2192 2"
+  ],
+  "provided_code": "public int matchUp(int[] nums1, int[] nums2) {\n  }"
+}

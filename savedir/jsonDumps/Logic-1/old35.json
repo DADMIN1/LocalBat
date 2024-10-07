@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p159612",
+  "section": "Logic-1",
+  "problem": "old35",
+  "title": "old35",
+  "prompt": "Return true if the given non-negative number is a multiple of 3 or 5, but not both. Use the % \"mod\" operator -- see Introduction to Mod",
+  "testcases": [
+    "old35(3) \u2192 true",
+    "old35(10) \u2192 true",
+    "old35(15) \u2192 false"
+  ],
+  "provided_code": "public boolean old35(int n) {\n  }"
+}

@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p191914",
+  "section": "Warmup-1",
+  "problem": "notString",
+  "title": "notString",
+  "prompt": "Given a string, return a new string where \"not \" has been added to the front. However, if the string already begins with \"not\", return the string unchanged. Note: use .equals() to compare 2 strings.",
+  "testcases": [
+    "notString(\"candy\") \u2192 \"not candy\"",
+    "notString(\"x\") \u2192 \"not x\"",
+    "notString(\"not bad\") \u2192 \"not bad\""
+  ],
+  "provided_code": "public String notString(String str) {\n  }"
+}

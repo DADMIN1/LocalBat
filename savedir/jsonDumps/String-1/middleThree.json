@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p115863",
+  "section": "String-1",
+  "problem": "middleThree",
+  "title": "middleThree",
+  "prompt": "Given a string of odd length, return the string length 3 from its middle, so \"Candy\" yields \"and\". The string length will be at least 3.",
+  "testcases": [
+    "middleThree(\"Candy\") \u2192 \"and\"",
+    "middleThree(\"and\") \u2192 \"and\"",
+    "middleThree(\"solving\") \u2192 \"lvi\""
+  ],
+  "provided_code": "public String middleThree(String str) {\n  }"
+}

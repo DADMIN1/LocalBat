@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p184004",
+  "section": "Warmup-1",
+  "problem": "nearHundred",
+  "title": "nearHundred",
+  "prompt": "Given an int n, return true if it is within 10 of 100 or 200. Note: Math.abs(num) computes the absolute value of a number.",
+  "testcases": [
+    "nearHundred(93) \u2192 true",
+    "nearHundred(90) \u2192 true",
+    "nearHundred(89) \u2192 false"
+  ],
+  "provided_code": "public boolean nearHundred(int n) {\n  }"
+}

@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p163411",
+  "section": "String-1",
+  "problem": "firstTwo",
+  "title": "firstTwo",
+  "prompt": "Given a string, return the string made of its first two chars, so the String \"Hello\" yields \"He\". If the string is shorter than length 2, return whatever there is, so \"X\" yields \"X\", and the empty string \"\" yields the empty string \"\". Note that str.length() returns the length of a string.",
+  "testcases": [
+    "firstTwo(\"Hello\") \u2192 \"He\"",
+    "firstTwo(\"abcdefg\") \u2192 \"ab\"",
+    "firstTwo(\"ab\") \u2192 \"ab\""
+  ],
+  "provided_code": "public String firstTwo(String str) {\n  }"
+}

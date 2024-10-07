@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p162477",
+  "section": "String-1",
+  "problem": "theEnd",
+  "title": "theEnd",
+  "prompt": "Given a string, return a string length 1 from its front, unless front is false, in which case return a string length 1 from its back. The string will be non-empty.",
+  "testcases": [
+    "theEnd(\"Hello\", true) \u2192 \"H\"",
+    "theEnd(\"Hello\", false) \u2192 \"o\"",
+    "theEnd(\"oh\", true) \u2192 \"o\""
+  ],
+  "provided_code": "public String theEnd(String str, boolean front) {\n  }"
+}

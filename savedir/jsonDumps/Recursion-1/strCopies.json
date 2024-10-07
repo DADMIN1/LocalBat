@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p118182",
+  "section": "Recursion-1",
+  "problem": "strCopies",
+  "title": "strCopies",
+  "prompt": "Given a string and a non-empty substring sub, compute recursively if at least n copies of sub appear in the string somewhere, possibly with overlapping. N will be non-negative.",
+  "testcases": [
+    "strCopies(\"catcowcat\", \"cat\", 2) \u2192 true",
+    "strCopies(\"catcowcat\", \"cow\", 2) \u2192 false",
+    "strCopies(\"catcowcat\", \"cow\", 1) \u2192 true"
+  ],
+  "provided_code": "public boolean strCopies(String str, String sub, int n) {\n  }"
+}

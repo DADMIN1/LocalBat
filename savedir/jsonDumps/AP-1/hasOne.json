@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p191212",
+  "section": "AP-1",
+  "problem": "hasOne",
+  "title": "hasOne",
+  "prompt": "Given a positive int n, return true if it contains a 1 digit. Note: use % to get the rightmost digit, and / to discard the rightmost digit.",
+  "testcases": [
+    "hasOne(10) \u2192 true",
+    "hasOne(22) \u2192 false",
+    "hasOne(220) \u2192 false"
+  ],
+  "provided_code": "public boolean hasOne(int n) {\n  }"
+}

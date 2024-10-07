@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p145365",
+  "section": "Array-1",
+  "problem": "double23",
+  "title": "double23",
+  "prompt": "Given an int array, return true if the array contains 2 twice, or 3 twice. The array will be length 0, 1, or 2.",
+  "testcases": [
+    "double23([2, 2]) \u2192 true",
+    "double23([3, 3]) \u2192 true",
+    "double23([2, 3]) \u2192 false"
+  ],
+  "provided_code": "public boolean double23(int[] nums) {\n  }"
+}

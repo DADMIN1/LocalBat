@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p110141",
+  "section": "String-1",
+  "problem": "deFront",
+  "title": "deFront",
+  "prompt": "Given a string, return a version without the first 2 chars. Except keep the first char if it is 'a' and keep the second char if it is 'b'. The string may be any length. Harder than it looks.",
+  "testcases": [
+    "deFront(\"Hello\") \u2192 \"llo\"",
+    "deFront(\"java\") \u2192 \"va\"",
+    "deFront(\"away\") \u2192 \"aay\""
+  ],
+  "provided_code": "public String deFront(String str) {    \n  }"
+}

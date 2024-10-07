@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p101372",
+  "section": "Recursion-1",
+  "problem": "changeXY",
+  "title": "changeXY",
+  "prompt": "Given a string, compute recursively (no loops) a new string where all the lowercase 'x' chars have been changed to 'y' chars.",
+  "testcases": [
+    "changeXY(\"codex\") \u2192 \"codey\"",
+    "changeXY(\"xxhixx\") \u2192 \"yyhiyy\"",
+    "changeXY(\"xhixhix\") \u2192 \"yhiyhiy\""
+  ],
+  "provided_code": "public String changeXY(String str) {\n  }"
+}

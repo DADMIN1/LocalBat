@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p181646",
+  "section": "Warmup-1",
+  "problem": "monkeyTrouble",
+  "title": "monkeyTrouble",
+  "prompt": "We have two monkeys, a and b, and the parameters aSmile and bSmile indicate if each is smiling. We are in trouble if they are both smiling or if neither of them is smiling. Return true if we are in trouble.",
+  "testcases": [
+    "monkeyTrouble(true, true) \u2192 true",
+    "monkeyTrouble(false, false) \u2192 true",
+    "monkeyTrouble(true, false) \u2192 false"
+  ],
+  "provided_code": "public boolean monkeyTrouble(boolean aSmile, boolean bSmile) {\n  }"
+}

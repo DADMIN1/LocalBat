@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p167015",
+  "section": "Recursion-1",
+  "problem": "count11",
+  "title": "count11",
+  "prompt": "Given a string, compute recursively (no loops) the number of \"11\" substrings in the string. The \"11\" substrings should not overlap.",
+  "testcases": [
+    "count11(\"11abc11\") \u2192 2",
+    "count11(\"abc11x11x11\") \u2192 3",
+    "count11(\"111\") \u2192 1"
+  ],
+  "provided_code": "public int count11(String str) {\n  }"
+}

@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p154137",
+  "section": "String-3",
+  "problem": "notReplace",
+  "title": "notReplace",
+  "prompt": "Given a string, return a string where every appearance of the lowercase word \"is\" has been replaced with \"is not\". The word \"is\" should not be immediately preceeded or followed by a letter -- so for example the \"is\" in \"this\" does not count. (Note: Character.isLetter(char) tests if a char is a letter.)",
+  "testcases": [
+    "notReplace(\"is test\") \u2192 \"is not test\"",
+    "notReplace(\"is-is\") \u2192 \"is not-is not\"",
+    "notReplace(\"This is right\") \u2192 \"This is not right\""
+  ],
+  "provided_code": "public String notReplace(String str) {\n  }"
+}

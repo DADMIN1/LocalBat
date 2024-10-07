@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p105745",
+  "section": "String-1",
+  "problem": "minCat",
+  "title": "minCat",
+  "prompt": "Given two strings, append them together (known as \"concatenation\") and return the result. However, if the strings are different lengths, omit chars from the longer string so it is the same length as the shorter string. So \"Hello\" and \"Hi\" yield \"loHi\". The strings may be any length.",
+  "testcases": [
+    "minCat(\"Hello\", \"Hi\") \u2192 \"loHi\"",
+    "minCat(\"Hello\", \"java\") \u2192 \"ellojava\"",
+    "minCat(\"java\", \"Hello\") \u2192 \"javaello\""
+  ],
+  "provided_code": "public String minCat(String a, String b) {\n  }"
+}

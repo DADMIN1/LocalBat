@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p126880",
+  "section": "String-2",
+  "problem": "endOther",
+  "title": "endOther",
+  "prompt": "Given two strings, return true if either of the strings appears at the very end of the other string, ignoring upper/lower case differences (in other words, the computation should not be \"case sensitive\"). Note: str.toLowerCase() returns the lowercase version of a string.",
+  "testcases": [
+    "endOther(\"Hiabc\", \"abc\") \u2192 true",
+    "endOther(\"AbC\", \"HiaBc\") \u2192 true",
+    "endOther(\"abc\", \"abXabc\") \u2192 true"
+  ],
+  "provided_code": "public boolean endOther(String a, String b) {\n  }"
+}

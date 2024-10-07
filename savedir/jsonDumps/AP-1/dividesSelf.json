@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p165941",
+  "section": "AP-1",
+  "problem": "dividesSelf",
+  "title": "dividesSelf",
+  "prompt": "We'll say that a positive int divides itself if every digit in the number divides into the number evenly. So for example 128 divides itself since 1, 2, and 8 all divide into 128 evenly. We'll say that 0 does not divide into anything evenly, so no number with a 0 digit divides itself. Note: use % to get the rightmost digit, and / to discard the rightmost digit.",
+  "testcases": [
+    "dividesSelf(128) \u2192 true",
+    "dividesSelf(12) \u2192 true",
+    "dividesSelf(120) \u2192 false"
+  ],
+  "provided_code": "public boolean dividesSelf(int n) {\n  }"
+}

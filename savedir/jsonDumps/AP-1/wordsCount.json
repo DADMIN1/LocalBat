@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p124620",
+  "section": "AP-1",
+  "problem": "wordsCount",
+  "title": "wordsCount",
+  "prompt": "Given an array of strings, return the count of the number of strings with the given length.",
+  "testcases": [
+    "wordsCount([\"a\", \"bb\", \"b\", \"ccc\"], 1) \u2192 2",
+    "wordsCount([\"a\", \"bb\", \"b\", \"ccc\"], 3) \u2192 1",
+    "wordsCount([\"a\", \"bb\", \"b\", \"ccc\"], 4) \u2192 0"
+  ],
+  "provided_code": "public int wordsCount(String[] words, int len) {\n  }"
+}

@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p129952",
+  "section": "String-2",
+  "problem": "getSandwich",
+  "title": "getSandwich",
+  "prompt": "A sandwich is two pieces of bread with something in between. Return the string that is between the first and last appearance of \"bread\" in the given string, or return the empty string \"\" if there are not two pieces of bread.",
+  "testcases": [
+    "getSandwich(\"breadjambread\") \u2192 \"jam\"",
+    "getSandwich(\"xxbreadjambreadyy\") \u2192 \"jam\"",
+    "getSandwich(\"xxbreadyy\") \u2192 \"\""
+  ],
+  "provided_code": "public String getSandwich(String str) {\n  }"
+}

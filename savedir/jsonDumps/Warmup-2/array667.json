@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p110019",
+  "section": "Warmup-2",
+  "problem": "array667",
+  "title": "array667",
+  "prompt": "Given an array of ints, return the number of times that two 6's are next to each other in the array. Also count instances where the second \"6\" is actually a 7.",
+  "testcases": [
+    "array667([6, 6, 2]) \u2192 1",
+    "array667([6, 6, 2, 6]) \u2192 1",
+    "array667([6, 7, 2, 6]) \u2192 1"
+  ],
+  "provided_code": "public int array667(int[] nums) {\n  }"
+}

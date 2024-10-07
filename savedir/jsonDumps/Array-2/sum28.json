@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p199612",
+  "section": "Array-2",
+  "problem": "sum28",
+  "title": "sum28",
+  "prompt": "Given an array of ints, return true if the sum of all the 2's in the array is exactly 8.",
+  "testcases": [
+    "sum28([2, 3, 2, 2, 4, 2]) \u2192 true",
+    "sum28([2, 3, 2, 2, 4, 2, 2]) \u2192 false",
+    "sum28([1, 2, 3, 4]) \u2192 false"
+  ],
+  "provided_code": "public boolean sum28(int[] nums) {\n  }"
+}

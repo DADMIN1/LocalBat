@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p170829",
+  "section": "String-2",
+  "problem": "plusOut",
+  "title": "plusOut",
+  "prompt": "Given a string and a non-empty word string, return a version of the original String where all chars have been replaced by pluses (\"+\"), except for appearances of the word string which are preserved unchanged.",
+  "testcases": [
+    "plusOut(\"12xy34\", \"xy\") \u2192 \"++xy++\"",
+    "plusOut(\"12xy34\", \"1\") \u2192 \"1+++++\"",
+    "plusOut(\"12xy34xyabcxy\", \"xy\") \u2192 \"++xy++xy+++xy\""
+  ],
+  "provided_code": "public String plusOut(String str, String word) {\n  }"
+}

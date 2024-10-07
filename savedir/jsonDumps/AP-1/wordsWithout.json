@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p121236",
+  "section": "AP-1",
+  "problem": "wordsWithout",
+  "title": "wordsWithout",
+  "prompt": "Given an array of strings, return a new array without the strings that are equal to the target string. One approach is to count the occurrences of the target string, make a new array of the correct length, and then copy over the correct strings.",
+  "testcases": [
+    "wordsWithout([\"a\", \"b\", \"c\", \"a\"], \"a\") \u2192 [\"b\", \"c\"]",
+    "wordsWithout([\"a\", \"b\", \"c\", \"a\"], \"b\") \u2192 [\"a\", \"c\", \"a\"]",
+    "wordsWithout([\"a\", \"b\", \"c\", \"a\"], \"c\") \u2192 [\"a\", \"b\", \"a\"]"
+  ],
+  "provided_code": "public String[] wordsWithout(String[] words, String target) {\n  }"
+}

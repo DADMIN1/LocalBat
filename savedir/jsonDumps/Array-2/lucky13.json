@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p194525",
+  "section": "Array-2",
+  "problem": "lucky13",
+  "title": "lucky13",
+  "prompt": "Given an array of ints, return true if the array contains no 1's and no 3's.",
+  "testcases": [
+    "lucky13([0, 2, 4]) \u2192 true",
+    "lucky13([1, 2, 3]) \u2192 false",
+    "lucky13([1, 2, 4]) \u2192 false"
+  ],
+  "provided_code": "public boolean lucky13(int[] nums) {\n  }"
+}

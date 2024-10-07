@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p165666",
+  "section": "Warmup-2",
+  "problem": "stringBits",
+  "title": "stringBits",
+  "prompt": "Given a string, return a new string made of every other char starting with the first, so \"Hello\" yields \"Hlo\".",
+  "testcases": [
+    "stringBits(\"Hello\") \u2192 \"Hlo\"",
+    "stringBits(\"Hi\") \u2192 \"H\"",
+    "stringBits(\"Heeololeo\") \u2192 \"Hello\""
+  ],
+  "provided_code": "public String stringBits(String str) {\n  }"
+}

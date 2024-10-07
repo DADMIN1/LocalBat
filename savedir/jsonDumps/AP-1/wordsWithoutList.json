@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p183407",
+  "section": "AP-1",
+  "problem": "wordsWithoutList",
+  "title": "wordsWithoutList",
+  "prompt": "Given an array of strings, return a new List (e.g. an ArrayList) where all the strings of the given length are omitted. See wordsWithout() below which is more difficult because it uses arrays.",
+  "testcases": [
+    "wordsWithoutList([\"a\", \"bb\", \"b\", \"ccc\"], 1) \u2192 [\"bb\", \"ccc\"]",
+    "wordsWithoutList([\"a\", \"bb\", \"b\", \"ccc\"], 3) \u2192 [\"a\", \"bb\", \"b\"]",
+    "wordsWithoutList([\"a\", \"bb\", \"b\", \"ccc\"], 4) \u2192 [\"a\", \"bb\", \"b\", \"ccc\"]"
+  ],
+  "provided_code": "public List wordsWithoutList(String[] words, int len) {\n  }"
+}

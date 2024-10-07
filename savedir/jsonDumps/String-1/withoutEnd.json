@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p130896",
+  "section": "String-1",
+  "problem": "withoutEnd",
+  "title": "withoutEnd",
+  "prompt": "Given a string, return a version without the first and last char, so \"Hello\" yields \"ell\". The string length will be at least 2.",
+  "testcases": [
+    "withoutEnd(\"Hello\") \u2192 \"ell\"",
+    "withoutEnd(\"java\") \u2192 \"av\"",
+    "withoutEnd(\"coding\") \u2192 \"odin\""
+  ],
+  "provided_code": "public String withoutEnd(String str) {\n  }"
+}

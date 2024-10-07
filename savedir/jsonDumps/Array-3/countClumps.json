@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p193817",
+  "section": "Array-3",
+  "problem": "countClumps",
+  "title": "countClumps",
+  "prompt": "Say that a \"clump\" in an array is a series of 2 or more adjacent elements of the same value. Return the number of clumps in the given array.",
+  "testcases": [
+    "countClumps([1, 2, 2, 3, 4, 4]) \u2192 2",
+    "countClumps([1, 1, 2, 1, 1]) \u2192 2",
+    "countClumps([1, 1, 1, 1, 1]) \u2192 1"
+  ],
+  "provided_code": "public int countClumps(int[] nums) {\n  }"
+}

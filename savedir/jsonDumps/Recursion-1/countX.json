@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p170371",
+  "section": "Recursion-1",
+  "problem": "countX",
+  "title": "countX",
+  "prompt": "Given a string, compute recursively (no loops) the number of lowercase 'x' chars in the string.",
+  "testcases": [
+    "countX(\"xxhixx\") \u2192 4",
+    "countX(\"xhixhix\") \u2192 3",
+    "countX(\"hi\") \u2192 0"
+  ],
+  "provided_code": "public int countX(String str) {\n  }"
+}

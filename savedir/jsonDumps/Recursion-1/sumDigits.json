@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p163932",
+  "section": "Recursion-1",
+  "problem": "sumDigits",
+  "title": "sumDigits",
+  "prompt": "Given a non-negative int n, return the sum of its digits recursively (no loops). Note that mod (%) by 10 yields the rightmost digit (126 % 10 is 6), while divide (/) by 10 removes the rightmost digit (126 / 10 is 12).",
+  "testcases": [
+    "sumDigits(126) \u2192 9",
+    "sumDigits(49) \u2192 13",
+    "sumDigits(12) \u2192 3"
+  ],
+  "provided_code": "public int sumDigits(int n) {\n  }"
+}

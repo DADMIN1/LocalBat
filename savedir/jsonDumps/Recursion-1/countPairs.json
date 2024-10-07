@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p154048",
+  "section": "Recursion-1",
+  "problem": "countPairs",
+  "title": "countPairs",
+  "prompt": "We'll say that a \"pair\" in a string is two instances of a char separated by a char. So \"AxA\" the A's make a pair. Pair's can overlap, so \"AxAxA\" contains 3 pairs -- 2 for A and 1 for x. Recursively compute the number of pairs in the given string.",
+  "testcases": [
+    "countPairs(\"axa\") \u2192 1",
+    "countPairs(\"axax\") \u2192 2",
+    "countPairs(\"axbx\") \u2192 1"
+  ],
+  "provided_code": "public int countPairs(String str) {\n  }"
+}

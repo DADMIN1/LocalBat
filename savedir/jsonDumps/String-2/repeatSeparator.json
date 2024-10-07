@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p109637",
+  "section": "String-2",
+  "problem": "repeatSeparator",
+  "title": "repeatSeparator",
+  "prompt": "Given two strings, word and a separator sep, return a big string made of count occurrences of the word, separated by the separator string.",
+  "testcases": [
+    "repeatSeparator(\"Word\", \"X\", 3) \u2192 \"WordXWordXWord\"",
+    "repeatSeparator(\"This\", \"And\", 2) \u2192 \"ThisAndThis\"",
+    "repeatSeparator(\"This\", \"And\", 1) \u2192 \"This\""
+  ],
+  "provided_code": "public String repeatSeparator(String word, String sep, int count) {\n  }"
+}

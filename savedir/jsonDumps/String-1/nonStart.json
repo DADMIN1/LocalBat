@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p143825",
+  "section": "String-1",
+  "problem": "nonStart",
+  "title": "nonStart",
+  "prompt": "Given 2 strings, return their concatenation, except omit the first char of each. The strings will be at least length 1.",
+  "testcases": [
+    "nonStart(\"Hello\", \"There\") \u2192 \"ellohere\"",
+    "nonStart(\"java\", \"code\") \u2192 \"avaode\"",
+    "nonStart(\"shotl\", \"java\") \u2192 \"hotlava\""
+  ],
+  "provided_code": "public String nonStart(String a, String b) {\n  }"
+}

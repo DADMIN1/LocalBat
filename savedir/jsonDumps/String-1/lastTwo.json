@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p194786",
+  "section": "String-1",
+  "problem": "lastTwo",
+  "title": "lastTwo",
+  "prompt": "Given a string of any length, return a new string where the last 2 chars, if present, are swapped, so \"coding\" yields \"codign\".",
+  "testcases": [
+    "lastTwo(\"coding\") \u2192 \"codign\"",
+    "lastTwo(\"cat\") \u2192 \"cta\"",
+    "lastTwo(\"ab\") \u2192 \"ba\""
+  ],
+  "provided_code": "public String lastTwo(String str) {\n  }"
+}

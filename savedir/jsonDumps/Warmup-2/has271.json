@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p167430",
+  "section": "Warmup-2",
+  "problem": "has271",
+  "title": "has271",
+  "prompt": "Given an array of ints, return true if it contains a 2, 7, 1 pattern: a value, followed by the value plus 5, followed by the value minus 1. Additionally the 271 counts even if the \"1\" differs by 2 or less from the correct value.",
+  "testcases": [
+    "has271([1, 2, 7, 1]) \u2192 true",
+    "has271([1, 2, 8, 1]) \u2192 false",
+    "has271([2, 7, 1]) \u2192 true"
+  ],
+  "provided_code": "public boolean has271(int[] nums) {\n  }"
+}

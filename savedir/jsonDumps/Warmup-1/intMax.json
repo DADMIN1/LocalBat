@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p101887",
+  "section": "Warmup-1",
+  "problem": "intMax",
+  "title": "intMax",
+  "prompt": "Given three int values, a b c, return the largest.",
+  "testcases": [
+    "intMax(1, 2, 3) \u2192 3",
+    "intMax(1, 3, 2) \u2192 3",
+    "intMax(3, 2, 1) \u2192 3"
+  ],
+  "provided_code": "public int intMax(int a, int b, int c) {\n  }"
+}

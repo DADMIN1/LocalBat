@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p175689",
+  "section": "Array-1",
+  "problem": "no23",
+  "title": "no23",
+  "prompt": "Given an int array length 2, return true if it does not contain a 2 or 3.",
+  "testcases": [
+    "no23([4, 5]) \u2192 true",
+    "no23([4, 2]) \u2192 false",
+    "no23([3, 5]) \u2192 false"
+  ],
+  "provided_code": "public boolean no23(int[] nums) {\n  }"
+}

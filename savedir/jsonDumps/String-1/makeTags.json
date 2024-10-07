@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p147483",
+  "section": "String-1",
+  "problem": "makeTags",
+  "title": "makeTags",
+  "prompt": "The web is built with HTML strings like \"<i>Yay</i>\" which draws Yay as italic text. In this example, the \"i\" tag makes <i> and </i> which surround the word \"Yay\". Given tag and word strings, create the HTML string with tags around the word, e.g. \"<i>Yay</i>\".",
+  "testcases": [
+    "makeTags(\"i\", \"Yay\") \u2192 \"<i>Yay</i>\"",
+    "makeTags(\"i\", \"Hello\") \u2192 \"<i>Hello</i>\"",
+    "makeTags(\"cite\", \"Yay\") \u2192 \"<cite>Yay</cite>\""
+  ],
+  "provided_code": "public String makeTags(String tag, String word) {\n  }"
+}

@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p183394",
+  "section": "Recursion-1",
+  "problem": "allStar",
+  "title": "allStar",
+  "prompt": "Given a string, compute recursively a new string where all the adjacent chars are now separated by a \"*\".",
+  "testcases": [
+    "allStar(\"hello\") \u2192 \"h*e*l*l*o\"",
+    "allStar(\"abc\") \u2192 \"a*b*c\"",
+    "allStar(\"ab\") \u2192 \"a*b\""
+  ],
+  "provided_code": "public String allStar(String str) {\n  }"
+}

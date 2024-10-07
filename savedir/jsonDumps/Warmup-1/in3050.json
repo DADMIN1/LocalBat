@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p132134",
+  "section": "Warmup-1",
+  "problem": "in3050",
+  "title": "in3050",
+  "prompt": "Given 2 int values, return true if they are both in the range 30..40 inclusive, or they are both in the range 40..50 inclusive.",
+  "testcases": [
+    "in3050(30, 31) \u2192 true",
+    "in3050(30, 41) \u2192 false",
+    "in3050(40, 50) \u2192 true"
+  ],
+  "provided_code": "public boolean in3050(int a, int b) {\n  }"
+}

@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p196652",
+  "section": "String-1",
+  "problem": "frontAgain",
+  "title": "frontAgain",
+  "prompt": "Given a string, return true if the first 2 chars in the string also appear at the end of the string, such as with \"edited\".",
+  "testcases": [
+    "frontAgain(\"edited\") \u2192 true",
+    "frontAgain(\"edit\") \u2192 false",
+    "frontAgain(\"ed\") \u2192 true"
+  ],
+  "provided_code": "public boolean frontAgain(String str) {\n  }"
+}

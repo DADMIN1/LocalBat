@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p199216",
+  "section": "String-1",
+  "problem": "seeColor",
+  "title": "seeColor",
+  "prompt": "Given a string, if the string begins with \"red\" or \"blue\" return that color string, otherwise return the empty string.",
+  "testcases": [
+    "seeColor(\"redxx\") \u2192 \"red\"",
+    "seeColor(\"xxred\") \u2192 \"\"",
+    "seeColor(\"blueTimes\") \u2192 \"blue\""
+  ],
+  "provided_code": "public String seeColor(String str) {\n  }"
+}

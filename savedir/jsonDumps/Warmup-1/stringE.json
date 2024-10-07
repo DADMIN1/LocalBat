@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p173784",
+  "section": "Warmup-1",
+  "problem": "stringE",
+  "title": "stringE",
+  "prompt": "Return true if the given string contains between 1 and 3 'e' chars.",
+  "testcases": [
+    "stringE(\"Hello\") \u2192 true",
+    "stringE(\"Heelle\") \u2192 true",
+    "stringE(\"Heelele\") \u2192 false"
+  ],
+  "provided_code": "public boolean stringE(String str) {\n  }"
+}

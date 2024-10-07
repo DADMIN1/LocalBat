@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p141061",
+  "section": "Logic-1",
+  "problem": "squirrelPlay",
+  "title": "squirrelPlay",
+  "prompt": "The squirrels in Palo Alto spend most of the day playing. In particular, they play if the temperature is between 60 and 90 (inclusive). Unless it is summer, then the upper limit is 100 instead of 90. Given an int temperature and a boolean isSummer, return true if the squirrels play and false otherwise.",
+  "testcases": [
+    "squirrelPlay(70, false) \u2192 true",
+    "squirrelPlay(95, false) \u2192 false",
+    "squirrelPlay(95, true) \u2192 true"
+  ],
+  "provided_code": "public boolean squirrelPlay(int temp, boolean isSummer) {\n  }"
+}

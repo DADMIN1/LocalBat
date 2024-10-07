@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p158175",
+  "section": "Recursion-1",
+  "problem": "pairStar",
+  "title": "pairStar",
+  "prompt": "Given a string, compute recursively a new string where identical chars that are adjacent in the original string are separated from each other by a \"*\".",
+  "testcases": [
+    "pairStar(\"hello\") \u2192 \"hel*lo\"",
+    "pairStar(\"xxyy\") \u2192 \"x*xy*y\"",
+    "pairStar(\"aaaa\") \u2192 \"a*a*a*a\""
+  ],
+  "provided_code": "public String pairStar(String str) {\n  }"
+}

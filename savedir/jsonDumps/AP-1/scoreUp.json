@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p180365",
+  "section": "AP-1",
+  "problem": "scoreUp",
+  "title": "scoreUp",
+  "prompt": "The \"key\" array is an array containing the correct answers to an exam, like {\"a\", \"a\", \"b\", \"b\"}. the \"answers\" array contains a student's answers, with \"?\" representing a question left blank. The two arrays are not empty and are the same length. Return the score for this array of answers, giving +4 for each correct answer, -1 for each incorrect answer, and +0 for each blank answer.",
+  "testcases": [
+    "scoreUp([\"a\", \"a\", \"b\", \"b\"], [\"a\", \"c\", \"b\", \"c\"]) \u2192 6",
+    "scoreUp([\"a\", \"a\", \"b\", \"b\"], [\"a\", \"a\", \"b\", \"c\"]) \u2192 11",
+    "scoreUp([\"a\", \"a\", \"b\", \"b\"], [\"a\", \"a\", \"b\", \"b\"]) \u2192 16"
+  ],
+  "provided_code": "public int scoreUp(String[] key, String[] answers) {\n  }"
+}

@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p185685",
+  "section": "Array-1",
+  "problem": "firstLast6",
+  "title": "firstLast6",
+  "prompt": "Given an array of ints, return true if 6 appears as either the first or last element in the array. The array will be length 1 or more.",
+  "testcases": [
+    "firstLast6([1, 2, 6]) \u2192 true",
+    "firstLast6([6, 1, 2, 3]) \u2192 true",
+    "firstLast6([13, 6, 1, 2, 3]) \u2192 false"
+  ],
+  "provided_code": "public boolean firstLast6(int[] nums) {\n  }"
+}

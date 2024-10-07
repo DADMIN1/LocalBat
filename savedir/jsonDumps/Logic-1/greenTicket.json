@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p120633",
+  "section": "Logic-1",
+  "problem": "greenTicket",
+  "title": "greenTicket",
+  "prompt": "You have a green lottery ticket, with ints a, b, and c on it. If the numbers are all different from each other, the result is 0. If all of the numbers are the same, the result is 20. If two of the numbers are the same, the result is 10.",
+  "testcases": [
+    "greenTicket(1, 2, 3) \u2192 0",
+    "greenTicket(2, 2, 2) \u2192 20",
+    "greenTicket(1, 1, 2) \u2192 10"
+  ],
+  "provided_code": "public int greenTicket(int a, int b, int c) {\n  }"
+}

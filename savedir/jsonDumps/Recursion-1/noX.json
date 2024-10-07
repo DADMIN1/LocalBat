@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p118230",
+  "section": "Recursion-1",
+  "problem": "noX",
+  "title": "noX",
+  "prompt": "Given a string, compute recursively a new string where all the 'x' chars have been removed.",
+  "testcases": [
+    "noX(\"xaxb\") \u2192 \"ab\"",
+    "noX(\"abc\") \u2192 \"abc\"",
+    "noX(\"xx\") \u2192 \"\""
+  ],
+  "provided_code": "public String noX(String str) {\n  }"
+}

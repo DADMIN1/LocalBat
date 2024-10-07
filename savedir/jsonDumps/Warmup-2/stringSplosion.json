@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p117334",
+  "section": "Warmup-2",
+  "problem": "stringSplosion",
+  "title": "stringSplosion",
+  "prompt": "Given a non-empty string like \"Code\" return a string like \"CCoCodCode\".",
+  "testcases": [
+    "stringSplosion(\"Code\") \u2192 \"CCoCodCode\"",
+    "stringSplosion(\"abc\") \u2192 \"aababc\"",
+    "stringSplosion(\"ab\") \u2192 \"aab\""
+  ],
+  "provided_code": "public String stringSplosion(String str) {\n  }"
+}

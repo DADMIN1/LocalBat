@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p125268",
+  "section": "Warmup-1",
+  "problem": "endUp",
+  "title": "endUp",
+  "prompt": "Given a string, return a new string where the last 3 chars are now in upper case. If the string has less than 3 chars, uppercase whatever is there. Note that str.toUpperCase() returns the uppercase version of a string.",
+  "testcases": [
+    "endUp(\"Hello\") \u2192 \"HeLLO\"",
+    "endUp(\"hi there\") \u2192 \"hi thERE\"",
+    "endUp(\"hi\") \u2192 \"HI\""
+  ],
+  "provided_code": "public String endUp(String str) {\n  }"
+}

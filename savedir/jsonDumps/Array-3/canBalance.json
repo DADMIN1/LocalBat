@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p158767",
+  "section": "Array-3",
+  "problem": "canBalance",
+  "title": "canBalance",
+  "prompt": "Given a non-empty array, return true if there is a place to split the array so that the sum of the numbers on one side is equal to the sum of the numbers on the other side.",
+  "testcases": [
+    "canBalance([1, 1, 1, 2, 1]) \u2192 true",
+    "canBalance([2, 1, 1, 2, 1]) \u2192 false",
+    "canBalance([10, 10]) \u2192 true"
+  ],
+  "provided_code": "public boolean canBalance(int[] nums) {\n  }"
+}

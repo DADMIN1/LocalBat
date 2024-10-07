@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p117019",
+  "section": "Logic-2",
+  "problem": "blackjack",
+  "title": "blackjack",
+  "prompt": "Given 2 int values greater than 0, return whichever value is nearest to 21 without going over. Return 0 if they both go over.",
+  "testcases": [
+    "blackjack(19, 21) \u2192 21",
+    "blackjack(21, 19) \u2192 21",
+    "blackjack(19, 22) \u2192 19"
+  ],
+  "provided_code": "public int blackjack(int a, int b) {\n  }"
+}

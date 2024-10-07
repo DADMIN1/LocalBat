@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p178986",
+  "section": "Warmup-1",
+  "problem": "hasTeen",
+  "title": "hasTeen",
+  "prompt": "We'll say that a number is \"teen\" if it is in the range 13..19 inclusive. Given 3 int values, return true if 1 or more of them are teen.",
+  "testcases": [
+    "hasTeen(13, 20, 10) \u2192 true",
+    "hasTeen(20, 19, 10) \u2192 true",
+    "hasTeen(20, 10, 13) \u2192 true"
+  ],
+  "provided_code": "public boolean hasTeen(int a, int b, int c) {\n  }"
+}

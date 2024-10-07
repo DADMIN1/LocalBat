@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p139677",
+  "section": "AP-1",
+  "problem": "matchUp",
+  "title": "matchUp",
+  "prompt": "Given 2 arrays that are the same length containing strings, compare the 1st string in one array to the 1st string in the other array, the 2nd to the 2nd and so on. Count the number of times that the 2 strings are non-empty and start with the same char. The strings may be any length, including 0.",
+  "testcases": [
+    "matchUp([\"aa\", \"bb\", \"cc\"], [\"aaa\", \"xx\", \"bb\"]) \u2192 1",
+    "matchUp([\"aa\", \"bb\", \"cc\"], [\"aaa\", \"b\", \"bb\"]) \u2192 2",
+    "matchUp([\"aa\", \"bb\", \"cc\"], [\"\", \"\", \"ccc\"]) \u2192 1"
+  ],
+  "provided_code": "public int matchUp(String[] a, String[] b) {\n  }"
+}

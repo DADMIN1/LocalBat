@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p123614",
+  "section": "String-2",
+  "problem": "countCode",
+  "title": "countCode",
+  "prompt": "Return the number of times that the string \"code\" appears anywhere in the given string, except we'll accept any letter for the 'd', so \"cope\" and \"cooe\" count.",
+  "testcases": [
+    "countCode(\"aaacodebbb\") \u2192 1",
+    "countCode(\"codexxcode\") \u2192 2",
+    "countCode(\"cozexxcope\") \u2192 2"
+  ],
+  "provided_code": "public int countCode(String str) {\n  }"
+}

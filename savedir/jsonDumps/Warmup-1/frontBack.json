@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p123384",
+  "section": "Warmup-1",
+  "problem": "frontBack",
+  "title": "frontBack",
+  "prompt": "Given a string, return a new string where the first and last chars have been exchanged.",
+  "testcases": [
+    "frontBack(\"code\") \u2192 \"eodc\"",
+    "frontBack(\"a\") \u2192 \"a\"",
+    "frontBack(\"ab\") \u2192 \"ba\""
+  ],
+  "provided_code": "public String frontBack(String str) {\n  }"
+}

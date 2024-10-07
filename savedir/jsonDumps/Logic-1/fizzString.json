@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p137136",
+  "section": "Logic-1",
+  "problem": "fizzString",
+  "title": "fizzString",
+  "prompt": "Given a string str, if the string starts with \"f\" return \"Fizz\". If the string ends with \"b\" return \"Buzz\". If both the \"f\" and \"b\" conditions are true, return \"FizzBuzz\". In all other cases, return the string unchanged. (See also: FizzBuzz Code)",
+  "testcases": [
+    "fizzString(\"fig\") \u2192 \"Fizz\"",
+    "fizzString(\"dib\") \u2192 \"Buzz\"",
+    "fizzString(\"fib\") \u2192 \"FizzBuzz\""
+  ],
+  "provided_code": "public String fizzString(String str) {\n  }"
+}

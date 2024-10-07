@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p191878",
+  "section": "Array-2",
+  "problem": "either24",
+  "title": "either24",
+  "prompt": "Given an array of ints, return true if the array contains a 2 next to a 2 or a 4 next to a 4, but not both.",
+  "testcases": [
+    "either24([1, 2, 2]) \u2192 true",
+    "either24([4, 4, 1]) \u2192 true",
+    "either24([4, 4, 1, 2, 2]) \u2192 false"
+  ],
+  "provided_code": "public boolean either24(int[] nums) {\n  }"
+}

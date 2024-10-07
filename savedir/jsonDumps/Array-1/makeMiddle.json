@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p199519",
+  "section": "Array-1",
+  "problem": "makeMiddle",
+  "title": "makeMiddle",
+  "prompt": "Given an array of ints of even length, return a new array length 2 containing the middle two elements from the original array. The original array will be length 2 or more.",
+  "testcases": [
+    "makeMiddle([1, 2, 3, 4]) \u2192 [2, 3]",
+    "makeMiddle([7, 1, 2, 3, 4, 9]) \u2192 [2, 3]",
+    "makeMiddle([1, 2]) \u2192 [1, 2]"
+  ],
+  "provided_code": "public int[] makeMiddle(int[] nums) {\n  }"
+}

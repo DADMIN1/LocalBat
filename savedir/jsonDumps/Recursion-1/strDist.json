@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p195413",
+  "section": "Recursion-1",
+  "problem": "strDist",
+  "title": "strDist",
+  "prompt": "Given a string and a non-empty substring sub, compute recursively the largest substring which starts and ends with sub and return its length.",
+  "testcases": [
+    "strDist(\"catcowcat\", \"cat\") \u2192 9",
+    "strDist(\"catcowcat\", \"cow\") \u2192 3",
+    "strDist(\"cccatcowcatxx\", \"cat\") \u2192 9"
+  ],
+  "provided_code": "public int strDist(String str, String sub) {\n  }"
+}

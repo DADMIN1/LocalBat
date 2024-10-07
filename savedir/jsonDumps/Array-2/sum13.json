@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p127384",
+  "section": "Array-2",
+  "problem": "sum13",
+  "title": "sum13",
+  "prompt": "Return the sum of the numbers in the array, returning 0 for an empty array. Except the number 13 is very unlucky, so it does not count and numbers that come immediately after a 13 also do not count.",
+  "testcases": [
+    "sum13([1, 2, 2, 1]) \u2192 6",
+    "sum13([1, 1]) \u2192 2",
+    "sum13([1, 2, 2, 1, 13]) \u2192 6"
+  ],
+  "provided_code": "public int sum13(int[] nums) {\n  }"
+}

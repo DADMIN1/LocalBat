@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p146449",
+  "section": "Array-1",
+  "problem": "middleWay",
+  "title": "middleWay",
+  "prompt": "Given 2 int arrays, a and b, each length 3, return a new array length 2 containing their middle elements.",
+  "testcases": [
+    "middleWay([1, 2, 3], [4, 5, 6]) \u2192 [2, 5]",
+    "middleWay([7, 7, 7], [3, 8, 0]) \u2192 [7, 8]",
+    "middleWay([5, 2, 9], [1, 4, 5]) \u2192 [2, 4]"
+  ],
+  "provided_code": "public int[] middleWay(int[] a, int[] b) {\n  }"
+}

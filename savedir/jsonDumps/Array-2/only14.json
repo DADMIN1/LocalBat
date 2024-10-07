@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p186672",
+  "section": "Array-2",
+  "problem": "only14",
+  "title": "only14",
+  "prompt": "Given an array of ints, return true if every element is a 1 or a 4.",
+  "testcases": [
+    "only14([1, 4, 1, 4]) \u2192 true",
+    "only14([1, 4, 2, 4]) \u2192 false",
+    "only14([1, 1]) \u2192 true"
+  ],
+  "provided_code": "public boolean only14(int[] nums) {\n  }"
+}

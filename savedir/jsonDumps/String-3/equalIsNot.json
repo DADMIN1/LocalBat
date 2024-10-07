@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p141736",
+  "section": "String-3",
+  "problem": "equalIsNot",
+  "title": "equalIsNot",
+  "prompt": "Given a string, return true if the number of appearances of \"is\" anywhere in the string is equal to the number of appearances of \"not\" anywhere in the string (case sensitive).",
+  "testcases": [
+    "equalIsNot(\"This is not\") \u2192 false",
+    "equalIsNot(\"This is notnot\") \u2192 true",
+    "equalIsNot(\"noisxxnotyynotxisi\") \u2192 true"
+  ],
+  "provided_code": "public boolean equalIsNot(String str) {\n  }"
+}

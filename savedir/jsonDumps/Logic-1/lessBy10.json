@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p179196",
+  "section": "Logic-1",
+  "problem": "lessBy10",
+  "title": "lessBy10",
+  "prompt": "Given three ints, a b c, return true if one of them is 10 or more less than one of the others.",
+  "testcases": [
+    "lessBy10(1, 7, 11) \u2192 true",
+    "lessBy10(1, 7, 10) \u2192 false",
+    "lessBy10(11, 1, 7) \u2192 true"
+  ],
+  "provided_code": "public boolean lessBy10(int a, int b, int c) {\n  }"
+}

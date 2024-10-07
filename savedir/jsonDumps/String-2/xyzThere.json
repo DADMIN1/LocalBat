@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p136594",
+  "section": "String-2",
+  "problem": "xyzThere",
+  "title": "xyzThere",
+  "prompt": "Return true if the given string contains an appearance of \"xyz\" where the xyz is not directly preceeded by a period (.). So \"xxyz\" counts but \"x.xyz\" does not.",
+  "testcases": [
+    "xyzThere(\"abcxyz\") \u2192 true",
+    "xyzThere(\"abc.xyz\") \u2192 false",
+    "xyzThere(\"xyz.abc\") \u2192 true"
+  ],
+  "provided_code": "public boolean xyzThere(String str) {\n  }"
+}

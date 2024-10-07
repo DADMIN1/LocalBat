@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p183592",
+  "section": "Warmup-1",
+  "problem": "front22",
+  "title": "front22",
+  "prompt": "Given a string, take the first 2 chars and return the string with the 2 chars added at both the front and back, so \"kitten\" yields\"kikittenki\". If the string length is less than 2, use whatever chars are there.",
+  "testcases": [
+    "front22(\"kitten\") \u2192 \"kikittenki\"",
+    "front22(\"Ha\") \u2192 \"HaHaHa\"",
+    "front22(\"abc\") \u2192 \"ababcab\""
+  ],
+  "provided_code": "public String front22(String str) {\n  }"
+}

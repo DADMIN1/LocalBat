@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p130781",
+  "section": "String-1",
+  "problem": "right2",
+  "title": "right2",
+  "prompt": "Given a string, return a \"rotated right 2\" version where the last 2 chars are moved to the start. The string length will be at least 2.",
+  "testcases": [
+    "right2(\"Hello\") \u2192 \"loHel\"",
+    "right2(\"java\") \u2192 \"vaja\"",
+    "right2(\"Hi\") \u2192 \"Hi\""
+  ],
+  "provided_code": "public String right2(String str) {\n  }"
+}

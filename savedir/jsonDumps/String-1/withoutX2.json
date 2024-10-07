@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p151359",
+  "section": "String-1",
+  "problem": "withoutX2",
+  "title": "withoutX2",
+  "prompt": "Given a string, if one or both of the first 2 chars is 'x', return the string without those 'x' chars, and otherwise return the string unchanged. This is a little harder than it looks.",
+  "testcases": [
+    "withoutX2(\"xHi\") \u2192 \"Hi\"",
+    "withoutX2(\"Hxi\") \u2192 \"Hi\"",
+    "withoutX2(\"Hi\") \u2192 \"Hi\""
+  ],
+  "provided_code": "public String withoutX2(String str) {\n  }"
+}

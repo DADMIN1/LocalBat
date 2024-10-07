@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p131516",
+  "section": "String-3",
+  "problem": "sameEnds",
+  "title": "sameEnds",
+  "prompt": "Given a string, return the longest substring that appears at both the beginning and end of the string without overlapping. For example, sameEnds(\"abXab\") is \"ab\".",
+  "testcases": [
+    "sameEnds(\"abXYab\") \u2192 \"ab\"",
+    "sameEnds(\"xx\") \u2192 \"x\"",
+    "sameEnds(\"xxx\") \u2192 \"x\""
+  ],
+  "provided_code": "public String sameEnds(String string) {\n  }"
+}

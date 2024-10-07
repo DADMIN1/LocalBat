@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p155713",
+  "section": "Array-1",
+  "problem": "midThree",
+  "title": "midThree",
+  "prompt": "Given an array of ints of odd length, return a new array length 3 containing the elements from the middle of the array. The array length will be at least 3.",
+  "testcases": [
+    "midThree([1, 2, 3, 4, 5]) \u2192 [2, 3, 4]",
+    "midThree([8, 6, 7, 5, 3, 0, 9]) \u2192 [7, 5, 3]",
+    "midThree([1, 2, 3]) \u2192 [1, 2, 3]"
+  ],
+  "provided_code": "public int[] midThree(int[] nums) {\n  }"
+}

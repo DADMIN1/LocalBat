@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p118976",
+  "section": "Array-1",
+  "problem": "sameFirstLast",
+  "title": "sameFirstLast",
+  "prompt": "Given an array of ints, return true if the array is length 1 or more, and the first element and the last element are equal.",
+  "testcases": [
+    "sameFirstLast([1, 2, 3]) \u2192 false",
+    "sameFirstLast([1, 2, 3, 1]) \u2192 true",
+    "sameFirstLast([1, 2, 1]) \u2192 true"
+  ],
+  "provided_code": "public boolean sameFirstLast(int[] nums) {\n  }"
+}

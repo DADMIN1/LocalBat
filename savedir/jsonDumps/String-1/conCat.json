@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p132118",
+  "section": "String-1",
+  "problem": "conCat",
+  "title": "conCat",
+  "prompt": "Given two strings, append them together (known as \"concatenation\") and return the result. However, if the concatenation creates a double-char, then omit one of the chars, so \"abc\" and \"cat\" yields \"abcat\".",
+  "testcases": [
+    "conCat(\"abc\", \"cat\") \u2192 \"abcat\"",
+    "conCat(\"dog\", \"cat\") \u2192 \"dogcat\"",
+    "conCat(\"abc\", \"\") \u2192 \"abc\""
+  ],
+  "provided_code": "public String conCat(String a, String b) {\n  }"
+}

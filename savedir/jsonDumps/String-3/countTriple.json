@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p195714",
+  "section": "String-3",
+  "problem": "countTriple",
+  "title": "countTriple",
+  "prompt": "We'll say that a \"triple\" in a string is a char appearing three times in a row. Return the number of triples in the given string. The triples may overlap.",
+  "testcases": [
+    "countTriple(\"abcXXXabc\") \u2192 1",
+    "countTriple(\"xxxabyyyycd\") \u2192 3",
+    "countTriple(\"a\") \u2192 0"
+  ],
+  "provided_code": "public int countTriple(String str) {\n  }"
+}

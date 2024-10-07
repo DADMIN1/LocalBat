@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p191991",
+  "section": "Array-1",
+  "problem": "commonEnd",
+  "title": "commonEnd",
+  "prompt": "Given 2 arrays of ints, a and b, return true if they have the same first element or they have the same last element. Both arrays will be length 1 or more.",
+  "testcases": [
+    "commonEnd([1, 2, 3], [7, 3]) \u2192 true",
+    "commonEnd([1, 2, 3], [7, 3, 2]) \u2192 false",
+    "commonEnd([1, 2, 3], [1, 3]) \u2192 true"
+  ],
+  "provided_code": "public boolean commonEnd(int[] a, int[] b) {\n  }"
+}

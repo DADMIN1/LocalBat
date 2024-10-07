@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p194781",
+  "section": "Recursion-1",
+  "problem": "triangle",
+  "title": "triangle",
+  "prompt": "We have triangle made of blocks. The topmost row has 1 block, the next row down has 2 blocks, the next row has 3 blocks, and so on. Compute recursively (no loops or multiplication) the total number of blocks in such a triangle with the given number of rows.",
+  "testcases": [
+    "triangle(0) \u2192 0",
+    "triangle(1) \u2192 1",
+    "triangle(2) \u2192 3"
+  ],
+  "provided_code": "public int triangle(int rows) {\n  }"
+}

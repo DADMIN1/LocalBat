@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p147538",
+  "section": "String-2",
+  "problem": "wordEnds",
+  "title": "wordEnds",
+  "prompt": "Given a string and a non-empty word string, return a string made of each char just before and just after every appearance of the word in the string. Ignore cases where there is no char before or after the word, and a char may be included twice if it is between two words.",
+  "testcases": [
+    "wordEnds(\"abcXY123XYijk\", \"XY\") \u2192 \"c13i\"",
+    "wordEnds(\"XY123XY\", \"XY\") \u2192 \"13\"",
+    "wordEnds(\"XY1XY\", \"XY\") \u2192 \"11\""
+  ],
+  "provided_code": "public String wordEnds(String str, String word) {\n  }"
+}

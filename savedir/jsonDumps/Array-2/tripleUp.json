@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p137874",
+  "section": "Array-2",
+  "problem": "tripleUp",
+  "title": "tripleUp",
+  "prompt": "Return true if the array contains, somewhere, three increasing adjacent numbers like .... 4, 5, 6, ... or 23, 24, 25.",
+  "testcases": [
+    "tripleUp([1, 4, 5, 6, 2]) \u2192 true",
+    "tripleUp([1, 2, 3]) \u2192 true",
+    "tripleUp([1, 2, 4]) \u2192 false"
+  ],
+  "provided_code": "public boolean tripleUp(int[] nums) {\n  }"
+}
