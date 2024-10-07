@@ -15,7 +15,7 @@ def StartupSelenium() -> webdriver:
 
 # returns dict { section-name: link }
 def SpiderMainPage(driver: webdriver) -> dict:
-    url = "https://codingbat.com/java"
+    url = "https://codingbat.com/java"  # TODO: add python 
     driver.get(url)
     table = driver.find_element(By.XPATH, "/html/body/div[@class='tabc']/div[@class='tabin']/div[1]/table")
     hrefs = table.find_elements(By.XPATH, "./tbody/tr/td/div[@class='summ']/a[@href]")
@@ -39,7 +39,16 @@ def BuildSitemap(driver: webdriver) -> dict:
     return sitemap
 
 
-def ScrapeProblemPage(driver: webdriver, url: str) -> dict:
+# TODO: implement this.
+def GetExtendedTestcases():
+    # it's not as straightforward as just clicking the button; 
+    # the submitted code needs to compile (including correct return-type).
+    # Click the 'solution' button, then copy and submit the code from that. 
+    # but not all problems have a solution provided?
+    return []
+
+
+def ScrapeProblemPage(driver: webdriver, url: str, getAllTestcases=True) -> dict:
     driver.get(url)
     content = driver.find_element(By.XPATH, "/html/body/div[@class='tabc']/div[@class='tabin']/div[@class='indent']")
     title = content.find_element(By.XPATH, "./span")
@@ -49,17 +58,21 @@ def ScrapeProblemPage(driver: webdriver, url: str) -> dict:
     prompt = stuff.find_element(By.XPATH, "./div[@class='minh']/p")
     # 3 simple testcases are provided in the format: (x, y) -> expected_result (with UTF-8 arrow symbol)
     simple_testcases = [line for line in stuff.text.splitlines() if "→" in line]
+    extended_testcases = []
     provided_code = stuff.find_element(By.XPATH, "./form[@name='codeform']/div[@id='ace_div']/div[@class='ace_scroller']/div[@class='ace_content']/div[3]")
+    
+    # if getAllTestcases:
+    #     extended_testcases = GetExtendedTestcases()
     
     data = {
         "title": title.text,
         "prompt": prompt.text,
+        #"testcases": [*simple_testcases, *extended_testcases],
         "testcases": simple_testcases,
         "provided_code": provided_code.text,
     }
     
     return data
-
 
 
 def Scrape() -> list[dict]:
@@ -81,13 +94,14 @@ def Scrape() -> list[dict]:
         for (section, problem_map) in sitemap.items():
             for (problem, link) in problem_map.items():
                 scraped_data = ScrapeProblemPage(driver, link)
-                SaveFile(scraped_data, section, problem)
-                scraped_results.append({
+                data = {
                     "url": link,
                     "section": section,
                     "problem": problem,
                     **scraped_data,
-                })
+                }
+                SaveFile(data, section, problem)
+                scraped_results.append(data)
     except Exception as E:
         print(f"exception: {E}")
         driver.quit()
@@ -97,12 +111,9 @@ def Scrape() -> list[dict]:
     return scraped_results
 
 
-
-
-
 if __name__ == "__main__":
     results = Scrape()
-    #for result in results:
-        #SaveFile(result, result["section"], result["problem"])
-        #WriteJavaFile(result["section"], result)
-    
+    print("\n finished scrape \n")
+    for result in results:
+        WriteJavaFile(result["section"], result)
+    print("\n finished writing all files \n")

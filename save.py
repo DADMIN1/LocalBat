@@ -63,7 +63,7 @@ def IsolateArrayParameters(functionCall: str):
 
 
 # nested dictionary+list comprehensions are impossible. (skill issue)
-def PythonBad(testcases: list[str], array_varnames, array_declarations: list[str]):
+def PythonBad(testcases: list[str], containsArray:bool, array_varnames, array_declarations: list[str]):
     split_cases = []
     for (testCaseNum, testcase) in enumerate(testcases):
         # for some reason '→' does not compare true here, you need to use escape code
@@ -74,9 +74,11 @@ def PythonBad(testcases: list[str], array_varnames, array_declarations: list[str
             "arrays": [ x+str(testCaseNum)+" = "+y+"; " for (x, y) in zip(array_declarations, arrays) ],
             # need to append an index to prevent identical arrays from clobbering each other
             "array_remap": { a+f"#{I}":b+str(testCaseNum) for (I, (a, b)) in enumerate(zip(arrays, array_varnames))},
-            "functionCall": functionCall.strip().replace('[', '{ ').replace(']', ' }'), # need to rewrite arrays from '[...]' to '{...}'
+            "functionCall": functionCall.strip(),
             "expected": expected.strip(),
         })
+        if containsArray: # need to rewrite arrays from '[...]' to '{...}'
+            split_cases[-1]['functionCall'] = split_cases[-1]['functionCall'].replace('[', '{ ').replace(']', ' }')
         if (len(split_cases[-1]['arrays']) > 0): split_cases[-1]['arrays'][-1] += '\n' # putting newline at end of arrays
         
         # need to split exactly once to prevent second var from overwriting first in case they are identical arrays!!!
@@ -90,18 +92,22 @@ def PythonBad(testcases: list[str], array_varnames, array_declarations: list[str
 def ParseTestcases(testcases: list[str], functionDef: dict) -> dict:
     array_declarations = []
     array_varnames = []
+    containsArray = False
     for arg in functionDef["args"]:  # "type": , "identifier"
         isArray = arg["type"].endswith('[]')
-        array_varnames.append(arg["identifier"])
-        if isArray: array_declarations.append(arg["type"] + " " + arg["identifier"])
+        if isArray:
+            containsArray = True
+            array_varnames.append(arg["identifier"])
+            array_declarations.append(arg["type"] + " " + arg["identifier"])
         # if isArray: arg["identifier"] += str(testCaseNum)
     
-    split_cases = PythonBad(testcases, array_varnames, array_declarations)
+    split_cases = PythonBad(testcases, containsArray, array_varnames, array_declarations)
     expectedResults = f"{functionDef['returnType']}[] expectedResults = "+"{ "
     
     for case in split_cases:
-        # need to rewrite arrays from '[...]' to '{...}'
-        expectedResults += case["expected"].replace('[', '{').replace(']', '}') + ", "
+        if containsArray: # need to rewrite arrays from '[...]' to '{...}'
+            case["expected"] = case["expected"].replace('[', '{').replace(']', '}') 
+        expectedResults += case["expected"] + ", "
     expectedResults += "};\n"
     
     return { 
@@ -260,19 +266,19 @@ def ConvertSection(section_name: str):
             print(f"exception: {E}")
             failures.append(filename)
     if len(failures) > 0:
-        print(f"Failed to convert: {failures}")
+        for failure in failures: print(f"Failed to convert: {failure}")
     else: print(f"Converted all files in {section_dir}")
     return
 
 
 def ConvertAll(only_missing=True):
     jsondumps, java_subs = sub_savedirs
-    section_dirs = [dir.name for dir in jsondumps.glob("./*/")]
+    section_dirs = [subdir.name for subdir in jsondumps.glob("./*/")]
     alreadyExist = []
     if only_missing: alreadyExist = [d.name for d in java_subs.glob("./*/")]
-    for dir in section_dirs:
-        if (dir in alreadyExist): print(f"skipping {dir}; already exists."); continue
-        ConvertSection(dir)
+    for subdir in section_dirs:
+        if (subdir in alreadyExist): print(f"skipping {subdir}; already exists."); continue
+        ConvertSection(subdir)
     return
 
 
@@ -280,7 +286,10 @@ def ConvertAll(only_missing=True):
 
 
 if __name__ == "__main__":
-    # testdata = LoadFile("Array-1", "biggerTwo")
+    ConvertAll()
+    # ConvertSection("String-1")
+    
+    # testdata = LoadFile("String-1", "makeOutWord")
     # WriteJavaFile("testpackage", testdata)
     
     # problems = ["commonTwo", "scoreUp"]
@@ -290,7 +299,3 @@ if __name__ == "__main__":
     
     # functionDefinition = ParseFunctionDefinition(testdata['provided_code'])
     # testCases = ParseTestcases(testdata["testcases"], functionDefinition)
-    
-    # ConvertSection("AP-1")
-    ConvertAll(False)
-    
