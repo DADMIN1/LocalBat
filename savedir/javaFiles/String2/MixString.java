@@ -5,8 +5,9 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p125185
 
-/* Given two strings, a and b, create a bigger string made of the first char of a, the first char of b, the second char of a, the second char of b, and so on.
-Any leftover chars go at the end of the result. */
+/* Given two strings, a and b, create a bigger string made of the first char of a, 
+the first char of b, the second char of a, the second char of b, 
+and so on. Any leftover chars go at the end of the result. */
 
 class TestCases_MixString
 {
@@ -17,9 +18,9 @@ class TestCases_MixString
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "mixString(\"abc\", \"xyz\") → \"axbycz\"");
-        testcaseMap.put(1, "mixString(\"Hi\", \"There\") → \"HTihere\"");
-        testcaseMap.put(2, "mixString(\"xxxx\", \"There\") → \"xTxhxexre\"");
+        testcaseMap.put(0, "mixString(\"abc\", \"xyz\")");
+        testcaseMap.put(1, "mixString(\"Hi\", \"There\")");
+        testcaseMap.put(2, "mixString(\"xxxx\", \"There\")");
     }
 
     static String[] expectedResults = { "axbycz", "HTihere", "xTxhxexre", };
@@ -50,10 +51,10 @@ public class MixString
             if (resultsArray[i] != TestCases_MixString.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_MixString.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_MixString.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

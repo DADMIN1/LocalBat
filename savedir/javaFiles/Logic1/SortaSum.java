@@ -5,8 +5,8 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p183071
 
-/* Given 2 ints, a and b, return their sum.
-However, sums in the range 10..19 inclusive, are forbidden, so in that case just return 20. */
+/* Given 2 ints, a and b, return their sum. However, sums in the range 10..19 inclusive, 
+are forbidden, so in that case just return 20. */
 
 class TestCases_SortaSum
 {
@@ -17,9 +17,9 @@ class TestCases_SortaSum
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "sortaSum(3, 4) → 7");
-        testcaseMap.put(1, "sortaSum(9, 4) → 20");
-        testcaseMap.put(2, "sortaSum(10, 11) → 21");
+        testcaseMap.put(0, "sortaSum(3, 4)");
+        testcaseMap.put(1, "sortaSum(9, 4)");
+        testcaseMap.put(2, "sortaSum(10, 11)");
     }
 
     static int[] expectedResults = { 7, 20, 21, };
@@ -50,10 +50,10 @@ public class SortaSum
             if (resultsArray[i] != TestCases_SortaSum.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_SortaSum.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_SortaSum.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

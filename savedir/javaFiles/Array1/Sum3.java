@@ -16,9 +16,9 @@ class TestCases_Sum3
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "sum3([1, 2, 3]) → 6");
-        testcaseMap.put(1, "sum3([5, 11, 2]) → 18");
-        testcaseMap.put(2, "sum3([7, 0, 0]) → 7");
+        testcaseMap.put(0, "sum3([1, 2, 3])");
+        testcaseMap.put(1, "sum3([5, 11, 2])");
+        testcaseMap.put(2, "sum3([7, 0, 0])");
     }
 
     static int[] expectedResults = { 6, 18, 7, };
@@ -52,10 +52,10 @@ public class Sum3
             if (resultsArray[i] != TestCases_Sum3.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_Sum3.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_Sum3.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

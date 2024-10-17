@@ -5,7 +5,8 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p158767
 
-/* Given a non-empty array, return true if there is a place to split the array so that the sum of the numbers on one side is equal to the sum of the numbers on the other side. */
+/* Given a non-empty array, 
+return true if there is a place to split the array so that the sum of the numbers on one side is equal to the sum of the numbers on the other side. */
 
 class TestCases_CanBalance
 {
@@ -16,9 +17,9 @@ class TestCases_CanBalance
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "canBalance([1, 1, 1, 2, 1]) → true");
-        testcaseMap.put(1, "canBalance([2, 1, 1, 2, 1]) → false");
-        testcaseMap.put(2, "canBalance([10, 10]) → true");
+        testcaseMap.put(0, "canBalance([1, 1, 1, 2, 1])");
+        testcaseMap.put(1, "canBalance([2, 1, 1, 2, 1])");
+        testcaseMap.put(2, "canBalance([10, 10])");
     }
 
     static boolean[] expectedResults = { true, false, true, };
@@ -52,10 +53,10 @@ public class CanBalance
             if (resultsArray[i] != TestCases_CanBalance.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_CanBalance.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_CanBalance.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

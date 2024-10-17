@@ -5,7 +5,8 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p179487
 
-/* Given an array of scores, return true if there are scores of 100 next to each other in the array.
+/* Given an array of scores, 
+return true if there are scores of 100 next to each other in the array. 
 The array length will be at least 2. */
 
 class TestCases_Scores100
@@ -17,9 +18,9 @@ class TestCases_Scores100
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "scores100([1, 100, 100]) → true");
-        testcaseMap.put(1, "scores100([1, 100, 99, 100]) → false");
-        testcaseMap.put(2, "scores100([100, 1, 100, 100]) → true");
+        testcaseMap.put(0, "scores100([1, 100, 100])");
+        testcaseMap.put(1, "scores100([1, 100, 99, 100])");
+        testcaseMap.put(2, "scores100([100, 1, 100, 100])");
     }
 
     static boolean[] expectedResults = { true, false, true, };
@@ -53,10 +54,10 @@ public class Scores100
             if (resultsArray[i] != TestCases_Scores100.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_Scores100.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_Scores100.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

@@ -16,9 +16,9 @@ class TestCases_NoX
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "noX(\"xaxb\") → \"ab\"");
-        testcaseMap.put(1, "noX(\"abc\") → \"abc\"");
-        testcaseMap.put(2, "noX(\"xx\") → \"\"");
+        testcaseMap.put(0, "noX(\"xaxb\")");
+        testcaseMap.put(1, "noX(\"abc\")");
+        testcaseMap.put(2, "noX(\"xx\")");
     }
 
     static String[] expectedResults = { "ab", "abc", "", };
@@ -49,10 +49,10 @@ public class NoX
             if (resultsArray[i] != TestCases_NoX.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_NoX.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_NoX.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

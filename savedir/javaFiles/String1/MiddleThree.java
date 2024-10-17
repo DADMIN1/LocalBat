@@ -5,8 +5,8 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p115863
 
-/* Given a string of odd length, return the string length 3 from its middle, so "Candy" yields "and".
-The string length will be at least 3. */
+/* Given a string of odd length, return the string length 3 from its middle, 
+so "Candy" yields "and". The string length will be at least 3. */
 
 class TestCases_MiddleThree
 {
@@ -17,9 +17,9 @@ class TestCases_MiddleThree
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "middleThree(\"Candy\") → \"and\"");
-        testcaseMap.put(1, "middleThree(\"and\") → \"and\"");
-        testcaseMap.put(2, "middleThree(\"solving\") → \"lvi\"");
+        testcaseMap.put(0, "middleThree(\"Candy\")");
+        testcaseMap.put(1, "middleThree(\"and\")");
+        testcaseMap.put(2, "middleThree(\"solving\")");
     }
 
     static String[] expectedResults = { "and", "and", "lvi", };
@@ -50,10 +50,10 @@ public class MiddleThree
             if (resultsArray[i] != TestCases_MiddleThree.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_MiddleThree.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_MiddleThree.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

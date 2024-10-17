@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p191212
 
-/* Given a positive int n, return true if it contains a 1 digit.
+/* Given a positive int n, return true if it contains a 1 digit. 
 Note: use % to get the rightmost digit, and / to discard the rightmost digit. */
 
 class TestCases_HasOne
@@ -17,9 +17,9 @@ class TestCases_HasOne
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "hasOne(10) → true");
-        testcaseMap.put(1, "hasOne(22) → false");
-        testcaseMap.put(2, "hasOne(220) → false");
+        testcaseMap.put(0, "hasOne(10)");
+        testcaseMap.put(1, "hasOne(22)");
+        testcaseMap.put(2, "hasOne(220)");
     }
 
     static boolean[] expectedResults = { true, false, false, };
@@ -50,10 +50,10 @@ public class HasOne
             if (resultsArray[i] != TestCases_HasOne.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_HasOne.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_HasOne.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

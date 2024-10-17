@@ -5,7 +5,8 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p111327
 
-/* Return the sum of the numbers in the array, except ignore sections of numbers starting with a 6 and extending to the next 7 (every 6 will be followed by at least one 7).
+/* Return the sum of the numbers in the array, 
+except ignore sections of numbers starting with a 6 and extending to the next 7 (every 6 will be followed by at least one 7). 
 Return 0 for no numbers. */
 
 class TestCases_Sum67
@@ -17,9 +18,9 @@ class TestCases_Sum67
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "sum67([1, 2, 2]) → 5");
-        testcaseMap.put(1, "sum67([1, 2, 2, 6, 99, 99, 7]) → 5");
-        testcaseMap.put(2, "sum67([1, 1, 6, 7, 2]) → 4");
+        testcaseMap.put(0, "sum67([1, 2, 2])");
+        testcaseMap.put(1, "sum67([1, 2, 2, 6, 99, 99, 7])");
+        testcaseMap.put(2, "sum67([1, 1, 6, 7, 2])");
     }
 
     static int[] expectedResults = { 5, 5, 4, };
@@ -53,10 +54,10 @@ public class Sum67
             if (resultsArray[i] != TestCases_Sum67.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_Sum67.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_Sum67.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

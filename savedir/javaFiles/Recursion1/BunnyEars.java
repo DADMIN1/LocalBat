@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p183649
 
-/* We have a number of bunnies and each bunny has two big floppy ears.
+/* We have a number of bunnies and each bunny has two big floppy ears. 
 We want to compute the total number of ears across all the bunnies recursively (without loops or multiplication). */
 
 class TestCases_BunnyEars
@@ -17,9 +17,9 @@ class TestCases_BunnyEars
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "bunnyEars(0) → 0");
-        testcaseMap.put(1, "bunnyEars(1) → 2");
-        testcaseMap.put(2, "bunnyEars(2) → 4");
+        testcaseMap.put(0, "bunnyEars(0)");
+        testcaseMap.put(1, "bunnyEars(1)");
+        testcaseMap.put(2, "bunnyEars(2)");
     }
 
     static int[] expectedResults = { 0, 2, 4, };
@@ -50,10 +50,10 @@ public class BunnyEars
             if (resultsArray[i] != TestCases_BunnyEars.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_BunnyEars.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_BunnyEars.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

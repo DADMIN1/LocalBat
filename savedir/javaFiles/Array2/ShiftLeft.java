@@ -5,8 +5,9 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p105031
 
-/* Return an array that is "left shifted" by one -- so {6, 2, 5, 3} returns {2, 5, 3, 6}.
-You may modify and return the given array, or return a new array. */
+/* Return an array that is "left shifted" by one -- so {6, 
+2, 5, 3} returns {2, 5, 3, 6}. You may modify and return the given array, 
+or return a new array. */
 
 class TestCases_ShiftLeft
 {
@@ -17,9 +18,9 @@ class TestCases_ShiftLeft
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "shiftLeft([6, 2, 5, 3]) → [2, 5, 3, 6]");
-        testcaseMap.put(1, "shiftLeft([1, 2]) → [2, 1]");
-        testcaseMap.put(2, "shiftLeft([1]) → [1]");
+        testcaseMap.put(0, "shiftLeft([6, 2, 5, 3])");
+        testcaseMap.put(1, "shiftLeft([1, 2])");
+        testcaseMap.put(2, "shiftLeft([1])");
     }
 
     static int[][] expectedResults = { {2, 5, 3, 6}, {2, 1}, {1}, };
@@ -58,13 +59,13 @@ public class ShiftLeft
         boolean allTestsPassed = true;
         for (int i = 0; i < resultsArray.length; ++i)
         {
-            if (resultsArray[i] != TestCases_ShiftLeft.expectedResults[i])
+            if (!resultsArray[i].equals(TestCases_ShiftLeft.expectedResults[i]))
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_ShiftLeft.testcaseMap.get(i));
+                System.out.println("    received: "+printArray(resultsArray[i]));
                 System.out.println("    expected: "+printArray(TestCases_ShiftLeft.expectedResults[i]));
-                System.out.println("      result: "+printArray(resultsArray[i]));
                 System.out.println("\n");
             }
         }

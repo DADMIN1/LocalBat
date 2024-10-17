@@ -5,9 +5,9 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p139075
 
-/* Given a string, return true if "bad" appears starting at index 0 or 1 in the string, such as with "badxxx" or "xbadxx" but not "xxbadxx".
-The string may be any length, including 0.
-Note: use .equals() to compare 2 strings. */
+/* Given a string, return true if "bad" appears starting at index 0 or 1 in the string, 
+such as with "badxxx" or "xbadxx" but not "xxbadxx". The string may be any length, 
+including 0. Note: use .equals() to compare 2 strings. */
 
 class TestCases_HasBad
 {
@@ -18,9 +18,9 @@ class TestCases_HasBad
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "hasBad(\"badxx\") → true");
-        testcaseMap.put(1, "hasBad(\"xbadxx\") → true");
-        testcaseMap.put(2, "hasBad(\"xxbadxx\") → false");
+        testcaseMap.put(0, "hasBad(\"badxx\")");
+        testcaseMap.put(1, "hasBad(\"xbadxx\")");
+        testcaseMap.put(2, "hasBad(\"xxbadxx\")");
     }
 
     static boolean[] expectedResults = { true, true, false, };
@@ -51,10 +51,10 @@ public class HasBad
             if (resultsArray[i] != TestCases_HasBad.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_HasBad.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_HasBad.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

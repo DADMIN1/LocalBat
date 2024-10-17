@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p174148
 
-/* Given a string and an int n, return a string made of the first and last n chars from the string.
+/* Given a string and an int n, return a string made of the first and last n chars from the string. 
 The string length will be at least n. */
 
 class TestCases_NTwice
@@ -17,9 +17,9 @@ class TestCases_NTwice
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "nTwice(\"Hello\", 2) → \"Helo\"");
-        testcaseMap.put(1, "nTwice(\"Chocolate\", 3) → \"Choate\"");
-        testcaseMap.put(2, "nTwice(\"Chocolate\", 1) → \"Ce\"");
+        testcaseMap.put(0, "nTwice(\"Hello\", 2)");
+        testcaseMap.put(1, "nTwice(\"Chocolate\", 3)");
+        testcaseMap.put(2, "nTwice(\"Chocolate\", 1)");
     }
 
     static String[] expectedResults = { "Helo", "Choate", "Ce", };
@@ -50,10 +50,10 @@ public class NTwice
             if (resultsArray[i] != TestCases_NTwice.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_NTwice.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_NTwice.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

@@ -16,9 +16,9 @@ class TestCases_IntMax
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "intMax(1, 2, 3) → 3");
-        testcaseMap.put(1, "intMax(1, 3, 2) → 3");
-        testcaseMap.put(2, "intMax(3, 2, 1) → 3");
+        testcaseMap.put(0, "intMax(1, 2, 3)");
+        testcaseMap.put(1, "intMax(1, 3, 2)");
+        testcaseMap.put(2, "intMax(3, 2, 1)");
     }
 
     static int[] expectedResults = { 3, 3, 3, };
@@ -49,10 +49,10 @@ public class IntMax
             if (resultsArray[i] != TestCases_IntMax.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_IntMax.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_IntMax.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

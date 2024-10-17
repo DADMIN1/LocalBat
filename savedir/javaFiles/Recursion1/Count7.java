@@ -5,9 +5,9 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p101409
 
-/* Given a non-negative int n, return the count of the occurrences of 7 as a digit, so for example 717 yields 2.
-(no loops).
-Note that mod (%) by 10 yields the rightmost digit (126 % 10 is 6), while divide (/) by 10 removes the rightmost digit (126 / 10 is 12). */
+/* Given a non-negative int n, return the count of the occurrences of 7 as a digit, 
+so for example 717 yields 2. (no loops). Note that mod (%) by 10 yields the rightmost digit (126 % 10 is 6), 
+while divide (/) by 10 removes the rightmost digit (126 / 10 is 12). */
 
 class TestCases_Count7
 {
@@ -18,9 +18,9 @@ class TestCases_Count7
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "count7(717) → 2");
-        testcaseMap.put(1, "count7(7) → 1");
-        testcaseMap.put(2, "count7(123) → 0");
+        testcaseMap.put(0, "count7(717)");
+        testcaseMap.put(1, "count7(7)");
+        testcaseMap.put(2, "count7(123)");
     }
 
     static int[] expectedResults = { 2, 1, 0, };
@@ -51,10 +51,10 @@ public class Count7
             if (resultsArray[i] != TestCases_Count7.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_Count7.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_Count7.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

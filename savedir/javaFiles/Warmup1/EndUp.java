@@ -5,8 +5,8 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p125268
 
-/* Given a string, return a new string where the last 3 chars are now in upper case.
-If the string has less than 3 chars, uppercase whatever is there.
+/* Given a string, return a new string where the last 3 chars are now in upper case. 
+If the string has less than 3 chars, uppercase whatever is there. 
 Note that str.toUpperCase() returns the uppercase version of a string. */
 
 class TestCases_EndUp
@@ -18,9 +18,9 @@ class TestCases_EndUp
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "endUp(\"Hello\") → \"HeLLO\"");
-        testcaseMap.put(1, "endUp(\"hi there\") → \"hi thERE\"");
-        testcaseMap.put(2, "endUp(\"hi\") → \"HI\"");
+        testcaseMap.put(0, "endUp(\"Hello\")");
+        testcaseMap.put(1, "endUp(\"hi there\")");
+        testcaseMap.put(2, "endUp(\"hi\")");
     }
 
     static String[] expectedResults = { "HeLLO", "hi thERE", "HI", };
@@ -51,10 +51,10 @@ public class EndUp
             if (resultsArray[i] != TestCases_EndUp.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_EndUp.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_EndUp.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

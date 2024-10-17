@@ -5,8 +5,9 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p190968
 
-/* Given an array of ints, return the sum of the first 2 elements in the array.
-If the array length is less than 2, just sum up the elements that exist, returning 0 if the array is length 0. */
+/* Given an array of ints, return the sum of the first 2 elements in the array. 
+If the array length is less than 2, just sum up the elements that exist, 
+returning 0 if the array is length 0. */
 
 class TestCases_Sum2
 {
@@ -17,9 +18,9 @@ class TestCases_Sum2
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "sum2([1, 2, 3]) → 3");
-        testcaseMap.put(1, "sum2([1, 1]) → 2");
-        testcaseMap.put(2, "sum2([1, 1, 1, 1]) → 2");
+        testcaseMap.put(0, "sum2([1, 2, 3])");
+        testcaseMap.put(1, "sum2([1, 1])");
+        testcaseMap.put(2, "sum2([1, 1, 1, 1])");
     }
 
     static int[] expectedResults = { 3, 2, 2, };
@@ -53,10 +54,10 @@ public class Sum2
             if (resultsArray[i] != TestCases_Sum2.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_Sum2.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_Sum2.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

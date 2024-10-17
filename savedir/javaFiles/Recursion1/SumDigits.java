@@ -5,8 +5,9 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p163932
 
-/* Given a non-negative int n, return the sum of its digits recursively (no loops).
-Note that mod (%) by 10 yields the rightmost digit (126 % 10 is 6), while divide (/) by 10 removes the rightmost digit (126 / 10 is 12). */
+/* Given a non-negative int n, return the sum of its digits recursively (no loops). 
+Note that mod (%) by 10 yields the rightmost digit (126 % 10 is 6), 
+while divide (/) by 10 removes the rightmost digit (126 / 10 is 12). */
 
 class TestCases_SumDigits
 {
@@ -17,9 +18,9 @@ class TestCases_SumDigits
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "sumDigits(126) → 9");
-        testcaseMap.put(1, "sumDigits(49) → 13");
-        testcaseMap.put(2, "sumDigits(12) → 3");
+        testcaseMap.put(0, "sumDigits(126)");
+        testcaseMap.put(1, "sumDigits(49)");
+        testcaseMap.put(2, "sumDigits(12)");
     }
 
     static int[] expectedResults = { 9, 13, 3, };
@@ -50,10 +51,10 @@ public class SumDigits
             if (resultsArray[i] != TestCases_SumDigits.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_SumDigits.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_SumDigits.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

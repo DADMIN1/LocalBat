@@ -16,9 +16,9 @@ class TestCases_More14
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "more14([1, 4, 1]) → true");
-        testcaseMap.put(1, "more14([1, 4, 1, 4]) → false");
-        testcaseMap.put(2, "more14([1, 1]) → true");
+        testcaseMap.put(0, "more14([1, 4, 1])");
+        testcaseMap.put(1, "more14([1, 4, 1, 4])");
+        testcaseMap.put(2, "more14([1, 1])");
     }
 
     static boolean[] expectedResults = { true, false, true, };
@@ -52,10 +52,10 @@ public class More14
             if (resultsArray[i] != TestCases_More14.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_More14.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_More14.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

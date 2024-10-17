@@ -5,9 +5,9 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p153748
 
-/* Given two ints, each in the range 10..99, return true if there is a digit that appears in both numbers, such as the 2 in 12 and 23.
-(Note: division, e.g.
-n/10, gives the left digit while the % "mod" n%10 gives the right digit.) */
+/* Given two ints, each in the range 10..99, return true if there is a digit that appears in both numbers, 
+such as the 2 in 12 and 23. (Note: division, e.g. n/10, 
+gives the left digit while the % "mod" n%10 gives the right digit.) */
 
 class TestCases_ShareDigit
 {
@@ -18,9 +18,9 @@ class TestCases_ShareDigit
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "shareDigit(12, 23) → true");
-        testcaseMap.put(1, "shareDigit(12, 43) → false");
-        testcaseMap.put(2, "shareDigit(12, 44) → false");
+        testcaseMap.put(0, "shareDigit(12, 23)");
+        testcaseMap.put(1, "shareDigit(12, 43)");
+        testcaseMap.put(2, "shareDigit(12, 44)");
     }
 
     static boolean[] expectedResults = { true, false, false, };
@@ -51,10 +51,10 @@ public class ShareDigit
             if (resultsArray[i] != TestCases_ShareDigit.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_ShareDigit.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_ShareDigit.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

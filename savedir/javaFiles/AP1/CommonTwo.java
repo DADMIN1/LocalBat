@@ -5,9 +5,11 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p100369
 
-/* Start with two arrays of strings, a and b, each in alphabetical order, possibly with duplicates.
-Return the count of the number of strings which appear in both arrays.
-The best "linear" solution makes a single pass over both arrays, taking advantage of the fact that they are in alphabetical order. */
+/* Start with two arrays of strings, a and b, each in alphabetical order, 
+possibly with duplicates. 
+Return the count of the number of strings which appear in both arrays. 
+The best "linear" solution makes a single pass over both arrays, 
+taking advantage of the fact that they are in alphabetical order. */
 
 class TestCases_CommonTwo
 {
@@ -18,9 +20,9 @@ class TestCases_CommonTwo
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "commonTwo([\"a\", \"c\", \"x\"], [\"b\", \"c\", \"d\", \"x\"]) → 2");
-        testcaseMap.put(1, "commonTwo([\"a\", \"c\", \"x\"], [\"a\", \"b\", \"c\", \"x\", \"z\"]) → 3");
-        testcaseMap.put(2, "commonTwo([\"a\", \"b\", \"c\"], [\"a\", \"b\", \"c\"]) → 3");
+        testcaseMap.put(0, "commonTwo([\"a\", \"c\", \"x\"], [\"b\", \"c\", \"d\", \"x\"])");
+        testcaseMap.put(1, "commonTwo([\"a\", \"c\", \"x\"], [\"a\", \"b\", \"c\", \"x\", \"z\"])");
+        testcaseMap.put(2, "commonTwo([\"a\", \"b\", \"c\"], [\"a\", \"b\", \"c\"])");
     }
 
     static int[] expectedResults = { 2, 3, 3, };
@@ -54,10 +56,10 @@ public class CommonTwo
             if (resultsArray[i] != TestCases_CommonTwo.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_CommonTwo.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_CommonTwo.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

@@ -5,7 +5,8 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p139564
 
-/* Return a version of the given string, where for every star (*) in the string the star and the chars immediately to its left and right are gone.
+/* Return a version of the given string, 
+where for every star (*) in the string the star and the chars immediately to its left and right are gone. 
 So "ab*cd" yields "ad" and "ab**cd" also yields "ad". */
 
 class TestCases_StarOut
@@ -17,9 +18,9 @@ class TestCases_StarOut
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "starOut(\"ab*cd\") → \"ad\"");
-        testcaseMap.put(1, "starOut(\"ab**cd\") → \"ad\"");
-        testcaseMap.put(2, "starOut(\"sm*eilly\") → \"silly\"");
+        testcaseMap.put(0, "starOut(\"ab*cd\")");
+        testcaseMap.put(1, "starOut(\"ab**cd\")");
+        testcaseMap.put(2, "starOut(\"sm*eilly\")");
     }
 
     static String[] expectedResults = { "ad", "ad", "silly", };
@@ -50,10 +51,10 @@ public class StarOut
             if (resultsArray[i] != TestCases_StarOut.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_StarOut.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_StarOut.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

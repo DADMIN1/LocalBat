@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p139076
 
-/* Given a string, return a string length 2 made of its first 2 chars.
+/* Given a string, return a string length 2 made of its first 2 chars. 
 If the string length is less than 2, use '@' for the missing chars. */
 
 class TestCases_AtFirst
@@ -17,9 +17,9 @@ class TestCases_AtFirst
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "atFirst(\"hello\") → \"he\"");
-        testcaseMap.put(1, "atFirst(\"hi\") → \"hi\"");
-        testcaseMap.put(2, "atFirst(\"h\") → \"h@\"");
+        testcaseMap.put(0, "atFirst(\"hello\")");
+        testcaseMap.put(1, "atFirst(\"hi\")");
+        testcaseMap.put(2, "atFirst(\"h\")");
     }
 
     static String[] expectedResults = { "he", "hi", "h@", };
@@ -50,10 +50,10 @@ public class AtFirst
             if (resultsArray[i] != TestCases_AtFirst.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_AtFirst.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_AtFirst.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

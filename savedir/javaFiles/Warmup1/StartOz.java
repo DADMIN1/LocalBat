@@ -5,7 +5,9 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p199720
 
-/* Given a string, return a string made of the first 2 chars (if present), however include first char only if it is 'o' and include the second only if it is 'z', so "ozymandias" yields "oz". */
+/* Given a string, return a string made of the first 2 chars (if present), 
+however include first char only if it is 'o' and include the second only if it is 'z', 
+so "ozymandias" yields "oz". */
 
 class TestCases_StartOz
 {
@@ -16,9 +18,9 @@ class TestCases_StartOz
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "startOz(\"ozymandias\") → \"oz\"");
-        testcaseMap.put(1, "startOz(\"bzoo\") → \"z\"");
-        testcaseMap.put(2, "startOz(\"oxx\") → \"o\"");
+        testcaseMap.put(0, "startOz(\"ozymandias\")");
+        testcaseMap.put(1, "startOz(\"bzoo\")");
+        testcaseMap.put(2, "startOz(\"oxx\")");
     }
 
     static String[] expectedResults = { "oz", "z", "o", };
@@ -49,10 +51,10 @@ public class StartOz
             if (resultsArray[i] != TestCases_StartOz.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_StartOz.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_StartOz.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

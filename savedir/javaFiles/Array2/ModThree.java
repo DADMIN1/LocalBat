@@ -5,7 +5,8 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p159979
 
-/* Given an array of ints, return true if the array contains either 3 even or 3 odd values all next to each other. */
+/* Given an array of ints, 
+return true if the array contains either 3 even or 3 odd values all next to each other. */
 
 class TestCases_ModThree
 {
@@ -16,9 +17,9 @@ class TestCases_ModThree
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "modThree([2, 1, 3, 5]) → true");
-        testcaseMap.put(1, "modThree([2, 1, 2, 5]) → false");
-        testcaseMap.put(2, "modThree([2, 4, 2, 5]) → true");
+        testcaseMap.put(0, "modThree([2, 1, 3, 5])");
+        testcaseMap.put(1, "modThree([2, 1, 2, 5])");
+        testcaseMap.put(2, "modThree([2, 4, 2, 5])");
     }
 
     static boolean[] expectedResults = { true, false, true, };
@@ -52,10 +53,10 @@ public class ModThree
             if (resultsArray[i] != TestCases_ModThree.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_ModThree.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_ModThree.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

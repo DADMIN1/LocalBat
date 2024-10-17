@@ -5,8 +5,8 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p194667
 
-/* Count the number of "xx" in the given string.
-We'll say that overlapping is allowed, so "xxx" contains 2 "xx". */
+/* Count the number of "xx" in the given string. We'll say that overlapping is allowed, 
+so "xxx" contains 2 "xx". */
 
 class TestCases_CountXX
 {
@@ -17,9 +17,9 @@ class TestCases_CountXX
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "countXX(\"abcxx\") → 1");
-        testcaseMap.put(1, "countXX(\"xxx\") → 2");
-        testcaseMap.put(2, "countXX(\"xxxx\") → 3");
+        testcaseMap.put(0, "countXX(\"abcxx\")");
+        testcaseMap.put(1, "countXX(\"xxx\")");
+        testcaseMap.put(2, "countXX(\"xxxx\")");
     }
 
     static int[] expectedResults = { 1, 2, 3, };
@@ -50,10 +50,10 @@ public class CountXX
             if (resultsArray[i] != TestCases_CountXX.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_CountXX.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_CountXX.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

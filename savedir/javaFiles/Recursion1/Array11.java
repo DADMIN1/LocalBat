@@ -5,9 +5,10 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p135988
 
-/* Given an array of ints, compute recursively the number of times that the value 11 appears in the array.
-We'll use the convention of considering only the part of the array that begins at the given index.
-In this way, a recursive call can pass index+1 to move down the array.
+/* Given an array of ints, 
+compute recursively the number of times that the value 11 appears in the array. 
+We'll use the convention of considering only the part of the array that begins at the given index. 
+In this way, a recursive call can pass index+1 to move down the array. 
 The initial call will pass in index as 0. */
 
 class TestCases_Array11
@@ -19,9 +20,9 @@ class TestCases_Array11
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "array11([1, 2, 11], 0) → 1");
-        testcaseMap.put(1, "array11([11, 11], 0) → 2");
-        testcaseMap.put(2, "array11([1, 2, 3, 4], 0) → 0");
+        testcaseMap.put(0, "array11([1, 2, 11], 0)");
+        testcaseMap.put(1, "array11([11, 11], 0)");
+        testcaseMap.put(2, "array11([1, 2, 3, 4], 0)");
     }
 
     static int[] expectedResults = { 1, 2, 0, };
@@ -55,10 +56,10 @@ public class Array11
             if (resultsArray[i] != TestCases_Array11.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_Array11.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_Array11.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

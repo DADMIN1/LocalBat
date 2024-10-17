@@ -5,8 +5,9 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p125339
 
-/* Given two non-negative int values, return true if they have the same last digit, such as with 27 and 57.
-Note that the % "mod" operator computes remainders, so 17 % 10 is 7. */
+/* Given two non-negative int values, return true if they have the same last digit, 
+such as with 27 and 57. Note that the % "mod" operator computes remainders, 
+so 17 % 10 is 7. */
 
 class TestCases_LastDigit
 {
@@ -17,9 +18,9 @@ class TestCases_LastDigit
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "lastDigit(7, 17) → true");
-        testcaseMap.put(1, "lastDigit(6, 17) → false");
-        testcaseMap.put(2, "lastDigit(3, 113) → true");
+        testcaseMap.put(0, "lastDigit(7, 17)");
+        testcaseMap.put(1, "lastDigit(6, 17)");
+        testcaseMap.put(2, "lastDigit(3, 113)");
     }
 
     static boolean[] expectedResults = { true, false, true, };
@@ -50,10 +51,10 @@ public class LastDigit
             if (resultsArray[i] != TestCases_LastDigit.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_LastDigit.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_LastDigit.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

@@ -5,7 +5,8 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p167011
 
-/* Return an int array length 3 containing the first 3 digits of pi, {3, 1, 4}. */
+/* Return an int array length 3 containing the first 3 digits of pi, 
+{3, 1, 4}. */
 
 class TestCases_MakePi
 {
@@ -14,7 +15,7 @@ class TestCases_MakePi
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "makePi() → [3, 1, 4]");
+        testcaseMap.put(0, "makePi()");
     }
 
     static int[][] expectedResults = { [3, 1, 4], };
@@ -48,13 +49,13 @@ public class MakePi
         boolean allTestsPassed = true;
         for (int i = 0; i < resultsArray.length; ++i)
         {
-            if (resultsArray[i] != TestCases_MakePi.expectedResults[i])
+            if (!resultsArray[i].equals(TestCases_MakePi.expectedResults[i]))
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_MakePi.testcaseMap.get(i));
+                System.out.println("    received: "+printArray(resultsArray[i]));
                 System.out.println("    expected: "+printArray(TestCases_MakePi.expectedResults[i]));
-                System.out.println("      result: "+printArray(resultsArray[i]));
                 System.out.println("\n");
             }
         }

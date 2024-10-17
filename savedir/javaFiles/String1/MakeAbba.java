@@ -5,8 +5,8 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p161056
 
-/* Given two strings, a and b, return the result of putting them together in the order abba, e.g.
-"Hi" and "Bye" returns "HiByeByeHi". */
+/* Given two strings, a and b, 
+return the result of putting them together in the order abba, e.g. "Hi" and "Bye" returns "HiByeByeHi". */
 
 class TestCases_MakeAbba
 {
@@ -17,9 +17,9 @@ class TestCases_MakeAbba
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "makeAbba(\"Hi\", \"Bye\") → \"HiByeByeHi\"");
-        testcaseMap.put(1, "makeAbba(\"Yo\", \"Alice\") → \"YoAliceAliceYo\"");
-        testcaseMap.put(2, "makeAbba(\"What\", \"Up\") → \"WhatUpUpWhat\"");
+        testcaseMap.put(0, "makeAbba(\"Hi\", \"Bye\")");
+        testcaseMap.put(1, "makeAbba(\"Yo\", \"Alice\")");
+        testcaseMap.put(2, "makeAbba(\"What\", \"Up\")");
     }
 
     static String[] expectedResults = { "HiByeByeHi", "YoAliceAliceYo", "WhatUpUpWhat", };
@@ -50,10 +50,10 @@ public class MakeAbba
             if (resultsArray[i] != TestCases_MakeAbba.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_MakeAbba.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_MakeAbba.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

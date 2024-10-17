@@ -5,9 +5,8 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p195714
 
-/* We'll say that a "triple" in a string is a char appearing three times in a row.
-Return the number of triples in the given string.
-The triples may overlap. */
+/* We'll say that a "triple" in a string is a char appearing three times in a row. 
+Return the number of triples in the given string. The triples may overlap. */
 
 class TestCases_CountTriple
 {
@@ -18,9 +17,9 @@ class TestCases_CountTriple
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "countTriple(\"abcXXXabc\") → 1");
-        testcaseMap.put(1, "countTriple(\"xxxabyyyycd\") → 3");
-        testcaseMap.put(2, "countTriple(\"a\") → 0");
+        testcaseMap.put(0, "countTriple(\"abcXXXabc\")");
+        testcaseMap.put(1, "countTriple(\"xxxabyyyycd\")");
+        testcaseMap.put(2, "countTriple(\"a\")");
     }
 
     static int[] expectedResults = { 1, 3, 0, };
@@ -51,10 +50,10 @@ public class CountTriple
             if (resultsArray[i] != TestCases_CountTriple.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_CountTriple.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_CountTriple.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

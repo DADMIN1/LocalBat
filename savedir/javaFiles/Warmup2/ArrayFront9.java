@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p186031
 
-/* Given an array of ints, return true if one of the first 4 elements in the array is a 9.
+/* Given an array of ints, return true if one of the first 4 elements in the array is a 9. 
 The array length may be less than 4. */
 
 class TestCases_ArrayFront9
@@ -17,9 +17,9 @@ class TestCases_ArrayFront9
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "arrayFront9([1, 2, 9, 3, 4]) → true");
-        testcaseMap.put(1, "arrayFront9([1, 2, 3, 4, 9]) → false");
-        testcaseMap.put(2, "arrayFront9([1, 2, 3, 4, 5]) → false");
+        testcaseMap.put(0, "arrayFront9([1, 2, 9, 3, 4])");
+        testcaseMap.put(1, "arrayFront9([1, 2, 3, 4, 9])");
+        testcaseMap.put(2, "arrayFront9([1, 2, 3, 4, 5])");
     }
 
     static boolean[] expectedResults = { true, false, false, };
@@ -53,10 +53,10 @@ public class ArrayFront9
             if (resultsArray[i] != TestCases_ArrayFront9.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_ArrayFront9.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_ArrayFront9.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

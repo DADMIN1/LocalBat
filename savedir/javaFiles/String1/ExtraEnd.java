@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p108853
 
-/* Given a string, return a new string made of 3 copies of the last 2 chars of the original string.
+/* Given a string, return a new string made of 3 copies of the last 2 chars of the original string. 
 The string length will be at least 2. */
 
 class TestCases_ExtraEnd
@@ -17,9 +17,9 @@ class TestCases_ExtraEnd
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "extraEnd(\"Hello\") → \"lololo\"");
-        testcaseMap.put(1, "extraEnd(\"ab\") → \"ababab\"");
-        testcaseMap.put(2, "extraEnd(\"Hi\") → \"HiHiHi\"");
+        testcaseMap.put(0, "extraEnd(\"Hello\")");
+        testcaseMap.put(1, "extraEnd(\"ab\")");
+        testcaseMap.put(2, "extraEnd(\"Hi\")");
     }
 
     static String[] expectedResults = { "lololo", "ababab", "HiHiHi", };
@@ -50,10 +50,10 @@ public class ExtraEnd
             if (resultsArray[i] != TestCases_ExtraEnd.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_ExtraEnd.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_ExtraEnd.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

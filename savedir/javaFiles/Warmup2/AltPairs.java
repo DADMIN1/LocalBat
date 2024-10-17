@@ -5,8 +5,8 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p121596
 
-/* Given a string, return a string made of the chars at indexes 0,1, 4,5, 8,9 ...
-so "kittens" yields "kien". */
+/* Given a string, return a string made of the chars at indexes 0,1, 
+4,5, 8,9 ... so "kittens" yields "kien". */
 
 class TestCases_AltPairs
 {
@@ -17,9 +17,9 @@ class TestCases_AltPairs
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "altPairs(\"kitten\") → \"kien\"");
-        testcaseMap.put(1, "altPairs(\"Chocolate\") → \"Chole\"");
-        testcaseMap.put(2, "altPairs(\"CodingHorror\") → \"Congrr\"");
+        testcaseMap.put(0, "altPairs(\"kitten\")");
+        testcaseMap.put(1, "altPairs(\"Chocolate\")");
+        testcaseMap.put(2, "altPairs(\"CodingHorror\")");
     }
 
     static String[] expectedResults = { "kien", "Chole", "Congrr", };
@@ -50,10 +50,10 @@ public class AltPairs
             if (resultsArray[i] != TestCases_AltPairs.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_AltPairs.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_AltPairs.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

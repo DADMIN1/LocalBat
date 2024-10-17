@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p187050
 
-/* Return a version of the given array where each zero value in the array is replaced by the largest odd value to the right of the zero in the array.
+/* Return a version of the given array where each zero value in the array is replaced by the largest odd value to the right of the zero in the array. 
 If there is no odd value to the right of the zero, leave the zero as a zero. */
 
 class TestCases_ZeroMax
@@ -17,9 +17,9 @@ class TestCases_ZeroMax
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "zeroMax([0, 5, 0, 3]) → [5, 5, 3, 3]");
-        testcaseMap.put(1, "zeroMax([0, 4, 0, 3]) → [3, 4, 3, 3]");
-        testcaseMap.put(2, "zeroMax([0, 1, 0]) → [1, 1, 0]");
+        testcaseMap.put(0, "zeroMax([0, 5, 0, 3])");
+        testcaseMap.put(1, "zeroMax([0, 4, 0, 3])");
+        testcaseMap.put(2, "zeroMax([0, 1, 0])");
     }
 
     static int[][] expectedResults = { {5, 5, 3, 3}, {3, 4, 3, 3}, {1, 1, 0}, };
@@ -58,13 +58,13 @@ public class ZeroMax
         boolean allTestsPassed = true;
         for (int i = 0; i < resultsArray.length; ++i)
         {
-            if (resultsArray[i] != TestCases_ZeroMax.expectedResults[i])
+            if (!resultsArray[i].equals(TestCases_ZeroMax.expectedResults[i]))
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_ZeroMax.testcaseMap.get(i));
+                System.out.println("    received: "+printArray(resultsArray[i]));
                 System.out.println("    expected: "+printArray(TestCases_ZeroMax.expectedResults[i]));
-                System.out.println("      result: "+printArray(resultsArray[i]));
                 System.out.println("\n");
             }
         }

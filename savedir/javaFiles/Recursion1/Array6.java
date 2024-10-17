@@ -5,9 +5,9 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p108997
 
-/* Given an array of ints, compute recursively if the array contains a 6.
-We'll use the convention of considering only the part of the array that begins at the given index.
-In this way, a recursive call can pass index+1 to move down the array.
+/* Given an array of ints, compute recursively if the array contains a 6. 
+We'll use the convention of considering only the part of the array that begins at the given index. 
+In this way, a recursive call can pass index+1 to move down the array. 
 The initial call will pass in index as 0. */
 
 class TestCases_Array6
@@ -19,9 +19,9 @@ class TestCases_Array6
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "array6([1, 6, 4], 0) → true");
-        testcaseMap.put(1, "array6([1, 4], 0) → false");
-        testcaseMap.put(2, "array6([6], 0) → true");
+        testcaseMap.put(0, "array6([1, 6, 4], 0)");
+        testcaseMap.put(1, "array6([1, 4], 0)");
+        testcaseMap.put(2, "array6([6], 0)");
     }
 
     static boolean[] expectedResults = { true, false, true, };
@@ -55,10 +55,10 @@ public class Array6
             if (resultsArray[i] != TestCases_Array6.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_Array6.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_Array6.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

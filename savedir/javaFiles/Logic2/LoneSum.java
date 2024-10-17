@@ -5,8 +5,8 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p148972
 
-/* Given 3 int values, a b c, return their sum.
-However, if one of the values is the same as another of the values, it does not count towards the sum. */
+/* Given 3 int values, a b c, return their sum. However, if one of the values is the same as another of the values, 
+it does not count towards the sum. */
 
 class TestCases_LoneSum
 {
@@ -17,9 +17,9 @@ class TestCases_LoneSum
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "loneSum(1, 2, 3) → 6");
-        testcaseMap.put(1, "loneSum(3, 2, 3) → 2");
-        testcaseMap.put(2, "loneSum(3, 3, 3) → 0");
+        testcaseMap.put(0, "loneSum(1, 2, 3)");
+        testcaseMap.put(1, "loneSum(3, 2, 3)");
+        testcaseMap.put(2, "loneSum(3, 3, 3)");
     }
 
     static int[] expectedResults = { 6, 2, 0, };
@@ -50,10 +50,10 @@ public class LoneSum
             if (resultsArray[i] != TestCases_LoneSum.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_LoneSum.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_LoneSum.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

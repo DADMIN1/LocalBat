@@ -5,10 +5,9 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p137136
 
-/* Given a string str, if the string starts with "f" return "Fizz".
-If the string ends with "b" return "Buzz".
-If both the "f" and "b" conditions are true, return "FizzBuzz".
-In all other cases, return the string unchanged.
+/* Given a string str, if the string starts with "f" return "Fizz". 
+If the string ends with "b" return "Buzz". If both the "f" and "b" conditions are true, 
+return "FizzBuzz". In all other cases, return the string unchanged. 
 (See also: FizzBuzz Code) */
 
 class TestCases_FizzString
@@ -20,9 +19,9 @@ class TestCases_FizzString
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "fizzString(\"fig\") → \"Fizz\"");
-        testcaseMap.put(1, "fizzString(\"dib\") → \"Buzz\"");
-        testcaseMap.put(2, "fizzString(\"fib\") → \"FizzBuzz\"");
+        testcaseMap.put(0, "fizzString(\"fig\")");
+        testcaseMap.put(1, "fizzString(\"dib\")");
+        testcaseMap.put(2, "fizzString(\"fib\")");
     }
 
     static String[] expectedResults = { "Fizz", "Buzz", "FizzBuzz", };
@@ -53,10 +52,10 @@ public class FizzString
             if (resultsArray[i] != TestCases_FizzString.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_FizzString.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_FizzString.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

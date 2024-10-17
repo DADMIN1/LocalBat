@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p118290
 
-/* Return true if the given non-negative number is 1 or 2 more than a multiple of 20.
+/* Return true if the given non-negative number is 1 or 2 more than a multiple of 20. 
 See also: Introduction to Mod */
 
 class TestCases_More20
@@ -17,9 +17,9 @@ class TestCases_More20
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "more20(20) → false");
-        testcaseMap.put(1, "more20(21) → true");
-        testcaseMap.put(2, "more20(22) → true");
+        testcaseMap.put(0, "more20(20)");
+        testcaseMap.put(1, "more20(21)");
+        testcaseMap.put(2, "more20(22)");
     }
 
     static boolean[] expectedResults = { false, true, true, };
@@ -50,10 +50,10 @@ public class More20
             if (resultsArray[i] != TestCases_More20.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_More20.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_More20.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

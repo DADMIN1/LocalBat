@@ -5,8 +5,10 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p121236
 
-/* Given an array of strings, return a new array without the strings that are equal to the target string.
-One approach is to count the occurrences of the target string, make a new array of the correct length, and then copy over the correct strings. */
+/* Given an array of strings, 
+return a new array without the strings that are equal to the target string. 
+One approach is to count the occurrences of the target string, 
+make a new array of the correct length, and then copy over the correct strings. */
 
 class TestCases_WordsWithout
 {
@@ -17,9 +19,9 @@ class TestCases_WordsWithout
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "wordsWithout([\"a\", \"b\", \"c\", \"a\"], \"a\") → [\"b\", \"c\"]");
-        testcaseMap.put(1, "wordsWithout([\"a\", \"b\", \"c\", \"a\"], \"b\") → [\"a\", \"c\", \"a\"]");
-        testcaseMap.put(2, "wordsWithout([\"a\", \"b\", \"c\", \"a\"], \"c\") → [\"a\", \"b\", \"a\"]");
+        testcaseMap.put(0, "wordsWithout([\"a\", \"b\", \"c\", \"a\"], \"a\")");
+        testcaseMap.put(1, "wordsWithout([\"a\", \"b\", \"c\", \"a\"], \"b\")");
+        testcaseMap.put(2, "wordsWithout([\"a\", \"b\", \"c\", \"a\"], \"c\")");
     }
 
     static String[][] expectedResults = { {"b", "c"}, {"a", "c", "a"}, {"a", "b", "a"}, };
@@ -58,13 +60,13 @@ public class WordsWithout
         boolean allTestsPassed = true;
         for (int i = 0; i < resultsArray.length; ++i)
         {
-            if (resultsArray[i] != TestCases_WordsWithout.expectedResults[i])
+            if (!resultsArray[i].equals(TestCases_WordsWithout.expectedResults[i]))
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_WordsWithout.testcaseMap.get(i));
+                System.out.println("    received: "+printArray(resultsArray[i]));
                 System.out.println("    expected: "+printArray(TestCases_WordsWithout.expectedResults[i]));
-                System.out.println("      result: "+printArray(resultsArray[i]));
                 System.out.println("\n");
             }
         }

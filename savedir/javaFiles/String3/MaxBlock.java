@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p179479
 
-/* Given a string, return the length of the largest "block" in the string.
+/* Given a string, return the length of the largest "block" in the string. 
 A block is a run of adjacent chars that are the same. */
 
 class TestCases_MaxBlock
@@ -17,9 +17,9 @@ class TestCases_MaxBlock
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "maxBlock(\"hoopla\") → 2");
-        testcaseMap.put(1, "maxBlock(\"abbCCCddBBBxx\") → 3");
-        testcaseMap.put(2, "maxBlock(\"\") → 0");
+        testcaseMap.put(0, "maxBlock(\"hoopla\")");
+        testcaseMap.put(1, "maxBlock(\"abbCCCddBBBxx\")");
+        testcaseMap.put(2, "maxBlock(\"\")");
     }
 
     static int[] expectedResults = { 2, 3, 0, };
@@ -50,10 +50,10 @@ public class MaxBlock
             if (resultsArray[i] != TestCases_MaxBlock.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_MaxBlock.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_MaxBlock.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

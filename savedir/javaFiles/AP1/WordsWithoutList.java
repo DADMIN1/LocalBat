@@ -5,8 +5,8 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p183407
 
-/* Given an array of strings, return a new List (e.g.
-an ArrayList) where all the strings of the given length are omitted.
+/* Given an array of strings, 
+return a new List (e.g. an ArrayList) where all the strings of the given length are omitted. 
 See wordsWithout() below which is more difficult because it uses arrays. */
 
 class TestCases_WordsWithoutList
@@ -18,9 +18,9 @@ class TestCases_WordsWithoutList
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "wordsWithoutList([\"a\", \"bb\", \"b\", \"ccc\"], 1) → [\"bb\", \"ccc\"]");
-        testcaseMap.put(1, "wordsWithoutList([\"a\", \"bb\", \"b\", \"ccc\"], 3) → [\"a\", \"bb\", \"b\"]");
-        testcaseMap.put(2, "wordsWithoutList([\"a\", \"bb\", \"b\", \"ccc\"], 4) → [\"a\", \"bb\", \"b\", \"ccc\"]");
+        testcaseMap.put(0, "wordsWithoutList([\"a\", \"bb\", \"b\", \"ccc\"], 1)");
+        testcaseMap.put(1, "wordsWithoutList([\"a\", \"bb\", \"b\", \"ccc\"], 3)");
+        testcaseMap.put(2, "wordsWithoutList([\"a\", \"bb\", \"b\", \"ccc\"], 4)");
     }
 
     static List[] expectedResults = { {"bb", "ccc"}, {"a", "bb", "b"}, {"a", "bb", "b", "ccc"}, };
@@ -54,10 +54,10 @@ public class WordsWithoutList
             if (resultsArray[i] != TestCases_WordsWithoutList.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_WordsWithoutList.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_WordsWithoutList.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

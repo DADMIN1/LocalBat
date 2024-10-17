@@ -16,9 +16,9 @@ class TestCases_Sum28
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "sum28([2, 3, 2, 2, 4, 2]) → true");
-        testcaseMap.put(1, "sum28([2, 3, 2, 2, 4, 2, 2]) → false");
-        testcaseMap.put(2, "sum28([1, 2, 3, 4]) → false");
+        testcaseMap.put(0, "sum28([2, 3, 2, 2, 4, 2])");
+        testcaseMap.put(1, "sum28([2, 3, 2, 2, 4, 2, 2])");
+        testcaseMap.put(2, "sum28([1, 2, 3, 4])");
     }
 
     static boolean[] expectedResults = { true, false, false, };
@@ -52,10 +52,10 @@ public class Sum28
             if (resultsArray[i] != TestCases_Sum28.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_Sum28.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_Sum28.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

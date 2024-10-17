@@ -5,8 +5,9 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p100905
 
-/* Given a string, if the string "del" appears starting at index 1, return a string where that "del" has been deleted.
-Otherwise, return the string unchanged. */
+/* Given a string, if the string "del" appears starting at index 1, 
+return a string where that "del" has been deleted. Otherwise, 
+return the string unchanged. */
 
 class TestCases_DelDel
 {
@@ -17,9 +18,9 @@ class TestCases_DelDel
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "delDel(\"adelbc\") → \"abc\"");
-        testcaseMap.put(1, "delDel(\"adelHello\") → \"aHello\"");
-        testcaseMap.put(2, "delDel(\"adedbc\") → \"adedbc\"");
+        testcaseMap.put(0, "delDel(\"adelbc\")");
+        testcaseMap.put(1, "delDel(\"adelHello\")");
+        testcaseMap.put(2, "delDel(\"adedbc\")");
     }
 
     static String[] expectedResults = { "abc", "aHello", "adedbc", };
@@ -50,10 +51,10 @@ public class DelDel
             if (resultsArray[i] != TestCases_DelDel.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_DelDel.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_DelDel.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

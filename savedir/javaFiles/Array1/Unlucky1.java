@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p197308
 
-/* We'll say that a 1 immediately followed by a 3 in an array is an "unlucky" 1.
+/* We'll say that a 1 immediately followed by a 3 in an array is an "unlucky" 1. 
 Return true if the given array contains an unlucky 1 in the first 2 or last 2 positions in the array. */
 
 class TestCases_Unlucky1
@@ -17,9 +17,9 @@ class TestCases_Unlucky1
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "unlucky1([1, 3, 4, 5]) → true");
-        testcaseMap.put(1, "unlucky1([2, 1, 3, 4, 5]) → true");
-        testcaseMap.put(2, "unlucky1([1, 1, 1]) → false");
+        testcaseMap.put(0, "unlucky1([1, 3, 4, 5])");
+        testcaseMap.put(1, "unlucky1([2, 1, 3, 4, 5])");
+        testcaseMap.put(2, "unlucky1([1, 1, 1])");
     }
 
     static boolean[] expectedResults = { true, true, false, };
@@ -53,10 +53,10 @@ public class Unlucky1
             if (resultsArray[i] != TestCases_Unlucky1.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_Unlucky1.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_Unlucky1.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

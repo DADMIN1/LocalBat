@@ -5,8 +5,9 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p183174
 
-/* Given a string, return true if it is a nesting of zero or more pairs of parenthesis, like "(())" or "((()))".
-Suggestion: check the first and last chars, and then recur on what's inside them. */
+/* Given a string, return true if it is a nesting of zero or more pairs of parenthesis, 
+like "(())" or "((()))". Suggestion: check the first and last chars, 
+and then recur on what's inside them. */
 
 class TestCases_NestParen
 {
@@ -17,9 +18,9 @@ class TestCases_NestParen
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "nestParen(\"(())\") → true");
-        testcaseMap.put(1, "nestParen(\"((()))\") → true");
-        testcaseMap.put(2, "nestParen(\"(((x))\") → false");
+        testcaseMap.put(0, "nestParen(\"(())\")");
+        testcaseMap.put(1, "nestParen(\"((()))\")");
+        testcaseMap.put(2, "nestParen(\"(((x))\")");
     }
 
     static boolean[] expectedResults = { true, true, false, };
@@ -50,10 +51,10 @@ public class NestParen
             if (resultsArray[i] != TestCases_NestParen.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_NestParen.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_NestParen.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

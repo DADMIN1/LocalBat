@@ -16,9 +16,9 @@ class TestCases_PlusTwo
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "plusTwo([1, 2], [3, 4]) → [1, 2, 3, 4]");
-        testcaseMap.put(1, "plusTwo([4, 4], [2, 2]) → [4, 4, 2, 2]");
-        testcaseMap.put(2, "plusTwo([9, 2], [3, 4]) → [9, 2, 3, 4]");
+        testcaseMap.put(0, "plusTwo([1, 2], [3, 4])");
+        testcaseMap.put(1, "plusTwo([4, 4], [2, 2])");
+        testcaseMap.put(2, "plusTwo([9, 2], [3, 4])");
     }
 
     static int[][] expectedResults = { {1, 2, 3, 4}, {4, 4, 2, 2}, {9, 2, 3, 4}, };
@@ -57,13 +57,13 @@ public class PlusTwo
         boolean allTestsPassed = true;
         for (int i = 0; i < resultsArray.length; ++i)
         {
-            if (resultsArray[i] != TestCases_PlusTwo.expectedResults[i])
+            if (!resultsArray[i].equals(TestCases_PlusTwo.expectedResults[i]))
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_PlusTwo.testcaseMap.get(i));
+                System.out.println("    received: "+printArray(resultsArray[i]));
                 System.out.println("    expected: "+printArray(TestCases_PlusTwo.expectedResults[i]));
-                System.out.println("      result: "+printArray(resultsArray[i]));
                 System.out.println("\n");
             }
         }

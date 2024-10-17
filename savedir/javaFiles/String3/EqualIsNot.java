@@ -16,9 +16,9 @@ class TestCases_EqualIsNot
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "equalIsNot(\"This is not\") → false");
-        testcaseMap.put(1, "equalIsNot(\"This is notnot\") → true");
-        testcaseMap.put(2, "equalIsNot(\"noisxxnotyynotxisi\") → true");
+        testcaseMap.put(0, "equalIsNot(\"This is not\")");
+        testcaseMap.put(1, "equalIsNot(\"This is notnot\")");
+        testcaseMap.put(2, "equalIsNot(\"noisxxnotyynotxisi\")");
     }
 
     static boolean[] expectedResults = { false, true, true, };
@@ -49,10 +49,10 @@ public class EqualIsNot
             if (resultsArray[i] != TestCases_EqualIsNot.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_EqualIsNot.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_EqualIsNot.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

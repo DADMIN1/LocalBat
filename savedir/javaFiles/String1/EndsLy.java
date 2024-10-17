@@ -16,9 +16,9 @@ class TestCases_EndsLy
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "endsLy(\"oddly\") → true");
-        testcaseMap.put(1, "endsLy(\"y\") → false");
-        testcaseMap.put(2, "endsLy(\"oddy\") → false");
+        testcaseMap.put(0, "endsLy(\"oddly\")");
+        testcaseMap.put(1, "endsLy(\"y\")");
+        testcaseMap.put(2, "endsLy(\"oddy\")");
     }
 
     static boolean[] expectedResults = { true, false, false, };
@@ -49,10 +49,10 @@ public class EndsLy
             if (resultsArray[i] != TestCases_EndsLy.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_EndsLy.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_EndsLy.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

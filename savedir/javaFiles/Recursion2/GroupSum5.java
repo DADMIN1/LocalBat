@@ -5,9 +5,11 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p138907
 
-/* Given an array of ints, is it possible to choose a group of some of the ints, such that the group sums to the given target with these additional constraints: all multiples of 5 in the array must be included in the group.
-If the value immediately following a multiple of 5 is 1, it must not be chosen.
-(No loops needed.) */
+/* Given an array of ints, is it possible to choose a group of some of the ints, 
+such that the group sums to the given target with these additional constraints: 
+all multiples of 5 in the array must be included in the group. 
+If the value immediately following a multiple of 5 is 1, 
+it must not be chosen. (No loops needed.) */
 
 class TestCases_GroupSum5
 {
@@ -18,9 +20,9 @@ class TestCases_GroupSum5
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "groupSum5(0, [2, 5, 10, 4], 19) → true");
-        testcaseMap.put(1, "groupSum5(0, [2, 5, 10, 4], 17) → true");
-        testcaseMap.put(2, "groupSum5(0, [2, 5, 10, 4], 12) → false");
+        testcaseMap.put(0, "groupSum5(0, [2, 5, 10, 4], 19)");
+        testcaseMap.put(1, "groupSum5(0, [2, 5, 10, 4], 17)");
+        testcaseMap.put(2, "groupSum5(0, [2, 5, 10, 4], 12)");
     }
 
     static boolean[] expectedResults = { true, true, false, };
@@ -54,10 +56,10 @@ public class GroupSum5
             if (resultsArray[i] != TestCases_GroupSum5.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_GroupSum5.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_GroupSum5.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

@@ -5,7 +5,8 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p199216
 
-/* Given a string, if the string begins with "red" or "blue" return that color string, otherwise return the empty string. */
+/* Given a string, if the string begins with "red" or "blue" return that color string, 
+otherwise return the empty string. */
 
 class TestCases_SeeColor
 {
@@ -16,9 +17,9 @@ class TestCases_SeeColor
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "seeColor(\"redxx\") → \"red\"");
-        testcaseMap.put(1, "seeColor(\"xxred\") → \"\"");
-        testcaseMap.put(2, "seeColor(\"blueTimes\") → \"blue\"");
+        testcaseMap.put(0, "seeColor(\"redxx\")");
+        testcaseMap.put(1, "seeColor(\"xxred\")");
+        testcaseMap.put(2, "seeColor(\"blueTimes\")");
     }
 
     static String[] expectedResults = { "red", "", "blue", };
@@ -49,10 +50,10 @@ public class SeeColor
             if (resultsArray[i] != TestCases_SeeColor.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_SeeColor.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_SeeColor.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

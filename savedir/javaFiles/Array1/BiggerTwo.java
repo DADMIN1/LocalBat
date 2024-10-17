@@ -5,10 +5,9 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p109537
 
-/* Start with 2 int arrays, a and b, each length 2.
-Consider the sum of the values in each array.
-Return the array which has the largest sum.
-In event of a tie, return a. */
+/* Start with 2 int arrays, a and b, each length 2. Consider the sum of the values in each array. 
+Return the array which has the largest sum. In event of a tie, 
+return a. */
 
 class TestCases_BiggerTwo
 {
@@ -19,9 +18,9 @@ class TestCases_BiggerTwo
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "biggerTwo([1, 2], [3, 4]) → [3, 4]");
-        testcaseMap.put(1, "biggerTwo([3, 4], [1, 2]) → [3, 4]");
-        testcaseMap.put(2, "biggerTwo([1, 1], [1, 2]) → [1, 2]");
+        testcaseMap.put(0, "biggerTwo([1, 2], [3, 4])");
+        testcaseMap.put(1, "biggerTwo([3, 4], [1, 2])");
+        testcaseMap.put(2, "biggerTwo([1, 1], [1, 2])");
     }
 
     static int[][] expectedResults = { {3, 4}, {3, 4}, {1, 2}, };
@@ -60,13 +59,13 @@ public class BiggerTwo
         boolean allTestsPassed = true;
         for (int i = 0; i < resultsArray.length; ++i)
         {
-            if (resultsArray[i] != TestCases_BiggerTwo.expectedResults[i])
+            if (!resultsArray[i].equals(TestCases_BiggerTwo.expectedResults[i]))
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_BiggerTwo.testcaseMap.get(i));
+                System.out.println("    received: "+printArray(resultsArray[i]));
                 System.out.println("    expected: "+printArray(TestCases_BiggerTwo.expectedResults[i]));
-                System.out.println("      result: "+printArray(resultsArray[i]));
                 System.out.println("\n");
             }
         }

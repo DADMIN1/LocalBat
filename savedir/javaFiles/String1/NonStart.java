@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p143825
 
-/* Given 2 strings, return their concatenation, except omit the first char of each.
+/* Given 2 strings, return their concatenation, except omit the first char of each. 
 The strings will be at least length 1. */
 
 class TestCases_NonStart
@@ -17,9 +17,9 @@ class TestCases_NonStart
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "nonStart(\"Hello\", \"There\") → \"ellohere\"");
-        testcaseMap.put(1, "nonStart(\"java\", \"code\") → \"avaode\"");
-        testcaseMap.put(2, "nonStart(\"shotl\", \"java\") → \"hotlava\"");
+        testcaseMap.put(0, "nonStart(\"Hello\", \"There\")");
+        testcaseMap.put(1, "nonStart(\"java\", \"code\")");
+        testcaseMap.put(2, "nonStart(\"shotl\", \"java\")");
     }
 
     static String[] expectedResults = { "ellohere", "avaode", "hotlava", };
@@ -50,10 +50,10 @@ public class NonStart
             if (resultsArray[i] != TestCases_NonStart.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_NonStart.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_NonStart.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

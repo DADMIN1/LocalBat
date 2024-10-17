@@ -5,7 +5,8 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p169260
 
-/* Given an array of ints, return true if there is a 1 in the array with a 2 somewhere later in the array. */
+/* Given an array of ints, 
+return true if there is a 1 in the array with a 2 somewhere later in the array. */
 
 class TestCases_Has12
 {
@@ -16,9 +17,9 @@ class TestCases_Has12
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "has12([1, 3, 2]) → true");
-        testcaseMap.put(1, "has12([3, 1, 2]) → true");
-        testcaseMap.put(2, "has12([3, 1, 4, 5, 2]) → true");
+        testcaseMap.put(0, "has12([1, 3, 2])");
+        testcaseMap.put(1, "has12([3, 1, 2])");
+        testcaseMap.put(2, "has12([3, 1, 4, 5, 2])");
     }
 
     static boolean[] expectedResults = { true, true, true, };
@@ -52,10 +53,10 @@ public class Has12
             if (resultsArray[i] != TestCases_Has12.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_Has12.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_Has12.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

@@ -16,9 +16,9 @@ class TestCases_FrontBack
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "frontBack(\"code\") → \"eodc\"");
-        testcaseMap.put(1, "frontBack(\"a\") → \"a\"");
-        testcaseMap.put(2, "frontBack(\"ab\") → \"ba\"");
+        testcaseMap.put(0, "frontBack(\"code\")");
+        testcaseMap.put(1, "frontBack(\"a\")");
+        testcaseMap.put(2, "frontBack(\"ab\")");
     }
 
     static String[] expectedResults = { "eodc", "a", "ba", };
@@ -49,10 +49,10 @@ public class FrontBack
             if (resultsArray[i] != TestCases_FrontBack.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_FrontBack.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_FrontBack.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

@@ -5,7 +5,8 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p158888
 
-/* Given base and n that are both 1 or more, compute recursively (no loops) the value of base to the n power, so powerN(3, 2) is 9 (3 squared). */
+/* Given base and n that are both 1 or more, compute recursively (no loops) the value of base to the n power, 
+so powerN(3, 2) is 9 (3 squared). */
 
 class TestCases_PowerN
 {
@@ -16,9 +17,9 @@ class TestCases_PowerN
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "powerN(3, 1) → 3");
-        testcaseMap.put(1, "powerN(3, 2) → 9");
-        testcaseMap.put(2, "powerN(3, 3) → 27");
+        testcaseMap.put(0, "powerN(3, 1)");
+        testcaseMap.put(1, "powerN(3, 2)");
+        testcaseMap.put(2, "powerN(3, 3)");
     }
 
     static int[] expectedResults = { 3, 9, 27, };
@@ -49,10 +50,10 @@ public class PowerN
             if (resultsArray[i] != TestCases_PowerN.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_PowerN.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_PowerN.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

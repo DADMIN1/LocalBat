@@ -5,10 +5,9 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p110141
 
-/* Given a string, return a version without the first 2 chars.
-Except keep the first char if it is 'a' and keep the second char if it is 'b'.
-The string may be any length.
-Harder than it looks. */
+/* Given a string, return a version without the first 2 chars. 
+Except keep the first char if it is 'a' and keep the second char if it is 'b'. 
+The string may be any length. Harder than it looks. */
 
 class TestCases_DeFront
 {
@@ -19,9 +18,9 @@ class TestCases_DeFront
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "deFront(\"Hello\") → \"llo\"");
-        testcaseMap.put(1, "deFront(\"java\") → \"va\"");
-        testcaseMap.put(2, "deFront(\"away\") → \"aay\"");
+        testcaseMap.put(0, "deFront(\"Hello\")");
+        testcaseMap.put(1, "deFront(\"java\")");
+        testcaseMap.put(2, "deFront(\"away\")");
     }
 
     static String[] expectedResults = { "llo", "va", "aay", };
@@ -52,10 +51,10 @@ public class DeFront
             if (resultsArray[i] != TestCases_DeFront.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_DeFront.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_DeFront.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

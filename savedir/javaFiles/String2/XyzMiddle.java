@@ -5,7 +5,8 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p159772
 
-/* Given a string, does "xyz" appear in the middle of the string? To define middle, we'll say that the number of chars to the left and right of the "xyz" must differ by at most one.
+/* Given a string, does "xyz" appear in the middle of the string? To define middle, 
+we'll say that the number of chars to the left and right of the "xyz" must differ by at most one. 
 This problem is harder than it looks. */
 
 class TestCases_XyzMiddle
@@ -17,9 +18,9 @@ class TestCases_XyzMiddle
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "xyzMiddle(\"AAxyzBB\") → true");
-        testcaseMap.put(1, "xyzMiddle(\"AxyzBB\") → true");
-        testcaseMap.put(2, "xyzMiddle(\"AxyzBBB\") → false");
+        testcaseMap.put(0, "xyzMiddle(\"AAxyzBB\")");
+        testcaseMap.put(1, "xyzMiddle(\"AxyzBB\")");
+        testcaseMap.put(2, "xyzMiddle(\"AxyzBBB\")");
     }
 
     static boolean[] expectedResults = { true, true, false, };
@@ -50,10 +51,10 @@ public class XyzMiddle
             if (resultsArray[i] != TestCases_XyzMiddle.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_XyzMiddle.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_XyzMiddle.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

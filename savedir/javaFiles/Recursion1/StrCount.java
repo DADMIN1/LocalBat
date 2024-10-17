@@ -5,7 +5,9 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p186177
 
-/* Given a string and a non-empty substring sub, compute recursively the number of times that sub appears in the string, without the sub strings overlapping. */
+/* Given a string and a non-empty substring sub, 
+compute recursively the number of times that sub appears in the string, 
+without the sub strings overlapping. */
 
 class TestCases_StrCount
 {
@@ -16,9 +18,9 @@ class TestCases_StrCount
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "strCount(\"catcowcat\", \"cat\") → 2");
-        testcaseMap.put(1, "strCount(\"catcowcat\", \"cow\") → 1");
-        testcaseMap.put(2, "strCount(\"catcowcat\", \"dog\") → 0");
+        testcaseMap.put(0, "strCount(\"catcowcat\", \"cat\")");
+        testcaseMap.put(1, "strCount(\"catcowcat\", \"cow\")");
+        testcaseMap.put(2, "strCount(\"catcowcat\", \"dog\")");
     }
 
     static int[] expectedResults = { 2, 1, 0, };
@@ -49,10 +51,10 @@ public class StrCount
             if (resultsArray[i] != TestCases_StrCount.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_StrCount.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_StrCount.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

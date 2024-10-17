@@ -5,8 +5,8 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p120347
 
-/* Given an int array length 3, if there is a 2 in the array immediately followed by a 3, set the 3 element to 0.
-Return the changed array. */
+/* Given an int array length 3, if there is a 2 in the array immediately followed by a 3, 
+set the 3 element to 0. Return the changed array. */
 
 class TestCases_Fix23
 {
@@ -17,9 +17,9 @@ class TestCases_Fix23
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "fix23([1, 2, 3]) → [1, 2, 0]");
-        testcaseMap.put(1, "fix23([2, 3, 5]) → [2, 0, 5]");
-        testcaseMap.put(2, "fix23([1, 2, 1]) → [1, 2, 1]");
+        testcaseMap.put(0, "fix23([1, 2, 3])");
+        testcaseMap.put(1, "fix23([2, 3, 5])");
+        testcaseMap.put(2, "fix23([1, 2, 1])");
     }
 
     static int[][] expectedResults = { {1, 2, 0}, {2, 0, 5}, {1, 2, 1}, };
@@ -58,13 +58,13 @@ public class Fix23
         boolean allTestsPassed = true;
         for (int i = 0; i < resultsArray.length; ++i)
         {
-            if (resultsArray[i] != TestCases_Fix23.expectedResults[i])
+            if (!resultsArray[i].equals(TestCases_Fix23.expectedResults[i]))
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_Fix23.testcaseMap.get(i));
+                System.out.println("    received: "+printArray(resultsArray[i]));
                 System.out.println("    expected: "+printArray(TestCases_Fix23.expectedResults[i]));
-                System.out.println("      result: "+printArray(resultsArray[i]));
                 System.out.println("\n");
             }
         }

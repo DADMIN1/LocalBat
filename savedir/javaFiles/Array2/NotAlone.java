@@ -5,7 +5,8 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p169506
 
-/* We'll say that an element in an array is "alone" if there are values before and after it, and those values are different from it.
+/* We'll say that an element in an array is "alone" if there are values before and after it, 
+and those values are different from it. 
 Return a version of the given array where every instance of the given value which is alone is replaced by whichever value to its left or right is larger. */
 
 class TestCases_NotAlone
@@ -17,9 +18,9 @@ class TestCases_NotAlone
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "notAlone([1, 2, 3], 2) → [1, 3, 3]");
-        testcaseMap.put(1, "notAlone([1, 2, 3, 2, 5, 2], 2) → [1, 3, 3, 5, 5, 2]");
-        testcaseMap.put(2, "notAlone([3, 4], 3) → [3, 4]");
+        testcaseMap.put(0, "notAlone([1, 2, 3], 2)");
+        testcaseMap.put(1, "notAlone([1, 2, 3, 2, 5, 2], 2)");
+        testcaseMap.put(2, "notAlone([3, 4], 3)");
     }
 
     static int[][] expectedResults = { {1, 3, 3}, {1, 3, 3, 5, 5, 2}, {3, 4}, };
@@ -58,13 +59,13 @@ public class NotAlone
         boolean allTestsPassed = true;
         for (int i = 0; i < resultsArray.length; ++i)
         {
-            if (resultsArray[i] != TestCases_NotAlone.expectedResults[i])
+            if (!resultsArray[i].equals(TestCases_NotAlone.expectedResults[i]))
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_NotAlone.testcaseMap.get(i));
+                System.out.println("    received: "+printArray(resultsArray[i]));
                 System.out.println("    expected: "+printArray(TestCases_NotAlone.expectedResults[i]));
-                System.out.println("      result: "+printArray(resultsArray[i]));
                 System.out.println("\n");
             }
         }

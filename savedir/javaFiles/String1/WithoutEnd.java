@@ -5,8 +5,8 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p130896
 
-/* Given a string, return a version without the first and last char, so "Hello" yields "ell".
-The string length will be at least 2. */
+/* Given a string, return a version without the first and last char, 
+so "Hello" yields "ell". The string length will be at least 2. */
 
 class TestCases_WithoutEnd
 {
@@ -17,9 +17,9 @@ class TestCases_WithoutEnd
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "withoutEnd(\"Hello\") → \"ell\"");
-        testcaseMap.put(1, "withoutEnd(\"java\") → \"av\"");
-        testcaseMap.put(2, "withoutEnd(\"coding\") → \"odin\"");
+        testcaseMap.put(0, "withoutEnd(\"Hello\")");
+        testcaseMap.put(1, "withoutEnd(\"java\")");
+        testcaseMap.put(2, "withoutEnd(\"coding\")");
     }
 
     static String[] expectedResults = { "ell", "av", "odin", };
@@ -50,10 +50,10 @@ public class WithoutEnd
             if (resultsArray[i] != TestCases_WithoutEnd.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_WithoutEnd.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_WithoutEnd.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

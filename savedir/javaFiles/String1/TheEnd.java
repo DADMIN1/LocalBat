@@ -5,7 +5,8 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p162477
 
-/* Given a string, return a string length 1 from its front, unless front is false, in which case return a string length 1 from its back.
+/* Given a string, return a string length 1 from its front, 
+unless front is false, in which case return a string length 1 from its back. 
 The string will be non-empty. */
 
 class TestCases_TheEnd
@@ -17,9 +18,9 @@ class TestCases_TheEnd
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "theEnd(\"Hello\", true) → \"H\"");
-        testcaseMap.put(1, "theEnd(\"Hello\", false) → \"o\"");
-        testcaseMap.put(2, "theEnd(\"oh\", true) → \"o\"");
+        testcaseMap.put(0, "theEnd(\"Hello\", true)");
+        testcaseMap.put(1, "theEnd(\"Hello\", false)");
+        testcaseMap.put(2, "theEnd(\"oh\", true)");
     }
 
     static String[] expectedResults = { "H", "o", "o", };
@@ -50,10 +51,10 @@ public class TheEnd
             if (resultsArray[i] != TestCases_TheEnd.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_TheEnd.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_TheEnd.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

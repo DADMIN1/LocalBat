@@ -5,9 +5,9 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p165941
 
-/* We'll say that a positive int divides itself if every digit in the number divides into the number evenly.
-So for example 128 divides itself since 1, 2, and 8 all divide into 128 evenly.
-We'll say that 0 does not divide into anything evenly, so no number with a 0 digit divides itself.
+/* We'll say that a positive int divides itself if every digit in the number divides into the number evenly. 
+So for example 128 divides itself since 1, 2, and 8 all divide into 128 evenly. 
+We'll say that 0 does not divide into anything evenly, so no number with a 0 digit divides itself. 
 Note: use % to get the rightmost digit, and / to discard the rightmost digit. */
 
 class TestCases_DividesSelf
@@ -19,9 +19,9 @@ class TestCases_DividesSelf
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "dividesSelf(128) → true");
-        testcaseMap.put(1, "dividesSelf(12) → true");
-        testcaseMap.put(2, "dividesSelf(120) → false");
+        testcaseMap.put(0, "dividesSelf(128)");
+        testcaseMap.put(1, "dividesSelf(12)");
+        testcaseMap.put(2, "dividesSelf(120)");
     }
 
     static boolean[] expectedResults = { true, true, false, };
@@ -52,10 +52,10 @@ public class DividesSelf
             if (resultsArray[i] != TestCases_DividesSelf.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_DividesSelf.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_DividesSelf.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

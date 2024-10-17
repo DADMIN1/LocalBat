@@ -5,7 +5,8 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p185139
 
-/* Given an array of ints length 3, return an array with the elements "rotated left" so {1, 2, 3} yields {2, 3, 1}. */
+/* Given an array of ints length 3, return an array with the elements "rotated left" so {1, 
+2, 3} yields {2, 3, 1}. */
 
 class TestCases_RotateLeft3
 {
@@ -16,9 +17,9 @@ class TestCases_RotateLeft3
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "rotateLeft3([1, 2, 3]) → [2, 3, 1]");
-        testcaseMap.put(1, "rotateLeft3([5, 11, 9]) → [11, 9, 5]");
-        testcaseMap.put(2, "rotateLeft3([7, 0, 0]) → [0, 0, 7]");
+        testcaseMap.put(0, "rotateLeft3([1, 2, 3])");
+        testcaseMap.put(1, "rotateLeft3([5, 11, 9])");
+        testcaseMap.put(2, "rotateLeft3([7, 0, 0])");
     }
 
     static int[][] expectedResults = { {2, 3, 1}, {11, 9, 5}, {0, 0, 7}, };
@@ -57,13 +58,13 @@ public class RotateLeft3
         boolean allTestsPassed = true;
         for (int i = 0; i < resultsArray.length; ++i)
         {
-            if (resultsArray[i] != TestCases_RotateLeft3.expectedResults[i])
+            if (!resultsArray[i].equals(TestCases_RotateLeft3.expectedResults[i]))
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_RotateLeft3.testcaseMap.get(i));
+                System.out.println("    received: "+printArray(resultsArray[i]));
                 System.out.println("    expected: "+printArray(TestCases_RotateLeft3.expectedResults[i]));
-                System.out.println("      result: "+printArray(resultsArray[i]));
                 System.out.println("\n");
             }
         }

@@ -5,9 +5,8 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p154669
 
-/* Given n of 1 or more, return the factorial of n, which is n * (n-1) * (n-2) ...
-1.
-Compute the result recursively (without loops). */
+/* Given n of 1 or more, return the factorial of n, which is n * (n-1) * (n-2) ... 
+1. Compute the result recursively (without loops). */
 
 class TestCases_Factorial
 {
@@ -18,9 +17,9 @@ class TestCases_Factorial
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "factorial(1) → 1");
-        testcaseMap.put(1, "factorial(2) → 2");
-        testcaseMap.put(2, "factorial(3) → 6");
+        testcaseMap.put(0, "factorial(1)");
+        testcaseMap.put(1, "factorial(2)");
+        testcaseMap.put(2, "factorial(3)");
     }
 
     static int[] expectedResults = { 1, 2, 6, };
@@ -51,10 +50,10 @@ public class Factorial
             if (resultsArray[i] != TestCases_Factorial.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_Factorial.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_Factorial.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

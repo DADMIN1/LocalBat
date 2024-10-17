@@ -5,8 +5,9 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p139411
 
-/* Given a string, look for a mirror image (backwards) string at both the beginning and end of the given string.
-In other words, zero or more characters at the very begining of the given string, and at the very end of the string in reverse order (possibly overlapping).
+/* Given a string, look for a mirror image (backwards) string at both the beginning and end of the given string. 
+In other words, zero or more characters at the very begining of the given string, 
+and at the very end of the string in reverse order (possibly overlapping). 
 For example, the string "abXYZba" has the mirror end "ab". */
 
 class TestCases_MirrorEnds
@@ -18,9 +19,9 @@ class TestCases_MirrorEnds
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "mirrorEnds(\"abXYZba\") → \"ab\"");
-        testcaseMap.put(1, "mirrorEnds(\"abca\") → \"a\"");
-        testcaseMap.put(2, "mirrorEnds(\"aba\") → \"aba\"");
+        testcaseMap.put(0, "mirrorEnds(\"abXYZba\")");
+        testcaseMap.put(1, "mirrorEnds(\"abca\")");
+        testcaseMap.put(2, "mirrorEnds(\"aba\")");
     }
 
     static String[] expectedResults = { "ab", "a", "aba", };
@@ -51,10 +52,10 @@ public class MirrorEnds
             if (resultsArray[i] != TestCases_MirrorEnds.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_MirrorEnds.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_MirrorEnds.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

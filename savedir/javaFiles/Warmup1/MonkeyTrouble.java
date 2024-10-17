@@ -5,8 +5,8 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p181646
 
-/* We have two monkeys, a and b, and the parameters aSmile and bSmile indicate if each is smiling.
-We are in trouble if they are both smiling or if neither of them is smiling.
+/* We have two monkeys, a and b, and the parameters aSmile and bSmile indicate if each is smiling. 
+We are in trouble if they are both smiling or if neither of them is smiling. 
 Return true if we are in trouble. */
 
 class TestCases_MonkeyTrouble
@@ -18,9 +18,9 @@ class TestCases_MonkeyTrouble
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "monkeyTrouble(true, true) → true");
-        testcaseMap.put(1, "monkeyTrouble(false, false) → true");
-        testcaseMap.put(2, "monkeyTrouble(true, false) → false");
+        testcaseMap.put(0, "monkeyTrouble(true, true)");
+        testcaseMap.put(1, "monkeyTrouble(false, false)");
+        testcaseMap.put(2, "monkeyTrouble(true, false)");
     }
 
     static boolean[] expectedResults = { true, true, false, };
@@ -51,10 +51,10 @@ public class MonkeyTrouble
             if (resultsArray[i] != TestCases_MonkeyTrouble.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_MonkeyTrouble.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_MonkeyTrouble.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

@@ -5,7 +5,8 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p101230
 
-/* Given an array of ints, return a new array length 2 containing the first and last elements from the original array.
+/* Given an array of ints, 
+return a new array length 2 containing the first and last elements from the original array. 
 The original array will be length 1 or more. */
 
 class TestCases_MakeEnds
@@ -17,9 +18,9 @@ class TestCases_MakeEnds
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "makeEnds([1, 2, 3]) → [1, 3]");
-        testcaseMap.put(1, "makeEnds([1, 2, 3, 4]) → [1, 4]");
-        testcaseMap.put(2, "makeEnds([7, 4, 6, 2]) → [7, 2]");
+        testcaseMap.put(0, "makeEnds([1, 2, 3])");
+        testcaseMap.put(1, "makeEnds([1, 2, 3, 4])");
+        testcaseMap.put(2, "makeEnds([7, 4, 6, 2])");
     }
 
     static int[][] expectedResults = { {1, 3}, {1, 4}, {7, 2}, };
@@ -58,13 +59,13 @@ public class MakeEnds
         boolean allTestsPassed = true;
         for (int i = 0; i < resultsArray.length; ++i)
         {
-            if (resultsArray[i] != TestCases_MakeEnds.expectedResults[i])
+            if (!resultsArray[i].equals(TestCases_MakeEnds.expectedResults[i]))
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_MakeEnds.testcaseMap.get(i));
+                System.out.println("    received: "+printArray(resultsArray[i]));
                 System.out.println("    expected: "+printArray(TestCases_MakeEnds.expectedResults[i]));
-                System.out.println("      result: "+printArray(resultsArray[i]));
                 System.out.println("\n");
             }
         }

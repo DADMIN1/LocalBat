@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p167015
 
-/* Given a string, compute recursively (no loops) the number of "11" substrings in the string.
+/* Given a string, compute recursively (no loops) the number of "11" substrings in the string. 
 The "11" substrings should not overlap. */
 
 class TestCases_Count11
@@ -17,9 +17,9 @@ class TestCases_Count11
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "count11(\"11abc11\") → 2");
-        testcaseMap.put(1, "count11(\"abc11x11x11\") → 3");
-        testcaseMap.put(2, "count11(\"111\") → 1");
+        testcaseMap.put(0, "count11(\"11abc11\")");
+        testcaseMap.put(1, "count11(\"abc11x11x11\")");
+        testcaseMap.put(2, "count11(\"111\")");
     }
 
     static int[] expectedResults = { 2, 3, 1, };
@@ -50,10 +50,10 @@ public class Count11
             if (resultsArray[i] != TestCases_Count11.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_Count11.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_Count11.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

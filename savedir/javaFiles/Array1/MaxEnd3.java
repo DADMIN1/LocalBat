@@ -5,7 +5,8 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p146256
 
-/* Given an array of ints length 3, figure out which is larger, the first or last element in the array, and set all the other elements to be that value.
+/* Given an array of ints length 3, figure out which is larger, 
+the first or last element in the array, and set all the other elements to be that value. 
 Return the changed array. */
 
 class TestCases_MaxEnd3
@@ -17,9 +18,9 @@ class TestCases_MaxEnd3
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "maxEnd3([1, 2, 3]) → [3, 3, 3]");
-        testcaseMap.put(1, "maxEnd3([11, 5, 9]) → [11, 11, 11]");
-        testcaseMap.put(2, "maxEnd3([2, 11, 3]) → [3, 3, 3]");
+        testcaseMap.put(0, "maxEnd3([1, 2, 3])");
+        testcaseMap.put(1, "maxEnd3([11, 5, 9])");
+        testcaseMap.put(2, "maxEnd3([2, 11, 3])");
     }
 
     static int[][] expectedResults = { {3, 3, 3}, {11, 11, 11}, {3, 3, 3}, };
@@ -58,13 +59,13 @@ public class MaxEnd3
         boolean allTestsPassed = true;
         for (int i = 0; i < resultsArray.length; ++i)
         {
-            if (resultsArray[i] != TestCases_MaxEnd3.expectedResults[i])
+            if (!resultsArray[i].equals(TestCases_MaxEnd3.expectedResults[i]))
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_MaxEnd3.testcaseMap.get(i));
+                System.out.println("    received: "+printArray(resultsArray[i]));
                 System.out.println("    expected: "+printArray(TestCases_MaxEnd3.expectedResults[i]));
-                System.out.println("      result: "+printArray(resultsArray[i]));
                 System.out.println("\n");
             }
         }

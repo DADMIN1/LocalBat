@@ -16,9 +16,9 @@ class TestCases_StringSplosion
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "stringSplosion(\"Code\") → \"CCoCodCode\"");
-        testcaseMap.put(1, "stringSplosion(\"abc\") → \"aababc\"");
-        testcaseMap.put(2, "stringSplosion(\"ab\") → \"aab\"");
+        testcaseMap.put(0, "stringSplosion(\"Code\")");
+        testcaseMap.put(1, "stringSplosion(\"abc\")");
+        testcaseMap.put(2, "stringSplosion(\"ab\")");
     }
 
     static String[] expectedResults = { "CCoCodCode", "aababc", "aab", };
@@ -49,10 +49,10 @@ public class StringSplosion
             if (resultsArray[i] != TestCases_StringSplosion.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_StringSplosion.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_StringSplosion.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

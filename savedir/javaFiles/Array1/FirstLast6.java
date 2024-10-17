@@ -5,7 +5,8 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p185685
 
-/* Given an array of ints, return true if 6 appears as either the first or last element in the array.
+/* Given an array of ints, 
+return true if 6 appears as either the first or last element in the array. 
 The array will be length 1 or more. */
 
 class TestCases_FirstLast6
@@ -17,9 +18,9 @@ class TestCases_FirstLast6
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "firstLast6([1, 2, 6]) → true");
-        testcaseMap.put(1, "firstLast6([6, 1, 2, 3]) → true");
-        testcaseMap.put(2, "firstLast6([13, 6, 1, 2, 3]) → false");
+        testcaseMap.put(0, "firstLast6([1, 2, 6])");
+        testcaseMap.put(1, "firstLast6([6, 1, 2, 3])");
+        testcaseMap.put(2, "firstLast6([13, 6, 1, 2, 3])");
     }
 
     static boolean[] expectedResults = { true, true, false, };
@@ -53,10 +54,10 @@ public class FirstLast6
             if (resultsArray[i] != TestCases_FirstLast6.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_FirstLast6.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_FirstLast6.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

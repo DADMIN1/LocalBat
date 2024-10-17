@@ -5,8 +5,8 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p187868
 
-/* The parameter weekday is true if it is a weekday, and the parameter vacation is true if we are on vacation.
-We sleep in if it is not a weekday or we're on vacation.
+/* The parameter weekday is true if it is a weekday, and the parameter vacation is true if we are on vacation. 
+We sleep in if it is not a weekday or we're on vacation. 
 Return true if we sleep in. */
 
 class TestCases_SleepIn
@@ -18,9 +18,9 @@ class TestCases_SleepIn
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "sleepIn(false, false) → true");
-        testcaseMap.put(1, "sleepIn(true, false) → false");
-        testcaseMap.put(2, "sleepIn(false, true) → true");
+        testcaseMap.put(0, "sleepIn(false, false)");
+        testcaseMap.put(1, "sleepIn(true, false)");
+        testcaseMap.put(2, "sleepIn(false, true)");
     }
 
     static boolean[] expectedResults = { true, false, true, };
@@ -51,10 +51,10 @@ public class SleepIn
             if (resultsArray[i] != TestCases_SleepIn.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_SleepIn.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_SleepIn.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

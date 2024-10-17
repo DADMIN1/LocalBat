@@ -5,8 +5,8 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p154485
 
-/* Given two int values, return their sum.
-Unless the two values are the same, then return double their sum. */
+/* Given two int values, return their sum. Unless the two values are the same, 
+then return double their sum. */
 
 class TestCases_SumDouble
 {
@@ -17,9 +17,9 @@ class TestCases_SumDouble
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "sumDouble(1, 2) → 3");
-        testcaseMap.put(1, "sumDouble(3, 2) → 5");
-        testcaseMap.put(2, "sumDouble(2, 2) → 8");
+        testcaseMap.put(0, "sumDouble(1, 2)");
+        testcaseMap.put(1, "sumDouble(3, 2)");
+        testcaseMap.put(2, "sumDouble(2, 2)");
     }
 
     static int[] expectedResults = { 3, 5, 8, };
@@ -50,10 +50,10 @@ public class SumDouble
             if (resultsArray[i] != TestCases_SumDouble.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_SumDouble.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_SumDouble.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

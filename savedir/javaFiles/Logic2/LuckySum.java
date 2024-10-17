@@ -5,8 +5,8 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p130788
 
-/* Given 3 int values, a b c, return their sum.
-However, if one of the values is 13 then it does not count towards the sum and values to its right do not count.
+/* Given 3 int values, a b c, return their sum. However, 
+if one of the values is 13 then it does not count towards the sum and values to its right do not count. 
 So for example, if b is 13, then both b and c do not count. */
 
 class TestCases_LuckySum
@@ -18,9 +18,9 @@ class TestCases_LuckySum
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "luckySum(1, 2, 3) → 6");
-        testcaseMap.put(1, "luckySum(1, 2, 13) → 3");
-        testcaseMap.put(2, "luckySum(1, 13, 3) → 1");
+        testcaseMap.put(0, "luckySum(1, 2, 3)");
+        testcaseMap.put(1, "luckySum(1, 2, 13)");
+        testcaseMap.put(2, "luckySum(1, 13, 3)");
     }
 
     static int[] expectedResults = { 6, 3, 1, };
@@ -51,10 +51,10 @@ public class LuckySum
             if (resultsArray[i] != TestCases_LuckySum.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_LuckySum.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_LuckySum.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

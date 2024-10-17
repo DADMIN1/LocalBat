@@ -16,9 +16,9 @@ class TestCases_ChangeXY
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "changeXY(\"codex\") → \"codey\"");
-        testcaseMap.put(1, "changeXY(\"xxhixx\") → \"yyhiyy\"");
-        testcaseMap.put(2, "changeXY(\"xhixhix\") → \"yhiyhiy\"");
+        testcaseMap.put(0, "changeXY(\"codex\")");
+        testcaseMap.put(1, "changeXY(\"xxhixx\")");
+        testcaseMap.put(2, "changeXY(\"xhixhix\")");
     }
 
     static String[] expectedResults = { "codey", "yyhiyy", "yhiyhiy", };
@@ -49,10 +49,10 @@ public class ChangeXY
             if (resultsArray[i] != TestCases_ChangeXY.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_ChangeXY.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_ChangeXY.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

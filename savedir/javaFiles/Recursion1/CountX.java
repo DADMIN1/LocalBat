@@ -16,9 +16,9 @@ class TestCases_CountX
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "countX(\"xxhixx\") → 4");
-        testcaseMap.put(1, "countX(\"xhixhix\") → 3");
-        testcaseMap.put(2, "countX(\"hi\") → 0");
+        testcaseMap.put(0, "countX(\"xxhixx\")");
+        testcaseMap.put(1, "countX(\"xhixhix\")");
+        testcaseMap.put(2, "countX(\"hi\")");
     }
 
     static int[] expectedResults = { 4, 3, 0, };
@@ -49,10 +49,10 @@ public class CountX
             if (resultsArray[i] != TestCases_CountX.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_CountX.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_CountX.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

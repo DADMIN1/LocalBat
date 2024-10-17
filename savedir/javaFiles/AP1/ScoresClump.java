@@ -5,7 +5,9 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p194530
 
-/* Given an array of scores sorted in increasing order, return true if the array contains 3 adjacent scores that differ from each other by at most 2, such as with {3, 4, 5} or {3, 5, 5}. */
+/* Given an array of scores sorted in increasing order, 
+return true if the array contains 3 adjacent scores that differ from each other by at most 2, 
+such as with {3, 4, 5} or {3, 5, 5}. */
 
 class TestCases_ScoresClump
 {
@@ -16,9 +18,9 @@ class TestCases_ScoresClump
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "scoresClump([3, 4, 5]) → true");
-        testcaseMap.put(1, "scoresClump([3, 4, 6]) → false");
-        testcaseMap.put(2, "scoresClump([1, 3, 5, 5]) → true");
+        testcaseMap.put(0, "scoresClump([3, 4, 5])");
+        testcaseMap.put(1, "scoresClump([3, 4, 6])");
+        testcaseMap.put(2, "scoresClump([1, 3, 5, 5])");
     }
 
     static boolean[] expectedResults = { true, false, true, };
@@ -52,10 +54,10 @@ public class ScoresClump
             if (resultsArray[i] != TestCases_ScoresClump.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_ScoresClump.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_ScoresClump.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

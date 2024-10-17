@@ -5,8 +5,9 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p192570
 
-/* Given two strings, base and remove, return a version of the base string where all instances of the remove string have been removed (not case sensitive).
-You may assume that the remove string is length 1 or more.
+/* Given two strings, base and remove, 
+return a version of the base string where all instances of the remove string have been removed (not case sensitive). 
+You may assume that the remove string is length 1 or more. 
 Remove only non-overlapping instances, so with "xxx" removing "xx" leaves "x". */
 
 class TestCases_WithoutString
@@ -18,9 +19,9 @@ class TestCases_WithoutString
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "withoutString(\"Hello there\", \"llo\") → \"He there\"");
-        testcaseMap.put(1, "withoutString(\"Hello there\", \"e\") → \"Hllo thr\"");
-        testcaseMap.put(2, "withoutString(\"Hello there\", \"x\") → \"Hello there\"");
+        testcaseMap.put(0, "withoutString(\"Hello there\", \"llo\")");
+        testcaseMap.put(1, "withoutString(\"Hello there\", \"e\")");
+        testcaseMap.put(2, "withoutString(\"Hello there\", \"x\")");
     }
 
     static String[] expectedResults = { "He there", "Hllo thr", "Hello there", };
@@ -51,10 +52,10 @@ public class WithoutString
             if (resultsArray[i] != TestCases_WithoutString.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_WithoutString.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_WithoutString.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

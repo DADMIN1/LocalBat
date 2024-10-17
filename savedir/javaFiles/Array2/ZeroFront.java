@@ -5,10 +5,10 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p193753
 
-/* Return an array that contains the exact same numbers as the given array, but rearranged so that all the zeros are grouped at the start of the array.
-The order of the non-zero numbers does not matter.
-So {1, 0, 0, 1} becomes {0 ,0, 1, 1}.
-You may modify and return the given array or make a new array. */
+/* Return an array that contains the exact same numbers as the given array, 
+but rearranged so that all the zeros are grouped at the start of the array. 
+The order of the non-zero numbers does not matter. So {1, 
+0, 0, 1} becomes {0 ,0, 1, 1}. You may modify and return the given array or make a new array. */
 
 class TestCases_ZeroFront
 {
@@ -19,9 +19,9 @@ class TestCases_ZeroFront
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "zeroFront([1, 0, 0, 1]) → [0, 0, 1, 1]");
-        testcaseMap.put(1, "zeroFront([0, 1, 1, 0, 1]) → [0, 0, 1, 1, 1]");
-        testcaseMap.put(2, "zeroFront([1, 0]) → [0, 1]");
+        testcaseMap.put(0, "zeroFront([1, 0, 0, 1])");
+        testcaseMap.put(1, "zeroFront([0, 1, 1, 0, 1])");
+        testcaseMap.put(2, "zeroFront([1, 0])");
     }
 
     static int[][] expectedResults = { {0, 0, 1, 1}, {0, 0, 1, 1, 1}, {0, 1}, };
@@ -60,13 +60,13 @@ public class ZeroFront
         boolean allTestsPassed = true;
         for (int i = 0; i < resultsArray.length; ++i)
         {
-            if (resultsArray[i] != TestCases_ZeroFront.expectedResults[i])
+            if (!resultsArray[i].equals(TestCases_ZeroFront.expectedResults[i]))
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_ZeroFront.testcaseMap.get(i));
+                System.out.println("    received: "+printArray(resultsArray[i]));
                 System.out.println("    expected: "+printArray(TestCases_ZeroFront.expectedResults[i]));
-                System.out.println("      result: "+printArray(resultsArray[i]));
                 System.out.println("\n");
             }
         }

@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p128270
 
-/* Given 2 int arrays, a and b, of any length, return a new array with the first element of each array.
+/* Given 2 int arrays, a and b, of any length, return a new array with the first element of each array. 
 If either array is length 0, ignore that array. */
 
 class TestCases_Front11
@@ -17,9 +17,9 @@ class TestCases_Front11
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "front11([1, 2, 3], [7, 9, 8]) → [1, 7]");
-        testcaseMap.put(1, "front11([1], [2]) → [1, 2]");
-        testcaseMap.put(2, "front11([1, 7], []) → [1]");
+        testcaseMap.put(0, "front11([1, 2, 3], [7, 9, 8])");
+        testcaseMap.put(1, "front11([1], [2])");
+        testcaseMap.put(2, "front11([1, 7], [])");
     }
 
     static int[][] expectedResults = { {1, 7}, {1, 2}, {1}, };
@@ -58,13 +58,13 @@ public class Front11
         boolean allTestsPassed = true;
         for (int i = 0; i < resultsArray.length; ++i)
         {
-            if (resultsArray[i] != TestCases_Front11.expectedResults[i])
+            if (!resultsArray[i].equals(TestCases_Front11.expectedResults[i]))
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_Front11.testcaseMap.get(i));
+                System.out.println("    received: "+printArray(resultsArray[i]));
                 System.out.println("    expected: "+printArray(TestCases_Front11.expectedResults[i]));
-                System.out.println("      result: "+printArray(resultsArray[i]));
                 System.out.println("\n");
             }
         }

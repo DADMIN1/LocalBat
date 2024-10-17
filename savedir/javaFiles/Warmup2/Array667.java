@@ -5,7 +5,8 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p110019
 
-/* Given an array of ints, return the number of times that two 6's are next to each other in the array.
+/* Given an array of ints, 
+return the number of times that two 6's are next to each other in the array. 
 Also count instances where the second "6" is actually a 7. */
 
 class TestCases_Array667
@@ -17,9 +18,9 @@ class TestCases_Array667
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "array667([6, 6, 2]) → 1");
-        testcaseMap.put(1, "array667([6, 6, 2, 6]) → 1");
-        testcaseMap.put(2, "array667([6, 7, 2, 6]) → 1");
+        testcaseMap.put(0, "array667([6, 6, 2])");
+        testcaseMap.put(1, "array667([6, 6, 2, 6])");
+        testcaseMap.put(2, "array667([6, 7, 2, 6])");
     }
 
     static int[] expectedResults = { 1, 1, 1, };
@@ -53,10 +54,10 @@ public class Array667
             if (resultsArray[i] != TestCases_Array667.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_Array667.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_Array667.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

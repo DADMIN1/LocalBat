@@ -5,8 +5,7 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p109660
 
-/* Start with 2 int arrays, a and b, of any length.
-Return how many of the arrays have 1 as their first element. */
+/* Start with 2 int arrays, a and b, of any length. Return how many of the arrays have 1 as their first element. */
 
 class TestCases_Start1
 {
@@ -17,9 +16,9 @@ class TestCases_Start1
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "start1([1, 2, 3], [1, 3]) → 2");
-        testcaseMap.put(1, "start1([7, 2, 3], [1]) → 1");
-        testcaseMap.put(2, "start1([1, 2], []) → 1");
+        testcaseMap.put(0, "start1([1, 2, 3], [1, 3])");
+        testcaseMap.put(1, "start1([7, 2, 3], [1])");
+        testcaseMap.put(2, "start1([1, 2], [])");
     }
 
     static int[] expectedResults = { 2, 1, 1, };
@@ -53,10 +52,10 @@ public class Start1
             if (resultsArray[i] != TestCases_Start1.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_Start1.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_Start1.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

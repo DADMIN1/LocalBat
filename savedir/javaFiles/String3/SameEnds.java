@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p131516
 
-/* Given a string, return the longest substring that appears at both the beginning and end of the string without overlapping.
+/* Given a string, return the longest substring that appears at both the beginning and end of the string without overlapping. 
 For example, sameEnds("abXab") is "ab". */
 
 class TestCases_SameEnds
@@ -17,9 +17,9 @@ class TestCases_SameEnds
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "sameEnds(\"abXYab\") → \"ab\"");
-        testcaseMap.put(1, "sameEnds(\"xx\") → \"x\"");
-        testcaseMap.put(2, "sameEnds(\"xxx\") → \"x\"");
+        testcaseMap.put(0, "sameEnds(\"abXYab\")");
+        testcaseMap.put(1, "sameEnds(\"xx\")");
+        testcaseMap.put(2, "sameEnds(\"xxx\")");
     }
 
     static String[] expectedResults = { "ab", "x", "x", };
@@ -50,10 +50,10 @@ public class SameEnds
             if (resultsArray[i] != TestCases_SameEnds.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_SameEnds.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_SameEnds.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

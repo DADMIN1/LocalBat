@@ -5,7 +5,8 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p101475
 
-/* Given a string and a non-negative int n, we'll say that the front of the string is the first 3 chars, or whatever is there if the string is less than length 3.
+/* Given a string and a non-negative int n, we'll say that the front of the string is the first 3 chars, 
+or whatever is there if the string is less than length 3. 
 Return n copies of the front; */
 
 class TestCases_FrontTimes
@@ -17,9 +18,9 @@ class TestCases_FrontTimes
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "frontTimes(\"Chocolate\", 2) → \"ChoCho\"");
-        testcaseMap.put(1, "frontTimes(\"Chocolate\", 3) → \"ChoChoCho\"");
-        testcaseMap.put(2, "frontTimes(\"Abc\", 3) → \"AbcAbcAbc\"");
+        testcaseMap.put(0, "frontTimes(\"Chocolate\", 2)");
+        testcaseMap.put(1, "frontTimes(\"Chocolate\", 3)");
+        testcaseMap.put(2, "frontTimes(\"Abc\", 3)");
     }
 
     static String[] expectedResults = { "ChoCho", "ChoChoCho", "AbcAbcAbc", };
@@ -50,10 +51,10 @@ public class FrontTimes
             if (resultsArray[i] != TestCases_FrontTimes.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_FrontTimes.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_FrontTimes.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

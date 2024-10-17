@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p174254
 
-/* Given a string, return a version without both the first and last char of the string.
+/* Given a string, return a version without both the first and last char of the string. 
 The string may be any length, including 0. */
 
 class TestCases_WithouEnd2
@@ -17,9 +17,9 @@ class TestCases_WithouEnd2
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "withouEnd2(\"Hello\") → \"ell\"");
-        testcaseMap.put(1, "withouEnd2(\"abc\") → \"b\"");
-        testcaseMap.put(2, "withouEnd2(\"ab\") → \"\"");
+        testcaseMap.put(0, "withouEnd2(\"Hello\")");
+        testcaseMap.put(1, "withouEnd2(\"abc\")");
+        testcaseMap.put(2, "withouEnd2(\"ab\")");
     }
 
     static String[] expectedResults = { "ell", "b", "", };
@@ -50,10 +50,10 @@ public class WithouEnd2
             if (resultsArray[i] != TestCases_WithouEnd2.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_WithouEnd2.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_WithouEnd2.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

@@ -16,9 +16,9 @@ class TestCases_EndX
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "endX(\"xxre\") → \"rexx\"");
-        testcaseMap.put(1, "endX(\"xxhixx\") → \"hixxxx\"");
-        testcaseMap.put(2, "endX(\"xhixhix\") → \"hihixxx\"");
+        testcaseMap.put(0, "endX(\"xxre\")");
+        testcaseMap.put(1, "endX(\"xxhixx\")");
+        testcaseMap.put(2, "endX(\"xhixhix\")");
     }
 
     static String[] expectedResults = { "rexx", "hixxxx", "hihixxx", };
@@ -49,10 +49,10 @@ public class EndX
             if (resultsArray[i] != TestCases_EndX.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_EndX.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_EndX.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

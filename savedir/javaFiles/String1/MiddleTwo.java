@@ -5,8 +5,8 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p137729
 
-/* Given a string of even length, return a string made of the middle two chars, so the string "string" yields "ri".
-The string length will be at least 2. */
+/* Given a string of even length, return a string made of the middle two chars, 
+so the string "string" yields "ri". The string length will be at least 2. */
 
 class TestCases_MiddleTwo
 {
@@ -17,9 +17,9 @@ class TestCases_MiddleTwo
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "middleTwo(\"string\") → \"ri\"");
-        testcaseMap.put(1, "middleTwo(\"code\") → \"od\"");
-        testcaseMap.put(2, "middleTwo(\"Practice\") → \"ct\"");
+        testcaseMap.put(0, "middleTwo(\"string\")");
+        testcaseMap.put(1, "middleTwo(\"code\")");
+        testcaseMap.put(2, "middleTwo(\"Practice\")");
     }
 
     static String[] expectedResults = { "ri", "od", "ct", };
@@ -50,10 +50,10 @@ public class MiddleTwo
             if (resultsArray[i] != TestCases_MiddleTwo.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_MiddleTwo.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_MiddleTwo.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

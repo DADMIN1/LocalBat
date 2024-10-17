@@ -5,7 +5,8 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p165666
 
-/* Given a string, return a new string made of every other char starting with the first, so "Hello" yields "Hlo". */
+/* Given a string, return a new string made of every other char starting with the first, 
+so "Hello" yields "Hlo". */
 
 class TestCases_StringBits
 {
@@ -16,9 +17,9 @@ class TestCases_StringBits
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "stringBits(\"Hello\") → \"Hlo\"");
-        testcaseMap.put(1, "stringBits(\"Hi\") → \"H\"");
-        testcaseMap.put(2, "stringBits(\"Heeololeo\") → \"Hello\"");
+        testcaseMap.put(0, "stringBits(\"Hello\")");
+        testcaseMap.put(1, "stringBits(\"Hi\")");
+        testcaseMap.put(2, "stringBits(\"Heeololeo\")");
     }
 
     static String[] expectedResults = { "Hlo", "H", "Hello", };
@@ -49,10 +50,10 @@ public class StringBits
             if (resultsArray[i] != TestCases_StringBits.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_StringBits.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_StringBits.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

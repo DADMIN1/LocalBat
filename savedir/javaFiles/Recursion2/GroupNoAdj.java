@@ -5,7 +5,9 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p169605
 
-/* Given an array of ints, is it possible to choose a group of some of the ints, such that the group sums to the given target with this additional constraint: If a value in the array is chosen to be in the group, the value immediately following it in the array must not be chosen.
+/* Given an array of ints, is it possible to choose a group of some of the ints, 
+such that the group sums to the given target with this additional constraint: 
+If a value in the array is chosen to be in the group, the value immediately following it in the array must not be chosen. 
 (No loops needed.) */
 
 class TestCases_GroupNoAdj
@@ -17,9 +19,9 @@ class TestCases_GroupNoAdj
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "groupNoAdj(0, [2, 5, 10, 4], 12) → true");
-        testcaseMap.put(1, "groupNoAdj(0, [2, 5, 10, 4], 14) → false");
-        testcaseMap.put(2, "groupNoAdj(0, [2, 5, 10, 4], 7) → false");
+        testcaseMap.put(0, "groupNoAdj(0, [2, 5, 10, 4], 12)");
+        testcaseMap.put(1, "groupNoAdj(0, [2, 5, 10, 4], 14)");
+        testcaseMap.put(2, "groupNoAdj(0, [2, 5, 10, 4], 7)");
     }
 
     static boolean[] expectedResults = { true, false, false, };
@@ -53,10 +55,10 @@ public class GroupNoAdj
             if (resultsArray[i] != TestCases_GroupNoAdj.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_GroupNoAdj.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_GroupNoAdj.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

@@ -16,9 +16,9 @@ class TestCases_LessBy10
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "lessBy10(1, 7, 11) → true");
-        testcaseMap.put(1, "lessBy10(1, 7, 10) → false");
-        testcaseMap.put(2, "lessBy10(11, 1, 7) → true");
+        testcaseMap.put(0, "lessBy10(1, 7, 11)");
+        testcaseMap.put(1, "lessBy10(1, 7, 10)");
+        testcaseMap.put(2, "lessBy10(11, 1, 7)");
     }
 
     static boolean[] expectedResults = { true, false, true, };
@@ -49,10 +49,10 @@ public class LessBy10
             if (resultsArray[i] != TestCases_LessBy10.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_LessBy10.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_LessBy10.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

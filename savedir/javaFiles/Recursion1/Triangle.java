@@ -5,9 +5,9 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p194781
 
-/* We have triangle made of blocks.
-The topmost row has 1 block, the next row down has 2 blocks, the next row has 3 blocks, and so on.
-Compute recursively (no loops or multiplication) the total number of blocks in such a triangle with the given number of rows. */
+/* We have triangle made of blocks. The topmost row has 1 block, 
+the next row down has 2 blocks, the next row has 3 blocks, 
+and so on. Compute recursively (no loops or multiplication) the total number of blocks in such a triangle with the given number of rows. */
 
 class TestCases_Triangle
 {
@@ -18,9 +18,9 @@ class TestCases_Triangle
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "triangle(0) → 0");
-        testcaseMap.put(1, "triangle(1) → 1");
-        testcaseMap.put(2, "triangle(2) → 3");
+        testcaseMap.put(0, "triangle(0)");
+        testcaseMap.put(1, "triangle(1)");
+        testcaseMap.put(2, "triangle(2)");
     }
 
     static int[] expectedResults = { 0, 1, 3, };
@@ -51,10 +51,10 @@ public class Triangle
             if (resultsArray[i] != TestCases_Triangle.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_Triangle.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_Triangle.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

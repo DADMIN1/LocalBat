@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p171260
 
-/* Given a string, return a version where all the "x" have been removed.
+/* Given a string, return a version where all the "x" have been removed. 
 Except an "x" at the very start or end should not be removed. */
 
 class TestCases_StringX
@@ -17,9 +17,9 @@ class TestCases_StringX
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "stringX(\"xxHxix\") → \"xHix\"");
-        testcaseMap.put(1, "stringX(\"abxxxcd\") → \"abcd\"");
-        testcaseMap.put(2, "stringX(\"xabxxxcdx\") → \"xabcdx\"");
+        testcaseMap.put(0, "stringX(\"xxHxix\")");
+        testcaseMap.put(1, "stringX(\"abxxxcd\")");
+        testcaseMap.put(2, "stringX(\"xabxxxcdx\")");
     }
 
     static String[] expectedResults = { "xHix", "abcd", "xabcdx", };
@@ -50,10 +50,10 @@ public class StringX
             if (resultsArray[i] != TestCases_StringX.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_StringX.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_StringX.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

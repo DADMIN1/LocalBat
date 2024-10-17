@@ -5,8 +5,9 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p137365
 
-/* Given a number n, return true if n is in the range 1..10, inclusive.
-Unless outsideMode is true, in which case return true if the number is less or equal to 1, or greater or equal to 10. */
+/* Given a number n, return true if n is in the range 1..10, 
+inclusive. Unless outsideMode is true, in which case return true if the number is less or equal to 1, 
+or greater or equal to 10. */
 
 class TestCases_In1To10
 {
@@ -17,9 +18,9 @@ class TestCases_In1To10
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "in1To10(5, false) → true");
-        testcaseMap.put(1, "in1To10(11, false) → false");
-        testcaseMap.put(2, "in1To10(11, true) → true");
+        testcaseMap.put(0, "in1To10(5, false)");
+        testcaseMap.put(1, "in1To10(11, false)");
+        testcaseMap.put(2, "in1To10(11, true)");
     }
 
     static boolean[] expectedResults = { true, false, true, };
@@ -50,10 +51,10 @@ public class In1To10
             if (resultsArray[i] != TestCases_In1To10.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_In1To10.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_In1To10.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p142455
 
-/* Given an int array of any length, return a new array of its first 2 elements.
+/* Given an int array of any length, return a new array of its first 2 elements. 
 If the array is smaller than length 2, use whatever elements are present. */
 
 class TestCases_FrontPiece
@@ -17,9 +17,9 @@ class TestCases_FrontPiece
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "frontPiece([1, 2, 3]) → [1, 2]");
-        testcaseMap.put(1, "frontPiece([1, 2]) → [1, 2]");
-        testcaseMap.put(2, "frontPiece([1]) → [1]");
+        testcaseMap.put(0, "frontPiece([1, 2, 3])");
+        testcaseMap.put(1, "frontPiece([1, 2])");
+        testcaseMap.put(2, "frontPiece([1])");
     }
 
     static int[][] expectedResults = { {1, 2}, {1, 2}, {1}, };
@@ -58,13 +58,13 @@ public class FrontPiece
         boolean allTestsPassed = true;
         for (int i = 0; i < resultsArray.length; ++i)
         {
-            if (resultsArray[i] != TestCases_FrontPiece.expectedResults[i])
+            if (!resultsArray[i].equals(TestCases_FrontPiece.expectedResults[i]))
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_FrontPiece.testcaseMap.get(i));
+                System.out.println("    received: "+printArray(resultsArray[i]));
                 System.out.println("    expected: "+printArray(TestCases_FrontPiece.expectedResults[i]));
-                System.out.println("      result: "+printArray(resultsArray[i]));
                 System.out.println("\n");
             }
         }

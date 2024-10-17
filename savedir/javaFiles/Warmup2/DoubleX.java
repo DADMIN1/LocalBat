@@ -16,9 +16,9 @@ class TestCases_DoubleX
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "doubleX(\"axxbb\") → true");
-        testcaseMap.put(1, "doubleX(\"axaxax\") → false");
-        testcaseMap.put(2, "doubleX(\"xxxxx\") → true");
+        testcaseMap.put(0, "doubleX(\"axxbb\")");
+        testcaseMap.put(1, "doubleX(\"axaxax\")");
+        testcaseMap.put(2, "doubleX(\"xxxxx\")");
     }
 
     static boolean[] expectedResults = { true, false, true, };
@@ -49,10 +49,10 @@ public class DoubleX
             if (resultsArray[i] != TestCases_DoubleX.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_DoubleX.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_DoubleX.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

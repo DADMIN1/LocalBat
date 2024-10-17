@@ -5,8 +5,9 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p199171
 
-/* Given a string, count the number of words ending in 'y' or 'z' -- so the 'y' in "heavy" and the 'z' in "fez" count, but not the 'y' in "yellow" (not case sensitive).
-We'll say that a y or z is at the end of a word if there is not an alphabetic letter immediately following it.
+/* Given a string, count the number of words ending in 'y' or 'z' -- so the 'y' in "heavy" and the 'z' in "fez" count, 
+but not the 'y' in "yellow" (not case sensitive). 
+We'll say that a y or z is at the end of a word if there is not an alphabetic letter immediately following it. 
 (Note: Character.isLetter(char) tests if a char is an alphabetic letter.) */
 
 class TestCases_CountYZ
@@ -18,9 +19,9 @@ class TestCases_CountYZ
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "countYZ(\"fez day\") → 2");
-        testcaseMap.put(1, "countYZ(\"day fez\") → 2");
-        testcaseMap.put(2, "countYZ(\"day fyyyz\") → 2");
+        testcaseMap.put(0, "countYZ(\"fez day\")");
+        testcaseMap.put(1, "countYZ(\"day fez\")");
+        testcaseMap.put(2, "countYZ(\"day fyyyz\")");
     }
 
     static int[] expectedResults = { 2, 2, 2, };
@@ -51,10 +52,10 @@ public class CountYZ
             if (resultsArray[i] != TestCases_CountYZ.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_CountYZ.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_CountYZ.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

@@ -5,8 +5,8 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p190570
 
-/* Given a non-empty string and an int n, return a new string where the char at index n has been removed.
-The value of n will be a valid index of a char in the original string (i.e.
+/* Given a non-empty string and an int n, return a new string where the char at index n has been removed. 
+The value of n will be a valid index of a char in the original string (i.e. 
 n will be in the range 0..str.length()-1 inclusive). */
 
 class TestCases_MissingChar
@@ -18,9 +18,9 @@ class TestCases_MissingChar
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "missingChar(\"kitten\", 1) → \"ktten\"");
-        testcaseMap.put(1, "missingChar(\"kitten\", 0) → \"itten\"");
-        testcaseMap.put(2, "missingChar(\"kitten\", 4) → \"kittn\"");
+        testcaseMap.put(0, "missingChar(\"kitten\", 1)");
+        testcaseMap.put(1, "missingChar(\"kitten\", 0)");
+        testcaseMap.put(2, "missingChar(\"kitten\", 4)");
     }
 
     static String[] expectedResults = { "ktten", "itten", "kittn", };
@@ -51,10 +51,10 @@ public class MissingChar
             if (resultsArray[i] != TestCases_MissingChar.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_MissingChar.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_MissingChar.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

@@ -16,9 +16,9 @@ class TestCases_PairStar
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "pairStar(\"hello\") → \"hel*lo\"");
-        testcaseMap.put(1, "pairStar(\"xxyy\") → \"x*xy*y\"");
-        testcaseMap.put(2, "pairStar(\"aaaa\") → \"a*a*a*a\"");
+        testcaseMap.put(0, "pairStar(\"hello\")");
+        testcaseMap.put(1, "pairStar(\"xxyy\")");
+        testcaseMap.put(2, "pairStar(\"aaaa\")");
     }
 
     static String[] expectedResults = { "hel*lo", "x*xy*y", "a*a*a*a", };
@@ -49,10 +49,10 @@ public class PairStar
             if (resultsArray[i] != TestCases_PairStar.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_PairStar.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_PairStar.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

@@ -5,9 +5,10 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p136585
 
-/* Return the "centered" average of an array of ints, which we'll say is the mean average of the values, except ignoring the largest and smallest values in the array.
-If there are multiple copies of the smallest value, ignore just one copy, and likewise for the largest value.
-Use int division to produce the final average.
+/* Return the "centered" average of an array of ints, which we'll say is the mean average of the values, 
+except ignoring the largest and smallest values in the array. 
+If there are multiple copies of the smallest value, ignore just one copy, 
+and likewise for the largest value. Use int division to produce the final average. 
 You may assume that the array is length 3 or more. */
 
 class TestCases_CenteredAverage
@@ -19,9 +20,9 @@ class TestCases_CenteredAverage
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "centeredAverage([1, 2, 3, 4, 100]) → 3");
-        testcaseMap.put(1, "centeredAverage([1, 1, 5, 5, 10, 8, 7]) → 5");
-        testcaseMap.put(2, "centeredAverage([-10, -4, -2, -4, -2, 0]) → -3");
+        testcaseMap.put(0, "centeredAverage([1, 2, 3, 4, 100])");
+        testcaseMap.put(1, "centeredAverage([1, 1, 5, 5, 10, 8, 7])");
+        testcaseMap.put(2, "centeredAverage([-10, -4, -2, -4, -2, 0])");
     }
 
     static int[] expectedResults = { 3, 5, -3, };
@@ -55,10 +56,10 @@ public class CenteredAverage
             if (resultsArray[i] != TestCases_CenteredAverage.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_CenteredAverage.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_CenteredAverage.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

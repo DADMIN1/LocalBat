@@ -5,9 +5,11 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p141494
 
-/* Given a string and a second "word" string, we'll say that the word matches the string if it appears at the front of the string, except its first char does not need to match exactly.
-On a match, return the front of the string, or otherwise return the empty string.
-So, so with the string "hippo" the word "hi" returns "hi" and "xip" returns "hip".
+/* Given a string and a second "word" string, 
+we'll say that the word matches the string if it appears at the front of the string, 
+except its first char does not need to match exactly. On a match, 
+return the front of the string, or otherwise return the empty string. 
+So, so with the string "hippo" the word "hi" returns "hi" and "xip" returns "hip". 
 The word will be at least length 1. */
 
 class TestCases_StartWord
@@ -19,9 +21,9 @@ class TestCases_StartWord
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "startWord(\"hippo\", \"hi\") → \"hi\"");
-        testcaseMap.put(1, "startWord(\"hippo\", \"xip\") → \"hip\"");
-        testcaseMap.put(2, "startWord(\"hippo\", \"i\") → \"h\"");
+        testcaseMap.put(0, "startWord(\"hippo\", \"hi\")");
+        testcaseMap.put(1, "startWord(\"hippo\", \"xip\")");
+        testcaseMap.put(2, "startWord(\"hippo\", \"i\")");
     }
 
     static String[] expectedResults = { "hi", "hip", "h", };
@@ -52,10 +54,10 @@ public class StartWord
             if (resultsArray[i] != TestCases_StartWord.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_StartWord.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_StartWord.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

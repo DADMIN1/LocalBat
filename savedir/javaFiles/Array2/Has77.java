@@ -5,7 +5,9 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p168357
 
-/* Given an array of ints, return true if the array contains two 7's next to each other, or there are two 7's separated by one element, such as with {7, 1, 7}. */
+/* Given an array of ints, return true if the array contains two 7's next to each other, 
+or there are two 7's separated by one element, such as with {7, 
+1, 7}. */
 
 class TestCases_Has77
 {
@@ -16,9 +18,9 @@ class TestCases_Has77
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "has77([1, 7, 7]) → true");
-        testcaseMap.put(1, "has77([1, 7, 1, 7]) → true");
-        testcaseMap.put(2, "has77([1, 7, 1, 1, 7]) → false");
+        testcaseMap.put(0, "has77([1, 7, 7])");
+        testcaseMap.put(1, "has77([1, 7, 1, 7])");
+        testcaseMap.put(2, "has77([1, 7, 1, 1, 7])");
     }
 
     static boolean[] expectedResults = { true, true, false, };
@@ -52,10 +54,10 @@ public class Has77
             if (resultsArray[i] != TestCases_Has77.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_Has77.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_Has77.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

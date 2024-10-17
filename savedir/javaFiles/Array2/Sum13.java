@@ -5,8 +5,9 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p127384
 
-/* Return the sum of the numbers in the array, returning 0 for an empty array.
-Except the number 13 is very unlucky, so it does not count and numbers that come immediately after a 13 also do not count. */
+/* Return the sum of the numbers in the array, returning 0 for an empty array. 
+Except the number 13 is very unlucky, 
+so it does not count and numbers that come immediately after a 13 also do not count. */
 
 class TestCases_Sum13
 {
@@ -17,9 +18,9 @@ class TestCases_Sum13
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "sum13([1, 2, 2, 1]) → 6");
-        testcaseMap.put(1, "sum13([1, 1]) → 2");
-        testcaseMap.put(2, "sum13([1, 2, 2, 1, 13]) → 6");
+        testcaseMap.put(0, "sum13([1, 2, 2, 1])");
+        testcaseMap.put(1, "sum13([1, 1])");
+        testcaseMap.put(2, "sum13([1, 2, 2, 1, 13])");
     }
 
     static int[] expectedResults = { 6, 2, 6, };
@@ -53,10 +54,10 @@ public class Sum13
             if (resultsArray[i] != TestCases_Sum13.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_Sum13.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_Sum13.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

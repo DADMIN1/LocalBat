@@ -5,8 +5,9 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p183592
 
-/* Given a string, take the first 2 chars and return the string with the 2 chars added at both the front and back, so "kitten" yields"kikittenki".
-If the string length is less than 2, use whatever chars are there. */
+/* Given a string, take the first 2 chars and return the string with the 2 chars added at both the front and back, 
+so "kitten" yields"kikittenki". If the string length is less than 2, 
+use whatever chars are there. */
 
 class TestCases_Front22
 {
@@ -17,9 +18,9 @@ class TestCases_Front22
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "front22(\"kitten\") → \"kikittenki\"");
-        testcaseMap.put(1, "front22(\"Ha\") → \"HaHaHa\"");
-        testcaseMap.put(2, "front22(\"abc\") → \"ababcab\"");
+        testcaseMap.put(0, "front22(\"kitten\")");
+        testcaseMap.put(1, "front22(\"Ha\")");
+        testcaseMap.put(2, "front22(\"abc\")");
     }
 
     static String[] expectedResults = { "kikittenki", "HaHaHa", "ababcab", };
@@ -50,10 +51,10 @@ public class Front22
             if (resultsArray[i] != TestCases_Front22.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_Front22.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_Front22.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

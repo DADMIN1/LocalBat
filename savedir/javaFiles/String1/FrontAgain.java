@@ -5,7 +5,8 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p196652
 
-/* Given a string, return true if the first 2 chars in the string also appear at the end of the string, such as with "edited". */
+/* Given a string, return true if the first 2 chars in the string also appear at the end of the string, 
+such as with "edited". */
 
 class TestCases_FrontAgain
 {
@@ -16,9 +17,9 @@ class TestCases_FrontAgain
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "frontAgain(\"edited\") → true");
-        testcaseMap.put(1, "frontAgain(\"edit\") → false");
-        testcaseMap.put(2, "frontAgain(\"ed\") → true");
+        testcaseMap.put(0, "frontAgain(\"edited\")");
+        testcaseMap.put(1, "frontAgain(\"edit\")");
+        testcaseMap.put(2, "frontAgain(\"ed\")");
     }
 
     static boolean[] expectedResults = { true, false, true, };
@@ -49,10 +50,10 @@ public class FrontAgain
             if (resultsArray[i] != TestCases_FrontAgain.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_FrontAgain.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_FrontAgain.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

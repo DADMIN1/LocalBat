@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p146974
 
-/* Given an array of scores, return true if each score is equal or greater than the one before.
+/* Given an array of scores, return true if each score is equal or greater than the one before. 
 The array will be length 2 or more. */
 
 class TestCases_ScoresIncreasing
@@ -17,9 +17,9 @@ class TestCases_ScoresIncreasing
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "scoresIncreasing([1, 3, 4]) → true");
-        testcaseMap.put(1, "scoresIncreasing([1, 3, 2]) → false");
-        testcaseMap.put(2, "scoresIncreasing([1, 1, 4]) → true");
+        testcaseMap.put(0, "scoresIncreasing([1, 3, 4])");
+        testcaseMap.put(1, "scoresIncreasing([1, 3, 2])");
+        testcaseMap.put(2, "scoresIncreasing([1, 1, 4])");
     }
 
     static boolean[] expectedResults = { true, false, true, };
@@ -53,10 +53,10 @@ public class ScoresIncreasing
             if (resultsArray[i] != TestCases_ScoresIncreasing.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_ScoresIncreasing.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_ScoresIncreasing.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

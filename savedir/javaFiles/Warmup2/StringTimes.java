@@ -16,9 +16,9 @@ class TestCases_StringTimes
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "stringTimes(\"Hi\", 2) → \"HiHi\"");
-        testcaseMap.put(1, "stringTimes(\"Hi\", 3) → \"HiHiHi\"");
-        testcaseMap.put(2, "stringTimes(\"Hi\", 1) → \"Hi\"");
+        testcaseMap.put(0, "stringTimes(\"Hi\", 2)");
+        testcaseMap.put(1, "stringTimes(\"Hi\", 3)");
+        testcaseMap.put(2, "stringTimes(\"Hi\", 1)");
     }
 
     static String[] expectedResults = { "HiHi", "HiHiHi", "Hi", };
@@ -49,10 +49,10 @@ public class StringTimes
             if (resultsArray[i] != TestCases_StringTimes.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_StringTimes.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_StringTimes.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

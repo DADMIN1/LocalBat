@@ -5,7 +5,8 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p177372
 
-/* Given 2 positive int values, return the larger value that is in the range 10..20 inclusive, or return 0 if neither is in that range. */
+/* Given 2 positive int values, return the larger value that is in the range 10..20 inclusive, 
+or return 0 if neither is in that range. */
 
 class TestCases_Max1020
 {
@@ -16,9 +17,9 @@ class TestCases_Max1020
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "max1020(11, 19) → 19");
-        testcaseMap.put(1, "max1020(19, 11) → 19");
-        testcaseMap.put(2, "max1020(11, 9) → 11");
+        testcaseMap.put(0, "max1020(11, 19)");
+        testcaseMap.put(1, "max1020(19, 11)");
+        testcaseMap.put(2, "max1020(11, 9)");
     }
 
     static int[] expectedResults = { 19, 19, 11, };
@@ -49,10 +50,10 @@ public class Max1020
             if (resultsArray[i] != TestCases_Max1020.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_Max1020.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_Max1020.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

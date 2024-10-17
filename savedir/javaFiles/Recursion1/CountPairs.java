@@ -5,9 +5,8 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p154048
 
-/* We'll say that a "pair" in a string is two instances of a char separated by a char.
-So "AxA" the A's make a pair.
-Pair's can overlap, so "AxAxA" contains 3 pairs -- 2 for A and 1 for x.
+/* We'll say that a "pair" in a string is two instances of a char separated by a char. 
+So "AxA" the A's make a pair. Pair's can overlap, so "AxAxA" contains 3 pairs -- 2 for A and 1 for x. 
 Recursively compute the number of pairs in the given string. */
 
 class TestCases_CountPairs
@@ -19,9 +18,9 @@ class TestCases_CountPairs
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "countPairs(\"axa\") → 1");
-        testcaseMap.put(1, "countPairs(\"axax\") → 2");
-        testcaseMap.put(2, "countPairs(\"axbx\") → 1");
+        testcaseMap.put(0, "countPairs(\"axa\")");
+        testcaseMap.put(1, "countPairs(\"axax\")");
+        testcaseMap.put(2, "countPairs(\"axbx\")");
     }
 
     static int[] expectedResults = { 1, 2, 1, };
@@ -52,10 +51,10 @@ public class CountPairs
             if (resultsArray[i] != TestCases_CountPairs.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_CountPairs.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_CountPairs.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

@@ -5,9 +5,10 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p159339
 
-/* Return an array that contains exactly the same numbers as the given array, but rearranged so that every 3 is immediately followed by a 4.
-Do not move the 3's, but every other number may move.
-The array contains the same number of 3's and 4's, every 3 has a number after it that is not a 3, and a 3 appears in the array before any 4. */
+/* Return an array that contains exactly the same numbers as the given array, 
+but rearranged so that every 3 is immediately followed by a 4. 
+Do not move the 3's, but every other number may move. The array contains the same number of 3's and 4's, 
+every 3 has a number after it that is not a 3, and a 3 appears in the array before any 4. */
 
 class TestCases_Fix34
 {
@@ -18,9 +19,9 @@ class TestCases_Fix34
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "fix34([1, 3, 1, 4]) → [1, 3, 4, 1]");
-        testcaseMap.put(1, "fix34([1, 3, 1, 4, 4, 3, 1]) → [1, 3, 4, 1, 1, 3, 4]");
-        testcaseMap.put(2, "fix34([3, 2, 2, 4]) → [3, 4, 2, 2]");
+        testcaseMap.put(0, "fix34([1, 3, 1, 4])");
+        testcaseMap.put(1, "fix34([1, 3, 1, 4, 4, 3, 1])");
+        testcaseMap.put(2, "fix34([3, 2, 2, 4])");
     }
 
     static int[][] expectedResults = { {1, 3, 4, 1}, {1, 3, 4, 1, 1, 3, 4}, {3, 4, 2, 2}, };
@@ -59,13 +60,13 @@ public class Fix34
         boolean allTestsPassed = true;
         for (int i = 0; i < resultsArray.length; ++i)
         {
-            if (resultsArray[i] != TestCases_Fix34.expectedResults[i])
+            if (!resultsArray[i].equals(TestCases_Fix34.expectedResults[i]))
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_Fix34.testcaseMap.get(i));
+                System.out.println("    received: "+printArray(resultsArray[i]));
                 System.out.println("    expected: "+printArray(TestCases_Fix34.expectedResults[i]));
-                System.out.println("      result: "+printArray(resultsArray[i]));
                 System.out.println("\n");
             }
         }

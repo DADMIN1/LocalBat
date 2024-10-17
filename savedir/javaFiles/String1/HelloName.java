@@ -5,8 +5,8 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p171896
 
-/* Given a string name, e.g.
-"Bob", return a greeting of the form "Hello Bob!". */
+/* Given a string name, e.g. "Bob", 
+return a greeting of the form "Hello Bob!". */
 
 class TestCases_HelloName
 {
@@ -17,9 +17,9 @@ class TestCases_HelloName
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "helloName(\"Bob\") → \"Hello Bob!\"");
-        testcaseMap.put(1, "helloName(\"Alice\") → \"Hello Alice!\"");
-        testcaseMap.put(2, "helloName(\"X\") → \"Hello X!\"");
+        testcaseMap.put(0, "helloName(\"Bob\")");
+        testcaseMap.put(1, "helloName(\"Alice\")");
+        testcaseMap.put(2, "helloName(\"X\")");
     }
 
     static String[] expectedResults = { "Hello Bob!", "Hello Alice!", "Hello X!", };
@@ -50,10 +50,10 @@ public class HelloName
             if (resultsArray[i] != TestCases_HelloName.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_HelloName.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_HelloName.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

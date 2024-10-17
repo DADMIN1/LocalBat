@@ -5,11 +5,11 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p170833
 
-/* You have a red lottery ticket showing ints a, b, and c, each of which is 0, 1, or 2.
-If they are all the value 2, the result is 10.
-Otherwise if they are all the same, the result is 5.
-Otherwise so long as both b and c are different from a, the result is 1.
-Otherwise the result is 0. */
+/* You have a red lottery ticket showing ints a, b, and c, 
+each of which is 0, 1, or 2. If they are all the value 2, 
+the result is 10. Otherwise if they are all the same, the result is 5. 
+Otherwise so long as both b and c are different from a, 
+the result is 1. Otherwise the result is 0. */
 
 class TestCases_RedTicket
 {
@@ -20,9 +20,9 @@ class TestCases_RedTicket
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "redTicket(2, 2, 2) → 10");
-        testcaseMap.put(1, "redTicket(2, 2, 1) → 0");
-        testcaseMap.put(2, "redTicket(0, 0, 0) → 5");
+        testcaseMap.put(0, "redTicket(2, 2, 2)");
+        testcaseMap.put(1, "redTicket(2, 2, 1)");
+        testcaseMap.put(2, "redTicket(0, 0, 0)");
     }
 
     static int[] expectedResults = { 10, 0, 5, };
@@ -53,10 +53,10 @@ public class RedTicket
             if (resultsArray[i] != TestCases_RedTicket.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_RedTicket.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_RedTicket.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

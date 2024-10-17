@@ -5,9 +5,10 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p142247
 
-/* Given a string, if a length 2 substring appears at both its beginning and end, return a string without the substring at the beginning, so "HelloHe" yields "lloHe".
-The substring may overlap with itself, so "Hi" yields "".
-Otherwise, return the original string unchanged. */
+/* Given a string, if a length 2 substring appears at both its beginning and end, 
+return a string without the substring at the beginning, 
+so "HelloHe" yields "lloHe". The substring may overlap with itself, 
+so "Hi" yields "". Otherwise, return the original string unchanged. */
 
 class TestCases_Without2
 {
@@ -18,9 +19,9 @@ class TestCases_Without2
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "without2(\"HelloHe\") → \"lloHe\"");
-        testcaseMap.put(1, "without2(\"HelloHi\") → \"HelloHi\"");
-        testcaseMap.put(2, "without2(\"Hi\") → \"\"");
+        testcaseMap.put(0, "without2(\"HelloHe\")");
+        testcaseMap.put(1, "without2(\"HelloHi\")");
+        testcaseMap.put(2, "without2(\"Hi\")");
     }
 
     static String[] expectedResults = { "lloHe", "HelloHi", "", };
@@ -51,10 +52,10 @@ public class Without2
             if (resultsArray[i] != TestCases_Without2.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_Without2.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_Without2.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

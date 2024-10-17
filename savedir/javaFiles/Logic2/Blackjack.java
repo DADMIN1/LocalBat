@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p117019
 
-/* Given 2 int values greater than 0, return whichever value is nearest to 21 without going over.
+/* Given 2 int values greater than 0, return whichever value is nearest to 21 without going over. 
 Return 0 if they both go over. */
 
 class TestCases_Blackjack
@@ -17,9 +17,9 @@ class TestCases_Blackjack
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "blackjack(19, 21) → 21");
-        testcaseMap.put(1, "blackjack(21, 19) → 21");
-        testcaseMap.put(2, "blackjack(19, 22) → 19");
+        testcaseMap.put(0, "blackjack(19, 21)");
+        testcaseMap.put(1, "blackjack(21, 19)");
+        testcaseMap.put(2, "blackjack(19, 22)");
     }
 
     static int[] expectedResults = { 21, 21, 19, };
@@ -50,10 +50,10 @@ public class Blackjack
             if (resultsArray[i] != TestCases_Blackjack.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_Blackjack.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_Blackjack.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

@@ -5,9 +5,9 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p172063
 
-/* Given a string, return a new string made of 3 copies of the first 2 chars of the original string.
-The string may be any length.
-If there are fewer than 2 chars, use whatever is there. */
+/* Given a string, return a new string made of 3 copies of the first 2 chars of the original string. 
+The string may be any length. If there are fewer than 2 chars, 
+use whatever is there. */
 
 class TestCases_ExtraFront
 {
@@ -18,9 +18,9 @@ class TestCases_ExtraFront
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "extraFront(\"Hello\") → \"HeHeHe\"");
-        testcaseMap.put(1, "extraFront(\"ab\") → \"ababab\"");
-        testcaseMap.put(2, "extraFront(\"H\") → \"HHH\"");
+        testcaseMap.put(0, "extraFront(\"Hello\")");
+        testcaseMap.put(1, "extraFront(\"ab\")");
+        testcaseMap.put(2, "extraFront(\"H\")");
     }
 
     static String[] expectedResults = { "HeHeHe", "ababab", "HHH", };
@@ -51,10 +51,10 @@ public class ExtraFront
             if (resultsArray[i] != TestCases_ExtraFront.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_ExtraFront.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_ExtraFront.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

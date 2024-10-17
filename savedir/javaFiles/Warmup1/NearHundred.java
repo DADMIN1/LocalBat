@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p184004
 
-/* Given an int n, return true if it is within 10 of 100 or 200.
+/* Given an int n, return true if it is within 10 of 100 or 200. 
 Note: Math.abs(num) computes the absolute value of a number. */
 
 class TestCases_NearHundred
@@ -17,9 +17,9 @@ class TestCases_NearHundred
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "nearHundred(93) → true");
-        testcaseMap.put(1, "nearHundred(90) → true");
-        testcaseMap.put(2, "nearHundred(89) → false");
+        testcaseMap.put(0, "nearHundred(93)");
+        testcaseMap.put(1, "nearHundred(90)");
+        testcaseMap.put(2, "nearHundred(89)");
     }
 
     static boolean[] expectedResults = { true, true, false, };
@@ -50,10 +50,10 @@ public class NearHundred
             if (resultsArray[i] != TestCases_NearHundred.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_NearHundred.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_NearHundred.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

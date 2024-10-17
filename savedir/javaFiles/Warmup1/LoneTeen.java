@@ -5,8 +5,9 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p165701
 
-/* We'll say that a number is "teen" if it is in the range 13..19 inclusive.
-Given 2 int values, return true if one or the other is teen, but not both. */
+/* We'll say that a number is "teen" if it is in the range 13..19 inclusive. 
+Given 2 int values, return true if one or the other is teen, 
+but not both. */
 
 class TestCases_LoneTeen
 {
@@ -17,9 +18,9 @@ class TestCases_LoneTeen
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "loneTeen(13, 99) → true");
-        testcaseMap.put(1, "loneTeen(21, 19) → true");
-        testcaseMap.put(2, "loneTeen(13, 13) → false");
+        testcaseMap.put(0, "loneTeen(13, 99)");
+        testcaseMap.put(1, "loneTeen(21, 19)");
+        testcaseMap.put(2, "loneTeen(13, 13)");
     }
 
     static boolean[] expectedResults = { true, true, false, };
@@ -50,10 +51,10 @@ public class LoneTeen
             if (resultsArray[i] != TestCases_LoneTeen.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_LoneTeen.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_LoneTeen.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

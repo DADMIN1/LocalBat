@@ -5,7 +5,8 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p143900
 
-/* Given a string, compute recursively the number of times lowercase "hi" appears in the string, however do not count "hi" that have an 'x' immedately before them. */
+/* Given a string, compute recursively the number of times lowercase "hi" appears in the string, 
+however do not count "hi" that have an 'x' immedately before them. */
 
 class TestCases_CountHi2
 {
@@ -16,9 +17,9 @@ class TestCases_CountHi2
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "countHi2(\"ahixhi\") → 1");
-        testcaseMap.put(1, "countHi2(\"ahibhi\") → 2");
-        testcaseMap.put(2, "countHi2(\"xhixhi\") → 0");
+        testcaseMap.put(0, "countHi2(\"ahixhi\")");
+        testcaseMap.put(1, "countHi2(\"ahibhi\")");
+        testcaseMap.put(2, "countHi2(\"xhixhi\")");
     }
 
     static int[] expectedResults = { 1, 2, 0, };
@@ -49,10 +50,10 @@ public class CountHi2
             if (resultsArray[i] != TestCases_CountHi2.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_CountHi2.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_CountHi2.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

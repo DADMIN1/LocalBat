@@ -16,9 +16,9 @@ class TestCases_StartHi
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "startHi(\"hi there\") → true");
-        testcaseMap.put(1, "startHi(\"hi\") → true");
-        testcaseMap.put(2, "startHi(\"hello hi\") → false");
+        testcaseMap.put(0, "startHi(\"hi there\")");
+        testcaseMap.put(1, "startHi(\"hi\")");
+        testcaseMap.put(2, "startHi(\"hello hi\")");
     }
 
     static boolean[] expectedResults = { true, true, false, };
@@ -49,10 +49,10 @@ public class StartHi
             if (resultsArray[i] != TestCases_StartHi.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_StartHi.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_StartHi.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

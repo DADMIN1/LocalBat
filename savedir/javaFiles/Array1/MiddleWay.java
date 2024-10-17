@@ -16,9 +16,9 @@ class TestCases_MiddleWay
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "middleWay([1, 2, 3], [4, 5, 6]) → [2, 5]");
-        testcaseMap.put(1, "middleWay([7, 7, 7], [3, 8, 0]) → [7, 8]");
-        testcaseMap.put(2, "middleWay([5, 2, 9], [1, 4, 5]) → [2, 4]");
+        testcaseMap.put(0, "middleWay([1, 2, 3], [4, 5, 6])");
+        testcaseMap.put(1, "middleWay([7, 7, 7], [3, 8, 0])");
+        testcaseMap.put(2, "middleWay([5, 2, 9], [1, 4, 5])");
     }
 
     static int[][] expectedResults = { {2, 5}, {7, 8}, {2, 4}, };
@@ -57,13 +57,13 @@ public class MiddleWay
         boolean allTestsPassed = true;
         for (int i = 0; i < resultsArray.length; ++i)
         {
-            if (resultsArray[i] != TestCases_MiddleWay.expectedResults[i])
+            if (!resultsArray[i].equals(TestCases_MiddleWay.expectedResults[i]))
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_MiddleWay.testcaseMap.get(i));
+                System.out.println("    received: "+printArray(resultsArray[i]));
                 System.out.println("    expected: "+printArray(TestCases_MiddleWay.expectedResults[i]));
-                System.out.println("      result: "+printArray(resultsArray[i]));
                 System.out.println("\n");
             }
         }

@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p183837
 
-/* Given an array of strings, return a new array containing the first N strings.
+/* Given an array of strings, return a new array containing the first N strings. 
 N will be in the range 1..length. */
 
 class TestCases_WordsFront
@@ -17,9 +17,9 @@ class TestCases_WordsFront
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "wordsFront([\"a\", \"b\", \"c\", \"d\"], 1) → [\"a\"]");
-        testcaseMap.put(1, "wordsFront([\"a\", \"b\", \"c\", \"d\"], 2) → [\"a\", \"b\"]");
-        testcaseMap.put(2, "wordsFront([\"a\", \"b\", \"c\", \"d\"], 3) → [\"a\", \"b\", \"c\"]");
+        testcaseMap.put(0, "wordsFront([\"a\", \"b\", \"c\", \"d\"], 1)");
+        testcaseMap.put(1, "wordsFront([\"a\", \"b\", \"c\", \"d\"], 2)");
+        testcaseMap.put(2, "wordsFront([\"a\", \"b\", \"c\", \"d\"], 3)");
     }
 
     static String[][] expectedResults = { {"a"}, {"a", "b"}, {"a", "b", "c"}, };
@@ -58,13 +58,13 @@ public class WordsFront
         boolean allTestsPassed = true;
         for (int i = 0; i < resultsArray.length; ++i)
         {
-            if (resultsArray[i] != TestCases_WordsFront.expectedResults[i])
+            if (!resultsArray[i].equals(TestCases_WordsFront.expectedResults[i]))
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_WordsFront.testcaseMap.get(i));
+                System.out.println("    received: "+printArray(resultsArray[i]));
                 System.out.println("    expected: "+printArray(TestCases_WordsFront.expectedResults[i]));
-                System.out.println("      result: "+printArray(resultsArray[i]));
                 System.out.println("\n");
             }
         }

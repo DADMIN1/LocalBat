@@ -5,7 +5,10 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p168295
 
-/* Given an array of ints, is it possible to divide the ints into two groups, so that the sum of the two groups is the same, with these constraints: all the values that are multiple of 5 must be in one group, and all the values that are a multiple of 3 (and not a multiple of 5) must be in the other.
+/* Given an array of ints, is it possible to divide the ints into two groups, 
+so that the sum of the two groups is the same, with these constraints: 
+all the values that are multiple of 5 must be in one group, 
+and all the values that are a multiple of 3 (and not a multiple of 5) must be in the other. 
 (No loops needed.) */
 
 class TestCases_Split53
@@ -17,9 +20,9 @@ class TestCases_Split53
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "split53([1, 1]) → true");
-        testcaseMap.put(1, "split53([1, 1, 1]) → false");
-        testcaseMap.put(2, "split53([2, 4, 2]) → true");
+        testcaseMap.put(0, "split53([1, 1])");
+        testcaseMap.put(1, "split53([1, 1, 1])");
+        testcaseMap.put(2, "split53([2, 4, 2])");
     }
 
     static boolean[] expectedResults = { true, false, true, };
@@ -53,10 +56,10 @@ public class Split53
             if (resultsArray[i] != TestCases_Split53.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_Split53.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_Split53.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

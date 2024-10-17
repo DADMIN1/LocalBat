@@ -5,7 +5,8 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p165312
 
-/* Given a string, return a string where for every char in the original, there are two chars. */
+/* Given a string, return a string where for every char in the original, 
+there are two chars. */
 
 class TestCases_DoubleChar
 {
@@ -16,9 +17,9 @@ class TestCases_DoubleChar
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "doubleChar(\"The\") → \"TThhee\"");
-        testcaseMap.put(1, "doubleChar(\"AAbb\") → \"AAAAbbbb\"");
-        testcaseMap.put(2, "doubleChar(\"Hi-There\") → \"HHii--TThheerree\"");
+        testcaseMap.put(0, "doubleChar(\"The\")");
+        testcaseMap.put(1, "doubleChar(\"AAbb\")");
+        testcaseMap.put(2, "doubleChar(\"Hi-There\")");
     }
 
     static String[] expectedResults = { "TThhee", "AAAAbbbb", "HHii--TThheerree", };
@@ -49,10 +50,10 @@ public class DoubleChar
             if (resultsArray[i] != TestCases_DoubleChar.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_DoubleChar.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_DoubleChar.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

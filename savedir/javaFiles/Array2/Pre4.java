@@ -5,9 +5,9 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p100246
 
-/* Given a non-empty array of ints, return a new array containing the elements from the original array that come before the first 4 in the original array.
-The original array will contain at least one 4.
-Note that it is valid in java to create an array of length 0. */
+/* Given a non-empty array of ints, 
+return a new array containing the elements from the original array that come before the first 4 in the original array. 
+The original array will contain at least one 4. Note that it is valid in java to create an array of length 0. */
 
 class TestCases_Pre4
 {
@@ -18,9 +18,9 @@ class TestCases_Pre4
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "pre4([1, 2, 4, 1]) → [1, 2]");
-        testcaseMap.put(1, "pre4([3, 1, 4]) → [3, 1]");
-        testcaseMap.put(2, "pre4([1, 4, 4]) → [1]");
+        testcaseMap.put(0, "pre4([1, 2, 4, 1])");
+        testcaseMap.put(1, "pre4([3, 1, 4])");
+        testcaseMap.put(2, "pre4([1, 4, 4])");
     }
 
     static int[][] expectedResults = { {1, 2}, {3, 1}, {1}, };
@@ -59,13 +59,13 @@ public class Pre4
         boolean allTestsPassed = true;
         for (int i = 0; i < resultsArray.length; ++i)
         {
-            if (resultsArray[i] != TestCases_Pre4.expectedResults[i])
+            if (!resultsArray[i].equals(TestCases_Pre4.expectedResults[i]))
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_Pre4.testcaseMap.get(i));
+                System.out.println("    received: "+printArray(resultsArray[i]));
                 System.out.println("    expected: "+printArray(TestCases_Pre4.expectedResults[i]));
-                System.out.println("      result: "+printArray(resultsArray[i]));
                 System.out.println("\n");
             }
         }

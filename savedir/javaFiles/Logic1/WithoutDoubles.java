@@ -5,8 +5,9 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p115233
 
-/* Return the sum of two 6-sided dice rolls, each in the range 1..6.
-However, if noDoubles is true, if the two dice show the same value, increment one die to the next value, wrapping around to 1 if its value was 6. */
+/* Return the sum of two 6-sided dice rolls, each in the range 1..6. 
+However, if noDoubles is true, if the two dice show the same value, 
+increment one die to the next value, wrapping around to 1 if its value was 6. */
 
 class TestCases_WithoutDoubles
 {
@@ -17,9 +18,9 @@ class TestCases_WithoutDoubles
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "withoutDoubles(2, 3, true) → 5");
-        testcaseMap.put(1, "withoutDoubles(3, 3, true) → 7");
-        testcaseMap.put(2, "withoutDoubles(3, 3, false) → 6");
+        testcaseMap.put(0, "withoutDoubles(2, 3, true)");
+        testcaseMap.put(1, "withoutDoubles(3, 3, true)");
+        testcaseMap.put(2, "withoutDoubles(3, 3, false)");
     }
 
     static int[] expectedResults = { 5, 7, 6, };
@@ -50,10 +51,10 @@ public class WithoutDoubles
             if (resultsArray[i] != TestCases_WithoutDoubles.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_WithoutDoubles.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_WithoutDoubles.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

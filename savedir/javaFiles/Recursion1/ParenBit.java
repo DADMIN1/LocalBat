@@ -5,7 +5,9 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p137918
 
-/* Given a string that contains a single pair of parenthesis, compute recursively a new string made of only of the parenthesis and their contents, so "xyz(abc)123" yields "(abc)". */
+/* Given a string that contains a single pair of parenthesis, 
+compute recursively a new string made of only of the parenthesis and their contents, 
+so "xyz(abc)123" yields "(abc)". */
 
 class TestCases_ParenBit
 {
@@ -16,9 +18,9 @@ class TestCases_ParenBit
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "parenBit(\"xyz(abc)123\") → \"(abc)\"");
-        testcaseMap.put(1, "parenBit(\"x(hello)\") → \"(hello)\"");
-        testcaseMap.put(2, "parenBit(\"(xy)1\") → \"(xy)\"");
+        testcaseMap.put(0, "parenBit(\"xyz(abc)123\")");
+        testcaseMap.put(1, "parenBit(\"x(hello)\")");
+        testcaseMap.put(2, "parenBit(\"(xy)1\")");
     }
 
     static String[] expectedResults = { "(abc)", "(hello)", "(xy)", };
@@ -49,10 +51,10 @@ public class ParenBit
             if (resultsArray[i] != TestCases_ParenBit.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_ParenBit.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_ParenBit.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

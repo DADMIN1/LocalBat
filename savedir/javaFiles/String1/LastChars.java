@@ -5,8 +5,10 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p138183
 
-/* Given 2 strings, a and b, return a new string made of the first char of a and the last char of b, so "yo" and "java" yields "ya".
-If either string is length 0, use '@' for its missing char. */
+/* Given 2 strings, a and b, 
+return a new string made of the first char of a and the last char of b, 
+so "yo" and "java" yields "ya". If either string is length 0, 
+use '@' for its missing char. */
 
 class TestCases_LastChars
 {
@@ -17,9 +19,9 @@ class TestCases_LastChars
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "lastChars(\"last\", \"chars\") → \"ls\"");
-        testcaseMap.put(1, "lastChars(\"yo\", \"java\") → \"ya\"");
-        testcaseMap.put(2, "lastChars(\"hi\", \"\") → \"h@\"");
+        testcaseMap.put(0, "lastChars(\"last\", \"chars\")");
+        testcaseMap.put(1, "lastChars(\"yo\", \"java\")");
+        testcaseMap.put(2, "lastChars(\"hi\", \"\")");
     }
 
     static String[] expectedResults = { "ls", "ya", "h@", };
@@ -50,10 +52,10 @@ public class LastChars
             if (resultsArray[i] != TestCases_LastChars.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_LastChars.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_LastChars.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

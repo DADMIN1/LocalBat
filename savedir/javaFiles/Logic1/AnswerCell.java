@@ -5,9 +5,8 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p110973
 
-/* Your cell phone rings.
-Return true if you should answer it.
-Normally you answer, except in the morning you only answer if it is your mom calling.
+/* Your cell phone rings. Return true if you should answer it. 
+Normally you answer, except in the morning you only answer if it is your mom calling. 
 In all cases, if you are asleep, you do not answer. */
 
 class TestCases_AnswerCell
@@ -19,9 +18,9 @@ class TestCases_AnswerCell
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "answerCell(false, false, false) → true");
-        testcaseMap.put(1, "answerCell(false, false, true) → false");
-        testcaseMap.put(2, "answerCell(true, false, false) → false");
+        testcaseMap.put(0, "answerCell(false, false, false)");
+        testcaseMap.put(1, "answerCell(false, false, true)");
+        testcaseMap.put(2, "answerCell(true, false, false)");
     }
 
     static boolean[] expectedResults = { true, false, false, };
@@ -52,10 +51,10 @@ public class AnswerCell
             if (resultsArray[i] != TestCases_AnswerCell.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_AnswerCell.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_AnswerCell.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

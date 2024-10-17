@@ -5,8 +5,9 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p196409
 
-/* We'll say that a "mirror" section in an array is a group of contiguous elements such that somewhere in the array, the same group appears in reverse order.
-For example, the largest mirror section in {1, 2, 3, 8, 9, 3, 2, 1} is length 3 (the {1, 2, 3} part).
+/* We'll say that a "mirror" section in an array is a group of contiguous elements such that somewhere in the array, 
+the same group appears in reverse order. For example, the largest mirror section in {1, 
+2, 3, 8, 9, 3, 2, 1} is length 3 (the {1, 2, 3} part). 
 Return the size of the largest mirror section found in the given array. */
 
 class TestCases_MaxMirror
@@ -18,9 +19,9 @@ class TestCases_MaxMirror
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "maxMirror([1, 2, 3, 8, 9, 3, 2, 1]) → 3");
-        testcaseMap.put(1, "maxMirror([1, 2, 1, 4]) → 3");
-        testcaseMap.put(2, "maxMirror([7, 1, 2, 9, 7, 2, 1]) → 2");
+        testcaseMap.put(0, "maxMirror([1, 2, 3, 8, 9, 3, 2, 1])");
+        testcaseMap.put(1, "maxMirror([1, 2, 1, 4])");
+        testcaseMap.put(2, "maxMirror([7, 1, 2, 9, 7, 2, 1])");
     }
 
     static int[] expectedResults = { 3, 3, 2, };
@@ -54,10 +55,10 @@ public class MaxMirror
             if (resultsArray[i] != TestCases_MaxMirror.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_MaxMirror.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_MaxMirror.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

@@ -5,8 +5,9 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p118182
 
-/* Given a string and a non-empty substring sub, compute recursively if at least n copies of sub appear in the string somewhere, possibly with overlapping.
-N will be non-negative. */
+/* Given a string and a non-empty substring sub, 
+compute recursively if at least n copies of sub appear in the string somewhere, 
+possibly with overlapping. N will be non-negative. */
 
 class TestCases_StrCopies
 {
@@ -17,9 +18,9 @@ class TestCases_StrCopies
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "strCopies(\"catcowcat\", \"cat\", 2) → true");
-        testcaseMap.put(1, "strCopies(\"catcowcat\", \"cow\", 2) → false");
-        testcaseMap.put(2, "strCopies(\"catcowcat\", \"cow\", 1) → true");
+        testcaseMap.put(0, "strCopies(\"catcowcat\", \"cat\", 2)");
+        testcaseMap.put(1, "strCopies(\"catcowcat\", \"cow\", 2)");
+        testcaseMap.put(2, "strCopies(\"catcowcat\", \"cow\", 1)");
     }
 
     static boolean[] expectedResults = { true, false, true, };
@@ -50,10 +51,10 @@ public class StrCopies
             if (resultsArray[i] != TestCases_StrCopies.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_StrCopies.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_StrCopies.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

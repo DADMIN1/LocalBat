@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p130781
 
-/* Given a string, return a "rotated right 2" version where the last 2 chars are moved to the start.
+/* Given a string, return a "rotated right 2" version where the last 2 chars are moved to the start. 
 The string length will be at least 2. */
 
 class TestCases_Right2
@@ -17,9 +17,9 @@ class TestCases_Right2
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "right2(\"Hello\") → \"loHel\"");
-        testcaseMap.put(1, "right2(\"java\") → \"vaja\"");
-        testcaseMap.put(2, "right2(\"Hi\") → \"Hi\"");
+        testcaseMap.put(0, "right2(\"Hello\")");
+        testcaseMap.put(1, "right2(\"java\")");
+        testcaseMap.put(2, "right2(\"Hi\")");
     }
 
     static String[] expectedResults = { "loHel", "vaja", "Hi", };
@@ -50,10 +50,10 @@ public class Right2
             if (resultsArray[i] != TestCases_Right2.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_Right2.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_Right2.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

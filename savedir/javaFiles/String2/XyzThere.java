@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p136594
 
-/* Return true if the given string contains an appearance of "xyz" where the xyz is not directly preceeded by a period (.).
+/* Return true if the given string contains an appearance of "xyz" where the xyz is not directly preceeded by a period (.). 
 So "xxyz" counts but "x.xyz" does not. */
 
 class TestCases_XyzThere
@@ -17,9 +17,9 @@ class TestCases_XyzThere
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "xyzThere(\"abcxyz\") → true");
-        testcaseMap.put(1, "xyzThere(\"abc.xyz\") → false");
-        testcaseMap.put(2, "xyzThere(\"xyz.abc\") → true");
+        testcaseMap.put(0, "xyzThere(\"abcxyz\")");
+        testcaseMap.put(1, "xyzThere(\"abc.xyz\")");
+        testcaseMap.put(2, "xyzThere(\"xyz.abc\")");
     }
 
     static boolean[] expectedResults = { true, false, true, };
@@ -50,10 +50,10 @@ public class XyzThere
             if (resultsArray[i] != TestCases_XyzThere.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_XyzThere.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_XyzThere.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

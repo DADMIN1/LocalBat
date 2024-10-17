@@ -5,9 +5,10 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p185204
 
-/* Given an array of ints, is it possible to divide the ints into two groups, so that the sums of the two groups are the same.
-Every int must be in one group or the other.
-Write a recursive helper method that takes whatever arguments you like, and make the initial call to your recursive helper from splitArray().
+/* Given an array of ints, is it possible to divide the ints into two groups, 
+so that the sums of the two groups are the same. Every int must be in one group or the other. 
+Write a recursive helper method that takes whatever arguments you like, 
+and make the initial call to your recursive helper from splitArray(). 
 (No loops needed.) */
 
 class TestCases_SplitArray
@@ -19,9 +20,9 @@ class TestCases_SplitArray
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "splitArray([2, 2]) → true");
-        testcaseMap.put(1, "splitArray([2, 3]) → false");
-        testcaseMap.put(2, "splitArray([5, 2, 3]) → true");
+        testcaseMap.put(0, "splitArray([2, 2])");
+        testcaseMap.put(1, "splitArray([2, 3])");
+        testcaseMap.put(2, "splitArray([5, 2, 3])");
     }
 
     static boolean[] expectedResults = { true, false, true, };
@@ -55,10 +56,10 @@ public class SplitArray
             if (resultsArray[i] != TestCases_SplitArray.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_SplitArray.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_SplitArray.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

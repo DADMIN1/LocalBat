@@ -5,10 +5,10 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p183562
 
-/* We want to make a row of bricks that is goal inches long.
-We have a number of small bricks (1 inch each) and big bricks (5 inches each).
-Return true if it is possible to make the goal by choosing from the given bricks.
-This is a little harder than it looks and can be done without any loops.
+/* We want to make a row of bricks that is goal inches long. 
+We have a number of small bricks (1 inch each) and big bricks (5 inches each). 
+Return true if it is possible to make the goal by choosing from the given bricks. 
+This is a little harder than it looks and can be done without any loops. 
 See also: Introduction to MakeBricks */
 
 class TestCases_MakeBricks
@@ -20,9 +20,9 @@ class TestCases_MakeBricks
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "makeBricks(3, 1, 8) → true");
-        testcaseMap.put(1, "makeBricks(3, 1, 9) → false");
-        testcaseMap.put(2, "makeBricks(3, 2, 10) → true");
+        testcaseMap.put(0, "makeBricks(3, 1, 8)");
+        testcaseMap.put(1, "makeBricks(3, 1, 9)");
+        testcaseMap.put(2, "makeBricks(3, 2, 10)");
     }
 
     static boolean[] expectedResults = { true, false, true, };
@@ -53,10 +53,10 @@ public class MakeBricks
             if (resultsArray[i] != TestCases_MakeBricks.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_MakeBricks.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_MakeBricks.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

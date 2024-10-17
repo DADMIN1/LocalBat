@@ -5,8 +5,10 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p198640
 
-/* Given 2 strings, a and b, return the number of the positions where they contain the same length 2 substring.
-So "xxcaazz" and "xxbaaz" yields 3, since the "xx", "aa", and "az" substrings appear in the same place in both strings. */
+/* Given 2 strings, a and b, 
+return the number of the positions where they contain the same length 2 substring. 
+So "xxcaazz" and "xxbaaz" yields 3, since the "xx", "aa", 
+and "az" substrings appear in the same place in both strings. */
 
 class TestCases_StringMatch
 {
@@ -17,9 +19,9 @@ class TestCases_StringMatch
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "stringMatch(\"xxcaazz\", \"xxbaaz\") → 3");
-        testcaseMap.put(1, "stringMatch(\"abc\", \"abc\") → 2");
-        testcaseMap.put(2, "stringMatch(\"abc\", \"axc\") → 0");
+        testcaseMap.put(0, "stringMatch(\"xxcaazz\", \"xxbaaz\")");
+        testcaseMap.put(1, "stringMatch(\"abc\", \"abc\")");
+        testcaseMap.put(2, "stringMatch(\"abc\", \"axc\")");
     }
 
     static int[] expectedResults = { 3, 2, 0, };
@@ -50,10 +52,10 @@ public class StringMatch
             if (resultsArray[i] != TestCases_StringMatch.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_StringMatch.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_StringMatch.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

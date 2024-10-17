@@ -5,7 +5,8 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p155405
 
-/* Given n>=0, create an array length n*n with the following pattern, shown here for n=3 : {0, 0, 1,    0, 2, 1,    3, 2, 1} (spaces added to show the 3 groups). */
+/* Given n>=0, create an array length n*n with the following pattern, 
+shown here for n=3 : {0, 0, 1,    0, 2, 1,    3, 2, 1} (spaces added to show the 3 groups). */
 
 class TestCases_SquareUp
 {
@@ -16,9 +17,9 @@ class TestCases_SquareUp
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "squareUp(3) → [0, 0, 1, 0, 2, 1, 3, 2, 1]");
-        testcaseMap.put(1, "squareUp(2) → [0, 1, 2, 1]");
-        testcaseMap.put(2, "squareUp(4) → [0, 0, 0, 1, 0, 0, 2, 1, 0, 3, 2, 1, 4, 3, 2, 1]");
+        testcaseMap.put(0, "squareUp(3)");
+        testcaseMap.put(1, "squareUp(2)");
+        testcaseMap.put(2, "squareUp(4)");
     }
 
     static int[][] expectedResults = { [0, 0, 1, 0, 2, 1, 3, 2, 1], [0, 1, 2, 1], [0, 0, 0, 1, 0, 0, 2, 1, 0, 3, 2, 1, 4, 3, 2, 1], };
@@ -54,13 +55,13 @@ public class SquareUp
         boolean allTestsPassed = true;
         for (int i = 0; i < resultsArray.length; ++i)
         {
-            if (resultsArray[i] != TestCases_SquareUp.expectedResults[i])
+            if (!resultsArray[i].equals(TestCases_SquareUp.expectedResults[i]))
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_SquareUp.testcaseMap.get(i));
+                System.out.println("    received: "+printArray(resultsArray[i]));
                 System.out.println("    expected: "+printArray(TestCases_SquareUp.expectedResults[i]));
-                System.out.println("      result: "+printArray(resultsArray[i]));
                 System.out.println("\n");
             }
         }

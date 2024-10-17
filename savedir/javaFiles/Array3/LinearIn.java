@@ -5,8 +5,10 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p134022
 
-/* Given two arrays of ints sorted in increasing order, outer and inner, return true if all of the numbers in inner appear in outer.
-The best solution makes only a single "linear" pass of both arrays, taking advantage of the fact that both arrays are already in sorted order. */
+/* Given two arrays of ints sorted in increasing order, outer and inner, 
+return true if all of the numbers in inner appear in outer. 
+The best solution makes only a single "linear" pass of both arrays, 
+taking advantage of the fact that both arrays are already in sorted order. */
 
 class TestCases_LinearIn
 {
@@ -17,9 +19,9 @@ class TestCases_LinearIn
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "linearIn([1, 2, 4, 6], [2, 4]) → true");
-        testcaseMap.put(1, "linearIn([1, 2, 4, 6], [2, 3, 4]) → false");
-        testcaseMap.put(2, "linearIn([1, 2, 4, 4, 6], [2, 4]) → true");
+        testcaseMap.put(0, "linearIn([1, 2, 4, 6], [2, 4])");
+        testcaseMap.put(1, "linearIn([1, 2, 4, 6], [2, 3, 4])");
+        testcaseMap.put(2, "linearIn([1, 2, 4, 4, 6], [2, 4])");
     }
 
     static boolean[] expectedResults = { true, false, true, };
@@ -53,10 +55,10 @@ public class LinearIn
             if (resultsArray[i] != TestCases_LinearIn.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_LinearIn.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_LinearIn.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

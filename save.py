@@ -138,6 +138,33 @@ def ParseFunctionDefinition(code: str) -> dict:
     return { "name": functionName, "returnType": returnType, "args": parsedArgs }
 
 
+def ReformatPrompt(raw_prompt: str) -> str:
+    # don't split on the phrase 'e.g.' (and don't split on preceeding comma if there is one)
+    raw_prompt = raw_prompt.replace(", e.g.", ",DONT_SPLIT_HEREe.g.").replace("e.g. ", "e.g.DONT_SPLIT_HERE")
+    # splitting the prompt over multiple lines, at sentence ends, commas and colons
+    promptlines = raw_prompt.replace(". ", ". \n").replace(", ", ", \n").replace(": ", ": \n").splitlines()
+    
+    # TODO: split on commas as well, but only when the line has reached a certain length
+    # line_lengths = { line_num: len(line) for line_num, line in enumerate(promptlines) }
+    # long_lines = { 
+    #     i: promptlines[i].replace(", ", ", \n").splitlines()
+    #     for i,l in line_lengths.items() if (l > 100) 
+    # }
+    # for line in long_lines.values(): print([len(l) for l in line])
+    
+    prompt = ""
+    current_length = 0 
+    for line in promptlines:
+        #nextline = line.replace("DONT_SPLIT_HERE", " ")  # putting the space back
+        nextline = line
+        if ((current_length > 20) and (len(nextline)) > 70): prompt += '\n'; current_length = 0
+        prompt += nextline
+        current_length += len(nextline)
+        if current_length > 55: prompt += '\n'; current_length = 0
+    
+    return prompt.replace("DONT_SPLIT_HERE", " ").removesuffix('\n')
+
+
 def WriteJavaFile(packageName:str, data: dict):
     title = Capitalize(data["title"])
     packageName = packageName.replace('-','')  # eclipse doesn't allow names to include dashes
@@ -151,8 +178,8 @@ def WriteJavaFile(packageName:str, data: dict):
     functionDefinition = ParseFunctionDefinition(data["provided_code"])
     testCases = ParseTestcases(data["testcases"], functionDefinition)
     
-    # splitting the prompt over multiple lines
-    promptlines = data["prompt"].replace(". ", ".\n")
+    prompt = ReformatPrompt(data["prompt"])
+    
     # adding static to declaration and cleaning up braces/whitespace
     functionDeclaration = data['provided_code'].rstrip('}{\n ')
     functionDeclaration = functionDeclaration.replace("public ", "public static ")
@@ -163,7 +190,7 @@ def WriteJavaFile(packageName:str, data: dict):
         file.write("import java.util.Map;\n") # for looking-up declarations of failed function calls
         file.write("import java.util.HashMap;\n\n") # also required for instantiation
         file.write(f"// {data["url"]}\n\n")
-        file.write(f"/* {promptlines} */\n\n")
+        file.write(f"/* {prompt} */\n\n")
         
         # testcases
         testCasesClassname = f"TestCases_{title}"
@@ -179,6 +206,7 @@ def WriteJavaFile(packageName:str, data: dict):
         file.write("    static Map<Integer, String> testcaseMap = new HashMap<>();\n")
         file.write("    static void initTestcaseMap()\n    {\n")
         for (k, v) in testcase_map.items():
+            v = v.split(" \u2192 ", maxsplit=1)[0] # discarding everything to the right of the function call
             file.write(f"        testcaseMap.put({k}, \"{v.replace('"', '\\"')}\");\n") # escaping quotes
         file.write("    }\n\n") # closing initTestcaseMap()
         
@@ -220,9 +248,13 @@ def WriteJavaFile(packageName:str, data: dict):
         
         expectedResultStr = f"{testCasesClassname}.expectedResults[i]"
         resultsArrayStr = "resultsArray[i]"
+        # arrays and lists cannot be directly compared in java (it does a pointer comparison), need to use '.equals()' instead
+        comparisonStr = f"resultsArray[i] != {testCasesClassname}.expectedResults[i]"
+        
         if doesReturnArray: 
             expectedResultStr = f"printArray({expectedResultStr})"
             resultsArrayStr = f"printArray({resultsArrayStr})"
+            comparisonStr = f"!resultsArray[i].equals({testCasesClassname}.expectedResults[i])"
         
         # running testcases, comparing results
         file.write(f'''
@@ -230,13 +262,13 @@ def WriteJavaFile(packageName:str, data: dict):
         boolean allTestsPassed = true;
         for (int i = 0; i < resultsArray.length; ++i)
         '''+'{'+f'''
-            if (resultsArray[i] != {testCasesClassname}.expectedResults[i])
+            if ({comparisonStr})
             '''+'{'+f'''
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println({testCasesClassname}.testcaseMap.get(i));
+                System.out.println("    received: "+{resultsArrayStr});
                 System.out.println("    expected: "+{expectedResultStr});
-                System.out.println("      result: "+{resultsArrayStr});
                 System.out.println("\\n");
             '''+'''}
         }
@@ -280,9 +312,6 @@ def ConvertAll(only_missing=True):
         if (subdir in alreadyExist): print(f"skipping {subdir}; already exists."); continue
         ConvertSection(subdir)
     return
-
-
-# TODO: printing expected results doesn't work if it's an array
 
 
 if __name__ == "__main__":

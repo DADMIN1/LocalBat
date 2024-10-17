@@ -5,10 +5,10 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p105745
 
-/* Given two strings, append them together (known as "concatenation") and return the result.
-However, if the strings are different lengths, omit chars from the longer string so it is the same length as the shorter string.
-So "Hello" and "Hi" yield "loHi".
-The strings may be any length. */
+/* Given two strings, append them together (known as "concatenation") and return the result. 
+However, if the strings are different lengths, 
+omit chars from the longer string so it is the same length as the shorter string. 
+So "Hello" and "Hi" yield "loHi". The strings may be any length. */
 
 class TestCases_MinCat
 {
@@ -19,9 +19,9 @@ class TestCases_MinCat
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "minCat(\"Hello\", \"Hi\") → \"loHi\"");
-        testcaseMap.put(1, "minCat(\"Hello\", \"java\") → \"ellojava\"");
-        testcaseMap.put(2, "minCat(\"java\", \"Hello\") → \"javaello\"");
+        testcaseMap.put(0, "minCat(\"Hello\", \"Hi\")");
+        testcaseMap.put(1, "minCat(\"Hello\", \"java\")");
+        testcaseMap.put(2, "minCat(\"java\", \"Hello\")");
     }
 
     static String[] expectedResults = { "loHi", "ellojava", "javaello", };
@@ -52,10 +52,10 @@ public class MinCat
             if (resultsArray[i] != TestCases_MinCat.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_MinCat.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_MinCat.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

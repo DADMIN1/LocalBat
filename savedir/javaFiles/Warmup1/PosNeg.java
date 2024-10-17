@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p159227
 
-/* Given 2 int values, return true if one is negative and one is positive.
+/* Given 2 int values, return true if one is negative and one is positive. 
 Except if the parameter "negative" is true, then return true only if both are negative. */
 
 class TestCases_PosNeg
@@ -17,9 +17,9 @@ class TestCases_PosNeg
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "posNeg(1, -1, false) → true");
-        testcaseMap.put(1, "posNeg(-1, 1, false) → true");
-        testcaseMap.put(2, "posNeg(-4, -5, true) → true");
+        testcaseMap.put(0, "posNeg(1, -1, false)");
+        testcaseMap.put(1, "posNeg(-1, 1, false)");
+        testcaseMap.put(2, "posNeg(-4, -5, true)");
     }
 
     static boolean[] expectedResults = { true, true, true, };
@@ -50,10 +50,10 @@ public class PosNeg
             if (resultsArray[i] != TestCases_PosNeg.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_PosNeg.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_PosNeg.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

@@ -5,9 +5,10 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p128796
 
-/* Given a string and an int n, return a string made of the first n characters of the string, followed by the first n-1 characters of the string, and so on.
-You may assume that n is between 0 and the length of the string, inclusive (i.e.
-n >= 0 and n <= str.length()). */
+/* Given a string and an int n, return a string made of the first n characters of the string, 
+followed by the first n-1 characters of the string, and so on. 
+You may assume that n is between 0 and the length of the string, 
+inclusive (i.e. n >= 0 and n <= str.length()). */
 
 class TestCases_RepeatFront
 {
@@ -18,9 +19,9 @@ class TestCases_RepeatFront
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "repeatFront(\"Chocolate\", 4) → \"ChocChoChC\"");
-        testcaseMap.put(1, "repeatFront(\"Chocolate\", 3) → \"ChoChC\"");
-        testcaseMap.put(2, "repeatFront(\"Ice Cream\", 2) → \"IcI\"");
+        testcaseMap.put(0, "repeatFront(\"Chocolate\", 4)");
+        testcaseMap.put(1, "repeatFront(\"Chocolate\", 3)");
+        testcaseMap.put(2, "repeatFront(\"Ice Cream\", 2)");
     }
 
     static String[] expectedResults = { "ChocChoChC", "ChoChC", "IcI", };
@@ -51,10 +52,10 @@ public class RepeatFront
             if (resultsArray[i] != TestCases_RepeatFront.expectedResults[i])
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_RepeatFront.testcaseMap.get(i));
+                System.out.println("    received: "+resultsArray[i]);
                 System.out.println("    expected: "+TestCases_RepeatFront.expectedResults[i]);
-                System.out.println("      result: "+resultsArray[i]);
                 System.out.println("\n");
             }
         }

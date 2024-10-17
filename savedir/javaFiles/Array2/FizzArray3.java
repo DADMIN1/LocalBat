@@ -5,10 +5,10 @@ import java.util.HashMap;
 
 // https://codingbat.com/prob/p142539
 
-/* Given start and end numbers, return a new array containing the sequence of integers from start up to but not including end, so start=5 and end=10 yields {5, 6, 7, 8, 9}.
-The end number will be greater or equal to the start number.
-Note that a length-0 array is valid.
-(See also: FizzBuzz Code) */
+/* Given start and end numbers, 
+return a new array containing the sequence of integers from start up to but not including end, 
+so start=5 and end=10 yields {5, 6, 7, 8, 9}. The end number will be greater or equal to the start number. 
+Note that a length-0 array is valid. (See also: FizzBuzz Code) */
 
 class TestCases_FizzArray3
 {
@@ -19,9 +19,9 @@ class TestCases_FizzArray3
     static Map<Integer, String> testcaseMap = new HashMap<>();
     static void initTestcaseMap()
     {
-        testcaseMap.put(0, "fizzArray3(5, 10) → [5, 6, 7, 8, 9]");
-        testcaseMap.put(1, "fizzArray3(11, 18) → [11, 12, 13, 14, 15, 16, 17]");
-        testcaseMap.put(2, "fizzArray3(1, 3) → [1, 2]");
+        testcaseMap.put(0, "fizzArray3(5, 10)");
+        testcaseMap.put(1, "fizzArray3(11, 18)");
+        testcaseMap.put(2, "fizzArray3(1, 3)");
     }
 
     static int[][] expectedResults = { [5, 6, 7, 8, 9], [11, 12, 13, 14, 15, 16, 17], [1, 2], };
@@ -57,13 +57,13 @@ public class FizzArray3
         boolean allTestsPassed = true;
         for (int i = 0; i < resultsArray.length; ++i)
         {
-            if (resultsArray[i] != TestCases_FizzArray3.expectedResults[i])
+            if (!resultsArray[i].equals(TestCases_FizzArray3.expectedResults[i]))
             {
                 allTestsPassed = false;
-                System.out.println("Test#"+i+" failed!");
+                System.out.println("Test#"+(i+1)+" failed!");
                 System.out.println(TestCases_FizzArray3.testcaseMap.get(i));
+                System.out.println("    received: "+printArray(resultsArray[i]));
                 System.out.println("    expected: "+printArray(TestCases_FizzArray3.expectedResults[i]));
-                System.out.println("      result: "+printArray(resultsArray[i]));
                 System.out.println("\n");
             }
         }
