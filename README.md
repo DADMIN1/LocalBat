@@ -1,7 +1,7 @@
 # LocalBat
 A webscraper for <a href="https://codingbat.com">CodingBat</a> that generates Java files for local/offline use.
 
-![LocalBat side-by-side comparison](https://github.com/user-attachments/assets/c2e59377-da1b-4e3d-8a15-413fbff10b99)
+![LocalBat side-by-side comparison](https://github.com/user-attachments/assets/a919a5a9-2d9b-4156-958e-546e30a7b8c3)
 
 A java file is generated for each problem on the website, organized into subdirectories by section.
 
