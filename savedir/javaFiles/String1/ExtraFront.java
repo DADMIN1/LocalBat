@@ -1,64 +1,23 @@
-package String1;
-
-import java.util.Map;
-import java.util.HashMap;
-
 // https://codingbat.com/prob/p172063
+package String1;
+import String1.Testcases._ExtraFront;
 
-/* Given a string, return a new string made of 3 copies of the first 2 chars of the original string. 
-The string may be any length. If there are fewer than 2 chars, 
-use whatever is there. */
-
-class TestCases_ExtraFront
+public class ExtraFront
 {
+    /* Given a string, return a new string made of 3 copies of the first 2 chars of the original string. 
+    The string may be any length. If there are fewer than 2 chars, 
+    use whatever is there. */
+
     // extraFront("Hello") → "HeHeHe"
     // extraFront("ab") → "ababab"
     // extraFront("H") → "HHH"
 
-    static Map<Integer, String> testcaseMap = new HashMap<>();
-    static void initTestcaseMap()
-    {
-        testcaseMap.put(0, "extraFront(\"Hello\")");
-        testcaseMap.put(1, "extraFront(\"ab\")");
-        testcaseMap.put(2, "extraFront(\"H\")");
-    }
-
-    static String[] expectedResults = { "HeHeHe", "ababab", "HHH", };
-}
-
-public class ExtraFront
-{
     public static String extraFront(String str)
     {
         
     }
 
-
-    public static void main(String[] args)
-    {
-                        
-        String[] resultsArray = {
-            extraFront("Hello"),
-            extraFront("ab"),
-            extraFront("H"),
-        };
-
-
-        TestCases_ExtraFront.initTestcaseMap();
-        boolean allTestsPassed = true;
-        for (int i = 0; i < resultsArray.length; ++i)
-        {
-            if (resultsArray[i] != TestCases_ExtraFront.expectedResults[i])
-            {
-                allTestsPassed = false;
-                System.out.println("Test#"+(i+1)+" failed!");
-                System.out.println(TestCases_ExtraFront.testcaseMap.get(i));
-                System.out.println("    received: "+resultsArray[i]);
-                System.out.println("    expected: "+TestCases_ExtraFront.expectedResults[i]);
-                System.out.println("\n");
-            }
-        }
-        if (allTestsPassed) System.out.println("All tests passed. :^) ");
-        System.out.println();
+    public static void main(String[] args) {
+        _ExtraFront.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

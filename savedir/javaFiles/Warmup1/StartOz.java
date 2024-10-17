@@ -1,64 +1,23 @@
-package Warmup1;
-
-import java.util.Map;
-import java.util.HashMap;
-
 // https://codingbat.com/prob/p199720
+package Warmup1;
+import Warmup1.Testcases._StartOz;
 
-/* Given a string, return a string made of the first 2 chars (if present), 
-however include first char only if it is 'o' and include the second only if it is 'z', 
-so "ozymandias" yields "oz". */
-
-class TestCases_StartOz
+public class StartOz
 {
+    /* Given a string, return a string made of the first 2 chars (if present), 
+    however include first char only if it is 'o' and include the second only if it is 'z', 
+    so "ozymandias" yields "oz". */
+
     // startOz("ozymandias") → "oz"
     // startOz("bzoo") → "z"
     // startOz("oxx") → "o"
 
-    static Map<Integer, String> testcaseMap = new HashMap<>();
-    static void initTestcaseMap()
-    {
-        testcaseMap.put(0, "startOz(\"ozymandias\")");
-        testcaseMap.put(1, "startOz(\"bzoo\")");
-        testcaseMap.put(2, "startOz(\"oxx\")");
-    }
-
-    static String[] expectedResults = { "oz", "z", "o", };
-}
-
-public class StartOz
-{
     public static String startOz(String str)
     {
         
     }
 
-
-    public static void main(String[] args)
-    {
-                        
-        String[] resultsArray = {
-            startOz("ozymandias"),
-            startOz("bzoo"),
-            startOz("oxx"),
-        };
-
-
-        TestCases_StartOz.initTestcaseMap();
-        boolean allTestsPassed = true;
-        for (int i = 0; i < resultsArray.length; ++i)
-        {
-            if (resultsArray[i] != TestCases_StartOz.expectedResults[i])
-            {
-                allTestsPassed = false;
-                System.out.println("Test#"+(i+1)+" failed!");
-                System.out.println(TestCases_StartOz.testcaseMap.get(i));
-                System.out.println("    received: "+resultsArray[i]);
-                System.out.println("    expected: "+TestCases_StartOz.expectedResults[i]);
-                System.out.println("\n");
-            }
-        }
-        if (allTestsPassed) System.out.println("All tests passed. :^) ");
-        System.out.println();
+    public static void main(String[] args) {
+        _StartOz.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

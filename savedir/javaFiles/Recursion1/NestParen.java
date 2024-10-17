@@ -1,64 +1,23 @@
-package Recursion1;
-
-import java.util.Map;
-import java.util.HashMap;
-
 // https://codingbat.com/prob/p183174
+package Recursion1;
+import Recursion1.Testcases._NestParen;
 
-/* Given a string, return true if it is a nesting of zero or more pairs of parenthesis, 
-like "(())" or "((()))". Suggestion: check the first and last chars, 
-and then recur on what's inside them. */
-
-class TestCases_NestParen
+public class NestParen
 {
+    /* Given a string, return true if it is a nesting of zero or more pairs of parenthesis, 
+    like "(())" or "((()))". Suggestion: check the first and last chars, 
+    and then recur on what's inside them. */
+
     // nestParen("(())") → true
     // nestParen("((()))") → true
     // nestParen("(((x))") → false
 
-    static Map<Integer, String> testcaseMap = new HashMap<>();
-    static void initTestcaseMap()
-    {
-        testcaseMap.put(0, "nestParen(\"(())\")");
-        testcaseMap.put(1, "nestParen(\"((()))\")");
-        testcaseMap.put(2, "nestParen(\"(((x))\")");
-    }
-
-    static boolean[] expectedResults = { true, true, false, };
-}
-
-public class NestParen
-{
     public static boolean nestParen(String str)
     {
         
     }
 
-
-    public static void main(String[] args)
-    {
-                        
-        boolean[] resultsArray = {
-            nestParen("(())"),
-            nestParen("((()))"),
-            nestParen("(((x))"),
-        };
-
-
-        TestCases_NestParen.initTestcaseMap();
-        boolean allTestsPassed = true;
-        for (int i = 0; i < resultsArray.length; ++i)
-        {
-            if (resultsArray[i] != TestCases_NestParen.expectedResults[i])
-            {
-                allTestsPassed = false;
-                System.out.println("Test#"+(i+1)+" failed!");
-                System.out.println(TestCases_NestParen.testcaseMap.get(i));
-                System.out.println("    received: "+resultsArray[i]);
-                System.out.println("    expected: "+TestCases_NestParen.expectedResults[i]);
-                System.out.println("\n");
-            }
-        }
-        if (allTestsPassed) System.out.println("All tests passed. :^) ");
-        System.out.println();
+    public static void main(String[] args) {
+        _NestParen.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

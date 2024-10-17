@@ -1,63 +1,22 @@
-package Warmup2;
-
-import java.util.Map;
-import java.util.HashMap;
-
 // https://codingbat.com/prob/p171260
+package Warmup2;
+import Warmup2.Testcases._StringX;
 
-/* Given a string, return a version where all the "x" have been removed. 
-Except an "x" at the very start or end should not be removed. */
-
-class TestCases_StringX
+public class StringX
 {
+    /* Given a string, return a version where all the "x" have been removed. 
+    Except an "x" at the very start or end should not be removed. */
+
     // stringX("xxHxix") → "xHix"
     // stringX("abxxxcd") → "abcd"
     // stringX("xabxxxcdx") → "xabcdx"
 
-    static Map<Integer, String> testcaseMap = new HashMap<>();
-    static void initTestcaseMap()
-    {
-        testcaseMap.put(0, "stringX(\"xxHxix\")");
-        testcaseMap.put(1, "stringX(\"abxxxcd\")");
-        testcaseMap.put(2, "stringX(\"xabxxxcdx\")");
-    }
-
-    static String[] expectedResults = { "xHix", "abcd", "xabcdx", };
-}
-
-public class StringX
-{
     public static String stringX(String str)
     {
         
     }
 
-
-    public static void main(String[] args)
-    {
-                        
-        String[] resultsArray = {
-            stringX("xxHxix"),
-            stringX("abxxxcd"),
-            stringX("xabxxxcdx"),
-        };
-
-
-        TestCases_StringX.initTestcaseMap();
-        boolean allTestsPassed = true;
-        for (int i = 0; i < resultsArray.length; ++i)
-        {
-            if (resultsArray[i] != TestCases_StringX.expectedResults[i])
-            {
-                allTestsPassed = false;
-                System.out.println("Test#"+(i+1)+" failed!");
-                System.out.println(TestCases_StringX.testcaseMap.get(i));
-                System.out.println("    received: "+resultsArray[i]);
-                System.out.println("    expected: "+TestCases_StringX.expectedResults[i]);
-                System.out.println("\n");
-            }
-        }
-        if (allTestsPassed) System.out.println("All tests passed. :^) ");
-        System.out.println();
+    public static void main(String[] args) {
+        _StringX.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

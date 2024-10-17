@@ -1,0 +1,9 @@
+Any problem involving a parameter or return type of 'List' is currently nonfunctional
+
+The webscraper fails on a few sections of the site, like 'Functional'
+
+Testcase parsing/generation fails for 'Array1::MakePi' (fixed manually)
+
+Eclipse will warn about every single file until you fill some kind of valid 'return' statement.
+In the 'problems' pane, you can create a filter for these errors:
+    set 'Text:' dropdown to "doesn't contain":  "This method must return"

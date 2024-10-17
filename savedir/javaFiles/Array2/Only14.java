@@ -1,65 +1,21 @@
-package Array2;
-
-import java.util.Map;
-import java.util.HashMap;
-
 // https://codingbat.com/prob/p186672
+package Array2;
+import Array2.Testcases._Only14;
 
-/* Given an array of ints, return true if every element is a 1 or a 4. */
-
-class TestCases_Only14
+public class Only14
 {
+    /* Given an array of ints, return true if every element is a 1 or a 4. */
+
     // only14([1, 4, 1, 4]) → true
     // only14([1, 4, 2, 4]) → false
     // only14([1, 1]) → true
 
-    static Map<Integer, String> testcaseMap = new HashMap<>();
-    static void initTestcaseMap()
-    {
-        testcaseMap.put(0, "only14([1, 4, 1, 4])");
-        testcaseMap.put(1, "only14([1, 4, 2, 4])");
-        testcaseMap.put(2, "only14([1, 1])");
-    }
-
-    static boolean[] expectedResults = { true, false, true, };
-}
-
-public class Only14
-{
     public static boolean only14(int[] nums)
     {
         
     }
 
-
-    public static void main(String[] args)
-    {
-        int[] nums0 = { 1, 4, 1, 4 }; 
-        int[] nums1 = { 1, 4, 2, 4 }; 
-        int[] nums2 = { 1, 1 }; 
-
-        boolean[] resultsArray = {
-            only14(nums0),
-            only14(nums1),
-            only14(nums2),
-        };
-
-
-        TestCases_Only14.initTestcaseMap();
-        boolean allTestsPassed = true;
-        for (int i = 0; i < resultsArray.length; ++i)
-        {
-            if (resultsArray[i] != TestCases_Only14.expectedResults[i])
-            {
-                allTestsPassed = false;
-                System.out.println("Test#"+(i+1)+" failed!");
-                System.out.println(TestCases_Only14.testcaseMap.get(i));
-                System.out.println("    received: "+resultsArray[i]);
-                System.out.println("    expected: "+TestCases_Only14.expectedResults[i]);
-                System.out.println("\n");
-            }
-        }
-        if (allTestsPassed) System.out.println("All tests passed. :^) ");
-        System.out.println();
+    public static void main(String[] args) {
+        _Only14.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

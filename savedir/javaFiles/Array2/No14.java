@@ -1,65 +1,21 @@
-package Array2;
-
-import java.util.Map;
-import java.util.HashMap;
-
 // https://codingbat.com/prob/p136648
+package Array2;
+import Array2.Testcases._No14;
 
-/* Given an array of ints, return true if it contains no 1's or it contains no 4's. */
-
-class TestCases_No14
+public class No14
 {
+    /* Given an array of ints, return true if it contains no 1's or it contains no 4's. */
+
     // no14([1, 2, 3]) → true
     // no14([1, 2, 3, 4]) → false
     // no14([2, 3, 4]) → true
 
-    static Map<Integer, String> testcaseMap = new HashMap<>();
-    static void initTestcaseMap()
-    {
-        testcaseMap.put(0, "no14([1, 2, 3])");
-        testcaseMap.put(1, "no14([1, 2, 3, 4])");
-        testcaseMap.put(2, "no14([2, 3, 4])");
-    }
-
-    static boolean[] expectedResults = { true, false, true, };
-}
-
-public class No14
-{
     public static boolean no14(int[] nums)
     {
         
     }
 
-
-    public static void main(String[] args)
-    {
-        int[] nums0 = { 1, 2, 3 }; 
-        int[] nums1 = { 1, 2, 3, 4 }; 
-        int[] nums2 = { 2, 3, 4 }; 
-
-        boolean[] resultsArray = {
-            no14(nums0),
-            no14(nums1),
-            no14(nums2),
-        };
-
-
-        TestCases_No14.initTestcaseMap();
-        boolean allTestsPassed = true;
-        for (int i = 0; i < resultsArray.length; ++i)
-        {
-            if (resultsArray[i] != TestCases_No14.expectedResults[i])
-            {
-                allTestsPassed = false;
-                System.out.println("Test#"+(i+1)+" failed!");
-                System.out.println(TestCases_No14.testcaseMap.get(i));
-                System.out.println("    received: "+resultsArray[i]);
-                System.out.println("    expected: "+TestCases_No14.expectedResults[i]);
-                System.out.println("\n");
-            }
-        }
-        if (allTestsPassed) System.out.println("All tests passed. :^) ");
-        System.out.println();
+    public static void main(String[] args) {
+        _No14.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

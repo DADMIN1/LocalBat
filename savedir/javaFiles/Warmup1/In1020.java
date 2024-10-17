@@ -1,62 +1,21 @@
-package Warmup1;
-
-import java.util.Map;
-import java.util.HashMap;
-
 // https://codingbat.com/prob/p144535
+package Warmup1;
+import Warmup1.Testcases._In1020;
 
-/* Given 2 int values, return true if either of them is in the range 10..20 inclusive. */
-
-class TestCases_In1020
+public class In1020
 {
+    /* Given 2 int values, return true if either of them is in the range 10..20 inclusive. */
+
     // in1020(12, 99) → true
     // in1020(21, 12) → true
     // in1020(8, 99) → false
 
-    static Map<Integer, String> testcaseMap = new HashMap<>();
-    static void initTestcaseMap()
-    {
-        testcaseMap.put(0, "in1020(12, 99)");
-        testcaseMap.put(1, "in1020(21, 12)");
-        testcaseMap.put(2, "in1020(8, 99)");
-    }
-
-    static boolean[] expectedResults = { true, true, false, };
-}
-
-public class In1020
-{
     public static boolean in1020(int a, int b)
     {
         
     }
 
-
-    public static void main(String[] args)
-    {
-                        
-        boolean[] resultsArray = {
-            in1020(12, 99),
-            in1020(21, 12),
-            in1020(8, 99),
-        };
-
-
-        TestCases_In1020.initTestcaseMap();
-        boolean allTestsPassed = true;
-        for (int i = 0; i < resultsArray.length; ++i)
-        {
-            if (resultsArray[i] != TestCases_In1020.expectedResults[i])
-            {
-                allTestsPassed = false;
-                System.out.println("Test#"+(i+1)+" failed!");
-                System.out.println(TestCases_In1020.testcaseMap.get(i));
-                System.out.println("    received: "+resultsArray[i]);
-                System.out.println("    expected: "+TestCases_In1020.expectedResults[i]);
-                System.out.println("\n");
-            }
-        }
-        if (allTestsPassed) System.out.println("All tests passed. :^) ");
-        System.out.println();
+    public static void main(String[] args) {
+        _In1020.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

@@ -157,12 +157,121 @@ def ReformatPrompt(raw_prompt: str) -> str:
     for line in promptlines:
         #nextline = line.replace("DONT_SPLIT_HERE", " ")  # putting the space back
         nextline = line
-        if ((current_length > 20) and (len(nextline)) > 70): prompt += '\n'; current_length = 0
+        if ((current_length > 35) and (len(nextline)) > 70): prompt += '\n'; current_length = 0
         prompt += nextline
         current_length += len(nextline)
         if current_length > 55: prompt += '\n'; current_length = 0
     
     return prompt.replace("DONT_SPLIT_HERE", " ").removesuffix('\n')
+
+
+def WriteTestcaseFile(packageName:str, data: dict):
+    title = Capitalize(data["title"])
+    testCasesClassname = f"_{title}"
+    packageName = packageName.replace('-','')  # eclipse doesn't allow names to include dashes
+    testcase_packagedir = sub_savedirs[1] / packageName / "Testcases"
+    if not testcase_packagedir.exists(): testcase_packagedir.mkdir(parents=True)
+    testcase_filepath = testcase_packagedir / f'{testCasesClassname}.java'  # leading underscore prevents class name conflicts (they actually do occur across files)
+    print(f"    generating {packageName}.{title} Testcase class...")
+    
+    functionDefinition = ParseFunctionDefinition(data["provided_code"])
+    testCases = ParseTestcases(data["testcases"], functionDefinition)
+    
+    # writing 'printArray' function if necessary
+    returnType = functionDefinition["returnType"]
+    doesReturnArray = returnType.endswith('[]')
+    printArray_FunctionDefinition = f"    public static String printArray({returnType} array)"+"""
+    {
+        String result = "[";
+        for ("""+returnType.removesuffix('[]')+""" a: array) { result += a+", "; }
+        if (result.length() > 2) result = result.substring(0, result.length()-2);
+        return result + "]";
+    }\n\n"""
+    
+    with open(testcase_filepath, "w", encoding="utf-8") as file:
+        file.write(f"package {packageName}.Testcases;\n")
+        file.write(f"import {packageName}.{title};\n") # importing the real class to run the user-code for validation
+        if doesReturnArray: file.write("import java.util.Arrays;\n")  # required to properly compare arrays
+        file.write('\n')
+        
+        file.write(f"public class {testCasesClassname}\n"+"{\n")
+        
+        # map for testcase number -> string of function call
+        testcase_map: dict = { i: testcase for i, testcase in enumerate(data["testcases"]) }
+        file.write("    static String[] testcaseStrings = {\n")
+        for (k, v) in testcase_map.items():
+            v = v.split(" \u2192 ", maxsplit=1)[0] # discarding everything to the right of the function call
+            file.write(f"        \"{v.replace('"', '\\"')}\",\n") # escaping quotes
+        file.write("    };\n\n") # closing testcaseStrings()
+        
+        file.write(f"    static {testCases['expectedResults']}\n")
+        
+        if doesReturnArray: file.write(printArray_FunctionDefinition)
+        
+        needToSupressNewline = False
+        
+        # Validation function
+        file.write("    public static void Validate(boolean printSuccess)\n    {\n")
+        # writing the array declarations (can't inline into function calls)
+        for array in testCases['arrays']:
+            if(len(array) == 0): needToSupressNewline=True; continue # there is always one entry per testcase, but they're empty if no arary parameters exist
+            thestring = f"        "
+            for substring in array: thestring += substring
+            file.write(thestring)
+        if not needToSupressNewline: file.write('\n')
+        
+        # storing results of function calls
+        file.write(f"        {functionDefinition['returnType']}[] resultsArray = "+"{\n")
+        for functionCall in testCases["functionCalls"]:
+            file.write(f"            {title}.{functionCall},\n") # calling the real class here 
+        file.write("        };\n") # closing resultsArray
+        
+        expectedResultStr = f"expectedResults[i]"
+        resultsArrayStr = "resultsArray[i]"
+        comparisonStr = f"resultsArray[i] != expectedResults[i]"
+        # arrays and lists cannot be directly compared in java (it does a pointer comparison), need to use '.equals()' instead
+        
+        if doesReturnArray: 
+            expectedResultStr = f"printArray({expectedResultStr})"
+            resultsArrayStr = f"printArray({resultsArrayStr})"
+            comparisonStr = f"!Arrays.equals(resultsArray[i], expectedResults[i])"
+        
+        # running testcases, comparing results
+        # unicode U+2714 is "heavy check-mark": ✔
+        file.write(f'''
+        boolean allTestsPassed = true;
+        for (int i = 0; i < resultsArray.length; ++i)
+        '''+'{'+f'''
+            if ({comparisonStr})
+            '''+'{'+f'''
+                allTestsPassed = false;
+                System.out.println("\\n[-] #"+(i+1)+" failed!");
+                System.out.println(testcaseStrings[i]+";");
+                System.out.println("    received: "+{resultsArrayStr});
+                System.out.println("    expected: "+{expectedResultStr});
+                System.out.println("\\n");
+            '''+'''} else if (printSuccess) { 
+                System.out.println("[\u2714] #"+(i+1)+" - "+testcaseStrings[i]);
+            }
+        }
+        if (allTestsPassed) System.out.println("\\n \u2714\u2714\u2714  ~ All tests passed. ~  \u2714\u2714\u2714");
+        System.out.println();
+        return;\n''')
+        
+        file.write("    }\n") # closing Validate function
+        file.write("}\n") # closing Testcase class
+    
+    print(f"\tdone writing: {testcase_filepath.relative_to(cwd)}\n")
+    return
+
+
+# TODO: align by arrow, find longest testcase, then build the frame 
+def TestcaseAsciiArt(testcases: list) -> str:
+    art = ""
+    for testcase in testcases:
+        art += f"    // {testcase}\n"
+    art += '\n'
+    return art
 
 
 def WriteJavaFile(packageName:str, data: dict):
@@ -171,14 +280,10 @@ def WriteJavaFile(packageName:str, data: dict):
     packagedir = sub_savedirs[1] / packageName
     if not packagedir.exists(): packagedir.mkdir()
     filepath = packagedir / f'{title}.java'
+    print(f"    generating {packageName}.{filepath.stem}...")
     
-    # print('\n'+title)
-    # print(data)
-    
-    functionDefinition = ParseFunctionDefinition(data["provided_code"])
-    testCases = ParseTestcases(data["testcases"], functionDefinition)
-    
-    prompt = ReformatPrompt(data["prompt"])
+    prompt = ReformatPrompt(data["prompt"]).replace('\n', '\n    ') # indent each line
+    testcase_comment = TestcaseAsciiArt(data["testcases"])
     
     # adding static to declaration and cleaning up braces/whitespace
     functionDeclaration = data['provided_code'].rstrip('}{\n ')
@@ -186,107 +291,33 @@ def WriteJavaFile(packageName:str, data: dict):
     functionDeclaration += "\n    {\n        \n    }\n"
     
     with open(filepath, "w", encoding="utf-8") as file:
-        file.write(f"package {packageName};\n\n")
-        file.write("import java.util.Map;\n") # for looking-up declarations of failed function calls
-        file.write("import java.util.HashMap;\n\n") # also required for instantiation
-        file.write(f"// {data["url"]}\n\n")
-        file.write(f"/* {prompt} */\n\n")
+        file.write(f"// {data["url"]}\n") # link to codingbat page
+        file.write(f"package {packageName};\n")
+        file.write(f"import {packageName}.Testcases._{title};\n\n")
         
-        # testcases
-        testCasesClassname = f"TestCases_{title}"
-        file.write(f"class {testCasesClassname}\n"+"{\n")
-        
-        # writing testcases as comments and building map
-        for testcase in data["testcases"]:
-            file.write(f"    // {testcase}\n")
-        
-        # map for testcase number -> string of function call
-        testcase_map: dict = { i: testcase for i, testcase in enumerate(data["testcases"]) }
-        file.write("\n")
-        file.write("    static Map<Integer, String> testcaseMap = new HashMap<>();\n")
-        file.write("    static void initTestcaseMap()\n    {\n")
-        for (k, v) in testcase_map.items():
-            v = v.split(" \u2192 ", maxsplit=1)[0] # discarding everything to the right of the function call
-            file.write(f"        testcaseMap.put({k}, \"{v.replace('"', '\\"')}\");\n") # escaping quotes
-        file.write("    }\n\n") # closing initTestcaseMap()
-        
-        file.write(f"    static {testCases['expectedResults']}")
-        file.write("}\n\n")
-        
-        # The class name should match the filename instead of being 'Main'
+        # The class name must match the filename (java)
         file.write(f"public class {title}"+"\n{\n")
-        file.write(f"    {functionDeclaration}\n\n")
         
-        # writing 'printArray' function if necessary
-        returnType = functionDefinition["returnType"]
-        doesReturnArray = returnType.endswith('[]')
-        if doesReturnArray:
-            file.write(f"    public static String printArray({returnType} array)")
-            file.write(
-    """
-    {
-        String result = "[";
-        for ("""+returnType.removesuffix('[]')+""" a: array) { result += a+", "; }
-        if (result.length() > 2) result = result.substring(0, result.length()-2);
-        return result + "]";
-    }\n\n""")
-            
-        file.write("    public static void main(String[] args)\n    {\n")
+        # prompt and testcase comments
+        file.write(f"    /* {prompt} */\n\n")
+        file.write(testcase_comment)
         
-        # writing the array declarations (required for function calls in main)
-        for array in testCases['arrays']:
-            thestring = "        "
-            for substring in array: thestring += substring
-            file.write(thestring)
-        file.write('\n')
-        
-        # storing results of function calls
-        file.write(f"        {functionDefinition['returnType']}[] resultsArray = "+"{\n")
-        for functionCall in testCases["functionCalls"]:
-            file.write(f"            {functionCall},\n")
-        file.write("        };\n\n") # closing resultsArray
-        
-        expectedResultStr = f"{testCasesClassname}.expectedResults[i]"
-        resultsArrayStr = "resultsArray[i]"
-        # arrays and lists cannot be directly compared in java (it does a pointer comparison), need to use '.equals()' instead
-        comparisonStr = f"resultsArray[i] != {testCasesClassname}.expectedResults[i]"
-        
-        if doesReturnArray: 
-            expectedResultStr = f"printArray({expectedResultStr})"
-            resultsArrayStr = f"printArray({resultsArrayStr})"
-            comparisonStr = f"!resultsArray[i].equals({testCasesClassname}.expectedResults[i])"
-        
-        # running testcases, comparing results
-        file.write(f'''
-        {testCasesClassname}.initTestcaseMap();
-        boolean allTestsPassed = true;
-        for (int i = 0; i < resultsArray.length; ++i)
-        '''+'{'+f'''
-            if ({comparisonStr})
-            '''+'{'+f'''
-                allTestsPassed = false;
-                System.out.println("Test#"+(i+1)+" failed!");
-                System.out.println({testCasesClassname}.testcaseMap.get(i));
-                System.out.println("    received: "+{resultsArrayStr});
-                System.out.println("    expected: "+{expectedResultStr});
-                System.out.println("\\n");
-            '''+'''}
-        }
-        if (allTestsPassed) System.out.println("All tests passed. :^) ");
-        System.out.println();\n''')
-        
+        # function declaration provided by codingbat and main function
+        file.write(f"    {functionDeclaration}\n")
+        file.write("    public static void main(String[] args) {\n")
+        file.write(f"        _{title}.Validate(true);  // pass 'false' to print failed tests only.\n")
         file.write("    }\n") # closing main function
         file.write("}\n") # closing Main class
     
-    print(f"\tdone writing {filepath.name}")
+    print(f"\tdone writing: {filepath.relative_to(cwd)}\n")
     return
 
 
-def ConvertSection(section_name: str):
+def GenerateSection(section_name: str):
     section_dir = sub_savedirs[0] / section_name
     section_files = section_dir.glob("./*.json")
     
-    print(f"Converting files under {section_dir}...")
+    print(f"Parsing files under {section_dir}...")
     failures = []
     for filename in section_files:
         # print(f"\t{filename}")
@@ -294,32 +325,35 @@ def ConvertSection(section_name: str):
             with open(filename, 'r') as file:
                 jsonData = json.load(file)
                 WriteJavaFile(section_name, jsonData)
+                WriteTestcaseFile(section_name, jsonData)
         except Exception as E:
             print(f"exception: {E}")
             failures.append(filename)
     if len(failures) > 0:
-        for failure in failures: print(f"Failed to convert: {failure}")
-    else: print(f"Converted all files in {section_dir}")
+        for failure in failures: print(f"Failed to generate java file for: {failure}")
+    else: print(f"Generated all files for {section_dir}")
     return
 
 
-def ConvertAll(only_missing=True):
+def GenerateAll(only_missing=True):
     jsondumps, java_subs = sub_savedirs
     section_dirs = [subdir.name for subdir in jsondumps.glob("./*/")]
     alreadyExist = []
     if only_missing: alreadyExist = [d.name for d in java_subs.glob("./*/")]
     for subdir in section_dirs:
         if (subdir in alreadyExist): print(f"skipping {subdir}; already exists."); continue
-        ConvertSection(subdir)
+        GenerateSection(subdir)
     return
 
 
 if __name__ == "__main__":
-    ConvertAll()
-    # ConvertSection("String-1")
+    GenerateAll()
+    # GenerateSection("Array-1")
+    # GenerateSection("String-1")
     
     # testdata = LoadFile("String-1", "makeOutWord")
     # WriteJavaFile("testpackage", testdata)
+    # WriteTestcaseFile("testpackage", testdata)
     
     # problems = ["commonTwo", "scoreUp"]
     # for problemfile in problems:
