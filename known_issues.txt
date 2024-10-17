@@ -1,5 +1,3 @@
-Any problem involving a parameter or return type of 'List' is currently nonfunctional
-
 The webscraper fails on a few sections of the site, like 'Functional'
 
 Testcase parsing/generation fails for 'Array1::MakePi' (fixed manually)

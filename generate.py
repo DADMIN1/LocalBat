@@ -90,10 +90,12 @@ def PythonBad(testcases: list[str], containsArray:bool, array_varnames, array_de
 
 
 def ParseTestcases(testcases: list[str], functionDef: dict) -> dict:
+    #TODO: refactor this stuff into ParseFunctionDefinition
     array_declarations = []
     array_varnames = []
     containsArray = False
     returnsArray = functionDef["returnType"].endswith("[]")
+    returnsList = functionDef["returnType"].startswith("List")
     
     for arg in functionDef["args"]:  # "type": , "identifier"
         isArray = arg["type"].endswith('[]')
@@ -108,11 +110,14 @@ def ParseTestcases(testcases: list[str], functionDef: dict) -> dict:
     
     for case in split_cases:
         if returnsArray: # need to rewrite arrays from '[...]' to '{...}'
-            case["expected"] = case["expected"].replace('[', '{').replace(']', '}') 
+            case["expected"] = case["expected"].replace('[', '{').replace(']', '}')
+        elif returnsList: # can construct a list with 'Arrays.asList'
+            case["expected"] = case["expected"].replace('[', "Arrays.asList(").replace(']', ')')
         expectedResults += case["expected"] + ", "
     expectedResults += "};\n"
     
     return { 
+        "returnsList": returnsList,
         "returnsArray": returnsArray,
         "containsArray": containsArray,
         "arrays": [case['arrays'] for case in split_cases], 
@@ -184,6 +189,7 @@ def WriteTestcaseFile(packageName:str, data: dict):
     # writing 'printArray' function if necessary
     returnType = functionDefinition["returnType"]
     doesReturnArray = returnType.endswith('[]')
+    doesReturnList = testCases["returnsList"]
     printArray_FunctionDefinition = f"    public static String printArray({returnType} array)"+"""
     {
         String result = "[";
@@ -195,7 +201,8 @@ def WriteTestcaseFile(packageName:str, data: dict):
     with open(testcase_filepath, "w", encoding="utf-8") as file:
         file.write(f"package {packageName}.Testcases;\n")
         file.write(f"import {packageName}.{title};\n") # importing the real class to run the user-code for validation
-        if doesReturnArray: file.write("import java.util.Arrays;\n")  # required to properly compare arrays
+        if doesReturnList: file.write("import java.util.List;\n")
+        if doesReturnArray or doesReturnList: file.write("import java.util.Arrays;\n")  # required to properly compare arrays, and construct Lists
         file.write('\n')
         
         file.write(f"public class {testCasesClassname}\n"+"{\n")
@@ -240,6 +247,9 @@ def WriteTestcaseFile(packageName:str, data: dict):
             resultsArrayStr = f"printArray({resultsArrayStr})"
             comparisonStr = f"!Arrays.equals(resultsArray[i], expectedResults[i])"
         
+        if doesReturnList:
+            comparisonStr = f"!resultsArray[i].equals(expectedResults[i])"
+        
         # running testcases, comparing results
         # unicode U+2714 is "heavy check-mark": ✔
         file.write(f'''
@@ -266,7 +276,7 @@ def WriteTestcaseFile(packageName:str, data: dict):
         file.write("}\n") # closing Testcase class
     
     print(f"\tdone writing: {testcase_filepath.relative_to(cwd)}\n")
-    return
+    return testCases
 
 
 # TODO: align by arrow, find longest testcase, then build the frame 
@@ -286,6 +296,9 @@ def WriteJavaFile(packageName:str, data: dict):
     filepath = packagedir / f'{title}.java'
     print(f"    generating {packageName}.{filepath.stem}...")
     
+    testcases = WriteTestcaseFile(packageName, data)
+    returnsList = testcases["returnsList"]
+    
     prompt = ReformatPrompt(data["prompt"]).replace('\n', '\n    ') # indent each line
     testcase_comment = TestcaseAsciiArt(data["testcases"])
     
@@ -299,6 +312,10 @@ def WriteJavaFile(packageName:str, data: dict):
         file.write(f"// {data["url"]}\n") # link to codingbat page
         file.write(f"package {packageName};\n")
         file.write(f"import {packageName}.Testcases._{title};\n\n")
+        if returnsList: 
+            file.write("import java.util.List;\n")
+            file.write("import java.util.Arrays;\n") # for 'Arrays.asList' 
+            file.write("import java.util.ArrayList;\n\n") # not strictly necessary
         
         # The class name must match the filename (java)
         file.write(f"public class {title}"+"\n{\n")
@@ -330,7 +347,6 @@ def GenerateSection(section_name: str):
             with open(filename, 'r') as file:
                 jsonData = json.load(file)
                 WriteJavaFile(section_name, jsonData)
-                WriteTestcaseFile(section_name, jsonData)
         except Exception as E:
             print(f"exception: {E}")
             failures.append(filename)
@@ -357,14 +373,13 @@ if __name__ == "__main__":
     # GenerateSection("String-1")
     
     # testdata = LoadFile("String-1", "makeOutWord")
+    # testdata = LoadFile("AP-1", "wordsWithoutList")
     # WriteJavaFile("testpackage", testdata)
-    # WriteTestcaseFile("testpackage", testdata)
     
     # problems = ["fizzArray", "fizzArray2"]
     # for problemfile in problems:
     #     testdata = LoadFile("Array-2", problemfile)
     #     WriteJavaFile("testpackage", testdata)
-    #     WriteTestcaseFile("testpackage", testdata)
     
     # functionDefinition = ParseFunctionDefinition(testdata['provided_code'])
     # testCases = ParseTestcases(testdata["testcases"], functionDefinition)
