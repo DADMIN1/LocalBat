@@ -12,11 +12,11 @@ public class MaxMod5
 
     /*___________________
     |     Testcases     |
-    _____________________
+    |___________________|
     | maxMod5(2, 3) → 3 |
     | maxMod5(6, 2) → 6 |
     | maxMod5(3, 2) → 3 |
-    ___________________*/
+    |__________________*/
 
     public static int maxMod5(int a, int b)
     {

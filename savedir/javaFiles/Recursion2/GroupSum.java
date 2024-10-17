@@ -15,11 +15,11 @@ public class GroupSum
 
     /*____________________________________
     |             Testcases              |
-    ______________________________________
+    |____________________________________|
     | groupSum(0, [2, 4, 8], 10) → true  |
     | groupSum(0, [2, 4, 8], 14) → true  |
     | groupSum(0, [2, 4, 8], 9)  → false |
-    ____________________________________*/
+    |___________________________________*/
 
     public static boolean groupSum(int start, int[] nums, int target)
     {

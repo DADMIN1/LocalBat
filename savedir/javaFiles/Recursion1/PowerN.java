@@ -9,11 +9,11 @@ public class PowerN
 
     /*___________________
     |     Testcases     |
-    _____________________
+    |___________________|
     | powerN(3, 1) → 3  |
     | powerN(3, 2) → 9  |
     | powerN(3, 3) → 27 |
-    ___________________*/
+    |__________________*/
 
     public static int powerN(int base, int n)
     {

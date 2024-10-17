@@ -9,11 +9,11 @@ public class Old35
 
     /*___________________
     |     Testcases     |
-    _____________________
+    |___________________|
     | old35(3)  → true  |
     | old35(10) → true  |
     | old35(15) → false |
-    ___________________*/
+    |__________________*/
 
     public static boolean old35(int n)
     {

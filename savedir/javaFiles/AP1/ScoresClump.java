@@ -10,11 +10,11 @@ public class ScoresClump
 
     /*___________________________________
     |             Testcases             |
-    _____________________________________
+    |___________________________________|
     | scoresClump([3, 4, 5])    → true  |
     | scoresClump([3, 4, 6])    → false |
     | scoresClump([1, 3, 5, 5]) → true  |
-    ___________________________________*/
+    |__________________________________*/
 
     public static boolean scoresClump(int[] scores)
     {

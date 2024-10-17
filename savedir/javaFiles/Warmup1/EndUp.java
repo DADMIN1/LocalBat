@@ -10,11 +10,11 @@ public class EndUp
 
     /*________________________________
     |           Testcases            |
-    __________________________________
+    |________________________________|
     | endUp("Hello")    → "HeLLO"    |
     | endUp("hi there") → "hi thERE" |
     | endUp("hi")       → "HI"       |
-    ________________________________*/
+    |_______________________________*/
 
     public static String endUp(String str)
     {

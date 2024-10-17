@@ -10,11 +10,11 @@ public class StringMatch
 
     /*______________________________________
     |              Testcases               |
-    ________________________________________
+    |______________________________________|
     | stringMatch("xxcaazz", "xxbaaz") → 3 |
     | stringMatch("abc", "abc")        → 2 |
     | stringMatch("abc", "axc")        → 0 |
-    ______________________________________*/
+    |_____________________________________*/
 
     public static int stringMatch(String a, String b)
     {

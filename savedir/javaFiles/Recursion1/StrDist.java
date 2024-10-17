@@ -9,11 +9,11 @@ public class StrDist
 
     /*_____________________________________
     |              Testcases              |
-    _______________________________________
+    |_____________________________________|
     | strDist("catcowcat", "cat")     → 9 |
     | strDist("catcowcat", "cow")     → 3 |
     | strDist("cccatcowcatxx", "cat") → 9 |
-    _____________________________________*/
+    |____________________________________*/
 
     public static int strDist(String str, String sub)
     {

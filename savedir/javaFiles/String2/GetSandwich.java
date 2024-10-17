@@ -10,11 +10,11 @@ public class GetSandwich
 
     /*__________________________________________
     |                Testcases                 |
-    ____________________________________________
+    |__________________________________________|
     | getSandwich("breadjambread")     → "jam" |
     | getSandwich("xxbreadjambreadyy") → "jam" |
     | getSandwich("xxbreadyy")         → ""    |
-    __________________________________________*/
+    |_________________________________________*/
 
     public static String getSandwich(String str)
     {

@@ -9,11 +9,11 @@ public class Last2
 
     /*________________________
     |       Testcases        |
-    __________________________
+    |________________________|
     | last2("hixxhi")    → 1 |
     | last2("xaxxaxaxx") → 1 |
     | last2("axxxaaxx")  → 2 |
-    ________________________*/
+    |_______________________*/
 
     public static int last2(String str)
     {

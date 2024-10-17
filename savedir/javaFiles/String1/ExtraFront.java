@@ -10,11 +10,11 @@ public class ExtraFront
 
     /*________________________________
     |           Testcases            |
-    __________________________________
+    |________________________________|
     | extraFront("Hello") → "HeHeHe" |
     | extraFront("ab")    → "ababab" |
     | extraFront("H")     → "HHH"    |
-    ________________________________*/
+    |_______________________________*/
 
     public static String extraFront(String str)
     {

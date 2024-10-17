@@ -12,11 +12,11 @@ public class BlueTicket
 
     /*__________________________
     |        Testcases         |
-    ____________________________
+    |__________________________|
     | blueTicket(9, 1, 0) → 10 |
     | blueTicket(9, 2, 0) → 0  |
     | blueTicket(6, 1, 4) → 10 |
-    __________________________*/
+    |_________________________*/
 
     public static int blueTicket(int a, int b, int c)
     {

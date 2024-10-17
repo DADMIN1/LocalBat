@@ -8,11 +8,11 @@ public class EqualIsNot
 
     /*__________________________________________
     |                Testcases                 |
-    ____________________________________________
+    |__________________________________________|
     | equalIsNot("This is not")        → false |
     | equalIsNot("This is notnot")     → true  |
     | equalIsNot("noisxxnotyynotxisi") → true  |
-    __________________________________________*/
+    |_________________________________________*/
 
     public static boolean equalIsNot(String str)
     {

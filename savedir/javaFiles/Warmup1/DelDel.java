@@ -10,11 +10,11 @@ public class DelDel
 
     /*________________________________
     |           Testcases            |
-    __________________________________
+    |________________________________|
     | delDel("adelbc")    → "abc"    |
     | delDel("adelHello") → "aHello" |
     | delDel("adedbc")    → "adedbc" |
-    ________________________________*/
+    |_______________________________*/
 
     public static String delDel(String str)
     {

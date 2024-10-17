@@ -10,11 +10,11 @@ public class TheEnd
 
     /*______________________________
     |          Testcases           |
-    ________________________________
+    |______________________________|
     | theEnd("Hello", true)  → "H" |
     | theEnd("Hello", false) → "o" |
     | theEnd("oh", true)     → "o" |
-    ______________________________*/
+    |_____________________________*/
 
     public static String theEnd(String str, boolean front)
     {

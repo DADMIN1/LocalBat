@@ -11,11 +11,11 @@ public class RepeatFront
 
     /*____________________________________________
     |                 Testcases                  |
-    ______________________________________________
+    |____________________________________________|
     | repeatFront("Chocolate", 4) → "ChocChoChC" |
     | repeatFront("Chocolate", 3) → "ChoChC"     |
     | repeatFront("Ice Cream", 2) → "IcI"        |
-    ____________________________________________*/
+    |___________________________________________*/
 
     public static String repeatFront(String str, int n)
     {

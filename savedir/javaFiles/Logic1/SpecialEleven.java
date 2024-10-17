@@ -10,11 +10,11 @@ public class SpecialEleven
 
     /*___________________________
     |         Testcases         |
-    _____________________________
+    |___________________________|
     | specialEleven(22) → true  |
     | specialEleven(23) → true  |
     | specialEleven(24) → false |
-    ___________________________*/
+    |__________________________*/
 
     public static boolean specialEleven(int n)
     {

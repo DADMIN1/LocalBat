@@ -13,11 +13,11 @@ public class Fibonacci
 
     /*__________________
     |    Testcases     |
-    ____________________
+    |__________________|
     | fibonacci(0) → 0 |
     | fibonacci(1) → 1 |
     | fibonacci(2) → 1 |
-    __________________*/
+    |_________________*/
 
     public static int fibonacci(int n)
     {

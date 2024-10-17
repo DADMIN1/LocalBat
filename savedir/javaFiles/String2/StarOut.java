@@ -10,11 +10,11 @@ public class StarOut
 
     /*_______________________________
     |           Testcases           |
-    _________________________________
+    |_______________________________|
     | starOut("ab*cd")    → "ad"    |
     | starOut("ab**cd")   → "ad"    |
     | starOut("sm*eilly") → "silly" |
-    _______________________________*/
+    |______________________________*/
 
     public static String starOut(String str)
     {

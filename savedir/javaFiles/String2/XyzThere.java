@@ -9,11 +9,11 @@ public class XyzThere
 
     /*_____________________________
     |          Testcases          |
-    _______________________________
+    |_____________________________|
     | xyzThere("abcxyz")  → true  |
     | xyzThere("abc.xyz") → false |
     | xyzThere("xyz.abc") → true  |
-    _____________________________*/
+    |____________________________*/
 
     public static boolean xyzThere(String str)
     {

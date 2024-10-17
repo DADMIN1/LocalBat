@@ -13,11 +13,11 @@ public class NoTeenSum
 
     /*_________________________
     |        Testcases        |
-    ___________________________
+    |_________________________|
     | noTeenSum(1, 2, 3)  → 6 |
     | noTeenSum(2, 13, 1) → 3 |
     | noTeenSum(2, 1, 14) → 3 |
-    _________________________*/
+    |________________________*/
 
     public static int noTeenSum(int a, int b, int c)
     {

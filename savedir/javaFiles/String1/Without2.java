@@ -11,11 +11,11 @@ public class Without2
 
     /*_________________________________
     |            Testcases            |
-    ___________________________________
+    |_________________________________|
     | without2("HelloHe") → "lloHe"   |
     | without2("HelloHi") → "HelloHi" |
     | without2("Hi")      → ""        |
-    _________________________________*/
+    |________________________________*/
 
     public static String without2(String str)
     {

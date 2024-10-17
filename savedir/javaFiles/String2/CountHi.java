@@ -8,11 +8,11 @@ public class CountHi
 
     /*__________________________
     |        Testcases         |
-    ____________________________
+    |__________________________|
     | countHi("abc hi ho") → 1 |
     | countHi("ABChi hi")  → 2 |
     | countHi("hihi")      → 2 |
-    __________________________*/
+    |_________________________*/
 
     public static int countHi(String str)
     {

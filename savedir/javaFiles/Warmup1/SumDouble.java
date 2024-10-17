@@ -9,11 +9,11 @@ public class SumDouble
 
     /*_____________________
     |      Testcases      |
-    _______________________
+    |_____________________|
     | sumDouble(1, 2) → 3 |
     | sumDouble(3, 2) → 5 |
     | sumDouble(2, 2) → 8 |
-    _____________________*/
+    |____________________*/
 
     public static int sumDouble(int a, int b)
     {

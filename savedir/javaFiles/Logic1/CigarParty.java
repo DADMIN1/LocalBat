@@ -12,11 +12,11 @@ public class CigarParty
 
     /*_______________________________
     |           Testcases           |
-    _________________________________
+    |_______________________________|
     | cigarParty(30, false) → false |
     | cigarParty(50, false) → true  |
     | cigarParty(70, true)  → true  |
-    _______________________________*/
+    |______________________________*/
 
     public static boolean cigarParty(int cigars, boolean isWeekend)
     {

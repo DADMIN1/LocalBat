@@ -10,11 +10,11 @@ public class WithoutDoubles
 
     /*_________________________________
     |            Testcases            |
-    ___________________________________
+    |_________________________________|
     | withoutDoubles(2, 3, true)  → 5 |
     | withoutDoubles(3, 3, true)  → 7 |
     | withoutDoubles(3, 3, false) → 6 |
-    _________________________________*/
+    |________________________________*/
 
     public static int withoutDoubles(int die1, int die2, boolean noDoubles)
     {

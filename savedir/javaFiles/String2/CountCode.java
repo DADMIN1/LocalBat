@@ -9,11 +9,11 @@ public class CountCode
 
     /*_____________________________
     |          Testcases          |
-    _______________________________
+    |_____________________________|
     | countCode("aaacodebbb") → 1 |
     | countCode("codexxcode") → 2 |
     | countCode("cozexxcope") → 2 |
-    _____________________________*/
+    |____________________________*/
 
     public static int countCode(String str)
     {

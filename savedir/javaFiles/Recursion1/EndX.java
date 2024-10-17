@@ -8,11 +8,11 @@ public class EndX
 
     /*_____________________________
     |          Testcases          |
-    _______________________________
+    |_____________________________|
     | endX("xxre")    → "rexx"    |
     | endX("xxhixx")  → "hixxxx"  |
     | endX("xhixhix") → "hihixxx" |
-    _____________________________*/
+    |____________________________*/
 
     public static String endX(String str)
     {

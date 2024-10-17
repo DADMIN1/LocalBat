@@ -8,11 +8,11 @@ public class DoubleX
 
     /*___________________________
     |         Testcases         |
-    _____________________________
+    |___________________________|
     | doubleX("axxbb")  → true  |
     | doubleX("axaxax") → false |
     | doubleX("xxxxx")  → true  |
-    ___________________________*/
+    |__________________________*/
 
     public static boolean doubleX(String str)
     {

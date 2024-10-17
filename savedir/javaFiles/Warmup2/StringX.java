@@ -9,11 +9,11 @@ public class StringX
 
     /*_________________________________
     |            Testcases            |
-    ___________________________________
+    |_________________________________|
     | stringX("xxHxix")    → "xHix"   |
     | stringX("abxxxcd")   → "abcd"   |
     | stringX("xabxxxcdx") → "xabcdx" |
-    _________________________________*/
+    |________________________________*/
 
     public static String stringX(String str)
     {

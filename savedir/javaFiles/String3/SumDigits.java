@@ -11,11 +11,11 @@ public class SumDigits
 
     /*____________________________
     |         Testcases          |
-    ______________________________
+    |____________________________|
     | sumDigits("aa1bc2d3")  → 6 |
     | sumDigits("aa11b33")   → 8 |
     | sumDigits("Chocolate") → 0 |
-    ____________________________*/
+    |___________________________*/
 
     public static int sumDigits(String str)
     {

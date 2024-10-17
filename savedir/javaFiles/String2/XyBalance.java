@@ -10,11 +10,11 @@ public class XyBalance
 
     /*_____________________________
     |          Testcases          |
-    _______________________________
+    |_____________________________|
     | xyBalance("aaxbby") → true  |
     | xyBalance("aaxbb")  → false |
     | xyBalance("yaaxbb") → false |
-    _____________________________*/
+    |____________________________*/
 
     public static boolean xyBalance(String str)
     {

@@ -9,11 +9,11 @@ public class SameStarChar
 
     /*________________________________
     |           Testcases            |
-    __________________________________
+    |________________________________|
     | sameStarChar("xy*yzz") → true  |
     | sameStarChar("xy*zzz") → false |
     | sameStarChar("*xa*az") → true  |
-    ________________________________*/
+    |_______________________________*/
 
     public static boolean sameStarChar(String str)
     {

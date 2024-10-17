@@ -10,11 +10,11 @@ public class In1To10
 
     /*____________________________
     |         Testcases          |
-    ______________________________
+    |____________________________|
     | in1To10(5, false)  → true  |
     | in1To10(11, false) → false |
     | in1To10(11, true)  → true  |
-    ____________________________*/
+    |___________________________*/
 
     public static boolean in1To10(int n, boolean outsideMode)
     {

@@ -10,11 +10,11 @@ public class Front3
 
     /*___________________________________
     |             Testcases             |
-    _____________________________________
+    |___________________________________|
     | front3("Java")      → "JavJavJav" |
     | front3("Chocolate") → "ChoChoCho" |
     | front3("abc")       → "abcabcabc" |
-    ___________________________________*/
+    |__________________________________*/
 
     public static String front3(String str)
     {

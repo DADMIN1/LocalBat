@@ -10,11 +10,11 @@ public class WithoutX2
 
     /*_________________________
     |        Testcases        |
-    ___________________________
+    |_________________________|
     | withoutX2("xHi") → "Hi" |
     | withoutX2("Hxi") → "Hi" |
     | withoutX2("Hi")  → "Hi" |
-    _________________________*/
+    |________________________*/
 
     public static String withoutX2(String str)
     {

@@ -11,11 +11,11 @@ public class BunnyEars2
 
     /*___________________
     |     Testcases     |
-    _____________________
+    |___________________|
     | bunnyEars2(0) → 0 |
     | bunnyEars2(1) → 2 |
     | bunnyEars2(2) → 5 |
-    ___________________*/
+    |__________________*/
 
     public static int bunnyEars2(int bunnies)
     {

@@ -12,11 +12,11 @@ public class AlarmClock
 
     /*________________________________
     |           Testcases            |
-    __________________________________
+    |________________________________|
     | alarmClock(1, false) → "7:00"  |
     | alarmClock(5, false) → "7:00"  |
     | alarmClock(0, false) → "10:00" |
-    ________________________________*/
+    |_______________________________*/
 
     public static String alarmClock(int day, boolean vacation)
     {

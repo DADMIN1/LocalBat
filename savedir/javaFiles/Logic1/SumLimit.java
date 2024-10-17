@@ -10,11 +10,11 @@ public class SumLimit
 
     /*____________________
     |     Testcases      |
-    ______________________
+    |____________________|
     | sumLimit(2, 3) → 5 |
     | sumLimit(8, 3) → 8 |
     | sumLimit(8, 1) → 9 |
-    ____________________*/
+    |___________________*/
 
     public static int sumLimit(int a, int b)
     {

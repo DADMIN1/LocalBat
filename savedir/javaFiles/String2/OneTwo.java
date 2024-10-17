@@ -10,11 +10,11 @@ public class OneTwo
 
     /*_____________________________
     |          Testcases          |
-    _______________________________
+    |_____________________________|
     | oneTwo("abc")    → "bca"    |
     | oneTwo("tca")    → "cat"    |
     | oneTwo("tcagdo") → "catdog" |
-    _____________________________*/
+    |____________________________*/
 
     public static String oneTwo(String str)
     {

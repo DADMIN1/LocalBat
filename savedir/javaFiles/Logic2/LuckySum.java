@@ -10,11 +10,11 @@ public class LuckySum
 
     /*________________________
     |       Testcases        |
-    __________________________
+    |________________________|
     | luckySum(1, 2, 3)  → 6 |
     | luckySum(1, 2, 13) → 3 |
     | luckySum(1, 13, 3) → 1 |
-    ________________________*/
+    |_______________________*/
 
     public static int luckySum(int a, int b, int c)
     {

@@ -13,11 +13,11 @@ public class StartWord
 
     /*___________________________________
     |             Testcases             |
-    _____________________________________
+    |___________________________________|
     | startWord("hippo", "hi")  → "hi"  |
     | startWord("hippo", "xip") → "hip" |
     | startWord("hippo", "i")   → "h"   |
-    ___________________________________*/
+    |__________________________________*/
 
     public static String startWord(String str, String word)
     {

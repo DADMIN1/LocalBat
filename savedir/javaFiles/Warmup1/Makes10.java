@@ -8,11 +8,11 @@ public class Makes10
 
     /*________________________
     |       Testcases        |
-    __________________________
+    |________________________|
     | makes10(9, 10) → true  |
     | makes10(9, 9)  → false |
     | makes10(1, 9)  → true  |
-    ________________________*/
+    |_______________________*/
 
     public static boolean makes10(int a, int b)
     {

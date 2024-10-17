@@ -8,11 +8,11 @@ public class StringSplosion
 
     /*_______________________________________
     |               Testcases               |
-    _________________________________________
+    |_______________________________________|
     | stringSplosion("Code") → "CCoCodCode" |
     | stringSplosion("abc")  → "aababc"     |
     | stringSplosion("ab")   → "aab"        |
-    _______________________________________*/
+    |______________________________________*/
 
     public static String stringSplosion(String str)
     {

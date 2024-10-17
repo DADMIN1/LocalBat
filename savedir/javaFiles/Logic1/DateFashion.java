@@ -14,11 +14,11 @@ public class DateFashion
 
     /*________________________
     |       Testcases        |
-    __________________________
+    |________________________|
     | dateFashion(5, 10) → 2 |
     | dateFashion(5, 2)  → 0 |
     | dateFashion(5, 5)  → 1 |
-    ________________________*/
+    |_______________________*/
 
     public static int dateFashion(int you, int date)
     {

@@ -8,11 +8,11 @@ public class FrontBack
 
     /*____________________________
     |         Testcases          |
-    ______________________________
+    |____________________________|
     | frontBack("code") → "eodc" |
     | frontBack("a")    → "a"    |
     | frontBack("ab")   → "ba"   |
-    ____________________________*/
+    |___________________________*/
 
     public static String frontBack(String str)
     {

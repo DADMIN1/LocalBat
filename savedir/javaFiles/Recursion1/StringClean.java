@@ -9,11 +9,11 @@ public class StringClean
 
     /*_________________________________
     |            Testcases            |
-    ___________________________________
+    |_________________________________|
     | stringClean("yyzzza")  → "yza"  |
     | stringClean("abbbcdd") → "abcd" |
     | stringClean("Hello")   → "Helo" |
-    _________________________________*/
+    |________________________________*/
 
     public static String stringClean(String str)
     {

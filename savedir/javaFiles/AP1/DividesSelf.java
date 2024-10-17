@@ -11,11 +11,11 @@ public class DividesSelf
 
     /*__________________________
     |        Testcases         |
-    ____________________________
+    |__________________________|
     | dividesSelf(128) → true  |
     | dividesSelf(12)  → true  |
     | dividesSelf(120) → false |
-    __________________________*/
+    |_________________________*/
 
     public static boolean dividesSelf(int n)
     {

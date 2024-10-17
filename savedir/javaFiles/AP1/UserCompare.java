@@ -14,11 +14,11 @@ public class UserCompare
 
     /*____________________________________
     |             Testcases              |
-    ______________________________________
+    |____________________________________|
     | userCompare("bb", 1, "zz", 2) → -1 |
     | userCompare("bb", 1, "aa", 2) → 1  |
     | userCompare("bb", 1, "bb", 1) → 0  |
-    ____________________________________*/
+    |___________________________________*/
 
     public static int userCompare(String aName, int aId, String bName, int bId)
     {

@@ -10,11 +10,11 @@ public class LoneTeen
 
     /*__________________________
     |        Testcases         |
-    ____________________________
+    |__________________________|
     | loneTeen(13, 99) → true  |
     | loneTeen(21, 19) → true  |
     | loneTeen(13, 13) → false |
-    __________________________*/
+    |_________________________*/
 
     public static boolean loneTeen(int a, int b)
     {

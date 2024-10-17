@@ -10,11 +10,11 @@ public class EvenlySpaced
 
     /*_______________________________
     |           Testcases           |
-    _________________________________
+    |_______________________________|
     | evenlySpaced(2, 4, 6) → true  |
     | evenlySpaced(4, 6, 2) → true  |
     | evenlySpaced(4, 6, 3) → false |
-    _______________________________*/
+    |______________________________*/
 
     public static boolean evenlySpaced(int a, int b, int c)
     {

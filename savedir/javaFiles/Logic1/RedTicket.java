@@ -12,11 +12,11 @@ public class RedTicket
 
     /*_________________________
     |        Testcases        |
-    ___________________________
+    |_________________________|
     | redTicket(2, 2, 2) → 10 |
     | redTicket(2, 2, 1) → 0  |
     | redTicket(0, 0, 0) → 5  |
-    _________________________*/
+    |________________________*/
 
     public static int redTicket(int a, int b, int c)
     {

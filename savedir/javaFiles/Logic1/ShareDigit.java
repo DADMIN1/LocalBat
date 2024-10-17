@@ -10,11 +10,11 @@ public class ShareDigit
 
     /*____________________________
     |         Testcases          |
-    ______________________________
+    |____________________________|
     | shareDigit(12, 23) → true  |
     | shareDigit(12, 43) → false |
     | shareDigit(12, 44) → false |
-    ____________________________*/
+    |___________________________*/
 
     public static boolean shareDigit(int a, int b)
     {

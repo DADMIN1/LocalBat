@@ -9,11 +9,11 @@ public class ScoresIncreasing
 
     /*_____________________________________
     |              Testcases              |
-    _______________________________________
+    |_____________________________________|
     | scoresIncreasing([1, 3, 4]) → true  |
     | scoresIncreasing([1, 3, 2]) → false |
     | scoresIncreasing([1, 1, 4]) → true  |
-    _____________________________________*/
+    |____________________________________*/
 
     public static boolean scoresIncreasing(int[] scores)
     {

@@ -9,11 +9,11 @@ public class LoneSum
 
     /*______________________
     |      Testcases       |
-    ________________________
+    |______________________|
     | loneSum(1, 2, 3) → 6 |
     | loneSum(3, 2, 3) → 2 |
     | loneSum(3, 3, 3) → 0 |
-    ______________________*/
+    |_____________________*/
 
     public static int loneSum(int a, int b, int c)
     {

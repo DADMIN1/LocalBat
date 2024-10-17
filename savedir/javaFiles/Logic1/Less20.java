@@ -10,11 +10,11 @@ public class Less20
 
     /*____________________
     |     Testcases      |
-    ______________________
+    |____________________|
     | less20(18) → true  |
     | less20(19) → true  |
     | less20(20) → false |
-    ____________________*/
+    |___________________*/
 
     public static boolean less20(int n)
     {

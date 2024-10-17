@@ -11,11 +11,11 @@ public class InOrderEqual
 
     /*_______________________________________
     |               Testcases               |
-    _________________________________________
+    |_______________________________________|
     | inOrderEqual(2, 5, 11, false) → true  |
     | inOrderEqual(5, 7, 6, false)  → false |
     | inOrderEqual(5, 5, 7, true)   → true  |
-    _______________________________________*/
+    |______________________________________*/
 
     public static boolean inOrderEqual(int a, int b, int c, boolean equalOk)
     {

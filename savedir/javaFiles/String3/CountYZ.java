@@ -11,11 +11,11 @@ public class CountYZ
 
     /*__________________________
     |        Testcases         |
-    ____________________________
+    |__________________________|
     | countYZ("fez day")   → 2 |
     | countYZ("day fez")   → 2 |
     | countYZ("day fyyyz") → 2 |
-    __________________________*/
+    |_________________________*/
 
     public static int countYZ(String str)
     {

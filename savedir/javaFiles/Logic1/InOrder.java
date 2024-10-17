@@ -10,11 +10,11 @@ public class InOrder
 
     /*_________________________________
     |            Testcases            |
-    ___________________________________
+    |_________________________________|
     | inOrder(1, 2, 4, false) → true  |
     | inOrder(1, 2, 1, false) → false |
     | inOrder(1, 1, 2, true)  → true  |
-    _________________________________*/
+    |________________________________*/
 
     public static boolean inOrder(int a, int b, int c, boolean bOk)
     {

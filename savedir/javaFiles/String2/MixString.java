@@ -10,11 +10,11 @@ public class MixString
 
     /*__________________________________________
     |                Testcases                 |
-    ____________________________________________
+    |__________________________________________|
     | mixString("abc", "xyz")    → "axbycz"    |
     | mixString("Hi", "There")   → "HTihere"   |
     | mixString("xxxx", "There") → "xTxhxexre" |
-    __________________________________________*/
+    |_________________________________________*/
 
     public static String mixString(String a, String b)
     {

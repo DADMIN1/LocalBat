@@ -10,11 +10,11 @@ public class NearTen
 
     /*_____________________
     |      Testcases      |
-    _______________________
+    |_____________________|
     | nearTen(12) → true  |
     | nearTen(17) → false |
     | nearTen(19) → true  |
-    _____________________*/
+    |____________________*/
 
     public static boolean nearTen(int num)
     {

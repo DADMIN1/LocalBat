@@ -10,11 +10,11 @@ public class Triangle
 
     /*_________________
     |    Testcases    |
-    ___________________
+    |_________________|
     | triangle(0) → 0 |
     | triangle(1) → 1 |
     | triangle(2) → 3 |
-    _________________*/
+    |________________*/
 
     public static int triangle(int rows)
     {

@@ -9,11 +9,11 @@ public class Right2
 
     /*___________________________
     |         Testcases         |
-    _____________________________
+    |___________________________|
     | right2("Hello") → "loHel" |
     | right2("java")  → "vaja"  |
     | right2("Hi")    → "Hi"    |
-    ___________________________*/
+    |__________________________*/
 
     public static String right2(String str)
     {

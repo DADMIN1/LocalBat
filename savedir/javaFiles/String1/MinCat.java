@@ -11,11 +11,11 @@ public class MinCat
 
     /*______________________________________
     |              Testcases               |
-    ________________________________________
+    |______________________________________|
     | minCat("Hello", "Hi")   → "loHi"     |
     | minCat("Hello", "java") → "ellojava" |
     | minCat("java", "Hello") → "javaello" |
-    ______________________________________*/
+    |_____________________________________*/
 
     public static String minCat(String a, String b)
     {

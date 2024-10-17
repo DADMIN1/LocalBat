@@ -9,11 +9,11 @@ public class BunnyEars
 
     /*__________________
     |    Testcases     |
-    ____________________
+    |__________________|
     | bunnyEars(0) → 0 |
     | bunnyEars(1) → 2 |
     | bunnyEars(2) → 4 |
-    __________________*/
+    |_________________*/
 
     public static int bunnyEars(int bunnies)
     {

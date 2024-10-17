@@ -10,11 +10,11 @@ public class MakeTags
 
     /*______________________________________________
     |                  Testcases                   |
-    ________________________________________________
+    |______________________________________________|
     | makeTags("i", "Yay")    → "<i>Yay</i>"       |
     | makeTags("i", "Hello")  → "<i>Hello</i>"     |
     | makeTags("cite", "Yay") → "<cite>Yay</cite>" |
-    ______________________________________________*/
+    |_____________________________________________*/
 
     public static String makeTags(String tag, String word)
     {

@@ -9,11 +9,11 @@ public class MixStart
 
     /*________________________________
     |           Testcases            |
-    __________________________________
+    |________________________________|
     | mixStart("mix snacks") → true  |
     | mixStart("pix snacks") → true  |
     | mixStart("piz snacks") → false |
-    ________________________________*/
+    |_______________________________*/
 
     public static boolean mixStart(String str)
     {

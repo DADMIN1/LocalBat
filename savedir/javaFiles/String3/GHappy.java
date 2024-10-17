@@ -9,11 +9,11 @@ public class GHappy
 
     /*_____________________________
     |          Testcases          |
-    _______________________________
+    |_____________________________|
     | gHappy("xxggxx")    → true  |
     | gHappy("xxgxx")     → false |
     | gHappy("xxggyygxx") → false |
-    _____________________________*/
+    |____________________________*/
 
     public static boolean gHappy(String str)
     {

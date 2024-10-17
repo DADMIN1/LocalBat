@@ -10,11 +10,11 @@ public class RepeatEnd
 
     /*_____________________________________
     |              Testcases              |
-    _______________________________________
+    |_____________________________________|
     | repeatEnd("Hello", 3) → "llollollo" |
     | repeatEnd("Hello", 2) → "lolo"      |
     | repeatEnd("Hello", 1) → "o"         |
-    _____________________________________*/
+    |____________________________________*/
 
     public static String repeatEnd(String str, int n)
     {

@@ -10,11 +10,11 @@ public class MonkeyTrouble
 
     /*_____________________________________
     |              Testcases              |
-    _______________________________________
+    |_____________________________________|
     | monkeyTrouble(true, true)   → true  |
     | monkeyTrouble(false, false) → true  |
     | monkeyTrouble(true, false)  → false |
-    _____________________________________*/
+    |____________________________________*/
 
     public static boolean monkeyTrouble(boolean aSmile, boolean bSmile)
     {

@@ -10,11 +10,11 @@ public class MakeChocolate
 
     /*______________________________
     |          Testcases           |
-    ________________________________
+    |______________________________|
     | makeChocolate(4, 1, 9)  → 4  |
     | makeChocolate(4, 1, 10) → -1 |
     | makeChocolate(4, 1, 7)  → 2  |
-    ______________________________*/
+    |_____________________________*/
 
     public static int makeChocolate(int small, int big, int goal)
     {

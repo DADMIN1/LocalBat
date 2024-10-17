@@ -10,11 +10,11 @@ public class StrCopies
 
     /*__________________________________________
     |                Testcases                 |
-    ____________________________________________
+    |__________________________________________|
     | strCopies("catcowcat", "cat", 2) → true  |
     | strCopies("catcowcat", "cow", 2) → false |
     | strCopies("catcowcat", "cow", 1) → true  |
-    __________________________________________*/
+    |_________________________________________*/
 
     public static boolean strCopies(String str, String sub, int n)
     {

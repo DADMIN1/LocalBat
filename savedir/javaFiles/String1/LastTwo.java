@@ -9,11 +9,11 @@ public class LastTwo
 
     /*______________________________
     |          Testcases           |
-    ________________________________
+    |______________________________|
     | lastTwo("coding") → "codign" |
     | lastTwo("cat")    → "cta"    |
     | lastTwo("ab")     → "ba"     |
-    ______________________________*/
+    |_____________________________*/
 
     public static String lastTwo(String str)
     {

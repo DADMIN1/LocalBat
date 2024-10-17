@@ -9,11 +9,11 @@ public class SameEnds
 
     /*___________________________
     |         Testcases         |
-    _____________________________
+    |___________________________|
     | sameEnds("abXYab") → "ab" |
     | sameEnds("xx")     → "x"  |
     | sameEnds("xxx")    → "x"  |
-    ___________________________*/
+    |__________________________*/
 
     public static String sameEnds(String string)
     {

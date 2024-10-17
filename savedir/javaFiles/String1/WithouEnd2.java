@@ -9,11 +9,11 @@ public class WithouEnd2
 
     /*_____________________________
     |          Testcases          |
-    _______________________________
+    |_____________________________|
     | withouEnd2("Hello") → "ell" |
     | withouEnd2("abc")   → "b"   |
     | withouEnd2("ab")    → ""    |
-    _____________________________*/
+    |____________________________*/
 
     public static String withouEnd2(String str)
     {

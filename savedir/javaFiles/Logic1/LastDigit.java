@@ -9,11 +9,11 @@ public class LastDigit
 
     /*_______________________________
     |           Testcases           |
-    _________________________________
+    |_______________________________|
     | lastDigit(23, 19, 13) → true  |
     | lastDigit(23, 19, 12) → false |
     | lastDigit(23, 19, 3)  → true  |
-    _______________________________*/
+    |______________________________*/
 
     public static boolean lastDigit(int a, int b, int c)
     {

@@ -8,11 +8,11 @@ public class CountAbc
 
     /*__________________________
     |        Testcases         |
-    ____________________________
+    |__________________________|
     | countAbc("abc")      → 1 |
     | countAbc("abcxxabc") → 2 |
     | countAbc("abaxxaba") → 2 |
-    __________________________*/
+    |_________________________*/
 
     public static int countAbc(String str)
     {

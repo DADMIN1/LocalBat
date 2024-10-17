@@ -13,11 +13,11 @@ public class FizzString2
 
     /*__________________________
     |        Testcases         |
-    ____________________________
+    |__________________________|
     | fizzString2(1) → "1!"    |
     | fizzString2(2) → "2!"    |
     | fizzString2(3) → "Fizz!" |
-    __________________________*/
+    |_________________________*/
 
     public static String fizzString2(int n)
     {

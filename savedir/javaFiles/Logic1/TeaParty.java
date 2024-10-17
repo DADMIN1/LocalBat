@@ -12,11 +12,11 @@ public class TeaParty
 
     /*_____________________
     |      Testcases      |
-    _______________________
+    |_____________________|
     | teaParty(6, 8)  → 1 |
     | teaParty(3, 8)  → 0 |
     | teaParty(20, 6) → 2 |
-    _____________________*/
+    |____________________*/
 
     public static int teaParty(int tea, int candy)
     {

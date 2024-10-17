@@ -8,11 +8,11 @@ public class StartHi
 
     /*_____________________________
     |          Testcases          |
-    _______________________________
+    |_____________________________|
     | startHi("hi there") → true  |
     | startHi("hi")       → true  |
     | startHi("hello hi") → false |
-    _____________________________*/
+    |____________________________*/
 
     public static boolean startHi(String str)
     {

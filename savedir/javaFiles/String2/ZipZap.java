@@ -10,11 +10,11 @@ public class ZipZap
 
     /*_______________________________
     |           Testcases           |
-    _________________________________
+    |_______________________________|
     | zipZap("zipXzap")  → "zpXzp"  |
     | zipZap("zopzop")   → "zpzp"   |
     | zipZap("zzzopzop") → "zzzpzp" |
-    _______________________________*/
+    |______________________________*/
 
     public static String zipZap(String str)
     {

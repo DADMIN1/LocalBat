@@ -10,11 +10,11 @@ public class NestParen
 
     /*_____________________________
     |          Testcases          |
-    _______________________________
+    |_____________________________|
     | nestParen("(())")   → true  |
     | nestParen("((()))") → true  |
     | nestParen("(((x))") → false |
-    _____________________________*/
+    |____________________________*/
 
     public static boolean nestParen(String str)
     {

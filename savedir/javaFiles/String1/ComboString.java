@@ -10,11 +10,11 @@ public class ComboString
 
     /*__________________________________________
     |                Testcases                 |
-    ____________________________________________
+    |__________________________________________|
     | comboString("Hello", "hi") → "hiHellohi" |
     | comboString("hi", "Hello") → "hiHellohi" |
     | comboString("aaa", "b")    → "baaab"     |
-    __________________________________________*/
+    |_________________________________________*/
 
     public static String comboString(String a, String b)
     {

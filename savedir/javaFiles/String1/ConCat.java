@@ -10,11 +10,11 @@ public class ConCat
 
     /*_________________________________
     |            Testcases            |
-    ___________________________________
+    |_________________________________|
     | conCat("abc", "cat") → "abcat"  |
     | conCat("dog", "cat") → "dogcat" |
     | conCat("abc", "")    → "abc"    |
-    _________________________________*/
+    |________________________________*/
 
     public static String conCat(String a, String b)
     {

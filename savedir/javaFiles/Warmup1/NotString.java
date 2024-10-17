@@ -10,11 +10,11 @@ public class NotString
 
     /*____________________________________
     |             Testcases              |
-    ______________________________________
+    |____________________________________|
     | notString("candy")   → "not candy" |
     | notString("x")       → "not x"     |
     | notString("not bad") → "not bad"   |
-    ____________________________________*/
+    |___________________________________*/
 
     public static String notString(String str)
     {

@@ -9,11 +9,11 @@ public class DoubleChar
 
     /*_____________________________________________
     |                  Testcases                  |
-    _______________________________________________
+    |_____________________________________________|
     | doubleChar("The")      → "TThhee"           |
     | doubleChar("AAbb")     → "AAAAbbbb"         |
     | doubleChar("Hi-There") → "HHii--TThheerree" |
-    _____________________________________________*/
+    |____________________________________________*/
 
     public static String doubleChar(String str)
     {

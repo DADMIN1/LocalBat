@@ -10,11 +10,11 @@ public class SumDigits
 
     /*_____________________
     |      Testcases      |
-    _______________________
+    |_____________________|
     | sumDigits(126) → 9  |
     | sumDigits(49)  → 13 |
     | sumDigits(12)  → 3  |
-    _____________________*/
+    |____________________*/
 
     public static int sumDigits(int n)
     {

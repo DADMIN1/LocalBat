@@ -9,11 +9,11 @@ public class Double23
 
     /*__________________________
     |        Testcases         |
-    ____________________________
+    |__________________________|
     | double23([2, 2]) → true  |
     | double23([3, 3]) → true  |
     | double23([2, 3]) → false |
-    __________________________*/
+    |_________________________*/
 
     public static boolean double23(int[] nums)
     {

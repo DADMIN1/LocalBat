@@ -9,11 +9,11 @@ public class MiddleTwo
 
     /*______________________________
     |          Testcases           |
-    ________________________________
+    |______________________________|
     | middleTwo("string")   → "ri" |
     | middleTwo("code")     → "od" |
     | middleTwo("Practice") → "ct" |
-    ______________________________*/
+    |_____________________________*/
 
     public static String middleTwo(String str)
     {

@@ -9,11 +9,11 @@ public class Blackjack
 
     /*________________________
     |       Testcases        |
-    __________________________
+    |________________________|
     | blackjack(19, 21) → 21 |
     | blackjack(21, 19) → 21 |
     | blackjack(19, 22) → 19 |
-    ________________________*/
+    |_______________________*/
 
     public static int blackjack(int a, int b)
     {

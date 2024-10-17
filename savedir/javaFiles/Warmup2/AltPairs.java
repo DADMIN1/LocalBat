@@ -9,11 +9,11 @@ public class AltPairs
 
     /*_____________________________________
     |              Testcases              |
-    _______________________________________
+    |_____________________________________|
     | altPairs("kitten")       → "kien"   |
     | altPairs("Chocolate")    → "Chole"  |
     | altPairs("CodingHorror") → "Congrr" |
-    _____________________________________*/
+    |____________________________________*/
 
     public static String altPairs(String str)
     {

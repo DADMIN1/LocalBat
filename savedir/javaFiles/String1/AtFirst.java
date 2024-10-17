@@ -9,11 +9,11 @@ public class AtFirst
 
     /*_________________________
     |        Testcases        |
-    ___________________________
+    |_________________________|
     | atFirst("hello") → "he" |
     | atFirst("hi")    → "hi" |
     | atFirst("h")     → "h@" |
-    _________________________*/
+    |________________________*/
 
     public static String atFirst(String str)
     {

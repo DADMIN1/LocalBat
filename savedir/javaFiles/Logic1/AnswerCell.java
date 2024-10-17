@@ -10,11 +10,11 @@ public class AnswerCell
 
     /*_________________________________________
     |                Testcases                |
-    ___________________________________________
+    |_________________________________________|
     | answerCell(false, false, false) → true  |
     | answerCell(false, false, true)  → false |
     | answerCell(true, false, false)  → false |
-    _________________________________________*/
+    |________________________________________*/
 
     public static boolean answerCell(boolean isMorning, boolean isMom, boolean isAsleep)
     {

@@ -10,11 +10,11 @@ public class EveryNth
 
     /*_________________________________
     |            Testcases            |
-    ___________________________________
+    |_________________________________|
     | everyNth("Miracle", 2) → "Mrce" |
     | everyNth("abcdefg", 2) → "aceg" |
     | everyNth("abcdefg", 3) → "adg"  |
-    _________________________________*/
+    |________________________________*/
 
     public static String everyNth(String str, int n)
     {

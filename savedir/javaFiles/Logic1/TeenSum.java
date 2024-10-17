@@ -9,11 +9,11 @@ public class TeenSum
 
     /*______________________
     |      Testcases       |
-    ________________________
+    |______________________|
     | teenSum(3, 4)   → 7  |
     | teenSum(10, 13) → 19 |
     | teenSum(13, 2)  → 19 |
-    ______________________*/
+    |_____________________*/
 
     public static int teenSum(int a, int b)
     {

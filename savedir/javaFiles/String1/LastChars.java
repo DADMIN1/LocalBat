@@ -10,11 +10,11 @@ public class LastChars
 
     /*___________________________________
     |             Testcases             |
-    _____________________________________
+    |___________________________________|
     | lastChars("last", "chars") → "ls" |
     | lastChars("yo", "java")    → "ya" |
     | lastChars("hi", "")        → "h@" |
-    ___________________________________*/
+    |__________________________________*/
 
     public static String lastChars(String a, String b)
     {

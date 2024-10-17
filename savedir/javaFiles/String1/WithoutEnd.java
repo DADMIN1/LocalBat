@@ -9,11 +9,11 @@ public class WithoutEnd
 
     /*_______________________________
     |           Testcases           |
-    _________________________________
+    |_______________________________|
     | withoutEnd("Hello")  → "ell"  |
     | withoutEnd("java")   → "av"   |
     | withoutEnd("coding") → "odin" |
-    _______________________________*/
+    |______________________________*/
 
     public static String withoutEnd(String str)
     {

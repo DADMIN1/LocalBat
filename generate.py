@@ -278,33 +278,35 @@ def WriteTestcaseFile(packageName:str, data: dict):
     print(f"\tdone writing: {testcase_filepath.relative_to(cwd)}\n")
     return testCases
 
- 
-def TestcaseAsciiArt(testcases: list) -> str:
-    # align by arrow, find longest testcase, then build the frame
+
+# alternatively, the title can be padded with underscores and the underline skipped to inline the title into the border 
+# 'titlebox_padding' fills empty space on the title line ('Testcases'), titlebox_underline creates a border underneath if provided 
+def TestcaseAsciiArt(testcases: list, titlebox_padding:str = ' ', titlebox_underline:str|None = '_') -> str:
+    # align by arrow, find longest testcase, then apply padding and build the frame
     segmented = [line.partition('\u2192') for line in testcases]
     segmentLengths = [[len(s[0]), len(s[2])] for s in segmented]
     longestLengths = [max(x) for x in zip(*segmentLengths)]
     total_width = longestLengths[0] + longestLengths[1] + 3 # accounting for the arrow
-    title_padding = " "*int((total_width-len("Testcases"))/2)
+    title_padding = f"{titlebox_padding}"*int((total_width-len("Testcases"))/2)
     
     # title_padding is off by one if the length is even
     maybe_space = ""
-    if ((total_width%2) == 0): maybe_space = " "
+    if ((total_width%2) == 0): maybe_space = titlebox_padding;
     
-    art = "    /*"
-    art += "_" * total_width
-    art += f"\n    |{title_padding}Testcases{maybe_space}{title_padding}|\n    "
-    art += "_" * (total_width+2)
-    art += "\n    "
+    # title box
+    ascii_art = "    /*" + ("_" * total_width)
+    ascii_art += f"\n    |{title_padding}Testcases{maybe_space}{title_padding}|\n    "
+    if (titlebox_underline is not None): ascii_art += '|' + ("_" * total_width) + '|' + "\n    ";
+    
     for segments in segmented:
         testcase, arrow, result = segments
         # padding with spaces to align arrow and end of box
         testcase += " "*(longestLengths[0]-len(testcase))
         result += " "*(longestLengths[1]-len(result))
-        art += f"| {testcase}{arrow}{result} |\n    "
-    art += "_" * total_width
-    art += "*/\n\n"
-    return art
+        ascii_art += f"| {testcase}{arrow}{result} |\n    "
+    
+    ascii_art += '|' + ("_" * (total_width-1)) + "*/\n\n"
+    return ascii_art
 
 
 def WriteJavaFile(packageName:str, data: dict):

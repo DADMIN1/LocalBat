@@ -10,11 +10,11 @@ public class EndOther
 
     /*__________________________________
     |            Testcases             |
-    ____________________________________
+    |__________________________________|
     | endOther("Hiabc", "abc")  → true |
     | endOther("AbC", "HiaBc")  → true |
     | endOther("abc", "abXabc") → true |
-    __________________________________*/
+    |_________________________________*/
 
     public static boolean endOther(String a, String b)
     {

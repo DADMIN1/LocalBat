@@ -11,11 +11,11 @@ public class WithoutString
 
     /*_____________________________________________________
     |                      Testcases                      |
-    _______________________________________________________
+    |_____________________________________________________|
     | withoutString("Hello there", "llo") → "He there"    |
     | withoutString("Hello there", "e")   → "Hllo thr"    |
     | withoutString("Hello there", "x")   → "Hello there" |
-    _____________________________________________________*/
+    |____________________________________________________*/
 
     public static String withoutString(String base, String remove)
     {

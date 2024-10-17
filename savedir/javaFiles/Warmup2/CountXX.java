@@ -9,11 +9,11 @@ public class CountXX
 
     /*______________________
     |      Testcases       |
-    ________________________
+    |______________________|
     | countXX("abcxx") → 1 |
     | countXX("xxx")   → 2 |
     | countXX("xxxx")  → 3 |
-    ______________________*/
+    |_____________________*/
 
     public static int countXX(String str)
     {

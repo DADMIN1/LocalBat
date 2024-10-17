@@ -9,11 +9,11 @@ public class NearHundred
 
     /*_________________________
     |        Testcases        |
-    ___________________________
+    |_________________________|
     | nearHundred(93) → true  |
     | nearHundred(90) → true  |
     | nearHundred(89) → false |
-    _________________________*/
+    |________________________*/
 
     public static boolean nearHundred(int n)
     {

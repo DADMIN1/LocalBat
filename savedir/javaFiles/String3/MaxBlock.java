@@ -9,11 +9,11 @@ public class MaxBlock
 
     /*_______________________________
     |           Testcases           |
-    _________________________________
+    |_______________________________|
     | maxBlock("hoopla")        → 2 |
     | maxBlock("abbCCCddBBBxx") → 3 |
     | maxBlock("")              → 0 |
-    _______________________________*/
+    |______________________________*/
 
     public static int maxBlock(String str)
     {

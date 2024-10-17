@@ -8,11 +8,11 @@ public class CatDog
 
     /*________________________________
     |           Testcases            |
-    __________________________________
+    |________________________________|
     | catDog("catdog")       → true  |
     | catDog("catcat")       → false |
     | catDog("1cat1cadodog") → true  |
-    ________________________________*/
+    |_______________________________*/
 
     public static boolean catDog(String str)
     {

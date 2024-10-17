@@ -11,11 +11,11 @@ public class FizzString
 
     /*________________________________
     |           Testcases            |
-    __________________________________
+    |________________________________|
     | fizzString("fig") → "Fizz"     |
     | fizzString("dib") → "Buzz"     |
     | fizzString("fib") → "FizzBuzz" |
-    ________________________________*/
+    |_______________________________*/
 
     public static String fizzString(String str)
     {

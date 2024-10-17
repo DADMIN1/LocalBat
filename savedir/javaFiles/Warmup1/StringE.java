@@ -8,11 +8,11 @@ public class StringE
 
     /*____________________________
     |         Testcases          |
-    ______________________________
+    |____________________________|
     | stringE("Hello")   → true  |
     | stringE("Heelle")  → true  |
     | stringE("Heelele") → false |
-    ____________________________*/
+    |___________________________*/
 
     public static boolean stringE(String str)
     {

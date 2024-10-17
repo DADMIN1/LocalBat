@@ -9,11 +9,11 @@ public class HasOne
 
     /*_____________________
     |      Testcases      |
-    _______________________
+    |_____________________|
     | hasOne(10)  → true  |
     | hasOne(22)  → false |
     | hasOne(220) → false |
-    _____________________*/
+    |____________________*/
 
     public static boolean hasOne(int n)
     {

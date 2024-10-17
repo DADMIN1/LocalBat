@@ -11,11 +11,11 @@ public class GreenTicket
 
     /*___________________________
     |         Testcases         |
-    _____________________________
+    |___________________________|
     | greenTicket(1, 2, 3) → 0  |
     | greenTicket(2, 2, 2) → 20 |
     | greenTicket(1, 1, 2) → 10 |
-    ___________________________*/
+    |__________________________*/
 
     public static int greenTicket(int a, int b, int c)
     {

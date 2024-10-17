@@ -12,11 +12,11 @@ public class SplitArray
 
     /*_______________________________
     |           Testcases           |
-    _________________________________
+    |_______________________________|
     | splitArray([2, 2])    → true  |
     | splitArray([2, 3])    → false |
     | splitArray([5, 2, 3]) → true  |
-    _______________________________*/
+    |______________________________*/
 
     public static boolean splitArray(int[] nums)
     {

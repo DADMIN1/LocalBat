@@ -9,11 +9,11 @@ public class CountHi2
 
     /*________________________
     |       Testcases        |
-    __________________________
+    |________________________|
     | countHi2("ahixhi") → 1 |
     | countHi2("ahibhi") → 2 |
     | countHi2("xhixhi") → 0 |
-    ________________________*/
+    |_______________________*/
 
     public static int countHi2(String str)
     {

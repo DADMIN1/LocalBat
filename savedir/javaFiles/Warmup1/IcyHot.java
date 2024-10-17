@@ -8,11 +8,11 @@ public class IcyHot
 
     /*_________________________
     |        Testcases        |
-    ___________________________
+    |_________________________|
     | icyHot(120, -1) → true  |
     | icyHot(-1, 120) → true  |
     | icyHot(2, 120)  → false |
-    _________________________*/
+    |________________________*/
 
     public static boolean icyHot(int temp1, int temp2)
     {

@@ -8,11 +8,11 @@ public class FirstHalf
 
     /*___________________________________
     |             Testcases             |
-    _____________________________________
+    |___________________________________|
     | firstHalf("WooHoo")     → "Woo"   |
     | firstHalf("HelloThere") → "Hello" |
     | firstHalf("abcdef")     → "abc"   |
-    ___________________________________*/
+    |__________________________________*/
 
     public static String firstHalf(String str)
     {

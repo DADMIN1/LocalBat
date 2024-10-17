@@ -8,11 +8,11 @@ public class MakeAbba
 
     /*____________________________________________
     |                 Testcases                  |
-    ______________________________________________
+    |____________________________________________|
     | makeAbba("Hi", "Bye")   → "HiByeByeHi"     |
     | makeAbba("Yo", "Alice") → "YoAliceAliceYo" |
     | makeAbba("What", "Up")  → "WhatUpUpWhat"   |
-    ____________________________________________*/
+    |___________________________________________*/
 
     public static String makeAbba(String a, String b)
     {

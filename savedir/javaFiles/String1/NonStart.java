@@ -9,11 +9,11 @@ public class NonStart
 
     /*_________________________________________
     |                Testcases                |
-    ___________________________________________
+    |_________________________________________|
     | nonStart("Hello", "There") → "ellohere" |
     | nonStart("java", "code")   → "avaode"   |
     | nonStart("shotl", "java")  → "hotlava"  |
-    _________________________________________*/
+    |________________________________________*/
 
     public static String nonStart(String a, String b)
     {

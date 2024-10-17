@@ -9,11 +9,11 @@ public class BobThere
 
     /*____________________________
     |         Testcases          |
-    ______________________________
+    |____________________________|
     | bobThere("abcbob") → true  |
     | bobThere("b9b")    → true  |
     | bobThere("bac")    → false |
-    ____________________________*/
+    |___________________________*/
 
     public static boolean bobThere(String str)
     {

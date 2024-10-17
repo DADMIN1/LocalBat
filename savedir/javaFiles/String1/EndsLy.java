@@ -8,11 +8,11 @@ public class EndsLy
 
     /*_________________________
     |        Testcases        |
-    ___________________________
+    |_________________________|
     | endsLy("oddly") → true  |
     | endsLy("y")     → false |
     | endsLy("oddy")  → false |
-    _________________________*/
+    |________________________*/
 
     public static boolean endsLy(String str)
     {

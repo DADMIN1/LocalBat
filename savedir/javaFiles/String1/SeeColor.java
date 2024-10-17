@@ -9,11 +9,11 @@ public class SeeColor
 
     /*________________________________
     |           Testcases            |
-    __________________________________
+    |________________________________|
     | seeColor("redxx")     → "red"  |
     | seeColor("xxred")     → ""     |
     | seeColor("blueTimes") → "blue" |
-    ________________________________*/
+    |_______________________________*/
 
     public static String seeColor(String str)
     {

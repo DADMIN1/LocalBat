@@ -11,11 +11,11 @@ public class SquirrelPlay
 
     /*_________________________________
     |            Testcases            |
-    ___________________________________
+    |_________________________________|
     | squirrelPlay(70, false) → true  |
     | squirrelPlay(95, false) → false |
     | squirrelPlay(95, true)  → true  |
-    _________________________________*/
+    |________________________________*/
 
     public static boolean squirrelPlay(int temp, boolean isSummer)
     {

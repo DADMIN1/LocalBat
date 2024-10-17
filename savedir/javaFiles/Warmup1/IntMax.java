@@ -8,11 +8,11 @@ public class IntMax
 
     /*_____________________
     |      Testcases      |
-    _______________________
+    |_____________________|
     | intMax(1, 2, 3) → 3 |
     | intMax(1, 3, 2) → 3 |
     | intMax(3, 2, 1) → 3 |
-    _____________________*/
+    |____________________*/
 
     public static int intMax(int a, int b, int c)
     {

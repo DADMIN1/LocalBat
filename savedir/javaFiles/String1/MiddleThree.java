@@ -9,11 +9,11 @@ public class MiddleThree
 
     /*________________________________
     |           Testcases            |
-    __________________________________
+    |________________________________|
     | middleThree("Candy")   → "and" |
     | middleThree("and")     → "and" |
     | middleThree("solving") → "lvi" |
-    ________________________________*/
+    |_______________________________*/
 
     public static String middleThree(String str)
     {

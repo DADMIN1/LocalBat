@@ -9,11 +9,11 @@ public class StringBits
 
     /*___________________________________
     |             Testcases             |
-    _____________________________________
+    |___________________________________|
     | stringBits("Hello")     → "Hlo"   |
     | stringBits("Hi")        → "H"     |
     | stringBits("Heeololeo") → "Hello" |
-    ___________________________________*/
+    |__________________________________*/
 
     public static String stringBits(String str)
     {

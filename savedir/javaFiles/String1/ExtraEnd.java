@@ -9,11 +9,11 @@ public class ExtraEnd
 
     /*______________________________
     |          Testcases           |
-    ________________________________
+    |______________________________|
     | extraEnd("Hello") → "lololo" |
     | extraEnd("ab")    → "ababab" |
     | extraEnd("Hi")    → "HiHiHi" |
-    ______________________________*/
+    |_____________________________*/
 
     public static String extraEnd(String str)
     {

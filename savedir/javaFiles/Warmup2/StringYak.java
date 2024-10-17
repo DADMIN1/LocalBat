@@ -9,11 +9,11 @@ public class StringYak
 
     /*_________________________________
     |            Testcases            |
-    ___________________________________
+    |_________________________________|
     | stringYak("yakpak")   → "pak"   |
     | stringYak("pakyak")   → "pak"   |
     | stringYak("yak123ya") → "123ya" |
-    _________________________________*/
+    |________________________________*/
 
     public static String stringYak(String str)
     {

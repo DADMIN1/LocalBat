@@ -9,11 +9,11 @@ public class HasTeen
 
     /*____________________________
     |         Testcases          |
-    ______________________________
+    |____________________________|
     | hasTeen(13, 20, 10) → true |
     | hasTeen(20, 19, 10) → true |
     | hasTeen(20, 10, 13) → true |
-    ____________________________*/
+    |___________________________*/
 
     public static boolean hasTeen(int a, int b, int c)
     {

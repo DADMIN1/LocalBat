@@ -11,11 +11,11 @@ public class SumNumbers
 
     /*_______________________________
     |           Testcases           |
-    _________________________________
+    |_______________________________|
     | sumNumbers("abc123xyz") → 123 |
     | sumNumbers("aa11b33")   → 44  |
     | sumNumbers("7 11")      → 18  |
-    _______________________________*/
+    |______________________________*/
 
     public static int sumNumbers(String str)
     {

@@ -10,11 +10,11 @@ public class CloseFar
 
     /*____________________________
     |         Testcases          |
-    ______________________________
+    |____________________________|
     | closeFar(1, 2, 10) → true  |
     | closeFar(1, 2, 3)  → false |
     | closeFar(4, 1, 3)  → true  |
-    ____________________________*/
+    |___________________________*/
 
     public static boolean closeFar(int a, int b, int c)
     {

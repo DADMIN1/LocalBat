@@ -9,11 +9,11 @@ public class SortaSum
 
     /*_______________________
     |       Testcases       |
-    _________________________
+    |_______________________|
     | sortaSum(3, 4)   → 7  |
     | sortaSum(9, 4)   → 20 |
     | sortaSum(10, 11) → 21 |
-    _______________________*/
+    |______________________*/
 
     public static int sortaSum(int a, int b)
     {

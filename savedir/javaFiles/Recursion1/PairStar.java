@@ -8,11 +8,11 @@ public class PairStar
 
     /*_______________________________
     |           Testcases           |
-    _________________________________
+    |_______________________________|
     | pairStar("hello") → "hel*lo"  |
     | pairStar("xxyy")  → "x*xy*y"  |
     | pairStar("aaaa")  → "a*a*a*a" |
-    _______________________________*/
+    |______________________________*/
 
     public static String pairStar(String str)
     {

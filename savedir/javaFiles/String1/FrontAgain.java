@@ -9,11 +9,11 @@ public class FrontAgain
 
     /*______________________________
     |          Testcases           |
-    ________________________________
+    |______________________________|
     | frontAgain("edited") → true  |
     | frontAgain("edit")   → false |
     | frontAgain("ed")     → true  |
-    ______________________________*/
+    |_____________________________*/
 
     public static boolean frontAgain(String str)
     {

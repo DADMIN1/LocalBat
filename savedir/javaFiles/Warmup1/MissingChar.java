@@ -10,11 +10,11 @@ public class MissingChar
 
     /*____________________________________
     |             Testcases              |
-    ______________________________________
+    |____________________________________|
     | missingChar("kitten", 1) → "ktten" |
     | missingChar("kitten", 0) → "itten" |
     | missingChar("kitten", 4) → "kittn" |
-    ____________________________________*/
+    |___________________________________*/
 
     public static String missingChar(String str, int n)
     {

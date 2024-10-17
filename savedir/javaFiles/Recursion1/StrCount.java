@@ -10,11 +10,11 @@ public class StrCount
 
     /*__________________________________
     |            Testcases             |
-    ____________________________________
+    |__________________________________|
     | strCount("catcowcat", "cat") → 2 |
     | strCount("catcowcat", "cow") → 1 |
     | strCount("catcowcat", "dog") → 0 |
-    __________________________________*/
+    |_________________________________*/
 
     public static int strCount(String str, String sub)
     {

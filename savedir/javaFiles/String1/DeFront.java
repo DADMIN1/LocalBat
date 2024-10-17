@@ -10,11 +10,11 @@ public class DeFront
 
     /*__________________________
     |        Testcases         |
-    ____________________________
+    |__________________________|
     | deFront("Hello") → "llo" |
     | deFront("java")  → "va"  |
     | deFront("away")  → "aay" |
-    __________________________*/
+    |_________________________*/
 
     public static String deFront(String str)
     {

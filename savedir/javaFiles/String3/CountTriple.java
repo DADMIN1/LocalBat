@@ -9,11 +9,11 @@ public class CountTriple
 
     /*________________________________
     |           Testcases            |
-    __________________________________
+    |________________________________|
     | countTriple("abcXXXabc")   → 1 |
     | countTriple("xxxabyyyycd") → 3 |
     | countTriple("a")           → 0 |
-    ________________________________*/
+    |_______________________________*/
 
     public static int countTriple(String str)
     {

@@ -11,11 +11,11 @@ public class FirstTwo
 
     /*____________________________
     |         Testcases          |
-    ______________________________
+    |____________________________|
     | firstTwo("Hello")   → "He" |
     | firstTwo("abcdefg") → "ab" |
     | firstTwo("ab")      → "ab" |
-    ____________________________*/
+    |___________________________*/
 
     public static String firstTwo(String str)
     {

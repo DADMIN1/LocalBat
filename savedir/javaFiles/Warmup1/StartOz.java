@@ -10,11 +10,11 @@ public class StartOz
 
     /*______________________________
     |          Testcases           |
-    ________________________________
+    |______________________________|
     | startOz("ozymandias") → "oz" |
     | startOz("bzoo")       → "z"  |
     | startOz("oxx")        → "o"  |
-    ______________________________*/
+    |_____________________________*/
 
     public static String startOz(String str)
     {

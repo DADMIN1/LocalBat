@@ -9,11 +9,11 @@ public class SameFirstLast
 
     /*_____________________________________
     |              Testcases              |
-    _______________________________________
+    |_____________________________________|
     | sameFirstLast([1, 2, 3])    → false |
     | sameFirstLast([1, 2, 3, 1]) → true  |
     | sameFirstLast([1, 2, 1])    → true  |
-    _____________________________________*/
+    |____________________________________*/
 
     public static boolean sameFirstLast(int[] nums)
     {

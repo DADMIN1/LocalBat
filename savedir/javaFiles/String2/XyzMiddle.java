@@ -10,11 +10,11 @@ public class XyzMiddle
 
     /*______________________________
     |          Testcases           |
-    ________________________________
+    |______________________________|
     | xyzMiddle("AAxyzBB") → true  |
     | xyzMiddle("AxyzBB")  → true  |
     | xyzMiddle("AxyzBBB") → false |
-    ______________________________*/
+    |_____________________________*/
 
     public static boolean xyzMiddle(String str)
     {

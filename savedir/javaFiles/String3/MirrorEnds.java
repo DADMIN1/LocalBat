@@ -11,11 +11,11 @@ public class MirrorEnds
 
     /*_______________________________
     |           Testcases           |
-    _________________________________
+    |_______________________________|
     | mirrorEnds("abXYZba") → "ab"  |
     | mirrorEnds("abca")    → "a"   |
     | mirrorEnds("aba")     → "aba" |
-    _______________________________*/
+    |______________________________*/
 
     public static String mirrorEnds(String string)
     {

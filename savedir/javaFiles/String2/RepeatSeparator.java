@@ -9,11 +9,11 @@ public class RepeatSeparator
 
     /*______________________________________________________
     |                      Testcases                       |
-    ________________________________________________________
+    |______________________________________________________|
     | repeatSeparator("Word", "X", 3)   → "WordXWordXWord" |
     | repeatSeparator("This", "And", 2) → "ThisAndThis"    |
     | repeatSeparator("This", "And", 1) → "This"           |
-    ______________________________________________________*/
+    |_____________________________________________________*/
 
     public static String repeatSeparator(String word, String sep, int count)
     {

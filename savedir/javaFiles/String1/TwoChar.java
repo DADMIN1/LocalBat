@@ -10,11 +10,11 @@ public class TwoChar
 
     /*___________________________
     |         Testcases         |
-    _____________________________
+    |___________________________|
     | twoChar("java", 0) → "ja" |
     | twoChar("java", 2) → "va" |
     | twoChar("java", 3) → "ja" |
-    ___________________________*/
+    |__________________________*/
 
     public static String twoChar(String str, int index)
     {

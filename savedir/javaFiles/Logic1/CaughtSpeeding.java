@@ -13,11 +13,11 @@ public class CaughtSpeeding
 
     /*_______________________________
     |           Testcases           |
-    _________________________________
+    |_______________________________|
     | caughtSpeeding(60, false) → 0 |
     | caughtSpeeding(65, false) → 1 |
     | caughtSpeeding(65, true)  → 0 |
-    _______________________________*/
+    |______________________________*/
 
     public static int caughtSpeeding(int speed, boolean isBirthday)
     {

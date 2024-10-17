@@ -9,11 +9,11 @@ public class PrefixAgain
 
     /*___________________________________
     |             Testcases             |
-    _____________________________________
+    |___________________________________|
     | prefixAgain("abXYabc", 1) → true  |
     | prefixAgain("abXYabc", 2) → true  |
     | prefixAgain("abXYabc", 3) → false |
-    ___________________________________*/
+    |__________________________________*/
 
     public static boolean prefixAgain(String str, int n)
     {

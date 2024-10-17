@@ -8,11 +8,11 @@ public class AllStar
 
     /*________________________________
     |           Testcases            |
-    __________________________________
+    |________________________________|
     | allStar("hello") → "h*e*l*l*o" |
     | allStar("abc")   → "a*b*c"     |
     | allStar("ab")    → "a*b"       |
-    ________________________________*/
+    |_______________________________*/
 
     public static String allStar(String str)
     {

@@ -8,11 +8,11 @@ public class StringTimes
 
     /*_________________________________
     |            Testcases            |
-    ___________________________________
+    |_________________________________|
     | stringTimes("Hi", 2) → "HiHi"   |
     | stringTimes("Hi", 3) → "HiHiHi" |
     | stringTimes("Hi", 1) → "Hi"     |
-    _________________________________*/
+    |________________________________*/
 
     public static String stringTimes(String str, int n)
     {

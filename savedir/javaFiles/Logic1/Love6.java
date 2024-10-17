@@ -10,11 +10,11 @@ public class Love6
 
     /*_____________________
     |      Testcases      |
-    _______________________
+    |_____________________|
     | love6(6, 4) → true  |
     | love6(4, 5) → false |
     | love6(1, 5) → true  |
-    _____________________*/
+    |____________________*/
 
     public static boolean love6(int a, int b)
     {

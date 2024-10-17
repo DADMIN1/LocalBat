@@ -10,11 +10,11 @@ public class HasBad
 
     /*___________________________
     |         Testcases         |
-    _____________________________
+    |___________________________|
     | hasBad("badxx")   → true  |
     | hasBad("xbadxx")  → true  |
     | hasBad("xxbadxx") → false |
-    ___________________________*/
+    |__________________________*/
 
     public static boolean hasBad(String str)
     {

@@ -10,11 +10,11 @@ public class ParrotTrouble
 
     /*_________________________________
     |            Testcases            |
-    ___________________________________
+    |_________________________________|
     | parrotTrouble(true, 6)  → true  |
     | parrotTrouble(true, 7)  → false |
     | parrotTrouble(false, 6) → false |
-    _________________________________*/
+    |________________________________*/
 
     public static boolean parrotTrouble(boolean talking, int hour)
     {

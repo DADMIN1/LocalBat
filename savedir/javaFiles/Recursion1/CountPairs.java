@@ -10,11 +10,11 @@ public class CountPairs
 
     /*________________________
     |       Testcases        |
-    __________________________
+    |________________________|
     | countPairs("axa")  → 1 |
     | countPairs("axax") → 2 |
     | countPairs("axbx") → 1 |
-    ________________________*/
+    |_______________________*/
 
     public static int countPairs(String str)
     {

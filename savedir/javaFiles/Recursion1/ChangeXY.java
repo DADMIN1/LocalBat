@@ -8,11 +8,11 @@ public class ChangeXY
 
     /*_________________________________
     |            Testcases            |
-    ___________________________________
+    |_________________________________|
     | changeXY("codex")   → "codey"   |
     | changeXY("xxhixx")  → "yyhiyy"  |
     | changeXY("xhixhix") → "yhiyhiy" |
-    _________________________________*/
+    |________________________________*/
 
     public static String changeXY(String str)
     {

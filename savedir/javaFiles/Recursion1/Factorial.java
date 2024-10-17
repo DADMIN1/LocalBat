@@ -9,11 +9,11 @@ public class Factorial
 
     /*__________________
     |    Testcases     |
-    ____________________
+    |__________________|
     | factorial(1) → 1 |
     | factorial(2) → 2 |
     | factorial(3) → 6 |
-    __________________*/
+    |_________________*/
 
     public static int factorial(int n)
     {

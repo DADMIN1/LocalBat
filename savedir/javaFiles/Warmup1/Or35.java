@@ -9,11 +9,11 @@ public class Or35
 
     /*__________________
     |    Testcases     |
-    ____________________
+    |__________________|
     | or35(3)  → true  |
     | or35(10) → true  |
     | or35(8)  → false |
-    __________________*/
+    |_________________*/
 
     public static boolean or35(int n)
     {

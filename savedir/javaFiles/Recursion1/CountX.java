@@ -8,11 +8,11 @@ public class CountX
 
     /*_______________________
     |       Testcases       |
-    _________________________
+    |_______________________|
     | countX("xxhixx")  → 4 |
     | countX("xhixhix") → 3 |
     | countX("hi")      → 0 |
-    _______________________*/
+    |______________________*/
 
     public static int countX(String str)
     {

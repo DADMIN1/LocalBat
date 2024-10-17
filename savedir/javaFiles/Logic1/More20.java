@@ -9,11 +9,11 @@ public class More20
 
     /*____________________
     |     Testcases      |
-    ______________________
+    |____________________|
     | more20(20) → false |
     | more20(21) → true  |
     | more20(22) → true  |
-    ____________________*/
+    |___________________*/
 
     public static boolean more20(int n)
     {

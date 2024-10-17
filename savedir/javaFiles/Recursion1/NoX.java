@@ -8,11 +8,11 @@ public class NoX
 
     /*_____________________
     |      Testcases      |
-    _______________________
+    |_____________________|
     | noX("xaxb") → "ab"  |
     | noX("abc")  → "abc" |
     | noX("xx")   → ""    |
-    _____________________*/
+    |____________________*/
 
     public static String noX(String str)
     {

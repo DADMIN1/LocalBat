@@ -9,11 +9,11 @@ public class WithoutX
 
     /*__________________________
     |        Testcases         |
-    ____________________________
+    |__________________________|
     | withoutX("xHix") → "Hi"  |
     | withoutX("xHi")  → "Hi"  |
     | withoutX("Hxix") → "Hxi" |
-    __________________________*/
+    |_________________________*/
 
     public static String withoutX(String str)
     {

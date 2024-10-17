@@ -9,11 +9,11 @@ public class NTwice
 
     /*___________________________________
     |             Testcases             |
-    _____________________________________
+    |___________________________________|
     | nTwice("Hello", 2)     → "Helo"   |
     | nTwice("Chocolate", 3) → "Choate" |
     | nTwice("Chocolate", 1) → "Ce"     |
-    ___________________________________*/
+    |__________________________________*/
 
     public static String nTwice(String str, int n)
     {

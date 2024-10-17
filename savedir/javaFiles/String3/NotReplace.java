@@ -10,11 +10,11 @@ public class NotReplace
 
     /*___________________________________________________
     |                     Testcases                     |
-    _____________________________________________________
+    |___________________________________________________|
     | notReplace("is test")       → "is not test"       |
     | notReplace("is-is")         → "is not-is not"     |
     | notReplace("This is right") → "This is not right" |
-    ___________________________________________________*/
+    |__________________________________________________*/
 
     public static String notReplace(String str)
     {

@@ -10,11 +10,11 @@ public class Front22
 
     /*__________________________________
     |            Testcases             |
-    ____________________________________
+    |__________________________________|
     | front22("kitten") → "kikittenki" |
     | front22("Ha")     → "HaHaHa"     |
     | front22("abc")    → "ababcab"    |
-    __________________________________*/
+    |_________________________________*/
 
     public static String front22(String str)
     {

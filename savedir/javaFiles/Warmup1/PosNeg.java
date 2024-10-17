@@ -9,11 +9,11 @@ public class PosNeg
 
     /*_____________________________
     |          Testcases          |
-    _______________________________
+    |_____________________________|
     | posNeg(1, -1, false) → true |
     | posNeg(-1, 1, false) → true |
     | posNeg(-4, -5, true) → true |
-    _____________________________*/
+    |____________________________*/
 
     public static boolean posNeg(int a, int b, boolean negative)
     {
