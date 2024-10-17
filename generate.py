@@ -356,8 +356,16 @@ def WriteJavaFile(packageName:str, data: dict):
     return
 
 
-def GenerateSection(section_name: str):
+# TODO: implement check/filter for missing files
+def GenerateSection(section_name: str, only_missing_files=False):
+    if '-' not in section_name: print(f'warning: section-name "{section_name}" expected to have a dash');
     section_dir = sub_savedirs[0] / section_name
+    if not section_dir.exists(): 
+        print(f'error: json data for section: "{section_name}" does not exist.')
+        section_name = section_name[:-1] + "-" + section_name[-1] # putting the dash back in
+        print(f'retrying with section-name: "{section_name}"...')
+        section_dir = sub_savedirs[0] / section_name
+        if not section_dir.exists(): print(f"error: fallback failed. skipping section.\n"); return;
     section_files = section_dir.glob("./*.json")
     
     print(f"Parsing files under {section_dir}...")
@@ -379,12 +387,29 @@ def GenerateSection(section_name: str):
 
 def GenerateAll(only_missing=True):
     jsondumps, java_subs = sub_savedirs
-    section_dirs = [subdir.name for subdir in jsondumps.glob("./*/")]
-    alreadyExist = []
-    if only_missing: alreadyExist = [d.name for d in java_subs.glob("./*/")]
-    for subdir in section_dirs:
-        if (subdir in alreadyExist): print(f"skipping {subdir}; already exists."); continue
-        GenerateSection(subdir)
+    json_section_dirs = [subdir.name for subdir in jsondumps.glob("./*/")]
+    java_alreadyExist = [d.name for d in java_subs.glob("./*/")]
+    json_section_dirs.sort()
+    java_alreadyExist.sort()
+    #TODO: do a file count to figure out if any files are missing
+     
+    java_section_dirs = [
+        dirname for dirname in json_section_dirs 
+        if ((not only_missing) or (dirname.replace('-', '') not in java_alreadyExist))
+    ]
+    
+    if only_missing:
+        print(f"Skipping generation for {len(java_alreadyExist)} pre-existing java subdirectories: ")
+        print(' (skip) '+'\n (skip) '.join(java_alreadyExist)+'\n\n')
+    
+    if (len(java_section_dirs) == 0): print("Nothing to be done.\n"); return;
+    print(f"Generation queued for {len(java_section_dirs)} sections: ")
+    print(' (new) '+'\n (new) '.join(java_section_dirs)+'\n\n')
+    
+    # TODO: track the number of files created/re-written/skipped
+    for subdir in java_section_dirs:
+        GenerateSection(subdir, only_missing)
+    
     return
 
 
