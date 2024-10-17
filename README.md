@@ -1,7 +1,7 @@
 # LocalBat
 A webscraper for <a href="https://codingbat.com">CodingBat</a> that generates Java files for local/offline use.
 
-![comparison](https://github.com/user-attachments/assets/61bbb51a-1686-4c73-a2c8-3e5e3c41efd8)
+![LocalBat side-by-side comparison](https://github.com/user-attachments/assets/c2e59377-da1b-4e3d-8a15-413fbff10b99)
 
 A java file is generated for each problem on the website, organized into subdirectories by section.
 
@@ -17,7 +17,7 @@ And the generated .java files are under:
 
 All of the java files can be run to validate the solution against the simple testcases provided on the site.
 
-![8 example_output](https://github.com/user-attachments/assets/88fda6e4-714b-4c5f-9d07-a66a785244f8)
+![LocalBat validation screenshot](https://github.com/user-attachments/assets/9ef2bfd6-9db7-4649-a0f3-ac7fd3c072bb)
 
 
 # How to setup (in Eclipse IDE)
