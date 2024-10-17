@@ -10,7 +10,7 @@ public class DoubleX
     // doubleX("axaxax") → false
     // doubleX("xxxxx") → true
 
-    boolean doubleX(String str)
+    public static boolean doubleX(String str)
     {
         
     }

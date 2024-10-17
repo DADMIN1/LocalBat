@@ -93,6 +93,8 @@ def ParseTestcases(testcases: list[str], functionDef: dict) -> dict:
     array_declarations = []
     array_varnames = []
     containsArray = False
+    returnsArray = functionDef["returnType"].endswith("[]")
+    
     for arg in functionDef["args"]:  # "type": , "identifier"
         isArray = arg["type"].endswith('[]')
         if isArray:
@@ -105,12 +107,14 @@ def ParseTestcases(testcases: list[str], functionDef: dict) -> dict:
     expectedResults = f"{functionDef['returnType']}[] expectedResults = "+"{ "
     
     for case in split_cases:
-        if containsArray: # need to rewrite arrays from '[...]' to '{...}'
+        if returnsArray: # need to rewrite arrays from '[...]' to '{...}'
             case["expected"] = case["expected"].replace('[', '{').replace(']', '}') 
         expectedResults += case["expected"] + ", "
     expectedResults += "};\n"
     
     return { 
+        "returnsArray": returnsArray,
+        "containsArray": containsArray,
         "arrays": [case['arrays'] for case in split_cases], 
         "functionCalls": [case["functionCall"] for case in split_cases], 
         "expectedResults": expectedResults
@@ -287,6 +291,7 @@ def WriteJavaFile(packageName:str, data: dict):
     
     # adding static to declaration and cleaning up braces/whitespace
     functionDeclaration = data['provided_code'].rstrip('}{\n ')
+    if not functionDeclaration.startswith("public"): functionDeclaration = "public "+functionDeclaration
     functionDeclaration = functionDeclaration.replace("public ", "public static ")
     functionDeclaration += "\n    {\n        \n    }\n"
     
@@ -355,10 +360,11 @@ if __name__ == "__main__":
     # WriteJavaFile("testpackage", testdata)
     # WriteTestcaseFile("testpackage", testdata)
     
-    # problems = ["commonTwo", "scoreUp"]
+    # problems = ["fizzArray", "fizzArray2"]
     # for problemfile in problems:
-    #     testdata = LoadFile("AP-1", problemfile)
+    #     testdata = LoadFile("Array-2", problemfile)
     #     WriteJavaFile("testpackage", testdata)
+    #     WriteTestcaseFile("testpackage", testdata)
     
     # functionDefinition = ParseFunctionDefinition(testdata['provided_code'])
     # testCases = ParseTestcases(testdata["testcases"], functionDefinition)

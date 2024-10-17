@@ -9,7 +9,7 @@ public class _WordsWithoutList
         "wordsWithoutList([\"a\", \"bb\", \"b\", \"ccc\"], 4)",
     };
 
-    static List[] expectedResults = { {"bb", "ccc"}, {"a", "bb", "b"}, {"a", "bb", "b", "ccc"}, };
+    static List[] expectedResults = { ["bb", "ccc"], ["a", "bb", "b"], ["a", "bb", "b", "ccc"], };
 
     public static void Validate(boolean printSuccess)
     {

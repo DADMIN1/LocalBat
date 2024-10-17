@@ -11,7 +11,7 @@ public class CountXX
     // countXX("xxx") → 2
     // countXX("xxxx") → 3
 
-    int countXX(String str)
+    public static int countXX(String str)
     {
         
     }
