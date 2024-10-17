@@ -9,9 +9,13 @@ public class MatchUp
     Return the count of the number of times that the two elements differ by 2 or less, 
     but are not equal. */
 
-    // matchUp([1, 2, 3], [2, 3, 10]) → 2
-    // matchUp([1, 2, 3], [2, 3, 5]) → 3
-    // matchUp([1, 2, 3], [2, 3, 3]) → 2
+    /*____________________________________
+    |             Testcases              |
+    ______________________________________
+    | matchUp([1, 2, 3], [2, 3, 10]) → 2 |
+    | matchUp([1, 2, 3], [2, 3, 5])  → 3 |
+    | matchUp([1, 2, 3], [2, 3, 3])  → 2 |
+    ____________________________________*/
 
     public static int matchUp(int[] nums1, int[] nums2)
     {

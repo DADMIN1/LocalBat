@@ -7,9 +7,13 @@ public class WithoutX
     /* Given a string, if the first or last chars are 'x', return the string without those 'x' chars, 
     and otherwise return the string unchanged. */
 
-    // withoutX("xHix") → "Hi"
-    // withoutX("xHi") → "Hi"
-    // withoutX("Hxix") → "Hxi"
+    /*__________________________
+    |        Testcases         |
+    ____________________________
+    | withoutX("xHix") → "Hi"  |
+    | withoutX("xHi")  → "Hi"  |
+    | withoutX("Hxix") → "Hxi" |
+    __________________________*/
 
     public static String withoutX(String str)
     {

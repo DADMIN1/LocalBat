@@ -12,9 +12,13 @@ public class DateFashion
     then the result is 2 (yes). With the exception that if either of you has style of 2 or less, 
     then the result is 0 (no). Otherwise the result is 1 (maybe). */
 
-    // dateFashion(5, 10) → 2
-    // dateFashion(5, 2) → 0
-    // dateFashion(5, 5) → 1
+    /*________________________
+    |       Testcases        |
+    __________________________
+    | dateFashion(5, 10) → 2 |
+    | dateFashion(5, 2)  → 0 |
+    | dateFashion(5, 5)  → 1 |
+    ________________________*/
 
     public static int dateFashion(int you, int date)
     {

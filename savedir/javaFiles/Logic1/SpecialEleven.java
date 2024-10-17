@@ -8,9 +8,13 @@ public class SpecialEleven
     Return true if the given non-negative number is special. 
     Use the % "mod" operator -- see Introduction to Mod */
 
-    // specialEleven(22) → true
-    // specialEleven(23) → true
-    // specialEleven(24) → false
+    /*___________________________
+    |         Testcases         |
+    _____________________________
+    | specialEleven(22) → true  |
+    | specialEleven(23) → true  |
+    | specialEleven(24) → false |
+    ___________________________*/
 
     public static boolean specialEleven(int n)
     {

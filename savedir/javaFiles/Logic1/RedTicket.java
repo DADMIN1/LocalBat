@@ -10,9 +10,13 @@ public class RedTicket
     Otherwise so long as both b and c are different from a, 
     the result is 1. Otherwise the result is 0. */
 
-    // redTicket(2, 2, 2) → 10
-    // redTicket(2, 2, 1) → 0
-    // redTicket(0, 0, 0) → 5
+    /*_________________________
+    |        Testcases        |
+    ___________________________
+    | redTicket(2, 2, 2) → 10 |
+    | redTicket(2, 2, 1) → 0  |
+    | redTicket(0, 0, 0) → 5  |
+    _________________________*/
 
     public static int redTicket(int a, int b, int c)
     {

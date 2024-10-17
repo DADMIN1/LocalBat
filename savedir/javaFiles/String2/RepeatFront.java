@@ -9,9 +9,13 @@ public class RepeatFront
     You may assume that n is between 0 and the length of the string, 
     inclusive (i.e. n >= 0 and n <= str.length()). */
 
-    // repeatFront("Chocolate", 4) → "ChocChoChC"
-    // repeatFront("Chocolate", 3) → "ChoChC"
-    // repeatFront("Ice Cream", 2) → "IcI"
+    /*____________________________________________
+    |                 Testcases                  |
+    ______________________________________________
+    | repeatFront("Chocolate", 4) → "ChocChoChC" |
+    | repeatFront("Chocolate", 3) → "ChoChC"     |
+    | repeatFront("Ice Cream", 2) → "IcI"        |
+    ____________________________________________*/
 
     public static String repeatFront(String str, int n)
     {

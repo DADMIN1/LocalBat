@@ -8,9 +8,13 @@ public class Less20
     So for example 38 and 39 return true, but 40 returns false. 
     See also: Introduction to Mod */
 
-    // less20(18) → true
-    // less20(19) → true
-    // less20(20) → false
+    /*____________________
+    |     Testcases      |
+    ______________________
+    | less20(18) → true  |
+    | less20(19) → true  |
+    | less20(20) → false |
+    ____________________*/
 
     public static boolean less20(int n)
     {

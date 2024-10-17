@@ -8,9 +8,13 @@ public class XyzMiddle
     we'll say that the number of chars to the left and right of the "xyz" must differ by at most one. 
     This problem is harder than it looks. */
 
-    // xyzMiddle("AAxyzBB") → true
-    // xyzMiddle("AxyzBB") → true
-    // xyzMiddle("AxyzBBB") → false
+    /*______________________________
+    |          Testcases           |
+    ________________________________
+    | xyzMiddle("AAxyzBB") → true  |
+    | xyzMiddle("AxyzBB")  → true  |
+    | xyzMiddle("AxyzBBB") → false |
+    ______________________________*/
 
     public static boolean xyzMiddle(String str)
     {

@@ -11,9 +11,13 @@ public class GroupSumClump
     For example, with the array {1, 2, 2, 2, 5, 2}, either all three 2's in the middle must be chosen or not, 
     all as a group. (one loop can be used to find the extent of the identical values). */
 
-    // groupSumClump(0, [2, 4, 8], 10) → true
-    // groupSumClump(0, [1, 2, 4, 8, 1], 14) → true
-    // groupSumClump(0, [2, 4, 4, 8], 14) → false
+    /*_______________________________________________
+    |                   Testcases                   |
+    _________________________________________________
+    | groupSumClump(0, [2, 4, 8], 10)       → true  |
+    | groupSumClump(0, [1, 2, 4, 8, 1], 14) → true  |
+    | groupSumClump(0, [2, 4, 4, 8], 14)    → false |
+    _______________________________________________*/
 
     public static boolean groupSumClump(int start, int[] nums, int target)
     {

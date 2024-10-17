@@ -10,9 +10,13 @@ public class GroupSum5
     If the value immediately following a multiple of 5 is 1, 
     it must not be chosen. (No loops needed.) */
 
-    // groupSum5(0, [2, 5, 10, 4], 19) → true
-    // groupSum5(0, [2, 5, 10, 4], 17) → true
-    // groupSum5(0, [2, 5, 10, 4], 12) → false
+    /*_________________________________________
+    |                Testcases                |
+    ___________________________________________
+    | groupSum5(0, [2, 5, 10, 4], 19) → true  |
+    | groupSum5(0, [2, 5, 10, 4], 17) → true  |
+    | groupSum5(0, [2, 5, 10, 4], 12) → false |
+    _________________________________________*/
 
     public static boolean groupSum5(int start, int[] nums, int target)
     {

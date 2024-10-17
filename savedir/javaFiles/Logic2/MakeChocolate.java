@@ -8,9 +8,13 @@ public class MakeChocolate
     Return the number of small bars to use, assuming we always use big bars before small bars. 
     Return -1 if it can't be done. */
 
-    // makeChocolate(4, 1, 9) → 4
-    // makeChocolate(4, 1, 10) → -1
-    // makeChocolate(4, 1, 7) → 2
+    /*______________________________
+    |          Testcases           |
+    ________________________________
+    | makeChocolate(4, 1, 9)  → 4  |
+    | makeChocolate(4, 1, 10) → -1 |
+    | makeChocolate(4, 1, 7)  → 2  |
+    ______________________________*/
 
     public static int makeChocolate(int small, int big, int goal)
     {

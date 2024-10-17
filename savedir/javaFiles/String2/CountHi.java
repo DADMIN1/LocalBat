@@ -6,9 +6,13 @@ public class CountHi
 {
     /* Return the number of times that the string "hi" appears anywhere in the given string. */
 
-    // countHi("abc hi ho") → 1
-    // countHi("ABChi hi") → 2
-    // countHi("hihi") → 2
+    /*__________________________
+    |        Testcases         |
+    ____________________________
+    | countHi("abc hi ho") → 1 |
+    | countHi("ABChi hi")  → 2 |
+    | countHi("hihi")      → 2 |
+    __________________________*/
 
     public static int countHi(String str)
     {

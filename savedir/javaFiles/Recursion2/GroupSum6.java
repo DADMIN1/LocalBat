@@ -9,9 +9,13 @@ public class GroupSum6
     with the additional constraint that all 6's must be chosen. 
     (No loops needed.) */
 
-    // groupSum6(0, [5, 6, 2], 8) → true
-    // groupSum6(0, [5, 6, 2], 9) → false
-    // groupSum6(0, [5, 6, 2], 7) → false
+    /*____________________________________
+    |             Testcases              |
+    ______________________________________
+    | groupSum6(0, [5, 6, 2], 8) → true  |
+    | groupSum6(0, [5, 6, 2], 9) → false |
+    | groupSum6(0, [5, 6, 2], 7) → false |
+    ____________________________________*/
 
     public static boolean groupSum6(int start, int[] nums, int target)
     {

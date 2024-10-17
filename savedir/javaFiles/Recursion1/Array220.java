@@ -9,9 +9,13 @@ public class Array220
     In this way, a recursive call can pass index+1 to move down the array. 
     The initial call will pass in index as 0. */
 
-    // array220([1, 2, 20], 0) → true
-    // array220([3, 30], 0) → true
-    // array220([3], 0) → false
+    /*_________________________________
+    |            Testcases            |
+    ___________________________________
+    | array220([1, 2, 20], 0) → true  |
+    | array220([3, 30], 0)    → true  |
+    | array220([3], 0)        → false |
+    _________________________________*/
 
     public static boolean array220(int[] nums, int index)
     {

@@ -10,9 +10,13 @@ public class BlueTicket
     the result is 10. Otherwise if the ab sum is exactly 10 more than either bc or ac sums, 
     the result is 5. Otherwise the result is 0. */
 
-    // blueTicket(9, 1, 0) → 10
-    // blueTicket(9, 2, 0) → 0
-    // blueTicket(6, 1, 4) → 10
+    /*__________________________
+    |        Testcases         |
+    ____________________________
+    | blueTicket(9, 1, 0) → 10 |
+    | blueTicket(9, 2, 0) → 0  |
+    | blueTicket(6, 1, 4) → 10 |
+    __________________________*/
 
     public static int blueTicket(int a, int b, int c)
     {

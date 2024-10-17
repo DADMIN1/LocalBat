@@ -11,9 +11,13 @@ public class SplitOdd10
     and make the initial call to your recursive helper from splitOdd10(). 
     (No loops needed.) */
 
-    // splitOdd10([5, 5, 5]) → true
-    // splitOdd10([5, 5, 6]) → false
-    // splitOdd10([5, 5, 6, 1]) → true
+    /*__________________________________
+    |            Testcases             |
+    ____________________________________
+    | splitOdd10([5, 5, 5])    → true  |
+    | splitOdd10([5, 5, 6])    → false |
+    | splitOdd10([5, 5, 6, 1]) → true  |
+    __________________________________*/
 
     public static boolean splitOdd10(int[] nums)
     {

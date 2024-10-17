@@ -10,9 +10,13 @@ public class ScoreUp
     Return the score for this array of answers, giving +4 for each correct answer, 
     -1 for each incorrect answer, and +0 for each blank answer. */
 
-    // scoreUp(["a", "a", "b", "b"], ["a", "c", "b", "c"]) → 6
-    // scoreUp(["a", "a", "b", "b"], ["a", "a", "b", "c"]) → 11
-    // scoreUp(["a", "a", "b", "b"], ["a", "a", "b", "b"]) → 16
+    /*__________________________________________________________
+    |                        Testcases                         |
+    ____________________________________________________________
+    | scoreUp(["a", "a", "b", "b"], ["a", "c", "b", "c"]) → 6  |
+    | scoreUp(["a", "a", "b", "b"], ["a", "a", "b", "c"]) → 11 |
+    | scoreUp(["a", "a", "b", "b"], ["a", "a", "b", "b"]) → 16 |
+    __________________________________________________________*/
 
     public static int scoreUp(String[] key, String[] answers)
     {

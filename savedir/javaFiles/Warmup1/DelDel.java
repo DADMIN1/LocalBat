@@ -8,9 +8,13 @@ public class DelDel
     return a string where that "del" has been deleted. Otherwise, 
     return the string unchanged. */
 
-    // delDel("adelbc") → "abc"
-    // delDel("adelHello") → "aHello"
-    // delDel("adedbc") → "adedbc"
+    /*________________________________
+    |           Testcases            |
+    __________________________________
+    | delDel("adelbc")    → "abc"    |
+    | delDel("adelHello") → "aHello" |
+    | delDel("adedbc")    → "adedbc" |
+    ________________________________*/
 
     public static String delDel(String str)
     {

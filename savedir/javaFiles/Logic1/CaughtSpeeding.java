@@ -11,9 +11,13 @@ public class CaughtSpeeding
     the result is 1. If speed is 81 or more, the result is 2. 
     Unless it is your birthday -- on that day, your speed can be 5 higher in all cases. */
 
-    // caughtSpeeding(60, false) → 0
-    // caughtSpeeding(65, false) → 1
-    // caughtSpeeding(65, true) → 0
+    /*_______________________________
+    |           Testcases           |
+    _________________________________
+    | caughtSpeeding(60, false) → 0 |
+    | caughtSpeeding(65, false) → 1 |
+    | caughtSpeeding(65, true)  → 0 |
+    _______________________________*/
 
     public static int caughtSpeeding(int speed, boolean isBirthday)
     {

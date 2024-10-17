@@ -7,9 +7,13 @@ public class LastTwo
     /* Given a string of any length, return a new string where the last 2 chars, 
     if present, are swapped, so "coding" yields "codign". */
 
-    // lastTwo("coding") → "codign"
-    // lastTwo("cat") → "cta"
-    // lastTwo("ab") → "ba"
+    /*______________________________
+    |          Testcases           |
+    ________________________________
+    | lastTwo("coding") → "codign" |
+    | lastTwo("cat")    → "cta"    |
+    | lastTwo("ab")     → "ba"     |
+    ______________________________*/
 
     public static String lastTwo(String str)
     {

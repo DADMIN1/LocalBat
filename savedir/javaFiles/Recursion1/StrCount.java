@@ -8,9 +8,13 @@ public class StrCount
     compute recursively the number of times that sub appears in the string, 
     without the sub strings overlapping. */
 
-    // strCount("catcowcat", "cat") → 2
-    // strCount("catcowcat", "cow") → 1
-    // strCount("catcowcat", "dog") → 0
+    /*__________________________________
+    |            Testcases             |
+    ____________________________________
+    | strCount("catcowcat", "cat") → 2 |
+    | strCount("catcowcat", "cow") → 1 |
+    | strCount("catcowcat", "dog") → 0 |
+    __________________________________*/
 
     public static int strCount(String str, String sub)
     {

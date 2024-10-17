@@ -8,9 +8,13 @@ public class RepeatEnd
     You may assume that n is between 0 and the length of the string, 
     inclusive. */
 
-    // repeatEnd("Hello", 3) → "llollollo"
-    // repeatEnd("Hello", 2) → "lolo"
-    // repeatEnd("Hello", 1) → "o"
+    /*_____________________________________
+    |              Testcases              |
+    _______________________________________
+    | repeatEnd("Hello", 3) → "llollollo" |
+    | repeatEnd("Hello", 2) → "lolo"      |
+    | repeatEnd("Hello", 1) → "o"         |
+    _____________________________________*/
 
     public static String repeatEnd(String str, int n)
     {

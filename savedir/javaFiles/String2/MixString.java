@@ -8,9 +8,13 @@ public class MixString
     the first char of b, the second char of a, the second char of b, 
     and so on. Any leftover chars go at the end of the result. */
 
-    // mixString("abc", "xyz") → "axbycz"
-    // mixString("Hi", "There") → "HTihere"
-    // mixString("xxxx", "There") → "xTxhxexre"
+    /*__________________________________________
+    |                Testcases                 |
+    ____________________________________________
+    | mixString("abc", "xyz")    → "axbycz"    |
+    | mixString("Hi", "There")   → "HTihere"   |
+    | mixString("xxxx", "There") → "xTxhxexre" |
+    __________________________________________*/
 
     public static String mixString(String a, String b)
     {

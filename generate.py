@@ -278,13 +278,32 @@ def WriteTestcaseFile(packageName:str, data: dict):
     print(f"\tdone writing: {testcase_filepath.relative_to(cwd)}\n")
     return testCases
 
-
-# TODO: align by arrow, find longest testcase, then build the frame 
+ 
 def TestcaseAsciiArt(testcases: list) -> str:
-    art = ""
-    for testcase in testcases:
-        art += f"    // {testcase}\n"
-    art += '\n'
+    # align by arrow, find longest testcase, then build the frame
+    segmented = [line.partition('\u2192') for line in testcases]
+    segmentLengths = [[len(s[0]), len(s[2])] for s in segmented]
+    longestLengths = [max(x) for x in zip(*segmentLengths)]
+    total_width = longestLengths[0] + longestLengths[1] + 3 # accounting for the arrow
+    title_padding = " "*int((total_width-len("Testcases"))/2)
+    
+    # title_padding is off by one if the length is even
+    maybe_space = ""
+    if ((total_width%2) == 0): maybe_space = " "
+    
+    art = "    /*"
+    art += "_" * total_width
+    art += f"\n    |{title_padding}Testcases{maybe_space}{title_padding}|\n    "
+    art += "_" * (total_width+2)
+    art += "\n    "
+    for segments in segmented:
+        testcase, arrow, result = segments
+        # padding with spaces to align arrow and end of box
+        testcase += " "*(longestLengths[0]-len(testcase))
+        result += " "*(longestLengths[1]-len(result))
+        art += f"| {testcase}{arrow}{result} |\n    "
+    art += "_" * total_width
+    art += "*/\n\n"
     return art
 
 

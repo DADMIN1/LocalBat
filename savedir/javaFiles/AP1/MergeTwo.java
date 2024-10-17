@@ -11,9 +11,13 @@ public class MergeTwo
     taking advantage of the fact that they are in alphabetical order, 
     copying elements directly to the new array. */
 
-    // mergeTwo(["a", "c", "z"], ["b", "f", "z"], 3) → ["a", "b", "c"]
-    // mergeTwo(["a", "c", "z"], ["c", "f", "z"], 3) → ["a", "c", "f"]
-    // mergeTwo(["f", "g", "z"], ["c", "f", "g"], 3) → ["c", "f", "g"]
+    /*_________________________________________________________________
+    |                            Testcases                            |
+    ___________________________________________________________________
+    | mergeTwo(["a", "c", "z"], ["b", "f", "z"], 3) → ["a", "b", "c"] |
+    | mergeTwo(["a", "c", "z"], ["c", "f", "z"], 3) → ["a", "c", "f"] |
+    | mergeTwo(["f", "g", "z"], ["c", "f", "g"], 3) → ["c", "f", "g"] |
+    _________________________________________________________________*/
 
     public static String[] mergeTwo(String[] a, String[] b, int n)
     {

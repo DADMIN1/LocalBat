@@ -10,9 +10,13 @@ public class FizzArray2
     The syntax to make a new string array is: new String[desired_length]  (See also: 
     FizzBuzz Code) */
 
-    // fizzArray2(4) → ["0", "1", "2", "3"]
-    // fizzArray2(10) → ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
-    // fizzArray2(2) → ["0", "1"]
+    /*_____________________________________________________________________
+    |                              Testcases                              |
+    _______________________________________________________________________
+    | fizzArray2(4)  → ["0", "1", "2", "3"]                               |
+    | fizzArray2(10) → ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"] |
+    | fizzArray2(2)  → ["0", "1"]                                         |
+    _____________________________________________________________________*/
 
     public static String[] fizzArray2(int n)
     {

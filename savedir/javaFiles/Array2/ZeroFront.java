@@ -9,9 +9,13 @@ public class ZeroFront
     The order of the non-zero numbers does not matter. So {1, 
     0, 0, 1} becomes {0 ,0, 1, 1}. You may modify and return the given array or make a new array. */
 
-    // zeroFront([1, 0, 0, 1]) → [0, 0, 1, 1]
-    // zeroFront([0, 1, 1, 0, 1]) → [0, 0, 1, 1, 1]
-    // zeroFront([1, 0]) → [0, 1]
+    /*______________________________________________
+    |                  Testcases                   |
+    ________________________________________________
+    | zeroFront([1, 0, 0, 1])    → [0, 0, 1, 1]    |
+    | zeroFront([0, 1, 1, 0, 1]) → [0, 0, 1, 1, 1] |
+    | zeroFront([1, 0])          → [0, 1]          |
+    ______________________________________________*/
 
     public static int[] zeroFront(int[] nums)
     {

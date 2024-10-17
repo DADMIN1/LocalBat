@@ -10,9 +10,13 @@ public class BigHeights
     We'll say that step is big if it is 5 or more up or down. 
     The start end end index will both be valid indexes into the array with start <= end. */
 
-    // bigHeights([5, 3, 6, 7, 2], 2, 4) → 1
-    // bigHeights([5, 3, 6, 7, 2], 0, 1) → 0
-    // bigHeights([5, 3, 6, 7, 2], 0, 4) → 1
+    /*_______________________________________
+    |               Testcases               |
+    _________________________________________
+    | bigHeights([5, 3, 6, 7, 2], 2, 4) → 1 |
+    | bigHeights([5, 3, 6, 7, 2], 0, 1) → 0 |
+    | bigHeights([5, 3, 6, 7, 2], 0, 4) → 1 |
+    _______________________________________*/
 
     public static int bigHeights(int[] heights, int start, int end)
     {

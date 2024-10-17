@@ -6,9 +6,13 @@ public class EndX
 {
     /* Given a string, compute recursively a new string where all the lowercase 'x' chars have been moved to the end of the string. */
 
-    // endX("xxre") → "rexx"
-    // endX("xxhixx") → "hixxxx"
-    // endX("xhixhix") → "hihixxx"
+    /*_____________________________
+    |          Testcases          |
+    _______________________________
+    | endX("xxre")    → "rexx"    |
+    | endX("xxhixx")  → "hixxxx"  |
+    | endX("xhixhix") → "hihixxx" |
+    _____________________________*/
 
     public static String endX(String str)
     {

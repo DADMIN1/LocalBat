@@ -10,9 +10,13 @@ public class CigarParty
     Return true if the party with the given values is successful, 
     or false otherwise. */
 
-    // cigarParty(30, false) → false
-    // cigarParty(50, false) → true
-    // cigarParty(70, true) → true
+    /*_______________________________
+    |           Testcases           |
+    _________________________________
+    | cigarParty(30, false) → false |
+    | cigarParty(50, false) → true  |
+    | cigarParty(70, true)  → true  |
+    _______________________________*/
 
     public static boolean cigarParty(int cigars, boolean isWeekend)
     {

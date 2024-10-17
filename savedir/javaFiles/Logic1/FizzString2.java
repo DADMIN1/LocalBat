@@ -11,9 +11,13 @@ public class FizzString2
     so 23 % 10 yields 3. What will the remainder be when one number divides evenly into another? (See also: 
     FizzBuzz Code and Introduction to Mod) */
 
-    // fizzString2(1) → "1!"
-    // fizzString2(2) → "2!"
-    // fizzString2(3) → "Fizz!"
+    /*__________________________
+    |        Testcases         |
+    ____________________________
+    | fizzString2(1) → "1!"    |
+    | fizzString2(2) → "2!"    |
+    | fizzString2(3) → "Fizz!" |
+    __________________________*/
 
     public static String fizzString2(int n)
     {

@@ -8,9 +8,13 @@ public class EveryNth
     and then every Nth char of the string. So if N is 3, use char 0, 
     3, 6, ... and so on. N is 1 or more. */
 
-    // everyNth("Miracle", 2) → "Mrce"
-    // everyNth("abcdefg", 2) → "aceg"
-    // everyNth("abcdefg", 3) → "adg"
+    /*_________________________________
+    |            Testcases            |
+    ___________________________________
+    | everyNth("Miracle", 2) → "Mrce" |
+    | everyNth("abcdefg", 2) → "aceg" |
+    | everyNth("abcdefg", 3) → "adg"  |
+    _________________________________*/
 
     public static String everyNth(String str, int n)
     {

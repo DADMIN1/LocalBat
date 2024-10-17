@@ -8,9 +8,13 @@ public class CountPairs
     So "AxA" the A's make a pair. Pair's can overlap, so "AxAxA" contains 3 pairs -- 2 for A and 1 for x. 
     Recursively compute the number of pairs in the given string. */
 
-    // countPairs("axa") → 1
-    // countPairs("axax") → 2
-    // countPairs("axbx") → 1
+    /*________________________
+    |       Testcases        |
+    __________________________
+    | countPairs("axa")  → 1 |
+    | countPairs("axax") → 2 |
+    | countPairs("axbx") → 1 |
+    ________________________*/
 
     public static int countPairs(String str)
     {

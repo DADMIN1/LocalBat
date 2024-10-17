@@ -9,9 +9,13 @@ public class SumNumbers
     (Note: Character.isDigit(char) tests if a char is one of the chars '0', 
     '1', .. '9'. Integer.parseInt(string) converts a string to an int.) */
 
-    // sumNumbers("abc123xyz") → 123
-    // sumNumbers("aa11b33") → 44
-    // sumNumbers("7 11") → 18
+    /*_______________________________
+    |           Testcases           |
+    _________________________________
+    | sumNumbers("abc123xyz") → 123 |
+    | sumNumbers("aa11b33")   → 44  |
+    | sumNumbers("7 11")      → 18  |
+    _______________________________*/
 
     public static int sumNumbers(String str)
     {

@@ -8,9 +8,13 @@ public class ParenBit
     compute recursively a new string made of only of the parenthesis and their contents, 
     so "xyz(abc)123" yields "(abc)". */
 
-    // parenBit("xyz(abc)123") → "(abc)"
-    // parenBit("x(hello)") → "(hello)"
-    // parenBit("(xy)1") → "(xy)"
+    /*_____________________________________
+    |              Testcases              |
+    _______________________________________
+    | parenBit("xyz(abc)123") → "(abc)"   |
+    | parenBit("x(hello)")    → "(hello)" |
+    | parenBit("(xy)1")       → "(xy)"    |
+    _____________________________________*/
 
     public static String parenBit(String str)
     {

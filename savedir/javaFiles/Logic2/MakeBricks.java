@@ -10,9 +10,13 @@ public class MakeBricks
     This is a little harder than it looks and can be done without any loops. 
     See also: Introduction to MakeBricks */
 
-    // makeBricks(3, 1, 8) → true
-    // makeBricks(3, 1, 9) → false
-    // makeBricks(3, 2, 10) → true
+    /*______________________________
+    |          Testcases           |
+    ________________________________
+    | makeBricks(3, 1, 8)  → true  |
+    | makeBricks(3, 1, 9)  → false |
+    | makeBricks(3, 2, 10) → true  |
+    ______________________________*/
 
     public static boolean makeBricks(int small, int big, int goal)
     {

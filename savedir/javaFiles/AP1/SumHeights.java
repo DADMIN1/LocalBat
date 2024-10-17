@@ -10,9 +10,13 @@ public class SumHeights
     For example, with the heights {5, 3, 6, 7, 2} and start=2, 
     end=4 yields a sum of 1 + 5 = 6. The start end end index will both be valid indexes into the array with start <= end. */
 
-    // sumHeights([5, 3, 6, 7, 2], 2, 4) → 6
-    // sumHeights([5, 3, 6, 7, 2], 0, 1) → 2
-    // sumHeights([5, 3, 6, 7, 2], 0, 4) → 11
+    /*________________________________________
+    |               Testcases                |
+    __________________________________________
+    | sumHeights([5, 3, 6, 7, 2], 2, 4) → 6  |
+    | sumHeights([5, 3, 6, 7, 2], 0, 1) → 2  |
+    | sumHeights([5, 3, 6, 7, 2], 0, 4) → 11 |
+    ________________________________________*/
 
     public static int sumHeights(int[] heights, int start, int end)
     {

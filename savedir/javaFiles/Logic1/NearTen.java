@@ -8,9 +8,13 @@ public class NearTen
     Note: (a % b) is the remainder of dividing a by b, so (7 % 5) is 2. 
     See also: Introduction to Mod */
 
-    // nearTen(12) → true
-    // nearTen(17) → false
-    // nearTen(19) → true
+    /*_____________________
+    |      Testcases      |
+    _______________________
+    | nearTen(12) → true  |
+    | nearTen(17) → false |
+    | nearTen(19) → true  |
+    _____________________*/
 
     public static boolean nearTen(int num)
     {

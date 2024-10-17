@@ -8,9 +8,13 @@ public class LastDigit
     such as with 27 and 57. Note that the % "mod" operator computes remainders, 
     so 17 % 10 is 7. */
 
-    // lastDigit(7, 17) → true
-    // lastDigit(6, 17) → false
-    // lastDigit(3, 113) → true
+    /*___________________________
+    |         Testcases         |
+    _____________________________
+    | lastDigit(7, 17)  → true  |
+    | lastDigit(6, 17)  → false |
+    | lastDigit(3, 113) → true  |
+    ___________________________*/
 
     public static boolean lastDigit(int a, int b)
     {

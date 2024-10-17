@@ -8,9 +8,13 @@ public class StartOz
     however include first char only if it is 'o' and include the second only if it is 'z', 
     so "ozymandias" yields "oz". */
 
-    // startOz("ozymandias") → "oz"
-    // startOz("bzoo") → "z"
-    // startOz("oxx") → "o"
+    /*______________________________
+    |          Testcases           |
+    ________________________________
+    | startOz("ozymandias") → "oz" |
+    | startOz("bzoo")       → "z"  |
+    | startOz("oxx")        → "o"  |
+    ______________________________*/
 
     public static String startOz(String str)
     {

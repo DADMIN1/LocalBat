@@ -8,9 +8,13 @@ public class Front22
     so "kitten" yields"kikittenki". If the string length is less than 2, 
     use whatever chars are there. */
 
-    // front22("kitten") → "kikittenki"
-    // front22("Ha") → "HaHaHa"
-    // front22("abc") → "ababcab"
+    /*__________________________________
+    |            Testcases             |
+    ____________________________________
+    | front22("kitten") → "kikittenki" |
+    | front22("Ha")     → "HaHaHa"     |
+    | front22("abc")    → "ababcab"    |
+    __________________________________*/
 
     public static String front22(String str)
     {

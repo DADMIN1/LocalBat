@@ -8,9 +8,13 @@ public class LastChars
     so "yo" and "java" yields "ya". If either string is length 0, 
     use '@' for its missing char. */
 
-    // lastChars("last", "chars") → "ls"
-    // lastChars("yo", "java") → "ya"
-    // lastChars("hi", "") → "h@"
+    /*___________________________________
+    |             Testcases             |
+    _____________________________________
+    | lastChars("last", "chars") → "ls" |
+    | lastChars("yo", "java")    → "ya" |
+    | lastChars("hi", "")        → "h@" |
+    ___________________________________*/
 
     public static String lastChars(String a, String b)
     {

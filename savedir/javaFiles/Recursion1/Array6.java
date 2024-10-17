@@ -9,9 +9,13 @@ public class Array6
     In this way, a recursive call can pass index+1 to move down the array. 
     The initial call will pass in index as 0. */
 
-    // array6([1, 6, 4], 0) → true
-    // array6([1, 4], 0) → false
-    // array6([6], 0) → true
+    /*______________________________
+    |          Testcases           |
+    ________________________________
+    | array6([1, 6, 4], 0) → true  |
+    | array6([1, 4], 0)    → false |
+    | array6([6], 0)       → true  |
+    ______________________________*/
 
     public static boolean array6(int[] nums, int index)
     {

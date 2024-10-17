@@ -11,9 +11,13 @@ public class NoTeenSum
     In this way, you avoid repeating the teen code 3 times (i.e. 
     "decomposition"). Define the helper below and at the same indent level as the main noTeenSum(). */
 
-    // noTeenSum(1, 2, 3) → 6
-    // noTeenSum(2, 13, 1) → 3
-    // noTeenSum(2, 1, 14) → 3
+    /*_________________________
+    |        Testcases        |
+    ___________________________
+    | noTeenSum(1, 2, 3)  → 6 |
+    | noTeenSum(2, 13, 1) → 3 |
+    | noTeenSum(2, 1, 14) → 3 |
+    _________________________*/
 
     public static int noTeenSum(int a, int b, int c)
     {

@@ -8,9 +8,13 @@ public class MonkeyTrouble
     We are in trouble if they are both smiling or if neither of them is smiling. 
     Return true if we are in trouble. */
 
-    // monkeyTrouble(true, true) → true
-    // monkeyTrouble(false, false) → true
-    // monkeyTrouble(true, false) → false
+    /*_____________________________________
+    |              Testcases              |
+    _______________________________________
+    | monkeyTrouble(true, true)   → true  |
+    | monkeyTrouble(false, false) → true  |
+    | monkeyTrouble(true, false)  → false |
+    _____________________________________*/
 
     public static boolean monkeyTrouble(boolean aSmile, boolean bSmile)
     {

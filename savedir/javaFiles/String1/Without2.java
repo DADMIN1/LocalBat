@@ -9,9 +9,13 @@ public class Without2
     so "HelloHe" yields "lloHe". The substring may overlap with itself, 
     so "Hi" yields "". Otherwise, return the original string unchanged. */
 
-    // without2("HelloHe") → "lloHe"
-    // without2("HelloHi") → "HelloHi"
-    // without2("Hi") → ""
+    /*_________________________________
+    |            Testcases            |
+    ___________________________________
+    | without2("HelloHe") → "lloHe"   |
+    | without2("HelloHi") → "HelloHi" |
+    | without2("Hi")      → ""        |
+    _________________________________*/
 
     public static String without2(String str)
     {

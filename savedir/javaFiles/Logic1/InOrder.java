@@ -8,9 +8,13 @@ public class InOrder
     and c is greater than b. However, with the exception that if "bOk" is true, 
     b does not need to be greater than a. */
 
-    // inOrder(1, 2, 4, false) → true
-    // inOrder(1, 2, 1, false) → false
-    // inOrder(1, 1, 2, true) → true
+    /*_________________________________
+    |            Testcases            |
+    ___________________________________
+    | inOrder(1, 2, 4, false) → true  |
+    | inOrder(1, 2, 1, false) → false |
+    | inOrder(1, 1, 2, true)  → true  |
+    _________________________________*/
 
     public static boolean inOrder(int a, int b, int c, boolean bOk)
     {

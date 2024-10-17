@@ -6,9 +6,13 @@ public class DoubleX
 {
     /* Given a string, return true if the first instance of "x" in the string is immediately followed by another "x". */
 
-    // doubleX("axxbb") → true
-    // doubleX("axaxax") → false
-    // doubleX("xxxxx") → true
+    /*___________________________
+    |         Testcases         |
+    _____________________________
+    | doubleX("axxbb")  → true  |
+    | doubleX("axaxax") → false |
+    | doubleX("xxxxx")  → true  |
+    ___________________________*/
 
     public static boolean doubleX(String str)
     {

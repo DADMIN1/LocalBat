@@ -9,9 +9,13 @@ public class MirrorEnds
     and at the very end of the string in reverse order (possibly overlapping). 
     For example, the string "abXYZba" has the mirror end "ab". */
 
-    // mirrorEnds("abXYZba") → "ab"
-    // mirrorEnds("abca") → "a"
-    // mirrorEnds("aba") → "aba"
+    /*_______________________________
+    |           Testcases           |
+    _________________________________
+    | mirrorEnds("abXYZba") → "ab"  |
+    | mirrorEnds("abca")    → "a"   |
+    | mirrorEnds("aba")     → "aba" |
+    _______________________________*/
 
     public static String mirrorEnds(String string)
     {

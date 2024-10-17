@@ -11,9 +11,13 @@ public class StartWord
     So, so with the string "hippo" the word "hi" returns "hi" and "xip" returns "hip". 
     The word will be at least length 1. */
 
-    // startWord("hippo", "hi") → "hi"
-    // startWord("hippo", "xip") → "hip"
-    // startWord("hippo", "i") → "h"
+    /*___________________________________
+    |             Testcases             |
+    _____________________________________
+    | startWord("hippo", "hi")  → "hi"  |
+    | startWord("hippo", "xip") → "hip" |
+    | startWord("hippo", "i")   → "h"   |
+    ___________________________________*/
 
     public static String startWord(String str, String word)
     {

@@ -9,9 +9,13 @@ public class CommonTwo
     The best "linear" solution makes a single pass over both arrays, 
     taking advantage of the fact that they are in alphabetical order. */
 
-    // commonTwo(["a", "c", "x"], ["b", "c", "d", "x"]) → 2
-    // commonTwo(["a", "c", "x"], ["a", "b", "c", "x", "z"]) → 3
-    // commonTwo(["a", "b", "c"], ["a", "b", "c"]) → 3
+    /*___________________________________________________________
+    |                         Testcases                         |
+    _____________________________________________________________
+    | commonTwo(["a", "c", "x"], ["b", "c", "d", "x"])      → 2 |
+    | commonTwo(["a", "c", "x"], ["a", "b", "c", "x", "z"]) → 3 |
+    | commonTwo(["a", "b", "c"], ["a", "b", "c"])           → 3 |
+    ___________________________________________________________*/
 
     public static int commonTwo(String[] a, String[] b)
     {

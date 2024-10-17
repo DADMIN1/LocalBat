@@ -9,9 +9,13 @@ public class LinearIn
     The best solution makes only a single "linear" pass of both arrays, 
     taking advantage of the fact that both arrays are already in sorted order. */
 
-    // linearIn([1, 2, 4, 6], [2, 4]) → true
-    // linearIn([1, 2, 4, 6], [2, 3, 4]) → false
-    // linearIn([1, 2, 4, 4, 6], [2, 4]) → true
+    /*___________________________________________
+    |                 Testcases                 |
+    _____________________________________________
+    | linearIn([1, 2, 4, 6], [2, 4])    → true  |
+    | linearIn([1, 2, 4, 6], [2, 3, 4]) → false |
+    | linearIn([1, 2, 4, 4, 6], [2, 4]) → true  |
+    ___________________________________________*/
 
     public static boolean linearIn(int[] outer, int[] inner)
     {

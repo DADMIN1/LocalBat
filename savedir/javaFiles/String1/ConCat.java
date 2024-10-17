@@ -8,9 +8,13 @@ public class ConCat
     However, if the concatenation creates a double-char, then omit one of the chars, 
     so "abc" and "cat" yields "abcat". */
 
-    // conCat("abc", "cat") → "abcat"
-    // conCat("dog", "cat") → "dogcat"
-    // conCat("abc", "") → "abc"
+    /*_________________________________
+    |            Testcases            |
+    ___________________________________
+    | conCat("abc", "cat") → "abcat"  |
+    | conCat("dog", "cat") → "dogcat" |
+    | conCat("abc", "")    → "abc"    |
+    _________________________________*/
 
     public static String conCat(String a, String b)
     {

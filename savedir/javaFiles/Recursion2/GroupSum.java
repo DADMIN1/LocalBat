@@ -13,9 +13,13 @@ public class GroupSum
     The caller can specify the whole array simply by passing start as 0. 
     No loops are needed -- the recursive calls progress down the array. */
 
-    // groupSum(0, [2, 4, 8], 10) → true
-    // groupSum(0, [2, 4, 8], 14) → true
-    // groupSum(0, [2, 4, 8], 9) → false
+    /*____________________________________
+    |             Testcases              |
+    ______________________________________
+    | groupSum(0, [2, 4, 8], 10) → true  |
+    | groupSum(0, [2, 4, 8], 14) → true  |
+    | groupSum(0, [2, 4, 8], 9)  → false |
+    ____________________________________*/
 
     public static boolean groupSum(int start, int[] nums, int target)
     {

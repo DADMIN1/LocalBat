@@ -9,9 +9,13 @@ public class DividesSelf
     We'll say that 0 does not divide into anything evenly, so no number with a 0 digit divides itself. 
     Note: use % to get the rightmost digit, and / to discard the rightmost digit. */
 
-    // dividesSelf(128) → true
-    // dividesSelf(12) → true
-    // dividesSelf(120) → false
+    /*__________________________
+    |        Testcases         |
+    ____________________________
+    | dividesSelf(128) → true  |
+    | dividesSelf(12)  → true  |
+    | dividesSelf(120) → false |
+    __________________________*/
 
     public static boolean dividesSelf(int n)
     {

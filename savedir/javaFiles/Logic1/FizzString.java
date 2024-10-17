@@ -9,9 +9,13 @@ public class FizzString
     return "FizzBuzz". In all other cases, return the string unchanged. 
     (See also: FizzBuzz Code) */
 
-    // fizzString("fig") → "Fizz"
-    // fizzString("dib") → "Buzz"
-    // fizzString("fib") → "FizzBuzz"
+    /*________________________________
+    |           Testcases            |
+    __________________________________
+    | fizzString("fig") → "Fizz"     |
+    | fizzString("dib") → "Buzz"     |
+    | fizzString("fib") → "FizzBuzz" |
+    ________________________________*/
 
     public static String fizzString(String str)
     {

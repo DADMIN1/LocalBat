@@ -9,9 +9,13 @@ public class FirstTwo
     return whatever there is, so "X" yields "X", and the empty string "" yields the empty string "". 
     Note that str.length() returns the length of a string. */
 
-    // firstTwo("Hello") → "He"
-    // firstTwo("abcdefg") → "ab"
-    // firstTwo("ab") → "ab"
+    /*____________________________
+    |         Testcases          |
+    ______________________________
+    | firstTwo("Hello")   → "He" |
+    | firstTwo("abcdefg") → "ab" |
+    | firstTwo("ab")      → "ab" |
+    ____________________________*/
 
     public static String firstTwo(String str)
     {

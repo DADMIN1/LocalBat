@@ -8,9 +8,13 @@ public class ShareDigit
     such as the 2 in 12 and 23. (Note: division, e.g. n/10, 
     gives the left digit while the % "mod" n%10 gives the right digit.) */
 
-    // shareDigit(12, 23) → true
-    // shareDigit(12, 43) → false
-    // shareDigit(12, 44) → false
+    /*____________________________
+    |         Testcases          |
+    ______________________________
+    | shareDigit(12, 23) → true  |
+    | shareDigit(12, 43) → false |
+    | shareDigit(12, 44) → false |
+    ____________________________*/
 
     public static boolean shareDigit(int a, int b)
     {

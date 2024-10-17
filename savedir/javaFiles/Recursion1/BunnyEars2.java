@@ -9,9 +9,13 @@ public class BunnyEars2
     because they each have a raised foot. Recursively return the number of "ears" in the bunny line 1, 
     2, ... n (without loops or multiplication). */
 
-    // bunnyEars2(0) → 0
-    // bunnyEars2(1) → 2
-    // bunnyEars2(2) → 5
+    /*___________________
+    |     Testcases     |
+    _____________________
+    | bunnyEars2(0) → 0 |
+    | bunnyEars2(1) → 2 |
+    | bunnyEars2(2) → 5 |
+    ___________________*/
 
     public static int bunnyEars2(int bunnies)
     {

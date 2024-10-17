@@ -9,9 +9,13 @@ public class WordEnds
     Ignore cases where there is no char before or after the word, 
     and a char may be included twice if it is between two words. */
 
-    // wordEnds("abcXY123XYijk", "XY") → "c13i"
-    // wordEnds("XY123XY", "XY") → "13"
-    // wordEnds("XY1XY", "XY") → "11"
+    /*__________________________________________
+    |                Testcases                 |
+    ____________________________________________
+    | wordEnds("abcXY123XYijk", "XY") → "c13i" |
+    | wordEnds("XY123XY", "XY")       → "13"   |
+    | wordEnds("XY1XY", "XY")         → "11"   |
+    __________________________________________*/
 
     public static String wordEnds(String str, String word)
     {

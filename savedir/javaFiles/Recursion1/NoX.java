@@ -6,9 +6,13 @@ public class NoX
 {
     /* Given a string, compute recursively a new string where all the 'x' chars have been removed. */
 
-    // noX("xaxb") → "ab"
-    // noX("abc") → "abc"
-    // noX("xx") → ""
+    /*_____________________
+    |      Testcases      |
+    _______________________
+    | noX("xaxb") → "ab"  |
+    | noX("abc")  → "abc" |
+    | noX("xx")   → ""    |
+    _____________________*/
 
     public static String noX(String str)
     {

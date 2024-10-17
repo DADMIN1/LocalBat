@@ -8,9 +8,13 @@ public class EndOther
     ignoring upper/lower case differences (in other words, the computation should not be "case sensitive"). 
     Note: str.toLowerCase() returns the lowercase version of a string. */
 
-    // endOther("Hiabc", "abc") → true
-    // endOther("AbC", "HiaBc") → true
-    // endOther("abc", "abXabc") → true
+    /*__________________________________
+    |            Testcases             |
+    ____________________________________
+    | endOther("Hiabc", "abc")  → true |
+    | endOther("AbC", "HiaBc")  → true |
+    | endOther("abc", "abXabc") → true |
+    __________________________________*/
 
     public static boolean endOther(String a, String b)
     {

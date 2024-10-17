@@ -8,9 +8,13 @@ public class SumDigits
     Note that mod (%) by 10 yields the rightmost digit (126 % 10 is 6), 
     while divide (/) by 10 removes the rightmost digit (126 / 10 is 12). */
 
-    // sumDigits(126) → 9
-    // sumDigits(49) → 13
-    // sumDigits(12) → 3
+    /*_____________________
+    |      Testcases      |
+    _______________________
+    | sumDigits(126) → 9  |
+    | sumDigits(49)  → 13 |
+    | sumDigits(12)  → 3  |
+    _____________________*/
 
     public static int sumDigits(int n)
     {

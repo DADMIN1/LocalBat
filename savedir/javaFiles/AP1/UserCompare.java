@@ -12,9 +12,13 @@ public class UserCompare
     (On the AP, there would be two User objects, but here the code simply takes the two strings and two ints directly. 
     The code logic is the same.) */
 
-    // userCompare("bb", 1, "zz", 2) → -1
-    // userCompare("bb", 1, "aa", 2) → 1
-    // userCompare("bb", 1, "bb", 1) → 0
+    /*____________________________________
+    |             Testcases              |
+    ______________________________________
+    | userCompare("bb", 1, "zz", 2) → -1 |
+    | userCompare("bb", 1, "aa", 2) → 1  |
+    | userCompare("bb", 1, "bb", 1) → 0  |
+    ____________________________________*/
 
     public static int userCompare(String aName, int aId, String bName, int bId)
     {

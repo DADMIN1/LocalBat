@@ -8,9 +8,13 @@ public class WithoutX2
     return the string without those 'x' chars, and otherwise return the string unchanged. 
     This is a little harder than it looks. */
 
-    // withoutX2("xHi") → "Hi"
-    // withoutX2("Hxi") → "Hi"
-    // withoutX2("Hi") → "Hi"
+    /*_________________________
+    |        Testcases        |
+    ___________________________
+    | withoutX2("xHi") → "Hi" |
+    | withoutX2("Hxi") → "Hi" |
+    | withoutX2("Hi")  → "Hi" |
+    _________________________*/
 
     public static String withoutX2(String str)
     {

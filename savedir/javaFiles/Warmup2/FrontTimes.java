@@ -8,9 +8,13 @@ public class FrontTimes
     or whatever is there if the string is less than length 3. 
     Return n copies of the front; */
 
-    // frontTimes("Chocolate", 2) → "ChoCho"
-    // frontTimes("Chocolate", 3) → "ChoChoCho"
-    // frontTimes("Abc", 3) → "AbcAbcAbc"
+    /*__________________________________________
+    |                Testcases                 |
+    ____________________________________________
+    | frontTimes("Chocolate", 2) → "ChoCho"    |
+    | frontTimes("Chocolate", 3) → "ChoChoCho" |
+    | frontTimes("Abc", 3)       → "AbcAbcAbc" |
+    __________________________________________*/
 
     public static String frontTimes(String str, int n)
     {

@@ -8,9 +8,13 @@ public class MissingChar
     The value of n will be a valid index of a char in the original string (i.e. 
     n will be in the range 0..str.length()-1 inclusive). */
 
-    // missingChar("kitten", 1) → "ktten"
-    // missingChar("kitten", 0) → "itten"
-    // missingChar("kitten", 4) → "kittn"
+    /*____________________________________
+    |             Testcases              |
+    ______________________________________
+    | missingChar("kitten", 1) → "ktten" |
+    | missingChar("kitten", 0) → "itten" |
+    | missingChar("kitten", 4) → "kittn" |
+    ____________________________________*/
 
     public static String missingChar(String str, int n)
     {

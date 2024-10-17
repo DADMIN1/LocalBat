@@ -8,9 +8,13 @@ public class NotReplace
     The word "is" should not be immediately preceeded or followed by a letter -- so for example the "is" in "this" does not count. 
     (Note: Character.isLetter(char) tests if a char is a letter.) */
 
-    // notReplace("is test") → "is not test"
-    // notReplace("is-is") → "is not-is not"
-    // notReplace("This is right") → "This is not right"
+    /*___________________________________________________
+    |                     Testcases                     |
+    _____________________________________________________
+    | notReplace("is test")       → "is not test"       |
+    | notReplace("is-is")         → "is not-is not"     |
+    | notReplace("This is right") → "This is not right" |
+    ___________________________________________________*/
 
     public static String notReplace(String str)
     {

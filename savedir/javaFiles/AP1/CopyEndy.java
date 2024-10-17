@@ -9,9 +9,13 @@ public class CopyEndy
     Decompose out a separate isEndy(int n) method to test if a number is endy. 
     The original array will contain at least "count" endy numbers. */
 
-    // copyEndy([9, 11, 90, 22, 6], 2) → [9, 90]
-    // copyEndy([9, 11, 90, 22, 6], 3) → [9, 90, 6]
-    // copyEndy([12, 1, 1, 13, 0, 20], 2) → [1, 1]
+    /*_________________________________________________
+    |                    Testcases                    |
+    ___________________________________________________
+    | copyEndy([9, 11, 90, 22, 6], 2)    → [9, 90]    |
+    | copyEndy([9, 11, 90, 22, 6], 3)    → [9, 90, 6] |
+    | copyEndy([12, 1, 1, 13, 0, 20], 2) → [1, 1]     |
+    _________________________________________________*/
 
     public static int[] copyEndy(int[] nums, int count)
     {

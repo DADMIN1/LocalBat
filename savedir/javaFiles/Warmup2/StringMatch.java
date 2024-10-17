@@ -8,9 +8,13 @@ public class StringMatch
     So "xxcaazz" and "xxbaaz" yields 3, since the "xx", "aa", 
     and "az" substrings appear in the same place in both strings. */
 
-    // stringMatch("xxcaazz", "xxbaaz") → 3
-    // stringMatch("abc", "abc") → 2
-    // stringMatch("abc", "axc") → 0
+    /*______________________________________
+    |              Testcases               |
+    ________________________________________
+    | stringMatch("xxcaazz", "xxbaaz") → 3 |
+    | stringMatch("abc", "abc")        → 2 |
+    | stringMatch("abc", "axc")        → 0 |
+    ______________________________________*/
 
     public static int stringMatch(String a, String b)
     {
