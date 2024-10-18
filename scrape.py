@@ -1,5 +1,7 @@
 from save import *
 
+import datetime
+
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options as FirefoxOptions
 from selenium.webdriver.common.by import By
@@ -17,10 +19,23 @@ def StartupSelenium() -> webdriver:
 def SpiderMainPage(driver: webdriver) -> dict:
     url = "https://codingbat.com/java"  # TODO: add python 
     driver.get(url)
-    table = driver.find_element(By.XPATH, "/html/body/div[@class='tabc']/div[@class='tabin']/div[1]/table")
-    hrefs = table.find_elements(By.XPATH, "./tbody/tr/td/div[@class='summ']/a[@href]")
-    links = { href.accessible_name: href.get_attribute('href') for href in hrefs }
-    return links
+    # there are two tables; 'New...' sections are listed under a different table
+    tables = driver.find_elements(By.XPATH, "/html/body/div[@class='tabc']/div[@class='tabin']/div[@class='floatleft']/table")
+    section_lists = [table.find_elements(By.XPATH, "./tbody/tr/td/div[@class='summ']") for table in tables]
+    # unpacking the two lists from section_lists
+    sections = [section for section_list in section_lists for section in section_list]
+    
+    section_map = {
+        section_name: {
+            "name": section_name,
+            "desc": description,
+            "href": section.find_element(By.XPATH, "./a[@href]").get_attribute('href'),
+            "date": str(datetime.date.today()),
+        } for section in sections
+        for section_name, description in [section.text.splitlines()]
+    }
+    
+    return section_map
 
 
 def Spider(driver: webdriver, link: str) -> dict:
@@ -31,10 +46,12 @@ def Spider(driver: webdriver, link: str) -> dict:
 
 
 def BuildSitemap(driver: webdriver) -> dict:
-    section_links = SpiderMainPage(driver)
+    section_map = SpiderMainPage(driver)
     sitemap = {
-        section_name: Spider(driver, section_link)
-        for (section_name, section_link) in section_links.items()
+        section_name: {
+            **section,
+            "pages": Spider(driver, section["href"]),
+        } for (section_name, section) in section_map.items()
     }
     return sitemap
 
@@ -86,13 +103,13 @@ def Scrape() -> list[dict]:
             sitemap = BuildSitemap(driver)
             WriteSitemapFile(sitemap)
     except Exception as E:
-        print(f"failed to write sitemap exception: {E}")
+        print(f"failed to write sitemap.\n exception: {E}")
         driver.quit()
         return scraped_results
     
     try:
-        for (section, problem_map) in sitemap.items():
-            for (problem, link) in problem_map.items():
+        for (section, section_map) in sitemap.items():
+            for (problem, link) in section_map["pages"].items():
                 scraped_data = ScrapeProblemPage(driver, link)
                 data = {
                     "url": link,
@@ -112,8 +129,9 @@ def Scrape() -> list[dict]:
 
 
 if __name__ == "__main__":
+    old_sitemap = LoadSitemapFile()
     results = Scrape()
     print("\n finished scrape \n")
-    for result in results:
-        WriteJavaFile(result["section"], result)
-    print("\n finished writing all files \n")
+    # for result in results:
+    #     WriteJavaFile(result["section"], result)
+    # print("\n finished writing all files \n")
