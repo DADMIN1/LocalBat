@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p115011",
+  "section": "Map-1",
+  "problem": "mapAB2",
+  "title": "mapAB2",
+  "prompt": "Modify and return the given map as follows: if the keys \"a\" and \"b\" are both in the map and have equal values, remove them both.",
+  "testcases": [
+    "mapAB2({\"a\": \"aaa\", \"b\": \"aaa\", \"c\": \"cake\"}) \u2192 {\"c\": \"cake\"}",
+    "mapAB2({\"a\": \"aaa\", \"b\": \"bbb\"}) \u2192 {\"a\": \"aaa\", \"b\": \"bbb\"}",
+    "mapAB2({\"a\": \"aaa\", \"b\": \"bbb\", \"c\": \"aaa\"}) \u2192 {\"a\": \"aaa\", \"b\": \"bbb\", \"c\": \"aaa\"}"
+  ],
+  "provided_code": "public Map<String, String> mapAB2(Map<String, String> map) {\n  }"
+}

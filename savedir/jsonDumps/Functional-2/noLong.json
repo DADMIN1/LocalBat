@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p194496",
+  "section": "Functional-2",
+  "problem": "noLong",
+  "title": "noLong",
+  "prompt": "Given a list of strings, return a list of the strings, omitting any string length 4 or more.",
+  "testcases": [
+    "noLong([\"this\", \"not\", \"too\", \"long\"]) \u2192 [\"not\", \"too\"]",
+    "noLong([\"a\", \"bbb\", \"cccc\"]) \u2192 [\"a\", \"bbb\"]",
+    "noLong([\"cccc\", \"cccc\", \"cccc\"]) \u2192 []"
+  ],
+  "provided_code": "public List<String> noLong(List<String> strings) {\n  }"
+}

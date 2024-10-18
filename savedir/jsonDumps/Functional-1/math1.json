@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p103869",
+  "section": "Functional-1",
+  "problem": "math1",
+  "title": "math1",
+  "prompt": "Given a list of integers, return a list where each integer is added to 1 and the result is multiplied by 10.",
+  "testcases": [
+    "math1([1, 2, 3]) \u2192 [20, 30, 40]",
+    "math1([6, 8, 6, 8, 1]) \u2192 [70, 90, 70, 90, 20]",
+    "math1([10]) \u2192 [110]"
+  ],
+  "provided_code": "public List<Integer> math1(List<Integer> nums) {\n  }"
+}

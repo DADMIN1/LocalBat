@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p103593",
+  "section": "Map-2",
+  "problem": "wordAppend",
+  "title": "wordAppend",
+  "prompt": "Loop over the given array of strings to build a result string like this: when a string appears the 2nd, 4th, 6th, etc. time in the array, append the string to the result. Return the empty string if no string appears a 2nd time.",
+  "testcases": [
+    "wordAppend([\"a\", \"b\", \"a\"]) \u2192 \"a\"",
+    "wordAppend([\"a\", \"b\", \"a\", \"c\", \"a\", \"d\", \"a\"]) \u2192 \"aa\"",
+    "wordAppend([\"a\", \"\", \"a\"]) \u2192 \"a\""
+  ],
+  "provided_code": "public String wordAppend(String[] strings) {\n  }"
+}

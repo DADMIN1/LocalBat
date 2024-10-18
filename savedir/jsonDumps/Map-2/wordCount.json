@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p117630",
+  "section": "Map-2",
+  "problem": "wordCount",
+  "title": "wordCount",
+  "prompt": "The classic word-count algorithm: given an array of strings, return a Map<String, Integer> with a key for each different string, with the value the number of times that string appears in the array.",
+  "testcases": [
+    "wordCount([\"a\", \"b\", \"a\", \"c\", \"b\"]) \u2192 {\"a\": 2, \"b\": 2, \"c\": 1}",
+    "wordCount([\"c\", \"b\", \"a\"]) \u2192 {\"a\": 1, \"b\": 1, \"c\": 1}",
+    "wordCount([\"c\", \"c\", \"c\", \"c\"]) \u2192 {\"c\": 4}"
+  ],
+  "provided_code": "public Map<String, Integer> wordCount(String[] strings) {\n  }"
+}

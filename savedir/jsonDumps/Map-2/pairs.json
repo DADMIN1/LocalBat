@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p126332",
+  "section": "Map-2",
+  "problem": "pairs",
+  "title": "pairs",
+  "prompt": "Given an array of non-empty strings, create and return a Map<String, String> as follows: for each string add its first character as a key with its last character as the value.",
+  "testcases": [
+    "pairs([\"code\", \"bug\"]) \u2192 {\"b\": \"g\", \"c\": \"e\"}",
+    "pairs([\"man\", \"moon\", \"main\"]) \u2192 {\"m\": \"n\"}",
+    "pairs([\"man\", \"moon\", \"good\", \"night\"]) \u2192 {\"g\": \"d\", \"m\": \"n\", \"n\": \"t\"}"
+  ],
+  "provided_code": "public Map<String, String> pairs(String[] strings) {\n  }"
+}

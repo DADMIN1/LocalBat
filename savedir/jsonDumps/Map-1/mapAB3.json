@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p115012",
+  "section": "Map-1",
+  "problem": "mapAB3",
+  "title": "mapAB3",
+  "prompt": "Modify and return the given map as follows: if exactly one of the keys \"a\" or \"b\" has a value in the map (but not both), set the other to have that same value in the map.",
+  "testcases": [
+    "mapAB3({\"a\": \"aaa\", \"c\": \"cake\"}) \u2192 {\"a\": \"aaa\", \"b\": \"aaa\", \"c\": \"cake\"}",
+    "mapAB3({\"b\": \"bbb\", \"c\": \"cake\"}) \u2192 {\"a\": \"bbb\", \"b\": \"bbb\", \"c\": \"cake\"}",
+    "mapAB3({\"a\": \"aaa\", \"b\": \"bbb\", \"c\": \"cake\"}) \u2192 {\"a\": \"aaa\", \"b\": \"bbb\", \"c\": \"cake\"}"
+  ],
+  "provided_code": "public Map<String, String> mapAB3(Map<String, String> map) {\n  }"
+}

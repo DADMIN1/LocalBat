@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p124510",
+  "section": "Functional-2",
+  "problem": "no9",
+  "title": "no9",
+  "prompt": "Given a list of non-negative integers, return a list of those numbers except omitting any that end with 9. (Note: % by 10)",
+  "testcases": [
+    "no9([1, 2, 19]) \u2192 [1, 2]",
+    "no9([9, 19, 29, 3]) \u2192 [3]",
+    "no9([1, 2, 3]) \u2192 [1, 2, 3]"
+  ],
+  "provided_code": "public List<Integer> no9(List<Integer> nums) {\n  }"
+}

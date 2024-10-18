@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p105671",
+  "section": "Functional-2",
+  "problem": "noZ",
+  "title": "noZ",
+  "prompt": "Given a list of strings, return a list of the strings, omitting any string that contains a \"z\". (Note: the str.contains(x) method returns a boolean)",
+  "testcases": [
+    "noZ([\"aaa\", \"bbb\", \"aza\"]) \u2192 [\"aaa\", \"bbb\"]",
+    "noZ([\"hziz\", \"hzello\", \"hi\"]) \u2192 [\"hi\"]",
+    "noZ([\"hello\", \"howz\", \"are\", \"youz\"]) \u2192 [\"hello\", \"are\"]"
+  ],
+  "provided_code": "public List<String> noZ(List<String> strings) {\n  }"
+}

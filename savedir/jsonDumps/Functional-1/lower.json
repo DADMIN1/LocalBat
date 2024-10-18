@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p186894",
+  "section": "Functional-1",
+  "problem": "lower",
+  "title": "lower",
+  "prompt": "Given a list of strings, return a list where each string is converted to lower case (Note: String toLowerCase() method).",
+  "testcases": [
+    "lower([\"Hello\", \"Hi\"]) \u2192 [\"hello\", \"hi\"]",
+    "lower([\"AAA\", \"BBB\", \"ccc\"]) \u2192 [\"aaa\", \"bbb\", \"ccc\"]",
+    "lower([\"KitteN\", \"ChocolaTE\"]) \u2192 [\"kitten\", \"chocolate\"]"
+  ],
+  "provided_code": "public List<String> lower(List<String> strings) {\n  }"
+}

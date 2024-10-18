@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p181634",
+  "section": "Functional-1",
+  "problem": "copies3",
+  "title": "copies3",
+  "prompt": "Given a list of strings, return a list where each string is replaced by 3 copies of the string concatenated together.",
+  "testcases": [
+    "copies3([\"a\", \"bb\", \"ccc\"]) \u2192 [\"aaa\", \"bbbbbb\", \"ccccccccc\"]",
+    "copies3([\"24\", \"a\", \"\"]) \u2192 [\"242424\", \"aaa\", \"\"]",
+    "copies3([\"hello\", \"there\"]) \u2192 [\"hellohellohello\", \"theretherethere\"]"
+  ],
+  "provided_code": "public List<String> copies3(List<String> strings) {\n  }"
+}

@@ -78,8 +78,9 @@ def ParseTestcases(testcases: list[str], functionDef: dict) -> dict:
 # need to get parameter types before writing testcase declarations
 def ParseFunctionDefinition(code: str) -> dict:
     returnType, arguments = code.split('(', maxsplit=1)
-    returnType, functionName = returnType.removeprefix("public ").strip().split()
+    returnType, functionName = returnType.removeprefix("public ").strip().rsplit(maxsplit=1)
     arguments = arguments.split(')', maxsplit=1)[0].strip()
+    #TODO: handle generic types like Map<String, String>, which cause problems because of this split
     args_list = [arg.strip() for arg in arguments.split(',')]
     
     # need to early-out if no args, otherwise parsedArgs comprehension crashes
@@ -364,6 +365,7 @@ def GenerateAll(only_missing=True):
 
 if __name__ == "__main__":
     GenerateAll()
+    # GenerateSection("Map-2")
     # GenerateSection("Array-1")
     # GenerateSection("String-1")
     

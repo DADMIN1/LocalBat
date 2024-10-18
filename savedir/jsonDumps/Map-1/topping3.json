@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p128461",
+  "section": "Map-1",
+  "problem": "topping3",
+  "title": "topping3",
+  "prompt": "Given a map of food keys and topping values, modify and return the map as follows: if the key \"potato\" has a value, set that as the value for the key \"fries\". If the key \"salad\" has a value, set that as the value for the key \"spinach\".",
+  "testcases": [
+    "topping3({\"potato\": \"ketchup\"}) \u2192 {\"potato\": \"ketchup\", \"fries\": \"ketchup\"}",
+    "topping3({\"potato\": \"butter\"}) \u2192 {\"potato\": \"butter\", \"fries\": \"butter\"}",
+    "topping3({\"salad\": \"oil\", \"potato\": \"ketchup\"}) \u2192 {\"spinach\": \"oil\", \"salad\": \"oil\", \"potato\": \"ketchup\", \"fries\": \"ketchup\"}"
+  ],
+  "provided_code": "public Map<String, String> topping3(Map<String, String> map) {\n  }"
+}

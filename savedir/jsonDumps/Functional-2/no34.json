@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p184496",
+  "section": "Functional-2",
+  "problem": "no34",
+  "title": "no34",
+  "prompt": "Given a list of strings, return a list of the strings, omitting any string length 3 or 4.",
+  "testcases": [
+    "no34([\"a\", \"bb\", \"ccc\"]) \u2192 [\"a\", \"bb\"]",
+    "no34([\"a\", \"bb\", \"ccc\", \"dddd\"]) \u2192 [\"a\", \"bb\"]",
+    "no34([\"ccc\", \"dddd\", \"apple\"]) \u2192 [\"apple\"]"
+  ],
+  "provided_code": "public List<String> no34(List<String> strings) {\n  }"
+}

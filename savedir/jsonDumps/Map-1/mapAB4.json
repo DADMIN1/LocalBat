@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p136950",
+  "section": "Map-1",
+  "problem": "mapAB4",
+  "title": "mapAB4",
+  "prompt": "Modify and return the given map as follows: if the keys \"a\" and \"b\" have values that have different lengths, then set \"c\" to have the longer value. If the values exist and have the same length, change them both to the empty string in the map.",
+  "testcases": [
+    "mapAB4({\"a\": \"aaa\", \"b\": \"bb\", \"c\": \"cake\"}) \u2192 {\"a\": \"aaa\", \"b\": \"bb\", \"c\": \"aaa\"}",
+    "mapAB4({\"a\": \"aa\", \"b\": \"bbb\", \"c\": \"cake\"}) \u2192 {\"a\": \"aa\", \"b\": \"bbb\", \"c\": \"bbb\"}",
+    "mapAB4({\"a\": \"aa\", \"b\": \"bbb\"}) \u2192 {\"a\": \"aa\", \"b\": \"bbb\", \"c\": \"bbb\"}"
+  ],
+  "provided_code": "public Map<String, String> mapAB4(Map<String, String> map) {\n  }"
+}

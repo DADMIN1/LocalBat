@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p139586",
+  "section": "Functional-1",
+  "problem": "square",
+  "title": "square",
+  "prompt": "Given a list of integers, return a list where each integer is multiplied with itself.",
+  "testcases": [
+    "square([1, 2, 3]) \u2192 [1, 4, 9]",
+    "square([6, 8, -6, -8, 1]) \u2192 [36, 64, 36, 64, 1]",
+    "square([]) \u2192 []"
+  ],
+  "provided_code": "public List<Integer> square(List<Integer> nums) {\n  }"
+}

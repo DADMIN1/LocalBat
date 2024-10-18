@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p190862",
+  "section": "Map-2",
+  "problem": "wordMultiple",
+  "title": "wordMultiple",
+  "prompt": "Given an array of strings, return a Map<String, Boolean> where each different string is a key and its value is true if that string appears 2 or more times in the array.",
+  "testcases": [
+    "wordMultiple([\"a\", \"b\", \"a\", \"c\", \"b\"]) \u2192 {\"a\": true, \"b\": true, \"c\": false}",
+    "wordMultiple([\"c\", \"b\", \"a\"]) \u2192 {\"a\": false, \"b\": false, \"c\": false}",
+    "wordMultiple([\"c\", \"c\", \"c\", \"c\"]) \u2192 {\"c\": true}"
+  ],
+  "provided_code": "public Map<String, Boolean> wordMultiple(String[] strings) {\n  }"
+}

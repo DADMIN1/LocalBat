@@ -1,4 +1,5 @@
-The webscraper fails on a few sections of the site, like 'Functional'
+generation fails for all problems in section "Map-1"
+validation is nonfunctional for problems under section "Map-2", and any other problem involving a "Map" type
 
 Eclipse will warn about every single file until you fill some kind of valid 'return' statement.
 In the 'problems' pane, you can create a filter for these errors:

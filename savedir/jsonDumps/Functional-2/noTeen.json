@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p137274",
+  "section": "Functional-2",
+  "problem": "noTeen",
+  "title": "noTeen",
+  "prompt": "Given a list of integers, return a list of those numbers, omitting any that are between 13 and 19 inclusive.",
+  "testcases": [
+    "noTeen([12, 13, 19, 20]) \u2192 [12, 20]",
+    "noTeen([1, 14, 1]) \u2192 [1, 1]",
+    "noTeen([15]) \u2192 []"
+  ],
+  "provided_code": "public List<Integer> noTeen(List<Integer> nums) {\n  }"
+}

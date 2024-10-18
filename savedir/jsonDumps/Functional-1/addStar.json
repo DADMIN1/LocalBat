@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p170181",
+  "section": "Functional-1",
+  "problem": "addStar",
+  "title": "addStar",
+  "prompt": "Given a list of strings, return a list where each string has \"*\" added at its end.",
+  "testcases": [
+    "addStar([\"a\", \"bb\", \"ccc\"]) \u2192 [\"a*\", \"bb*\", \"ccc*\"]",
+    "addStar([\"hello\", \"there\"]) \u2192 [\"hello*\", \"there*\"]",
+    "addStar([\"*\"]) \u2192 [\"**\"]"
+  ],
+  "provided_code": "public List<String> addStar(List<String> strings) {\n  }"
+}

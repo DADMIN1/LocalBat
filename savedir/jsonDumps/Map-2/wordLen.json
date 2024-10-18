@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p125327",
+  "section": "Map-2",
+  "problem": "wordLen",
+  "title": "wordLen",
+  "prompt": "Given an array of strings, return a Map<String, Integer> containing a key for every different string in the array, and the value is that string's length.",
+  "testcases": [
+    "wordLen([\"a\", \"bb\", \"a\", \"bb\"]) \u2192 {\"bb\": 2, \"a\": 1}",
+    "wordLen([\"this\", \"and\", \"that\", \"and\"]) \u2192 {\"that\": 4, \"and\": 3, \"this\": 4}",
+    "wordLen([\"code\", \"code\", \"code\", \"bug\"]) \u2192 {\"code\": 4, \"bug\": 3}"
+  ],
+  "provided_code": "public Map<String, Integer> wordLen(String[] strings) {\n  }"
+}

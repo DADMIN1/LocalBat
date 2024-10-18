@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p148198",
+  "section": "Functional-2",
+  "problem": "two2",
+  "title": "two2",
+  "prompt": "Given a list of non-negative integers, return a list of those numbers multiplied by 2, omitting any of the resulting numbers that end in 2.",
+  "testcases": [
+    "two2([1, 2, 3]) \u2192 [4, 6]",
+    "two2([2, 6, 11]) \u2192 [4]",
+    "two2([0]) \u2192 [0]"
+  ],
+  "provided_code": "public List<Integer> two2(List<Integer> nums) {\n  }"
+}

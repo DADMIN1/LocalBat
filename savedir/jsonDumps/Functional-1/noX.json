@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p105967",
+  "section": "Functional-1",
+  "problem": "noX",
+  "title": "noX",
+  "prompt": "Given a list of strings, return a list where each string has all its \"x\" removed.",
+  "testcases": [
+    "noX([\"ax\", \"bb\", \"cx\"]) \u2192 [\"a\", \"bb\", \"c\"]",
+    "noX([\"xxax\", \"xbxbx\", \"xxcx\"]) \u2192 [\"a\", \"bb\", \"c\"]",
+    "noX([\"x\"]) \u2192 [\"\"]"
+  ],
+  "provided_code": "public List<String> noX(List<String> strings) {\n  }"
+}

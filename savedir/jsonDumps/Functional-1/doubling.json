@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p117665",
+  "section": "Functional-1",
+  "problem": "doubling",
+  "title": "doubling",
+  "prompt": "Given a list of integers, return a list where each integer is multiplied by 2.",
+  "testcases": [
+    "doubling([1, 2, 3]) \u2192 [2, 4, 6]",
+    "doubling([6, 8, 6, 8, -1]) \u2192 [12, 16, 12, 16, -2]",
+    "doubling([]) \u2192 []"
+  ],
+  "provided_code": "public List<Integer> doubling(List<Integer> nums) {\n  }"
+}

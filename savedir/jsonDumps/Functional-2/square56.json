@@ -1,0 +1,13 @@
+{
+  "url": "https://codingbat.com/prob/p132748",
+  "section": "Functional-2",
+  "problem": "square56",
+  "title": "square56",
+  "prompt": "Given a list of integers, return a list of those numbers squared and the product added to 10, omitting any of the resulting numbers that end in 5 or 6.",
+  "testcases": [
+    "square56([3, 1, 4]) \u2192 [19, 11]",
+    "square56([1]) \u2192 [11]",
+    "square56([2]) \u2192 [14]"
+  ],
+  "provided_code": "public List<Integer> square56(List<Integer> nums) {\n  }"
+}
