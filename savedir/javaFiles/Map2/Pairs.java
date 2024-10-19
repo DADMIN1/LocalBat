@@ -2,6 +2,9 @@
 package Map2;
 import Map2.Testcases._Pairs;
 
+import java.util.Map;
+import java.util.HashMap;
+
 public class Pairs
 {
     /* Given an array of non-empty strings, create and return a Map<String, 

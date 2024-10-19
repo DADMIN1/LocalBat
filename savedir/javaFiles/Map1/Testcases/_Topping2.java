@@ -1,27 +1,23 @@
-package Map2.Testcases;
-import Map2.Word0;
+package Map1.Testcases;
+import Map1.Topping2;
 import java.util.Map;
 
-public class _Word0
+public class _Topping2
 {
     static String[] testcaseStrings = {
-        "word0([\"a\", \"b\", \"a\", \"b\"])",
-        "word0([\"a\", \"b\", \"a\", \"c\", \"b\"])",
-        "word0([\"c\", \"b\", \"a\"])",
+        "topping2({\"ice cream\": \"cherry\"})",
+        "topping2({\"spinach\": \"dirt\", \"ice cream\": \"cherry\"})",
+        "topping2({\"yogurt\": \"salt\"})",
     };
 
-    static Map<String, Integer>[] expectedResults = { {"a": 0, "b": 0}, {"a": 0, "b": 0, "c": 0}, {"a": 0, "b": 0, "c": 0}, };
+    static Map<String, String>[] expectedResults = { {"yogurt": "cherry", "ice cream": "cherry"}, {"yogurt": "cherry", "spinach": "nuts", "ice cream": "cherry"}, {"yogurt": "salt"}, };
 
     public static void Validate(boolean printSuccess)
     {
-        String[] strings0 = { "a", "b", "a", "b" }; 
-        String[] strings1 = { "a", "b", "a", "c", "b" }; 
-        String[] strings2 = { "c", "b", "a" }; 
-
-        Map<String, Integer>[] resultsArray = {
-            Word0.word0(strings0),
-            Word0.word0(strings1),
-            Word0.word0(strings2),
+        Map<String, String>[] resultsArray = {
+            Topping2.topping2({"ice cream": "cherry"}),
+            Topping2.topping2({"spinach": "dirt", "ice cream": "cherry"}),
+            Topping2.topping2({"yogurt": "salt"}),
         };
 
         boolean allTestsPassed = true;

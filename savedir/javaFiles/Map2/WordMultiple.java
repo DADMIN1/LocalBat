@@ -2,6 +2,9 @@
 package Map2;
 import Map2.Testcases._WordMultiple;
 
+import java.util.Map;
+import java.util.HashMap;
+
 public class WordMultiple
 {
     /* Given an array of strings, return a Map<String, 

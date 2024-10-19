@@ -2,6 +2,9 @@
 package Map2;
 import Map2.Testcases._WordLen;
 
+import java.util.Map;
+import java.util.HashMap;
+
 public class WordLen
 {
     /* Given an array of strings, return a Map<String, Integer> containing a key for every different string in the array, 

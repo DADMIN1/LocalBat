@@ -1,5 +1,6 @@
 package Map2.Testcases;
 import Map2.FirstChar;
+import java.util.Map;
 
 public class _FirstChar
 {
@@ -26,7 +27,7 @@ public class _FirstChar
         boolean allTestsPassed = true;
         for (int i = 0; i < resultsArray.length; ++i)
         {
-            if (resultsArray[i] != expectedResults[i])
+            if (!resultsArray[i].equals(expectedResults[i]))
             {
                 allTestsPassed = false;
                 System.out.println("\n[-] #"+(i+1)+" failed!");

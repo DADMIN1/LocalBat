@@ -2,6 +2,9 @@
 package Map2;
 import Map2.Testcases._WordCount;
 
+import java.util.Map;
+import java.util.HashMap;
+
 public class WordCount
 {
     /* The classic word-count algorithm: given an array of strings, 

@@ -2,6 +2,9 @@
 package Map2;
 import Map2.Testcases._FirstChar;
 
+import java.util.Map;
+import java.util.HashMap;
+
 public class FirstChar
 {
     /* Given an array of non-empty strings, return a Map<String, 

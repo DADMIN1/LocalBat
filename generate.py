@@ -79,22 +79,35 @@ def ParseTestcases(testcases: list[str], functionDef: dict) -> dict:
 def ParseFunctionDefinition(code: str) -> dict:
     returnType, arguments = code.split('(', maxsplit=1)
     returnType, functionName = returnType.removeprefix("public ").strip().rsplit(maxsplit=1)
-    arguments = arguments.split(')', maxsplit=1)[0].strip()
-    #TODO: handle generic types like Map<String, String>, which cause problems because of this split
+    arguments = arguments.rsplit(')', maxsplit=1)[0].strip()
+    
+    hasMap = False
+    MAPTYPES = []
+    while 'Map<' in arguments:
+        beforeMap, mapStart, remaining = arguments.partition('Map<')
+        remainingSplit = remaining.partition('> ')
+        mapType = mapStart + remainingSplit[0] + remainingSplit[1]
+        MAPTYPES.append(mapType.strip())
+        arguments = beforeMap + "MAPTYPE " + remainingSplit[2]
+        hasMap = True
+    
     args_list = [arg.strip() for arg in arguments.split(',')]
     
     # need to early-out if no args, otherwise parsedArgs comprehension crashes
     if args_list[0] == '': # rather than an empty array, you end up with only an empty quote instead
-        return { "name": functionName, "returnType": returnType, "args": [] }
+        return { "name": functionName, "returnType": returnType, "args": [], "hasMap": hasMap }
     
+    # I'm golfing lmao
+    mapTypeRemap = { A:B for (A,B) in zip([a for a in args_list if a.startswith('MAPTYPE')], MAPTYPES) }
     parsedArgs = [
         {
-            "type": argpair.split()[0],
-            "identifier": argpair.split()[1],
+            "type": mapTypeRemap[argpair] if argpair in mapTypeRemap else argType,
+            "identifier": identifier,
         } for argpair in args_list
+        for (argType, identifier) in (argpair.split(),)
     ]
     
-    return { "name": functionName, "returnType": returnType, "args": parsedArgs }
+    return { "name": functionName, "returnType": returnType, "args": parsedArgs, "hasMap": hasMap }
 
 
 def ReformatPrompt(raw_prompt: str) -> str:
@@ -140,6 +153,8 @@ def WriteTestcaseFile(packageName:str, data: dict):
     returnType = functionDefinition["returnType"]
     doesReturnArray = returnType.endswith('[]')
     doesReturnList = testCases["returnsList"]
+    needsMap = returnType.startswith('Map') or functionDefinition["hasMap"]
+    
     printArray_FunctionDefinition = f"    public static String printArray({returnType} array)"+"""
     {
         String result = "[";
@@ -153,6 +168,7 @@ def WriteTestcaseFile(packageName:str, data: dict):
         file.write(f"import {packageName}.{title};\n") # importing the real class to run the user-code for validation
         if doesReturnList: file.write("import java.util.List;\n")
         if doesReturnArray or doesReturnList: file.write("import java.util.Arrays;\n")  # required to properly compare arrays, and construct Lists
+        if needsMap: file.write("import java.util.Map;\n")
         file.write('\n')
         
         file.write(f"public class {testCasesClassname}\n"+"{\n")
@@ -197,7 +213,7 @@ def WriteTestcaseFile(packageName:str, data: dict):
             resultsArrayStr = f"printArray({resultsArrayStr})"
             comparisonStr = f"!Arrays.equals(resultsArray[i], expectedResults[i])"
         
-        if doesReturnList:
+        if doesReturnList or needsMap:
             comparisonStr = f"!resultsArray[i].equals(expectedResults[i])"
         
         # running testcases, comparing results
@@ -226,7 +242,13 @@ def WriteTestcaseFile(packageName:str, data: dict):
         file.write("}\n") # closing Testcase class
     
     print(f"\tdone writing: {testcase_filepath.relative_to(cwd)}\n")
-    return testCases
+    return { 
+        "testCases": testCases, 
+        "returnType": returnType,
+        "doesReturnArray": doesReturnArray,
+        "doesReturnList": doesReturnList,
+        "needsMap": needsMap, 
+    }
 
 
 # alternatively, the title can be padded with underscores and the underline skipped to inline the title into the border 
@@ -267,7 +289,8 @@ def WriteJavaFile(packageName:str, data: dict):
     filepath = packagedir / f'{title}.java'
     print(f"    generating {packageName}.{filepath.stem}...")
     
-    testcases = WriteTestcaseFile(packageName, data)
+    function_info = WriteTestcaseFile(packageName, data)
+    testcases = function_info["testCases"]
     returnsList = testcases["returnsList"]
     
     prompt = ReformatPrompt(data["prompt"]).replace('\n', '\n    ') # indent each line
@@ -287,6 +310,9 @@ def WriteJavaFile(packageName:str, data: dict):
             file.write("import java.util.List;\n")
             file.write("import java.util.Arrays;\n") # for 'Arrays.asList' 
             file.write("import java.util.ArrayList;\n\n") # not strictly necessary
+        if function_info["needsMap"]:
+            file.write("import java.util.Map;\n")
+            file.write("import java.util.HashMap;\n\n")
         
         # The class name must match the filename (java)
         file.write(f"public class {title}"+"\n{\n")
@@ -365,7 +391,7 @@ def GenerateAll(only_missing=True):
 
 if __name__ == "__main__":
     GenerateAll()
-    # GenerateSection("Map-2")
+    # GenerateSection("Map-1")
     # GenerateSection("Array-1")
     # GenerateSection("String-1")
     
