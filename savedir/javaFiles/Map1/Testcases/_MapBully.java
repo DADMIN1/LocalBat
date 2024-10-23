@@ -10,18 +10,18 @@ public class _MapBully
         "mapBully({\"a\": \"candy\", \"b\": \"carrot\", \"c\": \"meh\"})",
     };
 
-    static Map<String, String>[] expectedResults = {
-        {"a": "", "b": "candy"},
-        {"a": "", "b": "candy"},
-        {"a": "", "b": "candy", "c": "meh"},
+    static Map<?,?>[] expectedResults = {
+        Map.of("a", "", "b", "candy"),
+        Map.of("a", "", "b", "candy"),
+        Map.of("a", "", "b", "candy", "c", "meh"),
     };
 
     public static void Validate(boolean printSuccess)
     {
-        Map<String, String>[] resultsArray = {
-            MapBully.mapBully({"a": "candy", "b": "dirt"}),
-            MapBully.mapBully({"a": "candy"}),
-            MapBully.mapBully({"a": "candy", "b": "carrot", "c": "meh"}),
+        Map<?,?>[] resultsArray = {
+            MapBully.mapBully(Map.of("a", "candy", "b", "dirt")),
+            MapBully.mapBully(Map.of("a", "candy")),
+            MapBully.mapBully(Map.of("a", "candy", "b", "carrot", "c", "meh")),
         };
 
         boolean allTestsPassed = true;

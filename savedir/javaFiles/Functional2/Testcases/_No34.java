@@ -11,7 +11,7 @@ public class _No34
         "no34([\"ccc\", \"dddd\", \"apple\"])",
     };
 
-    static List<String>[] expectedResults = {
+    static List<?>[] expectedResults = {
         Arrays.asList("a", "bb"),
         Arrays.asList("a", "bb"),
         Arrays.asList("apple"),
@@ -19,10 +19,10 @@ public class _No34
 
     public static void Validate(boolean printSuccess)
     {
-        List<String>[] resultsArray = {
-            No34.no34(["a", "bb", "ccc"]),
-            No34.no34(["a", "bb", "ccc", "dddd"]),
-            No34.no34(["ccc", "dddd", "apple"]),
+        List<?>[] resultsArray = {
+            No34.no34(Arrays.asList("a", "bb", "ccc")),
+            No34.no34(Arrays.asList("a", "bb", "ccc", "dddd")),
+            No34.no34(Arrays.asList("ccc", "dddd", "apple")),
         };
 
         boolean allTestsPassed = true;

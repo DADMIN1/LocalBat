@@ -12,7 +12,7 @@ def IsolateArrayParameters(functionCall: str):
 
 
 # nested dictionary+list comprehensions are impossible. (skill issue)
-def PythonBad(testcases: list[str], containsArray:bool, array_varnames, array_declarations: list[str]):
+def PythonBad(testcases: list[str], containsArray:bool, containsList:bool, containsMap:bool, array_varnames, array_declarations: list[str]):
     split_cases = []
     for (testCaseNum, testcase) in enumerate(testcases):
         # for some reason '→' does not compare true here, you need to use escape code
@@ -28,6 +28,10 @@ def PythonBad(testcases: list[str], containsArray:bool, array_varnames, array_de
         })
         if containsArray: # need to rewrite arrays from '[...]' to '{...}'
             split_cases[-1]['functionCall'] = split_cases[-1]['functionCall'].replace('[', '{ ').replace(']', ' }')
+        if containsList: # need to make ArrayList
+            split_cases[-1]['functionCall'] = split_cases[-1]['functionCall'].replace('[', "Arrays.asList(").replace(']', ')')
+        if containsMap: # { key1: value1, key2: value2 }  ->  Map.of(key1, value1, key2, value2);
+            split_cases[-1]['functionCall'] = split_cases[-1]['functionCall'].replace(':',',').replace('{', "Map.of(").replace('}', ')')
         if (len(split_cases[-1]['arrays']) > 0): split_cases[-1]['arrays'][-1] += '\n' # putting newline at end of arrays
         
         # need to split exactly once to prevent second var from overwriting first in case they are identical arrays!!!
@@ -43,20 +47,34 @@ def ParseTestcases(testcases: list[str], functionDef: dict) -> dict:
     array_declarations = []
     array_varnames = []
     containsArray = False
+    containsList = False
+    containsMap = False
     returnsArray = functionDef["returnType"].endswith("[]")
     returnsList = functionDef["returnType"].startswith("List")
+    returnsMap = functionDef["returnType"].startswith("Map")
+    
+    # Declaring an array of Lists is illegal if the List-type is specialized (e.g. List<String>) 
+    # the error message states 'cannot create array of of generic type "List<_>"'. but ironically,
+    # using the generic 'List' type, without specialization, seems to be the only legal syntax. 
+    expectedResultsReturnType = functionDef['returnType']
+    if returnsList: expectedResultsReturnType = "List<?>" # '<?>' just suppresses a warning telling you to specify the List type
+    elif returnsMap: expectedResultsReturnType = "Map<?,?>" # same gig for Maps
     
     for arg in functionDef["args"]:  # "type": , "identifier"
         isArray = arg["type"].endswith('[]')
+        isList = arg["type"].startswith("List")
+        isMap = arg["type"].startswith("Map")
         if isArray:
             containsArray = True
             array_varnames.append(arg["identifier"])
             array_declarations.append(arg["type"] + " " + arg["identifier"])
         # if isArray: arg["identifier"] += str(testCaseNum)
+        elif isList: containsList = True
+        elif isMap: containsMap = True
     
+    split_cases = PythonBad(testcases, containsArray, containsList, containsMap, array_varnames, array_declarations)
+    expectedResults = f"{expectedResultsReturnType}[] expectedResults = "+"{"
     newlineIndent = "\n        "
-    split_cases = PythonBad(testcases, containsArray, array_varnames, array_declarations)
-    expectedResults = f"{functionDef['returnType']}[] expectedResults = "+"{"
     
     for case in split_cases:
         expectedResults += newlineIndent
@@ -64,13 +82,18 @@ def ParseTestcases(testcases: list[str], functionDef: dict) -> dict:
             case["expected"] = case["expected"].replace('[', '{').replace(']', '}')
         elif returnsList: # can construct a list with 'Arrays.asList'
             case["expected"] = case["expected"].replace('[', "Arrays.asList(").replace(']', ')')
+        elif returnsMap: # { key1: value1, key2: value2 }  ->  Map.of(key1, value1, key2, value2);
+            case["expected"] = case["expected"].replace(':',',').replace('{', "Map.of(").replace('}', ')')
         expectedResults += case["expected"] + ","
     expectedResults += "\n    };\n"
     
     return { 
-        "returnsList": returnsList,
-        "returnsArray": returnsArray,
         "containsArray": containsArray,
+        "containsList": containsList,
+        "containsMap": containsMap,
+        "returnsArray": returnsArray,
+        "returnsList": returnsList,
+        "returnsMap": returnsMap,
         "arrays": [case['arrays'] for case in split_cases], 
         "functionCalls": [case["functionCall"] for case in split_cases], 
         "expectedResults": expectedResults
@@ -155,7 +178,13 @@ def WriteTestcaseFile(packageName:str, data: dict):
     returnType = functionDefinition["returnType"]
     doesReturnArray = returnType.endswith('[]')
     doesReturnList = testCases["returnsList"]
+    doesReturnMap = testCases["returnsMap"]
     needsMap = returnType.startswith('Map') or functionDefinition["hasMap"]
+    
+    resultArrayReturnType = returnType
+    # Declaring an array of Lists is illegal if the List-type is specialized (e.g. List<String>)
+    if doesReturnList: resultArrayReturnType = "List<?>" # '<?>' just suppresses a warning telling you to specify the List type
+    elif doesReturnMap: resultArrayReturnType = "Map<?,?>"
     
     printArray_FunctionDefinition = f"    public static String printArray({returnType} array)"+"""
     {
@@ -168,9 +197,9 @@ def WriteTestcaseFile(packageName:str, data: dict):
     with open(testcase_filepath, "w", encoding="utf-8") as file:
         file.write(f"package {packageName}.Testcases;\n")
         file.write(f"import {packageName}.{title};\n") # importing the real class to run the user-code for validation
+        if needsMap: file.write("import java.util.Map;\n")
         if doesReturnList: file.write("import java.util.List;\n")
         if doesReturnArray or doesReturnList: file.write("import java.util.Arrays;\n")  # required to properly compare arrays, and construct Lists
-        if needsMap: file.write("import java.util.Map;\n")
         file.write('\n')
         
         file.write(f"public class {testCasesClassname}\n"+"{\n")
@@ -200,7 +229,7 @@ def WriteTestcaseFile(packageName:str, data: dict):
         if not needToSupressNewline: file.write('\n')
         
         # storing results of function calls
-        file.write(f"        {functionDefinition['returnType']}[] resultsArray = "+"{\n")
+        file.write(f"        {resultArrayReturnType}[] resultsArray = "+"{\n")
         for functionCall in testCases["functionCalls"]:
             file.write(f"            {title}.{functionCall},\n") # calling the real class here 
         file.write("        };\n") # closing resultsArray
@@ -215,7 +244,7 @@ def WriteTestcaseFile(packageName:str, data: dict):
             resultsArrayStr = f"printArray({resultsArrayStr})"
             comparisonStr = f"!Arrays.equals(resultsArray[i], expectedResults[i])"
         
-        if doesReturnList or needsMap:
+        if doesReturnList or needsMap or (returnType == "String"):
             comparisonStr = f"!resultsArray[i].equals(expectedResults[i])"
         
         # running testcases, comparing results

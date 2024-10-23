@@ -11,7 +11,7 @@ public class _MoreY
         "moreY([\"yay\"])",
     };
 
-    static List<String>[] expectedResults = {
+    static List<?>[] expectedResults = {
         Arrays.asList("yay", "yby", "ycy"),
         Arrays.asList("yhelloy", "ytherey"),
         Arrays.asList("yyayy"),
@@ -19,10 +19,10 @@ public class _MoreY
 
     public static void Validate(boolean printSuccess)
     {
-        List<String>[] resultsArray = {
-            MoreY.moreY(["a", "b", "c"]),
-            MoreY.moreY(["hello", "there"]),
-            MoreY.moreY(["yay"]),
+        List<?>[] resultsArray = {
+            MoreY.moreY(Arrays.asList("a", "b", "c")),
+            MoreY.moreY(Arrays.asList("hello", "there")),
+            MoreY.moreY(Arrays.asList("yay")),
         };
 
         boolean allTestsPassed = true;

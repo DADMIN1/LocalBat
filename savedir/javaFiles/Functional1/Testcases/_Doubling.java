@@ -11,7 +11,7 @@ public class _Doubling
         "doubling([])",
     };
 
-    static List<Integer>[] expectedResults = {
+    static List<?>[] expectedResults = {
         Arrays.asList(2, 4, 6),
         Arrays.asList(12, 16, 12, 16, -2),
         Arrays.asList(),
@@ -19,10 +19,10 @@ public class _Doubling
 
     public static void Validate(boolean printSuccess)
     {
-        List<Integer>[] resultsArray = {
-            Doubling.doubling([1, 2, 3]),
-            Doubling.doubling([6, 8, 6, 8, -1]),
-            Doubling.doubling([]),
+        List<?>[] resultsArray = {
+            Doubling.doubling(Arrays.asList(1, 2, 3)),
+            Doubling.doubling(Arrays.asList(6, 8, 6, 8, -1)),
+            Doubling.doubling(Arrays.asList()),
         };
 
         boolean allTestsPassed = true;

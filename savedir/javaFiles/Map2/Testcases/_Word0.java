@@ -10,10 +10,10 @@ public class _Word0
         "word0([\"c\", \"b\", \"a\"])",
     };
 
-    static Map<String, Integer>[] expectedResults = {
-        {"a": 0, "b": 0},
-        {"a": 0, "b": 0, "c": 0},
-        {"a": 0, "b": 0, "c": 0},
+    static Map<?,?>[] expectedResults = {
+        Map.of("a", 0, "b", 0),
+        Map.of("a", 0, "b", 0, "c", 0),
+        Map.of("a", 0, "b", 0, "c", 0),
     };
 
     public static void Validate(boolean printSuccess)
@@ -22,7 +22,7 @@ public class _Word0
         String[] strings1 = { "a", "b", "a", "c", "b" }; 
         String[] strings2 = { "c", "b", "a" }; 
 
-        Map<String, Integer>[] resultsArray = {
+        Map<?,?>[] resultsArray = {
             Word0.word0(strings0),
             Word0.word0(strings1),
             Word0.word0(strings2),

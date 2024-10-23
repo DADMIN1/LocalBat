@@ -11,7 +11,7 @@ public class _Square56
         "square56([2])",
     };
 
-    static List<Integer>[] expectedResults = {
+    static List<?>[] expectedResults = {
         Arrays.asList(19, 11),
         Arrays.asList(11),
         Arrays.asList(14),
@@ -19,10 +19,10 @@ public class _Square56
 
     public static void Validate(boolean printSuccess)
     {
-        List<Integer>[] resultsArray = {
-            Square56.square56([3, 1, 4]),
-            Square56.square56([1]),
-            Square56.square56([2]),
+        List<?>[] resultsArray = {
+            Square56.square56(Arrays.asList(3, 1, 4)),
+            Square56.square56(Arrays.asList(1)),
+            Square56.square56(Arrays.asList(2)),
         };
 
         boolean allTestsPassed = true;

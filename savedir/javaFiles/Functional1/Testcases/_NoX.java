@@ -11,7 +11,7 @@ public class _NoX
         "noX([\"x\"])",
     };
 
-    static List<String>[] expectedResults = {
+    static List<?>[] expectedResults = {
         Arrays.asList("a", "bb", "c"),
         Arrays.asList("a", "bb", "c"),
         Arrays.asList(""),
@@ -19,10 +19,10 @@ public class _NoX
 
     public static void Validate(boolean printSuccess)
     {
-        List<String>[] resultsArray = {
-            NoX.noX(["ax", "bb", "cx"]),
-            NoX.noX(["xxax", "xbxbx", "xxcx"]),
-            NoX.noX(["x"]),
+        List<?>[] resultsArray = {
+            NoX.noX(Arrays.asList("ax", "bb", "cx")),
+            NoX.noX(Arrays.asList("xxax", "xbxbx", "xxcx")),
+            NoX.noX(Arrays.asList("x")),
         };
 
         boolean allTestsPassed = true;

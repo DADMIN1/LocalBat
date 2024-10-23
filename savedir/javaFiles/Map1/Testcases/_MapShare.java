@@ -10,18 +10,18 @@ public class _MapShare
         "mapShare({\"a\": \"aaa\", \"c\": \"meh\", \"d\": \"hi\"})",
     };
 
-    static Map<String, String>[] expectedResults = {
-        {"a": "aaa", "b": "aaa"},
-        {"b": "xyz"},
-        {"a": "aaa", "b": "aaa", "d": "hi"},
+    static Map<?,?>[] expectedResults = {
+        Map.of("a", "aaa", "b", "aaa"),
+        Map.of("b", "xyz"),
+        Map.of("a", "aaa", "b", "aaa", "d", "hi"),
     };
 
     public static void Validate(boolean printSuccess)
     {
-        Map<String, String>[] resultsArray = {
-            MapShare.mapShare({"a": "aaa", "b": "bbb", "c": "ccc"}),
-            MapShare.mapShare({"b": "xyz", "c": "ccc"}),
-            MapShare.mapShare({"a": "aaa", "c": "meh", "d": "hi"}),
+        Map<?,?>[] resultsArray = {
+            MapShare.mapShare(Map.of("a", "aaa", "b", "bbb", "c", "ccc")),
+            MapShare.mapShare(Map.of("b", "xyz", "c", "ccc")),
+            MapShare.mapShare(Map.of("a", "aaa", "c", "meh", "d", "hi")),
         };
 
         boolean allTestsPassed = true;

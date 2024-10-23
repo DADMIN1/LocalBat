@@ -10,10 +10,10 @@ public class _WordLen
         "wordLen([\"code\", \"code\", \"code\", \"bug\"])",
     };
 
-    static Map<String, Integer>[] expectedResults = {
-        {"bb": 2, "a": 1},
-        {"that": 4, "and": 3, "this": 4},
-        {"code": 4, "bug": 3},
+    static Map<?,?>[] expectedResults = {
+        Map.of("bb", 2, "a", 1),
+        Map.of("that", 4, "and", 3, "this", 4),
+        Map.of("code", 4, "bug", 3),
     };
 
     public static void Validate(boolean printSuccess)
@@ -22,7 +22,7 @@ public class _WordLen
         String[] strings1 = { "this", "and", "that", "and" }; 
         String[] strings2 = { "code", "code", "code", "bug" }; 
 
-        Map<String, Integer>[] resultsArray = {
+        Map<?,?>[] resultsArray = {
             WordLen.wordLen(strings0),
             WordLen.wordLen(strings1),
             WordLen.wordLen(strings2),

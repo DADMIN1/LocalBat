@@ -11,7 +11,7 @@ public class _Lower
         "lower([\"KitteN\", \"ChocolaTE\"])",
     };
 
-    static List<String>[] expectedResults = {
+    static List<?>[] expectedResults = {
         Arrays.asList("hello", "hi"),
         Arrays.asList("aaa", "bbb", "ccc"),
         Arrays.asList("kitten", "chocolate"),
@@ -19,10 +19,10 @@ public class _Lower
 
     public static void Validate(boolean printSuccess)
     {
-        List<String>[] resultsArray = {
-            Lower.lower(["Hello", "Hi"]),
-            Lower.lower(["AAA", "BBB", "ccc"]),
-            Lower.lower(["KitteN", "ChocolaTE"]),
+        List<?>[] resultsArray = {
+            Lower.lower(Arrays.asList("Hello", "Hi")),
+            Lower.lower(Arrays.asList("AAA", "BBB", "ccc")),
+            Lower.lower(Arrays.asList("KitteN", "ChocolaTE")),
         };
 
         boolean allTestsPassed = true;

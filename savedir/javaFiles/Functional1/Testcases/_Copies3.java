@@ -11,7 +11,7 @@ public class _Copies3
         "copies3([\"hello\", \"there\"])",
     };
 
-    static List<String>[] expectedResults = {
+    static List<?>[] expectedResults = {
         Arrays.asList("aaa", "bbbbbb", "ccccccccc"),
         Arrays.asList("242424", "aaa", ""),
         Arrays.asList("hellohellohello", "theretherethere"),
@@ -19,10 +19,10 @@ public class _Copies3
 
     public static void Validate(boolean printSuccess)
     {
-        List<String>[] resultsArray = {
-            Copies3.copies3(["a", "bb", "ccc"]),
-            Copies3.copies3(["24", "a", ""]),
-            Copies3.copies3(["hello", "there"]),
+        List<?>[] resultsArray = {
+            Copies3.copies3(Arrays.asList("a", "bb", "ccc")),
+            Copies3.copies3(Arrays.asList("24", "a", "")),
+            Copies3.copies3(Arrays.asList("hello", "there")),
         };
 
         boolean allTestsPassed = true;

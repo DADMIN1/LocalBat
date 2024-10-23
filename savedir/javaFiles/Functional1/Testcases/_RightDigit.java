@@ -11,7 +11,7 @@ public class _RightDigit
         "rightDigit([10, 0])",
     };
 
-    static List<Integer>[] expectedResults = {
+    static List<?>[] expectedResults = {
         Arrays.asList(1, 2, 3),
         Arrays.asList(6, 8, 6, 8, 1),
         Arrays.asList(0, 0),
@@ -19,10 +19,10 @@ public class _RightDigit
 
     public static void Validate(boolean printSuccess)
     {
-        List<Integer>[] resultsArray = {
-            RightDigit.rightDigit([1, 22, 93]),
-            RightDigit.rightDigit([16, 8, 886, 8, 1]),
-            RightDigit.rightDigit([10, 0]),
+        List<?>[] resultsArray = {
+            RightDigit.rightDigit(Arrays.asList(1, 22, 93)),
+            RightDigit.rightDigit(Arrays.asList(16, 8, 886, 8, 1)),
+            RightDigit.rightDigit(Arrays.asList(10, 0)),
         };
 
         boolean allTestsPassed = true;

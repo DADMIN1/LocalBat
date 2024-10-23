@@ -11,7 +11,7 @@ public class _Math1
         "math1([10])",
     };
 
-    static List<Integer>[] expectedResults = {
+    static List<?>[] expectedResults = {
         Arrays.asList(20, 30, 40),
         Arrays.asList(70, 90, 70, 90, 20),
         Arrays.asList(110),
@@ -19,10 +19,10 @@ public class _Math1
 
     public static void Validate(boolean printSuccess)
     {
-        List<Integer>[] resultsArray = {
-            Math1.math1([1, 2, 3]),
-            Math1.math1([6, 8, 6, 8, 1]),
-            Math1.math1([10]),
+        List<?>[] resultsArray = {
+            Math1.math1(Arrays.asList(1, 2, 3)),
+            Math1.math1(Arrays.asList(6, 8, 6, 8, 1)),
+            Math1.math1(Arrays.asList(10)),
         };
 
         boolean allTestsPassed = true;

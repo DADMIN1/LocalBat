@@ -10,10 +10,10 @@ public class _WordCount
         "wordCount([\"c\", \"c\", \"c\", \"c\"])",
     };
 
-    static Map<String, Integer>[] expectedResults = {
-        {"a": 2, "b": 2, "c": 1},
-        {"a": 1, "b": 1, "c": 1},
-        {"c": 4},
+    static Map<?,?>[] expectedResults = {
+        Map.of("a", 2, "b", 2, "c", 1),
+        Map.of("a", 1, "b", 1, "c", 1),
+        Map.of("c", 4),
     };
 
     public static void Validate(boolean printSuccess)
@@ -22,7 +22,7 @@ public class _WordCount
         String[] strings1 = { "c", "b", "a" }; 
         String[] strings2 = { "c", "c", "c", "c" }; 
 
-        Map<String, Integer>[] resultsArray = {
+        Map<?,?>[] resultsArray = {
             WordCount.wordCount(strings0),
             WordCount.wordCount(strings1),
             WordCount.wordCount(strings2),

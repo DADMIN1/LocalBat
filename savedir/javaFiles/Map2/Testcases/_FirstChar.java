@@ -10,10 +10,10 @@ public class _FirstChar
         "firstChar([])",
     };
 
-    static Map<String, String>[] expectedResults = {
-        {"s": "saltsoda", "t": "teatoast"},
-        {"a": "aaaAA", "b": "bb", "c": "cccCC", "d": "d"},
-        {},
+    static Map<?,?>[] expectedResults = {
+        Map.of("s", "saltsoda", "t", "teatoast"),
+        Map.of("a", "aaaAA", "b", "bb", "c", "cccCC", "d", "d"),
+        Map.of(),
     };
 
     public static void Validate(boolean printSuccess)
@@ -22,7 +22,7 @@ public class _FirstChar
         String[] strings1 = { "aa", "bb", "cc", "aAA", "cCC", "d" }; 
         String[] strings2 = {  }; 
 
-        Map<String, String>[] resultsArray = {
+        Map<?,?>[] resultsArray = {
             FirstChar.firstChar(strings0),
             FirstChar.firstChar(strings1),
             FirstChar.firstChar(strings2),

@@ -11,7 +11,7 @@ public class _No9
         "no9([1, 2, 3])",
     };
 
-    static List<Integer>[] expectedResults = {
+    static List<?>[] expectedResults = {
         Arrays.asList(1, 2),
         Arrays.asList(3),
         Arrays.asList(1, 2, 3),
@@ -19,10 +19,10 @@ public class _No9
 
     public static void Validate(boolean printSuccess)
     {
-        List<Integer>[] resultsArray = {
-            No9.no9([1, 2, 19]),
-            No9.no9([9, 19, 29, 3]),
-            No9.no9([1, 2, 3]),
+        List<?>[] resultsArray = {
+            No9.no9(Arrays.asList(1, 2, 19)),
+            No9.no9(Arrays.asList(9, 19, 29, 3)),
+            No9.no9(Arrays.asList(1, 2, 3)),
         };
 
         boolean allTestsPassed = true;

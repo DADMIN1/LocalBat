@@ -11,7 +11,7 @@ public class _WordsWithoutList
         "wordsWithoutList([\"a\", \"bb\", \"b\", \"ccc\"], 4)",
     };
 
-    static List[] expectedResults = {
+    static List<?>[] expectedResults = {
         Arrays.asList("bb", "ccc"),
         Arrays.asList("a", "bb", "b"),
         Arrays.asList("a", "bb", "b", "ccc"),
@@ -23,7 +23,7 @@ public class _WordsWithoutList
         String[] words1 = { "a", "bb", "b", "ccc" }; 
         String[] words2 = { "a", "bb", "b", "ccc" }; 
 
-        List[] resultsArray = {
+        List<?>[] resultsArray = {
             WordsWithoutList.wordsWithoutList(words0, 1),
             WordsWithoutList.wordsWithoutList(words1, 3),
             WordsWithoutList.wordsWithoutList(words2, 4),

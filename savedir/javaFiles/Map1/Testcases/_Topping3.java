@@ -10,18 +10,18 @@ public class _Topping3
         "topping3({\"salad\": \"oil\", \"potato\": \"ketchup\"})",
     };
 
-    static Map<String, String>[] expectedResults = {
-        {"potato": "ketchup", "fries": "ketchup"},
-        {"potato": "butter", "fries": "butter"},
-        {"spinach": "oil", "salad": "oil", "potato": "ketchup", "fries": "ketchup"},
+    static Map<?,?>[] expectedResults = {
+        Map.of("potato", "ketchup", "fries", "ketchup"),
+        Map.of("potato", "butter", "fries", "butter"),
+        Map.of("spinach", "oil", "salad", "oil", "potato", "ketchup", "fries", "ketchup"),
     };
 
     public static void Validate(boolean printSuccess)
     {
-        Map<String, String>[] resultsArray = {
-            Topping3.topping3({"potato": "ketchup"}),
-            Topping3.topping3({"potato": "butter"}),
-            Topping3.topping3({"salad": "oil", "potato": "ketchup"}),
+        Map<?,?>[] resultsArray = {
+            Topping3.topping3(Map.of("potato", "ketchup")),
+            Topping3.topping3(Map.of("potato", "butter")),
+            Topping3.topping3(Map.of("salad", "oil", "potato", "ketchup")),
         };
 
         boolean allTestsPassed = true;

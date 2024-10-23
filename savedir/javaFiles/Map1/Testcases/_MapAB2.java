@@ -10,18 +10,18 @@ public class _MapAB2
         "mapAB2({\"a\": \"aaa\", \"b\": \"bbb\", \"c\": \"aaa\"})",
     };
 
-    static Map<String, String>[] expectedResults = {
-        {"c": "cake"},
-        {"a": "aaa", "b": "bbb"},
-        {"a": "aaa", "b": "bbb", "c": "aaa"},
+    static Map<?,?>[] expectedResults = {
+        Map.of("c", "cake"),
+        Map.of("a", "aaa", "b", "bbb"),
+        Map.of("a", "aaa", "b", "bbb", "c", "aaa"),
     };
 
     public static void Validate(boolean printSuccess)
     {
-        Map<String, String>[] resultsArray = {
-            MapAB2.mapAB2({"a": "aaa", "b": "aaa", "c": "cake"}),
-            MapAB2.mapAB2({"a": "aaa", "b": "bbb"}),
-            MapAB2.mapAB2({"a": "aaa", "b": "bbb", "c": "aaa"}),
+        Map<?,?>[] resultsArray = {
+            MapAB2.mapAB2(Map.of("a", "aaa", "b", "aaa", "c", "cake")),
+            MapAB2.mapAB2(Map.of("a", "aaa", "b", "bbb")),
+            MapAB2.mapAB2(Map.of("a", "aaa", "b", "bbb", "c", "aaa")),
         };
 
         boolean allTestsPassed = true;

@@ -11,7 +11,7 @@ public class _NoLong
         "noLong([\"cccc\", \"cccc\", \"cccc\"])",
     };
 
-    static List<String>[] expectedResults = {
+    static List<?>[] expectedResults = {
         Arrays.asList("not", "too"),
         Arrays.asList("a", "bbb"),
         Arrays.asList(),
@@ -19,10 +19,10 @@ public class _NoLong
 
     public static void Validate(boolean printSuccess)
     {
-        List<String>[] resultsArray = {
-            NoLong.noLong(["this", "not", "too", "long"]),
-            NoLong.noLong(["a", "bbb", "cccc"]),
-            NoLong.noLong(["cccc", "cccc", "cccc"]),
+        List<?>[] resultsArray = {
+            NoLong.noLong(Arrays.asList("this", "not", "too", "long")),
+            NoLong.noLong(Arrays.asList("a", "bbb", "cccc")),
+            NoLong.noLong(Arrays.asList("cccc", "cccc", "cccc")),
         };
 
         boolean allTestsPassed = true;

@@ -11,7 +11,7 @@ public class _AddStar
         "addStar([\"*\"])",
     };
 
-    static List<String>[] expectedResults = {
+    static List<?>[] expectedResults = {
         Arrays.asList("a*", "bb*", "ccc*"),
         Arrays.asList("hello*", "there*"),
         Arrays.asList("**"),
@@ -19,10 +19,10 @@ public class _AddStar
 
     public static void Validate(boolean printSuccess)
     {
-        List<String>[] resultsArray = {
-            AddStar.addStar(["a", "bb", "ccc"]),
-            AddStar.addStar(["hello", "there"]),
-            AddStar.addStar(["*"]),
+        List<?>[] resultsArray = {
+            AddStar.addStar(Arrays.asList("a", "bb", "ccc")),
+            AddStar.addStar(Arrays.asList("hello", "there")),
+            AddStar.addStar(Arrays.asList("*")),
         };
 
         boolean allTestsPassed = true;

@@ -10,10 +10,10 @@ public class _WordMultiple
         "wordMultiple([\"c\", \"c\", \"c\", \"c\"])",
     };
 
-    static Map<String, Boolean>[] expectedResults = {
-        {"a": true, "b": true, "c": false},
-        {"a": false, "b": false, "c": false},
-        {"c": true},
+    static Map<?,?>[] expectedResults = {
+        Map.of("a", true, "b", true, "c", false),
+        Map.of("a", false, "b", false, "c", false),
+        Map.of("c", true),
     };
 
     public static void Validate(boolean printSuccess)
@@ -22,7 +22,7 @@ public class _WordMultiple
         String[] strings1 = { "c", "b", "a" }; 
         String[] strings2 = { "c", "c", "c", "c" }; 
 
-        Map<String, Boolean>[] resultsArray = {
+        Map<?,?>[] resultsArray = {
             WordMultiple.wordMultiple(strings0),
             WordMultiple.wordMultiple(strings1),
             WordMultiple.wordMultiple(strings2),

@@ -11,7 +11,7 @@ public class _Two2
         "two2([0])",
     };
 
-    static List<Integer>[] expectedResults = {
+    static List<?>[] expectedResults = {
         Arrays.asList(4, 6),
         Arrays.asList(4),
         Arrays.asList(0),
@@ -19,10 +19,10 @@ public class _Two2
 
     public static void Validate(boolean printSuccess)
     {
-        List<Integer>[] resultsArray = {
-            Two2.two2([1, 2, 3]),
-            Two2.two2([2, 6, 11]),
-            Two2.two2([0]),
+        List<?>[] resultsArray = {
+            Two2.two2(Arrays.asList(1, 2, 3)),
+            Two2.two2(Arrays.asList(2, 6, 11)),
+            Two2.two2(Arrays.asList(0)),
         };
 
         boolean allTestsPassed = true;

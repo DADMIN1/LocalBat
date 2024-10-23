@@ -10,10 +10,10 @@ public class _Pairs
         "pairs([\"man\", \"moon\", \"good\", \"night\"])",
     };
 
-    static Map<String, String>[] expectedResults = {
-        {"b": "g", "c": "e"},
-        {"m": "n"},
-        {"g": "d", "m": "n", "n": "t"},
+    static Map<?,?>[] expectedResults = {
+        Map.of("b", "g", "c", "e"),
+        Map.of("m", "n"),
+        Map.of("g", "d", "m", "n", "n", "t"),
     };
 
     public static void Validate(boolean printSuccess)
@@ -22,7 +22,7 @@ public class _Pairs
         String[] strings1 = { "man", "moon", "main" }; 
         String[] strings2 = { "man", "moon", "good", "night" }; 
 
-        Map<String, String>[] resultsArray = {
+        Map<?,?>[] resultsArray = {
             Pairs.pairs(strings0),
             Pairs.pairs(strings1),
             Pairs.pairs(strings2),

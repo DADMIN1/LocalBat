@@ -11,7 +11,7 @@ public class _Square
         "square([])",
     };
 
-    static List<Integer>[] expectedResults = {
+    static List<?>[] expectedResults = {
         Arrays.asList(1, 4, 9),
         Arrays.asList(36, 64, 36, 64, 1),
         Arrays.asList(),
@@ -19,10 +19,10 @@ public class _Square
 
     public static void Validate(boolean printSuccess)
     {
-        List<Integer>[] resultsArray = {
-            Square.square([1, 2, 3]),
-            Square.square([6, 8, -6, -8, 1]),
-            Square.square([]),
+        List<?>[] resultsArray = {
+            Square.square(Arrays.asList(1, 2, 3)),
+            Square.square(Arrays.asList(6, 8, -6, -8, 1)),
+            Square.square(Arrays.asList()),
         };
 
         boolean allTestsPassed = true;

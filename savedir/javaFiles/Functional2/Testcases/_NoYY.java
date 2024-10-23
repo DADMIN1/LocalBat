@@ -11,7 +11,7 @@ public class _NoYY
         "noYY([\"xx\", \"ya\", \"zz\"])",
     };
 
-    static List<String>[] expectedResults = {
+    static List<?>[] expectedResults = {
         Arrays.asList("ay", "by", "cy"),
         Arrays.asList("ay", "by"),
         Arrays.asList("xxy", "yay", "zzy"),
@@ -19,10 +19,10 @@ public class _NoYY
 
     public static void Validate(boolean printSuccess)
     {
-        List<String>[] resultsArray = {
-            NoYY.noYY(["a", "b", "c"]),
-            NoYY.noYY(["a", "b", "cy"]),
-            NoYY.noYY(["xx", "ya", "zz"]),
+        List<?>[] resultsArray = {
+            NoYY.noYY(Arrays.asList("a", "b", "c")),
+            NoYY.noYY(Arrays.asList("a", "b", "cy")),
+            NoYY.noYY(Arrays.asList("xx", "ya", "zz")),
         };
 
         boolean allTestsPassed = true;

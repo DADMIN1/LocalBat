@@ -11,7 +11,7 @@ public class _NoTeen
         "noTeen([15])",
     };
 
-    static List<Integer>[] expectedResults = {
+    static List<?>[] expectedResults = {
         Arrays.asList(12, 20),
         Arrays.asList(1, 1),
         Arrays.asList(),
@@ -19,10 +19,10 @@ public class _NoTeen
 
     public static void Validate(boolean printSuccess)
     {
-        List<Integer>[] resultsArray = {
-            NoTeen.noTeen([12, 13, 19, 20]),
-            NoTeen.noTeen([1, 14, 1]),
-            NoTeen.noTeen([15]),
+        List<?>[] resultsArray = {
+            NoTeen.noTeen(Arrays.asList(12, 13, 19, 20)),
+            NoTeen.noTeen(Arrays.asList(1, 14, 1)),
+            NoTeen.noTeen(Arrays.asList(15)),
         };
 
         boolean allTestsPassed = true;

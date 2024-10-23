@@ -10,18 +10,18 @@ public class _MapAB
         "mapAB({\"b\": \"There\"})",
     };
 
-    static Map<String, String>[] expectedResults = {
-        {"a": "Hi", "ab": "HiThere", "b": "There"},
-        {"a": "Hi"},
-        {"b": "There"},
+    static Map<?,?>[] expectedResults = {
+        Map.of("a", "Hi", "ab", "HiThere", "b", "There"),
+        Map.of("a", "Hi"),
+        Map.of("b", "There"),
     };
 
     public static void Validate(boolean printSuccess)
     {
-        Map<String, String>[] resultsArray = {
-            MapAB.mapAB({"a": "Hi", "b": "There"}),
-            MapAB.mapAB({"a": "Hi"}),
-            MapAB.mapAB({"b": "There"}),
+        Map<?,?>[] resultsArray = {
+            MapAB.mapAB(Map.of("a", "Hi", "b", "There")),
+            MapAB.mapAB(Map.of("a", "Hi")),
+            MapAB.mapAB(Map.of("b", "There")),
         };
 
         boolean allTestsPassed = true;

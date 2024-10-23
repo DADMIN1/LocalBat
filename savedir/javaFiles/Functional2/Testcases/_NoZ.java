@@ -11,7 +11,7 @@ public class _NoZ
         "noZ([\"hello\", \"howz\", \"are\", \"youz\"])",
     };
 
-    static List<String>[] expectedResults = {
+    static List<?>[] expectedResults = {
         Arrays.asList("aaa", "bbb"),
         Arrays.asList("hi"),
         Arrays.asList("hello", "are"),
@@ -19,10 +19,10 @@ public class _NoZ
 
     public static void Validate(boolean printSuccess)
     {
-        List<String>[] resultsArray = {
-            NoZ.noZ(["aaa", "bbb", "aza"]),
-            NoZ.noZ(["hziz", "hzello", "hi"]),
-            NoZ.noZ(["hello", "howz", "are", "youz"]),
+        List<?>[] resultsArray = {
+            NoZ.noZ(Arrays.asList("aaa", "bbb", "aza")),
+            NoZ.noZ(Arrays.asList("hziz", "hzello", "hi")),
+            NoZ.noZ(Arrays.asList("hello", "howz", "are", "youz")),
         };
 
         boolean allTestsPassed = true;

@@ -11,7 +11,7 @@ public class _NoNeg
         "noNeg([-1, -1, -1])",
     };
 
-    static List<Integer>[] expectedResults = {
+    static List<?>[] expectedResults = {
         Arrays.asList(1),
         Arrays.asList(3, 3),
         Arrays.asList(),
@@ -19,10 +19,10 @@ public class _NoNeg
 
     public static void Validate(boolean printSuccess)
     {
-        List<Integer>[] resultsArray = {
-            NoNeg.noNeg([1, -2]),
-            NoNeg.noNeg([-3, -3, 3, 3]),
-            NoNeg.noNeg([-1, -1, -1]),
+        List<?>[] resultsArray = {
+            NoNeg.noNeg(Arrays.asList(1, -2)),
+            NoNeg.noNeg(Arrays.asList(-3, -3, 3, 3)),
+            NoNeg.noNeg(Arrays.asList(-1, -1, -1)),
         };
 
         boolean allTestsPassed = true;
