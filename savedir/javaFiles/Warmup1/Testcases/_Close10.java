@@ -9,7 +9,11 @@ public class _Close10
         "close10(13, 7)",
     };
 
-    static int[] expectedResults = { 8, 8, 0, };
+    static int[] expectedResults = {
+        8,
+        8,
+        0,
+    };
 
     public static void Validate(boolean printSuccess)
     {

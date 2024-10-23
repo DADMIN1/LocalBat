@@ -10,7 +10,7 @@ public class BlueTicket
     the result is 10. Otherwise if the ab sum is exactly 10 more than either bc or ac sums, 
     the result is 5. Otherwise the result is 0. */
 
-    /*__________________________
+    /*_________________________
     |        Testcases         |
     |__________________________|
     | blueTicket(9, 1, 0) → 10 |

@@ -8,7 +8,7 @@ public class DelDel
     return a string where that "del" has been deleted. Otherwise, 
     return the string unchanged. */
 
-    /*________________________________
+    /*_______________________________
     |           Testcases            |
     |________________________________|
     | delDel("adelbc")    → "abc"    |

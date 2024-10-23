@@ -9,7 +9,11 @@ public class _CloseFar
         "closeFar(4, 1, 3)",
     };
 
-    static boolean[] expectedResults = { true, false, true, };
+    static boolean[] expectedResults = {
+        true,
+        false,
+        true,
+    };
 
     public static void Validate(boolean printSuccess)
     {

@@ -10,7 +10,11 @@ public class _FizzBuzz
         "fizzBuzz(1, 11)",
     };
 
-    static String[][] expectedResults = { {"1", "2", "Fizz", "4", "Buzz"}, {"1", "2", "Fizz", "4", "Buzz", "Fizz", "7"}, {"1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz"}, };
+    static String[][] expectedResults = {
+        {"1", "2", "Fizz", "4", "Buzz"},
+        {"1", "2", "Fizz", "4", "Buzz", "Fizz", "7"},
+        {"1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz"},
+    };
 
     public static String printArray(String[] array)
     {

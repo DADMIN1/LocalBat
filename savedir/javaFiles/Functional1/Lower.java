@@ -3,15 +3,13 @@ package Functional1;
 import Functional1.Testcases._Lower;
 
 import java.util.List;
-import java.util.Arrays;
-import java.util.ArrayList;
 
 public class Lower
 {
     /* Given a list of strings, return a list where each string is converted to lower case (Note: 
     String toLowerCase() method). */
 
-    /*__________________________________________________________
+    /*_________________________________________________________
     |                        Testcases                         |
     |__________________________________________________________|
     | lower(["Hello", "Hi"])         → ["hello", "hi"]         |

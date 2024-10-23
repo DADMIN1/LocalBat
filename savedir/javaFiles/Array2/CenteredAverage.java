@@ -10,7 +10,7 @@ public class CenteredAverage
     and likewise for the largest value. Use int division to produce the final average. 
     You may assume that the array is length 3 or more. */
 
-    /*________________________________________________
+    /*_______________________________________________
     |                   Testcases                    |
     |________________________________________________|
     | centeredAverage([1, 2, 3, 4, 100])        → 3  |

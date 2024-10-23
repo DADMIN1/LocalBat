@@ -9,7 +9,11 @@ public class _CountPairs
         "countPairs(\"axbx\")",
     };
 
-    static int[] expectedResults = { 1, 2, 1, };
+    static int[] expectedResults = {
+        1,
+        2,
+        1,
+    };
 
     public static void Validate(boolean printSuccess)
     {

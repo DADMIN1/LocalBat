@@ -9,7 +9,11 @@ public class _MakeTags
         "makeTags(\"cite\", \"Yay\")",
     };
 
-    static String[] expectedResults = { "<i>Yay</i>", "<i>Hello</i>", "<cite>Yay</cite>", };
+    static String[] expectedResults = {
+        "<i>Yay</i>",
+        "<i>Hello</i>",
+        "<cite>Yay</cite>",
+    };
 
     public static void Validate(boolean printSuccess)
     {

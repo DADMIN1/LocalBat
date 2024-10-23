@@ -9,7 +9,11 @@ public class _OneTwo
         "oneTwo(\"tcagdo\")",
     };
 
-    static String[] expectedResults = { "bca", "cat", "catdog", };
+    static String[] expectedResults = {
+        "bca",
+        "cat",
+        "catdog",
+    };
 
     public static void Validate(boolean printSuccess)
     {

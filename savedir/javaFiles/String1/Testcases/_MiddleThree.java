@@ -9,7 +9,11 @@ public class _MiddleThree
         "middleThree(\"solving\")",
     };
 
-    static String[] expectedResults = { "and", "and", "lvi", };
+    static String[] expectedResults = {
+        "and",
+        "and",
+        "lvi",
+    };
 
     public static void Validate(boolean printSuccess)
     {

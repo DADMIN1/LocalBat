@@ -8,7 +8,7 @@ public class MakeOutWord
     return a new string where the word is in the middle of the out string, e.g. "<<word>>". 
     Note: use str.substring(i, j) to extract the String starting at index i and going up to but not including index j. */
 
-    /*______________________________________________
+    /*_____________________________________________
     |                  Testcases                   |
     |______________________________________________|
     | makeOutWord("<<>>", "Yay")    → "<<Yay>>"    |

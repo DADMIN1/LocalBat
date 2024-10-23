@@ -11,7 +11,11 @@ public class _RightDigit
         "rightDigit([10, 0])",
     };
 
-    static List<Integer>[] expectedResults = { Arrays.asList(1, 2, 3), Arrays.asList(6, 8, 6, 8, 1), Arrays.asList(0, 0), };
+    static List<Integer>[] expectedResults = {
+        Arrays.asList(1, 2, 3),
+        Arrays.asList(6, 8, 6, 8, 1),
+        Arrays.asList(0, 0),
+    };
 
     public static void Validate(boolean printSuccess)
     {

@@ -8,7 +8,7 @@ public class Has77
     or there are two 7's separated by one element, such as with {7, 
     1, 7}. */
 
-    /*________________________________
+    /*_______________________________
     |           Testcases            |
     |________________________________|
     | has77([1, 7, 7])       → true  |

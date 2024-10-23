@@ -7,7 +7,7 @@ public class StringClean
     /* Given a string, return recursively a "cleaned" string where adjacent chars that are the same have been reduced to a single char. 
     So "yyzzza" yields "yza". */
 
-    /*_________________________________
+    /*________________________________
     |            Testcases            |
     |_________________________________|
     | stringClean("yyzzza")  → "yza"  |

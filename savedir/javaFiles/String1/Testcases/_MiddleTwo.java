@@ -9,7 +9,11 @@ public class _MiddleTwo
         "middleTwo(\"Practice\")",
     };
 
-    static String[] expectedResults = { "ri", "od", "ct", };
+    static String[] expectedResults = {
+        "ri",
+        "od",
+        "ct",
+    };
 
     public static void Validate(boolean printSuccess)
     {

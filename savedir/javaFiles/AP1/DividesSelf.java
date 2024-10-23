@@ -9,7 +9,7 @@ public class DividesSelf
     We'll say that 0 does not divide into anything evenly, so no number with a 0 digit divides itself. 
     Note: use % to get the rightmost digit, and / to discard the rightmost digit. */
 
-    /*__________________________
+    /*_________________________
     |        Testcases         |
     |__________________________|
     | dividesSelf(128) → true  |

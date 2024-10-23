@@ -9,7 +9,11 @@ public class _GroupNoAdj
         "groupNoAdj(0, [2, 5, 10, 4], 7)",
     };
 
-    static boolean[] expectedResults = { true, false, false, };
+    static boolean[] expectedResults = {
+        true,
+        false,
+        false,
+    };
 
     public static void Validate(boolean printSuccess)
     {

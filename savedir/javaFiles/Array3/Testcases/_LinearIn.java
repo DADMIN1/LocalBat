@@ -9,7 +9,11 @@ public class _LinearIn
         "linearIn([1, 2, 4, 4, 6], [2, 4])",
     };
 
-    static boolean[] expectedResults = { true, false, true, };
+    static boolean[] expectedResults = {
+        true,
+        false,
+        true,
+    };
 
     public static void Validate(boolean printSuccess)
     {

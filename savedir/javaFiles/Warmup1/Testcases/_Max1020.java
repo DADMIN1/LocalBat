@@ -9,7 +9,11 @@ public class _Max1020
         "max1020(11, 9)",
     };
 
-    static int[] expectedResults = { 19, 19, 11, };
+    static int[] expectedResults = {
+        19,
+        19,
+        11,
+    };
 
     public static void Validate(boolean printSuccess)
     {

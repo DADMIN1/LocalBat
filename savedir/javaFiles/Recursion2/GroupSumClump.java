@@ -11,7 +11,7 @@ public class GroupSumClump
     For example, with the array {1, 2, 2, 2, 5, 2}, either all three 2's in the middle must be chosen or not, 
     all as a group. (one loop can be used to find the extent of the identical values). */
 
-    /*_______________________________________________
+    /*______________________________________________
     |                   Testcases                   |
     |_______________________________________________|
     | groupSumClump(0, [2, 4, 8], 10)       → true  |

@@ -10,7 +10,7 @@ public class GroupSum5
     If the value immediately following a multiple of 5 is 1, 
     it must not be chosen. (No loops needed.) */
 
-    /*_________________________________________
+    /*________________________________________
     |                Testcases                |
     |_________________________________________|
     | groupSum5(0, [2, 5, 10, 4], 19) → true  |

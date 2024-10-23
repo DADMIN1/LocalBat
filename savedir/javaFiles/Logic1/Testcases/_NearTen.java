@@ -9,7 +9,11 @@ public class _NearTen
         "nearTen(19)",
     };
 
-    static boolean[] expectedResults = { true, false, true, };
+    static boolean[] expectedResults = {
+        true,
+        false,
+        true,
+    };
 
     public static void Validate(boolean printSuccess)
     {

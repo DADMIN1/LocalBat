@@ -10,7 +10,11 @@ public class _FirstSwap
         "firstSwap([\"ax\", \"bx\", \"ay\", \"by\", \"ai\", \"aj\", \"bx\", \"by\"])",
     };
 
-    static String[][] expectedResults = { {"ac", "ab"}, {"ay", "by", "cy", "cx", "bx", "ax", "aaa", "azz"}, {"ay", "by", "ax", "bx", "ai", "aj", "bx", "by"}, };
+    static String[][] expectedResults = {
+        {"ac", "ab"},
+        {"ay", "by", "cy", "cx", "bx", "ax", "aaa", "azz"},
+        {"ay", "by", "ax", "bx", "ai", "aj", "bx", "by"},
+    };
 
     public static String printArray(String[] array)
     {

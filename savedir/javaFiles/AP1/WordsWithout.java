@@ -8,7 +8,7 @@ public class WordsWithout
     One approach is to count the occurrences of the target string, 
     make a new array of the correct length, and then copy over the correct strings. */
 
-    /*___________________________________________________________
+    /*__________________________________________________________
     |                         Testcases                         |
     |___________________________________________________________|
     | wordsWithout(["a", "b", "c", "a"], "a") → ["b", "c"]      |

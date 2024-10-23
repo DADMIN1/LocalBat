@@ -8,7 +8,9 @@ public class _MakePi
         "makePi()",
     };
 
-    static int[][] expectedResults = { {3, 1, 4}, };
+    static int[][] expectedResults = {
+        {3, 1, 4},
+    };
 
     public static String printArray(int[] array)
     {

@@ -9,7 +9,11 @@ public class _MaxSpan
         "maxSpan([1, 4, 2, 1, 4, 4, 4])",
     };
 
-    static int[] expectedResults = { 4, 6, 6, };
+    static int[] expectedResults = {
+        4,
+        6,
+        6,
+    };
 
     public static void Validate(boolean printSuccess)
     {

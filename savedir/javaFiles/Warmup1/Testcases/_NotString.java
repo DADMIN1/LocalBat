@@ -9,7 +9,11 @@ public class _NotString
         "notString(\"not bad\")",
     };
 
-    static String[] expectedResults = { "not candy", "not x", "not bad", };
+    static String[] expectedResults = {
+        "not candy",
+        "not x",
+        "not bad",
+    };
 
     public static void Validate(boolean printSuccess)
     {

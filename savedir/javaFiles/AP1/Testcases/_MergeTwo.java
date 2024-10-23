@@ -10,7 +10,11 @@ public class _MergeTwo
         "mergeTwo([\"f\", \"g\", \"z\"], [\"c\", \"f\", \"g\"], 3)",
     };
 
-    static String[][] expectedResults = { {"a", "b", "c"}, {"a", "c", "f"}, {"c", "f", "g"}, };
+    static String[][] expectedResults = {
+        {"a", "b", "c"},
+        {"a", "c", "f"},
+        {"c", "f", "g"},
+    };
 
     public static String printArray(String[] array)
     {

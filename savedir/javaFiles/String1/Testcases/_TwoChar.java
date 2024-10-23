@@ -9,7 +9,11 @@ public class _TwoChar
         "twoChar(\"java\", 3)",
     };
 
-    static String[] expectedResults = { "ja", "va", "ja", };
+    static String[] expectedResults = {
+        "ja",
+        "va",
+        "ja",
+    };
 
     public static void Validate(boolean printSuccess)
     {

@@ -3,7 +3,6 @@ package Map1;
 import Map1.Testcases._MapAB4;
 
 import java.util.Map;
-import java.util.HashMap;
 
 public class MapAB4
 {
@@ -11,7 +10,7 @@ public class MapAB4
     then set "c" to have the longer value. If the values exist and have the same length, 
     change them both to the empty string in the map. */
 
-    /*____________________________________________________________________________________
+    /*___________________________________________________________________________________
     |                                     Testcases                                      |
     |____________________________________________________________________________________|
     | mapAB4({"a": "aaa", "b": "bb", "c": "cake"}) → {"a": "aaa", "b": "bb", "c": "aaa"} |

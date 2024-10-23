@@ -9,7 +9,11 @@ public class _MaxTriple
         "maxTriple([5, 2, 3])",
     };
 
-    static int[] expectedResults = { 3, 5, 5, };
+    static int[] expectedResults = {
+        3,
+        5,
+        5,
+    };
 
     public static void Validate(boolean printSuccess)
     {

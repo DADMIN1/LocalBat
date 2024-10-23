@@ -9,7 +9,11 @@ public class _WithoutString
         "withoutString(\"Hello there\", \"x\")",
     };
 
-    static String[] expectedResults = { "He there", "Hllo thr", "Hello there", };
+    static String[] expectedResults = {
+        "He there",
+        "Hllo thr",
+        "Hello there",
+    };
 
     public static void Validate(boolean printSuccess)
     {

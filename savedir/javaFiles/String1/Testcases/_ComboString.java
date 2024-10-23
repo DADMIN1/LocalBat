@@ -9,7 +9,11 @@ public class _ComboString
         "comboString(\"aaa\", \"b\")",
     };
 
-    static String[] expectedResults = { "hiHellohi", "hiHellohi", "baaab", };
+    static String[] expectedResults = {
+        "hiHellohi",
+        "hiHellohi",
+        "baaab",
+    };
 
     public static void Validate(boolean printSuccess)
     {

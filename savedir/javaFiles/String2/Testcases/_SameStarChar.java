@@ -9,7 +9,11 @@ public class _SameStarChar
         "sameStarChar(\"*xa*az\")",
     };
 
-    static boolean[] expectedResults = { true, false, true, };
+    static boolean[] expectedResults = {
+        true,
+        false,
+        true,
+    };
 
     public static void Validate(boolean printSuccess)
     {

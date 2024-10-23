@@ -9,7 +9,11 @@ public class _TwoAsOne
         "twoAsOne(3, 2, 2)",
     };
 
-    static boolean[] expectedResults = { true, true, false, };
+    static boolean[] expectedResults = {
+        true,
+        true,
+        false,
+    };
 
     public static void Validate(boolean printSuccess)
     {

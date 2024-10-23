@@ -6,7 +6,7 @@ public class TwoTwo
 {
     /* Given an array of ints, return true if every 2 that appears in the array is next to another 2. */
 
-    /*______________________________
+    /*_____________________________
     |          Testcases           |
     |______________________________|
     | twoTwo([4, 2, 2, 3]) → true  |

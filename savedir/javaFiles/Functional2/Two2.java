@@ -3,15 +3,13 @@ package Functional2;
 import Functional2.Testcases._Two2;
 
 import java.util.List;
-import java.util.Arrays;
-import java.util.ArrayList;
 
 public class Two2
 {
     /* Given a list of non-negative integers, return a list of those numbers multiplied by 2, 
     omitting any of the resulting numbers that end in 2. */
 
-    /*___________________________
+    /*__________________________
     |         Testcases         |
     |___________________________|
     | two2([1, 2, 3])  → [4, 6] |

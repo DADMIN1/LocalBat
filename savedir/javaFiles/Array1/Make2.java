@@ -8,7 +8,7 @@ public class Make2
     as much as will fit, the elements from a followed by the elements from b. 
     The arrays may be any length, including 0, but there will be 2 or more elements available between the 2 arrays. */
 
-    /*___________________________________
+    /*__________________________________
     |             Testcases             |
     |___________________________________|
     | make2([4, 5], [1, 2, 3]) → [4, 5] |

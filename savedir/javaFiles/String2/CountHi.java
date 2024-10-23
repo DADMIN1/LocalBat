@@ -6,7 +6,7 @@ public class CountHi
 {
     /* Return the number of times that the string "hi" appears anywhere in the given string. */
 
-    /*__________________________
+    /*_________________________
     |        Testcases         |
     |__________________________|
     | countHi("abc hi ho") → 1 |

@@ -9,7 +9,11 @@ public class _FirstTwo
         "firstTwo(\"ab\")",
     };
 
-    static String[] expectedResults = { "He", "ab", "ab", };
+    static String[] expectedResults = {
+        "He",
+        "ab",
+        "ab",
+    };
 
     public static void Validate(boolean printSuccess)
     {

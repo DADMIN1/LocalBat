@@ -9,7 +9,11 @@ public class _BlueTicket
         "blueTicket(6, 1, 4)",
     };
 
-    static int[] expectedResults = { 10, 0, 10, };
+    static int[] expectedResults = {
+        10,
+        0,
+        10,
+    };
 
     public static void Validate(boolean printSuccess)
     {

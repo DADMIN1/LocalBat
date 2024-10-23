@@ -3,14 +3,12 @@ package Functional1;
 import Functional1.Testcases._Math1;
 
 import java.util.List;
-import java.util.Arrays;
-import java.util.ArrayList;
 
 public class Math1
 {
     /* Given a list of integers, return a list where each integer is added to 1 and the result is multiplied by 10. */
 
-    /*_______________________________________________
+    /*______________________________________________
     |                   Testcases                   |
     |_______________________________________________|
     | math1([1, 2, 3])       → [20, 30, 40]         |

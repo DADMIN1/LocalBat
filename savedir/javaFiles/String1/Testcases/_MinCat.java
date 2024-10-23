@@ -9,7 +9,11 @@ public class _MinCat
         "minCat(\"java\", \"Hello\")",
     };
 
-    static String[] expectedResults = { "loHi", "ellojava", "javaello", };
+    static String[] expectedResults = {
+        "loHi",
+        "ellojava",
+        "javaello",
+    };
 
     public static void Validate(boolean printSuccess)
     {

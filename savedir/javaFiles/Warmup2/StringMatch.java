@@ -8,7 +8,7 @@ public class StringMatch
     So "xxcaazz" and "xxbaaz" yields 3, since the "xx", "aa", 
     and "az" substrings appear in the same place in both strings. */
 
-    /*______________________________________
+    /*_____________________________________
     |              Testcases               |
     |______________________________________|
     | stringMatch("xxcaazz", "xxbaaz") → 3 |

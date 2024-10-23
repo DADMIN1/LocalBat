@@ -9,7 +9,11 @@ public class _FirstLast6
         "firstLast6([13, 6, 1, 2, 3])",
     };
 
-    static boolean[] expectedResults = { true, true, false, };
+    static boolean[] expectedResults = {
+        true,
+        true,
+        false,
+    };
 
     public static void Validate(boolean printSuccess)
     {

@@ -9,7 +9,11 @@ public class _TheEnd
         "theEnd(\"oh\", true)",
     };
 
-    static String[] expectedResults = { "H", "o", "o", };
+    static String[] expectedResults = {
+        "H",
+        "o",
+        "o",
+    };
 
     public static void Validate(boolean printSuccess)
     {

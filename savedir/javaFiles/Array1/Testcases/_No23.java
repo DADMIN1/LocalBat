@@ -9,7 +9,11 @@ public class _No23
         "no23([3, 5])",
     };
 
-    static boolean[] expectedResults = { true, false, false, };
+    static boolean[] expectedResults = {
+        true,
+        false,
+        false,
+    };
 
     public static void Validate(boolean printSuccess)
     {

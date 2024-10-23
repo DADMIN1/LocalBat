@@ -9,7 +9,11 @@ public class _WithouEnd2
         "withouEnd2(\"ab\")",
     };
 
-    static String[] expectedResults = { "ell", "b", "", };
+    static String[] expectedResults = {
+        "ell",
+        "b",
+        "",
+    };
 
     public static void Validate(boolean printSuccess)
     {

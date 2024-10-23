@@ -6,7 +6,7 @@ public class WordsCount
 {
     /* Given an array of strings, return the count of the number of strings with the given length. */
 
-    /*____________________________________________
+    /*___________________________________________
     |                 Testcases                  |
     |____________________________________________|
     | wordsCount(["a", "bb", "b", "ccc"], 1) → 2 |

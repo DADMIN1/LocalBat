@@ -9,7 +9,11 @@ public class _Array667
         "array667([6, 7, 2, 6])",
     };
 
-    static int[] expectedResults = { 1, 1, 1, };
+    static int[] expectedResults = {
+        1,
+        1,
+        1,
+    };
 
     public static void Validate(boolean printSuccess)
     {

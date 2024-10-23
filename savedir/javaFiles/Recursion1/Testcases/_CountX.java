@@ -9,7 +9,11 @@ public class _CountX
         "countX(\"hi\")",
     };
 
-    static int[] expectedResults = { 4, 3, 0, };
+    static int[] expectedResults = {
+        4,
+        3,
+        0,
+    };
 
     public static void Validate(boolean printSuccess)
     {

@@ -9,7 +9,11 @@ public class _ZipZap
         "zipZap(\"zzzopzop\")",
     };
 
-    static String[] expectedResults = { "zpXzp", "zpzp", "zzzpzp", };
+    static String[] expectedResults = {
+        "zpXzp",
+        "zpzp",
+        "zzzpzp",
+    };
 
     public static void Validate(boolean printSuccess)
     {

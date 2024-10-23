@@ -9,7 +9,11 @@ public class _Count7
         "count7(123)",
     };
 
-    static int[] expectedResults = { 2, 1, 0, };
+    static int[] expectedResults = {
+        2,
+        1,
+        0,
+    };
 
     public static void Validate(boolean printSuccess)
     {

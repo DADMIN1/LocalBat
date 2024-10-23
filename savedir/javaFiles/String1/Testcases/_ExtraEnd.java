@@ -9,7 +9,11 @@ public class _ExtraEnd
         "extraEnd(\"Hi\")",
     };
 
-    static String[] expectedResults = { "lololo", "ababab", "HiHiHi", };
+    static String[] expectedResults = {
+        "lololo",
+        "ababab",
+        "HiHiHi",
+    };
 
     public static void Validate(boolean printSuccess)
     {

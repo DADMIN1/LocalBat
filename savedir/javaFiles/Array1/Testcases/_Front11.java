@@ -10,7 +10,11 @@ public class _Front11
         "front11([1, 7], [])",
     };
 
-    static int[][] expectedResults = { {1, 7}, {1, 2}, {1}, };
+    static int[][] expectedResults = {
+        {1, 7},
+        {1, 2},
+        {1},
+    };
 
     public static String printArray(int[] array)
     {

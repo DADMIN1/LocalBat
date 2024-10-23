@@ -9,7 +9,11 @@ public class _SplitArray
         "splitArray([5, 2, 3])",
     };
 
-    static boolean[] expectedResults = { true, false, true, };
+    static boolean[] expectedResults = {
+        true,
+        false,
+        true,
+    };
 
     public static void Validate(boolean printSuccess)
     {

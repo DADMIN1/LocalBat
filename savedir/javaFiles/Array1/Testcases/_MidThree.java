@@ -10,7 +10,11 @@ public class _MidThree
         "midThree([1, 2, 3])",
     };
 
-    static int[][] expectedResults = { {2, 3, 4}, {7, 5, 3}, {1, 2, 3}, };
+    static int[][] expectedResults = {
+        {2, 3, 4},
+        {7, 5, 3},
+        {1, 2, 3},
+    };
 
     public static String printArray(int[] array)
     {

@@ -9,7 +9,7 @@ public class InOrderEqual
     with the exception that if "equalOk" is true, equality is allowed, 
     such as 5 5 7 or 5 5 5. */
 
-    /*_______________________________________
+    /*______________________________________
     |               Testcases               |
     |_______________________________________|
     | inOrderEqual(2, 5, 11, false) → true  |

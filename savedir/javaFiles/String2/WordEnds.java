@@ -9,7 +9,7 @@ public class WordEnds
     Ignore cases where there is no char before or after the word, 
     and a char may be included twice if it is between two words. */
 
-    /*__________________________________________
+    /*_________________________________________
     |                Testcases                 |
     |__________________________________________|
     | wordEnds("abcXY123XYijk", "XY") → "c13i" |

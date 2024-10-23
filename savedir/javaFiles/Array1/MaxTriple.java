@@ -8,7 +8,7 @@ public class MaxTriple
     last, and middle values in the array and return the largest. 
     The array length will be a least 1. */
 
-    /*__________________________
+    /*_________________________
     |        Testcases         |
     |__________________________|
     | maxTriple([1, 2, 3]) → 3 |

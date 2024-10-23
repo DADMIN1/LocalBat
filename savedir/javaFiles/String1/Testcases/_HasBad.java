@@ -9,7 +9,11 @@ public class _HasBad
         "hasBad(\"xxbadxx\")",
     };
 
-    static boolean[] expectedResults = { true, true, false, };
+    static boolean[] expectedResults = {
+        true,
+        true,
+        false,
+    };
 
     public static void Validate(boolean printSuccess)
     {

@@ -10,7 +10,7 @@ public class MaxMod5
     if the two values are the same, return 0. Note: 
     the % "mod" operator computes the remainder, e.g. 7 % 5 is 2. */
 
-    /*___________________
+    /*__________________
     |     Testcases     |
     |___________________|
     | maxMod5(2, 3) → 3 |

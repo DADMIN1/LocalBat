@@ -6,7 +6,7 @@ public class No23
 {
     /* Given an int array length 2, return true if it does not contain a 2 or 3. */
 
-    /*______________________
+    /*_____________________
     |      Testcases       |
     |______________________|
     | no23([4, 5]) → true  |

@@ -9,7 +9,11 @@ public class _AllStar
         "allStar(\"ab\")",
     };
 
-    static String[] expectedResults = { "h*e*l*l*o", "a*b*c", "a*b", };
+    static String[] expectedResults = {
+        "h*e*l*l*o",
+        "a*b*c",
+        "a*b",
+    };
 
     public static void Validate(boolean printSuccess)
     {

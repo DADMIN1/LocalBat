@@ -3,7 +3,6 @@ package Map2;
 import Map2.Testcases._Word0;
 
 import java.util.Map;
-import java.util.HashMap;
 
 public class Word0
 {
@@ -11,7 +10,7 @@ public class Word0
     always with the value 0. For example the string "hello" makes the pair "hello":0. 
     We'll do more complicated counting later, but for this problem the value is simply 0. */
 
-    /*_____________________________________________________________
+    /*____________________________________________________________
     |                          Testcases                          |
     |_____________________________________________________________|
     | word0(["a", "b", "a", "b"])      → {"a": 0, "b": 0}         |

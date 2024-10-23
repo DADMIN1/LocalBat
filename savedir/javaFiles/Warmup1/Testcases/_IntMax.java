@@ -9,7 +9,11 @@ public class _IntMax
         "intMax(3, 2, 1)",
     };
 
-    static int[] expectedResults = { 3, 3, 3, };
+    static int[] expectedResults = {
+        3,
+        3,
+        3,
+    };
 
     public static void Validate(boolean printSuccess)
     {

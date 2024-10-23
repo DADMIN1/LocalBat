@@ -3,14 +3,12 @@ package Functional1;
 import Functional1.Testcases._Copies3;
 
 import java.util.List;
-import java.util.Arrays;
-import java.util.ArrayList;
 
 public class Copies3
 {
     /* Given a list of strings, return a list where each string is replaced by 3 copies of the string concatenated together. */
 
-    /*______________________________________________________________________
+    /*_____________________________________________________________________
     |                              Testcases                               |
     |______________________________________________________________________|
     | copies3(["a", "bb", "ccc"]) → ["aaa", "bbbbbb", "ccccccccc"]         |

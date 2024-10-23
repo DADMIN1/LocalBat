@@ -7,7 +7,7 @@ public class SumDouble
     /* Given two int values, return their sum. Unless the two values are the same, 
     then return double their sum. */
 
-    /*_____________________
+    /*____________________
     |      Testcases      |
     |_____________________|
     | sumDouble(1, 2) → 3 |

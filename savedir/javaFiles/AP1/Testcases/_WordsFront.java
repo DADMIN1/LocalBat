@@ -10,7 +10,11 @@ public class _WordsFront
         "wordsFront([\"a\", \"b\", \"c\", \"d\"], 3)",
     };
 
-    static String[][] expectedResults = { {"a"}, {"a", "b"}, {"a", "b", "c"}, };
+    static String[][] expectedResults = {
+        {"a"},
+        {"a", "b"},
+        {"a", "b", "c"},
+    };
 
     public static String printArray(String[] array)
     {

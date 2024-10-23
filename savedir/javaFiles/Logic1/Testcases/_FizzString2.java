@@ -9,7 +9,11 @@ public class _FizzString2
         "fizzString2(3)",
     };
 
-    static String[] expectedResults = { "1!", "2!", "Fizz!", };
+    static String[] expectedResults = {
+        "1!",
+        "2!",
+        "Fizz!",
+    };
 
     public static void Validate(boolean printSuccess)
     {

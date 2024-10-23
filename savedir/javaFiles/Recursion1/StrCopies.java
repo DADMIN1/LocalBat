@@ -8,7 +8,7 @@ public class StrCopies
     compute recursively if at least n copies of sub appear in the string somewhere, 
     possibly with overlapping. N will be non-negative. */
 
-    /*__________________________________________
+    /*_________________________________________
     |                Testcases                 |
     |__________________________________________|
     | strCopies("catcowcat", "cat", 2) → true  |

@@ -10,7 +10,11 @@ public class _AllSwap
         "allSwap([\"ax\", \"bx\", \"ay\", \"by\", \"ai\", \"aj\", \"bx\", \"by\"])",
     };
 
-    static String[][] expectedResults = { {"ac", "ab"}, {"ay", "by", "cy", "cx", "bx", "ax", "azz", "aaa"}, {"ay", "by", "ax", "bx", "aj", "ai", "by", "bx"}, };
+    static String[][] expectedResults = {
+        {"ac", "ab"},
+        {"ay", "by", "cy", "cx", "bx", "ax", "azz", "aaa"},
+        {"ay", "by", "ax", "bx", "aj", "ai", "by", "bx"},
+    };
 
     public static String printArray(String[] array)
     {

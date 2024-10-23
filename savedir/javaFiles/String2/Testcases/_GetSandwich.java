@@ -9,7 +9,11 @@ public class _GetSandwich
         "getSandwich(\"xxbreadyy\")",
     };
 
-    static String[] expectedResults = { "jam", "jam", "", };
+    static String[] expectedResults = {
+        "jam",
+        "jam",
+        "",
+    };
 
     public static void Validate(boolean printSuccess)
     {

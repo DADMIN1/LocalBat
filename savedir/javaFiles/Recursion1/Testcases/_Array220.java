@@ -9,7 +9,11 @@ public class _Array220
         "array220([3], 0)",
     };
 
-    static boolean[] expectedResults = { true, true, false, };
+    static boolean[] expectedResults = {
+        true,
+        true,
+        false,
+    };
 
     public static void Validate(boolean printSuccess)
     {

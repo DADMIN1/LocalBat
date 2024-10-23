@@ -3,7 +3,6 @@ package Map2;
 import Map2.Testcases._FirstChar;
 
 import java.util.Map;
-import java.util.HashMap;
 
 public class FirstChar
 {
@@ -11,7 +10,7 @@ public class FirstChar
     String> with a key for every different first character seen, 
     with the value of all the strings starting with that character appended together in the order they appear in the array. */
 
-    /*______________________________________________________________________________________________________
+    /*_____________________________________________________________________________________________________
     |                                              Testcases                                               |
     |______________________________________________________________________________________________________|
     | firstChar(["salt", "tea", "soda", "toast"])      → {"s": "saltsoda", "t": "teatoast"}                |

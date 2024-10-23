@@ -8,7 +8,7 @@ public class StartOz
     however include first char only if it is 'o' and include the second only if it is 'z', 
     so "ozymandias" yields "oz". */
 
-    /*______________________________
+    /*_____________________________
     |          Testcases           |
     |______________________________|
     | startOz("ozymandias") → "oz" |

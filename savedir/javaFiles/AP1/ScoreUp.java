@@ -10,7 +10,7 @@ public class ScoreUp
     Return the score for this array of answers, giving +4 for each correct answer, 
     -1 for each incorrect answer, and +0 for each blank answer. */
 
-    /*__________________________________________________________
+    /*_________________________________________________________
     |                        Testcases                         |
     |__________________________________________________________|
     | scoreUp(["a", "a", "b", "b"], ["a", "c", "b", "c"]) → 6  |

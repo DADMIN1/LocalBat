@@ -6,7 +6,7 @@ public class LessBy10
 {
     /* Given three ints, a b c, return true if one of them is 10 or more less than one of the others. */
 
-    /*____________________________
+    /*___________________________
     |         Testcases          |
     |____________________________|
     | lessBy10(1, 7, 11) → true  |

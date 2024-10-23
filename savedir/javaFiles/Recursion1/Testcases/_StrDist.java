@@ -9,7 +9,11 @@ public class _StrDist
         "strDist(\"cccatcowcatxx\", \"cat\")",
     };
 
-    static int[] expectedResults = { 9, 3, 9, };
+    static int[] expectedResults = {
+        9,
+        3,
+        9,
+    };
 
     public static void Validate(boolean printSuccess)
     {

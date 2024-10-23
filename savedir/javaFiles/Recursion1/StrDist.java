@@ -7,7 +7,7 @@ public class StrDist
     /* Given a string and a non-empty substring sub, 
     compute recursively the largest substring which starts and ends with sub and return its length. */
 
-    /*_____________________________________
+    /*____________________________________
     |              Testcases              |
     |_____________________________________|
     | strDist("catcowcat", "cat")     → 9 |

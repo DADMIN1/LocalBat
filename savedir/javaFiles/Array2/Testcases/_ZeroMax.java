@@ -10,7 +10,11 @@ public class _ZeroMax
         "zeroMax([0, 1, 0])",
     };
 
-    static int[][] expectedResults = { {5, 5, 3, 3}, {3, 4, 3, 3}, {1, 1, 0}, };
+    static int[][] expectedResults = {
+        {5, 5, 3, 3},
+        {3, 4, 3, 3},
+        {1, 1, 0},
+    };
 
     public static String printArray(int[] array)
     {

@@ -9,7 +9,11 @@ public class _WordsCount
         "wordsCount([\"a\", \"bb\", \"b\", \"ccc\"], 4)",
     };
 
-    static int[] expectedResults = { 2, 1, 0, };
+    static int[] expectedResults = {
+        2,
+        1,
+        0,
+    };
 
     public static void Validate(boolean printSuccess)
     {

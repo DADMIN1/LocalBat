@@ -6,7 +6,7 @@ public class IntMax
 {
     /* Given three int values, a b c, return the largest. */
 
-    /*_____________________
+    /*____________________
     |      Testcases      |
     |_____________________|
     | intMax(1, 2, 3) → 3 |

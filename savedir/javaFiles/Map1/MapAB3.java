@@ -3,7 +3,6 @@ package Map1;
 import Map1.Testcases._MapAB3;
 
 import java.util.Map;
-import java.util.HashMap;
 
 public class MapAB3
 {
@@ -11,7 +10,7 @@ public class MapAB3
     if exactly one of the keys "a" or "b" has a value in the map (but not both), 
     set the other to have that same value in the map. */
 
-    /*_______________________________________________________________________________________
+    /*______________________________________________________________________________________
     |                                       Testcases                                       |
     |_______________________________________________________________________________________|
     | mapAB3({"a": "aaa", "c": "cake"})             → {"a": "aaa", "b": "aaa", "c": "cake"} |

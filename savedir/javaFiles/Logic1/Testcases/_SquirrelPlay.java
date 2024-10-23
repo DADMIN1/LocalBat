@@ -9,7 +9,11 @@ public class _SquirrelPlay
         "squirrelPlay(95, true)",
     };
 
-    static boolean[] expectedResults = { true, false, true, };
+    static boolean[] expectedResults = {
+        true,
+        false,
+        true,
+    };
 
     public static void Validate(boolean printSuccess)
     {

@@ -13,7 +13,7 @@ public class ScoresAverage
     Write your helper method after your scoresAverage() method in the JavaBat text area. 
     Normally you would compute averages with doubles, but here we use ints so the expected results are exact. */
 
-    /*_______________________________________
+    /*______________________________________
     |               Testcases               |
     |_______________________________________|
     | scoresAverage([2, 2, 4, 4])       → 4 |

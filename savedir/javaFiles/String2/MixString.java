@@ -8,7 +8,7 @@ public class MixString
     the first char of b, the second char of a, the second char of b, 
     and so on. Any leftover chars go at the end of the result. */
 
-    /*__________________________________________
+    /*_________________________________________
     |                Testcases                 |
     |__________________________________________|
     | mixString("abc", "xyz")    → "axbycz"    |

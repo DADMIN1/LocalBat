@@ -9,7 +9,11 @@ public class _MakeChocolate
         "makeChocolate(4, 1, 7)",
     };
 
-    static int[] expectedResults = { 4, -1, 2, };
+    static int[] expectedResults = {
+        4,
+        -1,
+        2,
+    };
 
     public static void Validate(boolean printSuccess)
     {

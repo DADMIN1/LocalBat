@@ -8,7 +8,7 @@ public class NotString
     However, if the string already begins with "not", return the string unchanged. 
     Note: use .equals() to compare 2 strings. */
 
-    /*____________________________________
+    /*___________________________________
     |             Testcases              |
     |____________________________________|
     | notString("candy")   → "not candy" |

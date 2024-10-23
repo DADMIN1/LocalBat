@@ -11,7 +11,11 @@ public class _Two2
         "two2([0])",
     };
 
-    static List<Integer>[] expectedResults = { Arrays.asList(4, 6), Arrays.asList(4), Arrays.asList(0), };
+    static List<Integer>[] expectedResults = {
+        Arrays.asList(4, 6),
+        Arrays.asList(4),
+        Arrays.asList(0),
+    };
 
     public static void Validate(boolean printSuccess)
     {

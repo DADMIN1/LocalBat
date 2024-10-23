@@ -9,7 +9,11 @@ public class _SeeColor
         "seeColor(\"blueTimes\")",
     };
 
-    static String[] expectedResults = { "red", "", "blue", };
+    static String[] expectedResults = {
+        "red",
+        "",
+        "blue",
+    };
 
     public static void Validate(boolean printSuccess)
     {

@@ -9,7 +9,11 @@ public class _Blackjack
         "blackjack(19, 22)",
     };
 
-    static int[] expectedResults = { 21, 21, 19, };
+    static int[] expectedResults = {
+        21,
+        21,
+        19,
+    };
 
     public static void Validate(boolean printSuccess)
     {

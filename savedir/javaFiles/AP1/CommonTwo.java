@@ -9,7 +9,7 @@ public class CommonTwo
     The best "linear" solution makes a single pass over both arrays, 
     taking advantage of the fact that they are in alphabetical order. */
 
-    /*___________________________________________________________
+    /*__________________________________________________________
     |                         Testcases                         |
     |___________________________________________________________|
     | commonTwo(["a", "c", "x"], ["b", "c", "d", "x"])      → 2 |

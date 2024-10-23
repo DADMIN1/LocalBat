@@ -8,7 +8,7 @@ public class MonkeyTrouble
     We are in trouble if they are both smiling or if neither of them is smiling. 
     Return true if we are in trouble. */
 
-    /*_____________________________________
+    /*____________________________________
     |              Testcases              |
     |_____________________________________|
     | monkeyTrouble(true, true)   → true  |

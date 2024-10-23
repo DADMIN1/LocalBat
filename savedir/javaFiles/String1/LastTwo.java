@@ -7,7 +7,7 @@ public class LastTwo
     /* Given a string of any length, return a new string where the last 2 chars, 
     if present, are swapped, so "coding" yields "codign". */
 
-    /*______________________________
+    /*_____________________________
     |          Testcases           |
     |______________________________|
     | lastTwo("coding") → "codign" |

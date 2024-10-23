@@ -9,7 +9,11 @@ public class _StringBits
         "stringBits(\"Heeololeo\")",
     };
 
-    static String[] expectedResults = { "Hlo", "H", "Hello", };
+    static String[] expectedResults = {
+        "Hlo",
+        "H",
+        "Hello",
+    };
 
     public static void Validate(boolean printSuccess)
     {

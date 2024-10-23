@@ -7,7 +7,7 @@ public class ArrayFront9
     /* Given an array of ints, return true if one of the first 4 elements in the array is a 9. 
     The array length may be less than 4. */
 
-    /*______________________________________
+    /*_____________________________________
     |              Testcases               |
     |______________________________________|
     | arrayFront9([1, 2, 9, 3, 4]) → true  |

@@ -9,7 +9,11 @@ public class _RepeatFront
         "repeatFront(\"Ice Cream\", 2)",
     };
 
-    static String[] expectedResults = { "ChocChoChC", "ChoChC", "IcI", };
+    static String[] expectedResults = {
+        "ChocChoChC",
+        "ChoChC",
+        "IcI",
+    };
 
     public static void Validate(boolean printSuccess)
     {

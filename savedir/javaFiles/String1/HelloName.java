@@ -7,7 +7,7 @@ public class HelloName
     /* Given a string name, e.g. "Bob", 
     return a greeting of the form "Hello Bob!". */
 
-    /*_____________________________________
+    /*____________________________________
     |              Testcases              |
     |_____________________________________|
     | helloName("Bob")   → "Hello Bob!"   |

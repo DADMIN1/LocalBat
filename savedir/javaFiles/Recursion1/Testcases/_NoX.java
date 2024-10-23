@@ -9,7 +9,11 @@ public class _NoX
         "noX(\"xx\")",
     };
 
-    static String[] expectedResults = { "ab", "abc", "", };
+    static String[] expectedResults = {
+        "ab",
+        "abc",
+        "",
+    };
 
     public static void Validate(boolean printSuccess)
     {

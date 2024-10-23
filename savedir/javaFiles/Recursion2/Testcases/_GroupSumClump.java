@@ -9,7 +9,11 @@ public class _GroupSumClump
         "groupSumClump(0, [2, 4, 4, 8], 14)",
     };
 
-    static boolean[] expectedResults = { true, true, false, };
+    static boolean[] expectedResults = {
+        true,
+        true,
+        false,
+    };
 
     public static void Validate(boolean printSuccess)
     {

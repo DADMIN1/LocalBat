@@ -9,7 +9,7 @@ public class WithoutString
     You may assume that the remove string is length 1 or more. 
     Remove only non-overlapping instances, so with "xxx" removing "xx" leaves "x". */
 
-    /*_____________________________________________________
+    /*____________________________________________________
     |                      Testcases                      |
     |_____________________________________________________|
     | withoutString("Hello there", "llo") → "He there"    |

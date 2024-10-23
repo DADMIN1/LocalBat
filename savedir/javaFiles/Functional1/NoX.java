@@ -3,14 +3,12 @@ package Functional1;
 import Functional1.Testcases._NoX;
 
 import java.util.List;
-import java.util.Arrays;
-import java.util.ArrayList;
 
 public class NoX
 {
     /* Given a list of strings, return a list where each string has all its "x" removed. */
 
-    /*___________________________________________________
+    /*__________________________________________________
     |                     Testcases                     |
     |___________________________________________________|
     | noX(["ax", "bb", "cx"])        → ["a", "bb", "c"] |

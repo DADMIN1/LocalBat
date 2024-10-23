@@ -8,7 +8,7 @@ public class In1To10
     inclusive. Unless outsideMode is true, in which case return true if the number is less or equal to 1, 
     or greater or equal to 10. */
 
-    /*____________________________
+    /*___________________________
     |         Testcases          |
     |____________________________|
     | in1To10(5, false)  → true  |

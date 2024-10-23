@@ -11,7 +11,11 @@ public class _MoreY
         "moreY([\"yay\"])",
     };
 
-    static List<String>[] expectedResults = { Arrays.asList("yay", "yby", "ycy"), Arrays.asList("yhelloy", "ytherey"), Arrays.asList("yyayy"), };
+    static List<String>[] expectedResults = {
+        Arrays.asList("yay", "yby", "ycy"),
+        Arrays.asList("yhelloy", "ytherey"),
+        Arrays.asList("yyayy"),
+    };
 
     public static void Validate(boolean printSuccess)
     {

@@ -9,7 +9,7 @@ public class Fix34
     Do not move the 3's, but every other number may move. The array contains the same number of 3's and 4's, 
     every 3 has a number after it that is not a 3, and a 3 appears in the array before any 4. */
 
-    /*______________________________________________________
+    /*_____________________________________________________
     |                      Testcases                       |
     |______________________________________________________|
     | fix34([1, 3, 1, 4])          → [1, 3, 4, 1]          |

@@ -9,7 +9,11 @@ public class _Lucky13
         "lucky13([1, 2, 4])",
     };
 
-    static boolean[] expectedResults = { true, false, false, };
+    static boolean[] expectedResults = {
+        true,
+        false,
+        false,
+    };
 
     public static void Validate(boolean printSuccess)
     {

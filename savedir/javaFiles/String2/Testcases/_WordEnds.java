@@ -9,7 +9,11 @@ public class _WordEnds
         "wordEnds(\"XY1XY\", \"XY\")",
     };
 
-    static String[] expectedResults = { "c13i", "13", "11", };
+    static String[] expectedResults = {
+        "c13i",
+        "13",
+        "11",
+    };
 
     public static void Validate(boolean printSuccess)
     {

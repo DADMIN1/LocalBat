@@ -3,7 +3,6 @@ package Map2;
 import Map2.Testcases._WordCount;
 
 import java.util.Map;
-import java.util.HashMap;
 
 public class WordCount
 {
@@ -11,7 +10,7 @@ public class WordCount
     return a Map<String, Integer> with a key for each different string, 
     with the value the number of times that string appears in the array. */
 
-    /*_________________________________________________________________
+    /*________________________________________________________________
     |                            Testcases                            |
     |_________________________________________________________________|
     | wordCount(["a", "b", "a", "c", "b"]) → {"a": 2, "b": 2, "c": 1} |

@@ -7,7 +7,7 @@ public class WordsFront
     /* Given an array of strings, return a new array containing the first N strings. 
     N will be in the range 1..length. */
 
-    /*_______________________________________________________
+    /*______________________________________________________
     |                       Testcases                       |
     |_______________________________________________________|
     | wordsFront(["a", "b", "c", "d"], 1) → ["a"]           |

@@ -8,7 +8,7 @@ public class MaxEnd3
     the first or last element in the array, and set all the other elements to be that value. 
     Return the changed array. */
 
-    /*____________________________________
+    /*___________________________________
     |             Testcases              |
     |____________________________________|
     | maxEnd3([1, 2, 3])  → [3, 3, 3]    |

@@ -7,7 +7,7 @@ public class SameStarChar
     /* Returns true if for every '*' (star) in the string, if there are chars both immediately before and after the star, 
     they are the same. */
 
-    /*________________________________
+    /*_______________________________
     |           Testcases            |
     |________________________________|
     | sameStarChar("xy*yzz") → true  |

@@ -6,7 +6,7 @@ public class AllStar
 {
     /* Given a string, compute recursively a new string where all the adjacent chars are now separated by a "*". */
 
-    /*________________________________
+    /*_______________________________
     |           Testcases            |
     |________________________________|
     | allStar("hello") → "h*e*l*l*o" |

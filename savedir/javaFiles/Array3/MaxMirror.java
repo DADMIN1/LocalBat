@@ -9,7 +9,7 @@ public class MaxMirror
     2, 3, 8, 9, 3, 2, 1} is length 3 (the {1, 2, 3} part). 
     Return the size of the largest mirror section found in the given array. */
 
-    /*_________________________________________
+    /*________________________________________
     |                Testcases                |
     |_________________________________________|
     | maxMirror([1, 2, 3, 8, 9, 3, 2, 1]) → 3 |

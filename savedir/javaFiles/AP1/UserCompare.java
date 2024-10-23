@@ -12,7 +12,7 @@ public class UserCompare
     (On the AP, there would be two User objects, but here the code simply takes the two strings and two ints directly. 
     The code logic is the same.) */
 
-    /*____________________________________
+    /*___________________________________
     |             Testcases              |
     |____________________________________|
     | userCompare("bb", 1, "zz", 2) → -1 |

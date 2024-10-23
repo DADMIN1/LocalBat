@@ -3,7 +3,6 @@ package Map1;
 import Map1.Testcases._MapBully;
 
 import java.util.Map;
-import java.util.HashMap;
 
 public class MapBully
 {
@@ -11,7 +10,7 @@ public class MapBully
     set the key "b" to have that value, and set the key "a" to have the value "". 
     Basically "b" is a bully, taking the value and replacing it with the empty string. */
 
-    /*___________________________________________________________________________________________
+    /*__________________________________________________________________________________________
     |                                         Testcases                                         |
     |___________________________________________________________________________________________|
     | mapBully({"a": "candy", "b": "dirt"})               → {"a": "", "b": "candy"}             |

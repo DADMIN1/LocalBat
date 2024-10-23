@@ -10,7 +10,11 @@ public class _Post4
         "post4([4, 4, 1, 2, 3])",
     };
 
-    static int[][] expectedResults = { {1, 2}, {2}, {1, 2, 3}, };
+    static int[][] expectedResults = {
+        {1, 2},
+        {2},
+        {1, 2, 3},
+    };
 
     public static String printArray(int[] array)
     {

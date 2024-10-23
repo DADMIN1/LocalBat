@@ -9,7 +9,7 @@ public class CountYZ
     We'll say that a y or z is at the end of a word if there is not an alphabetic letter immediately following it. 
     (Note: Character.isLetter(char) tests if a char is an alphabetic letter.) */
 
-    /*__________________________
+    /*_________________________
     |        Testcases         |
     |__________________________|
     | countYZ("fez day")   → 2 |

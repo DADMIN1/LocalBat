@@ -9,7 +9,11 @@ public class _Front22
         "front22(\"abc\")",
     };
 
-    static String[] expectedResults = { "kikittenki", "HaHaHa", "ababcab", };
+    static String[] expectedResults = {
+        "kikittenki",
+        "HaHaHa",
+        "ababcab",
+    };
 
     public static void Validate(boolean printSuccess)
     {

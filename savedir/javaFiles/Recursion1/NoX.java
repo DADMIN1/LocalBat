@@ -6,7 +6,7 @@ public class NoX
 {
     /* Given a string, compute recursively a new string where all the 'x' chars have been removed. */
 
-    /*_____________________
+    /*____________________
     |      Testcases      |
     |_____________________|
     | noX("xaxb") → "ab"  |

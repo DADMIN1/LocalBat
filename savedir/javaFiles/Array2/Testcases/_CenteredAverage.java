@@ -9,7 +9,11 @@ public class _CenteredAverage
         "centeredAverage([-10, -4, -2, -4, -2, 0])",
     };
 
-    static int[] expectedResults = { 3, 5, -3, };
+    static int[] expectedResults = {
+        3,
+        5,
+        -3,
+    };
 
     public static void Validate(boolean printSuccess)
     {

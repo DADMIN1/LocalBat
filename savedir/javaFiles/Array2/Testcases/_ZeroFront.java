@@ -10,7 +10,11 @@ public class _ZeroFront
         "zeroFront([1, 0])",
     };
 
-    static int[][] expectedResults = { {0, 0, 1, 1}, {0, 0, 1, 1, 1}, {0, 1}, };
+    static int[][] expectedResults = {
+        {0, 0, 1, 1},
+        {0, 0, 1, 1, 1},
+        {0, 1},
+    };
 
     public static String printArray(int[] array)
     {

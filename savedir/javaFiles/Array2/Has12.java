@@ -6,7 +6,7 @@ public class Has12
 {
     /* Given an array of ints, return true if there is a 1 in the array with a 2 somewhere later in the array. */
 
-    /*_______________________________
+    /*______________________________
     |           Testcases           |
     |_______________________________|
     | has12([1, 3, 2])       → true |

@@ -7,7 +7,7 @@ public class RepeatSeparator
     /* Given two strings, word and a separator sep, return a big string made of count occurrences of the word, 
     separated by the separator string. */
 
-    /*______________________________________________________
+    /*_____________________________________________________
     |                      Testcases                       |
     |______________________________________________________|
     | repeatSeparator("Word", "X", 3)   → "WordXWordXWord" |

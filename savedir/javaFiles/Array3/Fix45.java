@@ -10,7 +10,7 @@ public class Fix45
     and every 4 has a number after it that is not a 4. In this version, 
     5's may appear anywhere in the original array. */
 
-    /*______________________________________________________
+    /*_____________________________________________________
     |                      Testcases                       |
     |______________________________________________________|
     | fix45([5, 4, 9, 4, 9, 5])    → [9, 4, 5, 4, 5, 9]    |

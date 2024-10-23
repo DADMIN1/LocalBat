@@ -9,7 +9,11 @@ public class _SortaSum
         "sortaSum(10, 11)",
     };
 
-    static int[] expectedResults = { 7, 20, 21, };
+    static int[] expectedResults = {
+        7,
+        20,
+        21,
+    };
 
     public static void Validate(boolean printSuccess)
     {

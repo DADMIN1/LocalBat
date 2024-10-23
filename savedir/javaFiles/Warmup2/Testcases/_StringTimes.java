@@ -9,7 +9,11 @@ public class _StringTimes
         "stringTimes(\"Hi\", 1)",
     };
 
-    static String[] expectedResults = { "HiHi", "HiHiHi", "Hi", };
+    static String[] expectedResults = {
+        "HiHi",
+        "HiHiHi",
+        "Hi",
+    };
 
     public static void Validate(boolean printSuccess)
     {

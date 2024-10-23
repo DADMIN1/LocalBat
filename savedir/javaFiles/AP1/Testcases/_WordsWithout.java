@@ -10,7 +10,11 @@ public class _WordsWithout
         "wordsWithout([\"a\", \"b\", \"c\", \"a\"], \"c\")",
     };
 
-    static String[][] expectedResults = { {"b", "c"}, {"a", "c", "a"}, {"a", "b", "a"}, };
+    static String[][] expectedResults = {
+        {"b", "c"},
+        {"a", "c", "a"},
+        {"a", "b", "a"},
+    };
 
     public static String printArray(String[] array)
     {

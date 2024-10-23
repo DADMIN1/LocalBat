@@ -9,7 +9,11 @@ public class _Has77
         "has77([1, 7, 1, 1, 7])",
     };
 
-    static boolean[] expectedResults = { true, true, false, };
+    static boolean[] expectedResults = {
+        true,
+        true,
+        false,
+    };
 
     public static void Validate(boolean printSuccess)
     {

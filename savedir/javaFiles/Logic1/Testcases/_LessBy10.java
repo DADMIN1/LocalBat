@@ -9,7 +9,11 @@ public class _LessBy10
         "lessBy10(11, 1, 7)",
     };
 
-    static boolean[] expectedResults = { true, false, true, };
+    static boolean[] expectedResults = {
+        true,
+        false,
+        true,
+    };
 
     public static void Validate(boolean printSuccess)
     {

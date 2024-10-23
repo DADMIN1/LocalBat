@@ -9,7 +9,11 @@ public class _DeFront
         "deFront(\"away\")",
     };
 
-    static String[] expectedResults = { "llo", "va", "aay", };
+    static String[] expectedResults = {
+        "llo",
+        "va",
+        "aay",
+    };
 
     public static void Validate(boolean printSuccess)
     {

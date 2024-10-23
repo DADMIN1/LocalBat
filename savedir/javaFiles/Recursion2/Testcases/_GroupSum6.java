@@ -9,7 +9,11 @@ public class _GroupSum6
         "groupSum6(0, [5, 6, 2], 7)",
     };
 
-    static boolean[] expectedResults = { true, false, false, };
+    static boolean[] expectedResults = {
+        true,
+        false,
+        false,
+    };
 
     public static void Validate(boolean printSuccess)
     {

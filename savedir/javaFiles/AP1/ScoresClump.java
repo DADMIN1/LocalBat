@@ -8,7 +8,7 @@ public class ScoresClump
     return true if the array contains 3 adjacent scores that differ from each other by at most 2, 
     such as with {3, 4, 5} or {3, 5, 5}. */
 
-    /*___________________________________
+    /*__________________________________
     |             Testcases             |
     |___________________________________|
     | scoresClump([3, 4, 5])    → true  |

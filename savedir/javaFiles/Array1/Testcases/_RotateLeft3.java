@@ -10,7 +10,11 @@ public class _RotateLeft3
         "rotateLeft3([7, 0, 0])",
     };
 
-    static int[][] expectedResults = { {2, 3, 1}, {11, 9, 5}, {0, 0, 7}, };
+    static int[][] expectedResults = {
+        {2, 3, 1},
+        {11, 9, 5},
+        {0, 0, 7},
+    };
 
     public static String printArray(int[] array)
     {

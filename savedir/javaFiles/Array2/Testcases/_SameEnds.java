@@ -9,7 +9,11 @@ public class _SameEnds
         "sameEnds([5, 6, 45, 99, 13, 5, 6], 3)",
     };
 
-    static boolean[] expectedResults = { false, true, false, };
+    static boolean[] expectedResults = {
+        false,
+        true,
+        false,
+    };
 
     public static void Validate(boolean printSuccess)
     {

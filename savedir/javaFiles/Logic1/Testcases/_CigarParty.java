@@ -9,7 +9,11 @@ public class _CigarParty
         "cigarParty(70, true)",
     };
 
-    static boolean[] expectedResults = { false, true, true, };
+    static boolean[] expectedResults = {
+        false,
+        true,
+        true,
+    };
 
     public static void Validate(boolean printSuccess)
     {

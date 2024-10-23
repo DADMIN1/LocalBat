@@ -9,7 +9,11 @@ public class _MatchUp
         "matchUp([\"aa\", \"bb\", \"cc\"], [\"\", \"\", \"ccc\"])",
     };
 
-    static int[] expectedResults = { 1, 2, 1, };
+    static int[] expectedResults = {
+        1,
+        2,
+        1,
+    };
 
     public static void Validate(boolean printSuccess)
     {

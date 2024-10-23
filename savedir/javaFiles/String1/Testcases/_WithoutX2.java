@@ -9,7 +9,11 @@ public class _WithoutX2
         "withoutX2(\"Hi\")",
     };
 
-    static String[] expectedResults = { "Hi", "Hi", "Hi", };
+    static String[] expectedResults = {
+        "Hi",
+        "Hi",
+        "Hi",
+    };
 
     public static void Validate(boolean printSuccess)
     {

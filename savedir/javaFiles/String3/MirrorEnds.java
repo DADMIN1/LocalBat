@@ -9,7 +9,7 @@ public class MirrorEnds
     and at the very end of the string in reverse order (possibly overlapping). 
     For example, the string "abXYZba" has the mirror end "ab". */
 
-    /*_______________________________
+    /*______________________________
     |           Testcases           |
     |_______________________________|
     | mirrorEnds("abXYZba") → "ab"  |

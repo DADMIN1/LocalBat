@@ -9,7 +9,11 @@ public class _Either24
         "either24([4, 4, 1, 2, 2])",
     };
 
-    static boolean[] expectedResults = { true, true, false, };
+    static boolean[] expectedResults = {
+        true,
+        true,
+        false,
+    };
 
     public static void Validate(boolean printSuccess)
     {

@@ -9,7 +9,11 @@ public class _NoTriples
         "noTriples([1, 1, 1, 2, 2, 2, 1])",
     };
 
-    static boolean[] expectedResults = { true, false, false, };
+    static boolean[] expectedResults = {
+        true,
+        false,
+        false,
+    };
 
     public static void Validate(boolean printSuccess)
     {

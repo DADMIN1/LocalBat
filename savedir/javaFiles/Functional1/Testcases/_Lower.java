@@ -11,7 +11,11 @@ public class _Lower
         "lower([\"KitteN\", \"ChocolaTE\"])",
     };
 
-    static List<String>[] expectedResults = { Arrays.asList("hello", "hi"), Arrays.asList("aaa", "bbb", "ccc"), Arrays.asList("kitten", "chocolate"), };
+    static List<String>[] expectedResults = {
+        Arrays.asList("hello", "hi"),
+        Arrays.asList("aaa", "bbb", "ccc"),
+        Arrays.asList("kitten", "chocolate"),
+    };
 
     public static void Validate(boolean printSuccess)
     {

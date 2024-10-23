@@ -9,7 +9,11 @@ public class _LoneSum
         "loneSum(3, 3, 3)",
     };
 
-    static int[] expectedResults = { 6, 2, 0, };
+    static int[] expectedResults = {
+        6,
+        2,
+        0,
+    };
 
     public static void Validate(boolean printSuccess)
     {

@@ -9,7 +9,11 @@ public class _StringX
         "stringX(\"xabxxxcdx\")",
     };
 
-    static String[] expectedResults = { "xHix", "abcd", "xabcdx", };
+    static String[] expectedResults = {
+        "xHix",
+        "abcd",
+        "xabcdx",
+    };
 
     public static void Validate(boolean printSuccess)
     {

@@ -9,7 +9,11 @@ public class _ModThree
         "modThree([2, 4, 2, 5])",
     };
 
-    static boolean[] expectedResults = { true, false, true, };
+    static boolean[] expectedResults = {
+        true,
+        false,
+        true,
+    };
 
     public static void Validate(boolean printSuccess)
     {

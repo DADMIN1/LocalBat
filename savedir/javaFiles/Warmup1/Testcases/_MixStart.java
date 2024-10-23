@@ -9,7 +9,11 @@ public class _MixStart
         "mixStart(\"piz snacks\")",
     };
 
-    static boolean[] expectedResults = { true, true, false, };
+    static boolean[] expectedResults = {
+        true,
+        true,
+        false,
+    };
 
     public static void Validate(boolean printSuccess)
     {

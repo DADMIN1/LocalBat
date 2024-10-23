@@ -6,7 +6,7 @@ public class Makes10
 {
     /* Given 2 ints, a and b, return true if one if them is 10 or if their sum is 10. */
 
-    /*________________________
+    /*_______________________
     |       Testcases        |
     |________________________|
     | makes10(9, 10) → true  |

@@ -3,7 +3,6 @@ package Map1;
 import Map1.Testcases._MapShare;
 
 import java.util.Map;
-import java.util.HashMap;
 
 public class MapShare
 {
@@ -11,7 +10,7 @@ public class MapShare
     set the key "b" to have that same value. In all cases remove the key "c", 
     leaving the rest of the map unchanged. */
 
-    /*______________________________________________________________________________________
+    /*_____________________________________________________________________________________
     |                                      Testcases                                       |
     |______________________________________________________________________________________|
     | mapShare({"a": "aaa", "b": "bbb", "c": "ccc"}) → {"a": "aaa", "b": "aaa"}            |

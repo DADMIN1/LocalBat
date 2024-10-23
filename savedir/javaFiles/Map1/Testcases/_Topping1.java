@@ -10,7 +10,11 @@ public class _Topping1
         "topping1({\"pancake\": \"syrup\"})",
     };
 
-    static Map<String, String>[] expectedResults = { {"bread": "butter", "ice cream": "cherry"}, {"bread": "butter"}, {"bread": "butter", "pancake": "syrup"}, };
+    static Map<String, String>[] expectedResults = {
+        {"bread": "butter", "ice cream": "cherry"},
+        {"bread": "butter"},
+        {"bread": "butter", "pancake": "syrup"},
+    };
 
     public static void Validate(boolean printSuccess)
     {

@@ -11,7 +11,11 @@ public class _Math1
         "math1([10])",
     };
 
-    static List<Integer>[] expectedResults = { Arrays.asList(20, 30, 40), Arrays.asList(70, 90, 70, 90, 20), Arrays.asList(110), };
+    static List<Integer>[] expectedResults = {
+        Arrays.asList(20, 30, 40),
+        Arrays.asList(70, 90, 70, 90, 20),
+        Arrays.asList(110),
+    };
 
     public static void Validate(boolean printSuccess)
     {

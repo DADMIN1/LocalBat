@@ -8,7 +8,7 @@ public class EvenlySpaced
     Return true if the three values are evenly spaced, 
     so the difference between small and medium is the same as the difference between medium and large. */
 
-    /*_______________________________
+    /*______________________________
     |           Testcases           |
     |_______________________________|
     | evenlySpaced(2, 4, 6) → true  |

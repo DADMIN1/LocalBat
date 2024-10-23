@@ -9,7 +9,11 @@ public class _MaxMirror
         "maxMirror([7, 1, 2, 9, 7, 2, 1])",
     };
 
-    static int[] expectedResults = { 3, 3, 2, };
+    static int[] expectedResults = {
+        3,
+        3,
+        2,
+    };
 
     public static void Validate(boolean printSuccess)
     {

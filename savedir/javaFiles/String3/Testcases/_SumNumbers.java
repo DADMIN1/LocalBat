@@ -9,7 +9,11 @@ public class _SumNumbers
         "sumNumbers(\"7 11\")",
     };
 
-    static int[] expectedResults = { 123, 44, 18, };
+    static int[] expectedResults = {
+        123,
+        44,
+        18,
+    };
 
     public static void Validate(boolean printSuccess)
     {

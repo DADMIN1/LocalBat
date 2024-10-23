@@ -10,7 +10,11 @@ public class _SwapEnds
         "swapEnds([8, 6, 7, 9, 5])",
     };
 
-    static int[][] expectedResults = { {4, 2, 3, 1}, {3, 2, 1}, {5, 6, 7, 9, 8}, };
+    static int[][] expectedResults = {
+        {4, 2, 3, 1},
+        {3, 2, 1},
+        {5, 6, 7, 9, 8},
+    };
 
     public static String printArray(int[] array)
     {

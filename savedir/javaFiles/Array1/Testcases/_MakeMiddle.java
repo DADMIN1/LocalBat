@@ -10,7 +10,11 @@ public class _MakeMiddle
         "makeMiddle([1, 2])",
     };
 
-    static int[][] expectedResults = { {2, 3}, {2, 3}, {1, 2}, };
+    static int[][] expectedResults = {
+        {2, 3},
+        {2, 3},
+        {1, 2},
+    };
 
     public static String printArray(int[] array)
     {

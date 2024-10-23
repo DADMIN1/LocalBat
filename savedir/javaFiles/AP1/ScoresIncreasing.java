@@ -7,7 +7,7 @@ public class ScoresIncreasing
     /* Given an array of scores, return true if each score is equal or greater than the one before. 
     The array will be length 2 or more. */
 
-    /*_____________________________________
+    /*____________________________________
     |              Testcases              |
     |_____________________________________|
     | scoresIncreasing([1, 3, 4]) → true  |

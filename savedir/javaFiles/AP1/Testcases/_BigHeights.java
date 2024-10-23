@@ -9,7 +9,11 @@ public class _BigHeights
         "bigHeights([5, 3, 6, 7, 2], 0, 4)",
     };
 
-    static int[] expectedResults = { 1, 0, 1, };
+    static int[] expectedResults = {
+        1,
+        0,
+        1,
+    };
 
     public static void Validate(boolean printSuccess)
     {

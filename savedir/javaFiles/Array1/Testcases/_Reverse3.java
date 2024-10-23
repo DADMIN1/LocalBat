@@ -10,7 +10,11 @@ public class _Reverse3
         "reverse3([7, 0, 0])",
     };
 
-    static int[][] expectedResults = { {3, 2, 1}, {9, 11, 5}, {0, 0, 7}, };
+    static int[][] expectedResults = {
+        {3, 2, 1},
+        {9, 11, 5},
+        {0, 0, 7},
+    };
 
     public static String printArray(int[] array)
     {

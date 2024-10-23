@@ -11,7 +11,11 @@ public class _NoYY
         "noYY([\"xx\", \"ya\", \"zz\"])",
     };
 
-    static List<String>[] expectedResults = { Arrays.asList("ay", "by", "cy"), Arrays.asList("ay", "by"), Arrays.asList("xxy", "yay", "zzy"), };
+    static List<String>[] expectedResults = {
+        Arrays.asList("ay", "by", "cy"),
+        Arrays.asList("ay", "by"),
+        Arrays.asList("xxy", "yay", "zzy"),
+    };
 
     public static void Validate(boolean printSuccess)
     {

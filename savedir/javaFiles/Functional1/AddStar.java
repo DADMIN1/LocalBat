@@ -3,14 +3,12 @@ package Functional1;
 import Functional1.Testcases._AddStar;
 
 import java.util.List;
-import java.util.Arrays;
-import java.util.ArrayList;
 
 public class AddStar
 {
     /* Given a list of strings, return a list where each string has "*" added at its end. */
 
-    /*_____________________________________________________
+    /*____________________________________________________
     |                      Testcases                      |
     |_____________________________________________________|
     | addStar(["a", "bb", "ccc"]) → ["a*", "bb*", "ccc*"] |

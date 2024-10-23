@@ -10,7 +10,7 @@ public class SplitArray
     and make the initial call to your recursive helper from splitArray(). 
     (No loops needed.) */
 
-    /*_______________________________
+    /*______________________________
     |           Testcases           |
     |_______________________________|
     | splitArray([2, 2])    → true  |

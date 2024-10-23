@@ -7,7 +7,7 @@ public class Fix23
     /* Given an int array length 3, if there is a 2 in the array immediately followed by a 3, 
     set the 3 element to 0. Return the changed array. */
 
-    /*______________________________
+    /*_____________________________
     |          Testcases           |
     |______________________________|
     | fix23([1, 2, 3]) → [1, 2, 0] |

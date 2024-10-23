@@ -3,15 +3,13 @@ package Functional2;
 import Functional2.Testcases._Square56;
 
 import java.util.List;
-import java.util.Arrays;
-import java.util.ArrayList;
 
 public class Square56
 {
     /* Given a list of integers, return a list of those numbers squared and the product added to 10, 
     omitting any of the resulting numbers that end in 5 or 6. */
 
-    /*________________________________
+    /*_______________________________
     |           Testcases            |
     |________________________________|
     | square56([3, 1, 4]) → [19, 11] |

@@ -9,7 +9,11 @@ public class _StartHi
         "startHi(\"hello hi\")",
     };
 
-    static boolean[] expectedResults = { true, true, false, };
+    static boolean[] expectedResults = {
+        true,
+        true,
+        false,
+    };
 
     public static void Validate(boolean printSuccess)
     {

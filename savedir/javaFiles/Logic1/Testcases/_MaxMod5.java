@@ -9,7 +9,11 @@ public class _MaxMod5
         "maxMod5(3, 2)",
     };
 
-    static int[] expectedResults = { 3, 6, 3, };
+    static int[] expectedResults = {
+        3,
+        6,
+        3,
+    };
 
     public static void Validate(boolean printSuccess)
     {

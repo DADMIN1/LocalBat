@@ -10,7 +10,7 @@ public class MakeBricks
     This is a little harder than it looks and can be done without any loops. 
     See also: Introduction to MakeBricks */
 
-    /*______________________________
+    /*_____________________________
     |          Testcases           |
     |______________________________|
     | makeBricks(3, 1, 8)  → true  |

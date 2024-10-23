@@ -10,7 +10,11 @@ public class _Word0
         "word0([\"c\", \"b\", \"a\"])",
     };
 
-    static Map<String, Integer>[] expectedResults = { {"a": 0, "b": 0}, {"a": 0, "b": 0, "c": 0}, {"a": 0, "b": 0, "c": 0}, };
+    static Map<String, Integer>[] expectedResults = {
+        {"a": 0, "b": 0},
+        {"a": 0, "b": 0, "c": 0},
+        {"a": 0, "b": 0, "c": 0},
+    };
 
     public static void Validate(boolean printSuccess)
     {

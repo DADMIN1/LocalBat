@@ -54,16 +54,18 @@ def ParseTestcases(testcases: list[str], functionDef: dict) -> dict:
             array_declarations.append(arg["type"] + " " + arg["identifier"])
         # if isArray: arg["identifier"] += str(testCaseNum)
     
+    newlineIndent = "\n        "
     split_cases = PythonBad(testcases, containsArray, array_varnames, array_declarations)
-    expectedResults = f"{functionDef['returnType']}[] expectedResults = "+"{ "
+    expectedResults = f"{functionDef['returnType']}[] expectedResults = "+"{"
     
     for case in split_cases:
+        expectedResults += newlineIndent
         if returnsArray: # need to rewrite arrays from '[...]' to '{...}'
             case["expected"] = case["expected"].replace('[', '{').replace(']', '}')
         elif returnsList: # can construct a list with 'Arrays.asList'
             case["expected"] = case["expected"].replace('[', "Arrays.asList(").replace(']', ')')
-        expectedResults += case["expected"] + ", "
-    expectedResults += "};\n"
+        expectedResults += case["expected"] + ","
+    expectedResults += "\n    };\n"
     
     return { 
         "returnsList": returnsList,
@@ -241,7 +243,7 @@ def WriteTestcaseFile(packageName:str, data: dict):
         file.write("    }\n") # closing Validate function
         file.write("}\n") # closing Testcase class
     
-    print(f"\tdone writing: {testcase_filepath.relative_to(cwd)}\n")
+    print(f"\tdone writing: {testcase_filepath.relative_to(cwd)}")
     return { 
         "testCases": testCases, 
         "returnType": returnType,
@@ -266,7 +268,7 @@ def TestcaseAsciiArt(testcases: list, titlebox_padding:str = ' ', titlebox_under
     if ((total_width%2) == 0): maybe_space = titlebox_padding;
     
     # title box
-    ascii_art = "    /*" + ("_" * total_width)
+    ascii_art = "    /*" + ("_" * (total_width-1))
     ascii_art += f"\n    |{title_padding}Testcases{maybe_space}{title_padding}|\n    "
     if (titlebox_underline is not None): ascii_art += '|' + ("_" * total_width) + '|' + "\n    ";
     
@@ -307,12 +309,12 @@ def WriteJavaFile(packageName:str, data: dict):
         file.write(f"package {packageName};\n")
         file.write(f"import {packageName}.Testcases._{title};\n\n")
         if returnsList: 
-            file.write("import java.util.List;\n")
-            file.write("import java.util.Arrays;\n") # for 'Arrays.asList' 
-            file.write("import java.util.ArrayList;\n\n") # not strictly necessary
+            file.write("import java.util.List;\n\n")
+            #file.write("import java.util.Arrays;\n") # for 'Arrays.asList' 
+            #file.write("import java.util.ArrayList;\n\n") # not strictly necessary
         if function_info["needsMap"]:
-            file.write("import java.util.Map;\n")
-            file.write("import java.util.HashMap;\n\n")
+            file.write("import java.util.Map;\n\n")
+            #file.write("import java.util.HashMap;\n\n")
         
         # The class name must match the filename (java)
         file.write(f"public class {title}"+"\n{\n")
@@ -357,7 +359,7 @@ def GenerateSection(section_name: str, only_missing_files=False):
             failures.append(filename)
     if len(failures) > 0:
         for failure in failures: print(f"Failed to generate java file for: {failure}")
-    else: print(f"Generated all files for {section_dir}")
+    else: print(f"Generated all files for {section_dir}\n\n")
     return
 
 

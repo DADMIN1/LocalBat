@@ -9,7 +9,7 @@ public class CopyEndy
     Decompose out a separate isEndy(int n) method to test if a number is endy. 
     The original array will contain at least "count" endy numbers. */
 
-    /*_________________________________________________
+    /*________________________________________________
     |                    Testcases                    |
     |_________________________________________________|
     | copyEndy([9, 11, 90, 22, 6], 2)    → [9, 90]    |

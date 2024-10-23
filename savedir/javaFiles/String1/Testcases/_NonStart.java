@@ -9,7 +9,11 @@ public class _NonStart
         "nonStart(\"shotl\", \"java\")",
     };
 
-    static String[] expectedResults = { "ellohere", "avaode", "hotlava", };
+    static String[] expectedResults = {
+        "ellohere",
+        "avaode",
+        "hotlava",
+    };
 
     public static void Validate(boolean printSuccess)
     {

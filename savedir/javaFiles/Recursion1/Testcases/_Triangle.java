@@ -9,7 +9,11 @@ public class _Triangle
         "triangle(2)",
     };
 
-    static int[] expectedResults = { 0, 1, 3, };
+    static int[] expectedResults = {
+        0,
+        1,
+        3,
+    };
 
     public static void Validate(boolean printSuccess)
     {

@@ -9,7 +9,11 @@ public class _ArrayCount9
         "arrayCount9([1, 9, 9, 3, 9])",
     };
 
-    static int[] expectedResults = { 1, 2, 3, };
+    static int[] expectedResults = {
+        1,
+        2,
+        3,
+    };
 
     public static void Validate(boolean printSuccess)
     {

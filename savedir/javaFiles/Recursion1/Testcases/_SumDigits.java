@@ -9,7 +9,11 @@ public class _SumDigits
         "sumDigits(12)",
     };
 
-    static int[] expectedResults = { 9, 13, 3, };
+    static int[] expectedResults = {
+        9,
+        13,
+        3,
+    };
 
     public static void Validate(boolean printSuccess)
     {

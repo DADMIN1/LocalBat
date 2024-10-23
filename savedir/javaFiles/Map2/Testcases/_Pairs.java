@@ -10,7 +10,11 @@ public class _Pairs
         "pairs([\"man\", \"moon\", \"good\", \"night\"])",
     };
 
-    static Map<String, String>[] expectedResults = { {"b": "g", "c": "e"}, {"m": "n"}, {"g": "d", "m": "n", "n": "t"}, };
+    static Map<String, String>[] expectedResults = {
+        {"b": "g", "c": "e"},
+        {"m": "n"},
+        {"g": "d", "m": "n", "n": "t"},
+    };
 
     public static void Validate(boolean printSuccess)
     {

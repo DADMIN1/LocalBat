@@ -11,7 +11,7 @@ public class FizzArray
     so it just works. The syntax to make a new int array is: 
     new int[desired_length]   (See also: FizzBuzz Code) */
 
-    /*________________________________________________
+    /*_______________________________________________
     |                   Testcases                    |
     |________________________________________________|
     | fizzArray(4)  → [0, 1, 2, 3]                   |

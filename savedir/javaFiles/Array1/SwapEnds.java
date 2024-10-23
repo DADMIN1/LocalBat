@@ -7,7 +7,7 @@ public class SwapEnds
     /* Given an array of ints, swap the first and last elements in the array. 
     Return the modified array. The array length will be at least 1. */
 
-    /*_____________________________________________
+    /*____________________________________________
     |                  Testcases                  |
     |_____________________________________________|
     | swapEnds([1, 2, 3, 4])    → [4, 2, 3, 1]    |

@@ -9,7 +9,11 @@ public class _LastChars
         "lastChars(\"hi\", \"\")",
     };
 
-    static String[] expectedResults = { "ls", "ya", "h@", };
+    static String[] expectedResults = {
+        "ls",
+        "ya",
+        "h@",
+    };
 
     public static void Validate(boolean printSuccess)
     {

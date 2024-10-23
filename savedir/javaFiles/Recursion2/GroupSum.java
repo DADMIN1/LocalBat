@@ -13,7 +13,7 @@ public class GroupSum
     The caller can specify the whole array simply by passing start as 0. 
     No loops are needed -- the recursive calls progress down the array. */
 
-    /*____________________________________
+    /*___________________________________
     |             Testcases              |
     |____________________________________|
     | groupSum(0, [2, 4, 8], 10) → true  |

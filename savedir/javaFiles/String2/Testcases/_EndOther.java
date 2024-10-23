@@ -9,7 +9,11 @@ public class _EndOther
         "endOther(\"abc\", \"abXabc\")",
     };
 
-    static boolean[] expectedResults = { true, true, true, };
+    static boolean[] expectedResults = {
+        true,
+        true,
+        true,
+    };
 
     public static void Validate(boolean printSuccess)
     {

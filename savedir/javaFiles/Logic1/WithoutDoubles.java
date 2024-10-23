@@ -8,7 +8,7 @@ public class WithoutDoubles
     However, if noDoubles is true, if the two dice show the same value, 
     increment one die to the next value, wrapping around to 1 if its value was 6. */
 
-    /*_________________________________
+    /*________________________________
     |            Testcases            |
     |_________________________________|
     | withoutDoubles(2, 3, true)  → 5 |

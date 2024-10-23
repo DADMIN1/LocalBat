@@ -11,7 +11,11 @@ public class _NoTeen
         "noTeen([15])",
     };
 
-    static List<Integer>[] expectedResults = { Arrays.asList(12, 20), Arrays.asList(1, 1), Arrays.asList(), };
+    static List<Integer>[] expectedResults = {
+        Arrays.asList(12, 20),
+        Arrays.asList(1, 1),
+        Arrays.asList(),
+    };
 
     public static void Validate(boolean printSuccess)
     {

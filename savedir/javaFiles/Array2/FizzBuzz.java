@@ -14,7 +14,7 @@ public class FizzBuzz
     This version is a little more complicated than the usual version since you have to allocate and index into an array instead of just printing, 
     and we vary the start/end instead of just always doing 1..100. */
 
-    /*_____________________________________________________________________________________
+    /*____________________________________________________________________________________
     |                                      Testcases                                      |
     |_____________________________________________________________________________________|
     | fizzBuzz(1, 6)  → ["1", "2", "Fizz", "4", "Buzz"]                                   |

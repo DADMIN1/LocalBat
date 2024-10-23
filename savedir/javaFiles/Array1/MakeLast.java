@@ -8,7 +8,7 @@ public class MakeLast
     and all the other elements are 0. The original array will be length 1 or more. 
     Note: by default, a new int array contains all 0's. */
 
-    /*__________________________________________
+    /*_________________________________________
     |                Testcases                 |
     |__________________________________________|
     | makeLast([4, 5, 6]) → [0, 0, 0, 0, 0, 6] |

@@ -3,7 +3,6 @@ package Map1;
 import Map1.Testcases._Topping1;
 
 import java.util.Map;
-import java.util.HashMap;
 
 public class Topping1
 {
@@ -11,7 +10,7 @@ public class Topping1
     if the key "ice cream" is present, set its value to "cherry". 
     In all cases, set the key "bread" to have the value "butter". */
 
-    /*_________________________________________________________________________________
+    /*________________________________________________________________________________
     |                                    Testcases                                    |
     |_________________________________________________________________________________|
     | topping1({"ice cream": "peanuts"}) → {"bread": "butter", "ice cream": "cherry"} |

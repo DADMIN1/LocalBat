@@ -8,7 +8,7 @@ public class BiggerTwo
     Return the array which has the largest sum. In event of a tie, 
     return a. */
 
-    /*____________________________________
+    /*___________________________________
     |             Testcases              |
     |____________________________________|
     | biggerTwo([1, 2], [3, 4]) → [3, 4] |

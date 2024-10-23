@@ -6,7 +6,7 @@ public class CountHi
 {
     /* Given a string, compute recursively (no loops) the number of times lowercase "hi" appears in the string. */
 
-    /*________________________
+    /*_______________________
     |       Testcases        |
     |________________________|
     | countHi("xxhixx")  → 1 |

@@ -3,14 +3,12 @@ package Functional2;
 import Functional2.Testcases._NoLong;
 
 import java.util.List;
-import java.util.Arrays;
-import java.util.ArrayList;
 
 public class NoLong
 {
     /* Given a list of strings, return a list of the strings, omitting any string length 4 or more. */
 
-    /*_________________________________________________________
+    /*________________________________________________________
     |                        Testcases                        |
     |_________________________________________________________|
     | noLong(["this", "not", "too", "long"]) → ["not", "too"] |

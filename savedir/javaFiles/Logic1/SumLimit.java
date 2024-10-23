@@ -8,7 +8,7 @@ public class SumLimit
     If the sum has more digits than a, just return a without b. 
     (Note: one way to compute the number of digits of a non-negative int n is to convert it to a string with String.valueOf(n) and then check the length of the string.) */
 
-    /*____________________
+    /*___________________
     |     Testcases      |
     |____________________|
     | sumLimit(2, 3) → 5 |

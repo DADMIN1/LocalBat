@@ -7,7 +7,7 @@ public class CopyEvens
     /* Given an array of positive ints, return a new array of length "count" containing the first even numbers from the original array. 
     The original array will contain at least "count" even numbers. */
 
-    /*______________________________________________
+    /*_____________________________________________
     |                  Testcases                   |
     |______________________________________________|
     | copyEvens([3, 2, 4, 5, 8], 2)    → [2, 4]    |

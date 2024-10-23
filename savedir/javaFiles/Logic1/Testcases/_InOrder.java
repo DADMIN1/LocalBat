@@ -9,7 +9,11 @@ public class _InOrder
         "inOrder(1, 1, 2, true)",
     };
 
-    static boolean[] expectedResults = { true, false, true, };
+    static boolean[] expectedResults = {
+        true,
+        false,
+        true,
+    };
 
     public static void Validate(boolean printSuccess)
     {

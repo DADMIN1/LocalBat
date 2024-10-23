@@ -9,7 +9,11 @@ public class _MirrorEnds
         "mirrorEnds(\"aba\")",
     };
 
-    static String[] expectedResults = { "ab", "a", "aba", };
+    static String[] expectedResults = {
+        "ab",
+        "a",
+        "aba",
+    };
 
     public static void Validate(boolean printSuccess)
     {

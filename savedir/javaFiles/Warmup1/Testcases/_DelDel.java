@@ -9,7 +9,11 @@ public class _DelDel
         "delDel(\"adedbc\")",
     };
 
-    static String[] expectedResults = { "abc", "aHello", "adedbc", };
+    static String[] expectedResults = {
+        "abc",
+        "aHello",
+        "adedbc",
+    };
 
     public static void Validate(boolean printSuccess)
     {

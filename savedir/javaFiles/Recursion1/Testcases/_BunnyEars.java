@@ -9,7 +9,11 @@ public class _BunnyEars
         "bunnyEars(2)",
     };
 
-    static int[] expectedResults = { 0, 2, 4, };
+    static int[] expectedResults = {
+        0,
+        2,
+        4,
+    };
 
     public static void Validate(boolean printSuccess)
     {

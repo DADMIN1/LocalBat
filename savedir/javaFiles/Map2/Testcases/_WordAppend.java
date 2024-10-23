@@ -9,7 +9,11 @@ public class _WordAppend
         "wordAppend([\"a\", \"\", \"a\"])",
     };
 
-    static String[] expectedResults = { "a", "aa", "a", };
+    static String[] expectedResults = {
+        "a",
+        "aa",
+        "a",
+    };
 
     public static void Validate(boolean printSuccess)
     {

@@ -6,7 +6,7 @@ public class CountX
 {
     /* Given a string, compute recursively (no loops) the number of lowercase 'x' chars in the string. */
 
-    /*_______________________
+    /*______________________
     |       Testcases       |
     |_______________________|
     | countX("xxhixx")  → 4 |

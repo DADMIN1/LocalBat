@@ -9,7 +9,11 @@ public class _ScoresIncreasing
         "scoresIncreasing([1, 1, 4])",
     };
 
-    static boolean[] expectedResults = { true, false, true, };
+    static boolean[] expectedResults = {
+        true,
+        false,
+        true,
+    };
 
     public static void Validate(boolean printSuccess)
     {

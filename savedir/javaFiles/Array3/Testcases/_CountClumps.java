@@ -9,7 +9,11 @@ public class _CountClumps
         "countClumps([1, 1, 1, 1, 1])",
     };
 
-    static int[] expectedResults = { 2, 2, 1, };
+    static int[] expectedResults = {
+        2,
+        2,
+        1,
+    };
 
     public static void Validate(boolean printSuccess)
     {

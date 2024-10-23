@@ -7,7 +7,7 @@ public class SeeColor
     /* Given a string, if the string begins with "red" or "blue" return that color string, 
     otherwise return the empty string. */
 
-    /*________________________________
+    /*_______________________________
     |           Testcases            |
     |________________________________|
     | seeColor("redxx")     → "red"  |

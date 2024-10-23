@@ -9,7 +9,11 @@ public class _DateFashion
         "dateFashion(5, 5)",
     };
 
-    static int[] expectedResults = { 2, 0, 1, };
+    static int[] expectedResults = {
+        2,
+        0,
+        1,
+    };
 
     public static void Validate(boolean printSuccess)
     {

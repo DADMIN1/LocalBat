@@ -10,7 +10,11 @@ public class _TenRun
         "tenRun([10, 1, 9, 20])",
     };
 
-    static int[][] expectedResults = { {2, 10, 10, 10, 20, 20}, {10, 10, 20, 20}, {10, 10, 10, 20}, };
+    static int[][] expectedResults = {
+        {2, 10, 10, 10, 20, 20},
+        {10, 10, 20, 20},
+        {10, 10, 10, 20},
+    };
 
     public static String printArray(int[] array)
     {

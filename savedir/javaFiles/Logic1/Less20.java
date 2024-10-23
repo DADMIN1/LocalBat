@@ -8,7 +8,7 @@ public class Less20
     So for example 38 and 39 return true, but 40 returns false. 
     See also: Introduction to Mod */
 
-    /*____________________
+    /*___________________
     |     Testcases      |
     |____________________|
     | less20(18) → true  |

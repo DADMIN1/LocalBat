@@ -3,14 +3,12 @@ package Functional1;
 import Functional1.Testcases._Doubling;
 
 import java.util.List;
-import java.util.Arrays;
-import java.util.ArrayList;
 
 public class Doubling
 {
     /* Given a list of integers, return a list where each integer is multiplied by 2. */
 
-    /*___________________________________________________
+    /*__________________________________________________
     |                     Testcases                     |
     |___________________________________________________|
     | doubling([1, 2, 3])        → [2, 4, 6]            |

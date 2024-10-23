@@ -6,7 +6,7 @@ public class EndsLy
 {
     /* Given a string, return true if it ends in "ly". */
 
-    /*_________________________
+    /*________________________
     |        Testcases        |
     |_________________________|
     | endsLy("oddly") → true  |

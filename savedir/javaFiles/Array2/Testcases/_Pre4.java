@@ -10,7 +10,11 @@ public class _Pre4
         "pre4([1, 4, 4])",
     };
 
-    static int[][] expectedResults = { {1, 2}, {3, 1}, {1}, };
+    static int[][] expectedResults = {
+        {1, 2},
+        {3, 1},
+        {1},
+    };
 
     public static String printArray(int[] array)
     {

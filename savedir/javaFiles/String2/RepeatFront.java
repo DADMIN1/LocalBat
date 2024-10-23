@@ -9,7 +9,7 @@ public class RepeatFront
     You may assume that n is between 0 and the length of the string, 
     inclusive (i.e. n >= 0 and n <= str.length()). */
 
-    /*____________________________________________
+    /*___________________________________________
     |                 Testcases                  |
     |____________________________________________|
     | repeatFront("Chocolate", 4) → "ChocChoChC" |

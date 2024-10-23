@@ -11,7 +11,7 @@ public class SplitOdd10
     and make the initial call to your recursive helper from splitOdd10(). 
     (No loops needed.) */
 
-    /*__________________________________
+    /*_________________________________
     |            Testcases             |
     |__________________________________|
     | splitOdd10([5, 5, 5])    → true  |

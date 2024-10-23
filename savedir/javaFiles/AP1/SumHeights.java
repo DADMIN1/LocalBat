@@ -10,7 +10,7 @@ public class SumHeights
     For example, with the heights {5, 3, 6, 7, 2} and start=2, 
     end=4 yields a sum of 1 + 5 = 6. The start end end index will both be valid indexes into the array with start <= end. */
 
-    /*________________________________________
+    /*_______________________________________
     |               Testcases                |
     |________________________________________|
     | sumHeights([5, 3, 6, 7, 2], 2, 4) → 6  |

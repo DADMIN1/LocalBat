@@ -8,7 +8,7 @@ public class LastChars
     so "yo" and "java" yields "ya". If either string is length 0, 
     use '@' for its missing char. */
 
-    /*___________________________________
+    /*__________________________________
     |             Testcases             |
     |___________________________________|
     | lastChars("last", "chars") → "ls" |

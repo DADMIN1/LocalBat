@@ -9,7 +9,7 @@ public class Count8
     so 8818 yields 4. Note that mod (%) by 10 yields the rightmost digit (126 % 10 is 6), 
     while divide (/) by 10 removes the rightmost digit (126 / 10 is 12). */
 
-    /*__________________
+    /*_________________
     |    Testcases     |
     |__________________|
     | count8(8)    → 1 |

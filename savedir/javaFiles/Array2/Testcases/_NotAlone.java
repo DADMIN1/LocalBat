@@ -10,7 +10,11 @@ public class _NotAlone
         "notAlone([3, 4], 3)",
     };
 
-    static int[][] expectedResults = { {1, 3, 3}, {1, 3, 3, 5, 5, 2}, {3, 4}, };
+    static int[][] expectedResults = {
+        {1, 3, 3},
+        {1, 3, 3, 5, 5, 2},
+        {3, 4},
+    };
 
     public static String printArray(int[] array)
     {

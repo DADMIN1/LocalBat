@@ -9,7 +9,7 @@ public class MaxSpan
     A single value has a span of 1. Returns the largest span found in the given array. 
     (Efficiency is not a priority.) */
 
-    /*____________________________________
+    /*___________________________________
     |             Testcases              |
     |____________________________________|
     | maxSpan([1, 2, 1, 1, 3])       → 4 |

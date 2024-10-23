@@ -9,7 +9,11 @@ public class _ScoresSpecial
         "scoresSpecial([12, 11, 4], [2, 20, 31])",
     };
 
-    static int[] expectedResults = { 40, 40, 20, };
+    static int[] expectedResults = {
+        40,
+        40,
+        20,
+    };
 
     public static void Validate(boolean printSuccess)
     {

@@ -10,7 +10,11 @@ public class _Make2
         "make2([], [1, 2])",
     };
 
-    static int[][] expectedResults = { {4, 5}, {4, 1}, {1, 2}, };
+    static int[][] expectedResults = {
+        {4, 5},
+        {4, 1},
+        {1, 2},
+    };
 
     public static String printArray(int[] array)
     {

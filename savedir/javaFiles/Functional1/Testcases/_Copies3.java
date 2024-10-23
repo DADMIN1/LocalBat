@@ -11,7 +11,11 @@ public class _Copies3
         "copies3([\"hello\", \"there\"])",
     };
 
-    static List<String>[] expectedResults = { Arrays.asList("aaa", "bbbbbb", "ccccccccc"), Arrays.asList("242424", "aaa", ""), Arrays.asList("hellohellohello", "theretherethere"), };
+    static List<String>[] expectedResults = {
+        Arrays.asList("aaa", "bbbbbb", "ccccccccc"),
+        Arrays.asList("242424", "aaa", ""),
+        Arrays.asList("hellohellohello", "theretherethere"),
+    };
 
     public static void Validate(boolean printSuccess)
     {

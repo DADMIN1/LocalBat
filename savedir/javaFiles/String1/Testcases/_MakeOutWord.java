@@ -9,7 +9,11 @@ public class _MakeOutWord
         "makeOutWord(\"[[]]\", \"word\")",
     };
 
-    static String[] expectedResults = { "<<Yay>>", "<<WooHoo>>", "[[word]]", };
+    static String[] expectedResults = {
+        "<<Yay>>",
+        "<<WooHoo>>",
+        "[[word]]",
+    };
 
     public static void Validate(boolean printSuccess)
     {

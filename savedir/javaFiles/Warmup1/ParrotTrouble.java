@@ -8,7 +8,7 @@ public class ParrotTrouble
     We are in trouble if the parrot is talking and the hour is before 7 or after 20. 
     Return true if we are in trouble. */
 
-    /*_________________________________
+    /*________________________________
     |            Testcases            |
     |_________________________________|
     | parrotTrouble(true, 6)  → true  |

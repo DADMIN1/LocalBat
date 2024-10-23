@@ -9,7 +9,11 @@ public class _TwoTwo
         "twoTwo([2, 2, 4, 2])",
     };
 
-    static boolean[] expectedResults = { true, true, false, };
+    static boolean[] expectedResults = {
+        true,
+        true,
+        false,
+    };
 
     public static void Validate(boolean printSuccess)
     {

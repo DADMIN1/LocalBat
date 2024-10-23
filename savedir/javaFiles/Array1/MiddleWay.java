@@ -6,7 +6,7 @@ public class MiddleWay
 {
     /* Given 2 int arrays, a and b, each length 3, return a new array length 2 containing their middle elements. */
 
-    /*__________________________________________
+    /*_________________________________________
     |                Testcases                 |
     |__________________________________________|
     | middleWay([1, 2, 3], [4, 5, 6]) → [2, 5] |

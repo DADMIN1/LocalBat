@@ -10,7 +10,11 @@ public class _FirstChar
         "firstChar([])",
     };
 
-    static Map<String, String>[] expectedResults = { {"s": "saltsoda", "t": "teatoast"}, {"a": "aaaAA", "b": "bb", "c": "cccCC", "d": "d"}, {}, };
+    static Map<String, String>[] expectedResults = {
+        {"s": "saltsoda", "t": "teatoast"},
+        {"a": "aaaAA", "b": "bb", "c": "cccCC", "d": "d"},
+        {},
+    };
 
     public static void Validate(boolean printSuccess)
     {

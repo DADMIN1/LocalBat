@@ -9,7 +9,11 @@ public class _WithoutEnd
         "withoutEnd(\"coding\")",
     };
 
-    static String[] expectedResults = { "ell", "av", "odin", };
+    static String[] expectedResults = {
+        "ell",
+        "av",
+        "odin",
+    };
 
     public static void Validate(boolean printSuccess)
     {

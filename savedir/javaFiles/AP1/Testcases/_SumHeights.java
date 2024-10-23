@@ -9,7 +9,11 @@ public class _SumHeights
         "sumHeights([5, 3, 6, 7, 2], 0, 4)",
     };
 
-    static int[] expectedResults = { 6, 2, 11, };
+    static int[] expectedResults = {
+        6,
+        2,
+        11,
+    };
 
     public static void Validate(boolean printSuccess)
     {

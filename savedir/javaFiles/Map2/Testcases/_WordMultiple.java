@@ -10,7 +10,11 @@ public class _WordMultiple
         "wordMultiple([\"c\", \"c\", \"c\", \"c\"])",
     };
 
-    static Map<String, Boolean>[] expectedResults = { {"a": true, "b": true, "c": false}, {"a": false, "b": false, "c": false}, {"c": true}, };
+    static Map<String, Boolean>[] expectedResults = {
+        {"a": true, "b": true, "c": false},
+        {"a": false, "b": false, "c": false},
+        {"c": true},
+    };
 
     public static void Validate(boolean printSuccess)
     {

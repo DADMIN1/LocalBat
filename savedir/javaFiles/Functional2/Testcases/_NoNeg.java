@@ -11,7 +11,11 @@ public class _NoNeg
         "noNeg([-1, -1, -1])",
     };
 
-    static List<Integer>[] expectedResults = { Arrays.asList(1), Arrays.asList(3, 3), Arrays.asList(), };
+    static List<Integer>[] expectedResults = {
+        Arrays.asList(1),
+        Arrays.asList(3, 3),
+        Arrays.asList(),
+    };
 
     public static void Validate(boolean printSuccess)
     {

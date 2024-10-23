@@ -8,7 +8,7 @@ public class HasBad
     such as with "badxxx" or "xbadxx" but not "xxbadxx". The string may be any length, 
     including 0. Note: use .equals() to compare 2 strings. */
 
-    /*___________________________
+    /*__________________________
     |         Testcases         |
     |___________________________|
     | hasBad("badxx")   → true  |

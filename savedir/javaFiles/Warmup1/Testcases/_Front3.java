@@ -9,7 +9,11 @@ public class _Front3
         "front3(\"abc\")",
     };
 
-    static String[] expectedResults = { "JavJavJav", "ChoChoCho", "abcabcabc", };
+    static String[] expectedResults = {
+        "JavJavJav",
+        "ChoChoCho",
+        "abcabcabc",
+    };
 
     public static void Validate(boolean printSuccess)
     {

@@ -9,7 +9,11 @@ public class _NoTeenSum
         "noTeenSum(2, 1, 14)",
     };
 
-    static int[] expectedResults = { 6, 3, 3, };
+    static int[] expectedResults = {
+        6,
+        3,
+        3,
+    };
 
     public static void Validate(boolean printSuccess)
     {

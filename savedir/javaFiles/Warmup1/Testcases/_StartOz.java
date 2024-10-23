@@ -9,7 +9,11 @@ public class _StartOz
         "startOz(\"oxx\")",
     };
 
-    static String[] expectedResults = { "oz", "z", "o", };
+    static String[] expectedResults = {
+        "oz",
+        "z",
+        "o",
+    };
 
     public static void Validate(boolean printSuccess)
     {

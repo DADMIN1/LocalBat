@@ -10,7 +10,11 @@ public class _MakeLast
         "makeLast([3])",
     };
 
-    static int[][] expectedResults = { {0, 0, 0, 0, 0, 6}, {0, 0, 0, 2}, {0, 3}, };
+    static int[][] expectedResults = {
+        {0, 0, 0, 0, 0, 6},
+        {0, 0, 0, 2},
+        {0, 3},
+    };
 
     public static String printArray(int[] array)
     {

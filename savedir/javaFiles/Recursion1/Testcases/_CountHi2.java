@@ -9,7 +9,11 @@ public class _CountHi2
         "countHi2(\"xhixhi\")",
     };
 
-    static int[] expectedResults = { 1, 2, 0, };
+    static int[] expectedResults = {
+        1,
+        2,
+        0,
+    };
 
     public static void Validate(boolean printSuccess)
     {

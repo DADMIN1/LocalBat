@@ -6,7 +6,7 @@ public class Only14
 {
     /* Given an array of ints, return true if every element is a 1 or a 4. */
 
-    /*______________________________
+    /*_____________________________
     |          Testcases           |
     |______________________________|
     | only14([1, 4, 1, 4]) → true  |

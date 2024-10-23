@@ -8,7 +8,7 @@ public class Front22
     so "kitten" yields"kikittenki". If the string length is less than 2, 
     use whatever chars are there. */
 
-    /*__________________________________
+    /*_________________________________
     |            Testcases             |
     |__________________________________|
     | front22("kitten") → "kikittenki" |

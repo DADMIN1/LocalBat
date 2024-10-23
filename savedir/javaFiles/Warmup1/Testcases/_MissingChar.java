@@ -9,7 +9,11 @@ public class _MissingChar
         "missingChar(\"kitten\", 4)",
     };
 
-    static String[] expectedResults = { "ktten", "itten", "kittn", };
+    static String[] expectedResults = {
+        "ktten",
+        "itten",
+        "kittn",
+    };
 
     public static void Validate(boolean printSuccess)
     {

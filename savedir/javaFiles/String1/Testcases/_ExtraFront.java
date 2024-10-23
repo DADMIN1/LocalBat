@@ -9,7 +9,11 @@ public class _ExtraFront
         "extraFront(\"H\")",
     };
 
-    static String[] expectedResults = { "HeHeHe", "ababab", "HHH", };
+    static String[] expectedResults = {
+        "HeHeHe",
+        "ababab",
+        "HHH",
+    };
 
     public static void Validate(boolean printSuccess)
     {

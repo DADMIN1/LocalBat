@@ -9,7 +9,11 @@ public class _Diff21
         "diff21(21)",
     };
 
-    static int[] expectedResults = { 2, 11, 0, };
+    static int[] expectedResults = {
+        2,
+        11,
+        0,
+    };
 
     public static void Validate(boolean printSuccess)
     {

@@ -8,7 +8,7 @@ public class ParenBit
     compute recursively a new string made of only of the parenthesis and their contents, 
     so "xyz(abc)123" yields "(abc)". */
 
-    /*_____________________________________
+    /*____________________________________
     |              Testcases              |
     |_____________________________________|
     | parenBit("xyz(abc)123") → "(abc)"   |

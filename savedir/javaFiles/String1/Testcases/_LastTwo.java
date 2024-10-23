@@ -9,7 +9,11 @@ public class _LastTwo
         "lastTwo(\"ab\")",
     };
 
-    static String[] expectedResults = { "codign", "cta", "ba", };
+    static String[] expectedResults = {
+        "codign",
+        "cta",
+        "ba",
+    };
 
     public static void Validate(boolean printSuccess)
     {

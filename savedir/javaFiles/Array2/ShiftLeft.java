@@ -8,7 +8,7 @@ public class ShiftLeft
     2, 5, 3} returns {2, 5, 3, 6}. You may modify and return the given array, 
     or return a new array. */
 
-    /*________________________________________
+    /*_______________________________________
     |               Testcases                |
     |________________________________________|
     | shiftLeft([6, 2, 5, 3]) → [2, 5, 3, 6] |

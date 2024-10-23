@@ -3,14 +3,12 @@ package Functional1;
 import Functional1.Testcases._MoreY;
 
 import java.util.List;
-import java.util.Arrays;
-import java.util.ArrayList;
 
 public class MoreY
 {
     /* Given a list of strings, return a list where each string has "y" added at its start and end. */
 
-    /*____________________________________________________
+    /*___________________________________________________
     |                     Testcases                      |
     |____________________________________________________|
     | moreY(["a", "b", "c"])    → ["yay", "yby", "ycy"]  |

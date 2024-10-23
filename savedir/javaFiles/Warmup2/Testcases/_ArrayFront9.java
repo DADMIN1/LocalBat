@@ -9,7 +9,11 @@ public class _ArrayFront9
         "arrayFront9([1, 2, 3, 4, 5])",
     };
 
-    static boolean[] expectedResults = { true, false, false, };
+    static boolean[] expectedResults = {
+        true,
+        false,
+        false,
+    };
 
     public static void Validate(boolean printSuccess)
     {

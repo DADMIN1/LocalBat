@@ -9,7 +9,11 @@ public class _Sum2
         "sum2([1, 1, 1, 1])",
     };
 
-    static int[] expectedResults = { 3, 2, 2, };
+    static int[] expectedResults = {
+        3,
+        2,
+        2,
+    };
 
     public static void Validate(boolean printSuccess)
     {

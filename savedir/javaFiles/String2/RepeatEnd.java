@@ -8,7 +8,7 @@ public class RepeatEnd
     You may assume that n is between 0 and the length of the string, 
     inclusive. */
 
-    /*_____________________________________
+    /*____________________________________
     |              Testcases              |
     |_____________________________________|
     | repeatEnd("Hello", 3) → "llollollo" |

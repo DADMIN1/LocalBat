@@ -9,7 +9,11 @@ public class _HasTeen
         "hasTeen(20, 10, 13)",
     };
 
-    static boolean[] expectedResults = { true, true, true, };
+    static boolean[] expectedResults = {
+        true,
+        true,
+        true,
+    };
 
     public static void Validate(boolean printSuccess)
     {

@@ -9,7 +9,11 @@ public class _NotReplace
         "notReplace(\"This is right\")",
     };
 
-    static String[] expectedResults = { "is not test", "is not-is not", "This is not right", };
+    static String[] expectedResults = {
+        "is not test",
+        "is not-is not",
+        "This is not right",
+    };
 
     public static void Validate(boolean printSuccess)
     {

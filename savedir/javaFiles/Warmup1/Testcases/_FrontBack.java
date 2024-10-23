@@ -9,7 +9,11 @@ public class _FrontBack
         "frontBack(\"ab\")",
     };
 
-    static String[] expectedResults = { "eodc", "a", "ba", };
+    static String[] expectedResults = {
+        "eodc",
+        "a",
+        "ba",
+    };
 
     public static void Validate(boolean printSuccess)
     {

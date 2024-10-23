@@ -9,7 +9,11 @@ public class _FrontTimes
         "frontTimes(\"Abc\", 3)",
     };
 
-    static String[] expectedResults = { "ChoCho", "ChoChoCho", "AbcAbcAbc", };
+    static String[] expectedResults = {
+        "ChoCho",
+        "ChoChoCho",
+        "AbcAbcAbc",
+    };
 
     public static void Validate(boolean printSuccess)
     {

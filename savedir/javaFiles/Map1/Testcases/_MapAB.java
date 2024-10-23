@@ -10,7 +10,11 @@ public class _MapAB
         "mapAB({\"b\": \"There\"})",
     };
 
-    static Map<String, String>[] expectedResults = { {"a": "Hi", "ab": "HiThere", "b": "There"}, {"a": "Hi"}, {"b": "There"}, };
+    static Map<String, String>[] expectedResults = {
+        {"a": "Hi", "ab": "HiThere", "b": "There"},
+        {"a": "Hi"},
+        {"b": "There"},
+    };
 
     public static void Validate(boolean printSuccess)
     {

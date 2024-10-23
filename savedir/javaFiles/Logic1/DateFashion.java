@@ -12,7 +12,7 @@ public class DateFashion
     then the result is 2 (yes). With the exception that if either of you has style of 2 or less, 
     then the result is 0 (no). Otherwise the result is 1 (maybe). */
 
-    /*________________________
+    /*_______________________
     |       Testcases        |
     |________________________|
     | dateFashion(5, 10) → 2 |

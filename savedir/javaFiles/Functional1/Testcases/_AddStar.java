@@ -11,7 +11,11 @@ public class _AddStar
         "addStar([\"*\"])",
     };
 
-    static List<String>[] expectedResults = { Arrays.asList("a*", "bb*", "ccc*"), Arrays.asList("hello*", "there*"), Arrays.asList("**"), };
+    static List<String>[] expectedResults = {
+        Arrays.asList("a*", "bb*", "ccc*"),
+        Arrays.asList("hello*", "there*"),
+        Arrays.asList("**"),
+    };
 
     public static void Validate(boolean printSuccess)
     {

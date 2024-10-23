@@ -9,7 +9,11 @@ public class _IsEverywhere
         "isEverywhere([1, 2, 1, 3, 4], 1)",
     };
 
-    static boolean[] expectedResults = { true, false, false, };
+    static boolean[] expectedResults = {
+        true,
+        false,
+        false,
+    };
 
     public static void Validate(boolean printSuccess)
     {

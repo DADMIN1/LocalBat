@@ -6,7 +6,7 @@ public class In1020
 {
     /* Given 2 int values, return true if either of them is in the range 10..20 inclusive. */
 
-    /*________________________
+    /*_______________________
     |       Testcases        |
     |________________________|
     | in1020(12, 99) → true  |

@@ -3,14 +3,12 @@ package Functional1;
 import Functional1.Testcases._Square;
 
 import java.util.List;
-import java.util.Arrays;
-import java.util.ArrayList;
 
 public class Square
 {
     /* Given a list of integers, return a list where each integer is multiplied with itself. */
 
-    /*_________________________________________________
+    /*________________________________________________
     |                    Testcases                    |
     |_________________________________________________|
     | square([1, 2, 3])         → [1, 4, 9]           |

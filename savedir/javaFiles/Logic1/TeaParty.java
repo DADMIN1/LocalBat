@@ -10,7 +10,7 @@ public class TeaParty
     the party is great (2). However, in all cases, if either tea or candy is less than 5, 
     the party is always bad (0). */
 
-    /*_____________________
+    /*____________________
     |      Testcases      |
     |_____________________|
     | teaParty(6, 8)  → 1 |

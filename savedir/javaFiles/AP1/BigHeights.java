@@ -10,7 +10,7 @@ public class BigHeights
     We'll say that step is big if it is 5 or more up or down. 
     The start end end index will both be valid indexes into the array with start <= end. */
 
-    /*_______________________________________
+    /*______________________________________
     |               Testcases               |
     |_______________________________________|
     | bigHeights([5, 3, 6, 7, 2], 2, 4) → 1 |

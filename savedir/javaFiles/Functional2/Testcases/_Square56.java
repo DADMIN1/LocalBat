@@ -11,7 +11,11 @@ public class _Square56
         "square56([2])",
     };
 
-    static List<Integer>[] expectedResults = { Arrays.asList(19, 11), Arrays.asList(11), Arrays.asList(14), };
+    static List<Integer>[] expectedResults = {
+        Arrays.asList(19, 11),
+        Arrays.asList(11),
+        Arrays.asList(14),
+    };
 
     public static void Validate(boolean printSuccess)
     {

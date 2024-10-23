@@ -9,7 +9,11 @@ public class _StarOut
         "starOut(\"sm*eilly\")",
     };
 
-    static String[] expectedResults = { "ad", "ad", "silly", };
+    static String[] expectedResults = {
+        "ad",
+        "ad",
+        "silly",
+    };
 
     public static void Validate(boolean printSuccess)
     {

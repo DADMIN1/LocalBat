@@ -9,7 +9,11 @@ public class _MakeAbba
         "makeAbba(\"What\", \"Up\")",
     };
 
-    static String[] expectedResults = { "HiByeByeHi", "YoAliceAliceYo", "WhatUpUpWhat", };
+    static String[] expectedResults = {
+        "HiByeByeHi",
+        "YoAliceAliceYo",
+        "WhatUpUpWhat",
+    };
 
     public static void Validate(boolean printSuccess)
     {

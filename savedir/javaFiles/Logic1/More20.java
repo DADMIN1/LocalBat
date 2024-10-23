@@ -7,7 +7,7 @@ public class More20
     /* Return true if the given non-negative number is 1 or 2 more than a multiple of 20. 
     See also: Introduction to Mod */
 
-    /*____________________
+    /*___________________
     |     Testcases      |
     |____________________|
     | more20(20) → false |

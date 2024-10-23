@@ -9,7 +9,11 @@ public class _TeaParty
         "teaParty(20, 6)",
     };
 
-    static int[] expectedResults = { 1, 0, 2, };
+    static int[] expectedResults = {
+        1,
+        0,
+        2,
+    };
 
     public static void Validate(boolean printSuccess)
     {

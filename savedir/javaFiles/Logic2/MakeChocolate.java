@@ -8,7 +8,7 @@ public class MakeChocolate
     Return the number of small bars to use, assuming we always use big bars before small bars. 
     Return -1 if it can't be done. */
 
-    /*______________________________
+    /*_____________________________
     |          Testcases           |
     |______________________________|
     | makeChocolate(4, 1, 9)  → 4  |

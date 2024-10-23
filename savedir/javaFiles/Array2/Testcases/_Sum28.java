@@ -9,7 +9,11 @@ public class _Sum28
         "sum28([1, 2, 3, 4])",
     };
 
-    static boolean[] expectedResults = { true, false, false, };
+    static boolean[] expectedResults = {
+        true,
+        false,
+        false,
+    };
 
     public static void Validate(boolean printSuccess)
     {

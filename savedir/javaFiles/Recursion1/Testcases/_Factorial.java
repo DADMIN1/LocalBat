@@ -9,7 +9,11 @@ public class _Factorial
         "factorial(3)",
     };
 
-    static int[] expectedResults = { 1, 2, 6, };
+    static int[] expectedResults = {
+        1,
+        2,
+        6,
+    };
 
     public static void Validate(boolean printSuccess)
     {

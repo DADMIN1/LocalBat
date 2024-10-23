@@ -10,7 +10,7 @@ public class CigarParty
     Return true if the party with the given values is successful, 
     or false otherwise. */
 
-    /*_______________________________
+    /*______________________________
     |           Testcases           |
     |_______________________________|
     | cigarParty(30, false) → false |

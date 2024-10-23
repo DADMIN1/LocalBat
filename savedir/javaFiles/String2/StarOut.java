@@ -8,7 +8,7 @@ public class StarOut
     where for every star (*) in the string the star and the chars immediately to its left and right are gone. 
     So "ab*cd" yields "ad" and "ab**cd" also yields "ad". */
 
-    /*_______________________________
+    /*______________________________
     |           Testcases           |
     |_______________________________|
     | starOut("ab*cd")    → "ad"    |

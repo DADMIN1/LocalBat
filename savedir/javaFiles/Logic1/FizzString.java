@@ -9,7 +9,7 @@ public class FizzString
     return "FizzBuzz". In all other cases, return the string unchanged. 
     (See also: FizzBuzz Code) */
 
-    /*________________________________
+    /*_______________________________
     |           Testcases            |
     |________________________________|
     | fizzString("fig") → "Fizz"     |

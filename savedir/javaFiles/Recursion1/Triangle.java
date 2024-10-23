@@ -8,7 +8,7 @@ public class Triangle
     the next row down has 2 blocks, the next row has 3 blocks, 
     and so on. Compute recursively (no loops or multiplication) the total number of blocks in such a triangle with the given number of rows. */
 
-    /*_________________
+    /*________________
     |    Testcases    |
     |_________________|
     | triangle(0) → 0 |

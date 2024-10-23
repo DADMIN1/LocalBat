@@ -10,7 +10,7 @@ public class RedTicket
     Otherwise so long as both b and c are different from a, 
     the result is 1. Otherwise the result is 0. */
 
-    /*_________________________
+    /*________________________
     |        Testcases        |
     |_________________________|
     | redTicket(2, 2, 2) → 10 |

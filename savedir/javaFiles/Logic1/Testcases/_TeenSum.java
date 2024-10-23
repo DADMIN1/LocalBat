@@ -9,7 +9,11 @@ public class _TeenSum
         "teenSum(13, 2)",
     };
 
-    static int[] expectedResults = { 7, 19, 19, };
+    static int[] expectedResults = {
+        7,
+        19,
+        19,
+    };
 
     public static void Validate(boolean printSuccess)
     {

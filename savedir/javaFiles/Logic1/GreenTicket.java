@@ -9,7 +9,7 @@ public class GreenTicket
     If all of the numbers are the same, the result is 20. If two of the numbers are the same, 
     the result is 10. */
 
-    /*___________________________
+    /*__________________________
     |         Testcases         |
     |___________________________|
     | greenTicket(1, 2, 3) → 0  |

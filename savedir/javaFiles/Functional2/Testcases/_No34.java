@@ -11,7 +11,11 @@ public class _No34
         "no34([\"ccc\", \"dddd\", \"apple\"])",
     };
 
-    static List<String>[] expectedResults = { Arrays.asList("a", "bb"), Arrays.asList("a", "bb"), Arrays.asList("apple"), };
+    static List<String>[] expectedResults = {
+        Arrays.asList("a", "bb"),
+        Arrays.asList("a", "bb"),
+        Arrays.asList("apple"),
+    };
 
     public static void Validate(boolean printSuccess)
     {

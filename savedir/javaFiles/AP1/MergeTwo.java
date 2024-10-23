@@ -11,7 +11,7 @@ public class MergeTwo
     taking advantage of the fact that they are in alphabetical order, 
     copying elements directly to the new array. */
 
-    /*_________________________________________________________________
+    /*________________________________________________________________
     |                            Testcases                            |
     |_________________________________________________________________|
     | mergeTwo(["a", "c", "z"], ["b", "f", "z"], 3) → ["a", "b", "c"] |

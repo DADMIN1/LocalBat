@@ -3,14 +3,13 @@ package Map2;
 import Map2.Testcases._Pairs;
 
 import java.util.Map;
-import java.util.HashMap;
 
 public class Pairs
 {
     /* Given an array of non-empty strings, create and return a Map<String, 
     String> as follows: for each string add its first character as a key with its last character as the value. */
 
-    /*__________________________________________________________________________
+    /*_________________________________________________________________________
     |                                Testcases                                 |
     |__________________________________________________________________________|
     | pairs(["code", "bug"])                  → {"b": "g", "c": "e"}           |

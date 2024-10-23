@@ -10,7 +10,11 @@ public class _FizzArray2
         "fizzArray2(2)",
     };
 
-    static String[][] expectedResults = { {"0", "1", "2", "3"}, {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"}, {"0", "1"}, };
+    static String[][] expectedResults = {
+        {"0", "1", "2", "3"},
+        {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"},
+        {"0", "1"},
+    };
 
     public static String printArray(String[] array)
     {

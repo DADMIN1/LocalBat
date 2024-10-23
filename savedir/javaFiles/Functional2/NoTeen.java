@@ -3,15 +3,13 @@ package Functional2;
 import Functional2.Testcases._NoTeen;
 
 import java.util.List;
-import java.util.Arrays;
-import java.util.ArrayList;
 
 public class NoTeen
 {
     /* Given a list of integers, return a list of those numbers, 
     omitting any that are between 13 and 19 inclusive. */
 
-    /*_____________________________________
+    /*____________________________________
     |              Testcases              |
     |_____________________________________|
     | noTeen([12, 13, 19, 20]) → [12, 20] |

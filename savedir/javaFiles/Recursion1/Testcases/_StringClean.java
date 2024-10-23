@@ -9,7 +9,11 @@ public class _StringClean
         "stringClean(\"Hello\")",
     };
 
-    static String[] expectedResults = { "yza", "abcd", "Helo", };
+    static String[] expectedResults = {
+        "yza",
+        "abcd",
+        "Helo",
+    };
 
     public static void Validate(boolean printSuccess)
     {

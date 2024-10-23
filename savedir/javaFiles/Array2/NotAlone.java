@@ -8,7 +8,7 @@ public class NotAlone
     and those values are different from it. 
     Return a version of the given array where every instance of the given value which is alone is replaced by whichever value to its left or right is larger. */
 
-    /*______________________________________________________
+    /*_____________________________________________________
     |                      Testcases                       |
     |______________________________________________________|
     | notAlone([1, 2, 3], 2)          → [1, 3, 3]          |

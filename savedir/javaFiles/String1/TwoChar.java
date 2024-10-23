@@ -8,7 +8,7 @@ public class TwoChar
     If the index is too big or too small to define a string length 2, 
     use the first 2 chars. The string length will be at least 2. */
 
-    /*___________________________
+    /*__________________________
     |         Testcases         |
     |___________________________|
     | twoChar("java", 0) → "ja" |

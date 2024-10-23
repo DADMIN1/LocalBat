@@ -9,7 +9,11 @@ public class _ScoresAverage
         "scoresAverage([3, 4, 5, 1, 2, 3])",
     };
 
-    static int[] expectedResults = { 4, 4, 4, };
+    static int[] expectedResults = {
+        4,
+        4,
+        4,
+    };
 
     public static void Validate(boolean printSuccess)
     {

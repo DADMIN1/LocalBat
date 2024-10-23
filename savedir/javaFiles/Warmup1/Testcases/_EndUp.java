@@ -9,7 +9,11 @@ public class _EndUp
         "endUp(\"hi\")",
     };
 
-    static String[] expectedResults = { "HeLLO", "hi thERE", "HI", };
+    static String[] expectedResults = {
+        "HeLLO",
+        "hi thERE",
+        "HI",
+    };
 
     public static void Validate(boolean printSuccess)
     {

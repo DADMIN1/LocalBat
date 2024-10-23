@@ -3,15 +3,13 @@ package Functional1;
 import Functional1.Testcases._RightDigit;
 
 import java.util.List;
-import java.util.Arrays;
-import java.util.ArrayList;
 
 public class RightDigit
 {
     /* Given a list of non-negative integers, return an integer list of the rightmost digits. 
     (Note: use %) */
 
-    /*__________________________________________________
+    /*_________________________________________________
     |                    Testcases                     |
     |__________________________________________________|
     | rightDigit([1, 22, 93])        → [1, 2, 3]       |

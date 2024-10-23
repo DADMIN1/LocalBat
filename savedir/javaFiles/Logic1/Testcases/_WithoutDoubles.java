@@ -9,7 +9,11 @@ public class _WithoutDoubles
         "withoutDoubles(3, 3, false)",
     };
 
-    static int[] expectedResults = { 5, 7, 6, };
+    static int[] expectedResults = {
+        5,
+        7,
+        6,
+    };
 
     public static void Validate(boolean printSuccess)
     {

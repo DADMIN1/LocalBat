@@ -11,7 +11,7 @@ public class NoTeenSum
     In this way, you avoid repeating the teen code 3 times (i.e. 
     "decomposition"). Define the helper below and at the same indent level as the main noTeenSum(). */
 
-    /*_________________________
+    /*________________________
     |        Testcases        |
     |_________________________|
     | noTeenSum(1, 2, 3)  → 6 |

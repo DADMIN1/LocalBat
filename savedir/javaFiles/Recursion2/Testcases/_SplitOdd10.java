@@ -9,7 +9,11 @@ public class _SplitOdd10
         "splitOdd10([5, 5, 6, 1])",
     };
 
-    static boolean[] expectedResults = { true, false, true, };
+    static boolean[] expectedResults = {
+        true,
+        false,
+        true,
+    };
 
     public static void Validate(boolean printSuccess)
     {

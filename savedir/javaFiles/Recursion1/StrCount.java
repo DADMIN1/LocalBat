@@ -8,7 +8,7 @@ public class StrCount
     compute recursively the number of times that sub appears in the string, 
     without the sub strings overlapping. */
 
-    /*__________________________________
+    /*_________________________________
     |            Testcases             |
     |__________________________________|
     | strCount("catcowcat", "cat") → 2 |

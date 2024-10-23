@@ -8,7 +8,7 @@ public class GetSandwich
     Return the string that is between the first and last appearance of "bread" in the given string, 
     or return the empty string "" if there are not two pieces of bread. */
 
-    /*__________________________________________
+    /*_________________________________________
     |                Testcases                 |
     |__________________________________________|
     | getSandwich("breadjambread")     → "jam" |

@@ -9,7 +9,11 @@ public class _AtFirst
         "atFirst(\"h\")",
     };
 
-    static String[] expectedResults = { "he", "hi", "h@", };
+    static String[] expectedResults = {
+        "he",
+        "hi",
+        "h@",
+    };
 
     public static void Validate(boolean printSuccess)
     {

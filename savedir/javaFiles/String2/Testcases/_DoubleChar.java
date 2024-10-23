@@ -9,7 +9,11 @@ public class _DoubleChar
         "doubleChar(\"Hi-There\")",
     };
 
-    static String[] expectedResults = { "TThhee", "AAAAbbbb", "HHii--TThheerree", };
+    static String[] expectedResults = {
+        "TThhee",
+        "AAAAbbbb",
+        "HHii--TThheerree",
+    };
 
     public static void Validate(boolean printSuccess)
     {

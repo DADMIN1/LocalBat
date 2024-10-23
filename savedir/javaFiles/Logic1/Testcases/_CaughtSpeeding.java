@@ -9,7 +9,11 @@ public class _CaughtSpeeding
         "caughtSpeeding(65, true)",
     };
 
-    static int[] expectedResults = { 0, 1, 0, };
+    static int[] expectedResults = {
+        0,
+        1,
+        0,
+    };
 
     public static void Validate(boolean printSuccess)
     {

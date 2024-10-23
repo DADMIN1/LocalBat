@@ -9,7 +9,11 @@ public class _StringMatch
         "stringMatch(\"abc\", \"axc\")",
     };
 
-    static int[] expectedResults = { 3, 2, 0, };
+    static int[] expectedResults = {
+        3,
+        2,
+        0,
+    };
 
     public static void Validate(boolean printSuccess)
     {

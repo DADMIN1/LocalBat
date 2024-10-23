@@ -9,7 +9,11 @@ public class _StartWord
         "startWord(\"hippo\", \"i\")",
     };
 
-    static String[] expectedResults = { "hi", "hip", "h", };
+    static String[] expectedResults = {
+        "hi",
+        "hip",
+        "h",
+    };
 
     public static void Validate(boolean printSuccess)
     {

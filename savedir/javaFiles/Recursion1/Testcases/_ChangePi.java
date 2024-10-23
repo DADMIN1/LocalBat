@@ -9,7 +9,11 @@ public class _ChangePi
         "changePi(\"pip\")",
     };
 
-    static String[] expectedResults = { "x3.14x", "3.143.14", "3.14p", };
+    static String[] expectedResults = {
+        "x3.14x",
+        "3.143.14",
+        "3.14p",
+    };
 
     public static void Validate(boolean printSuccess)
     {

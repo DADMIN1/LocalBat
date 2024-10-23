@@ -9,7 +9,11 @@ public class _EndX
         "endX(\"xhixhix\")",
     };
 
-    static String[] expectedResults = { "rexx", "hixxxx", "hihixxx", };
+    static String[] expectedResults = {
+        "rexx",
+        "hixxxx",
+        "hihixxx",
+    };
 
     public static void Validate(boolean printSuccess)
     {

@@ -3,15 +3,13 @@ package AP1;
 import AP1.Testcases._WordsWithoutList;
 
 import java.util.List;
-import java.util.Arrays;
-import java.util.ArrayList;
 
 public class WordsWithoutList
 {
     /* Given an array of strings, return a new List (e.g. an ArrayList) where all the strings of the given length are omitted. 
     See wordsWithout() below which is more difficult because it uses arrays. */
 
-    /*________________________________________________________________________
+    /*_______________________________________________________________________
     |                               Testcases                                |
     |________________________________________________________________________|
     | wordsWithoutList(["a", "bb", "b", "ccc"], 1) → ["bb", "ccc"]           |

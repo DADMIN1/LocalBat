@@ -10,7 +10,11 @@ public class _ShiftLeft
         "shiftLeft([1])",
     };
 
-    static int[][] expectedResults = { {2, 5, 3, 6}, {2, 1}, {1}, };
+    static int[][] expectedResults = {
+        {2, 5, 3, 6},
+        {2, 1},
+        {1},
+    };
 
     public static String printArray(int[] array)
     {

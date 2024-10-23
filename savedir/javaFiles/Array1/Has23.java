@@ -6,7 +6,7 @@ public class Has23
 {
     /* Given an int array length 2, return true if it contains a 2 or a 3. */
 
-    /*_______________________
+    /*______________________
     |       Testcases       |
     |_______________________|
     | has23([2, 5]) → true  |

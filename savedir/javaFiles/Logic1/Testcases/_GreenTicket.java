@@ -9,7 +9,11 @@ public class _GreenTicket
         "greenTicket(1, 1, 2)",
     };
 
-    static int[] expectedResults = { 0, 20, 10, };
+    static int[] expectedResults = {
+        0,
+        20,
+        10,
+    };
 
     public static void Validate(boolean printSuccess)
     {

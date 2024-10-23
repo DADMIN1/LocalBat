@@ -9,7 +9,7 @@ public class SeriesUp
     Note that the length of the array will be 1 + 2 + 3 ... 
     + n, which is known to sum to exactly n*(n + 1)/2. */
 
-    /*______________________________________________
+    /*_____________________________________________
     |                  Testcases                   |
     |______________________________________________|
     | seriesUp(3) → [1, 1, 2, 1, 2, 3]             |

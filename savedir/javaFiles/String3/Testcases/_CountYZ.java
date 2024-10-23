@@ -9,7 +9,11 @@ public class _CountYZ
         "countYZ(\"day fyyyz\")",
     };
 
-    static int[] expectedResults = { 2, 2, 2, };
+    static int[] expectedResults = {
+        2,
+        2,
+        2,
+    };
 
     public static void Validate(boolean printSuccess)
     {

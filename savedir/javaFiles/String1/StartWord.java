@@ -11,7 +11,7 @@ public class StartWord
     So, so with the string "hippo" the word "hi" returns "hi" and "xip" returns "hip". 
     The word will be at least length 1. */
 
-    /*___________________________________
+    /*__________________________________
     |             Testcases             |
     |___________________________________|
     | startWord("hippo", "hi")  → "hi"  |

@@ -9,7 +9,11 @@ public class _SumDouble
         "sumDouble(2, 2)",
     };
 
-    static int[] expectedResults = { 3, 5, 8, };
+    static int[] expectedResults = {
+        3,
+        5,
+        8,
+    };
 
     public static void Validate(boolean printSuccess)
     {

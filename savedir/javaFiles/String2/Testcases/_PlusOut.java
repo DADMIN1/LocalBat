@@ -9,7 +9,11 @@ public class _PlusOut
         "plusOut(\"12xy34xyabcxy\", \"xy\")",
     };
 
-    static String[] expectedResults = { "++xy++", "1+++++", "++xy++xy+++xy", };
+    static String[] expectedResults = {
+        "++xy++",
+        "1+++++",
+        "++xy++xy+++xy",
+    };
 
     public static void Validate(boolean printSuccess)
     {

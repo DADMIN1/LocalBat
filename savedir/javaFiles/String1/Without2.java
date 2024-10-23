@@ -9,7 +9,7 @@ public class Without2
     so "HelloHe" yields "lloHe". The substring may overlap with itself, 
     so "Hi" yields "". Otherwise, return the original string unchanged. */
 
-    /*_________________________________
+    /*________________________________
     |            Testcases            |
     |_________________________________|
     | without2("HelloHe") → "lloHe"   |

@@ -9,7 +9,11 @@ public class _ParenBit
         "parenBit(\"(xy)1\")",
     };
 
-    static String[] expectedResults = { "(abc)", "(hello)", "(xy)", };
+    static String[] expectedResults = {
+        "(abc)",
+        "(hello)",
+        "(xy)",
+    };
 
     public static void Validate(boolean printSuccess)
     {

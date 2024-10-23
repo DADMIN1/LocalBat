@@ -9,7 +9,11 @@ public class _RepeatSeparator
         "repeatSeparator(\"This\", \"And\", 1)",
     };
 
-    static String[] expectedResults = { "WordXWordXWord", "ThisAndThis", "This", };
+    static String[] expectedResults = {
+        "WordXWordXWord",
+        "ThisAndThis",
+        "This",
+    };
 
     public static void Validate(boolean printSuccess)
     {

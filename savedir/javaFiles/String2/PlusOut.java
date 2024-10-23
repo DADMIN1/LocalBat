@@ -8,7 +8,7 @@ public class PlusOut
     return a version of the original String where all chars have been replaced by pluses ("+"), 
     except for appearances of the word string which are preserved unchanged. */
 
-    /*__________________________________________________
+    /*_________________________________________________
     |                    Testcases                     |
     |__________________________________________________|
     | plusOut("12xy34", "xy")        → "++xy++"        |

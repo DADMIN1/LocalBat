@@ -9,7 +9,11 @@ public class _ScoreUp
         "scoreUp([\"a\", \"a\", \"b\", \"b\"], [\"a\", \"a\", \"b\", \"b\"])",
     };
 
-    static int[] expectedResults = { 6, 11, 16, };
+    static int[] expectedResults = {
+        6,
+        11,
+        16,
+    };
 
     public static void Validate(boolean printSuccess)
     {

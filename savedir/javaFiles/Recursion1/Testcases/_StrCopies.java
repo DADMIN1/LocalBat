@@ -9,7 +9,11 @@ public class _StrCopies
         "strCopies(\"catcowcat\", \"cow\", 1)",
     };
 
-    static boolean[] expectedResults = { true, false, true, };
+    static boolean[] expectedResults = {
+        true,
+        false,
+        true,
+    };
 
     public static void Validate(boolean printSuccess)
     {

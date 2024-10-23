@@ -9,7 +9,7 @@ public class LinearIn
     The best solution makes only a single "linear" pass of both arrays, 
     taking advantage of the fact that both arrays are already in sorted order. */
 
-    /*___________________________________________
+    /*__________________________________________
     |                 Testcases                 |
     |___________________________________________|
     | linearIn([1, 2, 4, 6], [2, 4])    → true  |

@@ -9,7 +9,11 @@ public class _ChangeXY
         "changeXY(\"xhixhix\")",
     };
 
-    static String[] expectedResults = { "codey", "yyhiyy", "yhiyhiy", };
+    static String[] expectedResults = {
+        "codey",
+        "yyhiyy",
+        "yhiyhiy",
+    };
 
     public static void Validate(boolean printSuccess)
     {

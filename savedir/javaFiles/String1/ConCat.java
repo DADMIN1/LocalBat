@@ -8,7 +8,7 @@ public class ConCat
     However, if the concatenation creates a double-char, then omit one of the chars, 
     so "abc" and "cat" yields "abcat". */
 
-    /*_________________________________
+    /*________________________________
     |            Testcases            |
     |_________________________________|
     | conCat("abc", "cat") → "abcat"  |

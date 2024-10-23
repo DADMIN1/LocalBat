@@ -10,7 +10,11 @@ public class _EvenOdd
         "evenOdd([2, 2, 2])",
     };
 
-    static int[][] expectedResults = { {0, 0, 0, 1, 1, 1, 1}, {2, 3, 3}, {2, 2, 2}, };
+    static int[][] expectedResults = {
+        {0, 0, 0, 1, 1, 1, 1},
+        {2, 3, 3},
+        {2, 2, 2},
+    };
 
     public static String printArray(int[] array)
     {

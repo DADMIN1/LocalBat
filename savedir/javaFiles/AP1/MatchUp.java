@@ -9,7 +9,7 @@ public class MatchUp
     the 2nd to the 2nd and so on. Count the number of times that the 2 strings are non-empty and start with the same char. 
     The strings may be any length, including 0. */
 
-    /*______________________________________________________
+    /*_____________________________________________________
     |                      Testcases                       |
     |______________________________________________________|
     | matchUp(["aa", "bb", "cc"], ["aaa", "xx", "bb"]) → 1 |

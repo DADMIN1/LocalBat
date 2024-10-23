@@ -10,7 +10,11 @@ public class _Fix45
         "fix45([1, 4, 1, 5, 5, 4, 1])",
     };
 
-    static int[][] expectedResults = { {9, 4, 5, 4, 5, 9}, {1, 4, 5, 1}, {1, 4, 5, 1, 1, 4, 5}, };
+    static int[][] expectedResults = {
+        {9, 4, 5, 4, 5, 9},
+        {1, 4, 5, 1},
+        {1, 4, 5, 1, 1, 4, 5},
+    };
 
     public static String printArray(int[] array)
     {

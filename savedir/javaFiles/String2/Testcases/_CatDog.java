@@ -9,7 +9,11 @@ public class _CatDog
         "catDog(\"1cat1cadodog\")",
     };
 
-    static boolean[] expectedResults = { true, false, true, };
+    static boolean[] expectedResults = {
+        true,
+        false,
+        true,
+    };
 
     public static void Validate(boolean printSuccess)
     {

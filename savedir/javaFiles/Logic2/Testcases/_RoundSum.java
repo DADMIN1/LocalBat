@@ -9,7 +9,11 @@ public class _RoundSum
         "roundSum(6, 4, 4)",
     };
 
-    static int[] expectedResults = { 60, 30, 10, };
+    static int[] expectedResults = {
+        60,
+        30,
+        10,
+    };
 
     public static void Validate(boolean printSuccess)
     {

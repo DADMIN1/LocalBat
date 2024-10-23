@@ -9,7 +9,7 @@ public class Array220
     In this way, a recursive call can pass index+1 to move down the array. 
     The initial call will pass in index as 0. */
 
-    /*_________________________________
+    /*________________________________
     |            Testcases            |
     |_________________________________|
     | array220([1, 2, 20], 0) → true  |

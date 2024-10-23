@@ -11,7 +11,11 @@ public class _No9
         "no9([1, 2, 3])",
     };
 
-    static List<Integer>[] expectedResults = { Arrays.asList(1, 2), Arrays.asList(3), Arrays.asList(1, 2, 3), };
+    static List<Integer>[] expectedResults = {
+        Arrays.asList(1, 2),
+        Arrays.asList(3),
+        Arrays.asList(1, 2, 3),
+    };
 
     public static void Validate(boolean printSuccess)
     {

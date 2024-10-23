@@ -3,14 +3,13 @@ package Map1;
 import Map1.Testcases._MapAB;
 
 import java.util.Map;
-import java.util.HashMap;
 
 public class MapAB
 {
     /* Modify and return the given map as follows: for this problem the map may or may not contain the "a" and "b" keys. 
     If both keys are present, append their 2 string values together and store the result under the key "ab". */
 
-    /*_______________________________________________________________________________
+    /*______________________________________________________________________________
     |                                   Testcases                                   |
     |_______________________________________________________________________________|
     | mapAB({"a": "Hi", "b": "There"}) → {"a": "Hi", "ab": "HiThere", "b": "There"} |

@@ -8,7 +8,7 @@ public class FrontTimes
     or whatever is there if the string is less than length 3. 
     Return n copies of the front; */
 
-    /*__________________________________________
+    /*_________________________________________
     |                Testcases                 |
     |__________________________________________|
     | frontTimes("Chocolate", 2) → "ChoCho"    |

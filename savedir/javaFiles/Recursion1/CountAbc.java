@@ -6,7 +6,7 @@ public class CountAbc
 {
     /* Count recursively the total number of "abc" and "aba" substrings that appear in the given string. */
 
-    /*__________________________
+    /*_________________________
     |        Testcases         |
     |__________________________|
     | countAbc("abc")      → 1 |

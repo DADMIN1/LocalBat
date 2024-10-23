@@ -8,7 +8,7 @@ public class MidThree
     return a new array length 3 containing the elements from the middle of the array. 
     The array length will be at least 3. */
 
-    /*_____________________________________________
+    /*____________________________________________
     |                  Testcases                  |
     |_____________________________________________|
     | midThree([1, 2, 3, 4, 5])       → [2, 3, 4] |

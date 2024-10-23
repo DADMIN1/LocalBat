@@ -10,7 +10,11 @@ public class _WithoutTen
         "withoutTen([1, 99, 10])",
     };
 
-    static int[][] expectedResults = { {1, 2, 0, 0}, {2, 0, 0}, {1, 99, 0}, };
+    static int[][] expectedResults = {
+        {1, 2, 0, 0},
+        {2, 0, 0},
+        {1, 99, 0},
+    };
 
     public static String printArray(int[] array)
     {

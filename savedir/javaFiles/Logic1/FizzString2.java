@@ -11,7 +11,7 @@ public class FizzString2
     so 23 % 10 yields 3. What will the remainder be when one number divides evenly into another? (See also: 
     FizzBuzz Code and Introduction to Mod) */
 
-    /*__________________________
+    /*_________________________
     |        Testcases         |
     |__________________________|
     | fizzString2(1) → "1!"    |

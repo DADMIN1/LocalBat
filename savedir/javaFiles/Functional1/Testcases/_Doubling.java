@@ -11,7 +11,11 @@ public class _Doubling
         "doubling([])",
     };
 
-    static List<Integer>[] expectedResults = { Arrays.asList(2, 4, 6), Arrays.asList(12, 16, 12, 16, -2), Arrays.asList(), };
+    static List<Integer>[] expectedResults = {
+        Arrays.asList(2, 4, 6),
+        Arrays.asList(12, 16, 12, 16, -2),
+        Arrays.asList(),
+    };
 
     public static void Validate(boolean printSuccess)
     {

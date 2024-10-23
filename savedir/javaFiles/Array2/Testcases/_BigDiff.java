@@ -9,7 +9,11 @@ public class _BigDiff
         "bigDiff([2, 10, 7, 2])",
     };
 
-    static int[] expectedResults = { 7, 8, 8, };
+    static int[] expectedResults = {
+        7,
+        8,
+        8,
+    };
 
     public static void Validate(boolean printSuccess)
     {

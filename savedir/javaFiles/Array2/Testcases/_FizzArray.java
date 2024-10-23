@@ -10,7 +10,11 @@ public class _FizzArray
         "fizzArray(10)",
     };
 
-    static int[][] expectedResults = { {0, 1, 2, 3}, {0}, {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}, };
+    static int[][] expectedResults = {
+        {0, 1, 2, 3},
+        {0},
+        {0, 1, 2, 3, 4, 5, 6, 7, 8, 9},
+    };
 
     public static String printArray(int[] array)
     {

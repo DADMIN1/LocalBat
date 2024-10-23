@@ -9,7 +9,7 @@ public class SumDigits
     (Note: Character.isDigit(char) tests if a char is one of the chars '0', 
     '1', .. '9'. Integer.parseInt(string) converts a string to an int.) */
 
-    /*____________________________
+    /*___________________________
     |         Testcases          |
     |____________________________|
     | sumDigits("aa1bc2d3")  → 6 |

@@ -9,7 +9,11 @@ public class _BackAround
         "backAround(\"a\")",
     };
 
-    static String[] expectedResults = { "tcatt", "oHelloo", "aaa", };
+    static String[] expectedResults = {
+        "tcatt",
+        "oHelloo",
+        "aaa",
+    };
 
     public static void Validate(boolean printSuccess)
     {

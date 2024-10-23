@@ -8,7 +8,7 @@ public class MissingChar
     The value of n will be a valid index of a char in the original string (i.e. 
     n will be in the range 0..str.length()-1 inclusive). */
 
-    /*____________________________________
+    /*___________________________________
     |             Testcases              |
     |____________________________________|
     | missingChar("kitten", 1) → "ktten" |

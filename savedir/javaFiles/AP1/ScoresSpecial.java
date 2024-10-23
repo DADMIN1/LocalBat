@@ -9,7 +9,7 @@ public class ScoresSpecial
     To practice decomposition, write a separate helper method which finds the largest special score in an array. 
     Write your helper method after your scoresSpecial() method in the JavaBat text area. */
 
-    /*______________________________________________
+    /*_____________________________________________
     |                  Testcases                   |
     |______________________________________________|
     | scoresSpecial([12, 10, 4], [2, 20, 30]) → 40 |

@@ -10,7 +10,11 @@ public class _WordCount
         "wordCount([\"c\", \"c\", \"c\", \"c\"])",
     };
 
-    static Map<String, Integer>[] expectedResults = { {"a": 2, "b": 2, "c": 1}, {"a": 1, "b": 1, "c": 1}, {"c": 4}, };
+    static Map<String, Integer>[] expectedResults = {
+        {"a": 2, "b": 2, "c": 1},
+        {"a": 1, "b": 1, "c": 1},
+        {"c": 4},
+    };
 
     public static void Validate(boolean printSuccess)
     {

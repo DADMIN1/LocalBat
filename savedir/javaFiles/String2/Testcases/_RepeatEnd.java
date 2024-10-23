@@ -9,7 +9,11 @@ public class _RepeatEnd
         "repeatEnd(\"Hello\", 1)",
     };
 
-    static String[] expectedResults = { "llollollo", "lolo", "o", };
+    static String[] expectedResults = {
+        "llollollo",
+        "lolo",
+        "o",
+    };
 
     public static void Validate(boolean printSuccess)
     {

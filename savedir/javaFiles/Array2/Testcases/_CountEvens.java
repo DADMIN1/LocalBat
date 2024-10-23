@@ -9,7 +9,11 @@ public class _CountEvens
         "countEvens([1, 3, 5])",
     };
 
-    static int[] expectedResults = { 3, 3, 0, };
+    static int[] expectedResults = {
+        3,
+        3,
+        0,
+    };
 
     public static void Validate(boolean printSuccess)
     {

@@ -9,7 +9,11 @@ public class _CountTriple
         "countTriple(\"a\")",
     };
 
-    static int[] expectedResults = { 1, 3, 0, };
+    static int[] expectedResults = {
+        1,
+        3,
+        0,
+    };
 
     public static void Validate(boolean printSuccess)
     {

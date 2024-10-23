@@ -9,7 +9,11 @@ public class _Scores100
         "scores100([100, 1, 100, 100])",
     };
 
-    static boolean[] expectedResults = { true, false, true, };
+    static boolean[] expectedResults = {
+        true,
+        false,
+        true,
+    };
 
     public static void Validate(boolean printSuccess)
     {

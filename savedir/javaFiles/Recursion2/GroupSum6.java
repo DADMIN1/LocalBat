@@ -9,7 +9,7 @@ public class GroupSum6
     with the additional constraint that all 6's must be chosen. 
     (No loops needed.) */
 
-    /*____________________________________
+    /*___________________________________
     |             Testcases              |
     |____________________________________|
     | groupSum6(0, [5, 6, 2], 8) → true  |

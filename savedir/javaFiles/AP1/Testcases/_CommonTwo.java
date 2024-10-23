@@ -9,7 +9,11 @@ public class _CommonTwo
         "commonTwo([\"a\", \"b\", \"c\"], [\"a\", \"b\", \"c\"])",
     };
 
-    static int[] expectedResults = { 2, 3, 3, };
+    static int[] expectedResults = {
+        2,
+        3,
+        3,
+    };
 
     public static void Validate(boolean printSuccess)
     {

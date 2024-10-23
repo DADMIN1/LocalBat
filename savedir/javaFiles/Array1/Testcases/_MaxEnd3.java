@@ -10,7 +10,11 @@ public class _MaxEnd3
         "maxEnd3([2, 11, 3])",
     };
 
-    static int[][] expectedResults = { {3, 3, 3}, {11, 11, 11}, {3, 3, 3}, };
+    static int[][] expectedResults = {
+        {3, 3, 3},
+        {11, 11, 11},
+        {3, 3, 3},
+    };
 
     public static String printArray(int[] array)
     {

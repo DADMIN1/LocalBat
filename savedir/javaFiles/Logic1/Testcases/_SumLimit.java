@@ -9,7 +9,11 @@ public class _SumLimit
         "sumLimit(8, 1)",
     };
 
-    static int[] expectedResults = { 5, 8, 9, };
+    static int[] expectedResults = {
+        5,
+        8,
+        9,
+    };
 
     public static void Validate(boolean printSuccess)
     {

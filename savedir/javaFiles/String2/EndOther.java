@@ -8,7 +8,7 @@ public class EndOther
     ignoring upper/lower case differences (in other words, the computation should not be "case sensitive"). 
     Note: str.toLowerCase() returns the lowercase version of a string. */
 
-    /*__________________________________
+    /*_________________________________
     |            Testcases             |
     |__________________________________|
     | endOther("Hiabc", "abc")  → true |

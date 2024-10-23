@@ -9,7 +9,11 @@ public class _PosNeg
         "posNeg(-4, -5, true)",
     };
 
-    static boolean[] expectedResults = { true, true, true, };
+    static boolean[] expectedResults = {
+        true,
+        true,
+        true,
+    };
 
     public static void Validate(boolean printSuccess)
     {

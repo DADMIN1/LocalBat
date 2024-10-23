@@ -8,7 +8,7 @@ public class TheEnd
     unless front is false, in which case return a string length 1 from its back. 
     The string will be non-empty. */
 
-    /*______________________________
+    /*_____________________________
     |          Testcases           |
     |______________________________|
     | theEnd("Hello", true)  → "H" |

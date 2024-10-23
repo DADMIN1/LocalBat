@@ -11,7 +11,11 @@ public class _NoX
         "noX([\"x\"])",
     };
 
-    static List<String>[] expectedResults = { Arrays.asList("a", "bb", "c"), Arrays.asList("a", "bb", "c"), Arrays.asList(""), };
+    static List<String>[] expectedResults = {
+        Arrays.asList("a", "bb", "c"),
+        Arrays.asList("a", "bb", "c"),
+        Arrays.asList(""),
+    };
 
     public static void Validate(boolean printSuccess)
     {

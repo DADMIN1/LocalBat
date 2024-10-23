@@ -9,7 +9,11 @@ public class _More20
         "more20(22)",
     };
 
-    static boolean[] expectedResults = { false, true, true, };
+    static boolean[] expectedResults = {
+        false,
+        true,
+        true,
+    };
 
     public static void Validate(boolean printSuccess)
     {

@@ -3,15 +3,13 @@ package Functional2;
 import Functional2.Testcases._No9;
 
 import java.util.List;
-import java.util.Arrays;
-import java.util.ArrayList;
 
 public class No9
 {
     /* Given a list of non-negative integers, return a list of those numbers except omitting any that end with 9. 
     (Note: % by 10) */
 
-    /*_________________________________
+    /*________________________________
     |            Testcases            |
     |_________________________________|
     | no9([1, 2, 19])     → [1, 2]    |

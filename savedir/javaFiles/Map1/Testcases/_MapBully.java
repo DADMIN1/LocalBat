@@ -10,7 +10,11 @@ public class _MapBully
         "mapBully({\"a\": \"candy\", \"b\": \"carrot\", \"c\": \"meh\"})",
     };
 
-    static Map<String, String>[] expectedResults = { {"a": "", "b": "candy"}, {"a": "", "b": "candy"}, {"a": "", "b": "candy", "c": "meh"}, };
+    static Map<String, String>[] expectedResults = {
+        {"a": "", "b": "candy"},
+        {"a": "", "b": "candy"},
+        {"a": "", "b": "candy", "c": "meh"},
+    };
 
     public static void Validate(boolean printSuccess)
     {

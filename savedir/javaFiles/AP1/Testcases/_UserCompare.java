@@ -9,7 +9,11 @@ public class _UserCompare
         "userCompare(\"bb\", 1, \"bb\", 1)",
     };
 
-    static int[] expectedResults = { -1, 1, 0, };
+    static int[] expectedResults = {
+        -1,
+        1,
+        0,
+    };
 
     public static void Validate(boolean printSuccess)
     {

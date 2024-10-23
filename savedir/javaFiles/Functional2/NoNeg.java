@@ -3,15 +3,13 @@ package Functional2;
 import Functional2.Testcases._NoNeg;
 
 import java.util.List;
-import java.util.Arrays;
-import java.util.ArrayList;
 
 public class NoNeg
 {
     /* Given a list of integers, return a list of the integers, 
     omitting any that are less than 0. */
 
-    /*________________________________
+    /*_______________________________
     |           Testcases            |
     |________________________________|
     | noNeg([1, -2])        → [1]    |

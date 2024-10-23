@@ -9,7 +9,11 @@ public class _Array123
         "array123([1, 1, 2, 1, 2, 3])",
     };
 
-    static boolean[] expectedResults = { true, false, true, };
+    static boolean[] expectedResults = {
+        true,
+        false,
+        true,
+    };
 
     public static void Validate(boolean printSuccess)
     {

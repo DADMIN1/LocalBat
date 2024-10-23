@@ -9,7 +9,11 @@ public class _MakeBricks
         "makeBricks(3, 2, 10)",
     };
 
-    static boolean[] expectedResults = { true, false, true, };
+    static boolean[] expectedResults = {
+        true,
+        false,
+        true,
+    };
 
     public static void Validate(boolean printSuccess)
     {

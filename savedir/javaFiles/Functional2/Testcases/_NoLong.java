@@ -11,7 +11,11 @@ public class _NoLong
         "noLong([\"cccc\", \"cccc\", \"cccc\"])",
     };
 
-    static List<String>[] expectedResults = { Arrays.asList("not", "too"), Arrays.asList("a", "bbb"), Arrays.asList(), };
+    static List<String>[] expectedResults = {
+        Arrays.asList("not", "too"),
+        Arrays.asList("a", "bbb"),
+        Arrays.asList(),
+    };
 
     public static void Validate(boolean printSuccess)
     {

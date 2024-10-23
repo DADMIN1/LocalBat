@@ -9,7 +9,11 @@ public class _StrCount
         "strCount(\"catcowcat\", \"dog\")",
     };
 
-    static int[] expectedResults = { 2, 1, 0, };
+    static int[] expectedResults = {
+        2,
+        1,
+        0,
+    };
 
     public static void Validate(boolean printSuccess)
     {

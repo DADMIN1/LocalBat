@@ -10,7 +10,11 @@ public class _MakeEnds
         "makeEnds([7, 4, 6, 2])",
     };
 
-    static int[][] expectedResults = { {1, 3}, {1, 4}, {7, 2}, };
+    static int[][] expectedResults = {
+        {1, 3},
+        {1, 4},
+        {7, 2},
+    };
 
     public static String printArray(int[] array)
     {

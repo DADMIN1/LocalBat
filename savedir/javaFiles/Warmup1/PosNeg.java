@@ -7,7 +7,7 @@ public class PosNeg
     /* Given 2 int values, return true if one is negative and one is positive. 
     Except if the parameter "negative" is true, then return true only if both are negative. */
 
-    /*_____________________________
+    /*____________________________
     |          Testcases          |
     |_____________________________|
     | posNeg(1, -1, false) → true |

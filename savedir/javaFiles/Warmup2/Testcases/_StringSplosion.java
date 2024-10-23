@@ -9,7 +9,11 @@ public class _StringSplosion
         "stringSplosion(\"ab\")",
     };
 
-    static String[] expectedResults = { "CCoCodCode", "aababc", "aab", };
+    static String[] expectedResults = {
+        "CCoCodCode",
+        "aababc",
+        "aab",
+    };
 
     public static void Validate(boolean printSuccess)
     {

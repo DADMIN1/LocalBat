@@ -10,7 +10,11 @@ public class _WordLen
         "wordLen([\"code\", \"code\", \"code\", \"bug\"])",
     };
 
-    static Map<String, Integer>[] expectedResults = { {"bb": 2, "a": 1}, {"that": 4, "and": 3, "this": 4}, {"code": 4, "bug": 3}, };
+    static Map<String, Integer>[] expectedResults = {
+        {"bb": 2, "a": 1},
+        {"that": 4, "and": 3, "this": 4},
+        {"code": 4, "bug": 3},
+    };
 
     public static void Validate(boolean printSuccess)
     {

@@ -11,7 +11,11 @@ public class _Square
         "square([])",
     };
 
-    static List<Integer>[] expectedResults = { Arrays.asList(1, 4, 9), Arrays.asList(36, 64, 36, 64, 1), Arrays.asList(), };
+    static List<Integer>[] expectedResults = {
+        Arrays.asList(1, 4, 9),
+        Arrays.asList(36, 64, 36, 64, 1),
+        Arrays.asList(),
+    };
 
     public static void Validate(boolean printSuccess)
     {

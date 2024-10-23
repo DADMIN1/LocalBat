@@ -9,7 +9,11 @@ public class _FirstHalf
         "firstHalf(\"abcdef\")",
     };
 
-    static String[] expectedResults = { "Woo", "Hello", "abc", };
+    static String[] expectedResults = {
+        "Woo",
+        "Hello",
+        "abc",
+    };
 
     public static void Validate(boolean printSuccess)
     {

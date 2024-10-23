@@ -9,7 +9,11 @@ public class _Left2
         "left2(\"Hi\")",
     };
 
-    static String[] expectedResults = { "lloHe", "vaja", "Hi", };
+    static String[] expectedResults = {
+        "lloHe",
+        "vaja",
+        "Hi",
+    };
 
     public static void Validate(boolean printSuccess)
     {

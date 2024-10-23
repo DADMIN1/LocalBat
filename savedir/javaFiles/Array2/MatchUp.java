@@ -9,7 +9,7 @@ public class MatchUp
     Return the count of the number of times that the two elements differ by 2 or less, 
     but are not equal. */
 
-    /*____________________________________
+    /*___________________________________
     |             Testcases              |
     |____________________________________|
     | matchUp([1, 2, 3], [2, 3, 10]) → 2 |

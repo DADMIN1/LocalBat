@@ -6,7 +6,7 @@ public class PlusTwo
 {
     /* Given 2 int arrays, each length 2, return a new array length 4 containing all their elements. */
 
-    /*________________________________________
+    /*_______________________________________
     |               Testcases                |
     |________________________________________|
     | plusTwo([1, 2], [3, 4]) → [1, 2, 3, 4] |

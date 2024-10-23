@@ -9,7 +9,11 @@ public class _AlarmClock
         "alarmClock(0, false)",
     };
 
-    static String[] expectedResults = { "7:00", "7:00", "10:00", };
+    static String[] expectedResults = {
+        "7:00",
+        "7:00",
+        "10:00",
+    };
 
     public static void Validate(boolean printSuccess)
     {

@@ -8,7 +8,7 @@ public class Front3
     If the string length is less than 3, the front is whatever is there. 
     Return a new string which is 3 copies of the front. */
 
-    /*___________________________________
+    /*__________________________________
     |             Testcases             |
     |___________________________________|
     | front3("Java")      → "JavJavJav" |

@@ -9,7 +9,11 @@ public class _Fibonacci
         "fibonacci(2)",
     };
 
-    static int[] expectedResults = { 0, 1, 1, };
+    static int[] expectedResults = {
+        0,
+        1,
+        1,
+    };
 
     public static void Validate(boolean printSuccess)
     {

@@ -8,7 +8,7 @@ public class WithoutX2
     return the string without those 'x' chars, and otherwise return the string unchanged. 
     This is a little harder than it looks. */
 
-    /*_________________________
+    /*________________________
     |        Testcases        |
     |_________________________|
     | withoutX2("xHi") → "Hi" |

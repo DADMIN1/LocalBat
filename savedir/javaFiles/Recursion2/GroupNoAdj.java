@@ -9,7 +9,7 @@ public class GroupNoAdj
     If a value in the array is chosen to be in the group, the value immediately following it in the array must not be chosen. 
     (No loops needed.) */
 
-    /*__________________________________________
+    /*_________________________________________
     |                Testcases                 |
     |__________________________________________|
     | groupNoAdj(0, [2, 5, 10, 4], 12) → true  |

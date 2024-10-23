@@ -10,7 +10,11 @@ public class _MapShare
         "mapShare({\"a\": \"aaa\", \"c\": \"meh\", \"d\": \"hi\"})",
     };
 
-    static Map<String, String>[] expectedResults = { {"a": "aaa", "b": "aaa"}, {"b": "xyz"}, {"a": "aaa", "b": "aaa", "d": "hi"}, };
+    static Map<String, String>[] expectedResults = {
+        {"a": "aaa", "b": "aaa"},
+        {"b": "xyz"},
+        {"a": "aaa", "b": "aaa", "d": "hi"},
+    };
 
     public static void Validate(boolean printSuccess)
     {

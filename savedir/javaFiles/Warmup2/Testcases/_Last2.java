@@ -9,7 +9,11 @@ public class _Last2
         "last2(\"axxxaaxx\")",
     };
 
-    static int[] expectedResults = { 1, 1, 2, };
+    static int[] expectedResults = {
+        1,
+        1,
+        2,
+    };
 
     public static void Validate(boolean printSuccess)
     {

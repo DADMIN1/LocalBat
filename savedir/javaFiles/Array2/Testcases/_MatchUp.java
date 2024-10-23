@@ -9,7 +9,11 @@ public class _MatchUp
         "matchUp([1, 2, 3], [2, 3, 3])",
     };
 
-    static int[] expectedResults = { 2, 3, 2, };
+    static int[] expectedResults = {
+        2,
+        3,
+        2,
+    };
 
     public static void Validate(boolean printSuccess)
     {

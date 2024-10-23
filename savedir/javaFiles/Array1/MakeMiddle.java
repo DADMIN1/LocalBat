@@ -8,7 +8,7 @@ public class MakeMiddle
     return a new array length 2 containing the middle two elements from the original array. 
     The original array will be length 2 or more. */
 
-    /*_________________________________________
+    /*________________________________________
     |                Testcases                |
     |_________________________________________|
     | makeMiddle([1, 2, 3, 4])       → [2, 3] |

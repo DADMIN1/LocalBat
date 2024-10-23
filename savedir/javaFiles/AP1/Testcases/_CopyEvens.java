@@ -10,7 +10,11 @@ public class _CopyEvens
         "copyEvens([6, 1, 2, 4, 5, 8], 3)",
     };
 
-    static int[][] expectedResults = { {2, 4}, {2, 4, 8}, {6, 2, 4}, };
+    static int[][] expectedResults = {
+        {2, 4},
+        {2, 4, 8},
+        {6, 2, 4},
+    };
 
     public static String printArray(int[] array)
     {

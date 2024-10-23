@@ -9,7 +9,11 @@ public class _ConCat
         "conCat(\"abc\", \"\")",
     };
 
-    static String[] expectedResults = { "abcat", "dogcat", "abc", };
+    static String[] expectedResults = {
+        "abcat",
+        "dogcat",
+        "abc",
+    };
 
     public static void Validate(boolean printSuccess)
     {

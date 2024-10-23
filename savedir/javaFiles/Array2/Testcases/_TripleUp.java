@@ -9,7 +9,11 @@ public class _TripleUp
         "tripleUp([1, 2, 4])",
     };
 
-    static boolean[] expectedResults = { true, true, false, };
+    static boolean[] expectedResults = {
+        true,
+        true,
+        false,
+    };
 
     public static void Validate(boolean printSuccess)
     {

@@ -9,7 +9,7 @@ public class Array11
     In this way, a recursive call can pass index+1 to move down the array. 
     The initial call will pass in index as 0. */
 
-    /*______________________________
+    /*_____________________________
     |          Testcases           |
     |______________________________|
     | array11([1, 2, 11], 0)   → 1 |

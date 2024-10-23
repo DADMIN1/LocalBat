@@ -10,7 +10,11 @@ public class _FrontPiece
         "frontPiece([1])",
     };
 
-    static int[][] expectedResults = { {1, 2}, {1, 2}, {1}, };
+    static int[][] expectedResults = {
+        {1, 2},
+        {1, 2},
+        {1},
+    };
 
     public static String printArray(int[] array)
     {

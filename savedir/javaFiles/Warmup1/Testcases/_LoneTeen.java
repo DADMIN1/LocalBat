@@ -9,7 +9,11 @@ public class _LoneTeen
         "loneTeen(13, 13)",
     };
 
-    static boolean[] expectedResults = { true, true, false, };
+    static boolean[] expectedResults = {
+        true,
+        true,
+        false,
+    };
 
     public static void Validate(boolean printSuccess)
     {

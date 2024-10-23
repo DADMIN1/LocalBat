@@ -9,7 +9,11 @@ public class _StringYak
         "stringYak(\"yak123ya\")",
     };
 
-    static String[] expectedResults = { "pak", "pak", "123ya", };
+    static String[] expectedResults = {
+        "pak",
+        "pak",
+        "123ya",
+    };
 
     public static void Validate(boolean printSuccess)
     {

@@ -6,7 +6,7 @@ public class TwoAsOne
 {
     /* Given three ints, a b c, return true if it is possible to add two of the ints to get the third. */
 
-    /*___________________________
+    /*__________________________
     |         Testcases         |
     |___________________________|
     | twoAsOne(1, 2, 3) → true  |

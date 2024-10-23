@@ -10,7 +10,11 @@ public class _BiggerTwo
         "biggerTwo([1, 1], [1, 2])",
     };
 
-    static int[][] expectedResults = { {3, 4}, {3, 4}, {1, 2}, };
+    static int[][] expectedResults = {
+        {3, 4},
+        {3, 4},
+        {1, 2},
+    };
 
     public static String printArray(int[] array)
     {

@@ -9,7 +9,11 @@ public class _RedTicket
         "redTicket(0, 0, 0)",
     };
 
-    static int[] expectedResults = { 10, 0, 5, };
+    static int[] expectedResults = {
+        10,
+        0,
+        5,
+    };
 
     public static void Validate(boolean printSuccess)
     {

@@ -9,7 +9,11 @@ public class _ShareDigit
         "shareDigit(12, 44)",
     };
 
-    static boolean[] expectedResults = { true, false, false, };
+    static boolean[] expectedResults = {
+        true,
+        false,
+        false,
+    };
 
     public static void Validate(boolean printSuccess)
     {

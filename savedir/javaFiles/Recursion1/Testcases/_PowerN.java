@@ -9,7 +9,11 @@ public class _PowerN
         "powerN(3, 3)",
     };
 
-    static int[] expectedResults = { 3, 9, 27, };
+    static int[] expectedResults = {
+        3,
+        9,
+        27,
+    };
 
     public static void Validate(boolean printSuccess)
     {

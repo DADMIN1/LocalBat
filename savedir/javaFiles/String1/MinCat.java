@@ -9,7 +9,7 @@ public class MinCat
     omit chars from the longer string so it is the same length as the shorter string. 
     So "Hello" and "Hi" yield "loHi". The strings may be any length. */
 
-    /*______________________________________
+    /*_____________________________________
     |              Testcases               |
     |______________________________________|
     | minCat("Hello", "Hi")   → "loHi"     |

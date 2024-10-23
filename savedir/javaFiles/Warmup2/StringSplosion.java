@@ -6,7 +6,7 @@ public class StringSplosion
 {
     /* Given a non-empty string like "Code" return a string like "CCoCodCode". */
 
-    /*_______________________________________
+    /*______________________________________
     |               Testcases               |
     |_______________________________________|
     | stringSplosion("Code") → "CCoCodCode" |

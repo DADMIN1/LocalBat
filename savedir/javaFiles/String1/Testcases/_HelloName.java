@@ -9,7 +9,11 @@ public class _HelloName
         "helloName(\"X\")",
     };
 
-    static String[] expectedResults = { "Hello Bob!", "Hello Alice!", "Hello X!", };
+    static String[] expectedResults = {
+        "Hello Bob!",
+        "Hello Alice!",
+        "Hello X!",
+    };
 
     public static void Validate(boolean printSuccess)
     {

@@ -9,7 +9,11 @@ public class _PairStar
         "pairStar(\"aaaa\")",
     };
 
-    static String[] expectedResults = { "hel*lo", "x*xy*y", "a*a*a*a", };
+    static String[] expectedResults = {
+        "hel*lo",
+        "x*xy*y",
+        "a*a*a*a",
+    };
 
     public static void Validate(boolean printSuccess)
     {

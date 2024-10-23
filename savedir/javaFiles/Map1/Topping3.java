@@ -3,7 +3,6 @@ package Map1;
 import Map1.Testcases._Topping3;
 
 import java.util.Map;
-import java.util.HashMap;
 
 public class Topping3
 {
@@ -11,7 +10,7 @@ public class Topping3
     if the key "potato" has a value, set that as the value for the key "fries". 
     If the key "salad" has a value, set that as the value for the key "spinach". */
 
-    /*_______________________________________________________________________________________________________________________________
+    /*______________________________________________________________________________________________________________________________
     |                                                           Testcases                                                           |
     |_______________________________________________________________________________________________________________________________|
     | topping3({"potato": "ketchup"})                 → {"potato": "ketchup", "fries": "ketchup"}                                   |

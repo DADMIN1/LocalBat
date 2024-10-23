@@ -10,7 +10,11 @@ public class _PlusTwo
         "plusTwo([9, 2], [3, 4])",
     };
 
-    static int[][] expectedResults = { {1, 2, 3, 4}, {4, 4, 2, 2}, {9, 2, 3, 4}, };
+    static int[][] expectedResults = {
+        {1, 2, 3, 4},
+        {4, 4, 2, 2},
+        {9, 2, 3, 4},
+    };
 
     public static String printArray(int[] array)
     {

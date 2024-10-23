@@ -8,7 +8,7 @@ public class SpecialEleven
     Return true if the given non-negative number is special. 
     Use the % "mod" operator -- see Introduction to Mod */
 
-    /*___________________________
+    /*__________________________
     |         Testcases         |
     |___________________________|
     | specialEleven(22) → true  |

@@ -9,7 +9,11 @@ public class _LuckySum
         "luckySum(1, 13, 3)",
     };
 
-    static int[] expectedResults = { 6, 3, 1, };
+    static int[] expectedResults = {
+        6,
+        3,
+        1,
+    };
 
     public static void Validate(boolean printSuccess)
     {

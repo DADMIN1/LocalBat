@@ -8,7 +8,7 @@ public class Sum13
     Except the number 13 is very unlucky, 
     so it does not count and numbers that come immediately after a 13 also do not count. */
 
-    /*_____________________________
+    /*____________________________
     |          Testcases          |
     |_____________________________|
     | sum13([1, 2, 2, 1])     → 6 |

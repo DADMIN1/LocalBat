@@ -3,14 +3,12 @@ package Functional2;
 import Functional2.Testcases._No34;
 
 import java.util.List;
-import java.util.Arrays;
-import java.util.ArrayList;
 
 public class No34
 {
     /* Given a list of strings, return a list of the strings, omitting any string length 3 or 4. */
 
-    /*________________________________________________
+    /*_______________________________________________
     |                   Testcases                    |
     |________________________________________________|
     | no34(["a", "bb", "ccc"])         → ["a", "bb"] |

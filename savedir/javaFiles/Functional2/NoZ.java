@@ -3,15 +3,13 @@ package Functional2;
 import Functional2.Testcases._NoZ;
 
 import java.util.List;
-import java.util.Arrays;
-import java.util.ArrayList;
 
 public class NoZ
 {
     /* Given a list of strings, return a list of the strings, omitting any string that contains a "z". 
     (Note: the str.contains(x) method returns a boolean) */
 
-    /*__________________________________________________________
+    /*_________________________________________________________
     |                        Testcases                         |
     |__________________________________________________________|
     | noZ(["aaa", "bbb", "aza"])            → ["aaa", "bbb"]   |

@@ -8,7 +8,7 @@ public class CloseFar
     while the other is "far", differing from both other values by 2 or more. 
     Note: Math.abs(num) computes the absolute value of a number. */
 
-    /*____________________________
+    /*___________________________
     |         Testcases          |
     |____________________________|
     | closeFar(1, 2, 10) → true  |

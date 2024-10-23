@@ -6,7 +6,7 @@ public class ChangeXY
 {
     /* Given a string, compute recursively (no loops) a new string where all the lowercase 'x' chars have been changed to 'y' chars. */
 
-    /*_________________________________
+    /*________________________________
     |            Testcases            |
     |_________________________________|
     | changeXY("codex")   → "codey"   |

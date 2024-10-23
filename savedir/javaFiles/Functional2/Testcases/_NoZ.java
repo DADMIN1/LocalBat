@@ -11,7 +11,11 @@ public class _NoZ
         "noZ([\"hello\", \"howz\", \"are\", \"youz\"])",
     };
 
-    static List<String>[] expectedResults = { Arrays.asList("aaa", "bbb"), Arrays.asList("hi"), Arrays.asList("hello", "are"), };
+    static List<String>[] expectedResults = {
+        Arrays.asList("aaa", "bbb"),
+        Arrays.asList("hi"),
+        Arrays.asList("hello", "are"),
+    };
 
     public static void Validate(boolean printSuccess)
     {

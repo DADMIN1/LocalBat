@@ -10,7 +10,11 @@ public class _CopyEndy
         "copyEndy([12, 1, 1, 13, 0, 20], 2)",
     };
 
-    static int[][] expectedResults = { {9, 90}, {9, 90, 6}, {1, 1}, };
+    static int[][] expectedResults = {
+        {9, 90},
+        {9, 90, 6},
+        {1, 1},
+    };
 
     public static String printArray(int[] array)
     {

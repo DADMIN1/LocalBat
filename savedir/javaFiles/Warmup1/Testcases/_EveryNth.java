@@ -9,7 +9,11 @@ public class _EveryNth
         "everyNth(\"abcdefg\", 3)",
     };
 
-    static String[] expectedResults = { "Mrce", "aceg", "adg", };
+    static String[] expectedResults = {
+        "Mrce",
+        "aceg",
+        "adg",
+    };
 
     public static void Validate(boolean printSuccess)
     {

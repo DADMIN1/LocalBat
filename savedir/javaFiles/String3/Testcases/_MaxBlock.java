@@ -9,7 +9,11 @@ public class _MaxBlock
         "maxBlock(\"\")",
     };
 
-    static int[] expectedResults = { 2, 3, 0, };
+    static int[] expectedResults = {
+        2,
+        3,
+        0,
+    };
 
     public static void Validate(boolean printSuccess)
     {

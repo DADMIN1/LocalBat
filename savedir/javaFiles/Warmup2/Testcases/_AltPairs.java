@@ -9,7 +9,11 @@ public class _AltPairs
         "altPairs(\"CodingHorror\")",
     };
 
-    static String[] expectedResults = { "kien", "Chole", "Congrr", };
+    static String[] expectedResults = {
+        "kien",
+        "Chole",
+        "Congrr",
+    };
 
     public static void Validate(boolean printSuccess)
     {

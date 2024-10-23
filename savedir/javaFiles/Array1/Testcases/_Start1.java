@@ -9,7 +9,11 @@ public class _Start1
         "start1([1, 2], [])",
     };
 
-    static int[] expectedResults = { 2, 1, 1, };
+    static int[] expectedResults = {
+        2,
+        1,
+        1,
+    };
 
     public static void Validate(boolean printSuccess)
     {

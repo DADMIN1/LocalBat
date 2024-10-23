@@ -10,7 +10,11 @@ public class _MiddleWay
         "middleWay([5, 2, 9], [1, 4, 5])",
     };
 
-    static int[][] expectedResults = { {2, 5}, {7, 8}, {2, 4}, };
+    static int[][] expectedResults = {
+        {2, 5},
+        {7, 8},
+        {2, 4},
+    };
 
     public static String printArray(int[] array)
     {

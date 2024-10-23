@@ -9,7 +9,11 @@ public class _SameEnds
         "sameEnds(\"xxx\")",
     };
 
-    static String[] expectedResults = { "ab", "x", "x", };
+    static String[] expectedResults = {
+        "ab",
+        "x",
+        "x",
+    };
 
     public static void Validate(boolean printSuccess)
     {

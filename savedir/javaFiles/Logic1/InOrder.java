@@ -8,7 +8,7 @@ public class InOrder
     and c is greater than b. However, with the exception that if "bOk" is true, 
     b does not need to be greater than a. */
 
-    /*_________________________________
+    /*________________________________
     |            Testcases            |
     |_________________________________|
     | inOrder(1, 2, 4, false) → true  |

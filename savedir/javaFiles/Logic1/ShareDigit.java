@@ -8,7 +8,7 @@ public class ShareDigit
     such as the 2 in 12 and 23. (Note: division, e.g. n/10, 
     gives the left digit while the % "mod" n%10 gives the right digit.) */
 
-    /*____________________________
+    /*___________________________
     |         Testcases          |
     |____________________________|
     | shareDigit(12, 23) → true  |

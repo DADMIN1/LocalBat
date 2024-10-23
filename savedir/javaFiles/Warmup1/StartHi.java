@@ -6,7 +6,7 @@ public class StartHi
 {
     /* Given a string, return true if the string starts with "hi" and false otherwise. */
 
-    /*_____________________________
+    /*____________________________
     |          Testcases          |
     |_____________________________|
     | startHi("hi there") → true  |

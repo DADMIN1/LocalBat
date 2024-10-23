@@ -9,7 +9,11 @@ public class _MixString
         "mixString(\"xxxx\", \"There\")",
     };
 
-    static String[] expectedResults = { "axbycz", "HTihere", "xTxhxexre", };
+    static String[] expectedResults = {
+        "axbycz",
+        "HTihere",
+        "xTxhxexre",
+    };
 
     public static void Validate(boolean printSuccess)
     {

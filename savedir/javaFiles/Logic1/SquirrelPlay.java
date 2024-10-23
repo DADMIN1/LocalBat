@@ -9,7 +9,7 @@ public class SquirrelPlay
     Unless it is summer, then the upper limit is 100 instead of 90. 
     Given an int temperature and a boolean isSummer, return true if the squirrels play and false otherwise. */
 
-    /*_________________________________
+    /*________________________________
     |            Testcases            |
     |_________________________________|
     | squirrelPlay(70, false) → true  |

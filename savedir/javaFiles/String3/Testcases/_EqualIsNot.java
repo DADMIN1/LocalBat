@@ -9,7 +9,11 @@ public class _EqualIsNot
         "equalIsNot(\"noisxxnotyynotxisi\")",
     };
 
-    static boolean[] expectedResults = { false, true, true, };
+    static boolean[] expectedResults = {
+        false,
+        true,
+        true,
+    };
 
     public static void Validate(boolean printSuccess)
     {

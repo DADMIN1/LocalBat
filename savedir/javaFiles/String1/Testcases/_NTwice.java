@@ -9,7 +9,11 @@ public class _NTwice
         "nTwice(\"Chocolate\", 1)",
     };
 
-    static String[] expectedResults = { "Helo", "Choate", "Ce", };
+    static String[] expectedResults = {
+        "Helo",
+        "Choate",
+        "Ce",
+    };
 
     public static void Validate(boolean printSuccess)
     {

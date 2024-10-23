@@ -8,7 +8,7 @@ public class EveryNth
     and then every Nth char of the string. So if N is 3, use char 0, 
     3, 6, ... and so on. N is 1 or more. */
 
-    /*_________________________________
+    /*________________________________
     |            Testcases            |
     |_________________________________|
     | everyNth("Miracle", 2) → "Mrce" |

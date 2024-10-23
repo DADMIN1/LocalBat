@@ -9,7 +9,7 @@ public class BunnyEars2
     because they each have a raised foot. Recursively return the number of "ears" in the bunny line 1, 
     2, ... n (without loops or multiplication). */
 
-    /*___________________
+    /*__________________
     |     Testcases     |
     |___________________|
     | bunnyEars2(0) → 0 |

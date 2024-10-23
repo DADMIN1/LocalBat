@@ -9,7 +9,7 @@ public class ZeroFront
     The order of the non-zero numbers does not matter. So {1, 
     0, 0, 1} becomes {0 ,0, 1, 1}. You may modify and return the given array or make a new array. */
 
-    /*______________________________________________
+    /*_____________________________________________
     |                  Testcases                   |
     |______________________________________________|
     | zeroFront([1, 0, 0, 1])    → [0, 0, 1, 1]    |

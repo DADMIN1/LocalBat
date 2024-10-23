@@ -9,7 +9,11 @@ public class _SameFirstLast
         "sameFirstLast([1, 2, 1])",
     };
 
-    static boolean[] expectedResults = { false, true, true, };
+    static boolean[] expectedResults = {
+        false,
+        true,
+        true,
+    };
 
     public static void Validate(boolean printSuccess)
     {
