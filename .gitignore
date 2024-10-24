@@ -1,5 +1,7 @@
+__pycache__/
 .vscode/
 .idea/
 .venv/
 activate
-__pycache__/
+failure_screenshots/
+

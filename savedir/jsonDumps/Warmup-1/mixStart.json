@@ -9,5 +9,15 @@
     "mixStart(\"pix snacks\") \u2192 true",
     "mixStart(\"piz snacks\") \u2192 false"
   ],
-  "provided_code": "public boolean mixStart(String str) {\n  }"
+  "testcases_extended": [
+    "mixStart(\"mix snacks\") \u2192 true",
+    "mixStart(\"pix snacks\") \u2192 true",
+    "mixStart(\"piz snacks\") \u2192 false",
+    "mixStart(\"nix\") \u2192 true",
+    "mixStart(\"ni\") \u2192 false",
+    "mixStart(\"n\") \u2192 false",
+    "mixStart(\"\") \u2192 false"
+  ],
+  "provided_code": "public boolean mixStart(String str) {\n  return false;\n}",
+  "difficulty": "163.0"
 }

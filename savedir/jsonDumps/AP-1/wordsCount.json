@@ -9,5 +9,14 @@
     "wordsCount([\"a\", \"bb\", \"b\", \"ccc\"], 3) \u2192 1",
     "wordsCount([\"a\", \"bb\", \"b\", \"ccc\"], 4) \u2192 0"
   ],
-  "provided_code": "public int wordsCount(String[] words, int len) {\n  }"
+  "testcases_extended": [
+    "wordsCount([\"a\", \"bb\", \"b\", \"ccc\"], 1) \u2192 2",
+    "wordsCount([\"a\", \"bb\", \"b\", \"ccc\"], 3) \u2192 1",
+    "wordsCount([\"a\", \"bb\", \"b\", \"ccc\"], 4) \u2192 0",
+    "wordsCount([\"xx\", \"yyy\", \"x\", \"yy\", \"z\"], 1) \u2192 2",
+    "wordsCount([\"xx\", \"yyy\", \"x\", \"yy\", \"z\"], 2) \u2192 2",
+    "wordsCount([\"xx\", \"yyy\", \"x\", \"yy\", \"z\"], 3) \u2192 1"
+  ],
+  "provided_code": "public int wordsCount(String[] words, int len) {\n  return 0;\n}",
+  "difficulty": "215.0"
 }

@@ -9,5 +9,18 @@
     "shareDigit(12, 43) \u2192 false",
     "shareDigit(12, 44) \u2192 false"
   ],
-  "provided_code": "public boolean shareDigit(int a, int b) {\n  }"
+  "testcases_extended": [
+    "shareDigit(12, 23) \u2192 true",
+    "shareDigit(12, 43) \u2192 false",
+    "shareDigit(12, 44) \u2192 false",
+    "shareDigit(23, 12) \u2192 true",
+    "shareDigit(23, 39) \u2192 true",
+    "shareDigit(23, 19) \u2192 false",
+    "shareDigit(30, 90) \u2192 true",
+    "shareDigit(30, 91) \u2192 false",
+    "shareDigit(55, 55) \u2192 true",
+    "shareDigit(55, 44) \u2192 false"
+  ],
+  "provided_code": "public boolean shareDigit(int a, int b) {\n  return false;\n}",
+  "difficulty": "166.0"
 }

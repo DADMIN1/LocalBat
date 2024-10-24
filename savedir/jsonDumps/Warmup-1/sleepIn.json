@@ -9,5 +9,12 @@
     "sleepIn(true, false) \u2192 false",
     "sleepIn(false, true) \u2192 true"
   ],
-  "provided_code": "public boolean sleepIn(boolean weekday, boolean vacation) {\n  }"
+  "testcases_extended": [
+    "sleepIn(false, false) \u2192 true",
+    "sleepIn(true, false) \u2192 false",
+    "sleepIn(false, true) \u2192 true",
+    "sleepIn(true, true) \u2192 true"
+  ],
+  "provided_code": "public boolean sleepIn(boolean weekday, boolean vacation) {\n  return false;\n}",
+  "difficulty": "103.0"
 }

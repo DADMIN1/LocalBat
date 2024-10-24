@@ -9,5 +9,18 @@
     "stringMatch(\"abc\", \"abc\") \u2192 2",
     "stringMatch(\"abc\", \"axc\") \u2192 0"
   ],
-  "provided_code": "public int stringMatch(String a, String b) {\n  }"
+  "testcases_extended": [
+    "stringMatch(\"xxcaazz\", \"xxbaaz\") \u2192 3",
+    "stringMatch(\"abc\", \"abc\") \u2192 2",
+    "stringMatch(\"abc\", \"axc\") \u2192 0",
+    "stringMatch(\"hello\", \"he\") \u2192 1",
+    "stringMatch(\"he\", \"hello\") \u2192 1",
+    "stringMatch(\"h\", \"hello\") \u2192 0",
+    "stringMatch(\"\", \"hello\") \u2192 0",
+    "stringMatch(\"aabbccdd\", \"abbbxxd\") \u2192 1",
+    "stringMatch(\"aaxxaaxx\", \"iaxxai\") \u2192 3",
+    "stringMatch(\"iaxxai\", \"aaxxaaxx\") \u2192 3"
+  ],
+  "provided_code": "public int stringMatch(String a, String b) {\n  return 0;\n}",
+  "difficulty": "227.0"
 }

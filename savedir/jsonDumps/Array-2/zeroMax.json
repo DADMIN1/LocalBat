@@ -9,5 +9,20 @@
     "zeroMax([0, 4, 0, 3]) \u2192 [3, 4, 3, 3]",
     "zeroMax([0, 1, 0]) \u2192 [1, 1, 0]"
   ],
-  "provided_code": "public int[] zeroMax(int[] nums) {\n  }"
+  "testcases_extended": [
+    "zeroMax([0, 5, 0, 3]) \u2192 [5, 5, 3, 3]",
+    "zeroMax([0, 4, 0, 3]) \u2192 [3, 4, 3, 3]",
+    "zeroMax([0, 1, 0]) \u2192 [1, 1, 0]",
+    "zeroMax([0, 1, 5]) \u2192 [5, 1, 5]",
+    "zeroMax([0, 2, 0]) \u2192 [0, 2, 0]",
+    "zeroMax([1]) \u2192 [1]",
+    "zeroMax([0]) \u2192 [0]",
+    "zeroMax([]) \u2192 []",
+    "zeroMax([7, 0, 4, 3, 0, 2]) \u2192 [7, 3, 4, 3, 0, 2]",
+    "zeroMax([7, 0, 4, 3, 0, 1]) \u2192 [7, 3, 4, 3, 1, 1]",
+    "zeroMax([7, 0, 4, 3, 0, 0]) \u2192 [7, 3, 4, 3, 0, 0]",
+    "zeroMax([7, 0, 1, 0, 0, 7]) \u2192 [7, 7, 1, 7, 7, 7]"
+  ],
+  "provided_code": "public int[] zeroMax(int[] nums) {\n  return new int[]{0};\n}",
+  "difficulty": "287.0"
 }

@@ -9,5 +9,14 @@
     "minCat(\"Hello\", \"java\") \u2192 \"ellojava\"",
     "minCat(\"java\", \"Hello\") \u2192 \"javaello\""
   ],
-  "provided_code": "public String minCat(String a, String b) {\n  }"
+  "testcases_extended": [
+    "minCat(\"Hello\", \"Hi\") \u2192 \"loHi\"",
+    "minCat(\"Hello\", \"java\") \u2192 \"ellojava\"",
+    "minCat(\"java\", \"Hello\") \u2192 \"javaello\"",
+    "minCat(\"abc\", \"x\") \u2192 \"cx\"",
+    "minCat(\"x\", \"abc\") \u2192 \"xc\"",
+    "minCat(\"abc\", \"\") \u2192 \"\""
+  ],
+  "provided_code": "public String minCat(String a, String b) {\n  return \"\";\n}",
+  "difficulty": "181.0"
 }

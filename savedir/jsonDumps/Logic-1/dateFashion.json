@@ -9,5 +9,20 @@
     "dateFashion(5, 2) \u2192 0",
     "dateFashion(5, 5) \u2192 1"
   ],
-  "provided_code": "public int dateFashion(int you, int date) {\n  }"
+  "testcases_extended": [
+    "dateFashion(5, 10) \u2192 2",
+    "dateFashion(5, 2) \u2192 0",
+    "dateFashion(5, 5) \u2192 1",
+    "dateFashion(3, 3) \u2192 1",
+    "dateFashion(10, 2) \u2192 0",
+    "dateFashion(2, 9) \u2192 0",
+    "dateFashion(9, 9) \u2192 2",
+    "dateFashion(10, 5) \u2192 2",
+    "dateFashion(2, 2) \u2192 0",
+    "dateFashion(3, 7) \u2192 1",
+    "dateFashion(2, 7) \u2192 0",
+    "dateFashion(6, 2) \u2192 0"
+  ],
+  "provided_code": "public int dateFashion(int you, int date) {\n  return 0;\n}",
+  "difficulty": "106.0"
 }

@@ -9,5 +9,20 @@
     "gHappy(\"xxgxx\") \u2192 false",
     "gHappy(\"xxggyygxx\") \u2192 false"
   ],
-  "provided_code": "public boolean gHappy(String str) {\n  }"
+  "testcases_extended": [
+    "gHappy(\"xxggxx\") \u2192 true",
+    "gHappy(\"xxgxx\") \u2192 false",
+    "gHappy(\"xxggyygxx\") \u2192 false",
+    "gHappy(\"g\") \u2192 false",
+    "gHappy(\"gg\") \u2192 true",
+    "gHappy(\"\") \u2192 true",
+    "gHappy(\"xxgggxyz\") \u2192 true",
+    "gHappy(\"xxgggxyg\") \u2192 false",
+    "gHappy(\"xxgggxygg\") \u2192 true",
+    "gHappy(\"mgm\") \u2192 false",
+    "gHappy(\"mggm\") \u2192 true",
+    "gHappy(\"yyygggxyy\") \u2192 true"
+  ],
+  "provided_code": "public boolean gHappy(String str) {\n  return false;\n}",
+  "difficulty": "312.0"
 }

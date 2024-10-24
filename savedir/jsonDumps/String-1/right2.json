@@ -9,5 +9,14 @@
     "right2(\"java\") \u2192 \"vaja\"",
     "right2(\"Hi\") \u2192 \"Hi\""
   ],
-  "provided_code": "public String right2(String str) {\n  }"
+  "testcases_extended": [
+    "right2(\"Hello\") \u2192 \"loHel\"",
+    "right2(\"java\") \u2192 \"vaja\"",
+    "right2(\"Hi\") \u2192 \"Hi\"",
+    "right2(\"code\") \u2192 \"deco\"",
+    "right2(\"cat\") \u2192 \"atc\"",
+    "right2(\"12345\") \u2192 \"45123\""
+  ],
+  "provided_code": "public String right2(String str) {\n  return \"\";\n}",
+  "difficulty": "136.0"
 }

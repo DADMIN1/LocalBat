@@ -9,5 +9,13 @@
     "middleTwo(\"code\") \u2192 \"od\"",
     "middleTwo(\"Practice\") \u2192 \"ct\""
   ],
-  "provided_code": "public String middleTwo(String str) {\n  }"
+  "testcases_extended": [
+    "middleTwo(\"string\") \u2192 \"ri\"",
+    "middleTwo(\"code\") \u2192 \"od\"",
+    "middleTwo(\"Practice\") \u2192 \"ct\"",
+    "middleTwo(\"ab\") \u2192 \"ab\"",
+    "middleTwo(\"0123456789\") \u2192 \"45\""
+  ],
+  "provided_code": "public String middleTwo(String str) {\n  return \"\";\n}",
+  "difficulty": "145.0"
 }

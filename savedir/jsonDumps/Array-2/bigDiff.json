@@ -9,5 +9,20 @@
     "bigDiff([7, 2, 10, 9]) \u2192 8",
     "bigDiff([2, 10, 7, 2]) \u2192 8"
   ],
-  "provided_code": "public int bigDiff(int[] nums) {\n  }"
+  "testcases_extended": [
+    "bigDiff([10, 3, 5, 6]) \u2192 7",
+    "bigDiff([7, 2, 10, 9]) \u2192 8",
+    "bigDiff([2, 10, 7, 2]) \u2192 8",
+    "bigDiff([2, 10]) \u2192 8",
+    "bigDiff([10, 2]) \u2192 8",
+    "bigDiff([10, 0]) \u2192 10",
+    "bigDiff([2, 3]) \u2192 1",
+    "bigDiff([2, 2]) \u2192 0",
+    "bigDiff([2]) \u2192 0",
+    "bigDiff([5, 1, 6, 1, 9, 9]) \u2192 8",
+    "bigDiff([7, 6, 8, 5]) \u2192 3",
+    "bigDiff([7, 7, 6, 8, 5, 5, 6]) \u2192 3"
+  ],
+  "provided_code": "public int bigDiff(int[] nums) {\n  return 0;\n}",
+  "difficulty": "206.0"
 }

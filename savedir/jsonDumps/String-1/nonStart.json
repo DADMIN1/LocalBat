@@ -9,5 +9,17 @@
     "nonStart(\"java\", \"code\") \u2192 \"avaode\"",
     "nonStart(\"shotl\", \"java\") \u2192 \"hotlava\""
   ],
-  "provided_code": "public String nonStart(String a, String b) {\n  }"
+  "testcases_extended": [
+    "nonStart(\"Hello\", \"There\") \u2192 \"ellohere\"",
+    "nonStart(\"java\", \"code\") \u2192 \"avaode\"",
+    "nonStart(\"shotl\", \"java\") \u2192 \"hotlava\"",
+    "nonStart(\"ab\", \"xy\") \u2192 \"by\"",
+    "nonStart(\"ab\", \"x\") \u2192 \"b\"",
+    "nonStart(\"x\", \"ac\") \u2192 \"c\"",
+    "nonStart(\"a\", \"x\") \u2192 \"\"",
+    "nonStart(\"kit\", \"kat\") \u2192 \"itat\"",
+    "nonStart(\"mart\", \"dart\") \u2192 \"artart\""
+  ],
+  "provided_code": "public String nonStart(String a, String b) {\n  return \"\";\n}",
+  "difficulty": "130.0"
 }

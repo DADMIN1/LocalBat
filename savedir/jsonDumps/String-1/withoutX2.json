@@ -9,5 +9,20 @@
     "withoutX2(\"Hxi\") \u2192 \"Hi\"",
     "withoutX2(\"Hi\") \u2192 \"Hi\""
   ],
-  "provided_code": "public String withoutX2(String str) {\n  }"
+  "testcases_extended": [
+    "withoutX2(\"xHi\") \u2192 \"Hi\"",
+    "withoutX2(\"Hxi\") \u2192 \"Hi\"",
+    "withoutX2(\"Hi\") \u2192 \"Hi\"",
+    "withoutX2(\"xxHi\") \u2192 \"Hi\"",
+    "withoutX2(\"Hix\") \u2192 \"Hix\"",
+    "withoutX2(\"xaxb\") \u2192 \"axb\"",
+    "withoutX2(\"xx\") \u2192 \"\"",
+    "withoutX2(\"x\") \u2192 \"\"",
+    "withoutX2(\"\") \u2192 \"\"",
+    "withoutX2(\"Hello\") \u2192 \"Hello\"",
+    "withoutX2(\"Hexllo\") \u2192 \"Hexllo\"",
+    "withoutX2(\"xHxllo\") \u2192 \"Hxllo\""
+  ],
+  "provided_code": "public String withoutX2(String str) {\n  return \"\";\n}",
+  "difficulty": "199.0"
 }

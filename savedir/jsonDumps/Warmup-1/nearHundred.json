@@ -9,5 +9,27 @@
     "nearHundred(90) \u2192 true",
     "nearHundred(89) \u2192 false"
   ],
-  "provided_code": "public boolean nearHundred(int n) {\n  }"
+  "testcases_extended": [
+    "nearHundred(93) \u2192 true",
+    "nearHundred(90) \u2192 true",
+    "nearHundred(89) \u2192 false",
+    "nearHundred(110) \u2192 true",
+    "nearHundred(111) \u2192 false",
+    "nearHundred(121) \u2192 false",
+    "nearHundred(-101) \u2192 false",
+    "nearHundred(-209) \u2192 false",
+    "nearHundred(190) \u2192 true",
+    "nearHundred(209) \u2192 true",
+    "nearHundred(0) \u2192 false",
+    "nearHundred(5) \u2192 false",
+    "nearHundred(-50) \u2192 false",
+    "nearHundred(191) \u2192 true",
+    "nearHundred(189) \u2192 false",
+    "nearHundred(200) \u2192 true",
+    "nearHundred(210) \u2192 true",
+    "nearHundred(211) \u2192 false",
+    "nearHundred(290) \u2192 false"
+  ],
+  "provided_code": "public boolean nearHundred(int n) {\n  return false;\n}",
+  "difficulty": "121.0"
 }

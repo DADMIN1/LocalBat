@@ -9,5 +9,13 @@
     "lastTwo(\"cat\") \u2192 \"cta\"",
     "lastTwo(\"ab\") \u2192 \"ba\""
   ],
-  "provided_code": "public String lastTwo(String str) {\n  }"
+  "testcases_extended": [
+    "lastTwo(\"coding\") \u2192 \"codign\"",
+    "lastTwo(\"cat\") \u2192 \"cta\"",
+    "lastTwo(\"ab\") \u2192 \"ba\"",
+    "lastTwo(\"a\") \u2192 \"a\"",
+    "lastTwo(\"\") \u2192 \"\""
+  ],
+  "provided_code": "public String lastTwo(String str) {\n  return \"\";\n}",
+  "difficulty": "172.0"
 }

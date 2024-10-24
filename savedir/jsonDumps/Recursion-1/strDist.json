@@ -9,5 +9,22 @@
     "strDist(\"catcowcat\", \"cow\") \u2192 3",
     "strDist(\"cccatcowcatxx\", \"cat\") \u2192 9"
   ],
-  "provided_code": "public int strDist(String str, String sub) {\n  }"
+  "testcases_extended": [
+    "strDist(\"catcowcat\", \"cat\") \u2192 9",
+    "strDist(\"catcowcat\", \"cow\") \u2192 3",
+    "strDist(\"cccatcowcatxx\", \"cat\") \u2192 9",
+    "strDist(\"abccatcowcatcatxyz\", \"cat\") \u2192 12",
+    "strDist(\"xyx\", \"x\") \u2192 3",
+    "strDist(\"xyx\", \"y\") \u2192 1",
+    "strDist(\"xyx\", \"z\") \u2192 0",
+    "strDist(\"z\", \"z\") \u2192 1",
+    "strDist(\"x\", \"z\") \u2192 0",
+    "strDist(\"\", \"z\") \u2192 0",
+    "strDist(\"hiHellohihihi\", \"hi\") \u2192 13",
+    "strDist(\"hiHellohihihi\", \"hih\") \u2192 5",
+    "strDist(\"hiHellohihihi\", \"o\") \u2192 1",
+    "strDist(\"hiHellohihihi\", \"ll\") \u2192 2"
+  ],
+  "provided_code": "public int strDist(String str, String sub) {\n  return 0;\n}",
+  "difficulty": "390.0"
 }

@@ -9,5 +9,17 @@
     "endsLy(\"y\") \u2192 false",
     "endsLy(\"oddy\") \u2192 false"
   ],
-  "provided_code": "public boolean endsLy(String str) {\n  }"
+  "testcases_extended": [
+    "endsLy(\"oddly\") \u2192 true",
+    "endsLy(\"y\") \u2192 false",
+    "endsLy(\"oddy\") \u2192 false",
+    "endsLy(\"oddl\") \u2192 false",
+    "endsLy(\"olydd\") \u2192 false",
+    "endsLy(\"ly\") \u2192 true",
+    "endsLy(\"\") \u2192 false",
+    "endsLy(\"falsey\") \u2192 false",
+    "endsLy(\"evenly\") \u2192 true"
+  ],
+  "provided_code": "public boolean endsLy(String str) {\n  return false;\n}",
+  "difficulty": "148.0"
 }

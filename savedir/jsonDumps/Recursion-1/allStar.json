@@ -9,5 +9,16 @@
     "allStar(\"abc\") \u2192 \"a*b*c\"",
     "allStar(\"ab\") \u2192 \"a*b\""
   ],
-  "provided_code": "public String allStar(String str) {\n  }"
+  "testcases_extended": [
+    "allStar(\"hello\") \u2192 \"h*e*l*l*o\"",
+    "allStar(\"abc\") \u2192 \"a*b*c\"",
+    "allStar(\"ab\") \u2192 \"a*b\"",
+    "allStar(\"a\") \u2192 \"a\"",
+    "allStar(\"\") \u2192 \"\"",
+    "allStar(\"3.14\") \u2192 \"3*.*1*4\"",
+    "allStar(\"Chocolate\") \u2192 \"C*h*o*c*o*l*a*t*e\"",
+    "allStar(\"1234\") \u2192 \"1*2*3*4\""
+  ],
+  "provided_code": "public String allStar(String str) {\n  return \"\";\n}",
+  "difficulty": "354.0"
 }

@@ -9,5 +9,20 @@
     "tripleUp([1, 2, 3]) \u2192 true",
     "tripleUp([1, 2, 4]) \u2192 false"
   ],
-  "provided_code": "public boolean tripleUp(int[] nums) {\n  }"
+  "testcases_extended": [
+    "tripleUp([1, 4, 5, 6, 2]) \u2192 true",
+    "tripleUp([1, 2, 3]) \u2192 true",
+    "tripleUp([1, 2, 4]) \u2192 false",
+    "tripleUp([1, 2, 4, 5, 7, 6, 5, 6, 7, 6]) \u2192 true",
+    "tripleUp([1, 2, 4, 5, 7, 6, 5, 7, 7, 6]) \u2192 false",
+    "tripleUp([1, 2]) \u2192 false",
+    "tripleUp([1]) \u2192 false",
+    "tripleUp([]) \u2192 false",
+    "tripleUp([10, 9, 8, -100, -99, -98, 100]) \u2192 true",
+    "tripleUp([10, 9, 8, -100, -99, 99, 100]) \u2192 false",
+    "tripleUp([-100, -99, -99, 100, 101, 102]) \u2192 true",
+    "tripleUp([2, 3, 5, 6, 8, 9, 2, 3]) \u2192 false"
+  ],
+  "provided_code": "public boolean tripleUp(int[] nums) {\n  return false;\n}",
+  "difficulty": "263.0"
 }

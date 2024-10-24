@@ -9,5 +9,22 @@
     "endOther(\"AbC\", \"HiaBc\") \u2192 true",
     "endOther(\"abc\", \"abXabc\") \u2192 true"
   ],
-  "provided_code": "public boolean endOther(String a, String b) {\n  }"
+  "testcases_extended": [
+    "endOther(\"Hiabc\", \"abc\") \u2192 true",
+    "endOther(\"AbC\", \"HiaBc\") \u2192 true",
+    "endOther(\"abc\", \"abXabc\") \u2192 true",
+    "endOther(\"Hiabc\", \"abcd\") \u2192 false",
+    "endOther(\"Hiabc\", \"bc\") \u2192 true",
+    "endOther(\"Hiabcx\", \"bc\") \u2192 false",
+    "endOther(\"abc\", \"abc\") \u2192 true",
+    "endOther(\"xyz\", \"12xyz\") \u2192 true",
+    "endOther(\"yz\", \"12xz\") \u2192 false",
+    "endOther(\"Z\", \"12xz\") \u2192 true",
+    "endOther(\"12\", \"12\") \u2192 true",
+    "endOther(\"abcXYZ\", \"abcDEF\") \u2192 false",
+    "endOther(\"ab\", \"ab12\") \u2192 false",
+    "endOther(\"ab\", \"12ab\") \u2192 true"
+  ],
+  "provided_code": "public boolean endOther(String a, String b) {\n  return false;\n}",
+  "difficulty": "215.0"
 }

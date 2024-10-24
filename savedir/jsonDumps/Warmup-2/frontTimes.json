@@ -9,5 +9,15 @@
     "frontTimes(\"Chocolate\", 3) \u2192 \"ChoChoCho\"",
     "frontTimes(\"Abc\", 3) \u2192 \"AbcAbcAbc\""
   ],
-  "provided_code": "public String frontTimes(String str, int n) {\n  }"
+  "testcases_extended": [
+    "frontTimes(\"Chocolate\", 2) \u2192 \"ChoCho\"",
+    "frontTimes(\"Chocolate\", 3) \u2192 \"ChoChoCho\"",
+    "frontTimes(\"Abc\", 3) \u2192 \"AbcAbcAbc\"",
+    "frontTimes(\"Ab\", 4) \u2192 \"AbAbAbAb\"",
+    "frontTimes(\"A\", 4) \u2192 \"AAAA\"",
+    "frontTimes(\"\", 4) \u2192 \"\"",
+    "frontTimes(\"Abc\", 0) \u2192 \"\""
+  ],
+  "provided_code": "public String frontTimes(String str, int n) {\n  return \"\";\n}",
+  "difficulty": "206.0"
 }

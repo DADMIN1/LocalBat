@@ -9,5 +9,17 @@
     "alarmClock(5, false) \u2192 \"7:00\"",
     "alarmClock(0, false) \u2192 \"10:00\""
   ],
-  "provided_code": "public String alarmClock(int day, boolean vacation) {\n  }"
+  "testcases_extended": [
+    "alarmClock(1, false) \u2192 \"7:00\"",
+    "alarmClock(5, false) \u2192 \"7:00\"",
+    "alarmClock(0, false) \u2192 \"10:00\"",
+    "alarmClock(6, false) \u2192 \"10:00\"",
+    "alarmClock(0, true) \u2192 \"off\"",
+    "alarmClock(6, true) \u2192 \"off\"",
+    "alarmClock(1, true) \u2192 \"10:00\"",
+    "alarmClock(3, true) \u2192 \"10:00\"",
+    "alarmClock(5, true) \u2192 \"10:00\""
+  ],
+  "provided_code": "public String alarmClock(int day, boolean vacation) {\n  return \"\";\n}",
+  "difficulty": "118.0"
 }

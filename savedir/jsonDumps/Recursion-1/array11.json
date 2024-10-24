@@ -9,5 +9,17 @@
     "array11([11, 11], 0) \u2192 2",
     "array11([1, 2, 3, 4], 0) \u2192 0"
   ],
-  "provided_code": "public int array11(int[] nums, int index) {\n  }"
+  "testcases_extended": [
+    "array11([1, 2, 11], 0) \u2192 1",
+    "array11([11, 11], 0) \u2192 2",
+    "array11([1, 2, 3, 4], 0) \u2192 0",
+    "array11([1, 11, 3, 11, 11], 0) \u2192 3",
+    "array11([11], 0) \u2192 1",
+    "array11([1], 0) \u2192 0",
+    "array11([], 0) \u2192 0",
+    "array11([11, 2, 3, 4, 11, 5], 0) \u2192 2",
+    "array11([11, 5, 11], 0) \u2192 2"
+  ],
+  "provided_code": "public int array11(int[] nums, int index) {\n  return 0;\n}",
+  "difficulty": "348.0"
 }

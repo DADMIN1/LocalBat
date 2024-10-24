@@ -9,5 +9,17 @@
     "factorial(2) \u2192 2",
     "factorial(3) \u2192 6"
   ],
-  "provided_code": "public int factorial(int n) {\n  }"
+  "testcases_extended": [
+    "factorial(1) \u2192 1",
+    "factorial(2) \u2192 2",
+    "factorial(3) \u2192 6",
+    "factorial(4) \u2192 24",
+    "factorial(5) \u2192 120",
+    "factorial(6) \u2192 720",
+    "factorial(7) \u2192 5040",
+    "factorial(8) \u2192 40320",
+    "factorial(12) \u2192 479001600"
+  ],
+  "provided_code": "public int factorial(int n) {\n  return 0;\n}",
+  "difficulty": "303.0"
 }

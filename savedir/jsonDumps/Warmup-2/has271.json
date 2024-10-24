@@ -9,5 +9,23 @@
     "has271([1, 2, 8, 1]) \u2192 false",
     "has271([2, 7, 1]) \u2192 true"
   ],
-  "provided_code": "public boolean has271(int[] nums) {\n  }"
+  "testcases_extended": [
+    "has271([1, 2, 7, 1]) \u2192 true",
+    "has271([1, 2, 8, 1]) \u2192 false",
+    "has271([2, 7, 1]) \u2192 true",
+    "has271([3, 8, 2]) \u2192 true",
+    "has271([2, 7, 3]) \u2192 true",
+    "has271([2, 7, 4]) \u2192 false",
+    "has271([2, 7, -1]) \u2192 true",
+    "has271([2, 7, -2]) \u2192 false",
+    "has271([4, 5, 3, 8, 0]) \u2192 true",
+    "has271([2, 7, 5, 10, 4]) \u2192 true",
+    "has271([2, 7, -2, 4, 9, 3]) \u2192 true",
+    "has271([2, 7, 5, 10, 1]) \u2192 false",
+    "has271([2, 7, -2, 4, 10, 2]) \u2192 false",
+    "has271([1, 1, 4, 9, 0]) \u2192 false",
+    "has271([1, 1, 4, 9, 4, 9, 2]) \u2192 true"
+  ],
+  "provided_code": "public boolean has271(int[] nums) {\n  return false;\n}",
+  "difficulty": "245.0"
 }

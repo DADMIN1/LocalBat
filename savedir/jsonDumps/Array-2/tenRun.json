@@ -9,5 +9,19 @@
     "tenRun([10, 1, 20, 2]) \u2192 [10, 10, 20, 20]",
     "tenRun([10, 1, 9, 20]) \u2192 [10, 10, 10, 20]"
   ],
-  "provided_code": "public int[] tenRun(int[] nums) {\n  }"
+  "testcases_extended": [
+    "tenRun([2, 10, 3, 4, 20, 5]) \u2192 [2, 10, 10, 10, 20, 20]",
+    "tenRun([10, 1, 20, 2]) \u2192 [10, 10, 20, 20]",
+    "tenRun([10, 1, 9, 20]) \u2192 [10, 10, 10, 20]",
+    "tenRun([1, 2, 50, 1]) \u2192 [1, 2, 50, 50]",
+    "tenRun([1, 20, 50, 1]) \u2192 [1, 20, 50, 50]",
+    "tenRun([10, 10]) \u2192 [10, 10]",
+    "tenRun([10, 2]) \u2192 [10, 10]",
+    "tenRun([0, 2]) \u2192 [0, 0]",
+    "tenRun([1, 2]) \u2192 [1, 2]",
+    "tenRun([1]) \u2192 [1]",
+    "tenRun([]) \u2192 []"
+  ],
+  "provided_code": "public int[] tenRun(int[] nums) {\n  return new int[]{0};\n}",
+  "difficulty": "269.0"
 }

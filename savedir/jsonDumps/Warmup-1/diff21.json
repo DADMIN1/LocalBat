@@ -9,5 +9,20 @@
     "diff21(10) \u2192 11",
     "diff21(21) \u2192 0"
   ],
-  "provided_code": "public int diff21(int n) {\n  }"
+  "testcases_extended": [
+    "diff21(19) \u2192 2",
+    "diff21(10) \u2192 11",
+    "diff21(21) \u2192 0",
+    "diff21(22) \u2192 2",
+    "diff21(25) \u2192 8",
+    "diff21(30) \u2192 18",
+    "diff21(0) \u2192 21",
+    "diff21(1) \u2192 20",
+    "diff21(2) \u2192 19",
+    "diff21(-1) \u2192 22",
+    "diff21(-2) \u2192 23",
+    "diff21(50) \u2192 58"
+  ],
+  "provided_code": "public int diff21(int n) {\n  return 0;\n}",
+  "difficulty": "112.0"
 }

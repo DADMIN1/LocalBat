@@ -9,5 +9,12 @@
     "firstChar([\"aa\", \"bb\", \"cc\", \"aAA\", \"cCC\", \"d\"]) \u2192 {\"a\": \"aaaAA\", \"b\": \"bb\", \"c\": \"cccCC\", \"d\": \"d\"}",
     "firstChar([]) \u2192 {}"
   ],
-  "provided_code": "public Map<String, String> firstChar(String[] strings) {\n  }"
+  "testcases_extended": [
+    "firstChar([\"salt\", \"tea\", \"soda\", \"toast\"]) \u2192 {\"s\": \"saltsoda\", \"t\": \"teatoast\"}",
+    "firstChar([\"aa\", \"bb\", \"cc\", \"aAA\", \"cCC\", \"d\"]) \u2192 {\"a\": \"aaaAA\", \"b\": \"bb\", \"c\": \"cccCC\", \"d\": \"d\"}",
+    "firstChar([]) \u2192 {}",
+    "firstChar([\"apple\", \"bells\", \"salt\", \"aardvark\", \"bells\", \"sun\", \"zen\", \"bells\"]) \u2192 {\"a\": \"appleaardvark\", \"b\": \"bellsbellsbells\", \"s\": \"saltsun\", \"z\": \"zen\"}"
+  ],
+  "provided_code": "public Map<String, String> firstChar(String[] strings) {\n  return new HashMap<String, String>();\n}",
+  "difficulty": "353"
 }

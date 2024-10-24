@@ -9,5 +9,17 @@
     "without2(\"HelloHi\") \u2192 \"HelloHi\"",
     "without2(\"Hi\") \u2192 \"\""
   ],
-  "provided_code": "public String without2(String str) {\n  }"
+  "testcases_extended": [
+    "without2(\"HelloHe\") \u2192 \"lloHe\"",
+    "without2(\"HelloHi\") \u2192 \"HelloHi\"",
+    "without2(\"Hi\") \u2192 \"\"",
+    "without2(\"Chocolate\") \u2192 \"Chocolate\"",
+    "without2(\"xxx\") \u2192 \"x\"",
+    "without2(\"xx\") \u2192 \"\"",
+    "without2(\"x\") \u2192 \"x\"",
+    "without2(\"\") \u2192 \"\"",
+    "without2(\"Fruits\") \u2192 \"Fruits\""
+  ],
+  "provided_code": "public String without2(String str) {\n  return \"\";\n}",
+  "difficulty": "187.0"
 }

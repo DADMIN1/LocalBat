@@ -9,5 +9,20 @@
     "caughtSpeeding(65, false) \u2192 1",
     "caughtSpeeding(65, true) \u2192 0"
   ],
-  "provided_code": "public int caughtSpeeding(int speed, boolean isBirthday) {\n  }"
+  "testcases_extended": [
+    "caughtSpeeding(60, false) \u2192 0",
+    "caughtSpeeding(65, false) \u2192 1",
+    "caughtSpeeding(65, true) \u2192 0",
+    "caughtSpeeding(80, false) \u2192 1",
+    "caughtSpeeding(85, false) \u2192 2",
+    "caughtSpeeding(85, true) \u2192 1",
+    "caughtSpeeding(70, false) \u2192 1",
+    "caughtSpeeding(75, false) \u2192 1",
+    "caughtSpeeding(75, true) \u2192 1",
+    "caughtSpeeding(40, false) \u2192 0",
+    "caughtSpeeding(40, true) \u2192 0",
+    "caughtSpeeding(90, false) \u2192 2"
+  ],
+  "provided_code": "public int caughtSpeeding(int speed, boolean isBirthday) {\n  return 0;\n}",
+  "difficulty": "112.0"
 }

@@ -9,5 +9,16 @@
     "noLong([\"a\", \"bbb\", \"cccc\"]) \u2192 [\"a\", \"bbb\"]",
     "noLong([\"cccc\", \"cccc\", \"cccc\"]) \u2192 []"
   ],
-  "provided_code": "public List<String> noLong(List<String> strings) {\n  }"
+  "testcases_extended": [
+    "noLong([\"this\", \"not\", \"too\", \"long\"]) \u2192 [\"not\", \"too\"]",
+    "noLong([\"a\", \"bbb\", \"cccc\"]) \u2192 [\"a\", \"bbb\"]",
+    "noLong([\"cccc\", \"cccc\", \"cccc\"]) \u2192 []",
+    "noLong([]) \u2192 []",
+    "noLong([\"\"]) \u2192 [\"\"]",
+    "noLong([\"empty\", \"\", \"empty\"]) \u2192 [\"\"]",
+    "noLong([\"a\"]) \u2192 [\"a\"]",
+    "noLong([\"aaaa\", \"bbb\", \"***\", \"333\"]) \u2192 [\"bbb\", \"***\", \"333\"]"
+  ],
+  "provided_code": "public List<String> noLong(List<String> strings) {\n  return new ArrayList<String>();\n}",
+  "difficulty": "209"
 }

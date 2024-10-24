@@ -9,5 +9,23 @@
     "nestParen(\"((()))\") \u2192 true",
     "nestParen(\"(((x))\") \u2192 false"
   ],
-  "provided_code": "public boolean nestParen(String str) {\n  }"
+  "testcases_extended": [
+    "nestParen(\"(())\") \u2192 true",
+    "nestParen(\"((()))\") \u2192 true",
+    "nestParen(\"(((x))\") \u2192 false",
+    "nestParen(\"((())\") \u2192 false",
+    "nestParen(\"((()()\") \u2192 false",
+    "nestParen(\"()\") \u2192 true",
+    "nestParen(\"\") \u2192 true",
+    "nestParen(\"(yy)\") \u2192 false",
+    "nestParen(\"(())\") \u2192 true",
+    "nestParen(\"(((y))\") \u2192 false",
+    "nestParen(\"((y)))\") \u2192 false",
+    "nestParen(\"((()))\") \u2192 true",
+    "nestParen(\"(())))\") \u2192 false",
+    "nestParen(\"((yy())))\") \u2192 false",
+    "nestParen(\"(((())))\") \u2192 true"
+  ],
+  "provided_code": "public boolean nestParen(String str) {\n  return false;\n}",
+  "difficulty": "381.0"
 }

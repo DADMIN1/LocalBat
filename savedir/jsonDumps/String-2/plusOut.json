@@ -9,5 +9,18 @@
     "plusOut(\"12xy34\", \"1\") \u2192 \"1+++++\"",
     "plusOut(\"12xy34xyabcxy\", \"xy\") \u2192 \"++xy++xy+++xy\""
   ],
-  "provided_code": "public String plusOut(String str, String word) {\n  }"
+  "testcases_extended": [
+    "plusOut(\"12xy34\", \"xy\") \u2192 \"++xy++\"",
+    "plusOut(\"12xy34\", \"1\") \u2192 \"1+++++\"",
+    "plusOut(\"12xy34xyabcxy\", \"xy\") \u2192 \"++xy++xy+++xy\"",
+    "plusOut(\"abXYabcXYZ\", \"ab\") \u2192 \"ab++ab++++\"",
+    "plusOut(\"abXYabcXYZ\", \"abc\") \u2192 \"++++abc+++\"",
+    "plusOut(\"abXYabcXYZ\", \"XY\") \u2192 \"++XY+++XY+\"",
+    "plusOut(\"abXYxyzXYZ\", \"XYZ\") \u2192 \"+++++++XYZ\"",
+    "plusOut(\"--++ab\", \"++\") \u2192 \"++++++\"",
+    "plusOut(\"aaxxxxbb\", \"xx\") \u2192 \"++xxxx++\"",
+    "plusOut(\"123123\", \"3\") \u2192 \"++3++3\""
+  ],
+  "provided_code": "public String plusOut(String str, String word) {\n  return \"\";\n}",
+  "difficulty": "257.0"
 }

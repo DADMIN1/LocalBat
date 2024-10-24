@@ -9,5 +9,14 @@
     "fix23([2, 3, 5]) \u2192 [2, 0, 5]",
     "fix23([1, 2, 1]) \u2192 [1, 2, 1]"
   ],
-  "provided_code": "public int[] fix23(int[] nums) {\n  }"
+  "testcases_extended": [
+    "fix23([1, 2, 3]) \u2192 [1, 2, 0]",
+    "fix23([2, 3, 5]) \u2192 [2, 0, 5]",
+    "fix23([1, 2, 1]) \u2192 [1, 2, 1]",
+    "fix23([3, 2, 1]) \u2192 [3, 2, 1]",
+    "fix23([2, 2, 3]) \u2192 [2, 2, 0]",
+    "fix23([2, 3, 3]) \u2192 [2, 0, 3]"
+  ],
+  "provided_code": "public int[] fix23(int[] nums) {\n  return new int[]{0};\n}",
+  "difficulty": "148.0"
 }

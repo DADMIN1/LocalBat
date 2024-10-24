@@ -9,5 +9,27 @@
     "roundSum(12, 13, 14) \u2192 30",
     "roundSum(6, 4, 4) \u2192 10"
   ],
-  "provided_code": "public int roundSum(int a, int b, int c) {\n  }"
+  "testcases_extended": [
+    "roundSum(16, 17, 18) \u2192 60",
+    "roundSum(12, 13, 14) \u2192 30",
+    "roundSum(6, 4, 4) \u2192 10",
+    "roundSum(4, 6, 5) \u2192 20",
+    "roundSum(4, 4, 6) \u2192 10",
+    "roundSum(9, 4, 4) \u2192 10",
+    "roundSum(0, 0, 1) \u2192 0",
+    "roundSum(0, 9, 0) \u2192 10",
+    "roundSum(10, 10, 19) \u2192 40",
+    "roundSum(20, 30, 40) \u2192 90",
+    "roundSum(45, 21, 30) \u2192 100",
+    "roundSum(23, 11, 26) \u2192 60",
+    "roundSum(23, 24, 25) \u2192 70",
+    "roundSum(25, 24, 25) \u2192 80",
+    "roundSum(23, 24, 29) \u2192 70",
+    "roundSum(11, 24, 36) \u2192 70",
+    "roundSum(24, 36, 32) \u2192 90",
+    "roundSum(14, 12, 26) \u2192 50",
+    "roundSum(12, 10, 24) \u2192 40"
+  ],
+  "provided_code": "public int roundSum(int a, int b, int c) {\n  return 0;\n}",
+  "difficulty": "214"
 }

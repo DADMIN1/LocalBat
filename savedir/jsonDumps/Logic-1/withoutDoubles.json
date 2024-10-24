@@ -9,5 +9,20 @@
     "withoutDoubles(3, 3, true) \u2192 7",
     "withoutDoubles(3, 3, false) \u2192 6"
   ],
-  "provided_code": "public int withoutDoubles(int die1, int die2, boolean noDoubles) {\n  }"
+  "testcases_extended": [
+    "withoutDoubles(2, 3, true) \u2192 5",
+    "withoutDoubles(3, 3, true) \u2192 7",
+    "withoutDoubles(3, 3, false) \u2192 6",
+    "withoutDoubles(2, 3, false) \u2192 5",
+    "withoutDoubles(5, 4, true) \u2192 9",
+    "withoutDoubles(5, 4, false) \u2192 9",
+    "withoutDoubles(5, 5, true) \u2192 11",
+    "withoutDoubles(5, 5, false) \u2192 10",
+    "withoutDoubles(6, 6, true) \u2192 7",
+    "withoutDoubles(6, 6, false) \u2192 12",
+    "withoutDoubles(1, 6, true) \u2192 7",
+    "withoutDoubles(6, 1, false) \u2192 7"
+  ],
+  "provided_code": "public int withoutDoubles(int die1, int die2, boolean noDoubles) {\n  return 0;\n}",
+  "difficulty": "151.0"
 }

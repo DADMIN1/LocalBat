@@ -9,5 +9,16 @@
     "userCompare(\"bb\", 1, \"aa\", 2) \u2192 1",
     "userCompare(\"bb\", 1, \"bb\", 1) \u2192 0"
   ],
-  "provided_code": "public int userCompare(String aName, int aId, String bName, int bId) {\n  }"
+  "testcases_extended": [
+    "userCompare(\"bb\", 1, \"zz\", 2) \u2192 -1",
+    "userCompare(\"bb\", 1, \"aa\", 2) \u2192 1",
+    "userCompare(\"bb\", 1, \"bb\", 1) \u2192 0",
+    "userCompare(\"bb\", 5, \"bb\", 1) \u2192 1",
+    "userCompare(\"bb\", 5, \"bb\", 10) \u2192 -1",
+    "userCompare(\"adam\", 1, \"bob\", 2) \u2192 -1",
+    "userCompare(\"bob\", 1, \"bob\", 2) \u2192 -1",
+    "userCompare(\"bzb\", 1, \"bob\", 2) \u2192 1"
+  ],
+  "provided_code": "public int userCompare(String aName, int aId, String bName, int bId) {\n  return 0;\n}",
+  "difficulty": "248.0"
 }

@@ -9,5 +9,18 @@
     "firstSwap([\"ax\", \"bx\", \"cx\", \"cy\", \"by\", \"ay\", \"aaa\", \"azz\"]) \u2192 [\"ay\", \"by\", \"cy\", \"cx\", \"bx\", \"ax\", \"aaa\", \"azz\"]",
     "firstSwap([\"ax\", \"bx\", \"ay\", \"by\", \"ai\", \"aj\", \"bx\", \"by\"]) \u2192 [\"ay\", \"by\", \"ax\", \"bx\", \"ai\", \"aj\", \"bx\", \"by\"]"
   ],
-  "provided_code": "public String[] firstSwap(String[] strings) {\n  }"
+  "testcases_extended": [
+    "firstSwap([\"ab\", \"ac\"]) \u2192 [\"ac\", \"ab\"]",
+    "firstSwap([\"ax\", \"bx\", \"cx\", \"cy\", \"by\", \"ay\", \"aaa\", \"azz\"]) \u2192 [\"ay\", \"by\", \"cy\", \"cx\", \"bx\", \"ax\", \"aaa\", \"azz\"]",
+    "firstSwap([\"ax\", \"bx\", \"ay\", \"by\", \"ai\", \"aj\", \"bx\", \"by\"]) \u2192 [\"ay\", \"by\", \"ax\", \"bx\", \"ai\", \"aj\", \"bx\", \"by\"]",
+    "firstSwap([\"ax\", \"bx\", \"cx\", \"ay\", \"cy\", \"aaa\", \"abb\"]) \u2192 [\"ay\", \"bx\", \"cy\", \"ax\", \"cx\", \"aaa\", \"abb\"]",
+    "firstSwap([\"easy\", \"does\", \"it\", \"every\", \"ice\", \"eaten\"]) \u2192 [\"every\", \"does\", \"ice\", \"easy\", \"it\", \"eaten\"]",
+    "firstSwap([\"list\", \"of\", \"words\", \"swims\", \"over\", \"lily\", \"water\", \"wait\"]) \u2192 [\"lily\", \"over\", \"water\", \"swims\", \"of\", \"list\", \"words\", \"wait\"]",
+    "firstSwap([\"4\", \"8\", \"15\", \"16\", \"23\", \"42\"]) \u2192 [\"42\", \"8\", \"16\", \"15\", \"23\", \"4\"]",
+    "firstSwap([\"aaa\"]) \u2192 [\"aaa\"]",
+    "firstSwap([]) \u2192 []",
+    "firstSwap([\"a\", \"b\", \"c\", \"xx\", \"yy\", \"zz\"]) \u2192 [\"a\", \"b\", \"c\", \"xx\", \"yy\", \"zz\"]"
+  ],
+  "provided_code": "public String[] firstSwap(String[] strings) {\n  return new String[]{\"\"};\n}",
+  "difficulty": "380"
 }

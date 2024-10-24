@@ -9,5 +9,15 @@
     "nTwice(\"Chocolate\", 3) \u2192 \"Choate\"",
     "nTwice(\"Chocolate\", 1) \u2192 \"Ce\""
   ],
-  "provided_code": "public String nTwice(String str, int n) {\n  }"
+  "testcases_extended": [
+    "nTwice(\"Hello\", 2) \u2192 \"Helo\"",
+    "nTwice(\"Chocolate\", 3) \u2192 \"Choate\"",
+    "nTwice(\"Chocolate\", 1) \u2192 \"Ce\"",
+    "nTwice(\"Chocolate\", 0) \u2192 \"\"",
+    "nTwice(\"Hello\", 4) \u2192 \"Hellello\"",
+    "nTwice(\"Code\", 4) \u2192 \"CodeCode\"",
+    "nTwice(\"Code\", 2) \u2192 \"Code\""
+  ],
+  "provided_code": "public String nTwice(String str, int n) {\n  return \"\";\n}",
+  "difficulty": "151.0"
 }

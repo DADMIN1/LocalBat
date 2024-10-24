@@ -9,5 +9,19 @@
     "hasOne(22) \u2192 false",
     "hasOne(220) \u2192 false"
   ],
-  "provided_code": "public boolean hasOne(int n) {\n  }"
+  "testcases_extended": [
+    "hasOne(10) \u2192 true",
+    "hasOne(22) \u2192 false",
+    "hasOne(220) \u2192 false",
+    "hasOne(212) \u2192 true",
+    "hasOne(1) \u2192 true",
+    "hasOne(9) \u2192 false",
+    "hasOne(211112) \u2192 true",
+    "hasOne(121121) \u2192 true",
+    "hasOne(222222) \u2192 false",
+    "hasOne(56156) \u2192 true",
+    "hasOne(56556) \u2192 false"
+  ],
+  "provided_code": "public boolean hasOne(int n) {\n  return false;\n}",
+  "difficulty": "224.0"
 }

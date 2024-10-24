@@ -9,5 +9,26 @@
     "xyBalance(\"aaxbb\") \u2192 false",
     "xyBalance(\"yaaxbb\") \u2192 false"
   ],
-  "provided_code": "public boolean xyBalance(String str) {\n  }"
+  "testcases_extended": [
+    "xyBalance(\"aaxbby\") \u2192 true",
+    "xyBalance(\"aaxbb\") \u2192 false",
+    "xyBalance(\"yaaxbb\") \u2192 false",
+    "xyBalance(\"yaaxbby\") \u2192 true",
+    "xyBalance(\"xaxxbby\") \u2192 true",
+    "xyBalance(\"xaxxbbyx\") \u2192 false",
+    "xyBalance(\"xxbxy\") \u2192 true",
+    "xyBalance(\"xxbx\") \u2192 false",
+    "xyBalance(\"bbb\") \u2192 true",
+    "xyBalance(\"bxbb\") \u2192 false",
+    "xyBalance(\"bxyb\") \u2192 true",
+    "xyBalance(\"xy\") \u2192 true",
+    "xyBalance(\"y\") \u2192 true",
+    "xyBalance(\"x\") \u2192 false",
+    "xyBalance(\"\") \u2192 true",
+    "xyBalance(\"yxyxyxyx\") \u2192 false",
+    "xyBalance(\"yxyxyxyxy\") \u2192 true",
+    "xyBalance(\"12xabxxydxyxyzz\") \u2192 true"
+  ],
+  "provided_code": "public boolean xyBalance(String str) {\n  return false;\n}",
+  "difficulty": "224.0"
 }

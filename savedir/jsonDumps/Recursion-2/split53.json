@@ -9,5 +9,16 @@
     "split53([1, 1, 1]) \u2192 false",
     "split53([2, 4, 2]) \u2192 true"
   ],
-  "provided_code": "public boolean split53(int[] nums) {\n  }"
+  "testcases_extended": [
+    "split53([1, 1]) \u2192 true",
+    "split53([1, 1, 1]) \u2192 false",
+    "split53([2, 4, 2]) \u2192 true",
+    "split53([2, 2, 2, 1]) \u2192 false",
+    "split53([3, 3, 5, 1]) \u2192 true",
+    "split53([3, 5, 8]) \u2192 false",
+    "split53([2, 4, 6]) \u2192 true",
+    "split53([3, 5, 6, 10, 3, 3]) \u2192 true"
+  ],
+  "provided_code": "public boolean split53(int[] nums) {\n  return false;\n}",
+  "difficulty": "424.0"
 }

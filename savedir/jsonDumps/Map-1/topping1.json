@@ -9,5 +9,13 @@
     "topping1({}) \u2192 {\"bread\": \"butter\"}",
     "topping1({\"pancake\": \"syrup\"}) \u2192 {\"bread\": \"butter\", \"pancake\": \"syrup\"}"
   ],
-  "provided_code": "public Map<String, String> topping1(Map<String, String> map) {\n  }"
+  "testcases_extended": [
+    "topping1({\"ice cream\": \"peanuts\"}) \u2192 {\"bread\": \"butter\", \"ice cream\": \"cherry\"}",
+    "topping1({}) \u2192 {\"bread\": \"butter\"}",
+    "topping1({\"pancake\": \"syrup\"}) \u2192 {\"bread\": \"butter\", \"pancake\": \"syrup\"}",
+    "topping1({\"bread\": \"dirt\", \"ice cream\": \"strawberries\"}) \u2192 {\"bread\": \"butter\", \"ice cream\": \"cherry\"}",
+    "topping1({\"bread\": \"jam\", \"ice cream\": \"strawberries\", \"salad\": \"oil\"}) \u2192 {\"bread\": \"butter\", \"ice cream\": \"cherry\", \"salad\": \"oil\"}"
+  ],
+  "provided_code": "public Map<String, String> topping1(Map<String, String> map) {\n  return new HashMap<String, String>();\n}",
+  "difficulty": "212"
 }

@@ -9,5 +9,16 @@
     "left2(\"java\") \u2192 \"vaja\"",
     "left2(\"Hi\") \u2192 \"Hi\""
   ],
-  "provided_code": "public String left2(String str) {\n  }"
+  "testcases_extended": [
+    "left2(\"Hello\") \u2192 \"lloHe\"",
+    "left2(\"java\") \u2192 \"vaja\"",
+    "left2(\"Hi\") \u2192 \"Hi\"",
+    "left2(\"code\") \u2192 \"deco\"",
+    "left2(\"cat\") \u2192 \"tca\"",
+    "left2(\"12345\") \u2192 \"34512\"",
+    "left2(\"Chocolate\") \u2192 \"ocolateCh\"",
+    "left2(\"bricks\") \u2192 \"icksbr\""
+  ],
+  "provided_code": "public String left2(String str) {\n  return \"\";\n}",
+  "difficulty": "133.0"
 }

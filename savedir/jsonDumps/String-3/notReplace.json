@@ -9,5 +9,19 @@
     "notReplace(\"is-is\") \u2192 \"is not-is not\"",
     "notReplace(\"This is right\") \u2192 \"This is not right\""
   ],
-  "provided_code": "public String notReplace(String str) {\n  }"
+  "testcases_extended": [
+    "notReplace(\"is test\") \u2192 \"is not test\"",
+    "notReplace(\"is-is\") \u2192 \"is not-is not\"",
+    "notReplace(\"This is right\") \u2192 \"This is not right\"",
+    "notReplace(\"This is isabell\") \u2192 \"This is not isabell\"",
+    "notReplace(\"\") \u2192 \"\"",
+    "notReplace(\"is\") \u2192 \"is not\"",
+    "notReplace(\"isis\") \u2192 \"isis\"",
+    "notReplace(\"Dis is bliss is\") \u2192 \"Dis is not bliss is not\"",
+    "notReplace(\"is his\") \u2192 \"is not his\"",
+    "notReplace(\"xis yis\") \u2192 \"xis yis\"",
+    "notReplace(\"AAAis is\") \u2192 \"AAAis is not\""
+  ],
+  "provided_code": "public String notReplace(String str) {\n  return \"\";\n}",
+  "difficulty": "333.0"
 }

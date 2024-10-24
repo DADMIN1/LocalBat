@@ -9,5 +9,22 @@
     "inOrderEqual(5, 7, 6, false) \u2192 false",
     "inOrderEqual(5, 5, 7, true) \u2192 true"
   ],
-  "provided_code": "public boolean inOrderEqual(int a, int b, int c, boolean equalOk) {\n  }"
+  "testcases_extended": [
+    "inOrderEqual(2, 5, 11, false) \u2192 true",
+    "inOrderEqual(5, 7, 6, false) \u2192 false",
+    "inOrderEqual(5, 5, 7, true) \u2192 true",
+    "inOrderEqual(5, 5, 7, false) \u2192 false",
+    "inOrderEqual(2, 5, 4, false) \u2192 false",
+    "inOrderEqual(3, 4, 3, false) \u2192 false",
+    "inOrderEqual(3, 4, 4, false) \u2192 false",
+    "inOrderEqual(3, 4, 3, true) \u2192 false",
+    "inOrderEqual(3, 4, 4, true) \u2192 true",
+    "inOrderEqual(1, 5, 5, true) \u2192 true",
+    "inOrderEqual(5, 5, 5, true) \u2192 true",
+    "inOrderEqual(2, 2, 1, true) \u2192 false",
+    "inOrderEqual(9, 2, 2, true) \u2192 false",
+    "inOrderEqual(0, 1, 0, true) \u2192 false"
+  ],
+  "provided_code": "public boolean inOrderEqual(int a, int b, int c, boolean equalOk) {\n  return false;\n}",
+  "difficulty": "142.0"
 }

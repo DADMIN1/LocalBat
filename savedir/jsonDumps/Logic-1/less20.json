@@ -9,5 +9,30 @@
     "less20(19) \u2192 true",
     "less20(20) \u2192 false"
   ],
-  "provided_code": "public boolean less20(int n) {\n  }"
+  "testcases_extended": [
+    "less20(18) \u2192 true",
+    "less20(19) \u2192 true",
+    "less20(20) \u2192 false",
+    "less20(8) \u2192 false",
+    "less20(17) \u2192 false",
+    "less20(23) \u2192 false",
+    "less20(25) \u2192 false",
+    "less20(30) \u2192 false",
+    "less20(31) \u2192 false",
+    "less20(58) \u2192 true",
+    "less20(59) \u2192 true",
+    "less20(60) \u2192 false",
+    "less20(61) \u2192 false",
+    "less20(62) \u2192 false",
+    "less20(1017) \u2192 false",
+    "less20(1018) \u2192 true",
+    "less20(1019) \u2192 true",
+    "less20(1020) \u2192 false",
+    "less20(1021) \u2192 false",
+    "less20(1022) \u2192 false",
+    "less20(1023) \u2192 false",
+    "less20(37) \u2192 false"
+  ],
+  "provided_code": "public boolean less20(int n) {\n  return false;\n}",
+  "difficulty": "123.8"
 }

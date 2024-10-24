@@ -9,5 +9,22 @@
     "countCode(\"codexxcode\") \u2192 2",
     "countCode(\"cozexxcope\") \u2192 2"
   ],
-  "provided_code": "public int countCode(String str) {\n  }"
+  "testcases_extended": [
+    "countCode(\"aaacodebbb\") \u2192 1",
+    "countCode(\"codexxcode\") \u2192 2",
+    "countCode(\"cozexxcope\") \u2192 2",
+    "countCode(\"cozfxxcope\") \u2192 1",
+    "countCode(\"xxcozeyycop\") \u2192 1",
+    "countCode(\"cozcop\") \u2192 0",
+    "countCode(\"abcxyz\") \u2192 0",
+    "countCode(\"code\") \u2192 1",
+    "countCode(\"ode\") \u2192 0",
+    "countCode(\"c\") \u2192 0",
+    "countCode(\"\") \u2192 0",
+    "countCode(\"AAcodeBBcoleCCccoreDD\") \u2192 3",
+    "countCode(\"AAcodeBBcoleCCccorfDD\") \u2192 2",
+    "countCode(\"coAcodeBcoleccoreDD\") \u2192 3"
+  ],
+  "provided_code": "public int countCode(String str) {\n  return 0;\n}",
+  "difficulty": "212.0"
 }

@@ -9,5 +9,14 @@
     "copies3([\"24\", \"a\", \"\"]) \u2192 [\"242424\", \"aaa\", \"\"]",
     "copies3([\"hello\", \"there\"]) \u2192 [\"hellohellohello\", \"theretherethere\"]"
   ],
-  "provided_code": "public List<String> copies3(List<String> strings) {\n  }"
+  "testcases_extended": [
+    "copies3([\"a\", \"bb\", \"ccc\"]) \u2192 [\"aaa\", \"bbbbbb\", \"ccccccccc\"]",
+    "copies3([\"24\", \"a\", \"\"]) \u2192 [\"242424\", \"aaa\", \"\"]",
+    "copies3([\"hello\", \"there\"]) \u2192 [\"hellohellohello\", \"theretherethere\"]",
+    "copies3([\"no\"]) \u2192 [\"nonono\"]",
+    "copies3([]) \u2192 []",
+    "copies3([\"this\", \"and\", \"that\", \"and\"]) \u2192 [\"thisthisthis\", \"andandand\", \"thatthatthat\", \"andandand\"]"
+  ],
+  "provided_code": "public List<String> copies3(List<String> strings) {\n  return new ArrayList<String>();\n}",
+  "difficulty": "209"
 }

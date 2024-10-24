@@ -9,5 +9,21 @@
     "teaParty(3, 8) \u2192 0",
     "teaParty(20, 6) \u2192 2"
   ],
-  "provided_code": "public int teaParty(int tea, int candy) {\n  }"
+  "testcases_extended": [
+    "teaParty(6, 8) \u2192 1",
+    "teaParty(3, 8) \u2192 0",
+    "teaParty(20, 6) \u2192 2",
+    "teaParty(12, 6) \u2192 2",
+    "teaParty(11, 6) \u2192 1",
+    "teaParty(11, 4) \u2192 0",
+    "teaParty(4, 5) \u2192 0",
+    "teaParty(5, 5) \u2192 1",
+    "teaParty(6, 6) \u2192 1",
+    "teaParty(5, 10) \u2192 2",
+    "teaParty(5, 9) \u2192 1",
+    "teaParty(10, 4) \u2192 0",
+    "teaParty(10, 20) \u2192 2"
+  ],
+  "provided_code": "public int teaParty(int tea, int candy) {\n  return 0;\n}",
+  "difficulty": "133.0"
 }

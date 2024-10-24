@@ -9,5 +9,15 @@
     "arrayCount9([1, 9, 9]) \u2192 2",
     "arrayCount9([1, 9, 9, 3, 9]) \u2192 3"
   ],
-  "provided_code": "public int arrayCount9(int[] nums) {\n  }"
+  "testcases_extended": [
+    "arrayCount9([1, 2, 9]) \u2192 1",
+    "arrayCount9([1, 9, 9]) \u2192 2",
+    "arrayCount9([1, 9, 9, 3, 9]) \u2192 3",
+    "arrayCount9([1, 2, 3]) \u2192 0",
+    "arrayCount9([]) \u2192 0",
+    "arrayCount9([4, 2, 4, 3, 1]) \u2192 0",
+    "arrayCount9([9, 2, 4, 3, 1]) \u2192 1"
+  ],
+  "provided_code": "public int arrayCount9(int[] nums) {\n  return 0;\n}",
+  "difficulty": "218.0"
 }

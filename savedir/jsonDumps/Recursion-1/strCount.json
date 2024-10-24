@@ -9,5 +9,22 @@
     "strCount(\"catcowcat\", \"cow\") \u2192 1",
     "strCount(\"catcowcat\", \"dog\") \u2192 0"
   ],
-  "provided_code": "public int strCount(String str, String sub) {\n  }"
+  "testcases_extended": [
+    "strCount(\"catcowcat\", \"cat\") \u2192 2",
+    "strCount(\"catcowcat\", \"cow\") \u2192 1",
+    "strCount(\"catcowcat\", \"dog\") \u2192 0",
+    "strCount(\"cacatcowcat\", \"cat\") \u2192 2",
+    "strCount(\"xyx\", \"x\") \u2192 2",
+    "strCount(\"iiiijj\", \"i\") \u2192 4",
+    "strCount(\"iiiijj\", \"ii\") \u2192 2",
+    "strCount(\"iiiijj\", \"iii\") \u2192 1",
+    "strCount(\"iiiijj\", \"j\") \u2192 2",
+    "strCount(\"iiiijj\", \"jj\") \u2192 1",
+    "strCount(\"aaabababab\", \"ab\") \u2192 4",
+    "strCount(\"aaabababab\", \"aa\") \u2192 1",
+    "strCount(\"aaabababab\", \"a\") \u2192 6",
+    "strCount(\"aaabababab\", \"b\") \u2192 4"
+  ],
+  "provided_code": "public int strCount(String str, String sub) {\n  return 0;\n}",
+  "difficulty": "384.0"
 }

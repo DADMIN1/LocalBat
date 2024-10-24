@@ -9,5 +9,20 @@
     "modThree([2, 1, 2, 5]) \u2192 false",
     "modThree([2, 4, 2, 5]) \u2192 true"
   ],
-  "provided_code": "public boolean modThree(int[] nums) {\n  }"
+  "testcases_extended": [
+    "modThree([2, 1, 3, 5]) \u2192 true",
+    "modThree([2, 1, 2, 5]) \u2192 false",
+    "modThree([2, 4, 2, 5]) \u2192 true",
+    "modThree([1, 2, 1, 2, 1]) \u2192 false",
+    "modThree([9, 9, 9]) \u2192 true",
+    "modThree([1, 2, 1]) \u2192 false",
+    "modThree([1, 2]) \u2192 false",
+    "modThree([1]) \u2192 false",
+    "modThree([]) \u2192 false",
+    "modThree([9, 7, 2, 9]) \u2192 false",
+    "modThree([9, 7, 2, 9, 2, 2]) \u2192 false",
+    "modThree([9, 7, 2, 9, 2, 2, 6]) \u2192 true"
+  ],
+  "provided_code": "public boolean modThree(int[] nums) {\n  return false;\n}",
+  "difficulty": "251.0"
 }

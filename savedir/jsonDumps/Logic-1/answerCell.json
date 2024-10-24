@@ -9,5 +9,14 @@
     "answerCell(false, false, true) \u2192 false",
     "answerCell(true, false, false) \u2192 false"
   ],
-  "provided_code": "public boolean answerCell(boolean isMorning, boolean isMom, boolean isAsleep) {\n  }"
+  "testcases_extended": [
+    "answerCell(false, false, false) \u2192 true",
+    "answerCell(false, false, true) \u2192 false",
+    "answerCell(true, false, false) \u2192 false",
+    "answerCell(true, true, false) \u2192 true",
+    "answerCell(false, true, false) \u2192 true",
+    "answerCell(true, true, true) \u2192 false"
+  ],
+  "provided_code": "public boolean answerCell(boolean isMorning, boolean isMom, boolean isAsleep) {\n  return false;\n}",
+  "difficulty": "130.0"
 }

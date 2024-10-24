@@ -9,5 +9,20 @@
     "splitOdd10([5, 5, 6]) \u2192 false",
     "splitOdd10([5, 5, 6, 1]) \u2192 true"
   ],
-  "provided_code": "public boolean splitOdd10(int[] nums) {\n  }"
+  "testcases_extended": [
+    "splitOdd10([5, 5, 5]) \u2192 true",
+    "splitOdd10([5, 5, 6]) \u2192 false",
+    "splitOdd10([5, 5, 6, 1]) \u2192 true",
+    "splitOdd10([6, 5, 5, 1]) \u2192 true",
+    "splitOdd10([6, 5, 5, 1, 10]) \u2192 true",
+    "splitOdd10([6, 5, 5, 5, 1]) \u2192 false",
+    "splitOdd10([1]) \u2192 true",
+    "splitOdd10([]) \u2192 false",
+    "splitOdd10([10, 7, 5, 5]) \u2192 true",
+    "splitOdd10([10, 0, 5, 5]) \u2192 false",
+    "splitOdd10([10, 7, 5, 5, 2]) \u2192 true",
+    "splitOdd10([10, 7, 5, 5, 1]) \u2192 false"
+  ],
+  "provided_code": "public boolean splitOdd10(int[] nums) {\n  return false;\n}",
+  "difficulty": "421.0"
 }

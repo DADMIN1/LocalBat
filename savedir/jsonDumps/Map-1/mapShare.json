@@ -9,5 +9,13 @@
     "mapShare({\"b\": \"xyz\", \"c\": \"ccc\"}) \u2192 {\"b\": \"xyz\"}",
     "mapShare({\"a\": \"aaa\", \"c\": \"meh\", \"d\": \"hi\"}) \u2192 {\"a\": \"aaa\", \"b\": \"aaa\", \"d\": \"hi\"}"
   ],
-  "provided_code": "public Map<String, String> mapShare(Map<String, String> map) {\n  }"
+  "testcases_extended": [
+    "mapShare({\"a\": \"aaa\", \"b\": \"bbb\", \"c\": \"ccc\"}) \u2192 {\"a\": \"aaa\", \"b\": \"aaa\"}",
+    "mapShare({\"b\": \"xyz\", \"c\": \"ccc\"}) \u2192 {\"b\": \"xyz\"}",
+    "mapShare({\"a\": \"aaa\", \"c\": \"meh\", \"d\": \"hi\"}) \u2192 {\"a\": \"aaa\", \"b\": \"aaa\", \"d\": \"hi\"}",
+    "mapShare({\"a\": \"xyz\", \"b\": \"1234\", \"c\": \"yo\", \"z\": \"zzz\"}) \u2192 {\"a\": \"xyz\", \"b\": \"xyz\", \"z\": \"zzz\"}",
+    "mapShare({\"a\": \"xyz\", \"b\": \"1234\", \"c\": \"yo\", \"d\": \"ddd\", \"e\": \"everything\"}) \u2192 {\"a\": \"xyz\", \"b\": \"xyz\", \"d\": \"ddd\", \"e\": \"everything\"}"
+  ],
+  "provided_code": "public Map<String, String> mapShare(Map<String, String> map) {\n  return new HashMap<String, String>();\n}",
+  "difficulty": "206"
 }

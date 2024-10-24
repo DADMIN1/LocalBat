@@ -9,5 +9,20 @@
     "prefixAgain(\"abXYabc\", 2) \u2192 true",
     "prefixAgain(\"abXYabc\", 3) \u2192 false"
   ],
-  "provided_code": "public boolean prefixAgain(String str, int n) {\n  }"
+  "testcases_extended": [
+    "prefixAgain(\"abXYabc\", 1) \u2192 true",
+    "prefixAgain(\"abXYabc\", 2) \u2192 true",
+    "prefixAgain(\"abXYabc\", 3) \u2192 false",
+    "prefixAgain(\"xyzxyxyxy\", 2) \u2192 true",
+    "prefixAgain(\"xyzxyxyxy\", 3) \u2192 false",
+    "prefixAgain(\"Hi12345Hi6789Hi10\", 1) \u2192 true",
+    "prefixAgain(\"Hi12345Hi6789Hi10\", 2) \u2192 true",
+    "prefixAgain(\"Hi12345Hi6789Hi10\", 3) \u2192 true",
+    "prefixAgain(\"Hi12345Hi6789Hi10\", 4) \u2192 false",
+    "prefixAgain(\"a\", 1) \u2192 false",
+    "prefixAgain(\"aa\", 1) \u2192 true",
+    "prefixAgain(\"ab\", 1) \u2192 false"
+  ],
+  "provided_code": "public boolean prefixAgain(String str, int n) {\n  return false;\n}",
+  "difficulty": "239.0"
 }

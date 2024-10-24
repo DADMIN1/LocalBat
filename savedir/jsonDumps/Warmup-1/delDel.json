@@ -9,5 +9,19 @@
     "delDel(\"adelHello\") \u2192 \"aHello\"",
     "delDel(\"adedbc\") \u2192 \"adedbc\""
   ],
-  "provided_code": "public String delDel(String str) {\n  }"
+  "testcases_extended": [
+    "delDel(\"adelbc\") \u2192 \"abc\"",
+    "delDel(\"adelHello\") \u2192 \"aHello\"",
+    "delDel(\"adedbc\") \u2192 \"adedbc\"",
+    "delDel(\"abcdel\") \u2192 \"abcdel\"",
+    "delDel(\"add\") \u2192 \"add\"",
+    "delDel(\"ad\") \u2192 \"ad\"",
+    "delDel(\"a\") \u2192 \"a\"",
+    "delDel(\"\") \u2192 \"\"",
+    "delDel(\"del\") \u2192 \"del\"",
+    "delDel(\"adel\") \u2192 \"a\"",
+    "delDel(\"aadelbb\") \u2192 \"aadelbb\""
+  ],
+  "provided_code": "public String delDel(String str) {\n  return \"\";\n}",
+  "difficulty": "160.0"
 }

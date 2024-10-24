@@ -9,5 +9,18 @@
     "withoutTen([10, 2, 10]) \u2192 [2, 0, 0]",
     "withoutTen([1, 99, 10]) \u2192 [1, 99, 0]"
   ],
-  "provided_code": "public int[] withoutTen(int[] nums) {\n  }"
+  "testcases_extended": [
+    "withoutTen([1, 10, 10, 2]) \u2192 [1, 2, 0, 0]",
+    "withoutTen([10, 2, 10]) \u2192 [2, 0, 0]",
+    "withoutTen([1, 99, 10]) \u2192 [1, 99, 0]",
+    "withoutTen([10, 13, 10, 14]) \u2192 [13, 14, 0, 0]",
+    "withoutTen([10, 13, 10, 14, 10]) \u2192 [13, 14, 0, 0, 0]",
+    "withoutTen([10, 10, 3]) \u2192 [3, 0, 0]",
+    "withoutTen([1]) \u2192 [1]",
+    "withoutTen([13, 1]) \u2192 [13, 1]",
+    "withoutTen([10]) \u2192 [0]",
+    "withoutTen([]) \u2192 []"
+  ],
+  "provided_code": "public int[] withoutTen(int[] nums) {\n  return new int[]{0};\n}",
+  "difficulty": "284.0"
 }

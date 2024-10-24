@@ -9,5 +9,17 @@
     "makes10(9, 9) \u2192 false",
     "makes10(1, 9) \u2192 true"
   ],
-  "provided_code": "public boolean makes10(int a, int b) {\n  }"
+  "testcases_extended": [
+    "makes10(9, 10) \u2192 true",
+    "makes10(9, 9) \u2192 false",
+    "makes10(1, 9) \u2192 true",
+    "makes10(10, 1) \u2192 true",
+    "makes10(10, 10) \u2192 true",
+    "makes10(8, 2) \u2192 true",
+    "makes10(8, 3) \u2192 false",
+    "makes10(10, 42) \u2192 true",
+    "makes10(12, -2) \u2192 true"
+  ],
+  "provided_code": "public boolean makes10(int a, int b) {\n  return false;\n}",
+  "difficulty": "118.0"
 }

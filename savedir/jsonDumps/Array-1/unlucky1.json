@@ -9,5 +9,27 @@
     "unlucky1([2, 1, 3, 4, 5]) \u2192 true",
     "unlucky1([1, 1, 1]) \u2192 false"
   ],
-  "provided_code": "public boolean unlucky1(int[] nums) {\n  }"
+  "testcases_extended": [
+    "unlucky1([1, 3, 4, 5]) \u2192 true",
+    "unlucky1([2, 1, 3, 4, 5]) \u2192 true",
+    "unlucky1([1, 1, 1]) \u2192 false",
+    "unlucky1([1, 3, 1]) \u2192 true",
+    "unlucky1([1, 1, 3]) \u2192 true",
+    "unlucky1([1, 2, 3]) \u2192 false",
+    "unlucky1([3, 3, 3]) \u2192 false",
+    "unlucky1([1, 3]) \u2192 true",
+    "unlucky1([1, 4]) \u2192 false",
+    "unlucky1([1]) \u2192 false",
+    "unlucky1([]) \u2192 false",
+    "unlucky1([1, 1, 1, 3, 1]) \u2192 false",
+    "unlucky1([1, 1, 3, 1, 1]) \u2192 true",
+    "unlucky1([1, 1, 1, 1, 3]) \u2192 true",
+    "unlucky1([1, 4, 1, 5]) \u2192 false",
+    "unlucky1([1, 1, 2, 3]) \u2192 false",
+    "unlucky1([2, 3, 2, 1]) \u2192 false",
+    "unlucky1([2, 3, 1, 3]) \u2192 true",
+    "unlucky1([1, 2, 3, 4, 1, 3]) \u2192 true"
+  ],
+  "provided_code": "public boolean unlucky1(int[] nums) {\n  return false;\n}",
+  "difficulty": "175.0"
 }

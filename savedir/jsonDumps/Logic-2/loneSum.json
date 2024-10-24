@@ -9,5 +9,17 @@
     "loneSum(3, 2, 3) \u2192 2",
     "loneSum(3, 3, 3) \u2192 0"
   ],
-  "provided_code": "public int loneSum(int a, int b, int c) {\n  }"
+  "testcases_extended": [
+    "loneSum(1, 2, 3) \u2192 6",
+    "loneSum(3, 2, 3) \u2192 2",
+    "loneSum(3, 3, 3) \u2192 0",
+    "loneSum(9, 2, 2) \u2192 9",
+    "loneSum(2, 2, 9) \u2192 9",
+    "loneSum(2, 9, 2) \u2192 9",
+    "loneSum(2, 9, 3) \u2192 14",
+    "loneSum(4, 2, 3) \u2192 9",
+    "loneSum(1, 3, 1) \u2192 3"
+  ],
+  "provided_code": "public int loneSum(int a, int b, int c) {\n  return 0;\n}",
+  "difficulty": "206.0"
 }

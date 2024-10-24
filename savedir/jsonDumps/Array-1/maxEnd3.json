@@ -9,5 +9,16 @@
     "maxEnd3([11, 5, 9]) \u2192 [11, 11, 11]",
     "maxEnd3([2, 11, 3]) \u2192 [3, 3, 3]"
   ],
-  "provided_code": "public int[] maxEnd3(int[] nums) {\n  }"
+  "testcases_extended": [
+    "maxEnd3([1, 2, 3]) \u2192 [3, 3, 3]",
+    "maxEnd3([11, 5, 9]) \u2192 [11, 11, 11]",
+    "maxEnd3([2, 11, 3]) \u2192 [3, 3, 3]",
+    "maxEnd3([11, 3, 3]) \u2192 [11, 11, 11]",
+    "maxEnd3([3, 11, 11]) \u2192 [11, 11, 11]",
+    "maxEnd3([2, 2, 2]) \u2192 [2, 2, 2]",
+    "maxEnd3([2, 11, 2]) \u2192 [2, 2, 2]",
+    "maxEnd3([0, 0, 1]) \u2192 [1, 1, 1]"
+  ],
+  "provided_code": "public int[] maxEnd3(int[] nums) {\n  return new int[]{0};\n}",
+  "difficulty": "124.0"
 }

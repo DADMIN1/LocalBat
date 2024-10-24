@@ -9,5 +9,21 @@
     "last2(\"xaxxaxaxx\") \u2192 1",
     "last2(\"axxxaaxx\") \u2192 2"
   ],
-  "provided_code": "public int last2(String str) {\n  }"
+  "testcases_extended": [
+    "last2(\"hixxhi\") \u2192 1",
+    "last2(\"xaxxaxaxx\") \u2192 1",
+    "last2(\"axxxaaxx\") \u2192 2",
+    "last2(\"xxaxxaxxaxx\") \u2192 3",
+    "last2(\"xaxaxaxx\") \u2192 0",
+    "last2(\"xxxx\") \u2192 2",
+    "last2(\"13121312\") \u2192 1",
+    "last2(\"11212\") \u2192 1",
+    "last2(\"13121311\") \u2192 0",
+    "last2(\"1717171\") \u2192 2",
+    "last2(\"hi\") \u2192 0",
+    "last2(\"h\") \u2192 0",
+    "last2(\"\") \u2192 0"
+  ],
+  "provided_code": "public int last2(String str) {\n  return 0;\n}",
+  "difficulty": "215.0"
 }

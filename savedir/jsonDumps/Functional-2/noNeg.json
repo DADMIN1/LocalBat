@@ -9,5 +9,15 @@
     "noNeg([-3, -3, 3, 3]) \u2192 [3, 3]",
     "noNeg([-1, -1, -1]) \u2192 []"
   ],
-  "provided_code": "public List<Integer> noNeg(List<Integer> nums) {\n  }"
+  "testcases_extended": [
+    "noNeg([1, -2]) \u2192 [1]",
+    "noNeg([-3, -3, 3, 3]) \u2192 [3, 3]",
+    "noNeg([-1, -1, -1]) \u2192 []",
+    "noNeg([]) \u2192 []",
+    "noNeg([0, 1, 2]) \u2192 [0, 1, 2]",
+    "noNeg([3, -10, 1, -1, 4, -400]) \u2192 [3, 1, 4]",
+    "noNeg([-1, 3, 1, -1, -10, -100, -111, 5]) \u2192 [3, 1, 5]"
+  ],
+  "provided_code": "public List<Integer> noNeg(List<Integer> nums) {\n  return new ArrayList<Integer>();\n}",
+  "difficulty": "200"
 }

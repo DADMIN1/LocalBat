@@ -9,5 +9,23 @@
     "startWord(\"hippo\", \"xip\") \u2192 \"hip\"",
     "startWord(\"hippo\", \"i\") \u2192 \"h\""
   ],
-  "provided_code": "public String startWord(String str, String word) {\n  }"
+  "testcases_extended": [
+    "startWord(\"hippo\", \"hi\") \u2192 \"hi\"",
+    "startWord(\"hippo\", \"xip\") \u2192 \"hip\"",
+    "startWord(\"hippo\", \"i\") \u2192 \"h\"",
+    "startWord(\"hippo\", \"ix\") \u2192 \"\"",
+    "startWord(\"h\", \"ix\") \u2192 \"\"",
+    "startWord(\"\", \"i\") \u2192 \"\"",
+    "startWord(\"hip\", \"zi\") \u2192 \"hi\"",
+    "startWord(\"hip\", \"zip\") \u2192 \"hip\"",
+    "startWord(\"hip\", \"zig\") \u2192 \"\"",
+    "startWord(\"h\", \"z\") \u2192 \"h\"",
+    "startWord(\"hippo\", \"xippo\") \u2192 \"hippo\"",
+    "startWord(\"hippo\", \"xyz\") \u2192 \"\"",
+    "startWord(\"hippo\", \"hip\") \u2192 \"hip\"",
+    "startWord(\"kitten\", \"cit\") \u2192 \"kit\"",
+    "startWord(\"kit\", \"cit\") \u2192 \"kit\""
+  ],
+  "provided_code": "public String startWord(String str, String word) {\n  return \"\";\n}",
+  "difficulty": "193.0"
 }

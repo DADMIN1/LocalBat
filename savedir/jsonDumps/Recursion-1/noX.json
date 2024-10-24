@@ -9,5 +9,14 @@
     "noX(\"abc\") \u2192 \"abc\"",
     "noX(\"xx\") \u2192 \"\""
   ],
-  "provided_code": "public String noX(String str) {\n  }"
+  "testcases_extended": [
+    "noX(\"xaxb\") \u2192 \"ab\"",
+    "noX(\"abc\") \u2192 \"abc\"",
+    "noX(\"xx\") \u2192 \"\"",
+    "noX(\"\") \u2192 \"\"",
+    "noX(\"axxbxx\") \u2192 \"ab\"",
+    "noX(\"Hellox\") \u2192 \"Hello\""
+  ],
+  "provided_code": "public String noX(String str) {\n  return \"\";\n}",
+  "difficulty": "342.0"
 }

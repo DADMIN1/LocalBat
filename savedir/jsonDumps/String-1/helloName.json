@@ -9,5 +9,18 @@
     "helloName(\"Alice\") \u2192 \"Hello Alice!\"",
     "helloName(\"X\") \u2192 \"Hello X!\""
   ],
-  "provided_code": "public String helloName(String name) {\n  }"
+  "testcases_extended": [
+    "helloName(\"Bob\") \u2192 \"Hello Bob!\"",
+    "helloName(\"Alice\") \u2192 \"Hello Alice!\"",
+    "helloName(\"X\") \u2192 \"Hello X!\"",
+    "helloName(\"Dolly\") \u2192 \"Hello Dolly!\"",
+    "helloName(\"Alpha\") \u2192 \"Hello Alpha!\"",
+    "helloName(\"Omega\") \u2192 \"Hello Omega!\"",
+    "helloName(\"Goodbye\") \u2192 \"Hello Goodbye!\"",
+    "helloName(\"ho ho ho\") \u2192 \"Hello ho ho ho!\"",
+    "helloName(\"xyz!\") \u2192 \"Hello xyz!!\"",
+    "helloName(\"Hello\") \u2192 \"Hello Hello!\""
+  ],
+  "provided_code": "public String helloName(String name) {\n  return \"\";\n}",
+  "difficulty": "103.0"
 }

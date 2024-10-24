@@ -9,5 +9,19 @@
     "frontAgain(\"edit\") \u2192 false",
     "frontAgain(\"ed\") \u2192 true"
   ],
-  "provided_code": "public boolean frontAgain(String str) {\n  }"
+  "testcases_extended": [
+    "frontAgain(\"edited\") \u2192 true",
+    "frontAgain(\"edit\") \u2192 false",
+    "frontAgain(\"ed\") \u2192 true",
+    "frontAgain(\"jj\") \u2192 true",
+    "frontAgain(\"jjj\") \u2192 true",
+    "frontAgain(\"jjjj\") \u2192 true",
+    "frontAgain(\"jjjk\") \u2192 false",
+    "frontAgain(\"x\") \u2192 false",
+    "frontAgain(\"\") \u2192 false",
+    "frontAgain(\"java\") \u2192 false",
+    "frontAgain(\"javaja\") \u2192 true"
+  ],
+  "provided_code": "public boolean frontAgain(String str) {\n  return false;\n}",
+  "difficulty": "178.0"
 }

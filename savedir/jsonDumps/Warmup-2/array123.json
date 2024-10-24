@@ -9,5 +9,18 @@
     "array123([1, 1, 2, 4, 1]) \u2192 false",
     "array123([1, 1, 2, 1, 2, 3]) \u2192 true"
   ],
-  "provided_code": "public boolean array123(int[] nums) {\n  }"
+  "testcases_extended": [
+    "array123([1, 1, 2, 3, 1]) \u2192 true",
+    "array123([1, 1, 2, 4, 1]) \u2192 false",
+    "array123([1, 1, 2, 1, 2, 3]) \u2192 true",
+    "array123([1, 1, 2, 1, 2, 1]) \u2192 false",
+    "array123([1, 2, 3, 1, 2, 3]) \u2192 true",
+    "array123([1, 2, 3]) \u2192 true",
+    "array123([1, 1, 1]) \u2192 false",
+    "array123([1, 2]) \u2192 false",
+    "array123([1]) \u2192 false",
+    "array123([]) \u2192 false"
+  ],
+  "provided_code": "public boolean array123(int[] nums) {\n  return false;\n}",
+  "difficulty": "224.0"
 }

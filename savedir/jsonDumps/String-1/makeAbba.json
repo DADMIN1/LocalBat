@@ -9,5 +9,17 @@
     "makeAbba(\"Yo\", \"Alice\") \u2192 \"YoAliceAliceYo\"",
     "makeAbba(\"What\", \"Up\") \u2192 \"WhatUpUpWhat\""
   ],
-  "provided_code": "public String makeAbba(String a, String b) {\n  }"
+  "testcases_extended": [
+    "makeAbba(\"Hi\", \"Bye\") \u2192 \"HiByeByeHi\"",
+    "makeAbba(\"Yo\", \"Alice\") \u2192 \"YoAliceAliceYo\"",
+    "makeAbba(\"What\", \"Up\") \u2192 \"WhatUpUpWhat\"",
+    "makeAbba(\"aaa\", \"bbb\") \u2192 \"aaabbbbbbaaa\"",
+    "makeAbba(\"x\", \"y\") \u2192 \"xyyx\"",
+    "makeAbba(\"x\", \"\") \u2192 \"xx\"",
+    "makeAbba(\"\", \"y\") \u2192 \"yy\"",
+    "makeAbba(\"Bo\", \"Ya\") \u2192 \"BoYaYaBo\"",
+    "makeAbba(\"Ya\", \"Ya\") \u2192 \"YaYaYaYa\""
+  ],
+  "provided_code": "public String makeAbba(String a, String b) {\n  return \"\";\n}",
+  "difficulty": "106.0"
 }

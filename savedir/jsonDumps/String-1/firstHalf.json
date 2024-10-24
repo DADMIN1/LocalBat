@@ -9,5 +9,15 @@
     "firstHalf(\"HelloThere\") \u2192 \"Hello\"",
     "firstHalf(\"abcdef\") \u2192 \"abc\""
   ],
-  "provided_code": "public String firstHalf(String str) {\n  }"
+  "testcases_extended": [
+    "firstHalf(\"WooHoo\") \u2192 \"Woo\"",
+    "firstHalf(\"HelloThere\") \u2192 \"Hello\"",
+    "firstHalf(\"abcdef\") \u2192 \"abc\"",
+    "firstHalf(\"ab\") \u2192 \"a\"",
+    "firstHalf(\"\") \u2192 \"\"",
+    "firstHalf(\"0123456789\") \u2192 \"01234\"",
+    "firstHalf(\"kitten\") \u2192 \"kit\""
+  ],
+  "provided_code": "public String firstHalf(String str) {\n  return \"\";\n}",
+  "difficulty": "121.0"
 }

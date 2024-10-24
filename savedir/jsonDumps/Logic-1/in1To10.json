@@ -9,5 +9,23 @@
     "in1To10(11, false) \u2192 false",
     "in1To10(11, true) \u2192 true"
   ],
-  "provided_code": "public boolean in1To10(int n, boolean outsideMode) {\n  }"
+  "testcases_extended": [
+    "in1To10(5, false) \u2192 true",
+    "in1To10(11, false) \u2192 false",
+    "in1To10(11, true) \u2192 true",
+    "in1To10(10, false) \u2192 true",
+    "in1To10(10, true) \u2192 true",
+    "in1To10(9, false) \u2192 true",
+    "in1To10(9, true) \u2192 false",
+    "in1To10(1, false) \u2192 true",
+    "in1To10(1, true) \u2192 true",
+    "in1To10(0, false) \u2192 false",
+    "in1To10(0, true) \u2192 true",
+    "in1To10(-1, false) \u2192 false",
+    "in1To10(-1, true) \u2192 true",
+    "in1To10(99, false) \u2192 false",
+    "in1To10(-99, true) \u2192 true"
+  ],
+  "provided_code": "public boolean in1To10(int n, boolean outsideMode) {\n  return false;\n}",
+  "difficulty": "121.0"
 }

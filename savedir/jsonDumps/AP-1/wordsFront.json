@@ -9,5 +9,14 @@
     "wordsFront([\"a\", \"b\", \"c\", \"d\"], 2) \u2192 [\"a\", \"b\"]",
     "wordsFront([\"a\", \"b\", \"c\", \"d\"], 3) \u2192 [\"a\", \"b\", \"c\"]"
   ],
-  "provided_code": "public String[] wordsFront(String[] words, int n) {\n  }"
+  "testcases_extended": [
+    "wordsFront([\"a\", \"b\", \"c\", \"d\"], 1) \u2192 [\"a\"]",
+    "wordsFront([\"a\", \"b\", \"c\", \"d\"], 2) \u2192 [\"a\", \"b\"]",
+    "wordsFront([\"a\", \"b\", \"c\", \"d\"], 3) \u2192 [\"a\", \"b\", \"c\"]",
+    "wordsFront([\"a\", \"b\", \"c\", \"d\"], 4) \u2192 [\"a\", \"b\", \"c\", \"d\"]",
+    "wordsFront([\"Hi\", \"There\"], 1) \u2192 [\"Hi\"]",
+    "wordsFront([\"Hi\", \"There\"], 2) \u2192 [\"Hi\", \"There\"]"
+  ],
+  "provided_code": "public String[] wordsFront(String[] words, int n) {\n  return new String[]{\"\"};\n}",
+  "difficulty": "218.0"
 }

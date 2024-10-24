@@ -9,5 +9,14 @@
     "conCat(\"dog\", \"cat\") \u2192 \"dogcat\"",
     "conCat(\"abc\", \"\") \u2192 \"abc\""
   ],
-  "provided_code": "public String conCat(String a, String b) {\n  }"
+  "testcases_extended": [
+    "conCat(\"abc\", \"cat\") \u2192 \"abcat\"",
+    "conCat(\"dog\", \"cat\") \u2192 \"dogcat\"",
+    "conCat(\"abc\", \"\") \u2192 \"abc\"",
+    "conCat(\"\", \"cat\") \u2192 \"cat\"",
+    "conCat(\"pig\", \"g\") \u2192 \"pig\"",
+    "conCat(\"pig\", \"doggy\") \u2192 \"pigdoggy\""
+  ],
+  "provided_code": "public String conCat(String a, String b) {\n  return \"\";\n}",
+  "difficulty": "169.0"
 }

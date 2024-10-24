@@ -9,5 +9,14 @@
     "stringClean(\"abbbcdd\") \u2192 \"abcd\"",
     "stringClean(\"Hello\") \u2192 \"Helo\""
   ],
-  "provided_code": "public String stringClean(String str) {\n  }"
+  "testcases_extended": [
+    "stringClean(\"yyzzza\") \u2192 \"yza\"",
+    "stringClean(\"abbbcdd\") \u2192 \"abcd\"",
+    "stringClean(\"Hello\") \u2192 \"Helo\"",
+    "stringClean(\"XXabcYY\") \u2192 \"XabcY\"",
+    "stringClean(\"112ab445\") \u2192 \"12ab45\"",
+    "stringClean(\"Hello Bookkeeper\") \u2192 \"Helo Bokeper\""
+  ],
+  "provided_code": "public String stringClean(String str) {\n  return \"\";\n}",
+  "difficulty": "372.0"
 }

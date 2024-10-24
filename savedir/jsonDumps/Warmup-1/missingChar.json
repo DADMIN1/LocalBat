@@ -9,5 +9,18 @@
     "missingChar(\"kitten\", 0) \u2192 \"itten\"",
     "missingChar(\"kitten\", 4) \u2192 \"kittn\""
   ],
-  "provided_code": "public String missingChar(String str, int n) {\n  }"
+  "testcases_extended": [
+    "missingChar(\"kitten\", 1) \u2192 \"ktten\"",
+    "missingChar(\"kitten\", 0) \u2192 \"itten\"",
+    "missingChar(\"kitten\", 4) \u2192 \"kittn\"",
+    "missingChar(\"Hi\", 0) \u2192 \"i\"",
+    "missingChar(\"Hi\", 1) \u2192 \"H\"",
+    "missingChar(\"code\", 0) \u2192 \"ode\"",
+    "missingChar(\"code\", 1) \u2192 \"cde\"",
+    "missingChar(\"code\", 2) \u2192 \"coe\"",
+    "missingChar(\"code\", 3) \u2192 \"cod\"",
+    "missingChar(\"chocolate\", 8) \u2192 \"chocolat\""
+  ],
+  "provided_code": "public String missingChar(String str, int n) {\n  return \"\";\n}",
+  "difficulty": "130.0"
 }

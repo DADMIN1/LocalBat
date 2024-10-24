@@ -9,5 +9,14 @@
     "fizzArray(1) \u2192 [0]",
     "fizzArray(10) \u2192 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]"
   ],
-  "provided_code": "public int[] fizzArray(int n) {\n  }"
+  "testcases_extended": [
+    "fizzArray(4) \u2192 [0, 1, 2, 3]",
+    "fizzArray(1) \u2192 [0]",
+    "fizzArray(10) \u2192 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]",
+    "fizzArray(0) \u2192 []",
+    "fizzArray(2) \u2192 [0, 1]",
+    "fizzArray(7) \u2192 [0, 1, 2, 3, 4, 5, 6]"
+  ],
+  "provided_code": "public int[] fizzArray(int n) {\n  return new int[]{0};\n}",
+  "difficulty": "230"
 }

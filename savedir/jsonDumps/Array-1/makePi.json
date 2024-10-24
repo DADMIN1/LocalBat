@@ -7,5 +7,9 @@
   "testcases": [
     "makePi() \u2192 [3, 1, 4]"
   ],
-  "provided_code": "public int[] makePi() {\n  }"
+  "testcases_extended": [
+    "makePi() \u2192 [3, 1, 4]"
+  ],
+  "provided_code": "public int[] makePi() {\n  return new int[]{0};\n}",
+  "difficulty": "109.0"
 }

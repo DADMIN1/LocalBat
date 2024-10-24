@@ -9,5 +9,24 @@
     "old35(10) \u2192 true",
     "old35(15) \u2192 false"
   ],
-  "provided_code": "public boolean old35(int n) {\n  }"
+  "testcases_extended": [
+    "old35(3) \u2192 true",
+    "old35(10) \u2192 true",
+    "old35(15) \u2192 false",
+    "old35(5) \u2192 true",
+    "old35(9) \u2192 true",
+    "old35(8) \u2192 false",
+    "old35(7) \u2192 false",
+    "old35(6) \u2192 true",
+    "old35(17) \u2192 false",
+    "old35(18) \u2192 true",
+    "old35(29) \u2192 false",
+    "old35(20) \u2192 true",
+    "old35(21) \u2192 true",
+    "old35(22) \u2192 false",
+    "old35(45) \u2192 false",
+    "old35(99) \u2192 true"
+  ],
+  "provided_code": "public boolean old35(int n) {\n  return false;\n}",
+  "difficulty": "122.5"
 }

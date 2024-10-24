@@ -9,5 +9,14 @@
     "seriesUp(4) \u2192 [1, 1, 2, 1, 2, 3, 1, 2, 3, 4]",
     "seriesUp(2) \u2192 [1, 1, 2]"
   ],
-  "provided_code": "public int[] seriesUp(int n) {\n  }"
+  "testcases_extended": [
+    "seriesUp(3) \u2192 [1, 1, 2, 1, 2, 3]",
+    "seriesUp(4) \u2192 [1, 1, 2, 1, 2, 3, 1, 2, 3, 4]",
+    "seriesUp(2) \u2192 [1, 1, 2]",
+    "seriesUp(1) \u2192 [1]",
+    "seriesUp(0) \u2192 []",
+    "seriesUp(6) \u2192 [1, 1, 2, 1, 2, 3, 1, 2, 3, 4, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 6]"
+  ],
+  "provided_code": "public int[] seriesUp(int n) {\n  return new int[]{0};\n}",
+  "difficulty": "321.0"
 }

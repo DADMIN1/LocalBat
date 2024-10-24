@@ -9,5 +9,19 @@
     "dividesSelf(12) \u2192 true",
     "dividesSelf(120) \u2192 false"
   ],
-  "provided_code": "public boolean dividesSelf(int n) {\n  }"
+  "testcases_extended": [
+    "dividesSelf(128) \u2192 true",
+    "dividesSelf(12) \u2192 true",
+    "dividesSelf(120) \u2192 false",
+    "dividesSelf(122) \u2192 true",
+    "dividesSelf(13) \u2192 false",
+    "dividesSelf(32) \u2192 false",
+    "dividesSelf(22) \u2192 true",
+    "dividesSelf(42) \u2192 false",
+    "dividesSelf(212) \u2192 true",
+    "dividesSelf(213) \u2192 false",
+    "dividesSelf(162) \u2192 true"
+  ],
+  "provided_code": "public boolean dividesSelf(int n) {\n  return false;\n}",
+  "difficulty": "227.0"
 }

@@ -9,5 +9,15 @@
     "everyNth(\"abcdefg\", 2) \u2192 \"aceg\"",
     "everyNth(\"abcdefg\", 3) \u2192 \"adg\""
   ],
-  "provided_code": "public String everyNth(String str, int n) {\n  }"
+  "testcases_extended": [
+    "everyNth(\"Miracle\", 2) \u2192 \"Mrce\"",
+    "everyNth(\"abcdefg\", 2) \u2192 \"aceg\"",
+    "everyNth(\"abcdefg\", 3) \u2192 \"adg\"",
+    "everyNth(\"Chocolate\", 3) \u2192 \"Cca\"",
+    "everyNth(\"Chocolates\", 3) \u2192 \"Ccas\"",
+    "everyNth(\"Chocolates\", 4) \u2192 \"Coe\"",
+    "everyNth(\"Chocolates\", 100) \u2192 \"C\""
+  ],
+  "provided_code": "public String everyNth(String str, int n) {\n  return \"\";\n}",
+  "difficulty": "190.0"
 }

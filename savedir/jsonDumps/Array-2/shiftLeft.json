@@ -9,5 +9,15 @@
     "shiftLeft([1, 2]) \u2192 [2, 1]",
     "shiftLeft([1]) \u2192 [1]"
   ],
-  "provided_code": "public int[] shiftLeft(int[] nums) {\n  }"
+  "testcases_extended": [
+    "shiftLeft([6, 2, 5, 3]) \u2192 [2, 5, 3, 6]",
+    "shiftLeft([1, 2]) \u2192 [2, 1]",
+    "shiftLeft([1]) \u2192 [1]",
+    "shiftLeft([]) \u2192 []",
+    "shiftLeft([1, 1, 2, 2, 4]) \u2192 [1, 2, 2, 4, 1]",
+    "shiftLeft([1, 1, 1]) \u2192 [1, 1, 1]",
+    "shiftLeft([1, 2, 3]) \u2192 [2, 3, 1]"
+  ],
+  "provided_code": "public int[] shiftLeft(int[] nums) {\n  return new int[]{0};\n}",
+  "difficulty": "266.0"
 }

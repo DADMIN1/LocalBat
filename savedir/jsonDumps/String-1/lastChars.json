@@ -9,5 +9,17 @@
     "lastChars(\"yo\", \"java\") \u2192 \"ya\"",
     "lastChars(\"hi\", \"\") \u2192 \"h@\""
   ],
-  "provided_code": "public String lastChars(String a, String b) {\n  }"
+  "testcases_extended": [
+    "lastChars(\"last\", \"chars\") \u2192 \"ls\"",
+    "lastChars(\"yo\", \"java\") \u2192 \"ya\"",
+    "lastChars(\"hi\", \"\") \u2192 \"h@\"",
+    "lastChars(\"\", \"hello\") \u2192 \"@o\"",
+    "lastChars(\"\", \"\") \u2192 \"@@\"",
+    "lastChars(\"kitten\", \"hi\") \u2192 \"ki\"",
+    "lastChars(\"k\", \"zip\") \u2192 \"kp\"",
+    "lastChars(\"kitten\", \"\") \u2192 \"k@\"",
+    "lastChars(\"kitten\", \"zip\") \u2192 \"kp\""
+  ],
+  "provided_code": "public String lastChars(String a, String b) {\n  return \"\";\n}",
+  "difficulty": "166.0"
 }

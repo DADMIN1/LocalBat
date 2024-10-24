@@ -9,5 +9,17 @@
     "sumNumbers(\"aa11b33\") \u2192 44",
     "sumNumbers(\"7 11\") \u2192 18"
   ],
-  "provided_code": "public int sumNumbers(String str) {\n  }"
+  "testcases_extended": [
+    "sumNumbers(\"abc123xyz\") \u2192 123",
+    "sumNumbers(\"aa11b33\") \u2192 44",
+    "sumNumbers(\"7 11\") \u2192 18",
+    "sumNumbers(\"Chocolate\") \u2192 0",
+    "sumNumbers(\"5hoco1a1e\") \u2192 7",
+    "sumNumbers(\"5$$1;;1!!\") \u2192 7",
+    "sumNumbers(\"a1234bb11\") \u2192 1245",
+    "sumNumbers(\"\") \u2192 0",
+    "sumNumbers(\"a22bbb3\") \u2192 25"
+  ],
+  "provided_code": "public int sumNumbers(String str) {\n  return 0;\n}",
+  "difficulty": "330.0"
 }

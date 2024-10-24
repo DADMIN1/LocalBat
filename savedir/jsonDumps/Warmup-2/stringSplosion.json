@@ -9,5 +9,18 @@
     "stringSplosion(\"abc\") \u2192 \"aababc\"",
     "stringSplosion(\"ab\") \u2192 \"aab\""
   ],
-  "provided_code": "public String stringSplosion(String str) {\n  }"
+  "testcases_extended": [
+    "stringSplosion(\"Code\") \u2192 \"CCoCodCode\"",
+    "stringSplosion(\"abc\") \u2192 \"aababc\"",
+    "stringSplosion(\"ab\") \u2192 \"aab\"",
+    "stringSplosion(\"x\") \u2192 \"x\"",
+    "stringSplosion(\"fade\") \u2192 \"ffafadfade\"",
+    "stringSplosion(\"There\") \u2192 \"TThTheTherThere\"",
+    "stringSplosion(\"Kitten\") \u2192 \"KKiKitKittKitteKitten\"",
+    "stringSplosion(\"Bye\") \u2192 \"BByBye\"",
+    "stringSplosion(\"Good\") \u2192 \"GGoGooGood\"",
+    "stringSplosion(\"Bad\") \u2192 \"BBaBad\""
+  ],
+  "provided_code": "public String stringSplosion(String str) {\n  return \"\";\n}",
+  "difficulty": "212.0"
 }

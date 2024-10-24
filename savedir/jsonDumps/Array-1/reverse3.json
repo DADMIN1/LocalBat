@@ -9,5 +9,16 @@
     "reverse3([5, 11, 9]) \u2192 [9, 11, 5]",
     "reverse3([7, 0, 0]) \u2192 [0, 0, 7]"
   ],
-  "provided_code": "public int[] reverse3(int[] nums) {\n  }"
+  "testcases_extended": [
+    "reverse3([1, 2, 3]) \u2192 [3, 2, 1]",
+    "reverse3([5, 11, 9]) \u2192 [9, 11, 5]",
+    "reverse3([7, 0, 0]) \u2192 [0, 0, 7]",
+    "reverse3([2, 1, 2]) \u2192 [2, 1, 2]",
+    "reverse3([1, 2, 1]) \u2192 [1, 2, 1]",
+    "reverse3([2, 11, 3]) \u2192 [3, 11, 2]",
+    "reverse3([0, 6, 5]) \u2192 [5, 6, 0]",
+    "reverse3([7, 2, 3]) \u2192 [3, 2, 7]"
+  ],
+  "provided_code": "public int[] reverse3(int[] nums) {\n  return new int[]{0};\n}",
+  "difficulty": "121.0"
 }

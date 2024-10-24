@@ -9,5 +9,16 @@
     "countX(\"xhixhix\") \u2192 3",
     "countX(\"hi\") \u2192 0"
   ],
-  "provided_code": "public int countX(String str) {\n  }"
+  "testcases_extended": [
+    "countX(\"xxhixx\") \u2192 4",
+    "countX(\"xhixhix\") \u2192 3",
+    "countX(\"hi\") \u2192 0",
+    "countX(\"h\") \u2192 0",
+    "countX(\"x\") \u2192 1",
+    "countX(\"\") \u2192 0",
+    "countX(\"hihi\") \u2192 0",
+    "countX(\"hiAAhi12hi\") \u2192 0"
+  ],
+  "provided_code": "public int countX(String str) {\n  return 0;\n}",
+  "difficulty": "330.0"
 }

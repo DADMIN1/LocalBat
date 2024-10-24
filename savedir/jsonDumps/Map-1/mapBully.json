@@ -9,5 +9,14 @@
     "mapBully({\"a\": \"candy\"}) \u2192 {\"a\": \"\", \"b\": \"candy\"}",
     "mapBully({\"a\": \"candy\", \"b\": \"carrot\", \"c\": \"meh\"}) \u2192 {\"a\": \"\", \"b\": \"candy\", \"c\": \"meh\"}"
   ],
-  "provided_code": "public Map<String, String> mapBully(Map<String, String> map) {\n  }"
+  "testcases_extended": [
+    "mapBully({\"a\": \"candy\", \"b\": \"dirt\"}) \u2192 {\"a\": \"\", \"b\": \"candy\"}",
+    "mapBully({\"a\": \"candy\"}) \u2192 {\"a\": \"\", \"b\": \"candy\"}",
+    "mapBully({\"a\": \"candy\", \"b\": \"carrot\", \"c\": \"meh\"}) \u2192 {\"a\": \"\", \"b\": \"candy\", \"c\": \"meh\"}",
+    "mapBully({\"b\": \"carrot\"}) \u2192 {\"b\": \"carrot\"}",
+    "mapBully({\"c\": \"meh\"}) \u2192 {\"c\": \"meh\"}",
+    "mapBully({\"a\": \"sparkle\", \"c\": \"meh\"}) \u2192 {\"a\": \"\", \"b\": \"sparkle\", \"c\": \"meh\"}"
+  ],
+  "provided_code": "public Map<String, String> mapBully(Map<String, String> map) {\n  return new HashMap<String, String>();\n}",
+  "difficulty": "203"
 }

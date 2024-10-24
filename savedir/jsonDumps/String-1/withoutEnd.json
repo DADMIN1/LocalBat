@@ -9,5 +9,16 @@
     "withoutEnd(\"java\") \u2192 \"av\"",
     "withoutEnd(\"coding\") \u2192 \"odin\""
   ],
-  "provided_code": "public String withoutEnd(String str) {\n  }"
+  "testcases_extended": [
+    "withoutEnd(\"Hello\") \u2192 \"ell\"",
+    "withoutEnd(\"java\") \u2192 \"av\"",
+    "withoutEnd(\"coding\") \u2192 \"odin\"",
+    "withoutEnd(\"code\") \u2192 \"od\"",
+    "withoutEnd(\"ab\") \u2192 \"\"",
+    "withoutEnd(\"Chocolate!\") \u2192 \"hocolate\"",
+    "withoutEnd(\"kitten\") \u2192 \"itte\"",
+    "withoutEnd(\"woohoo\") \u2192 \"ooho\""
+  ],
+  "provided_code": "public String withoutEnd(String str) {\n  return \"\";\n}",
+  "difficulty": "124.0"
 }

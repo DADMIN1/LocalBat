@@ -9,5 +9,18 @@
     "stringTimes(\"Hi\", 3) \u2192 \"HiHiHi\"",
     "stringTimes(\"Hi\", 1) \u2192 \"Hi\""
   ],
-  "provided_code": "public String stringTimes(String str, int n) {\n  }"
+  "testcases_extended": [
+    "stringTimes(\"Hi\", 2) \u2192 \"HiHi\"",
+    "stringTimes(\"Hi\", 3) \u2192 \"HiHiHi\"",
+    "stringTimes(\"Hi\", 1) \u2192 \"Hi\"",
+    "stringTimes(\"Hi\", 0) \u2192 \"\"",
+    "stringTimes(\"Hi\", 5) \u2192 \"HiHiHiHiHi\"",
+    "stringTimes(\"Oh Boy!\", 2) \u2192 \"Oh Boy!Oh Boy!\"",
+    "stringTimes(\"x\", 4) \u2192 \"xxxx\"",
+    "stringTimes(\"\", 4) \u2192 \"\"",
+    "stringTimes(\"code\", 2) \u2192 \"codecode\"",
+    "stringTimes(\"code\", 3) \u2192 \"codecodecode\""
+  ],
+  "provided_code": "public String stringTimes(String str, int n) {\n  return \"\";\n}",
+  "difficulty": "203.0"
 }

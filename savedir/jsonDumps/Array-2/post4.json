@@ -9,5 +9,18 @@
     "post4([4, 1, 4, 2]) \u2192 [2]",
     "post4([4, 4, 1, 2, 3]) \u2192 [1, 2, 3]"
   ],
-  "provided_code": "public int[] post4(int[] nums) {\n  }"
+  "testcases_extended": [
+    "post4([2, 4, 1, 2]) \u2192 [1, 2]",
+    "post4([4, 1, 4, 2]) \u2192 [2]",
+    "post4([4, 4, 1, 2, 3]) \u2192 [1, 2, 3]",
+    "post4([4, 2]) \u2192 [2]",
+    "post4([4, 4, 3]) \u2192 [3]",
+    "post4([4, 4]) \u2192 []",
+    "post4([4]) \u2192 []",
+    "post4([2, 4, 1, 4, 3, 2]) \u2192 [3, 2]",
+    "post4([4, 1, 4, 2, 2, 2]) \u2192 [2, 2, 2]",
+    "post4([3, 4, 3, 2]) \u2192 [3, 2]"
+  ],
+  "provided_code": "public int[] post4(int[] nums) {\n  return new int[]{0};\n}",
+  "difficulty": "275.0"
 }

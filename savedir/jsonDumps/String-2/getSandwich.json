@@ -9,5 +9,20 @@
     "getSandwich(\"xxbreadjambreadyy\") \u2192 \"jam\"",
     "getSandwich(\"xxbreadyy\") \u2192 \"\""
   ],
-  "provided_code": "public String getSandwich(String str) {\n  }"
+  "testcases_extended": [
+    "getSandwich(\"breadjambread\") \u2192 \"jam\"",
+    "getSandwich(\"xxbreadjambreadyy\") \u2192 \"jam\"",
+    "getSandwich(\"xxbreadyy\") \u2192 \"\"",
+    "getSandwich(\"xxbreadbreadjambreadyy\") \u2192 \"breadjam\"",
+    "getSandwich(\"breadAbread\") \u2192 \"A\"",
+    "getSandwich(\"breadbread\") \u2192 \"\"",
+    "getSandwich(\"abcbreaz\") \u2192 \"\"",
+    "getSandwich(\"xyz\") \u2192 \"\"",
+    "getSandwich(\"\") \u2192 \"\"",
+    "getSandwich(\"breadbreaxbread\") \u2192 \"breax\"",
+    "getSandwich(\"breaxbreadybread\") \u2192 \"y\"",
+    "getSandwich(\"breadbreadbreadbread\") \u2192 \"breadbread\""
+  ],
+  "provided_code": "public String getSandwich(String str) {\n  return \"\";\n}",
+  "difficulty": "245.0"
 }

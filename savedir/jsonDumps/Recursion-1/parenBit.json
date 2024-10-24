@@ -9,5 +9,20 @@
     "parenBit(\"x(hello)\") \u2192 \"(hello)\"",
     "parenBit(\"(xy)1\") \u2192 \"(xy)\""
   ],
-  "provided_code": "public String parenBit(String str) {\n  }"
+  "testcases_extended": [
+    "parenBit(\"xyz(abc)123\") \u2192 \"(abc)\"",
+    "parenBit(\"x(hello)\") \u2192 \"(hello)\"",
+    "parenBit(\"(xy)1\") \u2192 \"(xy)\"",
+    "parenBit(\"not really (possible)\") \u2192 \"(possible)\"",
+    "parenBit(\"(abc)\") \u2192 \"(abc)\"",
+    "parenBit(\"(abc)xyz\") \u2192 \"(abc)\"",
+    "parenBit(\"(abc)x\") \u2192 \"(abc)\"",
+    "parenBit(\"(x)\") \u2192 \"(x)\"",
+    "parenBit(\"()\") \u2192 \"()\"",
+    "parenBit(\"res (ipsa) loquitor\") \u2192 \"(ipsa)\"",
+    "parenBit(\"hello(not really)there\") \u2192 \"(not really)\"",
+    "parenBit(\"ab(ab)ab\") \u2192 \"(ab)\""
+  ],
+  "provided_code": "public String parenBit(String str) {\n  return \"\";\n}",
+  "difficulty": "378.0"
 }

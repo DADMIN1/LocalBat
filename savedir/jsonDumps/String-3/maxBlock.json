@@ -9,5 +9,19 @@
     "maxBlock(\"abbCCCddBBBxx\") \u2192 3",
     "maxBlock(\"\") \u2192 0"
   ],
-  "provided_code": "public int maxBlock(String str) {\n  }"
+  "testcases_extended": [
+    "maxBlock(\"hoopla\") \u2192 2",
+    "maxBlock(\"abbCCCddBBBxx\") \u2192 3",
+    "maxBlock(\"\") \u2192 0",
+    "maxBlock(\"xyz\") \u2192 1",
+    "maxBlock(\"xxyz\") \u2192 2",
+    "maxBlock(\"xyzz\") \u2192 2",
+    "maxBlock(\"abbbcbbbxbbbx\") \u2192 3",
+    "maxBlock(\"XXBBBbbxx\") \u2192 3",
+    "maxBlock(\"XXBBBBbbxx\") \u2192 4",
+    "maxBlock(\"XXBBBbbxxXXXX\") \u2192 4",
+    "maxBlock(\"XX2222BBBbbXX2222\") \u2192 4"
+  ],
+  "provided_code": "public int maxBlock(String str) {\n  return 0;\n}",
+  "difficulty": "327.0"
 }

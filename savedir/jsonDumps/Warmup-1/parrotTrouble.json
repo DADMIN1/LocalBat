@@ -9,5 +9,18 @@
     "parrotTrouble(true, 7) \u2192 false",
     "parrotTrouble(false, 6) \u2192 false"
   ],
-  "provided_code": "public boolean parrotTrouble(boolean talking, int hour) {\n  }"
+  "testcases_extended": [
+    "parrotTrouble(true, 6) \u2192 true",
+    "parrotTrouble(true, 7) \u2192 false",
+    "parrotTrouble(false, 6) \u2192 false",
+    "parrotTrouble(true, 21) \u2192 true",
+    "parrotTrouble(false, 21) \u2192 false",
+    "parrotTrouble(false, 20) \u2192 false",
+    "parrotTrouble(true, 23) \u2192 true",
+    "parrotTrouble(false, 23) \u2192 false",
+    "parrotTrouble(true, 20) \u2192 false",
+    "parrotTrouble(false, 12) \u2192 false"
+  ],
+  "provided_code": "public boolean parrotTrouble(boolean talking, int hour) {\n  return false;\n}",
+  "difficulty": "115.0"
 }

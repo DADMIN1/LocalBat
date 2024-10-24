@@ -9,5 +9,21 @@
     "loneTeen(21, 19) \u2192 true",
     "loneTeen(13, 13) \u2192 false"
   ],
-  "provided_code": "public boolean loneTeen(int a, int b) {\n  }"
+  "testcases_extended": [
+    "loneTeen(13, 99) \u2192 true",
+    "loneTeen(21, 19) \u2192 true",
+    "loneTeen(13, 13) \u2192 false",
+    "loneTeen(14, 20) \u2192 true",
+    "loneTeen(20, 15) \u2192 true",
+    "loneTeen(16, 17) \u2192 false",
+    "loneTeen(16, 9) \u2192 true",
+    "loneTeen(16, 18) \u2192 false",
+    "loneTeen(13, 19) \u2192 false",
+    "loneTeen(13, 20) \u2192 true",
+    "loneTeen(6, 18) \u2192 true",
+    "loneTeen(99, 13) \u2192 true",
+    "loneTeen(99, 99) \u2192 false"
+  ],
+  "provided_code": "public boolean loneTeen(int a, int b) {\n  return false;\n}",
+  "difficulty": "157.0"
 }

@@ -9,5 +9,21 @@
     "count7(7) \u2192 1",
     "count7(123) \u2192 0"
   ],
-  "provided_code": "public int count7(int n) {\n  }"
+  "testcases_extended": [
+    "count7(717) \u2192 2",
+    "count7(7) \u2192 1",
+    "count7(123) \u2192 0",
+    "count7(77) \u2192 2",
+    "count7(7123) \u2192 1",
+    "count7(771237) \u2192 3",
+    "count7(771737) \u2192 4",
+    "count7(47571) \u2192 2",
+    "count7(777777) \u2192 6",
+    "count7(70701277) \u2192 4",
+    "count7(777576197) \u2192 5",
+    "count7(99999) \u2192 0",
+    "count7(99799) \u2192 1"
+  ],
+  "provided_code": "public int count7(int n) {\n  return 0;\n}",
+  "difficulty": "321.0"
 }

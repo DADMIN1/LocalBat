@@ -9,5 +9,16 @@
     "triangle(1) \u2192 1",
     "triangle(2) \u2192 3"
   ],
-  "provided_code": "public int triangle(int rows) {\n  }"
+  "testcases_extended": [
+    "triangle(0) \u2192 0",
+    "triangle(1) \u2192 1",
+    "triangle(2) \u2192 3",
+    "triangle(3) \u2192 6",
+    "triangle(4) \u2192 10",
+    "triangle(5) \u2192 15",
+    "triangle(6) \u2192 21",
+    "triangle(7) \u2192 28"
+  ],
+  "provided_code": "public int triangle(int rows) {\n  return 0;\n}",
+  "difficulty": "315.0"
 }

@@ -9,5 +9,21 @@
     "squirrelPlay(95, false) \u2192 false",
     "squirrelPlay(95, true) \u2192 true"
   ],
-  "provided_code": "public boolean squirrelPlay(int temp, boolean isSummer) {\n  }"
+  "testcases_extended": [
+    "squirrelPlay(70, false) \u2192 true",
+    "squirrelPlay(95, false) \u2192 false",
+    "squirrelPlay(95, true) \u2192 true",
+    "squirrelPlay(90, false) \u2192 true",
+    "squirrelPlay(90, true) \u2192 true",
+    "squirrelPlay(50, false) \u2192 false",
+    "squirrelPlay(50, true) \u2192 false",
+    "squirrelPlay(100, false) \u2192 false",
+    "squirrelPlay(100, true) \u2192 true",
+    "squirrelPlay(105, true) \u2192 false",
+    "squirrelPlay(59, false) \u2192 false",
+    "squirrelPlay(59, true) \u2192 false",
+    "squirrelPlay(60, false) \u2192 true"
+  ],
+  "provided_code": "public boolean squirrelPlay(int temp, boolean isSummer) {\n  return false;\n}",
+  "difficulty": "109.0"
 }

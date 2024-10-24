@@ -9,5 +9,17 @@
     "has23([4, 3]) \u2192 true",
     "has23([4, 5]) \u2192 false"
   ],
-  "provided_code": "public boolean has23(int[] nums) {\n  }"
+  "testcases_extended": [
+    "has23([2, 5]) \u2192 true",
+    "has23([4, 3]) \u2192 true",
+    "has23([4, 5]) \u2192 false",
+    "has23([2, 2]) \u2192 true",
+    "has23([3, 2]) \u2192 true",
+    "has23([3, 3]) \u2192 true",
+    "has23([7, 7]) \u2192 false",
+    "has23([3, 9]) \u2192 true",
+    "has23([9, 5]) \u2192 false"
+  ],
+  "provided_code": "public boolean has23(int[] nums) {\n  return false;\n}",
+  "difficulty": "136.0"
 }

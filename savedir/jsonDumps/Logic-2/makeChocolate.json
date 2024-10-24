@@ -9,5 +9,32 @@
     "makeChocolate(4, 1, 10) \u2192 -1",
     "makeChocolate(4, 1, 7) \u2192 2"
   ],
-  "provided_code": "public int makeChocolate(int small, int big, int goal) {\n  }"
+  "testcases_extended": [
+    "makeChocolate(4, 1, 9) \u2192 4",
+    "makeChocolate(4, 1, 10) \u2192 -1",
+    "makeChocolate(4, 1, 7) \u2192 2",
+    "makeChocolate(6, 2, 7) \u2192 2",
+    "makeChocolate(4, 1, 5) \u2192 0",
+    "makeChocolate(4, 1, 4) \u2192 4",
+    "makeChocolate(5, 4, 9) \u2192 4",
+    "makeChocolate(9, 3, 18) \u2192 3",
+    "makeChocolate(3, 1, 9) \u2192 -1",
+    "makeChocolate(1, 2, 7) \u2192 -1",
+    "makeChocolate(1, 2, 6) \u2192 1",
+    "makeChocolate(1, 2, 5) \u2192 0",
+    "makeChocolate(6, 1, 10) \u2192 5",
+    "makeChocolate(6, 1, 11) \u2192 6",
+    "makeChocolate(6, 1, 12) \u2192 -1",
+    "makeChocolate(6, 1, 13) \u2192 -1",
+    "makeChocolate(6, 2, 10) \u2192 0",
+    "makeChocolate(6, 2, 11) \u2192 1",
+    "makeChocolate(6, 2, 12) \u2192 2",
+    "makeChocolate(60, 100, 550) \u2192 50",
+    "makeChocolate(1000, 1000000, 5000006) \u2192 6",
+    "makeChocolate(7, 1, 12) \u2192 7",
+    "makeChocolate(7, 1, 13) \u2192 -1",
+    "makeChocolate(7, 2, 13) \u2192 3"
+  ],
+  "provided_code": "public int makeChocolate(int small, int big, int goal) {\n  return 0;\n}",
+  "difficulty": "224.0"
 }

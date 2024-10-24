@@ -9,5 +9,17 @@
     "makeLast([1, 2]) \u2192 [0, 0, 0, 2]",
     "makeLast([3]) \u2192 [0, 3]"
   ],
-  "provided_code": "public int[] makeLast(int[] nums) {\n  }"
+  "testcases_extended": [
+    "makeLast([4, 5, 6]) \u2192 [0, 0, 0, 0, 0, 6]",
+    "makeLast([1, 2]) \u2192 [0, 0, 0, 2]",
+    "makeLast([3]) \u2192 [0, 3]",
+    "makeLast([0]) \u2192 [0, 0]",
+    "makeLast([7, 7, 7]) \u2192 [0, 0, 0, 0, 0, 7]",
+    "makeLast([3, 1, 4]) \u2192 [0, 0, 0, 0, 0, 4]",
+    "makeLast([1, 2, 3, 4]) \u2192 [0, 0, 0, 0, 0, 0, 0, 4]",
+    "makeLast([1, 2, 3, 0]) \u2192 [0, 0, 0, 0, 0, 0, 0, 0]",
+    "makeLast([2, 4]) \u2192 [0, 0, 0, 4]"
+  ],
+  "provided_code": "public int[] makeLast(int[] nums) {\n  return new int[]{0};\n}",
+  "difficulty": "142.0"
 }

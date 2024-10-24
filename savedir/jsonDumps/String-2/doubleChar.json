@@ -9,5 +9,17 @@
     "doubleChar(\"AAbb\") \u2192 \"AAAAbbbb\"",
     "doubleChar(\"Hi-There\") \u2192 \"HHii--TThheerree\""
   ],
-  "provided_code": "public String doubleChar(String str) {\n  }"
+  "testcases_extended": [
+    "doubleChar(\"The\") \u2192 \"TThhee\"",
+    "doubleChar(\"AAbb\") \u2192 \"AAAAbbbb\"",
+    "doubleChar(\"Hi-There\") \u2192 \"HHii--TThheerree\"",
+    "doubleChar(\"Word!\") \u2192 \"WWoorrdd!!\"",
+    "doubleChar(\"!!\") \u2192 \"!!!!\"",
+    "doubleChar(\"\") \u2192 \"\"",
+    "doubleChar(\"a\") \u2192 \"aa\"",
+    "doubleChar(\".\") \u2192 \"..\"",
+    "doubleChar(\"aa\") \u2192 \"aaaa\""
+  ],
+  "provided_code": "public String doubleChar(String str) {\n  return \"\";\n}",
+  "difficulty": "203.0"
 }

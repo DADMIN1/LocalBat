@@ -9,5 +9,20 @@
     "fizzBuzz(1, 8) \u2192 [\"1\", \"2\", \"Fizz\", \"4\", \"Buzz\", \"Fizz\", \"7\"]",
     "fizzBuzz(1, 11) \u2192 [\"1\", \"2\", \"Fizz\", \"4\", \"Buzz\", \"Fizz\", \"7\", \"8\", \"Fizz\", \"Buzz\"]"
   ],
-  "provided_code": "public String[] fizzBuzz(int start, int end) {\n  }"
+  "testcases_extended": [
+    "fizzBuzz(1, 6) \u2192 [\"1\", \"2\", \"Fizz\", \"4\", \"Buzz\"]",
+    "fizzBuzz(1, 8) \u2192 [\"1\", \"2\", \"Fizz\", \"4\", \"Buzz\", \"Fizz\", \"7\"]",
+    "fizzBuzz(1, 11) \u2192 [\"1\", \"2\", \"Fizz\", \"4\", \"Buzz\", \"Fizz\", \"7\", \"8\", \"Fizz\", \"Buzz\"]",
+    "fizzBuzz(1, 16) \u2192 [\"1\", \"2\", \"Fizz\", \"4\", \"Buzz\", \"Fizz\", \"7\", \"8\", \"Fizz\", \"Buzz\", \"11\", \"Fizz\", \"13\", \"14\", \"FizzBuzz\"]",
+    "fizzBuzz(1, 4) \u2192 [\"1\", \"2\", \"Fizz\"]",
+    "fizzBuzz(1, 2) \u2192 [\"1\"]",
+    "fizzBuzz(50, 56) \u2192 [\"Buzz\", \"Fizz\", \"52\", \"53\", \"Fizz\", \"Buzz\"]",
+    "fizzBuzz(15, 17) \u2192 [\"FizzBuzz\", \"16\"]",
+    "fizzBuzz(30, 36) \u2192 [\"FizzBuzz\", \"31\", \"32\", \"Fizz\", \"34\", \"Buzz\"]",
+    "fizzBuzz(1000, 1006) \u2192 [\"Buzz\", \"1001\", \"Fizz\", \"1003\", \"1004\", \"FizzBuzz\"]",
+    "fizzBuzz(99, 102) \u2192 [\"Fizz\", \"Buzz\", \"101\"]",
+    "fizzBuzz(14, 20) \u2192 [\"14\", \"FizzBuzz\", \"16\", \"17\", \"Fizz\", \"19\"]"
+  ],
+  "provided_code": "public String[] fizzBuzz(int start, int end) {\n  return new String[]{\"\"};\n}",
+  "difficulty": "299"
 }

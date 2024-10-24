@@ -9,5 +9,14 @@
     "sum3([5, 11, 2]) \u2192 18",
     "sum3([7, 0, 0]) \u2192 7"
   ],
-  "provided_code": "public int sum3(int[] nums) {\n  }"
+  "testcases_extended": [
+    "sum3([1, 2, 3]) \u2192 6",
+    "sum3([5, 11, 2]) \u2192 18",
+    "sum3([7, 0, 0]) \u2192 7",
+    "sum3([1, 2, 1]) \u2192 4",
+    "sum3([1, 1, 1]) \u2192 3",
+    "sum3([2, 7, 2]) \u2192 11"
+  ],
+  "provided_code": "public int sum3(int[] nums) {\n  return 0;\n}",
+  "difficulty": "115.0"
 }

@@ -9,5 +9,15 @@
     "wordsWithout([\"a\", \"b\", \"c\", \"a\"], \"b\") \u2192 [\"a\", \"c\", \"a\"]",
     "wordsWithout([\"a\", \"b\", \"c\", \"a\"], \"c\") \u2192 [\"a\", \"b\", \"a\"]"
   ],
-  "provided_code": "public String[] wordsWithout(String[] words, String target) {\n  }"
+  "testcases_extended": [
+    "wordsWithout([\"a\", \"b\", \"c\", \"a\"], \"a\") \u2192 [\"b\", \"c\"]",
+    "wordsWithout([\"a\", \"b\", \"c\", \"a\"], \"b\") \u2192 [\"a\", \"c\", \"a\"]",
+    "wordsWithout([\"a\", \"b\", \"c\", \"a\"], \"c\") \u2192 [\"a\", \"b\", \"a\"]",
+    "wordsWithout([\"b\", \"c\", \"a\", \"a\"], \"b\") \u2192 [\"c\", \"a\", \"a\"]",
+    "wordsWithout([\"xx\", \"yyy\", \"x\", \"yy\", \"x\"], \"x\") \u2192 [\"xx\", \"yyy\", \"yy\"]",
+    "wordsWithout([\"xx\", \"yyy\", \"x\", \"yy\", \"x\"], \"yy\") \u2192 [\"xx\", \"yyy\", \"x\", \"x\"]",
+    "wordsWithout([\"aa\", \"ab\", \"ac\", \"aa\"], \"aa\") \u2192 [\"ab\", \"ac\"]"
+  ],
+  "provided_code": "public String[] wordsWithout(String[] words, String target) {\n  return new String[]{\"\"};\n}",
+  "difficulty": "242.0"
 }

@@ -9,5 +9,21 @@
     "firstLast6([6, 1, 2, 3]) \u2192 true",
     "firstLast6([13, 6, 1, 2, 3]) \u2192 false"
   ],
-  "provided_code": "public boolean firstLast6(int[] nums) {\n  }"
+  "testcases_extended": [
+    "firstLast6([1, 2, 6]) \u2192 true",
+    "firstLast6([6, 1, 2, 3]) \u2192 true",
+    "firstLast6([13, 6, 1, 2, 3]) \u2192 false",
+    "firstLast6([13, 6, 1, 2, 6]) \u2192 true",
+    "firstLast6([3, 2, 1]) \u2192 false",
+    "firstLast6([3, 6, 1]) \u2192 false",
+    "firstLast6([3, 6]) \u2192 true",
+    "firstLast6([6]) \u2192 true",
+    "firstLast6([3]) \u2192 false",
+    "firstLast6([5, 6]) \u2192 true",
+    "firstLast6([5, 5]) \u2192 false",
+    "firstLast6([1, 2, 3, 4, 6]) \u2192 true",
+    "firstLast6([1, 2, 3, 4]) \u2192 false"
+  ],
+  "provided_code": "public boolean firstLast6(int[] nums) {\n  return false;\n}",
+  "difficulty": "103.0"
 }

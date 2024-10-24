@@ -9,5 +9,13 @@
     "word0([\"a\", \"b\", \"a\", \"c\", \"b\"]) \u2192 {\"a\": 0, \"b\": 0, \"c\": 0}",
     "word0([\"c\", \"b\", \"a\"]) \u2192 {\"a\": 0, \"b\": 0, \"c\": 0}"
   ],
-  "provided_code": "public Map<String, Integer> word0(String[] strings) {\n  }"
+  "testcases_extended": [
+    "word0([\"a\", \"b\", \"a\", \"b\"]) \u2192 {\"a\": 0, \"b\": 0}",
+    "word0([\"a\", \"b\", \"a\", \"c\", \"b\"]) \u2192 {\"a\": 0, \"b\": 0, \"c\": 0}",
+    "word0([\"c\", \"b\", \"a\"]) \u2192 {\"a\": 0, \"b\": 0, \"c\": 0}",
+    "word0([\"c\", \"c\", \"c\", \"c\"]) \u2192 {\"c\": 0}",
+    "word0([]) \u2192 {}"
+  ],
+  "provided_code": "public Map<String, Integer> word0(String[] strings) {\n  return new HashMap<String, Integer>();\n}",
+  "difficulty": "303"
 }

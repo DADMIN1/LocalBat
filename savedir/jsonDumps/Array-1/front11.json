@@ -9,5 +9,15 @@
     "front11([1], [2]) \u2192 [1, 2]",
     "front11([1, 7], []) \u2192 [1]"
   ],
-  "provided_code": "public int[] front11(int[] a, int[] b) {\n  }"
+  "testcases_extended": [
+    "front11([1, 2, 3], [7, 9, 8]) \u2192 [1, 7]",
+    "front11([1], [2]) \u2192 [1, 2]",
+    "front11([1, 7], []) \u2192 [1]",
+    "front11([], [2, 8]) \u2192 [2]",
+    "front11([], []) \u2192 []",
+    "front11([3], [1, 4, 1, 9]) \u2192 [3, 1]",
+    "front11([1, 4, 1, 9], []) \u2192 [1]"
+  ],
+  "provided_code": "public int[] front11(int[] a, int[] b) {\n  return new int[]{0};\n}",
+  "difficulty": "181.0"
 }

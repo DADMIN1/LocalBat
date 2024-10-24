@@ -9,5 +9,26 @@
     "groupSum6(0, [5, 6, 2], 9) \u2192 false",
     "groupSum6(0, [5, 6, 2], 7) \u2192 false"
   ],
-  "provided_code": "public boolean groupSum6(int start, int[] nums, int target) {\n  }"
+  "testcases_extended": [
+    "groupSum6(0, [5, 6, 2], 8) \u2192 true",
+    "groupSum6(0, [5, 6, 2], 9) \u2192 false",
+    "groupSum6(0, [5, 6, 2], 7) \u2192 false",
+    "groupSum6(0, [1], 1) \u2192 true",
+    "groupSum6(0, [9], 1) \u2192 false",
+    "groupSum6(0, [], 0) \u2192 true",
+    "groupSum6(0, [3, 2, 4, 6], 8) \u2192 true",
+    "groupSum6(0, [6, 2, 4, 3], 8) \u2192 true",
+    "groupSum6(0, [5, 2, 4, 6], 9) \u2192 false",
+    "groupSum6(0, [6, 2, 4, 5], 9) \u2192 false",
+    "groupSum6(0, [3, 2, 4, 6], 3) \u2192 false",
+    "groupSum6(0, [1, 6, 2, 6, 4], 12) \u2192 true",
+    "groupSum6(0, [1, 6, 2, 6, 4], 13) \u2192 true",
+    "groupSum6(0, [1, 6, 2, 6, 4], 4) \u2192 false",
+    "groupSum6(0, [1, 6, 2, 6, 4], 9) \u2192 false",
+    "groupSum6(0, [1, 6, 2, 6, 5], 14) \u2192 true",
+    "groupSum6(0, [1, 6, 2, 6, 5], 15) \u2192 true",
+    "groupSum6(0, [1, 6, 2, 6, 5], 16) \u2192 false"
+  ],
+  "provided_code": "public boolean groupSum6(int start, int[] nums, int target) {\n  return false;\n}",
+  "difficulty": "406.0"
 }

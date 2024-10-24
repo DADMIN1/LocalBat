@@ -9,5 +9,19 @@
     "repeatSeparator(\"This\", \"And\", 2) \u2192 \"ThisAndThis\"",
     "repeatSeparator(\"This\", \"And\", 1) \u2192 \"This\""
   ],
-  "provided_code": "public String repeatSeparator(String word, String sep, int count) {\n  }"
+  "testcases_extended": [
+    "repeatSeparator(\"Word\", \"X\", 3) \u2192 \"WordXWordXWord\"",
+    "repeatSeparator(\"This\", \"And\", 2) \u2192 \"ThisAndThis\"",
+    "repeatSeparator(\"This\", \"And\", 1) \u2192 \"This\"",
+    "repeatSeparator(\"Hi\", \"-n-\", 2) \u2192 \"Hi-n-Hi\"",
+    "repeatSeparator(\"AAA\", \"\", 1) \u2192 \"AAA\"",
+    "repeatSeparator(\"AAA\", \"\", 0) \u2192 \"\"",
+    "repeatSeparator(\"A\", \"B\", 5) \u2192 \"ABABABABA\"",
+    "repeatSeparator(\"abc\", \"XX\", 3) \u2192 \"abcXXabcXXabc\"",
+    "repeatSeparator(\"abc\", \"XX\", 2) \u2192 \"abcXXabc\"",
+    "repeatSeparator(\"abc\", \"XX\", 1) \u2192 \"abc\"",
+    "repeatSeparator(\"XYZ\", \"a\", 2) \u2192 \"XYZaXYZ\""
+  ],
+  "provided_code": "public String repeatSeparator(String word, String sep, int count) {\n  return \"\";\n}",
+  "difficulty": "236.0"
 }

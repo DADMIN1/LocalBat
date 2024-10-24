@@ -9,5 +9,29 @@
     "xyzMiddle(\"AxyzBB\") \u2192 true",
     "xyzMiddle(\"AxyzBBB\") \u2192 false"
   ],
-  "provided_code": "public boolean xyzMiddle(String str) {\n  }"
+  "testcases_extended": [
+    "xyzMiddle(\"AAxyzBB\") \u2192 true",
+    "xyzMiddle(\"AxyzBB\") \u2192 true",
+    "xyzMiddle(\"AxyzBBB\") \u2192 false",
+    "xyzMiddle(\"AxyzBBBB\") \u2192 false",
+    "xyzMiddle(\"AAAxyzB\") \u2192 false",
+    "xyzMiddle(\"AAAxyzBB\") \u2192 true",
+    "xyzMiddle(\"AAAAxyzBB\") \u2192 false",
+    "xyzMiddle(\"AAAAAxyzBBB\") \u2192 false",
+    "xyzMiddle(\"1x345xyz12x4\") \u2192 true",
+    "xyzMiddle(\"xyzAxyzBBB\") \u2192 true",
+    "xyzMiddle(\"xyzAxyzBxyz\") \u2192 true",
+    "xyzMiddle(\"xyzxyzAxyzBxyzxyz\") \u2192 true",
+    "xyzMiddle(\"xyzxyzxyzBxyzxyz\") \u2192 true",
+    "xyzMiddle(\"xyzxyzAxyzxyzxyz\") \u2192 true",
+    "xyzMiddle(\"xyzxyzAxyzxyzxy\") \u2192 false",
+    "xyzMiddle(\"AxyzxyzBB\") \u2192 false",
+    "xyzMiddle(\"\") \u2192 false",
+    "xyzMiddle(\"x\") \u2192 false",
+    "xyzMiddle(\"xy\") \u2192 false",
+    "xyzMiddle(\"xyz\") \u2192 true",
+    "xyzMiddle(\"xyzz\") \u2192 true"
+  ],
+  "provided_code": "public boolean xyzMiddle(String str) {\n  return false;\n}",
+  "difficulty": "242.0"
 }

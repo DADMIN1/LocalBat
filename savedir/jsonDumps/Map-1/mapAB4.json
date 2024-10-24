@@ -9,5 +9,23 @@
     "mapAB4({\"a\": \"aa\", \"b\": \"bbb\", \"c\": \"cake\"}) \u2192 {\"a\": \"aa\", \"b\": \"bbb\", \"c\": \"bbb\"}",
     "mapAB4({\"a\": \"aa\", \"b\": \"bbb\"}) \u2192 {\"a\": \"aa\", \"b\": \"bbb\", \"c\": \"bbb\"}"
   ],
-  "provided_code": "public Map<String, String> mapAB4(Map<String, String> map) {\n  }"
+  "testcases_extended": [
+    "mapAB4({\"a\": \"aaa\", \"b\": \"bb\", \"c\": \"cake\"}) \u2192 {\"a\": \"aaa\", \"b\": \"bb\", \"c\": \"aaa\"}",
+    "mapAB4({\"a\": \"aa\", \"b\": \"bbb\", \"c\": \"cake\"}) \u2192 {\"a\": \"aa\", \"b\": \"bbb\", \"c\": \"bbb\"}",
+    "mapAB4({\"a\": \"aa\", \"b\": \"bbb\"}) \u2192 {\"a\": \"aa\", \"b\": \"bbb\", \"c\": \"bbb\"}",
+    "mapAB4({\"a\": \"aaa\"}) \u2192 {\"a\": \"aaa\"}",
+    "mapAB4({\"b\": \"bbb\"}) \u2192 {\"b\": \"bbb\"}",
+    "mapAB4({\"a\": \"aaa\", \"b\": \"bbb\", \"c\": \"cake\"}) \u2192 {\"a\": \"\", \"b\": \"\", \"c\": \"cake\"}",
+    "mapAB4({\"a\": \"a\", \"b\": \"b\", \"c\": \"cake\"}) \u2192 {\"a\": \"\", \"b\": \"\", \"c\": \"cake\"}",
+    "mapAB4({\"a\": \"\", \"b\": \"b\", \"c\": \"cake\"}) \u2192 {\"a\": \"\", \"b\": \"b\", \"c\": \"b\"}",
+    "mapAB4({\"a\": \"a\", \"b\": \"\", \"c\": \"cake\"}) \u2192 {\"a\": \"a\", \"b\": \"\", \"c\": \"a\"}",
+    "mapAB4({\"c\": \"cat\", \"d\": \"dog\"}) \u2192 {\"c\": \"cat\", \"d\": \"dog\"}",
+    "mapAB4({\"ccc\": \"ccc\"}) \u2192 {\"ccc\": \"ccc\"}",
+    "mapAB4({\"c\": \"a\", \"d\": \"b\"}) \u2192 {\"c\": \"a\", \"d\": \"b\"}",
+    "mapAB4({}) \u2192 {}",
+    "mapAB4({\"a\": \"\", \"z\": \"z\"}) \u2192 {\"a\": \"\", \"z\": \"z\"}",
+    "mapAB4({\"b\": \"\", \"z\": \"z\"}) \u2192 {\"b\": \"\", \"z\": \"z\"}"
+  ],
+  "provided_code": "public Map<String, String> mapAB4(Map<String, String> map) {\n  return new HashMap<String, String>();\n}",
+  "difficulty": "227"
 }

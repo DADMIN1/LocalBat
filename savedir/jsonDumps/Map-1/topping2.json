@@ -9,5 +9,14 @@
     "topping2({\"spinach\": \"dirt\", \"ice cream\": \"cherry\"}) \u2192 {\"yogurt\": \"cherry\", \"spinach\": \"nuts\", \"ice cream\": \"cherry\"}",
     "topping2({\"yogurt\": \"salt\"}) \u2192 {\"yogurt\": \"salt\"}"
   ],
-  "provided_code": "public Map<String, String> topping2(Map<String, String> map) {\n  }"
+  "testcases_extended": [
+    "topping2({\"ice cream\": \"cherry\"}) \u2192 {\"yogurt\": \"cherry\", \"ice cream\": \"cherry\"}",
+    "topping2({\"spinach\": \"dirt\", \"ice cream\": \"cherry\"}) \u2192 {\"yogurt\": \"cherry\", \"spinach\": \"nuts\", \"ice cream\": \"cherry\"}",
+    "topping2({\"yogurt\": \"salt\"}) \u2192 {\"yogurt\": \"salt\"}",
+    "topping2({\"yogurt\": \"salt\", \"bread\": \"butter\"}) \u2192 {\"yogurt\": \"salt\", \"bread\": \"butter\"}",
+    "topping2({}) \u2192 {}",
+    "topping2({\"ice cream\": \"air\", \"salad\": \"oil\"}) \u2192 {\"yogurt\": \"air\", \"ice cream\": \"air\", \"salad\": \"oil\"}"
+  ],
+  "provided_code": "public Map<String, String> topping2(Map<String, String> map) {\n  return new HashMap<String, String>();\n}",
+  "difficulty": "215"
 }

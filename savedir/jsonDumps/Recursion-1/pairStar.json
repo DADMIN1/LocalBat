@@ -9,5 +9,18 @@
     "pairStar(\"xxyy\") \u2192 \"x*xy*y\"",
     "pairStar(\"aaaa\") \u2192 \"a*a*a*a\""
   ],
-  "provided_code": "public String pairStar(String str) {\n  }"
+  "testcases_extended": [
+    "pairStar(\"hello\") \u2192 \"hel*lo\"",
+    "pairStar(\"xxyy\") \u2192 \"x*xy*y\"",
+    "pairStar(\"aaaa\") \u2192 \"a*a*a*a\"",
+    "pairStar(\"aaab\") \u2192 \"a*a*ab\"",
+    "pairStar(\"aa\") \u2192 \"a*a\"",
+    "pairStar(\"a\") \u2192 \"a\"",
+    "pairStar(\"\") \u2192 \"\"",
+    "pairStar(\"noadjacent\") \u2192 \"noadjacent\"",
+    "pairStar(\"abba\") \u2192 \"ab*ba\"",
+    "pairStar(\"abbba\") \u2192 \"ab*b*ba\""
+  ],
+  "provided_code": "public String pairStar(String str) {\n  return \"\";\n}",
+  "difficulty": "357.0"
 }

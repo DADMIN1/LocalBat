@@ -9,5 +9,18 @@
     "changePi(\"pipi\") \u2192 \"3.143.14\"",
     "changePi(\"pip\") \u2192 \"3.14p\""
   ],
-  "provided_code": "public String changePi(String str) {\n  }"
+  "testcases_extended": [
+    "changePi(\"xpix\") \u2192 \"x3.14x\"",
+    "changePi(\"pipi\") \u2192 \"3.143.14\"",
+    "changePi(\"pip\") \u2192 \"3.14p\"",
+    "changePi(\"pi\") \u2192 \"3.14\"",
+    "changePi(\"hip\") \u2192 \"hip\"",
+    "changePi(\"p\") \u2192 \"p\"",
+    "changePi(\"x\") \u2192 \"x\"",
+    "changePi(\"\") \u2192 \"\"",
+    "changePi(\"pixx\") \u2192 \"3.14xx\"",
+    "changePi(\"xyzzy\") \u2192 \"xyzzy\""
+  ],
+  "provided_code": "public String changePi(String str) {\n  return \"\";\n}",
+  "difficulty": "339.0"
 }

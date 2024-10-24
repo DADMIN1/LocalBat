@@ -9,5 +9,17 @@
     "evenOdd([3, 3, 2]) \u2192 [2, 3, 3]",
     "evenOdd([2, 2, 2]) \u2192 [2, 2, 2]"
   ],
-  "provided_code": "public int[] evenOdd(int[] nums) {\n  }"
+  "testcases_extended": [
+    "evenOdd([1, 0, 1, 0, 0, 1, 1]) \u2192 [0, 0, 0, 1, 1, 1, 1]",
+    "evenOdd([3, 3, 2]) \u2192 [2, 3, 3]",
+    "evenOdd([2, 2, 2]) \u2192 [2, 2, 2]",
+    "evenOdd([3, 2, 2]) \u2192 [2, 2, 3]",
+    "evenOdd([1, 1, 0, 1, 0]) \u2192 [0, 0, 1, 1, 1]",
+    "evenOdd([1]) \u2192 [1]",
+    "evenOdd([1, 2]) \u2192 [2, 1]",
+    "evenOdd([2, 1]) \u2192 [2, 1]",
+    "evenOdd([]) \u2192 []"
+  ],
+  "provided_code": "public int[] evenOdd(int[] nums) {\n  return new int[]{0};\n}",
+  "difficulty": "290.0"
 }

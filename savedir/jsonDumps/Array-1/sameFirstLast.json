@@ -9,5 +9,17 @@
     "sameFirstLast([1, 2, 3, 1]) \u2192 true",
     "sameFirstLast([1, 2, 1]) \u2192 true"
   ],
-  "provided_code": "public boolean sameFirstLast(int[] nums) {\n  }"
+  "testcases_extended": [
+    "sameFirstLast([1, 2, 3]) \u2192 false",
+    "sameFirstLast([1, 2, 3, 1]) \u2192 true",
+    "sameFirstLast([1, 2, 1]) \u2192 true",
+    "sameFirstLast([7]) \u2192 true",
+    "sameFirstLast([]) \u2192 false",
+    "sameFirstLast([1, 2, 3, 4, 5, 1]) \u2192 true",
+    "sameFirstLast([1, 2, 3, 4, 5, 13]) \u2192 false",
+    "sameFirstLast([13, 2, 3, 4, 5, 13]) \u2192 true",
+    "sameFirstLast([7, 7]) \u2192 true"
+  ],
+  "provided_code": "public boolean sameFirstLast(int[] nums) {\n  return false;\n}",
+  "difficulty": "106.0"
 }

@@ -9,5 +9,23 @@
     "sumLimit(8, 3) \u2192 8",
     "sumLimit(8, 1) \u2192 9"
   ],
-  "provided_code": "public int sumLimit(int a, int b) {\n  }"
+  "testcases_extended": [
+    "sumLimit(2, 3) \u2192 5",
+    "sumLimit(8, 3) \u2192 8",
+    "sumLimit(8, 1) \u2192 9",
+    "sumLimit(11, 39) \u2192 50",
+    "sumLimit(11, 99) \u2192 11",
+    "sumLimit(0, 0) \u2192 0",
+    "sumLimit(99, 0) \u2192 99",
+    "sumLimit(99, 1) \u2192 99",
+    "sumLimit(123, 1) \u2192 124",
+    "sumLimit(1, 123) \u2192 1",
+    "sumLimit(23, 60) \u2192 83",
+    "sumLimit(23, 80) \u2192 23",
+    "sumLimit(9000, 1) \u2192 9001",
+    "sumLimit(90000000, 1) \u2192 90000001",
+    "sumLimit(9000, 1000) \u2192 9000"
+  ],
+  "provided_code": "public int sumLimit(int a, int b) {\n  return 0;\n}",
+  "difficulty": "169"
 }

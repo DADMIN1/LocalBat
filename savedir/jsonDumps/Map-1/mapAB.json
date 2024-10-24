@@ -9,5 +9,14 @@
     "mapAB({\"a\": \"Hi\"}) \u2192 {\"a\": \"Hi\"}",
     "mapAB({\"b\": \"There\"}) \u2192 {\"b\": \"There\"}"
   ],
-  "provided_code": "public Map<String, String> mapAB(Map<String, String> map) {\n  }"
+  "testcases_extended": [
+    "mapAB({\"a\": \"Hi\", \"b\": \"There\"}) \u2192 {\"a\": \"Hi\", \"ab\": \"HiThere\", \"b\": \"There\"}",
+    "mapAB({\"a\": \"Hi\"}) \u2192 {\"a\": \"Hi\"}",
+    "mapAB({\"b\": \"There\"}) \u2192 {\"b\": \"There\"}",
+    "mapAB({\"c\": \"meh\"}) \u2192 {\"c\": \"meh\"}",
+    "mapAB({\"a\": \"aaa\", \"ab\": \"nope\", \"b\": \"bbb\", \"c\": \"ccc\"}) \u2192 {\"a\": \"aaa\", \"ab\": \"aaabbb\", \"b\": \"bbb\", \"c\": \"ccc\"}",
+    "mapAB({\"ab\": \"nope\", \"b\": \"bbb\", \"c\": \"ccc\"}) \u2192 {\"ab\": \"nope\", \"b\": \"bbb\", \"c\": \"ccc\"}"
+  ],
+  "provided_code": "public Map<String, String> mapAB(Map<String, String> map) {\n  return new HashMap<String, String>();\n}",
+  "difficulty": "209"
 }

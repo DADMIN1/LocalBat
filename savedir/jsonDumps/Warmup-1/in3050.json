@@ -9,5 +9,20 @@
     "in3050(30, 41) \u2192 false",
     "in3050(40, 50) \u2192 true"
   ],
-  "provided_code": "public boolean in3050(int a, int b) {\n  }"
+  "testcases_extended": [
+    "in3050(30, 31) \u2192 true",
+    "in3050(30, 41) \u2192 false",
+    "in3050(40, 50) \u2192 true",
+    "in3050(40, 51) \u2192 false",
+    "in3050(39, 50) \u2192 false",
+    "in3050(50, 39) \u2192 false",
+    "in3050(40, 39) \u2192 true",
+    "in3050(49, 48) \u2192 true",
+    "in3050(50, 40) \u2192 true",
+    "in3050(50, 51) \u2192 false",
+    "in3050(35, 36) \u2192 true",
+    "in3050(35, 45) \u2192 false"
+  ],
+  "provided_code": "public boolean in3050(int a, int b) {\n  return false;\n}",
+  "difficulty": "175.0"
 }

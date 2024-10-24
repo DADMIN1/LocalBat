@@ -9,5 +9,16 @@
     "bunnyEars2(1) \u2192 2",
     "bunnyEars2(2) \u2192 5"
   ],
-  "provided_code": "public int bunnyEars2(int bunnies) {\n  }"
+  "testcases_extended": [
+    "bunnyEars2(0) \u2192 0",
+    "bunnyEars2(1) \u2192 2",
+    "bunnyEars2(2) \u2192 5",
+    "bunnyEars2(3) \u2192 7",
+    "bunnyEars2(4) \u2192 10",
+    "bunnyEars2(5) \u2192 12",
+    "bunnyEars2(6) \u2192 15",
+    "bunnyEars2(10) \u2192 25"
+  ],
+  "provided_code": "public int bunnyEars2(int bunnies) {\n  return 0;\n}",
+  "difficulty": "312.0"
 }

@@ -9,5 +9,22 @@
     "has22([1, 2, 1, 2]) \u2192 false",
     "has22([2, 1, 2]) \u2192 false"
   ],
-  "provided_code": "public boolean has22(int[] nums) {\n  }"
+  "testcases_extended": [
+    "has22([1, 2, 2]) \u2192 true",
+    "has22([1, 2, 1, 2]) \u2192 false",
+    "has22([2, 1, 2]) \u2192 false",
+    "has22([2, 2, 1, 2]) \u2192 true",
+    "has22([1, 3, 2]) \u2192 false",
+    "has22([1, 3, 2, 2]) \u2192 true",
+    "has22([2, 3, 2, 2]) \u2192 true",
+    "has22([4, 2, 4, 2, 2, 5]) \u2192 true",
+    "has22([1, 2]) \u2192 false",
+    "has22([2, 2]) \u2192 true",
+    "has22([2]) \u2192 false",
+    "has22([]) \u2192 false",
+    "has22([3, 3, 2, 2]) \u2192 true",
+    "has22([5, 2, 5, 2]) \u2192 false"
+  ],
+  "provided_code": "public boolean has22(int[] nums) {\n  return false;\n}",
+  "difficulty": "218.0"
 }

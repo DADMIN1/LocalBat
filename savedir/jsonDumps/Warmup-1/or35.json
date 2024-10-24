@@ -9,5 +9,30 @@
     "or35(10) \u2192 true",
     "or35(8) \u2192 false"
   ],
-  "provided_code": "public boolean or35(int n) {\n  }"
+  "testcases_extended": [
+    "or35(3) \u2192 true",
+    "or35(10) \u2192 true",
+    "or35(8) \u2192 false",
+    "or35(15) \u2192 true",
+    "or35(5) \u2192 true",
+    "or35(9) \u2192 true",
+    "or35(4) \u2192 false",
+    "or35(7) \u2192 false",
+    "or35(6) \u2192 true",
+    "or35(17) \u2192 false",
+    "or35(18) \u2192 true",
+    "or35(29) \u2192 false",
+    "or35(20) \u2192 true",
+    "or35(21) \u2192 true",
+    "or35(22) \u2192 false",
+    "or35(45) \u2192 true",
+    "or35(99) \u2192 true",
+    "or35(100) \u2192 true",
+    "or35(101) \u2192 false",
+    "or35(121) \u2192 false",
+    "or35(122) \u2192 false",
+    "or35(123) \u2192 true"
+  ],
+  "provided_code": "public boolean or35(int n) {\n  return false;\n}",
+  "difficulty": "140.0"
 }

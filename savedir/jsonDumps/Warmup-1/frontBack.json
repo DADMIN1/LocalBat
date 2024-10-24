@@ -9,5 +9,16 @@
     "frontBack(\"a\") \u2192 \"a\"",
     "frontBack(\"ab\") \u2192 \"ba\""
   ],
-  "provided_code": "public String frontBack(String str) {\n  }"
+  "testcases_extended": [
+    "frontBack(\"code\") \u2192 \"eodc\"",
+    "frontBack(\"a\") \u2192 \"a\"",
+    "frontBack(\"ab\") \u2192 \"ba\"",
+    "frontBack(\"abc\") \u2192 \"cba\"",
+    "frontBack(\"\") \u2192 \"\"",
+    "frontBack(\"Chocolate\") \u2192 \"ehocolatC\"",
+    "frontBack(\"aavJ\") \u2192 \"Java\"",
+    "frontBack(\"hello\") \u2192 \"oellh\""
+  ],
+  "provided_code": "public String frontBack(String str) {\n  return \"\";\n}",
+  "difficulty": "133.0"
 }

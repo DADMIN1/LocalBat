@@ -9,5 +9,15 @@
     "lastDigit(6, 17) \u2192 false",
     "lastDigit(3, 113) \u2192 true"
   ],
-  "provided_code": "public boolean lastDigit(int a, int b) {\n  }"
+  "testcases_extended": [
+    "lastDigit(7, 17) \u2192 true",
+    "lastDigit(6, 17) \u2192 false",
+    "lastDigit(3, 113) \u2192 true",
+    "lastDigit(114, 113) \u2192 false",
+    "lastDigit(114, 4) \u2192 true",
+    "lastDigit(10, 0) \u2192 true",
+    "lastDigit(11, 0) \u2192 false"
+  ],
+  "provided_code": "public boolean lastDigit(int a, int b) {\n  return false;\n}",
+  "difficulty": "184.0"
 }

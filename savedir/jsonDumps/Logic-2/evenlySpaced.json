@@ -9,5 +9,22 @@
     "evenlySpaced(4, 6, 2) \u2192 true",
     "evenlySpaced(4, 6, 3) \u2192 false"
   ],
-  "provided_code": "public boolean evenlySpaced(int a, int b, int c) {\n  }"
+  "testcases_extended": [
+    "evenlySpaced(2, 4, 6) \u2192 true",
+    "evenlySpaced(4, 6, 2) \u2192 true",
+    "evenlySpaced(4, 6, 3) \u2192 false",
+    "evenlySpaced(6, 2, 4) \u2192 true",
+    "evenlySpaced(6, 2, 8) \u2192 false",
+    "evenlySpaced(2, 2, 2) \u2192 true",
+    "evenlySpaced(2, 2, 3) \u2192 false",
+    "evenlySpaced(9, 10, 11) \u2192 true",
+    "evenlySpaced(10, 9, 11) \u2192 true",
+    "evenlySpaced(10, 9, 9) \u2192 false",
+    "evenlySpaced(2, 4, 4) \u2192 false",
+    "evenlySpaced(2, 2, 4) \u2192 false",
+    "evenlySpaced(3, 6, 12) \u2192 false",
+    "evenlySpaced(12, 3, 6) \u2192 false"
+  ],
+  "provided_code": "public boolean evenlySpaced(int a, int b, int c) {\n  return false;\n}",
+  "difficulty": "221.0"
 }

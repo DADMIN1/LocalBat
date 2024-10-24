@@ -9,5 +9,17 @@
     "double23([3, 3]) \u2192 true",
     "double23([2, 3]) \u2192 false"
   ],
-  "provided_code": "public boolean double23(int[] nums) {\n  }"
+  "testcases_extended": [
+    "double23([2, 2]) \u2192 true",
+    "double23([3, 3]) \u2192 true",
+    "double23([2, 3]) \u2192 false",
+    "double23([3, 2]) \u2192 false",
+    "double23([4, 5]) \u2192 false",
+    "double23([2]) \u2192 false",
+    "double23([3]) \u2192 false",
+    "double23([]) \u2192 false",
+    "double23([3, 4]) \u2192 false"
+  ],
+  "provided_code": "public boolean double23(int[] nums) {\n  return false;\n}",
+  "difficulty": "145.0"
 }

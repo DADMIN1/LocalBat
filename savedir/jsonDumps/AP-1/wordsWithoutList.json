@@ -9,5 +9,13 @@
     "wordsWithoutList([\"a\", \"bb\", \"b\", \"ccc\"], 3) \u2192 [\"a\", \"bb\", \"b\"]",
     "wordsWithoutList([\"a\", \"bb\", \"b\", \"ccc\"], 4) \u2192 [\"a\", \"bb\", \"b\", \"ccc\"]"
   ],
-  "provided_code": "public List wordsWithoutList(String[] words, int len) {\n  }"
+  "testcases_extended": [
+    "wordsWithoutList([\"a\", \"bb\", \"b\", \"ccc\"], 1) \u2192 [\"bb\", \"ccc\"]",
+    "wordsWithoutList([\"a\", \"bb\", \"b\", \"ccc\"], 3) \u2192 [\"a\", \"bb\", \"b\"]",
+    "wordsWithoutList([\"a\", \"bb\", \"b\", \"ccc\"], 4) \u2192 [\"a\", \"bb\", \"b\", \"ccc\"]",
+    "wordsWithoutList([\"xx\", \"yyy\", \"x\", \"yy\", \"z\"], 1) \u2192 [\"xx\", \"yyy\", \"yy\"]",
+    "wordsWithoutList([\"xx\", \"yyy\", \"x\", \"yy\", \"z\"], 2) \u2192 [\"yyy\", \"x\", \"z\"]"
+  ],
+  "provided_code": "public List wordsWithoutList(String[] words, int len) {\n  return new ArrayList();\n}",
+  "difficulty": "221.0"
 }

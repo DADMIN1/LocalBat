@@ -9,5 +9,15 @@
     "withouEnd2(\"abc\") \u2192 \"b\"",
     "withouEnd2(\"ab\") \u2192 \"\""
   ],
-  "provided_code": "public String withouEnd2(String str) {\n  }"
+  "testcases_extended": [
+    "withouEnd2(\"Hello\") \u2192 \"ell\"",
+    "withouEnd2(\"abc\") \u2192 \"b\"",
+    "withouEnd2(\"ab\") \u2192 \"\"",
+    "withouEnd2(\"a\") \u2192 \"\"",
+    "withouEnd2(\"\") \u2192 \"\"",
+    "withouEnd2(\"coldy\") \u2192 \"old\"",
+    "withouEnd2(\"java code\") \u2192 \"ava cod\""
+  ],
+  "provided_code": "public String withouEnd2(String str) {\n  return \"\";\n}",
+  "difficulty": "142.0"
 }

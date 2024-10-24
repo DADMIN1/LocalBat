@@ -9,5 +9,28 @@
     "specialEleven(23) \u2192 true",
     "specialEleven(24) \u2192 false"
   ],
-  "provided_code": "public boolean specialEleven(int n) {\n  }"
+  "testcases_extended": [
+    "specialEleven(22) \u2192 true",
+    "specialEleven(23) \u2192 true",
+    "specialEleven(24) \u2192 false",
+    "specialEleven(21) \u2192 false",
+    "specialEleven(11) \u2192 true",
+    "specialEleven(12) \u2192 true",
+    "specialEleven(10) \u2192 false",
+    "specialEleven(9) \u2192 false",
+    "specialEleven(8) \u2192 false",
+    "specialEleven(0) \u2192 true",
+    "specialEleven(1) \u2192 true",
+    "specialEleven(2) \u2192 false",
+    "specialEleven(121) \u2192 true",
+    "specialEleven(122) \u2192 true",
+    "specialEleven(123) \u2192 false",
+    "specialEleven(46) \u2192 false",
+    "specialEleven(49) \u2192 false",
+    "specialEleven(52) \u2192 false",
+    "specialEleven(54) \u2192 false",
+    "specialEleven(55) \u2192 true"
+  ],
+  "provided_code": "public boolean specialEleven(int n) {\n  return false;\n}",
+  "difficulty": "122.3"
 }

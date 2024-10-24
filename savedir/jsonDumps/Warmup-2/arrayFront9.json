@@ -9,5 +9,20 @@
     "arrayFront9([1, 2, 3, 4, 9]) \u2192 false",
     "arrayFront9([1, 2, 3, 4, 5]) \u2192 false"
   ],
-  "provided_code": "public boolean arrayFront9(int[] nums) {\n  }"
+  "testcases_extended": [
+    "arrayFront9([1, 2, 9, 3, 4]) \u2192 true",
+    "arrayFront9([1, 2, 3, 4, 9]) \u2192 false",
+    "arrayFront9([1, 2, 3, 4, 5]) \u2192 false",
+    "arrayFront9([9, 2, 3]) \u2192 true",
+    "arrayFront9([1, 9, 9]) \u2192 true",
+    "arrayFront9([1, 2, 3]) \u2192 false",
+    "arrayFront9([1, 9]) \u2192 true",
+    "arrayFront9([5, 5]) \u2192 false",
+    "arrayFront9([2]) \u2192 false",
+    "arrayFront9([9]) \u2192 true",
+    "arrayFront9([]) \u2192 false",
+    "arrayFront9([3, 9, 2, 3, 3]) \u2192 true"
+  ],
+  "provided_code": "public boolean arrayFront9(int[] nums) {\n  return false;\n}",
+  "difficulty": "221.0"
 }

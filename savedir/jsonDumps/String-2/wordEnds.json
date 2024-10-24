@@ -9,5 +9,21 @@
     "wordEnds(\"XY123XY\", \"XY\") \u2192 \"13\"",
     "wordEnds(\"XY1XY\", \"XY\") \u2192 \"11\""
   ],
-  "provided_code": "public String wordEnds(String str, String word) {\n  }"
+  "testcases_extended": [
+    "wordEnds(\"abcXY123XYijk\", \"XY\") \u2192 \"c13i\"",
+    "wordEnds(\"XY123XY\", \"XY\") \u2192 \"13\"",
+    "wordEnds(\"XY1XY\", \"XY\") \u2192 \"11\"",
+    "wordEnds(\"XYXY\", \"XY\") \u2192 \"XY\"",
+    "wordEnds(\"XY\", \"XY\") \u2192 \"\"",
+    "wordEnds(\"Hi\", \"XY\") \u2192 \"\"",
+    "wordEnds(\"\", \"XY\") \u2192 \"\"",
+    "wordEnds(\"abc1xyz1i1j\", \"1\") \u2192 \"cxziij\"",
+    "wordEnds(\"abc1xyz1\", \"1\") \u2192 \"cxz\"",
+    "wordEnds(\"abc1xyz11\", \"1\") \u2192 \"cxz11\"",
+    "wordEnds(\"abc1xyz1abc\", \"abc\") \u2192 \"11\"",
+    "wordEnds(\"abc1xyz1abc\", \"b\") \u2192 \"acac\"",
+    "wordEnds(\"abc1abc1abc\", \"abc\") \u2192 \"1111\""
+  ],
+  "provided_code": "public String wordEnds(String str, String word) {\n  return \"\";\n}",
+  "difficulty": "260.0"
 }

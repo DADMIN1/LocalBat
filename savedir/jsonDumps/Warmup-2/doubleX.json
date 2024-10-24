@@ -9,5 +9,19 @@
     "doubleX(\"axaxax\") \u2192 false",
     "doubleX(\"xxxxx\") \u2192 true"
   ],
-  "provided_code": "boolean doubleX(String str) {\n  }"
+  "testcases_extended": [
+    "doubleX(\"axxbb\") \u2192 true",
+    "doubleX(\"axaxax\") \u2192 false",
+    "doubleX(\"xxxxx\") \u2192 true",
+    "doubleX(\"xaxxx\") \u2192 false",
+    "doubleX(\"aaaax\") \u2192 false",
+    "doubleX(\"\") \u2192 false",
+    "doubleX(\"abc\") \u2192 false",
+    "doubleX(\"x\") \u2192 false",
+    "doubleX(\"xx\") \u2192 true",
+    "doubleX(\"xax\") \u2192 false",
+    "doubleX(\"xaxx\") \u2192 false"
+  ],
+  "provided_code": "boolean doubleX(String str) {\n  return false;\n}",
+  "difficulty": "208.0"
 }

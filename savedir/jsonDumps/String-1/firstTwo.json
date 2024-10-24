@@ -9,5 +9,16 @@
     "firstTwo(\"abcdefg\") \u2192 \"ab\"",
     "firstTwo(\"ab\") \u2192 \"ab\""
   ],
-  "provided_code": "public String firstTwo(String str) {\n  }"
+  "testcases_extended": [
+    "firstTwo(\"Hello\") \u2192 \"He\"",
+    "firstTwo(\"abcdefg\") \u2192 \"ab\"",
+    "firstTwo(\"ab\") \u2192 \"ab\"",
+    "firstTwo(\"a\") \u2192 \"a\"",
+    "firstTwo(\"\") \u2192 \"\"",
+    "firstTwo(\"Kitten\") \u2192 \"Ki\"",
+    "firstTwo(\"hi\") \u2192 \"hi\"",
+    "firstTwo(\"hiya\") \u2192 \"hi\""
+  ],
+  "provided_code": "public String firstTwo(String str) {\n  return \"\";\n}",
+  "difficulty": "118.0"
 }

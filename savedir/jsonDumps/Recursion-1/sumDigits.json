@@ -9,5 +9,19 @@
     "sumDigits(49) \u2192 13",
     "sumDigits(12) \u2192 3"
   ],
-  "provided_code": "public int sumDigits(int n) {\n  }"
+  "testcases_extended": [
+    "sumDigits(126) \u2192 9",
+    "sumDigits(49) \u2192 13",
+    "sumDigits(12) \u2192 3",
+    "sumDigits(10) \u2192 1",
+    "sumDigits(1) \u2192 1",
+    "sumDigits(0) \u2192 0",
+    "sumDigits(730) \u2192 10",
+    "sumDigits(1111) \u2192 4",
+    "sumDigits(11111) \u2192 5",
+    "sumDigits(10110) \u2192 3",
+    "sumDigits(235) \u2192 10"
+  ],
+  "provided_code": "public int sumDigits(int n) {\n  return 0;\n}",
+  "difficulty": "318.0"
 }

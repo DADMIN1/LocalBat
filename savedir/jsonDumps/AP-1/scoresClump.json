@@ -9,5 +9,17 @@
     "scoresClump([3, 4, 6]) \u2192 false",
     "scoresClump([1, 3, 5, 5]) \u2192 true"
   ],
-  "provided_code": "public boolean scoresClump(int[] scores) {\n  }"
+  "testcases_extended": [
+    "scoresClump([3, 4, 5]) \u2192 true",
+    "scoresClump([3, 4, 6]) \u2192 false",
+    "scoresClump([1, 3, 5, 5]) \u2192 true",
+    "scoresClump([2, 4, 5, 6]) \u2192 true",
+    "scoresClump([2, 4, 5, 7]) \u2192 false",
+    "scoresClump([2, 4, 4, 7]) \u2192 true",
+    "scoresClump([3, 3, 6, 7, 9]) \u2192 false",
+    "scoresClump([3, 3, 7, 7, 9]) \u2192 true",
+    "scoresClump([4, 5, 8]) \u2192 false"
+  ],
+  "provided_code": "public boolean scoresClump(int[] scores) {\n  return false;\n}",
+  "difficulty": "209.0"
 }

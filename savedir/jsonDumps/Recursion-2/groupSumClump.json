@@ -9,5 +9,15 @@
     "groupSumClump(0, [1, 2, 4, 8, 1], 14) \u2192 true",
     "groupSumClump(0, [2, 4, 4, 8], 14) \u2192 false"
   ],
-  "provided_code": "public boolean groupSumClump(int start, int[] nums, int target) {\n  }"
+  "testcases_extended": [
+    "groupSumClump(0, [2, 4, 8], 10) \u2192 true",
+    "groupSumClump(0, [1, 2, 4, 8, 1], 14) \u2192 true",
+    "groupSumClump(0, [2, 4, 4, 8], 14) \u2192 false",
+    "groupSumClump(0, [8, 2, 2, 1], 9) \u2192 true",
+    "groupSumClump(0, [8, 2, 2, 1], 11) \u2192 false",
+    "groupSumClump(0, [1], 1) \u2192 true",
+    "groupSumClump(0, [9], 1) \u2192 false"
+  ],
+  "provided_code": "public boolean groupSumClump(int start, int[] nums, int target) {\n  return false;\n}",
+  "difficulty": "415.0"
 }

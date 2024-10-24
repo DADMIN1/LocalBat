@@ -9,5 +9,14 @@
     "scores100([1, 100, 99, 100]) \u2192 false",
     "scores100([100, 1, 100, 100]) \u2192 true"
   ],
-  "provided_code": "public boolean scores100(int[] scores) {\n  }"
+  "testcases_extended": [
+    "scores100([1, 100, 100]) \u2192 true",
+    "scores100([1, 100, 99, 100]) \u2192 false",
+    "scores100([100, 1, 100, 100]) \u2192 true",
+    "scores100([100, 1, 100, 1]) \u2192 false",
+    "scores100([1, 2, 3, 4, 5]) \u2192 false",
+    "scores100([1, 2, 100, 4, 5]) \u2192 false"
+  ],
+  "provided_code": "public boolean scores100(int[] scores) {\n  return false;\n}",
+  "difficulty": "206.0"
 }

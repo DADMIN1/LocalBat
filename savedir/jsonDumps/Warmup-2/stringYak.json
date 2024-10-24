@@ -9,5 +9,15 @@
     "stringYak(\"pakyak\") \u2192 \"pak\"",
     "stringYak(\"yak123ya\") \u2192 \"123ya\""
   ],
-  "provided_code": "public String stringYak(String str) {\n  }"
+  "testcases_extended": [
+    "stringYak(\"yakpak\") \u2192 \"pak\"",
+    "stringYak(\"pakyak\") \u2192 \"pak\"",
+    "stringYak(\"yak123ya\") \u2192 \"123ya\"",
+    "stringYak(\"yak\") \u2192 \"\"",
+    "stringYak(\"yakxxxyak\") \u2192 \"xxx\"",
+    "stringYak(\"HiyakHi\") \u2192 \"HiHi\"",
+    "stringYak(\"xxxyakyyyakzzz\") \u2192 \"xxxyyzzz\""
+  ],
+  "provided_code": "public String stringYak(String str) {\n  return \"\";\n}",
+  "difficulty": "236.0"
 }

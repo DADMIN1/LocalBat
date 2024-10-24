@@ -9,5 +9,14 @@
     "addStar([\"hello\", \"there\"]) \u2192 [\"hello*\", \"there*\"]",
     "addStar([\"*\"]) \u2192 [\"**\"]"
   ],
-  "provided_code": "public List<String> addStar(List<String> strings) {\n  }"
+  "testcases_extended": [
+    "addStar([\"a\", \"bb\", \"ccc\"]) \u2192 [\"a*\", \"bb*\", \"ccc*\"]",
+    "addStar([\"hello\", \"there\"]) \u2192 [\"hello*\", \"there*\"]",
+    "addStar([\"*\"]) \u2192 [\"**\"]",
+    "addStar([]) \u2192 []",
+    "addStar([\"kittens\", \"and\", \"chocolate\", \"and\"]) \u2192 [\"kittens*\", \"and*\", \"chocolate*\", \"and*\"]",
+    "addStar([\"empty\", \"string\", \"\"]) \u2192 [\"empty*\", \"string*\", \"*\"]"
+  ],
+  "provided_code": "public List<String> addStar(List<String> strings) {\n  return new ArrayList<String>();\n}",
+  "difficulty": "206"
 }

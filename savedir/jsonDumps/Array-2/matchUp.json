@@ -9,5 +9,19 @@
     "matchUp([1, 2, 3], [2, 3, 5]) \u2192 3",
     "matchUp([1, 2, 3], [2, 3, 3]) \u2192 2"
   ],
-  "provided_code": "public int matchUp(int[] nums1, int[] nums2) {\n  }"
+  "testcases_extended": [
+    "matchUp([1, 2, 3], [2, 3, 10]) \u2192 2",
+    "matchUp([1, 2, 3], [2, 3, 5]) \u2192 3",
+    "matchUp([1, 2, 3], [2, 3, 3]) \u2192 2",
+    "matchUp([5, 3], [5, 5]) \u2192 1",
+    "matchUp([5, 3], [4, 4]) \u2192 2",
+    "matchUp([5, 3], [3, 3]) \u2192 1",
+    "matchUp([5, 3], [2, 2]) \u2192 1",
+    "matchUp([5, 3], [1, 1]) \u2192 1",
+    "matchUp([5, 3], [0, 0]) \u2192 0",
+    "matchUp([4], [4]) \u2192 0",
+    "matchUp([4], [5]) \u2192 1"
+  ],
+  "provided_code": "public int matchUp(int[] nums1, int[] nums2) {\n  return 0;\n}",
+  "difficulty": "242.0"
 }

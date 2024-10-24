@@ -9,5 +9,24 @@
     "sameStarChar(\"xy*zzz\") \u2192 false",
     "sameStarChar(\"*xa*az\") \u2192 true"
   ],
-  "provided_code": "public boolean sameStarChar(String str) {\n  }"
+  "testcases_extended": [
+    "sameStarChar(\"xy*yzz\") \u2192 true",
+    "sameStarChar(\"xy*zzz\") \u2192 false",
+    "sameStarChar(\"*xa*az\") \u2192 true",
+    "sameStarChar(\"*xa*bz\") \u2192 false",
+    "sameStarChar(\"*xa*a*\") \u2192 true",
+    "sameStarChar(\"\") \u2192 true",
+    "sameStarChar(\"*xa*a*a\") \u2192 true",
+    "sameStarChar(\"*xa*a*b\") \u2192 false",
+    "sameStarChar(\"*12*2*2\") \u2192 true",
+    "sameStarChar(\"12*2*3*\") \u2192 false",
+    "sameStarChar(\"abcDEF\") \u2192 true",
+    "sameStarChar(\"XY*YYYY*Z*\") \u2192 false",
+    "sameStarChar(\"XY*YYYY*Y*\") \u2192 true",
+    "sameStarChar(\"12*2*3*\") \u2192 false",
+    "sameStarChar(\"*\") \u2192 true",
+    "sameStarChar(\"**\") \u2192 true"
+  ],
+  "provided_code": "public boolean sameStarChar(String str) {\n  return false;\n}",
+  "difficulty": "248.0"
 }

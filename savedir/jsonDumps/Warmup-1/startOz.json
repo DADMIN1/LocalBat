@@ -9,5 +9,20 @@
     "startOz(\"bzoo\") \u2192 \"z\"",
     "startOz(\"oxx\") \u2192 \"o\""
   ],
-  "provided_code": "public String startOz(String str) {\n  }"
+  "testcases_extended": [
+    "startOz(\"ozymandias\") \u2192 \"oz\"",
+    "startOz(\"bzoo\") \u2192 \"z\"",
+    "startOz(\"oxx\") \u2192 \"o\"",
+    "startOz(\"oz\") \u2192 \"oz\"",
+    "startOz(\"ounce\") \u2192 \"o\"",
+    "startOz(\"o\") \u2192 \"o\"",
+    "startOz(\"abc\") \u2192 \"\"",
+    "startOz(\"\") \u2192 \"\"",
+    "startOz(\"zoo\") \u2192 \"\"",
+    "startOz(\"aztec\") \u2192 \"z\"",
+    "startOz(\"zzzz\") \u2192 \"z\"",
+    "startOz(\"oznic\") \u2192 \"oz\""
+  ],
+  "provided_code": "public String startOz(String str) {\n  return \"\";\n}",
+  "difficulty": "166.0"
 }

@@ -9,5 +9,19 @@
     "maxMod5(6, 2) \u2192 6",
     "maxMod5(3, 2) \u2192 3"
   ],
-  "provided_code": "public int maxMod5(int a, int b) {\n  }"
+  "testcases_extended": [
+    "maxMod5(2, 3) \u2192 3",
+    "maxMod5(6, 2) \u2192 6",
+    "maxMod5(3, 2) \u2192 3",
+    "maxMod5(8, 12) \u2192 12",
+    "maxMod5(7, 12) \u2192 7",
+    "maxMod5(11, 6) \u2192 6",
+    "maxMod5(2, 7) \u2192 2",
+    "maxMod5(7, 7) \u2192 0",
+    "maxMod5(9, 1) \u2192 9",
+    "maxMod5(9, 14) \u2192 9",
+    "maxMod5(1, 2) \u2192 2"
+  ],
+  "provided_code": "public int maxMod5(int a, int b) {\n  return 0;\n}",
+  "difficulty": "154.0"
 }

@@ -9,5 +9,16 @@
     "fibonacci(1) \u2192 1",
     "fibonacci(2) \u2192 1"
   ],
-  "provided_code": "public int fibonacci(int n) {\n  }"
+  "testcases_extended": [
+    "fibonacci(0) \u2192 0",
+    "fibonacci(1) \u2192 1",
+    "fibonacci(2) \u2192 1",
+    "fibonacci(3) \u2192 2",
+    "fibonacci(4) \u2192 3",
+    "fibonacci(5) \u2192 5",
+    "fibonacci(6) \u2192 8",
+    "fibonacci(7) \u2192 13"
+  ],
+  "provided_code": "public int fibonacci(int n) {\n  return 0;\n}",
+  "difficulty": "309.0"
 }

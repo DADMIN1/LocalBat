@@ -9,5 +9,15 @@
     "front22(\"Ha\") \u2192 \"HaHaHa\"",
     "front22(\"abc\") \u2192 \"ababcab\""
   ],
-  "provided_code": "public String front22(String str) {\n  }"
+  "testcases_extended": [
+    "front22(\"kitten\") \u2192 \"kikittenki\"",
+    "front22(\"Ha\") \u2192 \"HaHaHa\"",
+    "front22(\"abc\") \u2192 \"ababcab\"",
+    "front22(\"ab\") \u2192 \"ababab\"",
+    "front22(\"a\") \u2192 \"aaa\"",
+    "front22(\"\") \u2192 \"\"",
+    "front22(\"Logic\") \u2192 \"LoLogicLo\""
+  ],
+  "provided_code": "public String front22(String str) {\n  return \"\";\n}",
+  "difficulty": "142.0"
 }

@@ -24,11 +24,12 @@ def SaveFile(data, section_name, problem_name):
 
 
 # re-load the raw json
-def LoadFile(section_name, problem_name) -> dict:
+def LoadFile(section_name, problem_name) -> dict | None:
     section_dir = sub_savedirs[0] / section_name
     filepath = section_dir / str(problem_name + ".json")
-    print(f"loading {filepath}")
     jsonData = None
+    if not filepath.exists(): return jsonData
+    print(f"loading {filepath}")
     with open(filepath, "r", encoding="utf-8") as file:
         jsonData = json.load(file)
     return jsonData

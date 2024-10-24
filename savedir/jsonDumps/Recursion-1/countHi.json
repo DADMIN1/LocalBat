@@ -9,5 +9,19 @@
     "countHi(\"xhixhix\") \u2192 2",
     "countHi(\"hi\") \u2192 1"
   ],
-  "provided_code": "public int countHi(String str) {\n  }"
+  "testcases_extended": [
+    "countHi(\"xxhixx\") \u2192 1",
+    "countHi(\"xhixhix\") \u2192 2",
+    "countHi(\"hi\") \u2192 1",
+    "countHi(\"hihih\") \u2192 2",
+    "countHi(\"h\") \u2192 0",
+    "countHi(\"\") \u2192 0",
+    "countHi(\"ihihihihih\") \u2192 4",
+    "countHi(\"ihihihihihi\") \u2192 5",
+    "countHi(\"hiAAhi12hi\") \u2192 3",
+    "countHi(\"xhixhxihihhhih\") \u2192 3",
+    "countHi(\"ship\") \u2192 1"
+  ],
+  "provided_code": "public int countHi(String str) {\n  return 0;\n}",
+  "difficulty": "333.0"
 }

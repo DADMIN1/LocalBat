@@ -9,5 +9,15 @@
     "math1([6, 8, 6, 8, 1]) \u2192 [70, 90, 70, 90, 20]",
     "math1([10]) \u2192 [110]"
   ],
-  "provided_code": "public List<Integer> math1(List<Integer> nums) {\n  }"
+  "testcases_extended": [
+    "math1([1, 2, 3]) \u2192 [20, 30, 40]",
+    "math1([6, 8, 6, 8, 1]) \u2192 [70, 90, 70, 90, 20]",
+    "math1([10]) \u2192 [110]",
+    "math1([]) \u2192 []",
+    "math1([5, 10]) \u2192 [60, 110]",
+    "math1([-1, -2, -3, -2, -1]) \u2192 [0, -10, -20, -10, 0]",
+    "math1([6, -3, 12, 23, 4, 1, 19, 11, 2, 3, 2]) \u2192 [70, -20, 130, 240, 50, 20, 200, 120, 30, 40, 30]"
+  ],
+  "provided_code": "public List<Integer> math1(List<Integer> nums) {\n  return new ArrayList<Integer>();\n}",
+  "difficulty": "215"
 }

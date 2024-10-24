@@ -9,5 +9,21 @@
     "splitArray([2, 3]) \u2192 false",
     "splitArray([5, 2, 3]) \u2192 true"
   ],
-  "provided_code": "public boolean splitArray(int[] nums) {\n  }"
+  "testcases_extended": [
+    "splitArray([2, 2]) \u2192 true",
+    "splitArray([2, 3]) \u2192 false",
+    "splitArray([5, 2, 3]) \u2192 true",
+    "splitArray([5, 2, 2]) \u2192 false",
+    "splitArray([1, 1, 1, 1, 1, 1]) \u2192 true",
+    "splitArray([1, 1, 1, 1, 1]) \u2192 false",
+    "splitArray([]) \u2192 true",
+    "splitArray([1]) \u2192 false",
+    "splitArray([3, 5]) \u2192 false",
+    "splitArray([5, 3, 2]) \u2192 true",
+    "splitArray([2, 2, 10, 10, 1, 1]) \u2192 true",
+    "splitArray([1, 2, 2, 10, 10, 1, 1]) \u2192 false",
+    "splitArray([1, 2, 3, 10, 10, 1, 1]) \u2192 true"
+  ],
+  "provided_code": "public boolean splitArray(int[] nums) {\n  return false;\n}",
+  "difficulty": "418.0"
 }

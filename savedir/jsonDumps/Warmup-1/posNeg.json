@@ -9,5 +9,27 @@
     "posNeg(-1, 1, false) \u2192 true",
     "posNeg(-4, -5, true) \u2192 true"
   ],
-  "provided_code": "public boolean posNeg(int a, int b, boolean negative) {\n  }"
+  "testcases_extended": [
+    "posNeg(1, -1, false) \u2192 true",
+    "posNeg(-1, 1, false) \u2192 true",
+    "posNeg(-4, -5, true) \u2192 true",
+    "posNeg(-4, -5, false) \u2192 false",
+    "posNeg(-4, 5, false) \u2192 true",
+    "posNeg(-4, 5, true) \u2192 false",
+    "posNeg(1, 1, false) \u2192 false",
+    "posNeg(-1, -1, false) \u2192 false",
+    "posNeg(1, -1, true) \u2192 false",
+    "posNeg(-1, 1, true) \u2192 false",
+    "posNeg(1, 1, true) \u2192 false",
+    "posNeg(-1, -1, true) \u2192 true",
+    "posNeg(5, -5, false) \u2192 true",
+    "posNeg(-6, 6, false) \u2192 true",
+    "posNeg(-5, -6, false) \u2192 false",
+    "posNeg(-2, -1, false) \u2192 false",
+    "posNeg(1, 2, false) \u2192 false",
+    "posNeg(-5, 6, true) \u2192 false",
+    "posNeg(-5, -5, true) \u2192 true"
+  ],
+  "provided_code": "public boolean posNeg(int a, int b, boolean negative) {\n  return false;\n}",
+  "difficulty": "124.0"
 }

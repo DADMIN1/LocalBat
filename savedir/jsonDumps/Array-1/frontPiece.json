@@ -9,5 +9,16 @@
     "frontPiece([1, 2]) \u2192 [1, 2]",
     "frontPiece([1]) \u2192 [1]"
   ],
-  "provided_code": "public int[] frontPiece(int[] nums) {\n  }"
+  "testcases_extended": [
+    "frontPiece([1, 2, 3]) \u2192 [1, 2]",
+    "frontPiece([1, 2]) \u2192 [1, 2]",
+    "frontPiece([1]) \u2192 [1]",
+    "frontPiece([]) \u2192 []",
+    "frontPiece([6, 5, 0]) \u2192 [6, 5]",
+    "frontPiece([6, 5]) \u2192 [6, 5]",
+    "frontPiece([3, 1, 4, 1, 5]) \u2192 [3, 1]",
+    "frontPiece([6]) \u2192 [6]"
+  ],
+  "provided_code": "public int[] frontPiece(int[] nums) {\n  return new int[]{0};\n}",
+  "difficulty": "172.0"
 }

@@ -9,5 +9,14 @@
     "icyHot(-1, 120) \u2192 true",
     "icyHot(2, 120) \u2192 false"
   ],
-  "provided_code": "public boolean icyHot(int temp1, int temp2) {\n  }"
+  "testcases_extended": [
+    "icyHot(120, -1) \u2192 true",
+    "icyHot(-1, 120) \u2192 true",
+    "icyHot(2, 120) \u2192 false",
+    "icyHot(-1, 100) \u2192 false",
+    "icyHot(-2, -2) \u2192 false",
+    "icyHot(120, 120) \u2192 false"
+  ],
+  "provided_code": "public boolean icyHot(int temp1, int temp2) {\n  return false;\n}",
+  "difficulty": "148.0"
 }

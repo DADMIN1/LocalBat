@@ -9,5 +9,14 @@
     "lower([\"AAA\", \"BBB\", \"ccc\"]) \u2192 [\"aaa\", \"bbb\", \"ccc\"]",
     "lower([\"KitteN\", \"ChocolaTE\"]) \u2192 [\"kitten\", \"chocolate\"]"
   ],
-  "provided_code": "public List<String> lower(List<String> strings) {\n  }"
+  "testcases_extended": [
+    "lower([\"Hello\", \"Hi\"]) \u2192 [\"hello\", \"hi\"]",
+    "lower([\"AAA\", \"BBB\", \"ccc\"]) \u2192 [\"aaa\", \"bbb\", \"ccc\"]",
+    "lower([\"KitteN\", \"ChocolaTE\"]) \u2192 [\"kitten\", \"chocolate\"]",
+    "lower([]) \u2192 []",
+    "lower([\"EMPTY\", \"\"]) \u2192 [\"empty\", \"\"]",
+    "lower([\"aaX\", \"bYb\", \"Ycc\", \"ZZZ\"]) \u2192 [\"aax\", \"byb\", \"ycc\", \"zzz\"]"
+  ],
+  "provided_code": "public List<String> lower(List<String> strings) {\n  return new ArrayList<String>();\n}",
+  "difficulty": "221"
 }

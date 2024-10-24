@@ -9,5 +9,20 @@
     "countTriple(\"xxxabyyyycd\") \u2192 3",
     "countTriple(\"a\") \u2192 0"
   ],
-  "provided_code": "public int countTriple(String str) {\n  }"
+  "testcases_extended": [
+    "countTriple(\"abcXXXabc\") \u2192 1",
+    "countTriple(\"xxxabyyyycd\") \u2192 3",
+    "countTriple(\"a\") \u2192 0",
+    "countTriple(\"\") \u2192 0",
+    "countTriple(\"XXXabc\") \u2192 1",
+    "countTriple(\"XXXXabc\") \u2192 2",
+    "countTriple(\"XXXXXabc\") \u2192 3",
+    "countTriple(\"222abyyycdXXX\") \u2192 3",
+    "countTriple(\"abYYYabXXXXXab\") \u2192 4",
+    "countTriple(\"abYYXabXXYXXab\") \u2192 0",
+    "countTriple(\"abYYXabXXYXXab\") \u2192 0",
+    "countTriple(\"122abhhh2\") \u2192 1"
+  ],
+  "provided_code": "public int countTriple(String str) {\n  return 0;\n}",
+  "difficulty": "315.0"
 }

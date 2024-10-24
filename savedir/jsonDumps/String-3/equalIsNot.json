@@ -9,5 +9,18 @@
     "equalIsNot(\"This is notnot\") \u2192 true",
     "equalIsNot(\"noisxxnotyynotxisi\") \u2192 true"
   ],
-  "provided_code": "public boolean equalIsNot(String str) {\n  }"
+  "testcases_extended": [
+    "equalIsNot(\"This is not\") \u2192 false",
+    "equalIsNot(\"This is notnot\") \u2192 true",
+    "equalIsNot(\"noisxxnotyynotxisi\") \u2192 true",
+    "equalIsNot(\"noisxxnotyynotxsi\") \u2192 false",
+    "equalIsNot(\"xxxyyyzzzintint\") \u2192 true",
+    "equalIsNot(\"\") \u2192 true",
+    "equalIsNot(\"isisnotnot\") \u2192 true",
+    "equalIsNot(\"isisnotno7Not\") \u2192 false",
+    "equalIsNot(\"isnotis\") \u2192 false",
+    "equalIsNot(\"mis3notpotbotis\") \u2192 false"
+  ],
+  "provided_code": "public boolean equalIsNot(String str) {\n  return false;\n}",
+  "difficulty": "309.0"
 }

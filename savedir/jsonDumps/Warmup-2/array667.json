@@ -9,5 +9,21 @@
     "array667([6, 6, 2, 6]) \u2192 1",
     "array667([6, 7, 2, 6]) \u2192 1"
   ],
-  "provided_code": "public int array667(int[] nums) {\n  }"
+  "testcases_extended": [
+    "array667([6, 6, 2]) \u2192 1",
+    "array667([6, 6, 2, 6]) \u2192 1",
+    "array667([6, 7, 2, 6]) \u2192 1",
+    "array667([6, 6, 2, 6, 7]) \u2192 2",
+    "array667([1, 6, 3]) \u2192 0",
+    "array667([6, 1]) \u2192 0",
+    "array667([]) \u2192 0",
+    "array667([3, 6, 7, 6]) \u2192 1",
+    "array667([3, 6, 6, 7]) \u2192 2",
+    "array667([6, 3, 6, 6]) \u2192 1",
+    "array667([6, 7, 6, 6]) \u2192 2",
+    "array667([1, 2, 3, 5, 6]) \u2192 0",
+    "array667([1, 2, 3, 6, 6]) \u2192 1"
+  ],
+  "provided_code": "public int array667(int[] nums) {\n  return 0;\n}",
+  "difficulty": "239.0"
 }

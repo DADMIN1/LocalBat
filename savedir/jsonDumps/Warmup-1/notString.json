@@ -9,5 +9,15 @@
     "notString(\"x\") \u2192 \"not x\"",
     "notString(\"not bad\") \u2192 \"not bad\""
   ],
-  "provided_code": "public String notString(String str) {\n  }"
+  "testcases_extended": [
+    "notString(\"candy\") \u2192 \"not candy\"",
+    "notString(\"x\") \u2192 \"not x\"",
+    "notString(\"not bad\") \u2192 \"not bad\"",
+    "notString(\"bad\") \u2192 \"not bad\"",
+    "notString(\"not\") \u2192 \"not\"",
+    "notString(\"is not\") \u2192 \"not is not\"",
+    "notString(\"no\") \u2192 \"not no\""
+  ],
+  "provided_code": "public String notString(String str) {\n  return \"\";\n}",
+  "difficulty": "127.0"
 }

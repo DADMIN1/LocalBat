@@ -9,5 +9,13 @@
     "makeOutWord(\"<<>>\", \"WooHoo\") \u2192 \"<<WooHoo>>\"",
     "makeOutWord(\"[[]]\", \"word\") \u2192 \"[[word]]\""
   ],
-  "provided_code": "public String makeOutWord(String out, String word) {\n  }"
+  "testcases_extended": [
+    "makeOutWord(\"<<>>\", \"Yay\") \u2192 \"<<Yay>>\"",
+    "makeOutWord(\"<<>>\", \"WooHoo\") \u2192 \"<<WooHoo>>\"",
+    "makeOutWord(\"[[]]\", \"word\") \u2192 \"[[word]]\"",
+    "makeOutWord(\"HHoo\", \"Hello\") \u2192 \"HHHellooo\"",
+    "makeOutWord(\"abyz\", \"YAY\") \u2192 \"abYAYyz\""
+  ],
+  "provided_code": "public String makeOutWord(String out, String word) {\n  return \"\";\n}",
+  "difficulty": "112.0"
 }

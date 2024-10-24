@@ -9,5 +9,21 @@
     "matchUp([\"aa\", \"bb\", \"cc\"], [\"aaa\", \"b\", \"bb\"]) \u2192 2",
     "matchUp([\"aa\", \"bb\", \"cc\"], [\"\", \"\", \"ccc\"]) \u2192 1"
   ],
-  "provided_code": "public int matchUp(String[] a, String[] b) {\n  }"
+  "testcases_extended": [
+    "matchUp([\"aa\", \"bb\", \"cc\"], [\"aaa\", \"xx\", \"bb\"]) \u2192 1",
+    "matchUp([\"aa\", \"bb\", \"cc\"], [\"aaa\", \"b\", \"bb\"]) \u2192 2",
+    "matchUp([\"aa\", \"bb\", \"cc\"], [\"\", \"\", \"ccc\"]) \u2192 1",
+    "matchUp([\"\", \"\", \"ccc\"], [\"aa\", \"bb\", \"cc\"]) \u2192 1",
+    "matchUp([\"\", \"\", \"\"], [\"\", \"bb\", \"cc\"]) \u2192 0",
+    "matchUp([\"aa\", \"bb\", \"cc\"], [\"\", \"\", \"\"]) \u2192 0",
+    "matchUp([\"aa\", \"\", \"ccc\"], [\"\", \"bb\", \"cc\"]) \u2192 1",
+    "matchUp([\"x\", \"y\", \"z\"], [\"y\", \"z\", \"x\"]) \u2192 0",
+    "matchUp([\"\", \"y\", \"z\"], [\"\", \"y\", \"x\"]) \u2192 1",
+    "matchUp([\"x\", \"y\", \"z\"], [\"xx\", \"yyy\", \"zzz\"]) \u2192 3",
+    "matchUp([\"x\", \"y\", \"z\"], [\"xx\", \"yyy\", \"\"]) \u2192 2",
+    "matchUp([\"b\", \"x\", \"y\", \"z\"], [\"a\", \"xx\", \"yyy\", \"zzz\"]) \u2192 3",
+    "matchUp([\"aaa\", \"bb\", \"c\"], [\"aaa\", \"xx\", \"bb\"]) \u2192 1"
+  ],
+  "provided_code": "public int matchUp(String[] a, String[] b) {\n  return 0;\n}",
+  "difficulty": "236.0"
 }

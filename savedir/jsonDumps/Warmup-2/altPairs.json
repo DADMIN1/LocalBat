@@ -9,5 +9,16 @@
     "altPairs(\"Chocolate\") \u2192 \"Chole\"",
     "altPairs(\"CodingHorror\") \u2192 \"Congrr\""
   ],
-  "provided_code": "public String altPairs(String str) {\n  }"
+  "testcases_extended": [
+    "altPairs(\"kitten\") \u2192 \"kien\"",
+    "altPairs(\"Chocolate\") \u2192 \"Chole\"",
+    "altPairs(\"CodingHorror\") \u2192 \"Congrr\"",
+    "altPairs(\"yak\") \u2192 \"ya\"",
+    "altPairs(\"ya\") \u2192 \"ya\"",
+    "altPairs(\"y\") \u2192 \"y\"",
+    "altPairs(\"\") \u2192 \"\"",
+    "altPairs(\"ThisThatTheOther\") \u2192 \"ThThThth\""
+  ],
+  "provided_code": "public String altPairs(String str) {\n  return \"\";\n}",
+  "difficulty": "233.0"
 }

@@ -9,5 +9,23 @@
     "twoChar(\"java\", 2) \u2192 \"va\"",
     "twoChar(\"java\", 3) \u2192 \"ja\""
   ],
-  "provided_code": "public String twoChar(String str, int index) {\n  }"
+  "testcases_extended": [
+    "twoChar(\"java\", 0) \u2192 \"ja\"",
+    "twoChar(\"java\", 2) \u2192 \"va\"",
+    "twoChar(\"java\", 3) \u2192 \"ja\"",
+    "twoChar(\"java\", 4) \u2192 \"ja\"",
+    "twoChar(\"java\", -1) \u2192 \"ja\"",
+    "twoChar(\"Hello\", 0) \u2192 \"He\"",
+    "twoChar(\"Hello\", 1) \u2192 \"el\"",
+    "twoChar(\"Hello\", 99) \u2192 \"He\"",
+    "twoChar(\"Hello\", 3) \u2192 \"lo\"",
+    "twoChar(\"Hello\", 4) \u2192 \"He\"",
+    "twoChar(\"Hello\", 5) \u2192 \"He\"",
+    "twoChar(\"Hello\", -7) \u2192 \"He\"",
+    "twoChar(\"Hello\", 6) \u2192 \"He\"",
+    "twoChar(\"Hello\", -1) \u2192 \"He\"",
+    "twoChar(\"yay\", 0) \u2192 \"ya\""
+  ],
+  "provided_code": "public String twoChar(String str, int index) {\n  return \"\";\n}",
+  "difficulty": "154.0"
 }

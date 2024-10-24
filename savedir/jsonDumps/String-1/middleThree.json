@@ -9,5 +9,15 @@
     "middleThree(\"and\") \u2192 \"and\"",
     "middleThree(\"solving\") \u2192 \"lvi\""
   ],
-  "provided_code": "public String middleThree(String str) {\n  }"
+  "testcases_extended": [
+    "middleThree(\"Candy\") \u2192 \"and\"",
+    "middleThree(\"and\") \u2192 \"and\"",
+    "middleThree(\"solving\") \u2192 \"lvi\"",
+    "middleThree(\"Hi yet Hi\") \u2192 \"yet\"",
+    "middleThree(\"java yet java\") \u2192 \"yet\"",
+    "middleThree(\"Chocolate\") \u2192 \"col\"",
+    "middleThree(\"XabcxyzabcX\") \u2192 \"xyz\""
+  ],
+  "provided_code": "public String middleThree(String str) {\n  return \"\";\n}",
+  "difficulty": "157.0"
 }

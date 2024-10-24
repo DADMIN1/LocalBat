@@ -9,5 +9,20 @@
     "endX(\"xxhixx\") \u2192 \"hixxxx\"",
     "endX(\"xhixhix\") \u2192 \"hihixxx\""
   ],
-  "provided_code": "public String endX(String str) {\n  }"
+  "testcases_extended": [
+    "endX(\"xxre\") \u2192 \"rexx\"",
+    "endX(\"xxhixx\") \u2192 \"hixxxx\"",
+    "endX(\"xhixhix\") \u2192 \"hihixxx\"",
+    "endX(\"hiy\") \u2192 \"hiy\"",
+    "endX(\"h\") \u2192 \"h\"",
+    "endX(\"x\") \u2192 \"x\"",
+    "endX(\"xx\") \u2192 \"xx\"",
+    "endX(\"\") \u2192 \"\"",
+    "endX(\"bxx\") \u2192 \"bxx\"",
+    "endX(\"bxax\") \u2192 \"baxx\"",
+    "endX(\"axaxax\") \u2192 \"aaaxxx\"",
+    "endX(\"xxhxi\") \u2192 \"hixxx\""
+  ],
+  "provided_code": "public String endX(String str) {\n  return \"\";\n}",
+  "difficulty": "360.0"
 }

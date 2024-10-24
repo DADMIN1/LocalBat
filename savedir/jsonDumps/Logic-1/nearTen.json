@@ -9,5 +9,23 @@
     "nearTen(17) \u2192 false",
     "nearTen(19) \u2192 true"
   ],
-  "provided_code": "public boolean nearTen(int num) {\n  }"
+  "testcases_extended": [
+    "nearTen(12) \u2192 true",
+    "nearTen(17) \u2192 false",
+    "nearTen(19) \u2192 true",
+    "nearTen(31) \u2192 true",
+    "nearTen(6) \u2192 false",
+    "nearTen(10) \u2192 true",
+    "nearTen(11) \u2192 true",
+    "nearTen(21) \u2192 true",
+    "nearTen(22) \u2192 true",
+    "nearTen(23) \u2192 false",
+    "nearTen(54) \u2192 false",
+    "nearTen(155) \u2192 false",
+    "nearTen(158) \u2192 true",
+    "nearTen(3) \u2192 false",
+    "nearTen(1) \u2192 true"
+  ],
+  "provided_code": "public boolean nearTen(int num) {\n  return false;\n}",
+  "difficulty": "124.0"
 }

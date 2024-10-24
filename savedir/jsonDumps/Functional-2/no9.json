@@ -9,5 +9,15 @@
     "no9([9, 19, 29, 3]) \u2192 [3]",
     "no9([1, 2, 3]) \u2192 [1, 2, 3]"
   ],
-  "provided_code": "public List<Integer> no9(List<Integer> nums) {\n  }"
+  "testcases_extended": [
+    "no9([1, 2, 19]) \u2192 [1, 2]",
+    "no9([9, 19, 29, 3]) \u2192 [3]",
+    "no9([1, 2, 3]) \u2192 [1, 2, 3]",
+    "no9([45, 99, 90, 28, 13, 999, 0]) \u2192 [45, 90, 28, 13, 0]",
+    "no9([]) \u2192 []",
+    "no9([9]) \u2192 []",
+    "no9([0, 9, 0]) \u2192 [0, 0]"
+  ],
+  "provided_code": "public List<Integer> no9(List<Integer> nums) {\n  return new ArrayList<Integer>();\n}",
+  "difficulty": "203"
 }

@@ -9,5 +9,15 @@
     "two2([2, 6, 11]) \u2192 [4]",
     "two2([0]) \u2192 [0]"
   ],
-  "provided_code": "public List<Integer> two2(List<Integer> nums) {\n  }"
+  "testcases_extended": [
+    "two2([1, 2, 3]) \u2192 [4, 6]",
+    "two2([2, 6, 11]) \u2192 [4]",
+    "two2([0]) \u2192 [0]",
+    "two2([]) \u2192 []",
+    "two2([1, 11, 111, 16]) \u2192 []",
+    "two2([2, 3, 5, 7, 11]) \u2192 [4, 6, 10, 14]",
+    "two2([3, 1, 4, 1, 6, 99, 0]) \u2192 [6, 8, 198, 0]"
+  ],
+  "provided_code": "public List<Integer> two2(List<Integer> nums) {\n  return new ArrayList<Integer>();\n}",
+  "difficulty": "223"
 }

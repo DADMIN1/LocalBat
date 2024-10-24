@@ -9,5 +9,19 @@
     "count11(\"abc11x11x11\") \u2192 3",
     "count11(\"111\") \u2192 1"
   ],
-  "provided_code": "public int count11(String str) {\n  }"
+  "testcases_extended": [
+    "count11(\"11abc11\") \u2192 2",
+    "count11(\"abc11x11x11\") \u2192 3",
+    "count11(\"111\") \u2192 1",
+    "count11(\"1111\") \u2192 2",
+    "count11(\"1\") \u2192 0",
+    "count11(\"\") \u2192 0",
+    "count11(\"hi\") \u2192 0",
+    "count11(\"11x111x1111\") \u2192 4",
+    "count11(\"1x111\") \u2192 1",
+    "count11(\"1Hello1\") \u2192 0",
+    "count11(\"Hello\") \u2192 0"
+  ],
+  "provided_code": "public int count11(String str) {\n  return 0;\n}",
+  "difficulty": "369.0"
 }

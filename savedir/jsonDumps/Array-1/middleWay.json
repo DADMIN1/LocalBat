@@ -9,5 +9,14 @@
     "middleWay([7, 7, 7], [3, 8, 0]) \u2192 [7, 8]",
     "middleWay([5, 2, 9], [1, 4, 5]) \u2192 [2, 4]"
   ],
-  "provided_code": "public int[] middleWay(int[] a, int[] b) {\n  }"
+  "testcases_extended": [
+    "middleWay([1, 2, 3], [4, 5, 6]) \u2192 [2, 5]",
+    "middleWay([7, 7, 7], [3, 8, 0]) \u2192 [7, 8]",
+    "middleWay([5, 2, 9], [1, 4, 5]) \u2192 [2, 4]",
+    "middleWay([1, 9, 7], [4, 8, 8]) \u2192 [9, 8]",
+    "middleWay([1, 2, 3], [3, 1, 4]) \u2192 [2, 1]",
+    "middleWay([1, 2, 3], [4, 1, 1]) \u2192 [2, 1]"
+  ],
+  "provided_code": "public int[] middleWay(int[] a, int[] b) {\n  return new int[]{0};\n}",
+  "difficulty": "130.0"
 }

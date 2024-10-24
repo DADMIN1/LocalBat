@@ -9,5 +9,26 @@
     "starOut(\"ab**cd\") \u2192 \"ad\"",
     "starOut(\"sm*eilly\") \u2192 \"silly\""
   ],
-  "provided_code": "public String starOut(String str) {\n  }"
+  "testcases_extended": [
+    "starOut(\"ab*cd\") \u2192 \"ad\"",
+    "starOut(\"ab**cd\") \u2192 \"ad\"",
+    "starOut(\"sm*eilly\") \u2192 \"silly\"",
+    "starOut(\"sm*eil*ly\") \u2192 \"siy\"",
+    "starOut(\"sm**eil*ly\") \u2192 \"siy\"",
+    "starOut(\"sm***eil*ly\") \u2192 \"siy\"",
+    "starOut(\"stringy*\") \u2192 \"string\"",
+    "starOut(\"*stringy\") \u2192 \"tringy\"",
+    "starOut(\"*str*in*gy\") \u2192 \"ty\"",
+    "starOut(\"abc\") \u2192 \"abc\"",
+    "starOut(\"a*bc\") \u2192 \"c\"",
+    "starOut(\"ab\") \u2192 \"ab\"",
+    "starOut(\"a*b\") \u2192 \"\"",
+    "starOut(\"a\") \u2192 \"a\"",
+    "starOut(\"a*\") \u2192 \"\"",
+    "starOut(\"*a\") \u2192 \"\"",
+    "starOut(\"*\") \u2192 \"\"",
+    "starOut(\"\") \u2192 \"\""
+  ],
+  "provided_code": "public String starOut(String str) {\n  return \"\";\n}",
+  "difficulty": "254.0"
 }

@@ -9,5 +9,21 @@
     "mixString(\"Hi\", \"There\") \u2192 \"HTihere\"",
     "mixString(\"xxxx\", \"There\") \u2192 \"xTxhxexre\""
   ],
-  "provided_code": "public String mixString(String a, String b) {\n  }"
+  "testcases_extended": [
+    "mixString(\"abc\", \"xyz\") \u2192 \"axbycz\"",
+    "mixString(\"Hi\", \"There\") \u2192 \"HTihere\"",
+    "mixString(\"xxxx\", \"There\") \u2192 \"xTxhxexre\"",
+    "mixString(\"xxx\", \"X\") \u2192 \"xXxx\"",
+    "mixString(\"2/\", \"27 around\") \u2192 \"22/7 around\"",
+    "mixString(\"\", \"Hello\") \u2192 \"Hello\"",
+    "mixString(\"Abc\", \"\") \u2192 \"Abc\"",
+    "mixString(\"\", \"\") \u2192 \"\"",
+    "mixString(\"a\", \"b\") \u2192 \"ab\"",
+    "mixString(\"ax\", \"b\") \u2192 \"abx\"",
+    "mixString(\"a\", \"bx\") \u2192 \"abx\"",
+    "mixString(\"So\", \"Long\") \u2192 \"SLoong\"",
+    "mixString(\"Long\", \"So\") \u2192 \"LSoong\""
+  ],
+  "provided_code": "public String mixString(String a, String b) {\n  return \"\";\n}",
+  "difficulty": "227.0"
 }

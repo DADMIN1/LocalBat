@@ -9,5 +9,19 @@
     "countYZ(\"day fez\") \u2192 2",
     "countYZ(\"day fyyyz\") \u2192 2"
   ],
-  "provided_code": "public int countYZ(String str) {\n  }"
+  "testcases_extended": [
+    "countYZ(\"fez day\") \u2192 2",
+    "countYZ(\"day fez\") \u2192 2",
+    "countYZ(\"day fyyyz\") \u2192 2",
+    "countYZ(\"day yak\") \u2192 1",
+    "countYZ(\"day:yak\") \u2192 1",
+    "countYZ(\"!!day--yaz!!\") \u2192 2",
+    "countYZ(\"yak zak\") \u2192 0",
+    "countYZ(\"DAY abc XYZ\") \u2192 2",
+    "countYZ(\"aaz yyz my\") \u2192 3",
+    "countYZ(\"y2bz\") \u2192 2",
+    "countYZ(\"zxyx\") \u2192 0"
+  ],
+  "provided_code": "public int countYZ(String str) {\n  return 0;\n}",
+  "difficulty": "303.0"
 }

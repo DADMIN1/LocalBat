@@ -9,5 +9,19 @@
     "cigarParty(50, false) \u2192 true",
     "cigarParty(70, true) \u2192 true"
   ],
-  "provided_code": "public boolean cigarParty(int cigars, boolean isWeekend) {\n  }"
+  "testcases_extended": [
+    "cigarParty(30, false) \u2192 false",
+    "cigarParty(50, false) \u2192 true",
+    "cigarParty(70, true) \u2192 true",
+    "cigarParty(30, true) \u2192 false",
+    "cigarParty(50, true) \u2192 true",
+    "cigarParty(60, false) \u2192 true",
+    "cigarParty(61, false) \u2192 false",
+    "cigarParty(40, false) \u2192 true",
+    "cigarParty(39, false) \u2192 false",
+    "cigarParty(40, true) \u2192 true",
+    "cigarParty(39, true) \u2192 false"
+  ],
+  "provided_code": "public boolean cigarParty(int cigars, boolean isWeekend) {\n  return false;\n}",
+  "difficulty": "103.0"
 }

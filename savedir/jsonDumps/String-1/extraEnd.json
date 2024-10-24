@@ -9,5 +9,13 @@
     "extraEnd(\"ab\") \u2192 \"ababab\"",
     "extraEnd(\"Hi\") \u2192 \"HiHiHi\""
   ],
-  "provided_code": "public String extraEnd(String str) {\n  }"
+  "testcases_extended": [
+    "extraEnd(\"Hello\") \u2192 \"lololo\"",
+    "extraEnd(\"ab\") \u2192 \"ababab\"",
+    "extraEnd(\"Hi\") \u2192 \"HiHiHi\"",
+    "extraEnd(\"Candy\") \u2192 \"dydydy\"",
+    "extraEnd(\"Code\") \u2192 \"dedede\""
+  ],
+  "provided_code": "public String extraEnd(String str) {\n  return \"\";\n}",
+  "difficulty": "115.0"
 }

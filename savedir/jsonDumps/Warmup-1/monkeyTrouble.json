@@ -9,5 +9,12 @@
     "monkeyTrouble(false, false) \u2192 true",
     "monkeyTrouble(true, false) \u2192 false"
   ],
-  "provided_code": "public boolean monkeyTrouble(boolean aSmile, boolean bSmile) {\n  }"
+  "testcases_extended": [
+    "monkeyTrouble(true, true) \u2192 true",
+    "monkeyTrouble(false, false) \u2192 true",
+    "monkeyTrouble(true, false) \u2192 false",
+    "monkeyTrouble(false, true) \u2192 false"
+  ],
+  "provided_code": "public boolean monkeyTrouble(boolean aSmile, boolean bSmile) {\n  return false;\n}",
+  "difficulty": "106.0"
 }

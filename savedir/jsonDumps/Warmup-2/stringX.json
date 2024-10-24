@@ -9,5 +9,16 @@
     "stringX(\"abxxxcd\") \u2192 \"abcd\"",
     "stringX(\"xabxxxcdx\") \u2192 \"xabcdx\""
   ],
-  "provided_code": "public String stringX(String str) {\n  }"
+  "testcases_extended": [
+    "stringX(\"xxHxix\") \u2192 \"xHix\"",
+    "stringX(\"abxxxcd\") \u2192 \"abcd\"",
+    "stringX(\"xabxxxcdx\") \u2192 \"xabcdx\"",
+    "stringX(\"xKittenx\") \u2192 \"xKittenx\"",
+    "stringX(\"Hello\") \u2192 \"Hello\"",
+    "stringX(\"xx\") \u2192 \"xx\"",
+    "stringX(\"x\") \u2192 \"x\"",
+    "stringX(\"\") \u2192 \"\""
+  ],
+  "provided_code": "public String stringX(String str) {\n  return \"\";\n}",
+  "difficulty": "230.0"
 }

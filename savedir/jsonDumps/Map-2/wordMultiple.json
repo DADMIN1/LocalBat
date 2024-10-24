@@ -9,5 +9,14 @@
     "wordMultiple([\"c\", \"b\", \"a\"]) \u2192 {\"a\": false, \"b\": false, \"c\": false}",
     "wordMultiple([\"c\", \"c\", \"c\", \"c\"]) \u2192 {\"c\": true}"
   ],
-  "provided_code": "public Map<String, Boolean> wordMultiple(String[] strings) {\n  }"
+  "testcases_extended": [
+    "wordMultiple([\"a\", \"b\", \"a\", \"c\", \"b\"]) \u2192 {\"a\": true, \"b\": true, \"c\": false}",
+    "wordMultiple([\"c\", \"b\", \"a\"]) \u2192 {\"a\": false, \"b\": false, \"c\": false}",
+    "wordMultiple([\"c\", \"c\", \"c\", \"c\"]) \u2192 {\"c\": true}",
+    "wordMultiple([]) \u2192 {}",
+    "wordMultiple([\"this\", \"and\", \"this\"]) \u2192 {\"and\": false, \"this\": true}",
+    "wordMultiple([\"d\", \"a\", \"e\", \"d\", \"a\", \"d\", \"b\", \"b\", \"z\", \"a\", \"a\", \"b\", \"z\", \"x\"]) \u2192 {\"a\": true, \"b\": true, \"d\": true, \"e\": false, \"x\": false, \"z\": true}"
+  ],
+  "provided_code": "public Map<String, Boolean> wordMultiple(String[] strings) {\n  return new HashMap<String, Boolean>();\n}",
+  "difficulty": "360"
 }

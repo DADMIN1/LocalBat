@@ -9,5 +9,17 @@
     "countHi(\"ABChi hi\") \u2192 2",
     "countHi(\"hihi\") \u2192 2"
   ],
-  "provided_code": "public int countHi(String str) {\n  }"
+  "testcases_extended": [
+    "countHi(\"abc hi ho\") \u2192 1",
+    "countHi(\"ABChi hi\") \u2192 2",
+    "countHi(\"hihi\") \u2192 2",
+    "countHi(\"hiHIhi\") \u2192 2",
+    "countHi(\"\") \u2192 0",
+    "countHi(\"h\") \u2192 0",
+    "countHi(\"hi\") \u2192 1",
+    "countHi(\"Hi is no HI on ahI\") \u2192 0",
+    "countHi(\"hiho not HOHIhi\") \u2192 2"
+  ],
+  "provided_code": "public int countHi(String str) {\n  return 0;\n}",
+  "difficulty": "206.0"
 }

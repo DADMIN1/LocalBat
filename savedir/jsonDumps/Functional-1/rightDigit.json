@@ -9,5 +9,15 @@
     "rightDigit([16, 8, 886, 8, 1]) \u2192 [6, 8, 6, 8, 1]",
     "rightDigit([10, 0]) \u2192 [0, 0]"
   ],
-  "provided_code": "public List<Integer> rightDigit(List<Integer> nums) {\n  }"
+  "testcases_extended": [
+    "rightDigit([1, 22, 93]) \u2192 [1, 2, 3]",
+    "rightDigit([16, 8, 886, 8, 1]) \u2192 [6, 8, 6, 8, 1]",
+    "rightDigit([10, 0]) \u2192 [0, 0]",
+    "rightDigit([]) \u2192 []",
+    "rightDigit([5, 10]) \u2192 [5, 0]",
+    "rightDigit([5, 50, 500, 5000, 5000]) \u2192 [5, 0, 0, 0, 0]",
+    "rightDigit([6, 23, 12, 23, 4, 1, 19, 1119, 2, 3, 2]) \u2192 [6, 3, 2, 3, 4, 1, 9, 9, 2, 3, 2]"
+  ],
+  "provided_code": "public List<Integer> rightDigit(List<Integer> nums) {\n  return new ArrayList<Integer>();\n}",
+  "difficulty": "220"
 }

@@ -9,5 +9,14 @@
     "topping3({\"potato\": \"butter\"}) \u2192 {\"potato\": \"butter\", \"fries\": \"butter\"}",
     "topping3({\"salad\": \"oil\", \"potato\": \"ketchup\"}) \u2192 {\"spinach\": \"oil\", \"salad\": \"oil\", \"potato\": \"ketchup\", \"fries\": \"ketchup\"}"
   ],
-  "provided_code": "public Map<String, String> topping3(Map<String, String> map) {\n  }"
+  "testcases_extended": [
+    "topping3({\"potato\": \"ketchup\"}) \u2192 {\"potato\": \"ketchup\", \"fries\": \"ketchup\"}",
+    "topping3({\"potato\": \"butter\"}) \u2192 {\"potato\": \"butter\", \"fries\": \"butter\"}",
+    "topping3({\"salad\": \"oil\", \"potato\": \"ketchup\"}) \u2192 {\"spinach\": \"oil\", \"salad\": \"oil\", \"potato\": \"ketchup\", \"fries\": \"ketchup\"}",
+    "topping3({\"toast\": \"butter\", \"salad\": \"oil\", \"potato\": \"ketchup\"}) \u2192 {\"toast\": \"butter\", \"spinach\": \"oil\", \"salad\": \"oil\", \"potato\": \"ketchup\", \"fries\": \"ketchup\"}",
+    "topping3({}) \u2192 {}",
+    "topping3({\"salad\": \"pepper\", \"fries\": \"salt\"}) \u2192 {\"spinach\": \"pepper\", \"salad\": \"pepper\", \"fries\": \"salt\"}"
+  ],
+  "provided_code": "public Map<String, String> topping3(Map<String, String> map) {\n  return new HashMap<String, String>();\n}",
+  "difficulty": "218"
 }

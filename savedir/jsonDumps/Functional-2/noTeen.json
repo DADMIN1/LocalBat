@@ -9,5 +9,16 @@
     "noTeen([1, 14, 1]) \u2192 [1, 1]",
     "noTeen([15]) \u2192 []"
   ],
-  "provided_code": "public List<Integer> noTeen(List<Integer> nums) {\n  }"
+  "testcases_extended": [
+    "noTeen([12, 13, 19, 20]) \u2192 [12, 20]",
+    "noTeen([1, 14, 1]) \u2192 [1, 1]",
+    "noTeen([15]) \u2192 []",
+    "noTeen([-15]) \u2192 [-15]",
+    "noTeen([]) \u2192 []",
+    "noTeen([0, 1, 2, -3]) \u2192 [0, 1, 2, -3]",
+    "noTeen([15, 17, 19, 21, 19]) \u2192 [21]",
+    "noTeen([-16, 2, 15, 3, 16, 25]) \u2192 [-16, 2, 3, 25]"
+  ],
+  "provided_code": "public List<Integer> noTeen(List<Integer> nums) {\n  return new ArrayList<Integer>();\n}",
+  "difficulty": "203"
 }

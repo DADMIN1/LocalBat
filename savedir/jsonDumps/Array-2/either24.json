@@ -9,5 +9,22 @@
     "either24([4, 4, 1]) \u2192 true",
     "either24([4, 4, 1, 2, 2]) \u2192 false"
   ],
-  "provided_code": "public boolean either24(int[] nums) {\n  }"
+  "testcases_extended": [
+    "either24([1, 2, 2]) \u2192 true",
+    "either24([4, 4, 1]) \u2192 true",
+    "either24([4, 4, 1, 2, 2]) \u2192 false",
+    "either24([1, 2, 3, 4]) \u2192 false",
+    "either24([3, 5, 9]) \u2192 false",
+    "either24([1, 2, 3, 4, 4]) \u2192 true",
+    "either24([2, 2, 3, 4]) \u2192 true",
+    "either24([1, 2, 3, 2, 2, 4]) \u2192 true",
+    "either24([1, 2, 3, 2, 2, 4, 4]) \u2192 false",
+    "either24([1, 2]) \u2192 false",
+    "either24([2, 2]) \u2192 true",
+    "either24([4, 4]) \u2192 true",
+    "either24([2]) \u2192 false",
+    "either24([]) \u2192 false"
+  ],
+  "provided_code": "public boolean either24(int[] nums) {\n  return false;\n}",
+  "difficulty": "239.0"
 }

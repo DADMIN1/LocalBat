@@ -9,5 +9,19 @@
     "zeroFront([0, 1, 1, 0, 1]) \u2192 [0, 0, 1, 1, 1]",
     "zeroFront([1, 0]) \u2192 [0, 1]"
   ],
-  "provided_code": "public int[] zeroFront(int[] nums) {\n  }"
+  "testcases_extended": [
+    "zeroFront([1, 0, 0, 1]) \u2192 [0, 0, 1, 1]",
+    "zeroFront([0, 1, 1, 0, 1]) \u2192 [0, 0, 1, 1, 1]",
+    "zeroFront([1, 0]) \u2192 [0, 1]",
+    "zeroFront([0, 1]) \u2192 [0, 1]",
+    "zeroFront([1, 1, 1, 0]) \u2192 [0, 1, 1, 1]",
+    "zeroFront([2, 2, 2, 2]) \u2192 [2, 2, 2, 2]",
+    "zeroFront([0, 0, 1, 0]) \u2192 [0, 0, 0, 1]",
+    "zeroFront([-1, 0, 0, -1, 0]) \u2192 [0, 0, 0, -1, -1]",
+    "zeroFront([0, -3, 0, -3]) \u2192 [0, 0, -3, -3]",
+    "zeroFront([]) \u2192 []",
+    "zeroFront([9, 9, 0, 9, 0, 9]) \u2192 [0, 0, 9, 9, 9, 9]"
+  ],
+  "provided_code": "public int[] zeroFront(int[] nums) {\n  return new int[]{0};\n}",
+  "difficulty": "281.0"
 }

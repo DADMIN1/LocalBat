@@ -9,5 +9,18 @@
     "maxTriple([1, 5, 3]) \u2192 5",
     "maxTriple([5, 2, 3]) \u2192 5"
   ],
-  "provided_code": "public int maxTriple(int[] nums) {\n  }"
+  "testcases_extended": [
+    "maxTriple([1, 2, 3]) \u2192 3",
+    "maxTriple([1, 5, 3]) \u2192 5",
+    "maxTriple([5, 2, 3]) \u2192 5",
+    "maxTriple([1, 2, 3, 1, 1]) \u2192 3",
+    "maxTriple([1, 7, 3, 1, 5]) \u2192 5",
+    "maxTriple([5, 1, 3, 7, 1]) \u2192 5",
+    "maxTriple([5, 1, 7, 3, 7, 8, 1]) \u2192 5",
+    "maxTriple([5, 1, 7, 9, 7, 8, 1]) \u2192 9",
+    "maxTriple([5, 1, 7, 3, 7, 8, 9]) \u2192 9",
+    "maxTriple([2, 2, 5, 1, 1]) \u2192 5"
+  ],
+  "provided_code": "public int maxTriple(int[] nums) {\n  return 0;\n}",
+  "difficulty": "169.0"
 }

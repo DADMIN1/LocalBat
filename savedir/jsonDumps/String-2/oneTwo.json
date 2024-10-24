@@ -9,5 +9,24 @@
     "oneTwo(\"tca\") \u2192 \"cat\"",
     "oneTwo(\"tcagdo\") \u2192 \"catdog\""
   ],
-  "provided_code": "public String oneTwo(String str) {\n  }"
+  "testcases_extended": [
+    "oneTwo(\"abc\") \u2192 \"bca\"",
+    "oneTwo(\"tca\") \u2192 \"cat\"",
+    "oneTwo(\"tcagdo\") \u2192 \"catdog\"",
+    "oneTwo(\"chocolate\") \u2192 \"hocolctea\"",
+    "oneTwo(\"1234567890\") \u2192 \"231564897\"",
+    "oneTwo(\"xabxabxabxabxabxabxab\") \u2192 \"abxabxabxabxabxabxabx\"",
+    "oneTwo(\"abcdefx\") \u2192 \"bcaefd\"",
+    "oneTwo(\"abcdefxy\") \u2192 \"bcaefd\"",
+    "oneTwo(\"abcdefxyz\") \u2192 \"bcaefdyzx\"",
+    "oneTwo(\"\") \u2192 \"\"",
+    "oneTwo(\"x\") \u2192 \"\"",
+    "oneTwo(\"xy\") \u2192 \"\"",
+    "oneTwo(\"xyz\") \u2192 \"yzx\"",
+    "oneTwo(\"abcdefghijklkmnopqrstuvwxyz1234567890\") \u2192 \"bcaefdhigkljmnkpqostrvwuyzx231564897\"",
+    "oneTwo(\"abcdefghijklkmnopqrstuvwxyz123456789\") \u2192 \"bcaefdhigkljmnkpqostrvwuyzx231564897\"",
+    "oneTwo(\"abcdefghijklkmnopqrstuvwxyz12345678\") \u2192 \"bcaefdhigkljmnkpqostrvwuyzx231564\""
+  ],
+  "provided_code": "public String oneTwo(String str) {\n  return \"\";\n}",
+  "difficulty": "250"
 }

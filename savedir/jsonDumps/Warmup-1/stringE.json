@@ -9,5 +9,14 @@
     "stringE(\"Heelle\") \u2192 true",
     "stringE(\"Heelele\") \u2192 false"
   ],
-  "provided_code": "public boolean stringE(String str) {\n  }"
+  "testcases_extended": [
+    "stringE(\"Hello\") \u2192 true",
+    "stringE(\"Heelle\") \u2192 true",
+    "stringE(\"Heelele\") \u2192 false",
+    "stringE(\"Hll\") \u2192 false",
+    "stringE(\"e\") \u2192 true",
+    "stringE(\"\") \u2192 false"
+  ],
+  "provided_code": "public boolean stringE(String str) {\n  return false;\n}",
+  "difficulty": "181.0"
 }

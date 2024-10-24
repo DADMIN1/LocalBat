@@ -9,5 +9,14 @@
     "noZ([\"hziz\", \"hzello\", \"hi\"]) \u2192 [\"hi\"]",
     "noZ([\"hello\", \"howz\", \"are\", \"youz\"]) \u2192 [\"hello\", \"are\"]"
   ],
-  "provided_code": "public List<String> noZ(List<String> strings) {\n  }"
+  "testcases_extended": [
+    "noZ([\"aaa\", \"bbb\", \"aza\"]) \u2192 [\"aaa\", \"bbb\"]",
+    "noZ([\"hziz\", \"hzello\", \"hi\"]) \u2192 [\"hi\"]",
+    "noZ([\"hello\", \"howz\", \"are\", \"youz\"]) \u2192 [\"hello\", \"are\"]",
+    "noZ([]) \u2192 []",
+    "noZ([\"\"]) \u2192 [\"\"]",
+    "noZ([\"x\", \"y\", \"z\"]) \u2192 [\"x\", \"y\"]"
+  ],
+  "provided_code": "public List<String> noZ(List<String> strings) {\n  return new ArrayList<String>();\n}",
+  "difficulty": "209"
 }

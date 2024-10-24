@@ -9,5 +9,20 @@
     "twoAsOne(3, 1, 2) \u2192 true",
     "twoAsOne(3, 2, 2) \u2192 false"
   ],
-  "provided_code": "public boolean twoAsOne(int a, int b, int c) {\n  }"
+  "testcases_extended": [
+    "twoAsOne(1, 2, 3) \u2192 true",
+    "twoAsOne(3, 1, 2) \u2192 true",
+    "twoAsOne(3, 2, 2) \u2192 false",
+    "twoAsOne(2, 3, 1) \u2192 true",
+    "twoAsOne(5, 3, -2) \u2192 true",
+    "twoAsOne(5, 3, -3) \u2192 false",
+    "twoAsOne(2, 5, 3) \u2192 true",
+    "twoAsOne(9, 5, 5) \u2192 false",
+    "twoAsOne(9, 4, 5) \u2192 true",
+    "twoAsOne(5, 4, 9) \u2192 true",
+    "twoAsOne(3, 3, 0) \u2192 true",
+    "twoAsOne(3, 3, 2) \u2192 false"
+  ],
+  "provided_code": "public boolean twoAsOne(int a, int b, int c) {\n  return false;\n}",
+  "difficulty": "136.0"
 }

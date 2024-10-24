@@ -9,5 +9,16 @@
     "startHi(\"hi\") \u2192 true",
     "startHi(\"hello hi\") \u2192 false"
   ],
-  "provided_code": "public boolean startHi(String str) {\n  }"
+  "testcases_extended": [
+    "startHi(\"hi there\") \u2192 true",
+    "startHi(\"hi\") \u2192 true",
+    "startHi(\"hello hi\") \u2192 false",
+    "startHi(\"he\") \u2192 false",
+    "startHi(\"h\") \u2192 false",
+    "startHi(\"\") \u2192 false",
+    "startHi(\"ho hi\") \u2192 false",
+    "startHi(\"hi ho\") \u2192 true"
+  ],
+  "provided_code": "public boolean startHi(String str) {\n  return false;\n}",
+  "difficulty": "145.0"
 }

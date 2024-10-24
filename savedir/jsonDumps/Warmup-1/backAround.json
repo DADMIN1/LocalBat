@@ -9,5 +9,14 @@
     "backAround(\"Hello\") \u2192 \"oHelloo\"",
     "backAround(\"a\") \u2192 \"aaa\""
   ],
-  "provided_code": "public String backAround(String str) {\n  }"
+  "testcases_extended": [
+    "backAround(\"cat\") \u2192 \"tcatt\"",
+    "backAround(\"Hello\") \u2192 \"oHelloo\"",
+    "backAround(\"a\") \u2192 \"aaa\"",
+    "backAround(\"abc\") \u2192 \"cabcc\"",
+    "backAround(\"read\") \u2192 \"dreadd\"",
+    "backAround(\"boo\") \u2192 \"obooo\""
+  ],
+  "provided_code": "public String backAround(String str) {\n  return \"\";\n}",
+  "difficulty": "139.0"
 }

@@ -9,5 +9,16 @@
     "repeatEnd(\"Hello\", 2) \u2192 \"lolo\"",
     "repeatEnd(\"Hello\", 1) \u2192 \"o\""
   ],
-  "provided_code": "public String repeatEnd(String str, int n) {\n  }"
+  "testcases_extended": [
+    "repeatEnd(\"Hello\", 3) \u2192 \"llollollo\"",
+    "repeatEnd(\"Hello\", 2) \u2192 \"lolo\"",
+    "repeatEnd(\"Hello\", 1) \u2192 \"o\"",
+    "repeatEnd(\"Hello\", 0) \u2192 \"\"",
+    "repeatEnd(\"abc\", 3) \u2192 \"abcabcabc\"",
+    "repeatEnd(\"1234\", 2) \u2192 \"3434\"",
+    "repeatEnd(\"1234\", 3) \u2192 \"234234234\"",
+    "repeatEnd(\"\", 0) \u2192 \"\""
+  ],
+  "provided_code": "public String repeatEnd(String str, int n) {\n  return \"\";\n}",
+  "difficulty": "230.0"
 }

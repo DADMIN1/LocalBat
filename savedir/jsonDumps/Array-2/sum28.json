@@ -9,5 +9,20 @@
     "sum28([2, 3, 2, 2, 4, 2, 2]) \u2192 false",
     "sum28([1, 2, 3, 4]) \u2192 false"
   ],
-  "provided_code": "public boolean sum28(int[] nums) {\n  }"
+  "testcases_extended": [
+    "sum28([2, 3, 2, 2, 4, 2]) \u2192 true",
+    "sum28([2, 3, 2, 2, 4, 2, 2]) \u2192 false",
+    "sum28([1, 2, 3, 4]) \u2192 false",
+    "sum28([2, 2, 2, 2]) \u2192 true",
+    "sum28([1, 2, 2, 2, 2, 4]) \u2192 true",
+    "sum28([]) \u2192 false",
+    "sum28([2]) \u2192 false",
+    "sum28([8]) \u2192 false",
+    "sum28([2, 2, 2]) \u2192 false",
+    "sum28([2, 2, 2, 2, 2]) \u2192 false",
+    "sum28([1, 2, 2, 1, 2, 2]) \u2192 true",
+    "sum28([5, 2, 2, 2, 4, 2]) \u2192 true"
+  ],
+  "provided_code": "public boolean sum28(int[] nums) {\n  return false;\n}",
+  "difficulty": "224.0"
 }

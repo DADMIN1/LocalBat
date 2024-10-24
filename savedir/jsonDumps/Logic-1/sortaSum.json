@@ -9,5 +9,17 @@
     "sortaSum(9, 4) \u2192 20",
     "sortaSum(10, 11) \u2192 21"
   ],
-  "provided_code": "public int sortaSum(int a, int b) {\n  }"
+  "testcases_extended": [
+    "sortaSum(3, 4) \u2192 7",
+    "sortaSum(9, 4) \u2192 20",
+    "sortaSum(10, 11) \u2192 21",
+    "sortaSum(12, -3) \u2192 9",
+    "sortaSum(-3, 12) \u2192 9",
+    "sortaSum(4, 5) \u2192 9",
+    "sortaSum(4, 6) \u2192 20",
+    "sortaSum(14, 7) \u2192 21",
+    "sortaSum(14, 6) \u2192 20"
+  ],
+  "provided_code": "public int sortaSum(int a, int b) {\n  return 0;\n}",
+  "difficulty": "115.0"
 }

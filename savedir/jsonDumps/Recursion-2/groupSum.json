@@ -9,5 +9,21 @@
     "groupSum(0, [2, 4, 8], 14) \u2192 true",
     "groupSum(0, [2, 4, 8], 9) \u2192 false"
   ],
-  "provided_code": "public boolean groupSum(int start, int[] nums, int target) {\n  }"
+  "testcases_extended": [
+    "groupSum(0, [2, 4, 8], 10) \u2192 true",
+    "groupSum(0, [2, 4, 8], 14) \u2192 true",
+    "groupSum(0, [2, 4, 8], 9) \u2192 false",
+    "groupSum(0, [2, 4, 8], 8) \u2192 true",
+    "groupSum(1, [2, 4, 8], 8) \u2192 true",
+    "groupSum(1, [2, 4, 8], 2) \u2192 false",
+    "groupSum(0, [1], 1) \u2192 true",
+    "groupSum(0, [9], 1) \u2192 false",
+    "groupSum(1, [9], 0) \u2192 true",
+    "groupSum(0, [], 0) \u2192 true",
+    "groupSum(0, [10, 2, 2, 5], 17) \u2192 true",
+    "groupSum(0, [10, 2, 2, 5], 15) \u2192 true",
+    "groupSum(0, [10, 2, 2, 5], 9) \u2192 true"
+  ],
+  "provided_code": "public boolean groupSum(int start, int[] nums, int target) {\n  return false;\n}",
+  "difficulty": "403.0"
 }

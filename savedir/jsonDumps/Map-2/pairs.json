@@ -9,5 +9,15 @@
     "pairs([\"man\", \"moon\", \"main\"]) \u2192 {\"m\": \"n\"}",
     "pairs([\"man\", \"moon\", \"good\", \"night\"]) \u2192 {\"g\": \"d\", \"m\": \"n\", \"n\": \"t\"}"
   ],
-  "provided_code": "public Map<String, String> pairs(String[] strings) {\n  }"
+  "testcases_extended": [
+    "pairs([\"code\", \"bug\"]) \u2192 {\"b\": \"g\", \"c\": \"e\"}",
+    "pairs([\"man\", \"moon\", \"main\"]) \u2192 {\"m\": \"n\"}",
+    "pairs([\"man\", \"moon\", \"good\", \"night\"]) \u2192 {\"g\": \"d\", \"m\": \"n\", \"n\": \"t\"}",
+    "pairs([]) \u2192 {}",
+    "pairs([\"a\", \"b\"]) \u2192 {\"a\": \"a\", \"b\": \"b\"}",
+    "pairs([\"are\", \"codes\", \"and\", \"cods\"]) \u2192 {\"a\": \"d\", \"c\": \"s\"}",
+    "pairs([\"apple\", \"banana\", \"tea\", \"coffee\"]) \u2192 {\"a\": \"e\", \"b\": \"a\", \"c\": \"e\", \"t\": \"a\"}"
+  ],
+  "provided_code": "public Map<String, String> pairs(String[] strings) {\n  return new HashMap<String, String>();\n}",
+  "difficulty": "320"
 }

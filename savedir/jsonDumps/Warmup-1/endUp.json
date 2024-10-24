@@ -9,5 +9,15 @@
     "endUp(\"hi there\") \u2192 \"hi thERE\"",
     "endUp(\"hi\") \u2192 \"HI\""
   ],
-  "provided_code": "public String endUp(String str) {\n  }"
+  "testcases_extended": [
+    "endUp(\"Hello\") \u2192 \"HeLLO\"",
+    "endUp(\"hi there\") \u2192 \"hi thERE\"",
+    "endUp(\"hi\") \u2192 \"HI\"",
+    "endUp(\"woo hoo\") \u2192 \"woo HOO\"",
+    "endUp(\"xyz12\") \u2192 \"xyZ12\"",
+    "endUp(\"x\") \u2192 \"X\"",
+    "endUp(\"\") \u2192 \"\""
+  ],
+  "provided_code": "public String endUp(String str) {\n  return \"\";\n}",
+  "difficulty": "187.0"
 }

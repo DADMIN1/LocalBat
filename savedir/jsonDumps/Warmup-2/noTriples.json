@@ -9,5 +9,17 @@
     "noTriples([1, 1, 2, 2, 2, 1]) \u2192 false",
     "noTriples([1, 1, 1, 2, 2, 2, 1]) \u2192 false"
   ],
-  "provided_code": "public boolean noTriples(int[] nums) {\n  }"
+  "testcases_extended": [
+    "noTriples([1, 1, 2, 2, 1]) \u2192 true",
+    "noTriples([1, 1, 2, 2, 2, 1]) \u2192 false",
+    "noTriples([1, 1, 1, 2, 2, 2, 1]) \u2192 false",
+    "noTriples([1, 1, 2, 2, 1, 2, 1]) \u2192 true",
+    "noTriples([1, 2, 1]) \u2192 true",
+    "noTriples([1, 1, 1]) \u2192 false",
+    "noTriples([1, 1]) \u2192 true",
+    "noTriples([1]) \u2192 true",
+    "noTriples([]) \u2192 true"
+  ],
+  "provided_code": "public boolean noTriples(int[] nums) {\n  return false;\n}",
+  "difficulty": "242.0"
 }

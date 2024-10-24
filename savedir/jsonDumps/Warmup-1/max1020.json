@@ -9,5 +9,19 @@
     "max1020(19, 11) \u2192 19",
     "max1020(11, 9) \u2192 11"
   ],
-  "provided_code": "public int max1020(int a, int b) {\n  }"
+  "testcases_extended": [
+    "max1020(11, 19) \u2192 19",
+    "max1020(19, 11) \u2192 19",
+    "max1020(11, 9) \u2192 11",
+    "max1020(9, 21) \u2192 0",
+    "max1020(10, 21) \u2192 10",
+    "max1020(21, 10) \u2192 10",
+    "max1020(9, 11) \u2192 11",
+    "max1020(23, 10) \u2192 10",
+    "max1020(20, 10) \u2192 20",
+    "max1020(7, 20) \u2192 20",
+    "max1020(17, 16) \u2192 17"
+  ],
+  "provided_code": "public int max1020(int a, int b) {\n  return 0;\n}",
+  "difficulty": "178.0"
 }

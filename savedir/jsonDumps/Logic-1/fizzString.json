@@ -9,5 +9,24 @@
     "fizzString(\"dib\") \u2192 \"Buzz\"",
     "fizzString(\"fib\") \u2192 \"FizzBuzz\""
   ],
-  "provided_code": "public String fizzString(String str) {\n  }"
+  "testcases_extended": [
+    "fizzString(\"fig\") \u2192 \"Fizz\"",
+    "fizzString(\"dib\") \u2192 \"Buzz\"",
+    "fizzString(\"fib\") \u2192 \"FizzBuzz\"",
+    "fizzString(\"abc\") \u2192 \"abc\"",
+    "fizzString(\"fooo\") \u2192 \"Fizz\"",
+    "fizzString(\"booo\") \u2192 \"booo\"",
+    "fizzString(\"ooob\") \u2192 \"Buzz\"",
+    "fizzString(\"fooob\") \u2192 \"FizzBuzz\"",
+    "fizzString(\"f\") \u2192 \"Fizz\"",
+    "fizzString(\"b\") \u2192 \"Buzz\"",
+    "fizzString(\"abcb\") \u2192 \"Buzz\"",
+    "fizzString(\"Hello\") \u2192 \"Hello\"",
+    "fizzString(\"Hellob\") \u2192 \"Buzz\"",
+    "fizzString(\"af\") \u2192 \"af\"",
+    "fizzString(\"bf\") \u2192 \"bf\"",
+    "fizzString(\"fb\") \u2192 \"FizzBuzz\""
+  ],
+  "provided_code": "public String fizzString(String str) {\n  return \"\";\n}",
+  "difficulty": "135"
 }

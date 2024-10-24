@@ -9,5 +9,13 @@
     "rotateLeft3([5, 11, 9]) \u2192 [11, 9, 5]",
     "rotateLeft3([7, 0, 0]) \u2192 [0, 0, 7]"
   ],
-  "provided_code": "public int[] rotateLeft3(int[] nums) {\n  }"
+  "testcases_extended": [
+    "rotateLeft3([1, 2, 3]) \u2192 [2, 3, 1]",
+    "rotateLeft3([5, 11, 9]) \u2192 [11, 9, 5]",
+    "rotateLeft3([7, 0, 0]) \u2192 [0, 0, 7]",
+    "rotateLeft3([1, 2, 1]) \u2192 [2, 1, 1]",
+    "rotateLeft3([0, 0, 1]) \u2192 [0, 1, 0]"
+  ],
+  "provided_code": "public int[] rotateLeft3(int[] nums) {\n  return new int[]{0};\n}",
+  "difficulty": "118.0"
 }

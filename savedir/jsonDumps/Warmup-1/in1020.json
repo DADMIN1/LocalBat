@@ -9,5 +9,15 @@
     "in1020(21, 12) \u2192 true",
     "in1020(8, 99) \u2192 false"
   ],
-  "provided_code": "public boolean in1020(int a, int b) {\n  }"
+  "testcases_extended": [
+    "in1020(12, 99) \u2192 true",
+    "in1020(21, 12) \u2192 true",
+    "in1020(8, 99) \u2192 false",
+    "in1020(99, 10) \u2192 true",
+    "in1020(20, 20) \u2192 true",
+    "in1020(21, 21) \u2192 false",
+    "in1020(9, 9) \u2192 false"
+  ],
+  "provided_code": "public boolean in1020(int a, int b) {\n  return false;\n}",
+  "difficulty": "151.0"
 }

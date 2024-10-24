@@ -9,5 +9,13 @@
     "wordLen([\"this\", \"and\", \"that\", \"and\"]) \u2192 {\"that\": 4, \"and\": 3, \"this\": 4}",
     "wordLen([\"code\", \"code\", \"code\", \"bug\"]) \u2192 {\"code\": 4, \"bug\": 3}"
   ],
-  "provided_code": "public Map<String, Integer> wordLen(String[] strings) {\n  }"
+  "testcases_extended": [
+    "wordLen([\"a\", \"bb\", \"a\", \"bb\"]) \u2192 {\"bb\": 2, \"a\": 1}",
+    "wordLen([\"this\", \"and\", \"that\", \"and\"]) \u2192 {\"that\": 4, \"and\": 3, \"this\": 4}",
+    "wordLen([\"code\", \"code\", \"code\", \"bug\"]) \u2192 {\"code\": 4, \"bug\": 3}",
+    "wordLen([]) \u2192 {}",
+    "wordLen([\"z\"]) \u2192 {\"z\": 1}"
+  ],
+  "provided_code": "public Map<String, Integer> wordLen(String[] strings) {\n  return new HashMap<String, Integer>();\n}",
+  "difficulty": "306"
 }

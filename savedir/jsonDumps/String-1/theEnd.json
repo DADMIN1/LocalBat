@@ -9,5 +9,18 @@
     "theEnd(\"Hello\", false) \u2192 \"o\"",
     "theEnd(\"oh\", true) \u2192 \"o\""
   ],
-  "provided_code": "public String theEnd(String str, boolean front) {\n  }"
+  "testcases_extended": [
+    "theEnd(\"Hello\", true) \u2192 \"H\"",
+    "theEnd(\"Hello\", false) \u2192 \"o\"",
+    "theEnd(\"oh\", true) \u2192 \"o\"",
+    "theEnd(\"oh\", false) \u2192 \"h\"",
+    "theEnd(\"x\", true) \u2192 \"x\"",
+    "theEnd(\"x\", false) \u2192 \"x\"",
+    "theEnd(\"java\", true) \u2192 \"j\"",
+    "theEnd(\"chocolate\", false) \u2192 \"e\"",
+    "theEnd(\"1234\", true) \u2192 \"1\"",
+    "theEnd(\"code\", false) \u2192 \"e\""
+  ],
+  "provided_code": "public String theEnd(String str, boolean front) {\n  return \"\";\n}",
+  "difficulty": "139.0"
 }

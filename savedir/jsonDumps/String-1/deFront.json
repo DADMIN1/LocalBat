@@ -9,5 +9,27 @@
     "deFront(\"java\") \u2192 \"va\"",
     "deFront(\"away\") \u2192 \"aay\""
   ],
-  "provided_code": "public String deFront(String str) {    \n  }"
+  "testcases_extended": [
+    "deFront(\"Hello\") \u2192 \"llo\"",
+    "deFront(\"java\") \u2192 \"va\"",
+    "deFront(\"away\") \u2192 \"aay\"",
+    "deFront(\"axy\") \u2192 \"ay\"",
+    "deFront(\"abc\") \u2192 \"abc\"",
+    "deFront(\"xby\") \u2192 \"by\"",
+    "deFront(\"ab\") \u2192 \"ab\"",
+    "deFront(\"ax\") \u2192 \"a\"",
+    "deFront(\"axb\") \u2192 \"ab\"",
+    "deFront(\"aaa\") \u2192 \"aa\"",
+    "deFront(\"xbc\") \u2192 \"bc\"",
+    "deFront(\"bbb\") \u2192 \"bb\"",
+    "deFront(\"bazz\") \u2192 \"zz\"",
+    "deFront(\"ba\") \u2192 \"\"",
+    "deFront(\"abxyz\") \u2192 \"abxyz\"",
+    "deFront(\"hi\") \u2192 \"\"",
+    "deFront(\"his\") \u2192 \"s\"",
+    "deFront(\"xz\") \u2192 \"\"",
+    "deFront(\"zzz\") \u2192 \"z\""
+  ],
+  "provided_code": "public String deFront(String str) {    \n  return \"\";\n}",
+  "difficulty": "190.0"
 }

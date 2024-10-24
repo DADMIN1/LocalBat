@@ -9,5 +9,19 @@
     "countPairs(\"axax\") \u2192 2",
     "countPairs(\"axbx\") \u2192 1"
   ],
-  "provided_code": "public int countPairs(String str) {\n  }"
+  "testcases_extended": [
+    "countPairs(\"axa\") \u2192 1",
+    "countPairs(\"axax\") \u2192 2",
+    "countPairs(\"axbx\") \u2192 1",
+    "countPairs(\"hi\") \u2192 0",
+    "countPairs(\"hihih\") \u2192 3",
+    "countPairs(\"ihihhh\") \u2192 3",
+    "countPairs(\"ihjxhh\") \u2192 0",
+    "countPairs(\"\") \u2192 0",
+    "countPairs(\"a\") \u2192 0",
+    "countPairs(\"aa\") \u2192 0",
+    "countPairs(\"aaa\") \u2192 1"
+  ],
+  "provided_code": "public int countPairs(String str) {\n  return 0;\n}",
+  "difficulty": "363.0"
 }

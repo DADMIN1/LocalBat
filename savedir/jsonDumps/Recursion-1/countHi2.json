@@ -9,5 +9,24 @@
     "countHi2(\"ahibhi\") \u2192 2",
     "countHi2(\"xhixhi\") \u2192 0"
   ],
-  "provided_code": "public int countHi2(String str) {\n  }"
+  "testcases_extended": [
+    "countHi2(\"ahixhi\") \u2192 1",
+    "countHi2(\"ahibhi\") \u2192 2",
+    "countHi2(\"xhixhi\") \u2192 0",
+    "countHi2(\"hixhi\") \u2192 1",
+    "countHi2(\"hixhhi\") \u2192 2",
+    "countHi2(\"hihihi\") \u2192 3",
+    "countHi2(\"hihihix\") \u2192 3",
+    "countHi2(\"xhihihix\") \u2192 2",
+    "countHi2(\"xxhi\") \u2192 0",
+    "countHi2(\"hixxhi\") \u2192 1",
+    "countHi2(\"hi\") \u2192 1",
+    "countHi2(\"xxxx\") \u2192 0",
+    "countHi2(\"h\") \u2192 0",
+    "countHi2(\"x\") \u2192 0",
+    "countHi2(\"\") \u2192 0",
+    "countHi2(\"Hellohi\") \u2192 1"
+  ],
+  "provided_code": "public int countHi2(String str) {\n  return 0;\n}",
+  "difficulty": "375.0"
 }

@@ -9,5 +9,14 @@
     "moreY([\"hello\", \"there\"]) \u2192 [\"yhelloy\", \"ytherey\"]",
     "moreY([\"yay\"]) \u2192 [\"yyayy\"]"
   ],
-  "provided_code": "public List<String> moreY(List<String> strings) {\n  }"
+  "testcases_extended": [
+    "moreY([\"a\", \"b\", \"c\"]) \u2192 [\"yay\", \"yby\", \"ycy\"]",
+    "moreY([\"hello\", \"there\"]) \u2192 [\"yhelloy\", \"ytherey\"]",
+    "moreY([\"yay\"]) \u2192 [\"yyayy\"]",
+    "moreY([\"\", \"a\", \"xx\"]) \u2192 [\"yy\", \"yay\", \"yxxy\"]",
+    "moreY([]) \u2192 []",
+    "moreY([\"xx\", \"yy\", \"zz\"]) \u2192 [\"yxxy\", \"yyyy\", \"yzzy\"]"
+  ],
+  "provided_code": "public List<String> moreY(List<String> strings) {\n  return new ArrayList<String>();\n}",
+  "difficulty": "210"
 }

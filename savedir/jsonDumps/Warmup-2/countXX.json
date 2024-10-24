@@ -9,5 +9,17 @@
     "countXX(\"xxx\") \u2192 2",
     "countXX(\"xxxx\") \u2192 3"
   ],
-  "provided_code": "int countXX(String str) {\n  }"
+  "testcases_extended": [
+    "countXX(\"abcxx\") \u2192 1",
+    "countXX(\"xxx\") \u2192 2",
+    "countXX(\"xxxx\") \u2192 3",
+    "countXX(\"abc\") \u2192 0",
+    "countXX(\"Hello there\") \u2192 0",
+    "countXX(\"Hexxo thxxe\") \u2192 2",
+    "countXX(\"\") \u2192 0",
+    "countXX(\"Kittens\") \u2192 0",
+    "countXX(\"Kittensxxx\") \u2192 2"
+  ],
+  "provided_code": "int countXX(String str) {\n  return 0;\n}",
+  "difficulty": "207.0"
 }

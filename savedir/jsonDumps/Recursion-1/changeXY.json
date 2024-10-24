@@ -9,5 +9,18 @@
     "changeXY(\"xxhixx\") \u2192 \"yyhiyy\"",
     "changeXY(\"xhixhix\") \u2192 \"yhiyhiy\""
   ],
-  "provided_code": "public String changeXY(String str) {\n  }"
+  "testcases_extended": [
+    "changeXY(\"codex\") \u2192 \"codey\"",
+    "changeXY(\"xxhixx\") \u2192 \"yyhiyy\"",
+    "changeXY(\"xhixhix\") \u2192 \"yhiyhiy\"",
+    "changeXY(\"hiy\") \u2192 \"hiy\"",
+    "changeXY(\"h\") \u2192 \"h\"",
+    "changeXY(\"x\") \u2192 \"y\"",
+    "changeXY(\"\") \u2192 \"\"",
+    "changeXY(\"xxx\") \u2192 \"yyy\"",
+    "changeXY(\"yyhxyi\") \u2192 \"yyhyyi\"",
+    "changeXY(\"hihi\") \u2192 \"hihi\""
+  ],
+  "provided_code": "public String changeXY(String str) {\n  return \"\";\n}",
+  "difficulty": "336.0"
 }

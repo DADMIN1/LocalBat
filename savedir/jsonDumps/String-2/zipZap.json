@@ -9,5 +9,20 @@
     "zipZap(\"zopzop\") \u2192 \"zpzp\"",
     "zipZap(\"zzzopzop\") \u2192 \"zzzpzp\""
   ],
-  "provided_code": "public String zipZap(String str) {\n  }"
+  "testcases_extended": [
+    "zipZap(\"zipXzap\") \u2192 \"zpXzp\"",
+    "zipZap(\"zopzop\") \u2192 \"zpzp\"",
+    "zipZap(\"zzzopzop\") \u2192 \"zzzpzp\"",
+    "zipZap(\"zibzap\") \u2192 \"zibzp\"",
+    "zipZap(\"zip\") \u2192 \"zp\"",
+    "zipZap(\"zi\") \u2192 \"zi\"",
+    "zipZap(\"z\") \u2192 \"z\"",
+    "zipZap(\"\") \u2192 \"\"",
+    "zipZap(\"zzp\") \u2192 \"zp\"",
+    "zipZap(\"abcppp\") \u2192 \"abcppp\"",
+    "zipZap(\"azbcppp\") \u2192 \"azbcppp\"",
+    "zipZap(\"azbcpzpp\") \u2192 \"azbcpzp\""
+  ],
+  "provided_code": "public String zipZap(String str) {\n  return \"\";\n}",
+  "difficulty": "251.0"
 }

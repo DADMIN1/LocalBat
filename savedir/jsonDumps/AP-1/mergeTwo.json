@@ -9,5 +9,17 @@
     "mergeTwo([\"a\", \"c\", \"z\"], [\"c\", \"f\", \"z\"], 3) \u2192 [\"a\", \"c\", \"f\"]",
     "mergeTwo([\"f\", \"g\", \"z\"], [\"c\", \"f\", \"g\"], 3) \u2192 [\"c\", \"f\", \"g\"]"
   ],
-  "provided_code": "public String[] mergeTwo(String[] a, String[] b, int n) {\n  }"
+  "testcases_extended": [
+    "mergeTwo([\"a\", \"c\", \"z\"], [\"b\", \"f\", \"z\"], 3) \u2192 [\"a\", \"b\", \"c\"]",
+    "mergeTwo([\"a\", \"c\", \"z\"], [\"c\", \"f\", \"z\"], 3) \u2192 [\"a\", \"c\", \"f\"]",
+    "mergeTwo([\"f\", \"g\", \"z\"], [\"c\", \"f\", \"g\"], 3) \u2192 [\"c\", \"f\", \"g\"]",
+    "mergeTwo([\"a\", \"c\", \"z\"], [\"a\", \"c\", \"z\"], 3) \u2192 [\"a\", \"c\", \"z\"]",
+    "mergeTwo([\"a\", \"b\", \"c\", \"z\"], [\"a\", \"c\", \"z\"], 3) \u2192 [\"a\", \"b\", \"c\"]",
+    "mergeTwo([\"a\", \"c\", \"z\"], [\"a\", \"b\", \"c\", \"z\"], 3) \u2192 [\"a\", \"b\", \"c\"]",
+    "mergeTwo([\"a\", \"c\", \"z\"], [\"a\", \"c\", \"z\"], 2) \u2192 [\"a\", \"c\"]",
+    "mergeTwo([\"a\", \"c\", \"z\"], [\"a\", \"c\", \"y\", \"z\"], 3) \u2192 [\"a\", \"c\", \"y\"]",
+    "mergeTwo([\"x\", \"y\", \"z\"], [\"a\", \"b\", \"z\"], 3) \u2192 [\"a\", \"b\", \"x\"]"
+  ],
+  "provided_code": "public String[] mergeTwo(String[] a, String[] b, int n) {\n  return new String[]{\"\"};\n}",
+  "difficulty": "251.0"
 }

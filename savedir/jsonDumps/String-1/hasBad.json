@@ -9,5 +9,18 @@
     "hasBad(\"xbadxx\") \u2192 true",
     "hasBad(\"xxbadxx\") \u2192 false"
   ],
-  "provided_code": "public boolean hasBad(String str) {\n  }"
+  "testcases_extended": [
+    "hasBad(\"badxx\") \u2192 true",
+    "hasBad(\"xbadxx\") \u2192 true",
+    "hasBad(\"xxbadxx\") \u2192 false",
+    "hasBad(\"code\") \u2192 false",
+    "hasBad(\"bad\") \u2192 true",
+    "hasBad(\"ba\") \u2192 false",
+    "hasBad(\"xba\") \u2192 false",
+    "hasBad(\"xbad\") \u2192 true",
+    "hasBad(\"\") \u2192 false",
+    "hasBad(\"badyy\") \u2192 true"
+  ],
+  "provided_code": "public boolean hasBad(String str) {\n  return false;\n}",
+  "difficulty": "160.0"
 }

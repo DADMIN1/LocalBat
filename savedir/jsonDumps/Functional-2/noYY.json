@@ -9,5 +9,18 @@
     "noYY([\"a\", \"b\", \"cy\"]) \u2192 [\"ay\", \"by\"]",
     "noYY([\"xx\", \"ya\", \"zz\"]) \u2192 [\"xxy\", \"yay\", \"zzy\"]"
   ],
-  "provided_code": "public List<String> noYY(List<String> strings) {\n  }"
+  "testcases_extended": [
+    "noYY([\"a\", \"b\", \"c\"]) \u2192 [\"ay\", \"by\", \"cy\"]",
+    "noYY([\"a\", \"b\", \"cy\"]) \u2192 [\"ay\", \"by\"]",
+    "noYY([\"xx\", \"ya\", \"zz\"]) \u2192 [\"xxy\", \"yay\", \"zzy\"]",
+    "noYY([\"xx\", \"yay\", \"zz\"]) \u2192 [\"xxy\", \"zzy\"]",
+    "noYY([\"yyx\", \"y\", \"zzz\"]) \u2192 [\"zzzy\"]",
+    "noYY([\"hello\", \"there\"]) \u2192 [\"helloy\", \"therey\"]",
+    "noYY([\"ya\"]) \u2192 [\"yay\"]",
+    "noYY([]) \u2192 []",
+    "noYY([\"\"]) \u2192 [\"y\"]",
+    "noYY([\"xx\", \"yy\", \"zz\"]) \u2192 [\"xxy\", \"zzy\"]"
+  ],
+  "provided_code": "public List<String> noYY(List<String> strings) {\n  return new ArrayList<String>();\n}",
+  "difficulty": "220"
 }

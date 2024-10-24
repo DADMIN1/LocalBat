@@ -9,5 +9,20 @@
     "countAbc(\"abcxxabc\") \u2192 2",
     "countAbc(\"abaxxaba\") \u2192 2"
   ],
-  "provided_code": "public int countAbc(String str) {\n  }"
+  "testcases_extended": [
+    "countAbc(\"abc\") \u2192 1",
+    "countAbc(\"abcxxabc\") \u2192 2",
+    "countAbc(\"abaxxaba\") \u2192 2",
+    "countAbc(\"ababc\") \u2192 2",
+    "countAbc(\"abxbc\") \u2192 0",
+    "countAbc(\"aaabc\") \u2192 1",
+    "countAbc(\"hello\") \u2192 0",
+    "countAbc(\"\") \u2192 0",
+    "countAbc(\"ab\") \u2192 0",
+    "countAbc(\"aba\") \u2192 1",
+    "countAbc(\"aca\") \u2192 0",
+    "countAbc(\"aaa\") \u2192 0"
+  ],
+  "provided_code": "public int countAbc(String str) {\n  return 0;\n}",
+  "difficulty": "366.0"
 }

@@ -9,5 +9,17 @@
     "repeatFront(\"Chocolate\", 3) \u2192 \"ChoChC\"",
     "repeatFront(\"Ice Cream\", 2) \u2192 \"IcI\""
   ],
-  "provided_code": "public String repeatFront(String str, int n) {\n  }"
+  "testcases_extended": [
+    "repeatFront(\"Chocolate\", 4) \u2192 \"ChocChoChC\"",
+    "repeatFront(\"Chocolate\", 3) \u2192 \"ChoChC\"",
+    "repeatFront(\"Ice Cream\", 2) \u2192 \"IcI\"",
+    "repeatFront(\"Ice Cream\", 1) \u2192 \"I\"",
+    "repeatFront(\"Ice Cream\", 0) \u2192 \"\"",
+    "repeatFront(\"xyz\", 3) \u2192 \"xyzxyx\"",
+    "repeatFront(\"\", 0) \u2192 \"\"",
+    "repeatFront(\"Java\", 4) \u2192 \"JavaJavJaJ\"",
+    "repeatFront(\"Java\", 1) \u2192 \"J\""
+  ],
+  "provided_code": "public String repeatFront(String str, int n) {\n  return \"\";\n}",
+  "difficulty": "233.0"
 }

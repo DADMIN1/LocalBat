@@ -9,5 +9,16 @@
     "mapAB2({\"a\": \"aaa\", \"b\": \"bbb\"}) \u2192 {\"a\": \"aaa\", \"b\": \"bbb\"}",
     "mapAB2({\"a\": \"aaa\", \"b\": \"bbb\", \"c\": \"aaa\"}) \u2192 {\"a\": \"aaa\", \"b\": \"bbb\", \"c\": \"aaa\"}"
   ],
-  "provided_code": "public Map<String, String> mapAB2(Map<String, String> map) {\n  }"
+  "testcases_extended": [
+    "mapAB2({\"a\": \"aaa\", \"b\": \"aaa\", \"c\": \"cake\"}) \u2192 {\"c\": \"cake\"}",
+    "mapAB2({\"a\": \"aaa\", \"b\": \"bbb\"}) \u2192 {\"a\": \"aaa\", \"b\": \"bbb\"}",
+    "mapAB2({\"a\": \"aaa\", \"b\": \"bbb\", \"c\": \"aaa\"}) \u2192 {\"a\": \"aaa\", \"b\": \"bbb\", \"c\": \"aaa\"}",
+    "mapAB2({\"a\": \"aaa\"}) \u2192 {\"a\": \"aaa\"}",
+    "mapAB2({\"b\": \"bbb\"}) \u2192 {\"b\": \"bbb\"}",
+    "mapAB2({\"a\": \"\", \"b\": \"\", \"c\": \"ccc\"}) \u2192 {\"c\": \"ccc\"}",
+    "mapAB2({}) \u2192 {}",
+    "mapAB2({\"a\": \"a\", \"b\": \"b\", \"z\": \"zebra\"}) \u2192 {\"a\": \"a\", \"b\": \"b\", \"z\": \"zebra\"}"
+  ],
+  "provided_code": "public Map<String, String> mapAB2(Map<String, String> map) {\n  return new HashMap<String, String>();\n}",
+  "difficulty": "221"
 }

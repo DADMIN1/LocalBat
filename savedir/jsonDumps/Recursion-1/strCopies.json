@@ -9,5 +9,22 @@
     "strCopies(\"catcowcat\", \"cow\", 2) \u2192 false",
     "strCopies(\"catcowcat\", \"cow\", 1) \u2192 true"
   ],
-  "provided_code": "public boolean strCopies(String str, String sub, int n) {\n  }"
+  "testcases_extended": [
+    "strCopies(\"catcowcat\", \"cat\", 2) \u2192 true",
+    "strCopies(\"catcowcat\", \"cow\", 2) \u2192 false",
+    "strCopies(\"catcowcat\", \"cow\", 1) \u2192 true",
+    "strCopies(\"iiijjj\", \"i\", 3) \u2192 true",
+    "strCopies(\"iiijjj\", \"i\", 4) \u2192 false",
+    "strCopies(\"iiijjj\", \"ii\", 2) \u2192 true",
+    "strCopies(\"iiijjj\", \"ii\", 3) \u2192 false",
+    "strCopies(\"iiijjj\", \"x\", 3) \u2192 false",
+    "strCopies(\"iiijjj\", \"x\", 0) \u2192 true",
+    "strCopies(\"iiiiij\", \"iii\", 3) \u2192 true",
+    "strCopies(\"iiiiij\", \"iii\", 4) \u2192 false",
+    "strCopies(\"ijiiiiij\", \"iiii\", 2) \u2192 true",
+    "strCopies(\"ijiiiiij\", \"iiii\", 3) \u2192 false",
+    "strCopies(\"dogcatdogcat\", \"dog\", 2) \u2192 true"
+  ],
+  "provided_code": "public boolean strCopies(String str, String sub, int n) {\n  return false;\n}",
+  "difficulty": "387.0"
 }

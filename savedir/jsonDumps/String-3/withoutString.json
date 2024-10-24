@@ -9,5 +9,27 @@
     "withoutString(\"Hello there\", \"e\") \u2192 \"Hllo thr\"",
     "withoutString(\"Hello there\", \"x\") \u2192 \"Hello there\""
   ],
-  "provided_code": "public String withoutString(String base, String remove) {\n  }"
+  "testcases_extended": [
+    "withoutString(\"Hello there\", \"llo\") \u2192 \"He there\"",
+    "withoutString(\"Hello there\", \"e\") \u2192 \"Hllo thr\"",
+    "withoutString(\"Hello there\", \"x\") \u2192 \"Hello there\"",
+    "withoutString(\"This is a FISH\", \"IS\") \u2192 \"Th a FH\"",
+    "withoutString(\"THIS is a FISH\", \"is\") \u2192 \"TH a FH\"",
+    "withoutString(\"THIS is a FISH\", \"iS\") \u2192 \"TH a FH\"",
+    "withoutString(\"abxxxxab\", \"xx\") \u2192 \"abab\"",
+    "withoutString(\"abxxxab\", \"xx\") \u2192 \"abxab\"",
+    "withoutString(\"abxxxab\", \"x\") \u2192 \"abab\"",
+    "withoutString(\"xxx\", \"x\") \u2192 \"\"",
+    "withoutString(\"xxx\", \"xx\") \u2192 \"x\"",
+    "withoutString(\"xyzzy\", \"Y\") \u2192 \"xzz\"",
+    "withoutString(\"\", \"x\") \u2192 \"\"",
+    "withoutString(\"abcabc\", \"b\") \u2192 \"acac\"",
+    "withoutString(\"AA22bb\", \"2\") \u2192 \"AAbb\"",
+    "withoutString(\"1111\", \"1\") \u2192 \"\"",
+    "withoutString(\"1111\", \"11\") \u2192 \"\"",
+    "withoutString(\"MkjtMkx\", \"Mk\") \u2192 \"jtx\"",
+    "withoutString(\"Hi HoHo\", \"Ho\") \u2192 \"Hi \""
+  ],
+  "provided_code": "public String withoutString(String base, String remove) {\n  return \"\";\n}",
+  "difficulty": "306.0"
 }

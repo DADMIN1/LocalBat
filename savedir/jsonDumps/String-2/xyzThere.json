@@ -9,5 +9,22 @@
     "xyzThere(\"abc.xyz\") \u2192 false",
     "xyzThere(\"xyz.abc\") \u2192 true"
   ],
-  "provided_code": "public boolean xyzThere(String str) {\n  }"
+  "testcases_extended": [
+    "xyzThere(\"abcxyz\") \u2192 true",
+    "xyzThere(\"abc.xyz\") \u2192 false",
+    "xyzThere(\"xyz.abc\") \u2192 true",
+    "xyzThere(\"abcxy\") \u2192 false",
+    "xyzThere(\"xyz\") \u2192 true",
+    "xyzThere(\"xy\") \u2192 false",
+    "xyzThere(\"x\") \u2192 false",
+    "xyzThere(\"\") \u2192 false",
+    "xyzThere(\"abc.xyzxyz\") \u2192 true",
+    "xyzThere(\"abc.xxyz\") \u2192 true",
+    "xyzThere(\".xyz\") \u2192 false",
+    "xyzThere(\"12.xyz\") \u2192 false",
+    "xyzThere(\"12xyz\") \u2192 true",
+    "xyzThere(\"1.xyz.xyz2.xyz\") \u2192 false"
+  ],
+  "provided_code": "public boolean xyzThere(String str) {\n  return false;\n}",
+  "difficulty": "218.0"
 }

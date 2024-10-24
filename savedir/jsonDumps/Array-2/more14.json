@@ -9,5 +9,22 @@
     "more14([1, 4, 1, 4]) \u2192 false",
     "more14([1, 1]) \u2192 true"
   ],
-  "provided_code": "public boolean more14(int[] nums) {\n  }"
+  "testcases_extended": [
+    "more14([1, 4, 1]) \u2192 true",
+    "more14([1, 4, 1, 4]) \u2192 false",
+    "more14([1, 1]) \u2192 true",
+    "more14([1, 6, 6]) \u2192 true",
+    "more14([1]) \u2192 true",
+    "more14([1, 4]) \u2192 false",
+    "more14([6, 1, 1]) \u2192 true",
+    "more14([1, 6, 4]) \u2192 false",
+    "more14([1, 1, 4, 4, 1]) \u2192 true",
+    "more14([1, 1, 6, 4, 4, 1]) \u2192 true",
+    "more14([]) \u2192 false",
+    "more14([4, 1, 4, 6]) \u2192 false",
+    "more14([4, 1, 4, 6, 1]) \u2192 false",
+    "more14([1, 4, 1, 4, 1, 6]) \u2192 true"
+  ],
+  "provided_code": "public boolean more14(int[] nums) {\n  return false;\n}",
+  "difficulty": "227.0"
 }

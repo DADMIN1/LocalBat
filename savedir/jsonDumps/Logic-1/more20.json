@@ -9,5 +9,29 @@
     "more20(21) \u2192 true",
     "more20(22) \u2192 true"
   ],
-  "provided_code": "public boolean more20(int n) {\n  }"
+  "testcases_extended": [
+    "more20(20) \u2192 false",
+    "more20(21) \u2192 true",
+    "more20(22) \u2192 true",
+    "more20(23) \u2192 false",
+    "more20(25) \u2192 false",
+    "more20(30) \u2192 false",
+    "more20(31) \u2192 false",
+    "more20(59) \u2192 false",
+    "more20(60) \u2192 false",
+    "more20(61) \u2192 true",
+    "more20(62) \u2192 true",
+    "more20(1020) \u2192 false",
+    "more20(1021) \u2192 true",
+    "more20(1000) \u2192 false",
+    "more20(1001) \u2192 true",
+    "more20(50) \u2192 false",
+    "more20(55) \u2192 false",
+    "more20(40) \u2192 false",
+    "more20(41) \u2192 true",
+    "more20(39) \u2192 false",
+    "more20(42) \u2192 true"
+  ],
+  "provided_code": "public boolean more20(int n) {\n  return false;\n}",
+  "difficulty": "122.4"
 }

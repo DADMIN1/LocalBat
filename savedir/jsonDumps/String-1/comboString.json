@@ -9,5 +9,19 @@
     "comboString(\"hi\", \"Hello\") \u2192 \"hiHellohi\"",
     "comboString(\"aaa\", \"b\") \u2192 \"baaab\""
   ],
-  "provided_code": "public String comboString(String a, String b) {\n  }"
+  "testcases_extended": [
+    "comboString(\"Hello\", \"hi\") \u2192 \"hiHellohi\"",
+    "comboString(\"hi\", \"Hello\") \u2192 \"hiHellohi\"",
+    "comboString(\"aaa\", \"b\") \u2192 \"baaab\"",
+    "comboString(\"b\", \"aaa\") \u2192 \"baaab\"",
+    "comboString(\"aaa\", \"\") \u2192 \"aaa\"",
+    "comboString(\"\", \"bb\") \u2192 \"bb\"",
+    "comboString(\"aaa\", \"1234\") \u2192 \"aaa1234aaa\"",
+    "comboString(\"aaa\", \"bb\") \u2192 \"bbaaabb\"",
+    "comboString(\"a\", \"bb\") \u2192 \"abba\"",
+    "comboString(\"bb\", \"a\") \u2192 \"abba\"",
+    "comboString(\"xyz\", \"ab\") \u2192 \"abxyzab\""
+  ],
+  "provided_code": "public String comboString(String a, String b) {\n  return \"\";\n}",
+  "difficulty": "127.0"
 }

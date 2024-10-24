@@ -9,5 +9,19 @@
     "no34([\"a\", \"bb\", \"ccc\", \"dddd\"]) \u2192 [\"a\", \"bb\"]",
     "no34([\"ccc\", \"dddd\", \"apple\"]) \u2192 [\"apple\"]"
   ],
-  "provided_code": "public List<String> no34(List<String> strings) {\n  }"
+  "testcases_extended": [
+    "no34([\"a\", \"bb\", \"ccc\"]) \u2192 [\"a\", \"bb\"]",
+    "no34([\"a\", \"bb\", \"ccc\", \"dddd\"]) \u2192 [\"a\", \"bb\"]",
+    "no34([\"ccc\", \"dddd\", \"apple\"]) \u2192 [\"apple\"]",
+    "no34([\"this\", \"not\", \"too\", \"long\"]) \u2192 []",
+    "no34([\"a\", \"bbb\", \"cccc\", \"xx\"]) \u2192 [\"a\", \"xx\"]",
+    "no34([\"dddd\", \"ddd\", \"xxxxxxx\"]) \u2192 [\"xxxxxxx\"]",
+    "no34([]) \u2192 []",
+    "no34([\"\"]) \u2192 [\"\"]",
+    "no34([\"empty\", \"\", \"empty\"]) \u2192 [\"empty\", \"\", \"empty\"]",
+    "no34([\"a\"]) \u2192 [\"a\"]",
+    "no34([\"aaaa\", \"bbb\", \"*****\", \"333\"]) \u2192 [\"*****\"]"
+  ],
+  "provided_code": "public List<String> no34(List<String> strings) {\n  return new ArrayList<String>();\n}",
+  "difficulty": "212"
 }

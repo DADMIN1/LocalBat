@@ -9,5 +9,27 @@
     "no14([1, 2, 3, 4]) \u2192 false",
     "no14([2, 3, 4]) \u2192 true"
   ],
-  "provided_code": "public boolean no14(int[] nums) {\n  }"
+  "testcases_extended": [
+    "no14([1, 2, 3]) \u2192 true",
+    "no14([1, 2, 3, 4]) \u2192 false",
+    "no14([2, 3, 4]) \u2192 true",
+    "no14([1, 1, 4, 4]) \u2192 false",
+    "no14([2, 2, 4, 4]) \u2192 true",
+    "no14([2, 3, 4, 1]) \u2192 false",
+    "no14([2, 1, 1]) \u2192 true",
+    "no14([1, 4]) \u2192 false",
+    "no14([2]) \u2192 true",
+    "no14([2, 1]) \u2192 true",
+    "no14([1]) \u2192 true",
+    "no14([4]) \u2192 true",
+    "no14([]) \u2192 true",
+    "no14([1, 1, 1, 1]) \u2192 true",
+    "no14([9, 4, 4, 1]) \u2192 false",
+    "no14([4, 2, 3, 1]) \u2192 false",
+    "no14([4, 2, 3, 5]) \u2192 true",
+    "no14([4, 4, 2]) \u2192 true",
+    "no14([1, 4, 4]) \u2192 false"
+  ],
+  "provided_code": "public boolean no14(int[] nums) {\n  return false;\n}",
+  "difficulty": "233.0"
 }

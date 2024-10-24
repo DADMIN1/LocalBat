@@ -9,5 +9,20 @@
     "inOrder(1, 2, 1, false) \u2192 false",
     "inOrder(1, 1, 2, true) \u2192 true"
   ],
-  "provided_code": "public boolean inOrder(int a, int b, int c, boolean bOk) {\n  }"
+  "testcases_extended": [
+    "inOrder(1, 2, 4, false) \u2192 true",
+    "inOrder(1, 2, 1, false) \u2192 false",
+    "inOrder(1, 1, 2, true) \u2192 true",
+    "inOrder(3, 2, 4, false) \u2192 false",
+    "inOrder(2, 3, 4, false) \u2192 true",
+    "inOrder(3, 2, 4, true) \u2192 true",
+    "inOrder(4, 2, 2, true) \u2192 false",
+    "inOrder(4, 5, 2, true) \u2192 false",
+    "inOrder(2, 4, 6, true) \u2192 true",
+    "inOrder(7, 9, 10, false) \u2192 true",
+    "inOrder(7, 5, 6, true) \u2192 true",
+    "inOrder(7, 5, 4, true) \u2192 false"
+  ],
+  "provided_code": "public boolean inOrder(int a, int b, int c, boolean bOk) {\n  return false;\n}",
+  "difficulty": "139.0"
 }

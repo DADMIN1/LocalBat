@@ -9,5 +9,20 @@
     "sameEnds(\"xx\") \u2192 \"x\"",
     "sameEnds(\"xxx\") \u2192 \"x\""
   ],
-  "provided_code": "public String sameEnds(String string) {\n  }"
+  "testcases_extended": [
+    "sameEnds(\"abXYab\") \u2192 \"ab\"",
+    "sameEnds(\"xx\") \u2192 \"x\"",
+    "sameEnds(\"xxx\") \u2192 \"x\"",
+    "sameEnds(\"xxxx\") \u2192 \"xx\"",
+    "sameEnds(\"javaXYZjava\") \u2192 \"java\"",
+    "sameEnds(\"javajava\") \u2192 \"java\"",
+    "sameEnds(\"xavaXYZjava\") \u2192 \"\"",
+    "sameEnds(\"Hello! and Hello!\") \u2192 \"Hello!\"",
+    "sameEnds(\"x\") \u2192 \"\"",
+    "sameEnds(\"\") \u2192 \"\"",
+    "sameEnds(\"abcb\") \u2192 \"\"",
+    "sameEnds(\"mymmy\") \u2192 \"my\""
+  ],
+  "provided_code": "public String sameEnds(String string) {\n  return \"\";\n}",
+  "difficulty": "321.0"
 }

@@ -9,5 +9,18 @@
     "stringBits(\"Hi\") \u2192 \"H\"",
     "stringBits(\"Heeololeo\") \u2192 \"Hello\""
   ],
-  "provided_code": "public String stringBits(String str) {\n  }"
+  "testcases_extended": [
+    "stringBits(\"Hello\") \u2192 \"Hlo\"",
+    "stringBits(\"Hi\") \u2192 \"H\"",
+    "stringBits(\"Heeololeo\") \u2192 \"Hello\"",
+    "stringBits(\"HiHiHi\") \u2192 \"HHH\"",
+    "stringBits(\"\") \u2192 \"\"",
+    "stringBits(\"Greetings\") \u2192 \"Getns\"",
+    "stringBits(\"Chocoate\") \u2192 \"Coot\"",
+    "stringBits(\"pi\") \u2192 \"p\"",
+    "stringBits(\"Hello Kitten\") \u2192 \"HloKte\"",
+    "stringBits(\"hxaxpxpxy\") \u2192 \"happy\""
+  ],
+  "provided_code": "public String stringBits(String str) {\n  return \"\";\n}",
+  "difficulty": "209.0"
 }

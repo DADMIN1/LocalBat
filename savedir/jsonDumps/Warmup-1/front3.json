@@ -9,5 +9,15 @@
     "front3(\"Chocolate\") \u2192 \"ChoChoCho\"",
     "front3(\"abc\") \u2192 \"abcabcabc\""
   ],
-  "provided_code": "public String front3(String str) {\n  }"
+  "testcases_extended": [
+    "front3(\"Java\") \u2192 \"JavJavJav\"",
+    "front3(\"Chocolate\") \u2192 \"ChoChoCho\"",
+    "front3(\"abc\") \u2192 \"abcabcabc\"",
+    "front3(\"abcXYZ\") \u2192 \"abcabcabc\"",
+    "front3(\"ab\") \u2192 \"ababab\"",
+    "front3(\"a\") \u2192 \"aaa\"",
+    "front3(\"\") \u2192 \"\""
+  ],
+  "provided_code": "public String front3(String str) {\n  return \"\";\n}",
+  "difficulty": "136.0"
 }

@@ -9,5 +9,18 @@
     "mapAB3({\"b\": \"bbb\", \"c\": \"cake\"}) \u2192 {\"a\": \"bbb\", \"b\": \"bbb\", \"c\": \"cake\"}",
     "mapAB3({\"a\": \"aaa\", \"b\": \"bbb\", \"c\": \"cake\"}) \u2192 {\"a\": \"aaa\", \"b\": \"bbb\", \"c\": \"cake\"}"
   ],
-  "provided_code": "public Map<String, String> mapAB3(Map<String, String> map) {\n  }"
+  "testcases_extended": [
+    "mapAB3({\"a\": \"aaa\", \"c\": \"cake\"}) \u2192 {\"a\": \"aaa\", \"b\": \"aaa\", \"c\": \"cake\"}",
+    "mapAB3({\"b\": \"bbb\", \"c\": \"cake\"}) \u2192 {\"a\": \"bbb\", \"b\": \"bbb\", \"c\": \"cake\"}",
+    "mapAB3({\"a\": \"aaa\", \"b\": \"bbb\", \"c\": \"cake\"}) \u2192 {\"a\": \"aaa\", \"b\": \"bbb\", \"c\": \"cake\"}",
+    "mapAB3({\"ccc\": \"ccc\"}) \u2192 {\"ccc\": \"ccc\"}",
+    "mapAB3({\"c\": \"a\", \"d\": \"b\"}) \u2192 {\"c\": \"a\", \"d\": \"b\"}",
+    "mapAB3({}) \u2192 {}",
+    "mapAB3({\"a\": \"\"}) \u2192 {\"a\": \"\", \"b\": \"\"}",
+    "mapAB3({\"b\": \"\"}) \u2192 {\"a\": \"\", \"b\": \"\"}",
+    "mapAB3({\"a\": \"\", \"b\": \"\"}) \u2192 {\"a\": \"\", \"b\": \"\"}",
+    "mapAB3({\"aa\": \"aa\", \"a\": \"apple\", \"z\": \"zzz\"}) \u2192 {\"aa\": \"aa\", \"a\": \"apple\", \"b\": \"apple\", \"z\": \"zzz\"}"
+  ],
+  "provided_code": "public Map<String, String> mapAB3(Map<String, String> map) {\n  return new HashMap<String, String>();\n}",
+  "difficulty": "224"
 }

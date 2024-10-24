@@ -9,5 +9,21 @@
     "catDog(\"catcat\") \u2192 false",
     "catDog(\"1cat1cadodog\") \u2192 true"
   ],
-  "provided_code": "public boolean catDog(String str) {\n  }"
+  "testcases_extended": [
+    "catDog(\"catdog\") \u2192 true",
+    "catDog(\"catcat\") \u2192 false",
+    "catDog(\"1cat1cadodog\") \u2192 true",
+    "catDog(\"catxxdogxxxdog\") \u2192 false",
+    "catDog(\"catxdogxdogxcat\") \u2192 true",
+    "catDog(\"catxdogxdogxca\") \u2192 false",
+    "catDog(\"dogdogcat\") \u2192 false",
+    "catDog(\"dogogcat\") \u2192 true",
+    "catDog(\"dog\") \u2192 false",
+    "catDog(\"cat\") \u2192 false",
+    "catDog(\"ca\") \u2192 true",
+    "catDog(\"c\") \u2192 true",
+    "catDog(\"\") \u2192 true"
+  ],
+  "provided_code": "public boolean catDog(String str) {\n  return false;\n}",
+  "difficulty": "209.0"
 }

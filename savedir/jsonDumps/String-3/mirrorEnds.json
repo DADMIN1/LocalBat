@@ -9,5 +9,19 @@
     "mirrorEnds(\"abca\") \u2192 \"a\"",
     "mirrorEnds(\"aba\") \u2192 \"aba\""
   ],
-  "provided_code": "public String mirrorEnds(String string) {\n  }"
+  "testcases_extended": [
+    "mirrorEnds(\"abXYZba\") \u2192 \"ab\"",
+    "mirrorEnds(\"abca\") \u2192 \"a\"",
+    "mirrorEnds(\"aba\") \u2192 \"aba\"",
+    "mirrorEnds(\"abab\") \u2192 \"\"",
+    "mirrorEnds(\"xxx\") \u2192 \"xxx\"",
+    "mirrorEnds(\"xxYxx\") \u2192 \"xxYxx\"",
+    "mirrorEnds(\"Hi and iH\") \u2192 \"Hi \"",
+    "mirrorEnds(\"x\") \u2192 \"x\"",
+    "mirrorEnds(\"\") \u2192 \"\"",
+    "mirrorEnds(\"123and then 321\") \u2192 \"123\"",
+    "mirrorEnds(\"band andab\") \u2192 \"ba\""
+  ],
+  "provided_code": "public String mirrorEnds(String string) {\n  return \"\";\n}",
+  "difficulty": "324.0"
 }

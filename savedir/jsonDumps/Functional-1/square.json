@@ -9,5 +9,14 @@
     "square([6, 8, -6, -8, 1]) \u2192 [36, 64, 36, 64, 1]",
     "square([]) \u2192 []"
   ],
-  "provided_code": "public List<Integer> square(List<Integer> nums) {\n  }"
+  "testcases_extended": [
+    "square([1, 2, 3]) \u2192 [1, 4, 9]",
+    "square([6, 8, -6, -8, 1]) \u2192 [36, 64, 36, 64, 1]",
+    "square([]) \u2192 []",
+    "square([12]) \u2192 [144]",
+    "square([5, 10]) \u2192 [25, 100]",
+    "square([6, -3, 12, 23, 4, 1, 19, 11, 2, 3, 2]) \u2192 [36, 9, 144, 529, 16, 1, 361, 121, 4, 9, 4]"
+  ],
+  "provided_code": "public List<Integer> square(List<Integer> nums) {\n  return new ArrayList<Integer>();\n}",
+  "difficulty": "203"
 }

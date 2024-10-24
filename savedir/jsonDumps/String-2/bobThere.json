@@ -9,5 +9,21 @@
     "bobThere(\"b9b\") \u2192 true",
     "bobThere(\"bac\") \u2192 false"
   ],
-  "provided_code": "public boolean bobThere(String str) {\n  }"
+  "testcases_extended": [
+    "bobThere(\"abcbob\") \u2192 true",
+    "bobThere(\"b9b\") \u2192 true",
+    "bobThere(\"bac\") \u2192 false",
+    "bobThere(\"bbb\") \u2192 true",
+    "bobThere(\"abcdefb\") \u2192 false",
+    "bobThere(\"123abcbcdbabxyz\") \u2192 true",
+    "bobThere(\"b12\") \u2192 false",
+    "bobThere(\"b1b\") \u2192 true",
+    "bobThere(\"b12b1b\") \u2192 true",
+    "bobThere(\"bbc\") \u2192 false",
+    "bobThere(\"bbb\") \u2192 true",
+    "bobThere(\"bb\") \u2192 false",
+    "bobThere(\"b\") \u2192 false"
+  ],
+  "provided_code": "public boolean bobThere(String str) {\n  return false;\n}",
+  "difficulty": "221.0"
 }

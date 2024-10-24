@@ -9,5 +9,22 @@
     "lessBy10(1, 7, 10) \u2192 false",
     "lessBy10(11, 1, 7) \u2192 true"
   ],
-  "provided_code": "public boolean lessBy10(int a, int b, int c) {\n  }"
+  "testcases_extended": [
+    "lessBy10(1, 7, 11) \u2192 true",
+    "lessBy10(1, 7, 10) \u2192 false",
+    "lessBy10(11, 1, 7) \u2192 true",
+    "lessBy10(10, 7, 1) \u2192 false",
+    "lessBy10(-10, 2, 2) \u2192 true",
+    "lessBy10(2, 11, 11) \u2192 false",
+    "lessBy10(3, 3, 30) \u2192 true",
+    "lessBy10(3, 3, 3) \u2192 false",
+    "lessBy10(10, 1, 11) \u2192 true",
+    "lessBy10(10, 11, 1) \u2192 true",
+    "lessBy10(10, 11, 2) \u2192 false",
+    "lessBy10(3, 30, 3) \u2192 true",
+    "lessBy10(2, 2, -8) \u2192 true",
+    "lessBy10(2, 8, 12) \u2192 true"
+  ],
+  "provided_code": "public boolean lessBy10(int a, int b, int c) {\n  return false;\n}",
+  "difficulty": "148.0"
 }

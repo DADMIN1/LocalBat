@@ -9,5 +9,19 @@
     "wordAppend([\"a\", \"b\", \"a\", \"c\", \"a\", \"d\", \"a\"]) \u2192 \"aa\"",
     "wordAppend([\"a\", \"\", \"a\"]) \u2192 \"a\""
   ],
-  "provided_code": "public String wordAppend(String[] strings) {\n  }"
+  "testcases_extended": [
+    "wordAppend([\"a\", \"b\", \"a\"]) \u2192 \"a\"",
+    "wordAppend([\"a\", \"b\", \"a\", \"c\", \"a\", \"d\", \"a\"]) \u2192 \"aa\"",
+    "wordAppend([\"a\", \"\", \"a\"]) \u2192 \"a\"",
+    "wordAppend([]) \u2192 \"\"",
+    "wordAppend([\"a\", \"b\", \"b\", \"a\", \"a\"]) \u2192 \"ba\"",
+    "wordAppend([\"a\", \"b\", \"b\", \"b\", \"a\", \"c\", \"a\", \"a\"]) \u2192 \"baa\"",
+    "wordAppend([\"a\", \"b\", \"b\", \"b\", \"a\", \"c\", \"a\", \"a\", \"a\", \"b\", \"a\"]) \u2192 \"baaba\"",
+    "wordAppend([\"not\", \"and\", \"or\", \"and\", \"this\", \"and\", \"or\", \"that\", \"not\"]) \u2192 \"andornot\"",
+    "wordAppend([\"a\", \"b\", \"c\"]) \u2192 \"\"",
+    "wordAppend([\"this\", \"or\", \"that\", \"and\", \"this\", \"and\", \"that\"]) \u2192 \"thisandthat\"",
+    "wordAppend([\"xx\", \"xx\", \"yy\", \"xx\", \"zz\", \"yy\", \"zz\", \"xx\"]) \u2192 \"xxyyzzxx\""
+  ],
+  "provided_code": "public String wordAppend(String[] strings) {\n  return \"\";\n}",
+  "difficulty": "356"
 }

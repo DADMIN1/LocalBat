@@ -9,5 +9,14 @@
     "extraFront(\"ab\") \u2192 \"ababab\"",
     "extraFront(\"H\") \u2192 \"HHH\""
   ],
-  "provided_code": "public String extraFront(String str) {\n  }"
+  "testcases_extended": [
+    "extraFront(\"Hello\") \u2192 \"HeHeHe\"",
+    "extraFront(\"ab\") \u2192 \"ababab\"",
+    "extraFront(\"H\") \u2192 \"HHH\"",
+    "extraFront(\"\") \u2192 \"\"",
+    "extraFront(\"Candy\") \u2192 \"CaCaCa\"",
+    "extraFront(\"Code\") \u2192 \"CoCoCo\""
+  ],
+  "provided_code": "public String extraFront(String str) {\n  return \"\";\n}",
+  "difficulty": "184.0"
 }

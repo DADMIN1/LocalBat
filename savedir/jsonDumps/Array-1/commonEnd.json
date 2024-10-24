@@ -9,5 +9,13 @@
     "commonEnd([1, 2, 3], [7, 3, 2]) \u2192 false",
     "commonEnd([1, 2, 3], [1, 3]) \u2192 true"
   ],
-  "provided_code": "public boolean commonEnd(int[] a, int[] b) {\n  }"
+  "testcases_extended": [
+    "commonEnd([1, 2, 3], [7, 3]) \u2192 true",
+    "commonEnd([1, 2, 3], [7, 3, 2]) \u2192 false",
+    "commonEnd([1, 2, 3], [1, 3]) \u2192 true",
+    "commonEnd([1, 2, 3], [1]) \u2192 true",
+    "commonEnd([1, 2, 3], [2]) \u2192 false"
+  ],
+  "provided_code": "public boolean commonEnd(int[] a, int[] b) {\n  return false;\n}",
+  "difficulty": "112.0"
 }

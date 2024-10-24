@@ -9,5 +9,21 @@
     "lastDigit(23, 19, 12) \u2192 false",
     "lastDigit(23, 19, 3) \u2192 true"
   ],
-  "provided_code": "public boolean lastDigit(int a, int b, int c) {\n  }"
+  "testcases_extended": [
+    "lastDigit(23, 19, 13) \u2192 true",
+    "lastDigit(23, 19, 12) \u2192 false",
+    "lastDigit(23, 19, 3) \u2192 true",
+    "lastDigit(23, 19, 39) \u2192 true",
+    "lastDigit(1, 2, 3) \u2192 false",
+    "lastDigit(1, 1, 2) \u2192 true",
+    "lastDigit(1, 2, 2) \u2192 true",
+    "lastDigit(14, 25, 43) \u2192 false",
+    "lastDigit(14, 25, 45) \u2192 true",
+    "lastDigit(248, 106, 1002) \u2192 false",
+    "lastDigit(248, 106, 1008) \u2192 true",
+    "lastDigit(10, 11, 20) \u2192 true",
+    "lastDigit(0, 11, 0) \u2192 true"
+  ],
+  "provided_code": "public boolean lastDigit(int a, int b, int c) {\n  return false;\n}",
+  "difficulty": "145.0"
 }

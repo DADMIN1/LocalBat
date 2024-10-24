@@ -9,5 +9,20 @@
     "greenTicket(2, 2, 2) \u2192 20",
     "greenTicket(1, 1, 2) \u2192 10"
   ],
-  "provided_code": "public int greenTicket(int a, int b, int c) {\n  }"
+  "testcases_extended": [
+    "greenTicket(1, 2, 3) \u2192 0",
+    "greenTicket(2, 2, 2) \u2192 20",
+    "greenTicket(1, 1, 2) \u2192 10",
+    "greenTicket(2, 1, 1) \u2192 10",
+    "greenTicket(1, 2, 1) \u2192 10",
+    "greenTicket(3, 2, 1) \u2192 0",
+    "greenTicket(0, 0, 0) \u2192 20",
+    "greenTicket(2, 0, 0) \u2192 10",
+    "greenTicket(0, 9, 10) \u2192 0",
+    "greenTicket(0, 10, 0) \u2192 10",
+    "greenTicket(9, 9, 9) \u2192 20",
+    "greenTicket(9, 0, 9) \u2192 10"
+  ],
+  "provided_code": "public int greenTicket(int a, int b, int c) {\n  return 0;\n}",
+  "difficulty": "160.0"
 }

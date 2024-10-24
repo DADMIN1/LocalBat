@@ -9,5 +9,16 @@
     "noX([\"xxax\", \"xbxbx\", \"xxcx\"]) \u2192 [\"a\", \"bb\", \"c\"]",
     "noX([\"x\"]) \u2192 [\"\"]"
   ],
-  "provided_code": "public List<String> noX(List<String> strings) {\n  }"
+  "testcases_extended": [
+    "noX([\"ax\", \"bb\", \"cx\"]) \u2192 [\"a\", \"bb\", \"c\"]",
+    "noX([\"xxax\", \"xbxbx\", \"xxcx\"]) \u2192 [\"a\", \"bb\", \"c\"]",
+    "noX([\"x\"]) \u2192 [\"\"]",
+    "noX([\"\"]) \u2192 [\"\"]",
+    "noX([]) \u2192 []",
+    "noX([\"the\", \"taxi\"]) \u2192 [\"the\", \"tai\"]",
+    "noX([\"the\", \"xxtxaxixxx\"]) \u2192 [\"the\", \"tai\"]",
+    "noX([\"this\", \"is\", \"the\", \"x\"]) \u2192 [\"this\", \"is\", \"the\", \"\"]"
+  ],
+  "provided_code": "public List<String> noX(List<String> strings) {\n  return new ArrayList<String>();\n}",
+  "difficulty": "223"
 }
