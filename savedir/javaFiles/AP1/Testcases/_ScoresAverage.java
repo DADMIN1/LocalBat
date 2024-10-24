@@ -7,12 +7,18 @@ public class _ScoresAverage
         "scoresAverage([2, 2, 4, 4])",
         "scoresAverage([4, 4, 4, 2, 2, 2])",
         "scoresAverage([3, 4, 5, 1, 2, 3])",
+        "scoresAverage([5, 6])",
+        "scoresAverage([5, 4])",
+        "scoresAverage([5, 4, 5, 6, 2, 1, 2, 3])",
     };
 
     static int[] expectedResults = {
         4,
         4,
         4,
+        6,
+        5,
+        5,
     };
 
     public static void Validate(boolean printSuccess)
@@ -20,11 +26,17 @@ public class _ScoresAverage
         int[] scores0 = { 2, 2, 4, 4 }; 
         int[] scores1 = { 4, 4, 4, 2, 2, 2 }; 
         int[] scores2 = { 3, 4, 5, 1, 2, 3 }; 
+        int[] scores3 = { 5, 6 }; 
+        int[] scores4 = { 5, 4 }; 
+        int[] scores5 = { 5, 4, 5, 6, 2, 1, 2, 3 }; 
 
         int[] resultsArray = {
             ScoresAverage.scoresAverage(scores0),
             ScoresAverage.scoresAverage(scores1),
             ScoresAverage.scoresAverage(scores2),
+            ScoresAverage.scoresAverage(scores3),
+            ScoresAverage.scoresAverage(scores4),
+            ScoresAverage.scoresAverage(scores5),
         };
 
         boolean allTestsPassed = true;

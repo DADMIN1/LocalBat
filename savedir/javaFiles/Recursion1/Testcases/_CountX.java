@@ -7,11 +7,21 @@ public class _CountX
         "countX(\"xxhixx\")",
         "countX(\"xhixhix\")",
         "countX(\"hi\")",
+        "countX(\"h\")",
+        "countX(\"x\")",
+        "countX(\"\")",
+        "countX(\"hihi\")",
+        "countX(\"hiAAhi12hi\")",
     };
 
     static int[] expectedResults = {
         4,
         3,
+        0,
+        0,
+        1,
+        0,
+        0,
         0,
     };
 
@@ -21,6 +31,11 @@ public class _CountX
             CountX.countX("xxhixx"),
             CountX.countX("xhixhix"),
             CountX.countX("hi"),
+            CountX.countX("h"),
+            CountX.countX("x"),
+            CountX.countX(""),
+            CountX.countX("hihi"),
+            CountX.countX("hiAAhi12hi"),
         };
 
         boolean allTestsPassed = true;

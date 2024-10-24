@@ -7,12 +7,28 @@ public class _NotReplace
         "notReplace(\"is test\")",
         "notReplace(\"is-is\")",
         "notReplace(\"This is right\")",
+        "notReplace(\"This is isabell\")",
+        "notReplace(\"\")",
+        "notReplace(\"is\")",
+        "notReplace(\"isis\")",
+        "notReplace(\"Dis is bliss is\")",
+        "notReplace(\"is his\")",
+        "notReplace(\"xis yis\")",
+        "notReplace(\"AAAis is\")",
     };
 
     static String[] expectedResults = {
         "is not test",
         "is not-is not",
         "This is not right",
+        "This is not isabell",
+        "",
+        "is not",
+        "isis",
+        "Dis is not bliss is not",
+        "is not his",
+        "xis yis",
+        "AAAis is not",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +37,14 @@ public class _NotReplace
             NotReplace.notReplace("is test"),
             NotReplace.notReplace("is-is"),
             NotReplace.notReplace("This is right"),
+            NotReplace.notReplace("This is isabell"),
+            NotReplace.notReplace(""),
+            NotReplace.notReplace("is"),
+            NotReplace.notReplace("isis"),
+            NotReplace.notReplace("Dis is bliss is"),
+            NotReplace.notReplace("is his"),
+            NotReplace.notReplace("xis yis"),
+            NotReplace.notReplace("AAAis is"),
         };
 
         boolean allTestsPassed = true;

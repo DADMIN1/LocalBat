@@ -7,10 +7,18 @@ public class _GroupSumClump
         "groupSumClump(0, [2, 4, 8], 10)",
         "groupSumClump(0, [1, 2, 4, 8, 1], 14)",
         "groupSumClump(0, [2, 4, 4, 8], 14)",
+        "groupSumClump(0, [8, 2, 2, 1], 9)",
+        "groupSumClump(0, [8, 2, 2, 1], 11)",
+        "groupSumClump(0, [1], 1)",
+        "groupSumClump(0, [9], 1)",
     };
 
     static boolean[] expectedResults = {
         true,
+        true,
+        false,
+        true,
+        false,
         true,
         false,
     };
@@ -20,11 +28,19 @@ public class _GroupSumClump
         int[] nums0 = { 2, 4, 8 }; 
         int[] nums1 = { 1, 2, 4, 8, 1 }; 
         int[] nums2 = { 2, 4, 4, 8 }; 
+        int[] nums3 = { 8, 2, 2, 1 }; 
+        int[] nums4 = { 8, 2, 2, 1 }; 
+        int[] nums5 = { 1 }; 
+        int[] nums6 = { 9 }; 
 
         boolean[] resultsArray = {
             GroupSumClump.groupSumClump(0, nums0, 10),
             GroupSumClump.groupSumClump(0, nums1, 14),
             GroupSumClump.groupSumClump(0, nums2, 14),
+            GroupSumClump.groupSumClump(0, nums3, 9),
+            GroupSumClump.groupSumClump(0, nums4, 11),
+            GroupSumClump.groupSumClump(0, nums5, 1),
+            GroupSumClump.groupSumClump(0, nums6, 1),
         };
 
         boolean allTestsPassed = true;

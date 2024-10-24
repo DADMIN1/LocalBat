@@ -7,12 +7,30 @@ public class _CaughtSpeeding
         "caughtSpeeding(60, false)",
         "caughtSpeeding(65, false)",
         "caughtSpeeding(65, true)",
+        "caughtSpeeding(80, false)",
+        "caughtSpeeding(85, false)",
+        "caughtSpeeding(85, true)",
+        "caughtSpeeding(70, false)",
+        "caughtSpeeding(75, false)",
+        "caughtSpeeding(75, true)",
+        "caughtSpeeding(40, false)",
+        "caughtSpeeding(40, true)",
+        "caughtSpeeding(90, false)",
     };
 
     static int[] expectedResults = {
         0,
         1,
         0,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        2,
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +39,15 @@ public class _CaughtSpeeding
             CaughtSpeeding.caughtSpeeding(60, false),
             CaughtSpeeding.caughtSpeeding(65, false),
             CaughtSpeeding.caughtSpeeding(65, true),
+            CaughtSpeeding.caughtSpeeding(80, false),
+            CaughtSpeeding.caughtSpeeding(85, false),
+            CaughtSpeeding.caughtSpeeding(85, true),
+            CaughtSpeeding.caughtSpeeding(70, false),
+            CaughtSpeeding.caughtSpeeding(75, false),
+            CaughtSpeeding.caughtSpeeding(75, true),
+            CaughtSpeeding.caughtSpeeding(40, false),
+            CaughtSpeeding.caughtSpeeding(40, true),
+            CaughtSpeeding.caughtSpeeding(90, false),
         };
 
         boolean allTestsPassed = true;

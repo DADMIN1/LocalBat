@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p173784
 package Warmup1;
 import Warmup1.Testcases._StringE;
+
+// https://codingbat.com/prob/p173784
+// Difficulty: 181.0
 
 public class StringE
 {
@@ -12,11 +14,14 @@ public class StringE
     | stringE("Hello")   → true  |
     | stringE("Heelle")  → true  |
     | stringE("Heelele") → false |
+    | stringE("Hll")     → false |
+    | stringE("e")       → true  |
+    | stringE("")        → false |
     |___________________________*/
 
     public static boolean stringE(String str)
     {
-        
+        return false;
     }
 
     public static void main(String[] args) {

@@ -7,12 +7,30 @@ public class _LuckySum
         "luckySum(1, 2, 3)",
         "luckySum(1, 2, 13)",
         "luckySum(1, 13, 3)",
+        "luckySum(1, 13, 13)",
+        "luckySum(6, 5, 2)",
+        "luckySum(13, 2, 3)",
+        "luckySum(13, 2, 13)",
+        "luckySum(13, 13, 2)",
+        "luckySum(9, 4, 13)",
+        "luckySum(8, 13, 2)",
+        "luckySum(7, 2, 1)",
+        "luckySum(3, 3, 13)",
     };
 
     static int[] expectedResults = {
         6,
         3,
         1,
+        1,
+        13,
+        0,
+        0,
+        0,
+        13,
+        8,
+        10,
+        6,
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +39,15 @@ public class _LuckySum
             LuckySum.luckySum(1, 2, 3),
             LuckySum.luckySum(1, 2, 13),
             LuckySum.luckySum(1, 13, 3),
+            LuckySum.luckySum(1, 13, 13),
+            LuckySum.luckySum(6, 5, 2),
+            LuckySum.luckySum(13, 2, 3),
+            LuckySum.luckySum(13, 2, 13),
+            LuckySum.luckySum(13, 13, 2),
+            LuckySum.luckySum(9, 4, 13),
+            LuckySum.luckySum(8, 13, 2),
+            LuckySum.luckySum(7, 2, 1),
+            LuckySum.luckySum(3, 3, 13),
         };
 
         boolean allTestsPassed = true;

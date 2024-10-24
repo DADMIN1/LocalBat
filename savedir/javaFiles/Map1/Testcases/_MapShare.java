@@ -8,12 +8,16 @@ public class _MapShare
         "mapShare({\"a\": \"aaa\", \"b\": \"bbb\", \"c\": \"ccc\"})",
         "mapShare({\"b\": \"xyz\", \"c\": \"ccc\"})",
         "mapShare({\"a\": \"aaa\", \"c\": \"meh\", \"d\": \"hi\"})",
+        "mapShare({\"a\": \"xyz\", \"b\": \"1234\", \"c\": \"yo\", \"z\": \"zzz\"})",
+        "mapShare({\"a\": \"xyz\", \"b\": \"1234\", \"c\": \"yo\", \"d\": \"ddd\", \"e\": \"everything\"})",
     };
 
     static Map<?,?>[] expectedResults = {
         Map.of("a", "aaa", "b", "aaa"),
         Map.of("b", "xyz"),
         Map.of("a", "aaa", "b", "aaa", "d", "hi"),
+        Map.of("a", "xyz", "b", "xyz", "z", "zzz"),
+        Map.of("a", "xyz", "b", "xyz", "d", "ddd", "e", "everything"),
     };
 
     public static void Validate(boolean printSuccess)
@@ -22,6 +26,8 @@ public class _MapShare
             MapShare.mapShare(Map.of("a", "aaa", "b", "bbb", "c", "ccc")),
             MapShare.mapShare(Map.of("b", "xyz", "c", "ccc")),
             MapShare.mapShare(Map.of("a", "aaa", "c", "meh", "d", "hi")),
+            MapShare.mapShare(Map.of("a", "xyz", "b", "1234", "c", "yo", "z", "zzz")),
+            MapShare.mapShare(Map.of("a", "xyz", "b", "1234", "c", "yo", "d", "ddd", "e", "everything")),
         };
 
         boolean allTestsPassed = true;

@@ -7,11 +7,31 @@ public class _BobThere
         "bobThere(\"abcbob\")",
         "bobThere(\"b9b\")",
         "bobThere(\"bac\")",
+        "bobThere(\"bbb\")",
+        "bobThere(\"abcdefb\")",
+        "bobThere(\"123abcbcdbabxyz\")",
+        "bobThere(\"b12\")",
+        "bobThere(\"b1b\")",
+        "bobThere(\"b12b1b\")",
+        "bobThere(\"bbc\")",
+        "bobThere(\"bbb\")",
+        "bobThere(\"bb\")",
+        "bobThere(\"b\")",
     };
 
     static boolean[] expectedResults = {
         true,
         true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
         false,
     };
 
@@ -21,6 +41,16 @@ public class _BobThere
             BobThere.bobThere("abcbob"),
             BobThere.bobThere("b9b"),
             BobThere.bobThere("bac"),
+            BobThere.bobThere("bbb"),
+            BobThere.bobThere("abcdefb"),
+            BobThere.bobThere("123abcbcdbabxyz"),
+            BobThere.bobThere("b12"),
+            BobThere.bobThere("b1b"),
+            BobThere.bobThere("b12b1b"),
+            BobThere.bobThere("bbc"),
+            BobThere.bobThere("bbb"),
+            BobThere.bobThere("bb"),
+            BobThere.bobThere("b"),
         };
 
         boolean allTestsPassed = true;

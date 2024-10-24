@@ -1,4 +1,6 @@
-Eclipse will warn about every single file until you fill some kind of valid 'return' statement.
-In the 'problems' pane, you can create a filter for these errors:
-    set 'Text:' dropdown to "doesn't contain":  "This method must return"
-TODO: add walkthrough to readme on this
+problems with multiple valid outputs (such as the loose ordering of Array2/EvenOdd) may reject valid solutions.
+
+On Windows, terminals cannot print unicode characters 'U+2713'/'U+2714' (checkmark and heavy checkmark).
+This including VSCode's integrated terminal. Manually changing the codepage to UTF-7 or UTF-8 (`chcp 65000`/`65001`) does not help.
+Eclipse can display the character without any issue.
+

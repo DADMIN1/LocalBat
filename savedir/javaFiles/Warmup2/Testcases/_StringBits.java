@@ -7,12 +7,26 @@ public class _StringBits
         "stringBits(\"Hello\")",
         "stringBits(\"Hi\")",
         "stringBits(\"Heeololeo\")",
+        "stringBits(\"HiHiHi\")",
+        "stringBits(\"\")",
+        "stringBits(\"Greetings\")",
+        "stringBits(\"Chocoate\")",
+        "stringBits(\"pi\")",
+        "stringBits(\"Hello Kitten\")",
+        "stringBits(\"hxaxpxpxy\")",
     };
 
     static String[] expectedResults = {
         "Hlo",
         "H",
         "Hello",
+        "HHH",
+        "",
+        "Getns",
+        "Coot",
+        "p",
+        "HloKte",
+        "happy",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +35,13 @@ public class _StringBits
             StringBits.stringBits("Hello"),
             StringBits.stringBits("Hi"),
             StringBits.stringBits("Heeololeo"),
+            StringBits.stringBits("HiHiHi"),
+            StringBits.stringBits(""),
+            StringBits.stringBits("Greetings"),
+            StringBits.stringBits("Chocoate"),
+            StringBits.stringBits("pi"),
+            StringBits.stringBits("Hello Kitten"),
+            StringBits.stringBits("hxaxpxpxy"),
         };
 
         boolean allTestsPassed = true;

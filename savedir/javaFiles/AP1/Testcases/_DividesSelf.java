@@ -7,12 +7,28 @@ public class _DividesSelf
         "dividesSelf(128)",
         "dividesSelf(12)",
         "dividesSelf(120)",
+        "dividesSelf(122)",
+        "dividesSelf(13)",
+        "dividesSelf(32)",
+        "dividesSelf(22)",
+        "dividesSelf(42)",
+        "dividesSelf(212)",
+        "dividesSelf(213)",
+        "dividesSelf(162)",
     };
 
     static boolean[] expectedResults = {
         true,
         true,
         false,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        false,
+        true,
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +37,14 @@ public class _DividesSelf
             DividesSelf.dividesSelf(128),
             DividesSelf.dividesSelf(12),
             DividesSelf.dividesSelf(120),
+            DividesSelf.dividesSelf(122),
+            DividesSelf.dividesSelf(13),
+            DividesSelf.dividesSelf(32),
+            DividesSelf.dividesSelf(22),
+            DividesSelf.dividesSelf(42),
+            DividesSelf.dividesSelf(212),
+            DividesSelf.dividesSelf(213),
+            DividesSelf.dividesSelf(162),
         };
 
         boolean allTestsPassed = true;

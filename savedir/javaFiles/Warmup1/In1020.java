@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p144535
 package Warmup1;
 import Warmup1.Testcases._In1020;
+
+// https://codingbat.com/prob/p144535
+// Difficulty: 151.0
 
 public class In1020
 {
@@ -12,11 +14,15 @@ public class In1020
     | in1020(12, 99) → true  |
     | in1020(21, 12) → true  |
     | in1020(8, 99)  → false |
+    | in1020(99, 10) → true  |
+    | in1020(20, 20) → true  |
+    | in1020(21, 21) → false |
+    | in1020(9, 9)   → false |
     |_______________________*/
 
     public static boolean in1020(int a, int b)
     {
-        
+        return false;
     }
 
     public static void main(String[] args) {

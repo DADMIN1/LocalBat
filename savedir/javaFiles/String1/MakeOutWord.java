@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p184030
 package String1;
 import String1.Testcases._MakeOutWord;
+
+// https://codingbat.com/prob/p184030
+// Difficulty: 112.0
 
 public class MakeOutWord
 {
@@ -14,11 +16,13 @@ public class MakeOutWord
     | makeOutWord("<<>>", "Yay")    → "<<Yay>>"    |
     | makeOutWord("<<>>", "WooHoo") → "<<WooHoo>>" |
     | makeOutWord("[[]]", "word")   → "[[word]]"   |
+    | makeOutWord("HHoo", "Hello")  → "HHHellooo"  |
+    | makeOutWord("abyz", "YAY")    → "abYAYyz"    |
     |_____________________________________________*/
 
     public static String makeOutWord(String out, String word)
     {
-        
+        return "";
     }
 
     public static void main(String[] args) {

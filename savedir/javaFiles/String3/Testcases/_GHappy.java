@@ -7,12 +7,30 @@ public class _GHappy
         "gHappy(\"xxggxx\")",
         "gHappy(\"xxgxx\")",
         "gHappy(\"xxggyygxx\")",
+        "gHappy(\"g\")",
+        "gHappy(\"gg\")",
+        "gHappy(\"\")",
+        "gHappy(\"xxgggxyz\")",
+        "gHappy(\"xxgggxyg\")",
+        "gHappy(\"xxgggxygg\")",
+        "gHappy(\"mgm\")",
+        "gHappy(\"mggm\")",
+        "gHappy(\"yyygggxyy\")",
     };
 
     static boolean[] expectedResults = {
         true,
         false,
         false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +39,15 @@ public class _GHappy
             GHappy.gHappy("xxggxx"),
             GHappy.gHappy("xxgxx"),
             GHappy.gHappy("xxggyygxx"),
+            GHappy.gHappy("g"),
+            GHappy.gHappy("gg"),
+            GHappy.gHappy(""),
+            GHappy.gHappy("xxgggxyz"),
+            GHappy.gHappy("xxgggxyg"),
+            GHappy.gHappy("xxgggxygg"),
+            GHappy.gHappy("mgm"),
+            GHappy.gHappy("mggm"),
+            GHappy.gHappy("yyygggxyy"),
         };
 
         boolean allTestsPassed = true;

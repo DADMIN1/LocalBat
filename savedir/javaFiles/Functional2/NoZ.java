@@ -1,8 +1,11 @@
-// https://codingbat.com/prob/p105671
 package Functional2;
 import Functional2.Testcases._NoZ;
-
 import java.util.List;
+import java.util.Arrays;
+import java.util.ArrayList;
+
+// https://codingbat.com/prob/p105671
+// Difficulty: 209
 
 public class NoZ
 {
@@ -15,11 +18,14 @@ public class NoZ
     | noZ(["aaa", "bbb", "aza"])            → ["aaa", "bbb"]   |
     | noZ(["hziz", "hzello", "hi"])         → ["hi"]           |
     | noZ(["hello", "howz", "are", "youz"]) → ["hello", "are"] |
+    | noZ([])                               → []               |
+    | noZ([""])                             → [""]             |
+    | noZ(["x", "y", "z"])                  → ["x", "y"]       |
     |_________________________________________________________*/
 
     public static List<String> noZ(List<String> strings)
     {
-        
+        return new ArrayList<String>();
     }
 
     public static void main(String[] args) {

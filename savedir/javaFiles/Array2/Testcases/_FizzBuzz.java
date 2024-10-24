@@ -8,12 +8,30 @@ public class _FizzBuzz
         "fizzBuzz(1, 6)",
         "fizzBuzz(1, 8)",
         "fizzBuzz(1, 11)",
+        "fizzBuzz(1, 16)",
+        "fizzBuzz(1, 4)",
+        "fizzBuzz(1, 2)",
+        "fizzBuzz(50, 56)",
+        "fizzBuzz(15, 17)",
+        "fizzBuzz(30, 36)",
+        "fizzBuzz(1000, 1006)",
+        "fizzBuzz(99, 102)",
+        "fizzBuzz(14, 20)",
     };
 
     static String[][] expectedResults = {
         {"1", "2", "Fizz", "4", "Buzz"},
         {"1", "2", "Fizz", "4", "Buzz", "Fizz", "7"},
         {"1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz"},
+        {"1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz", "11", "Fizz", "13", "14", "FizzBuzz"},
+        {"1", "2", "Fizz"},
+        {"1"},
+        {"Buzz", "Fizz", "52", "53", "Fizz", "Buzz"},
+        {"FizzBuzz", "16"},
+        {"FizzBuzz", "31", "32", "Fizz", "34", "Buzz"},
+        {"Buzz", "1001", "Fizz", "1003", "1004", "FizzBuzz"},
+        {"Fizz", "Buzz", "101"},
+        {"14", "FizzBuzz", "16", "17", "Fizz", "19"},
     };
 
     public static String printArray(String[] array)
@@ -30,6 +48,15 @@ public class _FizzBuzz
             FizzBuzz.fizzBuzz(1, 6),
             FizzBuzz.fizzBuzz(1, 8),
             FizzBuzz.fizzBuzz(1, 11),
+            FizzBuzz.fizzBuzz(1, 16),
+            FizzBuzz.fizzBuzz(1, 4),
+            FizzBuzz.fizzBuzz(1, 2),
+            FizzBuzz.fizzBuzz(50, 56),
+            FizzBuzz.fizzBuzz(15, 17),
+            FizzBuzz.fizzBuzz(30, 36),
+            FizzBuzz.fizzBuzz(1000, 1006),
+            FizzBuzz.fizzBuzz(99, 102),
+            FizzBuzz.fizzBuzz(14, 20),
         };
 
         boolean allTestsPassed = true;

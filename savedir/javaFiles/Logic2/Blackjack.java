@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p117019
 package Logic2;
 import Logic2.Testcases._Blackjack;
+
+// https://codingbat.com/prob/p117019
+// Difficulty: 218.0
 
 public class Blackjack
 {
@@ -13,11 +15,23 @@ public class Blackjack
     | blackjack(19, 21) → 21 |
     | blackjack(21, 19) → 21 |
     | blackjack(19, 22) → 19 |
+    | blackjack(22, 19) → 19 |
+    | blackjack(22, 50) → 0  |
+    | blackjack(22, 22) → 0  |
+    | blackjack(33, 1)  → 1  |
+    | blackjack(1, 2)   → 2  |
+    | blackjack(34, 33) → 0  |
+    | blackjack(17, 19) → 19 |
+    | blackjack(18, 17) → 18 |
+    | blackjack(16, 23) → 16 |
+    | blackjack(3, 4)   → 4  |
+    | blackjack(3, 2)   → 3  |
+    | blackjack(21, 20) → 21 |
     |_______________________*/
 
     public static int blackjack(int a, int b)
     {
-        
+        return 0;
     }
 
     public static void main(String[] args) {

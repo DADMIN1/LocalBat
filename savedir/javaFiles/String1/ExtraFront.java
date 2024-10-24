@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p172063
 package String1;
 import String1.Testcases._ExtraFront;
+
+// https://codingbat.com/prob/p172063
+// Difficulty: 184.0
 
 public class ExtraFront
 {
@@ -14,11 +16,14 @@ public class ExtraFront
     | extraFront("Hello") → "HeHeHe" |
     | extraFront("ab")    → "ababab" |
     | extraFront("H")     → "HHH"    |
+    | extraFront("")      → ""       |
+    | extraFront("Candy") → "CaCaCa" |
+    | extraFront("Code")  → "CoCoCo" |
     |_______________________________*/
 
     public static String extraFront(String str)
     {
-        
+        return "";
     }
 
     public static void main(String[] args) {

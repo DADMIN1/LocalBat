@@ -7,12 +7,22 @@ public class _RepeatEnd
         "repeatEnd(\"Hello\", 3)",
         "repeatEnd(\"Hello\", 2)",
         "repeatEnd(\"Hello\", 1)",
+        "repeatEnd(\"Hello\", 0)",
+        "repeatEnd(\"abc\", 3)",
+        "repeatEnd(\"1234\", 2)",
+        "repeatEnd(\"1234\", 3)",
+        "repeatEnd(\"\", 0)",
     };
 
     static String[] expectedResults = {
         "llollollo",
         "lolo",
         "o",
+        "",
+        "abcabcabc",
+        "3434",
+        "234234234",
+        "",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +31,11 @@ public class _RepeatEnd
             RepeatEnd.repeatEnd("Hello", 3),
             RepeatEnd.repeatEnd("Hello", 2),
             RepeatEnd.repeatEnd("Hello", 1),
+            RepeatEnd.repeatEnd("Hello", 0),
+            RepeatEnd.repeatEnd("abc", 3),
+            RepeatEnd.repeatEnd("1234", 2),
+            RepeatEnd.repeatEnd("1234", 3),
+            RepeatEnd.repeatEnd("", 0),
         };
 
         boolean allTestsPassed = true;

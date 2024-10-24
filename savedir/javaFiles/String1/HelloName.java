@@ -1,23 +1,32 @@
-// https://codingbat.com/prob/p171896
 package String1;
 import String1.Testcases._HelloName;
+
+// https://codingbat.com/prob/p171896
+// Difficulty: 103.0
 
 public class HelloName
 {
     /* Given a string name, e.g. "Bob", 
     return a greeting of the form "Hello Bob!". */
 
-    /*____________________________________
-    |              Testcases              |
-    |_____________________________________|
-    | helloName("Bob")   → "Hello Bob!"   |
-    | helloName("Alice") → "Hello Alice!" |
-    | helloName("X")     → "Hello X!"     |
-    |____________________________________*/
+    /*__________________________________________
+    |                 Testcases                 |
+    |___________________________________________|
+    | helloName("Bob")      → "Hello Bob!"      |
+    | helloName("Alice")    → "Hello Alice!"    |
+    | helloName("X")        → "Hello X!"        |
+    | helloName("Dolly")    → "Hello Dolly!"    |
+    | helloName("Alpha")    → "Hello Alpha!"    |
+    | helloName("Omega")    → "Hello Omega!"    |
+    | helloName("Goodbye")  → "Hello Goodbye!"  |
+    | helloName("ho ho ho") → "Hello ho ho ho!" |
+    | helloName("xyz!")     → "Hello xyz!!"     |
+    | helloName("Hello")    → "Hello Hello!"    |
+    |__________________________________________*/
 
     public static String helloName(String name)
     {
-        
+        return "";
     }
 
     public static void main(String[] args) {

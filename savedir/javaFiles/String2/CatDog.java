@@ -1,22 +1,34 @@
-// https://codingbat.com/prob/p111624
 package String2;
 import String2.Testcases._CatDog;
+
+// https://codingbat.com/prob/p111624
+// Difficulty: 209.0
 
 public class CatDog
 {
     /* Return true if the string "cat" and "dog" appear the same number of times in the given string. */
 
-    /*_______________________________
-    |           Testcases            |
-    |________________________________|
-    | catDog("catdog")       → true  |
-    | catDog("catcat")       → false |
-    | catDog("1cat1cadodog") → true  |
-    |_______________________________*/
+    /*__________________________________
+    |             Testcases             |
+    |___________________________________|
+    | catDog("catdog")          → true  |
+    | catDog("catcat")          → false |
+    | catDog("1cat1cadodog")    → true  |
+    | catDog("catxxdogxxxdog")  → false |
+    | catDog("catxdogxdogxcat") → true  |
+    | catDog("catxdogxdogxca")  → false |
+    | catDog("dogdogcat")       → false |
+    | catDog("dogogcat")        → true  |
+    | catDog("dog")             → false |
+    | catDog("cat")             → false |
+    | catDog("ca")              → true  |
+    | catDog("c")               → true  |
+    | catDog("")                → true  |
+    |__________________________________*/
 
     public static boolean catDog(String str)
     {
-        
+        return false;
     }
 
     public static void main(String[] args) {

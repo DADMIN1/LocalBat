@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p112409
 package Array1;
 import Array1.Testcases._Reverse3;
+
+// https://codingbat.com/prob/p112409
+// Difficulty: 121.0
 
 public class Reverse3
 {
@@ -13,11 +15,16 @@ public class Reverse3
     | reverse3([1, 2, 3])  → [3, 2, 1]  |
     | reverse3([5, 11, 9]) → [9, 11, 5] |
     | reverse3([7, 0, 0])  → [0, 0, 7]  |
+    | reverse3([2, 1, 2])  → [2, 1, 2]  |
+    | reverse3([1, 2, 1])  → [1, 2, 1]  |
+    | reverse3([2, 11, 3]) → [3, 11, 2] |
+    | reverse3([0, 6, 5])  → [5, 6, 0]  |
+    | reverse3([7, 2, 3])  → [3, 2, 7]  |
     |__________________________________*/
 
     public static int[] reverse3(int[] nums)
     {
-        
+        return new int[]{0};
     }
 
     public static void main(String[] args) {

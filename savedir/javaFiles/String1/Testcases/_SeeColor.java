@@ -7,12 +7,28 @@ public class _SeeColor
         "seeColor(\"redxx\")",
         "seeColor(\"xxred\")",
         "seeColor(\"blueTimes\")",
+        "seeColor(\"NoColor\")",
+        "seeColor(\"red\")",
+        "seeColor(\"re\")",
+        "seeColor(\"blu\")",
+        "seeColor(\"blue\")",
+        "seeColor(\"a\")",
+        "seeColor(\"\")",
+        "seeColor(\"xyzred\")",
     };
 
     static String[] expectedResults = {
         "red",
         "",
         "blue",
+        "",
+        "red",
+        "",
+        "",
+        "blue",
+        "",
+        "",
+        "",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +37,14 @@ public class _SeeColor
             SeeColor.seeColor("redxx"),
             SeeColor.seeColor("xxred"),
             SeeColor.seeColor("blueTimes"),
+            SeeColor.seeColor("NoColor"),
+            SeeColor.seeColor("red"),
+            SeeColor.seeColor("re"),
+            SeeColor.seeColor("blu"),
+            SeeColor.seeColor("blue"),
+            SeeColor.seeColor("a"),
+            SeeColor.seeColor(""),
+            SeeColor.seeColor("xyzred"),
         };
 
         boolean allTestsPassed = true;

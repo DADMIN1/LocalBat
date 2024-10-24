@@ -7,11 +7,27 @@ public class _CountHi
         "countHi(\"xxhixx\")",
         "countHi(\"xhixhix\")",
         "countHi(\"hi\")",
+        "countHi(\"hihih\")",
+        "countHi(\"h\")",
+        "countHi(\"\")",
+        "countHi(\"ihihihihih\")",
+        "countHi(\"ihihihihihi\")",
+        "countHi(\"hiAAhi12hi\")",
+        "countHi(\"xhixhxihihhhih\")",
+        "countHi(\"ship\")",
     };
 
     static int[] expectedResults = {
         1,
         2,
+        1,
+        2,
+        0,
+        0,
+        4,
+        5,
+        3,
+        3,
         1,
     };
 
@@ -21,6 +37,14 @@ public class _CountHi
             CountHi.countHi("xxhixx"),
             CountHi.countHi("xhixhix"),
             CountHi.countHi("hi"),
+            CountHi.countHi("hihih"),
+            CountHi.countHi("h"),
+            CountHi.countHi(""),
+            CountHi.countHi("ihihihihih"),
+            CountHi.countHi("ihihihihihi"),
+            CountHi.countHi("hiAAhi12hi"),
+            CountHi.countHi("xhixhxihihhhih"),
+            CountHi.countHi("ship"),
         };
 
         boolean allTestsPassed = true;

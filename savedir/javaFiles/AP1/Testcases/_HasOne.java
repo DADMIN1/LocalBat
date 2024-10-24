@@ -7,11 +7,27 @@ public class _HasOne
         "hasOne(10)",
         "hasOne(22)",
         "hasOne(220)",
+        "hasOne(212)",
+        "hasOne(1)",
+        "hasOne(9)",
+        "hasOne(211112)",
+        "hasOne(121121)",
+        "hasOne(222222)",
+        "hasOne(56156)",
+        "hasOne(56556)",
     };
 
     static boolean[] expectedResults = {
         true,
         false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
         false,
     };
 
@@ -21,6 +37,14 @@ public class _HasOne
             HasOne.hasOne(10),
             HasOne.hasOne(22),
             HasOne.hasOne(220),
+            HasOne.hasOne(212),
+            HasOne.hasOne(1),
+            HasOne.hasOne(9),
+            HasOne.hasOne(211112),
+            HasOne.hasOne(121121),
+            HasOne.hasOne(222222),
+            HasOne.hasOne(56156),
+            HasOne.hasOne(56556),
         };
 
         boolean allTestsPassed = true;

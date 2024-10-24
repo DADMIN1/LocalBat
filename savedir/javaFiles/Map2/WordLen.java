@@ -1,8 +1,10 @@
-// https://codingbat.com/prob/p125327
 package Map2;
 import Map2.Testcases._WordLen;
-
 import java.util.Map;
+import java.util.HashMap;
+
+// https://codingbat.com/prob/p125327
+// Difficulty: 306
 
 public class WordLen
 {
@@ -15,11 +17,13 @@ public class WordLen
     | wordLen(["a", "bb", "a", "bb"])          → {"bb": 2, "a": 1}                |
     | wordLen(["this", "and", "that", "and"])  → {"that": 4, "and": 3, "this": 4} |
     | wordLen(["code", "code", "code", "bug"]) → {"code": 4, "bug": 3}            |
+    | wordLen([])                              → {}                               |
+    | wordLen(["z"])                           → {"z": 1}                         |
     |____________________________________________________________________________*/
 
     public static Map<String, Integer> wordLen(String[] strings)
     {
-        
+        return new HashMap<String, Integer>();
     }
 
     public static void main(String[] args) {

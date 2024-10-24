@@ -8,12 +8,18 @@ public class _WordMultiple
         "wordMultiple([\"a\", \"b\", \"a\", \"c\", \"b\"])",
         "wordMultiple([\"c\", \"b\", \"a\"])",
         "wordMultiple([\"c\", \"c\", \"c\", \"c\"])",
+        "wordMultiple([])",
+        "wordMultiple([\"this\", \"and\", \"this\"])",
+        "wordMultiple([\"d\", \"a\", \"e\", \"d\", \"a\", \"d\", \"b\", \"b\", \"z\", \"a\", \"a\", \"b\", \"z\", \"x\"])",
     };
 
     static Map<?,?>[] expectedResults = {
         Map.of("a", true, "b", true, "c", false),
         Map.of("a", false, "b", false, "c", false),
         Map.of("c", true),
+        Map.of(),
+        Map.of("and", false, "this", true),
+        Map.of("a", true, "b", true, "d", true, "e", false, "x", false, "z", true),
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,11 +27,17 @@ public class _WordMultiple
         String[] strings0 = { "a", "b", "a", "c", "b" }; 
         String[] strings1 = { "c", "b", "a" }; 
         String[] strings2 = { "c", "c", "c", "c" }; 
+        String[] strings3 = {  }; 
+        String[] strings4 = { "this", "and", "this" }; 
+        String[] strings5 = { "d", "a", "e", "d", "a", "d", "b", "b", "z", "a", "a", "b", "z", "x" }; 
 
         Map<?,?>[] resultsArray = {
             WordMultiple.wordMultiple(strings0),
             WordMultiple.wordMultiple(strings1),
             WordMultiple.wordMultiple(strings2),
+            WordMultiple.wordMultiple(strings3),
+            WordMultiple.wordMultiple(strings4),
+            WordMultiple.wordMultiple(strings5),
         };
 
         boolean allTestsPassed = true;

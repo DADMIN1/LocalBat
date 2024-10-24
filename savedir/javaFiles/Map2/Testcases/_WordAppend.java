@@ -7,12 +7,28 @@ public class _WordAppend
         "wordAppend([\"a\", \"b\", \"a\"])",
         "wordAppend([\"a\", \"b\", \"a\", \"c\", \"a\", \"d\", \"a\"])",
         "wordAppend([\"a\", \"\", \"a\"])",
+        "wordAppend([])",
+        "wordAppend([\"a\", \"b\", \"b\", \"a\", \"a\"])",
+        "wordAppend([\"a\", \"b\", \"b\", \"b\", \"a\", \"c\", \"a\", \"a\"])",
+        "wordAppend([\"a\", \"b\", \"b\", \"b\", \"a\", \"c\", \"a\", \"a\", \"a\", \"b\", \"a\"])",
+        "wordAppend([\"not\", \"and\", \"or\", \"and\", \"this\", \"and\", \"or\", \"that\", \"not\"])",
+        "wordAppend([\"a\", \"b\", \"c\"])",
+        "wordAppend([\"this\", \"or\", \"that\", \"and\", \"this\", \"and\", \"that\"])",
+        "wordAppend([\"xx\", \"xx\", \"yy\", \"xx\", \"zz\", \"yy\", \"zz\", \"xx\"])",
     };
 
     static String[] expectedResults = {
         "a",
         "aa",
         "a",
+        "",
+        "ba",
+        "baa",
+        "baaba",
+        "andornot",
+        "",
+        "thisandthat",
+        "xxyyzzxx",
     };
 
     public static void Validate(boolean printSuccess)
@@ -20,11 +36,27 @@ public class _WordAppend
         String[] strings0 = { "a", "b", "a" }; 
         String[] strings1 = { "a", "b", "a", "c", "a", "d", "a" }; 
         String[] strings2 = { "a", "", "a" }; 
+        String[] strings3 = {  }; 
+        String[] strings4 = { "a", "b", "b", "a", "a" }; 
+        String[] strings5 = { "a", "b", "b", "b", "a", "c", "a", "a" }; 
+        String[] strings6 = { "a", "b", "b", "b", "a", "c", "a", "a", "a", "b", "a" }; 
+        String[] strings7 = { "not", "and", "or", "and", "this", "and", "or", "that", "not" }; 
+        String[] strings8 = { "a", "b", "c" }; 
+        String[] strings9 = { "this", "or", "that", "and", "this", "and", "that" }; 
+        String[] strings10 = { "xx", "xx", "yy", "xx", "zz", "yy", "zz", "xx" }; 
 
         String[] resultsArray = {
             WordAppend.wordAppend(strings0),
             WordAppend.wordAppend(strings1),
             WordAppend.wordAppend(strings2),
+            WordAppend.wordAppend(strings3),
+            WordAppend.wordAppend(strings4),
+            WordAppend.wordAppend(strings5),
+            WordAppend.wordAppend(strings6),
+            WordAppend.wordAppend(strings7),
+            WordAppend.wordAppend(strings8),
+            WordAppend.wordAppend(strings9),
+            WordAppend.wordAppend(strings10),
         };
 
         boolean allTestsPassed = true;

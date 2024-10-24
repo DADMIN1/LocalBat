@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p139075
 package String1;
 import String1.Testcases._HasBad;
+
+// https://codingbat.com/prob/p139075
+// Difficulty: 160.0
 
 public class HasBad
 {
@@ -14,11 +16,18 @@ public class HasBad
     | hasBad("badxx")   → true  |
     | hasBad("xbadxx")  → true  |
     | hasBad("xxbadxx") → false |
+    | hasBad("code")    → false |
+    | hasBad("bad")     → true  |
+    | hasBad("ba")      → false |
+    | hasBad("xba")     → false |
+    | hasBad("xbad")    → true  |
+    | hasBad("")        → false |
+    | hasBad("badyy")   → true  |
     |__________________________*/
 
     public static boolean hasBad(String str)
     {
-        
+        return false;
     }
 
     public static void main(String[] args) {

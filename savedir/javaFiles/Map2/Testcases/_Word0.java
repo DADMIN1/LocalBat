@@ -8,12 +8,16 @@ public class _Word0
         "word0([\"a\", \"b\", \"a\", \"b\"])",
         "word0([\"a\", \"b\", \"a\", \"c\", \"b\"])",
         "word0([\"c\", \"b\", \"a\"])",
+        "word0([\"c\", \"c\", \"c\", \"c\"])",
+        "word0([])",
     };
 
     static Map<?,?>[] expectedResults = {
         Map.of("a", 0, "b", 0),
         Map.of("a", 0, "b", 0, "c", 0),
         Map.of("a", 0, "b", 0, "c", 0),
+        Map.of("c", 0),
+        Map.of(),
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,11 +25,15 @@ public class _Word0
         String[] strings0 = { "a", "b", "a", "b" }; 
         String[] strings1 = { "a", "b", "a", "c", "b" }; 
         String[] strings2 = { "c", "b", "a" }; 
+        String[] strings3 = { "c", "c", "c", "c" }; 
+        String[] strings4 = {  }; 
 
         Map<?,?>[] resultsArray = {
             Word0.word0(strings0),
             Word0.word0(strings1),
             Word0.word0(strings2),
+            Word0.word0(strings3),
+            Word0.word0(strings4),
         };
 
         boolean allTestsPassed = true;

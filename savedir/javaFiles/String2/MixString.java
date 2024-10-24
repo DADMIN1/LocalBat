@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p125185
 package String2;
 import String2.Testcases._MixString;
+
+// https://codingbat.com/prob/p125185
+// Difficulty: 227.0
 
 public class MixString
 {
@@ -8,17 +10,27 @@ public class MixString
     the first char of b, the second char of a, the second char of b, 
     and so on. Any leftover chars go at the end of the result. */
 
-    /*_________________________________________
-    |                Testcases                 |
-    |__________________________________________|
-    | mixString("abc", "xyz")    → "axbycz"    |
-    | mixString("Hi", "There")   → "HTihere"   |
-    | mixString("xxxx", "There") → "xTxhxexre" |
-    |_________________________________________*/
+    /*_____________________________________________
+    |                  Testcases                   |
+    |______________________________________________|
+    | mixString("abc", "xyz")      → "axbycz"      |
+    | mixString("Hi", "There")     → "HTihere"     |
+    | mixString("xxxx", "There")   → "xTxhxexre"   |
+    | mixString("xxx", "X")        → "xXxx"        |
+    | mixString("2/", "27 around") → "22/7 around" |
+    | mixString("", "Hello")       → "Hello"       |
+    | mixString("Abc", "")         → "Abc"         |
+    | mixString("", "")            → ""            |
+    | mixString("a", "b")          → "ab"          |
+    | mixString("ax", "b")         → "abx"         |
+    | mixString("a", "bx")         → "abx"         |
+    | mixString("So", "Long")      → "SLoong"      |
+    | mixString("Long", "So")      → "LSoong"      |
+    |_____________________________________________*/
 
     public static String mixString(String a, String b)
     {
-        
+        return "";
     }
 
     public static void main(String[] args) {

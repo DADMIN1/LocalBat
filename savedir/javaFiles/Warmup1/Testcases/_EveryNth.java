@@ -7,12 +7,20 @@ public class _EveryNth
         "everyNth(\"Miracle\", 2)",
         "everyNth(\"abcdefg\", 2)",
         "everyNth(\"abcdefg\", 3)",
+        "everyNth(\"Chocolate\", 3)",
+        "everyNth(\"Chocolates\", 3)",
+        "everyNth(\"Chocolates\", 4)",
+        "everyNth(\"Chocolates\", 100)",
     };
 
     static String[] expectedResults = {
         "Mrce",
         "aceg",
         "adg",
+        "Cca",
+        "Ccas",
+        "Coe",
+        "C",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +29,10 @@ public class _EveryNth
             EveryNth.everyNth("Miracle", 2),
             EveryNth.everyNth("abcdefg", 2),
             EveryNth.everyNth("abcdefg", 3),
+            EveryNth.everyNth("Chocolate", 3),
+            EveryNth.everyNth("Chocolates", 3),
+            EveryNth.everyNth("Chocolates", 4),
+            EveryNth.everyNth("Chocolates", 100),
         };
 
         boolean allTestsPassed = true;

@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p109660
 package Array1;
 import Array1.Testcases._Start1;
+
+// https://codingbat.com/prob/p109660
+// Difficulty: 151.0
 
 public class Start1
 {
@@ -12,11 +14,18 @@ public class Start1
     | start1([1, 2, 3], [1, 3]) → 2 |
     | start1([7, 2, 3], [1])    → 1 |
     | start1([1, 2], [])        → 1 |
+    | start1([], [1, 2])        → 1 |
+    | start1([7], [])           → 0 |
+    | start1([7], [1])          → 1 |
+    | start1([1], [1])          → 2 |
+    | start1([7], [8])          → 0 |
+    | start1([], [])            → 0 |
+    | start1([1, 3], [1])       → 2 |
     |______________________________*/
 
     public static int start1(int[] a, int[] b)
     {
-        
+        return 0;
     }
 
     public static void main(String[] args) {

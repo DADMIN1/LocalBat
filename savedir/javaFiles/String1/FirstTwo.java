@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p163411
 package String1;
 import String1.Testcases._FirstTwo;
+
+// https://codingbat.com/prob/p163411
+// Difficulty: 118.0
 
 public class FirstTwo
 {
@@ -15,11 +17,16 @@ public class FirstTwo
     | firstTwo("Hello")   → "He" |
     | firstTwo("abcdefg") → "ab" |
     | firstTwo("ab")      → "ab" |
+    | firstTwo("a")       → "a"  |
+    | firstTwo("")        → ""   |
+    | firstTwo("Kitten")  → "Ki" |
+    | firstTwo("hi")      → "hi" |
+    | firstTwo("hiya")    → "hi" |
     |___________________________*/
 
     public static String firstTwo(String str)
     {
-        
+        return "";
     }
 
     public static void main(String[] args) {

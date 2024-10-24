@@ -7,12 +7,22 @@ public class _StringX
         "stringX(\"xxHxix\")",
         "stringX(\"abxxxcd\")",
         "stringX(\"xabxxxcdx\")",
+        "stringX(\"xKittenx\")",
+        "stringX(\"Hello\")",
+        "stringX(\"xx\")",
+        "stringX(\"x\")",
+        "stringX(\"\")",
     };
 
     static String[] expectedResults = {
         "xHix",
         "abcd",
         "xabcdx",
+        "xKittenx",
+        "Hello",
+        "xx",
+        "x",
+        "",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +31,11 @@ public class _StringX
             StringX.stringX("xxHxix"),
             StringX.stringX("abxxxcd"),
             StringX.stringX("xabxxxcdx"),
+            StringX.stringX("xKittenx"),
+            StringX.stringX("Hello"),
+            StringX.stringX("xx"),
+            StringX.stringX("x"),
+            StringX.stringX(""),
         };
 
         boolean allTestsPassed = true;

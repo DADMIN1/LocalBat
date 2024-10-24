@@ -8,12 +8,16 @@ public class _RotateLeft3
         "rotateLeft3([1, 2, 3])",
         "rotateLeft3([5, 11, 9])",
         "rotateLeft3([7, 0, 0])",
+        "rotateLeft3([1, 2, 1])",
+        "rotateLeft3([0, 0, 1])",
     };
 
     static int[][] expectedResults = {
         {2, 3, 1},
         {11, 9, 5},
         {0, 0, 7},
+        {2, 1, 1},
+        {0, 1, 0},
     };
 
     public static String printArray(int[] array)
@@ -29,11 +33,15 @@ public class _RotateLeft3
         int[] nums0 = { 1, 2, 3 }; 
         int[] nums1 = { 5, 11, 9 }; 
         int[] nums2 = { 7, 0, 0 }; 
+        int[] nums3 = { 1, 2, 1 }; 
+        int[] nums4 = { 0, 0, 1 }; 
 
         int[][] resultsArray = {
             RotateLeft3.rotateLeft3(nums0),
             RotateLeft3.rotateLeft3(nums1),
             RotateLeft3.rotateLeft3(nums2),
+            RotateLeft3.rotateLeft3(nums3),
+            RotateLeft3.rotateLeft3(nums4),
         };
 
         boolean allTestsPassed = true;

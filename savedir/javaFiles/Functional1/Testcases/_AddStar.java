@@ -9,12 +9,18 @@ public class _AddStar
         "addStar([\"a\", \"bb\", \"ccc\"])",
         "addStar([\"hello\", \"there\"])",
         "addStar([\"*\"])",
+        "addStar([])",
+        "addStar([\"kittens\", \"and\", \"chocolate\", \"and\"])",
+        "addStar([\"empty\", \"string\", \"\"])",
     };
 
     static List<?>[] expectedResults = {
         Arrays.asList("a*", "bb*", "ccc*"),
         Arrays.asList("hello*", "there*"),
         Arrays.asList("**"),
+        Arrays.asList(),
+        Arrays.asList("kittens*", "and*", "chocolate*", "and*"),
+        Arrays.asList("empty*", "string*", "*"),
     };
 
     public static void Validate(boolean printSuccess)
@@ -23,6 +29,9 @@ public class _AddStar
             AddStar.addStar(Arrays.asList("a", "bb", "ccc")),
             AddStar.addStar(Arrays.asList("hello", "there")),
             AddStar.addStar(Arrays.asList("*")),
+            AddStar.addStar(Arrays.asList()),
+            AddStar.addStar(Arrays.asList("kittens", "and", "chocolate", "and")),
+            AddStar.addStar(Arrays.asList("empty", "string", "")),
         };
 
         boolean allTestsPassed = true;

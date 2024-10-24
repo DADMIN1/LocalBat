@@ -7,12 +7,26 @@ public class _EqualIsNot
         "equalIsNot(\"This is not\")",
         "equalIsNot(\"This is notnot\")",
         "equalIsNot(\"noisxxnotyynotxisi\")",
+        "equalIsNot(\"noisxxnotyynotxsi\")",
+        "equalIsNot(\"xxxyyyzzzintint\")",
+        "equalIsNot(\"\")",
+        "equalIsNot(\"isisnotnot\")",
+        "equalIsNot(\"isisnotno7Not\")",
+        "equalIsNot(\"isnotis\")",
+        "equalIsNot(\"mis3notpotbotis\")",
     };
 
     static boolean[] expectedResults = {
         false,
         true,
         true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +35,13 @@ public class _EqualIsNot
             EqualIsNot.equalIsNot("This is not"),
             EqualIsNot.equalIsNot("This is notnot"),
             EqualIsNot.equalIsNot("noisxxnotyynotxisi"),
+            EqualIsNot.equalIsNot("noisxxnotyynotxsi"),
+            EqualIsNot.equalIsNot("xxxyyyzzzintint"),
+            EqualIsNot.equalIsNot(""),
+            EqualIsNot.equalIsNot("isisnotnot"),
+            EqualIsNot.equalIsNot("isisnotno7Not"),
+            EqualIsNot.equalIsNot("isnotis"),
+            EqualIsNot.equalIsNot("mis3notpotbotis"),
         };
 
         boolean allTestsPassed = true;

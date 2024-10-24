@@ -7,12 +7,30 @@ public class _WithoutDoubles
         "withoutDoubles(2, 3, true)",
         "withoutDoubles(3, 3, true)",
         "withoutDoubles(3, 3, false)",
+        "withoutDoubles(2, 3, false)",
+        "withoutDoubles(5, 4, true)",
+        "withoutDoubles(5, 4, false)",
+        "withoutDoubles(5, 5, true)",
+        "withoutDoubles(5, 5, false)",
+        "withoutDoubles(6, 6, true)",
+        "withoutDoubles(6, 6, false)",
+        "withoutDoubles(1, 6, true)",
+        "withoutDoubles(6, 1, false)",
     };
 
     static int[] expectedResults = {
         5,
         7,
         6,
+        5,
+        9,
+        9,
+        11,
+        10,
+        7,
+        12,
+        7,
+        7,
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +39,15 @@ public class _WithoutDoubles
             WithoutDoubles.withoutDoubles(2, 3, true),
             WithoutDoubles.withoutDoubles(3, 3, true),
             WithoutDoubles.withoutDoubles(3, 3, false),
+            WithoutDoubles.withoutDoubles(2, 3, false),
+            WithoutDoubles.withoutDoubles(5, 4, true),
+            WithoutDoubles.withoutDoubles(5, 4, false),
+            WithoutDoubles.withoutDoubles(5, 5, true),
+            WithoutDoubles.withoutDoubles(5, 5, false),
+            WithoutDoubles.withoutDoubles(6, 6, true),
+            WithoutDoubles.withoutDoubles(6, 6, false),
+            WithoutDoubles.withoutDoubles(1, 6, true),
+            WithoutDoubles.withoutDoubles(6, 1, false),
         };
 
         boolean allTestsPassed = true;

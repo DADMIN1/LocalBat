@@ -7,12 +7,24 @@ public class _SortaSum
         "sortaSum(3, 4)",
         "sortaSum(9, 4)",
         "sortaSum(10, 11)",
+        "sortaSum(12, -3)",
+        "sortaSum(-3, 12)",
+        "sortaSum(4, 5)",
+        "sortaSum(4, 6)",
+        "sortaSum(14, 7)",
+        "sortaSum(14, 6)",
     };
 
     static int[] expectedResults = {
         7,
         20,
         21,
+        9,
+        9,
+        9,
+        20,
+        21,
+        20,
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +33,12 @@ public class _SortaSum
             SortaSum.sortaSum(3, 4),
             SortaSum.sortaSum(9, 4),
             SortaSum.sortaSum(10, 11),
+            SortaSum.sortaSum(12, -3),
+            SortaSum.sortaSum(-3, 12),
+            SortaSum.sortaSum(4, 5),
+            SortaSum.sortaSum(4, 6),
+            SortaSum.sortaSum(14, 7),
+            SortaSum.sortaSum(14, 6),
         };
 
         boolean allTestsPassed = true;

@@ -8,12 +8,22 @@ public class _MapAB2
         "mapAB2({\"a\": \"aaa\", \"b\": \"aaa\", \"c\": \"cake\"})",
         "mapAB2({\"a\": \"aaa\", \"b\": \"bbb\"})",
         "mapAB2({\"a\": \"aaa\", \"b\": \"bbb\", \"c\": \"aaa\"})",
+        "mapAB2({\"a\": \"aaa\"})",
+        "mapAB2({\"b\": \"bbb\"})",
+        "mapAB2({\"a\": \"\", \"b\": \"\", \"c\": \"ccc\"})",
+        "mapAB2({})",
+        "mapAB2({\"a\": \"a\", \"b\": \"b\", \"z\": \"zebra\"})",
     };
 
     static Map<?,?>[] expectedResults = {
         Map.of("c", "cake"),
         Map.of("a", "aaa", "b", "bbb"),
         Map.of("a", "aaa", "b", "bbb", "c", "aaa"),
+        Map.of("a", "aaa"),
+        Map.of("b", "bbb"),
+        Map.of("c", "ccc"),
+        Map.of(),
+        Map.of("a", "a", "b", "b", "z", "zebra"),
     };
 
     public static void Validate(boolean printSuccess)
@@ -22,6 +32,11 @@ public class _MapAB2
             MapAB2.mapAB2(Map.of("a", "aaa", "b", "aaa", "c", "cake")),
             MapAB2.mapAB2(Map.of("a", "aaa", "b", "bbb")),
             MapAB2.mapAB2(Map.of("a", "aaa", "b", "bbb", "c", "aaa")),
+            MapAB2.mapAB2(Map.of("a", "aaa")),
+            MapAB2.mapAB2(Map.of("b", "bbb")),
+            MapAB2.mapAB2(Map.of("a", "", "b", "", "c", "ccc")),
+            MapAB2.mapAB2(Map.of()),
+            MapAB2.mapAB2(Map.of("a", "a", "b", "b", "z", "zebra")),
         };
 
         boolean allTestsPassed = true;

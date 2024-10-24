@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p153059
 package Array2;
 import Array2.Testcases._FizzBuzz;
+
+// https://codingbat.com/prob/p153059
+// Difficulty: 299
 
 public class FizzBuzz
 {
@@ -14,17 +16,26 @@ public class FizzBuzz
     This version is a little more complicated than the usual version since you have to allocate and index into an array instead of just printing, 
     and we vary the start/end instead of just always doing 1..100. */
 
-    /*____________________________________________________________________________________
-    |                                      Testcases                                      |
-    |_____________________________________________________________________________________|
-    | fizzBuzz(1, 6)  → ["1", "2", "Fizz", "4", "Buzz"]                                   |
-    | fizzBuzz(1, 8)  → ["1", "2", "Fizz", "4", "Buzz", "Fizz", "7"]                      |
-    | fizzBuzz(1, 11) → ["1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz"] |
-    |____________________________________________________________________________________*/
+    /*_______________________________________________________________________________________________________________________________
+    |                                                           Testcases                                                            |
+    |________________________________________________________________________________________________________________________________|
+    | fizzBuzz(1, 6)       → ["1", "2", "Fizz", "4", "Buzz"]                                                                         |
+    | fizzBuzz(1, 8)       → ["1", "2", "Fizz", "4", "Buzz", "Fizz", "7"]                                                            |
+    | fizzBuzz(1, 11)      → ["1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz"]                                       |
+    | fizzBuzz(1, 16)      → ["1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz", "11", "Fizz", "13", "14", "FizzBuzz"] |
+    | fizzBuzz(1, 4)       → ["1", "2", "Fizz"]                                                                                      |
+    | fizzBuzz(1, 2)       → ["1"]                                                                                                   |
+    | fizzBuzz(50, 56)     → ["Buzz", "Fizz", "52", "53", "Fizz", "Buzz"]                                                            |
+    | fizzBuzz(15, 17)     → ["FizzBuzz", "16"]                                                                                      |
+    | fizzBuzz(30, 36)     → ["FizzBuzz", "31", "32", "Fizz", "34", "Buzz"]                                                          |
+    | fizzBuzz(1000, 1006) → ["Buzz", "1001", "Fizz", "1003", "1004", "FizzBuzz"]                                                    |
+    | fizzBuzz(99, 102)    → ["Fizz", "Buzz", "101"]                                                                                 |
+    | fizzBuzz(14, 20)     → ["14", "FizzBuzz", "16", "17", "Fizz", "19"]                                                            |
+    |_______________________________________________________________________________________________________________________________*/
 
     public static String[] fizzBuzz(int start, int end)
     {
-        
+        return new String[]{""};
     }
 
     public static void main(String[] args) {

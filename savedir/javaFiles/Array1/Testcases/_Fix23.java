@@ -8,12 +8,18 @@ public class _Fix23
         "fix23([1, 2, 3])",
         "fix23([2, 3, 5])",
         "fix23([1, 2, 1])",
+        "fix23([3, 2, 1])",
+        "fix23([2, 2, 3])",
+        "fix23([2, 3, 3])",
     };
 
     static int[][] expectedResults = {
         {1, 2, 0},
         {2, 0, 5},
         {1, 2, 1},
+        {3, 2, 1},
+        {2, 2, 0},
+        {2, 0, 3},
     };
 
     public static String printArray(int[] array)
@@ -29,11 +35,17 @@ public class _Fix23
         int[] nums0 = { 1, 2, 3 }; 
         int[] nums1 = { 2, 3, 5 }; 
         int[] nums2 = { 1, 2, 1 }; 
+        int[] nums3 = { 3, 2, 1 }; 
+        int[] nums4 = { 2, 2, 3 }; 
+        int[] nums5 = { 2, 3, 3 }; 
 
         int[][] resultsArray = {
             Fix23.fix23(nums0),
             Fix23.fix23(nums1),
             Fix23.fix23(nums2),
+            Fix23.fix23(nums3),
+            Fix23.fix23(nums4),
+            Fix23.fix23(nums5),
         };
 
         boolean allTestsPassed = true;

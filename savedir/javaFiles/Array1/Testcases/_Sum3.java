@@ -7,12 +7,18 @@ public class _Sum3
         "sum3([1, 2, 3])",
         "sum3([5, 11, 2])",
         "sum3([7, 0, 0])",
+        "sum3([1, 2, 1])",
+        "sum3([1, 1, 1])",
+        "sum3([2, 7, 2])",
     };
 
     static int[] expectedResults = {
         6,
         18,
         7,
+        4,
+        3,
+        11,
     };
 
     public static void Validate(boolean printSuccess)
@@ -20,11 +26,17 @@ public class _Sum3
         int[] nums0 = { 1, 2, 3 }; 
         int[] nums1 = { 5, 11, 2 }; 
         int[] nums2 = { 7, 0, 0 }; 
+        int[] nums3 = { 1, 2, 1 }; 
+        int[] nums4 = { 1, 1, 1 }; 
+        int[] nums5 = { 2, 7, 2 }; 
 
         int[] resultsArray = {
             Sum3.sum3(nums0),
             Sum3.sum3(nums1),
             Sum3.sum3(nums2),
+            Sum3.sum3(nums3),
+            Sum3.sum3(nums4),
+            Sum3.sum3(nums5),
         };
 
         boolean allTestsPassed = true;

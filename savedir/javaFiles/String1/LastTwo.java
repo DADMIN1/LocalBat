@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p194786
 package String1;
 import String1.Testcases._LastTwo;
+
+// https://codingbat.com/prob/p194786
+// Difficulty: 172.0
 
 public class LastTwo
 {
@@ -13,11 +15,13 @@ public class LastTwo
     | lastTwo("coding") → "codign" |
     | lastTwo("cat")    → "cta"    |
     | lastTwo("ab")     → "ba"     |
+    | lastTwo("a")      → "a"      |
+    | lastTwo("")       → ""       |
     |_____________________________*/
 
     public static String lastTwo(String str)
     {
-        
+        return "";
     }
 
     public static void main(String[] args) {

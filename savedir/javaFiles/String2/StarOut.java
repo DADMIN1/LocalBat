@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p139564
 package String2;
 import String2.Testcases._StarOut;
+
+// https://codingbat.com/prob/p139564
+// Difficulty: 254.0
 
 public class StarOut
 {
@@ -8,17 +10,32 @@ public class StarOut
     where for every star (*) in the string the star and the chars immediately to its left and right are gone. 
     So "ab*cd" yields "ad" and "ab**cd" also yields "ad". */
 
-    /*______________________________
-    |           Testcases           |
-    |_______________________________|
-    | starOut("ab*cd")    → "ad"    |
-    | starOut("ab**cd")   → "ad"    |
-    | starOut("sm*eilly") → "silly" |
-    |______________________________*/
+    /*__________________________________
+    |             Testcases             |
+    |___________________________________|
+    | starOut("ab*cd")       → "ad"     |
+    | starOut("ab**cd")      → "ad"     |
+    | starOut("sm*eilly")    → "silly"  |
+    | starOut("sm*eil*ly")   → "siy"    |
+    | starOut("sm**eil*ly")  → "siy"    |
+    | starOut("sm***eil*ly") → "siy"    |
+    | starOut("stringy*")    → "string" |
+    | starOut("*stringy")    → "tringy" |
+    | starOut("*str*in*gy")  → "ty"     |
+    | starOut("abc")         → "abc"    |
+    | starOut("a*bc")        → "c"      |
+    | starOut("ab")          → "ab"     |
+    | starOut("a*b")         → ""       |
+    | starOut("a")           → "a"      |
+    | starOut("a*")          → ""       |
+    | starOut("*a")          → ""       |
+    | starOut("*")           → ""       |
+    | starOut("")            → ""       |
+    |__________________________________*/
 
     public static String starOut(String str)
     {
-        
+        return "";
     }
 
     public static void main(String[] args) {

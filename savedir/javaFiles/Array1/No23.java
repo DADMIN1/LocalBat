@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p175689
 package Array1;
 import Array1.Testcases._No23;
+
+// https://codingbat.com/prob/p175689
+// Difficulty: 139.0
 
 public class No23
 {
@@ -12,11 +14,19 @@ public class No23
     | no23([4, 5]) → true  |
     | no23([4, 2]) → false |
     | no23([3, 5]) → false |
+    | no23([1, 9]) → true  |
+    | no23([2, 9]) → false |
+    | no23([1, 3]) → false |
+    | no23([1, 1]) → true  |
+    | no23([2, 2]) → false |
+    | no23([3, 3]) → false |
+    | no23([7, 8]) → true  |
+    | no23([8, 7]) → true  |
     |_____________________*/
 
     public static boolean no23(int[] nums)
     {
-        
+        return false;
     }
 
     public static void main(String[] args) {

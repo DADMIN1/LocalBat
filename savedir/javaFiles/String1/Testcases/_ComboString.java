@@ -7,12 +7,28 @@ public class _ComboString
         "comboString(\"Hello\", \"hi\")",
         "comboString(\"hi\", \"Hello\")",
         "comboString(\"aaa\", \"b\")",
+        "comboString(\"b\", \"aaa\")",
+        "comboString(\"aaa\", \"\")",
+        "comboString(\"\", \"bb\")",
+        "comboString(\"aaa\", \"1234\")",
+        "comboString(\"aaa\", \"bb\")",
+        "comboString(\"a\", \"bb\")",
+        "comboString(\"bb\", \"a\")",
+        "comboString(\"xyz\", \"ab\")",
     };
 
     static String[] expectedResults = {
         "hiHellohi",
         "hiHellohi",
         "baaab",
+        "baaab",
+        "aaa",
+        "bb",
+        "aaa1234aaa",
+        "bbaaabb",
+        "abba",
+        "abba",
+        "abxyzab",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +37,14 @@ public class _ComboString
             ComboString.comboString("Hello", "hi"),
             ComboString.comboString("hi", "Hello"),
             ComboString.comboString("aaa", "b"),
+            ComboString.comboString("b", "aaa"),
+            ComboString.comboString("aaa", ""),
+            ComboString.comboString("", "bb"),
+            ComboString.comboString("aaa", "1234"),
+            ComboString.comboString("aaa", "bb"),
+            ComboString.comboString("a", "bb"),
+            ComboString.comboString("bb", "a"),
+            ComboString.comboString("xyz", "ab"),
         };
 
         boolean allTestsPassed = true;

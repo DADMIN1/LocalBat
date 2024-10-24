@@ -1,22 +1,30 @@
-// https://codingbat.com/prob/p103895
 package String1;
 import String1.Testcases._EndsLy;
+
+// https://codingbat.com/prob/p103895
+// Difficulty: 148.0
 
 public class EndsLy
 {
     /* Given a string, return true if it ends in "ly". */
 
-    /*________________________
-    |        Testcases        |
-    |_________________________|
-    | endsLy("oddly") → true  |
-    | endsLy("y")     → false |
-    | endsLy("oddy")  → false |
-    |________________________*/
+    /*_________________________
+    |        Testcases         |
+    |__________________________|
+    | endsLy("oddly")  → true  |
+    | endsLy("y")      → false |
+    | endsLy("oddy")   → false |
+    | endsLy("oddl")   → false |
+    | endsLy("olydd")  → false |
+    | endsLy("ly")     → true  |
+    | endsLy("")       → false |
+    | endsLy("falsey") → false |
+    | endsLy("evenly") → true  |
+    |_________________________*/
 
     public static boolean endsLy(String str)
     {
-        
+        return false;
     }
 
     public static void main(String[] args) {

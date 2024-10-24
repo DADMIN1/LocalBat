@@ -7,12 +7,34 @@ public class _Sum13
         "sum13([1, 2, 2, 1])",
         "sum13([1, 1])",
         "sum13([1, 2, 2, 1, 13])",
+        "sum13([1, 2, 13, 2, 1, 13])",
+        "sum13([13, 1, 2, 13, 2, 1, 13])",
+        "sum13([])",
+        "sum13([13])",
+        "sum13([13, 13])",
+        "sum13([13, 0, 13])",
+        "sum13([13, 1, 13])",
+        "sum13([5, 7, 2])",
+        "sum13([5, 13, 2])",
+        "sum13([0])",
+        "sum13([13, 0])",
     };
 
     static int[] expectedResults = {
         6,
         2,
         6,
+        4,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        14,
+        5,
+        0,
+        0,
     };
 
     public static void Validate(boolean printSuccess)
@@ -20,11 +42,33 @@ public class _Sum13
         int[] nums0 = { 1, 2, 2, 1 }; 
         int[] nums1 = { 1, 1 }; 
         int[] nums2 = { 1, 2, 2, 1, 13 }; 
+        int[] nums3 = { 1, 2, 13, 2, 1, 13 }; 
+        int[] nums4 = { 13, 1, 2, 13, 2, 1, 13 }; 
+        int[] nums5 = {  }; 
+        int[] nums6 = { 13 }; 
+        int[] nums7 = { 13, 13 }; 
+        int[] nums8 = { 13, 0, 13 }; 
+        int[] nums9 = { 13, 1, 13 }; 
+        int[] nums10 = { 5, 7, 2 }; 
+        int[] nums11 = { 5, 13, 2 }; 
+        int[] nums12 = { 0 }; 
+        int[] nums13 = { 13, 0 }; 
 
         int[] resultsArray = {
             Sum13.sum13(nums0),
             Sum13.sum13(nums1),
             Sum13.sum13(nums2),
+            Sum13.sum13(nums3),
+            Sum13.sum13(nums4),
+            Sum13.sum13(nums5),
+            Sum13.sum13(nums6),
+            Sum13.sum13(nums7),
+            Sum13.sum13(nums8),
+            Sum13.sum13(nums9),
+            Sum13.sum13(nums10),
+            Sum13.sum13(nums11),
+            Sum13.sum13(nums12),
+            Sum13.sum13(nums13),
         };
 
         boolean allTestsPassed = true;

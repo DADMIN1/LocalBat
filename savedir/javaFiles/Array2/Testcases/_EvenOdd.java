@@ -8,12 +8,24 @@ public class _EvenOdd
         "evenOdd([1, 0, 1, 0, 0, 1, 1])",
         "evenOdd([3, 3, 2])",
         "evenOdd([2, 2, 2])",
+        "evenOdd([3, 2, 2])",
+        "evenOdd([1, 1, 0, 1, 0])",
+        "evenOdd([1])",
+        "evenOdd([1, 2])",
+        "evenOdd([2, 1])",
+        "evenOdd([])",
     };
 
     static int[][] expectedResults = {
         {0, 0, 0, 1, 1, 1, 1},
         {2, 3, 3},
         {2, 2, 2},
+        {2, 2, 3},
+        {0, 0, 1, 1, 1},
+        {1},
+        {2, 1},
+        {2, 1},
+        {},
     };
 
     public static String printArray(int[] array)
@@ -29,11 +41,23 @@ public class _EvenOdd
         int[] nums0 = { 1, 0, 1, 0, 0, 1, 1 }; 
         int[] nums1 = { 3, 3, 2 }; 
         int[] nums2 = { 2, 2, 2 }; 
+        int[] nums3 = { 3, 2, 2 }; 
+        int[] nums4 = { 1, 1, 0, 1, 0 }; 
+        int[] nums5 = { 1 }; 
+        int[] nums6 = { 1, 2 }; 
+        int[] nums7 = { 2, 1 }; 
+        int[] nums8 = {  }; 
 
         int[][] resultsArray = {
             EvenOdd.evenOdd(nums0),
             EvenOdd.evenOdd(nums1),
             EvenOdd.evenOdd(nums2),
+            EvenOdd.evenOdd(nums3),
+            EvenOdd.evenOdd(nums4),
+            EvenOdd.evenOdd(nums5),
+            EvenOdd.evenOdd(nums6),
+            EvenOdd.evenOdd(nums7),
+            EvenOdd.evenOdd(nums8),
         };
 
         boolean allTestsPassed = true;

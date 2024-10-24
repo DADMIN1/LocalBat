@@ -7,12 +7,16 @@ public class _CommonEnd
         "commonEnd([1, 2, 3], [7, 3])",
         "commonEnd([1, 2, 3], [7, 3, 2])",
         "commonEnd([1, 2, 3], [1, 3])",
+        "commonEnd([1, 2, 3], [1])",
+        "commonEnd([1, 2, 3], [2])",
     };
 
     static boolean[] expectedResults = {
         true,
         false,
         true,
+        true,
+        false,
     };
 
     public static void Validate(boolean printSuccess)
@@ -20,11 +24,15 @@ public class _CommonEnd
         int[] a0 = { 1, 2, 3 }; int[] b0 = { 7, 3 }; 
         int[] a1 = { 1, 2, 3 }; int[] b1 = { 7, 3, 2 }; 
         int[] a2 = { 1, 2, 3 }; int[] b2 = { 1, 3 }; 
+        int[] a3 = { 1, 2, 3 }; int[] b3 = { 1 }; 
+        int[] a4 = { 1, 2, 3 }; int[] b4 = { 2 }; 
 
         boolean[] resultsArray = {
             CommonEnd.commonEnd(a0, b0),
             CommonEnd.commonEnd(a1, b1),
             CommonEnd.commonEnd(a2, b2),
+            CommonEnd.commonEnd(a3, b3),
+            CommonEnd.commonEnd(a4, b4),
         };
 
         boolean allTestsPassed = true;

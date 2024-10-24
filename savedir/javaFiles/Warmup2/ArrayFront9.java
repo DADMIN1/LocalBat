@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p186031
 package Warmup2;
 import Warmup2.Testcases._ArrayFront9;
+
+// https://codingbat.com/prob/p186031
+// Difficulty: 221.0
 
 public class ArrayFront9
 {
@@ -13,11 +15,20 @@ public class ArrayFront9
     | arrayFront9([1, 2, 9, 3, 4]) → true  |
     | arrayFront9([1, 2, 3, 4, 9]) → false |
     | arrayFront9([1, 2, 3, 4, 5]) → false |
+    | arrayFront9([9, 2, 3])       → true  |
+    | arrayFront9([1, 9, 9])       → true  |
+    | arrayFront9([1, 2, 3])       → false |
+    | arrayFront9([1, 9])          → true  |
+    | arrayFront9([5, 5])          → false |
+    | arrayFront9([2])             → false |
+    | arrayFront9([9])             → true  |
+    | arrayFront9([])              → false |
+    | arrayFront9([3, 9, 2, 3, 3]) → true  |
     |_____________________________________*/
 
     public static boolean arrayFront9(int[] nums)
     {
-        
+        return false;
     }
 
     public static void main(String[] args) {

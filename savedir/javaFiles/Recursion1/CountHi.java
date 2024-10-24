@@ -1,22 +1,32 @@
-// https://codingbat.com/prob/p184029
 package Recursion1;
 import Recursion1.Testcases._CountHi;
+
+// https://codingbat.com/prob/p184029
+// Difficulty: 333.0
 
 public class CountHi
 {
     /* Given a string, compute recursively (no loops) the number of times lowercase "hi" appears in the string. */
 
-    /*_______________________
-    |       Testcases        |
-    |________________________|
-    | countHi("xxhixx")  → 1 |
-    | countHi("xhixhix") → 2 |
-    | countHi("hi")      → 1 |
-    |_______________________*/
+    /*______________________________
+    |           Testcases           |
+    |_______________________________|
+    | countHi("xxhixx")         → 1 |
+    | countHi("xhixhix")        → 2 |
+    | countHi("hi")             → 1 |
+    | countHi("hihih")          → 2 |
+    | countHi("h")              → 0 |
+    | countHi("")               → 0 |
+    | countHi("ihihihihih")     → 4 |
+    | countHi("ihihihihihi")    → 5 |
+    | countHi("hiAAhi12hi")     → 3 |
+    | countHi("xhixhxihihhhih") → 3 |
+    | countHi("ship")           → 1 |
+    |______________________________*/
 
     public static int countHi(String str)
     {
-        
+        return 0;
     }
 
     public static void main(String[] args) {

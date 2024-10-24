@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p105031
 package Array2;
 import Array2.Testcases._ShiftLeft;
+
+// https://codingbat.com/prob/p105031
+// Difficulty: 266.0
 
 public class ShiftLeft
 {
@@ -8,17 +10,21 @@ public class ShiftLeft
     2, 5, 3} returns {2, 5, 3, 6}. You may modify and return the given array, 
     or return a new array. */
 
-    /*_______________________________________
-    |               Testcases                |
-    |________________________________________|
-    | shiftLeft([6, 2, 5, 3]) → [2, 5, 3, 6] |
-    | shiftLeft([1, 2])       → [2, 1]       |
-    | shiftLeft([1])          → [1]          |
-    |_______________________________________*/
+    /*_____________________________________________
+    |                  Testcases                   |
+    |______________________________________________|
+    | shiftLeft([6, 2, 5, 3])    → [2, 5, 3, 6]    |
+    | shiftLeft([1, 2])          → [2, 1]          |
+    | shiftLeft([1])             → [1]             |
+    | shiftLeft([])              → []              |
+    | shiftLeft([1, 1, 2, 2, 4]) → [1, 2, 2, 4, 1] |
+    | shiftLeft([1, 1, 1])       → [1, 1, 1]       |
+    | shiftLeft([1, 2, 3])       → [2, 3, 1]       |
+    |_____________________________________________*/
 
     public static int[] shiftLeft(int[] nums)
     {
-        
+        return new int[]{0};
     }
 
     public static void main(String[] args) {

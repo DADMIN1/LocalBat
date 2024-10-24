@@ -8,12 +8,18 @@ public class _MapAB
         "mapAB({\"a\": \"Hi\", \"b\": \"There\"})",
         "mapAB({\"a\": \"Hi\"})",
         "mapAB({\"b\": \"There\"})",
+        "mapAB({\"c\": \"meh\"})",
+        "mapAB({\"a\": \"aaa\", \"ab\": \"nope\", \"b\": \"bbb\", \"c\": \"ccc\"})",
+        "mapAB({\"ab\": \"nope\", \"b\": \"bbb\", \"c\": \"ccc\"})",
     };
 
     static Map<?,?>[] expectedResults = {
         Map.of("a", "Hi", "ab", "HiThere", "b", "There"),
         Map.of("a", "Hi"),
         Map.of("b", "There"),
+        Map.of("c", "meh"),
+        Map.of("a", "aaa", "ab", "aaabbb", "b", "bbb", "c", "ccc"),
+        Map.of("ab", "nope", "b", "bbb", "c", "ccc"),
     };
 
     public static void Validate(boolean printSuccess)
@@ -22,6 +28,9 @@ public class _MapAB
             MapAB.mapAB(Map.of("a", "Hi", "b", "There")),
             MapAB.mapAB(Map.of("a", "Hi")),
             MapAB.mapAB(Map.of("b", "There")),
+            MapAB.mapAB(Map.of("c", "meh")),
+            MapAB.mapAB(Map.of("a", "aaa", "ab", "nope", "b", "bbb", "c", "ccc")),
+            MapAB.mapAB(Map.of("ab", "nope", "b", "bbb", "c", "ccc")),
         };
 
         boolean allTestsPassed = true;

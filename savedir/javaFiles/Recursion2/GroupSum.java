@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p145416
 package Recursion2;
 import Recursion2.Testcases._GroupSum;
+
+// https://codingbat.com/prob/p145416
+// Difficulty: 403.0
 
 public class GroupSum
 {
@@ -13,17 +15,27 @@ public class GroupSum
     The caller can specify the whole array simply by passing start as 0. 
     No loops are needed -- the recursive calls progress down the array. */
 
-    /*___________________________________
-    |             Testcases              |
-    |____________________________________|
-    | groupSum(0, [2, 4, 8], 10) → true  |
-    | groupSum(0, [2, 4, 8], 14) → true  |
-    | groupSum(0, [2, 4, 8], 9)  → false |
-    |___________________________________*/
+    /*_______________________________________
+    |               Testcases                |
+    |________________________________________|
+    | groupSum(0, [2, 4, 8], 10)     → true  |
+    | groupSum(0, [2, 4, 8], 14)     → true  |
+    | groupSum(0, [2, 4, 8], 9)      → false |
+    | groupSum(0, [2, 4, 8], 8)      → true  |
+    | groupSum(1, [2, 4, 8], 8)      → true  |
+    | groupSum(1, [2, 4, 8], 2)      → false |
+    | groupSum(0, [1], 1)            → true  |
+    | groupSum(0, [9], 1)            → false |
+    | groupSum(1, [9], 0)            → true  |
+    | groupSum(0, [], 0)             → true  |
+    | groupSum(0, [10, 2, 2, 5], 17) → true  |
+    | groupSum(0, [10, 2, 2, 5], 15) → true  |
+    | groupSum(0, [10, 2, 2, 5], 9)  → true  |
+    |_______________________________________*/
 
     public static boolean groupSum(int start, int[] nums, int target)
     {
-        
+        return false;
     }
 
     public static void main(String[] args) {

@@ -7,12 +7,20 @@ public class _MakeTags
         "makeTags(\"i\", \"Yay\")",
         "makeTags(\"i\", \"Hello\")",
         "makeTags(\"cite\", \"Yay\")",
+        "makeTags(\"address\", \"here\")",
+        "makeTags(\"body\", \"Heart\")",
+        "makeTags(\"i\", \"i\")",
+        "makeTags(\"i\", \"\")",
     };
 
     static String[] expectedResults = {
         "<i>Yay</i>",
         "<i>Hello</i>",
         "<cite>Yay</cite>",
+        "<address>here</address>",
+        "<body>Heart</body>",
+        "<i>i</i>",
+        "<i></i>",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +29,10 @@ public class _MakeTags
             MakeTags.makeTags("i", "Yay"),
             MakeTags.makeTags("i", "Hello"),
             MakeTags.makeTags("cite", "Yay"),
+            MakeTags.makeTags("address", "here"),
+            MakeTags.makeTags("body", "Heart"),
+            MakeTags.makeTags("i", "i"),
+            MakeTags.makeTags("i", ""),
         };
 
         boolean allTestsPassed = true;

@@ -7,11 +7,19 @@ public class _In1020
         "in1020(12, 99)",
         "in1020(21, 12)",
         "in1020(8, 99)",
+        "in1020(99, 10)",
+        "in1020(20, 20)",
+        "in1020(21, 21)",
+        "in1020(9, 9)",
     };
 
     static boolean[] expectedResults = {
         true,
         true,
+        false,
+        true,
+        true,
+        false,
         false,
     };
 
@@ -21,6 +29,10 @@ public class _In1020
             In1020.in1020(12, 99),
             In1020.in1020(21, 12),
             In1020.in1020(8, 99),
+            In1020.in1020(99, 10),
+            In1020.in1020(20, 20),
+            In1020.in1020(21, 21),
+            In1020.in1020(9, 9),
         };
 
         boolean allTestsPassed = true;

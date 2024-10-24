@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p139411
 package String3;
 import String3.Testcases._MirrorEnds;
+
+// https://codingbat.com/prob/p139411
+// Difficulty: 324.0
 
 public class MirrorEnds
 {
@@ -9,17 +11,25 @@ public class MirrorEnds
     and at the very end of the string in reverse order (possibly overlapping). 
     For example, the string "abXYZba" has the mirror end "ab". */
 
-    /*______________________________
-    |           Testcases           |
-    |_______________________________|
-    | mirrorEnds("abXYZba") → "ab"  |
-    | mirrorEnds("abca")    → "a"   |
-    | mirrorEnds("aba")     → "aba" |
-    |______________________________*/
+    /*________________________________________
+    |                Testcases                |
+    |_________________________________________|
+    | mirrorEnds("abXYZba")         → "ab"    |
+    | mirrorEnds("abca")            → "a"     |
+    | mirrorEnds("aba")             → "aba"   |
+    | mirrorEnds("abab")            → ""      |
+    | mirrorEnds("xxx")             → "xxx"   |
+    | mirrorEnds("xxYxx")           → "xxYxx" |
+    | mirrorEnds("Hi and iH")       → "Hi "   |
+    | mirrorEnds("x")               → "x"     |
+    | mirrorEnds("")                → ""      |
+    | mirrorEnds("123and then 321") → "123"   |
+    | mirrorEnds("band andab")      → "ba"    |
+    |________________________________________*/
 
     public static String mirrorEnds(String string)
     {
-        
+        return "";
     }
 
     public static void main(String[] args) {

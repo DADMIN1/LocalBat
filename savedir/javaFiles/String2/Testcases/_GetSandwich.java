@@ -7,12 +7,30 @@ public class _GetSandwich
         "getSandwich(\"breadjambread\")",
         "getSandwich(\"xxbreadjambreadyy\")",
         "getSandwich(\"xxbreadyy\")",
+        "getSandwich(\"xxbreadbreadjambreadyy\")",
+        "getSandwich(\"breadAbread\")",
+        "getSandwich(\"breadbread\")",
+        "getSandwich(\"abcbreaz\")",
+        "getSandwich(\"xyz\")",
+        "getSandwich(\"\")",
+        "getSandwich(\"breadbreaxbread\")",
+        "getSandwich(\"breaxbreadybread\")",
+        "getSandwich(\"breadbreadbreadbread\")",
     };
 
     static String[] expectedResults = {
         "jam",
         "jam",
         "",
+        "breadjam",
+        "A",
+        "",
+        "",
+        "",
+        "",
+        "breax",
+        "y",
+        "breadbread",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +39,15 @@ public class _GetSandwich
             GetSandwich.getSandwich("breadjambread"),
             GetSandwich.getSandwich("xxbreadjambreadyy"),
             GetSandwich.getSandwich("xxbreadyy"),
+            GetSandwich.getSandwich("xxbreadbreadjambreadyy"),
+            GetSandwich.getSandwich("breadAbread"),
+            GetSandwich.getSandwich("breadbread"),
+            GetSandwich.getSandwich("abcbreaz"),
+            GetSandwich.getSandwich("xyz"),
+            GetSandwich.getSandwich(""),
+            GetSandwich.getSandwich("breadbreaxbread"),
+            GetSandwich.getSandwich("breaxbreadybread"),
+            GetSandwich.getSandwich("breadbreadbreadbread"),
         };
 
         boolean allTestsPassed = true;

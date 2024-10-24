@@ -7,10 +7,32 @@ public class _SameEnds
         "sameEnds([5, 6, 45, 99, 13, 5, 6], 1)",
         "sameEnds([5, 6, 45, 99, 13, 5, 6], 2)",
         "sameEnds([5, 6, 45, 99, 13, 5, 6], 3)",
+        "sameEnds([1, 2, 5, 2, 1], 1)",
+        "sameEnds([1, 2, 5, 2, 1], 2)",
+        "sameEnds([1, 2, 5, 2, 1], 0)",
+        "sameEnds([1, 2, 5, 2, 1], 5)",
+        "sameEnds([1, 1, 1], 0)",
+        "sameEnds([1, 1, 1], 1)",
+        "sameEnds([1, 1, 1], 2)",
+        "sameEnds([1, 1, 1], 3)",
+        "sameEnds([1], 1)",
+        "sameEnds([], 0)",
+        "sameEnds([4, 2, 4, 5], 1)",
     };
 
     static boolean[] expectedResults = {
         false,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
         true,
         false,
     };
@@ -20,11 +42,33 @@ public class _SameEnds
         int[] nums0 = { 5, 6, 45, 99, 13, 5, 6 }; 
         int[] nums1 = { 5, 6, 45, 99, 13, 5, 6 }; 
         int[] nums2 = { 5, 6, 45, 99, 13, 5, 6 }; 
+        int[] nums3 = { 1, 2, 5, 2, 1 }; 
+        int[] nums4 = { 1, 2, 5, 2, 1 }; 
+        int[] nums5 = { 1, 2, 5, 2, 1 }; 
+        int[] nums6 = { 1, 2, 5, 2, 1 }; 
+        int[] nums7 = { 1, 1, 1 }; 
+        int[] nums8 = { 1, 1, 1 }; 
+        int[] nums9 = { 1, 1, 1 }; 
+        int[] nums10 = { 1, 1, 1 }; 
+        int[] nums11 = { 1 }; 
+        int[] nums12 = {  }; 
+        int[] nums13 = { 4, 2, 4, 5 }; 
 
         boolean[] resultsArray = {
             SameEnds.sameEnds(nums0, 1),
             SameEnds.sameEnds(nums1, 2),
             SameEnds.sameEnds(nums2, 3),
+            SameEnds.sameEnds(nums3, 1),
+            SameEnds.sameEnds(nums4, 2),
+            SameEnds.sameEnds(nums5, 0),
+            SameEnds.sameEnds(nums6, 5),
+            SameEnds.sameEnds(nums7, 0),
+            SameEnds.sameEnds(nums8, 1),
+            SameEnds.sameEnds(nums9, 2),
+            SameEnds.sameEnds(nums10, 3),
+            SameEnds.sameEnds(nums11, 1),
+            SameEnds.sameEnds(nums12, 0),
+            SameEnds.sameEnds(nums13, 1),
         };
 
         boolean allTestsPassed = true;

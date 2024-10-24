@@ -7,12 +7,18 @@ public class _Right2
         "right2(\"Hello\")",
         "right2(\"java\")",
         "right2(\"Hi\")",
+        "right2(\"code\")",
+        "right2(\"cat\")",
+        "right2(\"12345\")",
     };
 
     static String[] expectedResults = {
         "loHel",
         "vaja",
         "Hi",
+        "deco",
+        "atc",
+        "45123",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +27,9 @@ public class _Right2
             Right2.right2("Hello"),
             Right2.right2("java"),
             Right2.right2("Hi"),
+            Right2.right2("code"),
+            Right2.right2("cat"),
+            Right2.right2("12345"),
         };
 
         boolean allTestsPassed = true;

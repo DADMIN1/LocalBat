@@ -1,8 +1,10 @@
-// https://codingbat.com/prob/p196458
 package Map1;
 import Map1.Testcases._Topping2;
-
 import java.util.Map;
+import java.util.HashMap;
+
+// https://codingbat.com/prob/p196458
+// Difficulty: 215
 
 public class Topping2
 {
@@ -16,11 +18,14 @@ public class Topping2
     | topping2({"ice cream": "cherry"})                    → {"yogurt": "cherry", "ice cream": "cherry"}                    |
     | topping2({"spinach": "dirt", "ice cream": "cherry"}) → {"yogurt": "cherry", "spinach": "nuts", "ice cream": "cherry"} |
     | topping2({"yogurt": "salt"})                         → {"yogurt": "salt"}                                             |
+    | topping2({"yogurt": "salt", "bread": "butter"})      → {"yogurt": "salt", "bread": "butter"}                          |
+    | topping2({})                                         → {}                                                             |
+    | topping2({"ice cream": "air", "salad": "oil"})       → {"yogurt": "air", "ice cream": "air", "salad": "oil"}          |
     |______________________________________________________________________________________________________________________*/
 
     public static Map<String, String> topping2(Map<String, String> map)
     {
-        
+        return new HashMap<String, String>();
     }
 
     public static void main(String[] args) {

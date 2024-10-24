@@ -1,23 +1,29 @@
-// https://codingbat.com/prob/p126212
 package Warmup2;
 import Warmup2.Testcases._StringYak;
+
+// https://codingbat.com/prob/p126212
+// Difficulty: 236.0
 
 public class StringYak
 {
     /* Suppose the string "yak" is unlucky. Given a string, return a version where all the "yak" are removed, 
     but the "a" can be any char. The "yak" strings will not overlap. */
 
-    /*________________________________
-    |            Testcases            |
-    |_________________________________|
-    | stringYak("yakpak")   → "pak"   |
-    | stringYak("pakyak")   → "pak"   |
-    | stringYak("yak123ya") → "123ya" |
-    |________________________________*/
+    /*_________________________________________
+    |                Testcases                 |
+    |__________________________________________|
+    | stringYak("yakpak")         → "pak"      |
+    | stringYak("pakyak")         → "pak"      |
+    | stringYak("yak123ya")       → "123ya"    |
+    | stringYak("yak")            → ""         |
+    | stringYak("yakxxxyak")      → "xxx"      |
+    | stringYak("HiyakHi")        → "HiHi"     |
+    | stringYak("xxxyakyyyakzzz") → "xxxyyzzz" |
+    |_________________________________________*/
 
     public static String stringYak(String str)
     {
-        
+        return "";
     }
 
     public static void main(String[] args) {

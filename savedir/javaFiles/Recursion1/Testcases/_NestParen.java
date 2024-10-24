@@ -7,12 +7,36 @@ public class _NestParen
         "nestParen(\"(())\")",
         "nestParen(\"((()))\")",
         "nestParen(\"(((x))\")",
+        "nestParen(\"((())\")",
+        "nestParen(\"((()()\")",
+        "nestParen(\"()\")",
+        "nestParen(\"\")",
+        "nestParen(\"(yy)\")",
+        "nestParen(\"(())\")",
+        "nestParen(\"(((y))\")",
+        "nestParen(\"((y)))\")",
+        "nestParen(\"((()))\")",
+        "nestParen(\"(())))\")",
+        "nestParen(\"((yy())))\")",
+        "nestParen(\"(((())))\")",
     };
 
     static boolean[] expectedResults = {
         true,
         true,
         false,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false,
+        true,
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +45,18 @@ public class _NestParen
             NestParen.nestParen("(())"),
             NestParen.nestParen("((()))"),
             NestParen.nestParen("(((x))"),
+            NestParen.nestParen("((())"),
+            NestParen.nestParen("((()()"),
+            NestParen.nestParen("()"),
+            NestParen.nestParen(""),
+            NestParen.nestParen("(yy)"),
+            NestParen.nestParen("(())"),
+            NestParen.nestParen("(((y))"),
+            NestParen.nestParen("((y)))"),
+            NestParen.nestParen("((()))"),
+            NestParen.nestParen("(())))"),
+            NestParen.nestParen("((yy())))"),
+            NestParen.nestParen("(((())))"),
         };
 
         boolean allTestsPassed = true;

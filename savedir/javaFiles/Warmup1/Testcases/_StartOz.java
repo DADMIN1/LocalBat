@@ -7,12 +7,30 @@ public class _StartOz
         "startOz(\"ozymandias\")",
         "startOz(\"bzoo\")",
         "startOz(\"oxx\")",
+        "startOz(\"oz\")",
+        "startOz(\"ounce\")",
+        "startOz(\"o\")",
+        "startOz(\"abc\")",
+        "startOz(\"\")",
+        "startOz(\"zoo\")",
+        "startOz(\"aztec\")",
+        "startOz(\"zzzz\")",
+        "startOz(\"oznic\")",
     };
 
     static String[] expectedResults = {
         "oz",
         "z",
         "o",
+        "oz",
+        "o",
+        "o",
+        "",
+        "",
+        "",
+        "z",
+        "z",
+        "oz",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +39,15 @@ public class _StartOz
             StartOz.startOz("ozymandias"),
             StartOz.startOz("bzoo"),
             StartOz.startOz("oxx"),
+            StartOz.startOz("oz"),
+            StartOz.startOz("ounce"),
+            StartOz.startOz("o"),
+            StartOz.startOz("abc"),
+            StartOz.startOz(""),
+            StartOz.startOz("zoo"),
+            StartOz.startOz("aztec"),
+            StartOz.startOz("zzzz"),
+            StartOz.startOz("oznic"),
         };
 
         boolean allTestsPassed = true;

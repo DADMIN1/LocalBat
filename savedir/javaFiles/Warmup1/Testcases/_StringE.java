@@ -7,10 +7,16 @@ public class _StringE
         "stringE(\"Hello\")",
         "stringE(\"Heelle\")",
         "stringE(\"Heelele\")",
+        "stringE(\"Hll\")",
+        "stringE(\"e\")",
+        "stringE(\"\")",
     };
 
     static boolean[] expectedResults = {
         true,
+        true,
+        false,
+        false,
         true,
         false,
     };
@@ -21,6 +27,9 @@ public class _StringE
             StringE.stringE("Hello"),
             StringE.stringE("Heelle"),
             StringE.stringE("Heelele"),
+            StringE.stringE("Hll"),
+            StringE.stringE("e"),
+            StringE.stringE(""),
         };
 
         boolean allTestsPassed = true;

@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p168357
 package Array2;
 import Array2.Testcases._Has77;
+
+// https://codingbat.com/prob/p168357
+// Difficulty: 245.0
 
 public class Has77
 {
@@ -8,17 +10,28 @@ public class Has77
     or there are two 7's separated by one element, such as with {7, 
     1, 7}. */
 
-    /*_______________________________
-    |           Testcases            |
-    |________________________________|
-    | has77([1, 7, 7])       → true  |
-    | has77([1, 7, 1, 7])    → true  |
-    | has77([1, 7, 1, 1, 7]) → false |
-    |_______________________________*/
+    /*__________________________________
+    |             Testcases             |
+    |___________________________________|
+    | has77([1, 7, 7])          → true  |
+    | has77([1, 7, 1, 7])       → true  |
+    | has77([1, 7, 1, 1, 7])    → false |
+    | has77([7, 7, 1, 1, 7])    → true  |
+    | has77([2, 7, 2, 2, 7, 2]) → false |
+    | has77([2, 7, 2, 2, 7, 7]) → true  |
+    | has77([7, 2, 7, 2, 2, 7]) → true  |
+    | has77([7, 2, 6, 2, 2, 7]) → false |
+    | has77([7, 7, 7])          → true  |
+    | has77([7, 1, 7])          → true  |
+    | has77([7, 1, 1])          → false |
+    | has77([1, 2])             → false |
+    | has77([1, 7])             → false |
+    | has77([7])                → false |
+    |__________________________________*/
 
     public static boolean has77(int[] nums)
     {
-        
+        return false;
     }
 
     public static void main(String[] args) {

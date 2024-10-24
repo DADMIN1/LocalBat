@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p125268
 package Warmup1;
 import Warmup1.Testcases._EndUp;
+
+// https://codingbat.com/prob/p125268
+// Difficulty: 187.0
 
 public class EndUp
 {
@@ -14,11 +16,15 @@ public class EndUp
     | endUp("Hello")    → "HeLLO"    |
     | endUp("hi there") → "hi thERE" |
     | endUp("hi")       → "HI"       |
+    | endUp("woo hoo")  → "woo HOO"  |
+    | endUp("xyz12")    → "xyZ12"    |
+    | endUp("x")        → "X"        |
+    | endUp("")         → ""         |
     |_______________________________*/
 
     public static String endUp(String str)
     {
-        
+        return "";
     }
 
     public static void main(String[] args) {

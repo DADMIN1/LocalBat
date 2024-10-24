@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p180920
 package Array2;
 import Array2.Testcases._FizzArray;
+
+// https://codingbat.com/prob/p180920
+// Difficulty: 230
 
 public class FizzArray
 {
@@ -17,11 +19,14 @@ public class FizzArray
     | fizzArray(4)  → [0, 1, 2, 3]                   |
     | fizzArray(1)  → [0]                            |
     | fizzArray(10) → [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] |
+    | fizzArray(0)  → []                             |
+    | fizzArray(2)  → [0, 1]                         |
+    | fizzArray(7)  → [0, 1, 2, 3, 4, 5, 6]          |
     |_______________________________________________*/
 
     public static int[] fizzArray(int n)
     {
-        
+        return new int[]{0};
     }
 
     public static void main(String[] args) {

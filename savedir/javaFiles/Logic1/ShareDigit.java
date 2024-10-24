@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p153748
 package Logic1;
 import Logic1.Testcases._ShareDigit;
+
+// https://codingbat.com/prob/p153748
+// Difficulty: 166.0
 
 public class ShareDigit
 {
@@ -14,11 +16,18 @@ public class ShareDigit
     | shareDigit(12, 23) → true  |
     | shareDigit(12, 43) → false |
     | shareDigit(12, 44) → false |
+    | shareDigit(23, 12) → true  |
+    | shareDigit(23, 39) → true  |
+    | shareDigit(23, 19) → false |
+    | shareDigit(30, 90) → true  |
+    | shareDigit(30, 91) → false |
+    | shareDigit(55, 55) → true  |
+    | shareDigit(55, 44) → false |
     |___________________________*/
 
     public static boolean shareDigit(int a, int b)
     {
-        
+        return false;
     }
 
     public static void main(String[] args) {

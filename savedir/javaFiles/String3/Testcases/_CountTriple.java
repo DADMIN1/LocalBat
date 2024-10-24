@@ -7,12 +7,30 @@ public class _CountTriple
         "countTriple(\"abcXXXabc\")",
         "countTriple(\"xxxabyyyycd\")",
         "countTriple(\"a\")",
+        "countTriple(\"\")",
+        "countTriple(\"XXXabc\")",
+        "countTriple(\"XXXXabc\")",
+        "countTriple(\"XXXXXabc\")",
+        "countTriple(\"222abyyycdXXX\")",
+        "countTriple(\"abYYYabXXXXXab\")",
+        "countTriple(\"abYYXabXXYXXab\")",
+        "countTriple(\"abYYXabXXYXXab\")",
+        "countTriple(\"122abhhh2\")",
     };
 
     static int[] expectedResults = {
         1,
         3,
         0,
+        0,
+        1,
+        2,
+        3,
+        3,
+        4,
+        0,
+        0,
+        1,
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +39,15 @@ public class _CountTriple
             CountTriple.countTriple("abcXXXabc"),
             CountTriple.countTriple("xxxabyyyycd"),
             CountTriple.countTriple("a"),
+            CountTriple.countTriple(""),
+            CountTriple.countTriple("XXXabc"),
+            CountTriple.countTriple("XXXXabc"),
+            CountTriple.countTriple("XXXXXabc"),
+            CountTriple.countTriple("222abyyycdXXX"),
+            CountTriple.countTriple("abYYYabXXXXXab"),
+            CountTriple.countTriple("abYYXabXXYXXab"),
+            CountTriple.countTriple("abYYXabXXYXXab"),
+            CountTriple.countTriple("122abhhh2"),
         };
 
         boolean allTestsPassed = true;

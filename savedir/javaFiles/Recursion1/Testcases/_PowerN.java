@@ -7,12 +7,28 @@ public class _PowerN
         "powerN(3, 1)",
         "powerN(3, 2)",
         "powerN(3, 3)",
+        "powerN(2, 1)",
+        "powerN(2, 2)",
+        "powerN(2, 3)",
+        "powerN(2, 4)",
+        "powerN(2, 5)",
+        "powerN(10, 1)",
+        "powerN(10, 2)",
+        "powerN(10, 3)",
     };
 
     static int[] expectedResults = {
         3,
         9,
         27,
+        2,
+        4,
+        8,
+        16,
+        32,
+        10,
+        100,
+        1000,
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +37,14 @@ public class _PowerN
             PowerN.powerN(3, 1),
             PowerN.powerN(3, 2),
             PowerN.powerN(3, 3),
+            PowerN.powerN(2, 1),
+            PowerN.powerN(2, 2),
+            PowerN.powerN(2, 3),
+            PowerN.powerN(2, 4),
+            PowerN.powerN(2, 5),
+            PowerN.powerN(10, 1),
+            PowerN.powerN(10, 2),
+            PowerN.powerN(10, 3),
         };
 
         boolean allTestsPassed = true;

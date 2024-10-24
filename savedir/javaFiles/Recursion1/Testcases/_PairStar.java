@@ -7,12 +7,26 @@ public class _PairStar
         "pairStar(\"hello\")",
         "pairStar(\"xxyy\")",
         "pairStar(\"aaaa\")",
+        "pairStar(\"aaab\")",
+        "pairStar(\"aa\")",
+        "pairStar(\"a\")",
+        "pairStar(\"\")",
+        "pairStar(\"noadjacent\")",
+        "pairStar(\"abba\")",
+        "pairStar(\"abbba\")",
     };
 
     static String[] expectedResults = {
         "hel*lo",
         "x*xy*y",
         "a*a*a*a",
+        "a*a*ab",
+        "a*a",
+        "a",
+        "",
+        "noadjacent",
+        "ab*ba",
+        "ab*b*ba",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +35,13 @@ public class _PairStar
             PairStar.pairStar("hello"),
             PairStar.pairStar("xxyy"),
             PairStar.pairStar("aaaa"),
+            PairStar.pairStar("aaab"),
+            PairStar.pairStar("aa"),
+            PairStar.pairStar("a"),
+            PairStar.pairStar(""),
+            PairStar.pairStar("noadjacent"),
+            PairStar.pairStar("abba"),
+            PairStar.pairStar("abbba"),
         };
 
         boolean allTestsPassed = true;

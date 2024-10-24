@@ -7,11 +7,27 @@ public class _Close10
         "close10(8, 13)",
         "close10(13, 8)",
         "close10(13, 7)",
+        "close10(7, 13)",
+        "close10(9, 13)",
+        "close10(13, 8)",
+        "close10(10, 12)",
+        "close10(11, 10)",
+        "close10(5, 21)",
+        "close10(0, 20)",
+        "close10(10, 10)",
     };
 
     static int[] expectedResults = {
         8,
         8,
+        0,
+        0,
+        9,
+        8,
+        10,
+        10,
+        5,
+        0,
         0,
     };
 
@@ -21,6 +37,14 @@ public class _Close10
             Close10.close10(8, 13),
             Close10.close10(13, 8),
             Close10.close10(13, 7),
+            Close10.close10(7, 13),
+            Close10.close10(9, 13),
+            Close10.close10(13, 8),
+            Close10.close10(10, 12),
+            Close10.close10(11, 10),
+            Close10.close10(5, 21),
+            Close10.close10(0, 20),
+            Close10.close10(10, 10),
         };
 
         boolean allTestsPassed = true;

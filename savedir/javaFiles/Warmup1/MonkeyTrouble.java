@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p181646
 package Warmup1;
 import Warmup1.Testcases._MonkeyTrouble;
+
+// https://codingbat.com/prob/p181646
+// Difficulty: 106.0
 
 public class MonkeyTrouble
 {
@@ -14,11 +16,12 @@ public class MonkeyTrouble
     | monkeyTrouble(true, true)   → true  |
     | monkeyTrouble(false, false) → true  |
     | monkeyTrouble(true, false)  → false |
+    | monkeyTrouble(false, true)  → false |
     |____________________________________*/
 
     public static boolean monkeyTrouble(boolean aSmile, boolean bSmile)
     {
-        
+        return false;
     }
 
     public static void main(String[] args) {

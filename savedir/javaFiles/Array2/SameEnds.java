@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p134300
 package Array2;
 import Array2.Testcases._SameEnds;
+
+// https://codingbat.com/prob/p134300
+// Difficulty: 260.0
 
 public class SameEnds
 {
@@ -14,11 +16,22 @@ public class SameEnds
     | sameEnds([5, 6, 45, 99, 13, 5, 6], 1) → false |
     | sameEnds([5, 6, 45, 99, 13, 5, 6], 2) → true  |
     | sameEnds([5, 6, 45, 99, 13, 5, 6], 3) → false |
+    | sameEnds([1, 2, 5, 2, 1], 1)          → true  |
+    | sameEnds([1, 2, 5, 2, 1], 2)          → false |
+    | sameEnds([1, 2, 5, 2, 1], 0)          → true  |
+    | sameEnds([1, 2, 5, 2, 1], 5)          → true  |
+    | sameEnds([1, 1, 1], 0)                → true  |
+    | sameEnds([1, 1, 1], 1)                → true  |
+    | sameEnds([1, 1, 1], 2)                → true  |
+    | sameEnds([1, 1, 1], 3)                → true  |
+    | sameEnds([1], 1)                      → true  |
+    | sameEnds([], 0)                       → true  |
+    | sameEnds([4, 2, 4, 5], 1)             → false |
     |______________________________________________*/
 
     public static boolean sameEnds(int[] nums, int len)
     {
-        
+        return false;
     }
 
     public static void main(String[] args) {

@@ -7,12 +7,18 @@ public class _NoX
         "noX(\"xaxb\")",
         "noX(\"abc\")",
         "noX(\"xx\")",
+        "noX(\"\")",
+        "noX(\"axxbxx\")",
+        "noX(\"Hellox\")",
     };
 
     static String[] expectedResults = {
         "ab",
         "abc",
         "",
+        "",
+        "ab",
+        "Hello",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +27,9 @@ public class _NoX
             NoX.noX("xaxb"),
             NoX.noX("abc"),
             NoX.noX("xx"),
+            NoX.noX(""),
+            NoX.noX("axxbxx"),
+            NoX.noX("Hellox"),
         };
 
         boolean allTestsPassed = true;

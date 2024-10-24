@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p123837
 package AP1;
 import AP1.Testcases._ScoresAverage;
+
+// https://codingbat.com/prob/p123837
+// Difficulty: 212.0
 
 public class ScoresAverage
 {
@@ -13,17 +15,20 @@ public class ScoresAverage
     Write your helper method after your scoresAverage() method in the JavaBat text area. 
     Normally you would compute averages with doubles, but here we use ints so the expected results are exact. */
 
-    /*______________________________________
-    |               Testcases               |
-    |_______________________________________|
-    | scoresAverage([2, 2, 4, 4])       → 4 |
-    | scoresAverage([4, 4, 4, 2, 2, 2]) → 4 |
-    | scoresAverage([3, 4, 5, 1, 2, 3]) → 4 |
-    |______________________________________*/
+    /*____________________________________________
+    |                  Testcases                  |
+    |_____________________________________________|
+    | scoresAverage([2, 2, 4, 4])             → 4 |
+    | scoresAverage([4, 4, 4, 2, 2, 2])       → 4 |
+    | scoresAverage([3, 4, 5, 1, 2, 3])       → 4 |
+    | scoresAverage([5, 6])                   → 6 |
+    | scoresAverage([5, 4])                   → 5 |
+    | scoresAverage([5, 4, 5, 6, 2, 1, 2, 3]) → 5 |
+    |____________________________________________*/
 
     public static int scoresAverage(int[] scores)
     {
-        
+        return 0;
     }
 
     public static void main(String[] args) {

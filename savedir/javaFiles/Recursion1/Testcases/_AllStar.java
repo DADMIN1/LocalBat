@@ -7,12 +7,22 @@ public class _AllStar
         "allStar(\"hello\")",
         "allStar(\"abc\")",
         "allStar(\"ab\")",
+        "allStar(\"a\")",
+        "allStar(\"\")",
+        "allStar(\"3.14\")",
+        "allStar(\"Chocolate\")",
+        "allStar(\"1234\")",
     };
 
     static String[] expectedResults = {
         "h*e*l*l*o",
         "a*b*c",
         "a*b",
+        "a",
+        "",
+        "3*.*1*4",
+        "C*h*o*c*o*l*a*t*e",
+        "1*2*3*4",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +31,11 @@ public class _AllStar
             AllStar.allStar("hello"),
             AllStar.allStar("abc"),
             AllStar.allStar("ab"),
+            AllStar.allStar("a"),
+            AllStar.allStar(""),
+            AllStar.allStar("3.14"),
+            AllStar.allStar("Chocolate"),
+            AllStar.allStar("1234"),
         };
 
         boolean allTestsPassed = true;

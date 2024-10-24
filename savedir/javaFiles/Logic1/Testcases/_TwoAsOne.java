@@ -7,9 +7,27 @@ public class _TwoAsOne
         "twoAsOne(1, 2, 3)",
         "twoAsOne(3, 1, 2)",
         "twoAsOne(3, 2, 2)",
+        "twoAsOne(2, 3, 1)",
+        "twoAsOne(5, 3, -2)",
+        "twoAsOne(5, 3, -3)",
+        "twoAsOne(2, 5, 3)",
+        "twoAsOne(9, 5, 5)",
+        "twoAsOne(9, 4, 5)",
+        "twoAsOne(5, 4, 9)",
+        "twoAsOne(3, 3, 0)",
+        "twoAsOne(3, 3, 2)",
     };
 
     static boolean[] expectedResults = {
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
         true,
         true,
         false,
@@ -21,6 +39,15 @@ public class _TwoAsOne
             TwoAsOne.twoAsOne(1, 2, 3),
             TwoAsOne.twoAsOne(3, 1, 2),
             TwoAsOne.twoAsOne(3, 2, 2),
+            TwoAsOne.twoAsOne(2, 3, 1),
+            TwoAsOne.twoAsOne(5, 3, -2),
+            TwoAsOne.twoAsOne(5, 3, -3),
+            TwoAsOne.twoAsOne(2, 5, 3),
+            TwoAsOne.twoAsOne(9, 5, 5),
+            TwoAsOne.twoAsOne(9, 4, 5),
+            TwoAsOne.twoAsOne(5, 4, 9),
+            TwoAsOne.twoAsOne(3, 3, 0),
+            TwoAsOne.twoAsOne(3, 3, 2),
         };
 
         boolean allTestsPassed = true;

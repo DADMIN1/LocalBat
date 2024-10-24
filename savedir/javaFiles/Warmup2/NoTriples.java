@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p170221
 package Warmup2;
 import Warmup2.Testcases._NoTriples;
+
+// https://codingbat.com/prob/p170221
+// Difficulty: 242.0
 
 public class NoTriples
 {
@@ -13,11 +15,17 @@ public class NoTriples
     | noTriples([1, 1, 2, 2, 1])       → true  |
     | noTriples([1, 1, 2, 2, 2, 1])    → false |
     | noTriples([1, 1, 1, 2, 2, 2, 1]) → false |
+    | noTriples([1, 1, 2, 2, 1, 2, 1]) → true  |
+    | noTriples([1, 2, 1])             → true  |
+    | noTriples([1, 1, 1])             → false |
+    | noTriples([1, 1])                → true  |
+    | noTriples([1])                   → true  |
+    | noTriples([])                    → true  |
     |_________________________________________*/
 
     public static boolean noTriples(int[] nums)
     {
-        
+        return false;
     }
 
     public static void main(String[] args) {

@@ -8,12 +8,14 @@ public class _FirstChar
         "firstChar([\"salt\", \"tea\", \"soda\", \"toast\"])",
         "firstChar([\"aa\", \"bb\", \"cc\", \"aAA\", \"cCC\", \"d\"])",
         "firstChar([])",
+        "firstChar([\"apple\", \"bells\", \"salt\", \"aardvark\", \"bells\", \"sun\", \"zen\", \"bells\"])",
     };
 
     static Map<?,?>[] expectedResults = {
         Map.of("s", "saltsoda", "t", "teatoast"),
         Map.of("a", "aaaAA", "b", "bb", "c", "cccCC", "d", "d"),
         Map.of(),
+        Map.of("a", "appleaardvark", "b", "bellsbellsbells", "s", "saltsun", "z", "zen"),
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,11 +23,13 @@ public class _FirstChar
         String[] strings0 = { "salt", "tea", "soda", "toast" }; 
         String[] strings1 = { "aa", "bb", "cc", "aAA", "cCC", "d" }; 
         String[] strings2 = {  }; 
+        String[] strings3 = { "apple", "bells", "salt", "aardvark", "bells", "sun", "zen", "bells" }; 
 
         Map<?,?>[] resultsArray = {
             FirstChar.firstChar(strings0),
             FirstChar.firstChar(strings1),
             FirstChar.firstChar(strings2),
+            FirstChar.firstChar(strings3),
         };
 
         boolean allTestsPassed = true;

@@ -8,12 +8,18 @@ public class _FizzArray3
         "fizzArray3(5, 10)",
         "fizzArray3(11, 18)",
         "fizzArray3(1, 3)",
+        "fizzArray3(1, 2)",
+        "fizzArray3(1, 1)",
+        "fizzArray3(1000, 1005)",
     };
 
     static int[][] expectedResults = {
         {5, 6, 7, 8, 9},
         {11, 12, 13, 14, 15, 16, 17},
         {1, 2},
+        {1},
+        {},
+        {1000, 1001, 1002, 1003, 1004},
     };
 
     public static String printArray(int[] array)
@@ -30,6 +36,9 @@ public class _FizzArray3
             FizzArray3.fizzArray3(5, 10),
             FizzArray3.fizzArray3(11, 18),
             FizzArray3.fizzArray3(1, 3),
+            FizzArray3.fizzArray3(1, 2),
+            FizzArray3.fizzArray3(1, 1),
+            FizzArray3.fizzArray3(1000, 1005),
         };
 
         boolean allTestsPassed = true;

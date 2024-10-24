@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p132118
 package String1;
 import String1.Testcases._ConCat;
+
+// https://codingbat.com/prob/p132118
+// Difficulty: 169.0
 
 public class ConCat
 {
@@ -8,17 +10,20 @@ public class ConCat
     However, if the concatenation creates a double-char, then omit one of the chars, 
     so "abc" and "cat" yields "abcat". */
 
-    /*________________________________
-    |            Testcases            |
-    |_________________________________|
-    | conCat("abc", "cat") → "abcat"  |
-    | conCat("dog", "cat") → "dogcat" |
-    | conCat("abc", "")    → "abc"    |
-    |________________________________*/
+    /*____________________________________
+    |              Testcases              |
+    |_____________________________________|
+    | conCat("abc", "cat")   → "abcat"    |
+    | conCat("dog", "cat")   → "dogcat"   |
+    | conCat("abc", "")      → "abc"      |
+    | conCat("", "cat")      → "cat"      |
+    | conCat("pig", "g")     → "pig"      |
+    | conCat("pig", "doggy") → "pigdoggy" |
+    |____________________________________*/
 
     public static String conCat(String a, String b)
     {
-        
+        return "";
     }
 
     public static void main(String[] args) {

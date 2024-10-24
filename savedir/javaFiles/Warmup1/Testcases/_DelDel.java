@@ -7,12 +7,28 @@ public class _DelDel
         "delDel(\"adelbc\")",
         "delDel(\"adelHello\")",
         "delDel(\"adedbc\")",
+        "delDel(\"abcdel\")",
+        "delDel(\"add\")",
+        "delDel(\"ad\")",
+        "delDel(\"a\")",
+        "delDel(\"\")",
+        "delDel(\"del\")",
+        "delDel(\"adel\")",
+        "delDel(\"aadelbb\")",
     };
 
     static String[] expectedResults = {
         "abc",
         "aHello",
         "adedbc",
+        "abcdel",
+        "add",
+        "ad",
+        "a",
+        "",
+        "del",
+        "a",
+        "aadelbb",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +37,14 @@ public class _DelDel
             DelDel.delDel("adelbc"),
             DelDel.delDel("adelHello"),
             DelDel.delDel("adedbc"),
+            DelDel.delDel("abcdel"),
+            DelDel.delDel("add"),
+            DelDel.delDel("ad"),
+            DelDel.delDel("a"),
+            DelDel.delDel(""),
+            DelDel.delDel("del"),
+            DelDel.delDel("adel"),
+            DelDel.delDel("aadelbb"),
         };
 
         boolean allTestsPassed = true;

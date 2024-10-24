@@ -8,12 +8,18 @@ public class _MiddleWay
         "middleWay([1, 2, 3], [4, 5, 6])",
         "middleWay([7, 7, 7], [3, 8, 0])",
         "middleWay([5, 2, 9], [1, 4, 5])",
+        "middleWay([1, 9, 7], [4, 8, 8])",
+        "middleWay([1, 2, 3], [3, 1, 4])",
+        "middleWay([1, 2, 3], [4, 1, 1])",
     };
 
     static int[][] expectedResults = {
         {2, 5},
         {7, 8},
         {2, 4},
+        {9, 8},
+        {2, 1},
+        {2, 1},
     };
 
     public static String printArray(int[] array)
@@ -29,11 +35,17 @@ public class _MiddleWay
         int[] a0 = { 1, 2, 3 }; int[] b0 = { 4, 5, 6 }; 
         int[] a1 = { 7, 7, 7 }; int[] b1 = { 3, 8, 0 }; 
         int[] a2 = { 5, 2, 9 }; int[] b2 = { 1, 4, 5 }; 
+        int[] a3 = { 1, 9, 7 }; int[] b3 = { 4, 8, 8 }; 
+        int[] a4 = { 1, 2, 3 }; int[] b4 = { 3, 1, 4 }; 
+        int[] a5 = { 1, 2, 3 }; int[] b5 = { 4, 1, 1 }; 
 
         int[][] resultsArray = {
             MiddleWay.middleWay(a0, b0),
             MiddleWay.middleWay(a1, b1),
             MiddleWay.middleWay(a2, b2),
+            MiddleWay.middleWay(a3, b3),
+            MiddleWay.middleWay(a4, b4),
+            MiddleWay.middleWay(a5, b5),
         };
 
         boolean allTestsPassed = true;

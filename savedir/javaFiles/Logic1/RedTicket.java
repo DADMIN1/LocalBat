@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p170833
 package Logic1;
 import Logic1.Testcases._RedTicket;
+
+// https://codingbat.com/prob/p170833
+// Difficulty: 157.0
 
 public class RedTicket
 {
@@ -16,11 +18,19 @@ public class RedTicket
     | redTicket(2, 2, 2) → 10 |
     | redTicket(2, 2, 1) → 0  |
     | redTicket(0, 0, 0) → 5  |
+    | redTicket(2, 0, 0) → 1  |
+    | redTicket(1, 1, 1) → 5  |
+    | redTicket(1, 2, 1) → 0  |
+    | redTicket(1, 2, 0) → 1  |
+    | redTicket(0, 2, 2) → 1  |
+    | redTicket(1, 2, 2) → 1  |
+    | redTicket(0, 2, 0) → 0  |
+    | redTicket(1, 1, 2) → 0  |
     |________________________*/
 
     public static int redTicket(int a, int b, int c)
     {
-        
+        return 0;
     }
 
     public static void main(String[] args) {

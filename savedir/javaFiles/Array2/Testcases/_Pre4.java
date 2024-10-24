@@ -8,12 +8,26 @@ public class _Pre4
         "pre4([1, 2, 4, 1])",
         "pre4([3, 1, 4])",
         "pre4([1, 4, 4])",
+        "pre4([1, 4, 4, 2])",
+        "pre4([1, 3, 4, 2, 4])",
+        "pre4([4, 4])",
+        "pre4([3, 3, 4])",
+        "pre4([1, 2, 1, 4])",
+        "pre4([2, 1, 4, 2])",
+        "pre4([2, 1, 2, 1, 4, 2])",
     };
 
     static int[][] expectedResults = {
         {1, 2},
         {3, 1},
         {1},
+        {1},
+        {1, 3},
+        {},
+        {3, 3},
+        {1, 2, 1},
+        {2, 1},
+        {2, 1, 2, 1},
     };
 
     public static String printArray(int[] array)
@@ -29,11 +43,25 @@ public class _Pre4
         int[] nums0 = { 1, 2, 4, 1 }; 
         int[] nums1 = { 3, 1, 4 }; 
         int[] nums2 = { 1, 4, 4 }; 
+        int[] nums3 = { 1, 4, 4, 2 }; 
+        int[] nums4 = { 1, 3, 4, 2, 4 }; 
+        int[] nums5 = { 4, 4 }; 
+        int[] nums6 = { 3, 3, 4 }; 
+        int[] nums7 = { 1, 2, 1, 4 }; 
+        int[] nums8 = { 2, 1, 4, 2 }; 
+        int[] nums9 = { 2, 1, 2, 1, 4, 2 }; 
 
         int[][] resultsArray = {
             Pre4.pre4(nums0),
             Pre4.pre4(nums1),
             Pre4.pre4(nums2),
+            Pre4.pre4(nums3),
+            Pre4.pre4(nums4),
+            Pre4.pre4(nums5),
+            Pre4.pre4(nums6),
+            Pre4.pre4(nums7),
+            Pre4.pre4(nums8),
+            Pre4.pre4(nums9),
         };
 
         boolean allTestsPassed = true;

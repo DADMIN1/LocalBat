@@ -7,12 +7,20 @@ public class _FirstHalf
         "firstHalf(\"WooHoo\")",
         "firstHalf(\"HelloThere\")",
         "firstHalf(\"abcdef\")",
+        "firstHalf(\"ab\")",
+        "firstHalf(\"\")",
+        "firstHalf(\"0123456789\")",
+        "firstHalf(\"kitten\")",
     };
 
     static String[] expectedResults = {
         "Woo",
         "Hello",
         "abc",
+        "a",
+        "",
+        "01234",
+        "kit",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +29,10 @@ public class _FirstHalf
             FirstHalf.firstHalf("WooHoo"),
             FirstHalf.firstHalf("HelloThere"),
             FirstHalf.firstHalf("abcdef"),
+            FirstHalf.firstHalf("ab"),
+            FirstHalf.firstHalf(""),
+            FirstHalf.firstHalf("0123456789"),
+            FirstHalf.firstHalf("kitten"),
         };
 
         boolean allTestsPassed = true;

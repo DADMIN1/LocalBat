@@ -7,12 +7,32 @@ public class _Count7
         "count7(717)",
         "count7(7)",
         "count7(123)",
+        "count7(77)",
+        "count7(7123)",
+        "count7(771237)",
+        "count7(771737)",
+        "count7(47571)",
+        "count7(777777)",
+        "count7(70701277)",
+        "count7(777576197)",
+        "count7(99999)",
+        "count7(99799)",
     };
 
     static int[] expectedResults = {
         2,
         1,
         0,
+        2,
+        1,
+        3,
+        4,
+        2,
+        6,
+        4,
+        5,
+        0,
+        1,
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +41,16 @@ public class _Count7
             Count7.count7(717),
             Count7.count7(7),
             Count7.count7(123),
+            Count7.count7(77),
+            Count7.count7(7123),
+            Count7.count7(771237),
+            Count7.count7(771737),
+            Count7.count7(47571),
+            Count7.count7(777777),
+            Count7.count7(70701277),
+            Count7.count7(777576197),
+            Count7.count7(99999),
+            Count7.count7(99799),
         };
 
         boolean allTestsPassed = true;

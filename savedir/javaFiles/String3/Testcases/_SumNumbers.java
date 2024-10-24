@@ -7,12 +7,24 @@ public class _SumNumbers
         "sumNumbers(\"abc123xyz\")",
         "sumNumbers(\"aa11b33\")",
         "sumNumbers(\"7 11\")",
+        "sumNumbers(\"Chocolate\")",
+        "sumNumbers(\"5hoco1a1e\")",
+        "sumNumbers(\"5$$1;;1!!\")",
+        "sumNumbers(\"a1234bb11\")",
+        "sumNumbers(\"\")",
+        "sumNumbers(\"a22bbb3\")",
     };
 
     static int[] expectedResults = {
         123,
         44,
         18,
+        0,
+        7,
+        7,
+        1245,
+        0,
+        25,
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +33,12 @@ public class _SumNumbers
             SumNumbers.sumNumbers("abc123xyz"),
             SumNumbers.sumNumbers("aa11b33"),
             SumNumbers.sumNumbers("7 11"),
+            SumNumbers.sumNumbers("Chocolate"),
+            SumNumbers.sumNumbers("5hoco1a1e"),
+            SumNumbers.sumNumbers("5$$1;;1!!"),
+            SumNumbers.sumNumbers("a1234bb11"),
+            SumNumbers.sumNumbers(""),
+            SumNumbers.sumNumbers("a22bbb3"),
         };
 
         boolean allTestsPassed = true;

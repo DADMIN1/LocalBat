@@ -9,12 +9,18 @@ public class _MoreY
         "moreY([\"a\", \"b\", \"c\"])",
         "moreY([\"hello\", \"there\"])",
         "moreY([\"yay\"])",
+        "moreY([\"\", \"a\", \"xx\"])",
+        "moreY([])",
+        "moreY([\"xx\", \"yy\", \"zz\"])",
     };
 
     static List<?>[] expectedResults = {
         Arrays.asList("yay", "yby", "ycy"),
         Arrays.asList("yhelloy", "ytherey"),
         Arrays.asList("yyayy"),
+        Arrays.asList("yy", "yay", "yxxy"),
+        Arrays.asList(),
+        Arrays.asList("yxxy", "yyyy", "yzzy"),
     };
 
     public static void Validate(boolean printSuccess)
@@ -23,6 +29,9 @@ public class _MoreY
             MoreY.moreY(Arrays.asList("a", "b", "c")),
             MoreY.moreY(Arrays.asList("hello", "there")),
             MoreY.moreY(Arrays.asList("yay")),
+            MoreY.moreY(Arrays.asList("", "a", "xx")),
+            MoreY.moreY(Arrays.asList()),
+            MoreY.moreY(Arrays.asList("xx", "yy", "zz")),
         };
 
         boolean allTestsPassed = true;

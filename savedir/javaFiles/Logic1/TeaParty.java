@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p177181
 package Logic1;
 import Logic1.Testcases._TeaParty;
+
+// https://codingbat.com/prob/p177181
+// Difficulty: 133.0
 
 public class TeaParty
 {
@@ -10,17 +12,27 @@ public class TeaParty
     the party is great (2). However, in all cases, if either tea or candy is less than 5, 
     the party is always bad (0). */
 
-    /*____________________
-    |      Testcases      |
-    |_____________________|
-    | teaParty(6, 8)  → 1 |
-    | teaParty(3, 8)  → 0 |
-    | teaParty(20, 6) → 2 |
-    |____________________*/
+    /*_____________________
+    |      Testcases       |
+    |______________________|
+    | teaParty(6, 8)   → 1 |
+    | teaParty(3, 8)   → 0 |
+    | teaParty(20, 6)  → 2 |
+    | teaParty(12, 6)  → 2 |
+    | teaParty(11, 6)  → 1 |
+    | teaParty(11, 4)  → 0 |
+    | teaParty(4, 5)   → 0 |
+    | teaParty(5, 5)   → 1 |
+    | teaParty(6, 6)   → 1 |
+    | teaParty(5, 10)  → 2 |
+    | teaParty(5, 9)   → 1 |
+    | teaParty(10, 4)  → 0 |
+    | teaParty(10, 20) → 2 |
+    |_____________________*/
 
     public static int teaParty(int tea, int candy)
     {
-        
+        return 0;
     }
 
     public static void main(String[] args) {

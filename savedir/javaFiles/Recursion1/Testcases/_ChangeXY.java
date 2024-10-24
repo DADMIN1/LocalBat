@@ -7,12 +7,26 @@ public class _ChangeXY
         "changeXY(\"codex\")",
         "changeXY(\"xxhixx\")",
         "changeXY(\"xhixhix\")",
+        "changeXY(\"hiy\")",
+        "changeXY(\"h\")",
+        "changeXY(\"x\")",
+        "changeXY(\"\")",
+        "changeXY(\"xxx\")",
+        "changeXY(\"yyhxyi\")",
+        "changeXY(\"hihi\")",
     };
 
     static String[] expectedResults = {
         "codey",
         "yyhiyy",
         "yhiyhiy",
+        "hiy",
+        "h",
+        "y",
+        "",
+        "yyy",
+        "yyhyyi",
+        "hihi",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +35,13 @@ public class _ChangeXY
             ChangeXY.changeXY("codex"),
             ChangeXY.changeXY("xxhixx"),
             ChangeXY.changeXY("xhixhix"),
+            ChangeXY.changeXY("hiy"),
+            ChangeXY.changeXY("h"),
+            ChangeXY.changeXY("x"),
+            ChangeXY.changeXY(""),
+            ChangeXY.changeXY("xxx"),
+            ChangeXY.changeXY("yyhxyi"),
+            ChangeXY.changeXY("hihi"),
         };
 
         boolean allTestsPassed = true;

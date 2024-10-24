@@ -7,12 +7,36 @@ public class _Blackjack
         "blackjack(19, 21)",
         "blackjack(21, 19)",
         "blackjack(19, 22)",
+        "blackjack(22, 19)",
+        "blackjack(22, 50)",
+        "blackjack(22, 22)",
+        "blackjack(33, 1)",
+        "blackjack(1, 2)",
+        "blackjack(34, 33)",
+        "blackjack(17, 19)",
+        "blackjack(18, 17)",
+        "blackjack(16, 23)",
+        "blackjack(3, 4)",
+        "blackjack(3, 2)",
+        "blackjack(21, 20)",
     };
 
     static int[] expectedResults = {
         21,
         21,
         19,
+        19,
+        0,
+        0,
+        1,
+        2,
+        0,
+        19,
+        18,
+        16,
+        4,
+        3,
+        21,
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +45,18 @@ public class _Blackjack
             Blackjack.blackjack(19, 21),
             Blackjack.blackjack(21, 19),
             Blackjack.blackjack(19, 22),
+            Blackjack.blackjack(22, 19),
+            Blackjack.blackjack(22, 50),
+            Blackjack.blackjack(22, 22),
+            Blackjack.blackjack(33, 1),
+            Blackjack.blackjack(1, 2),
+            Blackjack.blackjack(34, 33),
+            Blackjack.blackjack(17, 19),
+            Blackjack.blackjack(18, 17),
+            Blackjack.blackjack(16, 23),
+            Blackjack.blackjack(3, 4),
+            Blackjack.blackjack(3, 2),
+            Blackjack.blackjack(21, 20),
         };
 
         boolean allTestsPassed = true;

@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p172267
 package String1;
 import String1.Testcases._FirstHalf;
+
+// https://codingbat.com/prob/p172267
+// Difficulty: 121.0
 
 public class FirstHalf
 {
@@ -12,11 +14,15 @@ public class FirstHalf
     | firstHalf("WooHoo")     → "Woo"   |
     | firstHalf("HelloThere") → "Hello" |
     | firstHalf("abcdef")     → "abc"   |
+    | firstHalf("ab")         → "a"     |
+    | firstHalf("")           → ""      |
+    | firstHalf("0123456789") → "01234" |
+    | firstHalf("kitten")     → "kit"   |
     |__________________________________*/
 
     public static String firstHalf(String str)
     {
-        
+        return "";
     }
 
     public static void main(String[] args) {

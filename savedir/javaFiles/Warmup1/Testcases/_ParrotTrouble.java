@@ -7,10 +7,24 @@ public class _ParrotTrouble
         "parrotTrouble(true, 6)",
         "parrotTrouble(true, 7)",
         "parrotTrouble(false, 6)",
+        "parrotTrouble(true, 21)",
+        "parrotTrouble(false, 21)",
+        "parrotTrouble(false, 20)",
+        "parrotTrouble(true, 23)",
+        "parrotTrouble(false, 23)",
+        "parrotTrouble(true, 20)",
+        "parrotTrouble(false, 12)",
     };
 
     static boolean[] expectedResults = {
         true,
+        false,
+        false,
+        true,
+        false,
+        false,
+        true,
+        false,
         false,
         false,
     };
@@ -21,6 +35,13 @@ public class _ParrotTrouble
             ParrotTrouble.parrotTrouble(true, 6),
             ParrotTrouble.parrotTrouble(true, 7),
             ParrotTrouble.parrotTrouble(false, 6),
+            ParrotTrouble.parrotTrouble(true, 21),
+            ParrotTrouble.parrotTrouble(false, 21),
+            ParrotTrouble.parrotTrouble(false, 20),
+            ParrotTrouble.parrotTrouble(true, 23),
+            ParrotTrouble.parrotTrouble(false, 23),
+            ParrotTrouble.parrotTrouble(true, 20),
+            ParrotTrouble.parrotTrouble(false, 12),
         };
 
         boolean allTestsPassed = true;

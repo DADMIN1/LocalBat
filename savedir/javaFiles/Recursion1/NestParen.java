@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p183174
 package Recursion1;
 import Recursion1.Testcases._NestParen;
+
+// https://codingbat.com/prob/p183174
+// Difficulty: 381.0
 
 public class NestParen
 {
@@ -8,17 +10,29 @@ public class NestParen
     like "(())" or "((()))". Suggestion: check the first and last chars, 
     and then recur on what's inside them. */
 
-    /*____________________________
-    |          Testcases          |
-    |_____________________________|
-    | nestParen("(())")   → true  |
-    | nestParen("((()))") → true  |
-    | nestParen("(((x))") → false |
-    |____________________________*/
+    /*_______________________________
+    |           Testcases            |
+    |________________________________|
+    | nestParen("(())")      → true  |
+    | nestParen("((()))")    → true  |
+    | nestParen("(((x))")    → false |
+    | nestParen("((())")     → false |
+    | nestParen("((()()")    → false |
+    | nestParen("()")        → true  |
+    | nestParen("")          → true  |
+    | nestParen("(yy)")      → false |
+    | nestParen("(())")      → true  |
+    | nestParen("(((y))")    → false |
+    | nestParen("((y)))")    → false |
+    | nestParen("((()))")    → true  |
+    | nestParen("(())))")    → false |
+    | nestParen("((yy())))") → false |
+    | nestParen("(((())))")  → true  |
+    |_______________________________*/
 
     public static boolean nestParen(String str)
     {
-        
+        return false;
     }
 
     public static void main(String[] args) {

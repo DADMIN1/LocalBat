@@ -7,12 +7,24 @@ public class _LoneSum
         "loneSum(1, 2, 3)",
         "loneSum(3, 2, 3)",
         "loneSum(3, 3, 3)",
+        "loneSum(9, 2, 2)",
+        "loneSum(2, 2, 9)",
+        "loneSum(2, 9, 2)",
+        "loneSum(2, 9, 3)",
+        "loneSum(4, 2, 3)",
+        "loneSum(1, 3, 1)",
     };
 
     static int[] expectedResults = {
         6,
         2,
         0,
+        9,
+        9,
+        9,
+        14,
+        9,
+        3,
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +33,12 @@ public class _LoneSum
             LoneSum.loneSum(1, 2, 3),
             LoneSum.loneSum(3, 2, 3),
             LoneSum.loneSum(3, 3, 3),
+            LoneSum.loneSum(9, 2, 2),
+            LoneSum.loneSum(2, 2, 9),
+            LoneSum.loneSum(2, 9, 2),
+            LoneSum.loneSum(2, 9, 3),
+            LoneSum.loneSum(4, 2, 3),
+            LoneSum.loneSum(1, 3, 1),
         };
 
         boolean allTestsPassed = true;

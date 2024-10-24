@@ -7,12 +7,24 @@ public class _MakeAbba
         "makeAbba(\"Hi\", \"Bye\")",
         "makeAbba(\"Yo\", \"Alice\")",
         "makeAbba(\"What\", \"Up\")",
+        "makeAbba(\"aaa\", \"bbb\")",
+        "makeAbba(\"x\", \"y\")",
+        "makeAbba(\"x\", \"\")",
+        "makeAbba(\"\", \"y\")",
+        "makeAbba(\"Bo\", \"Ya\")",
+        "makeAbba(\"Ya\", \"Ya\")",
     };
 
     static String[] expectedResults = {
         "HiByeByeHi",
         "YoAliceAliceYo",
         "WhatUpUpWhat",
+        "aaabbbbbbaaa",
+        "xyyx",
+        "xx",
+        "yy",
+        "BoYaYaBo",
+        "YaYaYaYa",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +33,12 @@ public class _MakeAbba
             MakeAbba.makeAbba("Hi", "Bye"),
             MakeAbba.makeAbba("Yo", "Alice"),
             MakeAbba.makeAbba("What", "Up"),
+            MakeAbba.makeAbba("aaa", "bbb"),
+            MakeAbba.makeAbba("x", "y"),
+            MakeAbba.makeAbba("x", ""),
+            MakeAbba.makeAbba("", "y"),
+            MakeAbba.makeAbba("Bo", "Ya"),
+            MakeAbba.makeAbba("Ya", "Ya"),
         };
 
         boolean allTestsPassed = true;

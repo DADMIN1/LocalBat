@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p198664
 package String3;
 import String3.Testcases._GHappy;
+
+// https://codingbat.com/prob/p198664
+// Difficulty: 312.0
 
 public class GHappy
 {
@@ -13,11 +15,20 @@ public class GHappy
     | gHappy("xxggxx")    → true  |
     | gHappy("xxgxx")     → false |
     | gHappy("xxggyygxx") → false |
+    | gHappy("g")         → false |
+    | gHappy("gg")        → true  |
+    | gHappy("")          → true  |
+    | gHappy("xxgggxyz")  → true  |
+    | gHappy("xxgggxyg")  → false |
+    | gHappy("xxgggxygg") → true  |
+    | gHappy("mgm")       → false |
+    | gHappy("mggm")      → true  |
+    | gHappy("yyygggxyy") → true  |
     |____________________________*/
 
     public static boolean gHappy(String str)
     {
-        
+        return false;
     }
 
     public static void main(String[] args) {

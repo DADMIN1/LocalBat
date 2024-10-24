@@ -9,12 +9,18 @@ public class _Lower
         "lower([\"Hello\", \"Hi\"])",
         "lower([\"AAA\", \"BBB\", \"ccc\"])",
         "lower([\"KitteN\", \"ChocolaTE\"])",
+        "lower([])",
+        "lower([\"EMPTY\", \"\"])",
+        "lower([\"aaX\", \"bYb\", \"Ycc\", \"ZZZ\"])",
     };
 
     static List<?>[] expectedResults = {
         Arrays.asList("hello", "hi"),
         Arrays.asList("aaa", "bbb", "ccc"),
         Arrays.asList("kitten", "chocolate"),
+        Arrays.asList(),
+        Arrays.asList("empty", ""),
+        Arrays.asList("aax", "byb", "ycc", "zzz"),
     };
 
     public static void Validate(boolean printSuccess)
@@ -23,6 +29,9 @@ public class _Lower
             Lower.lower(Arrays.asList("Hello", "Hi")),
             Lower.lower(Arrays.asList("AAA", "BBB", "ccc")),
             Lower.lower(Arrays.asList("KitteN", "ChocolaTE")),
+            Lower.lower(Arrays.asList()),
+            Lower.lower(Arrays.asList("EMPTY", "")),
+            Lower.lower(Arrays.asList("aaX", "bYb", "Ycc", "ZZZ")),
         };
 
         boolean allTestsPassed = true;

@@ -7,12 +7,28 @@ public class _MatchUp
         "matchUp([1, 2, 3], [2, 3, 10])",
         "matchUp([1, 2, 3], [2, 3, 5])",
         "matchUp([1, 2, 3], [2, 3, 3])",
+        "matchUp([5, 3], [5, 5])",
+        "matchUp([5, 3], [4, 4])",
+        "matchUp([5, 3], [3, 3])",
+        "matchUp([5, 3], [2, 2])",
+        "matchUp([5, 3], [1, 1])",
+        "matchUp([5, 3], [0, 0])",
+        "matchUp([4], [4])",
+        "matchUp([4], [5])",
     };
 
     static int[] expectedResults = {
         2,
         3,
         2,
+        1,
+        2,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
     };
 
     public static void Validate(boolean printSuccess)
@@ -20,11 +36,27 @@ public class _MatchUp
         int[] nums10 = { 1, 2, 3 }; int[] nums20 = { 2, 3, 10 }; 
         int[] nums11 = { 1, 2, 3 }; int[] nums21 = { 2, 3, 5 }; 
         int[] nums12 = { 1, 2, 3 }; int[] nums22 = { 2, 3, 3 }; 
+        int[] nums13 = { 5, 3 }; int[] nums23 = { 5, 5 }; 
+        int[] nums14 = { 5, 3 }; int[] nums24 = { 4, 4 }; 
+        int[] nums15 = { 5, 3 }; int[] nums25 = { 3, 3 }; 
+        int[] nums16 = { 5, 3 }; int[] nums26 = { 2, 2 }; 
+        int[] nums17 = { 5, 3 }; int[] nums27 = { 1, 1 }; 
+        int[] nums18 = { 5, 3 }; int[] nums28 = { 0, 0 }; 
+        int[] nums19 = { 4 }; int[] nums29 = { 4 }; 
+        int[] nums110 = { 4 }; int[] nums210 = { 5 }; 
 
         int[] resultsArray = {
             MatchUp.matchUp(nums10, nums20),
             MatchUp.matchUp(nums11, nums21),
             MatchUp.matchUp(nums12, nums22),
+            MatchUp.matchUp(nums13, nums23),
+            MatchUp.matchUp(nums14, nums24),
+            MatchUp.matchUp(nums15, nums25),
+            MatchUp.matchUp(nums16, nums26),
+            MatchUp.matchUp(nums17, nums27),
+            MatchUp.matchUp(nums18, nums28),
+            MatchUp.matchUp(nums19, nums29),
+            MatchUp.matchUp(nums110, nums210),
         };
 
         boolean allTestsPassed = true;

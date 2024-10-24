@@ -7,12 +7,18 @@ public class _ConCat
         "conCat(\"abc\", \"cat\")",
         "conCat(\"dog\", \"cat\")",
         "conCat(\"abc\", \"\")",
+        "conCat(\"\", \"cat\")",
+        "conCat(\"pig\", \"g\")",
+        "conCat(\"pig\", \"doggy\")",
     };
 
     static String[] expectedResults = {
         "abcat",
         "dogcat",
         "abc",
+        "cat",
+        "pig",
+        "pigdoggy",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +27,9 @@ public class _ConCat
             ConCat.conCat("abc", "cat"),
             ConCat.conCat("dog", "cat"),
             ConCat.conCat("abc", ""),
+            ConCat.conCat("", "cat"),
+            ConCat.conCat("pig", "g"),
+            ConCat.conCat("pig", "doggy"),
         };
 
         boolean allTestsPassed = true;

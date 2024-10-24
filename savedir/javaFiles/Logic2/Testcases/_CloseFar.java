@@ -7,10 +7,28 @@ public class _CloseFar
         "closeFar(1, 2, 10)",
         "closeFar(1, 2, 3)",
         "closeFar(4, 1, 3)",
+        "closeFar(4, 5, 3)",
+        "closeFar(4, 3, 5)",
+        "closeFar(-1, 10, 0)",
+        "closeFar(0, -1, 10)",
+        "closeFar(10, 10, 8)",
+        "closeFar(10, 8, 9)",
+        "closeFar(8, 9, 10)",
+        "closeFar(8, 9, 7)",
+        "closeFar(8, 6, 9)",
     };
 
     static boolean[] expectedResults = {
         true,
+        false,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
         false,
         true,
     };
@@ -21,6 +39,15 @@ public class _CloseFar
             CloseFar.closeFar(1, 2, 10),
             CloseFar.closeFar(1, 2, 3),
             CloseFar.closeFar(4, 1, 3),
+            CloseFar.closeFar(4, 5, 3),
+            CloseFar.closeFar(4, 3, 5),
+            CloseFar.closeFar(-1, 10, 0),
+            CloseFar.closeFar(0, -1, 10),
+            CloseFar.closeFar(10, 10, 8),
+            CloseFar.closeFar(10, 8, 9),
+            CloseFar.closeFar(8, 9, 10),
+            CloseFar.closeFar(8, 9, 7),
+            CloseFar.closeFar(8, 6, 9),
         };
 
         boolean allTestsPassed = true;

@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p148138
 package AP1;
 import AP1.Testcases._SumHeights;
+
+// https://codingbat.com/prob/p148138
+// Difficulty: 246
 
 public class SumHeights
 {
@@ -10,17 +12,26 @@ public class SumHeights
     For example, with the heights {5, 3, 6, 7, 2} and start=2, 
     end=4 yields a sum of 1 + 5 = 6. The start end end index will both be valid indexes into the array with start <= end. */
 
-    /*_______________________________________
-    |               Testcases                |
-    |________________________________________|
-    | sumHeights([5, 3, 6, 7, 2], 2, 4) → 6  |
-    | sumHeights([5, 3, 6, 7, 2], 0, 1) → 2  |
-    | sumHeights([5, 3, 6, 7, 2], 0, 4) → 11 |
-    |_______________________________________*/
+    /*____________________________________________________
+    |                      Testcases                      |
+    |_____________________________________________________|
+    | sumHeights([5, 3, 6, 7, 2], 2, 4)              → 6  |
+    | sumHeights([5, 3, 6, 7, 2], 0, 1)              → 2  |
+    | sumHeights([5, 3, 6, 7, 2], 0, 4)              → 11 |
+    | sumHeights([5, 3, 6, 7, 2], 1, 1)              → 0  |
+    | sumHeights([1, 2, 3, 4, 5, 4, 3, 2, 10], 0, 3) → 3  |
+    | sumHeights([1, 2, 3, 4, 5, 4, 3, 2, 10], 4, 8) → 11 |
+    | sumHeights([1, 2, 3, 4, 5, 4, 3, 2, 10], 7, 8) → 8  |
+    | sumHeights([1, 2, 3, 4, 5, 4, 3, 2, 10], 8, 8) → 0  |
+    | sumHeights([1, 2, 3, 4, 5, 4, 3, 2, 10], 2, 2) → 0  |
+    | sumHeights([1, 2, 3, 4, 5, 4, 3, 2, 10], 3, 6) → 3  |
+    | sumHeights([10, 8, 7, 7, 7, 6, 7], 1, 4)       → 1  |
+    | sumHeights([10, 8, 7, 7, 7, 6, 7], 1, 5)       → 2  |
+    |____________________________________________________*/
 
     public static int sumHeights(int[] heights, int start, int end)
     {
-        
+        return 0;
     }
 
     public static void main(String[] args) {

@@ -7,12 +7,26 @@ public class _HasBad
         "hasBad(\"badxx\")",
         "hasBad(\"xbadxx\")",
         "hasBad(\"xxbadxx\")",
+        "hasBad(\"code\")",
+        "hasBad(\"bad\")",
+        "hasBad(\"ba\")",
+        "hasBad(\"xba\")",
+        "hasBad(\"xbad\")",
+        "hasBad(\"\")",
+        "hasBad(\"badyy\")",
     };
 
     static boolean[] expectedResults = {
         true,
         true,
         false,
+        false,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +35,13 @@ public class _HasBad
             HasBad.hasBad("badxx"),
             HasBad.hasBad("xbadxx"),
             HasBad.hasBad("xxbadxx"),
+            HasBad.hasBad("code"),
+            HasBad.hasBad("bad"),
+            HasBad.hasBad("ba"),
+            HasBad.hasBad("xba"),
+            HasBad.hasBad("xbad"),
+            HasBad.hasBad(""),
+            HasBad.hasBad("badyy"),
         };
 
         boolean allTestsPassed = true;

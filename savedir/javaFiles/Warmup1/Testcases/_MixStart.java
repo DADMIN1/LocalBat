@@ -7,11 +7,19 @@ public class _MixStart
         "mixStart(\"mix snacks\")",
         "mixStart(\"pix snacks\")",
         "mixStart(\"piz snacks\")",
+        "mixStart(\"nix\")",
+        "mixStart(\"ni\")",
+        "mixStart(\"n\")",
+        "mixStart(\"\")",
     };
 
     static boolean[] expectedResults = {
         true,
         true,
+        false,
+        true,
+        false,
+        false,
         false,
     };
 
@@ -21,6 +29,10 @@ public class _MixStart
             MixStart.mixStart("mix snacks"),
             MixStart.mixStart("pix snacks"),
             MixStart.mixStart("piz snacks"),
+            MixStart.mixStart("nix"),
+            MixStart.mixStart("ni"),
+            MixStart.mixStart("n"),
+            MixStart.mixStart(""),
         };
 
         boolean allTestsPassed = true;

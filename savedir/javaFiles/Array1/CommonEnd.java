@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p191991
 package Array1;
 import Array1.Testcases._CommonEnd;
+
+// https://codingbat.com/prob/p191991
+// Difficulty: 112.0
 
 public class CommonEnd
 {
@@ -13,11 +15,13 @@ public class CommonEnd
     | commonEnd([1, 2, 3], [7, 3])    → true  |
     | commonEnd([1, 2, 3], [7, 3, 2]) → false |
     | commonEnd([1, 2, 3], [1, 3])    → true  |
+    | commonEnd([1, 2, 3], [1])       → true  |
+    | commonEnd([1, 2, 3], [2])       → false |
     |________________________________________*/
 
     public static boolean commonEnd(int[] a, int[] b)
     {
-        
+        return false;
     }
 
     public static void main(String[] args) {

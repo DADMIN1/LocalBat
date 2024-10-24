@@ -9,12 +9,26 @@ public class _NoYY
         "noYY([\"a\", \"b\", \"c\"])",
         "noYY([\"a\", \"b\", \"cy\"])",
         "noYY([\"xx\", \"ya\", \"zz\"])",
+        "noYY([\"xx\", \"yay\", \"zz\"])",
+        "noYY([\"yyx\", \"y\", \"zzz\"])",
+        "noYY([\"hello\", \"there\"])",
+        "noYY([\"ya\"])",
+        "noYY([])",
+        "noYY([\"\"])",
+        "noYY([\"xx\", \"yy\", \"zz\"])",
     };
 
     static List<?>[] expectedResults = {
         Arrays.asList("ay", "by", "cy"),
         Arrays.asList("ay", "by"),
         Arrays.asList("xxy", "yay", "zzy"),
+        Arrays.asList("xxy", "zzy"),
+        Arrays.asList("zzzy"),
+        Arrays.asList("helloy", "therey"),
+        Arrays.asList("yay"),
+        Arrays.asList(),
+        Arrays.asList("y"),
+        Arrays.asList("xxy", "zzy"),
     };
 
     public static void Validate(boolean printSuccess)
@@ -23,6 +37,13 @@ public class _NoYY
             NoYY.noYY(Arrays.asList("a", "b", "c")),
             NoYY.noYY(Arrays.asList("a", "b", "cy")),
             NoYY.noYY(Arrays.asList("xx", "ya", "zz")),
+            NoYY.noYY(Arrays.asList("xx", "yay", "zz")),
+            NoYY.noYY(Arrays.asList("yyx", "y", "zzz")),
+            NoYY.noYY(Arrays.asList("hello", "there")),
+            NoYY.noYY(Arrays.asList("ya")),
+            NoYY.noYY(Arrays.asList()),
+            NoYY.noYY(Arrays.asList("")),
+            NoYY.noYY(Arrays.asList("xx", "yy", "zz")),
         };
 
         boolean allTestsPassed = true;

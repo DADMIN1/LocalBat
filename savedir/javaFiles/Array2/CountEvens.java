@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p162010
 package Array2;
 import Array2.Testcases._CountEvens;
+
+// https://codingbat.com/prob/p162010
+// Difficulty: 203.0
 
 public class CountEvens
 {
@@ -13,11 +15,16 @@ public class CountEvens
     | countEvens([2, 1, 2, 3, 4]) → 3 |
     | countEvens([2, 2, 0])       → 3 |
     | countEvens([1, 3, 5])       → 0 |
+    | countEvens([])              → 0 |
+    | countEvens([11, 9, 0, 1])   → 1 |
+    | countEvens([2, 11, 9, 0])   → 2 |
+    | countEvens([2])             → 1 |
+    | countEvens([2, 5, 12])      → 2 |
     |________________________________*/
 
     public static int countEvens(int[] nums)
     {
-        
+        return 0;
     }
 
     public static void main(String[] args) {

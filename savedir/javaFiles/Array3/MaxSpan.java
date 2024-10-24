@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p189576
 package Array3;
 import Array3.Testcases._MaxSpan;
+
+// https://codingbat.com/prob/p189576
+// Difficulty: 303.0
 
 public class MaxSpan
 {
@@ -15,11 +17,18 @@ public class MaxSpan
     | maxSpan([1, 2, 1, 1, 3])       → 4 |
     | maxSpan([1, 4, 2, 1, 4, 1, 4]) → 6 |
     | maxSpan([1, 4, 2, 1, 4, 4, 4]) → 6 |
+    | maxSpan([3, 3, 3])             → 3 |
+    | maxSpan([3, 9, 3])             → 3 |
+    | maxSpan([3, 9, 9])             → 2 |
+    | maxSpan([3, 9])                → 1 |
+    | maxSpan([3, 3])                → 2 |
+    | maxSpan([])                    → 0 |
+    | maxSpan([1])                   → 1 |
     |___________________________________*/
 
     public static int maxSpan(int[] nums)
     {
-        
+        return 0;
     }
 
     public static void main(String[] args) {

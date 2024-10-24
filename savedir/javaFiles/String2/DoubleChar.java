@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p165312
 package String2;
 import String2.Testcases._DoubleChar;
+
+// https://codingbat.com/prob/p165312
+// Difficulty: 203.0
 
 public class DoubleChar
 {
@@ -13,11 +15,17 @@ public class DoubleChar
     | doubleChar("The")      → "TThhee"           |
     | doubleChar("AAbb")     → "AAAAbbbb"         |
     | doubleChar("Hi-There") → "HHii--TThheerree" |
+    | doubleChar("Word!")    → "WWoorrdd!!"       |
+    | doubleChar("!!")       → "!!!!"             |
+    | doubleChar("")         → ""                 |
+    | doubleChar("a")        → "aa"               |
+    | doubleChar(".")        → ".."               |
+    | doubleChar("aa")       → "aaaa"             |
     |____________________________________________*/
 
     public static String doubleChar(String str)
     {
-        
+        return "";
     }
 
     public static void main(String[] args) {

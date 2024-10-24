@@ -8,12 +8,22 @@ public class _FrontPiece
         "frontPiece([1, 2, 3])",
         "frontPiece([1, 2])",
         "frontPiece([1])",
+        "frontPiece([])",
+        "frontPiece([6, 5, 0])",
+        "frontPiece([6, 5])",
+        "frontPiece([3, 1, 4, 1, 5])",
+        "frontPiece([6])",
     };
 
     static int[][] expectedResults = {
         {1, 2},
         {1, 2},
         {1},
+        {},
+        {6, 5},
+        {6, 5},
+        {3, 1},
+        {6},
     };
 
     public static String printArray(int[] array)
@@ -29,11 +39,21 @@ public class _FrontPiece
         int[] nums0 = { 1, 2, 3 }; 
         int[] nums1 = { 1, 2 }; 
         int[] nums2 = { 1 }; 
+        int[] nums3 = {  }; 
+        int[] nums4 = { 6, 5, 0 }; 
+        int[] nums5 = { 6, 5 }; 
+        int[] nums6 = { 3, 1, 4, 1, 5 }; 
+        int[] nums7 = { 6 }; 
 
         int[][] resultsArray = {
             FrontPiece.frontPiece(nums0),
             FrontPiece.frontPiece(nums1),
             FrontPiece.frontPiece(nums2),
+            FrontPiece.frontPiece(nums3),
+            FrontPiece.frontPiece(nums4),
+            FrontPiece.frontPiece(nums5),
+            FrontPiece.frontPiece(nums6),
+            FrontPiece.frontPiece(nums7),
         };
 
         boolean allTestsPassed = true;

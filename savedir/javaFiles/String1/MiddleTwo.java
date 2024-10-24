@@ -1,23 +1,27 @@
-// https://codingbat.com/prob/p137729
 package String1;
 import String1.Testcases._MiddleTwo;
+
+// https://codingbat.com/prob/p137729
+// Difficulty: 145.0
 
 public class MiddleTwo
 {
     /* Given a string of even length, return a string made of the middle two chars, 
     so the string "string" yields "ri". The string length will be at least 2. */
 
-    /*_____________________________
-    |          Testcases           |
-    |______________________________|
-    | middleTwo("string")   → "ri" |
-    | middleTwo("code")     → "od" |
-    | middleTwo("Practice") → "ct" |
-    |_____________________________*/
+    /*_______________________________
+    |           Testcases            |
+    |________________________________|
+    | middleTwo("string")     → "ri" |
+    | middleTwo("code")       → "od" |
+    | middleTwo("Practice")   → "ct" |
+    | middleTwo("ab")         → "ab" |
+    | middleTwo("0123456789") → "45" |
+    |_______________________________*/
 
     public static String middleTwo(String str)
     {
-        
+        return "";
     }
 
     public static void main(String[] args) {

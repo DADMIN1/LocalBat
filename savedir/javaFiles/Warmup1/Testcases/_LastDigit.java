@@ -7,12 +7,20 @@ public class _LastDigit
         "lastDigit(7, 17)",
         "lastDigit(6, 17)",
         "lastDigit(3, 113)",
+        "lastDigit(114, 113)",
+        "lastDigit(114, 4)",
+        "lastDigit(10, 0)",
+        "lastDigit(11, 0)",
     };
 
     static boolean[] expectedResults = {
         true,
         false,
         true,
+        false,
+        true,
+        true,
+        false,
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +29,10 @@ public class _LastDigit
             LastDigit.lastDigit(7, 17),
             LastDigit.lastDigit(6, 17),
             LastDigit.lastDigit(3, 113),
+            LastDigit.lastDigit(114, 113),
+            LastDigit.lastDigit(114, 4),
+            LastDigit.lastDigit(10, 0),
+            LastDigit.lastDigit(11, 0),
         };
 
         boolean allTestsPassed = true;

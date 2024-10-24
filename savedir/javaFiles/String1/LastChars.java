@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p138183
 package String1;
 import String1.Testcases._LastChars;
+
+// https://codingbat.com/prob/p138183
+// Difficulty: 166.0
 
 public class LastChars
 {
@@ -14,11 +16,17 @@ public class LastChars
     | lastChars("last", "chars") → "ls" |
     | lastChars("yo", "java")    → "ya" |
     | lastChars("hi", "")        → "h@" |
+    | lastChars("", "hello")     → "@o" |
+    | lastChars("", "")          → "@@" |
+    | lastChars("kitten", "hi")  → "ki" |
+    | lastChars("k", "zip")      → "kp" |
+    | lastChars("kitten", "")    → "k@" |
+    | lastChars("kitten", "zip") → "kp" |
     |__________________________________*/
 
     public static String lastChars(String a, String b)
     {
-        
+        return "";
     }
 
     public static void main(String[] args) {

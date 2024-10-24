@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p191022
 package Warmup1;
 import Warmup1.Testcases._StartHi;
+
+// https://codingbat.com/prob/p191022
+// Difficulty: 145.0
 
 public class StartHi
 {
@@ -12,11 +14,16 @@ public class StartHi
     | startHi("hi there") → true  |
     | startHi("hi")       → true  |
     | startHi("hello hi") → false |
+    | startHi("he")       → false |
+    | startHi("h")        → false |
+    | startHi("")         → false |
+    | startHi("ho hi")    → false |
+    | startHi("hi ho")    → true  |
     |____________________________*/
 
     public static boolean startHi(String str)
     {
-        
+        return false;
     }
 
     public static void main(String[] args) {

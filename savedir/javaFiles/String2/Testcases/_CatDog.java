@@ -7,11 +7,31 @@ public class _CatDog
         "catDog(\"catdog\")",
         "catDog(\"catcat\")",
         "catDog(\"1cat1cadodog\")",
+        "catDog(\"catxxdogxxxdog\")",
+        "catDog(\"catxdogxdogxcat\")",
+        "catDog(\"catxdogxdogxca\")",
+        "catDog(\"dogdogcat\")",
+        "catDog(\"dogogcat\")",
+        "catDog(\"dog\")",
+        "catDog(\"cat\")",
+        "catDog(\"ca\")",
+        "catDog(\"c\")",
+        "catDog(\"\")",
     };
 
     static boolean[] expectedResults = {
         true,
         false,
+        true,
+        false,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false,
+        true,
+        true,
         true,
     };
 
@@ -21,6 +41,16 @@ public class _CatDog
             CatDog.catDog("catdog"),
             CatDog.catDog("catcat"),
             CatDog.catDog("1cat1cadodog"),
+            CatDog.catDog("catxxdogxxxdog"),
+            CatDog.catDog("catxdogxdogxcat"),
+            CatDog.catDog("catxdogxdogxca"),
+            CatDog.catDog("dogdogcat"),
+            CatDog.catDog("dogogcat"),
+            CatDog.catDog("dog"),
+            CatDog.catDog("cat"),
+            CatDog.catDog("ca"),
+            CatDog.catDog("c"),
+            CatDog.catDog(""),
         };
 
         boolean allTestsPassed = true;

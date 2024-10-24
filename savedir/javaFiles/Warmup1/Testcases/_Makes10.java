@@ -7,11 +7,23 @@ public class _Makes10
         "makes10(9, 10)",
         "makes10(9, 9)",
         "makes10(1, 9)",
+        "makes10(10, 1)",
+        "makes10(10, 10)",
+        "makes10(8, 2)",
+        "makes10(8, 3)",
+        "makes10(10, 42)",
+        "makes10(12, -2)",
     };
 
     static boolean[] expectedResults = {
         true,
         false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
         true,
     };
 
@@ -21,6 +33,12 @@ public class _Makes10
             Makes10.makes10(9, 10),
             Makes10.makes10(9, 9),
             Makes10.makes10(1, 9),
+            Makes10.makes10(10, 1),
+            Makes10.makes10(10, 10),
+            Makes10.makes10(8, 2),
+            Makes10.makes10(8, 3),
+            Makes10.makes10(10, 42),
+            Makes10.makes10(12, -2),
         };
 
         boolean allTestsPassed = true;

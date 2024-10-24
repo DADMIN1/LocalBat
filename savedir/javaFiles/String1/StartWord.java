@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p141494
 package String1;
 import String1.Testcases._StartWord;
+
+// https://codingbat.com/prob/p141494
+// Difficulty: 193.0
 
 public class StartWord
 {
@@ -11,17 +13,29 @@ public class StartWord
     So, so with the string "hippo" the word "hi" returns "hi" and "xip" returns "hip". 
     The word will be at least length 1. */
 
-    /*__________________________________
-    |             Testcases             |
-    |___________________________________|
-    | startWord("hippo", "hi")  → "hi"  |
-    | startWord("hippo", "xip") → "hip" |
-    | startWord("hippo", "i")   → "h"   |
-    |__________________________________*/
+    /*______________________________________
+    |               Testcases               |
+    |_______________________________________|
+    | startWord("hippo", "hi")    → "hi"    |
+    | startWord("hippo", "xip")   → "hip"   |
+    | startWord("hippo", "i")     → "h"     |
+    | startWord("hippo", "ix")    → ""      |
+    | startWord("h", "ix")        → ""      |
+    | startWord("", "i")          → ""      |
+    | startWord("hip", "zi")      → "hi"    |
+    | startWord("hip", "zip")     → "hip"   |
+    | startWord("hip", "zig")     → ""      |
+    | startWord("h", "z")         → "h"     |
+    | startWord("hippo", "xippo") → "hippo" |
+    | startWord("hippo", "xyz")   → ""      |
+    | startWord("hippo", "hip")   → "hip"   |
+    | startWord("kitten", "cit")  → "kit"   |
+    | startWord("kit", "cit")     → "kit"   |
+    |______________________________________*/
 
     public static String startWord(String str, String word)
     {
-        
+        return "";
     }
 
     public static void main(String[] args) {

@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p151713
 package Warmup1;
 import Warmup1.Testcases._MixStart;
+
+// https://codingbat.com/prob/p151713
+// Difficulty: 163.0
 
 public class MixStart
 {
@@ -13,11 +15,15 @@ public class MixStart
     | mixStart("mix snacks") → true  |
     | mixStart("pix snacks") → true  |
     | mixStart("piz snacks") → false |
+    | mixStart("nix")        → true  |
+    | mixStart("ni")         → false |
+    | mixStart("n")          → false |
+    | mixStart("")           → false |
     |_______________________________*/
 
     public static boolean mixStart(String str)
     {
-        
+        return false;
     }
 
     public static void main(String[] args) {

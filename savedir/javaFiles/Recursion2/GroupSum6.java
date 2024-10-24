@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p199368
 package Recursion2;
 import Recursion2.Testcases._GroupSum6;
+
+// https://codingbat.com/prob/p199368
+// Difficulty: 406.0
 
 public class GroupSum6
 {
@@ -9,17 +11,32 @@ public class GroupSum6
     with the additional constraint that all 6's must be chosen. 
     (No loops needed.) */
 
-    /*___________________________________
-    |             Testcases              |
-    |____________________________________|
-    | groupSum6(0, [5, 6, 2], 8) → true  |
-    | groupSum6(0, [5, 6, 2], 9) → false |
-    | groupSum6(0, [5, 6, 2], 7) → false |
-    |___________________________________*/
+    /*__________________________________________
+    |                 Testcases                 |
+    |___________________________________________|
+    | groupSum6(0, [5, 6, 2], 8)        → true  |
+    | groupSum6(0, [5, 6, 2], 9)        → false |
+    | groupSum6(0, [5, 6, 2], 7)        → false |
+    | groupSum6(0, [1], 1)              → true  |
+    | groupSum6(0, [9], 1)              → false |
+    | groupSum6(0, [], 0)               → true  |
+    | groupSum6(0, [3, 2, 4, 6], 8)     → true  |
+    | groupSum6(0, [6, 2, 4, 3], 8)     → true  |
+    | groupSum6(0, [5, 2, 4, 6], 9)     → false |
+    | groupSum6(0, [6, 2, 4, 5], 9)     → false |
+    | groupSum6(0, [3, 2, 4, 6], 3)     → false |
+    | groupSum6(0, [1, 6, 2, 6, 4], 12) → true  |
+    | groupSum6(0, [1, 6, 2, 6, 4], 13) → true  |
+    | groupSum6(0, [1, 6, 2, 6, 4], 4)  → false |
+    | groupSum6(0, [1, 6, 2, 6, 4], 9)  → false |
+    | groupSum6(0, [1, 6, 2, 6, 5], 14) → true  |
+    | groupSum6(0, [1, 6, 2, 6, 5], 15) → true  |
+    | groupSum6(0, [1, 6, 2, 6, 5], 16) → false |
+    |__________________________________________*/
 
     public static boolean groupSum6(int start, int[] nums, int target)
     {
-        
+        return false;
     }
 
     public static void main(String[] args) {

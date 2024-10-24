@@ -7,11 +7,17 @@ public class _AnswerCell
         "answerCell(false, false, false)",
         "answerCell(false, false, true)",
         "answerCell(true, false, false)",
+        "answerCell(true, true, false)",
+        "answerCell(false, true, false)",
+        "answerCell(true, true, true)",
     };
 
     static boolean[] expectedResults = {
         true,
         false,
+        false,
+        true,
+        true,
         false,
     };
 
@@ -21,6 +27,9 @@ public class _AnswerCell
             AnswerCell.answerCell(false, false, false),
             AnswerCell.answerCell(false, false, true),
             AnswerCell.answerCell(true, false, false),
+            AnswerCell.answerCell(true, true, false),
+            AnswerCell.answerCell(false, true, false),
+            AnswerCell.answerCell(true, true, true),
         };
 
         boolean allTestsPassed = true;

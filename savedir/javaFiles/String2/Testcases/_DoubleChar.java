@@ -7,12 +7,24 @@ public class _DoubleChar
         "doubleChar(\"The\")",
         "doubleChar(\"AAbb\")",
         "doubleChar(\"Hi-There\")",
+        "doubleChar(\"Word!\")",
+        "doubleChar(\"!!\")",
+        "doubleChar(\"\")",
+        "doubleChar(\"a\")",
+        "doubleChar(\".\")",
+        "doubleChar(\"aa\")",
     };
 
     static String[] expectedResults = {
         "TThhee",
         "AAAAbbbb",
         "HHii--TThheerree",
+        "WWoorrdd!!",
+        "!!!!",
+        "",
+        "aa",
+        "..",
+        "aaaa",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +33,12 @@ public class _DoubleChar
             DoubleChar.doubleChar("The"),
             DoubleChar.doubleChar("AAbb"),
             DoubleChar.doubleChar("Hi-There"),
+            DoubleChar.doubleChar("Word!"),
+            DoubleChar.doubleChar("!!"),
+            DoubleChar.doubleChar(""),
+            DoubleChar.doubleChar("a"),
+            DoubleChar.doubleChar("."),
+            DoubleChar.doubleChar("aa"),
         };
 
         boolean allTestsPassed = true;

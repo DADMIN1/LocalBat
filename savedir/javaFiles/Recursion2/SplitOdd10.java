@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p171660
 package Recursion2;
 import Recursion2.Testcases._SplitOdd10;
+
+// https://codingbat.com/prob/p171660
+// Difficulty: 421.0
 
 public class SplitOdd10
 {
@@ -11,17 +13,26 @@ public class SplitOdd10
     and make the initial call to your recursive helper from splitOdd10(). 
     (No loops needed.) */
 
-    /*_________________________________
-    |            Testcases             |
-    |__________________________________|
-    | splitOdd10([5, 5, 5])    → true  |
-    | splitOdd10([5, 5, 6])    → false |
-    | splitOdd10([5, 5, 6, 1]) → true  |
-    |_________________________________*/
+    /*_____________________________________
+    |              Testcases               |
+    |______________________________________|
+    | splitOdd10([5, 5, 5])        → true  |
+    | splitOdd10([5, 5, 6])        → false |
+    | splitOdd10([5, 5, 6, 1])     → true  |
+    | splitOdd10([6, 5, 5, 1])     → true  |
+    | splitOdd10([6, 5, 5, 1, 10]) → true  |
+    | splitOdd10([6, 5, 5, 5, 1])  → false |
+    | splitOdd10([1])              → true  |
+    | splitOdd10([])               → false |
+    | splitOdd10([10, 7, 5, 5])    → true  |
+    | splitOdd10([10, 0, 5, 5])    → false |
+    | splitOdd10([10, 7, 5, 5, 2]) → true  |
+    | splitOdd10([10, 7, 5, 5, 1]) → false |
+    |_____________________________________*/
 
     public static boolean splitOdd10(int[] nums)
     {
-        
+        return false;
     }
 
     public static void main(String[] args) {

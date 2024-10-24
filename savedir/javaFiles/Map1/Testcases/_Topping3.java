@@ -8,12 +8,18 @@ public class _Topping3
         "topping3({\"potato\": \"ketchup\"})",
         "topping3({\"potato\": \"butter\"})",
         "topping3({\"salad\": \"oil\", \"potato\": \"ketchup\"})",
+        "topping3({\"toast\": \"butter\", \"salad\": \"oil\", \"potato\": \"ketchup\"})",
+        "topping3({})",
+        "topping3({\"salad\": \"pepper\", \"fries\": \"salt\"})",
     };
 
     static Map<?,?>[] expectedResults = {
         Map.of("potato", "ketchup", "fries", "ketchup"),
         Map.of("potato", "butter", "fries", "butter"),
         Map.of("spinach", "oil", "salad", "oil", "potato", "ketchup", "fries", "ketchup"),
+        Map.of("toast", "butter", "spinach", "oil", "salad", "oil", "potato", "ketchup", "fries", "ketchup"),
+        Map.of(),
+        Map.of("spinach", "pepper", "salad", "pepper", "fries", "salt"),
     };
 
     public static void Validate(boolean printSuccess)
@@ -22,6 +28,9 @@ public class _Topping3
             Topping3.topping3(Map.of("potato", "ketchup")),
             Topping3.topping3(Map.of("potato", "butter")),
             Topping3.topping3(Map.of("salad", "oil", "potato", "ketchup")),
+            Topping3.topping3(Map.of("toast", "butter", "salad", "oil", "potato", "ketchup")),
+            Topping3.topping3(Map.of()),
+            Topping3.topping3(Map.of("salad", "pepper", "fries", "salt")),
         };
 
         boolean allTestsPassed = true;

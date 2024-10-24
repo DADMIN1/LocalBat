@@ -1,23 +1,28 @@
-// https://codingbat.com/prob/p104029
 package Recursion1;
 import Recursion1.Testcases._StringClean;
+
+// https://codingbat.com/prob/p104029
+// Difficulty: 372.0
 
 public class StringClean
 {
     /* Given a string, return recursively a "cleaned" string where adjacent chars that are the same have been reduced to a single char. 
     So "yyzzza" yields "yza". */
 
-    /*________________________________
-    |            Testcases            |
-    |_________________________________|
-    | stringClean("yyzzza")  → "yza"  |
-    | stringClean("abbbcdd") → "abcd" |
-    | stringClean("Hello")   → "Helo" |
-    |________________________________*/
+    /*_________________________________________________
+    |                    Testcases                     |
+    |__________________________________________________|
+    | stringClean("yyzzza")           → "yza"          |
+    | stringClean("abbbcdd")          → "abcd"         |
+    | stringClean("Hello")            → "Helo"         |
+    | stringClean("XXabcYY")          → "XabcY"        |
+    | stringClean("112ab445")         → "12ab45"       |
+    | stringClean("Hello Bookkeeper") → "Helo Bokeper" |
+    |_________________________________________________*/
 
     public static String stringClean(String str)
     {
-        
+        return "";
     }
 
     public static void main(String[] args) {

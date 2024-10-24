@@ -7,12 +7,22 @@ public class _Left2
         "left2(\"Hello\")",
         "left2(\"java\")",
         "left2(\"Hi\")",
+        "left2(\"code\")",
+        "left2(\"cat\")",
+        "left2(\"12345\")",
+        "left2(\"Chocolate\")",
+        "left2(\"bricks\")",
     };
 
     static String[] expectedResults = {
         "lloHe",
         "vaja",
         "Hi",
+        "deco",
+        "tca",
+        "34512",
+        "ocolateCh",
+        "icksbr",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +31,11 @@ public class _Left2
             Left2.left2("Hello"),
             Left2.left2("java"),
             Left2.left2("Hi"),
+            Left2.left2("code"),
+            Left2.left2("cat"),
+            Left2.left2("12345"),
+            Left2.left2("Chocolate"),
+            Left2.left2("bricks"),
         };
 
         boolean allTestsPassed = true;

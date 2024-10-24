@@ -7,12 +7,30 @@ public class _Diff21
         "diff21(19)",
         "diff21(10)",
         "diff21(21)",
+        "diff21(22)",
+        "diff21(25)",
+        "diff21(30)",
+        "diff21(0)",
+        "diff21(1)",
+        "diff21(2)",
+        "diff21(-1)",
+        "diff21(-2)",
+        "diff21(50)",
     };
 
     static int[] expectedResults = {
         2,
         11,
         0,
+        2,
+        8,
+        18,
+        21,
+        20,
+        19,
+        22,
+        23,
+        58,
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +39,15 @@ public class _Diff21
             Diff21.diff21(19),
             Diff21.diff21(10),
             Diff21.diff21(21),
+            Diff21.diff21(22),
+            Diff21.diff21(25),
+            Diff21.diff21(30),
+            Diff21.diff21(0),
+            Diff21.diff21(1),
+            Diff21.diff21(2),
+            Diff21.diff21(-1),
+            Diff21.diff21(-2),
+            Diff21.diff21(50),
         };
 
         boolean allTestsPassed = true;

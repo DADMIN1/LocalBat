@@ -104,7 +104,9 @@ def ParseTestcases(testcases: list[str], functionDef: dict) -> dict:
 def ParseFunctionDefinition(code: str) -> dict:
     returnType, arguments = code.split('(', maxsplit=1)
     returnType, functionName = returnType.removeprefix("public ").strip().rsplit(maxsplit=1)
-    arguments = arguments.rsplit(')', maxsplit=1)[0].strip()
+    arguments, functionBody = arguments.rsplit(') {\n ', maxsplit=1)
+    arguments = arguments.strip()
+    functionBody = functionBody.strip().removesuffix('}').strip()
     
     hasMap = False
     MAPTYPES = []
@@ -120,7 +122,7 @@ def ParseFunctionDefinition(code: str) -> dict:
     
     # need to early-out if no args, otherwise parsedArgs comprehension crashes
     if args_list[0] == '': # rather than an empty array, you end up with only an empty quote instead
-        return { "name": functionName, "returnType": returnType, "args": [], "hasMap": hasMap }
+        return { "name": functionName, "returnType": returnType, "args": [], "hasMap": hasMap, "functionBody": functionBody }
     
     # I'm golfing lmao
     mapTypeRemap = { A:B for (A,B) in zip([a for a in args_list if a.startswith('MAPTYPE')], MAPTYPES) }
@@ -132,7 +134,7 @@ def ParseFunctionDefinition(code: str) -> dict:
         for (argType, identifier) in (argpair.split(),)
     ]
     
-    return { "name": functionName, "returnType": returnType, "args": parsedArgs, "hasMap": hasMap }
+    return { "name": functionName, "returnType": returnType, "args": parsedArgs, "hasMap": hasMap, "functionBody": functionBody }
 
 
 def ReformatPrompt(raw_prompt: str) -> str:
@@ -171,6 +173,7 @@ def WriteTestcaseFile(packageName:str, data: dict):
     testcase_filepath = testcase_packagedir / f'{testCasesClassname}.java'  # leading underscore prevents class name conflicts (they actually do occur across files)
     print(f"    generating {packageName}.{title} Testcase class...")
     
+    if data["testcases_extended"]: data["testcases"] = data["testcases_extended"]
     functionDefinition = ParseFunctionDefinition(data["provided_code"])
     testCases = ParseTestcases(data["testcases"], functionDefinition)
     
@@ -279,6 +282,7 @@ def WriteTestcaseFile(packageName:str, data: dict):
         "doesReturnArray": doesReturnArray,
         "doesReturnList": doesReturnList,
         "needsMap": needsMap, 
+        "functionDef": functionDefinition,
     }
 
 
@@ -328,22 +332,25 @@ def WriteJavaFile(packageName:str, data: dict):
     testcase_comment = TestcaseAsciiArt(data["testcases"])
     
     # adding static to declaration and cleaning up braces/whitespace
-    functionDeclaration = data['provided_code'].rstrip('}{\n ')
+    functionDeclaration = data['provided_code'].rsplit(') {\n ', maxsplit=1)[0] + ')'
     if not functionDeclaration.startswith("public"): functionDeclaration = "public "+functionDeclaration
     functionDeclaration = functionDeclaration.replace("public ", "public static ")
-    functionDeclaration += "\n    {\n        \n    }\n"
+    functionDeclaration += "\n    {\n        "+f"{function_info['functionDef']['functionBody']}"+"\n    }\n"
     
     with open(filepath, "w", encoding="utf-8") as file:
-        file.write(f"// {data["url"]}\n") # link to codingbat page
         file.write(f"package {packageName};\n")
-        file.write(f"import {packageName}.Testcases._{title};\n\n")
-        if returnsList: 
-            file.write("import java.util.List;\n\n")
-            #file.write("import java.util.Arrays;\n") # for 'Arrays.asList' 
-            #file.write("import java.util.ArrayList;\n\n") # not strictly necessary
+        file.write(f"import {packageName}.Testcases._{title};\n")
+        if returnsList:
+            file.write("import java.util.List;\n")
+            file.write("import java.util.Arrays;\n") # for 'Arrays.asList' 
+            file.write("import java.util.ArrayList;\n")
         if function_info["needsMap"]:
-            file.write("import java.util.Map;\n\n")
-            #file.write("import java.util.HashMap;\n\n")
+            file.write("import java.util.Map;\n")
+            file.write("import java.util.HashMap;\n")
+        file.write('\n')
+        
+        file.write(f"// {data['url']}\n") # link to codingbat page
+        file.write(f"// Difficulty: {data['difficulty']}\n\n")
         
         # The class name must match the filename (java)
         file.write(f"public class {title}"+"\n{\n")
@@ -423,7 +430,7 @@ def GenerateAll(only_missing=True):
 if __name__ == "__main__":
     GenerateAll()
     # GenerateSection("Map-1")
-    # GenerateSection("Array-1")
+    # GenerateSection("Array-3")
     # GenerateSection("String-1")
     
     # testdata = LoadFile("String-1", "makeOutWord")

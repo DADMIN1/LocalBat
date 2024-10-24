@@ -7,12 +7,28 @@ public class _HasTeen
         "hasTeen(13, 20, 10)",
         "hasTeen(20, 19, 10)",
         "hasTeen(20, 10, 13)",
+        "hasTeen(1, 20, 12)",
+        "hasTeen(19, 20, 12)",
+        "hasTeen(12, 20, 19)",
+        "hasTeen(12, 9, 20)",
+        "hasTeen(12, 18, 20)",
+        "hasTeen(14, 2, 20)",
+        "hasTeen(4, 2, 20)",
+        "hasTeen(11, 22, 22)",
     };
 
     static boolean[] expectedResults = {
         true,
         true,
         true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +37,14 @@ public class _HasTeen
             HasTeen.hasTeen(13, 20, 10),
             HasTeen.hasTeen(20, 19, 10),
             HasTeen.hasTeen(20, 10, 13),
+            HasTeen.hasTeen(1, 20, 12),
+            HasTeen.hasTeen(19, 20, 12),
+            HasTeen.hasTeen(12, 20, 19),
+            HasTeen.hasTeen(12, 9, 20),
+            HasTeen.hasTeen(12, 18, 20),
+            HasTeen.hasTeen(14, 2, 20),
+            HasTeen.hasTeen(4, 2, 20),
+            HasTeen.hasTeen(11, 22, 22),
         };
 
         boolean allTestsPassed = true;

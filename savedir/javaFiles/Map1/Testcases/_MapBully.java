@@ -8,12 +8,18 @@ public class _MapBully
         "mapBully({\"a\": \"candy\", \"b\": \"dirt\"})",
         "mapBully({\"a\": \"candy\"})",
         "mapBully({\"a\": \"candy\", \"b\": \"carrot\", \"c\": \"meh\"})",
+        "mapBully({\"b\": \"carrot\"})",
+        "mapBully({\"c\": \"meh\"})",
+        "mapBully({\"a\": \"sparkle\", \"c\": \"meh\"})",
     };
 
     static Map<?,?>[] expectedResults = {
         Map.of("a", "", "b", "candy"),
         Map.of("a", "", "b", "candy"),
         Map.of("a", "", "b", "candy", "c", "meh"),
+        Map.of("b", "carrot"),
+        Map.of("c", "meh"),
+        Map.of("a", "", "b", "sparkle", "c", "meh"),
     };
 
     public static void Validate(boolean printSuccess)
@@ -22,6 +28,9 @@ public class _MapBully
             MapBully.mapBully(Map.of("a", "candy", "b", "dirt")),
             MapBully.mapBully(Map.of("a", "candy")),
             MapBully.mapBully(Map.of("a", "candy", "b", "carrot", "c", "meh")),
+            MapBully.mapBully(Map.of("b", "carrot")),
+            MapBully.mapBully(Map.of("c", "meh")),
+            MapBully.mapBully(Map.of("a", "sparkle", "c", "meh")),
         };
 
         boolean allTestsPassed = true;

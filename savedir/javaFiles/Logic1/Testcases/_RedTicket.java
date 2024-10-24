@@ -7,12 +7,28 @@ public class _RedTicket
         "redTicket(2, 2, 2)",
         "redTicket(2, 2, 1)",
         "redTicket(0, 0, 0)",
+        "redTicket(2, 0, 0)",
+        "redTicket(1, 1, 1)",
+        "redTicket(1, 2, 1)",
+        "redTicket(1, 2, 0)",
+        "redTicket(0, 2, 2)",
+        "redTicket(1, 2, 2)",
+        "redTicket(0, 2, 0)",
+        "redTicket(1, 1, 2)",
     };
 
     static int[] expectedResults = {
         10,
         0,
         5,
+        1,
+        5,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +37,14 @@ public class _RedTicket
             RedTicket.redTicket(2, 2, 2),
             RedTicket.redTicket(2, 2, 1),
             RedTicket.redTicket(0, 0, 0),
+            RedTicket.redTicket(2, 0, 0),
+            RedTicket.redTicket(1, 1, 1),
+            RedTicket.redTicket(1, 2, 1),
+            RedTicket.redTicket(1, 2, 0),
+            RedTicket.redTicket(0, 2, 2),
+            RedTicket.redTicket(1, 2, 2),
+            RedTicket.redTicket(0, 2, 0),
+            RedTicket.redTicket(1, 1, 2),
         };
 
         boolean allTestsPassed = true;

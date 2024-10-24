@@ -7,12 +7,30 @@ public class _SumHeights2
         "sumHeights2([5, 3, 6, 7, 2], 2, 4)",
         "sumHeights2([5, 3, 6, 7, 2], 0, 1)",
         "sumHeights2([5, 3, 6, 7, 2], 0, 4)",
+        "sumHeights2([5, 3, 6, 7, 2], 1, 1)",
+        "sumHeights2([1, 2, 3, 4, 5, 4, 3, 2, 10], 0, 3)",
+        "sumHeights2([1, 2, 3, 4, 5, 4, 3, 2, 10], 4, 8)",
+        "sumHeights2([1, 2, 3, 4, 5, 4, 3, 2, 10], 7, 8)",
+        "sumHeights2([1, 2, 3, 4, 5, 4, 3, 2, 10], 8, 8)",
+        "sumHeights2([1, 2, 3, 4, 5, 4, 3, 2, 10], 2, 2)",
+        "sumHeights2([1, 2, 3, 4, 5, 4, 3, 2, 10], 3, 6)",
+        "sumHeights2([10, 8, 7, 7, 7, 6, 7], 1, 4)",
+        "sumHeights2([10, 8, 7, 7, 7, 6, 7], 1, 5)",
     };
 
     static int[] expectedResults = {
         7,
         2,
         15,
+        0,
+        6,
+        19,
+        16,
+        0,
+        0,
+        4,
+        1,
+        2,
     };
 
     public static void Validate(boolean printSuccess)
@@ -20,11 +38,29 @@ public class _SumHeights2
         int[] heights0 = { 5, 3, 6, 7, 2 }; 
         int[] heights1 = { 5, 3, 6, 7, 2 }; 
         int[] heights2 = { 5, 3, 6, 7, 2 }; 
+        int[] heights3 = { 5, 3, 6, 7, 2 }; 
+        int[] heights4 = { 1, 2, 3, 4, 5, 4, 3, 2, 10 }; 
+        int[] heights5 = { 1, 2, 3, 4, 5, 4, 3, 2, 10 }; 
+        int[] heights6 = { 1, 2, 3, 4, 5, 4, 3, 2, 10 }; 
+        int[] heights7 = { 1, 2, 3, 4, 5, 4, 3, 2, 10 }; 
+        int[] heights8 = { 1, 2, 3, 4, 5, 4, 3, 2, 10 }; 
+        int[] heights9 = { 1, 2, 3, 4, 5, 4, 3, 2, 10 }; 
+        int[] heights10 = { 10, 8, 7, 7, 7, 6, 7 }; 
+        int[] heights11 = { 10, 8, 7, 7, 7, 6, 7 }; 
 
         int[] resultsArray = {
             SumHeights2.sumHeights2(heights0, 2, 4),
             SumHeights2.sumHeights2(heights1, 0, 1),
             SumHeights2.sumHeights2(heights2, 0, 4),
+            SumHeights2.sumHeights2(heights3, 1, 1),
+            SumHeights2.sumHeights2(heights4, 0, 3),
+            SumHeights2.sumHeights2(heights5, 4, 8),
+            SumHeights2.sumHeights2(heights6, 7, 8),
+            SumHeights2.sumHeights2(heights7, 8, 8),
+            SumHeights2.sumHeights2(heights8, 2, 2),
+            SumHeights2.sumHeights2(heights9, 3, 6),
+            SumHeights2.sumHeights2(heights10, 1, 4),
+            SumHeights2.sumHeights2(heights11, 1, 5),
         };
 
         boolean allTestsPassed = true;

@@ -7,12 +7,24 @@ public class _RepeatFront
         "repeatFront(\"Chocolate\", 4)",
         "repeatFront(\"Chocolate\", 3)",
         "repeatFront(\"Ice Cream\", 2)",
+        "repeatFront(\"Ice Cream\", 1)",
+        "repeatFront(\"Ice Cream\", 0)",
+        "repeatFront(\"xyz\", 3)",
+        "repeatFront(\"\", 0)",
+        "repeatFront(\"Java\", 4)",
+        "repeatFront(\"Java\", 1)",
     };
 
     static String[] expectedResults = {
         "ChocChoChC",
         "ChoChC",
         "IcI",
+        "I",
+        "",
+        "xyzxyx",
+        "",
+        "JavaJavJaJ",
+        "J",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +33,12 @@ public class _RepeatFront
             RepeatFront.repeatFront("Chocolate", 4),
             RepeatFront.repeatFront("Chocolate", 3),
             RepeatFront.repeatFront("Ice Cream", 2),
+            RepeatFront.repeatFront("Ice Cream", 1),
+            RepeatFront.repeatFront("Ice Cream", 0),
+            RepeatFront.repeatFront("xyz", 3),
+            RepeatFront.repeatFront("", 0),
+            RepeatFront.repeatFront("Java", 4),
+            RepeatFront.repeatFront("Java", 1),
         };
 
         boolean allTestsPassed = true;

@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p161642
 package Warmup1;
 import Warmup1.Testcases._BackAround;
+
+// https://codingbat.com/prob/p161642
+// Difficulty: 139.0
 
 public class BackAround
 {
@@ -13,11 +15,14 @@ public class BackAround
     | backAround("cat")   → "tcatt"   |
     | backAround("Hello") → "oHelloo" |
     | backAround("a")     → "aaa"     |
+    | backAround("abc")   → "cabcc"   |
+    | backAround("read")  → "dreadd"  |
+    | backAround("boo")   → "obooo"   |
     |________________________________*/
 
     public static String backAround(String str)
     {
-        
+        return "";
     }
 
     public static void main(String[] args) {

@@ -9,12 +9,26 @@ public class _Square56
         "square56([3, 1, 4])",
         "square56([1])",
         "square56([2])",
+        "square56([3])",
+        "square56([4])",
+        "square56([5])",
+        "square56([6])",
+        "square56([7])",
+        "square56([1, 2, 3, 4, 5, 6, 7])",
+        "square56([3, -1, -4, 1, 5, 9])",
     };
 
     static List<?>[] expectedResults = {
         Arrays.asList(19, 11),
         Arrays.asList(11),
         Arrays.asList(14),
+        Arrays.asList(19),
+        Arrays.asList(),
+        Arrays.asList(),
+        Arrays.asList(),
+        Arrays.asList(59),
+        Arrays.asList(11, 14, 19, 59),
+        Arrays.asList(19, 11, 11, 91),
     };
 
     public static void Validate(boolean printSuccess)
@@ -23,6 +37,13 @@ public class _Square56
             Square56.square56(Arrays.asList(3, 1, 4)),
             Square56.square56(Arrays.asList(1)),
             Square56.square56(Arrays.asList(2)),
+            Square56.square56(Arrays.asList(3)),
+            Square56.square56(Arrays.asList(4)),
+            Square56.square56(Arrays.asList(5)),
+            Square56.square56(Arrays.asList(6)),
+            Square56.square56(Arrays.asList(7)),
+            Square56.square56(Arrays.asList(1, 2, 3, 4, 5, 6, 7)),
+            Square56.square56(Arrays.asList(3, -1, -4, 1, 5, 9)),
         };
 
         boolean allTestsPassed = true;

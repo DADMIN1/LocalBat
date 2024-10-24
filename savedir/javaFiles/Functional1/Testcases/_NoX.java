@@ -9,12 +9,22 @@ public class _NoX
         "noX([\"ax\", \"bb\", \"cx\"])",
         "noX([\"xxax\", \"xbxbx\", \"xxcx\"])",
         "noX([\"x\"])",
+        "noX([\"\"])",
+        "noX([])",
+        "noX([\"the\", \"taxi\"])",
+        "noX([\"the\", \"xxtxaxixxx\"])",
+        "noX([\"this\", \"is\", \"the\", \"x\"])",
     };
 
     static List<?>[] expectedResults = {
         Arrays.asList("a", "bb", "c"),
         Arrays.asList("a", "bb", "c"),
         Arrays.asList(""),
+        Arrays.asList(""),
+        Arrays.asList(),
+        Arrays.asList("the", "tai"),
+        Arrays.asList("the", "tai"),
+        Arrays.asList("this", "is", "the", ""),
     };
 
     public static void Validate(boolean printSuccess)
@@ -23,6 +33,11 @@ public class _NoX
             NoX.noX(Arrays.asList("ax", "bb", "cx")),
             NoX.noX(Arrays.asList("xxax", "xbxbx", "xxcx")),
             NoX.noX(Arrays.asList("x")),
+            NoX.noX(Arrays.asList("")),
+            NoX.noX(Arrays.asList()),
+            NoX.noX(Arrays.asList("the", "taxi")),
+            NoX.noX(Arrays.asList("the", "xxtxaxixxx")),
+            NoX.noX(Arrays.asList("this", "is", "the", "x")),
         };
 
         boolean allTestsPassed = true;

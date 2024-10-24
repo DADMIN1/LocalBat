@@ -7,12 +7,28 @@ public class _MaxMod5
         "maxMod5(2, 3)",
         "maxMod5(6, 2)",
         "maxMod5(3, 2)",
+        "maxMod5(8, 12)",
+        "maxMod5(7, 12)",
+        "maxMod5(11, 6)",
+        "maxMod5(2, 7)",
+        "maxMod5(7, 7)",
+        "maxMod5(9, 1)",
+        "maxMod5(9, 14)",
+        "maxMod5(1, 2)",
     };
 
     static int[] expectedResults = {
         3,
         6,
         3,
+        12,
+        7,
+        6,
+        2,
+        0,
+        9,
+        9,
+        2,
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +37,14 @@ public class _MaxMod5
             MaxMod5.maxMod5(2, 3),
             MaxMod5.maxMod5(6, 2),
             MaxMod5.maxMod5(3, 2),
+            MaxMod5.maxMod5(8, 12),
+            MaxMod5.maxMod5(7, 12),
+            MaxMod5.maxMod5(11, 6),
+            MaxMod5.maxMod5(2, 7),
+            MaxMod5.maxMod5(7, 7),
+            MaxMod5.maxMod5(9, 1),
+            MaxMod5.maxMod5(9, 14),
+            MaxMod5.maxMod5(1, 2),
         };
 
         boolean allTestsPassed = true;

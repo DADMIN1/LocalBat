@@ -7,12 +7,18 @@ public class _WordsCount
         "wordsCount([\"a\", \"bb\", \"b\", \"ccc\"], 1)",
         "wordsCount([\"a\", \"bb\", \"b\", \"ccc\"], 3)",
         "wordsCount([\"a\", \"bb\", \"b\", \"ccc\"], 4)",
+        "wordsCount([\"xx\", \"yyy\", \"x\", \"yy\", \"z\"], 1)",
+        "wordsCount([\"xx\", \"yyy\", \"x\", \"yy\", \"z\"], 2)",
+        "wordsCount([\"xx\", \"yyy\", \"x\", \"yy\", \"z\"], 3)",
     };
 
     static int[] expectedResults = {
         2,
         1,
         0,
+        2,
+        2,
+        1,
     };
 
     public static void Validate(boolean printSuccess)
@@ -20,11 +26,17 @@ public class _WordsCount
         String[] words0 = { "a", "bb", "b", "ccc" }; 
         String[] words1 = { "a", "bb", "b", "ccc" }; 
         String[] words2 = { "a", "bb", "b", "ccc" }; 
+        String[] words3 = { "xx", "yyy", "x", "yy", "z" }; 
+        String[] words4 = { "xx", "yyy", "x", "yy", "z" }; 
+        String[] words5 = { "xx", "yyy", "x", "yy", "z" }; 
 
         int[] resultsArray = {
             WordsCount.wordsCount(words0, 1),
             WordsCount.wordsCount(words1, 3),
             WordsCount.wordsCount(words2, 4),
+            WordsCount.wordsCount(words3, 1),
+            WordsCount.wordsCount(words4, 2),
+            WordsCount.wordsCount(words5, 3),
         };
 
         boolean allTestsPassed = true;

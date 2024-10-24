@@ -7,12 +7,20 @@ public class _AtFirst
         "atFirst(\"hello\")",
         "atFirst(\"hi\")",
         "atFirst(\"h\")",
+        "atFirst(\"\")",
+        "atFirst(\"kitten\")",
+        "atFirst(\"java\")",
+        "atFirst(\"j\")",
     };
 
     static String[] expectedResults = {
         "he",
         "hi",
         "h@",
+        "@@",
+        "ki",
+        "ja",
+        "j@",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +29,10 @@ public class _AtFirst
             AtFirst.atFirst("hello"),
             AtFirst.atFirst("hi"),
             AtFirst.atFirst("h"),
+            AtFirst.atFirst(""),
+            AtFirst.atFirst("kitten"),
+            AtFirst.atFirst("java"),
+            AtFirst.atFirst("j"),
         };
 
         boolean allTestsPassed = true;

@@ -8,12 +8,18 @@ public class _SquareUp
         "squareUp(3)",
         "squareUp(2)",
         "squareUp(4)",
+        "squareUp(1)",
+        "squareUp(0)",
+        "squareUp(6)",
     };
 
     static int[][] expectedResults = {
         {0, 0, 1, 0, 2, 1, 3, 2, 1},
         {0, 1, 2, 1},
         {0, 0, 0, 1, 0, 0, 2, 1, 0, 3, 2, 1, 4, 3, 2, 1},
+        {1},
+        {},
+        {0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 2, 1, 0, 0, 0, 3, 2, 1, 0, 0, 4, 3, 2, 1, 0, 5, 4, 3, 2, 1, 6, 5, 4, 3, 2, 1},
     };
 
     public static String printArray(int[] array)
@@ -30,6 +36,9 @@ public class _SquareUp
             SquareUp.squareUp(3),
             SquareUp.squareUp(2),
             SquareUp.squareUp(4),
+            SquareUp.squareUp(1),
+            SquareUp.squareUp(0),
+            SquareUp.squareUp(6),
         };
 
         boolean allTestsPassed = true;

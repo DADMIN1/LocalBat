@@ -1,22 +1,27 @@
-// https://codingbat.com/prob/p124620
 package AP1;
 import AP1.Testcases._WordsCount;
+
+// https://codingbat.com/prob/p124620
+// Difficulty: 215.0
 
 public class WordsCount
 {
     /* Given an array of strings, return the count of the number of strings with the given length. */
 
-    /*___________________________________________
-    |                 Testcases                  |
-    |____________________________________________|
-    | wordsCount(["a", "bb", "b", "ccc"], 1) → 2 |
-    | wordsCount(["a", "bb", "b", "ccc"], 3) → 1 |
-    | wordsCount(["a", "bb", "b", "ccc"], 4) → 0 |
-    |___________________________________________*/
+    /*_________________________________________________
+    |                    Testcases                     |
+    |__________________________________________________|
+    | wordsCount(["a", "bb", "b", "ccc"], 1)       → 2 |
+    | wordsCount(["a", "bb", "b", "ccc"], 3)       → 1 |
+    | wordsCount(["a", "bb", "b", "ccc"], 4)       → 0 |
+    | wordsCount(["xx", "yyy", "x", "yy", "z"], 1) → 2 |
+    | wordsCount(["xx", "yyy", "x", "yy", "z"], 2) → 2 |
+    | wordsCount(["xx", "yyy", "x", "yy", "z"], 3) → 1 |
+    |_________________________________________________*/
 
     public static int wordsCount(String[] words, int len)
     {
-        
+        return 0;
     }
 
     public static void main(String[] args) {

@@ -7,11 +7,23 @@ public class _CountHi
         "countHi(\"abc hi ho\")",
         "countHi(\"ABChi hi\")",
         "countHi(\"hihi\")",
+        "countHi(\"hiHIhi\")",
+        "countHi(\"\")",
+        "countHi(\"h\")",
+        "countHi(\"hi\")",
+        "countHi(\"Hi is no HI on ahI\")",
+        "countHi(\"hiho not HOHIhi\")",
     };
 
     static int[] expectedResults = {
         1,
         2,
+        2,
+        2,
+        0,
+        0,
+        1,
+        0,
         2,
     };
 
@@ -21,6 +33,12 @@ public class _CountHi
             CountHi.countHi("abc hi ho"),
             CountHi.countHi("ABChi hi"),
             CountHi.countHi("hihi"),
+            CountHi.countHi("hiHIhi"),
+            CountHi.countHi(""),
+            CountHi.countHi("h"),
+            CountHi.countHi("hi"),
+            CountHi.countHi("Hi is no HI on ahI"),
+            CountHi.countHi("hiho not HOHIhi"),
         };
 
         boolean allTestsPassed = true;

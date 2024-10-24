@@ -7,12 +7,20 @@ public class _Front3
         "front3(\"Java\")",
         "front3(\"Chocolate\")",
         "front3(\"abc\")",
+        "front3(\"abcXYZ\")",
+        "front3(\"ab\")",
+        "front3(\"a\")",
+        "front3(\"\")",
     };
 
     static String[] expectedResults = {
         "JavJavJav",
         "ChoChoCho",
         "abcabcabc",
+        "abcabcabc",
+        "ababab",
+        "aaa",
+        "",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +29,10 @@ public class _Front3
             Front3.front3("Java"),
             Front3.front3("Chocolate"),
             Front3.front3("abc"),
+            Front3.front3("abcXYZ"),
+            Front3.front3("ab"),
+            Front3.front3("a"),
+            Front3.front3(""),
         };
 
         boolean allTestsPassed = true;

@@ -9,12 +9,22 @@ public class _NoLong
         "noLong([\"this\", \"not\", \"too\", \"long\"])",
         "noLong([\"a\", \"bbb\", \"cccc\"])",
         "noLong([\"cccc\", \"cccc\", \"cccc\"])",
+        "noLong([])",
+        "noLong([\"\"])",
+        "noLong([\"empty\", \"\", \"empty\"])",
+        "noLong([\"a\"])",
+        "noLong([\"aaaa\", \"bbb\", \"***\", \"333\"])",
     };
 
     static List<?>[] expectedResults = {
         Arrays.asList("not", "too"),
         Arrays.asList("a", "bbb"),
         Arrays.asList(),
+        Arrays.asList(),
+        Arrays.asList(""),
+        Arrays.asList(""),
+        Arrays.asList("a"),
+        Arrays.asList("bbb", "***", "333"),
     };
 
     public static void Validate(boolean printSuccess)
@@ -23,6 +33,11 @@ public class _NoLong
             NoLong.noLong(Arrays.asList("this", "not", "too", "long")),
             NoLong.noLong(Arrays.asList("a", "bbb", "cccc")),
             NoLong.noLong(Arrays.asList("cccc", "cccc", "cccc")),
+            NoLong.noLong(Arrays.asList()),
+            NoLong.noLong(Arrays.asList("")),
+            NoLong.noLong(Arrays.asList("empty", "", "empty")),
+            NoLong.noLong(Arrays.asList("a")),
+            NoLong.noLong(Arrays.asList("aaaa", "bbb", "***", "333")),
         };
 
         boolean allTestsPassed = true;

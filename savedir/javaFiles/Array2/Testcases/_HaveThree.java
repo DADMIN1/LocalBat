@@ -7,10 +7,28 @@ public class _HaveThree
         "haveThree([3, 1, 3, 1, 3])",
         "haveThree([3, 1, 3, 3])",
         "haveThree([3, 4, 3, 3, 4])",
+        "haveThree([1, 3, 1, 3, 1, 2])",
+        "haveThree([1, 3, 1, 3, 1, 3])",
+        "haveThree([1, 3, 3, 1, 3])",
+        "haveThree([1, 3, 1, 3, 1, 3, 4, 3])",
+        "haveThree([3, 4, 3, 4, 3, 4, 4])",
+        "haveThree([3, 3, 3])",
+        "haveThree([1, 3])",
+        "haveThree([3])",
+        "haveThree([1])",
     };
 
     static boolean[] expectedResults = {
         true,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false,
         false,
         false,
     };
@@ -20,11 +38,29 @@ public class _HaveThree
         int[] nums0 = { 3, 1, 3, 1, 3 }; 
         int[] nums1 = { 3, 1, 3, 3 }; 
         int[] nums2 = { 3, 4, 3, 3, 4 }; 
+        int[] nums3 = { 1, 3, 1, 3, 1, 2 }; 
+        int[] nums4 = { 1, 3, 1, 3, 1, 3 }; 
+        int[] nums5 = { 1, 3, 3, 1, 3 }; 
+        int[] nums6 = { 1, 3, 1, 3, 1, 3, 4, 3 }; 
+        int[] nums7 = { 3, 4, 3, 4, 3, 4, 4 }; 
+        int[] nums8 = { 3, 3, 3 }; 
+        int[] nums9 = { 1, 3 }; 
+        int[] nums10 = { 3 }; 
+        int[] nums11 = { 1 }; 
 
         boolean[] resultsArray = {
             HaveThree.haveThree(nums0),
             HaveThree.haveThree(nums1),
             HaveThree.haveThree(nums2),
+            HaveThree.haveThree(nums3),
+            HaveThree.haveThree(nums4),
+            HaveThree.haveThree(nums5),
+            HaveThree.haveThree(nums6),
+            HaveThree.haveThree(nums7),
+            HaveThree.haveThree(nums8),
+            HaveThree.haveThree(nums9),
+            HaveThree.haveThree(nums10),
+            HaveThree.haveThree(nums11),
         };
 
         boolean allTestsPassed = true;

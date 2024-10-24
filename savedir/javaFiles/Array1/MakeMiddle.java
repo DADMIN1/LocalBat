@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p199519
 package Array1;
 import Array1.Testcases._MakeMiddle;
+
+// https://codingbat.com/prob/p199519
+// Difficulty: 157.0
 
 public class MakeMiddle
 {
@@ -14,11 +16,13 @@ public class MakeMiddle
     | makeMiddle([1, 2, 3, 4])       → [2, 3] |
     | makeMiddle([7, 1, 2, 3, 4, 9]) → [2, 3] |
     | makeMiddle([1, 2])             → [1, 2] |
+    | makeMiddle([5, 2, 4, 7])       → [2, 4] |
+    | makeMiddle([9, 0, 4, 3, 9, 1]) → [4, 3] |
     |________________________________________*/
 
     public static int[] makeMiddle(int[] nums)
     {
-        
+        return new int[]{0};
     }
 
     public static void main(String[] args) {

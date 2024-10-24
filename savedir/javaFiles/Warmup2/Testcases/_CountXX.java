@@ -7,12 +7,24 @@ public class _CountXX
         "countXX(\"abcxx\")",
         "countXX(\"xxx\")",
         "countXX(\"xxxx\")",
+        "countXX(\"abc\")",
+        "countXX(\"Hello there\")",
+        "countXX(\"Hexxo thxxe\")",
+        "countXX(\"\")",
+        "countXX(\"Kittens\")",
+        "countXX(\"Kittensxxx\")",
     };
 
     static int[] expectedResults = {
         1,
         2,
         3,
+        0,
+        0,
+        2,
+        0,
+        0,
+        2,
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +33,12 @@ public class _CountXX
             CountXX.countXX("abcxx"),
             CountXX.countXX("xxx"),
             CountXX.countXX("xxxx"),
+            CountXX.countXX("abc"),
+            CountXX.countXX("Hello there"),
+            CountXX.countXX("Hexxo thxxe"),
+            CountXX.countXX(""),
+            CountXX.countXX("Kittens"),
+            CountXX.countXX("Kittensxxx"),
         };
 
         boolean allTestsPassed = true;

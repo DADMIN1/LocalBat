@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p165941
 package AP1;
 import AP1.Testcases._DividesSelf;
+
+// https://codingbat.com/prob/p165941
+// Difficulty: 227.0
 
 public class DividesSelf
 {
@@ -15,11 +17,19 @@ public class DividesSelf
     | dividesSelf(128) → true  |
     | dividesSelf(12)  → true  |
     | dividesSelf(120) → false |
+    | dividesSelf(122) → true  |
+    | dividesSelf(13)  → false |
+    | dividesSelf(32)  → false |
+    | dividesSelf(22)  → true  |
+    | dividesSelf(42)  → false |
+    | dividesSelf(212) → true  |
+    | dividesSelf(213) → false |
+    | dividesSelf(162) → true  |
     |_________________________*/
 
     public static boolean dividesSelf(int n)
     {
-        
+        return false;
     }
 
     public static void main(String[] args) {

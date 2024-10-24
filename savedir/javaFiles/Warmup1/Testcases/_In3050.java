@@ -7,12 +7,30 @@ public class _In3050
         "in3050(30, 31)",
         "in3050(30, 41)",
         "in3050(40, 50)",
+        "in3050(40, 51)",
+        "in3050(39, 50)",
+        "in3050(50, 39)",
+        "in3050(40, 39)",
+        "in3050(49, 48)",
+        "in3050(50, 40)",
+        "in3050(50, 51)",
+        "in3050(35, 36)",
+        "in3050(35, 45)",
     };
 
     static boolean[] expectedResults = {
         true,
         false,
         true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        false,
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +39,15 @@ public class _In3050
             In3050.in3050(30, 31),
             In3050.in3050(30, 41),
             In3050.in3050(40, 50),
+            In3050.in3050(40, 51),
+            In3050.in3050(39, 50),
+            In3050.in3050(50, 39),
+            In3050.in3050(40, 39),
+            In3050.in3050(49, 48),
+            In3050.in3050(50, 40),
+            In3050.in3050(50, 51),
+            In3050.in3050(35, 36),
+            In3050.in3050(35, 45),
         };
 
         boolean allTestsPassed = true;

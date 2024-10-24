@@ -7,12 +7,24 @@ public class _Without2
         "without2(\"HelloHe\")",
         "without2(\"HelloHi\")",
         "without2(\"Hi\")",
+        "without2(\"Chocolate\")",
+        "without2(\"xxx\")",
+        "without2(\"xx\")",
+        "without2(\"x\")",
+        "without2(\"\")",
+        "without2(\"Fruits\")",
     };
 
     static String[] expectedResults = {
         "lloHe",
         "HelloHi",
         "",
+        "Chocolate",
+        "x",
+        "",
+        "x",
+        "",
+        "Fruits",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +33,12 @@ public class _Without2
             Without2.without2("HelloHe"),
             Without2.without2("HelloHi"),
             Without2.without2("Hi"),
+            Without2.without2("Chocolate"),
+            Without2.without2("xxx"),
+            Without2.without2("xx"),
+            Without2.without2("x"),
+            Without2.without2(""),
+            Without2.without2("Fruits"),
         };
 
         boolean allTestsPassed = true;

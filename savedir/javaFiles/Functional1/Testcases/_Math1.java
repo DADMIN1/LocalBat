@@ -9,12 +9,20 @@ public class _Math1
         "math1([1, 2, 3])",
         "math1([6, 8, 6, 8, 1])",
         "math1([10])",
+        "math1([])",
+        "math1([5, 10])",
+        "math1([-1, -2, -3, -2, -1])",
+        "math1([6, -3, 12, 23, 4, 1, 19, 11, 2, 3, 2])",
     };
 
     static List<?>[] expectedResults = {
         Arrays.asList(20, 30, 40),
         Arrays.asList(70, 90, 70, 90, 20),
         Arrays.asList(110),
+        Arrays.asList(),
+        Arrays.asList(60, 110),
+        Arrays.asList(0, -10, -20, -10, 0),
+        Arrays.asList(70, -20, 130, 240, 50, 20, 200, 120, 30, 40, 30),
     };
 
     public static void Validate(boolean printSuccess)
@@ -23,6 +31,10 @@ public class _Math1
             Math1.math1(Arrays.asList(1, 2, 3)),
             Math1.math1(Arrays.asList(6, 8, 6, 8, 1)),
             Math1.math1(Arrays.asList(10)),
+            Math1.math1(Arrays.asList()),
+            Math1.math1(Arrays.asList(5, 10)),
+            Math1.math1(Arrays.asList(-1, -2, -3, -2, -1)),
+            Math1.math1(Arrays.asList(6, -3, 12, 23, 4, 1, 19, 11, 2, 3, 2)),
         };
 
         boolean allTestsPassed = true;

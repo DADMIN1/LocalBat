@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p103360
 package Logic1;
 import Logic1.Testcases._DateFashion;
+
+// https://codingbat.com/prob/p103360
+// Difficulty: 106.0
 
 public class DateFashion
 {
@@ -18,11 +20,20 @@ public class DateFashion
     | dateFashion(5, 10) → 2 |
     | dateFashion(5, 2)  → 0 |
     | dateFashion(5, 5)  → 1 |
+    | dateFashion(3, 3)  → 1 |
+    | dateFashion(10, 2) → 0 |
+    | dateFashion(2, 9)  → 0 |
+    | dateFashion(9, 9)  → 2 |
+    | dateFashion(10, 5) → 2 |
+    | dateFashion(2, 2)  → 0 |
+    | dateFashion(3, 7)  → 1 |
+    | dateFashion(2, 7)  → 0 |
+    | dateFashion(6, 2)  → 0 |
     |_______________________*/
 
     public static int dateFashion(int you, int date)
     {
-        
+        return 0;
     }
 
     public static void main(String[] args) {

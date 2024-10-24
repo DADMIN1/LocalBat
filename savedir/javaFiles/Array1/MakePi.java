@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p167011
 package Array1;
 import Array1.Testcases._MakePi;
+
+// https://codingbat.com/prob/p167011
+// Difficulty: 109.0
 
 public class MakePi
 {
@@ -15,7 +17,7 @@ public class MakePi
 
     public static int[] makePi()
     {
-        
+        return new int[]{0};
     }
 
     public static void main(String[] args) {

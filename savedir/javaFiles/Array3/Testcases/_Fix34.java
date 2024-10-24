@@ -8,12 +8,34 @@ public class _Fix34
         "fix34([1, 3, 1, 4])",
         "fix34([1, 3, 1, 4, 4, 3, 1])",
         "fix34([3, 2, 2, 4])",
+        "fix34([3, 2, 3, 2, 4, 4])",
+        "fix34([2, 3, 2, 3, 2, 4, 4])",
+        "fix34([5, 3, 5, 4, 5, 4, 5, 4, 3, 5, 3, 5])",
+        "fix34([3, 1, 4])",
+        "fix34([3, 4, 1])",
+        "fix34([1, 1, 1])",
+        "fix34([1])",
+        "fix34([])",
+        "fix34([7, 3, 7, 7, 4])",
+        "fix34([3, 1, 4, 3, 1, 4])",
+        "fix34([3, 1, 1, 3, 4, 4])",
     };
 
     static int[][] expectedResults = {
         {1, 3, 4, 1},
         {1, 3, 4, 1, 1, 3, 4},
         {3, 4, 2, 2},
+        {3, 4, 3, 4, 2, 2},
+        {2, 3, 4, 3, 4, 2, 2},
+        {5, 3, 4, 5, 5, 5, 5, 5, 3, 4, 3, 4},
+        {3, 4, 1},
+        {3, 4, 1},
+        {1, 1, 1},
+        {1},
+        {},
+        {7, 3, 4, 7, 7},
+        {3, 4, 1, 3, 4, 1},
+        {3, 4, 1, 3, 4, 1},
     };
 
     public static String printArray(int[] array)
@@ -29,11 +51,33 @@ public class _Fix34
         int[] nums0 = { 1, 3, 1, 4 }; 
         int[] nums1 = { 1, 3, 1, 4, 4, 3, 1 }; 
         int[] nums2 = { 3, 2, 2, 4 }; 
+        int[] nums3 = { 3, 2, 3, 2, 4, 4 }; 
+        int[] nums4 = { 2, 3, 2, 3, 2, 4, 4 }; 
+        int[] nums5 = { 5, 3, 5, 4, 5, 4, 5, 4, 3, 5, 3, 5 }; 
+        int[] nums6 = { 3, 1, 4 }; 
+        int[] nums7 = { 3, 4, 1 }; 
+        int[] nums8 = { 1, 1, 1 }; 
+        int[] nums9 = { 1 }; 
+        int[] nums10 = {  }; 
+        int[] nums11 = { 7, 3, 7, 7, 4 }; 
+        int[] nums12 = { 3, 1, 4, 3, 1, 4 }; 
+        int[] nums13 = { 3, 1, 1, 3, 4, 4 }; 
 
         int[][] resultsArray = {
             Fix34.fix34(nums0),
             Fix34.fix34(nums1),
             Fix34.fix34(nums2),
+            Fix34.fix34(nums3),
+            Fix34.fix34(nums4),
+            Fix34.fix34(nums5),
+            Fix34.fix34(nums6),
+            Fix34.fix34(nums7),
+            Fix34.fix34(nums8),
+            Fix34.fix34(nums9),
+            Fix34.fix34(nums10),
+            Fix34.fix34(nums11),
+            Fix34.fix34(nums12),
+            Fix34.fix34(nums13),
         };
 
         boolean allTestsPassed = true;

@@ -7,11 +7,21 @@ public class _Split53
         "split53([1, 1])",
         "split53([1, 1, 1])",
         "split53([2, 4, 2])",
+        "split53([2, 2, 2, 1])",
+        "split53([3, 3, 5, 1])",
+        "split53([3, 5, 8])",
+        "split53([2, 4, 6])",
+        "split53([3, 5, 6, 10, 3, 3])",
     };
 
     static boolean[] expectedResults = {
         true,
         false,
+        true,
+        false,
+        true,
+        false,
+        true,
         true,
     };
 
@@ -20,11 +30,21 @@ public class _Split53
         int[] nums0 = { 1, 1 }; 
         int[] nums1 = { 1, 1, 1 }; 
         int[] nums2 = { 2, 4, 2 }; 
+        int[] nums3 = { 2, 2, 2, 1 }; 
+        int[] nums4 = { 3, 3, 5, 1 }; 
+        int[] nums5 = { 3, 5, 8 }; 
+        int[] nums6 = { 2, 4, 6 }; 
+        int[] nums7 = { 3, 5, 6, 10, 3, 3 }; 
 
         boolean[] resultsArray = {
             Split53.split53(nums0),
             Split53.split53(nums1),
             Split53.split53(nums2),
+            Split53.split53(nums3),
+            Split53.split53(nums4),
+            Split53.split53(nums5),
+            Split53.split53(nums6),
+            Split53.split53(nums7),
         };
 
         boolean allTestsPassed = true;

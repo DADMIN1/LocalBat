@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p155713
 package Array1;
 import Array1.Testcases._MidThree;
+
+// https://codingbat.com/prob/p155713
+// Difficulty: 166.0
 
 public class MidThree
 {
@@ -18,7 +20,7 @@ public class MidThree
 
     public static int[] midThree(int[] nums)
     {
-        
+        return new int[]{0};
     }
 
     public static void main(String[] args) {

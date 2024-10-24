@@ -8,12 +8,16 @@ public class _Topping1
         "topping1({\"ice cream\": \"peanuts\"})",
         "topping1({})",
         "topping1({\"pancake\": \"syrup\"})",
+        "topping1({\"bread\": \"dirt\", \"ice cream\": \"strawberries\"})",
+        "topping1({\"bread\": \"jam\", \"ice cream\": \"strawberries\", \"salad\": \"oil\"})",
     };
 
     static Map<?,?>[] expectedResults = {
         Map.of("bread", "butter", "ice cream", "cherry"),
         Map.of("bread", "butter"),
         Map.of("bread", "butter", "pancake", "syrup"),
+        Map.of("bread", "butter", "ice cream", "cherry"),
+        Map.of("bread", "butter", "ice cream", "cherry", "salad", "oil"),
     };
 
     public static void Validate(boolean printSuccess)
@@ -22,6 +26,8 @@ public class _Topping1
             Topping1.topping1(Map.of("ice cream", "peanuts")),
             Topping1.topping1(Map.of()),
             Topping1.topping1(Map.of("pancake", "syrup")),
+            Topping1.topping1(Map.of("bread", "dirt", "ice cream", "strawberries")),
+            Topping1.topping1(Map.of("bread", "jam", "ice cream", "strawberries", "salad", "oil")),
         };
 
         boolean allTestsPassed = true;

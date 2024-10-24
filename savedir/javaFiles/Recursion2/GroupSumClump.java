@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p105136
 package Recursion2;
 import Recursion2.Testcases._GroupSumClump;
+
+// https://codingbat.com/prob/p105136
+// Difficulty: 415.0
 
 public class GroupSumClump
 {
@@ -17,11 +19,15 @@ public class GroupSumClump
     | groupSumClump(0, [2, 4, 8], 10)       → true  |
     | groupSumClump(0, [1, 2, 4, 8, 1], 14) → true  |
     | groupSumClump(0, [2, 4, 4, 8], 14)    → false |
+    | groupSumClump(0, [8, 2, 2, 1], 9)     → true  |
+    | groupSumClump(0, [8, 2, 2, 1], 11)    → false |
+    | groupSumClump(0, [1], 1)              → true  |
+    | groupSumClump(0, [9], 1)              → false |
     |______________________________________________*/
 
     public static boolean groupSumClump(int start, int[] nums, int target)
     {
-        
+        return false;
     }
 
     public static void main(String[] args) {

@@ -1,8 +1,10 @@
-// https://codingbat.com/prob/p168493
 package Map2;
 import Map2.Testcases._FirstChar;
-
 import java.util.Map;
+import java.util.HashMap;
+
+// https://codingbat.com/prob/p168493
+// Difficulty: 353
 
 public class FirstChar
 {
@@ -10,17 +12,18 @@ public class FirstChar
     String> with a key for every different first character seen, 
     with the value of all the strings starting with that character appended together in the order they appear in the array. */
 
-    /*_____________________________________________________________________________________________________
-    |                                              Testcases                                               |
-    |______________________________________________________________________________________________________|
-    | firstChar(["salt", "tea", "soda", "toast"])      → {"s": "saltsoda", "t": "teatoast"}                |
-    | firstChar(["aa", "bb", "cc", "aAA", "cCC", "d"]) → {"a": "aaaAA", "b": "bb", "c": "cccCC", "d": "d"} |
-    | firstChar([])                                    → {}                                                |
-    |_____________________________________________________________________________________________________*/
+    /*_______________________________________________________________________________________________________________________________________________________________
+    |                                                                           Testcases                                                                            |
+    |________________________________________________________________________________________________________________________________________________________________|
+    | firstChar(["salt", "tea", "soda", "toast"])                                       → {"s": "saltsoda", "t": "teatoast"}                                         |
+    | firstChar(["aa", "bb", "cc", "aAA", "cCC", "d"])                                  → {"a": "aaaAA", "b": "bb", "c": "cccCC", "d": "d"}                          |
+    | firstChar([])                                                                     → {}                                                                         |
+    | firstChar(["apple", "bells", "salt", "aardvark", "bells", "sun", "zen", "bells"]) → {"a": "appleaardvark", "b": "bellsbellsbells", "s": "saltsun", "z": "zen"} |
+    |_______________________________________________________________________________________________________________________________________________________________*/
 
     public static Map<String, String> firstChar(String[] strings)
     {
-        
+        return new HashMap<String, String>();
     }
 
     public static void main(String[] args) {

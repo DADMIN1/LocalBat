@@ -7,12 +7,18 @@ public class _MinCat
         "minCat(\"Hello\", \"Hi\")",
         "minCat(\"Hello\", \"java\")",
         "minCat(\"java\", \"Hello\")",
+        "minCat(\"abc\", \"x\")",
+        "minCat(\"x\", \"abc\")",
+        "minCat(\"abc\", \"\")",
     };
 
     static String[] expectedResults = {
         "loHi",
         "ellojava",
         "javaello",
+        "cx",
+        "xc",
+        "",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +27,9 @@ public class _MinCat
             MinCat.minCat("Hello", "Hi"),
             MinCat.minCat("Hello", "java"),
             MinCat.minCat("java", "Hello"),
+            MinCat.minCat("abc", "x"),
+            MinCat.minCat("x", "abc"),
+            MinCat.minCat("abc", ""),
         };
 
         boolean allTestsPassed = true;

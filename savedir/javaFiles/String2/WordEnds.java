@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p147538
 package String2;
 import String2.Testcases._WordEnds;
+
+// https://codingbat.com/prob/p147538
+// Difficulty: 260.0
 
 public class WordEnds
 {
@@ -9,17 +11,27 @@ public class WordEnds
     Ignore cases where there is no char before or after the word, 
     and a char may be included twice if it is between two words. */
 
-    /*_________________________________________
-    |                Testcases                 |
-    |__________________________________________|
-    | wordEnds("abcXY123XYijk", "XY") → "c13i" |
-    | wordEnds("XY123XY", "XY")       → "13"   |
-    | wordEnds("XY1XY", "XY")         → "11"   |
-    |_________________________________________*/
+    /*___________________________________________
+    |                 Testcases                  |
+    |____________________________________________|
+    | wordEnds("abcXY123XYijk", "XY") → "c13i"   |
+    | wordEnds("XY123XY", "XY")       → "13"     |
+    | wordEnds("XY1XY", "XY")         → "11"     |
+    | wordEnds("XYXY", "XY")          → "XY"     |
+    | wordEnds("XY", "XY")            → ""       |
+    | wordEnds("Hi", "XY")            → ""       |
+    | wordEnds("", "XY")              → ""       |
+    | wordEnds("abc1xyz1i1j", "1")    → "cxziij" |
+    | wordEnds("abc1xyz1", "1")       → "cxz"    |
+    | wordEnds("abc1xyz11", "1")      → "cxz11"  |
+    | wordEnds("abc1xyz1abc", "abc")  → "11"     |
+    | wordEnds("abc1xyz1abc", "b")    → "acac"   |
+    | wordEnds("abc1abc1abc", "abc")  → "1111"   |
+    |___________________________________________*/
 
     public static String wordEnds(String str, String word)
     {
-        
+        return "";
     }
 
     public static void main(String[] args) {

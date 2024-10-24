@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p199720
 package Warmup1;
 import Warmup1.Testcases._StartOz;
+
+// https://codingbat.com/prob/p199720
+// Difficulty: 166.0
 
 public class StartOz
 {
@@ -14,11 +16,20 @@ public class StartOz
     | startOz("ozymandias") → "oz" |
     | startOz("bzoo")       → "z"  |
     | startOz("oxx")        → "o"  |
+    | startOz("oz")         → "oz" |
+    | startOz("ounce")      → "o"  |
+    | startOz("o")          → "o"  |
+    | startOz("abc")        → ""   |
+    | startOz("")           → ""   |
+    | startOz("zoo")        → ""   |
+    | startOz("aztec")      → "z"  |
+    | startOz("zzzz")       → "z"  |
+    | startOz("oznic")      → "oz" |
     |_____________________________*/
 
     public static String startOz(String str)
     {
-        
+        return "";
     }
 
     public static void main(String[] args) {

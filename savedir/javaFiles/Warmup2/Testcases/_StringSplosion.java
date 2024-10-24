@@ -7,12 +7,26 @@ public class _StringSplosion
         "stringSplosion(\"Code\")",
         "stringSplosion(\"abc\")",
         "stringSplosion(\"ab\")",
+        "stringSplosion(\"x\")",
+        "stringSplosion(\"fade\")",
+        "stringSplosion(\"There\")",
+        "stringSplosion(\"Kitten\")",
+        "stringSplosion(\"Bye\")",
+        "stringSplosion(\"Good\")",
+        "stringSplosion(\"Bad\")",
     };
 
     static String[] expectedResults = {
         "CCoCodCode",
         "aababc",
         "aab",
+        "x",
+        "ffafadfade",
+        "TThTheTherThere",
+        "KKiKitKittKitteKitten",
+        "BByBye",
+        "GGoGooGood",
+        "BBaBad",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +35,13 @@ public class _StringSplosion
             StringSplosion.stringSplosion("Code"),
             StringSplosion.stringSplosion("abc"),
             StringSplosion.stringSplosion("ab"),
+            StringSplosion.stringSplosion("x"),
+            StringSplosion.stringSplosion("fade"),
+            StringSplosion.stringSplosion("There"),
+            StringSplosion.stringSplosion("Kitten"),
+            StringSplosion.stringSplosion("Bye"),
+            StringSplosion.stringSplosion("Good"),
+            StringSplosion.stringSplosion("Bad"),
         };
 
         boolean allTestsPassed = true;

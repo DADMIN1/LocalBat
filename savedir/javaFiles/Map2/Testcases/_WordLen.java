@@ -8,12 +8,16 @@ public class _WordLen
         "wordLen([\"a\", \"bb\", \"a\", \"bb\"])",
         "wordLen([\"this\", \"and\", \"that\", \"and\"])",
         "wordLen([\"code\", \"code\", \"code\", \"bug\"])",
+        "wordLen([])",
+        "wordLen([\"z\"])",
     };
 
     static Map<?,?>[] expectedResults = {
         Map.of("bb", 2, "a", 1),
         Map.of("that", 4, "and", 3, "this", 4),
         Map.of("code", 4, "bug", 3),
+        Map.of(),
+        Map.of("z", 1),
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,11 +25,15 @@ public class _WordLen
         String[] strings0 = { "a", "bb", "a", "bb" }; 
         String[] strings1 = { "this", "and", "that", "and" }; 
         String[] strings2 = { "code", "code", "code", "bug" }; 
+        String[] strings3 = {  }; 
+        String[] strings4 = { "z" }; 
 
         Map<?,?>[] resultsArray = {
             WordLen.wordLen(strings0),
             WordLen.wordLen(strings1),
             WordLen.wordLen(strings2),
+            WordLen.wordLen(strings3),
+            WordLen.wordLen(strings4),
         };
 
         boolean allTestsPassed = true;

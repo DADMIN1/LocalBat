@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p129952
 package String2;
 import String2.Testcases._GetSandwich;
+
+// https://codingbat.com/prob/p129952
+// Difficulty: 245.0
 
 public class GetSandwich
 {
@@ -8,17 +10,26 @@ public class GetSandwich
     Return the string that is between the first and last appearance of "bread" in the given string, 
     or return the empty string "" if there are not two pieces of bread. */
 
-    /*_________________________________________
-    |                Testcases                 |
-    |__________________________________________|
-    | getSandwich("breadjambread")     → "jam" |
-    | getSandwich("xxbreadjambreadyy") → "jam" |
-    | getSandwich("xxbreadyy")         → ""    |
-    |_________________________________________*/
+    /*_____________________________________________________
+    |                      Testcases                       |
+    |______________________________________________________|
+    | getSandwich("breadjambread")          → "jam"        |
+    | getSandwich("xxbreadjambreadyy")      → "jam"        |
+    | getSandwich("xxbreadyy")              → ""           |
+    | getSandwich("xxbreadbreadjambreadyy") → "breadjam"   |
+    | getSandwich("breadAbread")            → "A"          |
+    | getSandwich("breadbread")             → ""           |
+    | getSandwich("abcbreaz")               → ""           |
+    | getSandwich("xyz")                    → ""           |
+    | getSandwich("")                       → ""           |
+    | getSandwich("breadbreaxbread")        → "breax"      |
+    | getSandwich("breaxbreadybread")       → "y"          |
+    | getSandwich("breadbreadbreadbread")   → "breadbread" |
+    |_____________________________________________________*/
 
     public static String getSandwich(String str)
     {
-        
+        return "";
     }
 
     public static void main(String[] args) {

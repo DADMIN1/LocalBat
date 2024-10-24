@@ -7,12 +7,20 @@ public class _ArrayCount9
         "arrayCount9([1, 2, 9])",
         "arrayCount9([1, 9, 9])",
         "arrayCount9([1, 9, 9, 3, 9])",
+        "arrayCount9([1, 2, 3])",
+        "arrayCount9([])",
+        "arrayCount9([4, 2, 4, 3, 1])",
+        "arrayCount9([9, 2, 4, 3, 1])",
     };
 
     static int[] expectedResults = {
         1,
         2,
         3,
+        0,
+        0,
+        0,
+        1,
     };
 
     public static void Validate(boolean printSuccess)
@@ -20,11 +28,19 @@ public class _ArrayCount9
         int[] nums0 = { 1, 2, 9 }; 
         int[] nums1 = { 1, 9, 9 }; 
         int[] nums2 = { 1, 9, 9, 3, 9 }; 
+        int[] nums3 = { 1, 2, 3 }; 
+        int[] nums4 = {  }; 
+        int[] nums5 = { 4, 2, 4, 3, 1 }; 
+        int[] nums6 = { 9, 2, 4, 3, 1 }; 
 
         int[] resultsArray = {
             ArrayCount9.arrayCount9(nums0),
             ArrayCount9.arrayCount9(nums1),
             ArrayCount9.arrayCount9(nums2),
+            ArrayCount9.arrayCount9(nums3),
+            ArrayCount9.arrayCount9(nums4),
+            ArrayCount9.arrayCount9(nums5),
+            ArrayCount9.arrayCount9(nums6),
         };
 
         boolean allTestsPassed = true;

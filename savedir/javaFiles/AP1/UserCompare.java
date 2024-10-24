@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p143482
 package AP1;
 import AP1.Testcases._UserCompare;
+
+// https://codingbat.com/prob/p143482
+// Difficulty: 248.0
 
 public class UserCompare
 {
@@ -12,17 +14,22 @@ public class UserCompare
     (On the AP, there would be two User objects, but here the code simply takes the two strings and two ints directly. 
     The code logic is the same.) */
 
-    /*___________________________________
-    |             Testcases              |
-    |____________________________________|
-    | userCompare("bb", 1, "zz", 2) → -1 |
-    | userCompare("bb", 1, "aa", 2) → 1  |
-    | userCompare("bb", 1, "bb", 1) → 0  |
-    |___________________________________*/
+    /*______________________________________
+    |               Testcases               |
+    |_______________________________________|
+    | userCompare("bb", 1, "zz", 2)    → -1 |
+    | userCompare("bb", 1, "aa", 2)    → 1  |
+    | userCompare("bb", 1, "bb", 1)    → 0  |
+    | userCompare("bb", 5, "bb", 1)    → 1  |
+    | userCompare("bb", 5, "bb", 10)   → -1 |
+    | userCompare("adam", 1, "bob", 2) → -1 |
+    | userCompare("bob", 1, "bob", 2)  → -1 |
+    | userCompare("bzb", 1, "bob", 2)  → 1  |
+    |______________________________________*/
 
     public static int userCompare(String aName, int aId, String bName, int bId)
     {
-        
+        return 0;
     }
 
     public static void main(String[] args) {

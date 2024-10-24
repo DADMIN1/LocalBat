@@ -7,12 +7,30 @@ public class _ZipZap
         "zipZap(\"zipXzap\")",
         "zipZap(\"zopzop\")",
         "zipZap(\"zzzopzop\")",
+        "zipZap(\"zibzap\")",
+        "zipZap(\"zip\")",
+        "zipZap(\"zi\")",
+        "zipZap(\"z\")",
+        "zipZap(\"\")",
+        "zipZap(\"zzp\")",
+        "zipZap(\"abcppp\")",
+        "zipZap(\"azbcppp\")",
+        "zipZap(\"azbcpzpp\")",
     };
 
     static String[] expectedResults = {
         "zpXzp",
         "zpzp",
         "zzzpzp",
+        "zibzp",
+        "zp",
+        "zi",
+        "z",
+        "",
+        "zp",
+        "abcppp",
+        "azbcppp",
+        "azbcpzp",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +39,15 @@ public class _ZipZap
             ZipZap.zipZap("zipXzap"),
             ZipZap.zipZap("zopzop"),
             ZipZap.zipZap("zzzopzop"),
+            ZipZap.zipZap("zibzap"),
+            ZipZap.zipZap("zip"),
+            ZipZap.zipZap("zi"),
+            ZipZap.zipZap("z"),
+            ZipZap.zipZap(""),
+            ZipZap.zipZap("zzp"),
+            ZipZap.zipZap("abcppp"),
+            ZipZap.zipZap("azbcppp"),
+            ZipZap.zipZap("azbcpzpp"),
         };
 
         boolean allTestsPassed = true;

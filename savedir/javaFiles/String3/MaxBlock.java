@@ -1,23 +1,33 @@
-// https://codingbat.com/prob/p179479
 package String3;
 import String3.Testcases._MaxBlock;
+
+// https://codingbat.com/prob/p179479
+// Difficulty: 327.0
 
 public class MaxBlock
 {
     /* Given a string, return the length of the largest "block" in the string. 
     A block is a run of adjacent chars that are the same. */
 
-    /*______________________________
-    |           Testcases           |
-    |_______________________________|
-    | maxBlock("hoopla")        → 2 |
-    | maxBlock("abbCCCddBBBxx") → 3 |
-    | maxBlock("")              → 0 |
-    |______________________________*/
+    /*__________________________________
+    |             Testcases             |
+    |___________________________________|
+    | maxBlock("hoopla")            → 2 |
+    | maxBlock("abbCCCddBBBxx")     → 3 |
+    | maxBlock("")                  → 0 |
+    | maxBlock("xyz")               → 1 |
+    | maxBlock("xxyz")              → 2 |
+    | maxBlock("xyzz")              → 2 |
+    | maxBlock("abbbcbbbxbbbx")     → 3 |
+    | maxBlock("XXBBBbbxx")         → 3 |
+    | maxBlock("XXBBBBbbxx")        → 4 |
+    | maxBlock("XXBBBbbxxXXXX")     → 4 |
+    | maxBlock("XX2222BBBbbXX2222") → 4 |
+    |__________________________________*/
 
     public static int maxBlock(String str)
     {
-        
+        return 0;
     }
 
     public static void main(String[] args) {

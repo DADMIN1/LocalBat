@@ -7,12 +7,34 @@ public class _CountCode
         "countCode(\"aaacodebbb\")",
         "countCode(\"codexxcode\")",
         "countCode(\"cozexxcope\")",
+        "countCode(\"cozfxxcope\")",
+        "countCode(\"xxcozeyycop\")",
+        "countCode(\"cozcop\")",
+        "countCode(\"abcxyz\")",
+        "countCode(\"code\")",
+        "countCode(\"ode\")",
+        "countCode(\"c\")",
+        "countCode(\"\")",
+        "countCode(\"AAcodeBBcoleCCccoreDD\")",
+        "countCode(\"AAcodeBBcoleCCccorfDD\")",
+        "countCode(\"coAcodeBcoleccoreDD\")",
     };
 
     static int[] expectedResults = {
         1,
         2,
         2,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        3,
+        2,
+        3,
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +43,17 @@ public class _CountCode
             CountCode.countCode("aaacodebbb"),
             CountCode.countCode("codexxcode"),
             CountCode.countCode("cozexxcope"),
+            CountCode.countCode("cozfxxcope"),
+            CountCode.countCode("xxcozeyycop"),
+            CountCode.countCode("cozcop"),
+            CountCode.countCode("abcxyz"),
+            CountCode.countCode("code"),
+            CountCode.countCode("ode"),
+            CountCode.countCode("c"),
+            CountCode.countCode(""),
+            CountCode.countCode("AAcodeBBcoleCCccoreDD"),
+            CountCode.countCode("AAcodeBBcoleCCccorfDD"),
+            CountCode.countCode("coAcodeBcoleccoreDD"),
         };
 
         boolean allTestsPassed = true;

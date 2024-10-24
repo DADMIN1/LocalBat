@@ -7,12 +7,20 @@ public class _Front22
         "front22(\"kitten\")",
         "front22(\"Ha\")",
         "front22(\"abc\")",
+        "front22(\"ab\")",
+        "front22(\"a\")",
+        "front22(\"\")",
+        "front22(\"Logic\")",
     };
 
     static String[] expectedResults = {
         "kikittenki",
         "HaHaHa",
         "ababcab",
+        "ababab",
+        "aaa",
+        "",
+        "LoLogicLo",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +29,10 @@ public class _Front22
             Front22.front22("kitten"),
             Front22.front22("Ha"),
             Front22.front22("abc"),
+            Front22.front22("ab"),
+            Front22.front22("a"),
+            Front22.front22(""),
+            Front22.front22("Logic"),
         };
 
         boolean allTestsPassed = true;

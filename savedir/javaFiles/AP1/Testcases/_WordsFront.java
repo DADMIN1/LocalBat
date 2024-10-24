@@ -8,12 +8,18 @@ public class _WordsFront
         "wordsFront([\"a\", \"b\", \"c\", \"d\"], 1)",
         "wordsFront([\"a\", \"b\", \"c\", \"d\"], 2)",
         "wordsFront([\"a\", \"b\", \"c\", \"d\"], 3)",
+        "wordsFront([\"a\", \"b\", \"c\", \"d\"], 4)",
+        "wordsFront([\"Hi\", \"There\"], 1)",
+        "wordsFront([\"Hi\", \"There\"], 2)",
     };
 
     static String[][] expectedResults = {
         {"a"},
         {"a", "b"},
         {"a", "b", "c"},
+        {"a", "b", "c", "d"},
+        {"Hi"},
+        {"Hi", "There"},
     };
 
     public static String printArray(String[] array)
@@ -29,11 +35,17 @@ public class _WordsFront
         String[] words0 = { "a", "b", "c", "d" }; 
         String[] words1 = { "a", "b", "c", "d" }; 
         String[] words2 = { "a", "b", "c", "d" }; 
+        String[] words3 = { "a", "b", "c", "d" }; 
+        String[] words4 = { "Hi", "There" }; 
+        String[] words5 = { "Hi", "There" }; 
 
         String[][] resultsArray = {
             WordsFront.wordsFront(words0, 1),
             WordsFront.wordsFront(words1, 2),
             WordsFront.wordsFront(words2, 3),
+            WordsFront.wordsFront(words3, 4),
+            WordsFront.wordsFront(words4, 1),
+            WordsFront.wordsFront(words5, 2),
         };
 
         boolean allTestsPassed = true;

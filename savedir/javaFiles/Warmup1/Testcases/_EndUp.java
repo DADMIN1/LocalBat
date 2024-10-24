@@ -7,12 +7,20 @@ public class _EndUp
         "endUp(\"Hello\")",
         "endUp(\"hi there\")",
         "endUp(\"hi\")",
+        "endUp(\"woo hoo\")",
+        "endUp(\"xyz12\")",
+        "endUp(\"x\")",
+        "endUp(\"\")",
     };
 
     static String[] expectedResults = {
         "HeLLO",
         "hi thERE",
         "HI",
+        "woo HOO",
+        "xyZ12",
+        "X",
+        "",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +29,10 @@ public class _EndUp
             EndUp.endUp("Hello"),
             EndUp.endUp("hi there"),
             EndUp.endUp("hi"),
+            EndUp.endUp("woo hoo"),
+            EndUp.endUp("xyz12"),
+            EndUp.endUp("x"),
+            EndUp.endUp(""),
         };
 
         boolean allTestsPassed = true;

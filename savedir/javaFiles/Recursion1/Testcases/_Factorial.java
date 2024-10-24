@@ -7,12 +7,24 @@ public class _Factorial
         "factorial(1)",
         "factorial(2)",
         "factorial(3)",
+        "factorial(4)",
+        "factorial(5)",
+        "factorial(6)",
+        "factorial(7)",
+        "factorial(8)",
+        "factorial(12)",
     };
 
     static int[] expectedResults = {
         1,
         2,
         6,
+        24,
+        120,
+        720,
+        5040,
+        40320,
+        479001600,
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +33,12 @@ public class _Factorial
             Factorial.factorial(1),
             Factorial.factorial(2),
             Factorial.factorial(3),
+            Factorial.factorial(4),
+            Factorial.factorial(5),
+            Factorial.factorial(6),
+            Factorial.factorial(7),
+            Factorial.factorial(8),
+            Factorial.factorial(12),
         };
 
         boolean allTestsPassed = true;

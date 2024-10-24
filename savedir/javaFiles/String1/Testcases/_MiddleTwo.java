@@ -7,12 +7,16 @@ public class _MiddleTwo
         "middleTwo(\"string\")",
         "middleTwo(\"code\")",
         "middleTwo(\"Practice\")",
+        "middleTwo(\"ab\")",
+        "middleTwo(\"0123456789\")",
     };
 
     static String[] expectedResults = {
         "ri",
         "od",
         "ct",
+        "ab",
+        "45",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +25,8 @@ public class _MiddleTwo
             MiddleTwo.middleTwo("string"),
             MiddleTwo.middleTwo("code"),
             MiddleTwo.middleTwo("Practice"),
+            MiddleTwo.middleTwo("ab"),
+            MiddleTwo.middleTwo("0123456789"),
         };
 
         boolean allTestsPassed = true;

@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p154137
 package String3;
 import String3.Testcases._NotReplace;
+
+// https://codingbat.com/prob/p154137
+// Difficulty: 333.0
 
 public class NotReplace
 {
@@ -8,17 +10,25 @@ public class NotReplace
     The word "is" should not be immediately preceeded or followed by a letter -- so for example the "is" in "this" does not count. 
     (Note: Character.isLetter(char) tests if a char is a letter.) */
 
-    /*__________________________________________________
-    |                     Testcases                     |
-    |___________________________________________________|
-    | notReplace("is test")       → "is not test"       |
-    | notReplace("is-is")         → "is not-is not"     |
-    | notReplace("This is right") → "This is not right" |
-    |__________________________________________________*/
+    /*__________________________________________________________
+    |                         Testcases                         |
+    |___________________________________________________________|
+    | notReplace("is test")         → "is not test"             |
+    | notReplace("is-is")           → "is not-is not"           |
+    | notReplace("This is right")   → "This is not right"       |
+    | notReplace("This is isabell") → "This is not isabell"     |
+    | notReplace("")                → ""                        |
+    | notReplace("is")              → "is not"                  |
+    | notReplace("isis")            → "isis"                    |
+    | notReplace("Dis is bliss is") → "Dis is not bliss is not" |
+    | notReplace("is his")          → "is not his"              |
+    | notReplace("xis yis")         → "xis yis"                 |
+    | notReplace("AAAis is")        → "AAAis is not"            |
+    |__________________________________________________________*/
 
     public static String notReplace(String str)
     {
-        
+        return "";
     }
 
     public static void main(String[] args) {

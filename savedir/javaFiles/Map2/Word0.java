@@ -1,8 +1,10 @@
-// https://codingbat.com/prob/p152303
 package Map2;
 import Map2.Testcases._Word0;
-
 import java.util.Map;
+import java.util.HashMap;
+
+// https://codingbat.com/prob/p152303
+// Difficulty: 303
 
 public class Word0
 {
@@ -16,11 +18,13 @@ public class Word0
     | word0(["a", "b", "a", "b"])      → {"a": 0, "b": 0}         |
     | word0(["a", "b", "a", "c", "b"]) → {"a": 0, "b": 0, "c": 0} |
     | word0(["c", "b", "a"])           → {"a": 0, "b": 0, "c": 0} |
+    | word0(["c", "c", "c", "c"])      → {"c": 0}                 |
+    | word0([])                        → {}                       |
     |____________________________________________________________*/
 
     public static Map<String, Integer> word0(String[] strings)
     {
-        
+        return new HashMap<String, Integer>();
     }
 
     public static void main(String[] args) {

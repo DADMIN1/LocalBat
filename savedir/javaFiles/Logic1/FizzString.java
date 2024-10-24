@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p137136
 package Logic1;
 import Logic1.Testcases._FizzString;
+
+// https://codingbat.com/prob/p137136
+// Difficulty: 135
 
 public class FizzString
 {
@@ -9,17 +11,30 @@ public class FizzString
     return "FizzBuzz". In all other cases, return the string unchanged. 
     (See also: FizzBuzz Code) */
 
-    /*_______________________________
-    |           Testcases            |
-    |________________________________|
-    | fizzString("fig") → "Fizz"     |
-    | fizzString("dib") → "Buzz"     |
-    | fizzString("fib") → "FizzBuzz" |
-    |_______________________________*/
+    /*__________________________________
+    |             Testcases             |
+    |___________________________________|
+    | fizzString("fig")    → "Fizz"     |
+    | fizzString("dib")    → "Buzz"     |
+    | fizzString("fib")    → "FizzBuzz" |
+    | fizzString("abc")    → "abc"      |
+    | fizzString("fooo")   → "Fizz"     |
+    | fizzString("booo")   → "booo"     |
+    | fizzString("ooob")   → "Buzz"     |
+    | fizzString("fooob")  → "FizzBuzz" |
+    | fizzString("f")      → "Fizz"     |
+    | fizzString("b")      → "Buzz"     |
+    | fizzString("abcb")   → "Buzz"     |
+    | fizzString("Hello")  → "Hello"    |
+    | fizzString("Hellob") → "Buzz"     |
+    | fizzString("af")     → "af"       |
+    | fizzString("bf")     → "bf"       |
+    | fizzString("fb")     → "FizzBuzz" |
+    |__________________________________*/
 
     public static String fizzString(String str)
     {
-        
+        return "";
     }
 
     public static void main(String[] args) {

@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p130781
 package String1;
 import String1.Testcases._Right2;
+
+// https://codingbat.com/prob/p130781
+// Difficulty: 136.0
 
 public class Right2
 {
@@ -13,11 +15,14 @@ public class Right2
     | right2("Hello") → "loHel" |
     | right2("java")  → "vaja"  |
     | right2("Hi")    → "Hi"    |
+    | right2("code")  → "deco"  |
+    | right2("cat")   → "atc"   |
+    | right2("12345") → "45123" |
     |__________________________*/
 
     public static String right2(String str)
     {
-        
+        return "";
     }
 
     public static void main(String[] args) {

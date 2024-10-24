@@ -7,11 +7,17 @@ public class _IcyHot
         "icyHot(120, -1)",
         "icyHot(-1, 120)",
         "icyHot(2, 120)",
+        "icyHot(-1, 100)",
+        "icyHot(-2, -2)",
+        "icyHot(120, 120)",
     };
 
     static boolean[] expectedResults = {
         true,
         true,
+        false,
+        false,
+        false,
         false,
     };
 
@@ -21,6 +27,9 @@ public class _IcyHot
             IcyHot.icyHot(120, -1),
             IcyHot.icyHot(-1, 120),
             IcyHot.icyHot(2, 120),
+            IcyHot.icyHot(-1, 100),
+            IcyHot.icyHot(-2, -2),
+            IcyHot.icyHot(120, 120),
         };
 
         boolean allTestsPassed = true;

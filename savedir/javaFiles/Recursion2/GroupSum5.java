@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p138907
 package Recursion2;
 import Recursion2.Testcases._GroupSum5;
+
+// https://codingbat.com/prob/p138907
+// Difficulty: 412.0
 
 public class GroupSum5
 {
@@ -16,11 +18,23 @@ public class GroupSum5
     | groupSum5(0, [2, 5, 10, 4], 19) → true  |
     | groupSum5(0, [2, 5, 10, 4], 17) → true  |
     | groupSum5(0, [2, 5, 10, 4], 12) → false |
+    | groupSum5(0, [2, 5, 4, 10], 12) → false |
+    | groupSum5(0, [3, 5, 1], 4)      → false |
+    | groupSum5(0, [3, 5, 1], 5)      → true  |
+    | groupSum5(0, [1, 3, 5], 5)      → true  |
+    | groupSum5(0, [3, 5, 1], 9)      → false |
+    | groupSum5(0, [2, 5, 10, 4], 7)  → false |
+    | groupSum5(0, [2, 5, 10, 4], 15) → true  |
+    | groupSum5(0, [2, 5, 10, 4], 11) → false |
+    | groupSum5(0, [1], 1)            → true  |
+    | groupSum5(0, [9], 1)            → false |
+    | groupSum5(0, [9], 0)            → true  |
+    | groupSum5(0, [], 0)             → true  |
     |________________________________________*/
 
     public static boolean groupSum5(int start, int[] nums, int target)
     {
-        
+        return false;
     }
 
     public static void main(String[] args) {

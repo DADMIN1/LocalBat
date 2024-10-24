@@ -7,12 +7,18 @@ public class _ExtraFront
         "extraFront(\"Hello\")",
         "extraFront(\"ab\")",
         "extraFront(\"H\")",
+        "extraFront(\"\")",
+        "extraFront(\"Candy\")",
+        "extraFront(\"Code\")",
     };
 
     static String[] expectedResults = {
         "HeHeHe",
         "ababab",
         "HHH",
+        "",
+        "CaCaCa",
+        "CoCoCo",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +27,9 @@ public class _ExtraFront
             ExtraFront.extraFront("Hello"),
             ExtraFront.extraFront("ab"),
             ExtraFront.extraFront("H"),
+            ExtraFront.extraFront(""),
+            ExtraFront.extraFront("Candy"),
+            ExtraFront.extraFront("Code"),
         };
 
         boolean allTestsPassed = true;

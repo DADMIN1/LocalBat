@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p143461
 package Array1;
 import Array1.Testcases._Make2;
+
+// https://codingbat.com/prob/p143461
+// Difficulty: 178.0
 
 public class Make2
 {
@@ -14,11 +16,20 @@ public class Make2
     | make2([4, 5], [1, 2, 3]) → [4, 5] |
     | make2([4], [1, 2, 3])    → [4, 1] |
     | make2([], [1, 2])        → [1, 2] |
+    | make2([1, 2], [])        → [1, 2] |
+    | make2([3], [1, 2, 3])    → [3, 1] |
+    | make2([3], [1])          → [3, 1] |
+    | make2([3, 1, 4], [])     → [3, 1] |
+    | make2([1], [1])          → [1, 1] |
+    | make2([1, 2, 3], [7, 8]) → [1, 2] |
+    | make2([7, 8], [1, 2, 3]) → [7, 8] |
+    | make2([7], [1, 2, 3])    → [7, 1] |
+    | make2([5, 4], [2, 3, 7]) → [5, 4] |
     |__________________________________*/
 
     public static int[] make2(int[] a, int[] b)
     {
-        
+        return new int[]{0};
     }
 
     public static void main(String[] args) {

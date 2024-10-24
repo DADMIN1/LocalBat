@@ -7,12 +7,28 @@ public class _IntMax
         "intMax(1, 2, 3)",
         "intMax(1, 3, 2)",
         "intMax(3, 2, 1)",
+        "intMax(9, 3, 3)",
+        "intMax(3, 9, 3)",
+        "intMax(3, 3, 9)",
+        "intMax(8, 2, 3)",
+        "intMax(-3, -1, -2)",
+        "intMax(6, 2, 5)",
+        "intMax(5, 6, 2)",
+        "intMax(5, 2, 6)",
     };
 
     static int[] expectedResults = {
         3,
         3,
         3,
+        9,
+        9,
+        9,
+        8,
+        -1,
+        6,
+        6,
+        6,
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +37,14 @@ public class _IntMax
             IntMax.intMax(1, 2, 3),
             IntMax.intMax(1, 3, 2),
             IntMax.intMax(3, 2, 1),
+            IntMax.intMax(9, 3, 3),
+            IntMax.intMax(3, 9, 3),
+            IntMax.intMax(3, 3, 9),
+            IntMax.intMax(8, 2, 3),
+            IntMax.intMax(-3, -1, -2),
+            IntMax.intMax(6, 2, 5),
+            IntMax.intMax(5, 6, 2),
+            IntMax.intMax(5, 2, 6),
         };
 
         boolean allTestsPassed = true;

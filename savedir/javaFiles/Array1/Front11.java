@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p128270
 package Array1;
 import Array1.Testcases._Front11;
+
+// https://codingbat.com/prob/p128270
+// Difficulty: 181.0
 
 public class Front11
 {
@@ -13,11 +15,15 @@ public class Front11
     | front11([1, 2, 3], [7, 9, 8]) → [1, 7] |
     | front11([1], [2])             → [1, 2] |
     | front11([1, 7], [])           → [1]    |
+    | front11([], [2, 8])           → [2]    |
+    | front11([], [])               → []     |
+    | front11([3], [1, 4, 1, 9])    → [3, 1] |
+    | front11([1, 4, 1, 9], [])     → [1]    |
     |_______________________________________*/
 
     public static int[] front11(int[] a, int[] b)
     {
-        
+        return new int[]{0};
     }
 
     public static void main(String[] args) {

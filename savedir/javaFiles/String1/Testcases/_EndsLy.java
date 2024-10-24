@@ -7,12 +7,24 @@ public class _EndsLy
         "endsLy(\"oddly\")",
         "endsLy(\"y\")",
         "endsLy(\"oddy\")",
+        "endsLy(\"oddl\")",
+        "endsLy(\"olydd\")",
+        "endsLy(\"ly\")",
+        "endsLy(\"\")",
+        "endsLy(\"falsey\")",
+        "endsLy(\"evenly\")",
     };
 
     static boolean[] expectedResults = {
         true,
         false,
         false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        true,
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +33,12 @@ public class _EndsLy
             EndsLy.endsLy("oddly"),
             EndsLy.endsLy("y"),
             EndsLy.endsLy("oddy"),
+            EndsLy.endsLy("oddl"),
+            EndsLy.endsLy("olydd"),
+            EndsLy.endsLy("ly"),
+            EndsLy.endsLy(""),
+            EndsLy.endsLy("falsey"),
+            EndsLy.endsLy("evenly"),
         };
 
         boolean allTestsPassed = true;

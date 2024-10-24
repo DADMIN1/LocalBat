@@ -1,22 +1,29 @@
-// https://codingbat.com/prob/p123384
 package Warmup1;
 import Warmup1.Testcases._FrontBack;
+
+// https://codingbat.com/prob/p123384
+// Difficulty: 133.0
 
 public class FrontBack
 {
     /* Given a string, return a new string where the first and last chars have been exchanged. */
 
-    /*___________________________
-    |         Testcases          |
-    |____________________________|
-    | frontBack("code") → "eodc" |
-    | frontBack("a")    → "a"    |
-    | frontBack("ab")   → "ba"   |
-    |___________________________*/
+    /*_____________________________________
+    |              Testcases               |
+    |______________________________________|
+    | frontBack("code")      → "eodc"      |
+    | frontBack("a")         → "a"         |
+    | frontBack("ab")        → "ba"        |
+    | frontBack("abc")       → "cba"       |
+    | frontBack("")          → ""          |
+    | frontBack("Chocolate") → "ehocolatC" |
+    | frontBack("aavJ")      → "Java"      |
+    | frontBack("hello")     → "oellh"     |
+    |_____________________________________*/
 
     public static String frontBack(String str)
     {
-        
+        return "";
     }
 
     public static void main(String[] args) {

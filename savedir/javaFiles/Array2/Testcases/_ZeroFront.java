@@ -8,12 +8,28 @@ public class _ZeroFront
         "zeroFront([1, 0, 0, 1])",
         "zeroFront([0, 1, 1, 0, 1])",
         "zeroFront([1, 0])",
+        "zeroFront([0, 1])",
+        "zeroFront([1, 1, 1, 0])",
+        "zeroFront([2, 2, 2, 2])",
+        "zeroFront([0, 0, 1, 0])",
+        "zeroFront([-1, 0, 0, -1, 0])",
+        "zeroFront([0, -3, 0, -3])",
+        "zeroFront([])",
+        "zeroFront([9, 9, 0, 9, 0, 9])",
     };
 
     static int[][] expectedResults = {
         {0, 0, 1, 1},
         {0, 0, 1, 1, 1},
         {0, 1},
+        {0, 1},
+        {0, 1, 1, 1},
+        {2, 2, 2, 2},
+        {0, 0, 0, 1},
+        {0, 0, 0, -1, -1},
+        {0, 0, -3, -3},
+        {},
+        {0, 0, 9, 9, 9, 9},
     };
 
     public static String printArray(int[] array)
@@ -29,11 +45,27 @@ public class _ZeroFront
         int[] nums0 = { 1, 0, 0, 1 }; 
         int[] nums1 = { 0, 1, 1, 0, 1 }; 
         int[] nums2 = { 1, 0 }; 
+        int[] nums3 = { 0, 1 }; 
+        int[] nums4 = { 1, 1, 1, 0 }; 
+        int[] nums5 = { 2, 2, 2, 2 }; 
+        int[] nums6 = { 0, 0, 1, 0 }; 
+        int[] nums7 = { -1, 0, 0, -1, 0 }; 
+        int[] nums8 = { 0, -3, 0, -3 }; 
+        int[] nums9 = {  }; 
+        int[] nums10 = { 9, 9, 0, 9, 0, 9 }; 
 
         int[][] resultsArray = {
             ZeroFront.zeroFront(nums0),
             ZeroFront.zeroFront(nums1),
             ZeroFront.zeroFront(nums2),
+            ZeroFront.zeroFront(nums3),
+            ZeroFront.zeroFront(nums4),
+            ZeroFront.zeroFront(nums5),
+            ZeroFront.zeroFront(nums6),
+            ZeroFront.zeroFront(nums7),
+            ZeroFront.zeroFront(nums8),
+            ZeroFront.zeroFront(nums9),
+            ZeroFront.zeroFront(nums10),
         };
 
         boolean allTestsPassed = true;

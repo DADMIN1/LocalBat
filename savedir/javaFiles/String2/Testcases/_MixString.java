@@ -7,12 +7,32 @@ public class _MixString
         "mixString(\"abc\", \"xyz\")",
         "mixString(\"Hi\", \"There\")",
         "mixString(\"xxxx\", \"There\")",
+        "mixString(\"xxx\", \"X\")",
+        "mixString(\"2/\", \"27 around\")",
+        "mixString(\"\", \"Hello\")",
+        "mixString(\"Abc\", \"\")",
+        "mixString(\"\", \"\")",
+        "mixString(\"a\", \"b\")",
+        "mixString(\"ax\", \"b\")",
+        "mixString(\"a\", \"bx\")",
+        "mixString(\"So\", \"Long\")",
+        "mixString(\"Long\", \"So\")",
     };
 
     static String[] expectedResults = {
         "axbycz",
         "HTihere",
         "xTxhxexre",
+        "xXxx",
+        "22/7 around",
+        "Hello",
+        "Abc",
+        "",
+        "ab",
+        "abx",
+        "abx",
+        "SLoong",
+        "LSoong",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +41,16 @@ public class _MixString
             MixString.mixString("abc", "xyz"),
             MixString.mixString("Hi", "There"),
             MixString.mixString("xxxx", "There"),
+            MixString.mixString("xxx", "X"),
+            MixString.mixString("2/", "27 around"),
+            MixString.mixString("", "Hello"),
+            MixString.mixString("Abc", ""),
+            MixString.mixString("", ""),
+            MixString.mixString("a", "b"),
+            MixString.mixString("ax", "b"),
+            MixString.mixString("a", "bx"),
+            MixString.mixString("So", "Long"),
+            MixString.mixString("Long", "So"),
         };
 
         boolean allTestsPassed = true;

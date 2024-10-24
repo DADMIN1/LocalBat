@@ -7,12 +7,30 @@ public class _WithoutX
         "withoutX(\"xHix\")",
         "withoutX(\"xHi\")",
         "withoutX(\"Hxix\")",
+        "withoutX(\"Hi\")",
+        "withoutX(\"xxHi\")",
+        "withoutX(\"Hix\")",
+        "withoutX(\"xaxbx\")",
+        "withoutX(\"xx\")",
+        "withoutX(\"x\")",
+        "withoutX(\"\")",
+        "withoutX(\"Hello\")",
+        "withoutX(\"Hexllo\")",
     };
 
     static String[] expectedResults = {
         "Hi",
         "Hi",
         "Hxi",
+        "Hi",
+        "xHi",
+        "Hi",
+        "axb",
+        "",
+        "",
+        "",
+        "Hello",
+        "Hexllo",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +39,15 @@ public class _WithoutX
             WithoutX.withoutX("xHix"),
             WithoutX.withoutX("xHi"),
             WithoutX.withoutX("Hxix"),
+            WithoutX.withoutX("Hi"),
+            WithoutX.withoutX("xxHi"),
+            WithoutX.withoutX("Hix"),
+            WithoutX.withoutX("xaxbx"),
+            WithoutX.withoutX("xx"),
+            WithoutX.withoutX("x"),
+            WithoutX.withoutX(""),
+            WithoutX.withoutX("Hello"),
+            WithoutX.withoutX("Hexllo"),
         };
 
         boolean allTestsPassed = true;

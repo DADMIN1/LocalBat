@@ -7,12 +7,36 @@ public class _TwoChar
         "twoChar(\"java\", 0)",
         "twoChar(\"java\", 2)",
         "twoChar(\"java\", 3)",
+        "twoChar(\"java\", 4)",
+        "twoChar(\"java\", -1)",
+        "twoChar(\"Hello\", 0)",
+        "twoChar(\"Hello\", 1)",
+        "twoChar(\"Hello\", 99)",
+        "twoChar(\"Hello\", 3)",
+        "twoChar(\"Hello\", 4)",
+        "twoChar(\"Hello\", 5)",
+        "twoChar(\"Hello\", -7)",
+        "twoChar(\"Hello\", 6)",
+        "twoChar(\"Hello\", -1)",
+        "twoChar(\"yay\", 0)",
     };
 
     static String[] expectedResults = {
         "ja",
         "va",
         "ja",
+        "ja",
+        "ja",
+        "He",
+        "el",
+        "He",
+        "lo",
+        "He",
+        "He",
+        "He",
+        "He",
+        "He",
+        "ya",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +45,18 @@ public class _TwoChar
             TwoChar.twoChar("java", 0),
             TwoChar.twoChar("java", 2),
             TwoChar.twoChar("java", 3),
+            TwoChar.twoChar("java", 4),
+            TwoChar.twoChar("java", -1),
+            TwoChar.twoChar("Hello", 0),
+            TwoChar.twoChar("Hello", 1),
+            TwoChar.twoChar("Hello", 99),
+            TwoChar.twoChar("Hello", 3),
+            TwoChar.twoChar("Hello", 4),
+            TwoChar.twoChar("Hello", 5),
+            TwoChar.twoChar("Hello", -7),
+            TwoChar.twoChar("Hello", 6),
+            TwoChar.twoChar("Hello", -1),
+            TwoChar.twoChar("yay", 0),
         };
 
         boolean allTestsPassed = true;

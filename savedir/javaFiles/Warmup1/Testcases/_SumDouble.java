@@ -7,12 +7,22 @@ public class _SumDouble
         "sumDouble(1, 2)",
         "sumDouble(3, 2)",
         "sumDouble(2, 2)",
+        "sumDouble(-1, 0)",
+        "sumDouble(3, 3)",
+        "sumDouble(0, 0)",
+        "sumDouble(0, 1)",
+        "sumDouble(3, 4)",
     };
 
     static int[] expectedResults = {
         3,
         5,
         8,
+        -1,
+        12,
+        0,
+        1,
+        7,
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +31,11 @@ public class _SumDouble
             SumDouble.sumDouble(1, 2),
             SumDouble.sumDouble(3, 2),
             SumDouble.sumDouble(2, 2),
+            SumDouble.sumDouble(-1, 0),
+            SumDouble.sumDouble(3, 3),
+            SumDouble.sumDouble(0, 0),
+            SumDouble.sumDouble(0, 1),
+            SumDouble.sumDouble(3, 4),
         };
 
         boolean allTestsPassed = true;

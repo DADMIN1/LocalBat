@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p183071
 package Logic1;
 import Logic1.Testcases._SortaSum;
+
+// https://codingbat.com/prob/p183071
+// Difficulty: 115.0
 
 public class SortaSum
 {
@@ -13,11 +15,17 @@ public class SortaSum
     | sortaSum(3, 4)   → 7  |
     | sortaSum(9, 4)   → 20 |
     | sortaSum(10, 11) → 21 |
+    | sortaSum(12, -3) → 9  |
+    | sortaSum(-3, 12) → 9  |
+    | sortaSum(4, 5)   → 9  |
+    | sortaSum(4, 6)   → 20 |
+    | sortaSum(14, 7)  → 21 |
+    | sortaSum(14, 6)  → 20 |
     |______________________*/
 
     public static int sortaSum(int a, int b)
     {
-        
+        return 0;
     }
 
     public static void main(String[] args) {

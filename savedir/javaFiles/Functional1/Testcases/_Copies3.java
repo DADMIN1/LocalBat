@@ -9,12 +9,18 @@ public class _Copies3
         "copies3([\"a\", \"bb\", \"ccc\"])",
         "copies3([\"24\", \"a\", \"\"])",
         "copies3([\"hello\", \"there\"])",
+        "copies3([\"no\"])",
+        "copies3([])",
+        "copies3([\"this\", \"and\", \"that\", \"and\"])",
     };
 
     static List<?>[] expectedResults = {
         Arrays.asList("aaa", "bbbbbb", "ccccccccc"),
         Arrays.asList("242424", "aaa", ""),
         Arrays.asList("hellohellohello", "theretherethere"),
+        Arrays.asList("nonono"),
+        Arrays.asList(),
+        Arrays.asList("thisthisthis", "andandand", "thatthatthat", "andandand"),
     };
 
     public static void Validate(boolean printSuccess)
@@ -23,6 +29,9 @@ public class _Copies3
             Copies3.copies3(Arrays.asList("a", "bb", "ccc")),
             Copies3.copies3(Arrays.asList("24", "a", "")),
             Copies3.copies3(Arrays.asList("hello", "there")),
+            Copies3.copies3(Arrays.asList("no")),
+            Copies3.copies3(Arrays.asList()),
+            Copies3.copies3(Arrays.asList("this", "and", "that", "and")),
         };
 
         boolean allTestsPassed = true;

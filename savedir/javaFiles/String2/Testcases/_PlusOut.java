@@ -7,12 +7,26 @@ public class _PlusOut
         "plusOut(\"12xy34\", \"xy\")",
         "plusOut(\"12xy34\", \"1\")",
         "plusOut(\"12xy34xyabcxy\", \"xy\")",
+        "plusOut(\"abXYabcXYZ\", \"ab\")",
+        "plusOut(\"abXYabcXYZ\", \"abc\")",
+        "plusOut(\"abXYabcXYZ\", \"XY\")",
+        "plusOut(\"abXYxyzXYZ\", \"XYZ\")",
+        "plusOut(\"--++ab\", \"++\")",
+        "plusOut(\"aaxxxxbb\", \"xx\")",
+        "plusOut(\"123123\", \"3\")",
     };
 
     static String[] expectedResults = {
         "++xy++",
         "1+++++",
         "++xy++xy+++xy",
+        "ab++ab++++",
+        "++++abc+++",
+        "++XY+++XY+",
+        "+++++++XYZ",
+        "++++++",
+        "++xxxx++",
+        "++3++3",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +35,13 @@ public class _PlusOut
             PlusOut.plusOut("12xy34", "xy"),
             PlusOut.plusOut("12xy34", "1"),
             PlusOut.plusOut("12xy34xyabcxy", "xy"),
+            PlusOut.plusOut("abXYabcXYZ", "ab"),
+            PlusOut.plusOut("abXYabcXYZ", "abc"),
+            PlusOut.plusOut("abXYabcXYZ", "XY"),
+            PlusOut.plusOut("abXYxyzXYZ", "XYZ"),
+            PlusOut.plusOut("--++ab", "++"),
+            PlusOut.plusOut("aaxxxxbb", "xx"),
+            PlusOut.plusOut("123123", "3"),
         };
 
         boolean allTestsPassed = true;

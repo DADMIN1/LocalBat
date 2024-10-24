@@ -7,12 +7,38 @@ public class _NoTeenSum
         "noTeenSum(1, 2, 3)",
         "noTeenSum(2, 13, 1)",
         "noTeenSum(2, 1, 14)",
+        "noTeenSum(2, 1, 15)",
+        "noTeenSum(2, 1, 16)",
+        "noTeenSum(2, 1, 17)",
+        "noTeenSum(17, 1, 2)",
+        "noTeenSum(2, 15, 2)",
+        "noTeenSum(16, 17, 18)",
+        "noTeenSum(17, 18, 19)",
+        "noTeenSum(15, 16, 1)",
+        "noTeenSum(15, 15, 19)",
+        "noTeenSum(15, 19, 16)",
+        "noTeenSum(5, 17, 18)",
+        "noTeenSum(17, 18, 16)",
+        "noTeenSum(17, 19, 18)",
     };
 
     static int[] expectedResults = {
         6,
         3,
         3,
+        18,
+        19,
+        3,
+        3,
+        19,
+        16,
+        0,
+        32,
+        30,
+        31,
+        5,
+        16,
+        0,
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +47,19 @@ public class _NoTeenSum
             NoTeenSum.noTeenSum(1, 2, 3),
             NoTeenSum.noTeenSum(2, 13, 1),
             NoTeenSum.noTeenSum(2, 1, 14),
+            NoTeenSum.noTeenSum(2, 1, 15),
+            NoTeenSum.noTeenSum(2, 1, 16),
+            NoTeenSum.noTeenSum(2, 1, 17),
+            NoTeenSum.noTeenSum(17, 1, 2),
+            NoTeenSum.noTeenSum(2, 15, 2),
+            NoTeenSum.noTeenSum(16, 17, 18),
+            NoTeenSum.noTeenSum(17, 18, 19),
+            NoTeenSum.noTeenSum(15, 16, 1),
+            NoTeenSum.noTeenSum(15, 15, 19),
+            NoTeenSum.noTeenSum(15, 19, 16),
+            NoTeenSum.noTeenSum(5, 17, 18),
+            NoTeenSum.noTeenSum(17, 18, 16),
+            NoTeenSum.noTeenSum(17, 19, 18),
         };
 
         boolean allTestsPassed = true;

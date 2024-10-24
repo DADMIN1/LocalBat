@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p159531
 package Logic1;
 import Logic1.Testcases._CigarParty;
+
+// https://codingbat.com/prob/p159531
+// Difficulty: 103.0
 
 public class CigarParty
 {
@@ -16,11 +18,19 @@ public class CigarParty
     | cigarParty(30, false) → false |
     | cigarParty(50, false) → true  |
     | cigarParty(70, true)  → true  |
+    | cigarParty(30, true)  → false |
+    | cigarParty(50, true)  → true  |
+    | cigarParty(60, false) → true  |
+    | cigarParty(61, false) → false |
+    | cigarParty(40, false) → true  |
+    | cigarParty(39, false) → false |
+    | cigarParty(40, true)  → true  |
+    | cigarParty(39, true)  → false |
     |______________________________*/
 
     public static boolean cigarParty(int cigars, boolean isWeekend)
     {
-        
+        return false;
     }
 
     public static void main(String[] args) {

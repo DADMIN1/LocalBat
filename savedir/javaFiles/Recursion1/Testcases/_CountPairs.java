@@ -7,11 +7,27 @@ public class _CountPairs
         "countPairs(\"axa\")",
         "countPairs(\"axax\")",
         "countPairs(\"axbx\")",
+        "countPairs(\"hi\")",
+        "countPairs(\"hihih\")",
+        "countPairs(\"ihihhh\")",
+        "countPairs(\"ihjxhh\")",
+        "countPairs(\"\")",
+        "countPairs(\"a\")",
+        "countPairs(\"aa\")",
+        "countPairs(\"aaa\")",
     };
 
     static int[] expectedResults = {
         1,
         2,
+        1,
+        0,
+        3,
+        3,
+        0,
+        0,
+        0,
+        0,
         1,
     };
 
@@ -21,6 +37,14 @@ public class _CountPairs
             CountPairs.countPairs("axa"),
             CountPairs.countPairs("axax"),
             CountPairs.countPairs("axbx"),
+            CountPairs.countPairs("hi"),
+            CountPairs.countPairs("hihih"),
+            CountPairs.countPairs("ihihhh"),
+            CountPairs.countPairs("ihjxhh"),
+            CountPairs.countPairs(""),
+            CountPairs.countPairs("a"),
+            CountPairs.countPairs("aa"),
+            CountPairs.countPairs("aaa"),
         };
 
         boolean allTestsPassed = true;

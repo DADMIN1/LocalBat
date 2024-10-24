@@ -7,12 +7,26 @@ public class _MissingChar
         "missingChar(\"kitten\", 1)",
         "missingChar(\"kitten\", 0)",
         "missingChar(\"kitten\", 4)",
+        "missingChar(\"Hi\", 0)",
+        "missingChar(\"Hi\", 1)",
+        "missingChar(\"code\", 0)",
+        "missingChar(\"code\", 1)",
+        "missingChar(\"code\", 2)",
+        "missingChar(\"code\", 3)",
+        "missingChar(\"chocolate\", 8)",
     };
 
     static String[] expectedResults = {
         "ktten",
         "itten",
         "kittn",
+        "i",
+        "H",
+        "ode",
+        "cde",
+        "coe",
+        "cod",
+        "chocolat",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +35,13 @@ public class _MissingChar
             MissingChar.missingChar("kitten", 1),
             MissingChar.missingChar("kitten", 0),
             MissingChar.missingChar("kitten", 4),
+            MissingChar.missingChar("Hi", 0),
+            MissingChar.missingChar("Hi", 1),
+            MissingChar.missingChar("code", 0),
+            MissingChar.missingChar("code", 1),
+            MissingChar.missingChar("code", 2),
+            MissingChar.missingChar("code", 3),
+            MissingChar.missingChar("chocolate", 8),
         };
 
         boolean allTestsPassed = true;

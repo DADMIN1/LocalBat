@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p169506
 package Array2;
 import Array2.Testcases._NotAlone;
+
+// https://codingbat.com/prob/p169506
+// Difficulty: 278.0
 
 public class NotAlone
 {
@@ -14,11 +16,18 @@ public class NotAlone
     | notAlone([1, 2, 3], 2)          → [1, 3, 3]          |
     | notAlone([1, 2, 3, 2, 5, 2], 2) → [1, 3, 3, 5, 5, 2] |
     | notAlone([3, 4], 3)             → [3, 4]             |
+    | notAlone([3, 3], 3)             → [3, 3]             |
+    | notAlone([1, 3, 1, 2], 1)       → [1, 3, 3, 2]       |
+    | notAlone([3], 3)                → [3]                |
+    | notAlone([], 3)                 → []                 |
+    | notAlone([7, 1, 6], 1)          → [7, 7, 6]          |
+    | notAlone([1, 1, 1], 1)          → [1, 1, 1]          |
+    | notAlone([1, 1, 1, 2], 1)       → [1, 1, 1, 2]       |
     |_____________________________________________________*/
 
     public static int[] notAlone(int[] nums, int val)
     {
-        
+        return new int[]{0};
     }
 
     public static void main(String[] args) {

@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p159612
 package Logic1;
 import Logic1.Testcases._Old35;
+
+// https://codingbat.com/prob/p159612
+// Difficulty: 122.5
 
 public class Old35
 {
@@ -13,11 +15,24 @@ public class Old35
     | old35(3)  → true  |
     | old35(10) → true  |
     | old35(15) → false |
+    | old35(5)  → true  |
+    | old35(9)  → true  |
+    | old35(8)  → false |
+    | old35(7)  → false |
+    | old35(6)  → true  |
+    | old35(17) → false |
+    | old35(18) → true  |
+    | old35(29) → false |
+    | old35(20) → true  |
+    | old35(21) → true  |
+    | old35(22) → false |
+    | old35(45) → false |
+    | old35(99) → true  |
     |__________________*/
 
     public static boolean old35(int n)
     {
-        
+        return false;
     }
 
     public static void main(String[] args) {

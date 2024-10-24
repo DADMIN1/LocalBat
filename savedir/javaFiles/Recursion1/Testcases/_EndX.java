@@ -7,12 +7,30 @@ public class _EndX
         "endX(\"xxre\")",
         "endX(\"xxhixx\")",
         "endX(\"xhixhix\")",
+        "endX(\"hiy\")",
+        "endX(\"h\")",
+        "endX(\"x\")",
+        "endX(\"xx\")",
+        "endX(\"\")",
+        "endX(\"bxx\")",
+        "endX(\"bxax\")",
+        "endX(\"axaxax\")",
+        "endX(\"xxhxi\")",
     };
 
     static String[] expectedResults = {
         "rexx",
         "hixxxx",
         "hihixxx",
+        "hiy",
+        "h",
+        "x",
+        "xx",
+        "",
+        "bxx",
+        "baxx",
+        "aaaxxx",
+        "hixxx",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +39,15 @@ public class _EndX
             EndX.endX("xxre"),
             EndX.endX("xxhixx"),
             EndX.endX("xhixhix"),
+            EndX.endX("hiy"),
+            EndX.endX("h"),
+            EndX.endX("x"),
+            EndX.endX("xx"),
+            EndX.endX(""),
+            EndX.endX("bxx"),
+            EndX.endX("bxax"),
+            EndX.endX("axaxax"),
+            EndX.endX("xxhxi"),
         };
 
         boolean allTestsPassed = true;

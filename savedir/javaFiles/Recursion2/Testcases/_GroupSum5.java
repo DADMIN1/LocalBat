@@ -7,12 +7,36 @@ public class _GroupSum5
         "groupSum5(0, [2, 5, 10, 4], 19)",
         "groupSum5(0, [2, 5, 10, 4], 17)",
         "groupSum5(0, [2, 5, 10, 4], 12)",
+        "groupSum5(0, [2, 5, 4, 10], 12)",
+        "groupSum5(0, [3, 5, 1], 4)",
+        "groupSum5(0, [3, 5, 1], 5)",
+        "groupSum5(0, [1, 3, 5], 5)",
+        "groupSum5(0, [3, 5, 1], 9)",
+        "groupSum5(0, [2, 5, 10, 4], 7)",
+        "groupSum5(0, [2, 5, 10, 4], 15)",
+        "groupSum5(0, [2, 5, 10, 4], 11)",
+        "groupSum5(0, [1], 1)",
+        "groupSum5(0, [9], 1)",
+        "groupSum5(0, [9], 0)",
+        "groupSum5(0, [], 0)",
     };
 
     static boolean[] expectedResults = {
         true,
         true,
         false,
+        false,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
     };
 
     public static void Validate(boolean printSuccess)
@@ -20,11 +44,35 @@ public class _GroupSum5
         int[] nums0 = { 2, 5, 10, 4 }; 
         int[] nums1 = { 2, 5, 10, 4 }; 
         int[] nums2 = { 2, 5, 10, 4 }; 
+        int[] nums3 = { 2, 5, 4, 10 }; 
+        int[] nums4 = { 3, 5, 1 }; 
+        int[] nums5 = { 3, 5, 1 }; 
+        int[] nums6 = { 1, 3, 5 }; 
+        int[] nums7 = { 3, 5, 1 }; 
+        int[] nums8 = { 2, 5, 10, 4 }; 
+        int[] nums9 = { 2, 5, 10, 4 }; 
+        int[] nums10 = { 2, 5, 10, 4 }; 
+        int[] nums11 = { 1 }; 
+        int[] nums12 = { 9 }; 
+        int[] nums13 = { 9 }; 
+        int[] nums14 = {  }; 
 
         boolean[] resultsArray = {
             GroupSum5.groupSum5(0, nums0, 19),
             GroupSum5.groupSum5(0, nums1, 17),
             GroupSum5.groupSum5(0, nums2, 12),
+            GroupSum5.groupSum5(0, nums3, 12),
+            GroupSum5.groupSum5(0, nums4, 4),
+            GroupSum5.groupSum5(0, nums5, 5),
+            GroupSum5.groupSum5(0, nums6, 5),
+            GroupSum5.groupSum5(0, nums7, 9),
+            GroupSum5.groupSum5(0, nums8, 7),
+            GroupSum5.groupSum5(0, nums9, 15),
+            GroupSum5.groupSum5(0, nums10, 11),
+            GroupSum5.groupSum5(0, nums11, 1),
+            GroupSum5.groupSum5(0, nums12, 1),
+            GroupSum5.groupSum5(0, nums13, 0),
+            GroupSum5.groupSum5(0, nums14, 0),
         };
 
         boolean allTestsPassed = true;

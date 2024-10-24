@@ -8,12 +8,30 @@ public class _ZeroMax
         "zeroMax([0, 5, 0, 3])",
         "zeroMax([0, 4, 0, 3])",
         "zeroMax([0, 1, 0])",
+        "zeroMax([0, 1, 5])",
+        "zeroMax([0, 2, 0])",
+        "zeroMax([1])",
+        "zeroMax([0])",
+        "zeroMax([])",
+        "zeroMax([7, 0, 4, 3, 0, 2])",
+        "zeroMax([7, 0, 4, 3, 0, 1])",
+        "zeroMax([7, 0, 4, 3, 0, 0])",
+        "zeroMax([7, 0, 1, 0, 0, 7])",
     };
 
     static int[][] expectedResults = {
         {5, 5, 3, 3},
         {3, 4, 3, 3},
         {1, 1, 0},
+        {5, 1, 5},
+        {0, 2, 0},
+        {1},
+        {0},
+        {},
+        {7, 3, 4, 3, 0, 2},
+        {7, 3, 4, 3, 1, 1},
+        {7, 3, 4, 3, 0, 0},
+        {7, 7, 1, 7, 7, 7},
     };
 
     public static String printArray(int[] array)
@@ -29,11 +47,29 @@ public class _ZeroMax
         int[] nums0 = { 0, 5, 0, 3 }; 
         int[] nums1 = { 0, 4, 0, 3 }; 
         int[] nums2 = { 0, 1, 0 }; 
+        int[] nums3 = { 0, 1, 5 }; 
+        int[] nums4 = { 0, 2, 0 }; 
+        int[] nums5 = { 1 }; 
+        int[] nums6 = { 0 }; 
+        int[] nums7 = {  }; 
+        int[] nums8 = { 7, 0, 4, 3, 0, 2 }; 
+        int[] nums9 = { 7, 0, 4, 3, 0, 1 }; 
+        int[] nums10 = { 7, 0, 4, 3, 0, 0 }; 
+        int[] nums11 = { 7, 0, 1, 0, 0, 7 }; 
 
         int[][] resultsArray = {
             ZeroMax.zeroMax(nums0),
             ZeroMax.zeroMax(nums1),
             ZeroMax.zeroMax(nums2),
+            ZeroMax.zeroMax(nums3),
+            ZeroMax.zeroMax(nums4),
+            ZeroMax.zeroMax(nums5),
+            ZeroMax.zeroMax(nums6),
+            ZeroMax.zeroMax(nums7),
+            ZeroMax.zeroMax(nums8),
+            ZeroMax.zeroMax(nums9),
+            ZeroMax.zeroMax(nums10),
+            ZeroMax.zeroMax(nums11),
         };
 
         boolean allTestsPassed = true;

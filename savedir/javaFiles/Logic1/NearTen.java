@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p193613
 package Logic1;
 import Logic1.Testcases._NearTen;
+
+// https://codingbat.com/prob/p193613
+// Difficulty: 124.0
 
 public class NearTen
 {
@@ -8,17 +10,29 @@ public class NearTen
     Note: (a % b) is the remainder of dividing a by b, so (7 % 5) is 2. 
     See also: Introduction to Mod */
 
-    /*____________________
-    |      Testcases      |
-    |_____________________|
-    | nearTen(12) → true  |
-    | nearTen(17) → false |
-    | nearTen(19) → true  |
-    |____________________*/
+    /*_____________________
+    |      Testcases       |
+    |______________________|
+    | nearTen(12)  → true  |
+    | nearTen(17)  → false |
+    | nearTen(19)  → true  |
+    | nearTen(31)  → true  |
+    | nearTen(6)   → false |
+    | nearTen(10)  → true  |
+    | nearTen(11)  → true  |
+    | nearTen(21)  → true  |
+    | nearTen(22)  → true  |
+    | nearTen(23)  → false |
+    | nearTen(54)  → false |
+    | nearTen(155) → false |
+    | nearTen(158) → true  |
+    | nearTen(3)   → false |
+    | nearTen(1)   → true  |
+    |_____________________*/
 
     public static boolean nearTen(int num)
     {
-        
+        return false;
     }
 
     public static void main(String[] args) {

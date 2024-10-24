@@ -7,12 +7,24 @@ public class _LastChars
         "lastChars(\"last\", \"chars\")",
         "lastChars(\"yo\", \"java\")",
         "lastChars(\"hi\", \"\")",
+        "lastChars(\"\", \"hello\")",
+        "lastChars(\"\", \"\")",
+        "lastChars(\"kitten\", \"hi\")",
+        "lastChars(\"k\", \"zip\")",
+        "lastChars(\"kitten\", \"\")",
+        "lastChars(\"kitten\", \"zip\")",
     };
 
     static String[] expectedResults = {
         "ls",
         "ya",
         "h@",
+        "@o",
+        "@@",
+        "ki",
+        "kp",
+        "k@",
+        "kp",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +33,12 @@ public class _LastChars
             LastChars.lastChars("last", "chars"),
             LastChars.lastChars("yo", "java"),
             LastChars.lastChars("hi", ""),
+            LastChars.lastChars("", "hello"),
+            LastChars.lastChars("", ""),
+            LastChars.lastChars("kitten", "hi"),
+            LastChars.lastChars("k", "zip"),
+            LastChars.lastChars("kitten", ""),
+            LastChars.lastChars("kitten", "zip"),
         };
 
         boolean allTestsPassed = true;

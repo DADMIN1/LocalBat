@@ -7,12 +7,26 @@ public class _StringTimes
         "stringTimes(\"Hi\", 2)",
         "stringTimes(\"Hi\", 3)",
         "stringTimes(\"Hi\", 1)",
+        "stringTimes(\"Hi\", 0)",
+        "stringTimes(\"Hi\", 5)",
+        "stringTimes(\"Oh Boy!\", 2)",
+        "stringTimes(\"x\", 4)",
+        "stringTimes(\"\", 4)",
+        "stringTimes(\"code\", 2)",
+        "stringTimes(\"code\", 3)",
     };
 
     static String[] expectedResults = {
         "HiHi",
         "HiHiHi",
         "Hi",
+        "",
+        "HiHiHiHiHi",
+        "Oh Boy!Oh Boy!",
+        "xxxx",
+        "",
+        "codecode",
+        "codecodecode",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +35,13 @@ public class _StringTimes
             StringTimes.stringTimes("Hi", 2),
             StringTimes.stringTimes("Hi", 3),
             StringTimes.stringTimes("Hi", 1),
+            StringTimes.stringTimes("Hi", 0),
+            StringTimes.stringTimes("Hi", 5),
+            StringTimes.stringTimes("Oh Boy!", 2),
+            StringTimes.stringTimes("x", 4),
+            StringTimes.stringTimes("", 4),
+            StringTimes.stringTimes("code", 2),
+            StringTimes.stringTimes("code", 3),
         };
 
         boolean allTestsPassed = true;

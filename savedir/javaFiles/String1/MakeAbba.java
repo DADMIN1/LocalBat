@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p161056
 package String1;
 import String1.Testcases._MakeAbba;
+
+// https://codingbat.com/prob/p161056
+// Difficulty: 106.0
 
 public class MakeAbba
 {
@@ -12,11 +14,17 @@ public class MakeAbba
     | makeAbba("Hi", "Bye")   → "HiByeByeHi"     |
     | makeAbba("Yo", "Alice") → "YoAliceAliceYo" |
     | makeAbba("What", "Up")  → "WhatUpUpWhat"   |
+    | makeAbba("aaa", "bbb")  → "aaabbbbbbaaa"   |
+    | makeAbba("x", "y")      → "xyyx"           |
+    | makeAbba("x", "")       → "xx"             |
+    | makeAbba("", "y")       → "yy"             |
+    | makeAbba("Bo", "Ya")    → "BoYaYaBo"       |
+    | makeAbba("Ya", "Ya")    → "YaYaYaYa"       |
     |___________________________________________*/
 
     public static String makeAbba(String a, String b)
     {
-        
+        return "";
     }
 
     public static void main(String[] args) {

@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p175763
 package Array1;
 import Array1.Testcases._Sum3;
+
+// https://codingbat.com/prob/p175763
+// Difficulty: 115.0
 
 public class Sum3
 {
@@ -12,11 +14,14 @@ public class Sum3
     | sum3([1, 2, 3])  → 6  |
     | sum3([5, 11, 2]) → 18 |
     | sum3([7, 0, 0])  → 7  |
+    | sum3([1, 2, 1])  → 4  |
+    | sum3([1, 1, 1])  → 3  |
+    | sum3([2, 7, 2])  → 11 |
     |______________________*/
 
     public static int sum3(int[] nums)
     {
-        
+        return 0;
     }
 
     public static void main(String[] args) {

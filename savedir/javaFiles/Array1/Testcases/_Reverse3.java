@@ -8,12 +8,22 @@ public class _Reverse3
         "reverse3([1, 2, 3])",
         "reverse3([5, 11, 9])",
         "reverse3([7, 0, 0])",
+        "reverse3([2, 1, 2])",
+        "reverse3([1, 2, 1])",
+        "reverse3([2, 11, 3])",
+        "reverse3([0, 6, 5])",
+        "reverse3([7, 2, 3])",
     };
 
     static int[][] expectedResults = {
         {3, 2, 1},
         {9, 11, 5},
         {0, 0, 7},
+        {2, 1, 2},
+        {1, 2, 1},
+        {3, 11, 2},
+        {5, 6, 0},
+        {3, 2, 7},
     };
 
     public static String printArray(int[] array)
@@ -29,11 +39,21 @@ public class _Reverse3
         int[] nums0 = { 1, 2, 3 }; 
         int[] nums1 = { 5, 11, 9 }; 
         int[] nums2 = { 7, 0, 0 }; 
+        int[] nums3 = { 2, 1, 2 }; 
+        int[] nums4 = { 1, 2, 1 }; 
+        int[] nums5 = { 2, 11, 3 }; 
+        int[] nums6 = { 0, 6, 5 }; 
+        int[] nums7 = { 7, 2, 3 }; 
 
         int[][] resultsArray = {
             Reverse3.reverse3(nums0),
             Reverse3.reverse3(nums1),
             Reverse3.reverse3(nums2),
+            Reverse3.reverse3(nums3),
+            Reverse3.reverse3(nums4),
+            Reverse3.reverse3(nums5),
+            Reverse3.reverse3(nums6),
+            Reverse3.reverse3(nums7),
         };
 
         boolean allTestsPassed = true;

@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p190968
 package Array1;
 import Array1.Testcases._Sum2;
+
+// https://codingbat.com/prob/p190968
+// Difficulty: 127.0
 
 public class Sum2
 {
@@ -14,11 +16,16 @@ public class Sum2
     | sum2([1, 2, 3])    → 3 |
     | sum2([1, 1])       → 2 |
     | sum2([1, 1, 1, 1]) → 2 |
+    | sum2([1, 2])       → 3 |
+    | sum2([1])          → 1 |
+    | sum2([])           → 0 |
+    | sum2([4, 5, 6])    → 9 |
+    | sum2([4])          → 4 |
     |_______________________*/
 
     public static int sum2(int[] nums)
     {
-        
+        return 0;
     }
 
     public static void main(String[] args) {

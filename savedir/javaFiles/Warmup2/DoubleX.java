@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p186759
 package Warmup2;
 import Warmup2.Testcases._DoubleX;
+
+// https://codingbat.com/prob/p186759
+// Difficulty: 208.0
 
 public class DoubleX
 {
@@ -12,11 +14,19 @@ public class DoubleX
     | doubleX("axxbb")  → true  |
     | doubleX("axaxax") → false |
     | doubleX("xxxxx")  → true  |
+    | doubleX("xaxxx")  → false |
+    | doubleX("aaaax")  → false |
+    | doubleX("")       → false |
+    | doubleX("abc")    → false |
+    | doubleX("x")      → false |
+    | doubleX("xx")     → true  |
+    | doubleX("xax")    → false |
+    | doubleX("xaxx")   → false |
     |__________________________*/
 
     public static boolean doubleX(String str)
     {
-        
+        return false;
     }
 
     public static void main(String[] args) {

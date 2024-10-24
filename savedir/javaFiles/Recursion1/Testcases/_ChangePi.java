@@ -7,12 +7,26 @@ public class _ChangePi
         "changePi(\"xpix\")",
         "changePi(\"pipi\")",
         "changePi(\"pip\")",
+        "changePi(\"pi\")",
+        "changePi(\"hip\")",
+        "changePi(\"p\")",
+        "changePi(\"x\")",
+        "changePi(\"\")",
+        "changePi(\"pixx\")",
+        "changePi(\"xyzzy\")",
     };
 
     static String[] expectedResults = {
         "x3.14x",
         "3.143.14",
         "3.14p",
+        "3.14",
+        "hip",
+        "p",
+        "x",
+        "",
+        "3.14xx",
+        "xyzzy",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +35,13 @@ public class _ChangePi
             ChangePi.changePi("xpix"),
             ChangePi.changePi("pipi"),
             ChangePi.changePi("pip"),
+            ChangePi.changePi("pi"),
+            ChangePi.changePi("hip"),
+            ChangePi.changePi("p"),
+            ChangePi.changePi("x"),
+            ChangePi.changePi(""),
+            ChangePi.changePi("pixx"),
+            ChangePi.changePi("xyzzy"),
         };
 
         boolean allTestsPassed = true;

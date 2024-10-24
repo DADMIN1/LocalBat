@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p178353
 package Array2;
 import Array2.Testcases._FizzArray2;
+
+// https://codingbat.com/prob/p178353
+// Difficulty: 230.1
 
 public class FizzArray2
 {
@@ -10,17 +12,22 @@ public class FizzArray2
     The syntax to make a new string array is: new String[desired_length]  (See also: 
     FizzBuzz Code) */
 
-    /*____________________________________________________________________
-    |                              Testcases                              |
-    |_____________________________________________________________________|
-    | fizzArray2(4)  → ["0", "1", "2", "3"]                               |
-    | fizzArray2(10) → ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"] |
-    | fizzArray2(2)  → ["0", "1"]                                         |
-    |____________________________________________________________________*/
+    /*__________________________________________________________________________
+    |                                 Testcases                                 |
+    |___________________________________________________________________________|
+    | fizzArray2(4)  → ["0", "1", "2", "3"]                                     |
+    | fizzArray2(10) → ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]       |
+    | fizzArray2(2)  → ["0", "1"]                                               |
+    | fizzArray2(1)  → ["0"]                                                    |
+    | fizzArray2(0)  → []                                                       |
+    | fizzArray2(7)  → ["0", "1", "2", "3", "4", "5", "6"]                      |
+    | fizzArray2(9)  → ["0", "1", "2", "3", "4", "5", "6", "7", "8"]            |
+    | fizzArray2(11) → ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"] |
+    |__________________________________________________________________________*/
 
     public static String[] fizzArray2(int n)
     {
-        
+        return new String[]{""};
     }
 
     public static void main(String[] args) {

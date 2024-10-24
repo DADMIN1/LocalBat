@@ -1,8 +1,10 @@
-// https://codingbat.com/prob/p197888
 package Map1;
 import Map1.Testcases._MapBully;
-
 import java.util.Map;
+import java.util.HashMap;
+
+// https://codingbat.com/prob/p197888
+// Difficulty: 203
 
 public class MapBully
 {
@@ -10,17 +12,20 @@ public class MapBully
     set the key "b" to have that value, and set the key "a" to have the value "". 
     Basically "b" is a bully, taking the value and replacing it with the empty string. */
 
-    /*__________________________________________________________________________________________
-    |                                         Testcases                                         |
-    |___________________________________________________________________________________________|
-    | mapBully({"a": "candy", "b": "dirt"})               → {"a": "", "b": "candy"}             |
-    | mapBully({"a": "candy"})                            → {"a": "", "b": "candy"}             |
-    | mapBully({"a": "candy", "b": "carrot", "c": "meh"}) → {"a": "", "b": "candy", "c": "meh"} |
-    |__________________________________________________________________________________________*/
+    /*____________________________________________________________________________________________
+    |                                          Testcases                                          |
+    |_____________________________________________________________________________________________|
+    | mapBully({"a": "candy", "b": "dirt"})               → {"a": "", "b": "candy"}               |
+    | mapBully({"a": "candy"})                            → {"a": "", "b": "candy"}               |
+    | mapBully({"a": "candy", "b": "carrot", "c": "meh"}) → {"a": "", "b": "candy", "c": "meh"}   |
+    | mapBully({"b": "carrot"})                           → {"b": "carrot"}                       |
+    | mapBully({"c": "meh"})                              → {"c": "meh"}                          |
+    | mapBully({"a": "sparkle", "c": "meh"})              → {"a": "", "b": "sparkle", "c": "meh"} |
+    |____________________________________________________________________________________________*/
 
     public static Map<String, String> mapBully(Map<String, String> map)
     {
-        
+        return new HashMap<String, String>();
     }
 
     public static void main(String[] args) {

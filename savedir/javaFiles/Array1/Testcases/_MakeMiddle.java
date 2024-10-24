@@ -8,12 +8,16 @@ public class _MakeMiddle
         "makeMiddle([1, 2, 3, 4])",
         "makeMiddle([7, 1, 2, 3, 4, 9])",
         "makeMiddle([1, 2])",
+        "makeMiddle([5, 2, 4, 7])",
+        "makeMiddle([9, 0, 4, 3, 9, 1])",
     };
 
     static int[][] expectedResults = {
         {2, 3},
         {2, 3},
         {1, 2},
+        {2, 4},
+        {4, 3},
     };
 
     public static String printArray(int[] array)
@@ -29,11 +33,15 @@ public class _MakeMiddle
         int[] nums0 = { 1, 2, 3, 4 }; 
         int[] nums1 = { 7, 1, 2, 3, 4, 9 }; 
         int[] nums2 = { 1, 2 }; 
+        int[] nums3 = { 5, 2, 4, 7 }; 
+        int[] nums4 = { 9, 0, 4, 3, 9, 1 }; 
 
         int[][] resultsArray = {
             MakeMiddle.makeMiddle(nums0),
             MakeMiddle.makeMiddle(nums1),
             MakeMiddle.makeMiddle(nums2),
+            MakeMiddle.makeMiddle(nums3),
+            MakeMiddle.makeMiddle(nums4),
         };
 
         boolean allTestsPassed = true;

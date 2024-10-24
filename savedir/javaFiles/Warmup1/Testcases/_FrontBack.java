@@ -7,12 +7,22 @@ public class _FrontBack
         "frontBack(\"code\")",
         "frontBack(\"a\")",
         "frontBack(\"ab\")",
+        "frontBack(\"abc\")",
+        "frontBack(\"\")",
+        "frontBack(\"Chocolate\")",
+        "frontBack(\"aavJ\")",
+        "frontBack(\"hello\")",
     };
 
     static String[] expectedResults = {
         "eodc",
         "a",
         "ba",
+        "cba",
+        "",
+        "ehocolatC",
+        "Java",
+        "oellh",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +31,11 @@ public class _FrontBack
             FrontBack.frontBack("code"),
             FrontBack.frontBack("a"),
             FrontBack.frontBack("ab"),
+            FrontBack.frontBack("abc"),
+            FrontBack.frontBack(""),
+            FrontBack.frontBack("Chocolate"),
+            FrontBack.frontBack("aavJ"),
+            FrontBack.frontBack("hello"),
         };
 
         boolean allTestsPassed = true;

@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p179487
 package AP1;
 import AP1.Testcases._Scores100;
+
+// https://codingbat.com/prob/p179487
+// Difficulty: 206.0
 
 public class Scores100
 {
@@ -13,11 +15,14 @@ public class Scores100
     | scores100([1, 100, 100])      → true  |
     | scores100([1, 100, 99, 100])  → false |
     | scores100([100, 1, 100, 100]) → true  |
+    | scores100([100, 1, 100, 1])   → false |
+    | scores100([1, 2, 3, 4, 5])    → false |
+    | scores100([1, 2, 100, 4, 5])  → false |
     |______________________________________*/
 
     public static boolean scores100(int[] scores)
     {
-        
+        return false;
     }
 
     public static void main(String[] args) {

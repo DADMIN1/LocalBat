@@ -7,12 +7,20 @@ public class _FrontTimes
         "frontTimes(\"Chocolate\", 2)",
         "frontTimes(\"Chocolate\", 3)",
         "frontTimes(\"Abc\", 3)",
+        "frontTimes(\"Ab\", 4)",
+        "frontTimes(\"A\", 4)",
+        "frontTimes(\"\", 4)",
+        "frontTimes(\"Abc\", 0)",
     };
 
     static String[] expectedResults = {
         "ChoCho",
         "ChoChoCho",
         "AbcAbcAbc",
+        "AbAbAbAb",
+        "AAAA",
+        "",
+        "",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +29,10 @@ public class _FrontTimes
             FrontTimes.frontTimes("Chocolate", 2),
             FrontTimes.frontTimes("Chocolate", 3),
             FrontTimes.frontTimes("Abc", 3),
+            FrontTimes.frontTimes("Ab", 4),
+            FrontTimes.frontTimes("A", 4),
+            FrontTimes.frontTimes("", 4),
+            FrontTimes.frontTimes("Abc", 0),
         };
 
         boolean allTestsPassed = true;

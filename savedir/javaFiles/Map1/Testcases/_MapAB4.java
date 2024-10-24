@@ -8,12 +8,36 @@ public class _MapAB4
         "mapAB4({\"a\": \"aaa\", \"b\": \"bb\", \"c\": \"cake\"})",
         "mapAB4({\"a\": \"aa\", \"b\": \"bbb\", \"c\": \"cake\"})",
         "mapAB4({\"a\": \"aa\", \"b\": \"bbb\"})",
+        "mapAB4({\"a\": \"aaa\"})",
+        "mapAB4({\"b\": \"bbb\"})",
+        "mapAB4({\"a\": \"aaa\", \"b\": \"bbb\", \"c\": \"cake\"})",
+        "mapAB4({\"a\": \"a\", \"b\": \"b\", \"c\": \"cake\"})",
+        "mapAB4({\"a\": \"\", \"b\": \"b\", \"c\": \"cake\"})",
+        "mapAB4({\"a\": \"a\", \"b\": \"\", \"c\": \"cake\"})",
+        "mapAB4({\"c\": \"cat\", \"d\": \"dog\"})",
+        "mapAB4({\"ccc\": \"ccc\"})",
+        "mapAB4({\"c\": \"a\", \"d\": \"b\"})",
+        "mapAB4({})",
+        "mapAB4({\"a\": \"\", \"z\": \"z\"})",
+        "mapAB4({\"b\": \"\", \"z\": \"z\"})",
     };
 
     static Map<?,?>[] expectedResults = {
         Map.of("a", "aaa", "b", "bb", "c", "aaa"),
         Map.of("a", "aa", "b", "bbb", "c", "bbb"),
         Map.of("a", "aa", "b", "bbb", "c", "bbb"),
+        Map.of("a", "aaa"),
+        Map.of("b", "bbb"),
+        Map.of("a", "", "b", "", "c", "cake"),
+        Map.of("a", "", "b", "", "c", "cake"),
+        Map.of("a", "", "b", "b", "c", "b"),
+        Map.of("a", "a", "b", "", "c", "a"),
+        Map.of("c", "cat", "d", "dog"),
+        Map.of("ccc", "ccc"),
+        Map.of("c", "a", "d", "b"),
+        Map.of(),
+        Map.of("a", "", "z", "z"),
+        Map.of("b", "", "z", "z"),
     };
 
     public static void Validate(boolean printSuccess)
@@ -22,6 +46,18 @@ public class _MapAB4
             MapAB4.mapAB4(Map.of("a", "aaa", "b", "bb", "c", "cake")),
             MapAB4.mapAB4(Map.of("a", "aa", "b", "bbb", "c", "cake")),
             MapAB4.mapAB4(Map.of("a", "aa", "b", "bbb")),
+            MapAB4.mapAB4(Map.of("a", "aaa")),
+            MapAB4.mapAB4(Map.of("b", "bbb")),
+            MapAB4.mapAB4(Map.of("a", "aaa", "b", "bbb", "c", "cake")),
+            MapAB4.mapAB4(Map.of("a", "a", "b", "b", "c", "cake")),
+            MapAB4.mapAB4(Map.of("a", "", "b", "b", "c", "cake")),
+            MapAB4.mapAB4(Map.of("a", "a", "b", "", "c", "cake")),
+            MapAB4.mapAB4(Map.of("c", "cat", "d", "dog")),
+            MapAB4.mapAB4(Map.of("ccc", "ccc")),
+            MapAB4.mapAB4(Map.of("c", "a", "d", "b")),
+            MapAB4.mapAB4(Map.of()),
+            MapAB4.mapAB4(Map.of("a", "", "z", "z")),
+            MapAB4.mapAB4(Map.of("b", "", "z", "z")),
         };
 
         boolean allTestsPassed = true;

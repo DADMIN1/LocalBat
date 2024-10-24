@@ -7,12 +7,26 @@ public class _HelloName
         "helloName(\"Bob\")",
         "helloName(\"Alice\")",
         "helloName(\"X\")",
+        "helloName(\"Dolly\")",
+        "helloName(\"Alpha\")",
+        "helloName(\"Omega\")",
+        "helloName(\"Goodbye\")",
+        "helloName(\"ho ho ho\")",
+        "helloName(\"xyz!\")",
+        "helloName(\"Hello\")",
     };
 
     static String[] expectedResults = {
         "Hello Bob!",
         "Hello Alice!",
         "Hello X!",
+        "Hello Dolly!",
+        "Hello Alpha!",
+        "Hello Omega!",
+        "Hello Goodbye!",
+        "Hello ho ho ho!",
+        "Hello xyz!!",
+        "Hello Hello!",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +35,13 @@ public class _HelloName
             HelloName.helloName("Bob"),
             HelloName.helloName("Alice"),
             HelloName.helloName("X"),
+            HelloName.helloName("Dolly"),
+            HelloName.helloName("Alpha"),
+            HelloName.helloName("Omega"),
+            HelloName.helloName("Goodbye"),
+            HelloName.helloName("ho ho ho"),
+            HelloName.helloName("xyz!"),
+            HelloName.helloName("Hello"),
         };
 
         boolean allTestsPassed = true;

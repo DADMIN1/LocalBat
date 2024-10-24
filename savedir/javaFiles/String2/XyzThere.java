@@ -1,23 +1,36 @@
-// https://codingbat.com/prob/p136594
 package String2;
 import String2.Testcases._XyzThere;
+
+// https://codingbat.com/prob/p136594
+// Difficulty: 218.0
 
 public class XyzThere
 {
     /* Return true if the given string contains an appearance of "xyz" where the xyz is not directly preceeded by a period (.). 
     So "xxyz" counts but "x.xyz" does not. */
 
-    /*____________________________
-    |          Testcases          |
-    |_____________________________|
-    | xyzThere("abcxyz")  → true  |
-    | xyzThere("abc.xyz") → false |
-    | xyzThere("xyz.abc") → true  |
-    |____________________________*/
+    /*___________________________________
+    |             Testcases              |
+    |____________________________________|
+    | xyzThere("abcxyz")         → true  |
+    | xyzThere("abc.xyz")        → false |
+    | xyzThere("xyz.abc")        → true  |
+    | xyzThere("abcxy")          → false |
+    | xyzThere("xyz")            → true  |
+    | xyzThere("xy")             → false |
+    | xyzThere("x")              → false |
+    | xyzThere("")               → false |
+    | xyzThere("abc.xyzxyz")     → true  |
+    | xyzThere("abc.xxyz")       → true  |
+    | xyzThere(".xyz")           → false |
+    | xyzThere("12.xyz")         → false |
+    | xyzThere("12xyz")          → true  |
+    | xyzThere("1.xyz.xyz2.xyz") → false |
+    |___________________________________*/
 
     public static boolean xyzThere(String str)
     {
-        
+        return false;
     }
 
     public static void main(String[] args) {

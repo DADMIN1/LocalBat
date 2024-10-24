@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p137188
 package Array1;
 import Array1.Testcases._MakeLast;
+
+// https://codingbat.com/prob/p137188
+// Difficulty: 142.0
 
 public class MakeLast
 {
@@ -8,17 +10,23 @@ public class MakeLast
     and all the other elements are 0. The original array will be length 1 or more. 
     Note: by default, a new int array contains all 0's. */
 
-    /*_________________________________________
-    |                Testcases                 |
-    |__________________________________________|
-    | makeLast([4, 5, 6]) → [0, 0, 0, 0, 0, 6] |
-    | makeLast([1, 2])    → [0, 0, 0, 2]       |
-    | makeLast([3])       → [0, 3]             |
-    |_________________________________________*/
+    /*__________________________________________________
+    |                     Testcases                     |
+    |___________________________________________________|
+    | makeLast([4, 5, 6])    → [0, 0, 0, 0, 0, 6]       |
+    | makeLast([1, 2])       → [0, 0, 0, 2]             |
+    | makeLast([3])          → [0, 3]                   |
+    | makeLast([0])          → [0, 0]                   |
+    | makeLast([7, 7, 7])    → [0, 0, 0, 0, 0, 7]       |
+    | makeLast([3, 1, 4])    → [0, 0, 0, 0, 0, 4]       |
+    | makeLast([1, 2, 3, 4]) → [0, 0, 0, 0, 0, 0, 0, 4] |
+    | makeLast([1, 2, 3, 0]) → [0, 0, 0, 0, 0, 0, 0, 0] |
+    | makeLast([2, 4])       → [0, 0, 0, 4]             |
+    |__________________________________________________*/
 
     public static int[] makeLast(int[] nums)
     {
-        
+        return new int[]{0};
     }
 
     public static void main(String[] args) {

@@ -7,12 +7,22 @@ public class _FirstTwo
         "firstTwo(\"Hello\")",
         "firstTwo(\"abcdefg\")",
         "firstTwo(\"ab\")",
+        "firstTwo(\"a\")",
+        "firstTwo(\"\")",
+        "firstTwo(\"Kitten\")",
+        "firstTwo(\"hi\")",
+        "firstTwo(\"hiya\")",
     };
 
     static String[] expectedResults = {
         "He",
         "ab",
         "ab",
+        "a",
+        "",
+        "Ki",
+        "hi",
+        "hi",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +31,11 @@ public class _FirstTwo
             FirstTwo.firstTwo("Hello"),
             FirstTwo.firstTwo("abcdefg"),
             FirstTwo.firstTwo("ab"),
+            FirstTwo.firstTwo("a"),
+            FirstTwo.firstTwo(""),
+            FirstTwo.firstTwo("Kitten"),
+            FirstTwo.firstTwo("hi"),
+            FirstTwo.firstTwo("hiya"),
         };
 
         boolean allTestsPassed = true;

@@ -7,12 +7,28 @@ public class _DoubleX
         "doubleX(\"axxbb\")",
         "doubleX(\"axaxax\")",
         "doubleX(\"xxxxx\")",
+        "doubleX(\"xaxxx\")",
+        "doubleX(\"aaaax\")",
+        "doubleX(\"\")",
+        "doubleX(\"abc\")",
+        "doubleX(\"x\")",
+        "doubleX(\"xx\")",
+        "doubleX(\"xax\")",
+        "doubleX(\"xaxx\")",
     };
 
     static boolean[] expectedResults = {
         true,
         false,
         true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +37,14 @@ public class _DoubleX
             DoubleX.doubleX("axxbb"),
             DoubleX.doubleX("axaxax"),
             DoubleX.doubleX("xxxxx"),
+            DoubleX.doubleX("xaxxx"),
+            DoubleX.doubleX("aaaax"),
+            DoubleX.doubleX(""),
+            DoubleX.doubleX("abc"),
+            DoubleX.doubleX("x"),
+            DoubleX.doubleX("xx"),
+            DoubleX.doubleX("xax"),
+            DoubleX.doubleX("xaxx"),
         };
 
         boolean allTestsPassed = true;

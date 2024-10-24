@@ -7,11 +7,23 @@ public class _Double23
         "double23([2, 2])",
         "double23([3, 3])",
         "double23([2, 3])",
+        "double23([3, 2])",
+        "double23([4, 5])",
+        "double23([2])",
+        "double23([3])",
+        "double23([])",
+        "double23([3, 4])",
     };
 
     static boolean[] expectedResults = {
         true,
         true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
     };
 
@@ -20,11 +32,23 @@ public class _Double23
         int[] nums0 = { 2, 2 }; 
         int[] nums1 = { 3, 3 }; 
         int[] nums2 = { 2, 3 }; 
+        int[] nums3 = { 3, 2 }; 
+        int[] nums4 = { 4, 5 }; 
+        int[] nums5 = { 2 }; 
+        int[] nums6 = { 3 }; 
+        int[] nums7 = {  }; 
+        int[] nums8 = { 3, 4 }; 
 
         boolean[] resultsArray = {
             Double23.double23(nums0),
             Double23.double23(nums1),
             Double23.double23(nums2),
+            Double23.double23(nums3),
+            Double23.double23(nums4),
+            Double23.double23(nums5),
+            Double23.double23(nums6),
+            Double23.double23(nums7),
+            Double23.double23(nums8),
         };
 
         boolean allTestsPassed = true;

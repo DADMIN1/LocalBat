@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p180840
 package Array1;
 import Array1.Testcases._PlusTwo;
+
+// https://codingbat.com/prob/p180840
+// Difficulty: 160.0
 
 public class PlusTwo
 {
@@ -16,7 +18,7 @@ public class PlusTwo
 
     public static int[] plusTwo(int[] a, int[] b)
     {
-        
+        return new int[]{0};
     }
 
     public static void main(String[] args) {

@@ -7,12 +7,24 @@ public class _NonStart
         "nonStart(\"Hello\", \"There\")",
         "nonStart(\"java\", \"code\")",
         "nonStart(\"shotl\", \"java\")",
+        "nonStart(\"ab\", \"xy\")",
+        "nonStart(\"ab\", \"x\")",
+        "nonStart(\"x\", \"ac\")",
+        "nonStart(\"a\", \"x\")",
+        "nonStart(\"kit\", \"kat\")",
+        "nonStart(\"mart\", \"dart\")",
     };
 
     static String[] expectedResults = {
         "ellohere",
         "avaode",
         "hotlava",
+        "by",
+        "b",
+        "c",
+        "",
+        "itat",
+        "artart",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +33,12 @@ public class _NonStart
             NonStart.nonStart("Hello", "There"),
             NonStart.nonStart("java", "code"),
             NonStart.nonStart("shotl", "java"),
+            NonStart.nonStart("ab", "xy"),
+            NonStart.nonStart("ab", "x"),
+            NonStart.nonStart("x", "ac"),
+            NonStart.nonStart("a", "x"),
+            NonStart.nonStart("kit", "kat"),
+            NonStart.nonStart("mart", "dart"),
         };
 
         boolean allTestsPassed = true;

@@ -7,12 +7,20 @@ public class _NTwice
         "nTwice(\"Hello\", 2)",
         "nTwice(\"Chocolate\", 3)",
         "nTwice(\"Chocolate\", 1)",
+        "nTwice(\"Chocolate\", 0)",
+        "nTwice(\"Hello\", 4)",
+        "nTwice(\"Code\", 4)",
+        "nTwice(\"Code\", 2)",
     };
 
     static String[] expectedResults = {
         "Helo",
         "Choate",
         "Ce",
+        "",
+        "Hellello",
+        "CodeCode",
+        "Code",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +29,10 @@ public class _NTwice
             NTwice.nTwice("Hello", 2),
             NTwice.nTwice("Chocolate", 3),
             NTwice.nTwice("Chocolate", 1),
+            NTwice.nTwice("Chocolate", 0),
+            NTwice.nTwice("Hello", 4),
+            NTwice.nTwice("Code", 4),
+            NTwice.nTwice("Code", 2),
         };
 
         boolean allTestsPassed = true;

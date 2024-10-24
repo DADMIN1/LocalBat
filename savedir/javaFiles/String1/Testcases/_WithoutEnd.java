@@ -7,12 +7,22 @@ public class _WithoutEnd
         "withoutEnd(\"Hello\")",
         "withoutEnd(\"java\")",
         "withoutEnd(\"coding\")",
+        "withoutEnd(\"code\")",
+        "withoutEnd(\"ab\")",
+        "withoutEnd(\"Chocolate!\")",
+        "withoutEnd(\"kitten\")",
+        "withoutEnd(\"woohoo\")",
     };
 
     static String[] expectedResults = {
         "ell",
         "av",
         "odin",
+        "od",
+        "",
+        "hocolate",
+        "itte",
+        "ooho",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +31,11 @@ public class _WithoutEnd
             WithoutEnd.withoutEnd("Hello"),
             WithoutEnd.withoutEnd("java"),
             WithoutEnd.withoutEnd("coding"),
+            WithoutEnd.withoutEnd("code"),
+            WithoutEnd.withoutEnd("ab"),
+            WithoutEnd.withoutEnd("Chocolate!"),
+            WithoutEnd.withoutEnd("kitten"),
+            WithoutEnd.withoutEnd("woohoo"),
         };
 
         boolean allTestsPassed = true;

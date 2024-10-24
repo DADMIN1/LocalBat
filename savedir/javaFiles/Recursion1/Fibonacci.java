@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p120015
 package Recursion1;
 import Recursion1.Testcases._Fibonacci;
+
+// https://codingbat.com/prob/p120015
+// Difficulty: 309.0
 
 public class Fibonacci
 {
@@ -11,17 +13,22 @@ public class Fibonacci
     Define a recursive fibonacci(n) method that returns the nth fibonacci number, 
     with n=0 representing the start of the sequence. */
 
-    /*_________________
-    |    Testcases     |
-    |__________________|
-    | fibonacci(0) → 0 |
-    | fibonacci(1) → 1 |
-    | fibonacci(2) → 1 |
-    |_________________*/
+    /*__________________
+    |     Testcases     |
+    |___________________|
+    | fibonacci(0) → 0  |
+    | fibonacci(1) → 1  |
+    | fibonacci(2) → 1  |
+    | fibonacci(3) → 2  |
+    | fibonacci(4) → 3  |
+    | fibonacci(5) → 5  |
+    | fibonacci(6) → 8  |
+    | fibonacci(7) → 13 |
+    |__________________*/
 
     public static int fibonacci(int n)
     {
-        
+        return 0;
     }
 
     public static void main(String[] args) {

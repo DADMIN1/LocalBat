@@ -7,12 +7,28 @@ public class _MaxBlock
         "maxBlock(\"hoopla\")",
         "maxBlock(\"abbCCCddBBBxx\")",
         "maxBlock(\"\")",
+        "maxBlock(\"xyz\")",
+        "maxBlock(\"xxyz\")",
+        "maxBlock(\"xyzz\")",
+        "maxBlock(\"abbbcbbbxbbbx\")",
+        "maxBlock(\"XXBBBbbxx\")",
+        "maxBlock(\"XXBBBBbbxx\")",
+        "maxBlock(\"XXBBBbbxxXXXX\")",
+        "maxBlock(\"XX2222BBBbbXX2222\")",
     };
 
     static int[] expectedResults = {
         2,
         3,
         0,
+        1,
+        2,
+        2,
+        3,
+        3,
+        4,
+        4,
+        4,
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +37,14 @@ public class _MaxBlock
             MaxBlock.maxBlock("hoopla"),
             MaxBlock.maxBlock("abbCCCddBBBxx"),
             MaxBlock.maxBlock(""),
+            MaxBlock.maxBlock("xyz"),
+            MaxBlock.maxBlock("xxyz"),
+            MaxBlock.maxBlock("xyzz"),
+            MaxBlock.maxBlock("abbbcbbbxbbbx"),
+            MaxBlock.maxBlock("XXBBBbbxx"),
+            MaxBlock.maxBlock("XXBBBBbbxx"),
+            MaxBlock.maxBlock("XXBBBbbxxXXXX"),
+            MaxBlock.maxBlock("XX2222BBBbbXX2222"),
         };
 
         boolean allTestsPassed = true;

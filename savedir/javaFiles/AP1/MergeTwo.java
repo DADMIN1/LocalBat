@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p139150
 package AP1;
 import AP1.Testcases._MergeTwo;
+
+// https://codingbat.com/prob/p139150
+// Difficulty: 251.0
 
 public class MergeTwo
 {
@@ -11,17 +13,23 @@ public class MergeTwo
     taking advantage of the fact that they are in alphabetical order, 
     copying elements directly to the new array. */
 
-    /*________________________________________________________________
-    |                            Testcases                            |
-    |_________________________________________________________________|
-    | mergeTwo(["a", "c", "z"], ["b", "f", "z"], 3) → ["a", "b", "c"] |
-    | mergeTwo(["a", "c", "z"], ["c", "f", "z"], 3) → ["a", "c", "f"] |
-    | mergeTwo(["f", "g", "z"], ["c", "f", "g"], 3) → ["c", "f", "g"] |
-    |________________________________________________________________*/
+    /*_____________________________________________________________________
+    |                              Testcases                               |
+    |______________________________________________________________________|
+    | mergeTwo(["a", "c", "z"], ["b", "f", "z"], 3)      → ["a", "b", "c"] |
+    | mergeTwo(["a", "c", "z"], ["c", "f", "z"], 3)      → ["a", "c", "f"] |
+    | mergeTwo(["f", "g", "z"], ["c", "f", "g"], 3)      → ["c", "f", "g"] |
+    | mergeTwo(["a", "c", "z"], ["a", "c", "z"], 3)      → ["a", "c", "z"] |
+    | mergeTwo(["a", "b", "c", "z"], ["a", "c", "z"], 3) → ["a", "b", "c"] |
+    | mergeTwo(["a", "c", "z"], ["a", "b", "c", "z"], 3) → ["a", "b", "c"] |
+    | mergeTwo(["a", "c", "z"], ["a", "c", "z"], 2)      → ["a", "c"]      |
+    | mergeTwo(["a", "c", "z"], ["a", "c", "y", "z"], 3) → ["a", "c", "y"] |
+    | mergeTwo(["x", "y", "z"], ["a", "b", "z"], 3)      → ["a", "b", "x"] |
+    |_____________________________________________________________________*/
 
     public static String[] mergeTwo(String[] a, String[] b, int n)
     {
-        
+        return new String[]{""};
     }
 
     public static void main(String[] args) {

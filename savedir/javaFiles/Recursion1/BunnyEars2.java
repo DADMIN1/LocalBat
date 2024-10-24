@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p107330
 package Recursion1;
 import Recursion1.Testcases._BunnyEars2;
+
+// https://codingbat.com/prob/p107330
+// Difficulty: 312.0
 
 public class BunnyEars2
 {
@@ -9,17 +11,22 @@ public class BunnyEars2
     because they each have a raised foot. Recursively return the number of "ears" in the bunny line 1, 
     2, ... n (without loops or multiplication). */
 
-    /*__________________
-    |     Testcases     |
-    |___________________|
-    | bunnyEars2(0) → 0 |
-    | bunnyEars2(1) → 2 |
-    | bunnyEars2(2) → 5 |
-    |__________________*/
+    /*____________________
+    |      Testcases      |
+    |_____________________|
+    | bunnyEars2(0)  → 0  |
+    | bunnyEars2(1)  → 2  |
+    | bunnyEars2(2)  → 5  |
+    | bunnyEars2(3)  → 7  |
+    | bunnyEars2(4)  → 10 |
+    | bunnyEars2(5)  → 12 |
+    | bunnyEars2(6)  → 15 |
+    | bunnyEars2(10) → 25 |
+    |____________________*/
 
     public static int bunnyEars2(int bunnies)
     {
-        
+        return 0;
     }
 
     public static void main(String[] args) {

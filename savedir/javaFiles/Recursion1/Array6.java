@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p108997
 package Recursion1;
 import Recursion1.Testcases._Array6;
+
+// https://codingbat.com/prob/p108997
+// Difficulty: 345.0
 
 public class Array6
 {
@@ -9,17 +11,22 @@ public class Array6
     In this way, a recursive call can pass index+1 to move down the array. 
     The initial call will pass in index as 0. */
 
-    /*_____________________________
-    |          Testcases           |
-    |______________________________|
-    | array6([1, 6, 4], 0) → true  |
-    | array6([1, 4], 0)    → false |
-    | array6([6], 0)       → true  |
-    |_____________________________*/
+    /*___________________________________
+    |             Testcases              |
+    |____________________________________|
+    | array6([1, 6, 4], 0)       → true  |
+    | array6([1, 4], 0)          → false |
+    | array6([6], 0)             → true  |
+    | array6([], 0)              → false |
+    | array6([6, 2, 2], 0)       → true  |
+    | array6([2, 5], 0)          → false |
+    | array6([1, 9, 4, 6, 6], 0) → true  |
+    | array6([2, 5, 6], 0)       → true  |
+    |___________________________________*/
 
     public static boolean array6(int[] nums, int index)
     {
-        
+        return false;
     }
 
     public static void main(String[] args) {

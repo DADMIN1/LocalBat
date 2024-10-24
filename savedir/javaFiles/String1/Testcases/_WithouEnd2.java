@@ -7,12 +7,20 @@ public class _WithouEnd2
         "withouEnd2(\"Hello\")",
         "withouEnd2(\"abc\")",
         "withouEnd2(\"ab\")",
+        "withouEnd2(\"a\")",
+        "withouEnd2(\"\")",
+        "withouEnd2(\"coldy\")",
+        "withouEnd2(\"java code\")",
     };
 
     static String[] expectedResults = {
         "ell",
         "b",
         "",
+        "",
+        "",
+        "old",
+        "ava cod",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +29,10 @@ public class _WithouEnd2
             WithouEnd2.withouEnd2("Hello"),
             WithouEnd2.withouEnd2("abc"),
             WithouEnd2.withouEnd2("ab"),
+            WithouEnd2.withouEnd2("a"),
+            WithouEnd2.withouEnd2(""),
+            WithouEnd2.withouEnd2("coldy"),
+            WithouEnd2.withouEnd2("java code"),
         };
 
         boolean allTestsPassed = true;

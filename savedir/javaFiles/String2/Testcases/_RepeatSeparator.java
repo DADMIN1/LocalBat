@@ -7,12 +7,28 @@ public class _RepeatSeparator
         "repeatSeparator(\"Word\", \"X\", 3)",
         "repeatSeparator(\"This\", \"And\", 2)",
         "repeatSeparator(\"This\", \"And\", 1)",
+        "repeatSeparator(\"Hi\", \"-n-\", 2)",
+        "repeatSeparator(\"AAA\", \"\", 1)",
+        "repeatSeparator(\"AAA\", \"\", 0)",
+        "repeatSeparator(\"A\", \"B\", 5)",
+        "repeatSeparator(\"abc\", \"XX\", 3)",
+        "repeatSeparator(\"abc\", \"XX\", 2)",
+        "repeatSeparator(\"abc\", \"XX\", 1)",
+        "repeatSeparator(\"XYZ\", \"a\", 2)",
     };
 
     static String[] expectedResults = {
         "WordXWordXWord",
         "ThisAndThis",
         "This",
+        "Hi-n-Hi",
+        "AAA",
+        "",
+        "ABABABABA",
+        "abcXXabcXXabc",
+        "abcXXabc",
+        "abc",
+        "XYZaXYZ",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +37,14 @@ public class _RepeatSeparator
             RepeatSeparator.repeatSeparator("Word", "X", 3),
             RepeatSeparator.repeatSeparator("This", "And", 2),
             RepeatSeparator.repeatSeparator("This", "And", 1),
+            RepeatSeparator.repeatSeparator("Hi", "-n-", 2),
+            RepeatSeparator.repeatSeparator("AAA", "", 1),
+            RepeatSeparator.repeatSeparator("AAA", "", 0),
+            RepeatSeparator.repeatSeparator("A", "B", 5),
+            RepeatSeparator.repeatSeparator("abc", "XX", 3),
+            RepeatSeparator.repeatSeparator("abc", "XX", 2),
+            RepeatSeparator.repeatSeparator("abc", "XX", 1),
+            RepeatSeparator.repeatSeparator("XYZ", "a", 2),
         };
 
         boolean allTestsPassed = true;

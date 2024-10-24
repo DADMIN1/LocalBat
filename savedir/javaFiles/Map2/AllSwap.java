@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p134133
 package Map2;
 import Map2.Testcases._AllSwap;
+
+// https://codingbat.com/prob/p134133
+// Difficulty: 377
 
 public class AllSwap
 {
@@ -11,17 +13,24 @@ public class AllSwap
     Using a map, this can be solved making just one pass over the array. 
     More difficult than it looks. */
 
-    /*_________________________________________________________________________________________________________________
-    |                                                    Testcases                                                     |
-    |__________________________________________________________________________________________________________________|
-    | allSwap(["ab", "ac"])                                       → ["ac", "ab"]                                       |
-    | allSwap(["ax", "bx", "cx", "cy", "by", "ay", "aaa", "azz"]) → ["ay", "by", "cy", "cx", "bx", "ax", "azz", "aaa"] |
-    | allSwap(["ax", "bx", "ay", "by", "ai", "aj", "bx", "by"])   → ["ay", "by", "ax", "bx", "aj", "ai", "by", "bx"]   |
-    |_________________________________________________________________________________________________________________*/
+    /*_______________________________________________________________________________________________________________________________________________
+    |                                                                   Testcases                                                                    |
+    |________________________________________________________________________________________________________________________________________________|
+    | allSwap(["ab", "ac"])                                                      → ["ac", "ab"]                                                      |
+    | allSwap(["ax", "bx", "cx", "cy", "by", "ay", "aaa", "azz"])                → ["ay", "by", "cy", "cx", "bx", "ax", "azz", "aaa"]                |
+    | allSwap(["ax", "bx", "ay", "by", "ai", "aj", "bx", "by"])                  → ["ay", "by", "ax", "bx", "aj", "ai", "by", "bx"]                  |
+    | allSwap(["ax", "bx", "cx", "ay", "cy", "aaa", "abb"])                      → ["ay", "bx", "cy", "ax", "cx", "abb", "aaa"]                      |
+    | allSwap(["easy", "does", "it", "every", "ice", "eaten"])                   → ["every", "does", "ice", "easy", "it", "eaten"]                   |
+    | allSwap(["list", "of", "words", "swims", "over", "lily", "water", "wait"]) → ["lily", "over", "water", "swims", "of", "list", "words", "wait"] |
+    | allSwap(["4", "8", "15", "16", "23", "42"])                                → ["42", "8", "16", "15", "23", "4"]                                |
+    | allSwap(["aaa"])                                                           → ["aaa"]                                                           |
+    | allSwap([])                                                                → []                                                                |
+    | allSwap(["a", "b", "c", "xx", "yy", "zz"])                                 → ["a", "b", "c", "xx", "yy", "zz"]                                 |
+    |_______________________________________________________________________________________________________________________________________________*/
 
     public static String[] allSwap(String[] strings)
     {
-        
+        return new String[]{""};
     }
 
     public static void main(String[] args) {

@@ -7,12 +7,28 @@ public class _MirrorEnds
         "mirrorEnds(\"abXYZba\")",
         "mirrorEnds(\"abca\")",
         "mirrorEnds(\"aba\")",
+        "mirrorEnds(\"abab\")",
+        "mirrorEnds(\"xxx\")",
+        "mirrorEnds(\"xxYxx\")",
+        "mirrorEnds(\"Hi and iH\")",
+        "mirrorEnds(\"x\")",
+        "mirrorEnds(\"\")",
+        "mirrorEnds(\"123and then 321\")",
+        "mirrorEnds(\"band andab\")",
     };
 
     static String[] expectedResults = {
         "ab",
         "a",
         "aba",
+        "",
+        "xxx",
+        "xxYxx",
+        "Hi ",
+        "x",
+        "",
+        "123",
+        "ba",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +37,14 @@ public class _MirrorEnds
             MirrorEnds.mirrorEnds("abXYZba"),
             MirrorEnds.mirrorEnds("abca"),
             MirrorEnds.mirrorEnds("aba"),
+            MirrorEnds.mirrorEnds("abab"),
+            MirrorEnds.mirrorEnds("xxx"),
+            MirrorEnds.mirrorEnds("xxYxx"),
+            MirrorEnds.mirrorEnds("Hi and iH"),
+            MirrorEnds.mirrorEnds("x"),
+            MirrorEnds.mirrorEnds(""),
+            MirrorEnds.mirrorEnds("123and then 321"),
+            MirrorEnds.mirrorEnds("band andab"),
         };
 
         boolean allTestsPassed = true;

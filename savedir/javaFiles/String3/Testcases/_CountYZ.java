@@ -7,12 +7,28 @@ public class _CountYZ
         "countYZ(\"fez day\")",
         "countYZ(\"day fez\")",
         "countYZ(\"day fyyyz\")",
+        "countYZ(\"day yak\")",
+        "countYZ(\"day:yak\")",
+        "countYZ(\"!!day--yaz!!\")",
+        "countYZ(\"yak zak\")",
+        "countYZ(\"DAY abc XYZ\")",
+        "countYZ(\"aaz yyz my\")",
+        "countYZ(\"y2bz\")",
+        "countYZ(\"zxyx\")",
     };
 
     static int[] expectedResults = {
         2,
         2,
         2,
+        1,
+        1,
+        2,
+        0,
+        2,
+        3,
+        2,
+        0,
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +37,14 @@ public class _CountYZ
             CountYZ.countYZ("fez day"),
             CountYZ.countYZ("day fez"),
             CountYZ.countYZ("day fyyyz"),
+            CountYZ.countYZ("day yak"),
+            CountYZ.countYZ("day:yak"),
+            CountYZ.countYZ("!!day--yaz!!"),
+            CountYZ.countYZ("yak zak"),
+            CountYZ.countYZ("DAY abc XYZ"),
+            CountYZ.countYZ("aaz yyz my"),
+            CountYZ.countYZ("y2bz"),
+            CountYZ.countYZ("zxyx"),
         };
 
         boolean allTestsPassed = true;

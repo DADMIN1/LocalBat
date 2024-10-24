@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p187868
 package Warmup1;
 import Warmup1.Testcases._SleepIn;
+
+// https://codingbat.com/prob/p187868
+// Difficulty: 103.0
 
 public class SleepIn
 {
@@ -14,11 +16,12 @@ public class SleepIn
     | sleepIn(false, false) → true  |
     | sleepIn(true, false)  → false |
     | sleepIn(false, true)  → true  |
+    | sleepIn(true, true)   → true  |
     |______________________________*/
 
     public static boolean sleepIn(boolean weekday, boolean vacation)
     {
-        
+        return false;
     }
 
     public static void main(String[] args) {

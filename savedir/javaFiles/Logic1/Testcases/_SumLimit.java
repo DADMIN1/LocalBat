@@ -7,12 +7,36 @@ public class _SumLimit
         "sumLimit(2, 3)",
         "sumLimit(8, 3)",
         "sumLimit(8, 1)",
+        "sumLimit(11, 39)",
+        "sumLimit(11, 99)",
+        "sumLimit(0, 0)",
+        "sumLimit(99, 0)",
+        "sumLimit(99, 1)",
+        "sumLimit(123, 1)",
+        "sumLimit(1, 123)",
+        "sumLimit(23, 60)",
+        "sumLimit(23, 80)",
+        "sumLimit(9000, 1)",
+        "sumLimit(90000000, 1)",
+        "sumLimit(9000, 1000)",
     };
 
     static int[] expectedResults = {
         5,
         8,
         9,
+        50,
+        11,
+        0,
+        99,
+        99,
+        124,
+        1,
+        83,
+        23,
+        9001,
+        90000001,
+        9000,
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +45,18 @@ public class _SumLimit
             SumLimit.sumLimit(2, 3),
             SumLimit.sumLimit(8, 3),
             SumLimit.sumLimit(8, 1),
+            SumLimit.sumLimit(11, 39),
+            SumLimit.sumLimit(11, 99),
+            SumLimit.sumLimit(0, 0),
+            SumLimit.sumLimit(99, 0),
+            SumLimit.sumLimit(99, 1),
+            SumLimit.sumLimit(123, 1),
+            SumLimit.sumLimit(1, 123),
+            SumLimit.sumLimit(23, 60),
+            SumLimit.sumLimit(23, 80),
+            SumLimit.sumLimit(9000, 1),
+            SumLimit.sumLimit(90000000, 1),
+            SumLimit.sumLimit(9000, 1000),
         };
 
         boolean allTestsPassed = true;

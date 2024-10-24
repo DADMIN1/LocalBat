@@ -7,10 +7,28 @@ public class _ModThree
         "modThree([2, 1, 3, 5])",
         "modThree([2, 1, 2, 5])",
         "modThree([2, 4, 2, 5])",
+        "modThree([1, 2, 1, 2, 1])",
+        "modThree([9, 9, 9])",
+        "modThree([1, 2, 1])",
+        "modThree([1, 2])",
+        "modThree([1])",
+        "modThree([])",
+        "modThree([9, 7, 2, 9])",
+        "modThree([9, 7, 2, 9, 2, 2])",
+        "modThree([9, 7, 2, 9, 2, 2, 6])",
     };
 
     static boolean[] expectedResults = {
         true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         true,
     };
@@ -20,11 +38,29 @@ public class _ModThree
         int[] nums0 = { 2, 1, 3, 5 }; 
         int[] nums1 = { 2, 1, 2, 5 }; 
         int[] nums2 = { 2, 4, 2, 5 }; 
+        int[] nums3 = { 1, 2, 1, 2, 1 }; 
+        int[] nums4 = { 9, 9, 9 }; 
+        int[] nums5 = { 1, 2, 1 }; 
+        int[] nums6 = { 1, 2 }; 
+        int[] nums7 = { 1 }; 
+        int[] nums8 = {  }; 
+        int[] nums9 = { 9, 7, 2, 9 }; 
+        int[] nums10 = { 9, 7, 2, 9, 2, 2 }; 
+        int[] nums11 = { 9, 7, 2, 9, 2, 2, 6 }; 
 
         boolean[] resultsArray = {
             ModThree.modThree(nums0),
             ModThree.modThree(nums1),
             ModThree.modThree(nums2),
+            ModThree.modThree(nums3),
+            ModThree.modThree(nums4),
+            ModThree.modThree(nums5),
+            ModThree.modThree(nums6),
+            ModThree.modThree(nums7),
+            ModThree.modThree(nums8),
+            ModThree.modThree(nums9),
+            ModThree.modThree(nums10),
+            ModThree.modThree(nums11),
         };
 
         boolean allTestsPassed = true;

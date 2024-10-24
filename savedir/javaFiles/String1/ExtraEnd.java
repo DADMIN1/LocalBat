@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p108853
 package String1;
 import String1.Testcases._ExtraEnd;
+
+// https://codingbat.com/prob/p108853
+// Difficulty: 115.0
 
 public class ExtraEnd
 {
@@ -13,11 +15,13 @@ public class ExtraEnd
     | extraEnd("Hello") → "lololo" |
     | extraEnd("ab")    → "ababab" |
     | extraEnd("Hi")    → "HiHiHi" |
+    | extraEnd("Candy") → "dydydy" |
+    | extraEnd("Code")  → "dedede" |
     |_____________________________*/
 
     public static String extraEnd(String str)
     {
-        
+        return "";
     }
 
     public static void main(String[] args) {

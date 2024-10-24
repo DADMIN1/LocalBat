@@ -7,10 +7,28 @@ public class _GreenTicket
         "greenTicket(1, 2, 3)",
         "greenTicket(2, 2, 2)",
         "greenTicket(1, 1, 2)",
+        "greenTicket(2, 1, 1)",
+        "greenTicket(1, 2, 1)",
+        "greenTicket(3, 2, 1)",
+        "greenTicket(0, 0, 0)",
+        "greenTicket(2, 0, 0)",
+        "greenTicket(0, 9, 10)",
+        "greenTicket(0, 10, 0)",
+        "greenTicket(9, 9, 9)",
+        "greenTicket(9, 0, 9)",
     };
 
     static int[] expectedResults = {
         0,
+        20,
+        10,
+        10,
+        10,
+        0,
+        20,
+        10,
+        0,
+        10,
         20,
         10,
     };
@@ -21,6 +39,15 @@ public class _GreenTicket
             GreenTicket.greenTicket(1, 2, 3),
             GreenTicket.greenTicket(2, 2, 2),
             GreenTicket.greenTicket(1, 1, 2),
+            GreenTicket.greenTicket(2, 1, 1),
+            GreenTicket.greenTicket(1, 2, 1),
+            GreenTicket.greenTicket(3, 2, 1),
+            GreenTicket.greenTicket(0, 0, 0),
+            GreenTicket.greenTicket(2, 0, 0),
+            GreenTicket.greenTicket(0, 9, 10),
+            GreenTicket.greenTicket(0, 10, 0),
+            GreenTicket.greenTicket(9, 9, 9),
+            GreenTicket.greenTicket(9, 0, 9),
         };
 
         boolean allTestsPassed = true;

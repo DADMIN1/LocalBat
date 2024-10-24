@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p196652
 package String1;
 import String1.Testcases._FrontAgain;
+
+// https://codingbat.com/prob/p196652
+// Difficulty: 178.0
 
 public class FrontAgain
 {
@@ -13,11 +15,19 @@ public class FrontAgain
     | frontAgain("edited") → true  |
     | frontAgain("edit")   → false |
     | frontAgain("ed")     → true  |
+    | frontAgain("jj")     → true  |
+    | frontAgain("jjj")    → true  |
+    | frontAgain("jjjj")   → true  |
+    | frontAgain("jjjk")   → false |
+    | frontAgain("x")      → false |
+    | frontAgain("")       → false |
+    | frontAgain("java")   → false |
+    | frontAgain("javaja") → true  |
     |_____________________________*/
 
     public static boolean frontAgain(String str)
     {
-        
+        return false;
     }
 
     public static void main(String[] args) {

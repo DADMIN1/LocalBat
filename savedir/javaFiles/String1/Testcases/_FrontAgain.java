@@ -7,10 +7,26 @@ public class _FrontAgain
         "frontAgain(\"edited\")",
         "frontAgain(\"edit\")",
         "frontAgain(\"ed\")",
+        "frontAgain(\"jj\")",
+        "frontAgain(\"jjj\")",
+        "frontAgain(\"jjjj\")",
+        "frontAgain(\"jjjk\")",
+        "frontAgain(\"x\")",
+        "frontAgain(\"\")",
+        "frontAgain(\"java\")",
+        "frontAgain(\"javaja\")",
     };
 
     static boolean[] expectedResults = {
         true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
         false,
         true,
     };
@@ -21,6 +37,14 @@ public class _FrontAgain
             FrontAgain.frontAgain("edited"),
             FrontAgain.frontAgain("edit"),
             FrontAgain.frontAgain("ed"),
+            FrontAgain.frontAgain("jj"),
+            FrontAgain.frontAgain("jjj"),
+            FrontAgain.frontAgain("jjjj"),
+            FrontAgain.frontAgain("jjjk"),
+            FrontAgain.frontAgain("x"),
+            FrontAgain.frontAgain(""),
+            FrontAgain.frontAgain("java"),
+            FrontAgain.frontAgain("javaja"),
         };
 
         boolean allTestsPassed = true;

@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p101475
 package Warmup2;
 import Warmup2.Testcases._FrontTimes;
+
+// https://codingbat.com/prob/p101475
+// Difficulty: 206.0
 
 public class FrontTimes
 {
@@ -14,11 +16,15 @@ public class FrontTimes
     | frontTimes("Chocolate", 2) → "ChoCho"    |
     | frontTimes("Chocolate", 3) → "ChoChoCho" |
     | frontTimes("Abc", 3)       → "AbcAbcAbc" |
+    | frontTimes("Ab", 4)        → "AbAbAbAb"  |
+    | frontTimes("A", 4)         → "AAAA"      |
+    | frontTimes("", 4)          → ""          |
+    | frontTimes("Abc", 0)       → ""          |
     |_________________________________________*/
 
     public static String frontTimes(String str, int n)
     {
-        
+        return "";
     }
 
     public static void main(String[] args) {

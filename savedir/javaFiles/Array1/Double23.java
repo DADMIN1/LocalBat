@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p145365
 package Array1;
 import Array1.Testcases._Double23;
+
+// https://codingbat.com/prob/p145365
+// Difficulty: 145.0
 
 public class Double23
 {
@@ -13,11 +15,17 @@ public class Double23
     | double23([2, 2]) → true  |
     | double23([3, 3]) → true  |
     | double23([2, 3]) → false |
+    | double23([3, 2]) → false |
+    | double23([4, 5]) → false |
+    | double23([2])    → false |
+    | double23([3])    → false |
+    | double23([])     → false |
+    | double23([3, 4]) → false |
     |_________________________*/
 
     public static boolean double23(int[] nums)
     {
-        
+        return false;
     }
 
     public static void main(String[] args) {

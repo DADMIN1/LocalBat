@@ -7,12 +7,22 @@ public class _AltPairs
         "altPairs(\"kitten\")",
         "altPairs(\"Chocolate\")",
         "altPairs(\"CodingHorror\")",
+        "altPairs(\"yak\")",
+        "altPairs(\"ya\")",
+        "altPairs(\"y\")",
+        "altPairs(\"\")",
+        "altPairs(\"ThisThatTheOther\")",
     };
 
     static String[] expectedResults = {
         "kien",
         "Chole",
         "Congrr",
+        "ya",
+        "ya",
+        "y",
+        "",
+        "ThThThth",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +31,11 @@ public class _AltPairs
             AltPairs.altPairs("kitten"),
             AltPairs.altPairs("Chocolate"),
             AltPairs.altPairs("CodingHorror"),
+            AltPairs.altPairs("yak"),
+            AltPairs.altPairs("ya"),
+            AltPairs.altPairs("y"),
+            AltPairs.altPairs(""),
+            AltPairs.altPairs("ThisThatTheOther"),
         };
 
         boolean allTestsPassed = true;

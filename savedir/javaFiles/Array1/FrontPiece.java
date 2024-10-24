@@ -1,23 +1,30 @@
-// https://codingbat.com/prob/p142455
 package Array1;
 import Array1.Testcases._FrontPiece;
+
+// https://codingbat.com/prob/p142455
+// Difficulty: 172.0
 
 public class FrontPiece
 {
     /* Given an int array of any length, return a new array of its first 2 elements. 
     If the array is smaller than length 2, use whatever elements are present. */
 
-    /*_______________________________
-    |           Testcases            |
-    |________________________________|
-    | frontPiece([1, 2, 3]) → [1, 2] |
-    | frontPiece([1, 2])    → [1, 2] |
-    | frontPiece([1])       → [1]    |
-    |_______________________________*/
+    /*_____________________________________
+    |              Testcases               |
+    |______________________________________|
+    | frontPiece([1, 2, 3])       → [1, 2] |
+    | frontPiece([1, 2])          → [1, 2] |
+    | frontPiece([1])             → [1]    |
+    | frontPiece([])              → []     |
+    | frontPiece([6, 5, 0])       → [6, 5] |
+    | frontPiece([6, 5])          → [6, 5] |
+    | frontPiece([3, 1, 4, 1, 5]) → [3, 1] |
+    | frontPiece([6])             → [6]    |
+    |_____________________________________*/
 
     public static int[] frontPiece(int[] nums)
     {
-        
+        return new int[]{0};
     }
 
     public static void main(String[] args) {

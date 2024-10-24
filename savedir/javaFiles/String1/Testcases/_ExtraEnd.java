@@ -7,12 +7,16 @@ public class _ExtraEnd
         "extraEnd(\"Hello\")",
         "extraEnd(\"ab\")",
         "extraEnd(\"Hi\")",
+        "extraEnd(\"Candy\")",
+        "extraEnd(\"Code\")",
     };
 
     static String[] expectedResults = {
         "lololo",
         "ababab",
         "HiHiHi",
+        "dydydy",
+        "dedede",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +25,8 @@ public class _ExtraEnd
             ExtraEnd.extraEnd("Hello"),
             ExtraEnd.extraEnd("ab"),
             ExtraEnd.extraEnd("Hi"),
+            ExtraEnd.extraEnd("Candy"),
+            ExtraEnd.extraEnd("Code"),
         };
 
         boolean allTestsPassed = true;

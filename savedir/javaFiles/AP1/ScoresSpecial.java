@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p140485
 package AP1;
 import AP1.Testcases._ScoresSpecial;
+
+// https://codingbat.com/prob/p140485
+// Difficulty: 245.0
 
 public class ScoresSpecial
 {
@@ -9,17 +11,26 @@ public class ScoresSpecial
     To practice decomposition, write a separate helper method which finds the largest special score in an array. 
     Write your helper method after your scoresSpecial() method in the JavaBat text area. */
 
-    /*_____________________________________________
-    |                  Testcases                   |
-    |______________________________________________|
-    | scoresSpecial([12, 10, 4], [2, 20, 30]) → 40 |
-    | scoresSpecial([20, 10, 4], [2, 20, 10]) → 40 |
-    | scoresSpecial([12, 11, 4], [2, 20, 31]) → 20 |
-    |_____________________________________________*/
+    /*__________________________________________________
+    |                     Testcases                     |
+    |___________________________________________________|
+    | scoresSpecial([12, 10, 4], [2, 20, 30])      → 40 |
+    | scoresSpecial([20, 10, 4], [2, 20, 10])      → 40 |
+    | scoresSpecial([12, 11, 4], [2, 20, 31])      → 20 |
+    | scoresSpecial([1, 20, 2, 50], [3, 4, 5])     → 50 |
+    | scoresSpecial([3, 4, 5], [1, 50, 2, 20])     → 50 |
+    | scoresSpecial([10, 4, 20, 30], [20])         → 50 |
+    | scoresSpecial([10, 4, 20, 30], [20])         → 50 |
+    | scoresSpecial([10, 4, 20, 30], [3, 20, 99])  → 50 |
+    | scoresSpecial([10, 4, 20, 30], [30, 20, 99]) → 60 |
+    | scoresSpecial([], [2])                       → 0  |
+    | scoresSpecial([], [20])                      → 20 |
+    | scoresSpecial([14, 10, 4], [4, 20, 30])      → 40 |
+    |__________________________________________________*/
 
     public static int scoresSpecial(int[] a, int[] b)
     {
-        
+        return 0;
     }
 
     public static void main(String[] args) {

@@ -7,12 +7,22 @@ public class _Triangle
         "triangle(0)",
         "triangle(1)",
         "triangle(2)",
+        "triangle(3)",
+        "triangle(4)",
+        "triangle(5)",
+        "triangle(6)",
+        "triangle(7)",
     };
 
     static int[] expectedResults = {
         0,
         1,
         3,
+        6,
+        10,
+        15,
+        21,
+        28,
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +31,11 @@ public class _Triangle
             Triangle.triangle(0),
             Triangle.triangle(1),
             Triangle.triangle(2),
+            Triangle.triangle(3),
+            Triangle.triangle(4),
+            Triangle.triangle(5),
+            Triangle.triangle(6),
+            Triangle.triangle(7),
         };
 
         boolean allTestsPassed = true;

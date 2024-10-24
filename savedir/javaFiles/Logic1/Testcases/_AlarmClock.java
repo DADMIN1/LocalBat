@@ -7,11 +7,23 @@ public class _AlarmClock
         "alarmClock(1, false)",
         "alarmClock(5, false)",
         "alarmClock(0, false)",
+        "alarmClock(6, false)",
+        "alarmClock(0, true)",
+        "alarmClock(6, true)",
+        "alarmClock(1, true)",
+        "alarmClock(3, true)",
+        "alarmClock(5, true)",
     };
 
     static String[] expectedResults = {
         "7:00",
         "7:00",
+        "10:00",
+        "10:00",
+        "off",
+        "off",
+        "10:00",
+        "10:00",
         "10:00",
     };
 
@@ -21,6 +33,12 @@ public class _AlarmClock
             AlarmClock.alarmClock(1, false),
             AlarmClock.alarmClock(5, false),
             AlarmClock.alarmClock(0, false),
+            AlarmClock.alarmClock(6, false),
+            AlarmClock.alarmClock(0, true),
+            AlarmClock.alarmClock(6, true),
+            AlarmClock.alarmClock(1, true),
+            AlarmClock.alarmClock(3, true),
+            AlarmClock.alarmClock(5, true),
         };
 
         boolean allTestsPassed = true;

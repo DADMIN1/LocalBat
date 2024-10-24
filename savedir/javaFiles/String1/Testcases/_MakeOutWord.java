@@ -7,12 +7,16 @@ public class _MakeOutWord
         "makeOutWord(\"<<>>\", \"Yay\")",
         "makeOutWord(\"<<>>\", \"WooHoo\")",
         "makeOutWord(\"[[]]\", \"word\")",
+        "makeOutWord(\"HHoo\", \"Hello\")",
+        "makeOutWord(\"abyz\", \"YAY\")",
     };
 
     static String[] expectedResults = {
         "<<Yay>>",
         "<<WooHoo>>",
         "[[word]]",
+        "HHHellooo",
+        "abYAYyz",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +25,8 @@ public class _MakeOutWord
             MakeOutWord.makeOutWord("<<>>", "Yay"),
             MakeOutWord.makeOutWord("<<>>", "WooHoo"),
             MakeOutWord.makeOutWord("[[]]", "word"),
+            MakeOutWord.makeOutWord("HHoo", "Hello"),
+            MakeOutWord.makeOutWord("abyz", "YAY"),
         };
 
         boolean allTestsPassed = true;

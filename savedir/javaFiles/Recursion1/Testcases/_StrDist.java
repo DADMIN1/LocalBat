@@ -7,12 +7,34 @@ public class _StrDist
         "strDist(\"catcowcat\", \"cat\")",
         "strDist(\"catcowcat\", \"cow\")",
         "strDist(\"cccatcowcatxx\", \"cat\")",
+        "strDist(\"abccatcowcatcatxyz\", \"cat\")",
+        "strDist(\"xyx\", \"x\")",
+        "strDist(\"xyx\", \"y\")",
+        "strDist(\"xyx\", \"z\")",
+        "strDist(\"z\", \"z\")",
+        "strDist(\"x\", \"z\")",
+        "strDist(\"\", \"z\")",
+        "strDist(\"hiHellohihihi\", \"hi\")",
+        "strDist(\"hiHellohihihi\", \"hih\")",
+        "strDist(\"hiHellohihihi\", \"o\")",
+        "strDist(\"hiHellohihihi\", \"ll\")",
     };
 
     static int[] expectedResults = {
         9,
         3,
         9,
+        12,
+        3,
+        1,
+        0,
+        1,
+        0,
+        0,
+        13,
+        5,
+        1,
+        2,
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +43,17 @@ public class _StrDist
             StrDist.strDist("catcowcat", "cat"),
             StrDist.strDist("catcowcat", "cow"),
             StrDist.strDist("cccatcowcatxx", "cat"),
+            StrDist.strDist("abccatcowcatcatxyz", "cat"),
+            StrDist.strDist("xyx", "x"),
+            StrDist.strDist("xyx", "y"),
+            StrDist.strDist("xyx", "z"),
+            StrDist.strDist("z", "z"),
+            StrDist.strDist("x", "z"),
+            StrDist.strDist("", "z"),
+            StrDist.strDist("hiHellohihihi", "hi"),
+            StrDist.strDist("hiHellohihihi", "hih"),
+            StrDist.strDist("hiHellohihihi", "o"),
+            StrDist.strDist("hiHellohihihi", "ll"),
         };
 
         boolean allTestsPassed = true;

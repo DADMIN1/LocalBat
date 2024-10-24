@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p185204
 package Recursion2;
 import Recursion2.Testcases._SplitArray;
+
+// https://codingbat.com/prob/p185204
+// Difficulty: 418.0
 
 public class SplitArray
 {
@@ -10,17 +12,27 @@ public class SplitArray
     and make the initial call to your recursive helper from splitArray(). 
     (No loops needed.) */
 
-    /*______________________________
-    |           Testcases           |
-    |_______________________________|
-    | splitArray([2, 2])    → true  |
-    | splitArray([2, 3])    → false |
-    | splitArray([5, 2, 3]) → true  |
-    |______________________________*/
+    /*____________________________________________
+    |                  Testcases                  |
+    |_____________________________________________|
+    | splitArray([2, 2])                  → true  |
+    | splitArray([2, 3])                  → false |
+    | splitArray([5, 2, 3])               → true  |
+    | splitArray([5, 2, 2])               → false |
+    | splitArray([1, 1, 1, 1, 1, 1])      → true  |
+    | splitArray([1, 1, 1, 1, 1])         → false |
+    | splitArray([])                      → true  |
+    | splitArray([1])                     → false |
+    | splitArray([3, 5])                  → false |
+    | splitArray([5, 3, 2])               → true  |
+    | splitArray([2, 2, 10, 10, 1, 1])    → true  |
+    | splitArray([1, 2, 2, 10, 10, 1, 1]) → false |
+    | splitArray([1, 2, 3, 10, 10, 1, 1]) → true  |
+    |____________________________________________*/
 
     public static boolean splitArray(int[] nums)
     {
-        
+        return false;
     }
 
     public static void main(String[] args) {

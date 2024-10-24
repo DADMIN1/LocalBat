@@ -8,12 +8,42 @@ public class _Fix45
         "fix45([5, 4, 9, 4, 9, 5])",
         "fix45([1, 4, 1, 5])",
         "fix45([1, 4, 1, 5, 5, 4, 1])",
+        "fix45([4, 9, 4, 9, 5, 5, 4, 9, 5])",
+        "fix45([5, 5, 4, 1, 4, 1])",
+        "fix45([4, 2, 2, 5])",
+        "fix45([4, 2, 4, 2, 5, 5])",
+        "fix45([4, 2, 4, 5, 5])",
+        "fix45([1, 1, 1])",
+        "fix45([4, 5])",
+        "fix45([5, 4, 1])",
+        "fix45([])",
+        "fix45([5, 4, 5, 4, 1])",
+        "fix45([4, 5, 4, 1, 5])",
+        "fix45([3, 4, 5])",
+        "fix45([4, 1, 5])",
+        "fix45([5, 4, 1])",
+        "fix45([2, 4, 2, 5])",
     };
 
     static int[][] expectedResults = {
         {9, 4, 5, 4, 5, 9},
         {1, 4, 5, 1},
         {1, 4, 5, 1, 1, 4, 5},
+        {4, 5, 4, 5, 9, 9, 4, 5, 9},
+        {1, 1, 4, 5, 4, 5},
+        {4, 5, 2, 2},
+        {4, 5, 4, 5, 2, 2},
+        {4, 5, 4, 5, 2},
+        {1, 1, 1},
+        {4, 5},
+        {1, 4, 5},
+        {},
+        {1, 4, 5, 4, 5},
+        {4, 5, 4, 5, 1},
+        {3, 4, 5},
+        {4, 5, 1},
+        {1, 4, 5},
+        {2, 4, 5, 2},
     };
 
     public static String printArray(int[] array)
@@ -29,11 +59,41 @@ public class _Fix45
         int[] nums0 = { 5, 4, 9, 4, 9, 5 }; 
         int[] nums1 = { 1, 4, 1, 5 }; 
         int[] nums2 = { 1, 4, 1, 5, 5, 4, 1 }; 
+        int[] nums3 = { 4, 9, 4, 9, 5, 5, 4, 9, 5 }; 
+        int[] nums4 = { 5, 5, 4, 1, 4, 1 }; 
+        int[] nums5 = { 4, 2, 2, 5 }; 
+        int[] nums6 = { 4, 2, 4, 2, 5, 5 }; 
+        int[] nums7 = { 4, 2, 4, 5, 5 }; 
+        int[] nums8 = { 1, 1, 1 }; 
+        int[] nums9 = { 4, 5 }; 
+        int[] nums10 = { 5, 4, 1 }; 
+        int[] nums11 = {  }; 
+        int[] nums12 = { 5, 4, 5, 4, 1 }; 
+        int[] nums13 = { 4, 5, 4, 1, 5 }; 
+        int[] nums14 = { 3, 4, 5 }; 
+        int[] nums15 = { 4, 1, 5 }; 
+        int[] nums16 = { 5, 4, 1 }; 
+        int[] nums17 = { 2, 4, 2, 5 }; 
 
         int[][] resultsArray = {
             Fix45.fix45(nums0),
             Fix45.fix45(nums1),
             Fix45.fix45(nums2),
+            Fix45.fix45(nums3),
+            Fix45.fix45(nums4),
+            Fix45.fix45(nums5),
+            Fix45.fix45(nums6),
+            Fix45.fix45(nums7),
+            Fix45.fix45(nums8),
+            Fix45.fix45(nums9),
+            Fix45.fix45(nums10),
+            Fix45.fix45(nums11),
+            Fix45.fix45(nums12),
+            Fix45.fix45(nums13),
+            Fix45.fix45(nums14),
+            Fix45.fix45(nums15),
+            Fix45.fix45(nums16),
+            Fix45.fix45(nums17),
         };
 
         boolean allTestsPassed = true;

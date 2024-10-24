@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p192570
 package String3;
 import String3.Testcases._WithoutString;
+
+// https://codingbat.com/prob/p192570
+// Difficulty: 306.0
 
 public class WithoutString
 {
@@ -9,17 +11,33 @@ public class WithoutString
     You may assume that the remove string is length 1 or more. 
     Remove only non-overlapping instances, so with "xxx" removing "xx" leaves "x". */
 
-    /*____________________________________________________
-    |                      Testcases                      |
-    |_____________________________________________________|
-    | withoutString("Hello there", "llo") → "He there"    |
-    | withoutString("Hello there", "e")   → "Hllo thr"    |
-    | withoutString("Hello there", "x")   → "Hello there" |
-    |____________________________________________________*/
+    /*______________________________________________________
+    |                       Testcases                       |
+    |_______________________________________________________|
+    | withoutString("Hello there", "llo")   → "He there"    |
+    | withoutString("Hello there", "e")     → "Hllo thr"    |
+    | withoutString("Hello there", "x")     → "Hello there" |
+    | withoutString("This is a FISH", "IS") → "Th a FH"     |
+    | withoutString("THIS is a FISH", "is") → "TH a FH"     |
+    | withoutString("THIS is a FISH", "iS") → "TH a FH"     |
+    | withoutString("abxxxxab", "xx")       → "abab"        |
+    | withoutString("abxxxab", "xx")        → "abxab"       |
+    | withoutString("abxxxab", "x")         → "abab"        |
+    | withoutString("xxx", "x")             → ""            |
+    | withoutString("xxx", "xx")            → "x"           |
+    | withoutString("xyzzy", "Y")           → "xzz"         |
+    | withoutString("", "x")                → ""            |
+    | withoutString("abcabc", "b")          → "acac"        |
+    | withoutString("AA22bb", "2")          → "AAbb"        |
+    | withoutString("1111", "1")            → ""            |
+    | withoutString("1111", "11")           → ""            |
+    | withoutString("MkjtMkx", "Mk")        → "jtx"         |
+    | withoutString("Hi HoHo", "Ho")        → "Hi "         |
+    |______________________________________________________*/
 
     public static String withoutString(String base, String remove)
     {
-        
+        return "";
     }
 
     public static void main(String[] args) {

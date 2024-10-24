@@ -7,12 +7,30 @@ public class _WithoutX2
         "withoutX2(\"xHi\")",
         "withoutX2(\"Hxi\")",
         "withoutX2(\"Hi\")",
+        "withoutX2(\"xxHi\")",
+        "withoutX2(\"Hix\")",
+        "withoutX2(\"xaxb\")",
+        "withoutX2(\"xx\")",
+        "withoutX2(\"x\")",
+        "withoutX2(\"\")",
+        "withoutX2(\"Hello\")",
+        "withoutX2(\"Hexllo\")",
+        "withoutX2(\"xHxllo\")",
     };
 
     static String[] expectedResults = {
         "Hi",
         "Hi",
         "Hi",
+        "Hi",
+        "Hix",
+        "axb",
+        "",
+        "",
+        "",
+        "Hello",
+        "Hexllo",
+        "Hxllo",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +39,15 @@ public class _WithoutX2
             WithoutX2.withoutX2("xHi"),
             WithoutX2.withoutX2("Hxi"),
             WithoutX2.withoutX2("Hi"),
+            WithoutX2.withoutX2("xxHi"),
+            WithoutX2.withoutX2("Hix"),
+            WithoutX2.withoutX2("xaxb"),
+            WithoutX2.withoutX2("xx"),
+            WithoutX2.withoutX2("x"),
+            WithoutX2.withoutX2(""),
+            WithoutX2.withoutX2("Hello"),
+            WithoutX2.withoutX2("Hexllo"),
+            WithoutX2.withoutX2("xHxllo"),
         };
 
         boolean allTestsPassed = true;

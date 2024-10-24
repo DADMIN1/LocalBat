@@ -8,12 +8,18 @@ public class _SeriesUp
         "seriesUp(3)",
         "seriesUp(4)",
         "seriesUp(2)",
+        "seriesUp(1)",
+        "seriesUp(0)",
+        "seriesUp(6)",
     };
 
     static int[][] expectedResults = {
         {1, 1, 2, 1, 2, 3},
         {1, 1, 2, 1, 2, 3, 1, 2, 3, 4},
         {1, 1, 2},
+        {1},
+        {},
+        {1, 1, 2, 1, 2, 3, 1, 2, 3, 4, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 6},
     };
 
     public static String printArray(int[] array)
@@ -30,6 +36,9 @@ public class _SeriesUp
             SeriesUp.seriesUp(3),
             SeriesUp.seriesUp(4),
             SeriesUp.seriesUp(2),
+            SeriesUp.seriesUp(1),
+            SeriesUp.seriesUp(0),
+            SeriesUp.seriesUp(6),
         };
 
         boolean allTestsPassed = true;

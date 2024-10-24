@@ -7,11 +7,13 @@ public class _SleepIn
         "sleepIn(false, false)",
         "sleepIn(true, false)",
         "sleepIn(false, true)",
+        "sleepIn(true, true)",
     };
 
     static boolean[] expectedResults = {
         true,
         false,
+        true,
         true,
     };
 
@@ -21,6 +23,7 @@ public class _SleepIn
             SleepIn.sleepIn(false, false),
             SleepIn.sleepIn(true, false),
             SleepIn.sleepIn(false, true),
+            SleepIn.sleepIn(true, true),
         };
 
         boolean allTestsPassed = true;

@@ -7,11 +7,13 @@ public class _MonkeyTrouble
         "monkeyTrouble(true, true)",
         "monkeyTrouble(false, false)",
         "monkeyTrouble(true, false)",
+        "monkeyTrouble(false, true)",
     };
 
     static boolean[] expectedResults = {
         true,
         true,
+        false,
         false,
     };
 
@@ -21,6 +23,7 @@ public class _MonkeyTrouble
             MonkeyTrouble.monkeyTrouble(true, true),
             MonkeyTrouble.monkeyTrouble(false, false),
             MonkeyTrouble.monkeyTrouble(true, false),
+            MonkeyTrouble.monkeyTrouble(false, true),
         };
 
         boolean allTestsPassed = true;

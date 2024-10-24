@@ -7,12 +7,20 @@ public class _NotString
         "notString(\"candy\")",
         "notString(\"x\")",
         "notString(\"not bad\")",
+        "notString(\"bad\")",
+        "notString(\"not\")",
+        "notString(\"is not\")",
+        "notString(\"no\")",
     };
 
     static String[] expectedResults = {
         "not candy",
         "not x",
         "not bad",
+        "not bad",
+        "not",
+        "not is not",
+        "not no",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +29,10 @@ public class _NotString
             NotString.notString("candy"),
             NotString.notString("x"),
             NotString.notString("not bad"),
+            NotString.notString("bad"),
+            NotString.notString("not"),
+            NotString.notString("is not"),
+            NotString.notString("no"),
         };
 
         boolean allTestsPassed = true;

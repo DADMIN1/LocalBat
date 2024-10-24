@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p173469
 package Recursion1;
 import Recursion1.Testcases._Array220;
+
+// https://codingbat.com/prob/p173469
+// Difficulty: 351.0
 
 public class Array220
 {
@@ -9,17 +11,28 @@ public class Array220
     In this way, a recursive call can pass index+1 to move down the array. 
     The initial call will pass in index as 0. */
 
-    /*________________________________
-    |            Testcases            |
-    |_________________________________|
-    | array220([1, 2, 20], 0) → true  |
-    | array220([3, 30], 0)    → true  |
-    | array220([3], 0)        → false |
-    |________________________________*/
+    /*_________________________________________________
+    |                    Testcases                     |
+    |__________________________________________________|
+    | array220([1, 2, 20], 0)                  → true  |
+    | array220([3, 30], 0)                     → true  |
+    | array220([3], 0)                         → false |
+    | array220([], 0)                          → false |
+    | array220([3, 3, 30, 4], 0)               → true  |
+    | array220([2, 19, 4], 0)                  → false |
+    | array220([20, 2, 21], 0)                 → false |
+    | array220([20, 2, 21, 210], 0)            → true  |
+    | array220([2, 200, 2000], 0)              → true  |
+    | array220([0, 0], 0)                      → true  |
+    | array220([1, 2, 3, 4, 5, 6], 0)          → false |
+    | array220([1, 2, 3, 4, 5, 50, 6], 0)      → true  |
+    | array220([1, 2, 3, 4, 5, 51, 6], 0)      → false |
+    | array220([1, 2, 3, 4, 4, 50, 500, 6], 0) → true  |
+    |_________________________________________________*/
 
     public static boolean array220(int[] nums, int index)
     {
-        
+        return false;
     }
 
     public static void main(String[] args) {

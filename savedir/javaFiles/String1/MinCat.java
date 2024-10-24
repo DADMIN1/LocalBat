@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p105745
 package String1;
 import String1.Testcases._MinCat;
+
+// https://codingbat.com/prob/p105745
+// Difficulty: 181.0
 
 public class MinCat
 {
@@ -15,11 +17,14 @@ public class MinCat
     | minCat("Hello", "Hi")   → "loHi"     |
     | minCat("Hello", "java") → "ellojava" |
     | minCat("java", "Hello") → "javaello" |
+    | minCat("abc", "x")      → "cx"       |
+    | minCat("x", "abc")      → "xc"       |
+    | minCat("abc", "")       → ""         |
     |_____________________________________*/
 
     public static String minCat(String a, String b)
     {
-        
+        return "";
     }
 
     public static void main(String[] args) {

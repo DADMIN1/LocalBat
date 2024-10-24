@@ -7,12 +7,30 @@ public class _CountAbc
         "countAbc(\"abc\")",
         "countAbc(\"abcxxabc\")",
         "countAbc(\"abaxxaba\")",
+        "countAbc(\"ababc\")",
+        "countAbc(\"abxbc\")",
+        "countAbc(\"aaabc\")",
+        "countAbc(\"hello\")",
+        "countAbc(\"\")",
+        "countAbc(\"ab\")",
+        "countAbc(\"aba\")",
+        "countAbc(\"aca\")",
+        "countAbc(\"aaa\")",
     };
 
     static int[] expectedResults = {
         1,
         2,
         2,
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +39,15 @@ public class _CountAbc
             CountAbc.countAbc("abc"),
             CountAbc.countAbc("abcxxabc"),
             CountAbc.countAbc("abaxxaba"),
+            CountAbc.countAbc("ababc"),
+            CountAbc.countAbc("abxbc"),
+            CountAbc.countAbc("aaabc"),
+            CountAbc.countAbc("hello"),
+            CountAbc.countAbc(""),
+            CountAbc.countAbc("ab"),
+            CountAbc.countAbc("aba"),
+            CountAbc.countAbc("aca"),
+            CountAbc.countAbc("aaa"),
         };
 
         boolean allTestsPassed = true;

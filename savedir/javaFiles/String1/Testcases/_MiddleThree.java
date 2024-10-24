@@ -7,12 +7,20 @@ public class _MiddleThree
         "middleThree(\"Candy\")",
         "middleThree(\"and\")",
         "middleThree(\"solving\")",
+        "middleThree(\"Hi yet Hi\")",
+        "middleThree(\"java yet java\")",
+        "middleThree(\"Chocolate\")",
+        "middleThree(\"XabcxyzabcX\")",
     };
 
     static String[] expectedResults = {
         "and",
         "and",
         "lvi",
+        "yet",
+        "yet",
+        "col",
+        "xyz",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +29,10 @@ public class _MiddleThree
             MiddleThree.middleThree("Candy"),
             MiddleThree.middleThree("and"),
             MiddleThree.middleThree("solving"),
+            MiddleThree.middleThree("Hi yet Hi"),
+            MiddleThree.middleThree("java yet java"),
+            MiddleThree.middleThree("Chocolate"),
+            MiddleThree.middleThree("XabcxyzabcX"),
         };
 
         boolean allTestsPassed = true;

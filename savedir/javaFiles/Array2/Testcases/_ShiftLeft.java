@@ -8,12 +8,20 @@ public class _ShiftLeft
         "shiftLeft([6, 2, 5, 3])",
         "shiftLeft([1, 2])",
         "shiftLeft([1])",
+        "shiftLeft([])",
+        "shiftLeft([1, 1, 2, 2, 4])",
+        "shiftLeft([1, 1, 1])",
+        "shiftLeft([1, 2, 3])",
     };
 
     static int[][] expectedResults = {
         {2, 5, 3, 6},
         {2, 1},
         {1},
+        {},
+        {1, 2, 2, 4, 1},
+        {1, 1, 1},
+        {2, 3, 1},
     };
 
     public static String printArray(int[] array)
@@ -29,11 +37,19 @@ public class _ShiftLeft
         int[] nums0 = { 6, 2, 5, 3 }; 
         int[] nums1 = { 1, 2 }; 
         int[] nums2 = { 1 }; 
+        int[] nums3 = {  }; 
+        int[] nums4 = { 1, 1, 2, 2, 4 }; 
+        int[] nums5 = { 1, 1, 1 }; 
+        int[] nums6 = { 1, 2, 3 }; 
 
         int[][] resultsArray = {
             ShiftLeft.shiftLeft(nums0),
             ShiftLeft.shiftLeft(nums1),
             ShiftLeft.shiftLeft(nums2),
+            ShiftLeft.shiftLeft(nums3),
+            ShiftLeft.shiftLeft(nums4),
+            ShiftLeft.shiftLeft(nums5),
+            ShiftLeft.shiftLeft(nums6),
         };
 
         boolean allTestsPassed = true;

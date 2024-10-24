@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p128796
 package String2;
 import String2.Testcases._RepeatFront;
+
+// https://codingbat.com/prob/p128796
+// Difficulty: 233.0
 
 public class RepeatFront
 {
@@ -15,11 +17,17 @@ public class RepeatFront
     | repeatFront("Chocolate", 4) → "ChocChoChC" |
     | repeatFront("Chocolate", 3) → "ChoChC"     |
     | repeatFront("Ice Cream", 2) → "IcI"        |
+    | repeatFront("Ice Cream", 1) → "I"          |
+    | repeatFront("Ice Cream", 0) → ""           |
+    | repeatFront("xyz", 3)       → "xyzxyx"     |
+    | repeatFront("", 0)          → ""           |
+    | repeatFront("Java", 4)      → "JavaJavJaJ" |
+    | repeatFront("Java", 1)      → "J"          |
     |___________________________________________*/
 
     public static String repeatFront(String str, int n)
     {
-        
+        return "";
     }
 
     public static void main(String[] args) {

@@ -7,12 +7,28 @@ public class _CigarParty
         "cigarParty(30, false)",
         "cigarParty(50, false)",
         "cigarParty(70, true)",
+        "cigarParty(30, true)",
+        "cigarParty(50, true)",
+        "cigarParty(60, false)",
+        "cigarParty(61, false)",
+        "cigarParty(40, false)",
+        "cigarParty(39, false)",
+        "cigarParty(40, true)",
+        "cigarParty(39, true)",
     };
 
     static boolean[] expectedResults = {
         false,
         true,
         true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +37,14 @@ public class _CigarParty
             CigarParty.cigarParty(30, false),
             CigarParty.cigarParty(50, false),
             CigarParty.cigarParty(70, true),
+            CigarParty.cigarParty(30, true),
+            CigarParty.cigarParty(50, true),
+            CigarParty.cigarParty(60, false),
+            CigarParty.cigarParty(61, false),
+            CigarParty.cigarParty(40, false),
+            CigarParty.cigarParty(39, false),
+            CigarParty.cigarParty(40, true),
+            CigarParty.cigarParty(39, true),
         };
 
         boolean allTestsPassed = true;

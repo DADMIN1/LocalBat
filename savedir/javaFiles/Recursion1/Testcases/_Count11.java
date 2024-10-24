@@ -7,12 +7,28 @@ public class _Count11
         "count11(\"11abc11\")",
         "count11(\"abc11x11x11\")",
         "count11(\"111\")",
+        "count11(\"1111\")",
+        "count11(\"1\")",
+        "count11(\"\")",
+        "count11(\"hi\")",
+        "count11(\"11x111x1111\")",
+        "count11(\"1x111\")",
+        "count11(\"1Hello1\")",
+        "count11(\"Hello\")",
     };
 
     static int[] expectedResults = {
         2,
         3,
         1,
+        2,
+        0,
+        0,
+        0,
+        4,
+        1,
+        0,
+        0,
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +37,14 @@ public class _Count11
             Count11.count11("11abc11"),
             Count11.count11("abc11x11x11"),
             Count11.count11("111"),
+            Count11.count11("1111"),
+            Count11.count11("1"),
+            Count11.count11(""),
+            Count11.count11("hi"),
+            Count11.count11("11x111x1111"),
+            Count11.count11("1x111"),
+            Count11.count11("1Hello1"),
+            Count11.count11("Hello"),
         };
 
         boolean allTestsPassed = true;

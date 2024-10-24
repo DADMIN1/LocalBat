@@ -7,12 +7,20 @@ public class _StringYak
         "stringYak(\"yakpak\")",
         "stringYak(\"pakyak\")",
         "stringYak(\"yak123ya\")",
+        "stringYak(\"yak\")",
+        "stringYak(\"yakxxxyak\")",
+        "stringYak(\"HiyakHi\")",
+        "stringYak(\"xxxyakyyyakzzz\")",
     };
 
     static String[] expectedResults = {
         "pak",
         "pak",
         "123ya",
+        "",
+        "xxx",
+        "HiHi",
+        "xxxyyzzz",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +29,10 @@ public class _StringYak
             StringYak.stringYak("yakpak"),
             StringYak.stringYak("pakyak"),
             StringYak.stringYak("yak123ya"),
+            StringYak.stringYak("yak"),
+            StringYak.stringYak("yakxxxyak"),
+            StringYak.stringYak("HiyakHi"),
+            StringYak.stringYak("xxxyakyyyakzzz"),
         };
 
         boolean allTestsPassed = true;

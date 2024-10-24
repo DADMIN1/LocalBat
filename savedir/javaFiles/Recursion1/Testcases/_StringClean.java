@@ -7,12 +7,18 @@ public class _StringClean
         "stringClean(\"yyzzza\")",
         "stringClean(\"abbbcdd\")",
         "stringClean(\"Hello\")",
+        "stringClean(\"XXabcYY\")",
+        "stringClean(\"112ab445\")",
+        "stringClean(\"Hello Bookkeeper\")",
     };
 
     static String[] expectedResults = {
         "yza",
         "abcd",
         "Helo",
+        "XabcY",
+        "12ab45",
+        "Helo Bokeper",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +27,9 @@ public class _StringClean
             StringClean.stringClean("yyzzza"),
             StringClean.stringClean("abbbcdd"),
             StringClean.stringClean("Hello"),
+            StringClean.stringClean("XXabcYY"),
+            StringClean.stringClean("112ab445"),
+            StringClean.stringClean("Hello Bookkeeper"),
         };
 
         boolean allTestsPassed = true;

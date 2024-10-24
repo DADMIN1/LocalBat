@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p110973
 package Logic1;
 import Logic1.Testcases._AnswerCell;
+
+// https://codingbat.com/prob/p110973
+// Difficulty: 130.0
 
 public class AnswerCell
 {
@@ -14,11 +16,14 @@ public class AnswerCell
     | answerCell(false, false, false) → true  |
     | answerCell(false, false, true)  → false |
     | answerCell(true, false, false)  → false |
+    | answerCell(true, true, false)   → true  |
+    | answerCell(false, true, false)  → true  |
+    | answerCell(true, true, true)    → false |
     |________________________________________*/
 
     public static boolean answerCell(boolean isMorning, boolean isMom, boolean isAsleep)
     {
-        
+        return false;
     }
 
     public static void main(String[] args) {

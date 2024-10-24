@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p120347
 package Array1;
 import Array1.Testcases._Fix23;
+
+// https://codingbat.com/prob/p120347
+// Difficulty: 148.0
 
 public class Fix23
 {
@@ -13,11 +15,14 @@ public class Fix23
     | fix23([1, 2, 3]) → [1, 2, 0] |
     | fix23([2, 3, 5]) → [2, 0, 5] |
     | fix23([1, 2, 1]) → [1, 2, 1] |
+    | fix23([3, 2, 1]) → [3, 2, 1] |
+    | fix23([2, 2, 3]) → [2, 2, 0] |
+    | fix23([2, 3, 3]) → [2, 0, 3] |
     |_____________________________*/
 
     public static int[] fix23(int[] nums)
     {
-        
+        return new int[]{0};
     }
 
     public static void main(String[] args) {

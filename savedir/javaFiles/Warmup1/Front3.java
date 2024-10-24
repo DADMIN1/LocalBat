@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p136351
 package Warmup1;
 import Warmup1.Testcases._Front3;
+
+// https://codingbat.com/prob/p136351
+// Difficulty: 136.0
 
 public class Front3
 {
@@ -14,11 +16,15 @@ public class Front3
     | front3("Java")      → "JavJavJav" |
     | front3("Chocolate") → "ChoChoCho" |
     | front3("abc")       → "abcabcabc" |
+    | front3("abcXYZ")    → "abcabcabc" |
+    | front3("ab")        → "ababab"    |
+    | front3("a")         → "aaa"       |
+    | front3("")          → ""          |
     |__________________________________*/
 
     public static String front3(String str)
     {
-        
+        return "";
     }
 
     public static void main(String[] args) {

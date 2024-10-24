@@ -7,12 +7,22 @@ public class _StartHi
         "startHi(\"hi there\")",
         "startHi(\"hi\")",
         "startHi(\"hello hi\")",
+        "startHi(\"he\")",
+        "startHi(\"h\")",
+        "startHi(\"\")",
+        "startHi(\"ho hi\")",
+        "startHi(\"hi ho\")",
     };
 
     static boolean[] expectedResults = {
         true,
         true,
         false,
+        false,
+        false,
+        false,
+        false,
+        true,
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +31,11 @@ public class _StartHi
             StartHi.startHi("hi there"),
             StartHi.startHi("hi"),
             StartHi.startHi("hello hi"),
+            StartHi.startHi("he"),
+            StartHi.startHi("h"),
+            StartHi.startHi(""),
+            StartHi.startHi("ho hi"),
+            StartHi.startHi("hi ho"),
         };
 
         boolean allTestsPassed = true;

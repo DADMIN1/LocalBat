@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p100905
 package Warmup1;
 import Warmup1.Testcases._DelDel;
+
+// https://codingbat.com/prob/p100905
+// Difficulty: 160.0
 
 public class DelDel
 {
@@ -8,17 +10,25 @@ public class DelDel
     return a string where that "del" has been deleted. Otherwise, 
     return the string unchanged. */
 
-    /*_______________________________
-    |           Testcases            |
-    |________________________________|
-    | delDel("adelbc")    → "abc"    |
-    | delDel("adelHello") → "aHello" |
-    | delDel("adedbc")    → "adedbc" |
-    |_______________________________*/
+    /*________________________________
+    |            Testcases            |
+    |_________________________________|
+    | delDel("adelbc")    → "abc"     |
+    | delDel("adelHello") → "aHello"  |
+    | delDel("adedbc")    → "adedbc"  |
+    | delDel("abcdel")    → "abcdel"  |
+    | delDel("add")       → "add"     |
+    | delDel("ad")        → "ad"      |
+    | delDel("a")         → "a"       |
+    | delDel("")          → ""        |
+    | delDel("del")       → "del"     |
+    | delDel("adel")      → "a"       |
+    | delDel("aadelbb")   → "aadelbb" |
+    |________________________________*/
 
     public static String delDel(String str)
     {
-        
+        return "";
     }
 
     public static void main(String[] args) {

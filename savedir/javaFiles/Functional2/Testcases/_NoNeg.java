@@ -9,12 +9,20 @@ public class _NoNeg
         "noNeg([1, -2])",
         "noNeg([-3, -3, 3, 3])",
         "noNeg([-1, -1, -1])",
+        "noNeg([])",
+        "noNeg([0, 1, 2])",
+        "noNeg([3, -10, 1, -1, 4, -400])",
+        "noNeg([-1, 3, 1, -1, -10, -100, -111, 5])",
     };
 
     static List<?>[] expectedResults = {
         Arrays.asList(1),
         Arrays.asList(3, 3),
         Arrays.asList(),
+        Arrays.asList(),
+        Arrays.asList(0, 1, 2),
+        Arrays.asList(3, 1, 4),
+        Arrays.asList(3, 1, 5),
     };
 
     public static void Validate(boolean printSuccess)
@@ -23,6 +31,10 @@ public class _NoNeg
             NoNeg.noNeg(Arrays.asList(1, -2)),
             NoNeg.noNeg(Arrays.asList(-3, -3, 3, 3)),
             NoNeg.noNeg(Arrays.asList(-1, -1, -1)),
+            NoNeg.noNeg(Arrays.asList()),
+            NoNeg.noNeg(Arrays.asList(0, 1, 2)),
+            NoNeg.noNeg(Arrays.asList(3, -10, 1, -1, 4, -400)),
+            NoNeg.noNeg(Arrays.asList(-1, 3, 1, -1, -10, -100, -111, 5)),
         };
 
         boolean allTestsPassed = true;

@@ -7,12 +7,24 @@ public class _SumDigits
         "sumDigits(\"aa1bc2d3\")",
         "sumDigits(\"aa11b33\")",
         "sumDigits(\"Chocolate\")",
+        "sumDigits(\"5hoco1a1e\")",
+        "sumDigits(\"123abc123\")",
+        "sumDigits(\"\")",
+        "sumDigits(\"Hello\")",
+        "sumDigits(\"X1z9b2\")",
+        "sumDigits(\"5432a\")",
     };
 
     static int[] expectedResults = {
         6,
         8,
         0,
+        7,
+        12,
+        0,
+        0,
+        12,
+        14,
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +33,12 @@ public class _SumDigits
             SumDigits.sumDigits("aa1bc2d3"),
             SumDigits.sumDigits("aa11b33"),
             SumDigits.sumDigits("Chocolate"),
+            SumDigits.sumDigits("5hoco1a1e"),
+            SumDigits.sumDigits("123abc123"),
+            SumDigits.sumDigits(""),
+            SumDigits.sumDigits("Hello"),
+            SumDigits.sumDigits("X1z9b2"),
+            SumDigits.sumDigits("5432a"),
         };
 
         boolean allTestsPassed = true;

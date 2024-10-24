@@ -7,12 +7,18 @@ public class _BackAround
         "backAround(\"cat\")",
         "backAround(\"Hello\")",
         "backAround(\"a\")",
+        "backAround(\"abc\")",
+        "backAround(\"read\")",
+        "backAround(\"boo\")",
     };
 
     static String[] expectedResults = {
         "tcatt",
         "oHelloo",
         "aaa",
+        "cabcc",
+        "dreadd",
+        "obooo",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +27,9 @@ public class _BackAround
             BackAround.backAround("cat"),
             BackAround.backAround("Hello"),
             BackAround.backAround("a"),
+            BackAround.backAround("abc"),
+            BackAround.backAround("read"),
+            BackAround.backAround("boo"),
         };
 
         boolean allTestsPassed = true;

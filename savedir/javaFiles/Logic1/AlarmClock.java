@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p160543
 package Logic1;
 import Logic1.Testcases._AlarmClock;
+
+// https://codingbat.com/prob/p160543
+// Difficulty: 118.0
 
 public class AlarmClock
 {
@@ -16,11 +18,17 @@ public class AlarmClock
     | alarmClock(1, false) → "7:00"  |
     | alarmClock(5, false) → "7:00"  |
     | alarmClock(0, false) → "10:00" |
+    | alarmClock(6, false) → "10:00" |
+    | alarmClock(0, true)  → "off"   |
+    | alarmClock(6, true)  → "off"   |
+    | alarmClock(1, true)  → "10:00" |
+    | alarmClock(3, true)  → "10:00" |
+    | alarmClock(5, true)  → "10:00" |
     |_______________________________*/
 
     public static String alarmClock(int day, boolean vacation)
     {
-        
+        return "";
     }
 
     public static void main(String[] args) {

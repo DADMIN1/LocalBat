@@ -7,12 +7,36 @@ public class _StartWord
         "startWord(\"hippo\", \"hi\")",
         "startWord(\"hippo\", \"xip\")",
         "startWord(\"hippo\", \"i\")",
+        "startWord(\"hippo\", \"ix\")",
+        "startWord(\"h\", \"ix\")",
+        "startWord(\"\", \"i\")",
+        "startWord(\"hip\", \"zi\")",
+        "startWord(\"hip\", \"zip\")",
+        "startWord(\"hip\", \"zig\")",
+        "startWord(\"h\", \"z\")",
+        "startWord(\"hippo\", \"xippo\")",
+        "startWord(\"hippo\", \"xyz\")",
+        "startWord(\"hippo\", \"hip\")",
+        "startWord(\"kitten\", \"cit\")",
+        "startWord(\"kit\", \"cit\")",
     };
 
     static String[] expectedResults = {
         "hi",
         "hip",
         "h",
+        "",
+        "",
+        "",
+        "hi",
+        "hip",
+        "",
+        "h",
+        "hippo",
+        "",
+        "hip",
+        "kit",
+        "kit",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +45,18 @@ public class _StartWord
             StartWord.startWord("hippo", "hi"),
             StartWord.startWord("hippo", "xip"),
             StartWord.startWord("hippo", "i"),
+            StartWord.startWord("hippo", "ix"),
+            StartWord.startWord("h", "ix"),
+            StartWord.startWord("", "i"),
+            StartWord.startWord("hip", "zi"),
+            StartWord.startWord("hip", "zip"),
+            StartWord.startWord("hip", "zig"),
+            StartWord.startWord("h", "z"),
+            StartWord.startWord("hippo", "xippo"),
+            StartWord.startWord("hippo", "xyz"),
+            StartWord.startWord("hippo", "hip"),
+            StartWord.startWord("kitten", "cit"),
+            StartWord.startWord("kit", "cit"),
         };
 
         boolean allTestsPassed = true;

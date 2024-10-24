@@ -1,6 +1,8 @@
-// https://codingbat.com/prob/p109537
 package Array1;
 import Array1.Testcases._BiggerTwo;
+
+// https://codingbat.com/prob/p109537
+// Difficulty: 154.0
 
 public class BiggerTwo
 {
@@ -14,11 +16,15 @@ public class BiggerTwo
     | biggerTwo([1, 2], [3, 4]) → [3, 4] |
     | biggerTwo([3, 4], [1, 2]) → [3, 4] |
     | biggerTwo([1, 1], [1, 2]) → [1, 2] |
+    | biggerTwo([2, 1], [1, 1]) → [2, 1] |
+    | biggerTwo([2, 2], [1, 3]) → [2, 2] |
+    | biggerTwo([1, 3], [2, 2]) → [1, 3] |
+    | biggerTwo([6, 7], [3, 1]) → [6, 7] |
     |___________________________________*/
 
     public static int[] biggerTwo(int[] a, int[] b)
     {
-        
+        return new int[]{0};
     }
 
     public static void main(String[] args) {

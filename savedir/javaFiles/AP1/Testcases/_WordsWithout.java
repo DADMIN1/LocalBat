@@ -8,12 +8,20 @@ public class _WordsWithout
         "wordsWithout([\"a\", \"b\", \"c\", \"a\"], \"a\")",
         "wordsWithout([\"a\", \"b\", \"c\", \"a\"], \"b\")",
         "wordsWithout([\"a\", \"b\", \"c\", \"a\"], \"c\")",
+        "wordsWithout([\"b\", \"c\", \"a\", \"a\"], \"b\")",
+        "wordsWithout([\"xx\", \"yyy\", \"x\", \"yy\", \"x\"], \"x\")",
+        "wordsWithout([\"xx\", \"yyy\", \"x\", \"yy\", \"x\"], \"yy\")",
+        "wordsWithout([\"aa\", \"ab\", \"ac\", \"aa\"], \"aa\")",
     };
 
     static String[][] expectedResults = {
         {"b", "c"},
         {"a", "c", "a"},
         {"a", "b", "a"},
+        {"c", "a", "a"},
+        {"xx", "yyy", "yy"},
+        {"xx", "yyy", "x", "x"},
+        {"ab", "ac"},
     };
 
     public static String printArray(String[] array)
@@ -29,11 +37,19 @@ public class _WordsWithout
         String[] words0 = { "a", "b", "c", "a" }; 
         String[] words1 = { "a", "b", "c", "a" }; 
         String[] words2 = { "a", "b", "c", "a" }; 
+        String[] words3 = { "b", "c", "a", "a" }; 
+        String[] words4 = { "xx", "yyy", "x", "yy", "x" }; 
+        String[] words5 = { "xx", "yyy", "x", "yy", "x" }; 
+        String[] words6 = { "aa", "ab", "ac", "aa" }; 
 
         String[][] resultsArray = {
             WordsWithout.wordsWithout(words0, "a"),
             WordsWithout.wordsWithout(words1, "b"),
             WordsWithout.wordsWithout(words2, "c"),
+            WordsWithout.wordsWithout(words3, "b"),
+            WordsWithout.wordsWithout(words4, "x"),
+            WordsWithout.wordsWithout(words5, "yy"),
+            WordsWithout.wordsWithout(words6, "aa"),
         };
 
         boolean allTestsPassed = true;

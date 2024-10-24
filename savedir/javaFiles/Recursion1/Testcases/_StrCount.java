@@ -7,12 +7,34 @@ public class _StrCount
         "strCount(\"catcowcat\", \"cat\")",
         "strCount(\"catcowcat\", \"cow\")",
         "strCount(\"catcowcat\", \"dog\")",
+        "strCount(\"cacatcowcat\", \"cat\")",
+        "strCount(\"xyx\", \"x\")",
+        "strCount(\"iiiijj\", \"i\")",
+        "strCount(\"iiiijj\", \"ii\")",
+        "strCount(\"iiiijj\", \"iii\")",
+        "strCount(\"iiiijj\", \"j\")",
+        "strCount(\"iiiijj\", \"jj\")",
+        "strCount(\"aaabababab\", \"ab\")",
+        "strCount(\"aaabababab\", \"aa\")",
+        "strCount(\"aaabababab\", \"a\")",
+        "strCount(\"aaabababab\", \"b\")",
     };
 
     static int[] expectedResults = {
         2,
         1,
         0,
+        2,
+        2,
+        4,
+        2,
+        1,
+        2,
+        1,
+        4,
+        1,
+        6,
+        4,
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +43,17 @@ public class _StrCount
             StrCount.strCount("catcowcat", "cat"),
             StrCount.strCount("catcowcat", "cow"),
             StrCount.strCount("catcowcat", "dog"),
+            StrCount.strCount("cacatcowcat", "cat"),
+            StrCount.strCount("xyx", "x"),
+            StrCount.strCount("iiiijj", "i"),
+            StrCount.strCount("iiiijj", "ii"),
+            StrCount.strCount("iiiijj", "iii"),
+            StrCount.strCount("iiiijj", "j"),
+            StrCount.strCount("iiiijj", "jj"),
+            StrCount.strCount("aaabababab", "ab"),
+            StrCount.strCount("aaabababab", "aa"),
+            StrCount.strCount("aaabababab", "a"),
+            StrCount.strCount("aaabababab", "b"),
         };
 
         boolean allTestsPassed = true;

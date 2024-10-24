@@ -7,12 +7,16 @@ public class _LastTwo
         "lastTwo(\"coding\")",
         "lastTwo(\"cat\")",
         "lastTwo(\"ab\")",
+        "lastTwo(\"a\")",
+        "lastTwo(\"\")",
     };
 
     static String[] expectedResults = {
         "codign",
         "cta",
         "ba",
+        "a",
+        "",
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +25,8 @@ public class _LastTwo
             LastTwo.lastTwo("coding"),
             LastTwo.lastTwo("cat"),
             LastTwo.lastTwo("ab"),
+            LastTwo.lastTwo("a"),
+            LastTwo.lastTwo(""),
         };
 
         boolean allTestsPassed = true;

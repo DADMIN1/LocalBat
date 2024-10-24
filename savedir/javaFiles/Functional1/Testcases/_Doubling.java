@@ -9,12 +9,22 @@ public class _Doubling
         "doubling([1, 2, 3])",
         "doubling([6, 8, 6, 8, -1])",
         "doubling([])",
+        "doubling([5])",
+        "doubling([5, 10])",
+        "doubling([8, -5, 7, 3, 109])",
+        "doubling([6, -3, 12, 23, 4, 1, 19, 11, 2, 3, 2])",
+        "doubling([3, 1, 4, 1, 5, 9])",
     };
 
     static List<?>[] expectedResults = {
         Arrays.asList(2, 4, 6),
         Arrays.asList(12, 16, 12, 16, -2),
         Arrays.asList(),
+        Arrays.asList(10),
+        Arrays.asList(10, 20),
+        Arrays.asList(16, -10, 14, 6, 218),
+        Arrays.asList(12, -6, 24, 46, 8, 2, 38, 22, 4, 6, 4),
+        Arrays.asList(6, 2, 8, 2, 10, 18),
     };
 
     public static void Validate(boolean printSuccess)
@@ -23,6 +33,11 @@ public class _Doubling
             Doubling.doubling(Arrays.asList(1, 2, 3)),
             Doubling.doubling(Arrays.asList(6, 8, 6, 8, -1)),
             Doubling.doubling(Arrays.asList()),
+            Doubling.doubling(Arrays.asList(5)),
+            Doubling.doubling(Arrays.asList(5, 10)),
+            Doubling.doubling(Arrays.asList(8, -5, 7, 3, 109)),
+            Doubling.doubling(Arrays.asList(6, -3, 12, 23, 4, 1, 19, 11, 2, 3, 2)),
+            Doubling.doubling(Arrays.asList(3, 1, 4, 1, 5, 9)),
         };
 
         boolean allTestsPassed = true;

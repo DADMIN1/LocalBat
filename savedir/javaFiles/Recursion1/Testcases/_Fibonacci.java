@@ -7,12 +7,22 @@ public class _Fibonacci
         "fibonacci(0)",
         "fibonacci(1)",
         "fibonacci(2)",
+        "fibonacci(3)",
+        "fibonacci(4)",
+        "fibonacci(5)",
+        "fibonacci(6)",
+        "fibonacci(7)",
     };
 
     static int[] expectedResults = {
         0,
         1,
         1,
+        2,
+        3,
+        5,
+        8,
+        13,
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +31,11 @@ public class _Fibonacci
             Fibonacci.fibonacci(0),
             Fibonacci.fibonacci(1),
             Fibonacci.fibonacci(2),
+            Fibonacci.fibonacci(3),
+            Fibonacci.fibonacci(4),
+            Fibonacci.fibonacci(5),
+            Fibonacci.fibonacci(6),
+            Fibonacci.fibonacci(7),
         };
 
         boolean allTestsPassed = true;

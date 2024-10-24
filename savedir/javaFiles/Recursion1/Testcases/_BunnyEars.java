@@ -7,12 +7,24 @@ public class _BunnyEars
         "bunnyEars(0)",
         "bunnyEars(1)",
         "bunnyEars(2)",
+        "bunnyEars(3)",
+        "bunnyEars(4)",
+        "bunnyEars(5)",
+        "bunnyEars(12)",
+        "bunnyEars(50)",
+        "bunnyEars(234)",
     };
 
     static int[] expectedResults = {
         0,
         2,
         4,
+        6,
+        8,
+        10,
+        24,
+        100,
+        468,
     };
 
     public static void Validate(boolean printSuccess)
@@ -21,6 +33,12 @@ public class _BunnyEars
             BunnyEars.bunnyEars(0),
             BunnyEars.bunnyEars(1),
             BunnyEars.bunnyEars(2),
+            BunnyEars.bunnyEars(3),
+            BunnyEars.bunnyEars(4),
+            BunnyEars.bunnyEars(5),
+            BunnyEars.bunnyEars(12),
+            BunnyEars.bunnyEars(50),
+            BunnyEars.bunnyEars(234),
         };
 
         boolean allTestsPassed = true;
