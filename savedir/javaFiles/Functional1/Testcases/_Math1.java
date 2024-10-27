@@ -2,6 +2,7 @@ package Functional1.Testcases;
 import Functional1.Math1;
 import java.util.List;
 import java.util.Arrays;
+import java.util.ArrayList;
 
 public class _Math1
 {
@@ -28,13 +29,13 @@ public class _Math1
     public static void Validate(boolean printSuccess)
     {
         List<?>[] resultsArray = {
-            Math1.math1(Arrays.asList(1, 2, 3)),
-            Math1.math1(Arrays.asList(6, 8, 6, 8, 1)),
-            Math1.math1(Arrays.asList(10)),
-            Math1.math1(Arrays.asList()),
-            Math1.math1(Arrays.asList(5, 10)),
-            Math1.math1(Arrays.asList(-1, -2, -3, -2, -1)),
-            Math1.math1(Arrays.asList(6, -3, 12, 23, 4, 1, 19, 11, 2, 3, 2)),
+            Math1.math1(new ArrayList<>(Arrays.asList(1, 2, 3))),
+            Math1.math1(new ArrayList<>(Arrays.asList(6, 8, 6, 8, 1))),
+            Math1.math1(new ArrayList<>(Arrays.asList(10))),
+            Math1.math1(new ArrayList<>(Arrays.asList())),
+            Math1.math1(new ArrayList<>(Arrays.asList(5, 10))),
+            Math1.math1(new ArrayList<>(Arrays.asList(-1, -2, -3, -2, -1))),
+            Math1.math1(new ArrayList<>(Arrays.asList(6, -3, 12, 23, 4, 1, 19, 11, 2, 3, 2))),
         };
 
         boolean allTestsPassed = true;

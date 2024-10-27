@@ -1,6 +1,7 @@
 package Map1.Testcases;
 import Map1.MapShare;
 import java.util.Map;
+import java.util.HashMap;
 
 public class _MapShare
 {
@@ -23,11 +24,11 @@ public class _MapShare
     public static void Validate(boolean printSuccess)
     {
         Map<?,?>[] resultsArray = {
-            MapShare.mapShare(Map.of("a", "aaa", "b", "bbb", "c", "ccc")),
-            MapShare.mapShare(Map.of("b", "xyz", "c", "ccc")),
-            MapShare.mapShare(Map.of("a", "aaa", "c", "meh", "d", "hi")),
-            MapShare.mapShare(Map.of("a", "xyz", "b", "1234", "c", "yo", "z", "zzz")),
-            MapShare.mapShare(Map.of("a", "xyz", "b", "1234", "c", "yo", "d", "ddd", "e", "everything")),
+            MapShare.mapShare(new HashMap<>(Map.of("a", "aaa", "b", "bbb", "c", "ccc"))),
+            MapShare.mapShare(new HashMap<>(Map.of("b", "xyz", "c", "ccc"))),
+            MapShare.mapShare(new HashMap<>(Map.of("a", "aaa", "c", "meh", "d", "hi"))),
+            MapShare.mapShare(new HashMap<>(Map.of("a", "xyz", "b", "1234", "c", "yo", "z", "zzz"))),
+            MapShare.mapShare(new HashMap<>(Map.of("a", "xyz", "b", "1234", "c", "yo", "d", "ddd", "e", "everything"))),
         };
 
         boolean allTestsPassed = true;

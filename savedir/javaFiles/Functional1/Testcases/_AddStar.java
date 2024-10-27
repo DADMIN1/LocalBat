@@ -2,6 +2,7 @@ package Functional1.Testcases;
 import Functional1.AddStar;
 import java.util.List;
 import java.util.Arrays;
+import java.util.ArrayList;
 
 public class _AddStar
 {
@@ -26,12 +27,12 @@ public class _AddStar
     public static void Validate(boolean printSuccess)
     {
         List<?>[] resultsArray = {
-            AddStar.addStar(Arrays.asList("a", "bb", "ccc")),
-            AddStar.addStar(Arrays.asList("hello", "there")),
-            AddStar.addStar(Arrays.asList("*")),
-            AddStar.addStar(Arrays.asList()),
-            AddStar.addStar(Arrays.asList("kittens", "and", "chocolate", "and")),
-            AddStar.addStar(Arrays.asList("empty", "string", "")),
+            AddStar.addStar(new ArrayList<>(Arrays.asList("a", "bb", "ccc"))),
+            AddStar.addStar(new ArrayList<>(Arrays.asList("hello", "there"))),
+            AddStar.addStar(new ArrayList<>(Arrays.asList("*"))),
+            AddStar.addStar(new ArrayList<>(Arrays.asList())),
+            AddStar.addStar(new ArrayList<>(Arrays.asList("kittens", "and", "chocolate", "and"))),
+            AddStar.addStar(new ArrayList<>(Arrays.asList("empty", "string", ""))),
         };
 
         boolean allTestsPassed = true;

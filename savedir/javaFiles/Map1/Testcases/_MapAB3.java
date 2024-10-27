@@ -1,6 +1,7 @@
 package Map1.Testcases;
 import Map1.MapAB3;
 import java.util.Map;
+import java.util.HashMap;
 
 public class _MapAB3
 {
@@ -33,16 +34,16 @@ public class _MapAB3
     public static void Validate(boolean printSuccess)
     {
         Map<?,?>[] resultsArray = {
-            MapAB3.mapAB3(Map.of("a", "aaa", "c", "cake")),
-            MapAB3.mapAB3(Map.of("b", "bbb", "c", "cake")),
-            MapAB3.mapAB3(Map.of("a", "aaa", "b", "bbb", "c", "cake")),
-            MapAB3.mapAB3(Map.of("ccc", "ccc")),
-            MapAB3.mapAB3(Map.of("c", "a", "d", "b")),
-            MapAB3.mapAB3(Map.of()),
-            MapAB3.mapAB3(Map.of("a", "")),
-            MapAB3.mapAB3(Map.of("b", "")),
-            MapAB3.mapAB3(Map.of("a", "", "b", "")),
-            MapAB3.mapAB3(Map.of("aa", "aa", "a", "apple", "z", "zzz")),
+            MapAB3.mapAB3(new HashMap<>(Map.of("a", "aaa", "c", "cake"))),
+            MapAB3.mapAB3(new HashMap<>(Map.of("b", "bbb", "c", "cake"))),
+            MapAB3.mapAB3(new HashMap<>(Map.of("a", "aaa", "b", "bbb", "c", "cake"))),
+            MapAB3.mapAB3(new HashMap<>(Map.of("ccc", "ccc"))),
+            MapAB3.mapAB3(new HashMap<>(Map.of("c", "a", "d", "b"))),
+            MapAB3.mapAB3(new HashMap<>(Map.of())),
+            MapAB3.mapAB3(new HashMap<>(Map.of("a", ""))),
+            MapAB3.mapAB3(new HashMap<>(Map.of("b", ""))),
+            MapAB3.mapAB3(new HashMap<>(Map.of("a", "", "b", ""))),
+            MapAB3.mapAB3(new HashMap<>(Map.of("aa", "aa", "a", "apple", "z", "zzz"))),
         };
 
         boolean allTestsPassed = true;

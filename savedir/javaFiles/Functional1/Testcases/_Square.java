@@ -2,6 +2,7 @@ package Functional1.Testcases;
 import Functional1.Square;
 import java.util.List;
 import java.util.Arrays;
+import java.util.ArrayList;
 
 public class _Square
 {
@@ -26,12 +27,12 @@ public class _Square
     public static void Validate(boolean printSuccess)
     {
         List<?>[] resultsArray = {
-            Square.square(Arrays.asList(1, 2, 3)),
-            Square.square(Arrays.asList(6, 8, -6, -8, 1)),
-            Square.square(Arrays.asList()),
-            Square.square(Arrays.asList(12)),
-            Square.square(Arrays.asList(5, 10)),
-            Square.square(Arrays.asList(6, -3, 12, 23, 4, 1, 19, 11, 2, 3, 2)),
+            Square.square(new ArrayList<>(Arrays.asList(1, 2, 3))),
+            Square.square(new ArrayList<>(Arrays.asList(6, 8, -6, -8, 1))),
+            Square.square(new ArrayList<>(Arrays.asList())),
+            Square.square(new ArrayList<>(Arrays.asList(12))),
+            Square.square(new ArrayList<>(Arrays.asList(5, 10))),
+            Square.square(new ArrayList<>(Arrays.asList(6, -3, 12, 23, 4, 1, 19, 11, 2, 3, 2))),
         };
 
         boolean allTestsPassed = true;

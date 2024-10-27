@@ -2,6 +2,7 @@ package Functional2.Testcases;
 import Functional2.NoTeen;
 import java.util.List;
 import java.util.Arrays;
+import java.util.ArrayList;
 
 public class _NoTeen
 {
@@ -30,14 +31,14 @@ public class _NoTeen
     public static void Validate(boolean printSuccess)
     {
         List<?>[] resultsArray = {
-            NoTeen.noTeen(Arrays.asList(12, 13, 19, 20)),
-            NoTeen.noTeen(Arrays.asList(1, 14, 1)),
-            NoTeen.noTeen(Arrays.asList(15)),
-            NoTeen.noTeen(Arrays.asList(-15)),
-            NoTeen.noTeen(Arrays.asList()),
-            NoTeen.noTeen(Arrays.asList(0, 1, 2, -3)),
-            NoTeen.noTeen(Arrays.asList(15, 17, 19, 21, 19)),
-            NoTeen.noTeen(Arrays.asList(-16, 2, 15, 3, 16, 25)),
+            NoTeen.noTeen(new ArrayList<>(Arrays.asList(12, 13, 19, 20))),
+            NoTeen.noTeen(new ArrayList<>(Arrays.asList(1, 14, 1))),
+            NoTeen.noTeen(new ArrayList<>(Arrays.asList(15))),
+            NoTeen.noTeen(new ArrayList<>(Arrays.asList(-15))),
+            NoTeen.noTeen(new ArrayList<>(Arrays.asList())),
+            NoTeen.noTeen(new ArrayList<>(Arrays.asList(0, 1, 2, -3))),
+            NoTeen.noTeen(new ArrayList<>(Arrays.asList(15, 17, 19, 21, 19))),
+            NoTeen.noTeen(new ArrayList<>(Arrays.asList(-16, 2, 15, 3, 16, 25))),
         };
 
         boolean allTestsPassed = true;

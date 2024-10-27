@@ -1,6 +1,7 @@
 package Map2.Testcases;
 import Map2.Pairs;
 import java.util.Map;
+import java.util.HashMap;
 
 public class _Pairs
 {

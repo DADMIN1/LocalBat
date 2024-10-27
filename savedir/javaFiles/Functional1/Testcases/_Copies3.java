@@ -2,6 +2,7 @@ package Functional1.Testcases;
 import Functional1.Copies3;
 import java.util.List;
 import java.util.Arrays;
+import java.util.ArrayList;
 
 public class _Copies3
 {
@@ -26,12 +27,12 @@ public class _Copies3
     public static void Validate(boolean printSuccess)
     {
         List<?>[] resultsArray = {
-            Copies3.copies3(Arrays.asList("a", "bb", "ccc")),
-            Copies3.copies3(Arrays.asList("24", "a", "")),
-            Copies3.copies3(Arrays.asList("hello", "there")),
-            Copies3.copies3(Arrays.asList("no")),
-            Copies3.copies3(Arrays.asList()),
-            Copies3.copies3(Arrays.asList("this", "and", "that", "and")),
+            Copies3.copies3(new ArrayList<>(Arrays.asList("a", "bb", "ccc"))),
+            Copies3.copies3(new ArrayList<>(Arrays.asList("24", "a", ""))),
+            Copies3.copies3(new ArrayList<>(Arrays.asList("hello", "there"))),
+            Copies3.copies3(new ArrayList<>(Arrays.asList("no"))),
+            Copies3.copies3(new ArrayList<>(Arrays.asList())),
+            Copies3.copies3(new ArrayList<>(Arrays.asList("this", "and", "that", "and"))),
         };
 
         boolean allTestsPassed = true;

@@ -1,6 +1,7 @@
 package Map1.Testcases;
 import Map1.MapAB;
 import java.util.Map;
+import java.util.HashMap;
 
 public class _MapAB
 {
@@ -25,12 +26,12 @@ public class _MapAB
     public static void Validate(boolean printSuccess)
     {
         Map<?,?>[] resultsArray = {
-            MapAB.mapAB(Map.of("a", "Hi", "b", "There")),
-            MapAB.mapAB(Map.of("a", "Hi")),
-            MapAB.mapAB(Map.of("b", "There")),
-            MapAB.mapAB(Map.of("c", "meh")),
-            MapAB.mapAB(Map.of("a", "aaa", "ab", "nope", "b", "bbb", "c", "ccc")),
-            MapAB.mapAB(Map.of("ab", "nope", "b", "bbb", "c", "ccc")),
+            MapAB.mapAB(new HashMap<>(Map.of("a", "Hi", "b", "There"))),
+            MapAB.mapAB(new HashMap<>(Map.of("a", "Hi"))),
+            MapAB.mapAB(new HashMap<>(Map.of("b", "There"))),
+            MapAB.mapAB(new HashMap<>(Map.of("c", "meh"))),
+            MapAB.mapAB(new HashMap<>(Map.of("a", "aaa", "ab", "nope", "b", "bbb", "c", "ccc"))),
+            MapAB.mapAB(new HashMap<>(Map.of("ab", "nope", "b", "bbb", "c", "ccc"))),
         };
 
         boolean allTestsPassed = true;

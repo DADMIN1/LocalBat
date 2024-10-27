@@ -2,6 +2,7 @@ package Functional1.Testcases;
 import Functional1.RightDigit;
 import java.util.List;
 import java.util.Arrays;
+import java.util.ArrayList;
 
 public class _RightDigit
 {
@@ -28,13 +29,13 @@ public class _RightDigit
     public static void Validate(boolean printSuccess)
     {
         List<?>[] resultsArray = {
-            RightDigit.rightDigit(Arrays.asList(1, 22, 93)),
-            RightDigit.rightDigit(Arrays.asList(16, 8, 886, 8, 1)),
-            RightDigit.rightDigit(Arrays.asList(10, 0)),
-            RightDigit.rightDigit(Arrays.asList()),
-            RightDigit.rightDigit(Arrays.asList(5, 10)),
-            RightDigit.rightDigit(Arrays.asList(5, 50, 500, 5000, 5000)),
-            RightDigit.rightDigit(Arrays.asList(6, 23, 12, 23, 4, 1, 19, 1119, 2, 3, 2)),
+            RightDigit.rightDigit(new ArrayList<>(Arrays.asList(1, 22, 93))),
+            RightDigit.rightDigit(new ArrayList<>(Arrays.asList(16, 8, 886, 8, 1))),
+            RightDigit.rightDigit(new ArrayList<>(Arrays.asList(10, 0))),
+            RightDigit.rightDigit(new ArrayList<>(Arrays.asList())),
+            RightDigit.rightDigit(new ArrayList<>(Arrays.asList(5, 10))),
+            RightDigit.rightDigit(new ArrayList<>(Arrays.asList(5, 50, 500, 5000, 5000))),
+            RightDigit.rightDigit(new ArrayList<>(Arrays.asList(6, 23, 12, 23, 4, 1, 19, 1119, 2, 3, 2))),
         };
 
         boolean allTestsPassed = true;

@@ -26,12 +26,16 @@ def PythonBad(testcases: list[str], containsArray:bool, containsList:bool, conta
             "functionCall": functionCall.strip(),
             "expected": expected.strip(),
         })
+        
+        # when rewriting parameters as List/Map 'constructor', they need to be wrapped with a call to allocate a 'new' object
+        # because the objects returned by 'Arrays,asList' and 'Map.of' are both immutable; they will throw a runtime error,
+        # if they are modified inside the function taking them as parameters. No warnings/errors given by compiler or IDE.
         if containsArray: # need to rewrite arrays from '[...]' to '{...}'
             split_cases[-1]['functionCall'] = split_cases[-1]['functionCall'].replace('[', '{ ').replace(']', ' }')
         if containsList: # need to make ArrayList
-            split_cases[-1]['functionCall'] = split_cases[-1]['functionCall'].replace('[', "Arrays.asList(").replace(']', ')')
-        if containsMap: # { key1: value1, key2: value2 }  ->  Map.of(key1, value1, key2, value2);
-            split_cases[-1]['functionCall'] = split_cases[-1]['functionCall'].replace(':',',').replace('{', "Map.of(").replace('}', ')')
+            split_cases[-1]['functionCall'] = split_cases[-1]['functionCall'].replace('[', "new ArrayList<>(Arrays.asList(").replace(']', '))')
+        if containsMap: # { key1: value1, key2: value2 }  ->  new HashMap<>(Map.of(key1, value1, key2, value2));
+            split_cases[-1]['functionCall'] = split_cases[-1]['functionCall'].replace(':',',').replace('{', "new HashMap<>(Map.of(").replace('}', '))')
         if (len(split_cases[-1]['arrays']) > 0): split_cases[-1]['arrays'][-1] += '\n' # putting newline at end of arrays
         
         # need to split exactly once to prevent second var from overwriting first in case they are identical arrays!!!
@@ -200,9 +204,11 @@ def WriteTestcaseFile(packageName:str, data: dict):
     with open(testcase_filepath, "w", encoding="utf-8") as file:
         file.write(f"package {packageName}.Testcases;\n")
         file.write(f"import {packageName}.{title};\n") # importing the real class to run the user-code for validation
-        if needsMap: file.write("import java.util.Map;\n")
+        if needsMap: file.write("import java.util.Map;\n"); file.write("import java.util.HashMap;\n");
         if doesReturnList: file.write("import java.util.List;\n")
-        if doesReturnArray or doesReturnList: file.write("import java.util.Arrays;\n")  # required to properly compare arrays, and construct Lists
+        if doesReturnArray or doesReturnList:
+            file.write("import java.util.Arrays;\n")  # required to properly compare arrays, and construct Lists
+            file.write("import java.util.ArrayList;\n")
         file.write('\n')
         
         file.write(f"public class {testCasesClassname}\n"+"{\n")

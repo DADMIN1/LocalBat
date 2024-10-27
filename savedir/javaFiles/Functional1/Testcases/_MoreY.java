@@ -2,6 +2,7 @@ package Functional1.Testcases;
 import Functional1.MoreY;
 import java.util.List;
 import java.util.Arrays;
+import java.util.ArrayList;
 
 public class _MoreY
 {
@@ -26,12 +27,12 @@ public class _MoreY
     public static void Validate(boolean printSuccess)
     {
         List<?>[] resultsArray = {
-            MoreY.moreY(Arrays.asList("a", "b", "c")),
-            MoreY.moreY(Arrays.asList("hello", "there")),
-            MoreY.moreY(Arrays.asList("yay")),
-            MoreY.moreY(Arrays.asList("", "a", "xx")),
-            MoreY.moreY(Arrays.asList()),
-            MoreY.moreY(Arrays.asList("xx", "yy", "zz")),
+            MoreY.moreY(new ArrayList<>(Arrays.asList("a", "b", "c"))),
+            MoreY.moreY(new ArrayList<>(Arrays.asList("hello", "there"))),
+            MoreY.moreY(new ArrayList<>(Arrays.asList("yay"))),
+            MoreY.moreY(new ArrayList<>(Arrays.asList("", "a", "xx"))),
+            MoreY.moreY(new ArrayList<>(Arrays.asList())),
+            MoreY.moreY(new ArrayList<>(Arrays.asList("xx", "yy", "zz"))),
         };
 
         boolean allTestsPassed = true;

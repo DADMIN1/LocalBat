@@ -2,6 +2,7 @@ package Functional2.Testcases;
 import Functional2.NoYY;
 import java.util.List;
 import java.util.Arrays;
+import java.util.ArrayList;
 
 public class _NoYY
 {
@@ -34,16 +35,16 @@ public class _NoYY
     public static void Validate(boolean printSuccess)
     {
         List<?>[] resultsArray = {
-            NoYY.noYY(Arrays.asList("a", "b", "c")),
-            NoYY.noYY(Arrays.asList("a", "b", "cy")),
-            NoYY.noYY(Arrays.asList("xx", "ya", "zz")),
-            NoYY.noYY(Arrays.asList("xx", "yay", "zz")),
-            NoYY.noYY(Arrays.asList("yyx", "y", "zzz")),
-            NoYY.noYY(Arrays.asList("hello", "there")),
-            NoYY.noYY(Arrays.asList("ya")),
-            NoYY.noYY(Arrays.asList()),
-            NoYY.noYY(Arrays.asList("")),
-            NoYY.noYY(Arrays.asList("xx", "yy", "zz")),
+            NoYY.noYY(new ArrayList<>(Arrays.asList("a", "b", "c"))),
+            NoYY.noYY(new ArrayList<>(Arrays.asList("a", "b", "cy"))),
+            NoYY.noYY(new ArrayList<>(Arrays.asList("xx", "ya", "zz"))),
+            NoYY.noYY(new ArrayList<>(Arrays.asList("xx", "yay", "zz"))),
+            NoYY.noYY(new ArrayList<>(Arrays.asList("yyx", "y", "zzz"))),
+            NoYY.noYY(new ArrayList<>(Arrays.asList("hello", "there"))),
+            NoYY.noYY(new ArrayList<>(Arrays.asList("ya"))),
+            NoYY.noYY(new ArrayList<>(Arrays.asList())),
+            NoYY.noYY(new ArrayList<>(Arrays.asList(""))),
+            NoYY.noYY(new ArrayList<>(Arrays.asList("xx", "yy", "zz"))),
         };
 
         boolean allTestsPassed = true;

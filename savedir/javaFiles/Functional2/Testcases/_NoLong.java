@@ -2,6 +2,7 @@ package Functional2.Testcases;
 import Functional2.NoLong;
 import java.util.List;
 import java.util.Arrays;
+import java.util.ArrayList;
 
 public class _NoLong
 {
@@ -30,14 +31,14 @@ public class _NoLong
     public static void Validate(boolean printSuccess)
     {
         List<?>[] resultsArray = {
-            NoLong.noLong(Arrays.asList("this", "not", "too", "long")),
-            NoLong.noLong(Arrays.asList("a", "bbb", "cccc")),
-            NoLong.noLong(Arrays.asList("cccc", "cccc", "cccc")),
-            NoLong.noLong(Arrays.asList()),
-            NoLong.noLong(Arrays.asList("")),
-            NoLong.noLong(Arrays.asList("empty", "", "empty")),
-            NoLong.noLong(Arrays.asList("a")),
-            NoLong.noLong(Arrays.asList("aaaa", "bbb", "***", "333")),
+            NoLong.noLong(new ArrayList<>(Arrays.asList("this", "not", "too", "long"))),
+            NoLong.noLong(new ArrayList<>(Arrays.asList("a", "bbb", "cccc"))),
+            NoLong.noLong(new ArrayList<>(Arrays.asList("cccc", "cccc", "cccc"))),
+            NoLong.noLong(new ArrayList<>(Arrays.asList())),
+            NoLong.noLong(new ArrayList<>(Arrays.asList(""))),
+            NoLong.noLong(new ArrayList<>(Arrays.asList("empty", "", "empty"))),
+            NoLong.noLong(new ArrayList<>(Arrays.asList("a"))),
+            NoLong.noLong(new ArrayList<>(Arrays.asList("aaaa", "bbb", "***", "333"))),
         };
 
         boolean allTestsPassed = true;

@@ -2,6 +2,7 @@ package Functional1.Testcases;
 import Functional1.NoX;
 import java.util.List;
 import java.util.Arrays;
+import java.util.ArrayList;
 
 public class _NoX
 {
@@ -30,14 +31,14 @@ public class _NoX
     public static void Validate(boolean printSuccess)
     {
         List<?>[] resultsArray = {
-            NoX.noX(Arrays.asList("ax", "bb", "cx")),
-            NoX.noX(Arrays.asList("xxax", "xbxbx", "xxcx")),
-            NoX.noX(Arrays.asList("x")),
-            NoX.noX(Arrays.asList("")),
-            NoX.noX(Arrays.asList()),
-            NoX.noX(Arrays.asList("the", "taxi")),
-            NoX.noX(Arrays.asList("the", "xxtxaxixxx")),
-            NoX.noX(Arrays.asList("this", "is", "the", "x")),
+            NoX.noX(new ArrayList<>(Arrays.asList("ax", "bb", "cx"))),
+            NoX.noX(new ArrayList<>(Arrays.asList("xxax", "xbxbx", "xxcx"))),
+            NoX.noX(new ArrayList<>(Arrays.asList("x"))),
+            NoX.noX(new ArrayList<>(Arrays.asList(""))),
+            NoX.noX(new ArrayList<>(Arrays.asList())),
+            NoX.noX(new ArrayList<>(Arrays.asList("the", "taxi"))),
+            NoX.noX(new ArrayList<>(Arrays.asList("the", "xxtxaxixxx"))),
+            NoX.noX(new ArrayList<>(Arrays.asList("this", "is", "the", "x"))),
         };
 
         boolean allTestsPassed = true;

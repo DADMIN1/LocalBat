@@ -2,6 +2,7 @@ package Functional2.Testcases;
 import Functional2.Square56;
 import java.util.List;
 import java.util.Arrays;
+import java.util.ArrayList;
 
 public class _Square56
 {
@@ -34,16 +35,16 @@ public class _Square56
     public static void Validate(boolean printSuccess)
     {
         List<?>[] resultsArray = {
-            Square56.square56(Arrays.asList(3, 1, 4)),
-            Square56.square56(Arrays.asList(1)),
-            Square56.square56(Arrays.asList(2)),
-            Square56.square56(Arrays.asList(3)),
-            Square56.square56(Arrays.asList(4)),
-            Square56.square56(Arrays.asList(5)),
-            Square56.square56(Arrays.asList(6)),
-            Square56.square56(Arrays.asList(7)),
-            Square56.square56(Arrays.asList(1, 2, 3, 4, 5, 6, 7)),
-            Square56.square56(Arrays.asList(3, -1, -4, 1, 5, 9)),
+            Square56.square56(new ArrayList<>(Arrays.asList(3, 1, 4))),
+            Square56.square56(new ArrayList<>(Arrays.asList(1))),
+            Square56.square56(new ArrayList<>(Arrays.asList(2))),
+            Square56.square56(new ArrayList<>(Arrays.asList(3))),
+            Square56.square56(new ArrayList<>(Arrays.asList(4))),
+            Square56.square56(new ArrayList<>(Arrays.asList(5))),
+            Square56.square56(new ArrayList<>(Arrays.asList(6))),
+            Square56.square56(new ArrayList<>(Arrays.asList(7))),
+            Square56.square56(new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5, 6, 7))),
+            Square56.square56(new ArrayList<>(Arrays.asList(3, -1, -4, 1, 5, 9))),
         };
 
         boolean allTestsPassed = true;

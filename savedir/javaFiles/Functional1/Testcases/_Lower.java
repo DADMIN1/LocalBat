@@ -2,6 +2,7 @@ package Functional1.Testcases;
 import Functional1.Lower;
 import java.util.List;
 import java.util.Arrays;
+import java.util.ArrayList;
 
 public class _Lower
 {
@@ -26,12 +27,12 @@ public class _Lower
     public static void Validate(boolean printSuccess)
     {
         List<?>[] resultsArray = {
-            Lower.lower(Arrays.asList("Hello", "Hi")),
-            Lower.lower(Arrays.asList("AAA", "BBB", "ccc")),
-            Lower.lower(Arrays.asList("KitteN", "ChocolaTE")),
-            Lower.lower(Arrays.asList()),
-            Lower.lower(Arrays.asList("EMPTY", "")),
-            Lower.lower(Arrays.asList("aaX", "bYb", "Ycc", "ZZZ")),
+            Lower.lower(new ArrayList<>(Arrays.asList("Hello", "Hi"))),
+            Lower.lower(new ArrayList<>(Arrays.asList("AAA", "BBB", "ccc"))),
+            Lower.lower(new ArrayList<>(Arrays.asList("KitteN", "ChocolaTE"))),
+            Lower.lower(new ArrayList<>(Arrays.asList())),
+            Lower.lower(new ArrayList<>(Arrays.asList("EMPTY", ""))),
+            Lower.lower(new ArrayList<>(Arrays.asList("aaX", "bYb", "Ycc", "ZZZ"))),
         };
 
         boolean allTestsPassed = true;

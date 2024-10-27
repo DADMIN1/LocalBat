@@ -1,6 +1,7 @@
 package Map1.Testcases;
 import Map1.MapAB4;
 import java.util.Map;
+import java.util.HashMap;
 
 public class _MapAB4
 {
@@ -43,21 +44,21 @@ public class _MapAB4
     public static void Validate(boolean printSuccess)
     {
         Map<?,?>[] resultsArray = {
-            MapAB4.mapAB4(Map.of("a", "aaa", "b", "bb", "c", "cake")),
-            MapAB4.mapAB4(Map.of("a", "aa", "b", "bbb", "c", "cake")),
-            MapAB4.mapAB4(Map.of("a", "aa", "b", "bbb")),
-            MapAB4.mapAB4(Map.of("a", "aaa")),
-            MapAB4.mapAB4(Map.of("b", "bbb")),
-            MapAB4.mapAB4(Map.of("a", "aaa", "b", "bbb", "c", "cake")),
-            MapAB4.mapAB4(Map.of("a", "a", "b", "b", "c", "cake")),
-            MapAB4.mapAB4(Map.of("a", "", "b", "b", "c", "cake")),
-            MapAB4.mapAB4(Map.of("a", "a", "b", "", "c", "cake")),
-            MapAB4.mapAB4(Map.of("c", "cat", "d", "dog")),
-            MapAB4.mapAB4(Map.of("ccc", "ccc")),
-            MapAB4.mapAB4(Map.of("c", "a", "d", "b")),
-            MapAB4.mapAB4(Map.of()),
-            MapAB4.mapAB4(Map.of("a", "", "z", "z")),
-            MapAB4.mapAB4(Map.of("b", "", "z", "z")),
+            MapAB4.mapAB4(new HashMap<>(Map.of("a", "aaa", "b", "bb", "c", "cake"))),
+            MapAB4.mapAB4(new HashMap<>(Map.of("a", "aa", "b", "bbb", "c", "cake"))),
+            MapAB4.mapAB4(new HashMap<>(Map.of("a", "aa", "b", "bbb"))),
+            MapAB4.mapAB4(new HashMap<>(Map.of("a", "aaa"))),
+            MapAB4.mapAB4(new HashMap<>(Map.of("b", "bbb"))),
+            MapAB4.mapAB4(new HashMap<>(Map.of("a", "aaa", "b", "bbb", "c", "cake"))),
+            MapAB4.mapAB4(new HashMap<>(Map.of("a", "a", "b", "b", "c", "cake"))),
+            MapAB4.mapAB4(new HashMap<>(Map.of("a", "", "b", "b", "c", "cake"))),
+            MapAB4.mapAB4(new HashMap<>(Map.of("a", "a", "b", "", "c", "cake"))),
+            MapAB4.mapAB4(new HashMap<>(Map.of("c", "cat", "d", "dog"))),
+            MapAB4.mapAB4(new HashMap<>(Map.of("ccc", "ccc"))),
+            MapAB4.mapAB4(new HashMap<>(Map.of("c", "a", "d", "b"))),
+            MapAB4.mapAB4(new HashMap<>(Map.of())),
+            MapAB4.mapAB4(new HashMap<>(Map.of("a", "", "z", "z"))),
+            MapAB4.mapAB4(new HashMap<>(Map.of("b", "", "z", "z"))),
         };
 
         boolean allTestsPassed = true;

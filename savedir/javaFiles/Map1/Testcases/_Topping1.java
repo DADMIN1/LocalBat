@@ -1,6 +1,7 @@
 package Map1.Testcases;
 import Map1.Topping1;
 import java.util.Map;
+import java.util.HashMap;
 
 public class _Topping1
 {
@@ -23,11 +24,11 @@ public class _Topping1
     public static void Validate(boolean printSuccess)
     {
         Map<?,?>[] resultsArray = {
-            Topping1.topping1(Map.of("ice cream", "peanuts")),
-            Topping1.topping1(Map.of()),
-            Topping1.topping1(Map.of("pancake", "syrup")),
-            Topping1.topping1(Map.of("bread", "dirt", "ice cream", "strawberries")),
-            Topping1.topping1(Map.of("bread", "jam", "ice cream", "strawberries", "salad", "oil")),
+            Topping1.topping1(new HashMap<>(Map.of("ice cream", "peanuts"))),
+            Topping1.topping1(new HashMap<>(Map.of())),
+            Topping1.topping1(new HashMap<>(Map.of("pancake", "syrup"))),
+            Topping1.topping1(new HashMap<>(Map.of("bread", "dirt", "ice cream", "strawberries"))),
+            Topping1.topping1(new HashMap<>(Map.of("bread", "jam", "ice cream", "strawberries", "salad", "oil"))),
         };
 
         boolean allTestsPassed = true;

@@ -1,6 +1,7 @@
 package Map2.Testcases;
 import Map2.WordCount;
 import java.util.Map;
+import java.util.HashMap;
 
 public class _WordCount
 {

@@ -2,6 +2,7 @@ package Functional2.Testcases;
 import Functional2.No34;
 import java.util.List;
 import java.util.Arrays;
+import java.util.ArrayList;
 
 public class _No34
 {
@@ -36,17 +37,17 @@ public class _No34
     public static void Validate(boolean printSuccess)
     {
         List<?>[] resultsArray = {
-            No34.no34(Arrays.asList("a", "bb", "ccc")),
-            No34.no34(Arrays.asList("a", "bb", "ccc", "dddd")),
-            No34.no34(Arrays.asList("ccc", "dddd", "apple")),
-            No34.no34(Arrays.asList("this", "not", "too", "long")),
-            No34.no34(Arrays.asList("a", "bbb", "cccc", "xx")),
-            No34.no34(Arrays.asList("dddd", "ddd", "xxxxxxx")),
-            No34.no34(Arrays.asList()),
-            No34.no34(Arrays.asList("")),
-            No34.no34(Arrays.asList("empty", "", "empty")),
-            No34.no34(Arrays.asList("a")),
-            No34.no34(Arrays.asList("aaaa", "bbb", "*****", "333")),
+            No34.no34(new ArrayList<>(Arrays.asList("a", "bb", "ccc"))),
+            No34.no34(new ArrayList<>(Arrays.asList("a", "bb", "ccc", "dddd"))),
+            No34.no34(new ArrayList<>(Arrays.asList("ccc", "dddd", "apple"))),
+            No34.no34(new ArrayList<>(Arrays.asList("this", "not", "too", "long"))),
+            No34.no34(new ArrayList<>(Arrays.asList("a", "bbb", "cccc", "xx"))),
+            No34.no34(new ArrayList<>(Arrays.asList("dddd", "ddd", "xxxxxxx"))),
+            No34.no34(new ArrayList<>(Arrays.asList())),
+            No34.no34(new ArrayList<>(Arrays.asList(""))),
+            No34.no34(new ArrayList<>(Arrays.asList("empty", "", "empty"))),
+            No34.no34(new ArrayList<>(Arrays.asList("a"))),
+            No34.no34(new ArrayList<>(Arrays.asList("aaaa", "bbb", "*****", "333"))),
         };
 
         boolean allTestsPassed = true;

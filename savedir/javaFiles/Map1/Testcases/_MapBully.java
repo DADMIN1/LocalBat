@@ -1,6 +1,7 @@
 package Map1.Testcases;
 import Map1.MapBully;
 import java.util.Map;
+import java.util.HashMap;
 
 public class _MapBully
 {
@@ -25,12 +26,12 @@ public class _MapBully
     public static void Validate(boolean printSuccess)
     {
         Map<?,?>[] resultsArray = {
-            MapBully.mapBully(Map.of("a", "candy", "b", "dirt")),
-            MapBully.mapBully(Map.of("a", "candy")),
-            MapBully.mapBully(Map.of("a", "candy", "b", "carrot", "c", "meh")),
-            MapBully.mapBully(Map.of("b", "carrot")),
-            MapBully.mapBully(Map.of("c", "meh")),
-            MapBully.mapBully(Map.of("a", "sparkle", "c", "meh")),
+            MapBully.mapBully(new HashMap<>(Map.of("a", "candy", "b", "dirt"))),
+            MapBully.mapBully(new HashMap<>(Map.of("a", "candy"))),
+            MapBully.mapBully(new HashMap<>(Map.of("a", "candy", "b", "carrot", "c", "meh"))),
+            MapBully.mapBully(new HashMap<>(Map.of("b", "carrot"))),
+            MapBully.mapBully(new HashMap<>(Map.of("c", "meh"))),
+            MapBully.mapBully(new HashMap<>(Map.of("a", "sparkle", "c", "meh"))),
         };
 
         boolean allTestsPassed = true;

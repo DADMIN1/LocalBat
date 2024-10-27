@@ -1,6 +1,7 @@
 package Map1.Testcases;
 import Map1.MapAB2;
 import java.util.Map;
+import java.util.HashMap;
 
 public class _MapAB2
 {
@@ -29,14 +30,14 @@ public class _MapAB2
     public static void Validate(boolean printSuccess)
     {
         Map<?,?>[] resultsArray = {
-            MapAB2.mapAB2(Map.of("a", "aaa", "b", "aaa", "c", "cake")),
-            MapAB2.mapAB2(Map.of("a", "aaa", "b", "bbb")),
-            MapAB2.mapAB2(Map.of("a", "aaa", "b", "bbb", "c", "aaa")),
-            MapAB2.mapAB2(Map.of("a", "aaa")),
-            MapAB2.mapAB2(Map.of("b", "bbb")),
-            MapAB2.mapAB2(Map.of("a", "", "b", "", "c", "ccc")),
-            MapAB2.mapAB2(Map.of()),
-            MapAB2.mapAB2(Map.of("a", "a", "b", "b", "z", "zebra")),
+            MapAB2.mapAB2(new HashMap<>(Map.of("a", "aaa", "b", "aaa", "c", "cake"))),
+            MapAB2.mapAB2(new HashMap<>(Map.of("a", "aaa", "b", "bbb"))),
+            MapAB2.mapAB2(new HashMap<>(Map.of("a", "aaa", "b", "bbb", "c", "aaa"))),
+            MapAB2.mapAB2(new HashMap<>(Map.of("a", "aaa"))),
+            MapAB2.mapAB2(new HashMap<>(Map.of("b", "bbb"))),
+            MapAB2.mapAB2(new HashMap<>(Map.of("a", "", "b", "", "c", "ccc"))),
+            MapAB2.mapAB2(new HashMap<>(Map.of())),
+            MapAB2.mapAB2(new HashMap<>(Map.of("a", "a", "b", "b", "z", "zebra"))),
         };
 
         boolean allTestsPassed = true;

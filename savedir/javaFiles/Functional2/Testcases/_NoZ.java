@@ -2,6 +2,7 @@ package Functional2.Testcases;
 import Functional2.NoZ;
 import java.util.List;
 import java.util.Arrays;
+import java.util.ArrayList;
 
 public class _NoZ
 {
@@ -26,12 +27,12 @@ public class _NoZ
     public static void Validate(boolean printSuccess)
     {
         List<?>[] resultsArray = {
-            NoZ.noZ(Arrays.asList("aaa", "bbb", "aza")),
-            NoZ.noZ(Arrays.asList("hziz", "hzello", "hi")),
-            NoZ.noZ(Arrays.asList("hello", "howz", "are", "youz")),
-            NoZ.noZ(Arrays.asList()),
-            NoZ.noZ(Arrays.asList("")),
-            NoZ.noZ(Arrays.asList("x", "y", "z")),
+            NoZ.noZ(new ArrayList<>(Arrays.asList("aaa", "bbb", "aza"))),
+            NoZ.noZ(new ArrayList<>(Arrays.asList("hziz", "hzello", "hi"))),
+            NoZ.noZ(new ArrayList<>(Arrays.asList("hello", "howz", "are", "youz"))),
+            NoZ.noZ(new ArrayList<>(Arrays.asList())),
+            NoZ.noZ(new ArrayList<>(Arrays.asList(""))),
+            NoZ.noZ(new ArrayList<>(Arrays.asList("x", "y", "z"))),
         };
 
         boolean allTestsPassed = true;

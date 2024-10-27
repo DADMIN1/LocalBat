@@ -1,6 +1,7 @@
 package Array3.Testcases;
 import Array3.SeriesUp;
 import java.util.Arrays;
+import java.util.ArrayList;
 
 public class _SeriesUp
 {
