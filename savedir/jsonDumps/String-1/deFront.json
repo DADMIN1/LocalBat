@@ -30,6 +30,6 @@
     "deFront(\"xz\") \u2192 \"\"",
     "deFront(\"zzz\") \u2192 \"z\""
   ],
-  "provided_code": "public String deFront(String str) {    \n  return \"\";\n}",
+  "provided_code": "public String deFront(String str) {\n  return \"\";\n}",
   "difficulty": "190.0"
 }
