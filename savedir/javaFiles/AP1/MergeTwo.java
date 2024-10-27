@@ -4,7 +4,7 @@ import AP1.Testcases._MergeTwo;
 // https://codingbat.com/prob/p139150
 // Difficulty: 251.0
 
-public class MergeTwo
+public final class MergeTwo
 {
     /* Start with two arrays of strings, A and B, each with its elements in alphabetical order and without duplicates. 
     Return a new array containing the first N elements from the two arrays. 
@@ -27,12 +27,12 @@ public class MergeTwo
     | mergeTwo(["x", "y", "z"], ["a", "b", "z"], 3)      → ["a", "b", "x"] |
     |_____________________________________________________________________*/
 
-    public static String[] mergeTwo(String[] a, String[] b, int n)
+    public static final String[] mergeTwo(String[] a, String[] b, int n)
     {
         return new String[]{""};
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _MergeTwo.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

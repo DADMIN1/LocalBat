@@ -1,9 +1,9 @@
 package Warmup1.Testcases;
 import Warmup1.DelDel;
 
-public class _DelDel
+public final class _DelDel
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "delDel(\"adelbc\")",
         "delDel(\"adelHello\")",
         "delDel(\"adedbc\")",
@@ -17,7 +17,7 @@ public class _DelDel
         "delDel(\"aadelbb\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "abc",
         "aHello",
         "adedbc",
@@ -31,9 +31,9 @@ public class _DelDel
         "aadelbb",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             DelDel.delDel("adelbc"),
             DelDel.delDel("adelHello"),
             DelDel.delDel("adedbc"),

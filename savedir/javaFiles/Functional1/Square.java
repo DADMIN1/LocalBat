@@ -7,7 +7,7 @@ import java.util.ArrayList;
 // https://codingbat.com/prob/p139586
 // Difficulty: 203
 
-public class Square
+public final class Square
 {
     /* Given a list of integers, return a list where each integer is multiplied with itself. */
 
@@ -22,12 +22,12 @@ public class Square
     | square([6, -3, 12, 23, 4, 1, 19, 11, 2, 3, 2]) → [36, 9, 144, 529, 16, 1, 361, 121, 4, 9, 4] |
     |_____________________________________________________________________________________________*/
 
-    public static List<Integer> square(List<Integer> nums)
+    public static final List<Integer> square(List<Integer> nums)
     {
         return new ArrayList<Integer>();
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _Square.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

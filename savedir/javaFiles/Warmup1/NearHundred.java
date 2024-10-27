@@ -4,7 +4,7 @@ import Warmup1.Testcases._NearHundred;
 // https://codingbat.com/prob/p184004
 // Difficulty: 121.0
 
-public class NearHundred
+public final class NearHundred
 {
     /* Given an int n, return true if it is within 10 of 100 or 200. 
     Note: Math.abs(num) computes the absolute value of a number. */
@@ -33,12 +33,12 @@ public class NearHundred
     | nearHundred(290)  → false |
     |__________________________*/
 
-    public static boolean nearHundred(int n)
+    public static final boolean nearHundred(int n)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _NearHundred.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

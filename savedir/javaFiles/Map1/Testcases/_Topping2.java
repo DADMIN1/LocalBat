@@ -3,9 +3,9 @@ import Map1.Topping2;
 import java.util.Map;
 import java.util.HashMap;
 
-public class _Topping2
+public final class _Topping2
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "topping2({\"ice cream\": \"cherry\"})",
         "topping2({\"spinach\": \"dirt\", \"ice cream\": \"cherry\"})",
         "topping2({\"yogurt\": \"salt\"})",
@@ -14,7 +14,7 @@ public class _Topping2
         "topping2({\"ice cream\": \"air\", \"salad\": \"oil\"})",
     };
 
-    static Map<?,?>[] expectedResults = {
+    static final Map<?,?>[] expectedResults = {
         Map.of("yogurt", "cherry", "ice cream", "cherry"),
         Map.of("yogurt", "cherry", "spinach", "nuts", "ice cream", "cherry"),
         Map.of("yogurt", "salt"),
@@ -23,9 +23,9 @@ public class _Topping2
         Map.of("yogurt", "air", "ice cream", "air", "salad", "oil"),
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        Map<?,?>[] resultsArray = {
+        final Map<?,?>[] resultsArray = {
             Topping2.topping2(new HashMap<>(Map.of("ice cream", "cherry"))),
             Topping2.topping2(new HashMap<>(Map.of("spinach", "dirt", "ice cream", "cherry"))),
             Topping2.topping2(new HashMap<>(Map.of("yogurt", "salt"))),

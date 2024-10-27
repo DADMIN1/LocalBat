@@ -4,7 +4,7 @@ import String2.Testcases._BobThere;
 // https://codingbat.com/prob/p175762
 // Difficulty: 221.0
 
-public class BobThere
+public final class BobThere
 {
     /* Return true if the given string contains a "bob" string, 
     but where the middle 'o' char can be any char. */
@@ -27,12 +27,12 @@ public class BobThere
     | bobThere("b")               → false |
     |____________________________________*/
 
-    public static boolean bobThere(String str)
+    public static final boolean bobThere(String str)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _BobThere.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

@@ -4,7 +4,7 @@ import Recursion1.Testcases._PowerN;
 // https://codingbat.com/prob/p158888
 // Difficulty: 327.0
 
-public class PowerN
+public final class PowerN
 {
     /* Given base and n that are both 1 or more, compute recursively (no loops) the value of base to the n power, 
     so powerN(3, 2) is 9 (3 squared). */
@@ -25,12 +25,12 @@ public class PowerN
     | powerN(10, 3) → 1000 |
     |_____________________*/
 
-    public static int powerN(int base, int n)
+    public static final int powerN(int base, int n)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _PowerN.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

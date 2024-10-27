@@ -1,9 +1,9 @@
 package String1.Testcases;
 import String1.HelloName;
 
-public class _HelloName
+public final class _HelloName
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "helloName(\"Bob\")",
         "helloName(\"Alice\")",
         "helloName(\"X\")",
@@ -16,7 +16,7 @@ public class _HelloName
         "helloName(\"Hello\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "Hello Bob!",
         "Hello Alice!",
         "Hello X!",
@@ -29,9 +29,9 @@ public class _HelloName
         "Hello Hello!",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             HelloName.helloName("Bob"),
             HelloName.helloName("Alice"),
             HelloName.helloName("X"),

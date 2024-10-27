@@ -4,7 +4,7 @@ import Logic1.Testcases._ShareDigit;
 // https://codingbat.com/prob/p153748
 // Difficulty: 166.0
 
-public class ShareDigit
+public final class ShareDigit
 {
     /* Given two ints, each in the range 10..99, return true if there is a digit that appears in both numbers, 
     such as the 2 in 12 and 23. (Note: division, e.g. n/10, 
@@ -25,12 +25,12 @@ public class ShareDigit
     | shareDigit(55, 44) → false |
     |___________________________*/
 
-    public static boolean shareDigit(int a, int b)
+    public static final boolean shareDigit(int a, int b)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _ShareDigit.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

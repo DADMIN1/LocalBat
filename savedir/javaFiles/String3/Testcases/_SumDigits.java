@@ -1,9 +1,9 @@
 package String3.Testcases;
 import String3.SumDigits;
 
-public class _SumDigits
+public final class _SumDigits
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "sumDigits(\"aa1bc2d3\")",
         "sumDigits(\"aa11b33\")",
         "sumDigits(\"Chocolate\")",
@@ -15,7 +15,7 @@ public class _SumDigits
         "sumDigits(\"5432a\")",
     };
 
-    static int[] expectedResults = {
+    static final int[] expectedResults = {
         6,
         8,
         0,
@@ -27,9 +27,9 @@ public class _SumDigits
         14,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] resultsArray = {
+        final int[] resultsArray = {
             SumDigits.sumDigits("aa1bc2d3"),
             SumDigits.sumDigits("aa11b33"),
             SumDigits.sumDigits("Chocolate"),

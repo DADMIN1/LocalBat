@@ -4,7 +4,7 @@ import Array2.Testcases._TenRun;
 // https://codingbat.com/prob/p199484
 // Difficulty: 269.0
 
-public class TenRun
+public final class TenRun
 {
     /* For each multiple of 10 in the given array, change all the values following it to be that multiple of 10, 
     until encountering another multiple of 10. So {2, 10, 3, 
@@ -26,12 +26,12 @@ public class TenRun
     | tenRun([])                   → []                      |
     |_______________________________________________________*/
 
-    public static int[] tenRun(int[] nums)
+    public static final int[] tenRun(int[] nums)
     {
         return new int[]{0};
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _TenRun.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

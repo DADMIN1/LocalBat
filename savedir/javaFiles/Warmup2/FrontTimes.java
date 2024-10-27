@@ -4,7 +4,7 @@ import Warmup2.Testcases._FrontTimes;
 // https://codingbat.com/prob/p101475
 // Difficulty: 206.0
 
-public class FrontTimes
+public final class FrontTimes
 {
     /* Given a string and a non-negative int n, we'll say that the front of the string is the first 3 chars, 
     or whatever is there if the string is less than length 3. 
@@ -22,12 +22,12 @@ public class FrontTimes
     | frontTimes("Abc", 0)       → ""          |
     |_________________________________________*/
 
-    public static String frontTimes(String str, int n)
+    public static final String frontTimes(String str, int n)
     {
         return "";
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _FrontTimes.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

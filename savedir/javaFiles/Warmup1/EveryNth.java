@@ -4,7 +4,7 @@ import Warmup1.Testcases._EveryNth;
 // https://codingbat.com/prob/p196441
 // Difficulty: 190.0
 
-public class EveryNth
+public final class EveryNth
 {
     /* Given a non-empty string and an int N, return the string made starting with char 0, 
     and then every Nth char of the string. So if N is 3, use char 0, 
@@ -22,12 +22,12 @@ public class EveryNth
     | everyNth("Chocolates", 100) → "C"    |
     |_____________________________________*/
 
-    public static String everyNth(String str, int n)
+    public static final String everyNth(String str, int n)
     {
         return "";
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _EveryNth.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

@@ -4,7 +4,7 @@ import Array2.Testcases._FizzArray;
 // https://codingbat.com/prob/p180920
 // Difficulty: 230
 
-public class FizzArray
+public final class FizzArray
 {
     /* Given a number n, create and return a new int array of length n, 
     containing the numbers 0, 1, 2, ... n-1. The given n may be 0, 
@@ -24,12 +24,12 @@ public class FizzArray
     | fizzArray(7)  → [0, 1, 2, 3, 4, 5, 6]          |
     |_______________________________________________*/
 
-    public static int[] fizzArray(int n)
+    public static final int[] fizzArray(int n)
     {
         return new int[]{0};
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _FizzArray.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

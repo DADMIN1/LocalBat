@@ -3,9 +3,9 @@ import Array2.FizzArray;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class _FizzArray
+public final class _FizzArray
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "fizzArray(4)",
         "fizzArray(1)",
         "fizzArray(10)",
@@ -14,7 +14,7 @@ public class _FizzArray
         "fizzArray(7)",
     };
 
-    static int[][] expectedResults = {
+    static final int[][] expectedResults = {
         {0, 1, 2, 3},
         {0},
         {0, 1, 2, 3, 4, 5, 6, 7, 8, 9},
@@ -23,7 +23,7 @@ public class _FizzArray
         {0, 1, 2, 3, 4, 5, 6},
     };
 
-    public static String printArray(int[] array)
+    public static final String printArray(int[] array)
     {
         String result = "[";
         for (int a: array) { result += a+", "; }
@@ -31,9 +31,9 @@ public class _FizzArray
         return result + "]";
     }
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[][] resultsArray = {
+        final int[][] resultsArray = {
             FizzArray.fizzArray(4),
             FizzArray.fizzArray(1),
             FizzArray.fizzArray(10),

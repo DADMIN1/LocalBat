@@ -4,7 +4,7 @@ import Array2.Testcases._Lucky13;
 // https://codingbat.com/prob/p194525
 // Difficulty: 221.0
 
-public class Lucky13
+public final class Lucky13
 {
     /* Given an array of ints, return true if the array contains no 1's and no 3's. */
 
@@ -25,12 +25,12 @@ public class Lucky13
     | lucky13([])           → true  |
     |______________________________*/
 
-    public static boolean lucky13(int[] nums)
+    public static final boolean lucky13(int[] nums)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _Lucky13.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

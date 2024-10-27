@@ -4,7 +4,7 @@ import Array1.Testcases._Double23;
 // https://codingbat.com/prob/p145365
 // Difficulty: 145.0
 
-public class Double23
+public final class Double23
 {
     /* Given an int array, return true if the array contains 2 twice, 
     or 3 twice. The array will be length 0, 1, or 2. */
@@ -23,12 +23,12 @@ public class Double23
     | double23([3, 4]) → false |
     |_________________________*/
 
-    public static boolean double23(int[] nums)
+    public static final boolean double23(int[] nums)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _Double23.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

@@ -1,9 +1,9 @@
 package Warmup2.Testcases;
 import Warmup2.Array667;
 
-public class _Array667
+public final class _Array667
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "array667([6, 6, 2])",
         "array667([6, 6, 2, 6])",
         "array667([6, 7, 2, 6])",
@@ -19,7 +19,7 @@ public class _Array667
         "array667([1, 2, 3, 6, 6])",
     };
 
-    static int[] expectedResults = {
+    static final int[] expectedResults = {
         1,
         1,
         1,
@@ -35,23 +35,23 @@ public class _Array667
         1,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 6, 6, 2 }; 
-        int[] nums1 = { 6, 6, 2, 6 }; 
-        int[] nums2 = { 6, 7, 2, 6 }; 
-        int[] nums3 = { 6, 6, 2, 6, 7 }; 
-        int[] nums4 = { 1, 6, 3 }; 
-        int[] nums5 = { 6, 1 }; 
-        int[] nums6 = {  }; 
-        int[] nums7 = { 3, 6, 7, 6 }; 
-        int[] nums8 = { 3, 6, 6, 7 }; 
-        int[] nums9 = { 6, 3, 6, 6 }; 
-        int[] nums10 = { 6, 7, 6, 6 }; 
-        int[] nums11 = { 1, 2, 3, 5, 6 }; 
-        int[] nums12 = { 1, 2, 3, 6, 6 }; 
+        final int[] nums0 = { 6, 6, 2 }; 
+        final int[] nums1 = { 6, 6, 2, 6 }; 
+        final int[] nums2 = { 6, 7, 2, 6 }; 
+        final int[] nums3 = { 6, 6, 2, 6, 7 }; 
+        final int[] nums4 = { 1, 6, 3 }; 
+        final int[] nums5 = { 6, 1 }; 
+        final int[] nums6 = {  }; 
+        final int[] nums7 = { 3, 6, 7, 6 }; 
+        final int[] nums8 = { 3, 6, 6, 7 }; 
+        final int[] nums9 = { 6, 3, 6, 6 }; 
+        final int[] nums10 = { 6, 7, 6, 6 }; 
+        final int[] nums11 = { 1, 2, 3, 5, 6 }; 
+        final int[] nums12 = { 1, 2, 3, 6, 6 }; 
 
-        int[] resultsArray = {
+        final int[] resultsArray = {
             Array667.array667(nums0),
             Array667.array667(nums1),
             Array667.array667(nums2),

@@ -4,7 +4,7 @@ import Array1.Testcases._Has23;
 // https://codingbat.com/prob/p171022
 // Difficulty: 136.0
 
-public class Has23
+public final class Has23
 {
     /* Given an int array length 2, return true if it contains a 2 or a 3. */
 
@@ -22,12 +22,12 @@ public class Has23
     | has23([9, 5]) → false |
     |______________________*/
 
-    public static boolean has23(int[] nums)
+    public static final boolean has23(int[] nums)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _Has23.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

@@ -4,7 +4,7 @@ import Recursion2.Testcases._GroupSum6;
 // https://codingbat.com/prob/p199368
 // Difficulty: 406.0
 
-public class GroupSum6
+public final class GroupSum6
 {
     /* Given an array of ints, is it possible to choose a group of some of the ints, 
     beginning at the start index, such that the group sums to the given target? However, 
@@ -34,12 +34,12 @@ public class GroupSum6
     | groupSum6(0, [1, 6, 2, 6, 5], 16) → false |
     |__________________________________________*/
 
-    public static boolean groupSum6(int start, int[] nums, int target)
+    public static final boolean groupSum6(int start, int[] nums, int target)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _GroupSum6.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

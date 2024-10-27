@@ -4,7 +4,7 @@ import Warmup1.Testcases._In3050;
 // https://codingbat.com/prob/p132134
 // Difficulty: 175.0
 
-public class In3050
+public final class In3050
 {
     /* Given 2 int values, return true if they are both in the range 30..40 inclusive, 
     or they are both in the range 40..50 inclusive. */
@@ -26,12 +26,12 @@ public class In3050
     | in3050(35, 45) → false |
     |_______________________*/
 
-    public static boolean in3050(int a, int b)
+    public static final boolean in3050(int a, int b)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _In3050.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

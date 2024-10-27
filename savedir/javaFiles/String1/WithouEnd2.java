@@ -4,7 +4,7 @@ import String1.Testcases._WithouEnd2;
 // https://codingbat.com/prob/p174254
 // Difficulty: 142.0
 
-public class WithouEnd2
+public final class WithouEnd2
 {
     /* Given a string, return a version without both the first and last char of the string. 
     The string may be any length, including 0. */
@@ -21,12 +21,12 @@ public class WithouEnd2
     | withouEnd2("java code") → "ava cod" |
     |____________________________________*/
 
-    public static String withouEnd2(String str)
+    public static final String withouEnd2(String str)
     {
         return "";
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _WithouEnd2.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

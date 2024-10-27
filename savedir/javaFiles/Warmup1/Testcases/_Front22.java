@@ -1,9 +1,9 @@
 package Warmup1.Testcases;
 import Warmup1.Front22;
 
-public class _Front22
+public final class _Front22
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "front22(\"kitten\")",
         "front22(\"Ha\")",
         "front22(\"abc\")",
@@ -13,7 +13,7 @@ public class _Front22
         "front22(\"Logic\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "kikittenki",
         "HaHaHa",
         "ababcab",
@@ -23,9 +23,9 @@ public class _Front22
         "LoLogicLo",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             Front22.front22("kitten"),
             Front22.front22("Ha"),
             Front22.front22("abc"),

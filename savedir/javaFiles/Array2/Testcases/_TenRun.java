@@ -3,9 +3,9 @@ import Array2.TenRun;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class _TenRun
+public final class _TenRun
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "tenRun([2, 10, 3, 4, 20, 5])",
         "tenRun([10, 1, 20, 2])",
         "tenRun([10, 1, 9, 20])",
@@ -19,7 +19,7 @@ public class _TenRun
         "tenRun([])",
     };
 
-    static int[][] expectedResults = {
+    static final int[][] expectedResults = {
         {2, 10, 10, 10, 20, 20},
         {10, 10, 20, 20},
         {10, 10, 10, 20},
@@ -33,7 +33,7 @@ public class _TenRun
         {},
     };
 
-    public static String printArray(int[] array)
+    public static final String printArray(int[] array)
     {
         String result = "[";
         for (int a: array) { result += a+", "; }
@@ -41,21 +41,21 @@ public class _TenRun
         return result + "]";
     }
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 2, 10, 3, 4, 20, 5 }; 
-        int[] nums1 = { 10, 1, 20, 2 }; 
-        int[] nums2 = { 10, 1, 9, 20 }; 
-        int[] nums3 = { 1, 2, 50, 1 }; 
-        int[] nums4 = { 1, 20, 50, 1 }; 
-        int[] nums5 = { 10, 10 }; 
-        int[] nums6 = { 10, 2 }; 
-        int[] nums7 = { 0, 2 }; 
-        int[] nums8 = { 1, 2 }; 
-        int[] nums9 = { 1 }; 
-        int[] nums10 = {  }; 
+        final int[] nums0 = { 2, 10, 3, 4, 20, 5 }; 
+        final int[] nums1 = { 10, 1, 20, 2 }; 
+        final int[] nums2 = { 10, 1, 9, 20 }; 
+        final int[] nums3 = { 1, 2, 50, 1 }; 
+        final int[] nums4 = { 1, 20, 50, 1 }; 
+        final int[] nums5 = { 10, 10 }; 
+        final int[] nums6 = { 10, 2 }; 
+        final int[] nums7 = { 0, 2 }; 
+        final int[] nums8 = { 1, 2 }; 
+        final int[] nums9 = { 1 }; 
+        final int[] nums10 = {  }; 
 
-        int[][] resultsArray = {
+        final int[][] resultsArray = {
             TenRun.tenRun(nums0),
             TenRun.tenRun(nums1),
             TenRun.tenRun(nums2),

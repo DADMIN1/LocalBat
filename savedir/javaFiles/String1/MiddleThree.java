@@ -4,7 +4,7 @@ import String1.Testcases._MiddleThree;
 // https://codingbat.com/prob/p115863
 // Difficulty: 157.0
 
-public class MiddleThree
+public final class MiddleThree
 {
     /* Given a string of odd length, return the string length 3 from its middle, 
     so "Candy" yields "and". The string length will be at least 3. */
@@ -21,12 +21,12 @@ public class MiddleThree
     | middleThree("XabcxyzabcX")   → "xyz" |
     |_____________________________________*/
 
-    public static String middleThree(String str)
+    public static final String middleThree(String str)
     {
         return "";
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _MiddleThree.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

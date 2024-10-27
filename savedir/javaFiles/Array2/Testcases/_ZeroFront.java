@@ -3,9 +3,9 @@ import Array2.ZeroFront;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class _ZeroFront
+public final class _ZeroFront
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "zeroFront([1, 0, 0, 1])",
         "zeroFront([0, 1, 1, 0, 1])",
         "zeroFront([1, 0])",
@@ -19,7 +19,7 @@ public class _ZeroFront
         "zeroFront([9, 9, 0, 9, 0, 9])",
     };
 
-    static int[][] expectedResults = {
+    static final int[][] expectedResults = {
         {0, 0, 1, 1},
         {0, 0, 1, 1, 1},
         {0, 1},
@@ -33,7 +33,7 @@ public class _ZeroFront
         {0, 0, 9, 9, 9, 9},
     };
 
-    public static String printArray(int[] array)
+    public static final String printArray(int[] array)
     {
         String result = "[";
         for (int a: array) { result += a+", "; }
@@ -41,21 +41,21 @@ public class _ZeroFront
         return result + "]";
     }
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 1, 0, 0, 1 }; 
-        int[] nums1 = { 0, 1, 1, 0, 1 }; 
-        int[] nums2 = { 1, 0 }; 
-        int[] nums3 = { 0, 1 }; 
-        int[] nums4 = { 1, 1, 1, 0 }; 
-        int[] nums5 = { 2, 2, 2, 2 }; 
-        int[] nums6 = { 0, 0, 1, 0 }; 
-        int[] nums7 = { -1, 0, 0, -1, 0 }; 
-        int[] nums8 = { 0, -3, 0, -3 }; 
-        int[] nums9 = {  }; 
-        int[] nums10 = { 9, 9, 0, 9, 0, 9 }; 
+        final int[] nums0 = { 1, 0, 0, 1 }; 
+        final int[] nums1 = { 0, 1, 1, 0, 1 }; 
+        final int[] nums2 = { 1, 0 }; 
+        final int[] nums3 = { 0, 1 }; 
+        final int[] nums4 = { 1, 1, 1, 0 }; 
+        final int[] nums5 = { 2, 2, 2, 2 }; 
+        final int[] nums6 = { 0, 0, 1, 0 }; 
+        final int[] nums7 = { -1, 0, 0, -1, 0 }; 
+        final int[] nums8 = { 0, -3, 0, -3 }; 
+        final int[] nums9 = {  }; 
+        final int[] nums10 = { 9, 9, 0, 9, 0, 9 }; 
 
-        int[][] resultsArray = {
+        final int[][] resultsArray = {
             ZeroFront.zeroFront(nums0),
             ZeroFront.zeroFront(nums1),
             ZeroFront.zeroFront(nums2),

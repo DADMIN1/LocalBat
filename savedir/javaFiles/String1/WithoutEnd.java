@@ -4,7 +4,7 @@ import String1.Testcases._WithoutEnd;
 // https://codingbat.com/prob/p130896
 // Difficulty: 124.0
 
-public class WithoutEnd
+public final class WithoutEnd
 {
     /* Given a string, return a version without the first and last char, 
     so "Hello" yields "ell". The string length will be at least 2. */
@@ -22,12 +22,12 @@ public class WithoutEnd
     | withoutEnd("woohoo")     → "ooho"     |
     |______________________________________*/
 
-    public static String withoutEnd(String str)
+    public static final String withoutEnd(String str)
     {
         return "";
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _WithoutEnd.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

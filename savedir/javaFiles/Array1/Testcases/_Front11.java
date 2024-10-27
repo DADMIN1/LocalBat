@@ -3,9 +3,9 @@ import Array1.Front11;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class _Front11
+public final class _Front11
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "front11([1, 2, 3], [7, 9, 8])",
         "front11([1], [2])",
         "front11([1, 7], [])",
@@ -15,7 +15,7 @@ public class _Front11
         "front11([1, 4, 1, 9], [])",
     };
 
-    static int[][] expectedResults = {
+    static final int[][] expectedResults = {
         {1, 7},
         {1, 2},
         {1},
@@ -25,7 +25,7 @@ public class _Front11
         {1},
     };
 
-    public static String printArray(int[] array)
+    public static final String printArray(int[] array)
     {
         String result = "[";
         for (int a: array) { result += a+", "; }
@@ -33,17 +33,17 @@ public class _Front11
         return result + "]";
     }
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] a0 = { 1, 2, 3 }; int[] b0 = { 7, 9, 8 }; 
-        int[] a1 = { 1 }; int[] b1 = { 2 }; 
-        int[] a2 = { 1, 7 }; int[] b2 = {  }; 
-        int[] a3 = {  }; int[] b3 = { 2, 8 }; 
-        int[] a4 = {  }; int[] b4 = {  }; 
-        int[] a5 = { 3 }; int[] b5 = { 1, 4, 1, 9 }; 
-        int[] a6 = { 1, 4, 1, 9 }; int[] b6 = {  }; 
+        final int[] a0 = { 1, 2, 3 }; final int[] b0 = { 7, 9, 8 }; 
+        final int[] a1 = { 1 }; final int[] b1 = { 2 }; 
+        final int[] a2 = { 1, 7 }; final int[] b2 = {  }; 
+        final int[] a3 = {  }; final int[] b3 = { 2, 8 }; 
+        final int[] a4 = {  }; final int[] b4 = {  }; 
+        final int[] a5 = { 3 }; final int[] b5 = { 1, 4, 1, 9 }; 
+        final int[] a6 = { 1, 4, 1, 9 }; final int[] b6 = {  }; 
 
-        int[][] resultsArray = {
+        final int[][] resultsArray = {
             Front11.front11(a0, b0),
             Front11.front11(a1, b1),
             Front11.front11(a2, b2),

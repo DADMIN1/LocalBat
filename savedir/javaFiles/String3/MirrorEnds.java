@@ -4,7 +4,7 @@ import String3.Testcases._MirrorEnds;
 // https://codingbat.com/prob/p139411
 // Difficulty: 324.0
 
-public class MirrorEnds
+public final class MirrorEnds
 {
     /* Given a string, look for a mirror image (backwards) string at both the beginning and end of the given string. 
     In other words, zero or more characters at the very begining of the given string, 
@@ -27,12 +27,12 @@ public class MirrorEnds
     | mirrorEnds("band andab")      → "ba"    |
     |________________________________________*/
 
-    public static String mirrorEnds(String string)
+    public static final String mirrorEnds(String string)
     {
         return "";
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _MirrorEnds.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

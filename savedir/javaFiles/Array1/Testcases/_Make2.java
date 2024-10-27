@@ -3,9 +3,9 @@ import Array1.Make2;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class _Make2
+public final class _Make2
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "make2([4, 5], [1, 2, 3])",
         "make2([4], [1, 2, 3])",
         "make2([], [1, 2])",
@@ -20,7 +20,7 @@ public class _Make2
         "make2([5, 4], [2, 3, 7])",
     };
 
-    static int[][] expectedResults = {
+    static final int[][] expectedResults = {
         {4, 5},
         {4, 1},
         {1, 2},
@@ -35,7 +35,7 @@ public class _Make2
         {5, 4},
     };
 
-    public static String printArray(int[] array)
+    public static final String printArray(int[] array)
     {
         String result = "[";
         for (int a: array) { result += a+", "; }
@@ -43,22 +43,22 @@ public class _Make2
         return result + "]";
     }
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] a0 = { 4, 5 }; int[] b0 = { 1, 2, 3 }; 
-        int[] a1 = { 4 }; int[] b1 = { 1, 2, 3 }; 
-        int[] a2 = {  }; int[] b2 = { 1, 2 }; 
-        int[] a3 = { 1, 2 }; int[] b3 = {  }; 
-        int[] a4 = { 3 }; int[] b4 = { 1, 2, 3 }; 
-        int[] a5 = { 3 }; int[] b5 = { 1 }; 
-        int[] a6 = { 3, 1, 4 }; int[] b6 = {  }; 
-        int[] a7 = { 1 }; int[] b7 = { 1 }; 
-        int[] a8 = { 1, 2, 3 }; int[] b8 = { 7, 8 }; 
-        int[] a9 = { 7, 8 }; int[] b9 = { 1, 2, 3 }; 
-        int[] a10 = { 7 }; int[] b10 = { 1, 2, 3 }; 
-        int[] a11 = { 5, 4 }; int[] b11 = { 2, 3, 7 }; 
+        final int[] a0 = { 4, 5 }; final int[] b0 = { 1, 2, 3 }; 
+        final int[] a1 = { 4 }; final int[] b1 = { 1, 2, 3 }; 
+        final int[] a2 = {  }; final int[] b2 = { 1, 2 }; 
+        final int[] a3 = { 1, 2 }; final int[] b3 = {  }; 
+        final int[] a4 = { 3 }; final int[] b4 = { 1, 2, 3 }; 
+        final int[] a5 = { 3 }; final int[] b5 = { 1 }; 
+        final int[] a6 = { 3, 1, 4 }; final int[] b6 = {  }; 
+        final int[] a7 = { 1 }; final int[] b7 = { 1 }; 
+        final int[] a8 = { 1, 2, 3 }; final int[] b8 = { 7, 8 }; 
+        final int[] a9 = { 7, 8 }; final int[] b9 = { 1, 2, 3 }; 
+        final int[] a10 = { 7 }; final int[] b10 = { 1, 2, 3 }; 
+        final int[] a11 = { 5, 4 }; final int[] b11 = { 2, 3, 7 }; 
 
-        int[][] resultsArray = {
+        final int[][] resultsArray = {
             Make2.make2(a0, b0),
             Make2.make2(a1, b1),
             Make2.make2(a2, b2),

@@ -4,7 +4,7 @@ import Logic2.Testcases._LoneSum;
 // https://codingbat.com/prob/p148972
 // Difficulty: 206.0
 
-public class LoneSum
+public final class LoneSum
 {
     /* Given 3 int values, a b c, return their sum. However, if one of the values is the same as another of the values, 
     it does not count towards the sum. */
@@ -23,12 +23,12 @@ public class LoneSum
     | loneSum(1, 3, 1) → 3  |
     |______________________*/
 
-    public static int loneSum(int a, int b, int c)
+    public static final int loneSum(int a, int b, int c)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _LoneSum.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

@@ -4,7 +4,7 @@ import Array1.Testcases._SameFirstLast;
 // https://codingbat.com/prob/p118976
 // Difficulty: 106.0
 
-public class SameFirstLast
+public final class SameFirstLast
 {
     /* Given an array of ints, return true if the array is length 1 or more, 
     and the first element and the last element are equal. */
@@ -23,12 +23,12 @@ public class SameFirstLast
     | sameFirstLast([7, 7])               → true  |
     |____________________________________________*/
 
-    public static boolean sameFirstLast(int[] nums)
+    public static final boolean sameFirstLast(int[] nums)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _SameFirstLast.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

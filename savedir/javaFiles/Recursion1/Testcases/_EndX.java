@@ -1,9 +1,9 @@
 package Recursion1.Testcases;
 import Recursion1.EndX;
 
-public class _EndX
+public final class _EndX
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "endX(\"xxre\")",
         "endX(\"xxhixx\")",
         "endX(\"xhixhix\")",
@@ -18,7 +18,7 @@ public class _EndX
         "endX(\"xxhxi\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "rexx",
         "hixxxx",
         "hihixxx",
@@ -33,9 +33,9 @@ public class _EndX
         "hixxx",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             EndX.endX("xxre"),
             EndX.endX("xxhixx"),
             EndX.endX("xhixhix"),

@@ -4,7 +4,7 @@ import AP1.Testcases._BigHeights;
 // https://codingbat.com/prob/p197710
 // Difficulty: 246.2
 
-public class BigHeights
+public final class BigHeights
 {
     /* (A variation on the sumHeights problem.) We have an array of heights, 
     representing the altitude along a walking trail. Given start/end indexes into the array, 
@@ -33,12 +33,12 @@ public class BigHeights
     | bigHeights([1, 2, 3, 14, 5, 4, 3, 2, 10], 2, 8) → 3 |
     |____________________________________________________*/
 
-    public static int bigHeights(int[] heights, int start, int end)
+    public static final int bigHeights(int[] heights, int start, int end)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _BigHeights.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

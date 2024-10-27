@@ -4,7 +4,7 @@ import String2.Testcases._WordEnds;
 // https://codingbat.com/prob/p147538
 // Difficulty: 260.0
 
-public class WordEnds
+public final class WordEnds
 {
     /* Given a string and a non-empty word string, 
     return a string made of each char just before and just after every appearance of the word in the string. 
@@ -29,12 +29,12 @@ public class WordEnds
     | wordEnds("abc1abc1abc", "abc")  → "1111"   |
     |___________________________________________*/
 
-    public static String wordEnds(String str, String word)
+    public static final String wordEnds(String str, String word)
     {
         return "";
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _WordEnds.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

@@ -3,9 +3,9 @@ import AP1.WordsWithout;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class _WordsWithout
+public final class _WordsWithout
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "wordsWithout([\"a\", \"b\", \"c\", \"a\"], \"a\")",
         "wordsWithout([\"a\", \"b\", \"c\", \"a\"], \"b\")",
         "wordsWithout([\"a\", \"b\", \"c\", \"a\"], \"c\")",
@@ -15,7 +15,7 @@ public class _WordsWithout
         "wordsWithout([\"aa\", \"ab\", \"ac\", \"aa\"], \"aa\")",
     };
 
-    static String[][] expectedResults = {
+    static final String[][] expectedResults = {
         {"b", "c"},
         {"a", "c", "a"},
         {"a", "b", "a"},
@@ -25,7 +25,7 @@ public class _WordsWithout
         {"ab", "ac"},
     };
 
-    public static String printArray(String[] array)
+    public static final String printArray(String[] array)
     {
         String result = "[";
         for (String a: array) { result += a+", "; }
@@ -33,17 +33,17 @@ public class _WordsWithout
         return result + "]";
     }
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] words0 = { "a", "b", "c", "a" }; 
-        String[] words1 = { "a", "b", "c", "a" }; 
-        String[] words2 = { "a", "b", "c", "a" }; 
-        String[] words3 = { "b", "c", "a", "a" }; 
-        String[] words4 = { "xx", "yyy", "x", "yy", "x" }; 
-        String[] words5 = { "xx", "yyy", "x", "yy", "x" }; 
-        String[] words6 = { "aa", "ab", "ac", "aa" }; 
+        final String[] words0 = { "a", "b", "c", "a" }; 
+        final String[] words1 = { "a", "b", "c", "a" }; 
+        final String[] words2 = { "a", "b", "c", "a" }; 
+        final String[] words3 = { "b", "c", "a", "a" }; 
+        final String[] words4 = { "xx", "yyy", "x", "yy", "x" }; 
+        final String[] words5 = { "xx", "yyy", "x", "yy", "x" }; 
+        final String[] words6 = { "aa", "ab", "ac", "aa" }; 
 
-        String[][] resultsArray = {
+        final String[][] resultsArray = {
             WordsWithout.wordsWithout(words0, "a"),
             WordsWithout.wordsWithout(words1, "b"),
             WordsWithout.wordsWithout(words2, "c"),

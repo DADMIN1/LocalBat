@@ -1,9 +1,9 @@
 package Array1.Testcases;
 import Array1.Has23;
 
-public class _Has23
+public final class _Has23
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "has23([2, 5])",
         "has23([4, 3])",
         "has23([4, 5])",
@@ -15,7 +15,7 @@ public class _Has23
         "has23([9, 5])",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         true,
         false,
@@ -27,19 +27,19 @@ public class _Has23
         false,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 2, 5 }; 
-        int[] nums1 = { 4, 3 }; 
-        int[] nums2 = { 4, 5 }; 
-        int[] nums3 = { 2, 2 }; 
-        int[] nums4 = { 3, 2 }; 
-        int[] nums5 = { 3, 3 }; 
-        int[] nums6 = { 7, 7 }; 
-        int[] nums7 = { 3, 9 }; 
-        int[] nums8 = { 9, 5 }; 
+        final int[] nums0 = { 2, 5 }; 
+        final int[] nums1 = { 4, 3 }; 
+        final int[] nums2 = { 4, 5 }; 
+        final int[] nums3 = { 2, 2 }; 
+        final int[] nums4 = { 3, 2 }; 
+        final int[] nums5 = { 3, 3 }; 
+        final int[] nums6 = { 7, 7 }; 
+        final int[] nums7 = { 3, 9 }; 
+        final int[] nums8 = { 9, 5 }; 
 
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             Has23.has23(nums0),
             Has23.has23(nums1),
             Has23.has23(nums2),

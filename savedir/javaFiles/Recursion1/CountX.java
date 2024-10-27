@@ -4,7 +4,7 @@ import Recursion1.Testcases._CountX;
 // https://codingbat.com/prob/p170371
 // Difficulty: 330.0
 
-public class CountX
+public final class CountX
 {
     /* Given a string, compute recursively (no loops) the number of lowercase 'x' chars in the string. */
 
@@ -21,12 +21,12 @@ public class CountX
     | countX("hiAAhi12hi") → 0 |
     |_________________________*/
 
-    public static int countX(String str)
+    public static final int countX(String str)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _CountX.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

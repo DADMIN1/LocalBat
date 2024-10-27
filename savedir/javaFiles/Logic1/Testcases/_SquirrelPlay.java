@@ -1,9 +1,9 @@
 package Logic1.Testcases;
 import Logic1.SquirrelPlay;
 
-public class _SquirrelPlay
+public final class _SquirrelPlay
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "squirrelPlay(70, false)",
         "squirrelPlay(95, false)",
         "squirrelPlay(95, true)",
@@ -19,7 +19,7 @@ public class _SquirrelPlay
         "squirrelPlay(60, false)",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         false,
         true,
@@ -35,9 +35,9 @@ public class _SquirrelPlay
         true,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             SquirrelPlay.squirrelPlay(70, false),
             SquirrelPlay.squirrelPlay(95, false),
             SquirrelPlay.squirrelPlay(95, true),

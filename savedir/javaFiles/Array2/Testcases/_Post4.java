@@ -3,9 +3,9 @@ import Array2.Post4;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class _Post4
+public final class _Post4
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "post4([2, 4, 1, 2])",
         "post4([4, 1, 4, 2])",
         "post4([4, 4, 1, 2, 3])",
@@ -18,7 +18,7 @@ public class _Post4
         "post4([3, 4, 3, 2])",
     };
 
-    static int[][] expectedResults = {
+    static final int[][] expectedResults = {
         {1, 2},
         {2},
         {1, 2, 3},
@@ -31,7 +31,7 @@ public class _Post4
         {3, 2},
     };
 
-    public static String printArray(int[] array)
+    public static final String printArray(int[] array)
     {
         String result = "[";
         for (int a: array) { result += a+", "; }
@@ -39,20 +39,20 @@ public class _Post4
         return result + "]";
     }
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 2, 4, 1, 2 }; 
-        int[] nums1 = { 4, 1, 4, 2 }; 
-        int[] nums2 = { 4, 4, 1, 2, 3 }; 
-        int[] nums3 = { 4, 2 }; 
-        int[] nums4 = { 4, 4, 3 }; 
-        int[] nums5 = { 4, 4 }; 
-        int[] nums6 = { 4 }; 
-        int[] nums7 = { 2, 4, 1, 4, 3, 2 }; 
-        int[] nums8 = { 4, 1, 4, 2, 2, 2 }; 
-        int[] nums9 = { 3, 4, 3, 2 }; 
+        final int[] nums0 = { 2, 4, 1, 2 }; 
+        final int[] nums1 = { 4, 1, 4, 2 }; 
+        final int[] nums2 = { 4, 4, 1, 2, 3 }; 
+        final int[] nums3 = { 4, 2 }; 
+        final int[] nums4 = { 4, 4, 3 }; 
+        final int[] nums5 = { 4, 4 }; 
+        final int[] nums6 = { 4 }; 
+        final int[] nums7 = { 2, 4, 1, 4, 3, 2 }; 
+        final int[] nums8 = { 4, 1, 4, 2, 2, 2 }; 
+        final int[] nums9 = { 3, 4, 3, 2 }; 
 
-        int[][] resultsArray = {
+        final int[][] resultsArray = {
             Post4.post4(nums0),
             Post4.post4(nums1),
             Post4.post4(nums2),

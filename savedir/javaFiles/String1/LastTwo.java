@@ -4,7 +4,7 @@ import String1.Testcases._LastTwo;
 // https://codingbat.com/prob/p194786
 // Difficulty: 172.0
 
-public class LastTwo
+public final class LastTwo
 {
     /* Given a string of any length, return a new string where the last 2 chars, 
     if present, are swapped, so "coding" yields "codign". */
@@ -19,12 +19,12 @@ public class LastTwo
     | lastTwo("")       → ""       |
     |_____________________________*/
 
-    public static String lastTwo(String str)
+    public static final String lastTwo(String str)
     {
         return "";
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _LastTwo.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

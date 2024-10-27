@@ -4,7 +4,7 @@ import Logic1.Testcases._More20;
 // https://codingbat.com/prob/p118290
 // Difficulty: 122.4
 
-public class More20
+public final class More20
 {
     /* Return true if the given non-negative number is 1 or 2 more than a multiple of 20. 
     See also: Introduction to Mod */
@@ -35,12 +35,12 @@ public class More20
     | more20(42)   → true  |
     |_____________________*/
 
-    public static boolean more20(int n)
+    public static final boolean more20(int n)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _More20.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

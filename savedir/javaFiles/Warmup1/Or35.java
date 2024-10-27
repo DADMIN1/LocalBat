@@ -4,7 +4,7 @@ import Warmup1.Testcases._Or35;
 // https://codingbat.com/prob/p112564
 // Difficulty: 140.0
 
-public class Or35
+public final class Or35
 {
     /* Return true if the given non-negative number is a multiple of 3 or a multiple of 5. 
     Use the % "mod" operator -- see Introduction to Mod */
@@ -36,12 +36,12 @@ public class Or35
     | or35(123) → true  |
     |__________________*/
 
-    public static boolean or35(int n)
+    public static final boolean or35(int n)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _Or35.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

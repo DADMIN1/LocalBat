@@ -1,25 +1,25 @@
 package Warmup1.Testcases;
 import Warmup1.MonkeyTrouble;
 
-public class _MonkeyTrouble
+public final class _MonkeyTrouble
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "monkeyTrouble(true, true)",
         "monkeyTrouble(false, false)",
         "monkeyTrouble(true, false)",
         "monkeyTrouble(false, true)",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         true,
         false,
         false,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             MonkeyTrouble.monkeyTrouble(true, true),
             MonkeyTrouble.monkeyTrouble(false, false),
             MonkeyTrouble.monkeyTrouble(true, false),

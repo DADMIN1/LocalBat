@@ -1,9 +1,9 @@
 package Warmup2.Testcases;
 import Warmup2.CountXX;
 
-public class _CountXX
+public final class _CountXX
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "countXX(\"abcxx\")",
         "countXX(\"xxx\")",
         "countXX(\"xxxx\")",
@@ -15,7 +15,7 @@ public class _CountXX
         "countXX(\"Kittensxxx\")",
     };
 
-    static int[] expectedResults = {
+    static final int[] expectedResults = {
         1,
         2,
         3,
@@ -27,9 +27,9 @@ public class _CountXX
         2,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] resultsArray = {
+        final int[] resultsArray = {
             CountXX.countXX("abcxx"),
             CountXX.countXX("xxx"),
             CountXX.countXX("xxxx"),

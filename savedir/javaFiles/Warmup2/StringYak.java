@@ -4,7 +4,7 @@ import Warmup2.Testcases._StringYak;
 // https://codingbat.com/prob/p126212
 // Difficulty: 236.0
 
-public class StringYak
+public final class StringYak
 {
     /* Suppose the string "yak" is unlucky. Given a string, return a version where all the "yak" are removed, 
     but the "a" can be any char. The "yak" strings will not overlap. */
@@ -21,12 +21,12 @@ public class StringYak
     | stringYak("xxxyakyyyakzzz") → "xxxyyzzz" |
     |_________________________________________*/
 
-    public static String stringYak(String str)
+    public static final String stringYak(String str)
     {
         return "";
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _StringYak.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

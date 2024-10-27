@@ -4,7 +4,7 @@ import Array1.Testcases._Unlucky1;
 // https://codingbat.com/prob/p197308
 // Difficulty: 175.0
 
-public class Unlucky1
+public final class Unlucky1
 {
     /* We'll say that a 1 immediately followed by a 3 in an array is an "unlucky" 1. 
     Return true if the given array contains an unlucky 1 in the first 2 or last 2 positions in the array. */
@@ -33,12 +33,12 @@ public class Unlucky1
     | unlucky1([1, 2, 3, 4, 1, 3]) → true  |
     |_____________________________________*/
 
-    public static boolean unlucky1(int[] nums)
+    public static final boolean unlucky1(int[] nums)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _Unlucky1.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

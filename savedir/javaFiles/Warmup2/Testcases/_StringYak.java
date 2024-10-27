@@ -1,9 +1,9 @@
 package Warmup2.Testcases;
 import Warmup2.StringYak;
 
-public class _StringYak
+public final class _StringYak
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "stringYak(\"yakpak\")",
         "stringYak(\"pakyak\")",
         "stringYak(\"yak123ya\")",
@@ -13,7 +13,7 @@ public class _StringYak
         "stringYak(\"xxxyakyyyakzzz\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "pak",
         "pak",
         "123ya",
@@ -23,9 +23,9 @@ public class _StringYak
         "xxxyyzzz",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             StringYak.stringYak("yakpak"),
             StringYak.stringYak("pakyak"),
             StringYak.stringYak("yak123ya"),

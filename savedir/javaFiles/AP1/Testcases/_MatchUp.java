@@ -1,9 +1,9 @@
 package AP1.Testcases;
 import AP1.MatchUp;
 
-public class _MatchUp
+public final class _MatchUp
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "matchUp([\"aa\", \"bb\", \"cc\"], [\"aaa\", \"xx\", \"bb\"])",
         "matchUp([\"aa\", \"bb\", \"cc\"], [\"aaa\", \"b\", \"bb\"])",
         "matchUp([\"aa\", \"bb\", \"cc\"], [\"\", \"\", \"ccc\"])",
@@ -19,7 +19,7 @@ public class _MatchUp
         "matchUp([\"aaa\", \"bb\", \"c\"], [\"aaa\", \"xx\", \"bb\"])",
     };
 
-    static int[] expectedResults = {
+    static final int[] expectedResults = {
         1,
         2,
         1,
@@ -35,23 +35,23 @@ public class _MatchUp
         1,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] a0 = { "aa", "bb", "cc" }; String[] b0 = { "aaa", "xx", "bb" }; 
-        String[] a1 = { "aa", "bb", "cc" }; String[] b1 = { "aaa", "b", "bb" }; 
-        String[] a2 = { "aa", "bb", "cc" }; String[] b2 = { "", "", "ccc" }; 
-        String[] a3 = { "", "", "ccc" }; String[] b3 = { "aa", "bb", "cc" }; 
-        String[] a4 = { "", "", "" }; String[] b4 = { "", "bb", "cc" }; 
-        String[] a5 = { "aa", "bb", "cc" }; String[] b5 = { "", "", "" }; 
-        String[] a6 = { "aa", "", "ccc" }; String[] b6 = { "", "bb", "cc" }; 
-        String[] a7 = { "x", "y", "z" }; String[] b7 = { "y", "z", "x" }; 
-        String[] a8 = { "", "y", "z" }; String[] b8 = { "", "y", "x" }; 
-        String[] a9 = { "x", "y", "z" }; String[] b9 = { "xx", "yyy", "zzz" }; 
-        String[] a10 = { "x", "y", "z" }; String[] b10 = { "xx", "yyy", "" }; 
-        String[] a11 = { "b", "x", "y", "z" }; String[] b11 = { "a", "xx", "yyy", "zzz" }; 
-        String[] a12 = { "aaa", "bb", "c" }; String[] b12 = { "aaa", "xx", "bb" }; 
+        final String[] a0 = { "aa", "bb", "cc" }; final String[] b0 = { "aaa", "xx", "bb" }; 
+        final String[] a1 = { "aa", "bb", "cc" }; final String[] b1 = { "aaa", "b", "bb" }; 
+        final String[] a2 = { "aa", "bb", "cc" }; final String[] b2 = { "", "", "ccc" }; 
+        final String[] a3 = { "", "", "ccc" }; final String[] b3 = { "aa", "bb", "cc" }; 
+        final String[] a4 = { "", "", "" }; final String[] b4 = { "", "bb", "cc" }; 
+        final String[] a5 = { "aa", "bb", "cc" }; final String[] b5 = { "", "", "" }; 
+        final String[] a6 = { "aa", "", "ccc" }; final String[] b6 = { "", "bb", "cc" }; 
+        final String[] a7 = { "x", "y", "z" }; final String[] b7 = { "y", "z", "x" }; 
+        final String[] a8 = { "", "y", "z" }; final String[] b8 = { "", "y", "x" }; 
+        final String[] a9 = { "x", "y", "z" }; final String[] b9 = { "xx", "yyy", "zzz" }; 
+        final String[] a10 = { "x", "y", "z" }; final String[] b10 = { "xx", "yyy", "" }; 
+        final String[] a11 = { "b", "x", "y", "z" }; final String[] b11 = { "a", "xx", "yyy", "zzz" }; 
+        final String[] a12 = { "aaa", "bb", "c" }; final String[] b12 = { "aaa", "xx", "bb" }; 
 
-        int[] resultsArray = {
+        final int[] resultsArray = {
             MatchUp.matchUp(a0, b0),
             MatchUp.matchUp(a1, b1),
             MatchUp.matchUp(a2, b2),

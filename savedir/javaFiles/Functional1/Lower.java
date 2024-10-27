@@ -7,7 +7,7 @@ import java.util.ArrayList;
 // https://codingbat.com/prob/p186894
 // Difficulty: 221
 
-public class Lower
+public final class Lower
 {
     /* Given a list of strings, return a list where each string is converted to lower case (Note: 
     String toLowerCase() method). */
@@ -23,12 +23,12 @@ public class Lower
     | lower(["aaX", "bYb", "Ycc", "ZZZ"]) → ["aax", "byb", "ycc", "zzz"] |
     |___________________________________________________________________*/
 
-    public static List<String> lower(List<String> strings)
+    public static final List<String> lower(List<String> strings)
     {
         return new ArrayList<String>();
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _Lower.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

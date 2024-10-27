@@ -1,9 +1,9 @@
 package Array2.Testcases;
 import Array2.Has22;
 
-public class _Has22
+public final class _Has22
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "has22([1, 2, 2])",
         "has22([1, 2, 1, 2])",
         "has22([2, 1, 2])",
@@ -20,7 +20,7 @@ public class _Has22
         "has22([5, 2, 5, 2])",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         false,
         false,
@@ -37,24 +37,24 @@ public class _Has22
         false,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 1, 2, 2 }; 
-        int[] nums1 = { 1, 2, 1, 2 }; 
-        int[] nums2 = { 2, 1, 2 }; 
-        int[] nums3 = { 2, 2, 1, 2 }; 
-        int[] nums4 = { 1, 3, 2 }; 
-        int[] nums5 = { 1, 3, 2, 2 }; 
-        int[] nums6 = { 2, 3, 2, 2 }; 
-        int[] nums7 = { 4, 2, 4, 2, 2, 5 }; 
-        int[] nums8 = { 1, 2 }; 
-        int[] nums9 = { 2, 2 }; 
-        int[] nums10 = { 2 }; 
-        int[] nums11 = {  }; 
-        int[] nums12 = { 3, 3, 2, 2 }; 
-        int[] nums13 = { 5, 2, 5, 2 }; 
+        final int[] nums0 = { 1, 2, 2 }; 
+        final int[] nums1 = { 1, 2, 1, 2 }; 
+        final int[] nums2 = { 2, 1, 2 }; 
+        final int[] nums3 = { 2, 2, 1, 2 }; 
+        final int[] nums4 = { 1, 3, 2 }; 
+        final int[] nums5 = { 1, 3, 2, 2 }; 
+        final int[] nums6 = { 2, 3, 2, 2 }; 
+        final int[] nums7 = { 4, 2, 4, 2, 2, 5 }; 
+        final int[] nums8 = { 1, 2 }; 
+        final int[] nums9 = { 2, 2 }; 
+        final int[] nums10 = { 2 }; 
+        final int[] nums11 = {  }; 
+        final int[] nums12 = { 3, 3, 2, 2 }; 
+        final int[] nums13 = { 5, 2, 5, 2 }; 
 
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             Has22.has22(nums0),
             Has22.has22(nums1),
             Has22.has22(nums2),

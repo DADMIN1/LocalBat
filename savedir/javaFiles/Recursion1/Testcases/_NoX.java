@@ -1,9 +1,9 @@
 package Recursion1.Testcases;
 import Recursion1.NoX;
 
-public class _NoX
+public final class _NoX
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "noX(\"xaxb\")",
         "noX(\"abc\")",
         "noX(\"xx\")",
@@ -12,7 +12,7 @@ public class _NoX
         "noX(\"Hellox\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "ab",
         "abc",
         "",
@@ -21,9 +21,9 @@ public class _NoX
         "Hello",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             NoX.noX("xaxb"),
             NoX.noX("abc"),
             NoX.noX("xx"),

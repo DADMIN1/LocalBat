@@ -4,7 +4,7 @@ import String1.Testcases._NonStart;
 // https://codingbat.com/prob/p143825
 // Difficulty: 130.0
 
-public class NonStart
+public final class NonStart
 {
     /* Given 2 strings, return their concatenation, except omit the first char of each. 
     The strings will be at least length 1. */
@@ -23,12 +23,12 @@ public class NonStart
     | nonStart("mart", "dart")   → "artart"   |
     |________________________________________*/
 
-    public static String nonStart(String a, String b)
+    public static final String nonStart(String a, String b)
     {
         return "";
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _NonStart.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

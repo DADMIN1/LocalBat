@@ -3,9 +3,9 @@ import Map1.MapAB4;
 import java.util.Map;
 import java.util.HashMap;
 
-public class _MapAB4
+public final class _MapAB4
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "mapAB4({\"a\": \"aaa\", \"b\": \"bb\", \"c\": \"cake\"})",
         "mapAB4({\"a\": \"aa\", \"b\": \"bbb\", \"c\": \"cake\"})",
         "mapAB4({\"a\": \"aa\", \"b\": \"bbb\"})",
@@ -23,7 +23,7 @@ public class _MapAB4
         "mapAB4({\"b\": \"\", \"z\": \"z\"})",
     };
 
-    static Map<?,?>[] expectedResults = {
+    static final Map<?,?>[] expectedResults = {
         Map.of("a", "aaa", "b", "bb", "c", "aaa"),
         Map.of("a", "aa", "b", "bbb", "c", "bbb"),
         Map.of("a", "aa", "b", "bbb", "c", "bbb"),
@@ -41,9 +41,9 @@ public class _MapAB4
         Map.of("b", "", "z", "z"),
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        Map<?,?>[] resultsArray = {
+        final Map<?,?>[] resultsArray = {
             MapAB4.mapAB4(new HashMap<>(Map.of("a", "aaa", "b", "bb", "c", "cake"))),
             MapAB4.mapAB4(new HashMap<>(Map.of("a", "aa", "b", "bbb", "c", "cake"))),
             MapAB4.mapAB4(new HashMap<>(Map.of("a", "aa", "b", "bbb"))),

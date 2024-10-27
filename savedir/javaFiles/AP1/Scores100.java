@@ -4,7 +4,7 @@ import AP1.Testcases._Scores100;
 // https://codingbat.com/prob/p179487
 // Difficulty: 206.0
 
-public class Scores100
+public final class Scores100
 {
     /* Given an array of scores, return true if there are scores of 100 next to each other in the array. 
     The array length will be at least 2. */
@@ -20,12 +20,12 @@ public class Scores100
     | scores100([1, 2, 100, 4, 5])  → false |
     |______________________________________*/
 
-    public static boolean scores100(int[] scores)
+    public static final boolean scores100(int[] scores)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _Scores100.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

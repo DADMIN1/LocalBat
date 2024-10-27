@@ -4,7 +4,7 @@ import Recursion1.Testcases._BunnyEars;
 // https://codingbat.com/prob/p183649
 // Difficulty: 306.0
 
-public class BunnyEars
+public final class BunnyEars
 {
     /* We have a number of bunnies and each bunny has two big floppy ears. 
     We want to compute the total number of ears across all the bunnies recursively (without loops or multiplication). */
@@ -23,12 +23,12 @@ public class BunnyEars
     | bunnyEars(234) → 468 |
     |_____________________*/
 
-    public static int bunnyEars(int bunnies)
+    public static final int bunnyEars(int bunnies)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _BunnyEars.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

@@ -3,9 +3,9 @@ import Map1.MapBully;
 import java.util.Map;
 import java.util.HashMap;
 
-public class _MapBully
+public final class _MapBully
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "mapBully({\"a\": \"candy\", \"b\": \"dirt\"})",
         "mapBully({\"a\": \"candy\"})",
         "mapBully({\"a\": \"candy\", \"b\": \"carrot\", \"c\": \"meh\"})",
@@ -14,7 +14,7 @@ public class _MapBully
         "mapBully({\"a\": \"sparkle\", \"c\": \"meh\"})",
     };
 
-    static Map<?,?>[] expectedResults = {
+    static final Map<?,?>[] expectedResults = {
         Map.of("a", "", "b", "candy"),
         Map.of("a", "", "b", "candy"),
         Map.of("a", "", "b", "candy", "c", "meh"),
@@ -23,9 +23,9 @@ public class _MapBully
         Map.of("a", "", "b", "sparkle", "c", "meh"),
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        Map<?,?>[] resultsArray = {
+        final Map<?,?>[] resultsArray = {
             MapBully.mapBully(new HashMap<>(Map.of("a", "candy", "b", "dirt"))),
             MapBully.mapBully(new HashMap<>(Map.of("a", "candy"))),
             MapBully.mapBully(new HashMap<>(Map.of("a", "candy", "b", "carrot", "c", "meh"))),

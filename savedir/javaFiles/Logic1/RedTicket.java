@@ -4,7 +4,7 @@ import Logic1.Testcases._RedTicket;
 // https://codingbat.com/prob/p170833
 // Difficulty: 157.0
 
-public class RedTicket
+public final class RedTicket
 {
     /* You have a red lottery ticket showing ints a, b, and c, 
     each of which is 0, 1, or 2. If they are all the value 2, 
@@ -28,12 +28,12 @@ public class RedTicket
     | redTicket(1, 1, 2) → 0  |
     |________________________*/
 
-    public static int redTicket(int a, int b, int c)
+    public static final int redTicket(int a, int b, int c)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _RedTicket.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

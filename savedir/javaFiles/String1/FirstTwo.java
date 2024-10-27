@@ -4,7 +4,7 @@ import String1.Testcases._FirstTwo;
 // https://codingbat.com/prob/p163411
 // Difficulty: 118.0
 
-public class FirstTwo
+public final class FirstTwo
 {
     /* Given a string, return the string made of its first two chars, 
     so the String "Hello" yields "He". If the string is shorter than length 2, 
@@ -24,12 +24,12 @@ public class FirstTwo
     | firstTwo("hiya")    → "hi" |
     |___________________________*/
 
-    public static String firstTwo(String str)
+    public static final String firstTwo(String str)
     {
         return "";
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _FirstTwo.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

@@ -4,7 +4,7 @@ import Recursion1.Testcases._CountPairs;
 // https://codingbat.com/prob/p154048
 // Difficulty: 363.0
 
-public class CountPairs
+public final class CountPairs
 {
     /* We'll say that a "pair" in a string is two instances of a char separated by a char. 
     So "AxA" the A's make a pair. Pair's can overlap, so "AxAxA" contains 3 pairs -- 2 for A and 1 for x. 
@@ -26,12 +26,12 @@ public class CountPairs
     | countPairs("aaa")    → 1 |
     |_________________________*/
 
-    public static int countPairs(String str)
+    public static final int countPairs(String str)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _CountPairs.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

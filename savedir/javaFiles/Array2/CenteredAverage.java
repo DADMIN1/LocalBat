@@ -4,7 +4,7 @@ import Array2.Testcases._CenteredAverage;
 // https://codingbat.com/prob/p136585
 // Difficulty: 209.0
 
-public class CenteredAverage
+public final class CenteredAverage
 {
     /* Return the "centered" average of an array of ints, which we'll say is the mean average of the values, 
     except ignoring the largest and smallest values in the array. 
@@ -33,12 +33,12 @@ public class CenteredAverage
     | centeredAverage([6, 4, 8, 12, 3])         → 6  |
     |_______________________________________________*/
 
-    public static int centeredAverage(int[] nums)
+    public static final int centeredAverage(int[] nums)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _CenteredAverage.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

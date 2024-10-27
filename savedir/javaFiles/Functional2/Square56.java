@@ -7,7 +7,7 @@ import java.util.ArrayList;
 // https://codingbat.com/prob/p132748
 // Difficulty: 226
 
-public class Square56
+public final class Square56
 {
     /* Given a list of integers, return a list of those numbers squared and the product added to 10, 
     omitting any of the resulting numbers that end in 5 or 6. */
@@ -27,12 +27,12 @@ public class Square56
     | square56([3, -1, -4, 1, 5, 9])  → [19, 11, 11, 91] |
     |___________________________________________________*/
 
-    public static List<Integer> square56(List<Integer> nums)
+    public static final List<Integer> square56(List<Integer> nums)
     {
         return new ArrayList<Integer>();
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _Square56.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

@@ -4,7 +4,7 @@ import Recursion1.Testcases._ChangePi;
 // https://codingbat.com/prob/p170924
 // Difficulty: 339.0
 
-public class ChangePi
+public final class ChangePi
 {
     /* Given a string, compute recursively (no loops) a new string where all appearances of "pi" have been replaced by "3.14". */
 
@@ -23,12 +23,12 @@ public class ChangePi
     | changePi("xyzzy") → "xyzzy"    |
     |_______________________________*/
 
-    public static String changePi(String str)
+    public static final String changePi(String str)
     {
         return "";
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _ChangePi.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

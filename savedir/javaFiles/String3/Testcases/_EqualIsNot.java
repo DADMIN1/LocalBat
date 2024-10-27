@@ -1,9 +1,9 @@
 package String3.Testcases;
 import String3.EqualIsNot;
 
-public class _EqualIsNot
+public final class _EqualIsNot
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "equalIsNot(\"This is not\")",
         "equalIsNot(\"This is notnot\")",
         "equalIsNot(\"noisxxnotyynotxisi\")",
@@ -16,7 +16,7 @@ public class _EqualIsNot
         "equalIsNot(\"mis3notpotbotis\")",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         false,
         true,
         true,
@@ -29,9 +29,9 @@ public class _EqualIsNot
         false,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             EqualIsNot.equalIsNot("This is not"),
             EqualIsNot.equalIsNot("This is notnot"),
             EqualIsNot.equalIsNot("noisxxnotyynotxisi"),

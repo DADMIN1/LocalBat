@@ -1,9 +1,9 @@
 package Logic1.Testcases;
 import Logic1.MaxMod5;
 
-public class _MaxMod5
+public final class _MaxMod5
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "maxMod5(2, 3)",
         "maxMod5(6, 2)",
         "maxMod5(3, 2)",
@@ -17,7 +17,7 @@ public class _MaxMod5
         "maxMod5(1, 2)",
     };
 
-    static int[] expectedResults = {
+    static final int[] expectedResults = {
         3,
         6,
         3,
@@ -31,9 +31,9 @@ public class _MaxMod5
         2,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] resultsArray = {
+        final int[] resultsArray = {
             MaxMod5.maxMod5(2, 3),
             MaxMod5.maxMod5(6, 2),
             MaxMod5.maxMod5(3, 2),

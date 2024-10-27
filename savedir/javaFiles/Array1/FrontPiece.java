@@ -4,7 +4,7 @@ import Array1.Testcases._FrontPiece;
 // https://codingbat.com/prob/p142455
 // Difficulty: 172.0
 
-public class FrontPiece
+public final class FrontPiece
 {
     /* Given an int array of any length, return a new array of its first 2 elements. 
     If the array is smaller than length 2, use whatever elements are present. */
@@ -22,12 +22,12 @@ public class FrontPiece
     | frontPiece([6])             → [6]    |
     |_____________________________________*/
 
-    public static int[] frontPiece(int[] nums)
+    public static final int[] frontPiece(int[] nums)
     {
         return new int[]{0};
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _FrontPiece.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

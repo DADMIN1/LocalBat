@@ -4,7 +4,7 @@ import Logic1.Testcases._TwoAsOne;
 // https://codingbat.com/prob/p113261
 // Difficulty: 136.0
 
-public class TwoAsOne
+public final class TwoAsOne
 {
     /* Given three ints, a b c, return true if it is possible to add two of the ints to get the third. */
 
@@ -25,12 +25,12 @@ public class TwoAsOne
     | twoAsOne(3, 3, 2)  → false |
     |___________________________*/
 
-    public static boolean twoAsOne(int a, int b, int c)
+    public static final boolean twoAsOne(int a, int b, int c)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _TwoAsOne.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

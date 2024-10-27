@@ -4,7 +4,7 @@ import String2.Testcases._EndOther;
 // https://codingbat.com/prob/p126880
 // Difficulty: 215.0
 
-public class EndOther
+public final class EndOther
 {
     /* Given two strings, return true if either of the strings appears at the very end of the other string, 
     ignoring upper/lower case differences (in other words, the computation should not be "case sensitive"). 
@@ -29,12 +29,12 @@ public class EndOther
     | endOther("ab", "12ab")       → true  |
     |_____________________________________*/
 
-    public static boolean endOther(String a, String b)
+    public static final boolean endOther(String a, String b)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _EndOther.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

@@ -1,9 +1,9 @@
 package Recursion1.Testcases;
 import Recursion1.Array6;
 
-public class _Array6
+public final class _Array6
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "array6([1, 6, 4], 0)",
         "array6([1, 4], 0)",
         "array6([6], 0)",
@@ -14,7 +14,7 @@ public class _Array6
         "array6([2, 5, 6], 0)",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         false,
         true,
@@ -25,18 +25,18 @@ public class _Array6
         true,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 1, 6, 4 }; 
-        int[] nums1 = { 1, 4 }; 
-        int[] nums2 = { 6 }; 
-        int[] nums3 = {  }; 
-        int[] nums4 = { 6, 2, 2 }; 
-        int[] nums5 = { 2, 5 }; 
-        int[] nums6 = { 1, 9, 4, 6, 6 }; 
-        int[] nums7 = { 2, 5, 6 }; 
+        final int[] nums0 = { 1, 6, 4 }; 
+        final int[] nums1 = { 1, 4 }; 
+        final int[] nums2 = { 6 }; 
+        final int[] nums3 = {  }; 
+        final int[] nums4 = { 6, 2, 2 }; 
+        final int[] nums5 = { 2, 5 }; 
+        final int[] nums6 = { 1, 9, 4, 6, 6 }; 
+        final int[] nums7 = { 2, 5, 6 }; 
 
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             Array6.array6(nums0, 0),
             Array6.array6(nums1, 0),
             Array6.array6(nums2, 0),

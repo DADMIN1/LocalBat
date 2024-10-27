@@ -4,7 +4,7 @@ import Array2.Testcases._Has12;
 // https://codingbat.com/prob/p169260
 // Difficulty: 248.0
 
-public class Has12
+public final class Has12
 {
     /* Given an array of ints, return true if there is a 1 in the array with a 2 somewhere later in the array. */
 
@@ -30,12 +30,12 @@ public class Has12
     | has12([1, 2])             → true  |
     |__________________________________*/
 
-    public static boolean has12(int[] nums)
+    public static final boolean has12(int[] nums)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _Has12.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

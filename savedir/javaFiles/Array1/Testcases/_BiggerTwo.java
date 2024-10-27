@@ -3,9 +3,9 @@ import Array1.BiggerTwo;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class _BiggerTwo
+public final class _BiggerTwo
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "biggerTwo([1, 2], [3, 4])",
         "biggerTwo([3, 4], [1, 2])",
         "biggerTwo([1, 1], [1, 2])",
@@ -15,7 +15,7 @@ public class _BiggerTwo
         "biggerTwo([6, 7], [3, 1])",
     };
 
-    static int[][] expectedResults = {
+    static final int[][] expectedResults = {
         {3, 4},
         {3, 4},
         {1, 2},
@@ -25,7 +25,7 @@ public class _BiggerTwo
         {6, 7},
     };
 
-    public static String printArray(int[] array)
+    public static final String printArray(int[] array)
     {
         String result = "[";
         for (int a: array) { result += a+", "; }
@@ -33,17 +33,17 @@ public class _BiggerTwo
         return result + "]";
     }
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] a0 = { 1, 2 }; int[] b0 = { 3, 4 }; 
-        int[] a1 = { 3, 4 }; int[] b1 = { 1, 2 }; 
-        int[] a2 = { 1, 1 }; int[] b2 = { 1, 2 }; 
-        int[] a3 = { 2, 1 }; int[] b3 = { 1, 1 }; 
-        int[] a4 = { 2, 2 }; int[] b4 = { 1, 3 }; 
-        int[] a5 = { 1, 3 }; int[] b5 = { 2, 2 }; 
-        int[] a6 = { 6, 7 }; int[] b6 = { 3, 1 }; 
+        final int[] a0 = { 1, 2 }; final int[] b0 = { 3, 4 }; 
+        final int[] a1 = { 3, 4 }; final int[] b1 = { 1, 2 }; 
+        final int[] a2 = { 1, 1 }; final int[] b2 = { 1, 2 }; 
+        final int[] a3 = { 2, 1 }; final int[] b3 = { 1, 1 }; 
+        final int[] a4 = { 2, 2 }; final int[] b4 = { 1, 3 }; 
+        final int[] a5 = { 1, 3 }; final int[] b5 = { 2, 2 }; 
+        final int[] a6 = { 6, 7 }; final int[] b6 = { 3, 1 }; 
 
-        int[][] resultsArray = {
+        final int[][] resultsArray = {
             BiggerTwo.biggerTwo(a0, b0),
             BiggerTwo.biggerTwo(a1, b1),
             BiggerTwo.biggerTwo(a2, b2),

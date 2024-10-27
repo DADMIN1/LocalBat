@@ -4,7 +4,7 @@ import AP1.Testcases._SumHeights;
 // https://codingbat.com/prob/p148138
 // Difficulty: 246
 
-public class SumHeights
+public final class SumHeights
 {
     /* We have an array of heights, representing the altitude along a walking trail. 
     Given start/end indexes into the array, 
@@ -29,12 +29,12 @@ public class SumHeights
     | sumHeights([10, 8, 7, 7, 7, 6, 7], 1, 5)       → 2  |
     |____________________________________________________*/
 
-    public static int sumHeights(int[] heights, int start, int end)
+    public static final int sumHeights(int[] heights, int start, int end)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _SumHeights.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

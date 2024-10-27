@@ -1,9 +1,9 @@
 package Array2.Testcases;
 import Array2.HaveThree;
 
-public class _HaveThree
+public final class _HaveThree
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "haveThree([3, 1, 3, 1, 3])",
         "haveThree([3, 1, 3, 3])",
         "haveThree([3, 4, 3, 3, 4])",
@@ -18,7 +18,7 @@ public class _HaveThree
         "haveThree([1])",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         false,
         false,
@@ -33,22 +33,22 @@ public class _HaveThree
         false,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 3, 1, 3, 1, 3 }; 
-        int[] nums1 = { 3, 1, 3, 3 }; 
-        int[] nums2 = { 3, 4, 3, 3, 4 }; 
-        int[] nums3 = { 1, 3, 1, 3, 1, 2 }; 
-        int[] nums4 = { 1, 3, 1, 3, 1, 3 }; 
-        int[] nums5 = { 1, 3, 3, 1, 3 }; 
-        int[] nums6 = { 1, 3, 1, 3, 1, 3, 4, 3 }; 
-        int[] nums7 = { 3, 4, 3, 4, 3, 4, 4 }; 
-        int[] nums8 = { 3, 3, 3 }; 
-        int[] nums9 = { 1, 3 }; 
-        int[] nums10 = { 3 }; 
-        int[] nums11 = { 1 }; 
+        final int[] nums0 = { 3, 1, 3, 1, 3 }; 
+        final int[] nums1 = { 3, 1, 3, 3 }; 
+        final int[] nums2 = { 3, 4, 3, 3, 4 }; 
+        final int[] nums3 = { 1, 3, 1, 3, 1, 2 }; 
+        final int[] nums4 = { 1, 3, 1, 3, 1, 3 }; 
+        final int[] nums5 = { 1, 3, 3, 1, 3 }; 
+        final int[] nums6 = { 1, 3, 1, 3, 1, 3, 4, 3 }; 
+        final int[] nums7 = { 3, 4, 3, 4, 3, 4, 4 }; 
+        final int[] nums8 = { 3, 3, 3 }; 
+        final int[] nums9 = { 1, 3 }; 
+        final int[] nums10 = { 3 }; 
+        final int[] nums11 = { 1 }; 
 
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             HaveThree.haveThree(nums0),
             HaveThree.haveThree(nums1),
             HaveThree.haveThree(nums2),

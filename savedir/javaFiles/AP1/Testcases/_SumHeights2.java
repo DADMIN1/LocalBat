@@ -1,9 +1,9 @@
 package AP1.Testcases;
 import AP1.SumHeights2;
 
-public class _SumHeights2
+public final class _SumHeights2
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "sumHeights2([5, 3, 6, 7, 2], 2, 4)",
         "sumHeights2([5, 3, 6, 7, 2], 0, 1)",
         "sumHeights2([5, 3, 6, 7, 2], 0, 4)",
@@ -18,7 +18,7 @@ public class _SumHeights2
         "sumHeights2([10, 8, 7, 7, 7, 6, 7], 1, 5)",
     };
 
-    static int[] expectedResults = {
+    static final int[] expectedResults = {
         7,
         2,
         15,
@@ -33,22 +33,22 @@ public class _SumHeights2
         2,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] heights0 = { 5, 3, 6, 7, 2 }; 
-        int[] heights1 = { 5, 3, 6, 7, 2 }; 
-        int[] heights2 = { 5, 3, 6, 7, 2 }; 
-        int[] heights3 = { 5, 3, 6, 7, 2 }; 
-        int[] heights4 = { 1, 2, 3, 4, 5, 4, 3, 2, 10 }; 
-        int[] heights5 = { 1, 2, 3, 4, 5, 4, 3, 2, 10 }; 
-        int[] heights6 = { 1, 2, 3, 4, 5, 4, 3, 2, 10 }; 
-        int[] heights7 = { 1, 2, 3, 4, 5, 4, 3, 2, 10 }; 
-        int[] heights8 = { 1, 2, 3, 4, 5, 4, 3, 2, 10 }; 
-        int[] heights9 = { 1, 2, 3, 4, 5, 4, 3, 2, 10 }; 
-        int[] heights10 = { 10, 8, 7, 7, 7, 6, 7 }; 
-        int[] heights11 = { 10, 8, 7, 7, 7, 6, 7 }; 
+        final int[] heights0 = { 5, 3, 6, 7, 2 }; 
+        final int[] heights1 = { 5, 3, 6, 7, 2 }; 
+        final int[] heights2 = { 5, 3, 6, 7, 2 }; 
+        final int[] heights3 = { 5, 3, 6, 7, 2 }; 
+        final int[] heights4 = { 1, 2, 3, 4, 5, 4, 3, 2, 10 }; 
+        final int[] heights5 = { 1, 2, 3, 4, 5, 4, 3, 2, 10 }; 
+        final int[] heights6 = { 1, 2, 3, 4, 5, 4, 3, 2, 10 }; 
+        final int[] heights7 = { 1, 2, 3, 4, 5, 4, 3, 2, 10 }; 
+        final int[] heights8 = { 1, 2, 3, 4, 5, 4, 3, 2, 10 }; 
+        final int[] heights9 = { 1, 2, 3, 4, 5, 4, 3, 2, 10 }; 
+        final int[] heights10 = { 10, 8, 7, 7, 7, 6, 7 }; 
+        final int[] heights11 = { 10, 8, 7, 7, 7, 6, 7 }; 
 
-        int[] resultsArray = {
+        final int[] resultsArray = {
             SumHeights2.sumHeights2(heights0, 2, 4),
             SumHeights2.sumHeights2(heights1, 0, 1),
             SumHeights2.sumHeights2(heights2, 0, 4),

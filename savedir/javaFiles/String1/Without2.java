@@ -4,7 +4,7 @@ import String1.Testcases._Without2;
 // https://codingbat.com/prob/p142247
 // Difficulty: 187.0
 
-public class Without2
+public final class Without2
 {
     /* Given a string, if a length 2 substring appears at both its beginning and end, 
     return a string without the substring at the beginning, 
@@ -25,12 +25,12 @@ public class Without2
     | without2("Fruits")    → "Fruits"    |
     |____________________________________*/
 
-    public static String without2(String str)
+    public static final String without2(String str)
     {
         return "";
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _Without2.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

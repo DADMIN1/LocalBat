@@ -1,9 +1,9 @@
 package Warmup1.Testcases;
 import Warmup1.MissingChar;
 
-public class _MissingChar
+public final class _MissingChar
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "missingChar(\"kitten\", 1)",
         "missingChar(\"kitten\", 0)",
         "missingChar(\"kitten\", 4)",
@@ -16,7 +16,7 @@ public class _MissingChar
         "missingChar(\"chocolate\", 8)",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "ktten",
         "itten",
         "kittn",
@@ -29,9 +29,9 @@ public class _MissingChar
         "chocolat",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             MissingChar.missingChar("kitten", 1),
             MissingChar.missingChar("kitten", 0),
             MissingChar.missingChar("kitten", 4),

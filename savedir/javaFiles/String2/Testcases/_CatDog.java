@@ -1,9 +1,9 @@
 package String2.Testcases;
 import String2.CatDog;
 
-public class _CatDog
+public final class _CatDog
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "catDog(\"catdog\")",
         "catDog(\"catcat\")",
         "catDog(\"1cat1cadodog\")",
@@ -19,7 +19,7 @@ public class _CatDog
         "catDog(\"\")",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         false,
         true,
@@ -35,9 +35,9 @@ public class _CatDog
         true,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             CatDog.catDog("catdog"),
             CatDog.catDog("catcat"),
             CatDog.catDog("1cat1cadodog"),

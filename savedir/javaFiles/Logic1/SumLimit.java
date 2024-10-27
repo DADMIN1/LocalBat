@@ -4,7 +4,7 @@ import Logic1.Testcases._SumLimit;
 // https://codingbat.com/prob/p118077
 // Difficulty: 169
 
-public class SumLimit
+public final class SumLimit
 {
     /* Given 2 non-negative ints, a and b, return their sum, so long as the sum has the same number of digits as a. 
     If the sum has more digits than a, just return a without b. 
@@ -30,12 +30,12 @@ public class SumLimit
     | sumLimit(9000, 1000)  → 9000     |
     |_________________________________*/
 
-    public static int sumLimit(int a, int b)
+    public static final int sumLimit(int a, int b)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _SumLimit.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

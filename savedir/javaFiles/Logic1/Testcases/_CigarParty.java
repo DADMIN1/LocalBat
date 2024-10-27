@@ -1,9 +1,9 @@
 package Logic1.Testcases;
 import Logic1.CigarParty;
 
-public class _CigarParty
+public final class _CigarParty
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "cigarParty(30, false)",
         "cigarParty(50, false)",
         "cigarParty(70, true)",
@@ -17,7 +17,7 @@ public class _CigarParty
         "cigarParty(39, true)",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         false,
         true,
         true,
@@ -31,9 +31,9 @@ public class _CigarParty
         false,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             CigarParty.cigarParty(30, false),
             CigarParty.cigarParty(50, false),
             CigarParty.cigarParty(70, true),

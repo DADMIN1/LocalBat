@@ -4,7 +4,7 @@ import Array1.Testcases._PlusTwo;
 // https://codingbat.com/prob/p180840
 // Difficulty: 160.0
 
-public class PlusTwo
+public final class PlusTwo
 {
     /* Given 2 int arrays, each length 2, return a new array length 4 containing all their elements. */
 
@@ -16,12 +16,12 @@ public class PlusTwo
     | plusTwo([9, 2], [3, 4]) → [9, 2, 3, 4] |
     |_______________________________________*/
 
-    public static int[] plusTwo(int[] a, int[] b)
+    public static final int[] plusTwo(int[] a, int[] b)
     {
         return new int[]{0};
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _PlusTwo.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

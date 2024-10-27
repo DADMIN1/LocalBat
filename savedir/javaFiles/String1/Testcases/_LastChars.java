@@ -1,9 +1,9 @@
 package String1.Testcases;
 import String1.LastChars;
 
-public class _LastChars
+public final class _LastChars
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "lastChars(\"last\", \"chars\")",
         "lastChars(\"yo\", \"java\")",
         "lastChars(\"hi\", \"\")",
@@ -15,7 +15,7 @@ public class _LastChars
         "lastChars(\"kitten\", \"zip\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "ls",
         "ya",
         "h@",
@@ -27,9 +27,9 @@ public class _LastChars
         "kp",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             LastChars.lastChars("last", "chars"),
             LastChars.lastChars("yo", "java"),
             LastChars.lastChars("hi", ""),

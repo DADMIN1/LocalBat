@@ -4,7 +4,7 @@ import Array3.Testcases._MaxSpan;
 // https://codingbat.com/prob/p189576
 // Difficulty: 303.0
 
-public class MaxSpan
+public final class MaxSpan
 {
     /* Consider the leftmost and righmost appearances of some value in an array. 
     We'll say that the "span" is the number of elements between the two inclusive. 
@@ -26,12 +26,12 @@ public class MaxSpan
     | maxSpan([1])                   → 1 |
     |___________________________________*/
 
-    public static int maxSpan(int[] nums)
+    public static final int maxSpan(int[] nums)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _MaxSpan.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

@@ -4,7 +4,7 @@ import Warmup1.Testcases._MixStart;
 // https://codingbat.com/prob/p151713
 // Difficulty: 163.0
 
-public class MixStart
+public final class MixStart
 {
     /* Return true if the given string begins with "mix", except the 'm' can be anything, 
     so "pix", "9ix" .. all count. */
@@ -21,12 +21,12 @@ public class MixStart
     | mixStart("")           → false |
     |_______________________________*/
 
-    public static boolean mixStart(String str)
+    public static final boolean mixStart(String str)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _MixStart.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

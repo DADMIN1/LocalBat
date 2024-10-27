@@ -4,7 +4,7 @@ import Warmup1.Testcases._StartHi;
 // https://codingbat.com/prob/p191022
 // Difficulty: 145.0
 
-public class StartHi
+public final class StartHi
 {
     /* Given a string, return true if the string starts with "hi" and false otherwise. */
 
@@ -21,12 +21,12 @@ public class StartHi
     | startHi("hi ho")    → true  |
     |____________________________*/
 
-    public static boolean startHi(String str)
+    public static final boolean startHi(String str)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _StartHi.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

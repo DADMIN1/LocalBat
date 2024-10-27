@@ -1,9 +1,9 @@
 package String1.Testcases;
 import String1.SeeColor;
 
-public class _SeeColor
+public final class _SeeColor
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "seeColor(\"redxx\")",
         "seeColor(\"xxred\")",
         "seeColor(\"blueTimes\")",
@@ -17,7 +17,7 @@ public class _SeeColor
         "seeColor(\"xyzred\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "red",
         "",
         "blue",
@@ -31,9 +31,9 @@ public class _SeeColor
         "",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             SeeColor.seeColor("redxx"),
             SeeColor.seeColor("xxred"),
             SeeColor.seeColor("blueTimes"),

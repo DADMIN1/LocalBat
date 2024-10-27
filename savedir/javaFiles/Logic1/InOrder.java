@@ -4,7 +4,7 @@ import Logic1.Testcases._InOrder;
 // https://codingbat.com/prob/p154188
 // Difficulty: 139.0
 
-public class InOrder
+public final class InOrder
 {
     /* Given three ints, a b c, return true if b is greater than a, 
     and c is greater than b. However, with the exception that if "bOk" is true, 
@@ -27,12 +27,12 @@ public class InOrder
     | inOrder(7, 5, 4, true)   → false |
     |_________________________________*/
 
-    public static boolean inOrder(int a, int b, int c, boolean bOk)
+    public static final boolean inOrder(int a, int b, int c, boolean bOk)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _InOrder.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

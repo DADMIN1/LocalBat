@@ -1,9 +1,9 @@
 package AP1.Testcases;
 import AP1.DividesSelf;
 
-public class _DividesSelf
+public final class _DividesSelf
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "dividesSelf(128)",
         "dividesSelf(12)",
         "dividesSelf(120)",
@@ -17,7 +17,7 @@ public class _DividesSelf
         "dividesSelf(162)",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         true,
         false,
@@ -31,9 +31,9 @@ public class _DividesSelf
         true,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             DividesSelf.dividesSelf(128),
             DividesSelf.dividesSelf(12),
             DividesSelf.dividesSelf(120),

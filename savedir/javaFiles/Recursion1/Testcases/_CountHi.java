@@ -1,9 +1,9 @@
 package Recursion1.Testcases;
 import Recursion1.CountHi;
 
-public class _CountHi
+public final class _CountHi
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "countHi(\"xxhixx\")",
         "countHi(\"xhixhix\")",
         "countHi(\"hi\")",
@@ -17,7 +17,7 @@ public class _CountHi
         "countHi(\"ship\")",
     };
 
-    static int[] expectedResults = {
+    static final int[] expectedResults = {
         1,
         2,
         1,
@@ -31,9 +31,9 @@ public class _CountHi
         1,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] resultsArray = {
+        final int[] resultsArray = {
             CountHi.countHi("xxhixx"),
             CountHi.countHi("xhixhix"),
             CountHi.countHi("hi"),

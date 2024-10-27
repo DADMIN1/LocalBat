@@ -4,7 +4,7 @@ import Map2.Testcases._AllSwap;
 // https://codingbat.com/prob/p134133
 // Difficulty: 377
 
-public class AllSwap
+public final class AllSwap
 {
     /* We'll say that 2 strings "match" if they are non-empty and their first chars are the same. 
     Loop over and then return the given array of non-empty strings as follows: 
@@ -28,12 +28,12 @@ public class AllSwap
     | allSwap(["a", "b", "c", "xx", "yy", "zz"])                                 → ["a", "b", "c", "xx", "yy", "zz"]                                 |
     |_______________________________________________________________________________________________________________________________________________*/
 
-    public static String[] allSwap(String[] strings)
+    public static final String[] allSwap(String[] strings)
     {
         return new String[]{""};
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _AllSwap.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

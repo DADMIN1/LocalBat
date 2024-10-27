@@ -4,7 +4,7 @@ import Array3.Testcases._MaxMirror;
 // https://codingbat.com/prob/p196409
 // Difficulty: 324.0
 
-public class MaxMirror
+public final class MaxMirror
 {
     /* We'll say that a "mirror" section in an array is a group of contiguous elements such that somewhere in the array, 
     the same group appears in reverse order. For example, the largest mirror section in {1, 
@@ -31,12 +31,12 @@ public class MaxMirror
     | maxMirror([5, 9, 1, 6, 5, 4, 1, 9, 5])                           → 3 |
     |_____________________________________________________________________*/
 
-    public static int maxMirror(int[] nums)
+    public static final int maxMirror(int[] nums)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _MaxMirror.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

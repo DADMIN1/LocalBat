@@ -1,9 +1,9 @@
 package Logic2.Testcases;
 import Logic2.NoTeenSum;
 
-public class _NoTeenSum
+public final class _NoTeenSum
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "noTeenSum(1, 2, 3)",
         "noTeenSum(2, 13, 1)",
         "noTeenSum(2, 1, 14)",
@@ -22,7 +22,7 @@ public class _NoTeenSum
         "noTeenSum(17, 19, 18)",
     };
 
-    static int[] expectedResults = {
+    static final int[] expectedResults = {
         6,
         3,
         3,
@@ -41,9 +41,9 @@ public class _NoTeenSum
         0,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] resultsArray = {
+        final int[] resultsArray = {
             NoTeenSum.noTeenSum(1, 2, 3),
             NoTeenSum.noTeenSum(2, 13, 1),
             NoTeenSum.noTeenSum(2, 1, 14),

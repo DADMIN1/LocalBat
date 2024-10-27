@@ -1,9 +1,9 @@
 package Logic1.Testcases;
 import Logic1.LessBy10;
 
-public class _LessBy10
+public final class _LessBy10
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "lessBy10(1, 7, 11)",
         "lessBy10(1, 7, 10)",
         "lessBy10(11, 1, 7)",
@@ -20,7 +20,7 @@ public class _LessBy10
         "lessBy10(2, 8, 12)",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         false,
         true,
@@ -37,9 +37,9 @@ public class _LessBy10
         true,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             LessBy10.lessBy10(1, 7, 11),
             LessBy10.lessBy10(1, 7, 10),
             LessBy10.lessBy10(11, 1, 7),

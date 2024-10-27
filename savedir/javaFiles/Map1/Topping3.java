@@ -6,7 +6,7 @@ import java.util.HashMap;
 // https://codingbat.com/prob/p128461
 // Difficulty: 218
 
-public class Topping3
+public final class Topping3
 {
     /* Given a map of food keys and topping values, modify and return the map as follows: 
     if the key "potato" has a value, set that as the value for the key "fries". 
@@ -23,12 +23,12 @@ public class Topping3
     | topping3({"salad": "pepper", "fries": "salt"})                     → {"spinach": "pepper", "salad": "pepper", "fries": "salt"}                                      |
     |____________________________________________________________________________________________________________________________________________________________________*/
 
-    public static Map<String, String> topping3(Map<String, String> map)
+    public static final Map<String, String> topping3(Map<String, String> map)
     {
         return new HashMap<String, String>();
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _Topping3.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

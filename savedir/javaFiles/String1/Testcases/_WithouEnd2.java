@@ -1,9 +1,9 @@
 package String1.Testcases;
 import String1.WithouEnd2;
 
-public class _WithouEnd2
+public final class _WithouEnd2
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "withouEnd2(\"Hello\")",
         "withouEnd2(\"abc\")",
         "withouEnd2(\"ab\")",
@@ -13,7 +13,7 @@ public class _WithouEnd2
         "withouEnd2(\"java code\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "ell",
         "b",
         "",
@@ -23,9 +23,9 @@ public class _WithouEnd2
         "ava cod",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             WithouEnd2.withouEnd2("Hello"),
             WithouEnd2.withouEnd2("abc"),
             WithouEnd2.withouEnd2("ab"),

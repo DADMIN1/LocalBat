@@ -4,7 +4,7 @@ import String2.Testcases._CatDog;
 // https://codingbat.com/prob/p111624
 // Difficulty: 209.0
 
-public class CatDog
+public final class CatDog
 {
     /* Return true if the string "cat" and "dog" appear the same number of times in the given string. */
 
@@ -26,12 +26,12 @@ public class CatDog
     | catDog("")                → true  |
     |__________________________________*/
 
-    public static boolean catDog(String str)
+    public static final boolean catDog(String str)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _CatDog.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

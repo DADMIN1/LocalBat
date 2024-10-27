@@ -4,7 +4,7 @@ import Array3.Testcases._CountClumps;
 // https://codingbat.com/prob/p193817
 // Difficulty: 327.0
 
-public class CountClumps
+public final class CountClumps
 {
     /* Say that a "clump" in an array is a series of 2 or more adjacent elements of the same value. 
     Return the number of clumps in the given array. */
@@ -23,12 +23,12 @@ public class CountClumps
     | countClumps([])                                      → 0 |
     |_________________________________________________________*/
 
-    public static int countClumps(int[] nums)
+    public static final int countClumps(int[] nums)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _CountClumps.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

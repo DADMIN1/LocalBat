@@ -4,7 +4,7 @@ import Warmup1.Testcases._HasTeen;
 // https://codingbat.com/prob/p178986
 // Difficulty: 154.0
 
-public class HasTeen
+public final class HasTeen
 {
     /* We'll say that a number is "teen" if it is in the range 13..19 inclusive. 
     Given 3 int values, return true if 1 or more of them are teen. */
@@ -25,12 +25,12 @@ public class HasTeen
     | hasTeen(11, 22, 22) → false |
     |____________________________*/
 
-    public static boolean hasTeen(int a, int b, int c)
+    public static final boolean hasTeen(int a, int b, int c)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _HasTeen.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

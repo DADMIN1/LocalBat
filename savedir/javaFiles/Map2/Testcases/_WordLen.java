@@ -3,9 +3,9 @@ import Map2.WordLen;
 import java.util.Map;
 import java.util.HashMap;
 
-public class _WordLen
+public final class _WordLen
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "wordLen([\"a\", \"bb\", \"a\", \"bb\"])",
         "wordLen([\"this\", \"and\", \"that\", \"and\"])",
         "wordLen([\"code\", \"code\", \"code\", \"bug\"])",
@@ -13,7 +13,7 @@ public class _WordLen
         "wordLen([\"z\"])",
     };
 
-    static Map<?,?>[] expectedResults = {
+    static final Map<?,?>[] expectedResults = {
         Map.of("bb", 2, "a", 1),
         Map.of("that", 4, "and", 3, "this", 4),
         Map.of("code", 4, "bug", 3),
@@ -21,15 +21,15 @@ public class _WordLen
         Map.of("z", 1),
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] strings0 = { "a", "bb", "a", "bb" }; 
-        String[] strings1 = { "this", "and", "that", "and" }; 
-        String[] strings2 = { "code", "code", "code", "bug" }; 
-        String[] strings3 = {  }; 
-        String[] strings4 = { "z" }; 
+        final String[] strings0 = { "a", "bb", "a", "bb" }; 
+        final String[] strings1 = { "this", "and", "that", "and" }; 
+        final String[] strings2 = { "code", "code", "code", "bug" }; 
+        final String[] strings3 = {  }; 
+        final String[] strings4 = { "z" }; 
 
-        Map<?,?>[] resultsArray = {
+        final Map<?,?>[] resultsArray = {
             WordLen.wordLen(strings0),
             WordLen.wordLen(strings1),
             WordLen.wordLen(strings2),

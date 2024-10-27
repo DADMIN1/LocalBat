@@ -4,7 +4,7 @@ import Array2.Testcases._ZeroFront;
 // https://codingbat.com/prob/p193753
 // Difficulty: 281.0
 
-public class ZeroFront
+public final class ZeroFront
 {
     /* Return an array that contains the exact same numbers as the given array, 
     but rearranged so that all the zeros are grouped at the start of the array. 
@@ -27,12 +27,12 @@ public class ZeroFront
     | zeroFront([9, 9, 0, 9, 0, 9]) → [0, 0, 9, 9, 9, 9] |
     |___________________________________________________*/
 
-    public static int[] zeroFront(int[] nums)
+    public static final int[] zeroFront(int[] nums)
     {
         return new int[]{0};
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _ZeroFront.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

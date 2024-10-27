@@ -4,7 +4,7 @@ import String1.Testcases._AtFirst;
 // https://codingbat.com/prob/p139076
 // Difficulty: 163.0
 
-public class AtFirst
+public final class AtFirst
 {
     /* Given a string, return a string length 2 made of its first 2 chars. 
     If the string length is less than 2, use '@' for the missing chars. */
@@ -21,12 +21,12 @@ public class AtFirst
     | atFirst("j")      → "j@" |
     |_________________________*/
 
-    public static String atFirst(String str)
+    public static final String atFirst(String str)
     {
         return "";
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _AtFirst.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

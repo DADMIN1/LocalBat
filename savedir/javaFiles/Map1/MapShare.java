@@ -6,7 +6,7 @@ import java.util.HashMap;
 // https://codingbat.com/prob/p148813
 // Difficulty: 206
 
-public class MapShare
+public final class MapShare
 {
     /* Modify and return the given map as follows: if the key "a" has a value, 
     set the key "b" to have that same value. In all cases remove the key "c", 
@@ -22,12 +22,12 @@ public class MapShare
     | mapShare({"a": "xyz", "b": "1234", "c": "yo", "d": "ddd", "e": "everything"}) → {"a": "xyz", "b": "xyz", "d": "ddd", "e": "everything"} |
     |________________________________________________________________________________________________________________________________________*/
 
-    public static Map<String, String> mapShare(Map<String, String> map)
+    public static final Map<String, String> mapShare(Map<String, String> map)
     {
         return new HashMap<String, String>();
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _MapShare.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

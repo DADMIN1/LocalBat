@@ -1,9 +1,9 @@
 package Logic1.Testcases;
 import Logic1.Love6;
 
-public class _Love6
+public final class _Love6
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "love6(6, 4)",
         "love6(4, 5)",
         "love6(1, 5)",
@@ -26,7 +26,7 @@ public class _Love6
         "love6(3, 4)",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         false,
         true,
@@ -49,9 +49,9 @@ public class _Love6
         false,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             Love6.love6(6, 4),
             Love6.love6(4, 5),
             Love6.love6(1, 5),

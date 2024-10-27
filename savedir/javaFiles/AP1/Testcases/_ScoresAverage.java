@@ -1,9 +1,9 @@
 package AP1.Testcases;
 import AP1.ScoresAverage;
 
-public class _ScoresAverage
+public final class _ScoresAverage
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "scoresAverage([2, 2, 4, 4])",
         "scoresAverage([4, 4, 4, 2, 2, 2])",
         "scoresAverage([3, 4, 5, 1, 2, 3])",
@@ -12,7 +12,7 @@ public class _ScoresAverage
         "scoresAverage([5, 4, 5, 6, 2, 1, 2, 3])",
     };
 
-    static int[] expectedResults = {
+    static final int[] expectedResults = {
         4,
         4,
         4,
@@ -21,16 +21,16 @@ public class _ScoresAverage
         5,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] scores0 = { 2, 2, 4, 4 }; 
-        int[] scores1 = { 4, 4, 4, 2, 2, 2 }; 
-        int[] scores2 = { 3, 4, 5, 1, 2, 3 }; 
-        int[] scores3 = { 5, 6 }; 
-        int[] scores4 = { 5, 4 }; 
-        int[] scores5 = { 5, 4, 5, 6, 2, 1, 2, 3 }; 
+        final int[] scores0 = { 2, 2, 4, 4 }; 
+        final int[] scores1 = { 4, 4, 4, 2, 2, 2 }; 
+        final int[] scores2 = { 3, 4, 5, 1, 2, 3 }; 
+        final int[] scores3 = { 5, 6 }; 
+        final int[] scores4 = { 5, 4 }; 
+        final int[] scores5 = { 5, 4, 5, 6, 2, 1, 2, 3 }; 
 
-        int[] resultsArray = {
+        final int[] resultsArray = {
             ScoresAverage.scoresAverage(scores0),
             ScoresAverage.scoresAverage(scores1),
             ScoresAverage.scoresAverage(scores2),

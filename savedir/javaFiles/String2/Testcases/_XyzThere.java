@@ -1,9 +1,9 @@
 package String2.Testcases;
 import String2.XyzThere;
 
-public class _XyzThere
+public final class _XyzThere
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "xyzThere(\"abcxyz\")",
         "xyzThere(\"abc.xyz\")",
         "xyzThere(\"xyz.abc\")",
@@ -20,7 +20,7 @@ public class _XyzThere
         "xyzThere(\"1.xyz.xyz2.xyz\")",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         false,
         true,
@@ -37,9 +37,9 @@ public class _XyzThere
         false,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             XyzThere.xyzThere("abcxyz"),
             XyzThere.xyzThere("abc.xyz"),
             XyzThere.xyzThere("xyz.abc"),

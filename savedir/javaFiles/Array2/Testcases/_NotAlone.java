@@ -3,9 +3,9 @@ import Array2.NotAlone;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class _NotAlone
+public final class _NotAlone
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "notAlone([1, 2, 3], 2)",
         "notAlone([1, 2, 3, 2, 5, 2], 2)",
         "notAlone([3, 4], 3)",
@@ -18,7 +18,7 @@ public class _NotAlone
         "notAlone([1, 1, 1, 2], 1)",
     };
 
-    static int[][] expectedResults = {
+    static final int[][] expectedResults = {
         {1, 3, 3},
         {1, 3, 3, 5, 5, 2},
         {3, 4},
@@ -31,7 +31,7 @@ public class _NotAlone
         {1, 1, 1, 2},
     };
 
-    public static String printArray(int[] array)
+    public static final String printArray(int[] array)
     {
         String result = "[";
         for (int a: array) { result += a+", "; }
@@ -39,20 +39,20 @@ public class _NotAlone
         return result + "]";
     }
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 1, 2, 3 }; 
-        int[] nums1 = { 1, 2, 3, 2, 5, 2 }; 
-        int[] nums2 = { 3, 4 }; 
-        int[] nums3 = { 3, 3 }; 
-        int[] nums4 = { 1, 3, 1, 2 }; 
-        int[] nums5 = { 3 }; 
-        int[] nums6 = {  }; 
-        int[] nums7 = { 7, 1, 6 }; 
-        int[] nums8 = { 1, 1, 1 }; 
-        int[] nums9 = { 1, 1, 1, 2 }; 
+        final int[] nums0 = { 1, 2, 3 }; 
+        final int[] nums1 = { 1, 2, 3, 2, 5, 2 }; 
+        final int[] nums2 = { 3, 4 }; 
+        final int[] nums3 = { 3, 3 }; 
+        final int[] nums4 = { 1, 3, 1, 2 }; 
+        final int[] nums5 = { 3 }; 
+        final int[] nums6 = {  }; 
+        final int[] nums7 = { 7, 1, 6 }; 
+        final int[] nums8 = { 1, 1, 1 }; 
+        final int[] nums9 = { 1, 1, 1, 2 }; 
 
-        int[][] resultsArray = {
+        final int[][] resultsArray = {
             NotAlone.notAlone(nums0, 2),
             NotAlone.notAlone(nums1, 2),
             NotAlone.notAlone(nums2, 3),

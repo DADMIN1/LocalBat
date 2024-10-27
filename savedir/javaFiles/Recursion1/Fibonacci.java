@@ -4,7 +4,7 @@ import Recursion1.Testcases._Fibonacci;
 // https://codingbat.com/prob/p120015
 // Difficulty: 309.0
 
-public class Fibonacci
+public final class Fibonacci
 {
     /* The fibonacci sequence is a famous bit of mathematics, and it happens to have a recursive definition. 
     The first two values in the sequence are 0 and 1 (essentially 2 base cases). 
@@ -26,12 +26,12 @@ public class Fibonacci
     | fibonacci(7) → 13 |
     |__________________*/
 
-    public static int fibonacci(int n)
+    public static final int fibonacci(int n)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _Fibonacci.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

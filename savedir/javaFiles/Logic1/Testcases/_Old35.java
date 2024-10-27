@@ -1,9 +1,9 @@
 package Logic1.Testcases;
 import Logic1.Old35;
 
-public class _Old35
+public final class _Old35
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "old35(3)",
         "old35(10)",
         "old35(15)",
@@ -22,7 +22,7 @@ public class _Old35
         "old35(99)",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         true,
         false,
@@ -41,9 +41,9 @@ public class _Old35
         true,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             Old35.old35(3),
             Old35.old35(10),
             Old35.old35(15),

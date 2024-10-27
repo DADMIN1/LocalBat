@@ -4,7 +4,7 @@ import Logic1.Testcases._WithoutDoubles;
 // https://codingbat.com/prob/p115233
 // Difficulty: 151.0
 
-public class WithoutDoubles
+public final class WithoutDoubles
 {
     /* Return the sum of two 6-sided dice rolls, each in the range 1..6. 
     However, if noDoubles is true, if the two dice show the same value, 
@@ -27,12 +27,12 @@ public class WithoutDoubles
     | withoutDoubles(6, 1, false) → 7  |
     |_________________________________*/
 
-    public static int withoutDoubles(int die1, int die2, boolean noDoubles)
+    public static final int withoutDoubles(int die1, int die2, boolean noDoubles)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _WithoutDoubles.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

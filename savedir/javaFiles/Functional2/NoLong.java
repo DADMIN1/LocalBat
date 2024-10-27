@@ -7,7 +7,7 @@ import java.util.ArrayList;
 // https://codingbat.com/prob/p194496
 // Difficulty: 209
 
-public class NoLong
+public final class NoLong
 {
     /* Given a list of strings, return a list of the strings, omitting any string length 4 or more. */
 
@@ -24,12 +24,12 @@ public class NoLong
     | noLong(["aaaa", "bbb", "***", "333"])  → ["bbb", "***", "333"] |
     |_______________________________________________________________*/
 
-    public static List<String> noLong(List<String> strings)
+    public static final List<String> noLong(List<String> strings)
     {
         return new ArrayList<String>();
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _NoLong.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

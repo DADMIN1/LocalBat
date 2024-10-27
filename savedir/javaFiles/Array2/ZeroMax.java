@@ -4,7 +4,7 @@ import Array2.Testcases._ZeroMax;
 // https://codingbat.com/prob/p187050
 // Difficulty: 287.0
 
-public class ZeroMax
+public final class ZeroMax
 {
     /* Return a version of the given array where each zero value in the array is replaced by the largest odd value to the right of the zero in the array. 
     If there is no odd value to the right of the zero, leave the zero as a zero. */
@@ -26,12 +26,12 @@ public class ZeroMax
     | zeroMax([7, 0, 1, 0, 0, 7]) → [7, 7, 1, 7, 7, 7] |
     |_________________________________________________*/
 
-    public static int[] zeroMax(int[] nums)
+    public static final int[] zeroMax(int[] nums)
     {
         return new int[]{0};
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _ZeroMax.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

@@ -4,7 +4,7 @@ import Array2.Testcases._NotAlone;
 // https://codingbat.com/prob/p169506
 // Difficulty: 278.0
 
-public class NotAlone
+public final class NotAlone
 {
     /* We'll say that an element in an array is "alone" if there are values before and after it, 
     and those values are different from it. 
@@ -25,12 +25,12 @@ public class NotAlone
     | notAlone([1, 1, 1, 2], 1)       → [1, 1, 1, 2]       |
     |_____________________________________________________*/
 
-    public static int[] notAlone(int[] nums, int val)
+    public static final int[] notAlone(int[] nums, int val)
     {
         return new int[]{0};
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _NotAlone.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

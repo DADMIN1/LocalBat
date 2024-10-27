@@ -4,7 +4,7 @@ import Logic1.Testcases._SortaSum;
 // https://codingbat.com/prob/p183071
 // Difficulty: 115.0
 
-public class SortaSum
+public final class SortaSum
 {
     /* Given 2 ints, a and b, return their sum. However, sums in the range 10..19 inclusive, 
     are forbidden, so in that case just return 20. */
@@ -23,12 +23,12 @@ public class SortaSum
     | sortaSum(14, 6)  → 20 |
     |______________________*/
 
-    public static int sortaSum(int a, int b)
+    public static final int sortaSum(int a, int b)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _SortaSum.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

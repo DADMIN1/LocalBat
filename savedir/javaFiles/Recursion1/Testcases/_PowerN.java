@@ -1,9 +1,9 @@
 package Recursion1.Testcases;
 import Recursion1.PowerN;
 
-public class _PowerN
+public final class _PowerN
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "powerN(3, 1)",
         "powerN(3, 2)",
         "powerN(3, 3)",
@@ -17,7 +17,7 @@ public class _PowerN
         "powerN(10, 3)",
     };
 
-    static int[] expectedResults = {
+    static final int[] expectedResults = {
         3,
         9,
         27,
@@ -31,9 +31,9 @@ public class _PowerN
         1000,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] resultsArray = {
+        final int[] resultsArray = {
             PowerN.powerN(3, 1),
             PowerN.powerN(3, 2),
             PowerN.powerN(3, 3),

@@ -4,7 +4,7 @@ import Array2.Testcases._Sum67;
 // https://codingbat.com/prob/p111327
 // Difficulty: 215.0
 
-public class Sum67
+public final class Sum67
 {
     /* Return the sum of the numbers in the array, 
     except ignore sections of numbers starting with a 6 and extending to the next 7 (every 6 will be followed by at least one 7). 
@@ -29,12 +29,12 @@ public class Sum67
     | sum67([2, 2, 6, 7, 7])                     → 11 |
     |________________________________________________*/
 
-    public static int sum67(int[] nums)
+    public static final int sum67(int[] nums)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _Sum67.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

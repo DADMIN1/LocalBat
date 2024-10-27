@@ -1,9 +1,9 @@
 package String1.Testcases;
 import String1.MiddleThree;
 
-public class _MiddleThree
+public final class _MiddleThree
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "middleThree(\"Candy\")",
         "middleThree(\"and\")",
         "middleThree(\"solving\")",
@@ -13,7 +13,7 @@ public class _MiddleThree
         "middleThree(\"XabcxyzabcX\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "and",
         "and",
         "lvi",
@@ -23,9 +23,9 @@ public class _MiddleThree
         "xyz",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             MiddleThree.middleThree("Candy"),
             MiddleThree.middleThree("and"),
             MiddleThree.middleThree("solving"),

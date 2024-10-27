@@ -4,7 +4,7 @@ import Array2.Testcases._EvenOdd;
 // https://codingbat.com/prob/p105771
 // Difficulty: 290.0
 
-public class EvenOdd
+public final class EvenOdd
 {
     /* Return an array that contains the exact same numbers as the given array, 
     but rearranged so that all the even numbers come before all the odd numbers. 
@@ -25,12 +25,12 @@ public class EvenOdd
     | evenOdd([])                    → []                    |
     |_______________________________________________________*/
 
-    public static int[] evenOdd(int[] nums)
+    public static final int[] evenOdd(int[] nums)
     {
         return new int[]{0};
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _EvenOdd.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

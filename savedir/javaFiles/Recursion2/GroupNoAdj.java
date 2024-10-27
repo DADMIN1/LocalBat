@@ -4,7 +4,7 @@ import Recursion2.Testcases._GroupNoAdj;
 // https://codingbat.com/prob/p169605
 // Difficulty: 409.0
 
-public class GroupNoAdj
+public final class GroupNoAdj
 {
     /* Given an array of ints, is it possible to choose a group of some of the ints, 
     such that the group sums to the given target with this additional constraint: 
@@ -28,12 +28,12 @@ public class GroupNoAdj
     | groupNoAdj(0, [5, 10, 4, 1], 11)    → true  |
     |____________________________________________*/
 
-    public static boolean groupNoAdj(int start, int[] nums, int target)
+    public static final boolean groupNoAdj(int start, int[] nums, int target)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _GroupNoAdj.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

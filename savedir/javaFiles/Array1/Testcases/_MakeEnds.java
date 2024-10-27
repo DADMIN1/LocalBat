@@ -3,9 +3,9 @@ import Array1.MakeEnds;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class _MakeEnds
+public final class _MakeEnds
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "makeEnds([1, 2, 3])",
         "makeEnds([1, 2, 3, 4])",
         "makeEnds([7, 4, 6, 2])",
@@ -16,7 +16,7 @@ public class _MakeEnds
         "makeEnds([2, 3, 4, 1])",
     };
 
-    static int[][] expectedResults = {
+    static final int[][] expectedResults = {
         {1, 3},
         {1, 4},
         {7, 2},
@@ -27,7 +27,7 @@ public class _MakeEnds
         {2, 1},
     };
 
-    public static String printArray(int[] array)
+    public static final String printArray(int[] array)
     {
         String result = "[";
         for (int a: array) { result += a+", "; }
@@ -35,18 +35,18 @@ public class _MakeEnds
         return result + "]";
     }
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 1, 2, 3 }; 
-        int[] nums1 = { 1, 2, 3, 4 }; 
-        int[] nums2 = { 7, 4, 6, 2 }; 
-        int[] nums3 = { 1, 2, 2, 2, 2, 2, 2, 3 }; 
-        int[] nums4 = { 7, 4 }; 
-        int[] nums5 = { 7 }; 
-        int[] nums6 = { 5, 2, 9 }; 
-        int[] nums7 = { 2, 3, 4, 1 }; 
+        final int[] nums0 = { 1, 2, 3 }; 
+        final int[] nums1 = { 1, 2, 3, 4 }; 
+        final int[] nums2 = { 7, 4, 6, 2 }; 
+        final int[] nums3 = { 1, 2, 2, 2, 2, 2, 2, 3 }; 
+        final int[] nums4 = { 7, 4 }; 
+        final int[] nums5 = { 7 }; 
+        final int[] nums6 = { 5, 2, 9 }; 
+        final int[] nums7 = { 2, 3, 4, 1 }; 
 
-        int[][] resultsArray = {
+        final int[][] resultsArray = {
             MakeEnds.makeEnds(nums0),
             MakeEnds.makeEnds(nums1),
             MakeEnds.makeEnds(nums2),

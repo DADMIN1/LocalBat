@@ -4,7 +4,7 @@ import Array1.Testcases._Start1;
 // https://codingbat.com/prob/p109660
 // Difficulty: 151.0
 
-public class Start1
+public final class Start1
 {
     /* Start with 2 int arrays, a and b, of any length. Return how many of the arrays have 1 as their first element. */
 
@@ -23,12 +23,12 @@ public class Start1
     | start1([1, 3], [1])       → 2 |
     |______________________________*/
 
-    public static int start1(int[] a, int[] b)
+    public static final int start1(int[] a, int[] b)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _Start1.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

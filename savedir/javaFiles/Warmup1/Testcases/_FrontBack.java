@@ -1,9 +1,9 @@
 package Warmup1.Testcases;
 import Warmup1.FrontBack;
 
-public class _FrontBack
+public final class _FrontBack
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "frontBack(\"code\")",
         "frontBack(\"a\")",
         "frontBack(\"ab\")",
@@ -14,7 +14,7 @@ public class _FrontBack
         "frontBack(\"hello\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "eodc",
         "a",
         "ba",
@@ -25,9 +25,9 @@ public class _FrontBack
         "oellh",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             FrontBack.frontBack("code"),
             FrontBack.frontBack("a"),
             FrontBack.frontBack("ab"),

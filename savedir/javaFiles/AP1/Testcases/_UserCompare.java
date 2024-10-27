@@ -1,9 +1,9 @@
 package AP1.Testcases;
 import AP1.UserCompare;
 
-public class _UserCompare
+public final class _UserCompare
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "userCompare(\"bb\", 1, \"zz\", 2)",
         "userCompare(\"bb\", 1, \"aa\", 2)",
         "userCompare(\"bb\", 1, \"bb\", 1)",
@@ -14,7 +14,7 @@ public class _UserCompare
         "userCompare(\"bzb\", 1, \"bob\", 2)",
     };
 
-    static int[] expectedResults = {
+    static final int[] expectedResults = {
         -1,
         1,
         0,
@@ -25,9 +25,9 @@ public class _UserCompare
         1,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] resultsArray = {
+        final int[] resultsArray = {
             UserCompare.userCompare("bb", 1, "zz", 2),
             UserCompare.userCompare("bb", 1, "aa", 2),
             UserCompare.userCompare("bb", 1, "bb", 1),

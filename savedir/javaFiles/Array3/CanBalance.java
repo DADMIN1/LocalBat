@@ -4,7 +4,7 @@ import Array3.Testcases._CanBalance;
 // https://codingbat.com/prob/p158767
 // Difficulty: 312.0
 
-public class CanBalance
+public final class CanBalance
 {
     /* Given a non-empty array, return true if there is a place to split the array so that the sum of the numbers on one side is equal to the sum of the numbers on the other side. */
 
@@ -24,12 +24,12 @@ public class CanBalance
     | canBalance([1, 1, 1, 2, 1])       → true  |
     |__________________________________________*/
 
-    public static boolean canBalance(int[] nums)
+    public static final boolean canBalance(int[] nums)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _CanBalance.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

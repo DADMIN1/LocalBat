@@ -1,9 +1,9 @@
 package Logic2.Testcases;
 import Logic2.LuckySum;
 
-public class _LuckySum
+public final class _LuckySum
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "luckySum(1, 2, 3)",
         "luckySum(1, 2, 13)",
         "luckySum(1, 13, 3)",
@@ -18,7 +18,7 @@ public class _LuckySum
         "luckySum(3, 3, 13)",
     };
 
-    static int[] expectedResults = {
+    static final int[] expectedResults = {
         6,
         3,
         1,
@@ -33,9 +33,9 @@ public class _LuckySum
         6,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] resultsArray = {
+        final int[] resultsArray = {
             LuckySum.luckySum(1, 2, 3),
             LuckySum.luckySum(1, 2, 13),
             LuckySum.luckySum(1, 13, 3),

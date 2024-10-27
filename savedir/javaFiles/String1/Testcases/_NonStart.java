@@ -1,9 +1,9 @@
 package String1.Testcases;
 import String1.NonStart;
 
-public class _NonStart
+public final class _NonStart
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "nonStart(\"Hello\", \"There\")",
         "nonStart(\"java\", \"code\")",
         "nonStart(\"shotl\", \"java\")",
@@ -15,7 +15,7 @@ public class _NonStart
         "nonStart(\"mart\", \"dart\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "ellohere",
         "avaode",
         "hotlava",
@@ -27,9 +27,9 @@ public class _NonStart
         "artart",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             NonStart.nonStart("Hello", "There"),
             NonStart.nonStart("java", "code"),
             NonStart.nonStart("shotl", "java"),

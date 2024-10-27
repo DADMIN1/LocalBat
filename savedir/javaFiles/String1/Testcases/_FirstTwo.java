@@ -1,9 +1,9 @@
 package String1.Testcases;
 import String1.FirstTwo;
 
-public class _FirstTwo
+public final class _FirstTwo
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "firstTwo(\"Hello\")",
         "firstTwo(\"abcdefg\")",
         "firstTwo(\"ab\")",
@@ -14,7 +14,7 @@ public class _FirstTwo
         "firstTwo(\"hiya\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "He",
         "ab",
         "ab",
@@ -25,9 +25,9 @@ public class _FirstTwo
         "hi",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             FirstTwo.firstTwo("Hello"),
             FirstTwo.firstTwo("abcdefg"),
             FirstTwo.firstTwo("ab"),

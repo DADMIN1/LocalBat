@@ -1,9 +1,9 @@
 package Warmup1.Testcases;
 import Warmup1.Or35;
 
-public class _Or35
+public final class _Or35
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "or35(3)",
         "or35(10)",
         "or35(8)",
@@ -28,7 +28,7 @@ public class _Or35
         "or35(123)",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         true,
         false,
@@ -53,9 +53,9 @@ public class _Or35
         true,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             Or35.or35(3),
             Or35.or35(10),
             Or35.or35(8),

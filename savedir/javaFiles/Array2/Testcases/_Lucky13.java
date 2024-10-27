@@ -1,9 +1,9 @@
 package Array2.Testcases;
 import Array2.Lucky13;
 
-public class _Lucky13
+public final class _Lucky13
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "lucky13([0, 2, 4])",
         "lucky13([1, 2, 3])",
         "lucky13([1, 2, 4])",
@@ -18,7 +18,7 @@ public class _Lucky13
         "lucky13([])",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         false,
         false,
@@ -33,22 +33,22 @@ public class _Lucky13
         true,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 0, 2, 4 }; 
-        int[] nums1 = { 1, 2, 3 }; 
-        int[] nums2 = { 1, 2, 4 }; 
-        int[] nums3 = { 2, 7, 2, 8 }; 
-        int[] nums4 = { 2, 7, 1, 8 }; 
-        int[] nums5 = { 3, 7, 2, 8 }; 
-        int[] nums6 = { 2, 7, 2, 1 }; 
-        int[] nums7 = { 1, 2 }; 
-        int[] nums8 = { 2, 2 }; 
-        int[] nums9 = { 2 }; 
-        int[] nums10 = { 3 }; 
-        int[] nums11 = {  }; 
+        final int[] nums0 = { 0, 2, 4 }; 
+        final int[] nums1 = { 1, 2, 3 }; 
+        final int[] nums2 = { 1, 2, 4 }; 
+        final int[] nums3 = { 2, 7, 2, 8 }; 
+        final int[] nums4 = { 2, 7, 1, 8 }; 
+        final int[] nums5 = { 3, 7, 2, 8 }; 
+        final int[] nums6 = { 2, 7, 2, 1 }; 
+        final int[] nums7 = { 1, 2 }; 
+        final int[] nums8 = { 2, 2 }; 
+        final int[] nums9 = { 2 }; 
+        final int[] nums10 = { 3 }; 
+        final int[] nums11 = {  }; 
 
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             Lucky13.lucky13(nums0),
             Lucky13.lucky13(nums1),
             Lucky13.lucky13(nums2),

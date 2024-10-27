@@ -4,7 +4,7 @@ import Recursion1.Testcases._Count7;
 // https://codingbat.com/prob/p101409
 // Difficulty: 321.0
 
-public class Count7
+public final class Count7
 {
     /* Given a non-negative int n, return the count of the occurrences of 7 as a digit, 
     so for example 717 yields 2. (no loops). Note that mod (%) by 10 yields the rightmost digit (126 % 10 is 6), 
@@ -28,12 +28,12 @@ public class Count7
     | count7(99799)     → 1 |
     |______________________*/
 
-    public static int count7(int n)
+    public static final int count7(int n)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _Count7.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

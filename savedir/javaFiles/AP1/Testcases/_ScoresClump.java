@@ -1,9 +1,9 @@
 package AP1.Testcases;
 import AP1.ScoresClump;
 
-public class _ScoresClump
+public final class _ScoresClump
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "scoresClump([3, 4, 5])",
         "scoresClump([3, 4, 6])",
         "scoresClump([1, 3, 5, 5])",
@@ -15,7 +15,7 @@ public class _ScoresClump
         "scoresClump([4, 5, 8])",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         false,
         true,
@@ -27,19 +27,19 @@ public class _ScoresClump
         false,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] scores0 = { 3, 4, 5 }; 
-        int[] scores1 = { 3, 4, 6 }; 
-        int[] scores2 = { 1, 3, 5, 5 }; 
-        int[] scores3 = { 2, 4, 5, 6 }; 
-        int[] scores4 = { 2, 4, 5, 7 }; 
-        int[] scores5 = { 2, 4, 4, 7 }; 
-        int[] scores6 = { 3, 3, 6, 7, 9 }; 
-        int[] scores7 = { 3, 3, 7, 7, 9 }; 
-        int[] scores8 = { 4, 5, 8 }; 
+        final int[] scores0 = { 3, 4, 5 }; 
+        final int[] scores1 = { 3, 4, 6 }; 
+        final int[] scores2 = { 1, 3, 5, 5 }; 
+        final int[] scores3 = { 2, 4, 5, 6 }; 
+        final int[] scores4 = { 2, 4, 5, 7 }; 
+        final int[] scores5 = { 2, 4, 4, 7 }; 
+        final int[] scores6 = { 3, 3, 6, 7, 9 }; 
+        final int[] scores7 = { 3, 3, 7, 7, 9 }; 
+        final int[] scores8 = { 4, 5, 8 }; 
 
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             ScoresClump.scoresClump(scores0),
             ScoresClump.scoresClump(scores1),
             ScoresClump.scoresClump(scores2),

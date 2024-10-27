@@ -1,9 +1,9 @@
 package String2.Testcases;
 import String2.CountCode;
 
-public class _CountCode
+public final class _CountCode
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "countCode(\"aaacodebbb\")",
         "countCode(\"codexxcode\")",
         "countCode(\"cozexxcope\")",
@@ -20,7 +20,7 @@ public class _CountCode
         "countCode(\"coAcodeBcoleccoreDD\")",
     };
 
-    static int[] expectedResults = {
+    static final int[] expectedResults = {
         1,
         2,
         2,
@@ -37,9 +37,9 @@ public class _CountCode
         3,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] resultsArray = {
+        final int[] resultsArray = {
             CountCode.countCode("aaacodebbb"),
             CountCode.countCode("codexxcode"),
             CountCode.countCode("cozexxcope"),

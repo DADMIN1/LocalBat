@@ -4,9 +4,9 @@ import java.util.List;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class _NoLong
+public final class _NoLong
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "noLong([\"this\", \"not\", \"too\", \"long\"])",
         "noLong([\"a\", \"bbb\", \"cccc\"])",
         "noLong([\"cccc\", \"cccc\", \"cccc\"])",
@@ -17,7 +17,7 @@ public class _NoLong
         "noLong([\"aaaa\", \"bbb\", \"***\", \"333\"])",
     };
 
-    static List<?>[] expectedResults = {
+    static final List<?>[] expectedResults = {
         Arrays.asList("not", "too"),
         Arrays.asList("a", "bbb"),
         Arrays.asList(),
@@ -28,9 +28,9 @@ public class _NoLong
         Arrays.asList("bbb", "***", "333"),
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        List<?>[] resultsArray = {
+        final List<?>[] resultsArray = {
             NoLong.noLong(new ArrayList<>(Arrays.asList("this", "not", "too", "long"))),
             NoLong.noLong(new ArrayList<>(Arrays.asList("a", "bbb", "cccc"))),
             NoLong.noLong(new ArrayList<>(Arrays.asList("cccc", "cccc", "cccc"))),

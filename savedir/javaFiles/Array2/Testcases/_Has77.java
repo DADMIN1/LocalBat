@@ -1,9 +1,9 @@
 package Array2.Testcases;
 import Array2.Has77;
 
-public class _Has77
+public final class _Has77
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "has77([1, 7, 7])",
         "has77([1, 7, 1, 7])",
         "has77([1, 7, 1, 1, 7])",
@@ -20,7 +20,7 @@ public class _Has77
         "has77([7])",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         true,
         false,
@@ -37,24 +37,24 @@ public class _Has77
         false,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 1, 7, 7 }; 
-        int[] nums1 = { 1, 7, 1, 7 }; 
-        int[] nums2 = { 1, 7, 1, 1, 7 }; 
-        int[] nums3 = { 7, 7, 1, 1, 7 }; 
-        int[] nums4 = { 2, 7, 2, 2, 7, 2 }; 
-        int[] nums5 = { 2, 7, 2, 2, 7, 7 }; 
-        int[] nums6 = { 7, 2, 7, 2, 2, 7 }; 
-        int[] nums7 = { 7, 2, 6, 2, 2, 7 }; 
-        int[] nums8 = { 7, 7, 7 }; 
-        int[] nums9 = { 7, 1, 7 }; 
-        int[] nums10 = { 7, 1, 1 }; 
-        int[] nums11 = { 1, 2 }; 
-        int[] nums12 = { 1, 7 }; 
-        int[] nums13 = { 7 }; 
+        final int[] nums0 = { 1, 7, 7 }; 
+        final int[] nums1 = { 1, 7, 1, 7 }; 
+        final int[] nums2 = { 1, 7, 1, 1, 7 }; 
+        final int[] nums3 = { 7, 7, 1, 1, 7 }; 
+        final int[] nums4 = { 2, 7, 2, 2, 7, 2 }; 
+        final int[] nums5 = { 2, 7, 2, 2, 7, 7 }; 
+        final int[] nums6 = { 7, 2, 7, 2, 2, 7 }; 
+        final int[] nums7 = { 7, 2, 6, 2, 2, 7 }; 
+        final int[] nums8 = { 7, 7, 7 }; 
+        final int[] nums9 = { 7, 1, 7 }; 
+        final int[] nums10 = { 7, 1, 1 }; 
+        final int[] nums11 = { 1, 2 }; 
+        final int[] nums12 = { 1, 7 }; 
+        final int[] nums13 = { 7 }; 
 
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             Has77.has77(nums0),
             Has77.has77(nums1),
             Has77.has77(nums2),

@@ -1,9 +1,9 @@
 package Warmup1.Testcases;
 import Warmup1.In1020;
 
-public class _In1020
+public final class _In1020
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "in1020(12, 99)",
         "in1020(21, 12)",
         "in1020(8, 99)",
@@ -13,7 +13,7 @@ public class _In1020
         "in1020(9, 9)",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         true,
         false,
@@ -23,9 +23,9 @@ public class _In1020
         false,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             In1020.in1020(12, 99),
             In1020.in1020(21, 12),
             In1020.in1020(8, 99),

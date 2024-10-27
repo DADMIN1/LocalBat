@@ -1,9 +1,9 @@
 package Recursion1.Testcases;
 import Recursion1.Fibonacci;
 
-public class _Fibonacci
+public final class _Fibonacci
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "fibonacci(0)",
         "fibonacci(1)",
         "fibonacci(2)",
@@ -14,7 +14,7 @@ public class _Fibonacci
         "fibonacci(7)",
     };
 
-    static int[] expectedResults = {
+    static final int[] expectedResults = {
         0,
         1,
         1,
@@ -25,9 +25,9 @@ public class _Fibonacci
         13,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] resultsArray = {
+        final int[] resultsArray = {
             Fibonacci.fibonacci(0),
             Fibonacci.fibonacci(1),
             Fibonacci.fibonacci(2),

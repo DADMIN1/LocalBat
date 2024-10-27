@@ -6,7 +6,7 @@ import java.util.HashMap;
 // https://codingbat.com/prob/p168493
 // Difficulty: 353
 
-public class FirstChar
+public final class FirstChar
 {
     /* Given an array of non-empty strings, return a Map<String, 
     String> with a key for every different first character seen, 
@@ -21,12 +21,12 @@ public class FirstChar
     | firstChar(["apple", "bells", "salt", "aardvark", "bells", "sun", "zen", "bells"]) → {"a": "appleaardvark", "b": "bellsbellsbells", "s": "saltsun", "z": "zen"} |
     |_______________________________________________________________________________________________________________________________________________________________*/
 
-    public static Map<String, String> firstChar(String[] strings)
+    public static final Map<String, String> firstChar(String[] strings)
     {
         return new HashMap<String, String>();
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _FirstChar.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

@@ -4,9 +4,9 @@ import java.util.List;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class _Lower
+public final class _Lower
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "lower([\"Hello\", \"Hi\"])",
         "lower([\"AAA\", \"BBB\", \"ccc\"])",
         "lower([\"KitteN\", \"ChocolaTE\"])",
@@ -15,7 +15,7 @@ public class _Lower
         "lower([\"aaX\", \"bYb\", \"Ycc\", \"ZZZ\"])",
     };
 
-    static List<?>[] expectedResults = {
+    static final List<?>[] expectedResults = {
         Arrays.asList("hello", "hi"),
         Arrays.asList("aaa", "bbb", "ccc"),
         Arrays.asList("kitten", "chocolate"),
@@ -24,9 +24,9 @@ public class _Lower
         Arrays.asList("aax", "byb", "ycc", "zzz"),
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        List<?>[] resultsArray = {
+        final List<?>[] resultsArray = {
             Lower.lower(new ArrayList<>(Arrays.asList("Hello", "Hi"))),
             Lower.lower(new ArrayList<>(Arrays.asList("AAA", "BBB", "ccc"))),
             Lower.lower(new ArrayList<>(Arrays.asList("KitteN", "ChocolaTE"))),

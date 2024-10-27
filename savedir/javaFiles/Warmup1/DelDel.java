@@ -4,7 +4,7 @@ import Warmup1.Testcases._DelDel;
 // https://codingbat.com/prob/p100905
 // Difficulty: 160.0
 
-public class DelDel
+public final class DelDel
 {
     /* Given a string, if the string "del" appears starting at index 1, 
     return a string where that "del" has been deleted. Otherwise, 
@@ -26,12 +26,12 @@ public class DelDel
     | delDel("aadelbb")   → "aadelbb" |
     |________________________________*/
 
-    public static String delDel(String str)
+    public static final String delDel(String str)
     {
         return "";
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _DelDel.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

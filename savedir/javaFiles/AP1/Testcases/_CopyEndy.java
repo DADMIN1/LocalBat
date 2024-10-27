@@ -3,9 +3,9 @@ import AP1.CopyEndy;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class _CopyEndy
+public final class _CopyEndy
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "copyEndy([9, 11, 90, 22, 6], 2)",
         "copyEndy([9, 11, 90, 22, 6], 3)",
         "copyEndy([12, 1, 1, 13, 0, 20], 2)",
@@ -20,7 +20,7 @@ public class _CopyEndy
         "copyEndy([13, 2, 13, 2, 0, 30], 3)",
     };
 
-    static int[][] expectedResults = {
+    static final int[][] expectedResults = {
         {9, 90},
         {9, 90, 6},
         {1, 1},
@@ -35,7 +35,7 @@ public class _CopyEndy
         {2, 2, 0},
     };
 
-    public static String printArray(int[] array)
+    public static final String printArray(int[] array)
     {
         String result = "[";
         for (int a: array) { result += a+", "; }
@@ -43,22 +43,22 @@ public class _CopyEndy
         return result + "]";
     }
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 9, 11, 90, 22, 6 }; 
-        int[] nums1 = { 9, 11, 90, 22, 6 }; 
-        int[] nums2 = { 12, 1, 1, 13, 0, 20 }; 
-        int[] nums3 = { 12, 1, 1, 13, 0, 20 }; 
-        int[] nums4 = { 0 }; 
-        int[] nums5 = { 10, 11, 90 }; 
-        int[] nums6 = { 90, 22, 100 }; 
-        int[] nums7 = { 12, 11, 10, 89, 101, 4 }; 
-        int[] nums8 = { 13, 2, 2, 0 }; 
-        int[] nums9 = { 13, 2, 2, 0 }; 
-        int[] nums10 = { 13, 2, 13, 2, 0, 30 }; 
-        int[] nums11 = { 13, 2, 13, 2, 0, 30 }; 
+        final int[] nums0 = { 9, 11, 90, 22, 6 }; 
+        final int[] nums1 = { 9, 11, 90, 22, 6 }; 
+        final int[] nums2 = { 12, 1, 1, 13, 0, 20 }; 
+        final int[] nums3 = { 12, 1, 1, 13, 0, 20 }; 
+        final int[] nums4 = { 0 }; 
+        final int[] nums5 = { 10, 11, 90 }; 
+        final int[] nums6 = { 90, 22, 100 }; 
+        final int[] nums7 = { 12, 11, 10, 89, 101, 4 }; 
+        final int[] nums8 = { 13, 2, 2, 0 }; 
+        final int[] nums9 = { 13, 2, 2, 0 }; 
+        final int[] nums10 = { 13, 2, 13, 2, 0, 30 }; 
+        final int[] nums11 = { 13, 2, 13, 2, 0, 30 }; 
 
-        int[][] resultsArray = {
+        final int[][] resultsArray = {
             CopyEndy.copyEndy(nums0, 2),
             CopyEndy.copyEndy(nums1, 3),
             CopyEndy.copyEndy(nums2, 2),

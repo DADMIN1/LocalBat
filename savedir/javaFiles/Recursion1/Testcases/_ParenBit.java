@@ -1,9 +1,9 @@
 package Recursion1.Testcases;
 import Recursion1.ParenBit;
 
-public class _ParenBit
+public final class _ParenBit
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "parenBit(\"xyz(abc)123\")",
         "parenBit(\"x(hello)\")",
         "parenBit(\"(xy)1\")",
@@ -18,7 +18,7 @@ public class _ParenBit
         "parenBit(\"ab(ab)ab\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "(abc)",
         "(hello)",
         "(xy)",
@@ -33,9 +33,9 @@ public class _ParenBit
         "(ab)",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             ParenBit.parenBit("xyz(abc)123"),
             ParenBit.parenBit("x(hello)"),
             ParenBit.parenBit("(xy)1"),

@@ -4,7 +4,7 @@ import Recursion1.Testcases._Count8;
 // https://codingbat.com/prob/p192383
 // Difficulty: 324.0
 
-public class Count8
+public final class Count8
 {
     /* Given a non-negative int n, compute recursively (no loops) the count of the occurrences of 8 as a digit, 
     except that an 8 with another 8 immediately to its left counts double, 
@@ -34,12 +34,12 @@ public class Count8
     | count8(78)      → 1 |
     |____________________*/
 
-    public static int count8(int n)
+    public static final int count8(int n)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _Count8.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

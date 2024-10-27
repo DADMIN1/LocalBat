@@ -3,9 +3,9 @@ import AP1.MergeTwo;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class _MergeTwo
+public final class _MergeTwo
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "mergeTwo([\"a\", \"c\", \"z\"], [\"b\", \"f\", \"z\"], 3)",
         "mergeTwo([\"a\", \"c\", \"z\"], [\"c\", \"f\", \"z\"], 3)",
         "mergeTwo([\"f\", \"g\", \"z\"], [\"c\", \"f\", \"g\"], 3)",
@@ -17,7 +17,7 @@ public class _MergeTwo
         "mergeTwo([\"x\", \"y\", \"z\"], [\"a\", \"b\", \"z\"], 3)",
     };
 
-    static String[][] expectedResults = {
+    static final String[][] expectedResults = {
         {"a", "b", "c"},
         {"a", "c", "f"},
         {"c", "f", "g"},
@@ -29,7 +29,7 @@ public class _MergeTwo
         {"a", "b", "x"},
     };
 
-    public static String printArray(String[] array)
+    public static final String printArray(String[] array)
     {
         String result = "[";
         for (String a: array) { result += a+", "; }
@@ -37,19 +37,19 @@ public class _MergeTwo
         return result + "]";
     }
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] a0 = { "a", "c", "z" }; String[] b0 = { "b", "f", "z" }; 
-        String[] a1 = { "a", "c", "z" }; String[] b1 = { "c", "f", "z" }; 
-        String[] a2 = { "f", "g", "z" }; String[] b2 = { "c", "f", "g" }; 
-        String[] a3 = { "a", "c", "z" }; String[] b3 = { "a", "c", "z" }; 
-        String[] a4 = { "a", "b", "c", "z" }; String[] b4 = { "a", "c", "z" }; 
-        String[] a5 = { "a", "c", "z" }; String[] b5 = { "a", "b", "c", "z" }; 
-        String[] a6 = { "a", "c", "z" }; String[] b6 = { "a", "c", "z" }; 
-        String[] a7 = { "a", "c", "z" }; String[] b7 = { "a", "c", "y", "z" }; 
-        String[] a8 = { "x", "y", "z" }; String[] b8 = { "a", "b", "z" }; 
+        final String[] a0 = { "a", "c", "z" }; final String[] b0 = { "b", "f", "z" }; 
+        final String[] a1 = { "a", "c", "z" }; final String[] b1 = { "c", "f", "z" }; 
+        final String[] a2 = { "f", "g", "z" }; final String[] b2 = { "c", "f", "g" }; 
+        final String[] a3 = { "a", "c", "z" }; final String[] b3 = { "a", "c", "z" }; 
+        final String[] a4 = { "a", "b", "c", "z" }; final String[] b4 = { "a", "c", "z" }; 
+        final String[] a5 = { "a", "c", "z" }; final String[] b5 = { "a", "b", "c", "z" }; 
+        final String[] a6 = { "a", "c", "z" }; final String[] b6 = { "a", "c", "z" }; 
+        final String[] a7 = { "a", "c", "z" }; final String[] b7 = { "a", "c", "y", "z" }; 
+        final String[] a8 = { "x", "y", "z" }; final String[] b8 = { "a", "b", "z" }; 
 
-        String[][] resultsArray = {
+        final String[][] resultsArray = {
             MergeTwo.mergeTwo(a0, b0, 3),
             MergeTwo.mergeTwo(a1, b1, 3),
             MergeTwo.mergeTwo(a2, b2, 3),

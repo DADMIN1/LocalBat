@@ -1,9 +1,9 @@
 package String1.Testcases;
 import String1.MakeAbba;
 
-public class _MakeAbba
+public final class _MakeAbba
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "makeAbba(\"Hi\", \"Bye\")",
         "makeAbba(\"Yo\", \"Alice\")",
         "makeAbba(\"What\", \"Up\")",
@@ -15,7 +15,7 @@ public class _MakeAbba
         "makeAbba(\"Ya\", \"Ya\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "HiByeByeHi",
         "YoAliceAliceYo",
         "WhatUpUpWhat",
@@ -27,9 +27,9 @@ public class _MakeAbba
         "YaYaYaYa",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             MakeAbba.makeAbba("Hi", "Bye"),
             MakeAbba.makeAbba("Yo", "Alice"),
             MakeAbba.makeAbba("What", "Up"),

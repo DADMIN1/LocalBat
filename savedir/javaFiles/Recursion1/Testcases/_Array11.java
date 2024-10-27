@@ -1,9 +1,9 @@
 package Recursion1.Testcases;
 import Recursion1.Array11;
 
-public class _Array11
+public final class _Array11
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "array11([1, 2, 11], 0)",
         "array11([11, 11], 0)",
         "array11([1, 2, 3, 4], 0)",
@@ -15,7 +15,7 @@ public class _Array11
         "array11([11, 5, 11], 0)",
     };
 
-    static int[] expectedResults = {
+    static final int[] expectedResults = {
         1,
         2,
         0,
@@ -27,19 +27,19 @@ public class _Array11
         2,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 1, 2, 11 }; 
-        int[] nums1 = { 11, 11 }; 
-        int[] nums2 = { 1, 2, 3, 4 }; 
-        int[] nums3 = { 1, 11, 3, 11, 11 }; 
-        int[] nums4 = { 11 }; 
-        int[] nums5 = { 1 }; 
-        int[] nums6 = {  }; 
-        int[] nums7 = { 11, 2, 3, 4, 11, 5 }; 
-        int[] nums8 = { 11, 5, 11 }; 
+        final int[] nums0 = { 1, 2, 11 }; 
+        final int[] nums1 = { 11, 11 }; 
+        final int[] nums2 = { 1, 2, 3, 4 }; 
+        final int[] nums3 = { 1, 11, 3, 11, 11 }; 
+        final int[] nums4 = { 11 }; 
+        final int[] nums5 = { 1 }; 
+        final int[] nums6 = {  }; 
+        final int[] nums7 = { 11, 2, 3, 4, 11, 5 }; 
+        final int[] nums8 = { 11, 5, 11 }; 
 
-        int[] resultsArray = {
+        final int[] resultsArray = {
             Array11.array11(nums0, 0),
             Array11.array11(nums1, 0),
             Array11.array11(nums2, 0),

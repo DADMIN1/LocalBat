@@ -1,9 +1,9 @@
 package String2.Testcases;
 import String2.RepeatFront;
 
-public class _RepeatFront
+public final class _RepeatFront
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "repeatFront(\"Chocolate\", 4)",
         "repeatFront(\"Chocolate\", 3)",
         "repeatFront(\"Ice Cream\", 2)",
@@ -15,7 +15,7 @@ public class _RepeatFront
         "repeatFront(\"Java\", 1)",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "ChocChoChC",
         "ChoChC",
         "IcI",
@@ -27,9 +27,9 @@ public class _RepeatFront
         "J",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             RepeatFront.repeatFront("Chocolate", 4),
             RepeatFront.repeatFront("Chocolate", 3),
             RepeatFront.repeatFront("Ice Cream", 2),

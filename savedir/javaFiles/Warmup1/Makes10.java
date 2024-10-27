@@ -4,7 +4,7 @@ import Warmup1.Testcases._Makes10;
 // https://codingbat.com/prob/p182873
 // Difficulty: 118.0
 
-public class Makes10
+public final class Makes10
 {
     /* Given 2 ints, a and b, return true if one if them is 10 or if their sum is 10. */
 
@@ -22,12 +22,12 @@ public class Makes10
     | makes10(12, -2) → true  |
     |________________________*/
 
-    public static boolean makes10(int a, int b)
+    public static final boolean makes10(int a, int b)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _Makes10.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

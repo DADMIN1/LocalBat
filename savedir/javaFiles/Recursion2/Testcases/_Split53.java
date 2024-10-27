@@ -1,9 +1,9 @@
 package Recursion2.Testcases;
 import Recursion2.Split53;
 
-public class _Split53
+public final class _Split53
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "split53([1, 1])",
         "split53([1, 1, 1])",
         "split53([2, 4, 2])",
@@ -14,7 +14,7 @@ public class _Split53
         "split53([3, 5, 6, 10, 3, 3])",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         false,
         true,
@@ -25,18 +25,18 @@ public class _Split53
         true,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 1, 1 }; 
-        int[] nums1 = { 1, 1, 1 }; 
-        int[] nums2 = { 2, 4, 2 }; 
-        int[] nums3 = { 2, 2, 2, 1 }; 
-        int[] nums4 = { 3, 3, 5, 1 }; 
-        int[] nums5 = { 3, 5, 8 }; 
-        int[] nums6 = { 2, 4, 6 }; 
-        int[] nums7 = { 3, 5, 6, 10, 3, 3 }; 
+        final int[] nums0 = { 1, 1 }; 
+        final int[] nums1 = { 1, 1, 1 }; 
+        final int[] nums2 = { 2, 4, 2 }; 
+        final int[] nums3 = { 2, 2, 2, 1 }; 
+        final int[] nums4 = { 3, 3, 5, 1 }; 
+        final int[] nums5 = { 3, 5, 8 }; 
+        final int[] nums6 = { 2, 4, 6 }; 
+        final int[] nums7 = { 3, 5, 6, 10, 3, 3 }; 
 
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             Split53.split53(nums0),
             Split53.split53(nums1),
             Split53.split53(nums2),

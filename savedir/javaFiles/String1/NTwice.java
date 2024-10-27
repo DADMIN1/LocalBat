@@ -4,7 +4,7 @@ import String1.Testcases._NTwice;
 // https://codingbat.com/prob/p174148
 // Difficulty: 151.0
 
-public class NTwice
+public final class NTwice
 {
     /* Given a string and an int n, return a string made of the first and last n chars from the string. 
     The string length will be at least n. */
@@ -21,12 +21,12 @@ public class NTwice
     | nTwice("Code", 2)      → "Code"     |
     |____________________________________*/
 
-    public static String nTwice(String str, int n)
+    public static final String nTwice(String str, int n)
     {
         return "";
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _NTwice.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

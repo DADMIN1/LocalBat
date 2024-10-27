@@ -1,9 +1,9 @@
 package String3.Testcases;
 import String3.CountTriple;
 
-public class _CountTriple
+public final class _CountTriple
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "countTriple(\"abcXXXabc\")",
         "countTriple(\"xxxabyyyycd\")",
         "countTriple(\"a\")",
@@ -18,7 +18,7 @@ public class _CountTriple
         "countTriple(\"122abhhh2\")",
     };
 
-    static int[] expectedResults = {
+    static final int[] expectedResults = {
         1,
         3,
         0,
@@ -33,9 +33,9 @@ public class _CountTriple
         1,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] resultsArray = {
+        final int[] resultsArray = {
             CountTriple.countTriple("abcXXXabc"),
             CountTriple.countTriple("xxxabyyyycd"),
             CountTriple.countTriple("a"),

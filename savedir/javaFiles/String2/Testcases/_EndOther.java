@@ -1,9 +1,9 @@
 package String2.Testcases;
 import String2.EndOther;
 
-public class _EndOther
+public final class _EndOther
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "endOther(\"Hiabc\", \"abc\")",
         "endOther(\"AbC\", \"HiaBc\")",
         "endOther(\"abc\", \"abXabc\")",
@@ -20,7 +20,7 @@ public class _EndOther
         "endOther(\"ab\", \"12ab\")",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         true,
         true,
@@ -37,9 +37,9 @@ public class _EndOther
         true,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             EndOther.endOther("Hiabc", "abc"),
             EndOther.endOther("AbC", "HiaBc"),
             EndOther.endOther("abc", "abXabc"),

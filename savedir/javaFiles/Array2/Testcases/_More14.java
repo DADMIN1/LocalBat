@@ -1,9 +1,9 @@
 package Array2.Testcases;
 import Array2.More14;
 
-public class _More14
+public final class _More14
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "more14([1, 4, 1])",
         "more14([1, 4, 1, 4])",
         "more14([1, 1])",
@@ -20,7 +20,7 @@ public class _More14
         "more14([1, 4, 1, 4, 1, 6])",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         false,
         true,
@@ -37,24 +37,24 @@ public class _More14
         true,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 1, 4, 1 }; 
-        int[] nums1 = { 1, 4, 1, 4 }; 
-        int[] nums2 = { 1, 1 }; 
-        int[] nums3 = { 1, 6, 6 }; 
-        int[] nums4 = { 1 }; 
-        int[] nums5 = { 1, 4 }; 
-        int[] nums6 = { 6, 1, 1 }; 
-        int[] nums7 = { 1, 6, 4 }; 
-        int[] nums8 = { 1, 1, 4, 4, 1 }; 
-        int[] nums9 = { 1, 1, 6, 4, 4, 1 }; 
-        int[] nums10 = {  }; 
-        int[] nums11 = { 4, 1, 4, 6 }; 
-        int[] nums12 = { 4, 1, 4, 6, 1 }; 
-        int[] nums13 = { 1, 4, 1, 4, 1, 6 }; 
+        final int[] nums0 = { 1, 4, 1 }; 
+        final int[] nums1 = { 1, 4, 1, 4 }; 
+        final int[] nums2 = { 1, 1 }; 
+        final int[] nums3 = { 1, 6, 6 }; 
+        final int[] nums4 = { 1 }; 
+        final int[] nums5 = { 1, 4 }; 
+        final int[] nums6 = { 6, 1, 1 }; 
+        final int[] nums7 = { 1, 6, 4 }; 
+        final int[] nums8 = { 1, 1, 4, 4, 1 }; 
+        final int[] nums9 = { 1, 1, 6, 4, 4, 1 }; 
+        final int[] nums10 = {  }; 
+        final int[] nums11 = { 4, 1, 4, 6 }; 
+        final int[] nums12 = { 4, 1, 4, 6, 1 }; 
+        final int[] nums13 = { 1, 4, 1, 4, 1, 6 }; 
 
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             More14.more14(nums0),
             More14.more14(nums1),
             More14.more14(nums2),

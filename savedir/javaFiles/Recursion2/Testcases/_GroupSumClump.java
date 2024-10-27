@@ -1,9 +1,9 @@
 package Recursion2.Testcases;
 import Recursion2.GroupSumClump;
 
-public class _GroupSumClump
+public final class _GroupSumClump
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "groupSumClump(0, [2, 4, 8], 10)",
         "groupSumClump(0, [1, 2, 4, 8, 1], 14)",
         "groupSumClump(0, [2, 4, 4, 8], 14)",
@@ -13,7 +13,7 @@ public class _GroupSumClump
         "groupSumClump(0, [9], 1)",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         true,
         false,
@@ -23,17 +23,17 @@ public class _GroupSumClump
         false,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 2, 4, 8 }; 
-        int[] nums1 = { 1, 2, 4, 8, 1 }; 
-        int[] nums2 = { 2, 4, 4, 8 }; 
-        int[] nums3 = { 8, 2, 2, 1 }; 
-        int[] nums4 = { 8, 2, 2, 1 }; 
-        int[] nums5 = { 1 }; 
-        int[] nums6 = { 9 }; 
+        final int[] nums0 = { 2, 4, 8 }; 
+        final int[] nums1 = { 1, 2, 4, 8, 1 }; 
+        final int[] nums2 = { 2, 4, 4, 8 }; 
+        final int[] nums3 = { 8, 2, 2, 1 }; 
+        final int[] nums4 = { 8, 2, 2, 1 }; 
+        final int[] nums5 = { 1 }; 
+        final int[] nums6 = { 9 }; 
 
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             GroupSumClump.groupSumClump(0, nums0, 10),
             GroupSumClump.groupSumClump(0, nums1, 14),
             GroupSumClump.groupSumClump(0, nums2, 14),

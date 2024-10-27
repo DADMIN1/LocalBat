@@ -1,9 +1,9 @@
 package Array2.Testcases;
 import Array2.BigDiff;
 
-public class _BigDiff
+public final class _BigDiff
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "bigDiff([10, 3, 5, 6])",
         "bigDiff([7, 2, 10, 9])",
         "bigDiff([2, 10, 7, 2])",
@@ -18,7 +18,7 @@ public class _BigDiff
         "bigDiff([7, 7, 6, 8, 5, 5, 6])",
     };
 
-    static int[] expectedResults = {
+    static final int[] expectedResults = {
         7,
         8,
         8,
@@ -33,22 +33,22 @@ public class _BigDiff
         3,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 10, 3, 5, 6 }; 
-        int[] nums1 = { 7, 2, 10, 9 }; 
-        int[] nums2 = { 2, 10, 7, 2 }; 
-        int[] nums3 = { 2, 10 }; 
-        int[] nums4 = { 10, 2 }; 
-        int[] nums5 = { 10, 0 }; 
-        int[] nums6 = { 2, 3 }; 
-        int[] nums7 = { 2, 2 }; 
-        int[] nums8 = { 2 }; 
-        int[] nums9 = { 5, 1, 6, 1, 9, 9 }; 
-        int[] nums10 = { 7, 6, 8, 5 }; 
-        int[] nums11 = { 7, 7, 6, 8, 5, 5, 6 }; 
+        final int[] nums0 = { 10, 3, 5, 6 }; 
+        final int[] nums1 = { 7, 2, 10, 9 }; 
+        final int[] nums2 = { 2, 10, 7, 2 }; 
+        final int[] nums3 = { 2, 10 }; 
+        final int[] nums4 = { 10, 2 }; 
+        final int[] nums5 = { 10, 0 }; 
+        final int[] nums6 = { 2, 3 }; 
+        final int[] nums7 = { 2, 2 }; 
+        final int[] nums8 = { 2 }; 
+        final int[] nums9 = { 5, 1, 6, 1, 9, 9 }; 
+        final int[] nums10 = { 7, 6, 8, 5 }; 
+        final int[] nums11 = { 7, 7, 6, 8, 5, 5, 6 }; 
 
-        int[] resultsArray = {
+        final int[] resultsArray = {
             BigDiff.bigDiff(nums0),
             BigDiff.bigDiff(nums1),
             BigDiff.bigDiff(nums2),

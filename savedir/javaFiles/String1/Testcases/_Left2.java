@@ -1,9 +1,9 @@
 package String1.Testcases;
 import String1.Left2;
 
-public class _Left2
+public final class _Left2
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "left2(\"Hello\")",
         "left2(\"java\")",
         "left2(\"Hi\")",
@@ -14,7 +14,7 @@ public class _Left2
         "left2(\"bricks\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "lloHe",
         "vaja",
         "Hi",
@@ -25,9 +25,9 @@ public class _Left2
         "icksbr",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             Left2.left2("Hello"),
             Left2.left2("java"),
             Left2.left2("Hi"),

@@ -4,7 +4,7 @@ import Logic1.Testcases._LessBy10;
 // https://codingbat.com/prob/p179196
 // Difficulty: 148.0
 
-public class LessBy10
+public final class LessBy10
 {
     /* Given three ints, a b c, return true if one of them is 10 or more less than one of the others. */
 
@@ -27,12 +27,12 @@ public class LessBy10
     | lessBy10(2, 8, 12)  → true  |
     |____________________________*/
 
-    public static boolean lessBy10(int a, int b, int c)
+    public static final boolean lessBy10(int a, int b, int c)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _LessBy10.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

@@ -1,9 +1,9 @@
 package Warmup1.Testcases;
 import Warmup1.StringE;
 
-public class _StringE
+public final class _StringE
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "stringE(\"Hello\")",
         "stringE(\"Heelle\")",
         "stringE(\"Heelele\")",
@@ -12,7 +12,7 @@ public class _StringE
         "stringE(\"\")",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         true,
         false,
@@ -21,9 +21,9 @@ public class _StringE
         false,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             StringE.stringE("Hello"),
             StringE.stringE("Heelle"),
             StringE.stringE("Heelele"),

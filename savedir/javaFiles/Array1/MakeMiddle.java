@@ -4,7 +4,7 @@ import Array1.Testcases._MakeMiddle;
 // https://codingbat.com/prob/p199519
 // Difficulty: 157.0
 
-public class MakeMiddle
+public final class MakeMiddle
 {
     /* Given an array of ints of even length, 
     return a new array length 2 containing the middle two elements from the original array. 
@@ -20,12 +20,12 @@ public class MakeMiddle
     | makeMiddle([9, 0, 4, 3, 9, 1]) → [4, 3] |
     |________________________________________*/
 
-    public static int[] makeMiddle(int[] nums)
+    public static final int[] makeMiddle(int[] nums)
     {
         return new int[]{0};
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _MakeMiddle.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

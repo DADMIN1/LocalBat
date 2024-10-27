@@ -1,25 +1,25 @@
 package Warmup1.Testcases;
 import Warmup1.SleepIn;
 
-public class _SleepIn
+public final class _SleepIn
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "sleepIn(false, false)",
         "sleepIn(true, false)",
         "sleepIn(false, true)",
         "sleepIn(true, true)",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         false,
         true,
         true,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             SleepIn.sleepIn(false, false),
             SleepIn.sleepIn(true, false),
             SleepIn.sleepIn(false, true),

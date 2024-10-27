@@ -1,9 +1,9 @@
 package String3.Testcases;
 import String3.WithoutString;
 
-public class _WithoutString
+public final class _WithoutString
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "withoutString(\"Hello there\", \"llo\")",
         "withoutString(\"Hello there\", \"e\")",
         "withoutString(\"Hello there\", \"x\")",
@@ -25,7 +25,7 @@ public class _WithoutString
         "withoutString(\"Hi HoHo\", \"Ho\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "He there",
         "Hllo thr",
         "Hello there",
@@ -47,9 +47,9 @@ public class _WithoutString
         "Hi ",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             WithoutString.withoutString("Hello there", "llo"),
             WithoutString.withoutString("Hello there", "e"),
             WithoutString.withoutString("Hello there", "x"),

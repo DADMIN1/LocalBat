@@ -3,9 +3,9 @@ import Map2.Word0;
 import java.util.Map;
 import java.util.HashMap;
 
-public class _Word0
+public final class _Word0
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "word0([\"a\", \"b\", \"a\", \"b\"])",
         "word0([\"a\", \"b\", \"a\", \"c\", \"b\"])",
         "word0([\"c\", \"b\", \"a\"])",
@@ -13,7 +13,7 @@ public class _Word0
         "word0([])",
     };
 
-    static Map<?,?>[] expectedResults = {
+    static final Map<?,?>[] expectedResults = {
         Map.of("a", 0, "b", 0),
         Map.of("a", 0, "b", 0, "c", 0),
         Map.of("a", 0, "b", 0, "c", 0),
@@ -21,15 +21,15 @@ public class _Word0
         Map.of(),
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] strings0 = { "a", "b", "a", "b" }; 
-        String[] strings1 = { "a", "b", "a", "c", "b" }; 
-        String[] strings2 = { "c", "b", "a" }; 
-        String[] strings3 = { "c", "c", "c", "c" }; 
-        String[] strings4 = {  }; 
+        final String[] strings0 = { "a", "b", "a", "b" }; 
+        final String[] strings1 = { "a", "b", "a", "c", "b" }; 
+        final String[] strings2 = { "c", "b", "a" }; 
+        final String[] strings3 = { "c", "c", "c", "c" }; 
+        final String[] strings4 = {  }; 
 
-        Map<?,?>[] resultsArray = {
+        final Map<?,?>[] resultsArray = {
             Word0.word0(strings0),
             Word0.word0(strings1),
             Word0.word0(strings2),

@@ -1,9 +1,9 @@
 package String1.Testcases;
 import String1.WithoutEnd;
 
-public class _WithoutEnd
+public final class _WithoutEnd
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "withoutEnd(\"Hello\")",
         "withoutEnd(\"java\")",
         "withoutEnd(\"coding\")",
@@ -14,7 +14,7 @@ public class _WithoutEnd
         "withoutEnd(\"woohoo\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "ell",
         "av",
         "odin",
@@ -25,9 +25,9 @@ public class _WithoutEnd
         "ooho",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             WithoutEnd.withoutEnd("Hello"),
             WithoutEnd.withoutEnd("java"),
             WithoutEnd.withoutEnd("coding"),

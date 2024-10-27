@@ -4,7 +4,7 @@ import Warmup1.Testcases._NotString;
 // https://codingbat.com/prob/p191914
 // Difficulty: 127.0
 
-public class NotString
+public final class NotString
 {
     /* Given a string, return a new string where "not " has been added to the front. 
     However, if the string already begins with "not", return the string unchanged. 
@@ -22,12 +22,12 @@ public class NotString
     | notString("no")      → "not no"     |
     |____________________________________*/
 
-    public static String notString(String str)
+    public static final String notString(String str)
     {
         return "";
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _NotString.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

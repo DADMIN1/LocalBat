@@ -1,9 +1,9 @@
 package Recursion1.Testcases;
 import Recursion1.AllStar;
 
-public class _AllStar
+public final class _AllStar
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "allStar(\"hello\")",
         "allStar(\"abc\")",
         "allStar(\"ab\")",
@@ -14,7 +14,7 @@ public class _AllStar
         "allStar(\"1234\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "h*e*l*l*o",
         "a*b*c",
         "a*b",
@@ -25,9 +25,9 @@ public class _AllStar
         "1*2*3*4",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             AllStar.allStar("hello"),
             AllStar.allStar("abc"),
             AllStar.allStar("ab"),

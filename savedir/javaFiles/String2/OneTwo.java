@@ -4,7 +4,7 @@ import String2.Testcases._OneTwo;
 // https://codingbat.com/prob/p122943
 // Difficulty: 250
 
-public class OneTwo
+public final class OneTwo
 {
     /* Given a string, compute a new string by moving the first char to come after the next two chars, 
     so "abc" yields "bca". Repeat this process for each subsequent group of 3 chars, 
@@ -31,12 +31,12 @@ public class OneTwo
     | oneTwo("abcdefghijklkmnopqrstuvwxyz12345678")   → "bcaefdhigkljmnkpqostrvwuyzx231564"    |
     |_________________________________________________________________________________________*/
 
-    public static String oneTwo(String str)
+    public static final String oneTwo(String str)
     {
         return "";
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _OneTwo.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

@@ -1,9 +1,9 @@
 package Logic2.Testcases;
 import Logic2.EvenlySpaced;
 
-public class _EvenlySpaced
+public final class _EvenlySpaced
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "evenlySpaced(2, 4, 6)",
         "evenlySpaced(4, 6, 2)",
         "evenlySpaced(4, 6, 3)",
@@ -20,7 +20,7 @@ public class _EvenlySpaced
         "evenlySpaced(12, 3, 6)",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         true,
         false,
@@ -37,9 +37,9 @@ public class _EvenlySpaced
         false,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             EvenlySpaced.evenlySpaced(2, 4, 6),
             EvenlySpaced.evenlySpaced(4, 6, 2),
             EvenlySpaced.evenlySpaced(4, 6, 3),

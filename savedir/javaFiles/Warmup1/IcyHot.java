@@ -4,7 +4,7 @@ import Warmup1.Testcases._IcyHot;
 // https://codingbat.com/prob/p192082
 // Difficulty: 148.0
 
-public class IcyHot
+public final class IcyHot
 {
     /* Given two temperatures, return true if one is less than 0 and the other is greater than 100. */
 
@@ -19,12 +19,12 @@ public class IcyHot
     | icyHot(120, 120) → false |
     |_________________________*/
 
-    public static boolean icyHot(int temp1, int temp2)
+    public static final boolean icyHot(int temp1, int temp2)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _IcyHot.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

@@ -1,9 +1,9 @@
 package Array2.Testcases;
 import Array2.TwoTwo;
 
-public class _TwoTwo
+public final class _TwoTwo
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "twoTwo([4, 2, 2, 3])",
         "twoTwo([2, 2, 4])",
         "twoTwo([2, 2, 4, 2])",
@@ -23,7 +23,7 @@ public class _TwoTwo
         "twoTwo([2, 2, 5, 2])",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         true,
         false,
@@ -43,27 +43,27 @@ public class _TwoTwo
         false,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 4, 2, 2, 3 }; 
-        int[] nums1 = { 2, 2, 4 }; 
-        int[] nums2 = { 2, 2, 4, 2 }; 
-        int[] nums3 = { 1, 3, 4 }; 
-        int[] nums4 = { 1, 2, 2, 3, 4 }; 
-        int[] nums5 = { 1, 2, 3, 4 }; 
-        int[] nums6 = { 2, 2 }; 
-        int[] nums7 = { 2, 2, 7 }; 
-        int[] nums8 = { 2, 2, 7, 2, 1 }; 
-        int[] nums9 = { 4, 2, 2, 2 }; 
-        int[] nums10 = { 2, 2, 2 }; 
-        int[] nums11 = { 1, 2 }; 
-        int[] nums12 = { 2 }; 
-        int[] nums13 = { 1 }; 
-        int[] nums14 = {  }; 
-        int[] nums15 = { 5, 2, 2, 3 }; 
-        int[] nums16 = { 2, 2, 5, 2 }; 
+        final int[] nums0 = { 4, 2, 2, 3 }; 
+        final int[] nums1 = { 2, 2, 4 }; 
+        final int[] nums2 = { 2, 2, 4, 2 }; 
+        final int[] nums3 = { 1, 3, 4 }; 
+        final int[] nums4 = { 1, 2, 2, 3, 4 }; 
+        final int[] nums5 = { 1, 2, 3, 4 }; 
+        final int[] nums6 = { 2, 2 }; 
+        final int[] nums7 = { 2, 2, 7 }; 
+        final int[] nums8 = { 2, 2, 7, 2, 1 }; 
+        final int[] nums9 = { 4, 2, 2, 2 }; 
+        final int[] nums10 = { 2, 2, 2 }; 
+        final int[] nums11 = { 1, 2 }; 
+        final int[] nums12 = { 2 }; 
+        final int[] nums13 = { 1 }; 
+        final int[] nums14 = {  }; 
+        final int[] nums15 = { 5, 2, 2, 3 }; 
+        final int[] nums16 = { 2, 2, 5, 2 }; 
 
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             TwoTwo.twoTwo(nums0),
             TwoTwo.twoTwo(nums1),
             TwoTwo.twoTwo(nums2),

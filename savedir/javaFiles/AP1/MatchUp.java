@@ -4,7 +4,7 @@ import AP1.Testcases._MatchUp;
 // https://codingbat.com/prob/p139677
 // Difficulty: 236.0
 
-public class MatchUp
+public final class MatchUp
 {
     /* Given 2 arrays that are the same length containing strings, 
     compare the 1st string in one array to the 1st string in the other array, 
@@ -29,12 +29,12 @@ public class MatchUp
     | matchUp(["aaa", "bb", "c"], ["aaa", "xx", "bb"])         → 1 |
     |_____________________________________________________________*/
 
-    public static int matchUp(String[] a, String[] b)
+    public static final int matchUp(String[] a, String[] b)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _MatchUp.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

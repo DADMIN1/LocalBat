@@ -4,9 +4,9 @@ import java.util.List;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class _MoreY
+public final class _MoreY
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "moreY([\"a\", \"b\", \"c\"])",
         "moreY([\"hello\", \"there\"])",
         "moreY([\"yay\"])",
@@ -15,7 +15,7 @@ public class _MoreY
         "moreY([\"xx\", \"yy\", \"zz\"])",
     };
 
-    static List<?>[] expectedResults = {
+    static final List<?>[] expectedResults = {
         Arrays.asList("yay", "yby", "ycy"),
         Arrays.asList("yhelloy", "ytherey"),
         Arrays.asList("yyayy"),
@@ -24,9 +24,9 @@ public class _MoreY
         Arrays.asList("yxxy", "yyyy", "yzzy"),
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        List<?>[] resultsArray = {
+        final List<?>[] resultsArray = {
             MoreY.moreY(new ArrayList<>(Arrays.asList("a", "b", "c"))),
             MoreY.moreY(new ArrayList<>(Arrays.asList("hello", "there"))),
             MoreY.moreY(new ArrayList<>(Arrays.asList("yay"))),

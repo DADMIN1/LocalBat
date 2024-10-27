@@ -4,7 +4,7 @@ import Array1.Testcases._SwapEnds;
 // https://codingbat.com/prob/p118044
 // Difficulty: 163.0
 
-public class SwapEnds
+public final class SwapEnds
 {
     /* Given an array of ints, swap the first and last elements in the array. 
     Return the modified array. The array length will be at least 1. */
@@ -20,12 +20,12 @@ public class SwapEnds
     | swapEnds([1])                → [1]                |
     |__________________________________________________*/
 
-    public static int[] swapEnds(int[] nums)
+    public static final int[] swapEnds(int[] nums)
     {
         return new int[]{0};
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _SwapEnds.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

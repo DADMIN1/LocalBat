@@ -6,7 +6,7 @@ import java.util.HashMap;
 // https://codingbat.com/prob/p107259
 // Difficulty: 209
 
-public class MapAB
+public final class MapAB
 {
     /* Modify and return the given map as follows: for this problem the map may or may not contain the "a" and "b" keys. 
     If both keys are present, append their 2 string values together and store the result under the key "ab". */
@@ -22,12 +22,12 @@ public class MapAB
     | mapAB({"ab": "nope", "b": "bbb", "c": "ccc"})             → {"ab": "nope", "b": "bbb", "c": "ccc"}               |
     |_________________________________________________________________________________________________________________*/
 
-    public static Map<String, String> mapAB(Map<String, String> map)
+    public static final Map<String, String> mapAB(Map<String, String> map)
     {
         return new HashMap<String, String>();
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _MapAB.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

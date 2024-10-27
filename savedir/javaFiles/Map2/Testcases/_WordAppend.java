@@ -1,9 +1,9 @@
 package Map2.Testcases;
 import Map2.WordAppend;
 
-public class _WordAppend
+public final class _WordAppend
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "wordAppend([\"a\", \"b\", \"a\"])",
         "wordAppend([\"a\", \"b\", \"a\", \"c\", \"a\", \"d\", \"a\"])",
         "wordAppend([\"a\", \"\", \"a\"])",
@@ -17,7 +17,7 @@ public class _WordAppend
         "wordAppend([\"xx\", \"xx\", \"yy\", \"xx\", \"zz\", \"yy\", \"zz\", \"xx\"])",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "a",
         "aa",
         "a",
@@ -31,21 +31,21 @@ public class _WordAppend
         "xxyyzzxx",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] strings0 = { "a", "b", "a" }; 
-        String[] strings1 = { "a", "b", "a", "c", "a", "d", "a" }; 
-        String[] strings2 = { "a", "", "a" }; 
-        String[] strings3 = {  }; 
-        String[] strings4 = { "a", "b", "b", "a", "a" }; 
-        String[] strings5 = { "a", "b", "b", "b", "a", "c", "a", "a" }; 
-        String[] strings6 = { "a", "b", "b", "b", "a", "c", "a", "a", "a", "b", "a" }; 
-        String[] strings7 = { "not", "and", "or", "and", "this", "and", "or", "that", "not" }; 
-        String[] strings8 = { "a", "b", "c" }; 
-        String[] strings9 = { "this", "or", "that", "and", "this", "and", "that" }; 
-        String[] strings10 = { "xx", "xx", "yy", "xx", "zz", "yy", "zz", "xx" }; 
+        final String[] strings0 = { "a", "b", "a" }; 
+        final String[] strings1 = { "a", "b", "a", "c", "a", "d", "a" }; 
+        final String[] strings2 = { "a", "", "a" }; 
+        final String[] strings3 = {  }; 
+        final String[] strings4 = { "a", "b", "b", "a", "a" }; 
+        final String[] strings5 = { "a", "b", "b", "b", "a", "c", "a", "a" }; 
+        final String[] strings6 = { "a", "b", "b", "b", "a", "c", "a", "a", "a", "b", "a" }; 
+        final String[] strings7 = { "not", "and", "or", "and", "this", "and", "or", "that", "not" }; 
+        final String[] strings8 = { "a", "b", "c" }; 
+        final String[] strings9 = { "this", "or", "that", "and", "this", "and", "that" }; 
+        final String[] strings10 = { "xx", "xx", "yy", "xx", "zz", "yy", "zz", "xx" }; 
 
-        String[] resultsArray = {
+        final String[] resultsArray = {
             WordAppend.wordAppend(strings0),
             WordAppend.wordAppend(strings1),
             WordAppend.wordAppend(strings2),

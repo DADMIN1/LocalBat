@@ -1,9 +1,9 @@
 package Array2.Testcases;
 import Array2.IsEverywhere;
 
-public class _IsEverywhere
+public final class _IsEverywhere
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "isEverywhere([1, 2, 1, 3], 1)",
         "isEverywhere([1, 2, 1, 3], 2)",
         "isEverywhere([1, 2, 1, 3, 4], 1)",
@@ -22,7 +22,7 @@ public class _IsEverywhere
         "isEverywhere([2, 1, 2, 1, 2], 2)",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         false,
         false,
@@ -41,26 +41,26 @@ public class _IsEverywhere
         true,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 1, 2, 1, 3 }; 
-        int[] nums1 = { 1, 2, 1, 3 }; 
-        int[] nums2 = { 1, 2, 1, 3, 4 }; 
-        int[] nums3 = { 2, 1, 2, 1 }; 
-        int[] nums4 = { 2, 1, 2, 1 }; 
-        int[] nums5 = { 2, 1, 2, 3, 1 }; 
-        int[] nums6 = { 3, 1 }; 
-        int[] nums7 = { 3, 1 }; 
-        int[] nums8 = { 3 }; 
-        int[] nums9 = {  }; 
-        int[] nums10 = { 1, 2, 1, 2, 3, 2, 5 }; 
-        int[] nums11 = { 1, 2, 1, 1, 1, 2 }; 
-        int[] nums12 = { 2, 1, 2, 1, 1, 2 }; 
-        int[] nums13 = { 2, 1, 2, 2, 2, 1, 1, 2 }; 
-        int[] nums14 = { 2, 1, 2, 2, 2, 1, 2, 1 }; 
-        int[] nums15 = { 2, 1, 2, 1, 2 }; 
+        final int[] nums0 = { 1, 2, 1, 3 }; 
+        final int[] nums1 = { 1, 2, 1, 3 }; 
+        final int[] nums2 = { 1, 2, 1, 3, 4 }; 
+        final int[] nums3 = { 2, 1, 2, 1 }; 
+        final int[] nums4 = { 2, 1, 2, 1 }; 
+        final int[] nums5 = { 2, 1, 2, 3, 1 }; 
+        final int[] nums6 = { 3, 1 }; 
+        final int[] nums7 = { 3, 1 }; 
+        final int[] nums8 = { 3 }; 
+        final int[] nums9 = {  }; 
+        final int[] nums10 = { 1, 2, 1, 2, 3, 2, 5 }; 
+        final int[] nums11 = { 1, 2, 1, 1, 1, 2 }; 
+        final int[] nums12 = { 2, 1, 2, 1, 1, 2 }; 
+        final int[] nums13 = { 2, 1, 2, 2, 2, 1, 1, 2 }; 
+        final int[] nums14 = { 2, 1, 2, 2, 2, 1, 2, 1 }; 
+        final int[] nums15 = { 2, 1, 2, 1, 2 }; 
 
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             IsEverywhere.isEverywhere(nums0, 1),
             IsEverywhere.isEverywhere(nums1, 2),
             IsEverywhere.isEverywhere(nums2, 1),

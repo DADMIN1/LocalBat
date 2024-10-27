@@ -3,9 +3,9 @@ import Map2.WordCount;
 import java.util.Map;
 import java.util.HashMap;
 
-public class _WordCount
+public final class _WordCount
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "wordCount([\"a\", \"b\", \"a\", \"c\", \"b\"])",
         "wordCount([\"c\", \"b\", \"a\"])",
         "wordCount([\"c\", \"c\", \"c\", \"c\"])",
@@ -17,7 +17,7 @@ public class _WordCount
         "wordCount([\"apple\", \"banana\", \"apple\", \"apple\", \"tea\", \"coffee\", \"banana\"])",
     };
 
-    static Map<?,?>[] expectedResults = {
+    static final Map<?,?>[] expectedResults = {
         Map.of("a", 2, "b", 2, "c", 1),
         Map.of("a", 1, "b", 1, "c", 1),
         Map.of("c", 4),
@@ -29,19 +29,19 @@ public class _WordCount
         Map.of("banana", 2, "apple", 3, "tea", 1, "coffee", 1),
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] strings0 = { "a", "b", "a", "c", "b" }; 
-        String[] strings1 = { "c", "b", "a" }; 
-        String[] strings2 = { "c", "c", "c", "c" }; 
-        String[] strings3 = {  }; 
-        String[] strings4 = { "this", "and", "this", "" }; 
-        String[] strings5 = { "x", "y", "x", "Y", "X" }; 
-        String[] strings6 = { "123", "0", "123", "1" }; 
-        String[] strings7 = { "d", "a", "e", "d", "a", "d", "b", "b", "z", "a", "a", "b", "z", "x", "b", "f", "x", "two", "b", "one", "two" }; 
-        String[] strings8 = { "apple", "banana", "apple", "apple", "tea", "coffee", "banana" }; 
+        final String[] strings0 = { "a", "b", "a", "c", "b" }; 
+        final String[] strings1 = { "c", "b", "a" }; 
+        final String[] strings2 = { "c", "c", "c", "c" }; 
+        final String[] strings3 = {  }; 
+        final String[] strings4 = { "this", "and", "this", "" }; 
+        final String[] strings5 = { "x", "y", "x", "Y", "X" }; 
+        final String[] strings6 = { "123", "0", "123", "1" }; 
+        final String[] strings7 = { "d", "a", "e", "d", "a", "d", "b", "b", "z", "a", "a", "b", "z", "x", "b", "f", "x", "two", "b", "one", "two" }; 
+        final String[] strings8 = { "apple", "banana", "apple", "apple", "tea", "coffee", "banana" }; 
 
-        Map<?,?>[] resultsArray = {
+        final Map<?,?>[] resultsArray = {
             WordCount.wordCount(strings0),
             WordCount.wordCount(strings1),
             WordCount.wordCount(strings2),

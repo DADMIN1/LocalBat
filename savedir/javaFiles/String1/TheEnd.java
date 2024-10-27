@@ -4,7 +4,7 @@ import String1.Testcases._TheEnd;
 // https://codingbat.com/prob/p162477
 // Difficulty: 139.0
 
-public class TheEnd
+public final class TheEnd
 {
     /* Given a string, return a string length 1 from its front, 
     unless front is false, in which case return a string length 1 from its back. 
@@ -25,12 +25,12 @@ public class TheEnd
     | theEnd("code", false)      → "e" |
     |_________________________________*/
 
-    public static String theEnd(String str, boolean front)
+    public static final String theEnd(String str, boolean front)
     {
         return "";
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _TheEnd.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

@@ -4,7 +4,7 @@ import AP1.Testcases._CommonTwo;
 // https://codingbat.com/prob/p100369
 // Difficulty: 254.0
 
-public class CommonTwo
+public final class CommonTwo
 {
     /* Start with two arrays of strings, a and b, each in alphabetical order, 
     possibly with duplicates. Return the count of the number of strings which appear in both arrays. 
@@ -32,12 +32,12 @@ public class CommonTwo
     | commonTwo(["a", "b"], ["a", "b"])                                    → 2 |
     |_________________________________________________________________________*/
 
-    public static int commonTwo(String[] a, String[] b)
+    public static final int commonTwo(String[] a, String[] b)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _CommonTwo.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

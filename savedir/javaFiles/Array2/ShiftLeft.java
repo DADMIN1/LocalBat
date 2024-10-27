@@ -4,7 +4,7 @@ import Array2.Testcases._ShiftLeft;
 // https://codingbat.com/prob/p105031
 // Difficulty: 266.0
 
-public class ShiftLeft
+public final class ShiftLeft
 {
     /* Return an array that is "left shifted" by one -- so {6, 
     2, 5, 3} returns {2, 5, 3, 6}. You may modify and return the given array, 
@@ -22,12 +22,12 @@ public class ShiftLeft
     | shiftLeft([1, 2, 3])       → [2, 3, 1]       |
     |_____________________________________________*/
 
-    public static int[] shiftLeft(int[] nums)
+    public static final int[] shiftLeft(int[] nums)
     {
         return new int[]{0};
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _ShiftLeft.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

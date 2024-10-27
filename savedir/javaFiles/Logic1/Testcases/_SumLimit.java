@@ -1,9 +1,9 @@
 package Logic1.Testcases;
 import Logic1.SumLimit;
 
-public class _SumLimit
+public final class _SumLimit
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "sumLimit(2, 3)",
         "sumLimit(8, 3)",
         "sumLimit(8, 1)",
@@ -21,7 +21,7 @@ public class _SumLimit
         "sumLimit(9000, 1000)",
     };
 
-    static int[] expectedResults = {
+    static final int[] expectedResults = {
         5,
         8,
         9,
@@ -39,9 +39,9 @@ public class _SumLimit
         9000,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] resultsArray = {
+        final int[] resultsArray = {
             SumLimit.sumLimit(2, 3),
             SumLimit.sumLimit(8, 3),
             SumLimit.sumLimit(8, 1),

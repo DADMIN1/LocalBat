@@ -3,9 +3,9 @@ import Map1.MapShare;
 import java.util.Map;
 import java.util.HashMap;
 
-public class _MapShare
+public final class _MapShare
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "mapShare({\"a\": \"aaa\", \"b\": \"bbb\", \"c\": \"ccc\"})",
         "mapShare({\"b\": \"xyz\", \"c\": \"ccc\"})",
         "mapShare({\"a\": \"aaa\", \"c\": \"meh\", \"d\": \"hi\"})",
@@ -13,7 +13,7 @@ public class _MapShare
         "mapShare({\"a\": \"xyz\", \"b\": \"1234\", \"c\": \"yo\", \"d\": \"ddd\", \"e\": \"everything\"})",
     };
 
-    static Map<?,?>[] expectedResults = {
+    static final Map<?,?>[] expectedResults = {
         Map.of("a", "aaa", "b", "aaa"),
         Map.of("b", "xyz"),
         Map.of("a", "aaa", "b", "aaa", "d", "hi"),
@@ -21,9 +21,9 @@ public class _MapShare
         Map.of("a", "xyz", "b", "xyz", "d", "ddd", "e", "everything"),
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        Map<?,?>[] resultsArray = {
+        final Map<?,?>[] resultsArray = {
             MapShare.mapShare(new HashMap<>(Map.of("a", "aaa", "b", "bbb", "c", "ccc"))),
             MapShare.mapShare(new HashMap<>(Map.of("b", "xyz", "c", "ccc"))),
             MapShare.mapShare(new HashMap<>(Map.of("a", "aaa", "c", "meh", "d", "hi"))),

@@ -1,9 +1,9 @@
 package Recursion2.Testcases;
 import Recursion2.GroupSum5;
 
-public class _GroupSum5
+public final class _GroupSum5
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "groupSum5(0, [2, 5, 10, 4], 19)",
         "groupSum5(0, [2, 5, 10, 4], 17)",
         "groupSum5(0, [2, 5, 10, 4], 12)",
@@ -21,7 +21,7 @@ public class _GroupSum5
         "groupSum5(0, [], 0)",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         true,
         false,
@@ -39,25 +39,25 @@ public class _GroupSum5
         true,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 2, 5, 10, 4 }; 
-        int[] nums1 = { 2, 5, 10, 4 }; 
-        int[] nums2 = { 2, 5, 10, 4 }; 
-        int[] nums3 = { 2, 5, 4, 10 }; 
-        int[] nums4 = { 3, 5, 1 }; 
-        int[] nums5 = { 3, 5, 1 }; 
-        int[] nums6 = { 1, 3, 5 }; 
-        int[] nums7 = { 3, 5, 1 }; 
-        int[] nums8 = { 2, 5, 10, 4 }; 
-        int[] nums9 = { 2, 5, 10, 4 }; 
-        int[] nums10 = { 2, 5, 10, 4 }; 
-        int[] nums11 = { 1 }; 
-        int[] nums12 = { 9 }; 
-        int[] nums13 = { 9 }; 
-        int[] nums14 = {  }; 
+        final int[] nums0 = { 2, 5, 10, 4 }; 
+        final int[] nums1 = { 2, 5, 10, 4 }; 
+        final int[] nums2 = { 2, 5, 10, 4 }; 
+        final int[] nums3 = { 2, 5, 4, 10 }; 
+        final int[] nums4 = { 3, 5, 1 }; 
+        final int[] nums5 = { 3, 5, 1 }; 
+        final int[] nums6 = { 1, 3, 5 }; 
+        final int[] nums7 = { 3, 5, 1 }; 
+        final int[] nums8 = { 2, 5, 10, 4 }; 
+        final int[] nums9 = { 2, 5, 10, 4 }; 
+        final int[] nums10 = { 2, 5, 10, 4 }; 
+        final int[] nums11 = { 1 }; 
+        final int[] nums12 = { 9 }; 
+        final int[] nums13 = { 9 }; 
+        final int[] nums14 = {  }; 
 
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             GroupSum5.groupSum5(0, nums0, 19),
             GroupSum5.groupSum5(0, nums1, 17),
             GroupSum5.groupSum5(0, nums2, 12),

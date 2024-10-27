@@ -1,9 +1,9 @@
 package String1.Testcases;
 import String1.MakeTags;
 
-public class _MakeTags
+public final class _MakeTags
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "makeTags(\"i\", \"Yay\")",
         "makeTags(\"i\", \"Hello\")",
         "makeTags(\"cite\", \"Yay\")",
@@ -13,7 +13,7 @@ public class _MakeTags
         "makeTags(\"i\", \"\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "<i>Yay</i>",
         "<i>Hello</i>",
         "<cite>Yay</cite>",
@@ -23,9 +23,9 @@ public class _MakeTags
         "<i></i>",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             MakeTags.makeTags("i", "Yay"),
             MakeTags.makeTags("i", "Hello"),
             MakeTags.makeTags("cite", "Yay"),

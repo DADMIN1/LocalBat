@@ -4,7 +4,7 @@ import Warmup2.Testcases._StringMatch;
 // https://codingbat.com/prob/p198640
 // Difficulty: 227.0
 
-public class StringMatch
+public final class StringMatch
 {
     /* Given 2 strings, a and b, return the number of the positions where they contain the same length 2 substring. 
     So "xxcaazz" and "xxbaaz" yields 3, since the "xx", "aa", 
@@ -25,12 +25,12 @@ public class StringMatch
     | stringMatch("iaxxai", "aaxxaaxx")  → 3 |
     |_______________________________________*/
 
-    public static int stringMatch(String a, String b)
+    public static final int stringMatch(String a, String b)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _StringMatch.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

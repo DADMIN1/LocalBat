@@ -4,7 +4,7 @@ import Logic1.Testcases._AlarmClock;
 // https://codingbat.com/prob/p160543
 // Difficulty: 118.0
 
-public class AlarmClock
+public final class AlarmClock
 {
     /* Given a day of the week encoded as 0=Sun, 1=Mon, 2=Tue, 
     ...6=Sat, and a boolean indicating if we are on vacation, 
@@ -26,12 +26,12 @@ public class AlarmClock
     | alarmClock(5, true)  → "10:00" |
     |_______________________________*/
 
-    public static String alarmClock(int day, boolean vacation)
+    public static final String alarmClock(int day, boolean vacation)
     {
         return "";
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _AlarmClock.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

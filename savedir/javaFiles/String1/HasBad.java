@@ -4,7 +4,7 @@ import String1.Testcases._HasBad;
 // https://codingbat.com/prob/p139075
 // Difficulty: 160.0
 
-public class HasBad
+public final class HasBad
 {
     /* Given a string, return true if "bad" appears starting at index 0 or 1 in the string, 
     such as with "badxxx" or "xbadxx" but not "xxbadxx". The string may be any length, 
@@ -25,12 +25,12 @@ public class HasBad
     | hasBad("badyy")   → true  |
     |__________________________*/
 
-    public static boolean hasBad(String str)
+    public static final boolean hasBad(String str)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _HasBad.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

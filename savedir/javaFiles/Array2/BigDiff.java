@@ -4,7 +4,7 @@ import Array2.Testcases._BigDiff;
 // https://codingbat.com/prob/p196640
 // Difficulty: 206.0
 
-public class BigDiff
+public final class BigDiff
 {
     /* Given an array length 1 or more of ints, 
     return the difference between the largest and smallest values in the array. 
@@ -27,12 +27,12 @@ public class BigDiff
     | bigDiff([7, 7, 6, 8, 5, 5, 6]) → 3  |
     |____________________________________*/
 
-    public static int bigDiff(int[] nums)
+    public static final int bigDiff(int[] nums)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _BigDiff.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

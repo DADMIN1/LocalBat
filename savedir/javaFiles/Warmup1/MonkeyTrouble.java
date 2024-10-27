@@ -4,7 +4,7 @@ import Warmup1.Testcases._MonkeyTrouble;
 // https://codingbat.com/prob/p181646
 // Difficulty: 106.0
 
-public class MonkeyTrouble
+public final class MonkeyTrouble
 {
     /* We have two monkeys, a and b, and the parameters aSmile and bSmile indicate if each is smiling. 
     We are in trouble if they are both smiling or if neither of them is smiling. 
@@ -19,12 +19,12 @@ public class MonkeyTrouble
     | monkeyTrouble(false, true)  → false |
     |____________________________________*/
 
-    public static boolean monkeyTrouble(boolean aSmile, boolean bSmile)
+    public static final boolean monkeyTrouble(boolean aSmile, boolean bSmile)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _MonkeyTrouble.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

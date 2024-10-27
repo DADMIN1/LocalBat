@@ -4,7 +4,7 @@ import String2.Testcases._StarOut;
 // https://codingbat.com/prob/p139564
 // Difficulty: 254.0
 
-public class StarOut
+public final class StarOut
 {
     /* Return a version of the given string, 
     where for every star (*) in the string the star and the chars immediately to its left and right are gone. 
@@ -33,12 +33,12 @@ public class StarOut
     | starOut("")            → ""       |
     |__________________________________*/
 
-    public static String starOut(String str)
+    public static final String starOut(String str)
     {
         return "";
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _StarOut.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

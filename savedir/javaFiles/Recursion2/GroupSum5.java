@@ -4,7 +4,7 @@ import Recursion2.Testcases._GroupSum5;
 // https://codingbat.com/prob/p138907
 // Difficulty: 412.0
 
-public class GroupSum5
+public final class GroupSum5
 {
     /* Given an array of ints, is it possible to choose a group of some of the ints, 
     such that the group sums to the given target with these additional constraints: 
@@ -32,12 +32,12 @@ public class GroupSum5
     | groupSum5(0, [], 0)             → true  |
     |________________________________________*/
 
-    public static boolean groupSum5(int start, int[] nums, int target)
+    public static final boolean groupSum5(int start, int[] nums, int target)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _GroupSum5.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

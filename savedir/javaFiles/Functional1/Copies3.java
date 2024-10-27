@@ -7,7 +7,7 @@ import java.util.ArrayList;
 // https://codingbat.com/prob/p181634
 // Difficulty: 209
 
-public class Copies3
+public final class Copies3
 {
     /* Given a list of strings, return a list where each string is replaced by 3 copies of the string concatenated together. */
 
@@ -22,12 +22,12 @@ public class Copies3
     | copies3(["this", "and", "that", "and"]) → ["thisthisthis", "andandand", "thatthatthat", "andandand"] |
     |_____________________________________________________________________________________________________*/
 
-    public static List<String> copies3(List<String> strings)
+    public static final List<String> copies3(List<String> strings)
     {
         return new ArrayList<String>();
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _Copies3.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

@@ -4,9 +4,9 @@ import java.util.List;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class _No9
+public final class _No9
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "no9([1, 2, 19])",
         "no9([9, 19, 29, 3])",
         "no9([1, 2, 3])",
@@ -16,7 +16,7 @@ public class _No9
         "no9([0, 9, 0])",
     };
 
-    static List<?>[] expectedResults = {
+    static final List<?>[] expectedResults = {
         Arrays.asList(1, 2),
         Arrays.asList(3),
         Arrays.asList(1, 2, 3),
@@ -26,9 +26,9 @@ public class _No9
         Arrays.asList(0, 0),
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        List<?>[] resultsArray = {
+        final List<?>[] resultsArray = {
             No9.no9(new ArrayList<>(Arrays.asList(1, 2, 19))),
             No9.no9(new ArrayList<>(Arrays.asList(9, 19, 29, 3))),
             No9.no9(new ArrayList<>(Arrays.asList(1, 2, 3))),

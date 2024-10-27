@@ -4,7 +4,7 @@ import Warmup2.Testcases._StringTimes;
 // https://codingbat.com/prob/p142270
 // Difficulty: 203.0
 
-public class StringTimes
+public final class StringTimes
 {
     /* Given a string and a non-negative int n, return a larger string that is n copies of the original string. */
 
@@ -23,12 +23,12 @@ public class StringTimes
     | stringTimes("code", 3)    → "codecodecode"   |
     |_____________________________________________*/
 
-    public static String stringTimes(String str, int n)
+    public static final String stringTimes(String str, int n)
     {
         return "";
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _StringTimes.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

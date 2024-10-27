@@ -3,9 +3,9 @@ import Map1.MapAB;
 import java.util.Map;
 import java.util.HashMap;
 
-public class _MapAB
+public final class _MapAB
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "mapAB({\"a\": \"Hi\", \"b\": \"There\"})",
         "mapAB({\"a\": \"Hi\"})",
         "mapAB({\"b\": \"There\"})",
@@ -14,7 +14,7 @@ public class _MapAB
         "mapAB({\"ab\": \"nope\", \"b\": \"bbb\", \"c\": \"ccc\"})",
     };
 
-    static Map<?,?>[] expectedResults = {
+    static final Map<?,?>[] expectedResults = {
         Map.of("a", "Hi", "ab", "HiThere", "b", "There"),
         Map.of("a", "Hi"),
         Map.of("b", "There"),
@@ -23,9 +23,9 @@ public class _MapAB
         Map.of("ab", "nope", "b", "bbb", "c", "ccc"),
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        Map<?,?>[] resultsArray = {
+        final Map<?,?>[] resultsArray = {
             MapAB.mapAB(new HashMap<>(Map.of("a", "Hi", "b", "There"))),
             MapAB.mapAB(new HashMap<>(Map.of("a", "Hi"))),
             MapAB.mapAB(new HashMap<>(Map.of("b", "There"))),

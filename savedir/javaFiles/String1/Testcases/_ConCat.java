@@ -1,9 +1,9 @@
 package String1.Testcases;
 import String1.ConCat;
 
-public class _ConCat
+public final class _ConCat
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "conCat(\"abc\", \"cat\")",
         "conCat(\"dog\", \"cat\")",
         "conCat(\"abc\", \"\")",
@@ -12,7 +12,7 @@ public class _ConCat
         "conCat(\"pig\", \"doggy\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "abcat",
         "dogcat",
         "abc",
@@ -21,9 +21,9 @@ public class _ConCat
         "pigdoggy",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             ConCat.conCat("abc", "cat"),
             ConCat.conCat("dog", "cat"),
             ConCat.conCat("abc", ""),

@@ -7,7 +7,7 @@ import java.util.ArrayList;
 // https://codingbat.com/prob/p184496
 // Difficulty: 212
 
-public class No34
+public final class No34
 {
     /* Given a list of strings, return a list of the strings, omitting any string length 3 or 4. */
 
@@ -27,12 +27,12 @@ public class No34
     | no34(["aaaa", "bbb", "*****", "333"]) → ["*****"]              |
     |_______________________________________________________________*/
 
-    public static List<String> no34(List<String> strings)
+    public static final List<String> no34(List<String> strings)
     {
         return new ArrayList<String>();
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _No34.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

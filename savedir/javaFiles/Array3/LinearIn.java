@@ -4,7 +4,7 @@ import Array3.Testcases._LinearIn;
 // https://codingbat.com/prob/p134022
 // Difficulty: 315.0
 
-public class LinearIn
+public final class LinearIn
 {
     /* Given two arrays of ints sorted in increasing order, outer and inner, 
     return true if all of the numbers in inner appear in outer. 
@@ -29,12 +29,12 @@ public class LinearIn
     | linearIn([-1, 0, 3, 3, 3, 10, 12], [-1, 10, 11])   → false |
     |___________________________________________________________*/
 
-    public static boolean linearIn(int[] outer, int[] inner)
+    public static final boolean linearIn(int[] outer, int[] inner)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _LinearIn.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

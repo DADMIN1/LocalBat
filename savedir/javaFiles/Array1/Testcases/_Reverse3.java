@@ -3,9 +3,9 @@ import Array1.Reverse3;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class _Reverse3
+public final class _Reverse3
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "reverse3([1, 2, 3])",
         "reverse3([5, 11, 9])",
         "reverse3([7, 0, 0])",
@@ -16,7 +16,7 @@ public class _Reverse3
         "reverse3([7, 2, 3])",
     };
 
-    static int[][] expectedResults = {
+    static final int[][] expectedResults = {
         {3, 2, 1},
         {9, 11, 5},
         {0, 0, 7},
@@ -27,7 +27,7 @@ public class _Reverse3
         {3, 2, 7},
     };
 
-    public static String printArray(int[] array)
+    public static final String printArray(int[] array)
     {
         String result = "[";
         for (int a: array) { result += a+", "; }
@@ -35,18 +35,18 @@ public class _Reverse3
         return result + "]";
     }
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 1, 2, 3 }; 
-        int[] nums1 = { 5, 11, 9 }; 
-        int[] nums2 = { 7, 0, 0 }; 
-        int[] nums3 = { 2, 1, 2 }; 
-        int[] nums4 = { 1, 2, 1 }; 
-        int[] nums5 = { 2, 11, 3 }; 
-        int[] nums6 = { 0, 6, 5 }; 
-        int[] nums7 = { 7, 2, 3 }; 
+        final int[] nums0 = { 1, 2, 3 }; 
+        final int[] nums1 = { 5, 11, 9 }; 
+        final int[] nums2 = { 7, 0, 0 }; 
+        final int[] nums3 = { 2, 1, 2 }; 
+        final int[] nums4 = { 1, 2, 1 }; 
+        final int[] nums5 = { 2, 11, 3 }; 
+        final int[] nums6 = { 0, 6, 5 }; 
+        final int[] nums7 = { 7, 2, 3 }; 
 
-        int[][] resultsArray = {
+        final int[][] resultsArray = {
             Reverse3.reverse3(nums0),
             Reverse3.reverse3(nums1),
             Reverse3.reverse3(nums2),

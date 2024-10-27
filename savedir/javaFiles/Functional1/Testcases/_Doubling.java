@@ -4,9 +4,9 @@ import java.util.List;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class _Doubling
+public final class _Doubling
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "doubling([1, 2, 3])",
         "doubling([6, 8, 6, 8, -1])",
         "doubling([])",
@@ -17,7 +17,7 @@ public class _Doubling
         "doubling([3, 1, 4, 1, 5, 9])",
     };
 
-    static List<?>[] expectedResults = {
+    static final List<?>[] expectedResults = {
         Arrays.asList(2, 4, 6),
         Arrays.asList(12, 16, 12, 16, -2),
         Arrays.asList(),
@@ -28,9 +28,9 @@ public class _Doubling
         Arrays.asList(6, 2, 8, 2, 10, 18),
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        List<?>[] resultsArray = {
+        final List<?>[] resultsArray = {
             Doubling.doubling(new ArrayList<>(Arrays.asList(1, 2, 3))),
             Doubling.doubling(new ArrayList<>(Arrays.asList(6, 8, 6, 8, -1))),
             Doubling.doubling(new ArrayList<>(Arrays.asList())),

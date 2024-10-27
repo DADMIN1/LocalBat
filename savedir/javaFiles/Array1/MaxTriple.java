@@ -4,7 +4,7 @@ import Array1.Testcases._MaxTriple;
 // https://codingbat.com/prob/p185176
 // Difficulty: 169.0
 
-public class MaxTriple
+public final class MaxTriple
 {
     /* Given an array of ints of odd length, look at the first, 
     last, and middle values in the array and return the largest. 
@@ -25,12 +25,12 @@ public class MaxTriple
     | maxTriple([2, 2, 5, 1, 1])       → 5 |
     |_____________________________________*/
 
-    public static int maxTriple(int[] nums)
+    public static final int maxTriple(int[] nums)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _MaxTriple.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

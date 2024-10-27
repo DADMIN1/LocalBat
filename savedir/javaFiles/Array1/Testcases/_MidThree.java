@@ -3,21 +3,21 @@ import Array1.MidThree;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class _MidThree
+public final class _MidThree
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "midThree([1, 2, 3, 4, 5])",
         "midThree([8, 6, 7, 5, 3, 0, 9])",
         "midThree([1, 2, 3])",
     };
 
-    static int[][] expectedResults = {
+    static final int[][] expectedResults = {
         {2, 3, 4},
         {7, 5, 3},
         {1, 2, 3},
     };
 
-    public static String printArray(int[] array)
+    public static final String printArray(int[] array)
     {
         String result = "[";
         for (int a: array) { result += a+", "; }
@@ -25,13 +25,13 @@ public class _MidThree
         return result + "]";
     }
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 1, 2, 3, 4, 5 }; 
-        int[] nums1 = { 8, 6, 7, 5, 3, 0, 9 }; 
-        int[] nums2 = { 1, 2, 3 }; 
+        final int[] nums0 = { 1, 2, 3, 4, 5 }; 
+        final int[] nums1 = { 8, 6, 7, 5, 3, 0, 9 }; 
+        final int[] nums2 = { 1, 2, 3 }; 
 
-        int[][] resultsArray = {
+        final int[][] resultsArray = {
             MidThree.midThree(nums0),
             MidThree.midThree(nums1),
             MidThree.midThree(nums2),

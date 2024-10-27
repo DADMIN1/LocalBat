@@ -1,9 +1,9 @@
 package Recursion1.Testcases;
 import Recursion1.StrCopies;
 
-public class _StrCopies
+public final class _StrCopies
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "strCopies(\"catcowcat\", \"cat\", 2)",
         "strCopies(\"catcowcat\", \"cow\", 2)",
         "strCopies(\"catcowcat\", \"cow\", 1)",
@@ -20,7 +20,7 @@ public class _StrCopies
         "strCopies(\"dogcatdogcat\", \"dog\", 2)",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         false,
         true,
@@ -37,9 +37,9 @@ public class _StrCopies
         true,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             StrCopies.strCopies("catcowcat", "cat", 2),
             StrCopies.strCopies("catcowcat", "cow", 2),
             StrCopies.strCopies("catcowcat", "cow", 1),

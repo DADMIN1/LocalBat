@@ -4,7 +4,7 @@ import Array2.Testcases._CountEvens;
 // https://codingbat.com/prob/p162010
 // Difficulty: 203.0
 
-public class CountEvens
+public final class CountEvens
 {
     /* Return the number of even ints in the given array. Note: 
     the % "mod" operator computes the remainder, e.g. 5 % 2 is 1. */
@@ -22,12 +22,12 @@ public class CountEvens
     | countEvens([2, 5, 12])      → 2 |
     |________________________________*/
 
-    public static int countEvens(int[] nums)
+    public static final int countEvens(int[] nums)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _CountEvens.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

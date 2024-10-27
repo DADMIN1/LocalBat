@@ -4,7 +4,7 @@ import String1.Testcases._WithoutX;
 // https://codingbat.com/prob/p151940
 // Difficulty: 196.0
 
-public class WithoutX
+public final class WithoutX
 {
     /* Given a string, if the first or last chars are 'x', return the string without those 'x' chars, 
     and otherwise return the string unchanged. */
@@ -26,12 +26,12 @@ public class WithoutX
     | withoutX("Hexllo") → "Hexllo" |
     |______________________________*/
 
-    public static String withoutX(String str)
+    public static final String withoutX(String str)
     {
         return "";
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _WithoutX.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

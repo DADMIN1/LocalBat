@@ -1,9 +1,9 @@
 package Array3.Testcases;
 import Array3.CountClumps;
 
-public class _CountClumps
+public final class _CountClumps
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "countClumps([1, 2, 2, 3, 4, 4])",
         "countClumps([1, 1, 2, 1, 1])",
         "countClumps([1, 1, 1, 1, 1])",
@@ -15,7 +15,7 @@ public class _CountClumps
         "countClumps([])",
     };
 
-    static int[] expectedResults = {
+    static final int[] expectedResults = {
         2,
         2,
         1,
@@ -27,19 +27,19 @@ public class _CountClumps
         0,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 1, 2, 2, 3, 4, 4 }; 
-        int[] nums1 = { 1, 1, 2, 1, 1 }; 
-        int[] nums2 = { 1, 1, 1, 1, 1 }; 
-        int[] nums3 = { 1, 2, 3 }; 
-        int[] nums4 = { 2, 2, 1, 1, 1, 2, 1, 1, 2, 2 }; 
-        int[] nums5 = { 0, 2, 2, 1, 1, 1, 2, 1, 1, 2, 2 }; 
-        int[] nums6 = { 0, 0, 2, 2, 1, 1, 1, 2, 1, 1, 2, 2 }; 
-        int[] nums7 = { 0, 0, 0, 2, 2, 1, 1, 1, 2, 1, 1, 2, 2 }; 
-        int[] nums8 = {  }; 
+        final int[] nums0 = { 1, 2, 2, 3, 4, 4 }; 
+        final int[] nums1 = { 1, 1, 2, 1, 1 }; 
+        final int[] nums2 = { 1, 1, 1, 1, 1 }; 
+        final int[] nums3 = { 1, 2, 3 }; 
+        final int[] nums4 = { 2, 2, 1, 1, 1, 2, 1, 1, 2, 2 }; 
+        final int[] nums5 = { 0, 2, 2, 1, 1, 1, 2, 1, 1, 2, 2 }; 
+        final int[] nums6 = { 0, 0, 2, 2, 1, 1, 1, 2, 1, 1, 2, 2 }; 
+        final int[] nums7 = { 0, 0, 0, 2, 2, 1, 1, 1, 2, 1, 1, 2, 2 }; 
+        final int[] nums8 = {  }; 
 
-        int[] resultsArray = {
+        final int[] resultsArray = {
             CountClumps.countClumps(nums0),
             CountClumps.countClumps(nums1),
             CountClumps.countClumps(nums2),

@@ -1,9 +1,9 @@
 package Recursion1.Testcases;
 import Recursion1.Array220;
 
-public class _Array220
+public final class _Array220
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "array220([1, 2, 20], 0)",
         "array220([3, 30], 0)",
         "array220([3], 0)",
@@ -20,7 +20,7 @@ public class _Array220
         "array220([1, 2, 3, 4, 4, 50, 500, 6], 0)",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         true,
         false,
@@ -37,24 +37,24 @@ public class _Array220
         true,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 1, 2, 20 }; 
-        int[] nums1 = { 3, 30 }; 
-        int[] nums2 = { 3 }; 
-        int[] nums3 = {  }; 
-        int[] nums4 = { 3, 3, 30, 4 }; 
-        int[] nums5 = { 2, 19, 4 }; 
-        int[] nums6 = { 20, 2, 21 }; 
-        int[] nums7 = { 20, 2, 21, 210 }; 
-        int[] nums8 = { 2, 200, 2000 }; 
-        int[] nums9 = { 0, 0 }; 
-        int[] nums10 = { 1, 2, 3, 4, 5, 6 }; 
-        int[] nums11 = { 1, 2, 3, 4, 5, 50, 6 }; 
-        int[] nums12 = { 1, 2, 3, 4, 5, 51, 6 }; 
-        int[] nums13 = { 1, 2, 3, 4, 4, 50, 500, 6 }; 
+        final int[] nums0 = { 1, 2, 20 }; 
+        final int[] nums1 = { 3, 30 }; 
+        final int[] nums2 = { 3 }; 
+        final int[] nums3 = {  }; 
+        final int[] nums4 = { 3, 3, 30, 4 }; 
+        final int[] nums5 = { 2, 19, 4 }; 
+        final int[] nums6 = { 20, 2, 21 }; 
+        final int[] nums7 = { 20, 2, 21, 210 }; 
+        final int[] nums8 = { 2, 200, 2000 }; 
+        final int[] nums9 = { 0, 0 }; 
+        final int[] nums10 = { 1, 2, 3, 4, 5, 6 }; 
+        final int[] nums11 = { 1, 2, 3, 4, 5, 50, 6 }; 
+        final int[] nums12 = { 1, 2, 3, 4, 5, 51, 6 }; 
+        final int[] nums13 = { 1, 2, 3, 4, 4, 50, 500, 6 }; 
 
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             Array220.array220(nums0, 0),
             Array220.array220(nums1, 0),
             Array220.array220(nums2, 0),

@@ -4,7 +4,7 @@ import Logic2.Testcases._CloseFar;
 // https://codingbat.com/prob/p138990
 // Difficulty: 215.0
 
-public class CloseFar
+public final class CloseFar
 {
     /* Given three ints, a b c, return true if one of b or c is "close" (differing from a by at most 1), 
     while the other is "far", differing from both other values by 2 or more. 
@@ -27,12 +27,12 @@ public class CloseFar
     | closeFar(8, 6, 9)   → true  |
     |____________________________*/
 
-    public static boolean closeFar(int a, int b, int c)
+    public static final boolean closeFar(int a, int b, int c)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _CloseFar.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

@@ -1,9 +1,9 @@
 package Warmup2.Testcases;
 import Warmup2.ArrayCount9;
 
-public class _ArrayCount9
+public final class _ArrayCount9
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "arrayCount9([1, 2, 9])",
         "arrayCount9([1, 9, 9])",
         "arrayCount9([1, 9, 9, 3, 9])",
@@ -13,7 +13,7 @@ public class _ArrayCount9
         "arrayCount9([9, 2, 4, 3, 1])",
     };
 
-    static int[] expectedResults = {
+    static final int[] expectedResults = {
         1,
         2,
         3,
@@ -23,17 +23,17 @@ public class _ArrayCount9
         1,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 1, 2, 9 }; 
-        int[] nums1 = { 1, 9, 9 }; 
-        int[] nums2 = { 1, 9, 9, 3, 9 }; 
-        int[] nums3 = { 1, 2, 3 }; 
-        int[] nums4 = {  }; 
-        int[] nums5 = { 4, 2, 4, 3, 1 }; 
-        int[] nums6 = { 9, 2, 4, 3, 1 }; 
+        final int[] nums0 = { 1, 2, 9 }; 
+        final int[] nums1 = { 1, 9, 9 }; 
+        final int[] nums2 = { 1, 9, 9, 3, 9 }; 
+        final int[] nums3 = { 1, 2, 3 }; 
+        final int[] nums4 = {  }; 
+        final int[] nums5 = { 4, 2, 4, 3, 1 }; 
+        final int[] nums6 = { 9, 2, 4, 3, 1 }; 
 
-        int[] resultsArray = {
+        final int[] resultsArray = {
             ArrayCount9.arrayCount9(nums0),
             ArrayCount9.arrayCount9(nums1),
             ArrayCount9.arrayCount9(nums2),

@@ -1,9 +1,9 @@
 package String1.Testcases;
 import String1.MinCat;
 
-public class _MinCat
+public final class _MinCat
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "minCat(\"Hello\", \"Hi\")",
         "minCat(\"Hello\", \"java\")",
         "minCat(\"java\", \"Hello\")",
@@ -12,7 +12,7 @@ public class _MinCat
         "minCat(\"abc\", \"\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "loHi",
         "ellojava",
         "javaello",
@@ -21,9 +21,9 @@ public class _MinCat
         "",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             MinCat.minCat("Hello", "Hi"),
             MinCat.minCat("Hello", "java"),
             MinCat.minCat("java", "Hello"),

@@ -1,9 +1,9 @@
 package String2.Testcases;
 import String2.ZipZap;
 
-public class _ZipZap
+public final class _ZipZap
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "zipZap(\"zipXzap\")",
         "zipZap(\"zopzop\")",
         "zipZap(\"zzzopzop\")",
@@ -18,7 +18,7 @@ public class _ZipZap
         "zipZap(\"azbcpzpp\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "zpXzp",
         "zpzp",
         "zzzpzp",
@@ -33,9 +33,9 @@ public class _ZipZap
         "azbcpzp",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             ZipZap.zipZap("zipXzap"),
             ZipZap.zipZap("zopzop"),
             ZipZap.zipZap("zzzopzop"),

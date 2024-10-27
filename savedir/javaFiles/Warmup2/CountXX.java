@@ -4,7 +4,7 @@ import Warmup2.Testcases._CountXX;
 // https://codingbat.com/prob/p194667
 // Difficulty: 207.0
 
-public class CountXX
+public final class CountXX
 {
     /* Count the number of "xx" in the given string. We'll say that overlapping is allowed, 
     so "xxx" contains 2 "xx". */
@@ -23,12 +23,12 @@ public class CountXX
     | countXX("Kittensxxx")  → 2 |
     |___________________________*/
 
-    public static int countXX(String str)
+    public static final int countXX(String str)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _CountXX.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

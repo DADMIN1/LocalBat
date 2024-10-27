@@ -4,7 +4,7 @@ import Recursion1.Testcases._StringClean;
 // https://codingbat.com/prob/p104029
 // Difficulty: 372.0
 
-public class StringClean
+public final class StringClean
 {
     /* Given a string, return recursively a "cleaned" string where adjacent chars that are the same have been reduced to a single char. 
     So "yyzzza" yields "yza". */
@@ -20,12 +20,12 @@ public class StringClean
     | stringClean("Hello Bookkeeper") → "Helo Bokeper" |
     |_________________________________________________*/
 
-    public static String stringClean(String str)
+    public static final String stringClean(String str)
     {
         return "";
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _StringClean.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

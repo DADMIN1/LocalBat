@@ -1,9 +1,9 @@
 package String1.Testcases;
 import String1.HasBad;
 
-public class _HasBad
+public final class _HasBad
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "hasBad(\"badxx\")",
         "hasBad(\"xbadxx\")",
         "hasBad(\"xxbadxx\")",
@@ -16,7 +16,7 @@ public class _HasBad
         "hasBad(\"badyy\")",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         true,
         false,
@@ -29,9 +29,9 @@ public class _HasBad
         true,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             HasBad.hasBad("badxx"),
             HasBad.hasBad("xbadxx"),
             HasBad.hasBad("xxbadxx"),

@@ -1,9 +1,9 @@
 package Warmup2.Testcases;
 import Warmup2.AltPairs;
 
-public class _AltPairs
+public final class _AltPairs
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "altPairs(\"kitten\")",
         "altPairs(\"Chocolate\")",
         "altPairs(\"CodingHorror\")",
@@ -14,7 +14,7 @@ public class _AltPairs
         "altPairs(\"ThisThatTheOther\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "kien",
         "Chole",
         "Congrr",
@@ -25,9 +25,9 @@ public class _AltPairs
         "ThThThth",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             AltPairs.altPairs("kitten"),
             AltPairs.altPairs("Chocolate"),
             AltPairs.altPairs("CodingHorror"),

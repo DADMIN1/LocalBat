@@ -4,7 +4,7 @@ import Recursion2.Testcases._GroupSum;
 // https://codingbat.com/prob/p145416
 // Difficulty: 403.0
 
-public class GroupSum
+public final class GroupSum
 {
     /* Given an array of ints, is it possible to choose a group of some of the ints, 
     such that the group sums to the given target? This is a classic backtracking recursion problem. 
@@ -33,12 +33,12 @@ public class GroupSum
     | groupSum(0, [10, 2, 2, 5], 9)  → true  |
     |_______________________________________*/
 
-    public static boolean groupSum(int start, int[] nums, int target)
+    public static final boolean groupSum(int start, int[] nums, int target)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _GroupSum.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

@@ -4,7 +4,7 @@ import Array2.Testcases._Sum13;
 // https://codingbat.com/prob/p127384
 // Difficulty: 212.0
 
-public class Sum13
+public final class Sum13
 {
     /* Return the sum of the numbers in the array, returning 0 for an empty array. 
     Except the number 13 is very unlucky, 
@@ -29,12 +29,12 @@ public class Sum13
     | sum13([13, 0])                  → 0  |
     |_____________________________________*/
 
-    public static int sum13(int[] nums)
+    public static final int sum13(int[] nums)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _Sum13.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

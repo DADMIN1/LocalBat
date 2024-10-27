@@ -4,7 +4,7 @@ import String1.Testcases._DeFront;
 // https://codingbat.com/prob/p110141
 // Difficulty: 190.0
 
-public class DeFront
+public final class DeFront
 {
     /* Given a string, return a version without the first 2 chars. 
     Except keep the first char if it is 'a' and keep the second char if it is 'b'. 
@@ -34,12 +34,12 @@ public class DeFront
     | deFront("zzz")   → "z"     |
     |___________________________*/
 
-    public static String deFront(String str)
+    public static final String deFront(String str)
     {
         return "";
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _DeFront.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

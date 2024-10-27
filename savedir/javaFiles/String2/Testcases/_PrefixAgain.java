@@ -1,9 +1,9 @@
 package String2.Testcases;
 import String2.PrefixAgain;
 
-public class _PrefixAgain
+public final class _PrefixAgain
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "prefixAgain(\"abXYabc\", 1)",
         "prefixAgain(\"abXYabc\", 2)",
         "prefixAgain(\"abXYabc\", 3)",
@@ -18,7 +18,7 @@ public class _PrefixAgain
         "prefixAgain(\"ab\", 1)",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         true,
         false,
@@ -33,9 +33,9 @@ public class _PrefixAgain
         false,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             PrefixAgain.prefixAgain("abXYabc", 1),
             PrefixAgain.prefixAgain("abXYabc", 2),
             PrefixAgain.prefixAgain("abXYabc", 3),

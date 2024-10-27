@@ -4,7 +4,7 @@ import Logic2.Testcases._RoundSum;
 // https://codingbat.com/prob/p186753
 // Difficulty: 214
 
-public class RoundSum
+public final class RoundSum
 {
     /* For this problem, we'll round an int value up to the next multiple of 10 if its rightmost digit is 5 or more, 
     so 15 rounds up to 20. Alternately, 
@@ -37,12 +37,12 @@ public class RoundSum
     | roundSum(12, 10, 24) → 40  |
     |___________________________*/
 
-    public static int roundSum(int a, int b, int c)
+    public static final int roundSum(int a, int b, int c)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _RoundSum.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

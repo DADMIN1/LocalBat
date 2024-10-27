@@ -4,7 +4,7 @@ import Array1.Testcases._Make2;
 // https://codingbat.com/prob/p143461
 // Difficulty: 178.0
 
-public class Make2
+public final class Make2
 {
     /* Given 2 int arrays, a and b, return a new array length 2 containing, 
     as much as will fit, the elements from a followed by the elements from b. 
@@ -27,12 +27,12 @@ public class Make2
     | make2([5, 4], [2, 3, 7]) → [5, 4] |
     |__________________________________*/
 
-    public static int[] make2(int[] a, int[] b)
+    public static final int[] make2(int[] a, int[] b)
     {
         return new int[]{0};
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _Make2.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

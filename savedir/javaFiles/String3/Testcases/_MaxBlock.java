@@ -1,9 +1,9 @@
 package String3.Testcases;
 import String3.MaxBlock;
 
-public class _MaxBlock
+public final class _MaxBlock
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "maxBlock(\"hoopla\")",
         "maxBlock(\"abbCCCddBBBxx\")",
         "maxBlock(\"\")",
@@ -17,7 +17,7 @@ public class _MaxBlock
         "maxBlock(\"XX2222BBBbbXX2222\")",
     };
 
-    static int[] expectedResults = {
+    static final int[] expectedResults = {
         2,
         3,
         0,
@@ -31,9 +31,9 @@ public class _MaxBlock
         4,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] resultsArray = {
+        final int[] resultsArray = {
             MaxBlock.maxBlock("hoopla"),
             MaxBlock.maxBlock("abbCCCddBBBxx"),
             MaxBlock.maxBlock(""),

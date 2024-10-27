@@ -1,9 +1,9 @@
 package Array1.Testcases;
 import Array1.SameFirstLast;
 
-public class _SameFirstLast
+public final class _SameFirstLast
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "sameFirstLast([1, 2, 3])",
         "sameFirstLast([1, 2, 3, 1])",
         "sameFirstLast([1, 2, 1])",
@@ -15,7 +15,7 @@ public class _SameFirstLast
         "sameFirstLast([7, 7])",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         false,
         true,
         true,
@@ -27,19 +27,19 @@ public class _SameFirstLast
         true,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 1, 2, 3 }; 
-        int[] nums1 = { 1, 2, 3, 1 }; 
-        int[] nums2 = { 1, 2, 1 }; 
-        int[] nums3 = { 7 }; 
-        int[] nums4 = {  }; 
-        int[] nums5 = { 1, 2, 3, 4, 5, 1 }; 
-        int[] nums6 = { 1, 2, 3, 4, 5, 13 }; 
-        int[] nums7 = { 13, 2, 3, 4, 5, 13 }; 
-        int[] nums8 = { 7, 7 }; 
+        final int[] nums0 = { 1, 2, 3 }; 
+        final int[] nums1 = { 1, 2, 3, 1 }; 
+        final int[] nums2 = { 1, 2, 1 }; 
+        final int[] nums3 = { 7 }; 
+        final int[] nums4 = {  }; 
+        final int[] nums5 = { 1, 2, 3, 4, 5, 1 }; 
+        final int[] nums6 = { 1, 2, 3, 4, 5, 13 }; 
+        final int[] nums7 = { 13, 2, 3, 4, 5, 13 }; 
+        final int[] nums8 = { 7, 7 }; 
 
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             SameFirstLast.sameFirstLast(nums0),
             SameFirstLast.sameFirstLast(nums1),
             SameFirstLast.sameFirstLast(nums2),

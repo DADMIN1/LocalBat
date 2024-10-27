@@ -1,9 +1,9 @@
 package Recursion1.Testcases;
 import Recursion1.StringClean;
 
-public class _StringClean
+public final class _StringClean
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "stringClean(\"yyzzza\")",
         "stringClean(\"abbbcdd\")",
         "stringClean(\"Hello\")",
@@ -12,7 +12,7 @@ public class _StringClean
         "stringClean(\"Hello Bookkeeper\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "yza",
         "abcd",
         "Helo",
@@ -21,9 +21,9 @@ public class _StringClean
         "Helo Bokeper",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             StringClean.stringClean("yyzzza"),
             StringClean.stringClean("abbbcdd"),
             StringClean.stringClean("Hello"),

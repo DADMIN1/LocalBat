@@ -4,9 +4,9 @@ import java.util.List;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class _Copies3
+public final class _Copies3
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "copies3([\"a\", \"bb\", \"ccc\"])",
         "copies3([\"24\", \"a\", \"\"])",
         "copies3([\"hello\", \"there\"])",
@@ -15,7 +15,7 @@ public class _Copies3
         "copies3([\"this\", \"and\", \"that\", \"and\"])",
     };
 
-    static List<?>[] expectedResults = {
+    static final List<?>[] expectedResults = {
         Arrays.asList("aaa", "bbbbbb", "ccccccccc"),
         Arrays.asList("242424", "aaa", ""),
         Arrays.asList("hellohellohello", "theretherethere"),
@@ -24,9 +24,9 @@ public class _Copies3
         Arrays.asList("thisthisthis", "andandand", "thatthatthat", "andandand"),
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        List<?>[] resultsArray = {
+        final List<?>[] resultsArray = {
             Copies3.copies3(new ArrayList<>(Arrays.asList("a", "bb", "ccc"))),
             Copies3.copies3(new ArrayList<>(Arrays.asList("24", "a", ""))),
             Copies3.copies3(new ArrayList<>(Arrays.asList("hello", "there"))),

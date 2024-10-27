@@ -4,7 +4,7 @@ import Array2.Testcases._Has22;
 // https://codingbat.com/prob/p121853
 // Difficulty: 218.0
 
-public class Has22
+public final class Has22
 {
     /* Given an array of ints, return true if the array contains a 2 next to a 2 somewhere. */
 
@@ -27,12 +27,12 @@ public class Has22
     | has22([5, 2, 5, 2])       → false |
     |__________________________________*/
 
-    public static boolean has22(int[] nums)
+    public static final boolean has22(int[] nums)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _Has22.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

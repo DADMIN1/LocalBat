@@ -1,9 +1,9 @@
 package Array1.Testcases;
 import Array1.Double23;
 
-public class _Double23
+public final class _Double23
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "double23([2, 2])",
         "double23([3, 3])",
         "double23([2, 3])",
@@ -15,7 +15,7 @@ public class _Double23
         "double23([3, 4])",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         true,
         false,
@@ -27,19 +27,19 @@ public class _Double23
         false,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 2, 2 }; 
-        int[] nums1 = { 3, 3 }; 
-        int[] nums2 = { 2, 3 }; 
-        int[] nums3 = { 3, 2 }; 
-        int[] nums4 = { 4, 5 }; 
-        int[] nums5 = { 2 }; 
-        int[] nums6 = { 3 }; 
-        int[] nums7 = {  }; 
-        int[] nums8 = { 3, 4 }; 
+        final int[] nums0 = { 2, 2 }; 
+        final int[] nums1 = { 3, 3 }; 
+        final int[] nums2 = { 2, 3 }; 
+        final int[] nums3 = { 3, 2 }; 
+        final int[] nums4 = { 4, 5 }; 
+        final int[] nums5 = { 2 }; 
+        final int[] nums6 = { 3 }; 
+        final int[] nums7 = {  }; 
+        final int[] nums8 = { 3, 4 }; 
 
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             Double23.double23(nums0),
             Double23.double23(nums1),
             Double23.double23(nums2),

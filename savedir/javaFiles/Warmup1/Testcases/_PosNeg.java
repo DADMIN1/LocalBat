@@ -1,9 +1,9 @@
 package Warmup1.Testcases;
 import Warmup1.PosNeg;
 
-public class _PosNeg
+public final class _PosNeg
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "posNeg(1, -1, false)",
         "posNeg(-1, 1, false)",
         "posNeg(-4, -5, true)",
@@ -25,7 +25,7 @@ public class _PosNeg
         "posNeg(-5, -5, true)",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         true,
         true,
@@ -47,9 +47,9 @@ public class _PosNeg
         true,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             PosNeg.posNeg(1, -1, false),
             PosNeg.posNeg(-1, 1, false),
             PosNeg.posNeg(-4, -5, true),

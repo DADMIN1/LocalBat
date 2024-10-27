@@ -1,9 +1,9 @@
 package Logic1.Testcases;
 import Logic1.TeaParty;
 
-public class _TeaParty
+public final class _TeaParty
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "teaParty(6, 8)",
         "teaParty(3, 8)",
         "teaParty(20, 6)",
@@ -19,7 +19,7 @@ public class _TeaParty
         "teaParty(10, 20)",
     };
 
-    static int[] expectedResults = {
+    static final int[] expectedResults = {
         1,
         0,
         2,
@@ -35,9 +35,9 @@ public class _TeaParty
         2,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] resultsArray = {
+        final int[] resultsArray = {
             TeaParty.teaParty(6, 8),
             TeaParty.teaParty(3, 8),
             TeaParty.teaParty(20, 6),

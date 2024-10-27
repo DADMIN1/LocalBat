@@ -4,7 +4,7 @@ import Logic2.Testcases._EvenlySpaced;
 // https://codingbat.com/prob/p198700
 // Difficulty: 221.0
 
-public class EvenlySpaced
+public final class EvenlySpaced
 {
     /* Given three ints, a b c, one of them is small, one is medium and one is large. 
     Return true if the three values are evenly spaced, 
@@ -29,12 +29,12 @@ public class EvenlySpaced
     | evenlySpaced(12, 3, 6)  → false |
     |________________________________*/
 
-    public static boolean evenlySpaced(int a, int b, int c)
+    public static final boolean evenlySpaced(int a, int b, int c)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _EvenlySpaced.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

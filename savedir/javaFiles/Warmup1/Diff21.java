@@ -4,7 +4,7 @@ import Warmup1.Testcases._Diff21;
 // https://codingbat.com/prob/p116624
 // Difficulty: 112.0
 
-public class Diff21
+public final class Diff21
 {
     /* Given an int n, return the absolute difference between n and 21, 
     except return double the absolute difference if n is over 21. */
@@ -26,12 +26,12 @@ public class Diff21
     | diff21(50) → 58 |
     |________________*/
 
-    public static int diff21(int n)
+    public static final int diff21(int n)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _Diff21.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

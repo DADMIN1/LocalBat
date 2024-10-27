@@ -1,9 +1,9 @@
 package String1.Testcases;
 import String1.AtFirst;
 
-public class _AtFirst
+public final class _AtFirst
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "atFirst(\"hello\")",
         "atFirst(\"hi\")",
         "atFirst(\"h\")",
@@ -13,7 +13,7 @@ public class _AtFirst
         "atFirst(\"j\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "he",
         "hi",
         "h@",
@@ -23,9 +23,9 @@ public class _AtFirst
         "j@",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             AtFirst.atFirst("hello"),
             AtFirst.atFirst("hi"),
             AtFirst.atFirst("h"),

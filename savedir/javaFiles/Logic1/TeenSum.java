@@ -4,7 +4,7 @@ import Logic1.Testcases._TeenSum;
 // https://codingbat.com/prob/p178728
 // Difficulty: 127.0
 
-public class TeenSum
+public final class TeenSum
 {
     /* Given 2 ints, a and b, return their sum. However, "teen" values in the range 13..19 inclusive, 
     are extra lucky. So if either value is a teen, just return 19. */
@@ -30,12 +30,12 @@ public class TeenSum
     | teenSum(6, 7)   → 13 |
     |_____________________*/
 
-    public static int teenSum(int a, int b)
+    public static final int teenSum(int a, int b)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _TeenSum.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

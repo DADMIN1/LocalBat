@@ -1,9 +1,9 @@
 package Logic1.Testcases;
 import Logic1.DateFashion;
 
-public class _DateFashion
+public final class _DateFashion
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "dateFashion(5, 10)",
         "dateFashion(5, 2)",
         "dateFashion(5, 5)",
@@ -18,7 +18,7 @@ public class _DateFashion
         "dateFashion(6, 2)",
     };
 
-    static int[] expectedResults = {
+    static final int[] expectedResults = {
         2,
         0,
         1,
@@ -33,9 +33,9 @@ public class _DateFashion
         0,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] resultsArray = {
+        final int[] resultsArray = {
             DateFashion.dateFashion(5, 10),
             DateFashion.dateFashion(5, 2),
             DateFashion.dateFashion(5, 5),

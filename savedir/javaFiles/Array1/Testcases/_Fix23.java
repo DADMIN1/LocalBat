@@ -3,9 +3,9 @@ import Array1.Fix23;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class _Fix23
+public final class _Fix23
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "fix23([1, 2, 3])",
         "fix23([2, 3, 5])",
         "fix23([1, 2, 1])",
@@ -14,7 +14,7 @@ public class _Fix23
         "fix23([2, 3, 3])",
     };
 
-    static int[][] expectedResults = {
+    static final int[][] expectedResults = {
         {1, 2, 0},
         {2, 0, 5},
         {1, 2, 1},
@@ -23,7 +23,7 @@ public class _Fix23
         {2, 0, 3},
     };
 
-    public static String printArray(int[] array)
+    public static final String printArray(int[] array)
     {
         String result = "[";
         for (int a: array) { result += a+", "; }
@@ -31,16 +31,16 @@ public class _Fix23
         return result + "]";
     }
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 1, 2, 3 }; 
-        int[] nums1 = { 2, 3, 5 }; 
-        int[] nums2 = { 1, 2, 1 }; 
-        int[] nums3 = { 3, 2, 1 }; 
-        int[] nums4 = { 2, 2, 3 }; 
-        int[] nums5 = { 2, 3, 3 }; 
+        final int[] nums0 = { 1, 2, 3 }; 
+        final int[] nums1 = { 2, 3, 5 }; 
+        final int[] nums2 = { 1, 2, 1 }; 
+        final int[] nums3 = { 3, 2, 1 }; 
+        final int[] nums4 = { 2, 2, 3 }; 
+        final int[] nums5 = { 2, 3, 3 }; 
 
-        int[][] resultsArray = {
+        final int[][] resultsArray = {
             Fix23.fix23(nums0),
             Fix23.fix23(nums1),
             Fix23.fix23(nums2),

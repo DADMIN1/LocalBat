@@ -7,7 +7,7 @@ import java.util.ArrayList;
 // https://codingbat.com/prob/p177528
 // Difficulty: 210
 
-public class MoreY
+public final class MoreY
 {
     /* Given a list of strings, return a list where each string has "y" added at its start and end. */
 
@@ -22,12 +22,12 @@ public class MoreY
     | moreY(["xx", "yy", "zz"]) → ["yxxy", "yyyy", "yzzy"] |
     |_____________________________________________________*/
 
-    public static List<String> moreY(List<String> strings)
+    public static final List<String> moreY(List<String> strings)
     {
         return new ArrayList<String>();
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _MoreY.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

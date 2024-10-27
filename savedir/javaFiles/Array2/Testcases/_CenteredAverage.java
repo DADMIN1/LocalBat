@@ -1,9 +1,9 @@
 package Array2.Testcases;
 import Array2.CenteredAverage;
 
-public class _CenteredAverage
+public final class _CenteredAverage
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "centeredAverage([1, 2, 3, 4, 100])",
         "centeredAverage([1, 1, 5, 5, 10, 8, 7])",
         "centeredAverage([-10, -4, -2, -4, -2, 0])",
@@ -22,7 +22,7 @@ public class _CenteredAverage
         "centeredAverage([6, 4, 8, 12, 3])",
     };
 
-    static int[] expectedResults = {
+    static final int[] expectedResults = {
         3,
         5,
         -3,
@@ -41,26 +41,26 @@ public class _CenteredAverage
         6,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 1, 2, 3, 4, 100 }; 
-        int[] nums1 = { 1, 1, 5, 5, 10, 8, 7 }; 
-        int[] nums2 = { -10, -4, -2, -4, -2, 0 }; 
-        int[] nums3 = { 5, 3, 4, 6, 2 }; 
-        int[] nums4 = { 5, 3, 4, 0, 100 }; 
-        int[] nums5 = { 100, 0, 5, 3, 4 }; 
-        int[] nums6 = { 4, 0, 100 }; 
-        int[] nums7 = { 0, 2, 3, 4, 100 }; 
-        int[] nums8 = { 1, 1, 100 }; 
-        int[] nums9 = { 7, 7, 7 }; 
-        int[] nums10 = { 1, 7, 8 }; 
-        int[] nums11 = { 1, 1, 99, 99 }; 
-        int[] nums12 = { 1000, 0, 1, 99 }; 
-        int[] nums13 = { 4, 4, 4, 4, 5 }; 
-        int[] nums14 = { 4, 4, 4, 1, 5 }; 
-        int[] nums15 = { 6, 4, 8, 12, 3 }; 
+        final int[] nums0 = { 1, 2, 3, 4, 100 }; 
+        final int[] nums1 = { 1, 1, 5, 5, 10, 8, 7 }; 
+        final int[] nums2 = { -10, -4, -2, -4, -2, 0 }; 
+        final int[] nums3 = { 5, 3, 4, 6, 2 }; 
+        final int[] nums4 = { 5, 3, 4, 0, 100 }; 
+        final int[] nums5 = { 100, 0, 5, 3, 4 }; 
+        final int[] nums6 = { 4, 0, 100 }; 
+        final int[] nums7 = { 0, 2, 3, 4, 100 }; 
+        final int[] nums8 = { 1, 1, 100 }; 
+        final int[] nums9 = { 7, 7, 7 }; 
+        final int[] nums10 = { 1, 7, 8 }; 
+        final int[] nums11 = { 1, 1, 99, 99 }; 
+        final int[] nums12 = { 1000, 0, 1, 99 }; 
+        final int[] nums13 = { 4, 4, 4, 4, 5 }; 
+        final int[] nums14 = { 4, 4, 4, 1, 5 }; 
+        final int[] nums15 = { 6, 4, 8, 12, 3 }; 
 
-        int[] resultsArray = {
+        final int[] resultsArray = {
             CenteredAverage.centeredAverage(nums0),
             CenteredAverage.centeredAverage(nums1),
             CenteredAverage.centeredAverage(nums2),

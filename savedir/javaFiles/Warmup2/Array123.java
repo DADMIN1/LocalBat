@@ -4,7 +4,7 @@ import Warmup2.Testcases._Array123;
 // https://codingbat.com/prob/p136041
 // Difficulty: 224.0
 
-public class Array123
+public final class Array123
 {
     /* Given an array of ints, return true if the sequence of numbers 1, 
     2, 3 appears in the array somewhere. */
@@ -24,12 +24,12 @@ public class Array123
     | array123([])                 → false |
     |_____________________________________*/
 
-    public static boolean array123(int[] nums)
+    public static final boolean array123(int[] nums)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _Array123.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

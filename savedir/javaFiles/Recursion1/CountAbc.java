@@ -4,7 +4,7 @@ import Recursion1.Testcases._CountAbc;
 // https://codingbat.com/prob/p161124
 // Difficulty: 366.0
 
-public class CountAbc
+public final class CountAbc
 {
     /* Count recursively the total number of "abc" and "aba" substrings that appear in the given string. */
 
@@ -25,12 +25,12 @@ public class CountAbc
     | countAbc("aaa")      → 0 |
     |_________________________*/
 
-    public static int countAbc(String str)
+    public static final int countAbc(String str)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _CountAbc.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

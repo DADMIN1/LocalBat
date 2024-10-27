@@ -4,7 +4,7 @@ import Warmup1.Testcases._Front3;
 // https://codingbat.com/prob/p136351
 // Difficulty: 136.0
 
-public class Front3
+public final class Front3
 {
     /* Given a string, we'll say that the front is the first 3 chars of the string. 
     If the string length is less than 3, the front is whatever is there. 
@@ -22,12 +22,12 @@ public class Front3
     | front3("")          → ""          |
     |__________________________________*/
 
-    public static String front3(String str)
+    public static final String front3(String str)
     {
         return "";
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _Front3.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

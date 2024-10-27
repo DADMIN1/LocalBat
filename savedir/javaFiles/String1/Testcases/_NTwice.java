@@ -1,9 +1,9 @@
 package String1.Testcases;
 import String1.NTwice;
 
-public class _NTwice
+public final class _NTwice
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "nTwice(\"Hello\", 2)",
         "nTwice(\"Chocolate\", 3)",
         "nTwice(\"Chocolate\", 1)",
@@ -13,7 +13,7 @@ public class _NTwice
         "nTwice(\"Code\", 2)",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "Helo",
         "Choate",
         "Ce",
@@ -23,9 +23,9 @@ public class _NTwice
         "Code",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             NTwice.nTwice("Hello", 2),
             NTwice.nTwice("Chocolate", 3),
             NTwice.nTwice("Chocolate", 1),

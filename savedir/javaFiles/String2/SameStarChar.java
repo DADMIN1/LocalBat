@@ -4,7 +4,7 @@ import String2.Testcases._SameStarChar;
 // https://codingbat.com/prob/p194491
 // Difficulty: 248.0
 
-public class SameStarChar
+public final class SameStarChar
 {
     /* Returns true if for every '*' (star) in the string, if there are chars both immediately before and after the star, 
     they are the same. */
@@ -30,12 +30,12 @@ public class SameStarChar
     | sameStarChar("**")         → true  |
     |___________________________________*/
 
-    public static boolean sameStarChar(String str)
+    public static final boolean sameStarChar(String str)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _SameStarChar.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

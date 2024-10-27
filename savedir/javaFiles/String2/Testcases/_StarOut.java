@@ -1,9 +1,9 @@
 package String2.Testcases;
 import String2.StarOut;
 
-public class _StarOut
+public final class _StarOut
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "starOut(\"ab*cd\")",
         "starOut(\"ab**cd\")",
         "starOut(\"sm*eilly\")",
@@ -24,7 +24,7 @@ public class _StarOut
         "starOut(\"\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "ad",
         "ad",
         "silly",
@@ -45,9 +45,9 @@ public class _StarOut
         "",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             StarOut.starOut("ab*cd"),
             StarOut.starOut("ab**cd"),
             StarOut.starOut("sm*eilly"),

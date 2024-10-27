@@ -4,7 +4,7 @@ import Array2.Testcases._Only14;
 // https://codingbat.com/prob/p186672
 // Difficulty: 230.0
 
-public class Only14
+public final class Only14
 {
     /* Given an array of ints, return true if every element is a 1 or a 4. */
 
@@ -28,12 +28,12 @@ public class Only14
     | only14([4, 1, 4, 1]) → true  |
     |_____________________________*/
 
-    public static boolean only14(int[] nums)
+    public static final boolean only14(int[] nums)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _Only14.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

@@ -4,7 +4,7 @@ import Array2.Testcases._Has77;
 // https://codingbat.com/prob/p168357
 // Difficulty: 245.0
 
-public class Has77
+public final class Has77
 {
     /* Given an array of ints, return true if the array contains two 7's next to each other, 
     or there are two 7's separated by one element, such as with {7, 
@@ -29,12 +29,12 @@ public class Has77
     | has77([7])                → false |
     |__________________________________*/
 
-    public static boolean has77(int[] nums)
+    public static final boolean has77(int[] nums)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _Has77.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

@@ -4,9 +4,9 @@ import java.util.List;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class _AddStar
+public final class _AddStar
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "addStar([\"a\", \"bb\", \"ccc\"])",
         "addStar([\"hello\", \"there\"])",
         "addStar([\"*\"])",
@@ -15,7 +15,7 @@ public class _AddStar
         "addStar([\"empty\", \"string\", \"\"])",
     };
 
-    static List<?>[] expectedResults = {
+    static final List<?>[] expectedResults = {
         Arrays.asList("a*", "bb*", "ccc*"),
         Arrays.asList("hello*", "there*"),
         Arrays.asList("**"),
@@ -24,9 +24,9 @@ public class _AddStar
         Arrays.asList("empty*", "string*", "*"),
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        List<?>[] resultsArray = {
+        final List<?>[] resultsArray = {
             AddStar.addStar(new ArrayList<>(Arrays.asList("a", "bb", "ccc"))),
             AddStar.addStar(new ArrayList<>(Arrays.asList("hello", "there"))),
             AddStar.addStar(new ArrayList<>(Arrays.asList("*"))),

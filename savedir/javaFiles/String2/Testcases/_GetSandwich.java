@@ -1,9 +1,9 @@
 package String2.Testcases;
 import String2.GetSandwich;
 
-public class _GetSandwich
+public final class _GetSandwich
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "getSandwich(\"breadjambread\")",
         "getSandwich(\"xxbreadjambreadyy\")",
         "getSandwich(\"xxbreadyy\")",
@@ -18,7 +18,7 @@ public class _GetSandwich
         "getSandwich(\"breadbreadbreadbread\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "jam",
         "jam",
         "",
@@ -33,9 +33,9 @@ public class _GetSandwich
         "breadbread",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             GetSandwich.getSandwich("breadjambread"),
             GetSandwich.getSandwich("xxbreadjambreadyy"),
             GetSandwich.getSandwich("xxbreadyy"),

@@ -4,7 +4,7 @@ import Array2.Testcases._TripleUp;
 // https://codingbat.com/prob/p137874
 // Difficulty: 263.0
 
-public class TripleUp
+public final class TripleUp
 {
     /* Return true if the array contains, somewhere, three increasing adjacent numbers like .... 
     4, 5, 6, ... or 23, 24, 25. */
@@ -26,12 +26,12 @@ public class TripleUp
     | tripleUp([2, 3, 5, 6, 8, 9, 2, 3])        → false |
     |__________________________________________________*/
 
-    public static boolean tripleUp(int[] nums)
+    public static final boolean tripleUp(int[] nums)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _TripleUp.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

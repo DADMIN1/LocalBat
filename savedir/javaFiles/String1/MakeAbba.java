@@ -4,7 +4,7 @@ import String1.Testcases._MakeAbba;
 // https://codingbat.com/prob/p161056
 // Difficulty: 106.0
 
-public class MakeAbba
+public final class MakeAbba
 {
     /* Given two strings, a and b, return the result of putting them together in the order abba, e.g. "Hi" and "Bye" returns "HiByeByeHi". */
 
@@ -22,12 +22,12 @@ public class MakeAbba
     | makeAbba("Ya", "Ya")    → "YaYaYaYa"       |
     |___________________________________________*/
 
-    public static String makeAbba(String a, String b)
+    public static final String makeAbba(String a, String b)
     {
         return "";
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _MakeAbba.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

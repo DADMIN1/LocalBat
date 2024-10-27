@@ -4,7 +4,7 @@ import Recursion1.Testcases._EndX;
 // https://codingbat.com/prob/p105722
 // Difficulty: 360.0
 
-public class EndX
+public final class EndX
 {
     /* Given a string, compute recursively a new string where all the lowercase 'x' chars have been moved to the end of the string. */
 
@@ -25,12 +25,12 @@ public class EndX
     | endX("xxhxi")   → "hixxx"   |
     |____________________________*/
 
-    public static String endX(String str)
+    public static final String endX(String str)
     {
         return "";
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _EndX.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

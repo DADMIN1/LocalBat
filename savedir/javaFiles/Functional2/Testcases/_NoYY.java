@@ -4,9 +4,9 @@ import java.util.List;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class _NoYY
+public final class _NoYY
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "noYY([\"a\", \"b\", \"c\"])",
         "noYY([\"a\", \"b\", \"cy\"])",
         "noYY([\"xx\", \"ya\", \"zz\"])",
@@ -19,7 +19,7 @@ public class _NoYY
         "noYY([\"xx\", \"yy\", \"zz\"])",
     };
 
-    static List<?>[] expectedResults = {
+    static final List<?>[] expectedResults = {
         Arrays.asList("ay", "by", "cy"),
         Arrays.asList("ay", "by"),
         Arrays.asList("xxy", "yay", "zzy"),
@@ -32,9 +32,9 @@ public class _NoYY
         Arrays.asList("xxy", "zzy"),
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        List<?>[] resultsArray = {
+        final List<?>[] resultsArray = {
             NoYY.noYY(new ArrayList<>(Arrays.asList("a", "b", "c"))),
             NoYY.noYY(new ArrayList<>(Arrays.asList("a", "b", "cy"))),
             NoYY.noYY(new ArrayList<>(Arrays.asList("xx", "ya", "zz"))),

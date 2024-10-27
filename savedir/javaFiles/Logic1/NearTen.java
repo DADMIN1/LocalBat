@@ -4,7 +4,7 @@ import Logic1.Testcases._NearTen;
 // https://codingbat.com/prob/p193613
 // Difficulty: 124.0
 
-public class NearTen
+public final class NearTen
 {
     /* Given a non-negative number "num", return true if num is within 2 of a multiple of 10. 
     Note: (a % b) is the remainder of dividing a by b, so (7 % 5) is 2. 
@@ -30,12 +30,12 @@ public class NearTen
     | nearTen(1)   → true  |
     |_____________________*/
 
-    public static boolean nearTen(int num)
+    public static final boolean nearTen(int num)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _NearTen.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

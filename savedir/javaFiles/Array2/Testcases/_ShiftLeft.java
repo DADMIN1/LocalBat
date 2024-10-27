@@ -3,9 +3,9 @@ import Array2.ShiftLeft;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class _ShiftLeft
+public final class _ShiftLeft
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "shiftLeft([6, 2, 5, 3])",
         "shiftLeft([1, 2])",
         "shiftLeft([1])",
@@ -15,7 +15,7 @@ public class _ShiftLeft
         "shiftLeft([1, 2, 3])",
     };
 
-    static int[][] expectedResults = {
+    static final int[][] expectedResults = {
         {2, 5, 3, 6},
         {2, 1},
         {1},
@@ -25,7 +25,7 @@ public class _ShiftLeft
         {2, 3, 1},
     };
 
-    public static String printArray(int[] array)
+    public static final String printArray(int[] array)
     {
         String result = "[";
         for (int a: array) { result += a+", "; }
@@ -33,17 +33,17 @@ public class _ShiftLeft
         return result + "]";
     }
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 6, 2, 5, 3 }; 
-        int[] nums1 = { 1, 2 }; 
-        int[] nums2 = { 1 }; 
-        int[] nums3 = {  }; 
-        int[] nums4 = { 1, 1, 2, 2, 4 }; 
-        int[] nums5 = { 1, 1, 1 }; 
-        int[] nums6 = { 1, 2, 3 }; 
+        final int[] nums0 = { 6, 2, 5, 3 }; 
+        final int[] nums1 = { 1, 2 }; 
+        final int[] nums2 = { 1 }; 
+        final int[] nums3 = {  }; 
+        final int[] nums4 = { 1, 1, 2, 2, 4 }; 
+        final int[] nums5 = { 1, 1, 1 }; 
+        final int[] nums6 = { 1, 2, 3 }; 
 
-        int[][] resultsArray = {
+        final int[][] resultsArray = {
             ShiftLeft.shiftLeft(nums0),
             ShiftLeft.shiftLeft(nums1),
             ShiftLeft.shiftLeft(nums2),

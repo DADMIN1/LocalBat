@@ -4,9 +4,9 @@ import java.util.List;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class _NoX
+public final class _NoX
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "noX([\"ax\", \"bb\", \"cx\"])",
         "noX([\"xxax\", \"xbxbx\", \"xxcx\"])",
         "noX([\"x\"])",
@@ -17,7 +17,7 @@ public class _NoX
         "noX([\"this\", \"is\", \"the\", \"x\"])",
     };
 
-    static List<?>[] expectedResults = {
+    static final List<?>[] expectedResults = {
         Arrays.asList("a", "bb", "c"),
         Arrays.asList("a", "bb", "c"),
         Arrays.asList(""),
@@ -28,9 +28,9 @@ public class _NoX
         Arrays.asList("this", "is", "the", ""),
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        List<?>[] resultsArray = {
+        final List<?>[] resultsArray = {
             NoX.noX(new ArrayList<>(Arrays.asList("ax", "bb", "cx"))),
             NoX.noX(new ArrayList<>(Arrays.asList("xxax", "xbxbx", "xxcx"))),
             NoX.noX(new ArrayList<>(Arrays.asList("x"))),

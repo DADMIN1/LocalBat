@@ -1,9 +1,9 @@
 package String3.Testcases;
 import String3.GHappy;
 
-public class _GHappy
+public final class _GHappy
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "gHappy(\"xxggxx\")",
         "gHappy(\"xxgxx\")",
         "gHappy(\"xxggyygxx\")",
@@ -18,7 +18,7 @@ public class _GHappy
         "gHappy(\"yyygggxyy\")",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         false,
         false,
@@ -33,9 +33,9 @@ public class _GHappy
         true,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             GHappy.gHappy("xxggxx"),
             GHappy.gHappy("xxgxx"),
             GHappy.gHappy("xxggyygxx"),

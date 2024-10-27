@@ -4,9 +4,9 @@ import java.util.List;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class _WordsWithoutList
+public final class _WordsWithoutList
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "wordsWithoutList([\"a\", \"bb\", \"b\", \"ccc\"], 1)",
         "wordsWithoutList([\"a\", \"bb\", \"b\", \"ccc\"], 3)",
         "wordsWithoutList([\"a\", \"bb\", \"b\", \"ccc\"], 4)",
@@ -14,7 +14,7 @@ public class _WordsWithoutList
         "wordsWithoutList([\"xx\", \"yyy\", \"x\", \"yy\", \"z\"], 2)",
     };
 
-    static List<?>[] expectedResults = {
+    static final List<?>[] expectedResults = {
         Arrays.asList("bb", "ccc"),
         Arrays.asList("a", "bb", "b"),
         Arrays.asList("a", "bb", "b", "ccc"),
@@ -22,15 +22,15 @@ public class _WordsWithoutList
         Arrays.asList("yyy", "x", "z"),
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] words0 = { "a", "bb", "b", "ccc" }; 
-        String[] words1 = { "a", "bb", "b", "ccc" }; 
-        String[] words2 = { "a", "bb", "b", "ccc" }; 
-        String[] words3 = { "xx", "yyy", "x", "yy", "z" }; 
-        String[] words4 = { "xx", "yyy", "x", "yy", "z" }; 
+        final String[] words0 = { "a", "bb", "b", "ccc" }; 
+        final String[] words1 = { "a", "bb", "b", "ccc" }; 
+        final String[] words2 = { "a", "bb", "b", "ccc" }; 
+        final String[] words3 = { "xx", "yyy", "x", "yy", "z" }; 
+        final String[] words4 = { "xx", "yyy", "x", "yy", "z" }; 
 
-        List<?>[] resultsArray = {
+        final List<?>[] resultsArray = {
             WordsWithoutList.wordsWithoutList(words0, 1),
             WordsWithoutList.wordsWithoutList(words1, 3),
             WordsWithoutList.wordsWithoutList(words2, 4),

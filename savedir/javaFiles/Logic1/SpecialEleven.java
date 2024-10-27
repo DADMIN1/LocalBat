@@ -4,7 +4,7 @@ import Logic1.Testcases._SpecialEleven;
 // https://codingbat.com/prob/p100962
 // Difficulty: 122.3
 
-public class SpecialEleven
+public final class SpecialEleven
 {
     /* We'll say a number is special if it is a multiple of 11 or if it is one more than a multiple of 11. 
     Return true if the given non-negative number is special. 
@@ -35,12 +35,12 @@ public class SpecialEleven
     | specialEleven(55)  → true  |
     |___________________________*/
 
-    public static boolean specialEleven(int n)
+    public static final boolean specialEleven(int n)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _SpecialEleven.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

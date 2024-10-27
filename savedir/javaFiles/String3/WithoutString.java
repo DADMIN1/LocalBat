@@ -4,7 +4,7 @@ import String3.Testcases._WithoutString;
 // https://codingbat.com/prob/p192570
 // Difficulty: 306.0
 
-public class WithoutString
+public final class WithoutString
 {
     /* Given two strings, base and remove, 
     return a version of the base string where all instances of the remove string have been removed (not case sensitive). 
@@ -35,12 +35,12 @@ public class WithoutString
     | withoutString("Hi HoHo", "Ho")        → "Hi "         |
     |______________________________________________________*/
 
-    public static String withoutString(String base, String remove)
+    public static final String withoutString(String base, String remove)
     {
         return "";
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _WithoutString.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

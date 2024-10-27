@@ -4,7 +4,7 @@ import Warmup1.Testcases._IntMax;
 // https://codingbat.com/prob/p101887
 // Difficulty: 169.0
 
-public class IntMax
+public final class IntMax
 {
     /* Given three int values, a b c, return the largest. */
 
@@ -24,12 +24,12 @@ public class IntMax
     | intMax(5, 2, 6)    → 6  |
     |________________________*/
 
-    public static int intMax(int a, int b, int c)
+    public static final int intMax(int a, int b, int c)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _IntMax.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

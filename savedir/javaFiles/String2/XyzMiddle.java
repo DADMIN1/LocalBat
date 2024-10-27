@@ -4,7 +4,7 @@ import String2.Testcases._XyzMiddle;
 // https://codingbat.com/prob/p159772
 // Difficulty: 242.0
 
-public class XyzMiddle
+public final class XyzMiddle
 {
     /* Given a string, does "xyz" appear in the middle of the string? To define middle, 
     we'll say that the number of chars to the left and right of the "xyz" must differ by at most one. 
@@ -36,12 +36,12 @@ public class XyzMiddle
     | xyzMiddle("xyzz")              → true  |
     |_______________________________________*/
 
-    public static boolean xyzMiddle(String str)
+    public static final boolean xyzMiddle(String str)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _XyzMiddle.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

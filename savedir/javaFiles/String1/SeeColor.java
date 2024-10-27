@@ -4,7 +4,7 @@ import String1.Testcases._SeeColor;
 // https://codingbat.com/prob/p199216
 // Difficulty: 175.0
 
-public class SeeColor
+public final class SeeColor
 {
     /* Given a string, if the string begins with "red" or "blue" return that color string, 
     otherwise return the empty string. */
@@ -25,12 +25,12 @@ public class SeeColor
     | seeColor("xyzred")    → ""     |
     |_______________________________*/
 
-    public static String seeColor(String str)
+    public static final String seeColor(String str)
     {
         return "";
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _SeeColor.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

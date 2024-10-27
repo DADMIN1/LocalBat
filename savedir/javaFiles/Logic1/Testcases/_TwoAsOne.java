@@ -1,9 +1,9 @@
 package Logic1.Testcases;
 import Logic1.TwoAsOne;
 
-public class _TwoAsOne
+public final class _TwoAsOne
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "twoAsOne(1, 2, 3)",
         "twoAsOne(3, 1, 2)",
         "twoAsOne(3, 2, 2)",
@@ -18,7 +18,7 @@ public class _TwoAsOne
         "twoAsOne(3, 3, 2)",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         true,
         false,
@@ -33,9 +33,9 @@ public class _TwoAsOne
         false,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             TwoAsOne.twoAsOne(1, 2, 3),
             TwoAsOne.twoAsOne(3, 1, 2),
             TwoAsOne.twoAsOne(3, 2, 2),

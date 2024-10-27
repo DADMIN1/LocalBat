@@ -4,7 +4,7 @@ import String1.Testcases._LastChars;
 // https://codingbat.com/prob/p138183
 // Difficulty: 166.0
 
-public class LastChars
+public final class LastChars
 {
     /* Given 2 strings, a and b, return a new string made of the first char of a and the last char of b, 
     so "yo" and "java" yields "ya". If either string is length 0, 
@@ -24,12 +24,12 @@ public class LastChars
     | lastChars("kitten", "zip") → "kp" |
     |__________________________________*/
 
-    public static String lastChars(String a, String b)
+    public static final String lastChars(String a, String b)
     {
         return "";
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _LastChars.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

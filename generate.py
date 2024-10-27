@@ -193,7 +193,7 @@ def WriteTestcaseFile(packageName:str, data: dict):
     if doesReturnList: resultArrayReturnType = "List<?>" # '<?>' just suppresses a warning telling you to specify the List type
     elif doesReturnMap: resultArrayReturnType = "Map<?,?>"
     
-    printArray_FunctionDefinition = f"    public static String printArray({returnType} array)"+"""
+    printArray_FunctionDefinition = f"    public static final String printArray({returnType} array)"+"""
     {
         String result = "[";
         for ("""+returnType.removesuffix('[]')+""" a: array) { result += a+", "; }
@@ -211,34 +211,34 @@ def WriteTestcaseFile(packageName:str, data: dict):
             file.write("import java.util.ArrayList;\n")
         file.write('\n')
         
-        file.write(f"public class {testCasesClassname}\n"+"{\n")
+        file.write(f"public final class {testCasesClassname}\n"+"{\n")
         
         # map for testcase number -> string of function call
         testcase_map: dict = { i: testcase for i, testcase in enumerate(data["testcases"]) }
-        file.write("    static String[] testcaseStrings = {\n")
+        file.write("    static final String[] testcaseStrings = {\n")
         for (k, v) in testcase_map.items():
             v = v.split(" \u2192 ", maxsplit=1)[0] # discarding everything to the right of the function call
             file.write(f"        \"{v.replace('"', '\\"')}\",\n") # escaping quotes
         file.write("    };\n\n") # closing testcaseStrings()
         
-        file.write(f"    static {testCases['expectedResults']}\n")
+        file.write(f"    static final {testCases['expectedResults']}\n")
         
         if doesReturnArray: file.write(printArray_FunctionDefinition)
         
         needToSupressNewline = False
         
         # Validation function
-        file.write("    public static void Validate(boolean printSuccess)\n    {\n")
+        file.write("    public static final void Validate(boolean printSuccess)\n    {\n")
         # writing the array declarations (can't inline into function calls)
         for array in testCases['arrays']:
             if(len(array) == 0): needToSupressNewline=True; continue # there is always one entry per testcase, but they're empty if no arary parameters exist
             thestring = f"        "
-            for substring in array: thestring += substring
+            for substring in array: thestring += f"final {substring}"
             file.write(thestring)
         if not needToSupressNewline: file.write('\n')
         
         # storing results of function calls
-        file.write(f"        {resultArrayReturnType}[] resultsArray = "+"{\n")
+        file.write(f"        final {resultArrayReturnType}[] resultsArray = "+"{\n")
         for functionCall in testCases["functionCalls"]:
             file.write(f"            {title}.{functionCall},\n") # calling the real class here 
         file.write("        };\n") # closing resultsArray
@@ -340,7 +340,7 @@ def WriteJavaFile(packageName:str, data: dict):
     # adding static to declaration and cleaning up braces/whitespace
     functionDeclaration = data['provided_code'].rsplit(') {\n ', maxsplit=1)[0] + ')'
     if not functionDeclaration.startswith("public"): functionDeclaration = "public "+functionDeclaration
-    functionDeclaration = functionDeclaration.replace("public ", "public static ")
+    functionDeclaration = functionDeclaration.replace("public ", "public static final ")
     functionDeclaration += "\n    {\n        "+f"{function_info['functionDef']['functionBody']}"+"\n    }\n"
     
     with open(filepath, "w", encoding="utf-8") as file:
@@ -359,7 +359,7 @@ def WriteJavaFile(packageName:str, data: dict):
         file.write(f"// Difficulty: {data['difficulty']}\n\n")
         
         # The class name must match the filename (java)
-        file.write(f"public class {title}"+"\n{\n")
+        file.write(f"public final class {title}"+"\n{\n")
         
         # prompt and testcase comments
         file.write(f"    /* {prompt} */\n\n")
@@ -367,7 +367,7 @@ def WriteJavaFile(packageName:str, data: dict):
         
         # function declaration provided by codingbat and main function
         file.write(f"    {functionDeclaration}\n")
-        file.write("    public static void main(String[] args) {\n")
+        file.write("    public static final void main(String[] args) {\n")
         file.write(f"        _{title}.Validate(true);  // pass 'false' to print failed tests only.\n")
         file.write("    }\n") # closing main function
         file.write("}\n") # closing Main class
@@ -439,6 +439,7 @@ if __name__ == "__main__":
     # GenerateSection("Array-3")
     # GenerateSection("String-1")
     
+    # testdata = LoadFile("Array-1", "biggerTwo")
     # testdata = LoadFile("String-1", "makeOutWord")
     # testdata = LoadFile("AP-1", "wordsWithoutList")
     # WriteJavaFile("testpackage", testdata)

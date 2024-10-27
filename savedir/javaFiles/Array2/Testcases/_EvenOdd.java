@@ -3,9 +3,9 @@ import Array2.EvenOdd;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class _EvenOdd
+public final class _EvenOdd
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "evenOdd([1, 0, 1, 0, 0, 1, 1])",
         "evenOdd([3, 3, 2])",
         "evenOdd([2, 2, 2])",
@@ -17,7 +17,7 @@ public class _EvenOdd
         "evenOdd([])",
     };
 
-    static int[][] expectedResults = {
+    static final int[][] expectedResults = {
         {0, 0, 0, 1, 1, 1, 1},
         {2, 3, 3},
         {2, 2, 2},
@@ -29,7 +29,7 @@ public class _EvenOdd
         {},
     };
 
-    public static String printArray(int[] array)
+    public static final String printArray(int[] array)
     {
         String result = "[";
         for (int a: array) { result += a+", "; }
@@ -37,19 +37,19 @@ public class _EvenOdd
         return result + "]";
     }
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 1, 0, 1, 0, 0, 1, 1 }; 
-        int[] nums1 = { 3, 3, 2 }; 
-        int[] nums2 = { 2, 2, 2 }; 
-        int[] nums3 = { 3, 2, 2 }; 
-        int[] nums4 = { 1, 1, 0, 1, 0 }; 
-        int[] nums5 = { 1 }; 
-        int[] nums6 = { 1, 2 }; 
-        int[] nums7 = { 2, 1 }; 
-        int[] nums8 = {  }; 
+        final int[] nums0 = { 1, 0, 1, 0, 0, 1, 1 }; 
+        final int[] nums1 = { 3, 3, 2 }; 
+        final int[] nums2 = { 2, 2, 2 }; 
+        final int[] nums3 = { 3, 2, 2 }; 
+        final int[] nums4 = { 1, 1, 0, 1, 0 }; 
+        final int[] nums5 = { 1 }; 
+        final int[] nums6 = { 1, 2 }; 
+        final int[] nums7 = { 2, 1 }; 
+        final int[] nums8 = {  }; 
 
-        int[][] resultsArray = {
+        final int[][] resultsArray = {
             EvenOdd.evenOdd(nums0),
             EvenOdd.evenOdd(nums1),
             EvenOdd.evenOdd(nums2),

@@ -1,9 +1,9 @@
 package String2.Testcases;
 import String2.SameStarChar;
 
-public class _SameStarChar
+public final class _SameStarChar
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "sameStarChar(\"xy*yzz\")",
         "sameStarChar(\"xy*zzz\")",
         "sameStarChar(\"*xa*az\")",
@@ -22,7 +22,7 @@ public class _SameStarChar
         "sameStarChar(\"**\")",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         false,
         true,
@@ -41,9 +41,9 @@ public class _SameStarChar
         true,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             SameStarChar.sameStarChar("xy*yzz"),
             SameStarChar.sameStarChar("xy*zzz"),
             SameStarChar.sameStarChar("*xa*az"),

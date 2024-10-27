@@ -1,9 +1,9 @@
 package Recursion2.Testcases;
 import Recursion2.SplitOdd10;
 
-public class _SplitOdd10
+public final class _SplitOdd10
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "splitOdd10([5, 5, 5])",
         "splitOdd10([5, 5, 6])",
         "splitOdd10([5, 5, 6, 1])",
@@ -18,7 +18,7 @@ public class _SplitOdd10
         "splitOdd10([10, 7, 5, 5, 1])",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         false,
         true,
@@ -33,22 +33,22 @@ public class _SplitOdd10
         false,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 5, 5, 5 }; 
-        int[] nums1 = { 5, 5, 6 }; 
-        int[] nums2 = { 5, 5, 6, 1 }; 
-        int[] nums3 = { 6, 5, 5, 1 }; 
-        int[] nums4 = { 6, 5, 5, 1, 10 }; 
-        int[] nums5 = { 6, 5, 5, 5, 1 }; 
-        int[] nums6 = { 1 }; 
-        int[] nums7 = {  }; 
-        int[] nums8 = { 10, 7, 5, 5 }; 
-        int[] nums9 = { 10, 0, 5, 5 }; 
-        int[] nums10 = { 10, 7, 5, 5, 2 }; 
-        int[] nums11 = { 10, 7, 5, 5, 1 }; 
+        final int[] nums0 = { 5, 5, 5 }; 
+        final int[] nums1 = { 5, 5, 6 }; 
+        final int[] nums2 = { 5, 5, 6, 1 }; 
+        final int[] nums3 = { 6, 5, 5, 1 }; 
+        final int[] nums4 = { 6, 5, 5, 1, 10 }; 
+        final int[] nums5 = { 6, 5, 5, 5, 1 }; 
+        final int[] nums6 = { 1 }; 
+        final int[] nums7 = {  }; 
+        final int[] nums8 = { 10, 7, 5, 5 }; 
+        final int[] nums9 = { 10, 0, 5, 5 }; 
+        final int[] nums10 = { 10, 7, 5, 5, 2 }; 
+        final int[] nums11 = { 10, 7, 5, 5, 1 }; 
 
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             SplitOdd10.splitOdd10(nums0),
             SplitOdd10.splitOdd10(nums1),
             SplitOdd10.splitOdd10(nums2),

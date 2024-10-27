@@ -1,9 +1,9 @@
 package String1.Testcases;
 import String1.ComboString;
 
-public class _ComboString
+public final class _ComboString
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "comboString(\"Hello\", \"hi\")",
         "comboString(\"hi\", \"Hello\")",
         "comboString(\"aaa\", \"b\")",
@@ -17,7 +17,7 @@ public class _ComboString
         "comboString(\"xyz\", \"ab\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "hiHellohi",
         "hiHellohi",
         "baaab",
@@ -31,9 +31,9 @@ public class _ComboString
         "abxyzab",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             ComboString.comboString("Hello", "hi"),
             ComboString.comboString("hi", "Hello"),
             ComboString.comboString("aaa", "b"),

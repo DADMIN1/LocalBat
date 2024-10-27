@@ -1,9 +1,9 @@
 package Warmup2.Testcases;
 import Warmup2.StringTimes;
 
-public class _StringTimes
+public final class _StringTimes
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "stringTimes(\"Hi\", 2)",
         "stringTimes(\"Hi\", 3)",
         "stringTimes(\"Hi\", 1)",
@@ -16,7 +16,7 @@ public class _StringTimes
         "stringTimes(\"code\", 3)",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "HiHi",
         "HiHiHi",
         "Hi",
@@ -29,9 +29,9 @@ public class _StringTimes
         "codecodecode",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             StringTimes.stringTimes("Hi", 2),
             StringTimes.stringTimes("Hi", 3),
             StringTimes.stringTimes("Hi", 1),

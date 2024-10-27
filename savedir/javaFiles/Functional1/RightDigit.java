@@ -7,7 +7,7 @@ import java.util.ArrayList;
 // https://codingbat.com/prob/p152194
 // Difficulty: 220
 
-public class RightDigit
+public final class RightDigit
 {
     /* Given a list of non-negative integers, return an integer list of the rightmost digits. 
     (Note: use %) */
@@ -24,12 +24,12 @@ public class RightDigit
     | rightDigit([6, 23, 12, 23, 4, 1, 19, 1119, 2, 3, 2]) → [6, 3, 2, 3, 4, 1, 9, 9, 2, 3, 2] |
     |_________________________________________________________________________________________*/
 
-    public static List<Integer> rightDigit(List<Integer> nums)
+    public static final List<Integer> rightDigit(List<Integer> nums)
     {
         return new ArrayList<Integer>();
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _RightDigit.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

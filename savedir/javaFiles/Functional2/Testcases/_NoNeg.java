@@ -4,9 +4,9 @@ import java.util.List;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class _NoNeg
+public final class _NoNeg
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "noNeg([1, -2])",
         "noNeg([-3, -3, 3, 3])",
         "noNeg([-1, -1, -1])",
@@ -16,7 +16,7 @@ public class _NoNeg
         "noNeg([-1, 3, 1, -1, -10, -100, -111, 5])",
     };
 
-    static List<?>[] expectedResults = {
+    static final List<?>[] expectedResults = {
         Arrays.asList(1),
         Arrays.asList(3, 3),
         Arrays.asList(),
@@ -26,9 +26,9 @@ public class _NoNeg
         Arrays.asList(3, 1, 5),
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        List<?>[] resultsArray = {
+        final List<?>[] resultsArray = {
             NoNeg.noNeg(new ArrayList<>(Arrays.asList(1, -2))),
             NoNeg.noNeg(new ArrayList<>(Arrays.asList(-3, -3, 3, 3))),
             NoNeg.noNeg(new ArrayList<>(Arrays.asList(-1, -1, -1))),

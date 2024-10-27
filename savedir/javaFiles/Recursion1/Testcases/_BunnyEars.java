@@ -1,9 +1,9 @@
 package Recursion1.Testcases;
 import Recursion1.BunnyEars;
 
-public class _BunnyEars
+public final class _BunnyEars
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "bunnyEars(0)",
         "bunnyEars(1)",
         "bunnyEars(2)",
@@ -15,7 +15,7 @@ public class _BunnyEars
         "bunnyEars(234)",
     };
 
-    static int[] expectedResults = {
+    static final int[] expectedResults = {
         0,
         2,
         4,
@@ -27,9 +27,9 @@ public class _BunnyEars
         468,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] resultsArray = {
+        final int[] resultsArray = {
             BunnyEars.bunnyEars(0),
             BunnyEars.bunnyEars(1),
             BunnyEars.bunnyEars(2),

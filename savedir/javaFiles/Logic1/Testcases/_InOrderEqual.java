@@ -1,9 +1,9 @@
 package Logic1.Testcases;
 import Logic1.InOrderEqual;
 
-public class _InOrderEqual
+public final class _InOrderEqual
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "inOrderEqual(2, 5, 11, false)",
         "inOrderEqual(5, 7, 6, false)",
         "inOrderEqual(5, 5, 7, true)",
@@ -20,7 +20,7 @@ public class _InOrderEqual
         "inOrderEqual(0, 1, 0, true)",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         false,
         true,
@@ -37,9 +37,9 @@ public class _InOrderEqual
         false,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             InOrderEqual.inOrderEqual(2, 5, 11, false),
             InOrderEqual.inOrderEqual(5, 7, 6, false),
             InOrderEqual.inOrderEqual(5, 5, 7, true),

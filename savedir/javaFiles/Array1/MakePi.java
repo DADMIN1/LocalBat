@@ -4,7 +4,7 @@ import Array1.Testcases._MakePi;
 // https://codingbat.com/prob/p167011
 // Difficulty: 109.0
 
-public class MakePi
+public final class MakePi
 {
     /* Return an int array length 3 containing the first 3 digits of pi, 
     {3, 1, 4}. */
@@ -15,12 +15,12 @@ public class MakePi
     | makePi() → [3, 1, 4] |
     |_____________________*/
 
-    public static int[] makePi()
+    public static final int[] makePi()
     {
         return new int[]{0};
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _MakePi.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

@@ -1,9 +1,9 @@
 package Warmup1.Testcases;
 import Warmup1.Diff21;
 
-public class _Diff21
+public final class _Diff21
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "diff21(19)",
         "diff21(10)",
         "diff21(21)",
@@ -18,7 +18,7 @@ public class _Diff21
         "diff21(50)",
     };
 
-    static int[] expectedResults = {
+    static final int[] expectedResults = {
         2,
         11,
         0,
@@ -33,9 +33,9 @@ public class _Diff21
         58,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] resultsArray = {
+        final int[] resultsArray = {
             Diff21.diff21(19),
             Diff21.diff21(10),
             Diff21.diff21(21),

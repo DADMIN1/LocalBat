@@ -4,7 +4,7 @@ import Logic1.Testcases._CaughtSpeeding;
 // https://codingbat.com/prob/p157733
 // Difficulty: 112.0
 
-public class CaughtSpeeding
+public final class CaughtSpeeding
 {
     /* You are driving a little too fast, and a police officer stops you. 
     Write code to compute the result, encoded as an int value: 
@@ -30,12 +30,12 @@ public class CaughtSpeeding
     | caughtSpeeding(90, false) → 2 |
     |______________________________*/
 
-    public static int caughtSpeeding(int speed, boolean isBirthday)
+    public static final int caughtSpeeding(int speed, boolean isBirthday)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _CaughtSpeeding.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

@@ -4,7 +4,7 @@ import Warmup2.Testcases._StringX;
 // https://codingbat.com/prob/p171260
 // Difficulty: 230.0
 
-public class StringX
+public final class StringX
 {
     /* Given a string, return a version where all the "x" have been removed. 
     Except an "x" at the very start or end should not be removed. */
@@ -22,12 +22,12 @@ public class StringX
     | stringX("")          → ""         |
     |__________________________________*/
 
-    public static String stringX(String str)
+    public static final String stringX(String str)
     {
         return "";
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _StringX.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

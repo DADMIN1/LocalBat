@@ -1,9 +1,9 @@
 package String1.Testcases;
 import String1.StartWord;
 
-public class _StartWord
+public final class _StartWord
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "startWord(\"hippo\", \"hi\")",
         "startWord(\"hippo\", \"xip\")",
         "startWord(\"hippo\", \"i\")",
@@ -21,7 +21,7 @@ public class _StartWord
         "startWord(\"kit\", \"cit\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "hi",
         "hip",
         "h",
@@ -39,9 +39,9 @@ public class _StartWord
         "kit",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             StartWord.startWord("hippo", "hi"),
             StartWord.startWord("hippo", "xip"),
             StartWord.startWord("hippo", "i"),

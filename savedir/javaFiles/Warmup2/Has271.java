@@ -4,7 +4,7 @@ import Warmup2.Testcases._Has271;
 // https://codingbat.com/prob/p167430
 // Difficulty: 245.0
 
-public class Has271
+public final class Has271
 {
     /* Given an array of ints, return true if it contains a 2, 
     7, 1 pattern: a value, followed by the value plus 5, followed by the value minus 1. 
@@ -30,12 +30,12 @@ public class Has271
     | has271([1, 1, 4, 9, 4, 9, 2]) → true  |
     |______________________________________*/
 
-    public static boolean has271(int[] nums)
+    public static final boolean has271(int[] nums)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _Has271.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

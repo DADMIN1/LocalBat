@@ -1,9 +1,9 @@
 package String2.Testcases;
 import String2.WordEnds;
 
-public class _WordEnds
+public final class _WordEnds
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "wordEnds(\"abcXY123XYijk\", \"XY\")",
         "wordEnds(\"XY123XY\", \"XY\")",
         "wordEnds(\"XY1XY\", \"XY\")",
@@ -19,7 +19,7 @@ public class _WordEnds
         "wordEnds(\"abc1abc1abc\", \"abc\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "c13i",
         "13",
         "11",
@@ -35,9 +35,9 @@ public class _WordEnds
         "1111",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             WordEnds.wordEnds("abcXY123XYijk", "XY"),
             WordEnds.wordEnds("XY123XY", "XY"),
             WordEnds.wordEnds("XY1XY", "XY"),

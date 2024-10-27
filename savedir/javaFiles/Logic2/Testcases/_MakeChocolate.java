@@ -1,9 +1,9 @@
 package Logic2.Testcases;
 import Logic2.MakeChocolate;
 
-public class _MakeChocolate
+public final class _MakeChocolate
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "makeChocolate(4, 1, 9)",
         "makeChocolate(4, 1, 10)",
         "makeChocolate(4, 1, 7)",
@@ -30,7 +30,7 @@ public class _MakeChocolate
         "makeChocolate(7, 2, 13)",
     };
 
-    static int[] expectedResults = {
+    static final int[] expectedResults = {
         4,
         -1,
         2,
@@ -57,9 +57,9 @@ public class _MakeChocolate
         3,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] resultsArray = {
+        final int[] resultsArray = {
             MakeChocolate.makeChocolate(4, 1, 9),
             MakeChocolate.makeChocolate(4, 1, 10),
             MakeChocolate.makeChocolate(4, 1, 7),

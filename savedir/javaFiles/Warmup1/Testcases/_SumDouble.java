@@ -1,9 +1,9 @@
 package Warmup1.Testcases;
 import Warmup1.SumDouble;
 
-public class _SumDouble
+public final class _SumDouble
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "sumDouble(1, 2)",
         "sumDouble(3, 2)",
         "sumDouble(2, 2)",
@@ -14,7 +14,7 @@ public class _SumDouble
         "sumDouble(3, 4)",
     };
 
-    static int[] expectedResults = {
+    static final int[] expectedResults = {
         3,
         5,
         8,
@@ -25,9 +25,9 @@ public class _SumDouble
         7,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] resultsArray = {
+        final int[] resultsArray = {
             SumDouble.sumDouble(1, 2),
             SumDouble.sumDouble(3, 2),
             SumDouble.sumDouble(2, 2),

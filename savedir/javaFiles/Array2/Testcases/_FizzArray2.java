@@ -3,9 +3,9 @@ import Array2.FizzArray2;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class _FizzArray2
+public final class _FizzArray2
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "fizzArray2(4)",
         "fizzArray2(10)",
         "fizzArray2(2)",
@@ -16,7 +16,7 @@ public class _FizzArray2
         "fizzArray2(11)",
     };
 
-    static String[][] expectedResults = {
+    static final String[][] expectedResults = {
         {"0", "1", "2", "3"},
         {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"},
         {"0", "1"},
@@ -27,7 +27,7 @@ public class _FizzArray2
         {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"},
     };
 
-    public static String printArray(String[] array)
+    public static final String printArray(String[] array)
     {
         String result = "[";
         for (String a: array) { result += a+", "; }
@@ -35,9 +35,9 @@ public class _FizzArray2
         return result + "]";
     }
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[][] resultsArray = {
+        final String[][] resultsArray = {
             FizzArray2.fizzArray2(4),
             FizzArray2.fizzArray2(10),
             FizzArray2.fizzArray2(2),

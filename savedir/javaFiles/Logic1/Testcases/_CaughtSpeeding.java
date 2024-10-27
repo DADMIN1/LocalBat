@@ -1,9 +1,9 @@
 package Logic1.Testcases;
 import Logic1.CaughtSpeeding;
 
-public class _CaughtSpeeding
+public final class _CaughtSpeeding
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "caughtSpeeding(60, false)",
         "caughtSpeeding(65, false)",
         "caughtSpeeding(65, true)",
@@ -18,7 +18,7 @@ public class _CaughtSpeeding
         "caughtSpeeding(90, false)",
     };
 
-    static int[] expectedResults = {
+    static final int[] expectedResults = {
         0,
         1,
         0,
@@ -33,9 +33,9 @@ public class _CaughtSpeeding
         2,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] resultsArray = {
+        final int[] resultsArray = {
             CaughtSpeeding.caughtSpeeding(60, false),
             CaughtSpeeding.caughtSpeeding(65, false),
             CaughtSpeeding.caughtSpeeding(65, true),

@@ -7,7 +7,7 @@ import java.util.ArrayList;
 // https://codingbat.com/prob/p183407
 // Difficulty: 221.0
 
-public class WordsWithoutList
+public final class WordsWithoutList
 {
     /* Given an array of strings, return a new List (e.g. an ArrayList) where all the strings of the given length are omitted. 
     See wordsWithout() below which is more difficult because it uses arrays. */
@@ -22,12 +22,12 @@ public class WordsWithoutList
     | wordsWithoutList(["xx", "yyy", "x", "yy", "z"], 2) → ["yyy", "x", "z"]       |
     |_____________________________________________________________________________*/
 
-    public static List wordsWithoutList(String[] words, int len)
+    public static final List wordsWithoutList(String[] words, int len)
     {
         return new ArrayList();
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _WordsWithoutList.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

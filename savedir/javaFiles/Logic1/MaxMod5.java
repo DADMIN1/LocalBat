@@ -4,7 +4,7 @@ import Logic1.Testcases._MaxMod5;
 // https://codingbat.com/prob/p115384
 // Difficulty: 154.0
 
-public class MaxMod5
+public final class MaxMod5
 {
     /* Given two int values, return whichever value is larger. 
     However if the two values have the same remainder when divided by 5, 
@@ -28,12 +28,12 @@ public class MaxMod5
     | maxMod5(1, 2)  → 2  |
     |____________________*/
 
-    public static int maxMod5(int a, int b)
+    public static final int maxMod5(int a, int b)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _MaxMod5.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

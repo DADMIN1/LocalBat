@@ -1,9 +1,9 @@
 package Logic2.Testcases;
 import Logic2.MakeBricks;
 
-public class _MakeBricks
+public final class _MakeBricks
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "makeBricks(3, 1, 8)",
         "makeBricks(3, 1, 9)",
         "makeBricks(3, 2, 10)",
@@ -35,7 +35,7 @@ public class _MakeBricks
         "makeBricks(20, 4, 39)",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         false,
         true,
@@ -67,9 +67,9 @@ public class _MakeBricks
         true,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             MakeBricks.makeBricks(3, 1, 8),
             MakeBricks.makeBricks(3, 1, 9),
             MakeBricks.makeBricks(3, 2, 10),

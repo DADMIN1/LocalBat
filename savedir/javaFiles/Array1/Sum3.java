@@ -4,7 +4,7 @@ import Array1.Testcases._Sum3;
 // https://codingbat.com/prob/p175763
 // Difficulty: 115.0
 
-public class Sum3
+public final class Sum3
 {
     /* Given an array of ints length 3, return the sum of all the elements. */
 
@@ -19,12 +19,12 @@ public class Sum3
     | sum3([2, 7, 2])  → 11 |
     |______________________*/
 
-    public static int sum3(int[] nums)
+    public static final int sum3(int[] nums)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _Sum3.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

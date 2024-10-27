@@ -4,7 +4,7 @@ import Logic1.Testcases._AnswerCell;
 // https://codingbat.com/prob/p110973
 // Difficulty: 130.0
 
-public class AnswerCell
+public final class AnswerCell
 {
     /* Your cell phone rings. Return true if you should answer it. 
     Normally you answer, except in the morning you only answer if it is your mom calling. 
@@ -21,12 +21,12 @@ public class AnswerCell
     | answerCell(true, true, true)    → false |
     |________________________________________*/
 
-    public static boolean answerCell(boolean isMorning, boolean isMom, boolean isAsleep)
+    public static final boolean answerCell(boolean isMorning, boolean isMom, boolean isAsleep)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _AnswerCell.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

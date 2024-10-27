@@ -4,7 +4,7 @@ import String1.Testcases._MakeTags;
 // https://codingbat.com/prob/p147483
 // Difficulty: 109.0
 
-public class MakeTags
+public final class MakeTags
 {
     /* The web is built with HTML strings like "<i>Yay</i>" which draws Yay as italic text. 
     In this example, the "i" tag makes <i> and </i> which surround the word "Yay". 
@@ -22,12 +22,12 @@ public class MakeTags
     | makeTags("i", "")           → "<i></i>"                 |
     |________________________________________________________*/
 
-    public static String makeTags(String tag, String word)
+    public static final String makeTags(String tag, String word)
     {
         return "";
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _MakeTags.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

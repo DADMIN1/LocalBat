@@ -1,9 +1,9 @@
 package String3.Testcases;
 import String3.CountYZ;
 
-public class _CountYZ
+public final class _CountYZ
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "countYZ(\"fez day\")",
         "countYZ(\"day fez\")",
         "countYZ(\"day fyyyz\")",
@@ -17,7 +17,7 @@ public class _CountYZ
         "countYZ(\"zxyx\")",
     };
 
-    static int[] expectedResults = {
+    static final int[] expectedResults = {
         2,
         2,
         2,
@@ -31,9 +31,9 @@ public class _CountYZ
         0,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] resultsArray = {
+        final int[] resultsArray = {
             CountYZ.countYZ("fez day"),
             CountYZ.countYZ("day fez"),
             CountYZ.countYZ("day fyyyz"),

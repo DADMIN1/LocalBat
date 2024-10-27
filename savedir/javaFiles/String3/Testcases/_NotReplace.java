@@ -1,9 +1,9 @@
 package String3.Testcases;
 import String3.NotReplace;
 
-public class _NotReplace
+public final class _NotReplace
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "notReplace(\"is test\")",
         "notReplace(\"is-is\")",
         "notReplace(\"This is right\")",
@@ -17,7 +17,7 @@ public class _NotReplace
         "notReplace(\"AAAis is\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "is not test",
         "is not-is not",
         "This is not right",
@@ -31,9 +31,9 @@ public class _NotReplace
         "AAAis is not",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             NotReplace.notReplace("is test"),
             NotReplace.notReplace("is-is"),
             NotReplace.notReplace("This is right"),

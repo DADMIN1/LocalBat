@@ -4,7 +4,7 @@ import Warmup1.Testcases._SumDouble;
 // https://codingbat.com/prob/p154485
 // Difficulty: 109.0
 
-public class SumDouble
+public final class SumDouble
 {
     /* Given two int values, return their sum. Unless the two values are the same, 
     then return double their sum. */
@@ -22,12 +22,12 @@ public class SumDouble
     | sumDouble(3, 4)  → 7  |
     |______________________*/
 
-    public static int sumDouble(int a, int b)
+    public static final int sumDouble(int a, int b)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _SumDouble.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

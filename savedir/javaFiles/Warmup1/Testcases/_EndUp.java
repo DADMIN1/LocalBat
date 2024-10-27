@@ -1,9 +1,9 @@
 package Warmup1.Testcases;
 import Warmup1.EndUp;
 
-public class _EndUp
+public final class _EndUp
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "endUp(\"Hello\")",
         "endUp(\"hi there\")",
         "endUp(\"hi\")",
@@ -13,7 +13,7 @@ public class _EndUp
         "endUp(\"\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "HeLLO",
         "hi thERE",
         "HI",
@@ -23,9 +23,9 @@ public class _EndUp
         "",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             EndUp.endUp("Hello"),
             EndUp.endUp("hi there"),
             EndUp.endUp("hi"),

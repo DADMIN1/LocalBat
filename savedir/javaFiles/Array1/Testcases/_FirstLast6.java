@@ -1,9 +1,9 @@
 package Array1.Testcases;
 import Array1.FirstLast6;
 
-public class _FirstLast6
+public final class _FirstLast6
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "firstLast6([1, 2, 6])",
         "firstLast6([6, 1, 2, 3])",
         "firstLast6([13, 6, 1, 2, 3])",
@@ -19,7 +19,7 @@ public class _FirstLast6
         "firstLast6([1, 2, 3, 4])",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         true,
         false,
@@ -35,23 +35,23 @@ public class _FirstLast6
         false,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 1, 2, 6 }; 
-        int[] nums1 = { 6, 1, 2, 3 }; 
-        int[] nums2 = { 13, 6, 1, 2, 3 }; 
-        int[] nums3 = { 13, 6, 1, 2, 6 }; 
-        int[] nums4 = { 3, 2, 1 }; 
-        int[] nums5 = { 3, 6, 1 }; 
-        int[] nums6 = { 3, 6 }; 
-        int[] nums7 = { 6 }; 
-        int[] nums8 = { 3 }; 
-        int[] nums9 = { 5, 6 }; 
-        int[] nums10 = { 5, 5 }; 
-        int[] nums11 = { 1, 2, 3, 4, 6 }; 
-        int[] nums12 = { 1, 2, 3, 4 }; 
+        final int[] nums0 = { 1, 2, 6 }; 
+        final int[] nums1 = { 6, 1, 2, 3 }; 
+        final int[] nums2 = { 13, 6, 1, 2, 3 }; 
+        final int[] nums3 = { 13, 6, 1, 2, 6 }; 
+        final int[] nums4 = { 3, 2, 1 }; 
+        final int[] nums5 = { 3, 6, 1 }; 
+        final int[] nums6 = { 3, 6 }; 
+        final int[] nums7 = { 6 }; 
+        final int[] nums8 = { 3 }; 
+        final int[] nums9 = { 5, 6 }; 
+        final int[] nums10 = { 5, 5 }; 
+        final int[] nums11 = { 1, 2, 3, 4, 6 }; 
+        final int[] nums12 = { 1, 2, 3, 4 }; 
 
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             FirstLast6.firstLast6(nums0),
             FirstLast6.firstLast6(nums1),
             FirstLast6.firstLast6(nums2),

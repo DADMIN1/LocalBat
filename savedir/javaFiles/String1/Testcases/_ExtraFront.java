@@ -1,9 +1,9 @@
 package String1.Testcases;
 import String1.ExtraFront;
 
-public class _ExtraFront
+public final class _ExtraFront
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "extraFront(\"Hello\")",
         "extraFront(\"ab\")",
         "extraFront(\"H\")",
@@ -12,7 +12,7 @@ public class _ExtraFront
         "extraFront(\"Code\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "HeHeHe",
         "ababab",
         "HHH",
@@ -21,9 +21,9 @@ public class _ExtraFront
         "CoCoCo",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             ExtraFront.extraFront("Hello"),
             ExtraFront.extraFront("ab"),
             ExtraFront.extraFront("H"),

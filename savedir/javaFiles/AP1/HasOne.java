@@ -4,7 +4,7 @@ import AP1.Testcases._HasOne;
 // https://codingbat.com/prob/p191212
 // Difficulty: 224.0
 
-public class HasOne
+public final class HasOne
 {
     /* Given a positive int n, return true if it contains a 1 digit. 
     Note: use % to get the rightmost digit, and / to discard the rightmost digit. */
@@ -25,12 +25,12 @@ public class HasOne
     | hasOne(56556)  → false |
     |_______________________*/
 
-    public static boolean hasOne(int n)
+    public static final boolean hasOne(int n)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _HasOne.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

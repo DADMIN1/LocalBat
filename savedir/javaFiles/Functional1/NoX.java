@@ -7,7 +7,7 @@ import java.util.ArrayList;
 // https://codingbat.com/prob/p105967
 // Difficulty: 223
 
-public class NoX
+public final class NoX
 {
     /* Given a list of strings, return a list where each string has all its "x" removed. */
 
@@ -24,12 +24,12 @@ public class NoX
     | noX(["this", "is", "the", "x"]) → ["this", "is", "the", ""] |
     |____________________________________________________________*/
 
-    public static List<String> noX(List<String> strings)
+    public static final List<String> noX(List<String> strings)
     {
         return new ArrayList<String>();
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _NoX.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

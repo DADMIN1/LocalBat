@@ -4,7 +4,7 @@ import AP1.Testcases._ScoresIncreasing;
 // https://codingbat.com/prob/p146974
 // Difficulty: 203.0
 
-public class ScoresIncreasing
+public final class ScoresIncreasing
 {
     /* Given an array of scores, return true if each score is equal or greater than the one before. 
     The array will be length 2 or more. */
@@ -20,12 +20,12 @@ public class ScoresIncreasing
     | scoresIncreasing([-5, 4, 11])        → true  |
     |_____________________________________________*/
 
-    public static boolean scoresIncreasing(int[] scores)
+    public static final boolean scoresIncreasing(int[] scores)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _ScoresIncreasing.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

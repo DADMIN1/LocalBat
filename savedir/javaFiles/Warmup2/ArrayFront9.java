@@ -4,7 +4,7 @@ import Warmup2.Testcases._ArrayFront9;
 // https://codingbat.com/prob/p186031
 // Difficulty: 221.0
 
-public class ArrayFront9
+public final class ArrayFront9
 {
     /* Given an array of ints, return true if one of the first 4 elements in the array is a 9. 
     The array length may be less than 4. */
@@ -26,12 +26,12 @@ public class ArrayFront9
     | arrayFront9([3, 9, 2, 3, 3]) → true  |
     |_____________________________________*/
 
-    public static boolean arrayFront9(int[] nums)
+    public static final boolean arrayFront9(int[] nums)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _ArrayFront9.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

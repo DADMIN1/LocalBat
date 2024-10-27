@@ -1,9 +1,9 @@
 package Array2.Testcases;
 import Array2.MatchUp;
 
-public class _MatchUp
+public final class _MatchUp
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "matchUp([1, 2, 3], [2, 3, 10])",
         "matchUp([1, 2, 3], [2, 3, 5])",
         "matchUp([1, 2, 3], [2, 3, 3])",
@@ -17,7 +17,7 @@ public class _MatchUp
         "matchUp([4], [5])",
     };
 
-    static int[] expectedResults = {
+    static final int[] expectedResults = {
         2,
         3,
         2,
@@ -31,21 +31,21 @@ public class _MatchUp
         1,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums10 = { 1, 2, 3 }; int[] nums20 = { 2, 3, 10 }; 
-        int[] nums11 = { 1, 2, 3 }; int[] nums21 = { 2, 3, 5 }; 
-        int[] nums12 = { 1, 2, 3 }; int[] nums22 = { 2, 3, 3 }; 
-        int[] nums13 = { 5, 3 }; int[] nums23 = { 5, 5 }; 
-        int[] nums14 = { 5, 3 }; int[] nums24 = { 4, 4 }; 
-        int[] nums15 = { 5, 3 }; int[] nums25 = { 3, 3 }; 
-        int[] nums16 = { 5, 3 }; int[] nums26 = { 2, 2 }; 
-        int[] nums17 = { 5, 3 }; int[] nums27 = { 1, 1 }; 
-        int[] nums18 = { 5, 3 }; int[] nums28 = { 0, 0 }; 
-        int[] nums19 = { 4 }; int[] nums29 = { 4 }; 
-        int[] nums110 = { 4 }; int[] nums210 = { 5 }; 
+        final int[] nums10 = { 1, 2, 3 }; final int[] nums20 = { 2, 3, 10 }; 
+        final int[] nums11 = { 1, 2, 3 }; final int[] nums21 = { 2, 3, 5 }; 
+        final int[] nums12 = { 1, 2, 3 }; final int[] nums22 = { 2, 3, 3 }; 
+        final int[] nums13 = { 5, 3 }; final int[] nums23 = { 5, 5 }; 
+        final int[] nums14 = { 5, 3 }; final int[] nums24 = { 4, 4 }; 
+        final int[] nums15 = { 5, 3 }; final int[] nums25 = { 3, 3 }; 
+        final int[] nums16 = { 5, 3 }; final int[] nums26 = { 2, 2 }; 
+        final int[] nums17 = { 5, 3 }; final int[] nums27 = { 1, 1 }; 
+        final int[] nums18 = { 5, 3 }; final int[] nums28 = { 0, 0 }; 
+        final int[] nums19 = { 4 }; final int[] nums29 = { 4 }; 
+        final int[] nums110 = { 4 }; final int[] nums210 = { 5 }; 
 
-        int[] resultsArray = {
+        final int[] resultsArray = {
             MatchUp.matchUp(nums10, nums20),
             MatchUp.matchUp(nums11, nums21),
             MatchUp.matchUp(nums12, nums22),

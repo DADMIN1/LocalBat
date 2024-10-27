@@ -1,9 +1,9 @@
 package Warmup1.Testcases;
 import Warmup1.EveryNth;
 
-public class _EveryNth
+public final class _EveryNth
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "everyNth(\"Miracle\", 2)",
         "everyNth(\"abcdefg\", 2)",
         "everyNth(\"abcdefg\", 3)",
@@ -13,7 +13,7 @@ public class _EveryNth
         "everyNth(\"Chocolates\", 100)",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "Mrce",
         "aceg",
         "adg",
@@ -23,9 +23,9 @@ public class _EveryNth
         "C",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             EveryNth.everyNth("Miracle", 2),
             EveryNth.everyNth("abcdefg", 2),
             EveryNth.everyNth("abcdefg", 3),

@@ -4,7 +4,7 @@ import AP1.Testcases._CopyEndy;
 // https://codingbat.com/prob/p130124
 // Difficulty: 233.0
 
-public class CopyEndy
+public final class CopyEndy
 {
     /* We'll say that a positive int n is "endy" if it is in the range 0..10 or 90..100 (inclusive). 
     Given an array of positive ints, return a new array of length "count" containing the first endy numbers from the original array. 
@@ -28,12 +28,12 @@ public class CopyEndy
     | copyEndy([13, 2, 13, 2, 0, 30], 3)    → [2, 2, 0]  |
     |___________________________________________________*/
 
-    public static int[] copyEndy(int[] nums, int count)
+    public static final int[] copyEndy(int[] nums, int count)
     {
         return new int[]{0};
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _CopyEndy.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

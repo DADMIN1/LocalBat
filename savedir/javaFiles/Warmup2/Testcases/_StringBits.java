@@ -1,9 +1,9 @@
 package Warmup2.Testcases;
 import Warmup2.StringBits;
 
-public class _StringBits
+public final class _StringBits
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "stringBits(\"Hello\")",
         "stringBits(\"Hi\")",
         "stringBits(\"Heeololeo\")",
@@ -16,7 +16,7 @@ public class _StringBits
         "stringBits(\"hxaxpxpxy\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "Hlo",
         "H",
         "Hello",
@@ -29,9 +29,9 @@ public class _StringBits
         "happy",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             StringBits.stringBits("Hello"),
             StringBits.stringBits("Hi"),
             StringBits.stringBits("Heeololeo"),

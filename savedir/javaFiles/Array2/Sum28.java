@@ -4,7 +4,7 @@ import Array2.Testcases._Sum28;
 // https://codingbat.com/prob/p199612
 // Difficulty: 224.0
 
-public class Sum28
+public final class Sum28
 {
     /* Given an array of ints, return true if the sum of all the 2's in the array is exactly 8. */
 
@@ -25,12 +25,12 @@ public class Sum28
     | sum28([5, 2, 2, 2, 4, 2])    → true  |
     |_____________________________________*/
 
-    public static boolean sum28(int[] nums)
+    public static final boolean sum28(int[] nums)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _Sum28.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

@@ -1,9 +1,9 @@
 package Warmup1.Testcases;
 import Warmup1.IcyHot;
 
-public class _IcyHot
+public final class _IcyHot
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "icyHot(120, -1)",
         "icyHot(-1, 120)",
         "icyHot(2, 120)",
@@ -12,7 +12,7 @@ public class _IcyHot
         "icyHot(120, 120)",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         true,
         false,
@@ -21,9 +21,9 @@ public class _IcyHot
         false,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             IcyHot.icyHot(120, -1),
             IcyHot.icyHot(-1, 120),
             IcyHot.icyHot(2, 120),

@@ -4,7 +4,7 @@ import Logic2.Testcases._Blackjack;
 // https://codingbat.com/prob/p117019
 // Difficulty: 218.0
 
-public class Blackjack
+public final class Blackjack
 {
     /* Given 2 int values greater than 0, return whichever value is nearest to 21 without going over. 
     Return 0 if they both go over. */
@@ -29,12 +29,12 @@ public class Blackjack
     | blackjack(21, 20) → 21 |
     |_______________________*/
 
-    public static int blackjack(int a, int b)
+    public static final int blackjack(int a, int b)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _Blackjack.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

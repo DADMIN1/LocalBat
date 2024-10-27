@@ -4,7 +4,7 @@ import Array1.Testcases._MakeEnds;
 // https://codingbat.com/prob/p101230
 // Difficulty: 133.0
 
-public class MakeEnds
+public final class MakeEnds
 {
     /* Given an array of ints, return a new array length 2 containing the first and last elements from the original array. 
     The original array will be length 1 or more. */
@@ -22,12 +22,12 @@ public class MakeEnds
     | makeEnds([2, 3, 4, 1])             → [2, 1] |
     |____________________________________________*/
 
-    public static int[] makeEnds(int[] nums)
+    public static final int[] makeEnds(int[] nums)
     {
         return new int[]{0};
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _MakeEnds.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

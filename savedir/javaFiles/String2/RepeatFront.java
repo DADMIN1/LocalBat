@@ -4,7 +4,7 @@ import String2.Testcases._RepeatFront;
 // https://codingbat.com/prob/p128796
 // Difficulty: 233.0
 
-public class RepeatFront
+public final class RepeatFront
 {
     /* Given a string and an int n, return a string made of the first n characters of the string, 
     followed by the first n-1 characters of the string, and so on. 
@@ -25,12 +25,12 @@ public class RepeatFront
     | repeatFront("Java", 1)      → "J"          |
     |___________________________________________*/
 
-    public static String repeatFront(String str, int n)
+    public static final String repeatFront(String str, int n)
     {
         return "";
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _RepeatFront.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

@@ -4,7 +4,7 @@ import Recursion1.Testcases._CountHi;
 // https://codingbat.com/prob/p184029
 // Difficulty: 333.0
 
-public class CountHi
+public final class CountHi
 {
     /* Given a string, compute recursively (no loops) the number of times lowercase "hi" appears in the string. */
 
@@ -24,12 +24,12 @@ public class CountHi
     | countHi("ship")           → 1 |
     |______________________________*/
 
-    public static int countHi(String str)
+    public static final int countHi(String str)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _CountHi.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

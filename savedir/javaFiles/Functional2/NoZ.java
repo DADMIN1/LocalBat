@@ -7,7 +7,7 @@ import java.util.ArrayList;
 // https://codingbat.com/prob/p105671
 // Difficulty: 209
 
-public class NoZ
+public final class NoZ
 {
     /* Given a list of strings, return a list of the strings, omitting any string that contains a "z". 
     (Note: the str.contains(x) method returns a boolean) */
@@ -23,12 +23,12 @@ public class NoZ
     | noZ(["x", "y", "z"])                  → ["x", "y"]       |
     |_________________________________________________________*/
 
-    public static List<String> noZ(List<String> strings)
+    public static final List<String> noZ(List<String> strings)
     {
         return new ArrayList<String>();
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _NoZ.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

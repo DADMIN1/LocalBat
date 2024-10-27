@@ -7,7 +7,7 @@ import java.util.ArrayList;
 // https://codingbat.com/prob/p148198
 // Difficulty: 223
 
-public class Two2
+public final class Two2
 {
     /* Given a list of non-negative integers, return a list of those numbers multiplied by 2, 
     omitting any of the resulting numbers that end in 2. */
@@ -24,12 +24,12 @@ public class Two2
     | two2([3, 1, 4, 1, 6, 99, 0]) → [6, 8, 198, 0] |
     |______________________________________________*/
 
-    public static List<Integer> two2(List<Integer> nums)
+    public static final List<Integer> two2(List<Integer> nums)
     {
         return new ArrayList<Integer>();
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _Two2.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

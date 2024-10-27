@@ -3,9 +3,9 @@ import Array1.RotateLeft3;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class _RotateLeft3
+public final class _RotateLeft3
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "rotateLeft3([1, 2, 3])",
         "rotateLeft3([5, 11, 9])",
         "rotateLeft3([7, 0, 0])",
@@ -13,7 +13,7 @@ public class _RotateLeft3
         "rotateLeft3([0, 0, 1])",
     };
 
-    static int[][] expectedResults = {
+    static final int[][] expectedResults = {
         {2, 3, 1},
         {11, 9, 5},
         {0, 0, 7},
@@ -21,7 +21,7 @@ public class _RotateLeft3
         {0, 1, 0},
     };
 
-    public static String printArray(int[] array)
+    public static final String printArray(int[] array)
     {
         String result = "[";
         for (int a: array) { result += a+", "; }
@@ -29,15 +29,15 @@ public class _RotateLeft3
         return result + "]";
     }
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 1, 2, 3 }; 
-        int[] nums1 = { 5, 11, 9 }; 
-        int[] nums2 = { 7, 0, 0 }; 
-        int[] nums3 = { 1, 2, 1 }; 
-        int[] nums4 = { 0, 0, 1 }; 
+        final int[] nums0 = { 1, 2, 3 }; 
+        final int[] nums1 = { 5, 11, 9 }; 
+        final int[] nums2 = { 7, 0, 0 }; 
+        final int[] nums3 = { 1, 2, 1 }; 
+        final int[] nums4 = { 0, 0, 1 }; 
 
-        int[][] resultsArray = {
+        final int[][] resultsArray = {
             RotateLeft3.rotateLeft3(nums0),
             RotateLeft3.rotateLeft3(nums1),
             RotateLeft3.rotateLeft3(nums2),

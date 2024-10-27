@@ -4,7 +4,7 @@ import Logic1.Testcases._SquirrelPlay;
 // https://codingbat.com/prob/p141061
 // Difficulty: 109.0
 
-public class SquirrelPlay
+public final class SquirrelPlay
 {
     /* The squirrels in Palo Alto spend most of the day playing. 
     In particular, they play if the temperature is between 60 and 90 (inclusive). 
@@ -29,12 +29,12 @@ public class SquirrelPlay
     | squirrelPlay(60, false)  → true  |
     |_________________________________*/
 
-    public static boolean squirrelPlay(int temp, boolean isSummer)
+    public static final boolean squirrelPlay(int temp, boolean isSummer)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _SquirrelPlay.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

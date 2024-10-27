@@ -4,7 +4,7 @@ import Array1.Testcases._MiddleWay;
 // https://codingbat.com/prob/p146449
 // Difficulty: 130.0
 
-public class MiddleWay
+public final class MiddleWay
 {
     /* Given 2 int arrays, a and b, each length 3, return a new array length 2 containing their middle elements. */
 
@@ -19,12 +19,12 @@ public class MiddleWay
     | middleWay([1, 2, 3], [4, 1, 1]) → [2, 1] |
     |_________________________________________*/
 
-    public static int[] middleWay(int[] a, int[] b)
+    public static final int[] middleWay(int[] a, int[] b)
     {
         return new int[]{0};
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _MiddleWay.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

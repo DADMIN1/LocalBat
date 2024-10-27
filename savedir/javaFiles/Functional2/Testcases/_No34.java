@@ -4,9 +4,9 @@ import java.util.List;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class _No34
+public final class _No34
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "no34([\"a\", \"bb\", \"ccc\"])",
         "no34([\"a\", \"bb\", \"ccc\", \"dddd\"])",
         "no34([\"ccc\", \"dddd\", \"apple\"])",
@@ -20,7 +20,7 @@ public class _No34
         "no34([\"aaaa\", \"bbb\", \"*****\", \"333\"])",
     };
 
-    static List<?>[] expectedResults = {
+    static final List<?>[] expectedResults = {
         Arrays.asList("a", "bb"),
         Arrays.asList("a", "bb"),
         Arrays.asList("apple"),
@@ -34,9 +34,9 @@ public class _No34
         Arrays.asList("*****"),
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        List<?>[] resultsArray = {
+        final List<?>[] resultsArray = {
             No34.no34(new ArrayList<>(Arrays.asList("a", "bb", "ccc"))),
             No34.no34(new ArrayList<>(Arrays.asList("a", "bb", "ccc", "dddd"))),
             No34.no34(new ArrayList<>(Arrays.asList("ccc", "dddd", "apple"))),

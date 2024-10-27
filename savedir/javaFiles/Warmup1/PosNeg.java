@@ -4,7 +4,7 @@ import Warmup1.Testcases._PosNeg;
 // https://codingbat.com/prob/p159227
 // Difficulty: 124.0
 
-public class PosNeg
+public final class PosNeg
 {
     /* Given 2 int values, return true if one is negative and one is positive. 
     Except if the parameter "negative" is true, then return true only if both are negative. */
@@ -33,12 +33,12 @@ public class PosNeg
     | posNeg(-5, -5, true)  → true  |
     |______________________________*/
 
-    public static boolean posNeg(int a, int b, boolean negative)
+    public static final boolean posNeg(int a, int b, boolean negative)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _PosNeg.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

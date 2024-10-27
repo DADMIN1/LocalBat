@@ -6,7 +6,7 @@ import java.util.HashMap;
 // https://codingbat.com/prob/p136950
 // Difficulty: 227
 
-public class MapAB4
+public final class MapAB4
 {
     /* Modify and return the given map as follows: if the keys "a" and "b" have values that have different lengths, 
     then set "c" to have the longer value. If the values exist and have the same length, 
@@ -32,12 +32,12 @@ public class MapAB4
     | mapAB4({"b": "", "z": "z"})                   → {"b": "", "z": "z"}                 |
     |____________________________________________________________________________________*/
 
-    public static Map<String, String> mapAB4(Map<String, String> map)
+    public static final Map<String, String> mapAB4(Map<String, String> map)
     {
         return new HashMap<String, String>();
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _MapAB4.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

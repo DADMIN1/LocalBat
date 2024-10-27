@@ -1,9 +1,9 @@
 package Logic1.Testcases;
 import Logic1.WithoutDoubles;
 
-public class _WithoutDoubles
+public final class _WithoutDoubles
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "withoutDoubles(2, 3, true)",
         "withoutDoubles(3, 3, true)",
         "withoutDoubles(3, 3, false)",
@@ -18,7 +18,7 @@ public class _WithoutDoubles
         "withoutDoubles(6, 1, false)",
     };
 
-    static int[] expectedResults = {
+    static final int[] expectedResults = {
         5,
         7,
         6,
@@ -33,9 +33,9 @@ public class _WithoutDoubles
         7,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] resultsArray = {
+        final int[] resultsArray = {
             WithoutDoubles.withoutDoubles(2, 3, true),
             WithoutDoubles.withoutDoubles(3, 3, true),
             WithoutDoubles.withoutDoubles(3, 3, false),

@@ -4,7 +4,7 @@ import AP1.Testcases._WordsWithout;
 // https://codingbat.com/prob/p121236
 // Difficulty: 242.0
 
-public class WordsWithout
+public final class WordsWithout
 {
     /* Given an array of strings, return a new array without the strings that are equal to the target string. 
     One approach is to count the occurrences of the target string, 
@@ -22,12 +22,12 @@ public class WordsWithout
     | wordsWithout(["aa", "ab", "ac", "aa"], "aa")      → ["ab", "ac"]            |
     |____________________________________________________________________________*/
 
-    public static String[] wordsWithout(String[] words, String target)
+    public static final String[] wordsWithout(String[] words, String target)
     {
         return new String[]{""};
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _WordsWithout.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

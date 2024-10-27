@@ -1,9 +1,9 @@
 package Recursion1.Testcases;
 import Recursion1.NestParen;
 
-public class _NestParen
+public final class _NestParen
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "nestParen(\"(())\")",
         "nestParen(\"((()))\")",
         "nestParen(\"(((x))\")",
@@ -21,7 +21,7 @@ public class _NestParen
         "nestParen(\"(((())))\")",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         true,
         false,
@@ -39,9 +39,9 @@ public class _NestParen
         true,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             NestParen.nestParen("(())"),
             NestParen.nestParen("((()))"),
             NestParen.nestParen("(((x))"),

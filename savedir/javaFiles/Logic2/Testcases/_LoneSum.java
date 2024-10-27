@@ -1,9 +1,9 @@
 package Logic2.Testcases;
 import Logic2.LoneSum;
 
-public class _LoneSum
+public final class _LoneSum
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "loneSum(1, 2, 3)",
         "loneSum(3, 2, 3)",
         "loneSum(3, 3, 3)",
@@ -15,7 +15,7 @@ public class _LoneSum
         "loneSum(1, 3, 1)",
     };
 
-    static int[] expectedResults = {
+    static final int[] expectedResults = {
         6,
         2,
         0,
@@ -27,9 +27,9 @@ public class _LoneSum
         3,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] resultsArray = {
+        final int[] resultsArray = {
             LoneSum.loneSum(1, 2, 3),
             LoneSum.loneSum(3, 2, 3),
             LoneSum.loneSum(3, 3, 3),

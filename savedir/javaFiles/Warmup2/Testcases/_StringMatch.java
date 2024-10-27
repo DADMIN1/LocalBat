@@ -1,9 +1,9 @@
 package Warmup2.Testcases;
 import Warmup2.StringMatch;
 
-public class _StringMatch
+public final class _StringMatch
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "stringMatch(\"xxcaazz\", \"xxbaaz\")",
         "stringMatch(\"abc\", \"abc\")",
         "stringMatch(\"abc\", \"axc\")",
@@ -16,7 +16,7 @@ public class _StringMatch
         "stringMatch(\"iaxxai\", \"aaxxaaxx\")",
     };
 
-    static int[] expectedResults = {
+    static final int[] expectedResults = {
         3,
         2,
         0,
@@ -29,9 +29,9 @@ public class _StringMatch
         3,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] resultsArray = {
+        final int[] resultsArray = {
             StringMatch.stringMatch("xxcaazz", "xxbaaz"),
             StringMatch.stringMatch("abc", "abc"),
             StringMatch.stringMatch("abc", "axc"),

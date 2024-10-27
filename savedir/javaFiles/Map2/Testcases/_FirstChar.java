@@ -3,30 +3,30 @@ import Map2.FirstChar;
 import java.util.Map;
 import java.util.HashMap;
 
-public class _FirstChar
+public final class _FirstChar
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "firstChar([\"salt\", \"tea\", \"soda\", \"toast\"])",
         "firstChar([\"aa\", \"bb\", \"cc\", \"aAA\", \"cCC\", \"d\"])",
         "firstChar([])",
         "firstChar([\"apple\", \"bells\", \"salt\", \"aardvark\", \"bells\", \"sun\", \"zen\", \"bells\"])",
     };
 
-    static Map<?,?>[] expectedResults = {
+    static final Map<?,?>[] expectedResults = {
         Map.of("s", "saltsoda", "t", "teatoast"),
         Map.of("a", "aaaAA", "b", "bb", "c", "cccCC", "d", "d"),
         Map.of(),
         Map.of("a", "appleaardvark", "b", "bellsbellsbells", "s", "saltsun", "z", "zen"),
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] strings0 = { "salt", "tea", "soda", "toast" }; 
-        String[] strings1 = { "aa", "bb", "cc", "aAA", "cCC", "d" }; 
-        String[] strings2 = {  }; 
-        String[] strings3 = { "apple", "bells", "salt", "aardvark", "bells", "sun", "zen", "bells" }; 
+        final String[] strings0 = { "salt", "tea", "soda", "toast" }; 
+        final String[] strings1 = { "aa", "bb", "cc", "aAA", "cCC", "d" }; 
+        final String[] strings2 = {  }; 
+        final String[] strings3 = { "apple", "bells", "salt", "aardvark", "bells", "sun", "zen", "bells" }; 
 
-        Map<?,?>[] resultsArray = {
+        final Map<?,?>[] resultsArray = {
             FirstChar.firstChar(strings0),
             FirstChar.firstChar(strings1),
             FirstChar.firstChar(strings2),

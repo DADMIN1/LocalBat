@@ -1,9 +1,9 @@
 package Warmup1.Testcases;
 import Warmup1.StartHi;
 
-public class _StartHi
+public final class _StartHi
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "startHi(\"hi there\")",
         "startHi(\"hi\")",
         "startHi(\"hello hi\")",
@@ -14,7 +14,7 @@ public class _StartHi
         "startHi(\"hi ho\")",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         true,
         false,
@@ -25,9 +25,9 @@ public class _StartHi
         true,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             StartHi.startHi("hi there"),
             StartHi.startHi("hi"),
             StartHi.startHi("hello hi"),

@@ -4,7 +4,7 @@ import Recursion1.Testcases._StrCount;
 // https://codingbat.com/prob/p186177
 // Difficulty: 384.0
 
-public class StrCount
+public final class StrCount
 {
     /* Given a string and a non-empty substring sub, 
     compute recursively the number of times that sub appears in the string, 
@@ -29,12 +29,12 @@ public class StrCount
     | strCount("aaabababab", "b")    → 4 |
     |___________________________________*/
 
-    public static int strCount(String str, String sub)
+    public static final int strCount(String str, String sub)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _StrCount.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

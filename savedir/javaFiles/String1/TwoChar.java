@@ -4,7 +4,7 @@ import String1.Testcases._TwoChar;
 // https://codingbat.com/prob/p144623
 // Difficulty: 154.0
 
-public class TwoChar
+public final class TwoChar
 {
     /* Given a string and an index, return a string length 2 starting at the given index. 
     If the index is too big or too small to define a string length 2, 
@@ -30,12 +30,12 @@ public class TwoChar
     | twoChar("yay", 0)    → "ya" |
     |____________________________*/
 
-    public static String twoChar(String str, int index)
+    public static final String twoChar(String str, int index)
     {
         return "";
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _TwoChar.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

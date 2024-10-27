@@ -1,9 +1,9 @@
 package Logic1.Testcases;
 import Logic1.SortaSum;
 
-public class _SortaSum
+public final class _SortaSum
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "sortaSum(3, 4)",
         "sortaSum(9, 4)",
         "sortaSum(10, 11)",
@@ -15,7 +15,7 @@ public class _SortaSum
         "sortaSum(14, 6)",
     };
 
-    static int[] expectedResults = {
+    static final int[] expectedResults = {
         7,
         20,
         21,
@@ -27,9 +27,9 @@ public class _SortaSum
         20,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] resultsArray = {
+        final int[] resultsArray = {
             SortaSum.sortaSum(3, 4),
             SortaSum.sortaSum(9, 4),
             SortaSum.sortaSum(10, 11),

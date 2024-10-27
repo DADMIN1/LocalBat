@@ -1,9 +1,9 @@
 package String3.Testcases;
 import String3.MirrorEnds;
 
-public class _MirrorEnds
+public final class _MirrorEnds
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "mirrorEnds(\"abXYZba\")",
         "mirrorEnds(\"abca\")",
         "mirrorEnds(\"aba\")",
@@ -17,7 +17,7 @@ public class _MirrorEnds
         "mirrorEnds(\"band andab\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "ab",
         "a",
         "aba",
@@ -31,9 +31,9 @@ public class _MirrorEnds
         "ba",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             MirrorEnds.mirrorEnds("abXYZba"),
             MirrorEnds.mirrorEnds("abca"),
             MirrorEnds.mirrorEnds("aba"),

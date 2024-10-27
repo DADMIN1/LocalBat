@@ -4,7 +4,7 @@ import Warmup1.Testcases._ParrotTrouble;
 // https://codingbat.com/prob/p140449
 // Difficulty: 115.0
 
-public class ParrotTrouble
+public final class ParrotTrouble
 {
     /* We have a loud talking parrot. The "hour" parameter is the current hour time in the range 0..23. 
     We are in trouble if the parrot is talking and the hour is before 7 or after 20. 
@@ -25,12 +25,12 @@ public class ParrotTrouble
     | parrotTrouble(false, 12) → false |
     |_________________________________*/
 
-    public static boolean parrotTrouble(boolean talking, int hour)
+    public static final boolean parrotTrouble(boolean talking, int hour)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _ParrotTrouble.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

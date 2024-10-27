@@ -1,9 +1,9 @@
 package Warmup2.Testcases;
 import Warmup2.ArrayFront9;
 
-public class _ArrayFront9
+public final class _ArrayFront9
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "arrayFront9([1, 2, 9, 3, 4])",
         "arrayFront9([1, 2, 3, 4, 9])",
         "arrayFront9([1, 2, 3, 4, 5])",
@@ -18,7 +18,7 @@ public class _ArrayFront9
         "arrayFront9([3, 9, 2, 3, 3])",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         false,
         false,
@@ -33,22 +33,22 @@ public class _ArrayFront9
         true,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 1, 2, 9, 3, 4 }; 
-        int[] nums1 = { 1, 2, 3, 4, 9 }; 
-        int[] nums2 = { 1, 2, 3, 4, 5 }; 
-        int[] nums3 = { 9, 2, 3 }; 
-        int[] nums4 = { 1, 9, 9 }; 
-        int[] nums5 = { 1, 2, 3 }; 
-        int[] nums6 = { 1, 9 }; 
-        int[] nums7 = { 5, 5 }; 
-        int[] nums8 = { 2 }; 
-        int[] nums9 = { 9 }; 
-        int[] nums10 = {  }; 
-        int[] nums11 = { 3, 9, 2, 3, 3 }; 
+        final int[] nums0 = { 1, 2, 9, 3, 4 }; 
+        final int[] nums1 = { 1, 2, 3, 4, 9 }; 
+        final int[] nums2 = { 1, 2, 3, 4, 5 }; 
+        final int[] nums3 = { 9, 2, 3 }; 
+        final int[] nums4 = { 1, 9, 9 }; 
+        final int[] nums5 = { 1, 2, 3 }; 
+        final int[] nums6 = { 1, 9 }; 
+        final int[] nums7 = { 5, 5 }; 
+        final int[] nums8 = { 2 }; 
+        final int[] nums9 = { 9 }; 
+        final int[] nums10 = {  }; 
+        final int[] nums11 = { 3, 9, 2, 3, 3 }; 
 
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             ArrayFront9.arrayFront9(nums0),
             ArrayFront9.arrayFront9(nums1),
             ArrayFront9.arrayFront9(nums2),

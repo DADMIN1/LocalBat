@@ -4,7 +4,7 @@ import Logic1.Testcases._CigarParty;
 // https://codingbat.com/prob/p159531
 // Difficulty: 103.0
 
-public class CigarParty
+public final class CigarParty
 {
     /* When squirrels get together for a party, they like to have cigars. 
     A squirrel party is successful when the number of cigars is between 40 and 60, 
@@ -28,12 +28,12 @@ public class CigarParty
     | cigarParty(39, true)  → false |
     |______________________________*/
 
-    public static boolean cigarParty(int cigars, boolean isWeekend)
+    public static final boolean cigarParty(int cigars, boolean isWeekend)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _CigarParty.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

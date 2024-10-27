@@ -4,9 +4,9 @@ import java.util.List;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class _Square
+public final class _Square
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "square([1, 2, 3])",
         "square([6, 8, -6, -8, 1])",
         "square([])",
@@ -15,7 +15,7 @@ public class _Square
         "square([6, -3, 12, 23, 4, 1, 19, 11, 2, 3, 2])",
     };
 
-    static List<?>[] expectedResults = {
+    static final List<?>[] expectedResults = {
         Arrays.asList(1, 4, 9),
         Arrays.asList(36, 64, 36, 64, 1),
         Arrays.asList(),
@@ -24,9 +24,9 @@ public class _Square
         Arrays.asList(36, 9, 144, 529, 16, 1, 361, 121, 4, 9, 4),
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        List<?>[] resultsArray = {
+        final List<?>[] resultsArray = {
             Square.square(new ArrayList<>(Arrays.asList(1, 2, 3))),
             Square.square(new ArrayList<>(Arrays.asList(6, 8, -6, -8, 1))),
             Square.square(new ArrayList<>(Arrays.asList())),

@@ -4,7 +4,7 @@ import Array2.Testcases._ModThree;
 // https://codingbat.com/prob/p159979
 // Difficulty: 251.0
 
-public class ModThree
+public final class ModThree
 {
     /* Given an array of ints, return true if the array contains either 3 even or 3 odd values all next to each other. */
 
@@ -25,12 +25,12 @@ public class ModThree
     | modThree([9, 7, 2, 9, 2, 2, 6]) → true  |
     |________________________________________*/
 
-    public static boolean modThree(int[] nums)
+    public static final boolean modThree(int[] nums)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _ModThree.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

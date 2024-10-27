@@ -1,9 +1,9 @@
 package String2.Testcases;
 import String2.BobThere;
 
-public class _BobThere
+public final class _BobThere
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "bobThere(\"abcbob\")",
         "bobThere(\"b9b\")",
         "bobThere(\"bac\")",
@@ -19,7 +19,7 @@ public class _BobThere
         "bobThere(\"b\")",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         true,
         false,
@@ -35,9 +35,9 @@ public class _BobThere
         false,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             BobThere.bobThere("abcbob"),
             BobThere.bobThere("b9b"),
             BobThere.bobThere("bac"),

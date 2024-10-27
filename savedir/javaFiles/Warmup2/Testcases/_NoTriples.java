@@ -1,9 +1,9 @@
 package Warmup2.Testcases;
 import Warmup2.NoTriples;
 
-public class _NoTriples
+public final class _NoTriples
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "noTriples([1, 1, 2, 2, 1])",
         "noTriples([1, 1, 2, 2, 2, 1])",
         "noTriples([1, 1, 1, 2, 2, 2, 1])",
@@ -15,7 +15,7 @@ public class _NoTriples
         "noTriples([])",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         false,
         false,
@@ -27,19 +27,19 @@ public class _NoTriples
         true,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 1, 1, 2, 2, 1 }; 
-        int[] nums1 = { 1, 1, 2, 2, 2, 1 }; 
-        int[] nums2 = { 1, 1, 1, 2, 2, 2, 1 }; 
-        int[] nums3 = { 1, 1, 2, 2, 1, 2, 1 }; 
-        int[] nums4 = { 1, 2, 1 }; 
-        int[] nums5 = { 1, 1, 1 }; 
-        int[] nums6 = { 1, 1 }; 
-        int[] nums7 = { 1 }; 
-        int[] nums8 = {  }; 
+        final int[] nums0 = { 1, 1, 2, 2, 1 }; 
+        final int[] nums1 = { 1, 1, 2, 2, 2, 1 }; 
+        final int[] nums2 = { 1, 1, 1, 2, 2, 2, 1 }; 
+        final int[] nums3 = { 1, 1, 2, 2, 1, 2, 1 }; 
+        final int[] nums4 = { 1, 2, 1 }; 
+        final int[] nums5 = { 1, 1, 1 }; 
+        final int[] nums6 = { 1, 1 }; 
+        final int[] nums7 = { 1 }; 
+        final int[] nums8 = {  }; 
 
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             NoTriples.noTriples(nums0),
             NoTriples.noTriples(nums1),
             NoTriples.noTriples(nums2),

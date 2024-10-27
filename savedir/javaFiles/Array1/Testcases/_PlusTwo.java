@@ -3,21 +3,21 @@ import Array1.PlusTwo;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class _PlusTwo
+public final class _PlusTwo
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "plusTwo([1, 2], [3, 4])",
         "plusTwo([4, 4], [2, 2])",
         "plusTwo([9, 2], [3, 4])",
     };
 
-    static int[][] expectedResults = {
+    static final int[][] expectedResults = {
         {1, 2, 3, 4},
         {4, 4, 2, 2},
         {9, 2, 3, 4},
     };
 
-    public static String printArray(int[] array)
+    public static final String printArray(int[] array)
     {
         String result = "[";
         for (int a: array) { result += a+", "; }
@@ -25,13 +25,13 @@ public class _PlusTwo
         return result + "]";
     }
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] a0 = { 1, 2 }; int[] b0 = { 3, 4 }; 
-        int[] a1 = { 4, 4 }; int[] b1 = { 2, 2 }; 
-        int[] a2 = { 9, 2 }; int[] b2 = { 3, 4 }; 
+        final int[] a0 = { 1, 2 }; final int[] b0 = { 3, 4 }; 
+        final int[] a1 = { 4, 4 }; final int[] b1 = { 2, 2 }; 
+        final int[] a2 = { 9, 2 }; final int[] b2 = { 3, 4 }; 
 
-        int[][] resultsArray = {
+        final int[][] resultsArray = {
             PlusTwo.plusTwo(a0, b0),
             PlusTwo.plusTwo(a1, b1),
             PlusTwo.plusTwo(a2, b2),

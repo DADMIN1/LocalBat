@@ -1,9 +1,9 @@
 package Array1.Testcases;
 import Array1.MaxTriple;
 
-public class _MaxTriple
+public final class _MaxTriple
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "maxTriple([1, 2, 3])",
         "maxTriple([1, 5, 3])",
         "maxTriple([5, 2, 3])",
@@ -16,7 +16,7 @@ public class _MaxTriple
         "maxTriple([2, 2, 5, 1, 1])",
     };
 
-    static int[] expectedResults = {
+    static final int[] expectedResults = {
         3,
         5,
         5,
@@ -29,20 +29,20 @@ public class _MaxTriple
         5,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 1, 2, 3 }; 
-        int[] nums1 = { 1, 5, 3 }; 
-        int[] nums2 = { 5, 2, 3 }; 
-        int[] nums3 = { 1, 2, 3, 1, 1 }; 
-        int[] nums4 = { 1, 7, 3, 1, 5 }; 
-        int[] nums5 = { 5, 1, 3, 7, 1 }; 
-        int[] nums6 = { 5, 1, 7, 3, 7, 8, 1 }; 
-        int[] nums7 = { 5, 1, 7, 9, 7, 8, 1 }; 
-        int[] nums8 = { 5, 1, 7, 3, 7, 8, 9 }; 
-        int[] nums9 = { 2, 2, 5, 1, 1 }; 
+        final int[] nums0 = { 1, 2, 3 }; 
+        final int[] nums1 = { 1, 5, 3 }; 
+        final int[] nums2 = { 5, 2, 3 }; 
+        final int[] nums3 = { 1, 2, 3, 1, 1 }; 
+        final int[] nums4 = { 1, 7, 3, 1, 5 }; 
+        final int[] nums5 = { 5, 1, 3, 7, 1 }; 
+        final int[] nums6 = { 5, 1, 7, 3, 7, 8, 1 }; 
+        final int[] nums7 = { 5, 1, 7, 9, 7, 8, 1 }; 
+        final int[] nums8 = { 5, 1, 7, 3, 7, 8, 9 }; 
+        final int[] nums9 = { 2, 2, 5, 1, 1 }; 
 
-        int[] resultsArray = {
+        final int[] resultsArray = {
             MaxTriple.maxTriple(nums0),
             MaxTriple.maxTriple(nums1),
             MaxTriple.maxTriple(nums2),

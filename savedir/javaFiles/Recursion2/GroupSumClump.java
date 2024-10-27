@@ -4,7 +4,7 @@ import Recursion2.Testcases._GroupSumClump;
 // https://codingbat.com/prob/p105136
 // Difficulty: 415.0
 
-public class GroupSumClump
+public final class GroupSumClump
 {
     /* Given an array of ints, is it possible to choose a group of some of the ints, 
     such that the group sums to the given target, with this additional constraint: 
@@ -25,12 +25,12 @@ public class GroupSumClump
     | groupSumClump(0, [9], 1)              → false |
     |______________________________________________*/
 
-    public static boolean groupSumClump(int start, int[] nums, int target)
+    public static final boolean groupSumClump(int start, int[] nums, int target)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _GroupSumClump.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

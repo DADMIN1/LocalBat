@@ -1,9 +1,9 @@
 package String1.Testcases;
 import String1.ExtraEnd;
 
-public class _ExtraEnd
+public final class _ExtraEnd
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "extraEnd(\"Hello\")",
         "extraEnd(\"ab\")",
         "extraEnd(\"Hi\")",
@@ -11,7 +11,7 @@ public class _ExtraEnd
         "extraEnd(\"Code\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "lololo",
         "ababab",
         "HiHiHi",
@@ -19,9 +19,9 @@ public class _ExtraEnd
         "dedede",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             ExtraEnd.extraEnd("Hello"),
             ExtraEnd.extraEnd("ab"),
             ExtraEnd.extraEnd("Hi"),

@@ -3,9 +3,9 @@ import Map2.FirstSwap;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class _FirstSwap
+public final class _FirstSwap
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "firstSwap([\"ab\", \"ac\"])",
         "firstSwap([\"ax\", \"bx\", \"cx\", \"cy\", \"by\", \"ay\", \"aaa\", \"azz\"])",
         "firstSwap([\"ax\", \"bx\", \"ay\", \"by\", \"ai\", \"aj\", \"bx\", \"by\"])",
@@ -18,7 +18,7 @@ public class _FirstSwap
         "firstSwap([\"a\", \"b\", \"c\", \"xx\", \"yy\", \"zz\"])",
     };
 
-    static String[][] expectedResults = {
+    static final String[][] expectedResults = {
         {"ac", "ab"},
         {"ay", "by", "cy", "cx", "bx", "ax", "aaa", "azz"},
         {"ay", "by", "ax", "bx", "ai", "aj", "bx", "by"},
@@ -31,7 +31,7 @@ public class _FirstSwap
         {"a", "b", "c", "xx", "yy", "zz"},
     };
 
-    public static String printArray(String[] array)
+    public static final String printArray(String[] array)
     {
         String result = "[";
         for (String a: array) { result += a+", "; }
@@ -39,20 +39,20 @@ public class _FirstSwap
         return result + "]";
     }
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] strings0 = { "ab", "ac" }; 
-        String[] strings1 = { "ax", "bx", "cx", "cy", "by", "ay", "aaa", "azz" }; 
-        String[] strings2 = { "ax", "bx", "ay", "by", "ai", "aj", "bx", "by" }; 
-        String[] strings3 = { "ax", "bx", "cx", "ay", "cy", "aaa", "abb" }; 
-        String[] strings4 = { "easy", "does", "it", "every", "ice", "eaten" }; 
-        String[] strings5 = { "list", "of", "words", "swims", "over", "lily", "water", "wait" }; 
-        String[] strings6 = { "4", "8", "15", "16", "23", "42" }; 
-        String[] strings7 = { "aaa" }; 
-        String[] strings8 = {  }; 
-        String[] strings9 = { "a", "b", "c", "xx", "yy", "zz" }; 
+        final String[] strings0 = { "ab", "ac" }; 
+        final String[] strings1 = { "ax", "bx", "cx", "cy", "by", "ay", "aaa", "azz" }; 
+        final String[] strings2 = { "ax", "bx", "ay", "by", "ai", "aj", "bx", "by" }; 
+        final String[] strings3 = { "ax", "bx", "cx", "ay", "cy", "aaa", "abb" }; 
+        final String[] strings4 = { "easy", "does", "it", "every", "ice", "eaten" }; 
+        final String[] strings5 = { "list", "of", "words", "swims", "over", "lily", "water", "wait" }; 
+        final String[] strings6 = { "4", "8", "15", "16", "23", "42" }; 
+        final String[] strings7 = { "aaa" }; 
+        final String[] strings8 = {  }; 
+        final String[] strings9 = { "a", "b", "c", "xx", "yy", "zz" }; 
 
-        String[][] resultsArray = {
+        final String[][] resultsArray = {
             FirstSwap.firstSwap(strings0),
             FirstSwap.firstSwap(strings1),
             FirstSwap.firstSwap(strings2),

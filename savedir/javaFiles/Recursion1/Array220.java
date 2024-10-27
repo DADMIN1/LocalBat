@@ -4,7 +4,7 @@ import Recursion1.Testcases._Array220;
 // https://codingbat.com/prob/p173469
 // Difficulty: 351.0
 
-public class Array220
+public final class Array220
 {
     /* Given an array of ints, compute recursively if the array contains somewhere a value followed in the array by that value times 10. 
     We'll use the convention of considering only the part of the array that begins at the given index. 
@@ -30,12 +30,12 @@ public class Array220
     | array220([1, 2, 3, 4, 4, 50, 500, 6], 0) → true  |
     |_________________________________________________*/
 
-    public static boolean array220(int[] nums, int index)
+    public static final boolean array220(int[] nums, int index)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _Array220.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

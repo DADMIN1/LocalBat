@@ -4,7 +4,7 @@ import Array1.Testcases._BiggerTwo;
 // https://codingbat.com/prob/p109537
 // Difficulty: 154.0
 
-public class BiggerTwo
+public final class BiggerTwo
 {
     /* Start with 2 int arrays, a and b, each length 2. Consider the sum of the values in each array. 
     Return the array which has the largest sum. In event of a tie, 
@@ -22,12 +22,12 @@ public class BiggerTwo
     | biggerTwo([6, 7], [3, 1]) → [6, 7] |
     |___________________________________*/
 
-    public static int[] biggerTwo(int[] a, int[] b)
+    public static final int[] biggerTwo(int[] a, int[] b)
     {
         return new int[]{0};
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _BiggerTwo.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

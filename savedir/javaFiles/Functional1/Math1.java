@@ -7,7 +7,7 @@ import java.util.ArrayList;
 // https://codingbat.com/prob/p103869
 // Difficulty: 215
 
-public class Math1
+public final class Math1
 {
     /* Given a list of integers, return a list where each integer is added to 1 and the result is multiplied by 10. */
 
@@ -23,12 +23,12 @@ public class Math1
     | math1([6, -3, 12, 23, 4, 1, 19, 11, 2, 3, 2]) → [70, -20, 130, 240, 50, 20, 200, 120, 30, 40, 30] |
     |__________________________________________________________________________________________________*/
 
-    public static List<Integer> math1(List<Integer> nums)
+    public static final List<Integer> math1(List<Integer> nums)
     {
         return new ArrayList<Integer>();
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _Math1.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

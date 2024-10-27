@@ -1,9 +1,9 @@
 package AP1.Testcases;
 import AP1.ScoreUp;
 
-public class _ScoreUp
+public final class _ScoreUp
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "scoreUp([\"a\", \"a\", \"b\", \"b\"], [\"a\", \"c\", \"b\", \"c\"])",
         "scoreUp([\"a\", \"a\", \"b\", \"b\"], [\"a\", \"a\", \"b\", \"c\"])",
         "scoreUp([\"a\", \"a\", \"b\", \"b\"], [\"a\", \"a\", \"b\", \"b\"])",
@@ -18,7 +18,7 @@ public class _ScoreUp
         "scoreUp([\"a\", \"b\", \"c\"], [\"a\", \"b\", \"c\"])",
     };
 
-    static int[] expectedResults = {
+    static final int[] expectedResults = {
         6,
         11,
         16,
@@ -33,22 +33,22 @@ public class _ScoreUp
         12,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] key0 = { "a", "a", "b", "b" }; String[] answers0 = { "a", "c", "b", "c" }; 
-        String[] key1 = { "a", "a", "b", "b" }; String[] answers1 = { "a", "a", "b", "c" }; 
-        String[] key2 = { "a", "a", "b", "b" }; String[] answers2 = { "a", "a", "b", "b" }; 
-        String[] key3 = { "a", "a", "b", "b" }; String[] answers3 = { "?", "c", "b", "?" }; 
-        String[] key4 = { "a", "a", "b", "b" }; String[] answers4 = { "?", "c", "?", "?" }; 
-        String[] key5 = { "a", "a", "b", "b" }; String[] answers5 = { "c", "?", "b", "b" }; 
-        String[] key6 = { "a", "a", "b", "b" }; String[] answers6 = { "c", "?", "b", "?" }; 
-        String[] key7 = { "a", "b", "c" }; String[] answers7 = { "a", "c", "b" }; 
-        String[] key8 = { "a", "a", "b", "b", "c", "c" }; String[] answers8 = { "a", "c", "a", "c", "a", "c" }; 
-        String[] key9 = { "a", "a", "b", "b", "c", "c" }; String[] answers9 = { "a", "c", "?", "?", "a", "c" }; 
-        String[] key10 = { "a", "a", "b", "b", "c", "c" }; String[] answers10 = { "a", "c", "?", "?", "c", "c" }; 
-        String[] key11 = { "a", "b", "c" }; String[] answers11 = { "a", "b", "c" }; 
+        final String[] key0 = { "a", "a", "b", "b" }; final String[] answers0 = { "a", "c", "b", "c" }; 
+        final String[] key1 = { "a", "a", "b", "b" }; final String[] answers1 = { "a", "a", "b", "c" }; 
+        final String[] key2 = { "a", "a", "b", "b" }; final String[] answers2 = { "a", "a", "b", "b" }; 
+        final String[] key3 = { "a", "a", "b", "b" }; final String[] answers3 = { "?", "c", "b", "?" }; 
+        final String[] key4 = { "a", "a", "b", "b" }; final String[] answers4 = { "?", "c", "?", "?" }; 
+        final String[] key5 = { "a", "a", "b", "b" }; final String[] answers5 = { "c", "?", "b", "b" }; 
+        final String[] key6 = { "a", "a", "b", "b" }; final String[] answers6 = { "c", "?", "b", "?" }; 
+        final String[] key7 = { "a", "b", "c" }; final String[] answers7 = { "a", "c", "b" }; 
+        final String[] key8 = { "a", "a", "b", "b", "c", "c" }; final String[] answers8 = { "a", "c", "a", "c", "a", "c" }; 
+        final String[] key9 = { "a", "a", "b", "b", "c", "c" }; final String[] answers9 = { "a", "c", "?", "?", "a", "c" }; 
+        final String[] key10 = { "a", "a", "b", "b", "c", "c" }; final String[] answers10 = { "a", "c", "?", "?", "c", "c" }; 
+        final String[] key11 = { "a", "b", "c" }; final String[] answers11 = { "a", "b", "c" }; 
 
-        int[] resultsArray = {
+        final int[] resultsArray = {
             ScoreUp.scoreUp(key0, answers0),
             ScoreUp.scoreUp(key1, answers1),
             ScoreUp.scoreUp(key2, answers2),

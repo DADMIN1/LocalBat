@@ -1,9 +1,9 @@
 package AP1.Testcases;
 import AP1.WordsCount;
 
-public class _WordsCount
+public final class _WordsCount
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "wordsCount([\"a\", \"bb\", \"b\", \"ccc\"], 1)",
         "wordsCount([\"a\", \"bb\", \"b\", \"ccc\"], 3)",
         "wordsCount([\"a\", \"bb\", \"b\", \"ccc\"], 4)",
@@ -12,7 +12,7 @@ public class _WordsCount
         "wordsCount([\"xx\", \"yyy\", \"x\", \"yy\", \"z\"], 3)",
     };
 
-    static int[] expectedResults = {
+    static final int[] expectedResults = {
         2,
         1,
         0,
@@ -21,16 +21,16 @@ public class _WordsCount
         1,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] words0 = { "a", "bb", "b", "ccc" }; 
-        String[] words1 = { "a", "bb", "b", "ccc" }; 
-        String[] words2 = { "a", "bb", "b", "ccc" }; 
-        String[] words3 = { "xx", "yyy", "x", "yy", "z" }; 
-        String[] words4 = { "xx", "yyy", "x", "yy", "z" }; 
-        String[] words5 = { "xx", "yyy", "x", "yy", "z" }; 
+        final String[] words0 = { "a", "bb", "b", "ccc" }; 
+        final String[] words1 = { "a", "bb", "b", "ccc" }; 
+        final String[] words2 = { "a", "bb", "b", "ccc" }; 
+        final String[] words3 = { "xx", "yyy", "x", "yy", "z" }; 
+        final String[] words4 = { "xx", "yyy", "x", "yy", "z" }; 
+        final String[] words5 = { "xx", "yyy", "x", "yy", "z" }; 
 
-        int[] resultsArray = {
+        final int[] resultsArray = {
             WordsCount.wordsCount(words0, 1),
             WordsCount.wordsCount(words1, 3),
             WordsCount.wordsCount(words2, 4),

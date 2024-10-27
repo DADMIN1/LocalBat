@@ -1,9 +1,9 @@
 package String1.Testcases;
 import String1.TheEnd;
 
-public class _TheEnd
+public final class _TheEnd
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "theEnd(\"Hello\", true)",
         "theEnd(\"Hello\", false)",
         "theEnd(\"oh\", true)",
@@ -16,7 +16,7 @@ public class _TheEnd
         "theEnd(\"code\", false)",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "H",
         "o",
         "o",
@@ -29,9 +29,9 @@ public class _TheEnd
         "e",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             TheEnd.theEnd("Hello", true),
             TheEnd.theEnd("Hello", false),
             TheEnd.theEnd("oh", true),

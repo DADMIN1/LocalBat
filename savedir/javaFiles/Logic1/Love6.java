@@ -4,7 +4,7 @@ import Logic1.Testcases._Love6;
 // https://codingbat.com/prob/p137742
 // Difficulty: 120
 
-public class Love6
+public final class Love6
 {
     /* The number 6 is a truly great number. Given two int values, 
     a and b, return true if either one is 6. Or if their sum or difference is 6. 
@@ -35,12 +35,12 @@ public class Love6
     | love6(3, 4)    → false |
     |_______________________*/
 
-    public static boolean love6(int a, int b)
+    public static final boolean love6(int a, int b)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _Love6.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

@@ -1,9 +1,9 @@
 package Logic1.Testcases;
 import Logic1.AnswerCell;
 
-public class _AnswerCell
+public final class _AnswerCell
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "answerCell(false, false, false)",
         "answerCell(false, false, true)",
         "answerCell(true, false, false)",
@@ -12,7 +12,7 @@ public class _AnswerCell
         "answerCell(true, true, true)",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         false,
         false,
@@ -21,9 +21,9 @@ public class _AnswerCell
         false,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             AnswerCell.answerCell(false, false, false),
             AnswerCell.answerCell(false, false, true),
             AnswerCell.answerCell(true, false, false),

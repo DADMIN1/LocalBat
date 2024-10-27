@@ -4,7 +4,7 @@ import Array2.Testcases._More14;
 // https://codingbat.com/prob/p104627
 // Difficulty: 227.0
 
-public class More14
+public final class More14
 {
     /* Given an array of ints, return true if the number of 1's is greater than the number of 4's */
 
@@ -27,12 +27,12 @@ public class More14
     | more14([1, 4, 1, 4, 1, 6]) → true  |
     |___________________________________*/
 
-    public static boolean more14(int[] nums)
+    public static final boolean more14(int[] nums)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _More14.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

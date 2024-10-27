@@ -1,9 +1,9 @@
 package Logic1.Testcases;
 import Logic1.In1To10;
 
-public class _In1To10
+public final class _In1To10
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "in1To10(5, false)",
         "in1To10(11, false)",
         "in1To10(11, true)",
@@ -21,7 +21,7 @@ public class _In1To10
         "in1To10(-99, true)",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         false,
         true,
@@ -39,9 +39,9 @@ public class _In1To10
         true,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             In1To10.in1To10(5, false),
             In1To10.in1To10(11, false),
             In1To10.in1To10(11, true),

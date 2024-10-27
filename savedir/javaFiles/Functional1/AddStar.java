@@ -7,7 +7,7 @@ import java.util.ArrayList;
 // https://codingbat.com/prob/p170181
 // Difficulty: 206
 
-public class AddStar
+public final class AddStar
 {
     /* Given a list of strings, return a list where each string has "*" added at its end. */
 
@@ -22,12 +22,12 @@ public class AddStar
     | addStar(["empty", "string", ""])                → ["empty*", "string*", "*"]                 |
     |_____________________________________________________________________________________________*/
 
-    public static List<String> addStar(List<String> strings)
+    public static final List<String> addStar(List<String> strings)
     {
         return new ArrayList<String>();
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _AddStar.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

@@ -4,7 +4,7 @@ import Logic1.Testcases._FizzString2;
 // https://codingbat.com/prob/p115243
 // Difficulty: 135.1
 
-public class FizzString2
+public final class FizzString2
 {
     /* Given an int n, return the string form of the number followed by "!". 
     So the int 6 yields "6!". Except if the number is divisible by 3 use "Fizz" instead of the number, 
@@ -35,12 +35,12 @@ public class FizzString2
     | fizzString2(100) → "Buzz!"     |
     |_______________________________*/
 
-    public static String fizzString2(int n)
+    public static final String fizzString2(int n)
     {
         return "";
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _FizzString2.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

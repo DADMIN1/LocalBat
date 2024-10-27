@@ -4,7 +4,7 @@ import AP1.Testcases._DividesSelf;
 // https://codingbat.com/prob/p165941
 // Difficulty: 227.0
 
-public class DividesSelf
+public final class DividesSelf
 {
     /* We'll say that a positive int divides itself if every digit in the number divides into the number evenly. 
     So for example 128 divides itself since 1, 2, and 8 all divide into 128 evenly. 
@@ -27,12 +27,12 @@ public class DividesSelf
     | dividesSelf(162) → true  |
     |_________________________*/
 
-    public static boolean dividesSelf(int n)
+    public static final boolean dividesSelf(int n)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _DividesSelf.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

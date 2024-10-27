@@ -3,9 +3,9 @@ import Array3.Fix34;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class _Fix34
+public final class _Fix34
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "fix34([1, 3, 1, 4])",
         "fix34([1, 3, 1, 4, 4, 3, 1])",
         "fix34([3, 2, 2, 4])",
@@ -22,7 +22,7 @@ public class _Fix34
         "fix34([3, 1, 1, 3, 4, 4])",
     };
 
-    static int[][] expectedResults = {
+    static final int[][] expectedResults = {
         {1, 3, 4, 1},
         {1, 3, 4, 1, 1, 3, 4},
         {3, 4, 2, 2},
@@ -39,7 +39,7 @@ public class _Fix34
         {3, 4, 1, 3, 4, 1},
     };
 
-    public static String printArray(int[] array)
+    public static final String printArray(int[] array)
     {
         String result = "[";
         for (int a: array) { result += a+", "; }
@@ -47,24 +47,24 @@ public class _Fix34
         return result + "]";
     }
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 1, 3, 1, 4 }; 
-        int[] nums1 = { 1, 3, 1, 4, 4, 3, 1 }; 
-        int[] nums2 = { 3, 2, 2, 4 }; 
-        int[] nums3 = { 3, 2, 3, 2, 4, 4 }; 
-        int[] nums4 = { 2, 3, 2, 3, 2, 4, 4 }; 
-        int[] nums5 = { 5, 3, 5, 4, 5, 4, 5, 4, 3, 5, 3, 5 }; 
-        int[] nums6 = { 3, 1, 4 }; 
-        int[] nums7 = { 3, 4, 1 }; 
-        int[] nums8 = { 1, 1, 1 }; 
-        int[] nums9 = { 1 }; 
-        int[] nums10 = {  }; 
-        int[] nums11 = { 7, 3, 7, 7, 4 }; 
-        int[] nums12 = { 3, 1, 4, 3, 1, 4 }; 
-        int[] nums13 = { 3, 1, 1, 3, 4, 4 }; 
+        final int[] nums0 = { 1, 3, 1, 4 }; 
+        final int[] nums1 = { 1, 3, 1, 4, 4, 3, 1 }; 
+        final int[] nums2 = { 3, 2, 2, 4 }; 
+        final int[] nums3 = { 3, 2, 3, 2, 4, 4 }; 
+        final int[] nums4 = { 2, 3, 2, 3, 2, 4, 4 }; 
+        final int[] nums5 = { 5, 3, 5, 4, 5, 4, 5, 4, 3, 5, 3, 5 }; 
+        final int[] nums6 = { 3, 1, 4 }; 
+        final int[] nums7 = { 3, 4, 1 }; 
+        final int[] nums8 = { 1, 1, 1 }; 
+        final int[] nums9 = { 1 }; 
+        final int[] nums10 = {  }; 
+        final int[] nums11 = { 7, 3, 7, 7, 4 }; 
+        final int[] nums12 = { 3, 1, 4, 3, 1, 4 }; 
+        final int[] nums13 = { 3, 1, 1, 3, 4, 4 }; 
 
-        int[][] resultsArray = {
+        final int[][] resultsArray = {
             Fix34.fix34(nums0),
             Fix34.fix34(nums1),
             Fix34.fix34(nums2),

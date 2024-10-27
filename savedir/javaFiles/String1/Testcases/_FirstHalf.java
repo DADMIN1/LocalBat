@@ -1,9 +1,9 @@
 package String1.Testcases;
 import String1.FirstHalf;
 
-public class _FirstHalf
+public final class _FirstHalf
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "firstHalf(\"WooHoo\")",
         "firstHalf(\"HelloThere\")",
         "firstHalf(\"abcdef\")",
@@ -13,7 +13,7 @@ public class _FirstHalf
         "firstHalf(\"kitten\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "Woo",
         "Hello",
         "abc",
@@ -23,9 +23,9 @@ public class _FirstHalf
         "kit",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             FirstHalf.firstHalf("WooHoo"),
             FirstHalf.firstHalf("HelloThere"),
             FirstHalf.firstHalf("abcdef"),

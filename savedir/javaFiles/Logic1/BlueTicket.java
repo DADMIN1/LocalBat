@@ -4,7 +4,7 @@ import Logic1.Testcases._BlueTicket;
 // https://codingbat.com/prob/p192267
 // Difficulty: 163.0
 
-public class BlueTicket
+public final class BlueTicket
 {
     /* You have a blue lottery ticket, with ints a, b, and c on it. 
     This makes three pairs, which we'll call ab, bc, and ac. 
@@ -29,12 +29,12 @@ public class BlueTicket
     | blueTicket(8, 4, 1)  → 0  |
     |__________________________*/
 
-    public static int blueTicket(int a, int b, int c)
+    public static final int blueTicket(int a, int b, int c)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _BlueTicket.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

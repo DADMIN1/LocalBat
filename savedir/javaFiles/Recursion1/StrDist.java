@@ -4,7 +4,7 @@ import Recursion1.Testcases._StrDist;
 // https://codingbat.com/prob/p195413
 // Difficulty: 390.0
 
-public class StrDist
+public final class StrDist
 {
     /* Given a string and a non-empty substring sub, 
     compute recursively the largest substring which starts and ends with sub and return its length. */
@@ -28,12 +28,12 @@ public class StrDist
     | strDist("hiHellohihihi", "ll")       → 2  |
     |__________________________________________*/
 
-    public static int strDist(String str, String sub)
+    public static final int strDist(String str, String sub)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _StrDist.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

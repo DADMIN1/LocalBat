@@ -1,9 +1,9 @@
 package Recursion2.Testcases;
 import Recursion2.SplitArray;
 
-public class _SplitArray
+public final class _SplitArray
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "splitArray([2, 2])",
         "splitArray([2, 3])",
         "splitArray([5, 2, 3])",
@@ -19,7 +19,7 @@ public class _SplitArray
         "splitArray([1, 2, 3, 10, 10, 1, 1])",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         false,
         true,
@@ -35,23 +35,23 @@ public class _SplitArray
         true,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 2, 2 }; 
-        int[] nums1 = { 2, 3 }; 
-        int[] nums2 = { 5, 2, 3 }; 
-        int[] nums3 = { 5, 2, 2 }; 
-        int[] nums4 = { 1, 1, 1, 1, 1, 1 }; 
-        int[] nums5 = { 1, 1, 1, 1, 1 }; 
-        int[] nums6 = {  }; 
-        int[] nums7 = { 1 }; 
-        int[] nums8 = { 3, 5 }; 
-        int[] nums9 = { 5, 3, 2 }; 
-        int[] nums10 = { 2, 2, 10, 10, 1, 1 }; 
-        int[] nums11 = { 1, 2, 2, 10, 10, 1, 1 }; 
-        int[] nums12 = { 1, 2, 3, 10, 10, 1, 1 }; 
+        final int[] nums0 = { 2, 2 }; 
+        final int[] nums1 = { 2, 3 }; 
+        final int[] nums2 = { 5, 2, 3 }; 
+        final int[] nums3 = { 5, 2, 2 }; 
+        final int[] nums4 = { 1, 1, 1, 1, 1, 1 }; 
+        final int[] nums5 = { 1, 1, 1, 1, 1 }; 
+        final int[] nums6 = {  }; 
+        final int[] nums7 = { 1 }; 
+        final int[] nums8 = { 3, 5 }; 
+        final int[] nums9 = { 5, 3, 2 }; 
+        final int[] nums10 = { 2, 2, 10, 10, 1, 1 }; 
+        final int[] nums11 = { 1, 2, 2, 10, 10, 1, 1 }; 
+        final int[] nums12 = { 1, 2, 3, 10, 10, 1, 1 }; 
 
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             SplitArray.splitArray(nums0),
             SplitArray.splitArray(nums1),
             SplitArray.splitArray(nums2),

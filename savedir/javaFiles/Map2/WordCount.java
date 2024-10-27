@@ -6,7 +6,7 @@ import java.util.HashMap;
 // https://codingbat.com/prob/p117630
 // Difficulty: 350
 
-public class WordCount
+public final class WordCount
 {
     /* The classic word-count algorithm: given an array of strings, 
     return a Map<String, Integer> with a key for each different string, 
@@ -26,12 +26,12 @@ public class WordCount
     | wordCount(["apple", "banana", "apple", "apple", "tea", "coffee", "banana"])                                                → {"banana": 2, "apple": 3, "tea": 1, "coffee": 1}                             |
     |__________________________________________________________________________________________________________________________________________________________________________________________________________*/
 
-    public static Map<String, Integer> wordCount(String[] strings)
+    public static final Map<String, Integer> wordCount(String[] strings)
     {
         return new HashMap<String, Integer>();
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _WordCount.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

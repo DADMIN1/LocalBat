@@ -1,9 +1,9 @@
 package Logic2.Testcases;
 import Logic2.RoundSum;
 
-public class _RoundSum
+public final class _RoundSum
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "roundSum(16, 17, 18)",
         "roundSum(12, 13, 14)",
         "roundSum(6, 4, 4)",
@@ -25,7 +25,7 @@ public class _RoundSum
         "roundSum(12, 10, 24)",
     };
 
-    static int[] expectedResults = {
+    static final int[] expectedResults = {
         60,
         30,
         10,
@@ -47,9 +47,9 @@ public class _RoundSum
         40,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] resultsArray = {
+        final int[] resultsArray = {
             RoundSum.roundSum(16, 17, 18),
             RoundSum.roundSum(12, 13, 14),
             RoundSum.roundSum(6, 4, 4),

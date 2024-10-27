@@ -4,9 +4,9 @@ import java.util.List;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class _NoZ
+public final class _NoZ
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "noZ([\"aaa\", \"bbb\", \"aza\"])",
         "noZ([\"hziz\", \"hzello\", \"hi\"])",
         "noZ([\"hello\", \"howz\", \"are\", \"youz\"])",
@@ -15,7 +15,7 @@ public class _NoZ
         "noZ([\"x\", \"y\", \"z\"])",
     };
 
-    static List<?>[] expectedResults = {
+    static final List<?>[] expectedResults = {
         Arrays.asList("aaa", "bbb"),
         Arrays.asList("hi"),
         Arrays.asList("hello", "are"),
@@ -24,9 +24,9 @@ public class _NoZ
         Arrays.asList("x", "y"),
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        List<?>[] resultsArray = {
+        final List<?>[] resultsArray = {
             NoZ.noZ(new ArrayList<>(Arrays.asList("aaa", "bbb", "aza"))),
             NoZ.noZ(new ArrayList<>(Arrays.asList("hziz", "hzello", "hi"))),
             NoZ.noZ(new ArrayList<>(Arrays.asList("hello", "howz", "are", "youz"))),

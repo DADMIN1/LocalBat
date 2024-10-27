@@ -4,9 +4,9 @@ import java.util.List;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class _RightDigit
+public final class _RightDigit
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "rightDigit([1, 22, 93])",
         "rightDigit([16, 8, 886, 8, 1])",
         "rightDigit([10, 0])",
@@ -16,7 +16,7 @@ public class _RightDigit
         "rightDigit([6, 23, 12, 23, 4, 1, 19, 1119, 2, 3, 2])",
     };
 
-    static List<?>[] expectedResults = {
+    static final List<?>[] expectedResults = {
         Arrays.asList(1, 2, 3),
         Arrays.asList(6, 8, 6, 8, 1),
         Arrays.asList(0, 0),
@@ -26,9 +26,9 @@ public class _RightDigit
         Arrays.asList(6, 3, 2, 3, 4, 1, 9, 9, 2, 3, 2),
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        List<?>[] resultsArray = {
+        final List<?>[] resultsArray = {
             RightDigit.rightDigit(new ArrayList<>(Arrays.asList(1, 22, 93))),
             RightDigit.rightDigit(new ArrayList<>(Arrays.asList(16, 8, 886, 8, 1))),
             RightDigit.rightDigit(new ArrayList<>(Arrays.asList(10, 0))),

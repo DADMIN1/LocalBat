@@ -6,7 +6,7 @@ import java.util.HashMap;
 // https://codingbat.com/prob/p152303
 // Difficulty: 303
 
-public class Word0
+public final class Word0
 {
     /* Given an array of strings, return a Map<String, Integer> containing a key for every different string in the array, 
     always with the value 0. For example the string "hello" makes the pair "hello":0. 
@@ -22,12 +22,12 @@ public class Word0
     | word0([])                        → {}                       |
     |____________________________________________________________*/
 
-    public static Map<String, Integer> word0(String[] strings)
+    public static final Map<String, Integer> word0(String[] strings)
     {
         return new HashMap<String, Integer>();
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _Word0.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

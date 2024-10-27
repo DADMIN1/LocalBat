@@ -4,7 +4,7 @@ import Recursion1.Testcases._Array11;
 // https://codingbat.com/prob/p135988
 // Difficulty: 348.0
 
-public class Array11
+public final class Array11
 {
     /* Given an array of ints, compute recursively the number of times that the value 11 appears in the array. 
     We'll use the convention of considering only the part of the array that begins at the given index. 
@@ -25,12 +25,12 @@ public class Array11
     | array11([11, 5, 11], 0)          → 2 |
     |_____________________________________*/
 
-    public static int array11(int[] nums, int index)
+    public static final int array11(int[] nums, int index)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _Array11.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

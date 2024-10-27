@@ -4,7 +4,7 @@ import Map2.Testcases._WordAppend;
 // https://codingbat.com/prob/p103593
 // Difficulty: 356
 
-public class WordAppend
+public final class WordAppend
 {
     /* Loop over the given array of strings to build a result string like this: 
     when a string appears the 2nd, 4th, 6th, etc. time in the array, 
@@ -26,12 +26,12 @@ public class WordAppend
     | wordAppend(["xx", "xx", "yy", "xx", "zz", "yy", "zz", "xx"])                → "xxyyzzxx"    |
     |____________________________________________________________________________________________*/
 
-    public static String wordAppend(String[] strings)
+    public static final String wordAppend(String[] strings)
     {
         return "";
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _WordAppend.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

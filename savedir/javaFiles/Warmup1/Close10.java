@@ -4,7 +4,7 @@ import Warmup1.Testcases._Close10;
 // https://codingbat.com/prob/p172021
 // Difficulty: 172.0
 
-public class Close10
+public final class Close10
 {
     /* Given 2 int values, return whichever value is nearest to the value 10, 
     or return 0 in the event of a tie. Note that Math.abs(n) returns the absolute value of a number. */
@@ -25,12 +25,12 @@ public class Close10
     | close10(10, 10) → 0  |
     |_____________________*/
 
-    public static int close10(int a, int b)
+    public static final int close10(int a, int b)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _Close10.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

@@ -1,9 +1,9 @@
 package Logic1.Testcases;
 import Logic1.AlarmClock;
 
-public class _AlarmClock
+public final class _AlarmClock
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "alarmClock(1, false)",
         "alarmClock(5, false)",
         "alarmClock(0, false)",
@@ -15,7 +15,7 @@ public class _AlarmClock
         "alarmClock(5, true)",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "7:00",
         "7:00",
         "10:00",
@@ -27,9 +27,9 @@ public class _AlarmClock
         "10:00",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             AlarmClock.alarmClock(1, false),
             AlarmClock.alarmClock(5, false),
             AlarmClock.alarmClock(0, false),

@@ -1,9 +1,9 @@
 package String2.Testcases;
 import String2.DoubleChar;
 
-public class _DoubleChar
+public final class _DoubleChar
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "doubleChar(\"The\")",
         "doubleChar(\"AAbb\")",
         "doubleChar(\"Hi-There\")",
@@ -15,7 +15,7 @@ public class _DoubleChar
         "doubleChar(\"aa\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "TThhee",
         "AAAAbbbb",
         "HHii--TThheerree",
@@ -27,9 +27,9 @@ public class _DoubleChar
         "aaaa",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             DoubleChar.doubleChar("The"),
             DoubleChar.doubleChar("AAbb"),
             DoubleChar.doubleChar("Hi-There"),

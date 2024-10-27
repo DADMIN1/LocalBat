@@ -1,9 +1,9 @@
 package Array2.Testcases;
 import Array2.SameEnds;
 
-public class _SameEnds
+public final class _SameEnds
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "sameEnds([5, 6, 45, 99, 13, 5, 6], 1)",
         "sameEnds([5, 6, 45, 99, 13, 5, 6], 2)",
         "sameEnds([5, 6, 45, 99, 13, 5, 6], 3)",
@@ -20,7 +20,7 @@ public class _SameEnds
         "sameEnds([4, 2, 4, 5], 1)",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         false,
         true,
         false,
@@ -37,24 +37,24 @@ public class _SameEnds
         false,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 5, 6, 45, 99, 13, 5, 6 }; 
-        int[] nums1 = { 5, 6, 45, 99, 13, 5, 6 }; 
-        int[] nums2 = { 5, 6, 45, 99, 13, 5, 6 }; 
-        int[] nums3 = { 1, 2, 5, 2, 1 }; 
-        int[] nums4 = { 1, 2, 5, 2, 1 }; 
-        int[] nums5 = { 1, 2, 5, 2, 1 }; 
-        int[] nums6 = { 1, 2, 5, 2, 1 }; 
-        int[] nums7 = { 1, 1, 1 }; 
-        int[] nums8 = { 1, 1, 1 }; 
-        int[] nums9 = { 1, 1, 1 }; 
-        int[] nums10 = { 1, 1, 1 }; 
-        int[] nums11 = { 1 }; 
-        int[] nums12 = {  }; 
-        int[] nums13 = { 4, 2, 4, 5 }; 
+        final int[] nums0 = { 5, 6, 45, 99, 13, 5, 6 }; 
+        final int[] nums1 = { 5, 6, 45, 99, 13, 5, 6 }; 
+        final int[] nums2 = { 5, 6, 45, 99, 13, 5, 6 }; 
+        final int[] nums3 = { 1, 2, 5, 2, 1 }; 
+        final int[] nums4 = { 1, 2, 5, 2, 1 }; 
+        final int[] nums5 = { 1, 2, 5, 2, 1 }; 
+        final int[] nums6 = { 1, 2, 5, 2, 1 }; 
+        final int[] nums7 = { 1, 1, 1 }; 
+        final int[] nums8 = { 1, 1, 1 }; 
+        final int[] nums9 = { 1, 1, 1 }; 
+        final int[] nums10 = { 1, 1, 1 }; 
+        final int[] nums11 = { 1 }; 
+        final int[] nums12 = {  }; 
+        final int[] nums13 = { 4, 2, 4, 5 }; 
 
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             SameEnds.sameEnds(nums0, 1),
             SameEnds.sameEnds(nums1, 2),
             SameEnds.sameEnds(nums2, 3),

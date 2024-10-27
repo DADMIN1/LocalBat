@@ -4,7 +4,7 @@ import String1.Testcases._WithoutX2;
 // https://codingbat.com/prob/p151359
 // Difficulty: 199.0
 
-public class WithoutX2
+public final class WithoutX2
 {
     /* Given a string, if one or both of the first 2 chars is 'x', 
     return the string without those 'x' chars, and otherwise return the string unchanged. 
@@ -27,12 +27,12 @@ public class WithoutX2
     | withoutX2("xHxllo") → "Hxllo"  |
     |_______________________________*/
 
-    public static String withoutX2(String str)
+    public static final String withoutX2(String str)
     {
         return "";
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _WithoutX2.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

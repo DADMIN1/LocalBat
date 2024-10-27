@@ -4,7 +4,7 @@ import AP1.Testcases._UserCompare;
 // https://codingbat.com/prob/p143482
 // Difficulty: 248.0
 
-public class UserCompare
+public final class UserCompare
 {
     /* We have data for two users, A and B, each with a String name and an int id. 
     The goal is to order the users such as for sorting. Return -1 if A comes before B, 
@@ -27,12 +27,12 @@ public class UserCompare
     | userCompare("bzb", 1, "bob", 2)  → 1  |
     |______________________________________*/
 
-    public static int userCompare(String aName, int aId, String bName, int bId)
+    public static final int userCompare(String aName, int aId, String bName, int bId)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _UserCompare.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

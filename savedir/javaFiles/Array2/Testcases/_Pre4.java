@@ -3,9 +3,9 @@ import Array2.Pre4;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class _Pre4
+public final class _Pre4
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "pre4([1, 2, 4, 1])",
         "pre4([3, 1, 4])",
         "pre4([1, 4, 4])",
@@ -18,7 +18,7 @@ public class _Pre4
         "pre4([2, 1, 2, 1, 4, 2])",
     };
 
-    static int[][] expectedResults = {
+    static final int[][] expectedResults = {
         {1, 2},
         {3, 1},
         {1},
@@ -31,7 +31,7 @@ public class _Pre4
         {2, 1, 2, 1},
     };
 
-    public static String printArray(int[] array)
+    public static final String printArray(int[] array)
     {
         String result = "[";
         for (int a: array) { result += a+", "; }
@@ -39,20 +39,20 @@ public class _Pre4
         return result + "]";
     }
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 1, 2, 4, 1 }; 
-        int[] nums1 = { 3, 1, 4 }; 
-        int[] nums2 = { 1, 4, 4 }; 
-        int[] nums3 = { 1, 4, 4, 2 }; 
-        int[] nums4 = { 1, 3, 4, 2, 4 }; 
-        int[] nums5 = { 4, 4 }; 
-        int[] nums6 = { 3, 3, 4 }; 
-        int[] nums7 = { 1, 2, 1, 4 }; 
-        int[] nums8 = { 2, 1, 4, 2 }; 
-        int[] nums9 = { 2, 1, 2, 1, 4, 2 }; 
+        final int[] nums0 = { 1, 2, 4, 1 }; 
+        final int[] nums1 = { 3, 1, 4 }; 
+        final int[] nums2 = { 1, 4, 4 }; 
+        final int[] nums3 = { 1, 4, 4, 2 }; 
+        final int[] nums4 = { 1, 3, 4, 2, 4 }; 
+        final int[] nums5 = { 4, 4 }; 
+        final int[] nums6 = { 3, 3, 4 }; 
+        final int[] nums7 = { 1, 2, 1, 4 }; 
+        final int[] nums8 = { 2, 1, 4, 2 }; 
+        final int[] nums9 = { 2, 1, 2, 1, 4, 2 }; 
 
-        int[][] resultsArray = {
+        final int[][] resultsArray = {
             Pre4.pre4(nums0),
             Pre4.pre4(nums1),
             Pre4.pre4(nums2),

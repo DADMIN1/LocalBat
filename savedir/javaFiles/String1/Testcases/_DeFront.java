@@ -1,9 +1,9 @@
 package String1.Testcases;
 import String1.DeFront;
 
-public class _DeFront
+public final class _DeFront
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "deFront(\"Hello\")",
         "deFront(\"java\")",
         "deFront(\"away\")",
@@ -25,7 +25,7 @@ public class _DeFront
         "deFront(\"zzz\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "llo",
         "va",
         "aay",
@@ -47,9 +47,9 @@ public class _DeFront
         "z",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             DeFront.deFront("Hello"),
             DeFront.deFront("java"),
             DeFront.deFront("away"),

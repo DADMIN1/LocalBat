@@ -1,9 +1,9 @@
 package Warmup2.Testcases;
 import Warmup2.StringSplosion;
 
-public class _StringSplosion
+public final class _StringSplosion
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "stringSplosion(\"Code\")",
         "stringSplosion(\"abc\")",
         "stringSplosion(\"ab\")",
@@ -16,7 +16,7 @@ public class _StringSplosion
         "stringSplosion(\"Bad\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "CCoCodCode",
         "aababc",
         "aab",
@@ -29,9 +29,9 @@ public class _StringSplosion
         "BBaBad",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             StringSplosion.stringSplosion("Code"),
             StringSplosion.stringSplosion("abc"),
             StringSplosion.stringSplosion("ab"),

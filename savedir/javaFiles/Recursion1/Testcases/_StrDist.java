@@ -1,9 +1,9 @@
 package Recursion1.Testcases;
 import Recursion1.StrDist;
 
-public class _StrDist
+public final class _StrDist
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "strDist(\"catcowcat\", \"cat\")",
         "strDist(\"catcowcat\", \"cow\")",
         "strDist(\"cccatcowcatxx\", \"cat\")",
@@ -20,7 +20,7 @@ public class _StrDist
         "strDist(\"hiHellohihihi\", \"ll\")",
     };
 
-    static int[] expectedResults = {
+    static final int[] expectedResults = {
         9,
         3,
         9,
@@ -37,9 +37,9 @@ public class _StrDist
         2,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] resultsArray = {
+        final int[] resultsArray = {
             StrDist.strDist("catcowcat", "cat"),
             StrDist.strDist("catcowcat", "cow"),
             StrDist.strDist("cccatcowcatxx", "cat"),

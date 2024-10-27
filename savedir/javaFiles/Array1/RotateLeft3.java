@@ -4,7 +4,7 @@ import Array1.Testcases._RotateLeft3;
 // https://codingbat.com/prob/p185139
 // Difficulty: 118.0
 
-public class RotateLeft3
+public final class RotateLeft3
 {
     /* Given an array of ints length 3, return an array with the elements "rotated left" so {1, 
     2, 3} yields {2, 3, 1}. */
@@ -19,12 +19,12 @@ public class RotateLeft3
     | rotateLeft3([0, 0, 1])  → [0, 1, 0]  |
     |_____________________________________*/
 
-    public static int[] rotateLeft3(int[] nums)
+    public static final int[] rotateLeft3(int[] nums)
     {
         return new int[]{0};
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _RotateLeft3.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

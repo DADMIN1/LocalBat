@@ -4,7 +4,7 @@ import Warmup1.Testcases._StringE;
 // https://codingbat.com/prob/p173784
 // Difficulty: 181.0
 
-public class StringE
+public final class StringE
 {
     /* Return true if the given string contains between 1 and 3 'e' chars. */
 
@@ -19,12 +19,12 @@ public class StringE
     | stringE("")        → false |
     |___________________________*/
 
-    public static boolean stringE(String str)
+    public static final boolean stringE(String str)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _StringE.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

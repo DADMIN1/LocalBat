@@ -3,9 +3,9 @@ import Array1.SwapEnds;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class _SwapEnds
+public final class _SwapEnds
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "swapEnds([1, 2, 3, 4])",
         "swapEnds([1, 2, 3])",
         "swapEnds([8, 6, 7, 9, 5])",
@@ -14,7 +14,7 @@ public class _SwapEnds
         "swapEnds([1])",
     };
 
-    static int[][] expectedResults = {
+    static final int[][] expectedResults = {
         {4, 2, 3, 1},
         {3, 2, 1},
         {5, 6, 7, 9, 8},
@@ -23,7 +23,7 @@ public class _SwapEnds
         {1},
     };
 
-    public static String printArray(int[] array)
+    public static final String printArray(int[] array)
     {
         String result = "[";
         for (int a: array) { result += a+", "; }
@@ -31,16 +31,16 @@ public class _SwapEnds
         return result + "]";
     }
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 1, 2, 3, 4 }; 
-        int[] nums1 = { 1, 2, 3 }; 
-        int[] nums2 = { 8, 6, 7, 9, 5 }; 
-        int[] nums3 = { 3, 1, 4, 1, 5, 9 }; 
-        int[] nums4 = { 1, 2 }; 
-        int[] nums5 = { 1 }; 
+        final int[] nums0 = { 1, 2, 3, 4 }; 
+        final int[] nums1 = { 1, 2, 3 }; 
+        final int[] nums2 = { 8, 6, 7, 9, 5 }; 
+        final int[] nums3 = { 3, 1, 4, 1, 5, 9 }; 
+        final int[] nums4 = { 1, 2 }; 
+        final int[] nums5 = { 1 }; 
 
-        int[][] resultsArray = {
+        final int[][] resultsArray = {
             SwapEnds.swapEnds(nums0),
             SwapEnds.swapEnds(nums1),
             SwapEnds.swapEnds(nums2),

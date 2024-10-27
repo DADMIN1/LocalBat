@@ -1,9 +1,9 @@
 package Warmup1.Testcases;
 import Warmup1.BackAround;
 
-public class _BackAround
+public final class _BackAround
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "backAround(\"cat\")",
         "backAround(\"Hello\")",
         "backAround(\"a\")",
@@ -12,7 +12,7 @@ public class _BackAround
         "backAround(\"boo\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "tcatt",
         "oHelloo",
         "aaa",
@@ -21,9 +21,9 @@ public class _BackAround
         "obooo",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             BackAround.backAround("cat"),
             BackAround.backAround("Hello"),
             BackAround.backAround("a"),

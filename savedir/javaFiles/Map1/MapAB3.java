@@ -6,7 +6,7 @@ import java.util.HashMap;
 // https://codingbat.com/prob/p115012
 // Difficulty: 224
 
-public class MapAB3
+public final class MapAB3
 {
     /* Modify and return the given map as follows: 
     if exactly one of the keys "a" or "b" has a value in the map (but not both), 
@@ -27,12 +27,12 @@ public class MapAB3
     | mapAB3({"aa": "aa", "a": "apple", "z": "zzz"}) → {"aa": "aa", "a": "apple", "b": "apple", "z": "zzz"} |
     |______________________________________________________________________________________________________*/
 
-    public static Map<String, String> mapAB3(Map<String, String> map)
+    public static final Map<String, String> mapAB3(Map<String, String> map)
     {
         return new HashMap<String, String>();
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _MapAB3.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

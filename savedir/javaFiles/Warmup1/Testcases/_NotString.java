@@ -1,9 +1,9 @@
 package Warmup1.Testcases;
 import Warmup1.NotString;
 
-public class _NotString
+public final class _NotString
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "notString(\"candy\")",
         "notString(\"x\")",
         "notString(\"not bad\")",
@@ -13,7 +13,7 @@ public class _NotString
         "notString(\"no\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "not candy",
         "not x",
         "not bad",
@@ -23,9 +23,9 @@ public class _NotString
         "not no",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             NotString.notString("candy"),
             NotString.notString("x"),
             NotString.notString("not bad"),

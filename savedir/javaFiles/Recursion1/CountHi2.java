@@ -4,7 +4,7 @@ import Recursion1.Testcases._CountHi2;
 // https://codingbat.com/prob/p143900
 // Difficulty: 375.0
 
-public class CountHi2
+public final class CountHi2
 {
     /* Given a string, compute recursively the number of times lowercase "hi" appears in the string, 
     however do not count "hi" that have an 'x' immedately before them. */
@@ -30,12 +30,12 @@ public class CountHi2
     | countHi2("Hellohi")  → 1 |
     |_________________________*/
 
-    public static int countHi2(String str)
+    public static final int countHi2(String str)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _CountHi2.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

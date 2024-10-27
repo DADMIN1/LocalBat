@@ -4,7 +4,7 @@ import String3.Testcases._CountYZ;
 // https://codingbat.com/prob/p199171
 // Difficulty: 303.0
 
-public class CountYZ
+public final class CountYZ
 {
     /* Given a string, count the number of words ending in 'y' or 'z' -- so the 'y' in "heavy" and the 'z' in "fez" count, 
     but not the 'y' in "yellow" (not case sensitive). 
@@ -27,12 +27,12 @@ public class CountYZ
     | countYZ("zxyx")         → 0 |
     |____________________________*/
 
-    public static int countYZ(String str)
+    public static final int countYZ(String str)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _CountYZ.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

@@ -1,9 +1,9 @@
 package Warmup1.Testcases;
 import Warmup1.ParrotTrouble;
 
-public class _ParrotTrouble
+public final class _ParrotTrouble
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "parrotTrouble(true, 6)",
         "parrotTrouble(true, 7)",
         "parrotTrouble(false, 6)",
@@ -16,7 +16,7 @@ public class _ParrotTrouble
         "parrotTrouble(false, 12)",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         false,
         false,
@@ -29,9 +29,9 @@ public class _ParrotTrouble
         false,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             ParrotTrouble.parrotTrouble(true, 6),
             ParrotTrouble.parrotTrouble(true, 7),
             ParrotTrouble.parrotTrouble(false, 6),

@@ -4,9 +4,9 @@ import java.util.List;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class _Math1
+public final class _Math1
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "math1([1, 2, 3])",
         "math1([6, 8, 6, 8, 1])",
         "math1([10])",
@@ -16,7 +16,7 @@ public class _Math1
         "math1([6, -3, 12, 23, 4, 1, 19, 11, 2, 3, 2])",
     };
 
-    static List<?>[] expectedResults = {
+    static final List<?>[] expectedResults = {
         Arrays.asList(20, 30, 40),
         Arrays.asList(70, 90, 70, 90, 20),
         Arrays.asList(110),
@@ -26,9 +26,9 @@ public class _Math1
         Arrays.asList(70, -20, 130, 240, 50, 20, 200, 120, 30, 40, 30),
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        List<?>[] resultsArray = {
+        final List<?>[] resultsArray = {
             Math1.math1(new ArrayList<>(Arrays.asList(1, 2, 3))),
             Math1.math1(new ArrayList<>(Arrays.asList(6, 8, 6, 8, 1))),
             Math1.math1(new ArrayList<>(Arrays.asList(10))),

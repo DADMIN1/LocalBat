@@ -1,9 +1,9 @@
 package Recursion2.Testcases;
 import Recursion2.GroupSum6;
 
-public class _GroupSum6
+public final class _GroupSum6
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "groupSum6(0, [5, 6, 2], 8)",
         "groupSum6(0, [5, 6, 2], 9)",
         "groupSum6(0, [5, 6, 2], 7)",
@@ -24,7 +24,7 @@ public class _GroupSum6
         "groupSum6(0, [1, 6, 2, 6, 5], 16)",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         false,
         false,
@@ -45,28 +45,28 @@ public class _GroupSum6
         false,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 5, 6, 2 }; 
-        int[] nums1 = { 5, 6, 2 }; 
-        int[] nums2 = { 5, 6, 2 }; 
-        int[] nums3 = { 1 }; 
-        int[] nums4 = { 9 }; 
-        int[] nums5 = {  }; 
-        int[] nums6 = { 3, 2, 4, 6 }; 
-        int[] nums7 = { 6, 2, 4, 3 }; 
-        int[] nums8 = { 5, 2, 4, 6 }; 
-        int[] nums9 = { 6, 2, 4, 5 }; 
-        int[] nums10 = { 3, 2, 4, 6 }; 
-        int[] nums11 = { 1, 6, 2, 6, 4 }; 
-        int[] nums12 = { 1, 6, 2, 6, 4 }; 
-        int[] nums13 = { 1, 6, 2, 6, 4 }; 
-        int[] nums14 = { 1, 6, 2, 6, 4 }; 
-        int[] nums15 = { 1, 6, 2, 6, 5 }; 
-        int[] nums16 = { 1, 6, 2, 6, 5 }; 
-        int[] nums17 = { 1, 6, 2, 6, 5 }; 
+        final int[] nums0 = { 5, 6, 2 }; 
+        final int[] nums1 = { 5, 6, 2 }; 
+        final int[] nums2 = { 5, 6, 2 }; 
+        final int[] nums3 = { 1 }; 
+        final int[] nums4 = { 9 }; 
+        final int[] nums5 = {  }; 
+        final int[] nums6 = { 3, 2, 4, 6 }; 
+        final int[] nums7 = { 6, 2, 4, 3 }; 
+        final int[] nums8 = { 5, 2, 4, 6 }; 
+        final int[] nums9 = { 6, 2, 4, 5 }; 
+        final int[] nums10 = { 3, 2, 4, 6 }; 
+        final int[] nums11 = { 1, 6, 2, 6, 4 }; 
+        final int[] nums12 = { 1, 6, 2, 6, 4 }; 
+        final int[] nums13 = { 1, 6, 2, 6, 4 }; 
+        final int[] nums14 = { 1, 6, 2, 6, 4 }; 
+        final int[] nums15 = { 1, 6, 2, 6, 5 }; 
+        final int[] nums16 = { 1, 6, 2, 6, 5 }; 
+        final int[] nums17 = { 1, 6, 2, 6, 5 }; 
 
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             GroupSum6.groupSum6(0, nums0, 8),
             GroupSum6.groupSum6(0, nums1, 9),
             GroupSum6.groupSum6(0, nums2, 7),

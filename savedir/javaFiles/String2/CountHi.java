@@ -4,7 +4,7 @@ import String2.Testcases._CountHi;
 // https://codingbat.com/prob/p147448
 // Difficulty: 206.0
 
-public class CountHi
+public final class CountHi
 {
     /* Return the number of times that the string "hi" appears anywhere in the given string. */
 
@@ -22,12 +22,12 @@ public class CountHi
     | countHi("hiho not HOHIhi")    → 2 |
     |__________________________________*/
 
-    public static int countHi(String str)
+    public static final int countHi(String str)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _CountHi.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

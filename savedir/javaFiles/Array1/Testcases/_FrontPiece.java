@@ -3,9 +3,9 @@ import Array1.FrontPiece;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class _FrontPiece
+public final class _FrontPiece
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "frontPiece([1, 2, 3])",
         "frontPiece([1, 2])",
         "frontPiece([1])",
@@ -16,7 +16,7 @@ public class _FrontPiece
         "frontPiece([6])",
     };
 
-    static int[][] expectedResults = {
+    static final int[][] expectedResults = {
         {1, 2},
         {1, 2},
         {1},
@@ -27,7 +27,7 @@ public class _FrontPiece
         {6},
     };
 
-    public static String printArray(int[] array)
+    public static final String printArray(int[] array)
     {
         String result = "[";
         for (int a: array) { result += a+", "; }
@@ -35,18 +35,18 @@ public class _FrontPiece
         return result + "]";
     }
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 1, 2, 3 }; 
-        int[] nums1 = { 1, 2 }; 
-        int[] nums2 = { 1 }; 
-        int[] nums3 = {  }; 
-        int[] nums4 = { 6, 5, 0 }; 
-        int[] nums5 = { 6, 5 }; 
-        int[] nums6 = { 3, 1, 4, 1, 5 }; 
-        int[] nums7 = { 6 }; 
+        final int[] nums0 = { 1, 2, 3 }; 
+        final int[] nums1 = { 1, 2 }; 
+        final int[] nums2 = { 1 }; 
+        final int[] nums3 = {  }; 
+        final int[] nums4 = { 6, 5, 0 }; 
+        final int[] nums5 = { 6, 5 }; 
+        final int[] nums6 = { 3, 1, 4, 1, 5 }; 
+        final int[] nums7 = { 6 }; 
 
-        int[][] resultsArray = {
+        final int[][] resultsArray = {
             FrontPiece.frontPiece(nums0),
             FrontPiece.frontPiece(nums1),
             FrontPiece.frontPiece(nums2),

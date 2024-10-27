@@ -1,9 +1,9 @@
 package Warmup1.Testcases;
 import Warmup1.StartOz;
 
-public class _StartOz
+public final class _StartOz
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "startOz(\"ozymandias\")",
         "startOz(\"bzoo\")",
         "startOz(\"oxx\")",
@@ -18,7 +18,7 @@ public class _StartOz
         "startOz(\"oznic\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "oz",
         "z",
         "o",
@@ -33,9 +33,9 @@ public class _StartOz
         "oz",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             StartOz.startOz("ozymandias"),
             StartOz.startOz("bzoo"),
             StartOz.startOz("oxx"),

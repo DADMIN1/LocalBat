@@ -4,7 +4,7 @@ import AP1.Testcases._ScoresClump;
 // https://codingbat.com/prob/p194530
 // Difficulty: 209.0
 
-public class ScoresClump
+public final class ScoresClump
 {
     /* Given an array of scores sorted in increasing order, 
     return true if the array contains 3 adjacent scores that differ from each other by at most 2, 
@@ -24,12 +24,12 @@ public class ScoresClump
     | scoresClump([4, 5, 8])       → false |
     |_____________________________________*/
 
-    public static boolean scoresClump(int[] scores)
+    public static final boolean scoresClump(int[] scores)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _ScoresClump.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

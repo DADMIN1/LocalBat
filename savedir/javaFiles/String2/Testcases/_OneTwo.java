@@ -1,9 +1,9 @@
 package String2.Testcases;
 import String2.OneTwo;
 
-public class _OneTwo
+public final class _OneTwo
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "oneTwo(\"abc\")",
         "oneTwo(\"tca\")",
         "oneTwo(\"tcagdo\")",
@@ -22,7 +22,7 @@ public class _OneTwo
         "oneTwo(\"abcdefghijklkmnopqrstuvwxyz12345678\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "bca",
         "cat",
         "catdog",
@@ -41,9 +41,9 @@ public class _OneTwo
         "bcaefdhigkljmnkpqostrvwuyzx231564",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             OneTwo.oneTwo("abc"),
             OneTwo.oneTwo("tca"),
             OneTwo.oneTwo("tcagdo"),

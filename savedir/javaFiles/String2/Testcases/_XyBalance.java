@@ -1,9 +1,9 @@
 package String2.Testcases;
 import String2.XyBalance;
 
-public class _XyBalance
+public final class _XyBalance
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "xyBalance(\"aaxbby\")",
         "xyBalance(\"aaxbb\")",
         "xyBalance(\"yaaxbb\")",
@@ -24,7 +24,7 @@ public class _XyBalance
         "xyBalance(\"12xabxxydxyxyzz\")",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         false,
         false,
@@ -45,9 +45,9 @@ public class _XyBalance
         true,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             XyBalance.xyBalance("aaxbby"),
             XyBalance.xyBalance("aaxbb"),
             XyBalance.xyBalance("yaaxbb"),

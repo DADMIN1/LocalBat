@@ -4,7 +4,7 @@ import Recursion2.Testcases._SplitArray;
 // https://codingbat.com/prob/p185204
 // Difficulty: 418.0
 
-public class SplitArray
+public final class SplitArray
 {
     /* Given an array of ints, is it possible to divide the ints into two groups, 
     so that the sums of the two groups are the same. Every int must be in one group or the other. 
@@ -30,12 +30,12 @@ public class SplitArray
     | splitArray([1, 2, 3, 10, 10, 1, 1]) → true  |
     |____________________________________________*/
 
-    public static boolean splitArray(int[] nums)
+    public static final boolean splitArray(int[] nums)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _SplitArray.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

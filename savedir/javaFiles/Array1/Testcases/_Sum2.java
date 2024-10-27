@@ -1,9 +1,9 @@
 package Array1.Testcases;
 import Array1.Sum2;
 
-public class _Sum2
+public final class _Sum2
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "sum2([1, 2, 3])",
         "sum2([1, 1])",
         "sum2([1, 1, 1, 1])",
@@ -14,7 +14,7 @@ public class _Sum2
         "sum2([4])",
     };
 
-    static int[] expectedResults = {
+    static final int[] expectedResults = {
         3,
         2,
         2,
@@ -25,18 +25,18 @@ public class _Sum2
         4,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 1, 2, 3 }; 
-        int[] nums1 = { 1, 1 }; 
-        int[] nums2 = { 1, 1, 1, 1 }; 
-        int[] nums3 = { 1, 2 }; 
-        int[] nums4 = { 1 }; 
-        int[] nums5 = {  }; 
-        int[] nums6 = { 4, 5, 6 }; 
-        int[] nums7 = { 4 }; 
+        final int[] nums0 = { 1, 2, 3 }; 
+        final int[] nums1 = { 1, 1 }; 
+        final int[] nums2 = { 1, 1, 1, 1 }; 
+        final int[] nums3 = { 1, 2 }; 
+        final int[] nums4 = { 1 }; 
+        final int[] nums5 = {  }; 
+        final int[] nums6 = { 4, 5, 6 }; 
+        final int[] nums7 = { 4 }; 
 
-        int[] resultsArray = {
+        final int[] resultsArray = {
             Sum2.sum2(nums0),
             Sum2.sum2(nums1),
             Sum2.sum2(nums2),

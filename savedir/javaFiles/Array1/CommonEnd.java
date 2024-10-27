@@ -4,7 +4,7 @@ import Array1.Testcases._CommonEnd;
 // https://codingbat.com/prob/p191991
 // Difficulty: 112.0
 
-public class CommonEnd
+public final class CommonEnd
 {
     /* Given 2 arrays of ints, a and b, return true if they have the same first element or they have the same last element. 
     Both arrays will be length 1 or more. */
@@ -19,12 +19,12 @@ public class CommonEnd
     | commonEnd([1, 2, 3], [2])       → false |
     |________________________________________*/
 
-    public static boolean commonEnd(int[] a, int[] b)
+    public static final boolean commonEnd(int[] a, int[] b)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _CommonEnd.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

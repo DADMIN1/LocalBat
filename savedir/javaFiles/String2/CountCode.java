@@ -4,7 +4,7 @@ import String2.Testcases._CountCode;
 // https://codingbat.com/prob/p123614
 // Difficulty: 212.0
 
-public class CountCode
+public final class CountCode
 {
     /* Return the number of times that the string "code" appears anywhere in the given string, 
     except we'll accept any letter for the 'd', so "cope" and "cooe" count. */
@@ -28,12 +28,12 @@ public class CountCode
     | countCode("coAcodeBcoleccoreDD")   → 3 |
     |_______________________________________*/
 
-    public static int countCode(String str)
+    public static final int countCode(String str)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _CountCode.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

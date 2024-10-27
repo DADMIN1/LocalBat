@@ -1,9 +1,9 @@
 package String1.Testcases;
 import String1.FrontAgain;
 
-public class _FrontAgain
+public final class _FrontAgain
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "frontAgain(\"edited\")",
         "frontAgain(\"edit\")",
         "frontAgain(\"ed\")",
@@ -17,7 +17,7 @@ public class _FrontAgain
         "frontAgain(\"javaja\")",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         false,
         true,
@@ -31,9 +31,9 @@ public class _FrontAgain
         true,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             FrontAgain.frontAgain("edited"),
             FrontAgain.frontAgain("edit"),
             FrontAgain.frontAgain("ed"),

@@ -3,9 +3,9 @@ import Array3.SquareUp;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class _SquareUp
+public final class _SquareUp
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "squareUp(3)",
         "squareUp(2)",
         "squareUp(4)",
@@ -14,7 +14,7 @@ public class _SquareUp
         "squareUp(6)",
     };
 
-    static int[][] expectedResults = {
+    static final int[][] expectedResults = {
         {0, 0, 1, 0, 2, 1, 3, 2, 1},
         {0, 1, 2, 1},
         {0, 0, 0, 1, 0, 0, 2, 1, 0, 3, 2, 1, 4, 3, 2, 1},
@@ -23,7 +23,7 @@ public class _SquareUp
         {0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 2, 1, 0, 0, 0, 3, 2, 1, 0, 0, 4, 3, 2, 1, 0, 5, 4, 3, 2, 1, 6, 5, 4, 3, 2, 1},
     };
 
-    public static String printArray(int[] array)
+    public static final String printArray(int[] array)
     {
         String result = "[";
         for (int a: array) { result += a+", "; }
@@ -31,9 +31,9 @@ public class _SquareUp
         return result + "]";
     }
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[][] resultsArray = {
+        final int[][] resultsArray = {
             SquareUp.squareUp(3),
             SquareUp.squareUp(2),
             SquareUp.squareUp(4),

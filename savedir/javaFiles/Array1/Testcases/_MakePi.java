@@ -3,17 +3,17 @@ import Array1.MakePi;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class _MakePi
+public final class _MakePi
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "makePi()",
     };
 
-    static int[][] expectedResults = {
+    static final int[][] expectedResults = {
         {3, 1, 4},
     };
 
-    public static String printArray(int[] array)
+    public static final String printArray(int[] array)
     {
         String result = "[";
         for (int a: array) { result += a+", "; }
@@ -21,9 +21,9 @@ public class _MakePi
         return result + "]";
     }
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[][] resultsArray = {
+        final int[][] resultsArray = {
             MakePi.makePi(),
         };
 

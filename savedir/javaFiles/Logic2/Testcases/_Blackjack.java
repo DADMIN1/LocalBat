@@ -1,9 +1,9 @@
 package Logic2.Testcases;
 import Logic2.Blackjack;
 
-public class _Blackjack
+public final class _Blackjack
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "blackjack(19, 21)",
         "blackjack(21, 19)",
         "blackjack(19, 22)",
@@ -21,7 +21,7 @@ public class _Blackjack
         "blackjack(21, 20)",
     };
 
-    static int[] expectedResults = {
+    static final int[] expectedResults = {
         21,
         21,
         19,
@@ -39,9 +39,9 @@ public class _Blackjack
         21,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] resultsArray = {
+        final int[] resultsArray = {
             Blackjack.blackjack(19, 21),
             Blackjack.blackjack(21, 19),
             Blackjack.blackjack(19, 22),

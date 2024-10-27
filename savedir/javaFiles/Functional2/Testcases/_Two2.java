@@ -4,9 +4,9 @@ import java.util.List;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class _Two2
+public final class _Two2
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "two2([1, 2, 3])",
         "two2([2, 6, 11])",
         "two2([0])",
@@ -16,7 +16,7 @@ public class _Two2
         "two2([3, 1, 4, 1, 6, 99, 0])",
     };
 
-    static List<?>[] expectedResults = {
+    static final List<?>[] expectedResults = {
         Arrays.asList(4, 6),
         Arrays.asList(4),
         Arrays.asList(0),
@@ -26,9 +26,9 @@ public class _Two2
         Arrays.asList(6, 8, 198, 0),
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        List<?>[] resultsArray = {
+        final List<?>[] resultsArray = {
             Two2.two2(new ArrayList<>(Arrays.asList(1, 2, 3))),
             Two2.two2(new ArrayList<>(Arrays.asList(2, 6, 11))),
             Two2.two2(new ArrayList<>(Arrays.asList(0))),

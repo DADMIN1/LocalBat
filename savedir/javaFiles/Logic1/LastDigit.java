@@ -4,7 +4,7 @@ import Logic1.Testcases._LastDigit;
 // https://codingbat.com/prob/p169213
 // Difficulty: 145.0
 
-public class LastDigit
+public final class LastDigit
 {
     /* Given three ints, a b c, return true if two or more of them have the same rightmost digit. 
     The ints are non-negative. Note: the % "mod" operator computes the remainder, e.g. 17 % 10 is 7. */
@@ -27,12 +27,12 @@ public class LastDigit
     | lastDigit(0, 11, 0)       → true  |
     |__________________________________*/
 
-    public static boolean lastDigit(int a, int b, int c)
+    public static final boolean lastDigit(int a, int b, int c)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _LastDigit.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

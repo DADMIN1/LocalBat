@@ -4,7 +4,7 @@ import AP1.Testcases._CopyEvens;
 // https://codingbat.com/prob/p134174
 // Difficulty: 230.0
 
-public class CopyEvens
+public final class CopyEvens
 {
     /* Given an array of positive ints, return a new array of length "count" containing the first even numbers from the original array. 
     The original array will contain at least "count" even numbers. */
@@ -26,12 +26,12 @@ public class CopyEvens
     | copyEvens([2, 8, 4], 2)          → [2, 8]       |
     |________________________________________________*/
 
-    public static int[] copyEvens(int[] nums, int count)
+    public static final int[] copyEvens(int[] nums, int count)
     {
         return new int[]{0};
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _CopyEvens.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

@@ -3,9 +3,9 @@ import Array1.MakeLast;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class _MakeLast
+public final class _MakeLast
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "makeLast([4, 5, 6])",
         "makeLast([1, 2])",
         "makeLast([3])",
@@ -17,7 +17,7 @@ public class _MakeLast
         "makeLast([2, 4])",
     };
 
-    static int[][] expectedResults = {
+    static final int[][] expectedResults = {
         {0, 0, 0, 0, 0, 6},
         {0, 0, 0, 2},
         {0, 3},
@@ -29,7 +29,7 @@ public class _MakeLast
         {0, 0, 0, 4},
     };
 
-    public static String printArray(int[] array)
+    public static final String printArray(int[] array)
     {
         String result = "[";
         for (int a: array) { result += a+", "; }
@@ -37,19 +37,19 @@ public class _MakeLast
         return result + "]";
     }
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 4, 5, 6 }; 
-        int[] nums1 = { 1, 2 }; 
-        int[] nums2 = { 3 }; 
-        int[] nums3 = { 0 }; 
-        int[] nums4 = { 7, 7, 7 }; 
-        int[] nums5 = { 3, 1, 4 }; 
-        int[] nums6 = { 1, 2, 3, 4 }; 
-        int[] nums7 = { 1, 2, 3, 0 }; 
-        int[] nums8 = { 2, 4 }; 
+        final int[] nums0 = { 4, 5, 6 }; 
+        final int[] nums1 = { 1, 2 }; 
+        final int[] nums2 = { 3 }; 
+        final int[] nums3 = { 0 }; 
+        final int[] nums4 = { 7, 7, 7 }; 
+        final int[] nums5 = { 3, 1, 4 }; 
+        final int[] nums6 = { 1, 2, 3, 4 }; 
+        final int[] nums7 = { 1, 2, 3, 0 }; 
+        final int[] nums8 = { 2, 4 }; 
 
-        int[][] resultsArray = {
+        final int[][] resultsArray = {
             MakeLast.makeLast(nums0),
             MakeLast.makeLast(nums1),
             MakeLast.makeLast(nums2),

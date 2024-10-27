@@ -4,7 +4,7 @@ import Logic1.Testcases._Old35;
 // https://codingbat.com/prob/p159612
 // Difficulty: 122.5
 
-public class Old35
+public final class Old35
 {
     /* Return true if the given non-negative number is a multiple of 3 or 5, 
     but not both. Use the % "mod" operator -- see Introduction to Mod */
@@ -30,12 +30,12 @@ public class Old35
     | old35(99) → true  |
     |__________________*/
 
-    public static boolean old35(int n)
+    public static final boolean old35(int n)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _Old35.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

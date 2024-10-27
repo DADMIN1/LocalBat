@@ -1,9 +1,9 @@
 package Array2.Testcases;
 import Array2.Has12;
 
-public class _Has12
+public final class _Has12
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "has12([1, 3, 2])",
         "has12([3, 1, 2])",
         "has12([3, 1, 4, 5, 2])",
@@ -23,7 +23,7 @@ public class _Has12
         "has12([1, 2])",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         true,
         true,
@@ -43,27 +43,27 @@ public class _Has12
         true,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 1, 3, 2 }; 
-        int[] nums1 = { 3, 1, 2 }; 
-        int[] nums2 = { 3, 1, 4, 5, 2 }; 
-        int[] nums3 = { 3, 1, 4, 5, 6 }; 
-        int[] nums4 = { 3, 1, 4, 1, 6, 2 }; 
-        int[] nums5 = { 2, 1, 4, 1, 6, 2 }; 
-        int[] nums6 = { 2, 1, 4, 1, 6 }; 
-        int[] nums7 = { 1 }; 
-        int[] nums8 = { 2, 1, 3 }; 
-        int[] nums9 = { 2, 1, 3, 2 }; 
-        int[] nums10 = { 2 }; 
-        int[] nums11 = { 3, 2 }; 
-        int[] nums12 = { 3, 1, 3, 2 }; 
-        int[] nums13 = { 3, 5, 9 }; 
-        int[] nums14 = { 3, 5, 1 }; 
-        int[] nums15 = { 3, 2, 1 }; 
-        int[] nums16 = { 1, 2 }; 
+        final int[] nums0 = { 1, 3, 2 }; 
+        final int[] nums1 = { 3, 1, 2 }; 
+        final int[] nums2 = { 3, 1, 4, 5, 2 }; 
+        final int[] nums3 = { 3, 1, 4, 5, 6 }; 
+        final int[] nums4 = { 3, 1, 4, 1, 6, 2 }; 
+        final int[] nums5 = { 2, 1, 4, 1, 6, 2 }; 
+        final int[] nums6 = { 2, 1, 4, 1, 6 }; 
+        final int[] nums7 = { 1 }; 
+        final int[] nums8 = { 2, 1, 3 }; 
+        final int[] nums9 = { 2, 1, 3, 2 }; 
+        final int[] nums10 = { 2 }; 
+        final int[] nums11 = { 3, 2 }; 
+        final int[] nums12 = { 3, 1, 3, 2 }; 
+        final int[] nums13 = { 3, 5, 9 }; 
+        final int[] nums14 = { 3, 5, 1 }; 
+        final int[] nums15 = { 3, 2, 1 }; 
+        final int[] nums16 = { 1, 2 }; 
 
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             Has12.has12(nums0),
             Has12.has12(nums1),
             Has12.has12(nums2),

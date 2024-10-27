@@ -4,7 +4,7 @@ import String1.Testcases._EndsLy;
 // https://codingbat.com/prob/p103895
 // Difficulty: 148.0
 
-public class EndsLy
+public final class EndsLy
 {
     /* Given a string, return true if it ends in "ly". */
 
@@ -22,12 +22,12 @@ public class EndsLy
     | endsLy("evenly") → true  |
     |_________________________*/
 
-    public static boolean endsLy(String str)
+    public static final boolean endsLy(String str)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _EndsLy.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

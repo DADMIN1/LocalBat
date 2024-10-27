@@ -4,7 +4,7 @@ import Logic1.Testcases._Less20;
 // https://codingbat.com/prob/p133158
 // Difficulty: 123.8
 
-public class Less20
+public final class Less20
 {
     /* Return true if the given non-negative number is 1 or 2 less than a multiple of 20. 
     So for example 38 and 39 return true, but 40 returns false. 
@@ -37,12 +37,12 @@ public class Less20
     | less20(37)   → false |
     |_____________________*/
 
-    public static boolean less20(int n)
+    public static final boolean less20(int n)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _Less20.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

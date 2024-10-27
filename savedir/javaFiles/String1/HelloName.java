@@ -4,7 +4,7 @@ import String1.Testcases._HelloName;
 // https://codingbat.com/prob/p171896
 // Difficulty: 103.0
 
-public class HelloName
+public final class HelloName
 {
     /* Given a string name, e.g. "Bob", 
     return a greeting of the form "Hello Bob!". */
@@ -24,12 +24,12 @@ public class HelloName
     | helloName("Hello")    → "Hello Hello!"    |
     |__________________________________________*/
 
-    public static String helloName(String name)
+    public static final String helloName(String name)
     {
         return "";
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _HelloName.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

@@ -4,9 +4,9 @@ import java.util.List;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class _NoTeen
+public final class _NoTeen
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "noTeen([12, 13, 19, 20])",
         "noTeen([1, 14, 1])",
         "noTeen([15])",
@@ -17,7 +17,7 @@ public class _NoTeen
         "noTeen([-16, 2, 15, 3, 16, 25])",
     };
 
-    static List<?>[] expectedResults = {
+    static final List<?>[] expectedResults = {
         Arrays.asList(12, 20),
         Arrays.asList(1, 1),
         Arrays.asList(),
@@ -28,9 +28,9 @@ public class _NoTeen
         Arrays.asList(-16, 2, 3, 25),
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        List<?>[] resultsArray = {
+        final List<?>[] resultsArray = {
             NoTeen.noTeen(new ArrayList<>(Arrays.asList(12, 13, 19, 20))),
             NoTeen.noTeen(new ArrayList<>(Arrays.asList(1, 14, 1))),
             NoTeen.noTeen(new ArrayList<>(Arrays.asList(15))),

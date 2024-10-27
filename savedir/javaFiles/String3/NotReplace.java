@@ -4,7 +4,7 @@ import String3.Testcases._NotReplace;
 // https://codingbat.com/prob/p154137
 // Difficulty: 333.0
 
-public class NotReplace
+public final class NotReplace
 {
     /* Given a string, return a string where every appearance of the lowercase word "is" has been replaced with "is not". 
     The word "is" should not be immediately preceeded or followed by a letter -- so for example the "is" in "this" does not count. 
@@ -26,12 +26,12 @@ public class NotReplace
     | notReplace("AAAis is")        → "AAAis is not"            |
     |__________________________________________________________*/
 
-    public static String notReplace(String str)
+    public static final String notReplace(String str)
     {
         return "";
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _NotReplace.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

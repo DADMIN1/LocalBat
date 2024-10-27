@@ -4,7 +4,7 @@ import Array1.Testcases._MidThree;
 // https://codingbat.com/prob/p155713
 // Difficulty: 166.0
 
-public class MidThree
+public final class MidThree
 {
     /* Given an array of ints of odd length, 
     return a new array length 3 containing the elements from the middle of the array. 
@@ -18,12 +18,12 @@ public class MidThree
     | midThree([1, 2, 3])             → [1, 2, 3] |
     |____________________________________________*/
 
-    public static int[] midThree(int[] nums)
+    public static final int[] midThree(int[] nums)
     {
         return new int[]{0};
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _MidThree.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

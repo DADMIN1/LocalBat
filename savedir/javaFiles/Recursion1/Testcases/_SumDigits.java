@@ -1,9 +1,9 @@
 package Recursion1.Testcases;
 import Recursion1.SumDigits;
 
-public class _SumDigits
+public final class _SumDigits
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "sumDigits(126)",
         "sumDigits(49)",
         "sumDigits(12)",
@@ -17,7 +17,7 @@ public class _SumDigits
         "sumDigits(235)",
     };
 
-    static int[] expectedResults = {
+    static final int[] expectedResults = {
         9,
         13,
         3,
@@ -31,9 +31,9 @@ public class _SumDigits
         10,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] resultsArray = {
+        final int[] resultsArray = {
             SumDigits.sumDigits(126),
             SumDigits.sumDigits(49),
             SumDigits.sumDigits(12),

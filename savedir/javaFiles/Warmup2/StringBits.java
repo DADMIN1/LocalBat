@@ -4,7 +4,7 @@ import Warmup2.Testcases._StringBits;
 // https://codingbat.com/prob/p165666
 // Difficulty: 209.0
 
-public class StringBits
+public final class StringBits
 {
     /* Given a string, return a new string made of every other char starting with the first, 
     so "Hello" yields "Hlo". */
@@ -24,12 +24,12 @@ public class StringBits
     | stringBits("hxaxpxpxy")    → "happy"  |
     |______________________________________*/
 
-    public static String stringBits(String str)
+    public static final String stringBits(String str)
     {
         return "";
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _StringBits.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

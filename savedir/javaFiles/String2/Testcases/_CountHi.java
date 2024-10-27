@@ -1,9 +1,9 @@
 package String2.Testcases;
 import String2.CountHi;
 
-public class _CountHi
+public final class _CountHi
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "countHi(\"abc hi ho\")",
         "countHi(\"ABChi hi\")",
         "countHi(\"hihi\")",
@@ -15,7 +15,7 @@ public class _CountHi
         "countHi(\"hiho not HOHIhi\")",
     };
 
-    static int[] expectedResults = {
+    static final int[] expectedResults = {
         1,
         2,
         2,
@@ -27,9 +27,9 @@ public class _CountHi
         2,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] resultsArray = {
+        final int[] resultsArray = {
             CountHi.countHi("abc hi ho"),
             CountHi.countHi("ABChi hi"),
             CountHi.countHi("hihi"),

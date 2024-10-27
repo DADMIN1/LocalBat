@@ -4,7 +4,7 @@ import Array2.Testcases._FizzArray3;
 // https://codingbat.com/prob/p142539
 // Difficulty: 265
 
-public class FizzArray3
+public final class FizzArray3
 {
     /* Given start and end numbers, return a new array containing the sequence of integers from start up to but not including end, 
     so start=5 and end=10 yields {5, 6, 7, 8, 9}. The end number will be greater or equal to the start number. 
@@ -21,12 +21,12 @@ public class FizzArray3
     | fizzArray3(1000, 1005) → [1000, 1001, 1002, 1003, 1004] |
     |________________________________________________________*/
 
-    public static int[] fizzArray3(int start, int end)
+    public static final int[] fizzArray3(int start, int end)
     {
         return new int[]{0};
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _FizzArray3.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

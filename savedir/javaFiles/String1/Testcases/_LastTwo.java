@@ -1,9 +1,9 @@
 package String1.Testcases;
 import String1.LastTwo;
 
-public class _LastTwo
+public final class _LastTwo
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "lastTwo(\"coding\")",
         "lastTwo(\"cat\")",
         "lastTwo(\"ab\")",
@@ -11,7 +11,7 @@ public class _LastTwo
         "lastTwo(\"\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "codign",
         "cta",
         "ba",
@@ -19,9 +19,9 @@ public class _LastTwo
         "",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             LastTwo.lastTwo("coding"),
             LastTwo.lastTwo("cat"),
             LastTwo.lastTwo("ab"),

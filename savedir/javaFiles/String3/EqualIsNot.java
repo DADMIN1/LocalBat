@@ -4,7 +4,7 @@ import String3.Testcases._EqualIsNot;
 // https://codingbat.com/prob/p141736
 // Difficulty: 309.0
 
-public class EqualIsNot
+public final class EqualIsNot
 {
     /* Given a string, return true if the number of appearances of "is" anywhere in the string is equal to the number of appearances of "not" anywhere in the string (case sensitive). */
 
@@ -23,12 +23,12 @@ public class EqualIsNot
     | equalIsNot("mis3notpotbotis")    → false |
     |_________________________________________*/
 
-    public static boolean equalIsNot(String str)
+    public static final boolean equalIsNot(String str)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _EqualIsNot.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

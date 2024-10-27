@@ -1,9 +1,9 @@
 package String2.Testcases;
 import String2.PlusOut;
 
-public class _PlusOut
+public final class _PlusOut
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "plusOut(\"12xy34\", \"xy\")",
         "plusOut(\"12xy34\", \"1\")",
         "plusOut(\"12xy34xyabcxy\", \"xy\")",
@@ -16,7 +16,7 @@ public class _PlusOut
         "plusOut(\"123123\", \"3\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "++xy++",
         "1+++++",
         "++xy++xy+++xy",
@@ -29,9 +29,9 @@ public class _PlusOut
         "++3++3",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             PlusOut.plusOut("12xy34", "xy"),
             PlusOut.plusOut("12xy34", "1"),
             PlusOut.plusOut("12xy34xyabcxy", "xy"),

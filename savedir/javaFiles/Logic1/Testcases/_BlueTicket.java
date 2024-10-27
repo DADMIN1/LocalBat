@@ -1,9 +1,9 @@
 package Logic1.Testcases;
 import Logic1.BlueTicket;
 
-public class _BlueTicket
+public final class _BlueTicket
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "blueTicket(9, 1, 0)",
         "blueTicket(9, 2, 0)",
         "blueTicket(6, 1, 4)",
@@ -18,7 +18,7 @@ public class _BlueTicket
         "blueTicket(8, 4, 1)",
     };
 
-    static int[] expectedResults = {
+    static final int[] expectedResults = {
         10,
         0,
         10,
@@ -33,9 +33,9 @@ public class _BlueTicket
         0,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] resultsArray = {
+        final int[] resultsArray = {
             BlueTicket.blueTicket(9, 1, 0),
             BlueTicket.blueTicket(9, 2, 0),
             BlueTicket.blueTicket(6, 1, 4),

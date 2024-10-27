@@ -1,9 +1,9 @@
 package Logic1.Testcases;
 import Logic1.More20;
 
-public class _More20
+public final class _More20
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "more20(20)",
         "more20(21)",
         "more20(22)",
@@ -27,7 +27,7 @@ public class _More20
         "more20(42)",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         false,
         true,
         true,
@@ -51,9 +51,9 @@ public class _More20
         true,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             More20.more20(20),
             More20.more20(21),
             More20.more20(22),

@@ -1,9 +1,9 @@
 package Array2.Testcases;
 import Array2.Only14;
 
-public class _Only14
+public final class _Only14
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "only14([1, 4, 1, 4])",
         "only14([1, 4, 2, 4])",
         "only14([1, 1])",
@@ -21,7 +21,7 @@ public class _Only14
         "only14([4, 1, 4, 1])",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         false,
         true,
@@ -39,25 +39,25 @@ public class _Only14
         true,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 1, 4, 1, 4 }; 
-        int[] nums1 = { 1, 4, 2, 4 }; 
-        int[] nums2 = { 1, 1 }; 
-        int[] nums3 = { 4, 1 }; 
-        int[] nums4 = { 2 }; 
-        int[] nums5 = {  }; 
-        int[] nums6 = { 1, 4, 1, 3 }; 
-        int[] nums7 = { 3, 1, 3 }; 
-        int[] nums8 = { 1 }; 
-        int[] nums9 = { 4 }; 
-        int[] nums10 = { 3, 4 }; 
-        int[] nums11 = { 1, 3, 4 }; 
-        int[] nums12 = { 1, 1, 1 }; 
-        int[] nums13 = { 1, 1, 1, 5 }; 
-        int[] nums14 = { 4, 1, 4, 1 }; 
+        final int[] nums0 = { 1, 4, 1, 4 }; 
+        final int[] nums1 = { 1, 4, 2, 4 }; 
+        final int[] nums2 = { 1, 1 }; 
+        final int[] nums3 = { 4, 1 }; 
+        final int[] nums4 = { 2 }; 
+        final int[] nums5 = {  }; 
+        final int[] nums6 = { 1, 4, 1, 3 }; 
+        final int[] nums7 = { 3, 1, 3 }; 
+        final int[] nums8 = { 1 }; 
+        final int[] nums9 = { 4 }; 
+        final int[] nums10 = { 3, 4 }; 
+        final int[] nums11 = { 1, 3, 4 }; 
+        final int[] nums12 = { 1, 1, 1 }; 
+        final int[] nums13 = { 1, 1, 1, 5 }; 
+        final int[] nums14 = { 4, 1, 4, 1 }; 
 
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             Only14.only14(nums0),
             Only14.only14(nums1),
             Only14.only14(nums2),

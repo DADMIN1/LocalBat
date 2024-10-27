@@ -6,7 +6,7 @@ import java.util.HashMap;
 // https://codingbat.com/prob/p126332
 // Difficulty: 320
 
-public class Pairs
+public final class Pairs
 {
     /* Given an array of non-empty strings, create and return a Map<String, 
     String> as follows: for each string add its first character as a key with its last character as the value. */
@@ -23,12 +23,12 @@ public class Pairs
     | pairs(["apple", "banana", "tea", "coffee"]) → {"a": "e", "b": "a", "c": "e", "t": "a"} |
     |_______________________________________________________________________________________*/
 
-    public static Map<String, String> pairs(String[] strings)
+    public static final Map<String, String> pairs(String[] strings)
     {
         return new HashMap<String, String>();
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _Pairs.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

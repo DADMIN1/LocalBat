@@ -1,9 +1,9 @@
 package Warmup1.Testcases;
 import Warmup1.Makes10;
 
-public class _Makes10
+public final class _Makes10
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "makes10(9, 10)",
         "makes10(9, 9)",
         "makes10(1, 9)",
@@ -15,7 +15,7 @@ public class _Makes10
         "makes10(12, -2)",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         false,
         true,
@@ -27,9 +27,9 @@ public class _Makes10
         true,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             Makes10.makes10(9, 10),
             Makes10.makes10(9, 9),
             Makes10.makes10(1, 9),

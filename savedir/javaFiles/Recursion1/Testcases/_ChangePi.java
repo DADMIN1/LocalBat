@@ -1,9 +1,9 @@
 package Recursion1.Testcases;
 import Recursion1.ChangePi;
 
-public class _ChangePi
+public final class _ChangePi
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "changePi(\"xpix\")",
         "changePi(\"pipi\")",
         "changePi(\"pip\")",
@@ -16,7 +16,7 @@ public class _ChangePi
         "changePi(\"xyzzy\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "x3.14x",
         "3.143.14",
         "3.14p",
@@ -29,9 +29,9 @@ public class _ChangePi
         "xyzzy",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             ChangePi.changePi("xpix"),
             ChangePi.changePi("pipi"),
             ChangePi.changePi("pip"),

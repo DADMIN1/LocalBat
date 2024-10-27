@@ -4,7 +4,7 @@ import String3.Testcases._CountTriple;
 // https://codingbat.com/prob/p195714
 // Difficulty: 315.0
 
-public class CountTriple
+public final class CountTriple
 {
     /* We'll say that a "triple" in a string is a char appearing three times in a row. 
     Return the number of triples in the given string. The triples may overlap. */
@@ -26,12 +26,12 @@ public class CountTriple
     | countTriple("122abhhh2")      → 1 |
     |__________________________________*/
 
-    public static int countTriple(String str)
+    public static final int countTriple(String str)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _CountTriple.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

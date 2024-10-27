@@ -4,7 +4,7 @@ import String2.Testcases._XyBalance;
 // https://codingbat.com/prob/p134250
 // Difficulty: 224.0
 
-public class XyBalance
+public final class XyBalance
 {
     /* We'll say that a String is xy-balanced if for all the 'x' chars in the string, 
     there exists a 'y' char somewhere later in the string. So "xxy" is balanced, 
@@ -33,12 +33,12 @@ public class XyBalance
     | xyBalance("12xabxxydxyxyzz") → true  |
     |_____________________________________*/
 
-    public static boolean xyBalance(String str)
+    public static final boolean xyBalance(String str)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _XyBalance.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

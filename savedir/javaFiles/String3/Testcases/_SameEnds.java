@@ -1,9 +1,9 @@
 package String3.Testcases;
 import String3.SameEnds;
 
-public class _SameEnds
+public final class _SameEnds
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "sameEnds(\"abXYab\")",
         "sameEnds(\"xx\")",
         "sameEnds(\"xxx\")",
@@ -18,7 +18,7 @@ public class _SameEnds
         "sameEnds(\"mymmy\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "ab",
         "x",
         "x",
@@ -33,9 +33,9 @@ public class _SameEnds
         "my",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             SameEnds.sameEnds("abXYab"),
             SameEnds.sameEnds("xx"),
             SameEnds.sameEnds("xxx"),

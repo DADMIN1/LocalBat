@@ -4,7 +4,7 @@ import AP1.Testcases._ScoresSpecial;
 // https://codingbat.com/prob/p140485
 // Difficulty: 245.0
 
-public class ScoresSpecial
+public final class ScoresSpecial
 {
     /* Given two arrays, A and B, of non-negative int scores. A "special" score is one which is a multiple of 10, 
     such as 40 or 90. Return the sum of largest special score in A and the largest special score in B. 
@@ -28,12 +28,12 @@ public class ScoresSpecial
     | scoresSpecial([14, 10, 4], [4, 20, 30])      → 40 |
     |__________________________________________________*/
 
-    public static int scoresSpecial(int[] a, int[] b)
+    public static final int scoresSpecial(int[] a, int[] b)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _ScoresSpecial.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

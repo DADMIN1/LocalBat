@@ -1,9 +1,9 @@
 package Logic1.Testcases;
 import Logic1.TeenSum;
 
-public class _TeenSum
+public final class _TeenSum
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "teenSum(3, 4)",
         "teenSum(10, 13)",
         "teenSum(13, 2)",
@@ -22,7 +22,7 @@ public class _TeenSum
         "teenSum(6, 7)",
     };
 
-    static int[] expectedResults = {
+    static final int[] expectedResults = {
         7,
         19,
         19,
@@ -41,9 +41,9 @@ public class _TeenSum
         13,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] resultsArray = {
+        final int[] resultsArray = {
             TeenSum.teenSum(3, 4),
             TeenSum.teenSum(10, 13),
             TeenSum.teenSum(13, 2),

@@ -3,9 +3,9 @@ import AP1.WordsFront;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class _WordsFront
+public final class _WordsFront
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "wordsFront([\"a\", \"b\", \"c\", \"d\"], 1)",
         "wordsFront([\"a\", \"b\", \"c\", \"d\"], 2)",
         "wordsFront([\"a\", \"b\", \"c\", \"d\"], 3)",
@@ -14,7 +14,7 @@ public class _WordsFront
         "wordsFront([\"Hi\", \"There\"], 2)",
     };
 
-    static String[][] expectedResults = {
+    static final String[][] expectedResults = {
         {"a"},
         {"a", "b"},
         {"a", "b", "c"},
@@ -23,7 +23,7 @@ public class _WordsFront
         {"Hi", "There"},
     };
 
-    public static String printArray(String[] array)
+    public static final String printArray(String[] array)
     {
         String result = "[";
         for (String a: array) { result += a+", "; }
@@ -31,16 +31,16 @@ public class _WordsFront
         return result + "]";
     }
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] words0 = { "a", "b", "c", "d" }; 
-        String[] words1 = { "a", "b", "c", "d" }; 
-        String[] words2 = { "a", "b", "c", "d" }; 
-        String[] words3 = { "a", "b", "c", "d" }; 
-        String[] words4 = { "Hi", "There" }; 
-        String[] words5 = { "Hi", "There" }; 
+        final String[] words0 = { "a", "b", "c", "d" }; 
+        final String[] words1 = { "a", "b", "c", "d" }; 
+        final String[] words2 = { "a", "b", "c", "d" }; 
+        final String[] words3 = { "a", "b", "c", "d" }; 
+        final String[] words4 = { "Hi", "There" }; 
+        final String[] words5 = { "Hi", "There" }; 
 
-        String[][] resultsArray = {
+        final String[][] resultsArray = {
             WordsFront.wordsFront(words0, 1),
             WordsFront.wordsFront(words1, 2),
             WordsFront.wordsFront(words2, 3),

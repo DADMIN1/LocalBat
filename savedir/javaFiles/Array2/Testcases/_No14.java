@@ -1,9 +1,9 @@
 package Array2.Testcases;
 import Array2.No14;
 
-public class _No14
+public final class _No14
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "no14([1, 2, 3])",
         "no14([1, 2, 3, 4])",
         "no14([2, 3, 4])",
@@ -25,7 +25,7 @@ public class _No14
         "no14([1, 4, 4])",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         false,
         true,
@@ -47,29 +47,29 @@ public class _No14
         false,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 1, 2, 3 }; 
-        int[] nums1 = { 1, 2, 3, 4 }; 
-        int[] nums2 = { 2, 3, 4 }; 
-        int[] nums3 = { 1, 1, 4, 4 }; 
-        int[] nums4 = { 2, 2, 4, 4 }; 
-        int[] nums5 = { 2, 3, 4, 1 }; 
-        int[] nums6 = { 2, 1, 1 }; 
-        int[] nums7 = { 1, 4 }; 
-        int[] nums8 = { 2 }; 
-        int[] nums9 = { 2, 1 }; 
-        int[] nums10 = { 1 }; 
-        int[] nums11 = { 4 }; 
-        int[] nums12 = {  }; 
-        int[] nums13 = { 1, 1, 1, 1 }; 
-        int[] nums14 = { 9, 4, 4, 1 }; 
-        int[] nums15 = { 4, 2, 3, 1 }; 
-        int[] nums16 = { 4, 2, 3, 5 }; 
-        int[] nums17 = { 4, 4, 2 }; 
-        int[] nums18 = { 1, 4, 4 }; 
+        final int[] nums0 = { 1, 2, 3 }; 
+        final int[] nums1 = { 1, 2, 3, 4 }; 
+        final int[] nums2 = { 2, 3, 4 }; 
+        final int[] nums3 = { 1, 1, 4, 4 }; 
+        final int[] nums4 = { 2, 2, 4, 4 }; 
+        final int[] nums5 = { 2, 3, 4, 1 }; 
+        final int[] nums6 = { 2, 1, 1 }; 
+        final int[] nums7 = { 1, 4 }; 
+        final int[] nums8 = { 2 }; 
+        final int[] nums9 = { 2, 1 }; 
+        final int[] nums10 = { 1 }; 
+        final int[] nums11 = { 4 }; 
+        final int[] nums12 = {  }; 
+        final int[] nums13 = { 1, 1, 1, 1 }; 
+        final int[] nums14 = { 9, 4, 4, 1 }; 
+        final int[] nums15 = { 4, 2, 3, 1 }; 
+        final int[] nums16 = { 4, 2, 3, 5 }; 
+        final int[] nums17 = { 4, 4, 2 }; 
+        final int[] nums18 = { 1, 4, 4 }; 
 
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             No14.no14(nums0),
             No14.no14(nums1),
             No14.no14(nums2),

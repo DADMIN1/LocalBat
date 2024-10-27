@@ -7,7 +7,7 @@ import java.util.ArrayList;
 // https://codingbat.com/prob/p117665
 // Difficulty: 200
 
-public class Doubling
+public final class Doubling
 {
     /* Given a list of integers, return a list where each integer is multiplied by 2. */
 
@@ -24,12 +24,12 @@ public class Doubling
     | doubling([3, 1, 4, 1, 5, 9])                     → [6, 2, 8, 2, 10, 18]                    |
     |___________________________________________________________________________________________*/
 
-    public static List<Integer> doubling(List<Integer> nums)
+    public static final List<Integer> doubling(List<Integer> nums)
     {
         return new ArrayList<Integer>();
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _Doubling.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

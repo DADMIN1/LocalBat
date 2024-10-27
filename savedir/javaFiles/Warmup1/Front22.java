@@ -4,7 +4,7 @@ import Warmup1.Testcases._Front22;
 // https://codingbat.com/prob/p183592
 // Difficulty: 142.0
 
-public class Front22
+public final class Front22
 {
     /* Given a string, take the first 2 chars and return the string with the 2 chars added at both the front and back, 
     so "kitten" yields"kikittenki". If the string length is less than 2, 
@@ -22,12 +22,12 @@ public class Front22
     | front22("Logic")  → "LoLogicLo"  |
     |_________________________________*/
 
-    public static String front22(String str)
+    public static final String front22(String str)
     {
         return "";
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _Front22.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

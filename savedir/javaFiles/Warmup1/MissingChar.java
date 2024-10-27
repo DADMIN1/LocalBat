@@ -4,7 +4,7 @@ import Warmup1.Testcases._MissingChar;
 // https://codingbat.com/prob/p190570
 // Difficulty: 130.0
 
-public class MissingChar
+public final class MissingChar
 {
     /* Given a non-empty string and an int n, return a new string where the char at index n has been removed. 
     The value of n will be a valid index of a char in the original string (i.e. 
@@ -25,12 +25,12 @@ public class MissingChar
     | missingChar("chocolate", 8) → "chocolat" |
     |_________________________________________*/
 
-    public static String missingChar(String str, int n)
+    public static final String missingChar(String str, int n)
     {
         return "";
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _MissingChar.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

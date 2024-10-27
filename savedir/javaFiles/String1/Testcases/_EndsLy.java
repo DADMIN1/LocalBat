@@ -1,9 +1,9 @@
 package String1.Testcases;
 import String1.EndsLy;
 
-public class _EndsLy
+public final class _EndsLy
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "endsLy(\"oddly\")",
         "endsLy(\"y\")",
         "endsLy(\"oddy\")",
@@ -15,7 +15,7 @@ public class _EndsLy
         "endsLy(\"evenly\")",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         false,
         false,
@@ -27,9 +27,9 @@ public class _EndsLy
         true,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             EndsLy.endsLy("oddly"),
             EndsLy.endsLy("y"),
             EndsLy.endsLy("oddy"),

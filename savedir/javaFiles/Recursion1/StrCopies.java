@@ -4,7 +4,7 @@ import Recursion1.Testcases._StrCopies;
 // https://codingbat.com/prob/p118182
 // Difficulty: 387.0
 
-public class StrCopies
+public final class StrCopies
 {
     /* Given a string and a non-empty substring sub, 
     compute recursively if at least n copies of sub appear in the string somewhere, 
@@ -29,12 +29,12 @@ public class StrCopies
     | strCopies("dogcatdogcat", "dog", 2) → true  |
     |____________________________________________*/
 
-    public static boolean strCopies(String str, String sub, int n)
+    public static final boolean strCopies(String str, String sub, int n)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _StrCopies.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

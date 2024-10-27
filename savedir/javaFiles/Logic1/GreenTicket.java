@@ -4,7 +4,7 @@ import Logic1.Testcases._GreenTicket;
 // https://codingbat.com/prob/p120633
 // Difficulty: 160.0
 
-public class GreenTicket
+public final class GreenTicket
 {
     /* You have a green lottery ticket, with ints a, b, and c on it. 
     If the numbers are all different from each other, the result is 0. 
@@ -28,12 +28,12 @@ public class GreenTicket
     | greenTicket(9, 0, 9)  → 10 |
     |___________________________*/
 
-    public static int greenTicket(int a, int b, int c)
+    public static final int greenTicket(int a, int b, int c)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _GreenTicket.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

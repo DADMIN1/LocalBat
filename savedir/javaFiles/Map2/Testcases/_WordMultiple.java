@@ -3,9 +3,9 @@ import Map2.WordMultiple;
 import java.util.Map;
 import java.util.HashMap;
 
-public class _WordMultiple
+public final class _WordMultiple
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "wordMultiple([\"a\", \"b\", \"a\", \"c\", \"b\"])",
         "wordMultiple([\"c\", \"b\", \"a\"])",
         "wordMultiple([\"c\", \"c\", \"c\", \"c\"])",
@@ -14,7 +14,7 @@ public class _WordMultiple
         "wordMultiple([\"d\", \"a\", \"e\", \"d\", \"a\", \"d\", \"b\", \"b\", \"z\", \"a\", \"a\", \"b\", \"z\", \"x\"])",
     };
 
-    static Map<?,?>[] expectedResults = {
+    static final Map<?,?>[] expectedResults = {
         Map.of("a", true, "b", true, "c", false),
         Map.of("a", false, "b", false, "c", false),
         Map.of("c", true),
@@ -23,16 +23,16 @@ public class _WordMultiple
         Map.of("a", true, "b", true, "d", true, "e", false, "x", false, "z", true),
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] strings0 = { "a", "b", "a", "c", "b" }; 
-        String[] strings1 = { "c", "b", "a" }; 
-        String[] strings2 = { "c", "c", "c", "c" }; 
-        String[] strings3 = {  }; 
-        String[] strings4 = { "this", "and", "this" }; 
-        String[] strings5 = { "d", "a", "e", "d", "a", "d", "b", "b", "z", "a", "a", "b", "z", "x" }; 
+        final String[] strings0 = { "a", "b", "a", "c", "b" }; 
+        final String[] strings1 = { "c", "b", "a" }; 
+        final String[] strings2 = { "c", "c", "c", "c" }; 
+        final String[] strings3 = {  }; 
+        final String[] strings4 = { "this", "and", "this" }; 
+        final String[] strings5 = { "d", "a", "e", "d", "a", "d", "b", "b", "z", "a", "a", "b", "z", "x" }; 
 
-        Map<?,?>[] resultsArray = {
+        final Map<?,?>[] resultsArray = {
             WordMultiple.wordMultiple(strings0),
             WordMultiple.wordMultiple(strings1),
             WordMultiple.wordMultiple(strings2),

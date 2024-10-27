@@ -1,9 +1,9 @@
 package Logic1.Testcases;
 import Logic1.NearTen;
 
-public class _NearTen
+public final class _NearTen
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "nearTen(12)",
         "nearTen(17)",
         "nearTen(19)",
@@ -21,7 +21,7 @@ public class _NearTen
         "nearTen(1)",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         false,
         true,
@@ -39,9 +39,9 @@ public class _NearTen
         true,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             NearTen.nearTen(12),
             NearTen.nearTen(17),
             NearTen.nearTen(19),

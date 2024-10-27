@@ -6,7 +6,7 @@ import java.util.HashMap;
 // https://codingbat.com/prob/p125327
 // Difficulty: 306
 
-public class WordLen
+public final class WordLen
 {
     /* Given an array of strings, return a Map<String, Integer> containing a key for every different string in the array, 
     and the value is that string's length. */
@@ -21,12 +21,12 @@ public class WordLen
     | wordLen(["z"])                           → {"z": 1}                         |
     |____________________________________________________________________________*/
 
-    public static Map<String, Integer> wordLen(String[] strings)
+    public static final Map<String, Integer> wordLen(String[] strings)
     {
         return new HashMap<String, Integer>();
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _WordLen.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

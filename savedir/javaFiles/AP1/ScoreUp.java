@@ -4,7 +4,7 @@ import AP1.Testcases._ScoreUp;
 // https://codingbat.com/prob/p180365
 // Difficulty: 239.0
 
-public class ScoreUp
+public final class ScoreUp
 {
     /* The "key" array is an array containing the correct answers to an exam, 
     like {"a", "a", "b", "b"}. the "answers" array contains a student's answers, 
@@ -29,12 +29,12 @@ public class ScoreUp
     | scoreUp(["a", "b", "c"], ["a", "b", "c"])                               → 12 |
     |_____________________________________________________________________________*/
 
-    public static int scoreUp(String[] key, String[] answers)
+    public static final int scoreUp(String[] key, String[] answers)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _ScoreUp.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

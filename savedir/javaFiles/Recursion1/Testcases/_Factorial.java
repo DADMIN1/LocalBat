@@ -1,9 +1,9 @@
 package Recursion1.Testcases;
 import Recursion1.Factorial;
 
-public class _Factorial
+public final class _Factorial
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "factorial(1)",
         "factorial(2)",
         "factorial(3)",
@@ -15,7 +15,7 @@ public class _Factorial
         "factorial(12)",
     };
 
-    static int[] expectedResults = {
+    static final int[] expectedResults = {
         1,
         2,
         6,
@@ -27,9 +27,9 @@ public class _Factorial
         479001600,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] resultsArray = {
+        final int[] resultsArray = {
             Factorial.factorial(1),
             Factorial.factorial(2),
             Factorial.factorial(3),

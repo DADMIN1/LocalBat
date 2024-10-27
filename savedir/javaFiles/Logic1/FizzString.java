@@ -4,7 +4,7 @@ import Logic1.Testcases._FizzString;
 // https://codingbat.com/prob/p137136
 // Difficulty: 135
 
-public class FizzString
+public final class FizzString
 {
     /* Given a string str, if the string starts with "f" return "Fizz". 
     If the string ends with "b" return "Buzz". If both the "f" and "b" conditions are true, 
@@ -32,12 +32,12 @@ public class FizzString
     | fizzString("fb")     → "FizzBuzz" |
     |__________________________________*/
 
-    public static String fizzString(String str)
+    public static final String fizzString(String str)
     {
         return "";
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _FizzString.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

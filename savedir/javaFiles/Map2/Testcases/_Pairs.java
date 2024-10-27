@@ -3,9 +3,9 @@ import Map2.Pairs;
 import java.util.Map;
 import java.util.HashMap;
 
-public class _Pairs
+public final class _Pairs
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "pairs([\"code\", \"bug\"])",
         "pairs([\"man\", \"moon\", \"main\"])",
         "pairs([\"man\", \"moon\", \"good\", \"night\"])",
@@ -15,7 +15,7 @@ public class _Pairs
         "pairs([\"apple\", \"banana\", \"tea\", \"coffee\"])",
     };
 
-    static Map<?,?>[] expectedResults = {
+    static final Map<?,?>[] expectedResults = {
         Map.of("b", "g", "c", "e"),
         Map.of("m", "n"),
         Map.of("g", "d", "m", "n", "n", "t"),
@@ -25,17 +25,17 @@ public class _Pairs
         Map.of("a", "e", "b", "a", "c", "e", "t", "a"),
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] strings0 = { "code", "bug" }; 
-        String[] strings1 = { "man", "moon", "main" }; 
-        String[] strings2 = { "man", "moon", "good", "night" }; 
-        String[] strings3 = {  }; 
-        String[] strings4 = { "a", "b" }; 
-        String[] strings5 = { "are", "codes", "and", "cods" }; 
-        String[] strings6 = { "apple", "banana", "tea", "coffee" }; 
+        final String[] strings0 = { "code", "bug" }; 
+        final String[] strings1 = { "man", "moon", "main" }; 
+        final String[] strings2 = { "man", "moon", "good", "night" }; 
+        final String[] strings3 = {  }; 
+        final String[] strings4 = { "a", "b" }; 
+        final String[] strings5 = { "are", "codes", "and", "cods" }; 
+        final String[] strings6 = { "apple", "banana", "tea", "coffee" }; 
 
-        Map<?,?>[] resultsArray = {
+        final Map<?,?>[] resultsArray = {
             Pairs.pairs(strings0),
             Pairs.pairs(strings1),
             Pairs.pairs(strings2),

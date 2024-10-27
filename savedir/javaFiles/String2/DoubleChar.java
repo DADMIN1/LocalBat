@@ -4,7 +4,7 @@ import String2.Testcases._DoubleChar;
 // https://codingbat.com/prob/p165312
 // Difficulty: 203.0
 
-public class DoubleChar
+public final class DoubleChar
 {
     /* Given a string, return a string where for every char in the original, 
     there are two chars. */
@@ -23,12 +23,12 @@ public class DoubleChar
     | doubleChar("aa")       → "aaaa"             |
     |____________________________________________*/
 
-    public static String doubleChar(String str)
+    public static final String doubleChar(String str)
     {
         return "";
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _DoubleChar.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

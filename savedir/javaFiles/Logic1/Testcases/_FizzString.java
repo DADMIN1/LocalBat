@@ -1,9 +1,9 @@
 package Logic1.Testcases;
 import Logic1.FizzString;
 
-public class _FizzString
+public final class _FizzString
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "fizzString(\"fig\")",
         "fizzString(\"dib\")",
         "fizzString(\"fib\")",
@@ -22,7 +22,7 @@ public class _FizzString
         "fizzString(\"fb\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "Fizz",
         "Buzz",
         "FizzBuzz",
@@ -41,9 +41,9 @@ public class _FizzString
         "FizzBuzz",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             FizzString.fizzString("fig"),
             FizzString.fizzString("dib"),
             FizzString.fizzString("fib"),

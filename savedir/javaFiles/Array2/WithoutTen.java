@@ -4,7 +4,7 @@ import Array2.Testcases._WithoutTen;
 // https://codingbat.com/prob/p196976
 // Difficulty: 284.0
 
-public class WithoutTen
+public final class WithoutTen
 {
     /* Return a version of the given array where all the 10's have been removed. 
     The remaining elements should shift left towards the start of the array as needed, 
@@ -26,12 +26,12 @@ public class WithoutTen
     | withoutTen([])                   → []                |
     |_____________________________________________________*/
 
-    public static int[] withoutTen(int[] nums)
+    public static final int[] withoutTen(int[] nums)
     {
         return new int[]{0};
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _WithoutTen.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

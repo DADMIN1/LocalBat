@@ -4,7 +4,7 @@ import String2.Testcases._ZipZap;
 // https://codingbat.com/prob/p180759
 // Difficulty: 251.0
 
-public class ZipZap
+public final class ZipZap
 {
     /* Look for patterns like "zip" and "zap" in the string -- length-3, 
     starting with 'z' and ending with 'p'. Return a string where for all such words, 
@@ -27,12 +27,12 @@ public class ZipZap
     | zipZap("azbcpzpp") → "azbcpzp" |
     |_______________________________*/
 
-    public static String zipZap(String str)
+    public static final String zipZap(String str)
     {
         return "";
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _ZipZap.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

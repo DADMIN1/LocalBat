@@ -1,9 +1,9 @@
 package Logic1.Testcases;
 import Logic1.SpecialEleven;
 
-public class _SpecialEleven
+public final class _SpecialEleven
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "specialEleven(22)",
         "specialEleven(23)",
         "specialEleven(24)",
@@ -26,7 +26,7 @@ public class _SpecialEleven
         "specialEleven(55)",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         true,
         false,
@@ -49,9 +49,9 @@ public class _SpecialEleven
         true,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             SpecialEleven.specialEleven(22),
             SpecialEleven.specialEleven(23),
             SpecialEleven.specialEleven(24),

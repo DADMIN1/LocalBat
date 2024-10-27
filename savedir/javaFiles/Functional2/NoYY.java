@@ -7,7 +7,7 @@ import java.util.ArrayList;
 // https://codingbat.com/prob/p115967
 // Difficulty: 220
 
-public class NoYY
+public final class NoYY
 {
     /* Given a list of strings, return a list where each string has "y" added at its end, 
     omitting any resulting strings that contain "yy" as a substring anywhere. */
@@ -27,12 +27,12 @@ public class NoYY
     | noYY(["xx", "yy", "zz"])  → ["xxy", "zzy"]        |
     |__________________________________________________*/
 
-    public static List<String> noYY(List<String> strings)
+    public static final List<String> noYY(List<String> strings)
     {
         return new ArrayList<String>();
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _NoYY.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

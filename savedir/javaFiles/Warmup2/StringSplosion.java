@@ -4,7 +4,7 @@ import Warmup2.Testcases._StringSplosion;
 // https://codingbat.com/prob/p117334
 // Difficulty: 212.0
 
-public class StringSplosion
+public final class StringSplosion
 {
     /* Given a non-empty string like "Code" return a string like "CCoCodCode". */
 
@@ -23,12 +23,12 @@ public class StringSplosion
     | stringSplosion("Bad")    → "BBaBad"                |
     |___________________________________________________*/
 
-    public static String stringSplosion(String str)
+    public static final String stringSplosion(String str)
     {
         return "";
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _StringSplosion.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

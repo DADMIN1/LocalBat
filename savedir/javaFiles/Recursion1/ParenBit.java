@@ -4,7 +4,7 @@ import Recursion1.Testcases._ParenBit;
 // https://codingbat.com/prob/p137918
 // Difficulty: 378.0
 
-public class ParenBit
+public final class ParenBit
 {
     /* Given a string that contains a single pair of parenthesis, 
     compute recursively a new string made of only of the parenthesis and their contents, 
@@ -27,12 +27,12 @@ public class ParenBit
     | parenBit("ab(ab)ab")               → "(ab)"         |
     |____________________________________________________*/
 
-    public static String parenBit(String str)
+    public static final String parenBit(String str)
     {
         return "";
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _ParenBit.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

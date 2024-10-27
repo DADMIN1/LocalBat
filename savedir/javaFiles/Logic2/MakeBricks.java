@@ -4,7 +4,7 @@ import Logic2.Testcases._MakeBricks;
 // https://codingbat.com/prob/p183562
 // Difficulty: 203.0
 
-public class MakeBricks
+public final class MakeBricks
 {
     /* We want to make a row of bricks that is goal inches long. 
     We have a number of small bricks (1 inch each) and big bricks (5 inches each). 
@@ -46,12 +46,12 @@ public class MakeBricks
     | makeBricks(20, 4, 39)              → true  |
     |___________________________________________*/
 
-    public static boolean makeBricks(int small, int big, int goal)
+    public static final boolean makeBricks(int small, int big, int goal)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _MakeBricks.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

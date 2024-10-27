@@ -4,7 +4,7 @@ import Array2.Testcases._MatchUp;
 // https://codingbat.com/prob/p136254
 // Difficulty: 242.0
 
-public class MatchUp
+public final class MatchUp
 {
     /* Given arrays nums1 and nums2 of the same length, for every element in nums1, 
     consider the corresponding element in nums2 (at the same index). 
@@ -27,12 +27,12 @@ public class MatchUp
     | matchUp([4], [5])              → 1 |
     |___________________________________*/
 
-    public static int matchUp(int[] nums1, int[] nums2)
+    public static final int matchUp(int[] nums1, int[] nums2)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _MatchUp.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

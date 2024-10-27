@@ -4,7 +4,7 @@ import Array2.Testcases._FizzBuzz;
 // https://codingbat.com/prob/p153059
 // Difficulty: 299
 
-public class FizzBuzz
+public final class FizzBuzz
 {
     /* This is slightly more difficult version of the famous FizzBuzz problem which is sometimes given as a first problem for job interviews. 
     (See also: FizzBuzz Code.) Consider the series of numbers beginning at start and running up to but not including end, 
@@ -33,12 +33,12 @@ public class FizzBuzz
     | fizzBuzz(14, 20)     → ["14", "FizzBuzz", "16", "17", "Fizz", "19"]                                                            |
     |_______________________________________________________________________________________________________________________________*/
 
-    public static String[] fizzBuzz(int start, int end)
+    public static final String[] fizzBuzz(int start, int end)
     {
         return new String[]{""};
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _FizzBuzz.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

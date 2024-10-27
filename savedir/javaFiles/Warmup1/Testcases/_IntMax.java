@@ -1,9 +1,9 @@
 package Warmup1.Testcases;
 import Warmup1.IntMax;
 
-public class _IntMax
+public final class _IntMax
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "intMax(1, 2, 3)",
         "intMax(1, 3, 2)",
         "intMax(3, 2, 1)",
@@ -17,7 +17,7 @@ public class _IntMax
         "intMax(5, 2, 6)",
     };
 
-    static int[] expectedResults = {
+    static final int[] expectedResults = {
         3,
         3,
         3,
@@ -31,9 +31,9 @@ public class _IntMax
         6,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] resultsArray = {
+        final int[] resultsArray = {
             IntMax.intMax(1, 2, 3),
             IntMax.intMax(1, 3, 2),
             IntMax.intMax(3, 2, 1),

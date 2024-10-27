@@ -4,7 +4,7 @@ import Warmup1.Testcases._BackAround;
 // https://codingbat.com/prob/p161642
 // Difficulty: 139.0
 
-public class BackAround
+public final class BackAround
 {
     /* Given a string, take the last char and return a new string with the last char added at the front and back, 
     so "cat" yields "tcatt". The original string will be length 1 or more. */
@@ -20,12 +20,12 @@ public class BackAround
     | backAround("boo")   → "obooo"   |
     |________________________________*/
 
-    public static String backAround(String str)
+    public static final String backAround(String str)
     {
         return "";
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _BackAround.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

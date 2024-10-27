@@ -4,7 +4,7 @@ import String2.Testcases._PrefixAgain;
 // https://codingbat.com/prob/p136417
 // Difficulty: 239.0
 
-public class PrefixAgain
+public final class PrefixAgain
 {
     /* Given a string, consider the prefix string made of the first N chars of the string. 
     Does that prefix string appear somewhere else in the string? Assume that the string is not empty and that N is in the range 1..str.length(). */
@@ -26,12 +26,12 @@ public class PrefixAgain
     | prefixAgain("ab", 1)                → false |
     |____________________________________________*/
 
-    public static boolean prefixAgain(String str, int n)
+    public static final boolean prefixAgain(String str, int n)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _PrefixAgain.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

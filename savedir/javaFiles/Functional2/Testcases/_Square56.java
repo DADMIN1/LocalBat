@@ -4,9 +4,9 @@ import java.util.List;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class _Square56
+public final class _Square56
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "square56([3, 1, 4])",
         "square56([1])",
         "square56([2])",
@@ -19,7 +19,7 @@ public class _Square56
         "square56([3, -1, -4, 1, 5, 9])",
     };
 
-    static List<?>[] expectedResults = {
+    static final List<?>[] expectedResults = {
         Arrays.asList(19, 11),
         Arrays.asList(11),
         Arrays.asList(14),
@@ -32,9 +32,9 @@ public class _Square56
         Arrays.asList(19, 11, 11, 91),
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        List<?>[] resultsArray = {
+        final List<?>[] resultsArray = {
             Square56.square56(new ArrayList<>(Arrays.asList(3, 1, 4))),
             Square56.square56(new ArrayList<>(Arrays.asList(1))),
             Square56.square56(new ArrayList<>(Arrays.asList(2))),

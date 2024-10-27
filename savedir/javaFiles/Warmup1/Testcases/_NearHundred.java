@@ -1,9 +1,9 @@
 package Warmup1.Testcases;
 import Warmup1.NearHundred;
 
-public class _NearHundred
+public final class _NearHundred
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "nearHundred(93)",
         "nearHundred(90)",
         "nearHundred(89)",
@@ -25,7 +25,7 @@ public class _NearHundred
         "nearHundred(290)",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         true,
         false,
@@ -47,9 +47,9 @@ public class _NearHundred
         false,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             NearHundred.nearHundred(93),
             NearHundred.nearHundred(90),
             NearHundred.nearHundred(89),

@@ -3,9 +3,9 @@ import Array1.MiddleWay;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class _MiddleWay
+public final class _MiddleWay
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "middleWay([1, 2, 3], [4, 5, 6])",
         "middleWay([7, 7, 7], [3, 8, 0])",
         "middleWay([5, 2, 9], [1, 4, 5])",
@@ -14,7 +14,7 @@ public class _MiddleWay
         "middleWay([1, 2, 3], [4, 1, 1])",
     };
 
-    static int[][] expectedResults = {
+    static final int[][] expectedResults = {
         {2, 5},
         {7, 8},
         {2, 4},
@@ -23,7 +23,7 @@ public class _MiddleWay
         {2, 1},
     };
 
-    public static String printArray(int[] array)
+    public static final String printArray(int[] array)
     {
         String result = "[";
         for (int a: array) { result += a+", "; }
@@ -31,16 +31,16 @@ public class _MiddleWay
         return result + "]";
     }
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] a0 = { 1, 2, 3 }; int[] b0 = { 4, 5, 6 }; 
-        int[] a1 = { 7, 7, 7 }; int[] b1 = { 3, 8, 0 }; 
-        int[] a2 = { 5, 2, 9 }; int[] b2 = { 1, 4, 5 }; 
-        int[] a3 = { 1, 9, 7 }; int[] b3 = { 4, 8, 8 }; 
-        int[] a4 = { 1, 2, 3 }; int[] b4 = { 3, 1, 4 }; 
-        int[] a5 = { 1, 2, 3 }; int[] b5 = { 4, 1, 1 }; 
+        final int[] a0 = { 1, 2, 3 }; final int[] b0 = { 4, 5, 6 }; 
+        final int[] a1 = { 7, 7, 7 }; final int[] b1 = { 3, 8, 0 }; 
+        final int[] a2 = { 5, 2, 9 }; final int[] b2 = { 1, 4, 5 }; 
+        final int[] a3 = { 1, 9, 7 }; final int[] b3 = { 4, 8, 8 }; 
+        final int[] a4 = { 1, 2, 3 }; final int[] b4 = { 3, 1, 4 }; 
+        final int[] a5 = { 1, 2, 3 }; final int[] b5 = { 4, 1, 1 }; 
 
-        int[][] resultsArray = {
+        final int[][] resultsArray = {
             MiddleWay.middleWay(a0, b0),
             MiddleWay.middleWay(a1, b1),
             MiddleWay.middleWay(a2, b2),

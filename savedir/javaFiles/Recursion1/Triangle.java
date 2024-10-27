@@ -4,7 +4,7 @@ import Recursion1.Testcases._Triangle;
 // https://codingbat.com/prob/p194781
 // Difficulty: 315.0
 
-public class Triangle
+public final class Triangle
 {
     /* We have triangle made of blocks. The topmost row has 1 block, 
     the next row down has 2 blocks, the next row has 3 blocks, 
@@ -23,12 +23,12 @@ public class Triangle
     | triangle(7) → 28 |
     |_________________*/
 
-    public static int triangle(int rows)
+    public static final int triangle(int rows)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _Triangle.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

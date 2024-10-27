@@ -4,7 +4,7 @@ import Recursion1.Testcases._SumDigits;
 // https://codingbat.com/prob/p163932
 // Difficulty: 318.0
 
-public class SumDigits
+public final class SumDigits
 {
     /* Given a non-negative int n, return the sum of its digits recursively (no loops). 
     Note that mod (%) by 10 yields the rightmost digit (126 % 10 is 6), 
@@ -26,12 +26,12 @@ public class SumDigits
     | sumDigits(235)   → 10 |
     |______________________*/
 
-    public static int sumDigits(int n)
+    public static final int sumDigits(int n)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _SumDigits.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

@@ -4,7 +4,7 @@ import Recursion1.Testcases._PairStar;
 // https://codingbat.com/prob/p158175
 // Difficulty: 357.0
 
-public class PairStar
+public final class PairStar
 {
     /* Given a string, compute recursively a new string where identical chars that are adjacent in the original string are separated from each other by a "*". */
 
@@ -23,12 +23,12 @@ public class PairStar
     | pairStar("abbba")      → "ab*b*ba"    |
     |______________________________________*/
 
-    public static String pairStar(String str)
+    public static final String pairStar(String str)
     {
         return "";
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _PairStar.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

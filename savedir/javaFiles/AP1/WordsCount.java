@@ -4,7 +4,7 @@ import AP1.Testcases._WordsCount;
 // https://codingbat.com/prob/p124620
 // Difficulty: 215.0
 
-public class WordsCount
+public final class WordsCount
 {
     /* Given an array of strings, return the count of the number of strings with the given length. */
 
@@ -19,12 +19,12 @@ public class WordsCount
     | wordsCount(["xx", "yyy", "x", "yy", "z"], 3) → 1 |
     |_________________________________________________*/
 
-    public static int wordsCount(String[] words, int len)
+    public static final int wordsCount(String[] words, int len)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _WordsCount.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

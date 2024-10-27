@@ -1,9 +1,9 @@
 package String1.Testcases;
 import String1.Without2;
 
-public class _Without2
+public final class _Without2
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "without2(\"HelloHe\")",
         "without2(\"HelloHi\")",
         "without2(\"Hi\")",
@@ -15,7 +15,7 @@ public class _Without2
         "without2(\"Fruits\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "lloHe",
         "HelloHi",
         "",
@@ -27,9 +27,9 @@ public class _Without2
         "Fruits",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             Without2.without2("HelloHe"),
             Without2.without2("HelloHi"),
             Without2.without2("Hi"),

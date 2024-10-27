@@ -4,7 +4,7 @@ import Logic1.Testcases._DateFashion;
 // https://codingbat.com/prob/p103360
 // Difficulty: 106.0
 
-public class DateFashion
+public final class DateFashion
 {
     /* You and your date are trying to get a table at a restaurant. 
     The parameter "you" is the stylishness of your clothes, 
@@ -31,12 +31,12 @@ public class DateFashion
     | dateFashion(6, 2)  → 0 |
     |_______________________*/
 
-    public static int dateFashion(int you, int date)
+    public static final int dateFashion(int you, int date)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _DateFashion.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

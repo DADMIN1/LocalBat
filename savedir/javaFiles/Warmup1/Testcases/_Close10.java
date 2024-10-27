@@ -1,9 +1,9 @@
 package Warmup1.Testcases;
 import Warmup1.Close10;
 
-public class _Close10
+public final class _Close10
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "close10(8, 13)",
         "close10(13, 8)",
         "close10(13, 7)",
@@ -17,7 +17,7 @@ public class _Close10
         "close10(10, 10)",
     };
 
-    static int[] expectedResults = {
+    static final int[] expectedResults = {
         8,
         8,
         0,
@@ -31,9 +31,9 @@ public class _Close10
         0,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] resultsArray = {
+        final int[] resultsArray = {
             Close10.close10(8, 13),
             Close10.close10(13, 8),
             Close10.close10(13, 7),

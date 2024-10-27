@@ -4,7 +4,7 @@ import Array2.Testcases._TwoTwo;
 // https://codingbat.com/prob/p102145
 // Difficulty: 257.0
 
-public class TwoTwo
+public final class TwoTwo
 {
     /* Given an array of ints, return true if every 2 that appears in the array is next to another 2. */
 
@@ -30,12 +30,12 @@ public class TwoTwo
     | twoTwo([2, 2, 5, 2])    → false |
     |________________________________*/
 
-    public static boolean twoTwo(int[] nums)
+    public static final boolean twoTwo(int[] nums)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _TwoTwo.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

@@ -1,9 +1,9 @@
 package Array1.Testcases;
 import Array1.CommonEnd;
 
-public class _CommonEnd
+public final class _CommonEnd
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "commonEnd([1, 2, 3], [7, 3])",
         "commonEnd([1, 2, 3], [7, 3, 2])",
         "commonEnd([1, 2, 3], [1, 3])",
@@ -11,7 +11,7 @@ public class _CommonEnd
         "commonEnd([1, 2, 3], [2])",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         false,
         true,
@@ -19,15 +19,15 @@ public class _CommonEnd
         false,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] a0 = { 1, 2, 3 }; int[] b0 = { 7, 3 }; 
-        int[] a1 = { 1, 2, 3 }; int[] b1 = { 7, 3, 2 }; 
-        int[] a2 = { 1, 2, 3 }; int[] b2 = { 1, 3 }; 
-        int[] a3 = { 1, 2, 3 }; int[] b3 = { 1 }; 
-        int[] a4 = { 1, 2, 3 }; int[] b4 = { 2 }; 
+        final int[] a0 = { 1, 2, 3 }; final int[] b0 = { 7, 3 }; 
+        final int[] a1 = { 1, 2, 3 }; final int[] b1 = { 7, 3, 2 }; 
+        final int[] a2 = { 1, 2, 3 }; final int[] b2 = { 1, 3 }; 
+        final int[] a3 = { 1, 2, 3 }; final int[] b3 = { 1 }; 
+        final int[] a4 = { 1, 2, 3 }; final int[] b4 = { 2 }; 
 
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             CommonEnd.commonEnd(a0, b0),
             CommonEnd.commonEnd(a1, b1),
             CommonEnd.commonEnd(a2, b2),

@@ -4,7 +4,7 @@ import AP1.Testcases._ScoresAverage;
 // https://codingbat.com/prob/p123837
 // Difficulty: 212.0
 
-public class ScoresAverage
+public final class ScoresAverage
 {
     /* Given an array of scores, compute the int average of the first half and the second half, 
     and return whichever is larger. We'll say that the second half begins at index length/2. 
@@ -26,12 +26,12 @@ public class ScoresAverage
     | scoresAverage([5, 4, 5, 6, 2, 1, 2, 3]) → 5 |
     |____________________________________________*/
 
-    public static int scoresAverage(int[] scores)
+    public static final int scoresAverage(int[] scores)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _ScoresAverage.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

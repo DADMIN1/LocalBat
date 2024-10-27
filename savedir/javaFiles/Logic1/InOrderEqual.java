@@ -4,7 +4,7 @@ import Logic1.Testcases._InOrderEqual;
 // https://codingbat.com/prob/p140272
 // Difficulty: 142.0
 
-public class InOrderEqual
+public final class InOrderEqual
 {
     /* Given three ints, a b c, return true if they are in strict increasing order, 
     such as 2 5 11, or 5 6 7, but not 6 5 7 or 5 5 7. However, 
@@ -30,12 +30,12 @@ public class InOrderEqual
     | inOrderEqual(0, 1, 0, true)   → false |
     |______________________________________*/
 
-    public static boolean inOrderEqual(int a, int b, int c, boolean equalOk)
+    public static final boolean inOrderEqual(int a, int b, int c, boolean equalOk)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _InOrderEqual.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

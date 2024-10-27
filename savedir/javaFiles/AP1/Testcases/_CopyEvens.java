@@ -3,9 +3,9 @@ import AP1.CopyEvens;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class _CopyEvens
+public final class _CopyEvens
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "copyEvens([3, 2, 4, 5, 8], 2)",
         "copyEvens([3, 2, 4, 5, 8], 3)",
         "copyEvens([6, 1, 2, 4, 5, 8], 3)",
@@ -20,7 +20,7 @@ public class _CopyEvens
         "copyEvens([2, 8, 4], 2)",
     };
 
-    static int[][] expectedResults = {
+    static final int[][] expectedResults = {
         {2, 4},
         {2, 4, 8},
         {6, 2, 4},
@@ -35,7 +35,7 @@ public class _CopyEvens
         {2, 8},
     };
 
-    public static String printArray(int[] array)
+    public static final String printArray(int[] array)
     {
         String result = "[";
         for (int a: array) { result += a+", "; }
@@ -43,22 +43,22 @@ public class _CopyEvens
         return result + "]";
     }
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 3, 2, 4, 5, 8 }; 
-        int[] nums1 = { 3, 2, 4, 5, 8 }; 
-        int[] nums2 = { 6, 1, 2, 4, 5, 8 }; 
-        int[] nums3 = { 6, 1, 2, 4, 5, 8 }; 
-        int[] nums4 = { 3, 1, 4, 1, 5 }; 
-        int[] nums5 = { 2 }; 
-        int[] nums6 = { 6, 2, 4, 8 }; 
-        int[] nums7 = { 6, 2, 4, 8 }; 
-        int[] nums8 = { 6, 2, 4, 8 }; 
-        int[] nums9 = { 1, 8, 4 }; 
-        int[] nums10 = { 1, 8, 4 }; 
-        int[] nums11 = { 2, 8, 4 }; 
+        final int[] nums0 = { 3, 2, 4, 5, 8 }; 
+        final int[] nums1 = { 3, 2, 4, 5, 8 }; 
+        final int[] nums2 = { 6, 1, 2, 4, 5, 8 }; 
+        final int[] nums3 = { 6, 1, 2, 4, 5, 8 }; 
+        final int[] nums4 = { 3, 1, 4, 1, 5 }; 
+        final int[] nums5 = { 2 }; 
+        final int[] nums6 = { 6, 2, 4, 8 }; 
+        final int[] nums7 = { 6, 2, 4, 8 }; 
+        final int[] nums8 = { 6, 2, 4, 8 }; 
+        final int[] nums9 = { 1, 8, 4 }; 
+        final int[] nums10 = { 1, 8, 4 }; 
+        final int[] nums11 = { 2, 8, 4 }; 
 
-        int[][] resultsArray = {
+        final int[][] resultsArray = {
             CopyEvens.copyEvens(nums0, 2),
             CopyEvens.copyEvens(nums1, 3),
             CopyEvens.copyEvens(nums2, 3),

@@ -1,9 +1,9 @@
 package Warmup2.Testcases;
 import Warmup2.FrontTimes;
 
-public class _FrontTimes
+public final class _FrontTimes
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "frontTimes(\"Chocolate\", 2)",
         "frontTimes(\"Chocolate\", 3)",
         "frontTimes(\"Abc\", 3)",
@@ -13,7 +13,7 @@ public class _FrontTimes
         "frontTimes(\"Abc\", 0)",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "ChoCho",
         "ChoChoCho",
         "AbcAbcAbc",
@@ -23,9 +23,9 @@ public class _FrontTimes
         "",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             FrontTimes.frontTimes("Chocolate", 2),
             FrontTimes.frontTimes("Chocolate", 3),
             FrontTimes.frontTimes("Abc", 3),

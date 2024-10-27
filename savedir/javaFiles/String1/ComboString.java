@@ -4,7 +4,7 @@ import String1.Testcases._ComboString;
 // https://codingbat.com/prob/p168564
 // Difficulty: 127.0
 
-public class ComboString
+public final class ComboString
 {
     /* Given 2 strings, a and b, return a string of the form short+long+short, 
     with the shorter string on the outside and the longer string on the inside. 
@@ -26,12 +26,12 @@ public class ComboString
     | comboString("xyz", "ab")   → "abxyzab"    |
     |__________________________________________*/
 
-    public static String comboString(String a, String b)
+    public static final String comboString(String a, String b)
     {
         return "";
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _ComboString.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

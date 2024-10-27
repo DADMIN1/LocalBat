@@ -3,9 +3,9 @@ import Array1.MaxEnd3;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class _MaxEnd3
+public final class _MaxEnd3
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "maxEnd3([1, 2, 3])",
         "maxEnd3([11, 5, 9])",
         "maxEnd3([2, 11, 3])",
@@ -16,7 +16,7 @@ public class _MaxEnd3
         "maxEnd3([0, 0, 1])",
     };
 
-    static int[][] expectedResults = {
+    static final int[][] expectedResults = {
         {3, 3, 3},
         {11, 11, 11},
         {3, 3, 3},
@@ -27,7 +27,7 @@ public class _MaxEnd3
         {1, 1, 1},
     };
 
-    public static String printArray(int[] array)
+    public static final String printArray(int[] array)
     {
         String result = "[";
         for (int a: array) { result += a+", "; }
@@ -35,18 +35,18 @@ public class _MaxEnd3
         return result + "]";
     }
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 1, 2, 3 }; 
-        int[] nums1 = { 11, 5, 9 }; 
-        int[] nums2 = { 2, 11, 3 }; 
-        int[] nums3 = { 11, 3, 3 }; 
-        int[] nums4 = { 3, 11, 11 }; 
-        int[] nums5 = { 2, 2, 2 }; 
-        int[] nums6 = { 2, 11, 2 }; 
-        int[] nums7 = { 0, 0, 1 }; 
+        final int[] nums0 = { 1, 2, 3 }; 
+        final int[] nums1 = { 11, 5, 9 }; 
+        final int[] nums2 = { 2, 11, 3 }; 
+        final int[] nums3 = { 11, 3, 3 }; 
+        final int[] nums4 = { 3, 11, 11 }; 
+        final int[] nums5 = { 2, 2, 2 }; 
+        final int[] nums6 = { 2, 11, 2 }; 
+        final int[] nums7 = { 0, 0, 1 }; 
 
-        int[][] resultsArray = {
+        final int[][] resultsArray = {
             MaxEnd3.maxEnd3(nums0),
             MaxEnd3.maxEnd3(nums1),
             MaxEnd3.maxEnd3(nums2),

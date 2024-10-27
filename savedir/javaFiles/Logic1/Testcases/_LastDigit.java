@@ -1,9 +1,9 @@
 package Logic1.Testcases;
 import Logic1.LastDigit;
 
-public class _LastDigit
+public final class _LastDigit
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "lastDigit(23, 19, 13)",
         "lastDigit(23, 19, 12)",
         "lastDigit(23, 19, 3)",
@@ -19,7 +19,7 @@ public class _LastDigit
         "lastDigit(0, 11, 0)",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         false,
         true,
@@ -35,9 +35,9 @@ public class _LastDigit
         true,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             LastDigit.lastDigit(23, 19, 13),
             LastDigit.lastDigit(23, 19, 12),
             LastDigit.lastDigit(23, 19, 3),

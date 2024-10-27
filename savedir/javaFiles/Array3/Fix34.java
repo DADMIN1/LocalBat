@@ -4,7 +4,7 @@ import Array3.Testcases._Fix34;
 // https://codingbat.com/prob/p159339
 // Difficulty: 306.0
 
-public class Fix34
+public final class Fix34
 {
     /* Return an array that contains exactly the same numbers as the given array, 
     but rearranged so that every 3 is immediately followed by a 4. 
@@ -30,12 +30,12 @@ public class Fix34
     | fix34([3, 1, 1, 3, 4, 4])                   → [3, 4, 1, 3, 4, 1]                   |
     |___________________________________________________________________________________*/
 
-    public static int[] fix34(int[] nums)
+    public static final int[] fix34(int[] nums)
     {
         return new int[]{0};
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _Fix34.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

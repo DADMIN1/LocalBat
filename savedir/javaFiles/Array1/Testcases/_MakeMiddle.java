@@ -3,9 +3,9 @@ import Array1.MakeMiddle;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class _MakeMiddle
+public final class _MakeMiddle
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "makeMiddle([1, 2, 3, 4])",
         "makeMiddle([7, 1, 2, 3, 4, 9])",
         "makeMiddle([1, 2])",
@@ -13,7 +13,7 @@ public class _MakeMiddle
         "makeMiddle([9, 0, 4, 3, 9, 1])",
     };
 
-    static int[][] expectedResults = {
+    static final int[][] expectedResults = {
         {2, 3},
         {2, 3},
         {1, 2},
@@ -21,7 +21,7 @@ public class _MakeMiddle
         {4, 3},
     };
 
-    public static String printArray(int[] array)
+    public static final String printArray(int[] array)
     {
         String result = "[";
         for (int a: array) { result += a+", "; }
@@ -29,15 +29,15 @@ public class _MakeMiddle
         return result + "]";
     }
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 1, 2, 3, 4 }; 
-        int[] nums1 = { 7, 1, 2, 3, 4, 9 }; 
-        int[] nums2 = { 1, 2 }; 
-        int[] nums3 = { 5, 2, 4, 7 }; 
-        int[] nums4 = { 9, 0, 4, 3, 9, 1 }; 
+        final int[] nums0 = { 1, 2, 3, 4 }; 
+        final int[] nums1 = { 7, 1, 2, 3, 4, 9 }; 
+        final int[] nums2 = { 1, 2 }; 
+        final int[] nums3 = { 5, 2, 4, 7 }; 
+        final int[] nums4 = { 9, 0, 4, 3, 9, 1 }; 
 
-        int[][] resultsArray = {
+        final int[][] resultsArray = {
             MakeMiddle.makeMiddle(nums0),
             MakeMiddle.makeMiddle(nums1),
             MakeMiddle.makeMiddle(nums2),

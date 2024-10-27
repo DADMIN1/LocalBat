@@ -4,7 +4,7 @@ import Warmup1.Testcases._Max1020;
 // https://codingbat.com/prob/p177372
 // Difficulty: 178.0
 
-public class Max1020
+public final class Max1020
 {
     /* Given 2 positive int values, return the larger value that is in the range 10..20 inclusive, 
     or return 0 if neither is in that range. */
@@ -25,12 +25,12 @@ public class Max1020
     | max1020(17, 16) → 17 |
     |_____________________*/
 
-    public static int max1020(int a, int b)
+    public static final int max1020(int a, int b)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _Max1020.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

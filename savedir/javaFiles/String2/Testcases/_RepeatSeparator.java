@@ -1,9 +1,9 @@
 package String2.Testcases;
 import String2.RepeatSeparator;
 
-public class _RepeatSeparator
+public final class _RepeatSeparator
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "repeatSeparator(\"Word\", \"X\", 3)",
         "repeatSeparator(\"This\", \"And\", 2)",
         "repeatSeparator(\"This\", \"And\", 1)",
@@ -17,7 +17,7 @@ public class _RepeatSeparator
         "repeatSeparator(\"XYZ\", \"a\", 2)",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "WordXWordXWord",
         "ThisAndThis",
         "This",
@@ -31,9 +31,9 @@ public class _RepeatSeparator
         "XYZaXYZ",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             RepeatSeparator.repeatSeparator("Word", "X", 3),
             RepeatSeparator.repeatSeparator("This", "And", 2),
             RepeatSeparator.repeatSeparator("This", "And", 1),

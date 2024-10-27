@@ -1,9 +1,9 @@
 package Warmup2.Testcases;
 import Warmup2.DoubleX;
 
-public class _DoubleX
+public final class _DoubleX
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "doubleX(\"axxbb\")",
         "doubleX(\"axaxax\")",
         "doubleX(\"xxxxx\")",
@@ -17,7 +17,7 @@ public class _DoubleX
         "doubleX(\"xaxx\")",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         false,
         true,
@@ -31,9 +31,9 @@ public class _DoubleX
         false,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             DoubleX.doubleX("axxbb"),
             DoubleX.doubleX("axaxax"),
             DoubleX.doubleX("xxxxx"),

@@ -4,7 +4,7 @@ import Logic2.Testcases._LuckySum;
 // https://codingbat.com/prob/p130788
 // Difficulty: 209.0
 
-public class LuckySum
+public final class LuckySum
 {
     /* Given 3 int values, a b c, return their sum. However, 
     if one of the values is 13 then it does not count towards the sum and values to its right do not count. 
@@ -27,12 +27,12 @@ public class LuckySum
     | luckySum(3, 3, 13)  → 6  |
     |_________________________*/
 
-    public static int luckySum(int a, int b, int c)
+    public static final int luckySum(int a, int b, int c)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _LuckySum.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

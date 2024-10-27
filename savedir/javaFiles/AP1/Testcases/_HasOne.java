@@ -1,9 +1,9 @@
 package AP1.Testcases;
 import AP1.HasOne;
 
-public class _HasOne
+public final class _HasOne
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "hasOne(10)",
         "hasOne(22)",
         "hasOne(220)",
@@ -17,7 +17,7 @@ public class _HasOne
         "hasOne(56556)",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         false,
         false,
@@ -31,9 +31,9 @@ public class _HasOne
         false,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             HasOne.hasOne(10),
             HasOne.hasOne(22),
             HasOne.hasOne(220),

@@ -1,9 +1,9 @@
 package AP1.Testcases;
 import AP1.ScoresSpecial;
 
-public class _ScoresSpecial
+public final class _ScoresSpecial
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "scoresSpecial([12, 10, 4], [2, 20, 30])",
         "scoresSpecial([20, 10, 4], [2, 20, 10])",
         "scoresSpecial([12, 11, 4], [2, 20, 31])",
@@ -18,7 +18,7 @@ public class _ScoresSpecial
         "scoresSpecial([14, 10, 4], [4, 20, 30])",
     };
 
-    static int[] expectedResults = {
+    static final int[] expectedResults = {
         40,
         40,
         20,
@@ -33,22 +33,22 @@ public class _ScoresSpecial
         40,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] a0 = { 12, 10, 4 }; int[] b0 = { 2, 20, 30 }; 
-        int[] a1 = { 20, 10, 4 }; int[] b1 = { 2, 20, 10 }; 
-        int[] a2 = { 12, 11, 4 }; int[] b2 = { 2, 20, 31 }; 
-        int[] a3 = { 1, 20, 2, 50 }; int[] b3 = { 3, 4, 5 }; 
-        int[] a4 = { 3, 4, 5 }; int[] b4 = { 1, 50, 2, 20 }; 
-        int[] a5 = { 10, 4, 20, 30 }; int[] b5 = { 20 }; 
-        int[] a6 = { 10, 4, 20, 30 }; int[] b6 = { 20 }; 
-        int[] a7 = { 10, 4, 20, 30 }; int[] b7 = { 3, 20, 99 }; 
-        int[] a8 = { 10, 4, 20, 30 }; int[] b8 = { 30, 20, 99 }; 
-        int[] a9 = {  }; int[] b9 = { 2 }; 
-        int[] a10 = {  }; int[] b10 = { 20 }; 
-        int[] a11 = { 14, 10, 4 }; int[] b11 = { 4, 20, 30 }; 
+        final int[] a0 = { 12, 10, 4 }; final int[] b0 = { 2, 20, 30 }; 
+        final int[] a1 = { 20, 10, 4 }; final int[] b1 = { 2, 20, 10 }; 
+        final int[] a2 = { 12, 11, 4 }; final int[] b2 = { 2, 20, 31 }; 
+        final int[] a3 = { 1, 20, 2, 50 }; final int[] b3 = { 3, 4, 5 }; 
+        final int[] a4 = { 3, 4, 5 }; final int[] b4 = { 1, 50, 2, 20 }; 
+        final int[] a5 = { 10, 4, 20, 30 }; final int[] b5 = { 20 }; 
+        final int[] a6 = { 10, 4, 20, 30 }; final int[] b6 = { 20 }; 
+        final int[] a7 = { 10, 4, 20, 30 }; final int[] b7 = { 3, 20, 99 }; 
+        final int[] a8 = { 10, 4, 20, 30 }; final int[] b8 = { 30, 20, 99 }; 
+        final int[] a9 = {  }; final int[] b9 = { 2 }; 
+        final int[] a10 = {  }; final int[] b10 = { 20 }; 
+        final int[] a11 = { 14, 10, 4 }; final int[] b11 = { 4, 20, 30 }; 
 
-        int[] resultsArray = {
+        final int[] resultsArray = {
             ScoresSpecial.scoresSpecial(a0, b0),
             ScoresSpecial.scoresSpecial(a1, b1),
             ScoresSpecial.scoresSpecial(a2, b2),

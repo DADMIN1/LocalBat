@@ -3,9 +3,9 @@ import Array2.ZeroMax;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class _ZeroMax
+public final class _ZeroMax
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "zeroMax([0, 5, 0, 3])",
         "zeroMax([0, 4, 0, 3])",
         "zeroMax([0, 1, 0])",
@@ -20,7 +20,7 @@ public class _ZeroMax
         "zeroMax([7, 0, 1, 0, 0, 7])",
     };
 
-    static int[][] expectedResults = {
+    static final int[][] expectedResults = {
         {5, 5, 3, 3},
         {3, 4, 3, 3},
         {1, 1, 0},
@@ -35,7 +35,7 @@ public class _ZeroMax
         {7, 7, 1, 7, 7, 7},
     };
 
-    public static String printArray(int[] array)
+    public static final String printArray(int[] array)
     {
         String result = "[";
         for (int a: array) { result += a+", "; }
@@ -43,22 +43,22 @@ public class _ZeroMax
         return result + "]";
     }
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 0, 5, 0, 3 }; 
-        int[] nums1 = { 0, 4, 0, 3 }; 
-        int[] nums2 = { 0, 1, 0 }; 
-        int[] nums3 = { 0, 1, 5 }; 
-        int[] nums4 = { 0, 2, 0 }; 
-        int[] nums5 = { 1 }; 
-        int[] nums6 = { 0 }; 
-        int[] nums7 = {  }; 
-        int[] nums8 = { 7, 0, 4, 3, 0, 2 }; 
-        int[] nums9 = { 7, 0, 4, 3, 0, 1 }; 
-        int[] nums10 = { 7, 0, 4, 3, 0, 0 }; 
-        int[] nums11 = { 7, 0, 1, 0, 0, 7 }; 
+        final int[] nums0 = { 0, 5, 0, 3 }; 
+        final int[] nums1 = { 0, 4, 0, 3 }; 
+        final int[] nums2 = { 0, 1, 0 }; 
+        final int[] nums3 = { 0, 1, 5 }; 
+        final int[] nums4 = { 0, 2, 0 }; 
+        final int[] nums5 = { 1 }; 
+        final int[] nums6 = { 0 }; 
+        final int[] nums7 = {  }; 
+        final int[] nums8 = { 7, 0, 4, 3, 0, 2 }; 
+        final int[] nums9 = { 7, 0, 4, 3, 0, 1 }; 
+        final int[] nums10 = { 7, 0, 4, 3, 0, 0 }; 
+        final int[] nums11 = { 7, 0, 1, 0, 0, 7 }; 
 
-        int[][] resultsArray = {
+        final int[][] resultsArray = {
             ZeroMax.zeroMax(nums0),
             ZeroMax.zeroMax(nums1),
             ZeroMax.zeroMax(nums2),

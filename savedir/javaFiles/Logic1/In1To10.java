@@ -4,7 +4,7 @@ import Logic1.Testcases._In1To10;
 // https://codingbat.com/prob/p137365
 // Difficulty: 121.0
 
-public class In1To10
+public final class In1To10
 {
     /* Given a number n, return true if n is in the range 1..10, 
     inclusive. Unless outsideMode is true, in which case return true if the number is less or equal to 1, 
@@ -30,12 +30,12 @@ public class In1To10
     | in1To10(-99, true) → true  |
     |___________________________*/
 
-    public static boolean in1To10(int n, boolean outsideMode)
+    public static final boolean in1To10(int n, boolean outsideMode)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _In1To10.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

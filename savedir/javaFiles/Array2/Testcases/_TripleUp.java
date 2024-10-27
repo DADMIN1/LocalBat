@@ -1,9 +1,9 @@
 package Array2.Testcases;
 import Array2.TripleUp;
 
-public class _TripleUp
+public final class _TripleUp
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "tripleUp([1, 4, 5, 6, 2])",
         "tripleUp([1, 2, 3])",
         "tripleUp([1, 2, 4])",
@@ -18,7 +18,7 @@ public class _TripleUp
         "tripleUp([2, 3, 5, 6, 8, 9, 2, 3])",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         true,
         false,
@@ -33,22 +33,22 @@ public class _TripleUp
         false,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 1, 4, 5, 6, 2 }; 
-        int[] nums1 = { 1, 2, 3 }; 
-        int[] nums2 = { 1, 2, 4 }; 
-        int[] nums3 = { 1, 2, 4, 5, 7, 6, 5, 6, 7, 6 }; 
-        int[] nums4 = { 1, 2, 4, 5, 7, 6, 5, 7, 7, 6 }; 
-        int[] nums5 = { 1, 2 }; 
-        int[] nums6 = { 1 }; 
-        int[] nums7 = {  }; 
-        int[] nums8 = { 10, 9, 8, -100, -99, -98, 100 }; 
-        int[] nums9 = { 10, 9, 8, -100, -99, 99, 100 }; 
-        int[] nums10 = { -100, -99, -99, 100, 101, 102 }; 
-        int[] nums11 = { 2, 3, 5, 6, 8, 9, 2, 3 }; 
+        final int[] nums0 = { 1, 4, 5, 6, 2 }; 
+        final int[] nums1 = { 1, 2, 3 }; 
+        final int[] nums2 = { 1, 2, 4 }; 
+        final int[] nums3 = { 1, 2, 4, 5, 7, 6, 5, 6, 7, 6 }; 
+        final int[] nums4 = { 1, 2, 4, 5, 7, 6, 5, 7, 7, 6 }; 
+        final int[] nums5 = { 1, 2 }; 
+        final int[] nums6 = { 1 }; 
+        final int[] nums7 = {  }; 
+        final int[] nums8 = { 10, 9, 8, -100, -99, -98, 100 }; 
+        final int[] nums9 = { 10, 9, 8, -100, -99, 99, 100 }; 
+        final int[] nums10 = { -100, -99, -99, 100, 101, 102 }; 
+        final int[] nums11 = { 2, 3, 5, 6, 8, 9, 2, 3 }; 
 
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             TripleUp.tripleUp(nums0),
             TripleUp.tripleUp(nums1),
             TripleUp.tripleUp(nums2),

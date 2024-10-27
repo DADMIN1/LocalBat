@@ -1,9 +1,9 @@
 package Recursion1.Testcases;
 import Recursion1.PairStar;
 
-public class _PairStar
+public final class _PairStar
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "pairStar(\"hello\")",
         "pairStar(\"xxyy\")",
         "pairStar(\"aaaa\")",
@@ -16,7 +16,7 @@ public class _PairStar
         "pairStar(\"abbba\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "hel*lo",
         "x*xy*y",
         "a*a*a*a",
@@ -29,9 +29,9 @@ public class _PairStar
         "ab*b*ba",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             PairStar.pairStar("hello"),
             PairStar.pairStar("xxyy"),
             PairStar.pairStar("aaaa"),

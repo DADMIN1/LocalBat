@@ -1,9 +1,9 @@
 package Logic1.Testcases;
 import Logic1.GreenTicket;
 
-public class _GreenTicket
+public final class _GreenTicket
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "greenTicket(1, 2, 3)",
         "greenTicket(2, 2, 2)",
         "greenTicket(1, 1, 2)",
@@ -18,7 +18,7 @@ public class _GreenTicket
         "greenTicket(9, 0, 9)",
     };
 
-    static int[] expectedResults = {
+    static final int[] expectedResults = {
         0,
         20,
         10,
@@ -33,9 +33,9 @@ public class _GreenTicket
         10,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] resultsArray = {
+        final int[] resultsArray = {
             GreenTicket.greenTicket(1, 2, 3),
             GreenTicket.greenTicket(2, 2, 2),
             GreenTicket.greenTicket(1, 1, 2),

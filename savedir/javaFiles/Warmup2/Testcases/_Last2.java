@@ -1,9 +1,9 @@
 package Warmup2.Testcases;
 import Warmup2.Last2;
 
-public class _Last2
+public final class _Last2
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "last2(\"hixxhi\")",
         "last2(\"xaxxaxaxx\")",
         "last2(\"axxxaaxx\")",
@@ -19,7 +19,7 @@ public class _Last2
         "last2(\"\")",
     };
 
-    static int[] expectedResults = {
+    static final int[] expectedResults = {
         1,
         1,
         2,
@@ -35,9 +35,9 @@ public class _Last2
         0,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] resultsArray = {
+        final int[] resultsArray = {
             Last2.last2("hixxhi"),
             Last2.last2("xaxxaxaxx"),
             Last2.last2("axxxaaxx"),

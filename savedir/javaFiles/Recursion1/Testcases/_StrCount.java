@@ -1,9 +1,9 @@
 package Recursion1.Testcases;
 import Recursion1.StrCount;
 
-public class _StrCount
+public final class _StrCount
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "strCount(\"catcowcat\", \"cat\")",
         "strCount(\"catcowcat\", \"cow\")",
         "strCount(\"catcowcat\", \"dog\")",
@@ -20,7 +20,7 @@ public class _StrCount
         "strCount(\"aaabababab\", \"b\")",
     };
 
-    static int[] expectedResults = {
+    static final int[] expectedResults = {
         2,
         1,
         0,
@@ -37,9 +37,9 @@ public class _StrCount
         4,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] resultsArray = {
+        final int[] resultsArray = {
             StrCount.strCount("catcowcat", "cat"),
             StrCount.strCount("catcowcat", "cow"),
             StrCount.strCount("catcowcat", "dog"),

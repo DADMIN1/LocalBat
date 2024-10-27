@@ -4,7 +4,7 @@ import String3.Testcases._MaxBlock;
 // https://codingbat.com/prob/p179479
 // Difficulty: 327.0
 
-public class MaxBlock
+public final class MaxBlock
 {
     /* Given a string, return the length of the largest "block" in the string. 
     A block is a run of adjacent chars that are the same. */
@@ -25,12 +25,12 @@ public class MaxBlock
     | maxBlock("XX2222BBBbbXX2222") → 4 |
     |__________________________________*/
 
-    public static int maxBlock(String str)
+    public static final int maxBlock(String str)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _MaxBlock.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

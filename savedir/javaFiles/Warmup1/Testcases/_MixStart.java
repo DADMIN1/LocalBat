@@ -1,9 +1,9 @@
 package Warmup1.Testcases;
 import Warmup1.MixStart;
 
-public class _MixStart
+public final class _MixStart
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "mixStart(\"mix snacks\")",
         "mixStart(\"pix snacks\")",
         "mixStart(\"piz snacks\")",
@@ -13,7 +13,7 @@ public class _MixStart
         "mixStart(\"\")",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         true,
         false,
@@ -23,9 +23,9 @@ public class _MixStart
         false,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             MixStart.mixStart("mix snacks"),
             MixStart.mixStart("pix snacks"),
             MixStart.mixStart("piz snacks"),

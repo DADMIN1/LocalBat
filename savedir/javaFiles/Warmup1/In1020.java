@@ -4,7 +4,7 @@ import Warmup1.Testcases._In1020;
 // https://codingbat.com/prob/p144535
 // Difficulty: 151.0
 
-public class In1020
+public final class In1020
 {
     /* Given 2 int values, return true if either of them is in the range 10..20 inclusive. */
 
@@ -20,12 +20,12 @@ public class In1020
     | in1020(9, 9)   → false |
     |_______________________*/
 
-    public static boolean in1020(int a, int b)
+    public static final boolean in1020(int a, int b)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _In1020.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

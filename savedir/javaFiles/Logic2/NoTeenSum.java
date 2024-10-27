@@ -4,7 +4,7 @@ import Logic2.Testcases._NoTeenSum;
 // https://codingbat.com/prob/p182879
 // Difficulty: 212.0
 
-public class NoTeenSum
+public final class NoTeenSum
 {
     /* Given 3 int values, a b c, return their sum. However, 
     if any of the values is a teen -- in the range 13..19 inclusive -- then that value counts as 0, 
@@ -34,12 +34,12 @@ public class NoTeenSum
     | noTeenSum(17, 19, 18) → 0  |
     |___________________________*/
 
-    public static int noTeenSum(int a, int b, int c)
+    public static final int noTeenSum(int a, int b, int c)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _NoTeenSum.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

@@ -3,9 +3,9 @@ import Map1.Topping3;
 import java.util.Map;
 import java.util.HashMap;
 
-public class _Topping3
+public final class _Topping3
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "topping3({\"potato\": \"ketchup\"})",
         "topping3({\"potato\": \"butter\"})",
         "topping3({\"salad\": \"oil\", \"potato\": \"ketchup\"})",
@@ -14,7 +14,7 @@ public class _Topping3
         "topping3({\"salad\": \"pepper\", \"fries\": \"salt\"})",
     };
 
-    static Map<?,?>[] expectedResults = {
+    static final Map<?,?>[] expectedResults = {
         Map.of("potato", "ketchup", "fries", "ketchup"),
         Map.of("potato", "butter", "fries", "butter"),
         Map.of("spinach", "oil", "salad", "oil", "potato", "ketchup", "fries", "ketchup"),
@@ -23,9 +23,9 @@ public class _Topping3
         Map.of("spinach", "pepper", "salad", "pepper", "fries", "salt"),
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        Map<?,?>[] resultsArray = {
+        final Map<?,?>[] resultsArray = {
             Topping3.topping3(new HashMap<>(Map.of("potato", "ketchup"))),
             Topping3.topping3(new HashMap<>(Map.of("potato", "butter"))),
             Topping3.topping3(new HashMap<>(Map.of("salad", "oil", "potato", "ketchup"))),

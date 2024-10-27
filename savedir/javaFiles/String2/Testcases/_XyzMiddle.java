@@ -1,9 +1,9 @@
 package String2.Testcases;
 import String2.XyzMiddle;
 
-public class _XyzMiddle
+public final class _XyzMiddle
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "xyzMiddle(\"AAxyzBB\")",
         "xyzMiddle(\"AxyzBB\")",
         "xyzMiddle(\"AxyzBBB\")",
@@ -27,7 +27,7 @@ public class _XyzMiddle
         "xyzMiddle(\"xyzz\")",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         true,
         false,
@@ -51,9 +51,9 @@ public class _XyzMiddle
         true,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             XyzMiddle.xyzMiddle("AAxyzBB"),
             XyzMiddle.xyzMiddle("AxyzBB"),
             XyzMiddle.xyzMiddle("AxyzBBB"),

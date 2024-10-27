@@ -4,7 +4,7 @@ import Warmup1.Testcases._EndUp;
 // https://codingbat.com/prob/p125268
 // Difficulty: 187.0
 
-public class EndUp
+public final class EndUp
 {
     /* Given a string, return a new string where the last 3 chars are now in upper case. 
     If the string has less than 3 chars, uppercase whatever is there. 
@@ -22,12 +22,12 @@ public class EndUp
     | endUp("")         → ""         |
     |_______________________________*/
 
-    public static String endUp(String str)
+    public static final String endUp(String str)
     {
         return "";
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _EndUp.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

@@ -1,9 +1,9 @@
 package String2.Testcases;
 import String2.MixString;
 
-public class _MixString
+public final class _MixString
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "mixString(\"abc\", \"xyz\")",
         "mixString(\"Hi\", \"There\")",
         "mixString(\"xxxx\", \"There\")",
@@ -19,7 +19,7 @@ public class _MixString
         "mixString(\"Long\", \"So\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "axbycz",
         "HTihere",
         "xTxhxexre",
@@ -35,9 +35,9 @@ public class _MixString
         "LSoong",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             MixString.mixString("abc", "xyz"),
             MixString.mixString("Hi", "There"),
             MixString.mixString("xxxx", "There"),

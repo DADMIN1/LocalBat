@@ -1,9 +1,9 @@
 package String1.Testcases;
 import String1.TwoChar;
 
-public class _TwoChar
+public final class _TwoChar
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "twoChar(\"java\", 0)",
         "twoChar(\"java\", 2)",
         "twoChar(\"java\", 3)",
@@ -21,7 +21,7 @@ public class _TwoChar
         "twoChar(\"yay\", 0)",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "ja",
         "va",
         "ja",
@@ -39,9 +39,9 @@ public class _TwoChar
         "ya",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             TwoChar.twoChar("java", 0),
             TwoChar.twoChar("java", 2),
             TwoChar.twoChar("java", 3),

@@ -4,7 +4,7 @@ import String2.Testcases._XyzThere;
 // https://codingbat.com/prob/p136594
 // Difficulty: 218.0
 
-public class XyzThere
+public final class XyzThere
 {
     /* Return true if the given string contains an appearance of "xyz" where the xyz is not directly preceeded by a period (.). 
     So "xxyz" counts but "x.xyz" does not. */
@@ -28,12 +28,12 @@ public class XyzThere
     | xyzThere("1.xyz.xyz2.xyz") → false |
     |___________________________________*/
 
-    public static boolean xyzThere(String str)
+    public static final boolean xyzThere(String str)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _XyzThere.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

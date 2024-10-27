@@ -4,7 +4,7 @@ import Array1.Testcases._No23;
 // https://codingbat.com/prob/p175689
 // Difficulty: 139.0
 
-public class No23
+public final class No23
 {
     /* Given an int array length 2, return true if it does not contain a 2 or 3. */
 
@@ -24,12 +24,12 @@ public class No23
     | no23([8, 7]) → true  |
     |_____________________*/
 
-    public static boolean no23(int[] nums)
+    public static final boolean no23(int[] nums)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _No23.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

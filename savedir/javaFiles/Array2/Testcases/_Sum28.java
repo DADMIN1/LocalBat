@@ -1,9 +1,9 @@
 package Array2.Testcases;
 import Array2.Sum28;
 
-public class _Sum28
+public final class _Sum28
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "sum28([2, 3, 2, 2, 4, 2])",
         "sum28([2, 3, 2, 2, 4, 2, 2])",
         "sum28([1, 2, 3, 4])",
@@ -18,7 +18,7 @@ public class _Sum28
         "sum28([5, 2, 2, 2, 4, 2])",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         false,
         false,
@@ -33,22 +33,22 @@ public class _Sum28
         true,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 2, 3, 2, 2, 4, 2 }; 
-        int[] nums1 = { 2, 3, 2, 2, 4, 2, 2 }; 
-        int[] nums2 = { 1, 2, 3, 4 }; 
-        int[] nums3 = { 2, 2, 2, 2 }; 
-        int[] nums4 = { 1, 2, 2, 2, 2, 4 }; 
-        int[] nums5 = {  }; 
-        int[] nums6 = { 2 }; 
-        int[] nums7 = { 8 }; 
-        int[] nums8 = { 2, 2, 2 }; 
-        int[] nums9 = { 2, 2, 2, 2, 2 }; 
-        int[] nums10 = { 1, 2, 2, 1, 2, 2 }; 
-        int[] nums11 = { 5, 2, 2, 2, 4, 2 }; 
+        final int[] nums0 = { 2, 3, 2, 2, 4, 2 }; 
+        final int[] nums1 = { 2, 3, 2, 2, 4, 2, 2 }; 
+        final int[] nums2 = { 1, 2, 3, 4 }; 
+        final int[] nums3 = { 2, 2, 2, 2 }; 
+        final int[] nums4 = { 1, 2, 2, 2, 2, 4 }; 
+        final int[] nums5 = {  }; 
+        final int[] nums6 = { 2 }; 
+        final int[] nums7 = { 8 }; 
+        final int[] nums8 = { 2, 2, 2 }; 
+        final int[] nums9 = { 2, 2, 2, 2, 2 }; 
+        final int[] nums10 = { 1, 2, 2, 1, 2, 2 }; 
+        final int[] nums11 = { 5, 2, 2, 2, 4, 2 }; 
 
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             Sum28.sum28(nums0),
             Sum28.sum28(nums1),
             Sum28.sum28(nums2),

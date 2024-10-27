@@ -1,9 +1,9 @@
 package String2.Testcases;
 import String2.RepeatEnd;
 
-public class _RepeatEnd
+public final class _RepeatEnd
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "repeatEnd(\"Hello\", 3)",
         "repeatEnd(\"Hello\", 2)",
         "repeatEnd(\"Hello\", 1)",
@@ -14,7 +14,7 @@ public class _RepeatEnd
         "repeatEnd(\"\", 0)",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "llollollo",
         "lolo",
         "o",
@@ -25,9 +25,9 @@ public class _RepeatEnd
         "",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             RepeatEnd.repeatEnd("Hello", 3),
             RepeatEnd.repeatEnd("Hello", 2),
             RepeatEnd.repeatEnd("Hello", 1),

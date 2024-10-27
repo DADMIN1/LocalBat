@@ -4,7 +4,7 @@ import String3.Testcases._SumNumbers;
 // https://codingbat.com/prob/p121193
 // Difficulty: 330.0
 
-public class SumNumbers
+public final class SumNumbers
 {
     /* Given a string, return the sum of the numbers appearing in the string, 
     ignoring all other characters. A number is a series of 1 or more digit chars in a row. 
@@ -25,12 +25,12 @@ public class SumNumbers
     | sumNumbers("a22bbb3")   → 25   |
     |_______________________________*/
 
-    public static int sumNumbers(String str)
+    public static final int sumNumbers(String str)
     {
         return 0;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _SumNumbers.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

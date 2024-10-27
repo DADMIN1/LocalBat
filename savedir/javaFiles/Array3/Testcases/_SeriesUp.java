@@ -3,9 +3,9 @@ import Array3.SeriesUp;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class _SeriesUp
+public final class _SeriesUp
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "seriesUp(3)",
         "seriesUp(4)",
         "seriesUp(2)",
@@ -14,7 +14,7 @@ public class _SeriesUp
         "seriesUp(6)",
     };
 
-    static int[][] expectedResults = {
+    static final int[][] expectedResults = {
         {1, 1, 2, 1, 2, 3},
         {1, 1, 2, 1, 2, 3, 1, 2, 3, 4},
         {1, 1, 2},
@@ -23,7 +23,7 @@ public class _SeriesUp
         {1, 1, 2, 1, 2, 3, 1, 2, 3, 4, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 6},
     };
 
-    public static String printArray(int[] array)
+    public static final String printArray(int[] array)
     {
         String result = "[";
         for (int a: array) { result += a+", "; }
@@ -31,9 +31,9 @@ public class _SeriesUp
         return result + "]";
     }
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[][] resultsArray = {
+        final int[][] resultsArray = {
             SeriesUp.seriesUp(3),
             SeriesUp.seriesUp(4),
             SeriesUp.seriesUp(2),

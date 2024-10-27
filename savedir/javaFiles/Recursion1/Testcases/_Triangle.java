@@ -1,9 +1,9 @@
 package Recursion1.Testcases;
 import Recursion1.Triangle;
 
-public class _Triangle
+public final class _Triangle
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "triangle(0)",
         "triangle(1)",
         "triangle(2)",
@@ -14,7 +14,7 @@ public class _Triangle
         "triangle(7)",
     };
 
-    static int[] expectedResults = {
+    static final int[] expectedResults = {
         0,
         1,
         3,
@@ -25,9 +25,9 @@ public class _Triangle
         28,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] resultsArray = {
+        final int[] resultsArray = {
             Triangle.triangle(0),
             Triangle.triangle(1),
             Triangle.triangle(2),

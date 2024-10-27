@@ -1,9 +1,9 @@
 package Recursion2.Testcases;
 import Recursion2.GroupSum;
 
-public class _GroupSum
+public final class _GroupSum
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "groupSum(0, [2, 4, 8], 10)",
         "groupSum(0, [2, 4, 8], 14)",
         "groupSum(0, [2, 4, 8], 9)",
@@ -19,7 +19,7 @@ public class _GroupSum
         "groupSum(0, [10, 2, 2, 5], 9)",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         true,
         false,
@@ -35,23 +35,23 @@ public class _GroupSum
         true,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        int[] nums0 = { 2, 4, 8 }; 
-        int[] nums1 = { 2, 4, 8 }; 
-        int[] nums2 = { 2, 4, 8 }; 
-        int[] nums3 = { 2, 4, 8 }; 
-        int[] nums4 = { 2, 4, 8 }; 
-        int[] nums5 = { 2, 4, 8 }; 
-        int[] nums6 = { 1 }; 
-        int[] nums7 = { 9 }; 
-        int[] nums8 = { 9 }; 
-        int[] nums9 = {  }; 
-        int[] nums10 = { 10, 2, 2, 5 }; 
-        int[] nums11 = { 10, 2, 2, 5 }; 
-        int[] nums12 = { 10, 2, 2, 5 }; 
+        final int[] nums0 = { 2, 4, 8 }; 
+        final int[] nums1 = { 2, 4, 8 }; 
+        final int[] nums2 = { 2, 4, 8 }; 
+        final int[] nums3 = { 2, 4, 8 }; 
+        final int[] nums4 = { 2, 4, 8 }; 
+        final int[] nums5 = { 2, 4, 8 }; 
+        final int[] nums6 = { 1 }; 
+        final int[] nums7 = { 9 }; 
+        final int[] nums8 = { 9 }; 
+        final int[] nums9 = {  }; 
+        final int[] nums10 = { 10, 2, 2, 5 }; 
+        final int[] nums11 = { 10, 2, 2, 5 }; 
+        final int[] nums12 = { 10, 2, 2, 5 }; 
 
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             GroupSum.groupSum(0, nums0, 10),
             GroupSum.groupSum(0, nums1, 14),
             GroupSum.groupSum(0, nums2, 9),

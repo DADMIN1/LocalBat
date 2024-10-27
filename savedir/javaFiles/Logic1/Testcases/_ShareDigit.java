@@ -1,9 +1,9 @@
 package Logic1.Testcases;
 import Logic1.ShareDigit;
 
-public class _ShareDigit
+public final class _ShareDigit
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "shareDigit(12, 23)",
         "shareDigit(12, 43)",
         "shareDigit(12, 44)",
@@ -16,7 +16,7 @@ public class _ShareDigit
         "shareDigit(55, 44)",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         false,
         false,
@@ -29,9 +29,9 @@ public class _ShareDigit
         false,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             ShareDigit.shareDigit(12, 23),
             ShareDigit.shareDigit(12, 43),
             ShareDigit.shareDigit(12, 44),

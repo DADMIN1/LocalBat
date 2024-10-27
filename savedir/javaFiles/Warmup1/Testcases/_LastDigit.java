@@ -1,9 +1,9 @@
 package Warmup1.Testcases;
 import Warmup1.LastDigit;
 
-public class _LastDigit
+public final class _LastDigit
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "lastDigit(7, 17)",
         "lastDigit(6, 17)",
         "lastDigit(3, 113)",
@@ -13,7 +13,7 @@ public class _LastDigit
         "lastDigit(11, 0)",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         false,
         true,
@@ -23,9 +23,9 @@ public class _LastDigit
         false,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             LastDigit.lastDigit(7, 17),
             LastDigit.lastDigit(6, 17),
             LastDigit.lastDigit(3, 113),

@@ -1,9 +1,9 @@
 package Recursion1.Testcases;
 import Recursion1.ChangeXY;
 
-public class _ChangeXY
+public final class _ChangeXY
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "changeXY(\"codex\")",
         "changeXY(\"xxhixx\")",
         "changeXY(\"xhixhix\")",
@@ -16,7 +16,7 @@ public class _ChangeXY
         "changeXY(\"hihi\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "codey",
         "yyhiyy",
         "yhiyhiy",
@@ -29,9 +29,9 @@ public class _ChangeXY
         "hihi",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             ChangeXY.changeXY("codex"),
             ChangeXY.changeXY("xxhixx"),
             ChangeXY.changeXY("xhixhix"),

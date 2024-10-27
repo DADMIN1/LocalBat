@@ -1,9 +1,9 @@
 package String1.Testcases;
 import String1.MakeOutWord;
 
-public class _MakeOutWord
+public final class _MakeOutWord
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "makeOutWord(\"<<>>\", \"Yay\")",
         "makeOutWord(\"<<>>\", \"WooHoo\")",
         "makeOutWord(\"[[]]\", \"word\")",
@@ -11,7 +11,7 @@ public class _MakeOutWord
         "makeOutWord(\"abyz\", \"YAY\")",
     };
 
-    static String[] expectedResults = {
+    static final String[] expectedResults = {
         "<<Yay>>",
         "<<WooHoo>>",
         "[[word]]",
@@ -19,9 +19,9 @@ public class _MakeOutWord
         "abYAYyz",
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        String[] resultsArray = {
+        final String[] resultsArray = {
             MakeOutWord.makeOutWord("<<>>", "Yay"),
             MakeOutWord.makeOutWord("<<>>", "WooHoo"),
             MakeOutWord.makeOutWord("[[]]", "word"),

@@ -4,7 +4,7 @@ import String1.Testcases._StartWord;
 // https://codingbat.com/prob/p141494
 // Difficulty: 193.0
 
-public class StartWord
+public final class StartWord
 {
     /* Given a string and a second "word" string, 
     we'll say that the word matches the string if it appears at the front of the string, 
@@ -33,12 +33,12 @@ public class StartWord
     | startWord("kit", "cit")     → "kit"   |
     |______________________________________*/
 
-    public static String startWord(String str, String word)
+    public static final String startWord(String str, String word)
     {
         return "";
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _StartWord.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

@@ -4,7 +4,7 @@ import Warmup1.Testcases._LoneTeen;
 // https://codingbat.com/prob/p165701
 // Difficulty: 157.0
 
-public class LoneTeen
+public final class LoneTeen
 {
     /* We'll say that a number is "teen" if it is in the range 13..19 inclusive. 
     Given 2 int values, return true if one or the other is teen, 
@@ -28,12 +28,12 @@ public class LoneTeen
     | loneTeen(99, 99) → false |
     |_________________________*/
 
-    public static boolean loneTeen(int a, int b)
+    public static final boolean loneTeen(int a, int b)
     {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         _LoneTeen.Validate(true);  // pass 'false' to print failed tests only.
     }
 }

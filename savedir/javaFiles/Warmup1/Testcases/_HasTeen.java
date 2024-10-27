@@ -1,9 +1,9 @@
 package Warmup1.Testcases;
 import Warmup1.HasTeen;
 
-public class _HasTeen
+public final class _HasTeen
 {
-    static String[] testcaseStrings = {
+    static final String[] testcaseStrings = {
         "hasTeen(13, 20, 10)",
         "hasTeen(20, 19, 10)",
         "hasTeen(20, 10, 13)",
@@ -17,7 +17,7 @@ public class _HasTeen
         "hasTeen(11, 22, 22)",
     };
 
-    static boolean[] expectedResults = {
+    static final boolean[] expectedResults = {
         true,
         true,
         true,
@@ -31,9 +31,9 @@ public class _HasTeen
         false,
     };
 
-    public static void Validate(boolean printSuccess)
+    public static final void Validate(boolean printSuccess)
     {
-        boolean[] resultsArray = {
+        final boolean[] resultsArray = {
             HasTeen.hasTeen(13, 20, 10),
             HasTeen.hasTeen(20, 19, 10),
             HasTeen.hasTeen(20, 10, 13),
