@@ -10,30 +10,33 @@ public final class SpecialEleven
     Return true if the given non-negative number is special. 
     Use the % "mod" operator -- see Introduction to Mod */
 
-    /*___________________________
-    |         Testcases          |
-    |____________________________|
-    | specialEleven(22)  → true  |
-    | specialEleven(23)  → true  |
-    | specialEleven(24)  → false |
-    | specialEleven(21)  → false |
-    | specialEleven(11)  → true  |
-    | specialEleven(12)  → true  |
-    | specialEleven(10)  → false |
-    | specialEleven(9)   → false |
-    | specialEleven(8)   → false |
-    | specialEleven(0)   → true  |
-    | specialEleven(1)   → true  |
-    | specialEleven(2)   → false |
-    | specialEleven(121) → true  |
-    | specialEleven(122) → true  |
-    | specialEleven(123) → false |
-    | specialEleven(46)  → false |
-    | specialEleven(49)  → false |
-    | specialEleven(52)  → false |
-    | specialEleven(54)  → false |
-    | specialEleven(55)  → true  |
-    |___________________________*/
+    /*__________________
+    |     Testcases     |
+    |___________________|
+    | n     | expected  |
+    | (int) | (boolean) |
+    |_______|___________|
+    | 22    | true      |
+    | 23    | true      |
+    | 24    | false     |
+    | 21    | false     |
+    | 11    | true      |
+    | 12    | true      |
+    | 10    | false     |
+    | 9     | false     |
+    | 8     | false     |
+    | 0     | true      |
+    | 1     | true      |
+    | 2     | false     |
+    | 121   | true      |
+    | 122   | true      |
+    | 123   | false     |
+    | 46    | false     |
+    | 49    | false     |
+    | 52    | false     |
+    | 54    | false     |
+    | 55    | true      |
+    |_______|__________*/
 
     public static final boolean specialEleven(int n)
     {

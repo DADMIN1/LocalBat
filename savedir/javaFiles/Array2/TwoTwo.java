@@ -8,27 +8,30 @@ public final class TwoTwo
 {
     /* Given an array of ints, return true if every 2 that appears in the array is next to another 2. */
 
-    /*________________________________
-    |            Testcases            |
-    |_________________________________|
-    | twoTwo([4, 2, 2, 3])    → true  |
-    | twoTwo([2, 2, 4])       → true  |
-    | twoTwo([2, 2, 4, 2])    → false |
-    | twoTwo([1, 3, 4])       → true  |
-    | twoTwo([1, 2, 2, 3, 4]) → true  |
-    | twoTwo([1, 2, 3, 4])    → false |
-    | twoTwo([2, 2])          → true  |
-    | twoTwo([2, 2, 7])       → true  |
-    | twoTwo([2, 2, 7, 2, 1]) → false |
-    | twoTwo([4, 2, 2, 2])    → true  |
-    | twoTwo([2, 2, 2])       → true  |
-    | twoTwo([1, 2])          → false |
-    | twoTwo([2])             → false |
-    | twoTwo([1])             → true  |
-    | twoTwo([])              → true  |
-    | twoTwo([5, 2, 2, 3])    → true  |
-    | twoTwo([2, 2, 5, 2])    → false |
-    |________________________________*/
+    /*______________________________
+    |           Testcases           |
+    |_______________________________|
+    | nums (int[])      | expected  |
+    |                   | (boolean) |
+    |___________________|___________|
+    | { 4, 2, 2, 3 }    | true      |
+    | { 2, 2, 4 }       | true      |
+    | { 2, 2, 4, 2 }    | false     |
+    | { 1, 3, 4 }       | true      |
+    | { 1, 2, 2, 3, 4 } | true      |
+    | { 1, 2, 3, 4 }    | false     |
+    | { 2, 2 }          | true      |
+    | { 2, 2, 7 }       | true      |
+    | { 2, 2, 7, 2, 1 } | false     |
+    | { 4, 2, 2, 2 }    | true      |
+    | { 2, 2, 2 }       | true      |
+    | { 1, 2 }          | false     |
+    | { 2 }             | false     |
+    | { 1 }             | true      |
+    | {  }              | true      |
+    | { 5, 2, 2, 3 }    | true      |
+    | { 2, 2, 5, 2 }    | false     |
+    |___________________|__________*/
 
     public static final boolean twoTwo(int[] nums)
     {

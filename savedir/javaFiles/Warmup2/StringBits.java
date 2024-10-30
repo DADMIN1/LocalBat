@@ -9,20 +9,23 @@ public final class StringBits
     /* Given a string, return a new string made of every other char starting with the first, 
     so "Hello" yields "Hlo". */
 
-    /*______________________________________
-    |               Testcases               |
-    |_______________________________________|
-    | stringBits("Hello")        → "Hlo"    |
-    | stringBits("Hi")           → "H"      |
-    | stringBits("Heeololeo")    → "Hello"  |
-    | stringBits("HiHiHi")       → "HHH"    |
-    | stringBits("")             → ""       |
-    | stringBits("Greetings")    → "Getns"  |
-    | stringBits("Chocoate")     → "Coot"   |
-    | stringBits("pi")           → "p"      |
-    | stringBits("Hello Kitten") → "HloKte" |
-    | stringBits("hxaxpxpxy")    → "happy"  |
-    |______________________________________*/
+    /*__________________________
+    |         Testcases         |
+    |___________________________|
+    | str (String)   | expected |
+    |                | (String) |
+    |________________|__________|
+    | "Hello"        | "Hlo"    |
+    | "Hi"           | "H"      |
+    | "Heeololeo"    | "Hello"  |
+    | "HiHiHi"       | "HHH"    |
+    | ""             | ""       |
+    | "Greetings"    | "Getns"  |
+    | "Chocoate"     | "Coot"   |
+    | "pi"           | "p"      |
+    | "Hello Kitten" | "HloKte" |
+    | "hxaxpxpxy"    | "happy"  |
+    |________________|_________*/
 
     public static final String stringBits(String str)
     {

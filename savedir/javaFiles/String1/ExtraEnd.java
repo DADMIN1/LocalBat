@@ -9,15 +9,18 @@ public final class ExtraEnd
     /* Given a string, return a new string made of 3 copies of the last 2 chars of the original string. 
     The string length will be at least 2. */
 
-    /*_____________________________
-    |          Testcases           |
-    |______________________________|
-    | extraEnd("Hello") → "lololo" |
-    | extraEnd("ab")    → "ababab" |
-    | extraEnd("Hi")    → "HiHiHi" |
-    | extraEnd("Candy") → "dydydy" |
-    | extraEnd("Code")  → "dedede" |
-    |_____________________________*/
+    /*____________________
+    |      Testcases      |
+    |_____________________|
+    | str      | expected |
+    | (String) | (String) |
+    |__________|__________|
+    | "Hello"  | "lololo" |
+    | "ab"     | "ababab" |
+    | "Hi"     | "HiHiHi" |
+    | "Candy"  | "dydydy" |
+    | "Code"   | "dedede" |
+    |__________|_________*/
 
     public static final String extraEnd(String str)
     {

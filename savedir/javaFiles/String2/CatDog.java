@@ -8,23 +8,26 @@ public final class CatDog
 {
     /* Return true if the string "cat" and "dog" appear the same number of times in the given string. */
 
-    /*__________________________________
-    |             Testcases             |
-    |___________________________________|
-    | catDog("catdog")          → true  |
-    | catDog("catcat")          → false |
-    | catDog("1cat1cadodog")    → true  |
-    | catDog("catxxdogxxxdog")  → false |
-    | catDog("catxdogxdogxcat") → true  |
-    | catDog("catxdogxdogxca")  → false |
-    | catDog("dogdogcat")       → false |
-    | catDog("dogogcat")        → true  |
-    | catDog("dog")             → false |
-    | catDog("cat")             → false |
-    | catDog("ca")              → true  |
-    | catDog("c")               → true  |
-    | catDog("")                → true  |
-    |__________________________________*/
+    /*______________________________
+    |           Testcases           |
+    |_______________________________|
+    | str (String)      | expected  |
+    |                   | (boolean) |
+    |___________________|___________|
+    | "catdog"          | true      |
+    | "catcat"          | false     |
+    | "1cat1cadodog"    | true      |
+    | "catxxdogxxxdog"  | false     |
+    | "catxdogxdogxcat" | true      |
+    | "catxdogxdogxca"  | false     |
+    | "dogdogcat"       | false     |
+    | "dogogcat"        | true      |
+    | "dog"             | false     |
+    | "cat"             | false     |
+    | "ca"              | true      |
+    | "c"               | true      |
+    | ""                | true      |
+    |___________________|__________*/
 
     public static final boolean catDog(String str)
     {

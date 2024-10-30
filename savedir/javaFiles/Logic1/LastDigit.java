@@ -12,20 +12,23 @@ public final class LastDigit
     /*__________________________________
     |             Testcases             |
     |___________________________________|
-    | lastDigit(23, 19, 13)     → true  |
-    | lastDigit(23, 19, 12)     → false |
-    | lastDigit(23, 19, 3)      → true  |
-    | lastDigit(23, 19, 39)     → true  |
-    | lastDigit(1, 2, 3)        → false |
-    | lastDigit(1, 1, 2)        → true  |
-    | lastDigit(1, 2, 2)        → true  |
-    | lastDigit(14, 25, 43)     → false |
-    | lastDigit(14, 25, 45)     → true  |
-    | lastDigit(248, 106, 1002) → false |
-    | lastDigit(248, 106, 1008) → true  |
-    | lastDigit(10, 11, 20)     → true  |
-    | lastDigit(0, 11, 0)       → true  |
-    |__________________________________*/
+    | a     | b     | c     | expected  |
+    | (int) | (int) | (int) | (boolean) |
+    |_______|_______|_______|___________|
+    | 23    | 19    | 13    | true      |
+    | 23    | 19    | 12    | false     |
+    | 23    | 19    | 3     | true      |
+    | 23    | 19    | 39    | true      |
+    | 1     | 2     | 3     | false     |
+    | 1     | 1     | 2     | true      |
+    | 1     | 2     | 2     | true      |
+    | 14    | 25    | 43    | false     |
+    | 14    | 25    | 45    | true      |
+    | 248   | 106   | 1002  | false     |
+    | 248   | 106   | 1008  | true      |
+    | 10    | 11    | 20    | true      |
+    | 0     | 11    | 0     | true      |
+    |_______|_______|_______|__________*/
 
     public static final boolean lastDigit(int a, int b, int c)
     {

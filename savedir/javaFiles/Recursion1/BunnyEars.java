@@ -9,19 +9,22 @@ public final class BunnyEars
     /* We have a number of bunnies and each bunny has two big floppy ears. 
     We want to compute the total number of ears across all the bunnies recursively (without loops or multiplication). */
 
-    /*_____________________
-    |      Testcases       |
-    |______________________|
-    | bunnyEars(0)   → 0   |
-    | bunnyEars(1)   → 2   |
-    | bunnyEars(2)   → 4   |
-    | bunnyEars(3)   → 6   |
-    | bunnyEars(4)   → 8   |
-    | bunnyEars(5)   → 10  |
-    | bunnyEars(12)  → 24  |
-    | bunnyEars(50)  → 100 |
-    | bunnyEars(234) → 468 |
-    |_____________________*/
+    /*___________________
+    |     Testcases      |
+    |____________________|
+    | bunnies | expected |
+    | (int)   | (int)    |
+    |_________|__________|
+    | 0       | 0        |
+    | 1       | 2        |
+    | 2       | 4        |
+    | 3       | 6        |
+    | 4       | 8        |
+    | 5       | 10       |
+    | 12      | 24       |
+    | 50      | 100      |
+    | 234     | 468      |
+    |_________|_________*/
 
     public static final int bunnyEars(int bunnies)
     {

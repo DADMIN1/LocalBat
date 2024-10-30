@@ -10,28 +10,31 @@ public final class XyBalance
     there exists a 'y' char somewhere later in the string. So "xxy" is balanced, 
     but "xyx" is not. One 'y' can balance multiple 'x's. Return true if the given string is xy-balanced. */
 
-    /*_____________________________________
-    |              Testcases               |
-    |______________________________________|
-    | xyBalance("aaxbby")          → true  |
-    | xyBalance("aaxbb")           → false |
-    | xyBalance("yaaxbb")          → false |
-    | xyBalance("yaaxbby")         → true  |
-    | xyBalance("xaxxbby")         → true  |
-    | xyBalance("xaxxbbyx")        → false |
-    | xyBalance("xxbxy")           → true  |
-    | xyBalance("xxbx")            → false |
-    | xyBalance("bbb")             → true  |
-    | xyBalance("bxbb")            → false |
-    | xyBalance("bxyb")            → true  |
-    | xyBalance("xy")              → true  |
-    | xyBalance("y")               → true  |
-    | xyBalance("x")               → false |
-    | xyBalance("")                → true  |
-    | xyBalance("yxyxyxyx")        → false |
-    | xyBalance("yxyxyxyxy")       → true  |
-    | xyBalance("12xabxxydxyxyzz") → true  |
-    |_____________________________________*/
+    /*______________________________
+    |           Testcases           |
+    |_______________________________|
+    | str (String)      | expected  |
+    |                   | (boolean) |
+    |___________________|___________|
+    | "aaxbby"          | true      |
+    | "aaxbb"           | false     |
+    | "yaaxbb"          | false     |
+    | "yaaxbby"         | true      |
+    | "xaxxbby"         | true      |
+    | "xaxxbbyx"        | false     |
+    | "xxbxy"           | true      |
+    | "xxbx"            | false     |
+    | "bbb"             | true      |
+    | "bxbb"            | false     |
+    | "bxyb"            | true      |
+    | "xy"              | true      |
+    | "y"               | true      |
+    | "x"               | false     |
+    | ""                | true      |
+    | "yxyxyxyx"        | false     |
+    | "yxyxyxyxy"       | true      |
+    | "12xabxxydxyxyzz" | true      |
+    |___________________|__________*/
 
     public static final boolean xyBalance(String str)
     {

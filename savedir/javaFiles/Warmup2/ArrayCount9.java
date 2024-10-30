@@ -8,17 +8,20 @@ public final class ArrayCount9
 {
     /* Given an array of ints, return the number of 9's in the array. */
 
-    /*_________________________________
-    |            Testcases             |
-    |__________________________________|
-    | arrayCount9([1, 2, 9])       → 1 |
-    | arrayCount9([1, 9, 9])       → 2 |
-    | arrayCount9([1, 9, 9, 3, 9]) → 3 |
-    | arrayCount9([1, 2, 3])       → 0 |
-    | arrayCount9([])              → 0 |
-    | arrayCount9([4, 2, 4, 3, 1]) → 0 |
-    | arrayCount9([9, 2, 4, 3, 1]) → 1 |
-    |_________________________________*/
+    /*_____________________________
+    |          Testcases           |
+    |______________________________|
+    | nums (int[])      | expected |
+    |                   | (int)    |
+    |___________________|__________|
+    | { 1, 2, 9 }       | 1        |
+    | { 1, 9, 9 }       | 2        |
+    | { 1, 9, 9, 3, 9 } | 3        |
+    | { 1, 2, 3 }       | 0        |
+    | {  }              | 0        |
+    | { 4, 2, 4, 3, 1 } | 0        |
+    | { 9, 2, 4, 3, 1 } | 1        |
+    |___________________|_________*/
 
     public static final int arrayCount9(int[] nums)
     {

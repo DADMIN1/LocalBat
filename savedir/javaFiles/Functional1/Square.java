@@ -11,16 +11,19 @@ public final class Square
 {
     /* Given a list of integers, return a list where each integer is multiplied with itself. */
 
-    /*_____________________________________________________________________________________________
-    |                                          Testcases                                           |
-    |______________________________________________________________________________________________|
-    | square([1, 2, 3])                              → [1, 4, 9]                                   |
-    | square([6, 8, -6, -8, 1])                      → [36, 64, 36, 64, 1]                         |
-    | square([])                                     → []                                          |
-    | square([12])                                   → [144]                                       |
-    | square([5, 10])                                → [25, 100]                                   |
-    | square([6, -3, 12, 23, 4, 1, 19, 11, 2, 3, 2]) → [36, 9, 144, 529, 16, 1, 361, 121, 4, 9, 4] |
-    |_____________________________________________________________________________________________*/
+    /*________________________________________________________
+    |                        Testcases                        |
+    |_________________________________________________________|
+    | nums (List<Integer>)               | expected           |
+    |                                    | (List<Integer>)    |
+    |____________________________________|____________________|
+    | new ArrayList<>(Arrays.asList(1    | 2                  |
+    | new ArrayList<>(Arrays.asList(6    | 8                  |
+    | new ArrayList<>(Arrays.asList())   | Arrays.asList()    |
+    | new ArrayList<>(Arrays.asList(12)) | Arrays.asList(144) |
+    | new ArrayList<>(Arrays.asList(5    | 10))               |
+    | new ArrayList<>(Arrays.asList(6    | -3                 |
+    |____________________________________|___________________*/
 
     public static final List<Integer> square(List<Integer> nums)
     {

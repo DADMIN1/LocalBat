@@ -10,16 +10,19 @@ public final class ExtraFront
     The string may be any length. If there are fewer than 2 chars, 
     use whatever is there. */
 
-    /*_______________________________
-    |           Testcases            |
-    |________________________________|
-    | extraFront("Hello") → "HeHeHe" |
-    | extraFront("ab")    → "ababab" |
-    | extraFront("H")     → "HHH"    |
-    | extraFront("")      → ""       |
-    | extraFront("Candy") → "CaCaCa" |
-    | extraFront("Code")  → "CoCoCo" |
-    |_______________________________*/
+    /*____________________
+    |      Testcases      |
+    |_____________________|
+    | str      | expected |
+    | (String) | (String) |
+    |__________|__________|
+    | "Hello"  | "HeHeHe" |
+    | "ab"     | "ababab" |
+    | "H"      | "HHH"    |
+    | ""       | ""       |
+    | "Candy"  | "CaCaCa" |
+    | "Code"   | "CoCoCo" |
+    |__________|_________*/
 
     public static final String extraFront(String str)
     {

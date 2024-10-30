@@ -11,26 +11,29 @@ public final class FizzString
     return "FizzBuzz". In all other cases, return the string unchanged. 
     (See also: FizzBuzz Code) */
 
-    /*__________________________________
-    |             Testcases             |
-    |___________________________________|
-    | fizzString("fig")    → "Fizz"     |
-    | fizzString("dib")    → "Buzz"     |
-    | fizzString("fib")    → "FizzBuzz" |
-    | fizzString("abc")    → "abc"      |
-    | fizzString("fooo")   → "Fizz"     |
-    | fizzString("booo")   → "booo"     |
-    | fizzString("ooob")   → "Buzz"     |
-    | fizzString("fooob")  → "FizzBuzz" |
-    | fizzString("f")      → "Fizz"     |
-    | fizzString("b")      → "Buzz"     |
-    | fizzString("abcb")   → "Buzz"     |
-    | fizzString("Hello")  → "Hello"    |
-    | fizzString("Hellob") → "Buzz"     |
-    | fizzString("af")     → "af"       |
-    | fizzString("bf")     → "bf"       |
-    | fizzString("fb")     → "FizzBuzz" |
-    |__________________________________*/
+    /*______________________
+    |       Testcases       |
+    |_______________________|
+    | str      | expected   |
+    | (String) | (String)   |
+    |__________|____________|
+    | "fig"    | "Fizz"     |
+    | "dib"    | "Buzz"     |
+    | "fib"    | "FizzBuzz" |
+    | "abc"    | "abc"      |
+    | "fooo"   | "Fizz"     |
+    | "booo"   | "booo"     |
+    | "ooob"   | "Buzz"     |
+    | "fooob"  | "FizzBuzz" |
+    | "f"      | "Fizz"     |
+    | "b"      | "Buzz"     |
+    | "abcb"   | "Buzz"     |
+    | "Hello"  | "Hello"    |
+    | "Hellob" | "Buzz"     |
+    | "af"     | "af"       |
+    | "bf"     | "bf"       |
+    | "fb"     | "FizzBuzz" |
+    |__________|___________*/
 
     public static final String fizzString(String str)
     {

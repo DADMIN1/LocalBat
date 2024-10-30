@@ -11,18 +11,21 @@ public final class BunnyEars2
     because they each have a raised foot. Recursively return the number of "ears" in the bunny line 1, 
     2, ... n (without loops or multiplication). */
 
-    /*____________________
-    |      Testcases      |
-    |_____________________|
-    | bunnyEars2(0)  → 0  |
-    | bunnyEars2(1)  → 2  |
-    | bunnyEars2(2)  → 5  |
-    | bunnyEars2(3)  → 7  |
-    | bunnyEars2(4)  → 10 |
-    | bunnyEars2(5)  → 12 |
-    | bunnyEars2(6)  → 15 |
-    | bunnyEars2(10) → 25 |
-    |____________________*/
+    /*___________________
+    |     Testcases      |
+    |____________________|
+    | bunnies | expected |
+    | (int)   | (int)    |
+    |_________|__________|
+    | 0       | 0        |
+    | 1       | 2        |
+    | 2       | 5        |
+    | 3       | 7        |
+    | 4       | 10       |
+    | 5       | 12       |
+    | 6       | 15       |
+    | 10      | 25       |
+    |_________|_________*/
 
     public static final int bunnyEars2(int bunnies)
     {

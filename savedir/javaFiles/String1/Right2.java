@@ -9,16 +9,19 @@ public final class Right2
     /* Given a string, return a "rotated right 2" version where the last 2 chars are moved to the start. 
     The string length will be at least 2. */
 
-    /*__________________________
-    |         Testcases         |
-    |___________________________|
-    | right2("Hello") → "loHel" |
-    | right2("java")  → "vaja"  |
-    | right2("Hi")    → "Hi"    |
-    | right2("code")  → "deco"  |
-    | right2("cat")   → "atc"   |
-    | right2("12345") → "45123" |
-    |__________________________*/
+    /*____________________
+    |      Testcases      |
+    |_____________________|
+    | str      | expected |
+    | (String) | (String) |
+    |__________|__________|
+    | "Hello"  | "loHel"  |
+    | "java"   | "vaja"   |
+    | "Hi"     | "Hi"     |
+    | "code"   | "deco"   |
+    | "cat"    | "atc"    |
+    | "12345"  | "45123"  |
+    |__________|_________*/
 
     public static final String right2(String str)
     {

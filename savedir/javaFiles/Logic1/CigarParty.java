@@ -12,21 +12,24 @@ public final class CigarParty
     Return true if the party with the given values is successful, 
     or false otherwise. */
 
-    /*______________________________
-    |           Testcases           |
-    |_______________________________|
-    | cigarParty(30, false) → false |
-    | cigarParty(50, false) → true  |
-    | cigarParty(70, true)  → true  |
-    | cigarParty(30, true)  → false |
-    | cigarParty(50, true)  → true  |
-    | cigarParty(60, false) → true  |
-    | cigarParty(61, false) → false |
-    | cigarParty(40, false) → true  |
-    | cigarParty(39, false) → false |
-    | cigarParty(40, true)  → true  |
-    | cigarParty(39, true)  → false |
-    |______________________________*/
+    /*_______________________________
+    |           Testcases            |
+    |________________________________|
+    | cigars | isWeekend | expected  |
+    | (int)  | (boolean) | (boolean) |
+    |________|___________|___________|
+    | 30     | false     | false     |
+    | 50     | false     | true      |
+    | 70     | true      | true      |
+    | 30     | true      | false     |
+    | 50     | true      | true      |
+    | 60     | false     | true      |
+    | 61     | false     | false     |
+    | 40     | false     | true      |
+    | 39     | false     | false     |
+    | 40     | true      | true      |
+    | 39     | true      | false     |
+    |________|___________|__________*/
 
     public static final boolean cigarParty(int cigars, boolean isWeekend)
     {

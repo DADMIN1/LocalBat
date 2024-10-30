@@ -8,20 +8,23 @@ public final class ChangeXY
 {
     /* Given a string, compute recursively (no loops) a new string where all the lowercase 'x' chars have been changed to 'y' chars. */
 
-    /*________________________________
-    |            Testcases            |
-    |_________________________________|
-    | changeXY("codex")   → "codey"   |
-    | changeXY("xxhixx")  → "yyhiyy"  |
-    | changeXY("xhixhix") → "yhiyhiy" |
-    | changeXY("hiy")     → "hiy"     |
-    | changeXY("h")       → "h"       |
-    | changeXY("x")       → "y"       |
-    | changeXY("")        → ""        |
-    | changeXY("xxx")     → "yyy"     |
-    | changeXY("yyhxyi")  → "yyhyyi"  |
-    | changeXY("hihi")    → "hihi"    |
-    |________________________________*/
+    /*______________________
+    |       Testcases       |
+    |_______________________|
+    | str       | expected  |
+    | (String)  | (String)  |
+    |___________|___________|
+    | "codex"   | "codey"   |
+    | "xxhixx"  | "yyhiyy"  |
+    | "xhixhix" | "yhiyhiy" |
+    | "hiy"     | "hiy"     |
+    | "h"       | "h"       |
+    | "x"       | "y"       |
+    | ""        | ""        |
+    | "xxx"     | "yyy"     |
+    | "yyhxyi"  | "yyhyyi"  |
+    | "hihi"    | "hihi"    |
+    |___________|__________*/
 
     public static final String changeXY(String str)
     {

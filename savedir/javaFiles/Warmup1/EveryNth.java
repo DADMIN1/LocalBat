@@ -10,17 +10,20 @@ public final class EveryNth
     and then every Nth char of the string. So if N is 3, use char 0, 
     3, 6, ... and so on. N is 1 or more. */
 
-    /*_____________________________________
-    |              Testcases               |
-    |______________________________________|
-    | everyNth("Miracle", 2)      → "Mrce" |
-    | everyNth("abcdefg", 2)      → "aceg" |
-    | everyNth("abcdefg", 3)      → "adg"  |
-    | everyNth("Chocolate", 3)    → "Cca"  |
-    | everyNth("Chocolates", 3)   → "Ccas" |
-    | everyNth("Chocolates", 4)   → "Coe"  |
-    | everyNth("Chocolates", 100) → "C"    |
-    |_____________________________________*/
+    /*________________________________
+    |            Testcases            |
+    |_________________________________|
+    | str (String) | n     | expected |
+    |              | (int) | (String) |
+    |______________|_______|__________|
+    | "Miracle"    | 2     | "Mrce"   |
+    | "abcdefg"    | 2     | "aceg"   |
+    | "abcdefg"    | 3     | "adg"    |
+    | "Chocolate"  | 3     | "Cca"    |
+    | "Chocolates" | 3     | "Ccas"   |
+    | "Chocolates" | 4     | "Coe"    |
+    | "Chocolates" | 100   | "C"      |
+    |______________|_______|_________*/
 
     public static final String everyNth(String str, int n)
     {

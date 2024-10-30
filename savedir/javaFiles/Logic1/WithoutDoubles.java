@@ -10,22 +10,25 @@ public final class WithoutDoubles
     However, if noDoubles is true, if the two dice show the same value, 
     increment one die to the next value, wrapping around to 1 if its value was 6. */
 
-    /*_________________________________
-    |            Testcases             |
-    |__________________________________|
-    | withoutDoubles(2, 3, true)  → 5  |
-    | withoutDoubles(3, 3, true)  → 7  |
-    | withoutDoubles(3, 3, false) → 6  |
-    | withoutDoubles(2, 3, false) → 5  |
-    | withoutDoubles(5, 4, true)  → 9  |
-    | withoutDoubles(5, 4, false) → 9  |
-    | withoutDoubles(5, 5, true)  → 11 |
-    | withoutDoubles(5, 5, false) → 10 |
-    | withoutDoubles(6, 6, true)  → 7  |
-    | withoutDoubles(6, 6, false) → 12 |
-    | withoutDoubles(1, 6, true)  → 7  |
-    | withoutDoubles(6, 1, false) → 7  |
-    |_________________________________*/
+    /*_____________________________________
+    |              Testcases               |
+    |______________________________________|
+    | die1  | die2  | noDoubles | expected |
+    | (int) | (int) | (boolean) | (int)    |
+    |_______|_______|___________|__________|
+    | 2     | 3     | true      | 5        |
+    | 3     | 3     | true      | 7        |
+    | 3     | 3     | false     | 6        |
+    | 2     | 3     | false     | 5        |
+    | 5     | 4     | true      | 9        |
+    | 5     | 4     | false     | 9        |
+    | 5     | 5     | true      | 11       |
+    | 5     | 5     | false     | 10       |
+    | 6     | 6     | true      | 7        |
+    | 6     | 6     | false     | 12       |
+    | 1     | 6     | true      | 7        |
+    | 6     | 1     | false     | 7        |
+    |_______|_______|___________|_________*/
 
     public static final int withoutDoubles(int die1, int die2, boolean noDoubles)
     {

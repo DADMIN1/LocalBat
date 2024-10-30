@@ -4,3 +4,5 @@ On Windows, terminals cannot print unicode characters 'U+2713'/'U+2714' (checkma
 This including VSCode's integrated terminal. Manually changing the codepage to UTF-7 or UTF-8 (`chcp 65000`/`65001`) does not help.
 Eclipse can display the character without any issue.
 
+Array1/MakePi: testcase does not get generated correctly
+

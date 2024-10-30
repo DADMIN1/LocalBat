@@ -14,18 +14,21 @@ public final class UserCompare
     (On the AP, there would be two User objects, but here the code simply takes the two strings and two ints directly. 
     The code logic is the same.) */
 
-    /*______________________________________
-    |               Testcases               |
-    |_______________________________________|
-    | userCompare("bb", 1, "zz", 2)    → -1 |
-    | userCompare("bb", 1, "aa", 2)    → 1  |
-    | userCompare("bb", 1, "bb", 1)    → 0  |
-    | userCompare("bb", 5, "bb", 1)    → 1  |
-    | userCompare("bb", 5, "bb", 10)   → -1 |
-    | userCompare("adam", 1, "bob", 2) → -1 |
-    | userCompare("bob", 1, "bob", 2)  → -1 |
-    | userCompare("bzb", 1, "bob", 2)  → 1  |
-    |______________________________________*/
+    /*_______________________________________________
+    |                   Testcases                    |
+    |________________________________________________|
+    | aName    | aId   | bName    | bId   | expected |
+    | (String) | (int) | (String) | (int) | (int)    |
+    |__________|_______|__________|_______|__________|
+    | "bb"     | 1     | "zz"     | 2     | -1       |
+    | "bb"     | 1     | "aa"     | 2     | 1        |
+    | "bb"     | 1     | "bb"     | 1     | 0        |
+    | "bb"     | 5     | "bb"     | 1     | 1        |
+    | "bb"     | 5     | "bb"     | 10    | -1       |
+    | "adam"   | 1     | "bob"    | 2     | -1       |
+    | "bob"    | 1     | "bob"    | 2     | -1       |
+    | "bzb"    | 1     | "bob"    | 2     | 1        |
+    |__________|_______|__________|_______|_________*/
 
     public static final int userCompare(String aName, int aId, String bName, int bId)
     {

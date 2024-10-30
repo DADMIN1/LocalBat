@@ -10,21 +10,24 @@ public final class SumDigits
     Note that mod (%) by 10 yields the rightmost digit (126 % 10 is 6), 
     while divide (/) by 10 removes the rightmost digit (126 / 10 is 12). */
 
-    /*______________________
-    |       Testcases       |
-    |_______________________|
-    | sumDigits(126)   → 9  |
-    | sumDigits(49)    → 13 |
-    | sumDigits(12)    → 3  |
-    | sumDigits(10)    → 1  |
-    | sumDigits(1)     → 1  |
-    | sumDigits(0)     → 0  |
-    | sumDigits(730)   → 10 |
-    | sumDigits(1111)  → 4  |
-    | sumDigits(11111) → 5  |
-    | sumDigits(10110) → 3  |
-    | sumDigits(235)   → 10 |
-    |______________________*/
+    /*_________________
+    |    Testcases     |
+    |__________________|
+    | n     | expected |
+    | (int) | (int)    |
+    |_______|__________|
+    | 126   | 9        |
+    | 49    | 13       |
+    | 12    | 3        |
+    | 10    | 1        |
+    | 1     | 1        |
+    | 0     | 0        |
+    | 730   | 10       |
+    | 1111  | 4        |
+    | 11111 | 5        |
+    | 10110 | 3        |
+    | 235   | 10       |
+    |_______|_________*/
 
     public static final int sumDigits(int n)
     {

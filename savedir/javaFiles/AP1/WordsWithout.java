@@ -10,17 +10,20 @@ public final class WordsWithout
     One approach is to count the occurrences of the target string, 
     make a new array of the correct length, and then copy over the correct strings. */
 
-    /*____________________________________________________________________________
-    |                                  Testcases                                  |
-    |_____________________________________________________________________________|
-    | wordsWithout(["a", "b", "c", "a"], "a")           → ["b", "c"]              |
-    | wordsWithout(["a", "b", "c", "a"], "b")           → ["a", "c", "a"]         |
-    | wordsWithout(["a", "b", "c", "a"], "c")           → ["a", "b", "a"]         |
-    | wordsWithout(["b", "c", "a", "a"], "b")           → ["c", "a", "a"]         |
-    | wordsWithout(["xx", "yyy", "x", "yy", "x"], "x")  → ["xx", "yyy", "yy"]     |
-    | wordsWithout(["xx", "yyy", "x", "yy", "x"], "yy") → ["xx", "yyy", "x", "x"] |
-    | wordsWithout(["aa", "ab", "ac", "aa"], "aa")      → ["ab", "ac"]            |
-    |____________________________________________________________________________*/
+    /*_____________________________________________________________________
+    |                              Testcases                               |
+    |______________________________________________________________________|
+    | words (String[])                | target   | expected (String[])     |
+    |                                 | (String) |                         |
+    |_________________________________|__________|_________________________|
+    | { "a", "b", "c", "a" }          | "a"      | {"b", "c"}              |
+    | { "a", "b", "c", "a" }          | "b"      | {"a", "c", "a"}         |
+    | { "a", "b", "c", "a" }          | "c"      | {"a", "b", "a"}         |
+    | { "b", "c", "a", "a" }          | "b"      | {"c", "a", "a"}         |
+    | { "xx", "yyy", "x", "yy", "x" } | "x"      | {"xx", "yyy", "yy"}     |
+    | { "xx", "yyy", "x", "yy", "x" } | "yy"     | {"xx", "yyy", "x", "x"} |
+    | { "aa", "ab", "ac", "aa" }      | "aa"     | {"ab", "ac"}            |
+    |_________________________________|__________|________________________*/
 
     public static final String[] wordsWithout(String[] words, String target)
     {

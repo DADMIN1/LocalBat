@@ -11,23 +11,26 @@ public final class SquirrelPlay
     Unless it is summer, then the upper limit is 100 instead of 90. 
     Given an int temperature and a boolean isSummer, return true if the squirrels play and false otherwise. */
 
-    /*_________________________________
-    |            Testcases             |
-    |__________________________________|
-    | squirrelPlay(70, false)  → true  |
-    | squirrelPlay(95, false)  → false |
-    | squirrelPlay(95, true)   → true  |
-    | squirrelPlay(90, false)  → true  |
-    | squirrelPlay(90, true)   → true  |
-    | squirrelPlay(50, false)  → false |
-    | squirrelPlay(50, true)   → false |
-    | squirrelPlay(100, false) → false |
-    | squirrelPlay(100, true)  → true  |
-    | squirrelPlay(105, true)  → false |
-    | squirrelPlay(59, false)  → false |
-    | squirrelPlay(59, true)   → false |
-    | squirrelPlay(60, false)  → true  |
-    |_________________________________*/
+    /*______________________________
+    |           Testcases           |
+    |_______________________________|
+    | temp  | isSummer  | expected  |
+    | (int) | (boolean) | (boolean) |
+    |_______|___________|___________|
+    | 70    | false     | true      |
+    | 95    | false     | false     |
+    | 95    | true      | true      |
+    | 90    | false     | true      |
+    | 90    | true      | true      |
+    | 50    | false     | false     |
+    | 50    | true      | false     |
+    | 100   | false     | false     |
+    | 100   | true      | true      |
+    | 105   | true      | false     |
+    | 59    | false     | false     |
+    | 59    | true      | false     |
+    | 60    | false     | true      |
+    |_______|___________|__________*/
 
     public static final boolean squirrelPlay(int temp, boolean isSummer)
     {

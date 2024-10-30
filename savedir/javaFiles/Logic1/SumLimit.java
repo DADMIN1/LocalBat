@@ -10,25 +10,28 @@ public final class SumLimit
     If the sum has more digits than a, just return a without b. 
     (Note: one way to compute the number of digits of a non-negative int n is to convert it to a string with String.valueOf(n) and then check the length of the string.) */
 
-    /*_________________________________
-    |            Testcases             |
-    |__________________________________|
-    | sumLimit(2, 3)        → 5        |
-    | sumLimit(8, 3)        → 8        |
-    | sumLimit(8, 1)        → 9        |
-    | sumLimit(11, 39)      → 50       |
-    | sumLimit(11, 99)      → 11       |
-    | sumLimit(0, 0)        → 0        |
-    | sumLimit(99, 0)       → 99       |
-    | sumLimit(99, 1)       → 99       |
-    | sumLimit(123, 1)      → 124      |
-    | sumLimit(1, 123)      → 1        |
-    | sumLimit(23, 60)      → 83       |
-    | sumLimit(23, 80)      → 23       |
-    | sumLimit(9000, 1)     → 9001     |
-    | sumLimit(90000000, 1) → 90000001 |
-    | sumLimit(9000, 1000)  → 9000     |
-    |_________________________________*/
+    /*____________________________
+    |          Testcases          |
+    |_____________________________|
+    | a (int)  | b     | expected |
+    |          | (int) | (int)    |
+    |__________|_______|__________|
+    | 2        | 3     | 5        |
+    | 8        | 3     | 8        |
+    | 8        | 1     | 9        |
+    | 11       | 39    | 50       |
+    | 11       | 99    | 11       |
+    | 0        | 0     | 0        |
+    | 99       | 0     | 99       |
+    | 99       | 1     | 99       |
+    | 123      | 1     | 124      |
+    | 1        | 123   | 1        |
+    | 23       | 60    | 83       |
+    | 23       | 80    | 23       |
+    | 9000     | 1     | 9001     |
+    | 90000000 | 1     | 90000001 |
+    | 9000     | 1000  | 9000     |
+    |__________|_______|_________*/
 
     public static final int sumLimit(int a, int b)
     {

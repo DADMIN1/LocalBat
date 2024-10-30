@@ -9,18 +9,21 @@ public final class SumDouble
     /* Given two int values, return their sum. Unless the two values are the same, 
     then return double their sum. */
 
-    /*______________________
-    |       Testcases       |
-    |_______________________|
-    | sumDouble(1, 2)  → 3  |
-    | sumDouble(3, 2)  → 5  |
-    | sumDouble(2, 2)  → 8  |
-    | sumDouble(-1, 0) → -1 |
-    | sumDouble(3, 3)  → 12 |
-    | sumDouble(0, 0)  → 0  |
-    | sumDouble(0, 1)  → 1  |
-    | sumDouble(3, 4)  → 7  |
-    |______________________*/
+    /*_________________________
+    |        Testcases         |
+    |__________________________|
+    | a     | b     | expected |
+    | (int) | (int) | (int)    |
+    |_______|_______|__________|
+    | 1     | 2     | 3        |
+    | 3     | 2     | 5        |
+    | 2     | 2     | 8        |
+    | -1    | 0     | -1       |
+    | 3     | 3     | 12       |
+    | 0     | 0     | 0        |
+    | 0     | 1     | 1        |
+    | 3     | 4     | 7        |
+    |_______|_______|_________*/
 
     public static final int sumDouble(int a, int b)
     {

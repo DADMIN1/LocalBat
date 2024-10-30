@@ -9,24 +9,27 @@ public final class XyzThere
     /* Return true if the given string contains an appearance of "xyz" where the xyz is not directly preceeded by a period (.). 
     So "xxyz" counts but "x.xyz" does not. */
 
-    /*___________________________________
-    |             Testcases              |
-    |____________________________________|
-    | xyzThere("abcxyz")         → true  |
-    | xyzThere("abc.xyz")        → false |
-    | xyzThere("xyz.abc")        → true  |
-    | xyzThere("abcxy")          → false |
-    | xyzThere("xyz")            → true  |
-    | xyzThere("xy")             → false |
-    | xyzThere("x")              → false |
-    | xyzThere("")               → false |
-    | xyzThere("abc.xyzxyz")     → true  |
-    | xyzThere("abc.xxyz")       → true  |
-    | xyzThere(".xyz")           → false |
-    | xyzThere("12.xyz")         → false |
-    | xyzThere("12xyz")          → true  |
-    | xyzThere("1.xyz.xyz2.xyz") → false |
-    |___________________________________*/
+    /*_____________________________
+    |          Testcases           |
+    |______________________________|
+    | str (String)     | expected  |
+    |                  | (boolean) |
+    |__________________|___________|
+    | "abcxyz"         | true      |
+    | "abc.xyz"        | false     |
+    | "xyz.abc"        | true      |
+    | "abcxy"          | false     |
+    | "xyz"            | true      |
+    | "xy"             | false     |
+    | "x"              | false     |
+    | ""               | false     |
+    | "abc.xyzxyz"     | true      |
+    | "abc.xxyz"       | true      |
+    | ".xyz"           | false     |
+    | "12.xyz"         | false     |
+    | "12xyz"          | true      |
+    | "1.xyz.xyz2.xyz" | false     |
+    |__________________|__________*/
 
     public static final boolean xyzThere(String str)
     {

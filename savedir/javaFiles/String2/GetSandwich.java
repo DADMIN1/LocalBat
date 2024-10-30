@@ -10,22 +10,25 @@ public final class GetSandwich
     Return the string that is between the first and last appearance of "bread" in the given string, 
     or return the empty string "" if there are not two pieces of bread. */
 
-    /*_____________________________________________________
-    |                      Testcases                       |
-    |______________________________________________________|
-    | getSandwich("breadjambread")          → "jam"        |
-    | getSandwich("xxbreadjambreadyy")      → "jam"        |
-    | getSandwich("xxbreadyy")              → ""           |
-    | getSandwich("xxbreadbreadjambreadyy") → "breadjam"   |
-    | getSandwich("breadAbread")            → "A"          |
-    | getSandwich("breadbread")             → ""           |
-    | getSandwich("abcbreaz")               → ""           |
-    | getSandwich("xyz")                    → ""           |
-    | getSandwich("")                       → ""           |
-    | getSandwich("breadbreaxbread")        → "breax"      |
-    | getSandwich("breaxbreadybread")       → "y"          |
-    | getSandwich("breadbreadbreadbread")   → "breadbread" |
-    |_____________________________________________________*/
+    /*________________________________________
+    |                Testcases                |
+    |_________________________________________|
+    | str (String)             | expected     |
+    |                          | (String)     |
+    |__________________________|______________|
+    | "breadjambread"          | "jam"        |
+    | "xxbreadjambreadyy"      | "jam"        |
+    | "xxbreadyy"              | ""           |
+    | "xxbreadbreadjambreadyy" | "breadjam"   |
+    | "breadAbread"            | "A"          |
+    | "breadbread"             | ""           |
+    | "abcbreaz"               | ""           |
+    | "xyz"                    | ""           |
+    | ""                       | ""           |
+    | "breadbreaxbread"        | "breax"      |
+    | "breaxbreadybread"       | "y"          |
+    | "breadbreadbreadbread"   | "breadbread" |
+    |__________________________|_____________*/
 
     public static final String getSandwich(String str)
     {

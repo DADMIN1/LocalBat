@@ -11,22 +11,25 @@ public final class GroupNoAdj
     If a value in the array is chosen to be in the group, the value immediately following it in the array must not be chosen. 
     (No loops needed.) */
 
-    /*____________________________________________
-    |                  Testcases                  |
-    |_____________________________________________|
-    | groupNoAdj(0, [2, 5, 10, 4], 12)    → true  |
-    | groupNoAdj(0, [2, 5, 10, 4], 14)    → false |
-    | groupNoAdj(0, [2, 5, 10, 4], 7)     → false |
-    | groupNoAdj(0, [2, 5, 10, 4, 2], 7)  → true  |
-    | groupNoAdj(0, [2, 5, 10, 4], 9)     → true  |
-    | groupNoAdj(0, [10, 2, 2, 3, 3], 15) → true  |
-    | groupNoAdj(0, [10, 2, 2, 3, 3], 7)  → false |
-    | groupNoAdj(0, [], 0)                → true  |
-    | groupNoAdj(0, [1], 1)               → true  |
-    | groupNoAdj(0, [9], 1)               → false |
-    | groupNoAdj(0, [9], 0)               → true  |
-    | groupNoAdj(0, [5, 10, 4, 1], 11)    → true  |
-    |____________________________________________*/
+    /*________________________________________________
+    |                    Testcases                    |
+    |_________________________________________________|
+    | start | nums (int[])       | target | expected  |
+    | (int) |                    | (int)  | (boolean) |
+    |_______|____________________|________|___________|
+    | 0     | { 2, 5, 10, 4 }    | 12     | true      |
+    | 0     | { 2, 5, 10, 4 }    | 14     | false     |
+    | 0     | { 2, 5, 10, 4 }    | 7      | false     |
+    | 0     | { 2, 5, 10, 4, 2 } | 7      | true      |
+    | 0     | { 2, 5, 10, 4 }    | 9      | true      |
+    | 0     | { 10, 2, 2, 3, 3 } | 15     | true      |
+    | 0     | { 10, 2, 2, 3, 3 } | 7      | false     |
+    | 0     | {  }               | 0      | true      |
+    | 0     | { 1 }              | 1      | true      |
+    | 0     | { 9 }              | 1      | false     |
+    | 0     | { 9 }              | 0      | true      |
+    | 0     | { 5, 10, 4, 1 }    | 11     | true      |
+    |_______|____________________|________|__________*/
 
     public static final boolean groupNoAdj(int start, int[] nums, int target)
     {

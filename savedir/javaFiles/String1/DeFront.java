@@ -10,29 +10,32 @@ public final class DeFront
     Except keep the first char if it is 'a' and keep the second char if it is 'b'. 
     The string may be any length. Harder than it looks. */
 
-    /*___________________________
-    |         Testcases          |
-    |____________________________|
-    | deFront("Hello") → "llo"   |
-    | deFront("java")  → "va"    |
-    | deFront("away")  → "aay"   |
-    | deFront("axy")   → "ay"    |
-    | deFront("abc")   → "abc"   |
-    | deFront("xby")   → "by"    |
-    | deFront("ab")    → "ab"    |
-    | deFront("ax")    → "a"     |
-    | deFront("axb")   → "ab"    |
-    | deFront("aaa")   → "aa"    |
-    | deFront("xbc")   → "bc"    |
-    | deFront("bbb")   → "bb"    |
-    | deFront("bazz")  → "zz"    |
-    | deFront("ba")    → ""      |
-    | deFront("abxyz") → "abxyz" |
-    | deFront("hi")    → ""      |
-    | deFront("his")   → "s"     |
-    | deFront("xz")    → ""      |
-    | deFront("zzz")   → "z"     |
-    |___________________________*/
+    /*____________________
+    |      Testcases      |
+    |_____________________|
+    | str      | expected |
+    | (String) | (String) |
+    |__________|__________|
+    | "Hello"  | "llo"    |
+    | "java"   | "va"     |
+    | "away"   | "aay"    |
+    | "axy"    | "ay"     |
+    | "abc"    | "abc"    |
+    | "xby"    | "by"     |
+    | "ab"     | "ab"     |
+    | "ax"     | "a"      |
+    | "axb"    | "ab"     |
+    | "aaa"    | "aa"     |
+    | "xbc"    | "bc"     |
+    | "bbb"    | "bb"     |
+    | "bazz"   | "zz"     |
+    | "ba"     | ""       |
+    | "abxyz"  | "abxyz"  |
+    | "hi"     | ""       |
+    | "his"    | "s"      |
+    | "xz"     | ""       |
+    | "zzz"    | "z"      |
+    |__________|_________*/
 
     public static final String deFront(String str)
     {

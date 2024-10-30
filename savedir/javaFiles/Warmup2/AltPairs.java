@@ -9,18 +9,21 @@ public final class AltPairs
     /* Given a string, return a string made of the chars at indexes 0,1, 
     4,5, 8,9 ... so "kittens" yields "kien". */
 
-    /*__________________________________________
-    |                 Testcases                 |
-    |___________________________________________|
-    | altPairs("kitten")           → "kien"     |
-    | altPairs("Chocolate")        → "Chole"    |
-    | altPairs("CodingHorror")     → "Congrr"   |
-    | altPairs("yak")              → "ya"       |
-    | altPairs("ya")               → "ya"       |
-    | altPairs("y")                → "y"        |
-    | altPairs("")                 → ""         |
-    | altPairs("ThisThatTheOther") → "ThThThth" |
-    |__________________________________________*/
+    /*________________________________
+    |            Testcases            |
+    |_________________________________|
+    | str (String)       | expected   |
+    |                    | (String)   |
+    |____________________|____________|
+    | "kitten"           | "kien"     |
+    | "Chocolate"        | "Chole"    |
+    | "CodingHorror"     | "Congrr"   |
+    | "yak"              | "ya"       |
+    | "ya"               | "ya"       |
+    | "y"                | "y"        |
+    | ""                 | ""         |
+    | "ThisThatTheOther" | "ThThThth" |
+    |____________________|___________*/
 
     public static final String altPairs(String str)
     {

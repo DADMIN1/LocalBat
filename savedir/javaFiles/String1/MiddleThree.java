@@ -9,17 +9,20 @@ public final class MiddleThree
     /* Given a string of odd length, return the string length 3 from its middle, 
     so "Candy" yields "and". The string length will be at least 3. */
 
-    /*_____________________________________
-    |              Testcases               |
-    |______________________________________|
-    | middleThree("Candy")         → "and" |
-    | middleThree("and")           → "and" |
-    | middleThree("solving")       → "lvi" |
-    | middleThree("Hi yet Hi")     → "yet" |
-    | middleThree("java yet java") → "yet" |
-    | middleThree("Chocolate")     → "col" |
-    | middleThree("XabcxyzabcX")   → "xyz" |
-    |_____________________________________*/
+    /*___________________________
+    |         Testcases          |
+    |____________________________|
+    | str (String)    | expected |
+    |                 | (String) |
+    |_________________|__________|
+    | "Candy"         | "and"    |
+    | "and"           | "and"    |
+    | "solving"       | "lvi"    |
+    | "Hi yet Hi"     | "yet"    |
+    | "java yet java" | "yet"    |
+    | "Chocolate"     | "col"    |
+    | "XabcxyzabcX"   | "xyz"    |
+    |_________________|_________*/
 
     public static final String middleThree(String str)
     {

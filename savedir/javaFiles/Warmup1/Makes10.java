@@ -8,19 +8,22 @@ public final class Makes10
 {
     /* Given 2 ints, a and b, return true if one if them is 10 or if their sum is 10. */
 
-    /*________________________
-    |        Testcases        |
-    |_________________________|
-    | makes10(9, 10)  → true  |
-    | makes10(9, 9)   → false |
-    | makes10(1, 9)   → true  |
-    | makes10(10, 1)  → true  |
-    | makes10(10, 10) → true  |
-    | makes10(8, 2)   → true  |
-    | makes10(8, 3)   → false |
-    | makes10(10, 42) → true  |
-    | makes10(12, -2) → true  |
-    |________________________*/
+    /*__________________________
+    |         Testcases         |
+    |___________________________|
+    | a     | b     | expected  |
+    | (int) | (int) | (boolean) |
+    |_______|_______|___________|
+    | 9     | 10    | true      |
+    | 9     | 9     | false     |
+    | 1     | 9     | true      |
+    | 10    | 1     | true      |
+    | 10    | 10    | true      |
+    | 8     | 2     | true      |
+    | 8     | 3     | false     |
+    | 10    | 42    | true      |
+    | 12    | -2    | true      |
+    |_______|_______|__________*/
 
     public static final boolean makes10(int a, int b)
     {

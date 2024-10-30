@@ -13,15 +13,18 @@ public final class Triangle
     /*_________________
     |    Testcases     |
     |__________________|
-    | triangle(0) → 0  |
-    | triangle(1) → 1  |
-    | triangle(2) → 3  |
-    | triangle(3) → 6  |
-    | triangle(4) → 10 |
-    | triangle(5) → 15 |
-    | triangle(6) → 21 |
-    | triangle(7) → 28 |
-    |_________________*/
+    | rows  | expected |
+    | (int) | (int)    |
+    |_______|__________|
+    | 0     | 0        |
+    | 1     | 1        |
+    | 2     | 3        |
+    | 3     | 6        |
+    | 4     | 10       |
+    | 5     | 15       |
+    | 6     | 21       |
+    | 7     | 28       |
+    |_______|_________*/
 
     public static final int triangle(int rows)
     {

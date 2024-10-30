@@ -8,22 +8,25 @@ public final class TwoAsOne
 {
     /* Given three ints, a b c, return true if it is possible to add two of the ints to get the third. */
 
-    /*___________________________
-    |         Testcases          |
-    |____________________________|
-    | twoAsOne(1, 2, 3)  → true  |
-    | twoAsOne(3, 1, 2)  → true  |
-    | twoAsOne(3, 2, 2)  → false |
-    | twoAsOne(2, 3, 1)  → true  |
-    | twoAsOne(5, 3, -2) → true  |
-    | twoAsOne(5, 3, -3) → false |
-    | twoAsOne(2, 5, 3)  → true  |
-    | twoAsOne(9, 5, 5)  → false |
-    | twoAsOne(9, 4, 5)  → true  |
-    | twoAsOne(5, 4, 9)  → true  |
-    | twoAsOne(3, 3, 0)  → true  |
-    | twoAsOne(3, 3, 2)  → false |
-    |___________________________*/
+    /*__________________________________
+    |             Testcases             |
+    |___________________________________|
+    | a     | b     | c     | expected  |
+    | (int) | (int) | (int) | (boolean) |
+    |_______|_______|_______|___________|
+    | 1     | 2     | 3     | true      |
+    | 3     | 1     | 2     | true      |
+    | 3     | 2     | 2     | false     |
+    | 2     | 3     | 1     | true      |
+    | 5     | 3     | -2    | true      |
+    | 5     | 3     | -3    | false     |
+    | 2     | 5     | 3     | true      |
+    | 9     | 5     | 5     | false     |
+    | 9     | 4     | 5     | true      |
+    | 5     | 4     | 9     | true      |
+    | 3     | 3     | 0     | true      |
+    | 3     | 3     | 2     | false     |
+    |_______|_______|_______|__________*/
 
     public static final boolean twoAsOne(int a, int b, int c)
     {

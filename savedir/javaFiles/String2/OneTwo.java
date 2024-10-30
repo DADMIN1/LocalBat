@@ -10,26 +10,28 @@ public final class OneTwo
     so "abc" yields "bca". Repeat this process for each subsequent group of 3 chars, 
     so "abcdef" yields "bcaefd". Ignore any group of fewer than 3 chars at the end. */
 
-    /*_________________________________________________________________________________________
-    |                                        Testcases                                         |
-    |__________________________________________________________________________________________|
-    | oneTwo("abc")                                   → "bca"                                  |
-    | oneTwo("tca")                                   → "cat"                                  |
-    | oneTwo("tcagdo")                                → "catdog"                               |
-    | oneTwo("chocolate")                             → "hocolctea"                            |
-    | oneTwo("1234567890")                            → "231564897"                            |
-    | oneTwo("xabxabxabxabxabxabxab")                 → "abxabxabxabxabxabxabx"                |
-    | oneTwo("abcdefx")                               → "bcaefd"                               |
-    | oneTwo("abcdefxy")                              → "bcaefd"                               |
-    | oneTwo("abcdefxyz")                             → "bcaefdyzx"                            |
-    | oneTwo("")                                      → ""                                     |
-    | oneTwo("x")                                     → ""                                     |
-    | oneTwo("xy")                                    → ""                                     |
-    | oneTwo("xyz")                                   → "yzx"                                  |
-    | oneTwo("abcdefghijklkmnopqrstuvwxyz1234567890") → "bcaefdhigkljmnkpqostrvwuyzx231564897" |
-    | oneTwo("abcdefghijklkmnopqrstuvwxyz123456789")  → "bcaefdhigkljmnkpqostrvwuyzx231564897" |
-    | oneTwo("abcdefghijklkmnopqrstuvwxyz12345678")   → "bcaefdhigkljmnkpqostrvwuyzx231564"    |
-    |_________________________________________________________________________________________*/
+    /*_________________________________________________________________________________
+    |                                    Testcases                                     |
+    |__________________________________________________________________________________|
+    | str (String)                            | expected (String)                      |
+    |_________________________________________|________________________________________|
+    | "abc"                                   | "bca"                                  |
+    | "tca"                                   | "cat"                                  |
+    | "tcagdo"                                | "catdog"                               |
+    | "chocolate"                             | "hocolctea"                            |
+    | "1234567890"                            | "231564897"                            |
+    | "xabxabxabxabxabxabxab"                 | "abxabxabxabxabxabxabx"                |
+    | "abcdefx"                               | "bcaefd"                               |
+    | "abcdefxy"                              | "bcaefd"                               |
+    | "abcdefxyz"                             | "bcaefdyzx"                            |
+    | ""                                      | ""                                     |
+    | "x"                                     | ""                                     |
+    | "xy"                                    | ""                                     |
+    | "xyz"                                   | "yzx"                                  |
+    | "abcdefghijklkmnopqrstuvwxyz1234567890" | "bcaefdhigkljmnkpqostrvwuyzx231564897" |
+    | "abcdefghijklkmnopqrstuvwxyz123456789"  | "bcaefdhigkljmnkpqostrvwuyzx231564897" |
+    | "abcdefghijklkmnopqrstuvwxyz12345678"   | "bcaefdhigkljmnkpqostrvwuyzx231564"    |
+    |_________________________________________|_______________________________________*/
 
     public static final String oneTwo(String str)
     {

@@ -8,20 +8,23 @@ public final class StringTimes
 {
     /* Given a string and a non-negative int n, return a larger string that is n copies of the original string. */
 
-    /*_____________________________________________
-    |                  Testcases                   |
-    |______________________________________________|
-    | stringTimes("Hi", 2)      → "HiHi"           |
-    | stringTimes("Hi", 3)      → "HiHiHi"         |
-    | stringTimes("Hi", 1)      → "Hi"             |
-    | stringTimes("Hi", 0)      → ""               |
-    | stringTimes("Hi", 5)      → "HiHiHiHiHi"     |
-    | stringTimes("Oh Boy!", 2) → "Oh Boy!Oh Boy!" |
-    | stringTimes("x", 4)       → "xxxx"           |
-    | stringTimes("", 4)        → ""               |
-    | stringTimes("code", 2)    → "codecode"       |
-    | stringTimes("code", 3)    → "codecodecode"   |
-    |_____________________________________________*/
+    /*_____________________________________
+    |              Testcases               |
+    |______________________________________|
+    | str       | n     | expected         |
+    | (String)  | (int) | (String)         |
+    |___________|_______|__________________|
+    | "Hi"      | 2     | "HiHi"           |
+    | "Hi"      | 3     | "HiHiHi"         |
+    | "Hi"      | 1     | "Hi"             |
+    | "Hi"      | 0     | ""               |
+    | "Hi"      | 5     | "HiHiHiHiHi"     |
+    | "Oh Boy!" | 2     | "Oh Boy!Oh Boy!" |
+    | "x"       | 4     | "xxxx"           |
+    | ""        | 4     | ""               |
+    | "code"    | 2     | "codecode"       |
+    | "code"    | 3     | "codecodecode"   |
+    |___________|_______|_________________*/
 
     public static final String stringTimes(String str, int n)
     {

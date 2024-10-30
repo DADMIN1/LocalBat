@@ -9,22 +9,25 @@ public final class TripleUp
     /* Return true if the array contains, somewhere, three increasing adjacent numbers like .... 
     4, 5, 6, ... or 23, 24, 25. */
 
-    /*__________________________________________________
-    |                     Testcases                     |
-    |___________________________________________________|
-    | tripleUp([1, 4, 5, 6, 2])                 → true  |
-    | tripleUp([1, 2, 3])                       → true  |
-    | tripleUp([1, 2, 4])                       → false |
-    | tripleUp([1, 2, 4, 5, 7, 6, 5, 6, 7, 6])  → true  |
-    | tripleUp([1, 2, 4, 5, 7, 6, 5, 7, 7, 6])  → false |
-    | tripleUp([1, 2])                          → false |
-    | tripleUp([1])                             → false |
-    | tripleUp([])                              → false |
-    | tripleUp([10, 9, 8, -100, -99, -98, 100]) → true  |
-    | tripleUp([10, 9, 8, -100, -99, 99, 100])  → false |
-    | tripleUp([-100, -99, -99, 100, 101, 102]) → true  |
-    | tripleUp([2, 3, 5, 6, 8, 9, 2, 3])        → false |
-    |__________________________________________________*/
+    /*______________________________________________
+    |                   Testcases                   |
+    |_______________________________________________|
+    | nums (int[])                      | expected  |
+    |                                   | (boolean) |
+    |___________________________________|___________|
+    | { 1, 4, 5, 6, 2 }                 | true      |
+    | { 1, 2, 3 }                       | true      |
+    | { 1, 2, 4 }                       | false     |
+    | { 1, 2, 4, 5, 7, 6, 5, 6, 7, 6 }  | true      |
+    | { 1, 2, 4, 5, 7, 6, 5, 7, 7, 6 }  | false     |
+    | { 1, 2 }                          | false     |
+    | { 1 }                             | false     |
+    | {  }                              | false     |
+    | { 10, 9, 8, -100, -99, -98, 100 } | true      |
+    | { 10, 9, 8, -100, -99, 99, 100 }  | false     |
+    | { -100, -99, -99, 100, 101, 102 } | true      |
+    | { 2, 3, 5, 6, 8, 9, 2, 3 }        | false     |
+    |___________________________________|__________*/
 
     public static final boolean tripleUp(int[] nums)
     {

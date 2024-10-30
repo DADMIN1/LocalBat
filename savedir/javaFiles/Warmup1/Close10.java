@@ -9,21 +9,24 @@ public final class Close10
     /* Given 2 int values, return whichever value is nearest to the value 10, 
     or return 0 in the event of a tie. Note that Math.abs(n) returns the absolute value of a number. */
 
-    /*_____________________
-    |      Testcases       |
-    |______________________|
-    | close10(8, 13)  → 8  |
-    | close10(13, 8)  → 8  |
-    | close10(13, 7)  → 0  |
-    | close10(7, 13)  → 0  |
-    | close10(9, 13)  → 9  |
-    | close10(13, 8)  → 8  |
-    | close10(10, 12) → 10 |
-    | close10(11, 10) → 10 |
-    | close10(5, 21)  → 5  |
-    | close10(0, 20)  → 0  |
-    | close10(10, 10) → 0  |
-    |_____________________*/
+    /*_________________________
+    |        Testcases         |
+    |__________________________|
+    | a     | b     | expected |
+    | (int) | (int) | (int)    |
+    |_______|_______|__________|
+    | 8     | 13    | 8        |
+    | 13    | 8     | 8        |
+    | 13    | 7     | 0        |
+    | 7     | 13    | 0        |
+    | 9     | 13    | 9        |
+    | 13    | 8     | 8        |
+    | 10    | 12    | 10       |
+    | 11    | 10    | 10       |
+    | 5     | 21    | 5        |
+    | 0     | 20    | 0        |
+    | 10    | 10    | 0        |
+    |_______|_______|_________*/
 
     public static final int close10(int a, int b)
     {

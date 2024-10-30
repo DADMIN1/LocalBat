@@ -16,19 +16,22 @@ public final class CaughtSpeeding
     /*______________________________
     |           Testcases           |
     |_______________________________|
-    | caughtSpeeding(60, false) → 0 |
-    | caughtSpeeding(65, false) → 1 |
-    | caughtSpeeding(65, true)  → 0 |
-    | caughtSpeeding(80, false) → 1 |
-    | caughtSpeeding(85, false) → 2 |
-    | caughtSpeeding(85, true)  → 1 |
-    | caughtSpeeding(70, false) → 1 |
-    | caughtSpeeding(75, false) → 1 |
-    | caughtSpeeding(75, true)  → 1 |
-    | caughtSpeeding(40, false) → 0 |
-    | caughtSpeeding(40, true)  → 0 |
-    | caughtSpeeding(90, false) → 2 |
-    |______________________________*/
+    | speed | isBirthday | expected |
+    | (int) | (boolean)  | (int)    |
+    |_______|____________|__________|
+    | 60    | false      | 0        |
+    | 65    | false      | 1        |
+    | 65    | true       | 0        |
+    | 80    | false      | 1        |
+    | 85    | false      | 2        |
+    | 85    | true       | 1        |
+    | 70    | false      | 1        |
+    | 75    | false      | 1        |
+    | 75    | true       | 1        |
+    | 40    | false      | 0        |
+    | 40    | true       | 0        |
+    | 90    | false      | 2        |
+    |_______|____________|_________*/
 
     public static final int caughtSpeeding(int speed, boolean isBirthday)
     {

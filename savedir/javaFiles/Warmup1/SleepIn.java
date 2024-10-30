@@ -10,14 +10,17 @@ public final class SleepIn
     We sleep in if it is not a weekday or we're on vacation. 
     Return true if we sleep in. */
 
-    /*______________________________
-    |           Testcases           |
-    |_______________________________|
-    | sleepIn(false, false) → true  |
-    | sleepIn(true, false)  → false |
-    | sleepIn(false, true)  → true  |
-    | sleepIn(true, true)   → true  |
-    |______________________________*/
+    /*__________________________________
+    |             Testcases             |
+    |___________________________________|
+    | weekday   | vacation  | expected  |
+    | (boolean) | (boolean) | (boolean) |
+    |___________|___________|___________|
+    | false     | false     | true      |
+    | true      | false     | false     |
+    | false     | true      | true      |
+    | true      | true      | true      |
+    |___________|___________|__________*/
 
     public static final boolean sleepIn(boolean weekday, boolean vacation)
     {

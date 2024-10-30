@@ -11,21 +11,24 @@ public final class DividesSelf
     We'll say that 0 does not divide into anything evenly, so no number with a 0 digit divides itself. 
     Note: use % to get the rightmost digit, and / to discard the rightmost digit. */
 
-    /*_________________________
-    |        Testcases         |
-    |__________________________|
-    | dividesSelf(128) → true  |
-    | dividesSelf(12)  → true  |
-    | dividesSelf(120) → false |
-    | dividesSelf(122) → true  |
-    | dividesSelf(13)  → false |
-    | dividesSelf(32)  → false |
-    | dividesSelf(22)  → true  |
-    | dividesSelf(42)  → false |
-    | dividesSelf(212) → true  |
-    | dividesSelf(213) → false |
-    | dividesSelf(162) → true  |
-    |_________________________*/
+    /*__________________
+    |     Testcases     |
+    |___________________|
+    | n     | expected  |
+    | (int) | (boolean) |
+    |_______|___________|
+    | 128   | true      |
+    | 12    | true      |
+    | 120   | false     |
+    | 122   | true      |
+    | 13    | false     |
+    | 32    | false     |
+    | 22    | true      |
+    | 42    | false     |
+    | 212   | true      |
+    | 213   | false     |
+    | 162   | true      |
+    |_______|__________*/
 
     public static final boolean dividesSelf(int n)
     {

@@ -10,17 +10,20 @@ public final class Front22
     so "kitten" yields"kikittenki". If the string length is less than 2, 
     use whatever chars are there. */
 
-    /*_________________________________
-    |            Testcases             |
-    |__________________________________|
-    | front22("kitten") → "kikittenki" |
-    | front22("Ha")     → "HaHaHa"     |
-    | front22("abc")    → "ababcab"    |
-    | front22("ab")     → "ababab"     |
-    | front22("a")      → "aaa"        |
-    | front22("")       → ""           |
-    | front22("Logic")  → "LoLogicLo"  |
-    |_________________________________*/
+    /*________________________
+    |        Testcases        |
+    |_________________________|
+    | str      | expected     |
+    | (String) | (String)     |
+    |__________|______________|
+    | "kitten" | "kikittenki" |
+    | "Ha"     | "HaHaHa"     |
+    | "abc"    | "ababcab"    |
+    | "ab"     | "ababab"     |
+    | "a"      | "aaa"        |
+    | ""       | ""           |
+    | "Logic"  | "LoLogicLo"  |
+    |__________|_____________*/
 
     public static final String front22(String str)
     {

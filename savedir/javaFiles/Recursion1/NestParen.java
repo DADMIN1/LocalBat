@@ -10,25 +10,28 @@ public final class NestParen
     like "(())" or "((()))". Suggestion: check the first and last chars, 
     and then recur on what's inside them. */
 
-    /*_______________________________
-    |           Testcases            |
-    |________________________________|
-    | nestParen("(())")      → true  |
-    | nestParen("((()))")    → true  |
-    | nestParen("(((x))")    → false |
-    | nestParen("((())")     → false |
-    | nestParen("((()()")    → false |
-    | nestParen("()")        → true  |
-    | nestParen("")          → true  |
-    | nestParen("(yy)")      → false |
-    | nestParen("(())")      → true  |
-    | nestParen("(((y))")    → false |
-    | nestParen("((y)))")    → false |
-    | nestParen("((()))")    → true  |
-    | nestParen("(())))")    → false |
-    | nestParen("((yy())))") → false |
-    | nestParen("(((())))")  → true  |
-    |_______________________________*/
+    /*________________________
+    |        Testcases        |
+    |_________________________|
+    | str         | expected  |
+    | (String)    | (boolean) |
+    |_____________|___________|
+    | "(())"      | true      |
+    | "((()))"    | true      |
+    | "(((x))"    | false     |
+    | "((())"     | false     |
+    | "((()()"    | false     |
+    | "()"        | true      |
+    | ""          | true      |
+    | "(yy)"      | false     |
+    | "(())"      | true      |
+    | "(((y))"    | false     |
+    | "((y)))"    | false     |
+    | "((()))"    | true      |
+    | "(())))"    | false     |
+    | "((yy())))" | false     |
+    | "(((())))"  | true      |
+    |_____________|__________*/
 
     public static final boolean nestParen(String str)
     {

@@ -9,16 +9,19 @@ public final class StringClean
     /* Given a string, return recursively a "cleaned" string where adjacent chars that are the same have been reduced to a single char. 
     So "yyzzza" yields "yza". */
 
-    /*_________________________________________________
-    |                    Testcases                     |
-    |__________________________________________________|
-    | stringClean("yyzzza")           → "yza"          |
-    | stringClean("abbbcdd")          → "abcd"         |
-    | stringClean("Hello")            → "Helo"         |
-    | stringClean("XXabcYY")          → "XabcY"        |
-    | stringClean("112ab445")         → "12ab45"       |
-    | stringClean("Hello Bookkeeper") → "Helo Bokeper" |
-    |_________________________________________________*/
+    /*____________________________________
+    |              Testcases              |
+    |_____________________________________|
+    | str (String)       | expected       |
+    |                    | (String)       |
+    |____________________|________________|
+    | "yyzzza"           | "yza"          |
+    | "abbbcdd"          | "abcd"         |
+    | "Hello"            | "Helo"         |
+    | "XXabcYY"          | "XabcY"        |
+    | "112ab445"         | "12ab45"       |
+    | "Hello Bookkeeper" | "Helo Bokeper" |
+    |____________________|_______________*/
 
     public static final String stringClean(String str)
     {

@@ -10,22 +10,25 @@ public final class StartOz
     however include first char only if it is 'o' and include the second only if it is 'z', 
     so "ozymandias" yields "oz". */
 
-    /*_____________________________
-    |          Testcases           |
-    |______________________________|
-    | startOz("ozymandias") → "oz" |
-    | startOz("bzoo")       → "z"  |
-    | startOz("oxx")        → "o"  |
-    | startOz("oz")         → "oz" |
-    | startOz("ounce")      → "o"  |
-    | startOz("o")          → "o"  |
-    | startOz("abc")        → ""   |
-    | startOz("")           → ""   |
-    | startOz("zoo")        → ""   |
-    | startOz("aztec")      → "z"  |
-    | startOz("zzzz")       → "z"  |
-    | startOz("oznic")      → "oz" |
-    |_____________________________*/
+    /*________________________
+    |        Testcases        |
+    |_________________________|
+    | str (String) | expected |
+    |              | (String) |
+    |______________|__________|
+    | "ozymandias" | "oz"     |
+    | "bzoo"       | "z"      |
+    | "oxx"        | "o"      |
+    | "oz"         | "oz"     |
+    | "ounce"      | "o"      |
+    | "o"          | "o"      |
+    | "abc"        | ""       |
+    | ""           | ""       |
+    | "zoo"        | ""       |
+    | "aztec"      | "z"      |
+    | "zzzz"       | "z"      |
+    | "oznic"      | "oz"     |
+    |______________|_________*/
 
     public static final String startOz(String str)
     {

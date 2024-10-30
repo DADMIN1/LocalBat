@@ -11,18 +11,21 @@ public final class NoX
 {
     /* Given a list of strings, return a list where each string has all its "x" removed. */
 
-    /*____________________________________________________________
-    |                          Testcases                          |
-    |_____________________________________________________________|
-    | noX(["ax", "bb", "cx"])         → ["a", "bb", "c"]          |
-    | noX(["xxax", "xbxbx", "xxcx"])  → ["a", "bb", "c"]          |
-    | noX(["x"])                      → [""]                      |
-    | noX([""])                       → [""]                      |
-    | noX([])                         → []                        |
-    | noX(["the", "taxi"])            → ["the", "tai"]            |
-    | noX(["the", "xxtxaxixxx"])      → ["the", "tai"]            |
-    | noX(["this", "is", "the", "x"]) → ["this", "is", "the", ""] |
-    |____________________________________________________________*/
+    /*_________________________________________________________
+    |                        Testcases                         |
+    |__________________________________________________________|
+    | strings (List<String>)               | expected          |
+    |                                      | (List<String>)    |
+    |______________________________________|___________________|
+    | new ArrayList<>(Arrays.asList("ax"   | "bb"              |
+    | new ArrayList<>(Arrays.asList("xxax" | "xbxbx"           |
+    | new ArrayList<>(Arrays.asList("x"))  | Arrays.asList("") |
+    | new ArrayList<>(Arrays.asList(""))   | Arrays.asList("") |
+    | new ArrayList<>(Arrays.asList())     | Arrays.asList()   |
+    | new ArrayList<>(Arrays.asList("the"  | "taxi"))          |
+    | new ArrayList<>(Arrays.asList("the"  | "xxtxaxixxx"))    |
+    | new ArrayList<>(Arrays.asList("this" | "is"              |
+    |______________________________________|__________________*/
 
     public static final List<String> noX(List<String> strings)
     {

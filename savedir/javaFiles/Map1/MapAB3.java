@@ -12,20 +12,23 @@ public final class MapAB3
     if exactly one of the keys "a" or "b" has a value in the map (but not both), 
     set the other to have that same value in the map. */
 
-    /*______________________________________________________________________________________________________
-    |                                               Testcases                                               |
-    |_______________________________________________________________________________________________________|
-    | mapAB3({"a": "aaa", "c": "cake"})              → {"a": "aaa", "b": "aaa", "c": "cake"}                |
-    | mapAB3({"b": "bbb", "c": "cake"})              → {"a": "bbb", "b": "bbb", "c": "cake"}                |
-    | mapAB3({"a": "aaa", "b": "bbb", "c": "cake"})  → {"a": "aaa", "b": "bbb", "c": "cake"}                |
-    | mapAB3({"ccc": "ccc"})                         → {"ccc": "ccc"}                                       |
-    | mapAB3({"c": "a", "d": "b"})                   → {"c": "a", "d": "b"}                                 |
-    | mapAB3({})                                     → {}                                                   |
-    | mapAB3({"a": ""})                              → {"a": "", "b": ""}                                   |
-    | mapAB3({"b": ""})                              → {"a": "", "b": ""}                                   |
-    | mapAB3({"a": "", "b": ""})                     → {"a": "", "b": ""}                                   |
-    | mapAB3({"aa": "aa", "a": "apple", "z": "zzz"}) → {"aa": "aa", "a": "apple", "b": "apple", "z": "zzz"} |
-    |______________________________________________________________________________________________________*/
+    /*___________________________________________________
+    |                     Testcases                      |
+    |____________________________________________________|
+    | map (Map<String, String>)  | expected              |
+    |                            | (Map<String, String>) |
+    |____________________________|_______________________|
+    | new HashMap<>(Map.of("a"   | "aaa"                 |
+    | new HashMap<>(Map.of("b"   | "bbb"                 |
+    | new HashMap<>(Map.of("a"   | "aaa"                 |
+    | new HashMap<>(Map.of("ccc" | "ccc"))               |
+    | new HashMap<>(Map.of("c"   | "a"                   |
+    | new HashMap<>(Map.of())    | Map.of()              |
+    | new HashMap<>(Map.of("a"   | ""))                  |
+    | new HashMap<>(Map.of("b"   | ""))                  |
+    | new HashMap<>(Map.of("a"   | ""                    |
+    | new HashMap<>(Map.of("aa"  | "aa"                  |
+    |____________________________|______________________*/
 
     public static final Map<String, String> mapAB3(Map<String, String> map)
     {

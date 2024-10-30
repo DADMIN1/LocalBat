@@ -12,16 +12,19 @@ public final class Topping3
     if the key "potato" has a value, set that as the value for the key "fries". 
     If the key "salad" has a value, set that as the value for the key "spinach". */
 
-    /*____________________________________________________________________________________________________________________________________________________________________
-    |                                                                              Testcases                                                                              |
-    |_____________________________________________________________________________________________________________________________________________________________________|
-    | topping3({"potato": "ketchup"})                                    → {"potato": "ketchup", "fries": "ketchup"}                                                      |
-    | topping3({"potato": "butter"})                                     → {"potato": "butter", "fries": "butter"}                                                        |
-    | topping3({"salad": "oil", "potato": "ketchup"})                    → {"spinach": "oil", "salad": "oil", "potato": "ketchup", "fries": "ketchup"}                    |
-    | topping3({"toast": "butter", "salad": "oil", "potato": "ketchup"}) → {"toast": "butter", "spinach": "oil", "salad": "oil", "potato": "ketchup", "fries": "ketchup"} |
-    | topping3({})                                                       → {}                                                                                             |
-    | topping3({"salad": "pepper", "fries": "salt"})                     → {"spinach": "pepper", "salad": "pepper", "fries": "salt"}                                      |
-    |____________________________________________________________________________________________________________________________________________________________________*/
+    /*______________________________________________________
+    |                       Testcases                       |
+    |_______________________________________________________|
+    | map (Map<String, String>)     | expected              |
+    |                               | (Map<String, String>) |
+    |_______________________________|_______________________|
+    | new HashMap<>(Map.of("potato" | "ketchup"))           |
+    | new HashMap<>(Map.of("potato" | "butter"))            |
+    | new HashMap<>(Map.of("salad"  | "oil"                 |
+    | new HashMap<>(Map.of("toast"  | "butter"              |
+    | new HashMap<>(Map.of())       | Map.of()              |
+    | new HashMap<>(Map.of("salad"  | "pepper"              |
+    |_______________________________|______________________*/
 
     public static final Map<String, String> topping3(Map<String, String> map)
     {

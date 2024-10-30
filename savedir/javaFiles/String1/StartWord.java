@@ -13,25 +13,28 @@ public final class StartWord
     So, so with the string "hippo" the word "hi" returns "hi" and "xip" returns "hip". 
     The word will be at least length 1. */
 
-    /*______________________________________
-    |               Testcases               |
-    |_______________________________________|
-    | startWord("hippo", "hi")    → "hi"    |
-    | startWord("hippo", "xip")   → "hip"   |
-    | startWord("hippo", "i")     → "h"     |
-    | startWord("hippo", "ix")    → ""      |
-    | startWord("h", "ix")        → ""      |
-    | startWord("", "i")          → ""      |
-    | startWord("hip", "zi")      → "hi"    |
-    | startWord("hip", "zip")     → "hip"   |
-    | startWord("hip", "zig")     → ""      |
-    | startWord("h", "z")         → "h"     |
-    | startWord("hippo", "xippo") → "hippo" |
-    | startWord("hippo", "xyz")   → ""      |
-    | startWord("hippo", "hip")   → "hip"   |
-    | startWord("kitten", "cit")  → "kit"   |
-    | startWord("kit", "cit")     → "kit"   |
-    |______________________________________*/
+    /*_______________________________
+    |           Testcases            |
+    |________________________________|
+    | str      | word     | expected |
+    | (String) | (String) | (String) |
+    |__________|__________|__________|
+    | "hippo"  | "hi"     | "hi"     |
+    | "hippo"  | "xip"    | "hip"    |
+    | "hippo"  | "i"      | "h"      |
+    | "hippo"  | "ix"     | ""       |
+    | "h"      | "ix"     | ""       |
+    | ""       | "i"      | ""       |
+    | "hip"    | "zi"     | "hi"     |
+    | "hip"    | "zip"    | "hip"    |
+    | "hip"    | "zig"    | ""       |
+    | "h"      | "z"      | "h"      |
+    | "hippo"  | "xippo"  | "hippo"  |
+    | "hippo"  | "xyz"    | ""       |
+    | "hippo"  | "hip"    | "hip"    |
+    | "kitten" | "cit"    | "kit"    |
+    | "kit"    | "cit"    | "kit"    |
+    |__________|__________|_________*/
 
     public static final String startWord(String str, String word)
     {

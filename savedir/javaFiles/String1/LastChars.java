@@ -10,19 +10,22 @@ public final class LastChars
     so "yo" and "java" yields "ya". If either string is length 0, 
     use '@' for its missing char. */
 
-    /*__________________________________
-    |             Testcases             |
-    |___________________________________|
-    | lastChars("last", "chars") → "ls" |
-    | lastChars("yo", "java")    → "ya" |
-    | lastChars("hi", "")        → "h@" |
-    | lastChars("", "hello")     → "@o" |
-    | lastChars("", "")          → "@@" |
-    | lastChars("kitten", "hi")  → "ki" |
-    | lastChars("k", "zip")      → "kp" |
-    | lastChars("kitten", "")    → "k@" |
-    | lastChars("kitten", "zip") → "kp" |
-    |__________________________________*/
+    /*_______________________________
+    |           Testcases            |
+    |________________________________|
+    | a        | b        | expected |
+    | (String) | (String) | (String) |
+    |__________|__________|__________|
+    | "last"   | "chars"  | "ls"     |
+    | "yo"     | "java"   | "ya"     |
+    | "hi"     | ""       | "h@"     |
+    | ""       | "hello"  | "@o"     |
+    | ""       | ""       | "@@"     |
+    | "kitten" | "hi"     | "ki"     |
+    | "k"      | "zip"    | "kp"     |
+    | "kitten" | ""       | "k@"     |
+    | "kitten" | "zip"    | "kp"     |
+    |__________|__________|_________*/
 
     public static final String lastChars(String a, String b)
     {

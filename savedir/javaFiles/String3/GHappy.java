@@ -9,22 +9,25 @@ public final class GHappy
     /* We'll say that a lowercase 'g' in a string is "happy" if there is another 'g' immediately to its left or right. 
     Return true if all the g's in the given string are happy. */
 
-    /*____________________________
-    |          Testcases          |
-    |_____________________________|
-    | gHappy("xxggxx")    → true  |
-    | gHappy("xxgxx")     → false |
-    | gHappy("xxggyygxx") → false |
-    | gHappy("g")         → false |
-    | gHappy("gg")        → true  |
-    | gHappy("")          → true  |
-    | gHappy("xxgggxyz")  → true  |
-    | gHappy("xxgggxyg")  → false |
-    | gHappy("xxgggxygg") → true  |
-    | gHappy("mgm")       → false |
-    | gHappy("mggm")      → true  |
-    | gHappy("yyygggxyy") → true  |
-    |____________________________*/
+    /*________________________
+    |        Testcases        |
+    |_________________________|
+    | str         | expected  |
+    | (String)    | (boolean) |
+    |_____________|___________|
+    | "xxggxx"    | true      |
+    | "xxgxx"     | false     |
+    | "xxggyygxx" | false     |
+    | "g"         | false     |
+    | "gg"        | true      |
+    | ""          | true      |
+    | "xxgggxyz"  | true      |
+    | "xxgggxyg"  | false     |
+    | "xxgggxygg" | true      |
+    | "mgm"       | false     |
+    | "mggm"      | true      |
+    | "yyygggxyy" | true      |
+    |_____________|__________*/
 
     public static final boolean gHappy(String str)
     {

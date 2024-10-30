@@ -12,15 +12,18 @@ public final class Topping1
     if the key "ice cream" is present, set its value to "cherry". 
     In all cases, set the key "bread" to have the value "butter". */
 
-    /*_____________________________________________________________________________________________________________________________________
-    |                                                              Testcases                                                               |
-    |______________________________________________________________________________________________________________________________________|
-    | topping1({"ice cream": "peanuts"})                                      → {"bread": "butter", "ice cream": "cherry"}                 |
-    | topping1({})                                                            → {"bread": "butter"}                                        |
-    | topping1({"pancake": "syrup"})                                          → {"bread": "butter", "pancake": "syrup"}                    |
-    | topping1({"bread": "dirt", "ice cream": "strawberries"})                → {"bread": "butter", "ice cream": "cherry"}                 |
-    | topping1({"bread": "jam", "ice cream": "strawberries", "salad": "oil"}) → {"bread": "butter", "ice cream": "cherry", "salad": "oil"} |
-    |_____________________________________________________________________________________________________________________________________*/
+    /*_____________________________________________________________
+    |                          Testcases                           |
+    |______________________________________________________________|
+    | map (Map<String, String>)        | expected                  |
+    |                                  | (Map<String, String>)     |
+    |__________________________________|___________________________|
+    | new HashMap<>(Map.of("ice cream" | "peanuts"))               |
+    | new HashMap<>(Map.of())          | Map.of("bread", "butter") |
+    | new HashMap<>(Map.of("pancake"   | "syrup"))                 |
+    | new HashMap<>(Map.of("bread"     | "dirt"                    |
+    | new HashMap<>(Map.of("bread"     | "jam"                     |
+    |__________________________________|__________________________*/
 
     public static final Map<String, String> topping1(Map<String, String> map)
     {

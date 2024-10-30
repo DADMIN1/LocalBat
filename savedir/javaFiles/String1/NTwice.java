@@ -9,17 +9,20 @@ public final class NTwice
     /* Given a string and an int n, return a string made of the first and last n chars from the string. 
     The string length will be at least n. */
 
-    /*____________________________________
-    |              Testcases              |
-    |_____________________________________|
-    | nTwice("Hello", 2)     → "Helo"     |
-    | nTwice("Chocolate", 3) → "Choate"   |
-    | nTwice("Chocolate", 1) → "Ce"       |
-    | nTwice("Chocolate", 0) → ""         |
-    | nTwice("Hello", 4)     → "Hellello" |
-    | nTwice("Code", 4)      → "CodeCode" |
-    | nTwice("Code", 2)      → "Code"     |
-    |____________________________________*/
+    /*_________________________________
+    |            Testcases             |
+    |__________________________________|
+    | str         | n     | expected   |
+    | (String)    | (int) | (String)   |
+    |_____________|_______|____________|
+    | "Hello"     | 2     | "Helo"     |
+    | "Chocolate" | 3     | "Choate"   |
+    | "Chocolate" | 1     | "Ce"       |
+    | "Chocolate" | 0     | ""         |
+    | "Hello"     | 4     | "Hellello" |
+    | "Code"      | 4     | "CodeCode" |
+    | "Code"      | 2     | "Code"     |
+    |_____________|_______|___________*/
 
     public static final String nTwice(String str, int n)
     {

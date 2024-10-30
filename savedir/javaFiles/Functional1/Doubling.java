@@ -11,18 +11,21 @@ public final class Doubling
 {
     /* Given a list of integers, return a list where each integer is multiplied by 2. */
 
-    /*___________________________________________________________________________________________
-    |                                         Testcases                                          |
-    |____________________________________________________________________________________________|
-    | doubling([1, 2, 3])                              → [2, 4, 6]                               |
-    | doubling([6, 8, 6, 8, -1])                       → [12, 16, 12, 16, -2]                    |
-    | doubling([])                                     → []                                      |
-    | doubling([5])                                    → [10]                                    |
-    | doubling([5, 10])                                → [10, 20]                                |
-    | doubling([8, -5, 7, 3, 109])                     → [16, -10, 14, 6, 218]                   |
-    | doubling([6, -3, 12, 23, 4, 1, 19, 11, 2, 3, 2]) → [12, -6, 24, 46, 8, 2, 38, 22, 4, 6, 4] |
-    | doubling([3, 1, 4, 1, 5, 9])                     → [6, 2, 8, 2, 10, 18]                    |
-    |___________________________________________________________________________________________*/
+    /*______________________________________________________
+    |                       Testcases                       |
+    |_______________________________________________________|
+    | nums (List<Integer>)              | expected          |
+    |                                   | (List<Integer>)   |
+    |___________________________________|___________________|
+    | new ArrayList<>(Arrays.asList(1   | 2                 |
+    | new ArrayList<>(Arrays.asList(6   | 8                 |
+    | new ArrayList<>(Arrays.asList())  | Arrays.asList()   |
+    | new ArrayList<>(Arrays.asList(5)) | Arrays.asList(10) |
+    | new ArrayList<>(Arrays.asList(5   | 10))              |
+    | new ArrayList<>(Arrays.asList(8   | -5                |
+    | new ArrayList<>(Arrays.asList(6   | -3                |
+    | new ArrayList<>(Arrays.asList(3   | 1                 |
+    |___________________________________|__________________*/
 
     public static final List<Integer> doubling(List<Integer> nums)
     {

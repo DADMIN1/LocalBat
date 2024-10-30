@@ -10,17 +10,20 @@ public final class MakeTags
     In this example, the "i" tag makes <i> and </i> which surround the word "Yay". 
     Given tag and word strings, create the HTML string with tags around the word, e.g. "<i>Yay</i>". */
 
-    /*________________________________________________________
-    |                        Testcases                        |
-    |_________________________________________________________|
-    | makeTags("i", "Yay")        → "<i>Yay</i>"              |
-    | makeTags("i", "Hello")      → "<i>Hello</i>"            |
-    | makeTags("cite", "Yay")     → "<cite>Yay</cite>"        |
-    | makeTags("address", "here") → "<address>here</address>" |
-    | makeTags("body", "Heart")   → "<body>Heart</body>"      |
-    | makeTags("i", "i")          → "<i>i</i>"                |
-    | makeTags("i", "")           → "<i></i>"                 |
-    |________________________________________________________*/
+    /*_________________________________________________
+    |                    Testcases                     |
+    |__________________________________________________|
+    | tag       | word     | expected (String)         |
+    | (String)  | (String) |                           |
+    |___________|__________|___________________________|
+    | "i"       | "Yay"    | "<i>Yay</i>"              |
+    | "i"       | "Hello"  | "<i>Hello</i>"            |
+    | "cite"    | "Yay"    | "<cite>Yay</cite>"        |
+    | "address" | "here"   | "<address>here</address>" |
+    | "body"    | "Heart"  | "<body>Heart</body>"      |
+    | "i"       | "i"      | "<i>i</i>"                |
+    | "i"       | ""       | "<i></i>"                 |
+    |___________|__________|__________________________*/
 
     public static final String makeTags(String tag, String word)
     {

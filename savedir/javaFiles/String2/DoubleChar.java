@@ -9,19 +9,22 @@ public final class DoubleChar
     /* Given a string, return a string where for every char in the original, 
     there are two chars. */
 
-    /*____________________________________________
-    |                  Testcases                  |
-    |_____________________________________________|
-    | doubleChar("The")      → "TThhee"           |
-    | doubleChar("AAbb")     → "AAAAbbbb"         |
-    | doubleChar("Hi-There") → "HHii--TThheerree" |
-    | doubleChar("Word!")    → "WWoorrdd!!"       |
-    | doubleChar("!!")       → "!!!!"             |
-    | doubleChar("")         → ""                 |
-    | doubleChar("a")        → "aa"               |
-    | doubleChar(".")        → ".."               |
-    | doubleChar("aa")       → "aaaa"             |
-    |____________________________________________*/
+    /*________________________________
+    |            Testcases            |
+    |_________________________________|
+    | str        | expected (String)  |
+    | (String)   |                    |
+    |____________|____________________|
+    | "The"      | "TThhee"           |
+    | "AAbb"     | "AAAAbbbb"         |
+    | "Hi-There" | "HHii--TThheerree" |
+    | "Word!"    | "WWoorrdd!!"       |
+    | "!!"       | "!!!!"             |
+    | ""         | ""                 |
+    | "a"        | "aa"               |
+    | "."        | ".."               |
+    | "aa"       | "aaaa"             |
+    |____________|___________________*/
 
     public static final String doubleChar(String str)
     {

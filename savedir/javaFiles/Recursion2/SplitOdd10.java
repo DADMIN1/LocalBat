@@ -13,22 +13,25 @@ public final class SplitOdd10
     and make the initial call to your recursive helper from splitOdd10(). 
     (No loops needed.) */
 
-    /*_____________________________________
-    |              Testcases               |
-    |______________________________________|
-    | splitOdd10([5, 5, 5])        → true  |
-    | splitOdd10([5, 5, 6])        → false |
-    | splitOdd10([5, 5, 6, 1])     → true  |
-    | splitOdd10([6, 5, 5, 1])     → true  |
-    | splitOdd10([6, 5, 5, 1, 10]) → true  |
-    | splitOdd10([6, 5, 5, 5, 1])  → false |
-    | splitOdd10([1])              → true  |
-    | splitOdd10([])               → false |
-    | splitOdd10([10, 7, 5, 5])    → true  |
-    | splitOdd10([10, 0, 5, 5])    → false |
-    | splitOdd10([10, 7, 5, 5, 2]) → true  |
-    | splitOdd10([10, 7, 5, 5, 1]) → false |
-    |_____________________________________*/
+    /*_______________________________
+    |           Testcases            |
+    |________________________________|
+    | nums (int[])       | expected  |
+    |                    | (boolean) |
+    |____________________|___________|
+    | { 5, 5, 5 }        | true      |
+    | { 5, 5, 6 }        | false     |
+    | { 5, 5, 6, 1 }     | true      |
+    | { 6, 5, 5, 1 }     | true      |
+    | { 6, 5, 5, 1, 10 } | true      |
+    | { 6, 5, 5, 5, 1 }  | false     |
+    | { 1 }              | true      |
+    | {  }               | false     |
+    | { 10, 7, 5, 5 }    | true      |
+    | { 10, 0, 5, 5 }    | false     |
+    | { 10, 7, 5, 5, 2 } | true      |
+    | { 10, 7, 5, 5, 1 } | false     |
+    |____________________|__________*/
 
     public static final boolean splitOdd10(int[] nums)
     {

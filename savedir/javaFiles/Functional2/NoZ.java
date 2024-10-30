@@ -12,16 +12,19 @@ public final class NoZ
     /* Given a list of strings, return a list of the strings, omitting any string that contains a "z". 
     (Note: the str.contains(x) method returns a boolean) */
 
-    /*_________________________________________________________
-    |                        Testcases                         |
-    |__________________________________________________________|
-    | noZ(["aaa", "bbb", "aza"])            → ["aaa", "bbb"]   |
-    | noZ(["hziz", "hzello", "hi"])         → ["hi"]           |
-    | noZ(["hello", "howz", "are", "youz"]) → ["hello", "are"] |
-    | noZ([])                               → []               |
-    | noZ([""])                             → [""]             |
-    | noZ(["x", "y", "z"])                  → ["x", "y"]       |
-    |_________________________________________________________*/
+    /*__________________________________________________________
+    |                         Testcases                         |
+    |___________________________________________________________|
+    | strings (List<String>)                | expected          |
+    |                                       | (List<String>)    |
+    |_______________________________________|___________________|
+    | new ArrayList<>(Arrays.asList("aaa"   | "bbb"             |
+    | new ArrayList<>(Arrays.asList("hziz"  | "hzello"          |
+    | new ArrayList<>(Arrays.asList("hello" | "howz"            |
+    | new ArrayList<>(Arrays.asList())      | Arrays.asList()   |
+    | new ArrayList<>(Arrays.asList(""))    | Arrays.asList("") |
+    | new ArrayList<>(Arrays.asList("x"     | "y"               |
+    |_______________________________________|__________________*/
 
     public static final List<String> noZ(List<String> strings)
     {

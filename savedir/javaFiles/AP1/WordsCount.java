@@ -8,16 +8,19 @@ public final class WordsCount
 {
     /* Given an array of strings, return the count of the number of strings with the given length. */
 
-    /*_________________________________________________
-    |                    Testcases                     |
-    |__________________________________________________|
-    | wordsCount(["a", "bb", "b", "ccc"], 1)       → 2 |
-    | wordsCount(["a", "bb", "b", "ccc"], 3)       → 1 |
-    | wordsCount(["a", "bb", "b", "ccc"], 4)       → 0 |
-    | wordsCount(["xx", "yyy", "x", "yy", "z"], 1) → 2 |
-    | wordsCount(["xx", "yyy", "x", "yy", "z"], 2) → 2 |
-    | wordsCount(["xx", "yyy", "x", "yy", "z"], 3) → 1 |
-    |_________________________________________________*/
+    /*___________________________________________________
+    |                     Testcases                      |
+    |____________________________________________________|
+    | words (String[])                | len   | expected |
+    |                                 | (int) | (int)    |
+    |_________________________________|_______|__________|
+    | { "a", "bb", "b", "ccc" }       | 1     | 2        |
+    | { "a", "bb", "b", "ccc" }       | 3     | 1        |
+    | { "a", "bb", "b", "ccc" }       | 4     | 0        |
+    | { "xx", "yyy", "x", "yy", "z" } | 1     | 2        |
+    | { "xx", "yyy", "x", "yy", "z" } | 2     | 2        |
+    | { "xx", "yyy", "x", "yy", "z" } | 3     | 1        |
+    |_________________________________|_______|_________*/
 
     public static final int wordsCount(String[] words, int len)
     {

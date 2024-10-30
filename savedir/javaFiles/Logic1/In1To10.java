@@ -10,25 +10,28 @@ public final class In1To10
     inclusive. Unless outsideMode is true, in which case return true if the number is less or equal to 1, 
     or greater or equal to 10. */
 
-    /*___________________________
-    |         Testcases          |
-    |____________________________|
-    | in1To10(5, false)  → true  |
-    | in1To10(11, false) → false |
-    | in1To10(11, true)  → true  |
-    | in1To10(10, false) → true  |
-    | in1To10(10, true)  → true  |
-    | in1To10(9, false)  → true  |
-    | in1To10(9, true)   → false |
-    | in1To10(1, false)  → true  |
-    | in1To10(1, true)   → true  |
-    | in1To10(0, false)  → false |
-    | in1To10(0, true)   → true  |
-    | in1To10(-1, false) → false |
-    | in1To10(-1, true)  → true  |
-    | in1To10(99, false) → false |
-    | in1To10(-99, true) → true  |
-    |___________________________*/
+    /*________________________________
+    |            Testcases            |
+    |_________________________________|
+    | n     | outsideMode | expected  |
+    | (int) | (boolean)   | (boolean) |
+    |_______|_____________|___________|
+    | 5     | false       | true      |
+    | 11    | false       | false     |
+    | 11    | true        | true      |
+    | 10    | false       | true      |
+    | 10    | true        | true      |
+    | 9     | false       | true      |
+    | 9     | true        | false     |
+    | 1     | false       | true      |
+    | 1     | true        | true      |
+    | 0     | false       | false     |
+    | 0     | true        | true      |
+    | -1    | false       | false     |
+    | -1    | true        | true      |
+    | 99    | false       | false     |
+    | -99   | true        | true      |
+    |_______|_____________|__________*/
 
     public static final boolean in1To10(int n, boolean outsideMode)
     {

@@ -9,29 +9,32 @@ public final class NearHundred
     /* Given an int n, return true if it is within 10 of 100 or 200. 
     Note: Math.abs(num) computes the absolute value of a number. */
 
-    /*__________________________
-    |         Testcases         |
-    |___________________________|
-    | nearHundred(93)   → true  |
-    | nearHundred(90)   → true  |
-    | nearHundred(89)   → false |
-    | nearHundred(110)  → true  |
-    | nearHundred(111)  → false |
-    | nearHundred(121)  → false |
-    | nearHundred(-101) → false |
-    | nearHundred(-209) → false |
-    | nearHundred(190)  → true  |
-    | nearHundred(209)  → true  |
-    | nearHundred(0)    → false |
-    | nearHundred(5)    → false |
-    | nearHundred(-50)  → false |
-    | nearHundred(191)  → true  |
-    | nearHundred(189)  → false |
-    | nearHundred(200)  → true  |
-    | nearHundred(210)  → true  |
-    | nearHundred(211)  → false |
-    | nearHundred(290)  → false |
-    |__________________________*/
+    /*__________________
+    |     Testcases     |
+    |___________________|
+    | n     | expected  |
+    | (int) | (boolean) |
+    |_______|___________|
+    | 93    | true      |
+    | 90    | true      |
+    | 89    | false     |
+    | 110   | true      |
+    | 111   | false     |
+    | 121   | false     |
+    | -101  | false     |
+    | -209  | false     |
+    | 190   | true      |
+    | 209   | true      |
+    | 0     | false     |
+    | 5     | false     |
+    | -50   | false     |
+    | 191   | true      |
+    | 189   | false     |
+    | 200   | true      |
+    | 210   | true      |
+    | 211   | false     |
+    | 290   | false     |
+    |_______|__________*/
 
     public static final boolean nearHundred(int n)
     {

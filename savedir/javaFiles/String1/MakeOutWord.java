@@ -10,15 +10,18 @@ public final class MakeOutWord
     return a new string where the word is in the middle of the out string, e.g. "<<word>>". 
     Note: use str.substring(i, j) to extract the String starting at index i and going up to but not including index j. */
 
-    /*_____________________________________________
-    |                  Testcases                   |
-    |______________________________________________|
-    | makeOutWord("<<>>", "Yay")    → "<<Yay>>"    |
-    | makeOutWord("<<>>", "WooHoo") → "<<WooHoo>>" |
-    | makeOutWord("[[]]", "word")   → "[[word]]"   |
-    | makeOutWord("HHoo", "Hello")  → "HHHellooo"  |
-    | makeOutWord("abyz", "YAY")    → "abYAYyz"    |
-    |_____________________________________________*/
+    /*___________________________________
+    |             Testcases              |
+    |____________________________________|
+    | out      | word     | expected     |
+    | (String) | (String) | (String)     |
+    |__________|__________|______________|
+    | "<<>>"   | "Yay"    | "<<Yay>>"    |
+    | "<<>>"   | "WooHoo" | "<<WooHoo>>" |
+    | "[[]]"   | "word"   | "[[word]]"   |
+    | "HHoo"   | "Hello"  | "HHHellooo"  |
+    | "abyz"   | "YAY"    | "abYAYyz"    |
+    |__________|__________|_____________*/
 
     public static final String makeOutWord(String out, String word)
     {

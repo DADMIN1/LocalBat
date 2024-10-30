@@ -12,20 +12,23 @@ public final class NoYY
     /* Given a list of strings, return a list where each string has "y" added at its end, 
     omitting any resulting strings that contain "yy" as a substring anywhere. */
 
-    /*__________________________________________________
-    |                     Testcases                     |
-    |___________________________________________________|
-    | noYY(["a", "b", "c"])     → ["ay", "by", "cy"]    |
-    | noYY(["a", "b", "cy"])    → ["ay", "by"]          |
-    | noYY(["xx", "ya", "zz"])  → ["xxy", "yay", "zzy"] |
-    | noYY(["xx", "yay", "zz"]) → ["xxy", "zzy"]        |
-    | noYY(["yyx", "y", "zzz"]) → ["zzzy"]              |
-    | noYY(["hello", "there"])  → ["helloy", "therey"]  |
-    | noYY(["ya"])              → ["yay"]               |
-    | noYY([])                  → []                    |
-    | noYY([""])                → ["y"]                 |
-    | noYY(["xx", "yy", "zz"])  → ["xxy", "zzy"]        |
-    |__________________________________________________*/
+    /*_____________________________________________________________
+    |                          Testcases                           |
+    |______________________________________________________________|
+    | strings (List<String>)                | expected             |
+    |                                       | (List<String>)       |
+    |_______________________________________|______________________|
+    | new ArrayList<>(Arrays.asList("a"     | "b"                  |
+    | new ArrayList<>(Arrays.asList("a"     | "b"                  |
+    | new ArrayList<>(Arrays.asList("xx"    | "ya"                 |
+    | new ArrayList<>(Arrays.asList("xx"    | "yay"                |
+    | new ArrayList<>(Arrays.asList("yyx"   | "y"                  |
+    | new ArrayList<>(Arrays.asList("hello" | "there"))            |
+    | new ArrayList<>(Arrays.asList("ya"))  | Arrays.asList("yay") |
+    | new ArrayList<>(Arrays.asList())      | Arrays.asList()      |
+    | new ArrayList<>(Arrays.asList(""))    | Arrays.asList("y")   |
+    | new ArrayList<>(Arrays.asList("xx"    | "yy"                 |
+    |_______________________________________|_____________________*/
 
     public static final List<String> noYY(List<String> strings)
     {

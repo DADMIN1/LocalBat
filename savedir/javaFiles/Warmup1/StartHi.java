@@ -8,18 +8,21 @@ public final class StartHi
 {
     /* Given a string, return true if the string starts with "hi" and false otherwise. */
 
-    /*____________________________
-    |          Testcases          |
-    |_____________________________|
-    | startHi("hi there") → true  |
-    | startHi("hi")       → true  |
-    | startHi("hello hi") → false |
-    | startHi("he")       → false |
-    | startHi("h")        → false |
-    | startHi("")         → false |
-    | startHi("ho hi")    → false |
-    | startHi("hi ho")    → true  |
-    |____________________________*/
+    /*_______________________
+    |       Testcases        |
+    |________________________|
+    | str        | expected  |
+    | (String)   | (boolean) |
+    |____________|___________|
+    | "hi there" | true      |
+    | "hi"       | true      |
+    | "hello hi" | false     |
+    | "he"       | false     |
+    | "h"        | false     |
+    | ""         | false     |
+    | "ho hi"    | false     |
+    | "hi ho"    | true      |
+    |____________|__________*/
 
     public static final boolean startHi(String str)
     {

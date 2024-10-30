@@ -8,21 +8,24 @@ public final class CountHi
 {
     /* Given a string, compute recursively (no loops) the number of times lowercase "hi" appears in the string. */
 
-    /*______________________________
-    |           Testcases           |
-    |_______________________________|
-    | countHi("xxhixx")         → 1 |
-    | countHi("xhixhix")        → 2 |
-    | countHi("hi")             → 1 |
-    | countHi("hihih")          → 2 |
-    | countHi("h")              → 0 |
-    | countHi("")               → 0 |
-    | countHi("ihihihihih")     → 4 |
-    | countHi("ihihihihihi")    → 5 |
-    | countHi("hiAAhi12hi")     → 3 |
-    | countHi("xhixhxihihhhih") → 3 |
-    | countHi("ship")           → 1 |
-    |______________________________*/
+    /*____________________________
+    |          Testcases          |
+    |_____________________________|
+    | str (String)     | expected |
+    |                  | (int)    |
+    |__________________|__________|
+    | "xxhixx"         | 1        |
+    | "xhixhix"        | 2        |
+    | "hi"             | 1        |
+    | "hihih"          | 2        |
+    | "h"              | 0        |
+    | ""               | 0        |
+    | "ihihihihih"     | 4        |
+    | "ihihihihihi"    | 5        |
+    | "hiAAhi12hi"     | 3        |
+    | "xhixhxihihhhih" | 3        |
+    | "ship"           | 1        |
+    |__________________|_________*/
 
     public static final int countHi(String str)
     {

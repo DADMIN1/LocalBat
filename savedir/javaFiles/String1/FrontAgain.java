@@ -9,21 +9,24 @@ public final class FrontAgain
     /* Given a string, return true if the first 2 chars in the string also appear at the end of the string, 
     such as with "edited". */
 
-    /*_____________________________
-    |          Testcases           |
-    |______________________________|
-    | frontAgain("edited") → true  |
-    | frontAgain("edit")   → false |
-    | frontAgain("ed")     → true  |
-    | frontAgain("jj")     → true  |
-    | frontAgain("jjj")    → true  |
-    | frontAgain("jjjj")   → true  |
-    | frontAgain("jjjk")   → false |
-    | frontAgain("x")      → false |
-    | frontAgain("")       → false |
-    | frontAgain("java")   → false |
-    | frontAgain("javaja") → true  |
-    |_____________________________*/
+    /*_____________________
+    |      Testcases       |
+    |______________________|
+    | str      | expected  |
+    | (String) | (boolean) |
+    |__________|___________|
+    | "edited" | true      |
+    | "edit"   | false     |
+    | "ed"     | true      |
+    | "jj"     | true      |
+    | "jjj"    | true      |
+    | "jjjj"   | true      |
+    | "jjjk"   | false     |
+    | "x"      | false     |
+    | ""       | false     |
+    | "java"   | false     |
+    | "javaja" | true      |
+    |__________|__________*/
 
     public static final boolean frontAgain(String str)
     {

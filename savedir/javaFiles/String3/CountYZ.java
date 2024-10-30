@@ -11,21 +11,24 @@ public final class CountYZ
     We'll say that a y or z is at the end of a word if there is not an alphabetic letter immediately following it. 
     (Note: Character.isLetter(char) tests if a char is an alphabetic letter.) */
 
-    /*____________________________
-    |          Testcases          |
-    |_____________________________|
-    | countYZ("fez day")      → 2 |
-    | countYZ("day fez")      → 2 |
-    | countYZ("day fyyyz")    → 2 |
-    | countYZ("day yak")      → 1 |
-    | countYZ("day:yak")      → 1 |
-    | countYZ("!!day--yaz!!") → 2 |
-    | countYZ("yak zak")      → 0 |
-    | countYZ("DAY abc XYZ")  → 2 |
-    | countYZ("aaz yyz my")   → 3 |
-    | countYZ("y2bz")         → 2 |
-    | countYZ("zxyx")         → 0 |
-    |____________________________*/
+    /*__________________________
+    |         Testcases         |
+    |___________________________|
+    | str (String)   | expected |
+    |                | (int)    |
+    |________________|__________|
+    | "fez day"      | 2        |
+    | "day fez"      | 2        |
+    | "day fyyyz"    | 2        |
+    | "day yak"      | 1        |
+    | "day:yak"      | 1        |
+    | "!!day--yaz!!" | 2        |
+    | "yak zak"      | 0        |
+    | "DAY abc XYZ"  | 2        |
+    | "aaz yyz my"   | 3        |
+    | "y2bz"         | 2        |
+    | "zxyx"         | 0        |
+    |________________|_________*/
 
     public static final int countYZ(String str)
     {

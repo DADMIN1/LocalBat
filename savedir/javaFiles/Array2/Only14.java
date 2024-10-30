@@ -8,25 +8,28 @@ public final class Only14
 {
     /* Given an array of ints, return true if every element is a 1 or a 4. */
 
-    /*_____________________________
-    |          Testcases           |
-    |______________________________|
-    | only14([1, 4, 1, 4]) → true  |
-    | only14([1, 4, 2, 4]) → false |
-    | only14([1, 1])       → true  |
-    | only14([4, 1])       → true  |
-    | only14([2])          → false |
-    | only14([])           → true  |
-    | only14([1, 4, 1, 3]) → false |
-    | only14([3, 1, 3])    → false |
-    | only14([1])          → true  |
-    | only14([4])          → true  |
-    | only14([3, 4])       → false |
-    | only14([1, 3, 4])    → false |
-    | only14([1, 1, 1])    → true  |
-    | only14([1, 1, 1, 5]) → false |
-    | only14([4, 1, 4, 1]) → true  |
-    |_____________________________*/
+    /*___________________________
+    |         Testcases          |
+    |____________________________|
+    | nums (int[])   | expected  |
+    |                | (boolean) |
+    |________________|___________|
+    | { 1, 4, 1, 4 } | true      |
+    | { 1, 4, 2, 4 } | false     |
+    | { 1, 1 }       | true      |
+    | { 4, 1 }       | true      |
+    | { 2 }          | false     |
+    | {  }           | true      |
+    | { 1, 4, 1, 3 } | false     |
+    | { 3, 1, 3 }    | false     |
+    | { 1 }          | true      |
+    | { 4 }          | true      |
+    | { 3, 4 }       | false     |
+    | { 1, 3, 4 }    | false     |
+    | { 1, 1, 1 }    | true      |
+    | { 1, 1, 1, 5 } | false     |
+    | { 4, 1, 4, 1 } | true      |
+    |________________|__________*/
 
     public static final boolean only14(int[] nums)
     {

@@ -9,19 +9,22 @@ public final class LoneSum
     /* Given 3 int values, a b c, return their sum. However, if one of the values is the same as another of the values, 
     it does not count towards the sum. */
 
-    /*______________________
-    |       Testcases       |
-    |_______________________|
-    | loneSum(1, 2, 3) → 6  |
-    | loneSum(3, 2, 3) → 2  |
-    | loneSum(3, 3, 3) → 0  |
-    | loneSum(9, 2, 2) → 9  |
-    | loneSum(2, 2, 9) → 9  |
-    | loneSum(2, 9, 2) → 9  |
-    | loneSum(2, 9, 3) → 14 |
-    | loneSum(4, 2, 3) → 9  |
-    | loneSum(1, 3, 1) → 3  |
-    |______________________*/
+    /*_________________________________
+    |            Testcases             |
+    |__________________________________|
+    | a     | b     | c     | expected |
+    | (int) | (int) | (int) | (int)    |
+    |_______|_______|_______|__________|
+    | 1     | 2     | 3     | 6        |
+    | 3     | 2     | 3     | 2        |
+    | 3     | 3     | 3     | 0        |
+    | 9     | 2     | 2     | 9        |
+    | 2     | 2     | 9     | 9        |
+    | 2     | 9     | 2     | 9        |
+    | 2     | 9     | 3     | 14       |
+    | 4     | 2     | 3     | 9        |
+    | 1     | 3     | 1     | 3        |
+    |_______|_______|_______|_________*/
 
     public static final int loneSum(int a, int b, int c)
     {

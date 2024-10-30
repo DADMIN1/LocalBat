@@ -8,19 +8,22 @@ public final class Has23
 {
     /* Given an int array length 2, return true if it contains a 2 or a 3. */
 
-    /*______________________
-    |       Testcases       |
-    |_______________________|
-    | has23([2, 5]) → true  |
-    | has23([4, 3]) → true  |
-    | has23([4, 5]) → false |
-    | has23([2, 2]) → true  |
-    | has23([3, 2]) → true  |
-    | has23([3, 3]) → true  |
-    | has23([7, 7]) → false |
-    | has23([3, 9]) → true  |
-    | has23([9, 5]) → false |
-    |______________________*/
+    /*_____________________
+    |      Testcases       |
+    |______________________|
+    | nums     | expected  |
+    | (int[])  | (boolean) |
+    |__________|___________|
+    | { 2, 5 } | true      |
+    | { 4, 3 } | true      |
+    | { 4, 5 } | false     |
+    | { 2, 2 } | true      |
+    | { 3, 2 } | true      |
+    | { 3, 3 } | true      |
+    | { 7, 7 } | false     |
+    | { 3, 9 } | true      |
+    | { 9, 5 } | false     |
+    |__________|__________*/
 
     public static final boolean has23(int[] nums)
     {

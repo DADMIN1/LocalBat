@@ -10,17 +10,20 @@ public final class EndUp
     If the string has less than 3 chars, uppercase whatever is there. 
     Note that str.toUpperCase() returns the uppercase version of a string. */
 
-    /*_______________________________
-    |           Testcases            |
-    |________________________________|
-    | endUp("Hello")    → "HeLLO"    |
-    | endUp("hi there") → "hi thERE" |
-    | endUp("hi")       → "HI"       |
-    | endUp("woo hoo")  → "woo HOO"  |
-    | endUp("xyz12")    → "xyZ12"    |
-    | endUp("x")        → "X"        |
-    | endUp("")         → ""         |
-    |_______________________________*/
+    /*________________________
+    |        Testcases        |
+    |_________________________|
+    | str        | expected   |
+    | (String)   | (String)   |
+    |____________|____________|
+    | "Hello"    | "HeLLO"    |
+    | "hi there" | "hi thERE" |
+    | "hi"       | "HI"       |
+    | "woo hoo"  | "woo HOO"  |
+    | "xyz12"    | "xyZ12"    |
+    | "x"        | "X"        |
+    | ""         | ""         |
+    |____________|___________*/
 
     public static final String endUp(String str)
     {

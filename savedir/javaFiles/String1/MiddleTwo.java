@@ -9,15 +9,18 @@ public final class MiddleTwo
     /* Given a string of even length, return a string made of the middle two chars, 
     so the string "string" yields "ri". The string length will be at least 2. */
 
-    /*_______________________________
-    |           Testcases            |
-    |________________________________|
-    | middleTwo("string")     → "ri" |
-    | middleTwo("code")       → "od" |
-    | middleTwo("Practice")   → "ct" |
-    | middleTwo("ab")         → "ab" |
-    | middleTwo("0123456789") → "45" |
-    |_______________________________*/
+    /*________________________
+    |        Testcases        |
+    |_________________________|
+    | str (String) | expected |
+    |              | (String) |
+    |______________|__________|
+    | "string"     | "ri"     |
+    | "code"       | "od"     |
+    | "Practice"   | "ct"     |
+    | "ab"         | "ab"     |
+    | "0123456789" | "45"     |
+    |______________|_________*/
 
     public static final String middleTwo(String str)
     {

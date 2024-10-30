@@ -9,21 +9,24 @@ public final class MaxBlock
     /* Given a string, return the length of the largest "block" in the string. 
     A block is a run of adjacent chars that are the same. */
 
-    /*__________________________________
-    |             Testcases             |
-    |___________________________________|
-    | maxBlock("hoopla")            → 2 |
-    | maxBlock("abbCCCddBBBxx")     → 3 |
-    | maxBlock("")                  → 0 |
-    | maxBlock("xyz")               → 1 |
-    | maxBlock("xxyz")              → 2 |
-    | maxBlock("xyzz")              → 2 |
-    | maxBlock("abbbcbbbxbbbx")     → 3 |
-    | maxBlock("XXBBBbbxx")         → 3 |
-    | maxBlock("XXBBBBbbxx")        → 4 |
-    | maxBlock("XXBBBbbxxXXXX")     → 4 |
-    | maxBlock("XX2222BBBbbXX2222") → 4 |
-    |__________________________________*/
+    /*_______________________________
+    |           Testcases            |
+    |________________________________|
+    | str (String)        | expected |
+    |                     | (int)    |
+    |_____________________|__________|
+    | "hoopla"            | 2        |
+    | "abbCCCddBBBxx"     | 3        |
+    | ""                  | 0        |
+    | "xyz"               | 1        |
+    | "xxyz"              | 2        |
+    | "xyzz"              | 2        |
+    | "abbbcbbbxbbbx"     | 3        |
+    | "XXBBBbbxx"         | 3        |
+    | "XXBBBBbbxx"        | 4        |
+    | "XXBBBbbxxXXXX"     | 4        |
+    | "XX2222BBBbbXX2222" | 4        |
+    |_____________________|_________*/
 
     public static final int maxBlock(String str)
     {

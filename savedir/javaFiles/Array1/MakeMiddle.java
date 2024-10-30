@@ -10,15 +10,18 @@ public final class MakeMiddle
     return a new array length 2 containing the middle two elements from the original array. 
     The original array will be length 2 or more. */
 
-    /*________________________________________
-    |                Testcases                |
-    |_________________________________________|
-    | makeMiddle([1, 2, 3, 4])       → [2, 3] |
-    | makeMiddle([7, 1, 2, 3, 4, 9]) → [2, 3] |
-    | makeMiddle([1, 2])             → [1, 2] |
-    | makeMiddle([5, 2, 4, 7])       → [2, 4] |
-    | makeMiddle([9, 0, 4, 3, 9, 1]) → [4, 3] |
-    |________________________________________*/
+    /*________________________________
+    |            Testcases            |
+    |_________________________________|
+    | nums (int[])         | expected |
+    |                      | (int[])  |
+    |______________________|__________|
+    | { 1, 2, 3, 4 }       | {2, 3}   |
+    | { 7, 1, 2, 3, 4, 9 } | {2, 3}   |
+    | { 1, 2 }             | {1, 2}   |
+    | { 5, 2, 4, 7 }       | {2, 4}   |
+    | { 9, 0, 4, 3, 9, 1 } | {4, 3}   |
+    |______________________|_________*/
 
     public static final int[] makeMiddle(int[] nums)
     {

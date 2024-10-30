@@ -10,20 +10,23 @@ public final class HasBad
     such as with "badxxx" or "xbadxx" but not "xxbadxx". The string may be any length, 
     including 0. Note: use .equals() to compare 2 strings. */
 
-    /*__________________________
-    |         Testcases         |
-    |___________________________|
-    | hasBad("badxx")   → true  |
-    | hasBad("xbadxx")  → true  |
-    | hasBad("xxbadxx") → false |
-    | hasBad("code")    → false |
-    | hasBad("bad")     → true  |
-    | hasBad("ba")      → false |
-    | hasBad("xba")     → false |
-    | hasBad("xbad")    → true  |
-    | hasBad("")        → false |
-    | hasBad("badyy")   → true  |
-    |__________________________*/
+    /*______________________
+    |       Testcases       |
+    |_______________________|
+    | str       | expected  |
+    | (String)  | (boolean) |
+    |___________|___________|
+    | "badxx"   | true      |
+    | "xbadxx"  | true      |
+    | "xxbadxx" | false     |
+    | "code"    | false     |
+    | "bad"     | true      |
+    | "ba"      | false     |
+    | "xba"     | false     |
+    | "xbad"    | true      |
+    | ""        | false     |
+    | "badyy"   | true      |
+    |___________|__________*/
 
     public static final boolean hasBad(String str)
     {

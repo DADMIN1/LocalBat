@@ -8,17 +8,20 @@ public final class FirstHalf
 {
     /* Given a string of even length, return the first half. So the string "WooHoo" yields "Woo". */
 
-    /*__________________________________
-    |             Testcases             |
-    |___________________________________|
-    | firstHalf("WooHoo")     → "Woo"   |
-    | firstHalf("HelloThere") → "Hello" |
-    | firstHalf("abcdef")     → "abc"   |
-    | firstHalf("ab")         → "a"     |
-    | firstHalf("")           → ""      |
-    | firstHalf("0123456789") → "01234" |
-    | firstHalf("kitten")     → "kit"   |
-    |__________________________________*/
+    /*________________________
+    |        Testcases        |
+    |_________________________|
+    | str (String) | expected |
+    |              | (String) |
+    |______________|__________|
+    | "WooHoo"     | "Woo"    |
+    | "HelloThere" | "Hello"  |
+    | "abcdef"     | "abc"    |
+    | "ab"         | "a"      |
+    | ""           | ""       |
+    | "0123456789" | "01234"  |
+    | "kitten"     | "kit"    |
+    |______________|_________*/
 
     public static final String firstHalf(String str)
     {

@@ -11,16 +11,19 @@ public final class AddStar
 {
     /* Given a list of strings, return a list where each string has "*" added at its end. */
 
-    /*_____________________________________________________________________________________________
-    |                                          Testcases                                           |
-    |______________________________________________________________________________________________|
-    | addStar(["a", "bb", "ccc"])                     → ["a*", "bb*", "ccc*"]                      |
-    | addStar(["hello", "there"])                     → ["hello*", "there*"]                       |
-    | addStar(["*"])                                  → ["**"]                                     |
-    | addStar([])                                     → []                                         |
-    | addStar(["kittens", "and", "chocolate", "and"]) → ["kittens*", "and*", "chocolate*", "and*"] |
-    | addStar(["empty", "string", ""])                → ["empty*", "string*", "*"]                 |
-    |_____________________________________________________________________________________________*/
+    /*______________________________________________________________
+    |                           Testcases                           |
+    |_______________________________________________________________|
+    | strings (List<String>)                  | expected            |
+    |                                         | (List<String>)      |
+    |_________________________________________|_____________________|
+    | new ArrayList<>(Arrays.asList("a"       | "bb"                |
+    | new ArrayList<>(Arrays.asList("hello"   | "there"))           |
+    | new ArrayList<>(Arrays.asList("*"))     | Arrays.asList("**") |
+    | new ArrayList<>(Arrays.asList())        | Arrays.asList()     |
+    | new ArrayList<>(Arrays.asList("kittens" | "and"               |
+    | new ArrayList<>(Arrays.asList("empty"   | "string"            |
+    |_________________________________________|____________________*/
 
     public static final List<String> addStar(List<String> strings)
     {

@@ -15,23 +15,26 @@ public final class GroupSum
     The caller can specify the whole array simply by passing start as 0. 
     No loops are needed -- the recursive calls progress down the array. */
 
-    /*_______________________________________
-    |               Testcases                |
-    |________________________________________|
-    | groupSum(0, [2, 4, 8], 10)     → true  |
-    | groupSum(0, [2, 4, 8], 14)     → true  |
-    | groupSum(0, [2, 4, 8], 9)      → false |
-    | groupSum(0, [2, 4, 8], 8)      → true  |
-    | groupSum(1, [2, 4, 8], 8)      → true  |
-    | groupSum(1, [2, 4, 8], 2)      → false |
-    | groupSum(0, [1], 1)            → true  |
-    | groupSum(0, [9], 1)            → false |
-    | groupSum(1, [9], 0)            → true  |
-    | groupSum(0, [], 0)             → true  |
-    | groupSum(0, [10, 2, 2, 5], 17) → true  |
-    | groupSum(0, [10, 2, 2, 5], 15) → true  |
-    | groupSum(0, [10, 2, 2, 5], 9)  → true  |
-    |_______________________________________*/
+    /*_____________________________________________
+    |                  Testcases                   |
+    |______________________________________________|
+    | start | nums (int[])    | target | expected  |
+    | (int) |                 | (int)  | (boolean) |
+    |_______|_________________|________|___________|
+    | 0     | { 2, 4, 8 }     | 10     | true      |
+    | 0     | { 2, 4, 8 }     | 14     | true      |
+    | 0     | { 2, 4, 8 }     | 9      | false     |
+    | 0     | { 2, 4, 8 }     | 8      | true      |
+    | 1     | { 2, 4, 8 }     | 8      | true      |
+    | 1     | { 2, 4, 8 }     | 2      | false     |
+    | 0     | { 1 }           | 1      | true      |
+    | 0     | { 9 }           | 1      | false     |
+    | 1     | { 9 }           | 0      | true      |
+    | 0     | {  }            | 0      | true      |
+    | 0     | { 10, 2, 2, 5 } | 17     | true      |
+    | 0     | { 10, 2, 2, 5 } | 15     | true      |
+    | 0     | { 10, 2, 2, 5 } | 9      | true      |
+    |_______|_________________|________|__________*/
 
     public static final boolean groupSum(int start, int[] nums, int target)
     {

@@ -12,23 +12,26 @@ public final class TeaParty
     the party is great (2). However, in all cases, if either tea or candy is less than 5, 
     the party is always bad (0). */
 
-    /*_____________________
-    |      Testcases       |
-    |______________________|
-    | teaParty(6, 8)   → 1 |
-    | teaParty(3, 8)   → 0 |
-    | teaParty(20, 6)  → 2 |
-    | teaParty(12, 6)  → 2 |
-    | teaParty(11, 6)  → 1 |
-    | teaParty(11, 4)  → 0 |
-    | teaParty(4, 5)   → 0 |
-    | teaParty(5, 5)   → 1 |
-    | teaParty(6, 6)   → 1 |
-    | teaParty(5, 10)  → 2 |
-    | teaParty(5, 9)   → 1 |
-    | teaParty(10, 4)  → 0 |
-    | teaParty(10, 20) → 2 |
-    |_____________________*/
+    /*_________________________
+    |        Testcases         |
+    |__________________________|
+    | tea   | candy | expected |
+    | (int) | (int) | (int)    |
+    |_______|_______|__________|
+    | 6     | 8     | 1        |
+    | 3     | 8     | 0        |
+    | 20    | 6     | 2        |
+    | 12    | 6     | 2        |
+    | 11    | 6     | 1        |
+    | 11    | 4     | 0        |
+    | 4     | 5     | 0        |
+    | 5     | 5     | 1        |
+    | 6     | 6     | 1        |
+    | 5     | 10    | 2        |
+    | 5     | 9     | 1        |
+    | 10    | 4     | 0        |
+    | 10    | 20    | 2        |
+    |_______|_______|_________*/
 
     public static final int teaParty(int tea, int candy)
     {

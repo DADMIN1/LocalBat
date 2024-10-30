@@ -13,27 +13,30 @@ public final class FizzString2
     so 23 % 10 yields 3. What will the remainder be when one number divides evenly into another? (See also: 
     FizzBuzz Code and Introduction to Mod) */
 
-    /*_______________________________
-    |           Testcases            |
-    |________________________________|
-    | fizzString2(1)   → "1!"        |
-    | fizzString2(2)   → "2!"        |
-    | fizzString2(3)   → "Fizz!"     |
-    | fizzString2(4)   → "4!"        |
-    | fizzString2(5)   → "Buzz!"     |
-    | fizzString2(6)   → "Fizz!"     |
-    | fizzString2(7)   → "7!"        |
-    | fizzString2(8)   → "8!"        |
-    | fizzString2(9)   → "Fizz!"     |
-    | fizzString2(15)  → "FizzBuzz!" |
-    | fizzString2(16)  → "16!"       |
-    | fizzString2(18)  → "Fizz!"     |
-    | fizzString2(19)  → "19!"       |
-    | fizzString2(21)  → "Fizz!"     |
-    | fizzString2(44)  → "44!"       |
-    | fizzString2(45)  → "FizzBuzz!" |
-    | fizzString2(100) → "Buzz!"     |
-    |_______________________________*/
+    /*____________________
+    |      Testcases      |
+    |_____________________|
+    | n     | expected    |
+    | (int) | (String)    |
+    |_______|_____________|
+    | 1     | "1!"        |
+    | 2     | "2!"        |
+    | 3     | "Fizz!"     |
+    | 4     | "4!"        |
+    | 5     | "Buzz!"     |
+    | 6     | "Fizz!"     |
+    | 7     | "7!"        |
+    | 8     | "8!"        |
+    | 9     | "Fizz!"     |
+    | 15    | "FizzBuzz!" |
+    | 16    | "16!"       |
+    | 18    | "Fizz!"     |
+    | 19    | "19!"       |
+    | 21    | "Fizz!"     |
+    | 44    | "44!"       |
+    | 45    | "FizzBuzz!" |
+    | 100   | "Buzz!"     |
+    |_______|____________*/
 
     public static final String fizzString2(int n)
     {

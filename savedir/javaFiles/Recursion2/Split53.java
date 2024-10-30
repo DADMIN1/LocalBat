@@ -12,18 +12,21 @@ public final class Split53
     and all the values that are a multiple of 3 (and not a multiple of 5) must be in the other. 
     (No loops needed.) */
 
-    /*_____________________________________
-    |              Testcases               |
-    |______________________________________|
-    | split53([1, 1])              → true  |
-    | split53([1, 1, 1])           → false |
-    | split53([2, 4, 2])           → true  |
-    | split53([2, 2, 2, 1])        → false |
-    | split53([3, 3, 5, 1])        → true  |
-    | split53([3, 5, 8])           → false |
-    | split53([2, 4, 6])           → true  |
-    | split53([3, 5, 6, 10, 3, 3]) → true  |
-    |_____________________________________*/
+    /*__________________________________
+    |             Testcases             |
+    |___________________________________|
+    | nums (int[])          | expected  |
+    |                       | (boolean) |
+    |_______________________|___________|
+    | { 1, 1 }              | true      |
+    | { 1, 1, 1 }           | false     |
+    | { 2, 4, 2 }           | true      |
+    | { 2, 2, 2, 1 }        | false     |
+    | { 3, 3, 5, 1 }        | true      |
+    | { 3, 5, 8 }           | false     |
+    | { 2, 4, 6 }           | true      |
+    | { 3, 5, 6, 10, 3, 3 } | true      |
+    |_______________________|__________*/
 
     public static final boolean split53(int[] nums)
     {

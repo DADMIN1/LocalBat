@@ -12,20 +12,23 @@ public final class Last2
     /*_________________________
     |        Testcases         |
     |__________________________|
-    | last2("hixxhi")      → 1 |
-    | last2("xaxxaxaxx")   → 1 |
-    | last2("axxxaaxx")    → 2 |
-    | last2("xxaxxaxxaxx") → 3 |
-    | last2("xaxaxaxx")    → 0 |
-    | last2("xxxx")        → 2 |
-    | last2("13121312")    → 1 |
-    | last2("11212")       → 1 |
-    | last2("13121311")    → 0 |
-    | last2("1717171")     → 2 |
-    | last2("hi")          → 0 |
-    | last2("h")           → 0 |
-    | last2("")            → 0 |
-    |_________________________*/
+    | str (String)  | expected |
+    |               | (int)    |
+    |_______________|__________|
+    | "hixxhi"      | 1        |
+    | "xaxxaxaxx"   | 1        |
+    | "axxxaaxx"    | 2        |
+    | "xxaxxaxxaxx" | 3        |
+    | "xaxaxaxx"    | 0        |
+    | "xxxx"        | 2        |
+    | "13121312"    | 1        |
+    | "11212"       | 1        |
+    | "13121311"    | 0        |
+    | "1717171"     | 2        |
+    | "hi"          | 0        |
+    | "h"           | 0        |
+    | ""            | 0        |
+    |_______________|_________*/
 
     public static final int last2(String str)
     {

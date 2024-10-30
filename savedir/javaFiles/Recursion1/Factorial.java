@@ -9,19 +9,22 @@ public final class Factorial
     /* Given n of 1 or more, return the factorial of n, which is n * (n-1) * (n-2) ... 
     1. Compute the result recursively (without loops). */
 
-    /*__________________________
-    |         Testcases         |
-    |___________________________|
-    | factorial(1)  → 1         |
-    | factorial(2)  → 2         |
-    | factorial(3)  → 6         |
-    | factorial(4)  → 24        |
-    | factorial(5)  → 120       |
-    | factorial(6)  → 720       |
-    | factorial(7)  → 5040      |
-    | factorial(8)  → 40320     |
-    | factorial(12) → 479001600 |
-    |__________________________*/
+    /*__________________
+    |     Testcases     |
+    |___________________|
+    | n     | expected  |
+    | (int) | (int)     |
+    |_______|___________|
+    | 1     | 1         |
+    | 2     | 2         |
+    | 3     | 6         |
+    | 4     | 24        |
+    | 5     | 120       |
+    | 6     | 720       |
+    | 7     | 5040      |
+    | 8     | 40320     |
+    | 12    | 479001600 |
+    |_______|__________*/
 
     public static final int factorial(int n)
     {

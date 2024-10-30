@@ -10,20 +10,23 @@ public final class TheEnd
     unless front is false, in which case return a string length 1 from its back. 
     The string will be non-empty. */
 
-    /*_________________________________
-    |            Testcases             |
-    |__________________________________|
-    | theEnd("Hello", true)      → "H" |
-    | theEnd("Hello", false)     → "o" |
-    | theEnd("oh", true)         → "o" |
-    | theEnd("oh", false)        → "h" |
-    | theEnd("x", true)          → "x" |
-    | theEnd("x", false)         → "x" |
-    | theEnd("java", true)       → "j" |
-    | theEnd("chocolate", false) → "e" |
-    | theEnd("1234", true)       → "1" |
-    | theEnd("code", false)      → "e" |
-    |_________________________________*/
+    /*___________________________________
+    |             Testcases              |
+    |____________________________________|
+    | str         | front     | expected |
+    | (String)    | (boolean) | (String) |
+    |_____________|___________|__________|
+    | "Hello"     | true      | "H"      |
+    | "Hello"     | false     | "o"      |
+    | "oh"        | true      | "o"      |
+    | "oh"        | false     | "h"      |
+    | "x"         | true      | "x"      |
+    | "x"         | false     | "x"      |
+    | "java"      | true      | "j"      |
+    | "chocolate" | false     | "e"      |
+    | "1234"      | true      | "1"      |
+    | "code"      | false     | "e"      |
+    |_____________|___________|_________*/
 
     public static final String theEnd(String str, boolean front)
     {

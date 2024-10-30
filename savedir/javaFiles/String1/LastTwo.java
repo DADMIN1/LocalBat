@@ -9,15 +9,18 @@ public final class LastTwo
     /* Given a string of any length, return a new string where the last 2 chars, 
     if present, are swapped, so "coding" yields "codign". */
 
-    /*_____________________________
-    |          Testcases           |
-    |______________________________|
-    | lastTwo("coding") → "codign" |
-    | lastTwo("cat")    → "cta"    |
-    | lastTwo("ab")     → "ba"     |
-    | lastTwo("a")      → "a"      |
-    | lastTwo("")       → ""       |
-    |_____________________________*/
+    /*____________________
+    |      Testcases      |
+    |_____________________|
+    | str      | expected |
+    | (String) | (String) |
+    |__________|__________|
+    | "coding" | "codign" |
+    | "cat"    | "cta"    |
+    | "ab"     | "ba"     |
+    | "a"      | "a"      |
+    | ""       | ""       |
+    |__________|_________*/
 
     public static final String lastTwo(String str)
     {

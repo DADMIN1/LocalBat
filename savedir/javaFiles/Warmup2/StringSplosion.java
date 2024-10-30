@@ -8,20 +8,23 @@ public final class StringSplosion
 {
     /* Given a non-empty string like "Code" return a string like "CCoCodCode". */
 
-    /*___________________________________________________
-    |                     Testcases                      |
-    |____________________________________________________|
-    | stringSplosion("Code")   → "CCoCodCode"            |
-    | stringSplosion("abc")    → "aababc"                |
-    | stringSplosion("ab")     → "aab"                   |
-    | stringSplosion("x")      → "x"                     |
-    | stringSplosion("fade")   → "ffafadfade"            |
-    | stringSplosion("There")  → "TThTheTherThere"       |
-    | stringSplosion("Kitten") → "KKiKitKittKitteKitten" |
-    | stringSplosion("Bye")    → "BByBye"                |
-    | stringSplosion("Good")   → "GGoGooGood"            |
-    | stringSplosion("Bad")    → "BBaBad"                |
-    |___________________________________________________*/
+    /*___________________________________
+    |             Testcases              |
+    |____________________________________|
+    | str      | expected (String)       |
+    | (String) |                         |
+    |__________|_________________________|
+    | "Code"   | "CCoCodCode"            |
+    | "abc"    | "aababc"                |
+    | "ab"     | "aab"                   |
+    | "x"      | "x"                     |
+    | "fade"   | "ffafadfade"            |
+    | "There"  | "TThTheTherThere"       |
+    | "Kitten" | "KKiKitKittKitteKitten" |
+    | "Bye"    | "BByBye"                |
+    | "Good"   | "GGoGooGood"            |
+    | "Bad"    | "BBaBad"                |
+    |__________|________________________*/
 
     public static final String stringSplosion(String str)
     {

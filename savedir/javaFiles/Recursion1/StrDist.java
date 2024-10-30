@@ -9,24 +9,27 @@ public final class StrDist
     /* Given a string and a non-empty substring sub, 
     compute recursively the largest substring which starts and ends with sub and return its length. */
 
-    /*__________________________________________
-    |                 Testcases                 |
-    |___________________________________________|
-    | strDist("catcowcat", "cat")          → 9  |
-    | strDist("catcowcat", "cow")          → 3  |
-    | strDist("cccatcowcatxx", "cat")      → 9  |
-    | strDist("abccatcowcatcatxyz", "cat") → 12 |
-    | strDist("xyx", "x")                  → 3  |
-    | strDist("xyx", "y")                  → 1  |
-    | strDist("xyx", "z")                  → 0  |
-    | strDist("z", "z")                    → 1  |
-    | strDist("x", "z")                    → 0  |
-    | strDist("", "z")                     → 0  |
-    | strDist("hiHellohihihi", "hi")       → 13 |
-    | strDist("hiHellohihihi", "hih")      → 5  |
-    | strDist("hiHellohihihi", "o")        → 1  |
-    | strDist("hiHellohihihi", "ll")       → 2  |
-    |__________________________________________*/
+    /*___________________________________________
+    |                 Testcases                  |
+    |____________________________________________|
+    | str (String)         | sub      | expected |
+    |                      | (String) | (int)    |
+    |______________________|__________|__________|
+    | "catcowcat"          | "cat"    | 9        |
+    | "catcowcat"          | "cow"    | 3        |
+    | "cccatcowcatxx"      | "cat"    | 9        |
+    | "abccatcowcatcatxyz" | "cat"    | 12       |
+    | "xyx"                | "x"      | 3        |
+    | "xyx"                | "y"      | 1        |
+    | "xyx"                | "z"      | 0        |
+    | "z"                  | "z"      | 1        |
+    | "x"                  | "z"      | 0        |
+    | ""                   | "z"      | 0        |
+    | "hiHellohihihi"      | "hi"     | 13       |
+    | "hiHellohihihi"      | "hih"    | 5        |
+    | "hiHellohihihi"      | "o"      | 1        |
+    | "hiHellohihihi"      | "ll"     | 2        |
+    |______________________|__________|_________*/
 
     public static final int strDist(String str, String sub)
     {

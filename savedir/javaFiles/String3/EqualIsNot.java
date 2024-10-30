@@ -8,20 +8,23 @@ public final class EqualIsNot
 {
     /* Given a string, return true if the number of appearances of "is" anywhere in the string is equal to the number of appearances of "not" anywhere in the string (case sensitive). */
 
-    /*_________________________________________
-    |                Testcases                 |
-    |__________________________________________|
-    | equalIsNot("This is not")        → false |
-    | equalIsNot("This is notnot")     → true  |
-    | equalIsNot("noisxxnotyynotxisi") → true  |
-    | equalIsNot("noisxxnotyynotxsi")  → false |
-    | equalIsNot("xxxyyyzzzintint")    → true  |
-    | equalIsNot("")                   → true  |
-    | equalIsNot("isisnotnot")         → true  |
-    | equalIsNot("isisnotno7Not")      → false |
-    | equalIsNot("isnotis")            → false |
-    | equalIsNot("mis3notpotbotis")    → false |
-    |_________________________________________*/
+    /*_________________________________
+    |            Testcases             |
+    |__________________________________|
+    | str (String)         | expected  |
+    |                      | (boolean) |
+    |______________________|___________|
+    | "This is not"        | false     |
+    | "This is notnot"     | true      |
+    | "noisxxnotyynotxisi" | true      |
+    | "noisxxnotyynotxsi"  | false     |
+    | "xxxyyyzzzintint"    | true      |
+    | ""                   | true      |
+    | "isisnotnot"         | true      |
+    | "isisnotno7Not"      | false     |
+    | "isnotis"            | false     |
+    | "mis3notpotbotis"    | false     |
+    |______________________|__________*/
 
     public static final boolean equalIsNot(String str)
     {

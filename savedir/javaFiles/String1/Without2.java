@@ -11,19 +11,22 @@ public final class Without2
     so "HelloHe" yields "lloHe". The substring may overlap with itself, 
     so "Hi" yields "". Otherwise, return the original string unchanged. */
 
-    /*____________________________________
-    |              Testcases              |
-    |_____________________________________|
-    | without2("HelloHe")   → "lloHe"     |
-    | without2("HelloHi")   → "HelloHi"   |
-    | without2("Hi")        → ""          |
-    | without2("Chocolate") → "Chocolate" |
-    | without2("xxx")       → "x"         |
-    | without2("xx")        → ""          |
-    | without2("x")         → "x"         |
-    | without2("")          → ""          |
-    | without2("Fruits")    → "Fruits"    |
-    |____________________________________*/
+    /*__________________________
+    |         Testcases         |
+    |___________________________|
+    | str         | expected    |
+    | (String)    | (String)    |
+    |_____________|_____________|
+    | "HelloHe"   | "lloHe"     |
+    | "HelloHi"   | "HelloHi"   |
+    | "Hi"        | ""          |
+    | "Chocolate" | "Chocolate" |
+    | "xxx"       | "x"         |
+    | "xx"        | ""          |
+    | "x"         | "x"         |
+    | ""          | ""          |
+    | "Fruits"    | "Fruits"    |
+    |_____________|____________*/
 
     public static final String without2(String str)
     {

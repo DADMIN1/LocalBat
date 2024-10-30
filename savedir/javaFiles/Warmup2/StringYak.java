@@ -9,17 +9,20 @@ public final class StringYak
     /* Suppose the string "yak" is unlucky. Given a string, return a version where all the "yak" are removed, 
     but the "a" can be any char. The "yak" strings will not overlap. */
 
-    /*_________________________________________
-    |                Testcases                 |
-    |__________________________________________|
-    | stringYak("yakpak")         → "pak"      |
-    | stringYak("pakyak")         → "pak"      |
-    | stringYak("yak123ya")       → "123ya"    |
-    | stringYak("yak")            → ""         |
-    | stringYak("yakxxxyak")      → "xxx"      |
-    | stringYak("HiyakHi")        → "HiHi"     |
-    | stringYak("xxxyakyyyakzzz") → "xxxyyzzz" |
-    |_________________________________________*/
+    /*______________________________
+    |           Testcases           |
+    |_______________________________|
+    | str (String)     | expected   |
+    |                  | (String)   |
+    |__________________|____________|
+    | "yakpak"         | "pak"      |
+    | "pakyak"         | "pak"      |
+    | "yak123ya"       | "123ya"    |
+    | "yak"            | ""         |
+    | "yakxxxyak"      | "xxx"      |
+    | "HiyakHi"        | "HiHi"     |
+    | "xxxyakyyyakzzz" | "xxxyyzzz" |
+    |__________________|___________*/
 
     public static final String stringYak(String str)
     {

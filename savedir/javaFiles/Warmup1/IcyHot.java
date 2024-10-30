@@ -8,16 +8,19 @@ public final class IcyHot
 {
     /* Given two temperatures, return true if one is less than 0 and the other is greater than 100. */
 
-    /*_________________________
-    |        Testcases         |
-    |__________________________|
-    | icyHot(120, -1)  → true  |
-    | icyHot(-1, 120)  → true  |
-    | icyHot(2, 120)   → false |
-    | icyHot(-1, 100)  → false |
-    | icyHot(-2, -2)   → false |
-    | icyHot(120, 120) → false |
-    |_________________________*/
+    /*__________________________
+    |         Testcases         |
+    |___________________________|
+    | temp1 | temp2 | expected  |
+    | (int) | (int) | (boolean) |
+    |_______|_______|___________|
+    | 120   | -1    | true      |
+    | -1    | 120   | true      |
+    | 2     | 120   | false     |
+    | -1    | 100   | false     |
+    | -2    | -2    | false     |
+    | 120   | 120   | false     |
+    |_______|_______|__________*/
 
     public static final boolean icyHot(int temp1, int temp2)
     {

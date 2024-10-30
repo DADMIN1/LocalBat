@@ -11,18 +11,21 @@ public final class FirstTwo
     return whatever there is, so "X" yields "X", and the empty string "" yields the empty string "". 
     Note that str.length() returns the length of a string. */
 
-    /*___________________________
-    |         Testcases          |
-    |____________________________|
-    | firstTwo("Hello")   → "He" |
-    | firstTwo("abcdefg") → "ab" |
-    | firstTwo("ab")      → "ab" |
-    | firstTwo("a")       → "a"  |
-    | firstTwo("")        → ""   |
-    | firstTwo("Kitten")  → "Ki" |
-    | firstTwo("hi")      → "hi" |
-    | firstTwo("hiya")    → "hi" |
-    |___________________________*/
+    /*_____________________
+    |      Testcases       |
+    |______________________|
+    | str       | expected |
+    | (String)  | (String) |
+    |___________|__________|
+    | "Hello"   | "He"     |
+    | "abcdefg" | "ab"     |
+    | "ab"      | "ab"     |
+    | "a"       | "a"      |
+    | ""        | ""       |
+    | "Kitten"  | "Ki"     |
+    | "hi"      | "hi"     |
+    | "hiya"    | "hi"     |
+    |___________|_________*/
 
     public static final String firstTwo(String str)
     {

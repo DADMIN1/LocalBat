@@ -10,22 +10,25 @@ public final class WithoutX2
     return the string without those 'x' chars, and otherwise return the string unchanged. 
     This is a little harder than it looks. */
 
-    /*_______________________________
-    |           Testcases            |
-    |________________________________|
-    | withoutX2("xHi")    → "Hi"     |
-    | withoutX2("Hxi")    → "Hi"     |
-    | withoutX2("Hi")     → "Hi"     |
-    | withoutX2("xxHi")   → "Hi"     |
-    | withoutX2("Hix")    → "Hix"    |
-    | withoutX2("xaxb")   → "axb"    |
-    | withoutX2("xx")     → ""       |
-    | withoutX2("x")      → ""       |
-    | withoutX2("")       → ""       |
-    | withoutX2("Hello")  → "Hello"  |
-    | withoutX2("Hexllo") → "Hexllo" |
-    | withoutX2("xHxllo") → "Hxllo"  |
-    |_______________________________*/
+    /*____________________
+    |      Testcases      |
+    |_____________________|
+    | str      | expected |
+    | (String) | (String) |
+    |__________|__________|
+    | "xHi"    | "Hi"     |
+    | "Hxi"    | "Hi"     |
+    | "Hi"     | "Hi"     |
+    | "xxHi"   | "Hi"     |
+    | "Hix"    | "Hix"    |
+    | "xaxb"   | "axb"    |
+    | "xx"     | ""       |
+    | "x"      | ""       |
+    | ""       | ""       |
+    | "Hello"  | "Hello"  |
+    | "Hexllo" | "Hexllo" |
+    | "xHxllo" | "Hxllo"  |
+    |__________|_________*/
 
     public static final String withoutX2(String str)
     {

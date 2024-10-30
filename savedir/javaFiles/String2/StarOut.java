@@ -10,28 +10,31 @@ public final class StarOut
     where for every star (*) in the string the star and the chars immediately to its left and right are gone. 
     So "ab*cd" yields "ad" and "ab**cd" also yields "ad". */
 
-    /*__________________________________
-    |             Testcases             |
-    |___________________________________|
-    | starOut("ab*cd")       → "ad"     |
-    | starOut("ab**cd")      → "ad"     |
-    | starOut("sm*eilly")    → "silly"  |
-    | starOut("sm*eil*ly")   → "siy"    |
-    | starOut("sm**eil*ly")  → "siy"    |
-    | starOut("sm***eil*ly") → "siy"    |
-    | starOut("stringy*")    → "string" |
-    | starOut("*stringy")    → "tringy" |
-    | starOut("*str*in*gy")  → "ty"     |
-    | starOut("abc")         → "abc"    |
-    | starOut("a*bc")        → "c"      |
-    | starOut("ab")          → "ab"     |
-    | starOut("a*b")         → ""       |
-    | starOut("a")           → "a"      |
-    | starOut("a*")          → ""       |
-    | starOut("*a")          → ""       |
-    | starOut("*")           → ""       |
-    | starOut("")            → ""       |
-    |__________________________________*/
+    /*_________________________
+    |        Testcases         |
+    |__________________________|
+    | str (String)  | expected |
+    |               | (String) |
+    |_______________|__________|
+    | "ab*cd"       | "ad"     |
+    | "ab**cd"      | "ad"     |
+    | "sm*eilly"    | "silly"  |
+    | "sm*eil*ly"   | "siy"    |
+    | "sm**eil*ly"  | "siy"    |
+    | "sm***eil*ly" | "siy"    |
+    | "stringy*"    | "string" |
+    | "*stringy"    | "tringy" |
+    | "*str*in*gy"  | "ty"     |
+    | "abc"         | "abc"    |
+    | "a*bc"        | "c"      |
+    | "ab"          | "ab"     |
+    | "a*b"         | ""       |
+    | "a"           | "a"      |
+    | "a*"          | ""       |
+    | "*a"          | ""       |
+    | "*"           | ""       |
+    | ""            | ""       |
+    |_______________|_________*/
 
     public static final String starOut(String str)
     {

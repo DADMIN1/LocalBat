@@ -11,17 +11,19 @@ public final class Pairs
     /* Given an array of non-empty strings, create and return a Map<String, 
     String> as follows: for each string add its first character as a key with its last character as the value. */
 
-    /*_______________________________________________________________________________________
-    |                                       Testcases                                        |
-    |________________________________________________________________________________________|
-    | pairs(["code", "bug"])                      → {"b": "g", "c": "e"}                     |
-    | pairs(["man", "moon", "main"])              → {"m": "n"}                               |
-    | pairs(["man", "moon", "good", "night"])     → {"g": "d", "m": "n", "n": "t"}           |
-    | pairs([])                                   → {}                                       |
-    | pairs(["a", "b"])                           → {"a": "a", "b": "b"}                     |
-    | pairs(["are", "codes", "and", "cods"])      → {"a": "d", "c": "s"}                     |
-    | pairs(["apple", "banana", "tea", "coffee"]) → {"a": "e", "b": "a", "c": "e", "t": "a"} |
-    |_______________________________________________________________________________________*/
+    /*________________________________________________________________________________________
+    |                                        Testcases                                        |
+    |_________________________________________________________________________________________|
+    | strings (String[])                     | expected (Map<String, String>)                 |
+    |________________________________________|________________________________________________|
+    | { "code", "bug" }                      | Map.of("b", "g", "c", "e")                     |
+    | { "man", "moon", "main" }              | Map.of("m", "n")                               |
+    | { "man", "moon", "good", "night" }     | Map.of("g", "d", "m", "n", "n", "t")           |
+    | {  }                                   | Map.of()                                       |
+    | { "a", "b" }                           | Map.of("a", "a", "b", "b")                     |
+    | { "are", "codes", "and", "cods" }      | Map.of("a", "d", "c", "s")                     |
+    | { "apple", "banana", "tea", "coffee" } | Map.of("a", "e", "b", "a", "c", "e", "t", "a") |
+    |________________________________________|_______________________________________________*/
 
     public static final Map<String, String> pairs(String[] strings)
     {

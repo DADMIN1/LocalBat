@@ -99,6 +99,8 @@ def ParseTestcases(testcases: list[str], functionDef: dict) -> dict:
         "returnsList": returnsList,
         "returnsMap": returnsMap,
         "arrays": [case['arrays'] for case in split_cases], 
+        "arrayVars" : { "varnames": array_varnames, "declarations": array_declarations, },
+        "split_cases": split_cases,
         "functionCalls": [case["functionCall"] for case in split_cases], 
         "expectedResults": expectedResults
     }
@@ -168,8 +170,8 @@ def ReformatPrompt(raw_prompt: str) -> str:
     return prompt.replace("DONT_SPLIT_HERE", " ").removesuffix('\n')
 
 
-def WriteTestcaseFile(packageName:str, data: dict):
-    title = Capitalize(data["title"])
+def WriteTestcaseFile(packageName:str, pagedata: dict):
+    title = Capitalize(pagedata["title"])
     testCasesClassname = f"_{title}"
     packageName = packageName.replace('-','')  # eclipse doesn't allow names to include dashes
     testcase_packagedir = sub_savedirs[1] / packageName / "Testcases"
@@ -177,9 +179,9 @@ def WriteTestcaseFile(packageName:str, data: dict):
     testcase_filepath = testcase_packagedir / f'{testCasesClassname}.java'  # leading underscore prevents class name conflicts (they actually do occur across files)
     print(f"    generating {packageName}.{title} Testcase class...")
     
-    if data["testcases_extended"]: data["testcases"] = data["testcases_extended"]
-    functionDefinition = ParseFunctionDefinition(data["provided_code"])
-    testCases = ParseTestcases(data["testcases"], functionDefinition)
+    if pagedata["testcases_extended"]: pagedata["testcases"] = pagedata["testcases_extended"]
+    functionDefinition = ParseFunctionDefinition(pagedata["provided_code"])
+    testCases = ParseTestcases(pagedata["testcases"], functionDefinition)
     
     # writing 'printArray' function if necessary
     returnType = functionDefinition["returnType"]
@@ -214,7 +216,7 @@ def WriteTestcaseFile(packageName:str, data: dict):
         file.write(f"public final class {testCasesClassname}\n"+"{\n")
         
         # map for testcase number -> string of function call
-        testcase_map: dict = { i: testcase for i, testcase in enumerate(data["testcases"]) }
+        testcase_map: dict = { i: testcase for i, testcase in enumerate(pagedata["testcases"])}
         file.write("    static final String[] testcaseStrings = {\n")
         for (k, v) in testcase_map.items():
             v = v.split(" \u2192 ", maxsplit=1)[0] # discarding everything to the right of the function call
@@ -293,13 +295,69 @@ def WriteTestcaseFile(packageName:str, data: dict):
 
 
 # alternatively, the title can be padded with underscores and the underline skipped to inline the title into the border 
-# 'titlebox_padding' fills empty space on the title line ('Testcases'), titlebox_underline creates a border underneath if provided 
-def TestcaseAsciiArt(testcases: list, titlebox_padding:str = ' ', titlebox_underline:str|None = '_') -> str:
-    # align by arrow, find longest testcase, then apply padding and build the frame
-    segmented = [line.partition('\u2192') for line in testcases]
-    segmentLengths = [[len(s[0]), len(s[2])] for s in segmented]
-    longestLengths = [max(x) for x in zip(*segmentLengths)]
-    total_width = longestLengths[0] + longestLengths[1] + 3 # accounting for the arrow
+# 'titlebox_padding' fills empty space on the title line ('Testcases'), titlebox_underline creates a border underneath if provided
+# this function is officially the worst code I've ever written
+def TestcaseAsciiArt(testcases:list, functionInfo:dict, titlebox_padding:str = ' ', titlebox_underline:str|None = '_') -> str:
+    arrow = '\u2192'
+    split_cases = [ testcase for testcase in functionInfo["testCases"]['split_cases'] ]
+    for case in split_cases:
+        params = [*case["functionCall"].removeprefix(f"{functionInfo["functionDef"]['name']}(").removesuffix(')').split(',')]
+        simple_remap = {
+            pname: pval.rstrip('; \n') for (pname, pval) in 
+            zip(case['array_remap'].values(), [arrstr.split(' = ')[1] for arrstr in case['arrays']])
+        }
+        # now that the parameters are properly divided, we can re-inline the substituted arrays/lists/maps
+        restored_params = [
+            simple_remap[param.strip()] 
+            if param.strip() in simple_remap.keys() else param.strip()
+            for param in params
+        ]
+        case["params"] = params
+        case["simple_remap"] = simple_remap
+        case["restored_params"] = restored_params
+    
+    column_info = [*functionInfo['functionDef']['args'], {'identifier': 'expected', 'type': functionInfo['functionDef']['returnType']}]
+    column_strs = [[*case["restored_params"], case['expected']] for case in split_cases] 
+    # asdf = [*zip(column_info, [*zip(*column_strs)])]
+    columns = [
+        {
+            **cInfo, 
+            "rows": cStrs,
+            "longestRowSize": max(len(row) for row in cStrs), 
+            "headerRowSize": len(cInfo['identifier']) + len(cInfo['type']) + 3, # +3 for parentheses and space around type
+            "header_oneline": True,  # identifier and type are on same line
+        } 
+        for thing in [*zip(column_info, [*zip(*column_strs)])]
+        for (cInfo, cStrs) in [thing]
+    ]
+    
+    all_headers_oneline = True
+    # every column needs 3 extra characters: two spaces and a '|'
+    total_width = (len(columns)*3)-1
+    for column in columns:
+        if column["headerRowSize"] > column["longestRowSize"]:
+            column["header_oneline"] = False  # we'll move the type to a new line
+            type_length = len(column['type']) + 2
+            column["headerRowSize"] -= (type_length+1)
+            if type_length > column["headerRowSize"]:
+                column["headerRowSize"] = type_length
+        column["width"] = max(column["longestRowSize"], column["headerRowSize"])
+        total_width += column["width"]
+        padded_rows = [ 
+            row+(" "*(column['width']-(len(row)+1)))
+            for row in column['rows']
+        ]
+        column['rows'] = padded_rows
+        #if not column["header_oneline"]: column['identifier'] += '\n'
+        header_padding = " "*max(column["width"] - column["headerRowSize"], 0)
+        if column["header_oneline"]:
+            column['header'] = f"{column['identifier']} ({column['type']}){header_padding}"
+        else: 
+            column['header'] = f"{column['identifier']} {header_padding}" 
+            all_headers_oneline = False
+        # column['header'] = f"{column['identifier']}" + header_padding
+    column_widths = [ max(column["longestRowSize"], column["headerRowSize"]) for column in columns]
+    
     title_padding = f"{titlebox_padding}"*int((total_width-len("Testcases"))/2)
     
     # title_padding is off by one if the length is even
@@ -311,14 +369,38 @@ def TestcaseAsciiArt(testcases: list, titlebox_padding:str = ' ', titlebox_under
     ascii_art += f"\n    |{title_padding}Testcases{maybe_space}{title_padding}|\n    "
     if (titlebox_underline is not None): ascii_art += '|' + ("_" * total_width) + '|' + "\n    ";
     
-    for segments in segmented:
-        testcase, arrow, result = segments
-        # padding with spaces to align arrow and end of box
-        testcase += " "*(longestLengths[0]-len(testcase))
-        result += " "*(longestLengths[1]-len(result))
-        ascii_art += f"| {testcase}{arrow}{result} |\n    "
+    header_line = "|"
+    header_linetwo = "|"
+    header_underline = "|"
+    for (width, (header, type_, isOneLine)) in (
+            zip(column_widths, [(column['header'], column['type'], column['header_oneline']) 
+            for column in columns]
+        )):
+        header_line += f" {header.strip().ljust(width)} |"
+        type_ = f" ({(type_.strip())})"
+        if isOneLine: type_ = ""
+        elif len(type_) > width+2: type_ = type_.strip()
+        header_linetwo += f"{type_.ljust(width+2, ' ')}|"
+        #header_underline += f"{type_.strip().ljust(width+2, '_')}|"
+        header_underline += ('_'*(width+2))+'|'
+    header_line += "\n    "
+    header_linetwo += "\n    "
+    header_underline += "\n    "
     
-    ascii_art += '|' + ("_" * (total_width-1)) + "*/\n\n"
+    ascii_art += header_line
+    if not all_headers_oneline: ascii_art += header_linetwo;
+    ascii_art += header_underline
+    # ascii_art += '|' + ("_" * total_width) + '|' + "\n    "
+    
+    rows = [*zip(*[column["rows"] for column in columns])]
+    for row in rows:
+        ascii_art += "|"
+        for (width, col) in zip(column_widths, row): 
+            ascii_art += f" {col.strip().ljust(width)} |"
+        ascii_art += "\n    "
+    # final_line = '|' + ("_" * (total_width-1)) + "*/\n\n"
+    final_line = f"{header_underline.removesuffix('_|\n    ')}*/\n\n"
+    ascii_art += final_line
     return ascii_art
 
 
@@ -335,7 +417,7 @@ def WriteJavaFile(packageName:str, data: dict):
     returnsList = testcases["returnsList"]
     
     prompt = ReformatPrompt(data["prompt"]).replace('\n', '\n    ') # indent each line
-    testcase_comment = TestcaseAsciiArt(data["testcases"])
+    testcase_comment = TestcaseAsciiArt(data["testcases"], function_info)
     
     # adding static to declaration and cleaning up braces/whitespace
     functionDeclaration = data['provided_code'].rsplit(') {\n ', maxsplit=1)[0] + ')'
@@ -444,9 +526,9 @@ if __name__ == "__main__":
     # testdata = LoadFile("AP-1", "wordsWithoutList")
     # WriteJavaFile("testpackage", testdata)
     
-    # problems = ["fizzArray", "fizzArray2"]
+    # problems = ["bigHeights", "commonTwo", "copyEndy"]
     # for problemfile in problems:
-    #     testdata = LoadFile("Array-2", problemfile)
+    #     testdata = LoadFile("AP-1", problemfile)
     #     WriteJavaFile("testpackage", testdata)
     
     # functionDefinition = ParseFunctionDefinition(testdata['provided_code'])

@@ -10,24 +10,27 @@ public final class StrCopies
     compute recursively if at least n copies of sub appear in the string somewhere, 
     possibly with overlapping. N will be non-negative. */
 
-    /*____________________________________________
-    |                  Testcases                  |
-    |_____________________________________________|
-    | strCopies("catcowcat", "cat", 2)    → true  |
-    | strCopies("catcowcat", "cow", 2)    → false |
-    | strCopies("catcowcat", "cow", 1)    → true  |
-    | strCopies("iiijjj", "i", 3)         → true  |
-    | strCopies("iiijjj", "i", 4)         → false |
-    | strCopies("iiijjj", "ii", 2)        → true  |
-    | strCopies("iiijjj", "ii", 3)        → false |
-    | strCopies("iiijjj", "x", 3)         → false |
-    | strCopies("iiijjj", "x", 0)         → true  |
-    | strCopies("iiiiij", "iii", 3)       → true  |
-    | strCopies("iiiiij", "iii", 4)       → false |
-    | strCopies("ijiiiiij", "iiii", 2)    → true  |
-    | strCopies("ijiiiiij", "iiii", 3)    → false |
-    | strCopies("dogcatdogcat", "dog", 2) → true  |
-    |____________________________________________*/
+    /*______________________________________________
+    |                   Testcases                   |
+    |_______________________________________________|
+    | str (String)   | sub      | n     | expected  |
+    |                | (String) | (int) | (boolean) |
+    |________________|__________|_______|___________|
+    | "catcowcat"    | "cat"    | 2     | true      |
+    | "catcowcat"    | "cow"    | 2     | false     |
+    | "catcowcat"    | "cow"    | 1     | true      |
+    | "iiijjj"       | "i"      | 3     | true      |
+    | "iiijjj"       | "i"      | 4     | false     |
+    | "iiijjj"       | "ii"     | 2     | true      |
+    | "iiijjj"       | "ii"     | 3     | false     |
+    | "iiijjj"       | "x"      | 3     | false     |
+    | "iiijjj"       | "x"      | 0     | true      |
+    | "iiiiij"       | "iii"    | 3     | true      |
+    | "iiiiij"       | "iii"    | 4     | false     |
+    | "ijiiiiij"     | "iiii"   | 2     | true      |
+    | "ijiiiiij"     | "iiii"   | 3     | false     |
+    | "dogcatdogcat" | "dog"    | 2     | true      |
+    |________________|__________|_______|__________*/
 
     public static final boolean strCopies(String str, String sub, int n)
     {

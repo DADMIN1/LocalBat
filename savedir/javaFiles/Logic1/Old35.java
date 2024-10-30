@@ -12,23 +12,26 @@ public final class Old35
     /*__________________
     |     Testcases     |
     |___________________|
-    | old35(3)  → true  |
-    | old35(10) → true  |
-    | old35(15) → false |
-    | old35(5)  → true  |
-    | old35(9)  → true  |
-    | old35(8)  → false |
-    | old35(7)  → false |
-    | old35(6)  → true  |
-    | old35(17) → false |
-    | old35(18) → true  |
-    | old35(29) → false |
-    | old35(20) → true  |
-    | old35(21) → true  |
-    | old35(22) → false |
-    | old35(45) → false |
-    | old35(99) → true  |
-    |__________________*/
+    | n     | expected  |
+    | (int) | (boolean) |
+    |_______|___________|
+    | 3     | true      |
+    | 10    | true      |
+    | 15    | false     |
+    | 5     | true      |
+    | 9     | true      |
+    | 8     | false     |
+    | 7     | false     |
+    | 6     | true      |
+    | 17    | false     |
+    | 18    | true      |
+    | 29    | false     |
+    | 20    | true      |
+    | 21    | true      |
+    | 22    | false     |
+    | 45    | false     |
+    | 99    | true      |
+    |_______|__________*/
 
     public static final boolean old35(int n)
     {

@@ -10,17 +10,20 @@ public final class Front3
     If the string length is less than 3, the front is whatever is there. 
     Return a new string which is 3 copies of the front. */
 
-    /*__________________________________
-    |             Testcases             |
-    |___________________________________|
-    | front3("Java")      → "JavJavJav" |
-    | front3("Chocolate") → "ChoChoCho" |
-    | front3("abc")       → "abcabcabc" |
-    | front3("abcXYZ")    → "abcabcabc" |
-    | front3("ab")        → "ababab"    |
-    | front3("a")         → "aaa"       |
-    | front3("")          → ""          |
-    |__________________________________*/
+    /*__________________________
+    |         Testcases         |
+    |___________________________|
+    | str         | expected    |
+    | (String)    | (String)    |
+    |_____________|_____________|
+    | "Java"      | "JavJavJav" |
+    | "Chocolate" | "ChoChoCho" |
+    | "abc"       | "abcabcabc" |
+    | "abcXYZ"    | "abcabcabc" |
+    | "ab"        | "ababab"    |
+    | "a"         | "aaa"       |
+    | ""          | ""          |
+    |_____________|____________*/
 
     public static final String front3(String str)
     {

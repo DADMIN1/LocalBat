@@ -9,22 +9,25 @@ public final class SameEnds
     /* Given a string, return the longest substring that appears at both the beginning and end of the string without overlapping. 
     For example, sameEnds("abXab") is "ab". */
 
-    /*_________________________________________
-    |                Testcases                 |
-    |__________________________________________|
-    | sameEnds("abXYab")            → "ab"     |
-    | sameEnds("xx")                → "x"      |
-    | sameEnds("xxx")               → "x"      |
-    | sameEnds("xxxx")              → "xx"     |
-    | sameEnds("javaXYZjava")       → "java"   |
-    | sameEnds("javajava")          → "java"   |
-    | sameEnds("xavaXYZjava")       → ""       |
-    | sameEnds("Hello! and Hello!") → "Hello!" |
-    | sameEnds("x")                 → ""       |
-    | sameEnds("")                  → ""       |
-    | sameEnds("abcb")              → ""       |
-    | sameEnds("mymmy")             → "my"     |
-    |_________________________________________*/
+    /*_______________________________
+    |           Testcases            |
+    |________________________________|
+    | string (String)     | expected |
+    |                     | (String) |
+    |_____________________|__________|
+    | "abXYab"            | "ab"     |
+    | "xx"                | "x"      |
+    | "xxx"               | "x"      |
+    | "xxxx"              | "xx"     |
+    | "javaXYZjava"       | "java"   |
+    | "javajava"          | "java"   |
+    | "xavaXYZjava"       | ""       |
+    | "Hello! and Hello!" | "Hello!" |
+    | "x"                 | ""       |
+    | ""                  | ""       |
+    | "abcb"              | ""       |
+    | "mymmy"             | "my"     |
+    |_____________________|_________*/
 
     public static final String sameEnds(String string)
     {

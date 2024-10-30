@@ -8,20 +8,23 @@ public final class PairStar
 {
     /* Given a string, compute recursively a new string where identical chars that are adjacent in the original string are separated from each other by a "*". */
 
-    /*______________________________________
-    |               Testcases               |
-    |_______________________________________|
-    | pairStar("hello")      → "hel*lo"     |
-    | pairStar("xxyy")       → "x*xy*y"     |
-    | pairStar("aaaa")       → "a*a*a*a"    |
-    | pairStar("aaab")       → "a*a*ab"     |
-    | pairStar("aa")         → "a*a"        |
-    | pairStar("a")          → "a"          |
-    | pairStar("")           → ""           |
-    | pairStar("noadjacent") → "noadjacent" |
-    | pairStar("abba")       → "ab*ba"      |
-    | pairStar("abbba")      → "ab*b*ba"    |
-    |______________________________________*/
+    /*____________________________
+    |          Testcases          |
+    |_____________________________|
+    | str (String) | expected     |
+    |              | (String)     |
+    |______________|______________|
+    | "hello"      | "hel*lo"     |
+    | "xxyy"       | "x*xy*y"     |
+    | "aaaa"       | "a*a*a*a"    |
+    | "aaab"       | "a*a*ab"     |
+    | "aa"         | "a*a"        |
+    | "a"          | "a"          |
+    | ""           | ""           |
+    | "noadjacent" | "noadjacent" |
+    | "abba"       | "ab*ba"      |
+    | "abbba"      | "ab*b*ba"    |
+    |______________|_____________*/
 
     public static final String pairStar(String str)
     {

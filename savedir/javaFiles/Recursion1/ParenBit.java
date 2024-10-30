@@ -10,22 +10,25 @@ public final class ParenBit
     compute recursively a new string made of only of the parenthesis and their contents, 
     so "xyz(abc)123" yields "(abc)". */
 
-    /*____________________________________________________
-    |                      Testcases                      |
-    |_____________________________________________________|
-    | parenBit("xyz(abc)123")            → "(abc)"        |
-    | parenBit("x(hello)")               → "(hello)"      |
-    | parenBit("(xy)1")                  → "(xy)"         |
-    | parenBit("not really (possible)")  → "(possible)"   |
-    | parenBit("(abc)")                  → "(abc)"        |
-    | parenBit("(abc)xyz")               → "(abc)"        |
-    | parenBit("(abc)x")                 → "(abc)"        |
-    | parenBit("(x)")                    → "(x)"          |
-    | parenBit("()")                     → "()"           |
-    | parenBit("res (ipsa) loquitor")    → "(ipsa)"       |
-    | parenBit("hello(not really)there") → "(not really)" |
-    | parenBit("ab(ab)ab")               → "(ab)"         |
-    |____________________________________________________*/
+    /*__________________________________________
+    |                 Testcases                 |
+    |___________________________________________|
+    | str (String)             | expected       |
+    |                          | (String)       |
+    |__________________________|________________|
+    | "xyz(abc)123"            | "(abc)"        |
+    | "x(hello)"               | "(hello)"      |
+    | "(xy)1"                  | "(xy)"         |
+    | "not really (possible)"  | "(possible)"   |
+    | "(abc)"                  | "(abc)"        |
+    | "(abc)xyz"               | "(abc)"        |
+    | "(abc)x"                 | "(abc)"        |
+    | "(x)"                    | "(x)"          |
+    | "()"                     | "()"           |
+    | "res (ipsa) loquitor"    | "(ipsa)"       |
+    | "hello(not really)there" | "(not really)" |
+    | "ab(ab)ab"               | "(ab)"         |
+    |__________________________|_______________*/
 
     public static final String parenBit(String str)
     {

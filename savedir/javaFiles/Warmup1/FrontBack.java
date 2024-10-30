@@ -8,18 +8,21 @@ public final class FrontBack
 {
     /* Given a string, return a new string where the first and last chars have been exchanged. */
 
-    /*_____________________________________
-    |              Testcases               |
-    |______________________________________|
-    | frontBack("code")      → "eodc"      |
-    | frontBack("a")         → "a"         |
-    | frontBack("ab")        → "ba"        |
-    | frontBack("abc")       → "cba"       |
-    | frontBack("")          → ""          |
-    | frontBack("Chocolate") → "ehocolatC" |
-    | frontBack("aavJ")      → "Java"      |
-    | frontBack("hello")     → "oellh"     |
-    |_____________________________________*/
+    /*__________________________
+    |         Testcases         |
+    |___________________________|
+    | str         | expected    |
+    | (String)    | (String)    |
+    |_____________|_____________|
+    | "code"      | "eodc"      |
+    | "a"         | "a"         |
+    | "ab"        | "ba"        |
+    | "abc"       | "cba"       |
+    | ""          | ""          |
+    | "Chocolate" | "ehocolatC" |
+    | "aavJ"      | "Java"      |
+    | "hello"     | "oellh"     |
+    |_____________|____________*/
 
     public static final String frontBack(String str)
     {

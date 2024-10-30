@@ -9,29 +9,32 @@ public final class PosNeg
     /* Given 2 int values, return true if one is negative and one is positive. 
     Except if the parameter "negative" is true, then return true only if both are negative. */
 
-    /*______________________________
-    |           Testcases           |
-    |_______________________________|
-    | posNeg(1, -1, false)  → true  |
-    | posNeg(-1, 1, false)  → true  |
-    | posNeg(-4, -5, true)  → true  |
-    | posNeg(-4, -5, false) → false |
-    | posNeg(-4, 5, false)  → true  |
-    | posNeg(-4, 5, true)   → false |
-    | posNeg(1, 1, false)   → false |
-    | posNeg(-1, -1, false) → false |
-    | posNeg(1, -1, true)   → false |
-    | posNeg(-1, 1, true)   → false |
-    | posNeg(1, 1, true)    → false |
-    | posNeg(-1, -1, true)  → true  |
-    | posNeg(5, -5, false)  → true  |
-    | posNeg(-6, 6, false)  → true  |
-    | posNeg(-5, -6, false) → false |
-    | posNeg(-2, -1, false) → false |
-    | posNeg(1, 2, false)   → false |
-    | posNeg(-5, 6, true)   → false |
-    | posNeg(-5, -5, true)  → true  |
-    |______________________________*/
+    /*______________________________________
+    |               Testcases               |
+    |_______________________________________|
+    | a     | b     | negative  | expected  |
+    | (int) | (int) | (boolean) | (boolean) |
+    |_______|_______|___________|___________|
+    | 1     | -1    | false     | true      |
+    | -1    | 1     | false     | true      |
+    | -4    | -5    | true      | true      |
+    | -4    | -5    | false     | false     |
+    | -4    | 5     | false     | true      |
+    | -4    | 5     | true      | false     |
+    | 1     | 1     | false     | false     |
+    | -1    | -1    | false     | false     |
+    | 1     | -1    | true      | false     |
+    | -1    | 1     | true      | false     |
+    | 1     | 1     | true      | false     |
+    | -1    | -1    | true      | true      |
+    | 5     | -5    | false     | true      |
+    | -6    | 6     | false     | true      |
+    | -5    | -6    | false     | false     |
+    | -2    | -1    | false     | false     |
+    | 1     | 2     | false     | false     |
+    | -5    | 6     | true      | false     |
+    | -5    | -5    | true      | true      |
+    |_______|_______|___________|__________*/
 
     public static final boolean posNeg(int a, int b, boolean negative)
     {

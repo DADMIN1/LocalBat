@@ -8,22 +8,25 @@ public final class EndX
 {
     /* Given a string, compute recursively a new string where all the lowercase 'x' chars have been moved to the end of the string. */
 
-    /*____________________________
-    |          Testcases          |
-    |_____________________________|
-    | endX("xxre")    → "rexx"    |
-    | endX("xxhixx")  → "hixxxx"  |
-    | endX("xhixhix") → "hihixxx" |
-    | endX("hiy")     → "hiy"     |
-    | endX("h")       → "h"       |
-    | endX("x")       → "x"       |
-    | endX("xx")      → "xx"      |
-    | endX("")        → ""        |
-    | endX("bxx")     → "bxx"     |
-    | endX("bxax")    → "baxx"    |
-    | endX("axaxax")  → "aaaxxx"  |
-    | endX("xxhxi")   → "hixxx"   |
-    |____________________________*/
+    /*______________________
+    |       Testcases       |
+    |_______________________|
+    | str       | expected  |
+    | (String)  | (String)  |
+    |___________|___________|
+    | "xxre"    | "rexx"    |
+    | "xxhixx"  | "hixxxx"  |
+    | "xhixhix" | "hihixxx" |
+    | "hiy"     | "hiy"     |
+    | "h"       | "h"       |
+    | "x"       | "x"       |
+    | "xx"      | "xx"      |
+    | ""        | ""        |
+    | "bxx"     | "bxx"     |
+    | "bxax"    | "baxx"    |
+    | "axaxax"  | "aaaxxx"  |
+    | "xxhxi"   | "hixxx"   |
+    |___________|__________*/
 
     public static final String endX(String str)
     {

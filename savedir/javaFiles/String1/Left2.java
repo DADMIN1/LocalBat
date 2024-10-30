@@ -9,18 +9,21 @@ public final class Left2
     /* Given a string, return a "rotated left 2" version where the first 2 chars are moved to the end. 
     The string length will be at least 2. */
 
-    /*_________________________________
-    |            Testcases             |
-    |__________________________________|
-    | left2("Hello")     → "lloHe"     |
-    | left2("java")      → "vaja"      |
-    | left2("Hi")        → "Hi"        |
-    | left2("code")      → "deco"      |
-    | left2("cat")       → "tca"       |
-    | left2("12345")     → "34512"     |
-    | left2("Chocolate") → "ocolateCh" |
-    | left2("bricks")    → "icksbr"    |
-    |_________________________________*/
+    /*__________________________
+    |         Testcases         |
+    |___________________________|
+    | str         | expected    |
+    | (String)    | (String)    |
+    |_____________|_____________|
+    | "Hello"     | "lloHe"     |
+    | "java"      | "vaja"      |
+    | "Hi"        | "Hi"        |
+    | "code"      | "deco"      |
+    | "cat"       | "tca"       |
+    | "12345"     | "34512"     |
+    | "Chocolate" | "ocolateCh" |
+    | "bricks"    | "icksbr"    |
+    |_____________|____________*/
 
     public static final String left2(String str)
     {

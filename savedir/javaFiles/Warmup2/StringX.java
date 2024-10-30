@@ -9,18 +9,21 @@ public final class StringX
     /* Given a string, return a version where all the "x" have been removed. 
     Except an "x" at the very start or end should not be removed. */
 
-    /*__________________________________
-    |             Testcases             |
-    |___________________________________|
-    | stringX("xxHxix")    → "xHix"     |
-    | stringX("abxxxcd")   → "abcd"     |
-    | stringX("xabxxxcdx") → "xabcdx"   |
-    | stringX("xKittenx")  → "xKittenx" |
-    | stringX("Hello")     → "Hello"    |
-    | stringX("xx")        → "xx"       |
-    | stringX("x")         → "x"        |
-    | stringX("")          → ""         |
-    |__________________________________*/
+    /*_________________________
+    |        Testcases         |
+    |__________________________|
+    | str         | expected   |
+    | (String)    | (String)   |
+    |_____________|____________|
+    | "xxHxix"    | "xHix"     |
+    | "abxxxcd"   | "abcd"     |
+    | "xabxxxcdx" | "xabcdx"   |
+    | "xKittenx"  | "xKittenx" |
+    | "Hello"     | "Hello"    |
+    | "xx"        | "xx"       |
+    | "x"         | "x"        |
+    | ""          | ""         |
+    |_____________|___________*/
 
     public static final String stringX(String str)
     {

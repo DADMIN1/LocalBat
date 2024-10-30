@@ -10,20 +10,23 @@ public final class ShareDigit
     such as the 2 in 12 and 23. (Note: division, e.g. n/10, 
     gives the left digit while the % "mod" n%10 gives the right digit.) */
 
-    /*___________________________
-    |         Testcases          |
-    |____________________________|
-    | shareDigit(12, 23) → true  |
-    | shareDigit(12, 43) → false |
-    | shareDigit(12, 44) → false |
-    | shareDigit(23, 12) → true  |
-    | shareDigit(23, 39) → true  |
-    | shareDigit(23, 19) → false |
-    | shareDigit(30, 90) → true  |
-    | shareDigit(30, 91) → false |
-    | shareDigit(55, 55) → true  |
-    | shareDigit(55, 44) → false |
-    |___________________________*/
+    /*__________________________
+    |         Testcases         |
+    |___________________________|
+    | a     | b     | expected  |
+    | (int) | (int) | (boolean) |
+    |_______|_______|___________|
+    | 12    | 23    | true      |
+    | 12    | 43    | false     |
+    | 12    | 44    | false     |
+    | 23    | 12    | true      |
+    | 23    | 39    | true      |
+    | 23    | 19    | false     |
+    | 30    | 90    | true      |
+    | 30    | 91    | false     |
+    | 55    | 55    | true      |
+    | 55    | 44    | false     |
+    |_______|_______|__________*/
 
     public static final boolean shareDigit(int a, int b)
     {

@@ -10,21 +10,24 @@ public final class DelDel
     return a string where that "del" has been deleted. Otherwise, 
     return the string unchanged. */
 
-    /*________________________________
-    |            Testcases            |
-    |_________________________________|
-    | delDel("adelbc")    → "abc"     |
-    | delDel("adelHello") → "aHello"  |
-    | delDel("adedbc")    → "adedbc"  |
-    | delDel("abcdel")    → "abcdel"  |
-    | delDel("add")       → "add"     |
-    | delDel("ad")        → "ad"      |
-    | delDel("a")         → "a"       |
-    | delDel("")          → ""        |
-    | delDel("del")       → "del"     |
-    | delDel("adel")      → "a"       |
-    | delDel("aadelbb")   → "aadelbb" |
-    |________________________________*/
+    /*________________________
+    |        Testcases        |
+    |_________________________|
+    | str         | expected  |
+    | (String)    | (String)  |
+    |_____________|___________|
+    | "adelbc"    | "abc"     |
+    | "adelHello" | "aHello"  |
+    | "adedbc"    | "adedbc"  |
+    | "abcdel"    | "abcdel"  |
+    | "add"       | "add"     |
+    | "ad"        | "ad"      |
+    | "a"         | "a"       |
+    | ""          | ""        |
+    | "del"       | "del"     |
+    | "adel"      | "a"       |
+    | "aadelbb"   | "aadelbb" |
+    |_____________|__________*/
 
     public static final String delDel(String str)
     {

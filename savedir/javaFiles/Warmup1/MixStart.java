@@ -9,17 +9,20 @@ public final class MixStart
     /* Return true if the given string begins with "mix", except the 'm' can be anything, 
     so "pix", "9ix" .. all count. */
 
-    /*_______________________________
-    |           Testcases            |
-    |________________________________|
-    | mixStart("mix snacks") → true  |
-    | mixStart("pix snacks") → true  |
-    | mixStart("piz snacks") → false |
-    | mixStart("nix")        → true  |
-    | mixStart("ni")         → false |
-    | mixStart("n")          → false |
-    | mixStart("")           → false |
-    |_______________________________*/
+    /*_________________________
+    |        Testcases         |
+    |__________________________|
+    | str (String) | expected  |
+    |              | (boolean) |
+    |______________|___________|
+    | "mix snacks" | true      |
+    | "pix snacks" | true      |
+    | "piz snacks" | false     |
+    | "nix"        | true      |
+    | "ni"         | false     |
+    | "n"          | false     |
+    | ""           | false     |
+    |______________|__________*/
 
     public static final boolean mixStart(String str)
     {

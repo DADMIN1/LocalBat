@@ -10,31 +10,34 @@ public final class XyzMiddle
     we'll say that the number of chars to the left and right of the "xyz" must differ by at most one. 
     This problem is harder than it looks. */
 
-    /*_______________________________________
-    |               Testcases                |
-    |________________________________________|
-    | xyzMiddle("AAxyzBB")           → true  |
-    | xyzMiddle("AxyzBB")            → true  |
-    | xyzMiddle("AxyzBBB")           → false |
-    | xyzMiddle("AxyzBBBB")          → false |
-    | xyzMiddle("AAAxyzB")           → false |
-    | xyzMiddle("AAAxyzBB")          → true  |
-    | xyzMiddle("AAAAxyzBB")         → false |
-    | xyzMiddle("AAAAAxyzBBB")       → false |
-    | xyzMiddle("1x345xyz12x4")      → true  |
-    | xyzMiddle("xyzAxyzBBB")        → true  |
-    | xyzMiddle("xyzAxyzBxyz")       → true  |
-    | xyzMiddle("xyzxyzAxyzBxyzxyz") → true  |
-    | xyzMiddle("xyzxyzxyzBxyzxyz")  → true  |
-    | xyzMiddle("xyzxyzAxyzxyzxyz")  → true  |
-    | xyzMiddle("xyzxyzAxyzxyzxy")   → false |
-    | xyzMiddle("AxyzxyzBB")         → false |
-    | xyzMiddle("")                  → false |
-    | xyzMiddle("x")                 → false |
-    | xyzMiddle("xy")                → false |
-    | xyzMiddle("xyz")               → true  |
-    | xyzMiddle("xyzz")              → true  |
-    |_______________________________________*/
+    /*________________________________
+    |            Testcases            |
+    |_________________________________|
+    | str (String)        | expected  |
+    |                     | (boolean) |
+    |_____________________|___________|
+    | "AAxyzBB"           | true      |
+    | "AxyzBB"            | true      |
+    | "AxyzBBB"           | false     |
+    | "AxyzBBBB"          | false     |
+    | "AAAxyzB"           | false     |
+    | "AAAxyzBB"          | true      |
+    | "AAAAxyzBB"         | false     |
+    | "AAAAAxyzBBB"       | false     |
+    | "1x345xyz12x4"      | true      |
+    | "xyzAxyzBBB"        | true      |
+    | "xyzAxyzBxyz"       | true      |
+    | "xyzxyzAxyzBxyzxyz" | true      |
+    | "xyzxyzxyzBxyzxyz"  | true      |
+    | "xyzxyzAxyzxyzxyz"  | true      |
+    | "xyzxyzAxyzxyzxy"   | false     |
+    | "AxyzxyzBB"         | false     |
+    | ""                  | false     |
+    | "x"                 | false     |
+    | "xy"                | false     |
+    | "xyz"               | true      |
+    | "xyzz"              | true      |
+    |_____________________|__________*/
 
     public static final boolean xyzMiddle(String str)
     {

@@ -10,13 +10,16 @@ public final class MidThree
     return a new array length 3 containing the elements from the middle of the array. 
     The array length will be at least 3. */
 
-    /*____________________________________________
-    |                  Testcases                  |
-    |_____________________________________________|
-    | midThree([1, 2, 3, 4, 5])       → [2, 3, 4] |
-    | midThree([8, 6, 7, 5, 3, 0, 9]) → [7, 5, 3] |
-    | midThree([1, 2, 3])             → [1, 2, 3] |
-    |____________________________________________*/
+    /*____________________________________
+    |              Testcases              |
+    |_____________________________________|
+    | nums (int[])            | expected  |
+    |                         | (int[])   |
+    |_________________________|___________|
+    | { 1, 2, 3, 4, 5 }       | {2, 3, 4} |
+    | { 8, 6, 7, 5, 3, 0, 9 } | {7, 5, 3} |
+    | { 1, 2, 3 }             | {1, 2, 3} |
+    |_________________________|__________*/
 
     public static final int[] midThree(int[] nums)
     {

@@ -9,18 +9,21 @@ public final class WithoutEnd
     /* Given a string, return a version without the first and last char, 
     so "Hello" yields "ell". The string length will be at least 2. */
 
-    /*______________________________________
-    |               Testcases               |
-    |_______________________________________|
-    | withoutEnd("Hello")      → "ell"      |
-    | withoutEnd("java")       → "av"       |
-    | withoutEnd("coding")     → "odin"     |
-    | withoutEnd("code")       → "od"       |
-    | withoutEnd("ab")         → ""         |
-    | withoutEnd("Chocolate!") → "hocolate" |
-    | withoutEnd("kitten")     → "itte"     |
-    | withoutEnd("woohoo")     → "ooho"     |
-    |______________________________________*/
+    /*__________________________
+    |         Testcases         |
+    |___________________________|
+    | str (String) | expected   |
+    |              | (String)   |
+    |______________|____________|
+    | "Hello"      | "ell"      |
+    | "java"       | "av"       |
+    | "coding"     | "odin"     |
+    | "code"       | "od"       |
+    | "ab"         | ""         |
+    | "Chocolate!" | "hocolate" |
+    | "kitten"     | "itte"     |
+    | "woohoo"     | "ooho"     |
+    |______________|___________*/
 
     public static final String withoutEnd(String str)
     {

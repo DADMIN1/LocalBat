@@ -9,19 +9,22 @@ public final class SortaSum
     /* Given 2 ints, a and b, return their sum. However, sums in the range 10..19 inclusive, 
     are forbidden, so in that case just return 20. */
 
-    /*______________________
-    |       Testcases       |
-    |_______________________|
-    | sortaSum(3, 4)   → 7  |
-    | sortaSum(9, 4)   → 20 |
-    | sortaSum(10, 11) → 21 |
-    | sortaSum(12, -3) → 9  |
-    | sortaSum(-3, 12) → 9  |
-    | sortaSum(4, 5)   → 9  |
-    | sortaSum(4, 6)   → 20 |
-    | sortaSum(14, 7)  → 21 |
-    | sortaSum(14, 6)  → 20 |
-    |______________________*/
+    /*_________________________
+    |        Testcases         |
+    |__________________________|
+    | a     | b     | expected |
+    | (int) | (int) | (int)    |
+    |_______|_______|__________|
+    | 3     | 4     | 7        |
+    | 9     | 4     | 20       |
+    | 10    | 11    | 21       |
+    | 12    | -3    | 9        |
+    | -3    | 12    | 9        |
+    | 4     | 5     | 9        |
+    | 4     | 6     | 20       |
+    | 14    | 7     | 21       |
+    | 14    | 6     | 20       |
+    |_______|_______|_________*/
 
     public static final int sortaSum(int a, int b)
     {

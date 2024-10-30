@@ -9,21 +9,24 @@ public final class SeeColor
     /* Given a string, if the string begins with "red" or "blue" return that color string, 
     otherwise return the empty string. */
 
-    /*_______________________________
-    |           Testcases            |
-    |________________________________|
-    | seeColor("redxx")     → "red"  |
-    | seeColor("xxred")     → ""     |
-    | seeColor("blueTimes") → "blue" |
-    | seeColor("NoColor")   → ""     |
-    | seeColor("red")       → "red"  |
-    | seeColor("re")        → ""     |
-    | seeColor("blu")       → ""     |
-    | seeColor("blue")      → "blue" |
-    | seeColor("a")         → ""     |
-    | seeColor("")          → ""     |
-    | seeColor("xyzred")    → ""     |
-    |_______________________________*/
+    /*_______________________
+    |       Testcases        |
+    |________________________|
+    | str         | expected |
+    | (String)    | (String) |
+    |_____________|__________|
+    | "redxx"     | "red"    |
+    | "xxred"     | ""       |
+    | "blueTimes" | "blue"   |
+    | "NoColor"   | ""       |
+    | "red"       | "red"    |
+    | "re"        | ""       |
+    | "blu"       | ""       |
+    | "blue"      | "blue"   |
+    | "a"         | ""       |
+    | ""          | ""       |
+    | "xyzred"    | ""       |
+    |_____________|_________*/
 
     public static final String seeColor(String str)
     {

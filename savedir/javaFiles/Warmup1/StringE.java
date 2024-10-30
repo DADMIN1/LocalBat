@@ -8,16 +8,19 @@ public final class StringE
 {
     /* Return true if the given string contains between 1 and 3 'e' chars. */
 
-    /*___________________________
-    |         Testcases          |
-    |____________________________|
-    | stringE("Hello")   → true  |
-    | stringE("Heelle")  → true  |
-    | stringE("Heelele") → false |
-    | stringE("Hll")     → false |
-    | stringE("e")       → true  |
-    | stringE("")        → false |
-    |___________________________*/
+    /*______________________
+    |       Testcases       |
+    |_______________________|
+    | str       | expected  |
+    | (String)  | (boolean) |
+    |___________|___________|
+    | "Hello"   | true      |
+    | "Heelle"  | true      |
+    | "Heelele" | false     |
+    | "Hll"     | false     |
+    | "e"       | true      |
+    | ""        | false     |
+    |___________|__________*/
 
     public static final boolean stringE(String str)
     {

@@ -9,16 +9,19 @@ public final class BackAround
     /* Given a string, take the last char and return a new string with the last char added at the front and back, 
     so "cat" yields "tcatt". The original string will be length 1 or more. */
 
-    /*________________________________
-    |            Testcases            |
-    |_________________________________|
-    | backAround("cat")   → "tcatt"   |
-    | backAround("Hello") → "oHelloo" |
-    | backAround("a")     → "aaa"     |
-    | backAround("abc")   → "cabcc"   |
-    | backAround("read")  → "dreadd"  |
-    | backAround("boo")   → "obooo"   |
-    |________________________________*/
+    /*_____________________
+    |      Testcases       |
+    |______________________|
+    | str      | expected  |
+    | (String) | (String)  |
+    |__________|___________|
+    | "cat"    | "tcatt"   |
+    | "Hello"  | "oHelloo" |
+    | "a"      | "aaa"     |
+    | "abc"    | "cabcc"   |
+    | "read"   | "dreadd"  |
+    | "boo"    | "obooo"   |
+    |__________|__________*/
 
     public static final String backAround(String str)
     {

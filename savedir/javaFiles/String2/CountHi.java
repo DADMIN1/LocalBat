@@ -8,19 +8,22 @@ public final class CountHi
 {
     /* Return the number of times that the string "hi" appears anywhere in the given string. */
 
-    /*__________________________________
-    |             Testcases             |
-    |___________________________________|
-    | countHi("abc hi ho")          → 1 |
-    | countHi("ABChi hi")           → 2 |
-    | countHi("hihi")               → 2 |
-    | countHi("hiHIhi")             → 2 |
-    | countHi("")                   → 0 |
-    | countHi("h")                  → 0 |
-    | countHi("hi")                 → 1 |
-    | countHi("Hi is no HI on ahI") → 0 |
-    | countHi("hiho not HOHIhi")    → 2 |
-    |__________________________________*/
+    /*________________________________
+    |            Testcases            |
+    |_________________________________|
+    | str (String)         | expected |
+    |                      | (int)    |
+    |______________________|__________|
+    | "abc hi ho"          | 1        |
+    | "ABChi hi"           | 2        |
+    | "hihi"               | 2        |
+    | "hiHIhi"             | 2        |
+    | ""                   | 0        |
+    | "h"                  | 0        |
+    | "hi"                 | 1        |
+    | "Hi is no HI on ahI" | 0        |
+    | "hiho not HOHIhi"    | 2        |
+    |______________________|_________*/
 
     public static final int countHi(String str)
     {

@@ -8,19 +8,22 @@ public final class EndsLy
 {
     /* Given a string, return true if it ends in "ly". */
 
-    /*_________________________
-    |        Testcases         |
-    |__________________________|
-    | endsLy("oddly")  → true  |
-    | endsLy("y")      → false |
-    | endsLy("oddy")   → false |
-    | endsLy("oddl")   → false |
-    | endsLy("olydd")  → false |
-    | endsLy("ly")     → true  |
-    | endsLy("")       → false |
-    | endsLy("falsey") → false |
-    | endsLy("evenly") → true  |
-    |_________________________*/
+    /*_____________________
+    |      Testcases       |
+    |______________________|
+    | str      | expected  |
+    | (String) | (boolean) |
+    |__________|___________|
+    | "oddly"  | true      |
+    | "y"      | false     |
+    | "oddy"   | false     |
+    | "oddl"   | false     |
+    | "olydd"  | false     |
+    | "ly"     | true      |
+    | ""       | false     |
+    | "falsey" | false     |
+    | "evenly" | true      |
+    |__________|__________*/
 
     public static final boolean endsLy(String str)
     {

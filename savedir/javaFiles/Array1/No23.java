@@ -11,18 +11,21 @@ public final class No23
     /*_____________________
     |      Testcases       |
     |______________________|
-    | no23([4, 5]) → true  |
-    | no23([4, 2]) → false |
-    | no23([3, 5]) → false |
-    | no23([1, 9]) → true  |
-    | no23([2, 9]) → false |
-    | no23([1, 3]) → false |
-    | no23([1, 1]) → true  |
-    | no23([2, 2]) → false |
-    | no23([3, 3]) → false |
-    | no23([7, 8]) → true  |
-    | no23([8, 7]) → true  |
-    |_____________________*/
+    | nums     | expected  |
+    | (int[])  | (boolean) |
+    |__________|___________|
+    | { 4, 5 } | true      |
+    | { 4, 2 } | false     |
+    | { 3, 5 } | false     |
+    | { 1, 9 } | true      |
+    | { 2, 9 } | false     |
+    | { 1, 3 } | false     |
+    | { 1, 1 } | true      |
+    | { 2, 2 } | false     |
+    | { 3, 3 } | false     |
+    | { 7, 8 } | true      |
+    | { 8, 7 } | true      |
+    |__________|__________*/
 
     public static final boolean no23(int[] nums)
     {

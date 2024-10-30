@@ -9,22 +9,25 @@ public final class In3050
     /* Given 2 int values, return true if they are both in the range 30..40 inclusive, 
     or they are both in the range 40..50 inclusive. */
 
-    /*_______________________
-    |       Testcases        |
-    |________________________|
-    | in3050(30, 31) → true  |
-    | in3050(30, 41) → false |
-    | in3050(40, 50) → true  |
-    | in3050(40, 51) → false |
-    | in3050(39, 50) → false |
-    | in3050(50, 39) → false |
-    | in3050(40, 39) → true  |
-    | in3050(49, 48) → true  |
-    | in3050(50, 40) → true  |
-    | in3050(50, 51) → false |
-    | in3050(35, 36) → true  |
-    | in3050(35, 45) → false |
-    |_______________________*/
+    /*__________________________
+    |         Testcases         |
+    |___________________________|
+    | a     | b     | expected  |
+    | (int) | (int) | (boolean) |
+    |_______|_______|___________|
+    | 30    | 31    | true      |
+    | 30    | 41    | false     |
+    | 40    | 50    | true      |
+    | 40    | 51    | false     |
+    | 39    | 50    | false     |
+    | 50    | 39    | false     |
+    | 40    | 39    | true      |
+    | 49    | 48    | true      |
+    | 50    | 40    | true      |
+    | 50    | 51    | false     |
+    | 35    | 36    | true      |
+    | 35    | 45    | false     |
+    |_______|_______|__________*/
 
     public static final boolean in3050(int a, int b)
     {

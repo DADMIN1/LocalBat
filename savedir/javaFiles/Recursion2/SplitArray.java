@@ -12,23 +12,26 @@ public final class SplitArray
     and make the initial call to your recursive helper from splitArray(). 
     (No loops needed.) */
 
-    /*____________________________________________
-    |                  Testcases                  |
-    |_____________________________________________|
-    | splitArray([2, 2])                  → true  |
-    | splitArray([2, 3])                  → false |
-    | splitArray([5, 2, 3])               → true  |
-    | splitArray([5, 2, 2])               → false |
-    | splitArray([1, 1, 1, 1, 1, 1])      → true  |
-    | splitArray([1, 1, 1, 1, 1])         → false |
-    | splitArray([])                      → true  |
-    | splitArray([1])                     → false |
-    | splitArray([3, 5])                  → false |
-    | splitArray([5, 3, 2])               → true  |
-    | splitArray([2, 2, 10, 10, 1, 1])    → true  |
-    | splitArray([1, 2, 2, 10, 10, 1, 1]) → false |
-    | splitArray([1, 2, 3, 10, 10, 1, 1]) → true  |
-    |____________________________________________*/
+    /*______________________________________
+    |               Testcases               |
+    |_______________________________________|
+    | nums (int[])              | expected  |
+    |                           | (boolean) |
+    |___________________________|___________|
+    | { 2, 2 }                  | true      |
+    | { 2, 3 }                  | false     |
+    | { 5, 2, 3 }               | true      |
+    | { 5, 2, 2 }               | false     |
+    | { 1, 1, 1, 1, 1, 1 }      | true      |
+    | { 1, 1, 1, 1, 1 }         | false     |
+    | {  }                      | true      |
+    | { 1 }                     | false     |
+    | { 3, 5 }                  | false     |
+    | { 5, 3, 2 }               | true      |
+    | { 2, 2, 10, 10, 1, 1 }    | true      |
+    | { 1, 2, 2, 10, 10, 1, 1 } | false     |
+    | { 1, 2, 3, 10, 10, 1, 1 } | true      |
+    |___________________________|__________*/
 
     public static final boolean splitArray(int[] nums)
     {

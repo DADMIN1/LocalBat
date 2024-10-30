@@ -10,21 +10,23 @@ public final class NotReplace
     The word "is" should not be immediately preceeded or followed by a letter -- so for example the "is" in "this" does not count. 
     (Note: Character.isLetter(char) tests if a char is a letter.) */
 
-    /*__________________________________________________________
-    |                         Testcases                         |
-    |___________________________________________________________|
-    | notReplace("is test")         → "is not test"             |
-    | notReplace("is-is")           → "is not-is not"           |
-    | notReplace("This is right")   → "This is not right"       |
-    | notReplace("This is isabell") → "This is not isabell"     |
-    | notReplace("")                → ""                        |
-    | notReplace("is")              → "is not"                  |
-    | notReplace("isis")            → "isis"                    |
-    | notReplace("Dis is bliss is") → "Dis is not bliss is not" |
-    | notReplace("is his")          → "is not his"              |
-    | notReplace("xis yis")         → "xis yis"                 |
-    | notReplace("AAAis is")        → "AAAis is not"            |
-    |__________________________________________________________*/
+    /*______________________________________________
+    |                   Testcases                   |
+    |_______________________________________________|
+    | str (String)      | expected (String)         |
+    |___________________|___________________________|
+    | "is test"         | "is not test"             |
+    | "is-is"           | "is not-is not"           |
+    | "This is right"   | "This is not right"       |
+    | "This is isabell" | "This is not isabell"     |
+    | ""                | ""                        |
+    | "is"              | "is not"                  |
+    | "isis"            | "isis"                    |
+    | "Dis is bliss is" | "Dis is not bliss is not" |
+    | "is his"          | "is not his"              |
+    | "xis yis"         | "xis yis"                 |
+    | "AAAis is"        | "AAAis is not"            |
+    |___________________|__________________________*/
 
     public static final String notReplace(String str)
     {

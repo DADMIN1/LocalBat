@@ -9,20 +9,23 @@ public final class HelloName
     /* Given a string name, e.g. "Bob", 
     return a greeting of the form "Hello Bob!". */
 
-    /*__________________________________________
-    |                 Testcases                 |
-    |___________________________________________|
-    | helloName("Bob")      → "Hello Bob!"      |
-    | helloName("Alice")    → "Hello Alice!"    |
-    | helloName("X")        → "Hello X!"        |
-    | helloName("Dolly")    → "Hello Dolly!"    |
-    | helloName("Alpha")    → "Hello Alpha!"    |
-    | helloName("Omega")    → "Hello Omega!"    |
-    | helloName("Goodbye")  → "Hello Goodbye!"  |
-    | helloName("ho ho ho") → "Hello ho ho ho!" |
-    | helloName("xyz!")     → "Hello xyz!!"     |
-    | helloName("Hello")    → "Hello Hello!"    |
-    |__________________________________________*/
+    /*_______________________________
+    |           Testcases            |
+    |________________________________|
+    | name       | expected (String) |
+    | (String)   |                   |
+    |____________|___________________|
+    | "Bob"      | "Hello Bob!"      |
+    | "Alice"    | "Hello Alice!"    |
+    | "X"        | "Hello X!"        |
+    | "Dolly"    | "Hello Dolly!"    |
+    | "Alpha"    | "Hello Alpha!"    |
+    | "Omega"    | "Hello Omega!"    |
+    | "Goodbye"  | "Hello Goodbye!"  |
+    | "ho ho ho" | "Hello ho ho ho!" |
+    | "xyz!"     | "Hello xyz!!"     |
+    | "Hello"    | "Hello Hello!"    |
+    |____________|__________________*/
 
     public static final String helloName(String name)
     {

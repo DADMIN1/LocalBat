@@ -8,16 +8,19 @@ public final class NoX
 {
     /* Given a string, compute recursively a new string where all the 'x' chars have been removed. */
 
-    /*________________________
-    |        Testcases        |
-    |_________________________|
-    | noX("xaxb")   → "ab"    |
-    | noX("abc")    → "abc"   |
-    | noX("xx")     → ""      |
-    | noX("")       → ""      |
-    | noX("axxbxx") → "ab"    |
-    | noX("Hellox") → "Hello" |
-    |________________________*/
+    /*____________________
+    |      Testcases      |
+    |_____________________|
+    | str      | expected |
+    | (String) | (String) |
+    |__________|__________|
+    | "xaxb"   | "ab"     |
+    | "abc"    | "abc"    |
+    | "xx"     | ""       |
+    | ""       | ""       |
+    | "axxbxx" | "ab"     |
+    | "Hellox" | "Hello"  |
+    |__________|_________*/
 
     public static final String noX(String str)
     {

@@ -10,21 +10,24 @@ public final class CountPairs
     So "AxA" the A's make a pair. Pair's can overlap, so "AxAxA" contains 3 pairs -- 2 for A and 1 for x. 
     Recursively compute the number of pairs in the given string. */
 
-    /*_________________________
-    |        Testcases         |
-    |__________________________|
-    | countPairs("axa")    → 1 |
-    | countPairs("axax")   → 2 |
-    | countPairs("axbx")   → 1 |
-    | countPairs("hi")     → 0 |
-    | countPairs("hihih")  → 3 |
-    | countPairs("ihihhh") → 3 |
-    | countPairs("ihjxhh") → 0 |
-    | countPairs("")       → 0 |
-    | countPairs("a")      → 0 |
-    | countPairs("aa")     → 0 |
-    | countPairs("aaa")    → 1 |
-    |_________________________*/
+    /*____________________
+    |      Testcases      |
+    |_____________________|
+    | str      | expected |
+    | (String) | (int)    |
+    |__________|__________|
+    | "axa"    | 1        |
+    | "axax"   | 2        |
+    | "axbx"   | 1        |
+    | "hi"     | 0        |
+    | "hihih"  | 3        |
+    | "ihihhh" | 3        |
+    | "ihjxhh" | 0        |
+    | ""       | 0        |
+    | "a"      | 0        |
+    | "aa"     | 0        |
+    | "aaa"    | 1        |
+    |__________|_________*/
 
     public static final int countPairs(String str)
     {

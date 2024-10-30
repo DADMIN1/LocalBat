@@ -10,18 +10,21 @@ public final class RepeatEnd
     You may assume that n is between 0 and the length of the string, 
     inclusive. */
 
-    /*____________________________________
-    |              Testcases              |
-    |_____________________________________|
-    | repeatEnd("Hello", 3) → "llollollo" |
-    | repeatEnd("Hello", 2) → "lolo"      |
-    | repeatEnd("Hello", 1) → "o"         |
-    | repeatEnd("Hello", 0) → ""          |
-    | repeatEnd("abc", 3)   → "abcabcabc" |
-    | repeatEnd("1234", 2)  → "3434"      |
-    | repeatEnd("1234", 3)  → "234234234" |
-    | repeatEnd("", 0)      → ""          |
-    |____________________________________*/
+    /*_______________________________
+    |           Testcases            |
+    |________________________________|
+    | str      | n     | expected    |
+    | (String) | (int) | (String)    |
+    |__________|_______|_____________|
+    | "Hello"  | 3     | "llollollo" |
+    | "Hello"  | 2     | "lolo"      |
+    | "Hello"  | 1     | "o"         |
+    | "Hello"  | 0     | ""          |
+    | "abc"    | 3     | "abcabcabc" |
+    | "1234"   | 2     | "3434"      |
+    | "1234"   | 3     | "234234234" |
+    | ""       | 0     | ""          |
+    |__________|_______|____________*/
 
     public static final String repeatEnd(String str, int n)
     {

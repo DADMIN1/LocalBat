@@ -11,23 +11,26 @@ public final class WordEnds
     Ignore cases where there is no char before or after the word, 
     and a char may be included twice if it is between two words. */
 
-    /*___________________________________________
-    |                 Testcases                  |
-    |____________________________________________|
-    | wordEnds("abcXY123XYijk", "XY") → "c13i"   |
-    | wordEnds("XY123XY", "XY")       → "13"     |
-    | wordEnds("XY1XY", "XY")         → "11"     |
-    | wordEnds("XYXY", "XY")          → "XY"     |
-    | wordEnds("XY", "XY")            → ""       |
-    | wordEnds("Hi", "XY")            → ""       |
-    | wordEnds("", "XY")              → ""       |
-    | wordEnds("abc1xyz1i1j", "1")    → "cxziij" |
-    | wordEnds("abc1xyz1", "1")       → "cxz"    |
-    | wordEnds("abc1xyz11", "1")      → "cxz11"  |
-    | wordEnds("abc1xyz1abc", "abc")  → "11"     |
-    | wordEnds("abc1xyz1abc", "b")    → "acac"   |
-    | wordEnds("abc1abc1abc", "abc")  → "1111"   |
-    |___________________________________________*/
+    /*______________________________________
+    |               Testcases               |
+    |_______________________________________|
+    | str (String)    | word     | expected |
+    |                 | (String) | (String) |
+    |_________________|__________|__________|
+    | "abcXY123XYijk" | "XY"     | "c13i"   |
+    | "XY123XY"       | "XY"     | "13"     |
+    | "XY1XY"         | "XY"     | "11"     |
+    | "XYXY"          | "XY"     | "XY"     |
+    | "XY"            | "XY"     | ""       |
+    | "Hi"            | "XY"     | ""       |
+    | ""              | "XY"     | ""       |
+    | "abc1xyz1i1j"   | "1"      | "cxziij" |
+    | "abc1xyz1"      | "1"      | "cxz"    |
+    | "abc1xyz11"     | "1"      | "cxz11"  |
+    | "abc1xyz1abc"   | "abc"    | "11"     |
+    | "abc1xyz1abc"   | "b"      | "acac"   |
+    | "abc1abc1abc"   | "abc"    | "1111"   |
+    |_________________|__________|_________*/
 
     public static final String wordEnds(String str, String word)
     {

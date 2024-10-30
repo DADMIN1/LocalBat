@@ -13,18 +13,21 @@ public final class Fibonacci
     Define a recursive fibonacci(n) method that returns the nth fibonacci number, 
     with n=0 representing the start of the sequence. */
 
-    /*__________________
-    |     Testcases     |
-    |___________________|
-    | fibonacci(0) → 0  |
-    | fibonacci(1) → 1  |
-    | fibonacci(2) → 1  |
-    | fibonacci(3) → 2  |
-    | fibonacci(4) → 3  |
-    | fibonacci(5) → 5  |
-    | fibonacci(6) → 8  |
-    | fibonacci(7) → 13 |
-    |__________________*/
+    /*_________________
+    |    Testcases     |
+    |__________________|
+    | n     | expected |
+    | (int) | (int)    |
+    |_______|__________|
+    | 0     | 0        |
+    | 1     | 1        |
+    | 2     | 1        |
+    | 3     | 2        |
+    | 4     | 3        |
+    | 5     | 5        |
+    | 6     | 8        |
+    | 7     | 13       |
+    |_______|_________*/
 
     public static final int fibonacci(int n)
     {

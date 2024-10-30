@@ -11,19 +11,22 @@ public final class SumNumbers
     (Note: Character.isDigit(char) tests if a char is one of the chars '0', 
     '1', .. '9'. Integer.parseInt(string) converts a string to an int.) */
 
-    /*_______________________________
-    |           Testcases            |
-    |________________________________|
-    | sumNumbers("abc123xyz") → 123  |
-    | sumNumbers("aa11b33")   → 44   |
-    | sumNumbers("7 11")      → 18   |
-    | sumNumbers("Chocolate") → 0    |
-    | sumNumbers("5hoco1a1e") → 7    |
-    | sumNumbers("5$$1;;1!!") → 7    |
-    | sumNumbers("a1234bb11") → 1245 |
-    | sumNumbers("")          → 0    |
-    | sumNumbers("a22bbb3")   → 25   |
-    |_______________________________*/
+    /*_______________________
+    |       Testcases        |
+    |________________________|
+    | str         | expected |
+    | (String)    | (int)    |
+    |_____________|__________|
+    | "abc123xyz" | 123      |
+    | "aa11b33"   | 44       |
+    | "7 11"      | 18       |
+    | "Chocolate" | 0        |
+    | "5hoco1a1e" | 7        |
+    | "5$$1;;1!!" | 7        |
+    | "a1234bb11" | 1245     |
+    | ""          | 0        |
+    | "a22bbb3"   | 25       |
+    |_____________|_________*/
 
     public static final int sumNumbers(String str)
     {

@@ -12,19 +12,22 @@ public final class AlarmClock
     Weekdays, the alarm should be "7:00" and on the weekend it should be "10:00". 
     Unless we are on vacation -- then on weekdays it should be "10:00" and weekends it should be "off". */
 
-    /*_______________________________
-    |           Testcases            |
-    |________________________________|
-    | alarmClock(1, false) → "7:00"  |
-    | alarmClock(5, false) → "7:00"  |
-    | alarmClock(0, false) → "10:00" |
-    | alarmClock(6, false) → "10:00" |
-    | alarmClock(0, true)  → "off"   |
-    | alarmClock(6, true)  → "off"   |
-    | alarmClock(1, true)  → "10:00" |
-    | alarmClock(3, true)  → "10:00" |
-    | alarmClock(5, true)  → "10:00" |
-    |_______________________________*/
+    /*_____________________________
+    |          Testcases           |
+    |______________________________|
+    | day   | vacation  | expected |
+    | (int) | (boolean) | (String) |
+    |_______|___________|__________|
+    | 1     | false     | "7:00"   |
+    | 5     | false     | "7:00"   |
+    | 0     | false     | "10:00"  |
+    | 6     | false     | "10:00"  |
+    | 0     | true      | "off"    |
+    | 6     | true      | "off"    |
+    | 1     | true      | "10:00"  |
+    | 3     | true      | "10:00"  |
+    | 5     | true      | "10:00"  |
+    |_______|___________|_________*/
 
     public static final String alarmClock(int day, boolean vacation)
     {

@@ -9,16 +9,19 @@ public final class WordsFront
     /* Given an array of strings, return a new array containing the first N strings. 
     N will be in the range 1..length. */
 
-    /*___________________________________________________________
-    |                         Testcases                          |
-    |____________________________________________________________|
-    | wordsFront(["a", "b", "c", "d"], 1) → ["a"]                |
-    | wordsFront(["a", "b", "c", "d"], 2) → ["a", "b"]           |
-    | wordsFront(["a", "b", "c", "d"], 3) → ["a", "b", "c"]      |
-    | wordsFront(["a", "b", "c", "d"], 4) → ["a", "b", "c", "d"] |
-    | wordsFront(["Hi", "There"], 1)      → ["Hi"]               |
-    | wordsFront(["Hi", "There"], 2)      → ["Hi", "There"]      |
-    |___________________________________________________________*/
+    /*______________________________________________________
+    |                       Testcases                       |
+    |_______________________________________________________|
+    | words (String[])       | n     | expected (String[])  |
+    |                        | (int) |                      |
+    |________________________|_______|______________________|
+    | { "a", "b", "c", "d" } | 1     | {"a"}                |
+    | { "a", "b", "c", "d" } | 2     | {"a", "b"}           |
+    | { "a", "b", "c", "d" } | 3     | {"a", "b", "c"}      |
+    | { "a", "b", "c", "d" } | 4     | {"a", "b", "c", "d"} |
+    | { "Hi", "There" }      | 1     | {"Hi"}               |
+    | { "Hi", "There" }      | 2     | {"Hi", "There"}      |
+    |________________________|_______|_____________________*/
 
     public static final String[] wordsFront(String[] words, int n)
     {

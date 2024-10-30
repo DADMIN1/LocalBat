@@ -11,18 +11,21 @@ public final class Array6
     In this way, a recursive call can pass index+1 to move down the array. 
     The initial call will pass in index as 0. */
 
-    /*___________________________________
-    |             Testcases              |
-    |____________________________________|
-    | array6([1, 6, 4], 0)       → true  |
-    | array6([1, 4], 0)          → false |
-    | array6([6], 0)             → true  |
-    | array6([], 0)              → false |
-    | array6([6, 2, 2], 0)       → true  |
-    | array6([2, 5], 0)          → false |
-    | array6([1, 9, 4, 6, 6], 0) → true  |
-    | array6([2, 5, 6], 0)       → true  |
-    |___________________________________*/
+    /*______________________________________
+    |               Testcases               |
+    |_______________________________________|
+    | nums (int[])      | index | expected  |
+    |                   | (int) | (boolean) |
+    |___________________|_______|___________|
+    | { 1, 6, 4 }       | 0     | true      |
+    | { 1, 4 }          | 0     | false     |
+    | { 6 }             | 0     | true      |
+    | {  }              | 0     | false     |
+    | { 6, 2, 2 }       | 0     | true      |
+    | { 2, 5 }          | 0     | false     |
+    | { 1, 9, 4, 6, 6 } | 0     | true      |
+    | { 2, 5, 6 }       | 0     | true      |
+    |___________________|_______|__________*/
 
     public static final boolean array6(int[] nums, int index)
     {

@@ -9,21 +9,24 @@ public final class HasOne
     /* Given a positive int n, return true if it contains a 1 digit. 
     Note: use % to get the rightmost digit, and / to discard the rightmost digit. */
 
-    /*_______________________
-    |       Testcases        |
-    |________________________|
-    | hasOne(10)     → true  |
-    | hasOne(22)     → false |
-    | hasOne(220)    → false |
-    | hasOne(212)    → true  |
-    | hasOne(1)      → true  |
-    | hasOne(9)      → false |
-    | hasOne(211112) → true  |
-    | hasOne(121121) → true  |
-    | hasOne(222222) → false |
-    | hasOne(56156)  → true  |
-    | hasOne(56556)  → false |
-    |_______________________*/
+    /*___________________
+    |     Testcases      |
+    |____________________|
+    | n      | expected  |
+    | (int)  | (boolean) |
+    |________|___________|
+    | 10     | true      |
+    | 22     | false     |
+    | 220    | false     |
+    | 212    | true      |
+    | 1      | true      |
+    | 9      | false     |
+    | 211112 | true      |
+    | 121121 | true      |
+    | 222222 | false     |
+    | 56156  | true      |
+    | 56556  | false     |
+    |________|__________*/
 
     public static final boolean hasOne(int n)
     {

@@ -11,21 +11,24 @@ public final class MirrorEnds
     and at the very end of the string in reverse order (possibly overlapping). 
     For example, the string "abXYZba" has the mirror end "ab". */
 
-    /*________________________________________
-    |                Testcases                |
-    |_________________________________________|
-    | mirrorEnds("abXYZba")         → "ab"    |
-    | mirrorEnds("abca")            → "a"     |
-    | mirrorEnds("aba")             → "aba"   |
-    | mirrorEnds("abab")            → ""      |
-    | mirrorEnds("xxx")             → "xxx"   |
-    | mirrorEnds("xxYxx")           → "xxYxx" |
-    | mirrorEnds("Hi and iH")       → "Hi "   |
-    | mirrorEnds("x")               → "x"     |
-    | mirrorEnds("")                → ""      |
-    | mirrorEnds("123and then 321") → "123"   |
-    | mirrorEnds("band andab")      → "ba"    |
-    |________________________________________*/
+    /*_____________________________
+    |          Testcases           |
+    |______________________________|
+    | string (String)   | expected |
+    |                   | (String) |
+    |___________________|__________|
+    | "abXYZba"         | "ab"     |
+    | "abca"            | "a"      |
+    | "aba"             | "aba"    |
+    | "abab"            | ""       |
+    | "xxx"             | "xxx"    |
+    | "xxYxx"           | "xxYxx"  |
+    | "Hi and iH"       | "Hi "    |
+    | "x"               | "x"      |
+    | ""                | ""       |
+    | "123and then 321" | "123"    |
+    | "band andab"      | "ba"     |
+    |___________________|_________*/
 
     public static final String mirrorEnds(String string)
     {

@@ -9,20 +9,23 @@ public final class Array123
     /* Given an array of ints, return true if the sequence of numbers 1, 
     2, 3 appears in the array somewhere. */
 
-    /*_____________________________________
-    |              Testcases               |
-    |______________________________________|
-    | array123([1, 1, 2, 3, 1])    → true  |
-    | array123([1, 1, 2, 4, 1])    → false |
-    | array123([1, 1, 2, 1, 2, 3]) → true  |
-    | array123([1, 1, 2, 1, 2, 1]) → false |
-    | array123([1, 2, 3, 1, 2, 3]) → true  |
-    | array123([1, 2, 3])          → true  |
-    | array123([1, 1, 1])          → false |
-    | array123([1, 2])             → false |
-    | array123([1])                → false |
-    | array123([])                 → false |
-    |_____________________________________*/
+    /*_________________________________
+    |            Testcases             |
+    |__________________________________|
+    | nums (int[])         | expected  |
+    |                      | (boolean) |
+    |______________________|___________|
+    | { 1, 1, 2, 3, 1 }    | true      |
+    | { 1, 1, 2, 4, 1 }    | false     |
+    | { 1, 1, 2, 1, 2, 3 } | true      |
+    | { 1, 1, 2, 1, 2, 1 } | false     |
+    | { 1, 2, 3, 1, 2, 3 } | true      |
+    | { 1, 2, 3 }          | true      |
+    | { 1, 1, 1 }          | false     |
+    | { 1, 2 }             | false     |
+    | { 1 }                | false     |
+    | {  }                 | false     |
+    |______________________|__________*/
 
     public static final boolean array123(int[] nums)
     {

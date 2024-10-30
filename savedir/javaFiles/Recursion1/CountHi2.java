@@ -9,26 +9,29 @@ public final class CountHi2
     /* Given a string, compute recursively the number of times lowercase "hi" appears in the string, 
     however do not count "hi" that have an 'x' immedately before them. */
 
-    /*_________________________
-    |        Testcases         |
-    |__________________________|
-    | countHi2("ahixhi")   → 1 |
-    | countHi2("ahibhi")   → 2 |
-    | countHi2("xhixhi")   → 0 |
-    | countHi2("hixhi")    → 1 |
-    | countHi2("hixhhi")   → 2 |
-    | countHi2("hihihi")   → 3 |
-    | countHi2("hihihix")  → 3 |
-    | countHi2("xhihihix") → 2 |
-    | countHi2("xxhi")     → 0 |
-    | countHi2("hixxhi")   → 1 |
-    | countHi2("hi")       → 1 |
-    | countHi2("xxxx")     → 0 |
-    | countHi2("h")        → 0 |
-    | countHi2("x")        → 0 |
-    | countHi2("")         → 0 |
-    | countHi2("Hellohi")  → 1 |
-    |_________________________*/
+    /*______________________
+    |       Testcases       |
+    |_______________________|
+    | str        | expected |
+    | (String)   | (int)    |
+    |____________|__________|
+    | "ahixhi"   | 1        |
+    | "ahibhi"   | 2        |
+    | "xhixhi"   | 0        |
+    | "hixhi"    | 1        |
+    | "hixhhi"   | 2        |
+    | "hihihi"   | 3        |
+    | "hihihix"  | 3        |
+    | "xhihihix" | 2        |
+    | "xxhi"     | 0        |
+    | "hixxhi"   | 1        |
+    | "hi"       | 1        |
+    | "xxxx"     | 0        |
+    | "h"        | 0        |
+    | "x"        | 0        |
+    | ""         | 0        |
+    | "Hellohi"  | 1        |
+    |____________|_________*/
 
     public static final int countHi2(String str)
     {

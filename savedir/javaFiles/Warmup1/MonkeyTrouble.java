@@ -10,14 +10,17 @@ public final class MonkeyTrouble
     We are in trouble if they are both smiling or if neither of them is smiling. 
     Return true if we are in trouble. */
 
-    /*____________________________________
-    |              Testcases              |
-    |_____________________________________|
-    | monkeyTrouble(true, true)   → true  |
-    | monkeyTrouble(false, false) → true  |
-    | monkeyTrouble(true, false)  → false |
-    | monkeyTrouble(false, true)  → false |
-    |____________________________________*/
+    /*__________________________________
+    |             Testcases             |
+    |___________________________________|
+    | aSmile    | bSmile    | expected  |
+    | (boolean) | (boolean) | (boolean) |
+    |___________|___________|___________|
+    | true      | true      | true      |
+    | false     | false     | true      |
+    | true      | false     | false     |
+    | false     | true      | false     |
+    |___________|___________|__________*/
 
     public static final boolean monkeyTrouble(boolean aSmile, boolean bSmile)
     {
