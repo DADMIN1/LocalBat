@@ -12,23 +12,23 @@ public final class Square56
     /* Given a list of integers, return a list of those numbers squared and the product added to 10, 
     omitting any of the resulting numbers that end in 5 or 6. */
 
-    /*______________________________________________________
-    |                       Testcases                       |
-    |_______________________________________________________|
-    | nums (List<Integer>)              | expected          |
-    |                                   | (List<Integer>)   |
-    |___________________________________|___________________|
-    | new ArrayList<>(Arrays.asList(3   | 1                 |
-    | new ArrayList<>(Arrays.asList(1)) | Arrays.asList(11) |
-    | new ArrayList<>(Arrays.asList(2)) | Arrays.asList(14) |
-    | new ArrayList<>(Arrays.asList(3)) | Arrays.asList(19) |
-    | new ArrayList<>(Arrays.asList(4)) | Arrays.asList()   |
-    | new ArrayList<>(Arrays.asList(5)) | Arrays.asList()   |
-    | new ArrayList<>(Arrays.asList(6)) | Arrays.asList()   |
-    | new ArrayList<>(Arrays.asList(7)) | Arrays.asList(59) |
-    | new ArrayList<>(Arrays.asList(1   | 2                 |
-    | new ArrayList<>(Arrays.asList(3   | -1                |
-    |___________________________________|__________________*/
+    /*_________________________________________
+    |                Testcases                 |
+    |__________________________________________|
+    | nums (List<Integer>)  | expected         |
+    |                       | (List<Integer>)  |
+    |_______________________|__________________|
+    | [3, 1, 4]             | [19, 11]         |
+    | [1]                   | [11]             |
+    | [2]                   | [14]             |
+    | [3]                   | [19]             |
+    | [4]                   | []               |
+    | [5]                   | []               |
+    | [6]                   | []               |
+    | [7]                   | [59]             |
+    | [1, 2, 3, 4, 5, 6, 7] | [11, 14, 19, 59] |
+    | [3, -1, -4, 1, 5, 9]  | [19, 11, 11, 91] |
+    |_______________________|_________________*/
 
     public static final List<Integer> square56(List<Integer> nums)
     {

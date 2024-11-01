@@ -12,19 +12,18 @@ public final class Lower
     /* Given a list of strings, return a list where each string is converted to lower case (Note: 
     String toLowerCase() method). */
 
-    /*_________________________________________________________
-    |                        Testcases                         |
-    |__________________________________________________________|
-    | strings (List<String>)                 | expected        |
-    |                                        | (List<String>)  |
-    |________________________________________|_________________|
-    | new ArrayList<>(Arrays.asList("Hello"  | "Hi"))          |
-    | new ArrayList<>(Arrays.asList("AAA"    | "BBB"           |
-    | new ArrayList<>(Arrays.asList("KitteN" | "ChocolaTE"))   |
-    | new ArrayList<>(Arrays.asList())       | Arrays.asList() |
-    | new ArrayList<>(Arrays.asList("EMPTY"  | ""))            |
-    | new ArrayList<>(Arrays.asList("aaX"    | "bYb"           |
-    |________________________________________|________________*/
+    /*____________________________________________________________
+    |                          Testcases                          |
+    |_____________________________________________________________|
+    | strings (List<String>)       | expected (List<String>)      |
+    |______________________________|______________________________|
+    | ["Hello", "Hi"]              | ["hello", "hi"]              |
+    | ["AAA", "BBB", "ccc"]        | ["aaa", "bbb", "ccc"]        |
+    | ["KitteN", "ChocolaTE"]      | ["kitten", "chocolate"]      |
+    | []                           | []                           |
+    | ["EMPTY", ""]                | ["empty", ""]                |
+    | ["aaX", "bYb", "Ycc", "ZZZ"] | ["aax", "byb", "ycc", "zzz"] |
+    |______________________________|_____________________________*/
 
     public static final List<String> lower(List<String> strings)
     {

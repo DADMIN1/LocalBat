@@ -11,21 +11,21 @@ public final class NoLong
 {
     /* Given a list of strings, return a list of the strings, omitting any string length 4 or more. */
 
-    /*___________________________________________________________
-    |                         Testcases                          |
-    |____________________________________________________________|
-    | strings (List<String>)                | expected           |
-    |                                       | (List<String>)     |
-    |_______________________________________|____________________|
-    | new ArrayList<>(Arrays.asList("this"  | "not"              |
-    | new ArrayList<>(Arrays.asList("a"     | "bbb"              |
-    | new ArrayList<>(Arrays.asList("cccc"  | "cccc"             |
-    | new ArrayList<>(Arrays.asList())      | Arrays.asList()    |
-    | new ArrayList<>(Arrays.asList(""))    | Arrays.asList("")  |
-    | new ArrayList<>(Arrays.asList("empty" | ""                 |
-    | new ArrayList<>(Arrays.asList("a"))   | Arrays.asList("a") |
-    | new ArrayList<>(Arrays.asList("aaaa"  | "bbb"              |
-    |_______________________________________|___________________*/
+    /*_______________________________________________________
+    |                       Testcases                        |
+    |________________________________________________________|
+    | strings (List<String>)         | expected              |
+    |                                | (List<String>)        |
+    |________________________________|_______________________|
+    | ["this", "not", "too", "long"] | ["not", "too"]        |
+    | ["a", "bbb", "cccc"]           | ["a", "bbb"]          |
+    | ["cccc", "cccc", "cccc"]       | []                    |
+    | []                             | []                    |
+    | [""]                           | [""]                  |
+    | ["empty", "", "empty"]         | [""]                  |
+    | ["a"]                          | ["a"]                 |
+    | ["aaaa", "bbb", "***", "333"]  | ["bbb", "***", "333"] |
+    |________________________________|______________________*/
 
     public static final List<String> noLong(List<String> strings)
     {

@@ -12,20 +12,20 @@ public final class NoNeg
     /* Given a list of integers, return a list of the integers, 
     omitting any that are less than 0. */
 
-    /*___________________________________________________
-    |                     Testcases                      |
-    |____________________________________________________|
-    | nums (List<Integer>)             | expected        |
-    |                                  | (List<Integer>) |
-    |__________________________________|_________________|
-    | new ArrayList<>(Arrays.asList(1  | -2))            |
-    | new ArrayList<>(Arrays.asList(-3 | -3              |
-    | new ArrayList<>(Arrays.asList(-1 | -1              |
-    | new ArrayList<>(Arrays.asList()) | Arrays.asList() |
-    | new ArrayList<>(Arrays.asList(0  | 1               |
-    | new ArrayList<>(Arrays.asList(3  | -10             |
-    | new ArrayList<>(Arrays.asList(-1 | 3               |
-    |__________________________________|________________*/
+    /*_____________________________________________________
+    |                      Testcases                       |
+    |______________________________________________________|
+    | nums (List<Integer>)               | expected        |
+    |                                    | (List<Integer>) |
+    |____________________________________|_________________|
+    | [1, -2]                            | [1]             |
+    | [-3, -3, 3, 3]                     | [3, 3]          |
+    | [-1, -1, -1]                       | []              |
+    | []                                 | []              |
+    | [0, 1, 2]                          | [0, 1, 2]       |
+    | [3, -10, 1, -1, 4, -400]           | [3, 1, 4]       |
+    | [-1, 3, 1, -1, -10, -100, -111, 5] | [3, 1, 5]       |
+    |____________________________________|________________*/
 
     public static final List<Integer> noNeg(List<Integer> nums)
     {

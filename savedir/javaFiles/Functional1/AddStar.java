@@ -11,19 +11,18 @@ public final class AddStar
 {
     /* Given a list of strings, return a list where each string has "*" added at its end. */
 
-    /*______________________________________________________________
-    |                           Testcases                           |
-    |_______________________________________________________________|
-    | strings (List<String>)                  | expected            |
-    |                                         | (List<String>)      |
-    |_________________________________________|_____________________|
-    | new ArrayList<>(Arrays.asList("a"       | "bb"                |
-    | new ArrayList<>(Arrays.asList("hello"   | "there"))           |
-    | new ArrayList<>(Arrays.asList("*"))     | Arrays.asList("**") |
-    | new ArrayList<>(Arrays.asList())        | Arrays.asList()     |
-    | new ArrayList<>(Arrays.asList("kittens" | "and"               |
-    | new ArrayList<>(Arrays.asList("empty"   | "string"            |
-    |_________________________________________|____________________*/
+    /*____________________________________________________________________________________
+    |                                      Testcases                                      |
+    |_____________________________________________________________________________________|
+    | strings (List<String>)                 | expected (List<String>)                    |
+    |________________________________________|____________________________________________|
+    | ["a", "bb", "ccc"]                     | ["a*", "bb*", "ccc*"]                      |
+    | ["hello", "there"]                     | ["hello*", "there*"]                       |
+    | ["*"]                                  | ["**"]                                     |
+    | []                                     | []                                         |
+    | ["kittens", "and", "chocolate", "and"] | ["kittens*", "and*", "chocolate*", "and*"] |
+    | ["empty", "string", ""]                | ["empty*", "string*", "*"]                 |
+    |________________________________________|___________________________________________*/
 
     public static final List<String> addStar(List<String> strings)
     {

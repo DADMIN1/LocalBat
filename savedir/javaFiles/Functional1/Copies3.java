@@ -11,18 +11,18 @@ public final class Copies3
 {
     /* Given a list of strings, return a list where each string is replaced by 3 copies of the string concatenated together. */
 
-    /*________________________________________________________________
-    |                            Testcases                            |
-    |_________________________________________________________________|
-    | strings (List<String>)                | expected (List<String>) |
-    |_______________________________________|_________________________|
-    | new ArrayList<>(Arrays.asList("a"     | "bb"                    |
-    | new ArrayList<>(Arrays.asList("24"    | "a"                     |
-    | new ArrayList<>(Arrays.asList("hello" | "there"))               |
-    | new ArrayList<>(Arrays.asList("no"))  | Arrays.asList("nonono") |
-    | new ArrayList<>(Arrays.asList())      | Arrays.asList()         |
-    | new ArrayList<>(Arrays.asList("this"  | "and"                   |
-    |_______________________________________|________________________*/
+    /*____________________________________________________________________________________________
+    |                                          Testcases                                          |
+    |_____________________________________________________________________________________________|
+    | strings (List<String>)         | expected (List<String>)                                    |
+    |________________________________|____________________________________________________________|
+    | ["a", "bb", "ccc"]             | ["aaa", "bbbbbb", "ccccccccc"]                             |
+    | ["24", "a", ""]                | ["242424", "aaa", ""]                                      |
+    | ["hello", "there"]             | ["hellohellohello", "theretherethere"]                     |
+    | ["no"]                         | ["nonono"]                                                 |
+    | []                             | []                                                         |
+    | ["this", "and", "that", "and"] | ["thisthisthis", "andandand", "thatthatthat", "andandand"] |
+    |________________________________|___________________________________________________________*/
 
     public static final List<String> copies3(List<String> strings)
     {

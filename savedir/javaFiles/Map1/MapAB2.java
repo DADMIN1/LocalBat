@@ -11,21 +11,20 @@ public final class MapAB2
     /* Modify and return the given map as follows: if the keys "a" and "b" are both in the map and have equal values, 
     remove them both. */
 
-    /*_________________________________________________
-    |                    Testcases                     |
-    |__________________________________________________|
-    | map                      | expected              |
-    | (Map<String, String>)    | (Map<String, String>) |
-    |__________________________|_______________________|
-    | new HashMap<>(Map.of("a" | "aaa"                 |
-    | new HashMap<>(Map.of("a" | "aaa"                 |
-    | new HashMap<>(Map.of("a" | "aaa"                 |
-    | new HashMap<>(Map.of("a" | "aaa"))               |
-    | new HashMap<>(Map.of("b" | "bbb"))               |
-    | new HashMap<>(Map.of("a" | ""                    |
-    | new HashMap<>(Map.of())  | Map.of()              |
-    | new HashMap<>(Map.of("a" | "a"                   |
-    |__________________________|______________________*/
+    /*_____________________________________________________________________________
+    |                                  Testcases                                   |
+    |______________________________________________________________________________|
+    | map (Map<String, String>)             | expected (Map<String, String>)       |
+    |_______________________________________|______________________________________|
+    | {"a": "aaa", "b": "aaa", "c": "cake"} | {"c": "cake"}                        |
+    | {"a": "aaa", "b": "bbb"}              | {"a": "aaa", "b": "bbb"}             |
+    | {"a": "aaa", "b": "bbb", "c": "aaa"}  | {"a": "aaa", "b": "bbb", "c": "aaa"} |
+    | {"a": "aaa"}                          | {"a": "aaa"}                         |
+    | {"b": "bbb"}                          | {"b": "bbb"}                         |
+    | {"a": "", "b": "", "c": "ccc"}        | {"c": "ccc"}                         |
+    | {}                                    | {}                                   |
+    | {"a": "a", "b": "b", "z": "zebra"}    | {"a": "a", "b": "b", "z": "zebra"}   |
+    |_______________________________________|_____________________________________*/
 
     public static final Map<String, String> mapAB2(Map<String, String> map)
     {

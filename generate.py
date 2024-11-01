@@ -24,6 +24,7 @@ def PythonBad(testcases: list[str], containsArray:bool, containsList:bool, conta
             # need to append an index to prevent identical arrays from clobbering each other
             "array_remap": { a+f"#{I}":b+str(testCaseNum) for (I, (a, b)) in enumerate(zip(arrays, array_varnames))},
             "functionCall": functionCall.strip(),
+            "functionCall_original": functionCall.strip(),
             "expected": expected.strip(),
         })
         
@@ -42,6 +43,7 @@ def PythonBad(testcases: list[str], containsArray:bool, containsList:bool, conta
         for (C, (arr, var_name)) in enumerate(split_cases[-1]['array_remap'].items()):
             (before, after) = split_cases[-1]['functionCall'].split(arr.removesuffix(f'#{C}'), maxsplit=1)
             split_cases[-1]['functionCall'] = before + var_name + after
+            split_cases[-1]['functionCall_original'] = before + var_name + after
         
     return split_cases
 
@@ -300,8 +302,28 @@ def WriteTestcaseFile(packageName:str, pagedata: dict):
 def TestcaseAsciiArt(testcases:list, functionInfo:dict, titlebox_padding:str = ' ', titlebox_underline:str|None = '_') -> str:
     arrow = '\u2192'
     split_cases = [ testcase for testcase in functionInfo["testCases"]['split_cases'] ]
-    for case in split_cases:
-        params = [*case["functionCall"].removeprefix(f"{functionInfo["functionDef"]['name']}(").removesuffix(')').split(',')]
+    for (case, testcaseStr) in zip(split_cases, testcases):
+        functioncall = case["functionCall_original"].strip().removeprefix(f"{functionInfo["functionDef"]['name']}(").removesuffix(')')
+        for arg in functionInfo["functionDef"]["args"]:
+            if (('List' in arg['type']) or ('Map' in arg['type'])):
+                if ('List' in arg['type']): termchar = ']';
+                elif ('Map' in arg['type']): termchar = '}';
+                (argVal, functioncall) = functioncall.split(termchar, maxsplit=1)
+                argVal = argVal+termchar
+                arg['value'] = argVal
+                functioncall = functioncall.strip().removeprefix(',').strip()
+            else:
+                if ',' in functioncall:
+                    (argVal, functioncall) = functioncall.split(',', maxsplit=1)
+                else:
+                    argVal = functioncall
+                    functioncall = ""
+                arg['value'] = argVal.strip()
+                functioncall = functioncall.strip()
+        
+        assert (len(functioncall.strip()) == 0), f"remaining text in functioncall: {functioncall}"
+        params = [arg['value'] for arg in functionInfo["functionDef"]["args"]]
+        
         simple_remap = {
             pname: pval.rstrip('; \n') for (pname, pval) in 
             zip(case['array_remap'].values(), [arrstr.split(' = ')[1] for arrstr in case['arrays']])
@@ -315,6 +337,8 @@ def TestcaseAsciiArt(testcases:list, functionInfo:dict, titlebox_padding:str = '
         case["params"] = params
         case["simple_remap"] = simple_remap
         case["restored_params"] = restored_params
+        if (functionInfo['needsMap'] or functionInfo['doesReturnList']):
+            case["expected"] = testcaseStr.split(f' {arrow} ')[1].strip()
     
     column_info = [*functionInfo['functionDef']['args'], {'identifier': 'expected', 'type': functionInfo['functionDef']['returnType']}]
     column_strs = [[*case["restored_params"], case['expected']] for case in split_cases] 
@@ -410,6 +434,7 @@ def WriteJavaFile(packageName:str, data: dict):
     packagedir = sub_savedirs[1] / packageName
     if not packagedir.exists(): packagedir.mkdir()
     filepath = packagedir / f'{title}.java'
+    if ((title == "MakePi") and (filepath.exists())): return;  # never re-generate; testcase formatting gets screwed
     print(f"    generating {packageName}.{filepath.stem}...")
     
     function_info = WriteTestcaseFile(packageName, data)
@@ -484,7 +509,7 @@ def GenerateSection(section_name: str, only_missing_files=False):
     if len(failures) > 0:
         for failure in failures: print(f"Failed to generate java file for: {failure}")
     else: print(f"Generated all files for {section_dir}\n\n")
-    return
+    return failures
 
 
 def GenerateAll(only_missing=True):
@@ -508,27 +533,42 @@ def GenerateAll(only_missing=True):
     print(f"Generation queued for {len(java_section_dirs)} sections: ")
     print(' (new) '+'\n (new) '.join(java_section_dirs)+'\n\n')
     
+    fail_count = 0  # number of files that failed to generate
+    failure_map = {}
     # TODO: track the number of files created/re-written/skipped
-    for subdir in java_section_dirs:
-        GenerateSection(subdir, only_missing)
+    for subdir_name in java_section_dirs:
+        failures = GenerateSection(subdir_name, only_missing)
+        fail_count += len(failures)
+        if (len(failures) > 0): failure_map[subdir_name] = failures
     
+    if (fail_count > 0): print(f"FAILED to generate {fail_count} files across {len(failure_map)} sections.\n");
+    for (section_name, file_list) in failure_map.items():
+        print(f"{section_name} ({len(file_list)})")
+        for file_name in file_list:
+            print(f"  {file_name}")
+        print('\n')
+    
+    if (fail_count > 0): print(f"FAILED to generate {fail_count} files across {len(failure_map)} sections.\n");
+    else: print(f"Successfully generated all files ({len(java_section_dirs)} sections).\n")
     return
 
 
 if __name__ == "__main__":
     GenerateAll()
-    # GenerateSection("Map-1")
+    # GenerateSection("Map-2")
     # GenerateSection("Array-3")
     # GenerateSection("String-1")
     
     # testdata = LoadFile("Array-1", "biggerTwo")
     # testdata = LoadFile("String-1", "makeOutWord")
     # testdata = LoadFile("AP-1", "wordsWithoutList")
+    # testdata = LoadFile("Map-2", "firstChar")
     # WriteJavaFile("testpackage", testdata)
     
-    # problems = ["bigHeights", "commonTwo", "copyEndy"]
+    # (section_name, problems) = ("AP-1", ["bigHeights", "commonTwo", "copyEndy"])
+    # (section_name, problems) = ("Functional-1", ["addStar", "copies3"])
     # for problemfile in problems:
-    #     testdata = LoadFile("AP-1", problemfile)
+    #     testdata = LoadFile(section_name, problemfile)
     #     WriteJavaFile("testpackage", testdata)
     
     # functionDefinition = ParseFunctionDefinition(testdata['provided_code'])

@@ -12,19 +12,18 @@ public final class Topping2
     if the key "ice cream" has a value, set that as the value for the key "yogurt" also. 
     If the key "spinach" has a value, change that value to "nuts". */
 
-    /*_________________________________________________________
-    |                        Testcases                         |
-    |__________________________________________________________|
-    | map (Map<String, String>)        | expected              |
-    |                                  | (Map<String, String>) |
-    |__________________________________|_______________________|
-    | new HashMap<>(Map.of("ice cream" | "cherry"))            |
-    | new HashMap<>(Map.of("spinach"   | "dirt"                |
-    | new HashMap<>(Map.of("yogurt"    | "salt"))              |
-    | new HashMap<>(Map.of("yogurt"    | "salt"                |
-    | new HashMap<>(Map.of())          | Map.of()              |
-    | new HashMap<>(Map.of("ice cream" | "air"                 |
-    |__________________________________|______________________*/
+    /*____________________________________________________________________________________________________________
+    |                                                  Testcases                                                  |
+    |_____________________________________________________________________________________________________________|
+    | map (Map<String, String>)                  | expected (Map<String, String>)                                 |
+    |____________________________________________|________________________________________________________________|
+    | {"ice cream": "cherry"}                    | {"yogurt": "cherry", "ice cream": "cherry"}                    |
+    | {"spinach": "dirt", "ice cream": "cherry"} | {"yogurt": "cherry", "spinach": "nuts", "ice cream": "cherry"} |
+    | {"yogurt": "salt"}                         | {"yogurt": "salt"}                                             |
+    | {"yogurt": "salt", "bread": "butter"}      | {"yogurt": "salt", "bread": "butter"}                          |
+    | {}                                         | {}                                                             |
+    | {"ice cream": "air", "salad": "oil"}       | {"yogurt": "air", "ice cream": "air", "salad": "oil"}          |
+    |____________________________________________|_______________________________________________________________*/
 
     public static final Map<String, String> topping2(Map<String, String> map)
     {

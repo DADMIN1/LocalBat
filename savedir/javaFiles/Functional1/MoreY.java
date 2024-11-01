@@ -11,19 +11,19 @@ public final class MoreY
 {
     /* Given a list of strings, return a list where each string has "y" added at its start and end. */
 
-    /*_______________________________________________________________
-    |                           Testcases                            |
-    |________________________________________________________________|
-    | strings (List<String>)                | expected               |
-    |                                       | (List<String>)         |
-    |_______________________________________|________________________|
-    | new ArrayList<>(Arrays.asList("a"     | "b"                    |
-    | new ArrayList<>(Arrays.asList("hello" | "there"))              |
-    | new ArrayList<>(Arrays.asList("yay")) | Arrays.asList("yyayy") |
-    | new ArrayList<>(Arrays.asList(""      | "a"                    |
-    | new ArrayList<>(Arrays.asList())      | Arrays.asList()        |
-    | new ArrayList<>(Arrays.asList("xx"    | "yy"                   |
-    |_______________________________________|_______________________*/
+    /*______________________________________________
+    |                   Testcases                   |
+    |_______________________________________________|
+    | strings            | expected (List<String>)  |
+    | (List<String>)     |                          |
+    |____________________|__________________________|
+    | ["a", "b", "c"]    | ["yay", "yby", "ycy"]    |
+    | ["hello", "there"] | ["yhelloy", "ytherey"]   |
+    | ["yay"]            | ["yyayy"]                |
+    | ["", "a", "xx"]    | ["yy", "yay", "yxxy"]    |
+    | []                 | []                       |
+    | ["xx", "yy", "zz"] | ["yxxy", "yyyy", "yzzy"] |
+    |____________________|_________________________*/
 
     public static final List<String> moreY(List<String> strings)
     {

@@ -12,20 +12,20 @@ public final class No9
     /* Given a list of non-negative integers, return a list of those numbers except omitting any that end with 9. 
     (Note: % by 10) */
 
-    /*____________________________________________________
-    |                      Testcases                      |
-    |_____________________________________________________|
-    | nums (List<Integer>)              | expected        |
-    |                                   | (List<Integer>) |
-    |___________________________________|_________________|
-    | new ArrayList<>(Arrays.asList(1   | 2               |
-    | new ArrayList<>(Arrays.asList(9   | 19              |
-    | new ArrayList<>(Arrays.asList(1   | 2               |
-    | new ArrayList<>(Arrays.asList(45  | 99              |
-    | new ArrayList<>(Arrays.asList())  | Arrays.asList() |
-    | new ArrayList<>(Arrays.asList(9)) | Arrays.asList() |
-    | new ArrayList<>(Arrays.asList(0   | 9               |
-    |___________________________________|________________*/
+    /*___________________________________________________
+    |                     Testcases                      |
+    |____________________________________________________|
+    | nums (List<Integer>)         | expected            |
+    |                              | (List<Integer>)     |
+    |______________________________|_____________________|
+    | [1, 2, 19]                   | [1, 2]              |
+    | [9, 19, 29, 3]               | [3]                 |
+    | [1, 2, 3]                    | [1, 2, 3]           |
+    | [45, 99, 90, 28, 13, 999, 0] | [45, 90, 28, 13, 0] |
+    | []                           | []                  |
+    | [9]                          | []                  |
+    | [0, 9, 0]                    | [0, 0]              |
+    |______________________________|____________________*/
 
     public static final List<Integer> no9(List<Integer> nums)
     {

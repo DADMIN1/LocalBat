@@ -11,21 +11,20 @@ public final class NoX
 {
     /* Given a list of strings, return a list where each string has all its "x" removed. */
 
-    /*_________________________________________________________
-    |                        Testcases                         |
-    |__________________________________________________________|
-    | strings (List<String>)               | expected          |
-    |                                      | (List<String>)    |
-    |______________________________________|___________________|
-    | new ArrayList<>(Arrays.asList("ax"   | "bb"              |
-    | new ArrayList<>(Arrays.asList("xxax" | "xbxbx"           |
-    | new ArrayList<>(Arrays.asList("x"))  | Arrays.asList("") |
-    | new ArrayList<>(Arrays.asList(""))   | Arrays.asList("") |
-    | new ArrayList<>(Arrays.asList())     | Arrays.asList()   |
-    | new ArrayList<>(Arrays.asList("the"  | "taxi"))          |
-    | new ArrayList<>(Arrays.asList("the"  | "xxtxaxixxx"))    |
-    | new ArrayList<>(Arrays.asList("this" | "is"              |
-    |______________________________________|__________________*/
+    /*_______________________________________________________
+    |                       Testcases                        |
+    |________________________________________________________|
+    | strings (List<String>)     | expected (List<String>)   |
+    |____________________________|___________________________|
+    | ["ax", "bb", "cx"]         | ["a", "bb", "c"]          |
+    | ["xxax", "xbxbx", "xxcx"]  | ["a", "bb", "c"]          |
+    | ["x"]                      | [""]                      |
+    | [""]                       | [""]                      |
+    | []                         | []                        |
+    | ["the", "taxi"]            | ["the", "tai"]            |
+    | ["the", "xxtxaxixxx"]      | ["the", "tai"]            |
+    | ["this", "is", "the", "x"] | ["this", "is", "the", ""] |
+    |____________________________|__________________________*/
 
     public static final List<String> noX(List<String> strings)
     {

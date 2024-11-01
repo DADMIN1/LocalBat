@@ -12,19 +12,18 @@ public final class MapBully
     set the key "b" to have that value, and set the key "a" to have the value "". 
     Basically "b" is a bully, taking the value and replacing it with the empty string. */
 
-    /*_________________________________________________
-    |                    Testcases                     |
-    |__________________________________________________|
-    | map                      | expected              |
-    | (Map<String, String>)    | (Map<String, String>) |
-    |__________________________|_______________________|
-    | new HashMap<>(Map.of("a" | "candy"               |
-    | new HashMap<>(Map.of("a" | "candy"))             |
-    | new HashMap<>(Map.of("a" | "candy"               |
-    | new HashMap<>(Map.of("b" | "carrot"))            |
-    | new HashMap<>(Map.of("c" | "meh"))               |
-    | new HashMap<>(Map.of("a" | "sparkle"             |
-    |__________________________|______________________*/
+    /*__________________________________________________________________________________
+    |                                     Testcases                                     |
+    |___________________________________________________________________________________|
+    | map (Map<String, String>)                 | expected (Map<String, String>)        |
+    |___________________________________________|_______________________________________|
+    | {"a": "candy", "b": "dirt"}               | {"a": "", "b": "candy"}               |
+    | {"a": "candy"}                            | {"a": "", "b": "candy"}               |
+    | {"a": "candy", "b": "carrot", "c": "meh"} | {"a": "", "b": "candy", "c": "meh"}   |
+    | {"b": "carrot"}                           | {"b": "carrot"}                       |
+    | {"c": "meh"}                              | {"c": "meh"}                          |
+    | {"a": "sparkle", "c": "meh"}              | {"a": "", "b": "sparkle", "c": "meh"} |
+    |___________________________________________|______________________________________*/
 
     public static final Map<String, String> mapBully(Map<String, String> map)
     {

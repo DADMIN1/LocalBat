@@ -12,21 +12,21 @@ public final class NoTeen
     /* Given a list of integers, return a list of those numbers, 
     omitting any that are between 13 and 19 inclusive. */
 
-    /*_________________________________________________________
-    |                        Testcases                         |
-    |__________________________________________________________|
-    | nums (List<Integer>)                | expected           |
-    |                                     | (List<Integer>)    |
-    |_____________________________________|____________________|
-    | new ArrayList<>(Arrays.asList(12    | 13                 |
-    | new ArrayList<>(Arrays.asList(1     | 14                 |
-    | new ArrayList<>(Arrays.asList(15))  | Arrays.asList()    |
-    | new ArrayList<>(Arrays.asList(-15)) | Arrays.asList(-15) |
-    | new ArrayList<>(Arrays.asList())    | Arrays.asList()    |
-    | new ArrayList<>(Arrays.asList(0     | 1                  |
-    | new ArrayList<>(Arrays.asList(15    | 17                 |
-    | new ArrayList<>(Arrays.asList(-16   | 2                  |
-    |_____________________________________|___________________*/
+    /*__________________________________________
+    |                 Testcases                 |
+    |___________________________________________|
+    | nums (List<Integer>)    | expected        |
+    |                         | (List<Integer>) |
+    |_________________________|_________________|
+    | [12, 13, 19, 20]        | [12, 20]        |
+    | [1, 14, 1]              | [1, 1]          |
+    | [15]                    | []              |
+    | [-15]                   | [-15]           |
+    | []                      | []              |
+    | [0, 1, 2, -3]           | [0, 1, 2, -3]   |
+    | [15, 17, 19, 21, 19]    | [21]            |
+    | [-16, 2, 15, 3, 16, 25] | [-16, 2, 3, 25] |
+    |_________________________|________________*/
 
     public static final List<Integer> noTeen(List<Integer> nums)
     {

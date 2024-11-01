@@ -12,20 +12,20 @@ public final class Two2
     /* Given a list of non-negative integers, return a list of those numbers multiplied by 2, 
     omitting any of the resulting numbers that end in 2. */
 
-    /*_____________________________________________________
-    |                      Testcases                       |
-    |______________________________________________________|
-    | nums (List<Integer>)              | expected         |
-    |                                   | (List<Integer>)  |
-    |___________________________________|__________________|
-    | new ArrayList<>(Arrays.asList(1   | 2                |
-    | new ArrayList<>(Arrays.asList(2   | 6                |
-    | new ArrayList<>(Arrays.asList(0)) | Arrays.asList(0) |
-    | new ArrayList<>(Arrays.asList())  | Arrays.asList()  |
-    | new ArrayList<>(Arrays.asList(1   | 11               |
-    | new ArrayList<>(Arrays.asList(2   | 3                |
-    | new ArrayList<>(Arrays.asList(3   | 1                |
-    |___________________________________|_________________*/
+    /*_________________________________________
+    |                Testcases                 |
+    |__________________________________________|
+    | nums (List<Integer>)   | expected        |
+    |                        | (List<Integer>) |
+    |________________________|_________________|
+    | [1, 2, 3]              | [4, 6]          |
+    | [2, 6, 11]             | [4]             |
+    | [0]                    | [0]             |
+    | []                     | []              |
+    | [1, 11, 111, 16]       | []              |
+    | [2, 3, 5, 7, 11]       | [4, 6, 10, 14]  |
+    | [3, 1, 4, 1, 6, 99, 0] | [6, 8, 198, 0]  |
+    |________________________|________________*/
 
     public static final List<Integer> two2(List<Integer> nums)
     {

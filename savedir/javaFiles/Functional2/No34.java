@@ -11,24 +11,24 @@ public final class No34
 {
     /* Given a list of strings, return a list of the strings, omitting any string length 3 or 4. */
 
-    /*___________________________________________________________
-    |                         Testcases                          |
-    |____________________________________________________________|
-    | strings (List<String>)                | expected           |
-    |                                       | (List<String>)     |
-    |_______________________________________|____________________|
-    | new ArrayList<>(Arrays.asList("a"     | "bb"               |
-    | new ArrayList<>(Arrays.asList("a"     | "bb"               |
-    | new ArrayList<>(Arrays.asList("ccc"   | "dddd"             |
-    | new ArrayList<>(Arrays.asList("this"  | "not"              |
-    | new ArrayList<>(Arrays.asList("a"     | "bbb"              |
-    | new ArrayList<>(Arrays.asList("dddd"  | "ddd"              |
-    | new ArrayList<>(Arrays.asList())      | Arrays.asList()    |
-    | new ArrayList<>(Arrays.asList(""))    | Arrays.asList("")  |
-    | new ArrayList<>(Arrays.asList("empty" | ""                 |
-    | new ArrayList<>(Arrays.asList("a"))   | Arrays.asList("a") |
-    | new ArrayList<>(Arrays.asList("aaaa"  | "bbb"              |
-    |_______________________________________|___________________*/
+    /*_________________________________________________________
+    |                        Testcases                         |
+    |__________________________________________________________|
+    | strings (List<String>)          | expected               |
+    |                                 | (List<String>)         |
+    |_________________________________|________________________|
+    | ["a", "bb", "ccc"]              | ["a", "bb"]            |
+    | ["a", "bb", "ccc", "dddd"]      | ["a", "bb"]            |
+    | ["ccc", "dddd", "apple"]        | ["apple"]              |
+    | ["this", "not", "too", "long"]  | []                     |
+    | ["a", "bbb", "cccc", "xx"]      | ["a", "xx"]            |
+    | ["dddd", "ddd", "xxxxxxx"]      | ["xxxxxxx"]            |
+    | []                              | []                     |
+    | [""]                            | [""]                   |
+    | ["empty", "", "empty"]          | ["empty", "", "empty"] |
+    | ["a"]                           | ["a"]                  |
+    | ["aaaa", "bbb", "*****", "333"] | ["*****"]              |
+    |_________________________________|_______________________*/
 
     public static final List<String> no34(List<String> strings)
     {

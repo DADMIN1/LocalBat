@@ -12,28 +12,27 @@ public final class MapAB4
     then set "c" to have the longer value. If the values exist and have the same length, 
     change them both to the empty string in the map. */
 
-    /*___________________________________________________
-    |                     Testcases                      |
-    |____________________________________________________|
-    | map (Map<String, String>)  | expected              |
-    |                            | (Map<String, String>) |
-    |____________________________|_______________________|
-    | new HashMap<>(Map.of("a"   | "aaa"                 |
-    | new HashMap<>(Map.of("a"   | "aa"                  |
-    | new HashMap<>(Map.of("a"   | "aa"                  |
-    | new HashMap<>(Map.of("a"   | "aaa"))               |
-    | new HashMap<>(Map.of("b"   | "bbb"))               |
-    | new HashMap<>(Map.of("a"   | "aaa"                 |
-    | new HashMap<>(Map.of("a"   | "a"                   |
-    | new HashMap<>(Map.of("a"   | ""                    |
-    | new HashMap<>(Map.of("a"   | "a"                   |
-    | new HashMap<>(Map.of("c"   | "cat"                 |
-    | new HashMap<>(Map.of("ccc" | "ccc"))               |
-    | new HashMap<>(Map.of("c"   | "a"                   |
-    | new HashMap<>(Map.of())    | Map.of()              |
-    | new HashMap<>(Map.of("a"   | ""                    |
-    | new HashMap<>(Map.of("b"   | ""                    |
-    |____________________________|______________________*/
+    /*____________________________________________________________________________
+    |                                  Testcases                                  |
+    |_____________________________________________________________________________|
+    | map (Map<String, String>)             | expected (Map<String, String>)      |
+    |_______________________________________|_____________________________________|
+    | {"a": "aaa", "b": "bb", "c": "cake"}  | {"a": "aaa", "b": "bb", "c": "aaa"} |
+    | {"a": "aa", "b": "bbb", "c": "cake"}  | {"a": "aa", "b": "bbb", "c": "bbb"} |
+    | {"a": "aa", "b": "bbb"}               | {"a": "aa", "b": "bbb", "c": "bbb"} |
+    | {"a": "aaa"}                          | {"a": "aaa"}                        |
+    | {"b": "bbb"}                          | {"b": "bbb"}                        |
+    | {"a": "aaa", "b": "bbb", "c": "cake"} | {"a": "", "b": "", "c": "cake"}     |
+    | {"a": "a", "b": "b", "c": "cake"}     | {"a": "", "b": "", "c": "cake"}     |
+    | {"a": "", "b": "b", "c": "cake"}      | {"a": "", "b": "b", "c": "b"}       |
+    | {"a": "a", "b": "", "c": "cake"}      | {"a": "a", "b": "", "c": "a"}       |
+    | {"c": "cat", "d": "dog"}              | {"c": "cat", "d": "dog"}            |
+    | {"ccc": "ccc"}                        | {"ccc": "ccc"}                      |
+    | {"c": "a", "d": "b"}                  | {"c": "a", "d": "b"}                |
+    | {}                                    | {}                                  |
+    | {"a": "", "z": "z"}                   | {"a": "", "z": "z"}                 |
+    | {"b": "", "z": "z"}                   | {"b": "", "z": "z"}                 |
+    |_______________________________________|____________________________________*/
 
     public static final Map<String, String> mapAB4(Map<String, String> map)
     {
