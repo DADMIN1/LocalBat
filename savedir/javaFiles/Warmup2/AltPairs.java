@@ -12,16 +12,16 @@ public final class AltPairs
     /*________________________________
     |            Testcases            |
     |_________________________________|
-    | str (String)       | expected   |
-    |                    | (String)   |
+    |    str (String)    |  returns   |
+    |                    |  (String)  |
     |____________________|____________|
-    | "kitten"           | "kien"     |
-    | "Chocolate"        | "Chole"    |
-    | "CodingHorror"     | "Congrr"   |
-    | "yak"              | "ya"       |
-    | "ya"               | "ya"       |
-    | "y"                | "y"        |
-    | ""                 | ""         |
+    |      "kitten"      |   "kien"   |
+    |    "Chocolate"     |  "Chole"   |
+    |   "CodingHorror"   |  "Congrr"  |
+    |       "yak"        |    "ya"    |
+    |        "ya"        |    "ya"    |
+    |        "y"         |    "y"     |
+    |         ""         |     ""     |
     | "ThisThatTheOther" | "ThThThth" |
     |____________________|___________*/
 

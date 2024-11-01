@@ -10,27 +10,27 @@ public final class EndOther
     ignoring upper/lower case differences (in other words, the computation should not be "case sensitive"). 
     Note: str.toLowerCase() returns the lowercase version of a string. */
 
-    /*________________________________
-    |            Testcases            |
-    |_________________________________|
-    | a        | b        | expected  |
-    | (String) | (String) | (boolean) |
-    |__________|__________|___________|
-    | "Hiabc"  | "abc"    | true      |
-    | "AbC"    | "HiaBc"  | true      |
-    | "abc"    | "abXabc" | true      |
-    | "Hiabc"  | "abcd"   | false     |
-    | "Hiabc"  | "bc"     | true      |
-    | "Hiabcx" | "bc"     | false     |
-    | "abc"    | "abc"    | true      |
-    | "xyz"    | "12xyz"  | true      |
-    | "yz"     | "12xz"   | false     |
-    | "Z"      | "12xz"   | true      |
-    | "12"     | "12"     | true      |
-    | "abcXYZ" | "abcDEF" | false     |
-    | "ab"     | "ab12"   | false     |
-    | "ab"     | "12ab"   | true      |
-    |__________|__________|__________*/
+    /*____________________________________
+    |              Testcases              |
+    |_____________________________________|
+    | a (String) | b (String) |  returns  |
+    |            |            | (boolean) |
+    |____________|____________|___________|
+    |  "Hiabc"   |   "abc"    |    true   |
+    |   "AbC"    |  "HiaBc"   |    true   |
+    |   "abc"    |  "abXabc"  |    true   |
+    |  "Hiabc"   |   "abcd"   |   false   |
+    |  "Hiabc"   |    "bc"    |    true   |
+    |  "Hiabcx"  |    "bc"    |   false   |
+    |   "abc"    |   "abc"    |    true   |
+    |   "xyz"    |  "12xyz"   |    true   |
+    |    "yz"    |   "12xz"   |   false   |
+    |    "Z"     |   "12xz"   |    true   |
+    |    "12"    |    "12"    |    true   |
+    |  "abcXYZ"  |  "abcDEF"  |   false   |
+    |    "ab"    |   "ab12"   |   false   |
+    |    "ab"    |   "12ab"   |    true   |
+    |____________|____________|__________*/
 
     public static final boolean endOther(String a, String b)
     {

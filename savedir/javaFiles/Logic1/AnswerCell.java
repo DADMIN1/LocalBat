@@ -13,15 +13,15 @@ public final class AnswerCell
     /*______________________________________________
     |                   Testcases                   |
     |_______________________________________________|
-    | isMorning | isMom     | isAsleep  | expected  |
+    | isMorning |   isMom   |  isAsleep |  returns  |
     | (boolean) | (boolean) | (boolean) | (boolean) |
     |___________|___________|___________|___________|
-    | false     | false     | false     | true      |
-    | false     | false     | true      | false     |
-    | true      | false     | false     | false     |
-    | true      | true      | false     | true      |
-    | false     | true      | false     | true      |
-    | true      | true      | true      | false     |
+    |   false   |   false   |   false   |    true   |
+    |   false   |   false   |    true   |   false   |
+    |    true   |   false   |   false   |   false   |
+    |    true   |    true   |   false   |    true   |
+    |   false   |    true   |   false   |    true   |
+    |    true   |    true   |    true   |   false   |
     |___________|___________|___________|__________*/
 
     public static final boolean answerCell(boolean isMorning, boolean isMom, boolean isAsleep)

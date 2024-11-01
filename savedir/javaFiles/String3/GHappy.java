@@ -12,21 +12,21 @@ public final class GHappy
     /*________________________
     |        Testcases        |
     |_________________________|
-    | str         | expected  |
-    | (String)    | (boolean) |
+    |     str     |  returns  |
+    |   (String)  | (boolean) |
     |_____________|___________|
-    | "xxggxx"    | true      |
-    | "xxgxx"     | false     |
-    | "xxggyygxx" | false     |
-    | "g"         | false     |
-    | "gg"        | true      |
-    | ""          | true      |
-    | "xxgggxyz"  | true      |
-    | "xxgggxyg"  | false     |
-    | "xxgggxygg" | true      |
-    | "mgm"       | false     |
-    | "mggm"      | true      |
-    | "yyygggxyy" | true      |
+    |   "xxggxx"  |    true   |
+    |   "xxgxx"   |   false   |
+    | "xxggyygxx" |   false   |
+    |     "g"     |   false   |
+    |     "gg"    |    true   |
+    |      ""     |    true   |
+    |  "xxgggxyz" |    true   |
+    |  "xxgggxyg" |   false   |
+    | "xxgggxygg" |    true   |
+    |    "mgm"    |   false   |
+    |    "mggm"   |    true   |
+    | "yyygggxyy" |    true   |
     |_____________|__________*/
 
     public static final boolean gHappy(String str)

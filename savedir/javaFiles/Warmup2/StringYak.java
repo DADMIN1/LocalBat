@@ -12,15 +12,15 @@ public final class StringYak
     /*______________________________
     |           Testcases           |
     |_______________________________|
-    | str (String)     | expected   |
-    |                  | (String)   |
+    |   str (String)   |  returns   |
+    |                  |  (String)  |
     |__________________|____________|
-    | "yakpak"         | "pak"      |
-    | "pakyak"         | "pak"      |
-    | "yak123ya"       | "123ya"    |
-    | "yak"            | ""         |
-    | "yakxxxyak"      | "xxx"      |
-    | "HiyakHi"        | "HiHi"     |
+    |     "yakpak"     |   "pak"    |
+    |     "pakyak"     |   "pak"    |
+    |    "yak123ya"    |  "123ya"   |
+    |      "yak"       |     ""     |
+    |   "yakxxxyak"    |   "xxx"    |
+    |    "HiyakHi"     |   "HiHi"   |
     | "xxxyakyyyakzzz" | "xxxyyzzz" |
     |__________________|___________*/
 

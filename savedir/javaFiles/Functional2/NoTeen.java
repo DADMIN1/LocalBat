@@ -15,7 +15,7 @@ public final class NoTeen
     /*__________________________________________
     |                 Testcases                 |
     |___________________________________________|
-    | nums (List<Integer>)    | expected        |
+    |   nums (List<Integer>)  |     returns     |
     |                         | (List<Integer>) |
     |_________________________|_________________|
     | [12, 13, 19, 20]        | [12, 20]        |

@@ -11,18 +11,18 @@ public final class Has23
     /*____________________
     |      Testcases      |
     |_____________________|
-    | nums    | expected  |
+    |   nums  |  returns  |
     | (int[]) | (boolean) |
     |_________|___________|
-    | {2, 5}  | true      |
-    | {4, 3}  | true      |
-    | {4, 5}  | false     |
-    | {2, 2}  | true      |
-    | {3, 2}  | true      |
-    | {3, 3}  | true      |
-    | {7, 7}  | false     |
-    | {3, 9}  | true      |
-    | {9, 5}  | false     |
+    | {2, 5}  |    true   |
+    | {4, 3}  |    true   |
+    | {4, 5}  |   false   |
+    | {2, 2}  |    true   |
+    | {3, 2}  |    true   |
+    | {3, 3}  |    true   |
+    | {7, 7}  |   false   |
+    | {3, 9}  |    true   |
+    | {9, 5}  |   false   |
     |_________|__________*/
 
     public static final boolean has23(int[] nums)

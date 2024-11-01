@@ -11,22 +11,22 @@ public final class RepeatFront
     You may assume that n is between 0 and the length of the string, 
     inclusive (i.e. n >= 0 and n <= str.length()). */
 
-    /*___________________________________
-    |             Testcases              |
-    |____________________________________|
-    | str         | n     | expected     |
-    | (String)    | (int) | (String)     |
-    |_____________|_______|______________|
-    | "Chocolate" | 4     | "ChocChoChC" |
-    | "Chocolate" | 3     | "ChoChC"     |
-    | "Ice Cream" | 2     | "IcI"        |
-    | "Ice Cream" | 1     | "I"          |
-    | "Ice Cream" | 0     | ""           |
-    | "xyz"       | 3     | "xyzxyx"     |
-    | ""          | 0     | ""           |
-    | "Java"      | 4     | "JavaJavJaJ" |
-    | "Java"      | 1     | "J"          |
-    |_____________|_______|_____________*/
+    /*_____________________________________
+    |              Testcases               |
+    |______________________________________|
+    |     str     | n (int) |   returns    |
+    |   (String)  |         |   (String)   |
+    |_____________|_________|______________|
+    | "Chocolate" |    4    | "ChocChoChC" |
+    | "Chocolate" |    3    |   "ChoChC"   |
+    | "Ice Cream" |    2    |    "IcI"     |
+    | "Ice Cream" |    1    |     "I"      |
+    | "Ice Cream" |    0    |      ""      |
+    |    "xyz"    |    3    |   "xyzxyx"   |
+    |      ""     |    0    |      ""      |
+    |    "Java"   |    4    | "JavaJavJaJ" |
+    |    "Java"   |    1    |     "J"      |
+    |_____________|_________|_____________*/
 
     public static final String repeatFront(String str, int n)
     {

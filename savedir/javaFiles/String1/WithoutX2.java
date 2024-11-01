@@ -13,18 +13,18 @@ public final class WithoutX2
     /*____________________
     |      Testcases      |
     |_____________________|
-    | str      | expected |
+    |   str    | returns  |
     | (String) | (String) |
     |__________|__________|
-    | "xHi"    | "Hi"     |
-    | "Hxi"    | "Hi"     |
-    | "Hi"     | "Hi"     |
-    | "xxHi"   | "Hi"     |
-    | "Hix"    | "Hix"    |
-    | "xaxb"   | "axb"    |
-    | "xx"     | ""       |
-    | "x"      | ""       |
-    | ""       | ""       |
+    |  "xHi"   |   "Hi"   |
+    |  "Hxi"   |   "Hi"   |
+    |   "Hi"   |   "Hi"   |
+    |  "xxHi"  |   "Hi"   |
+    |  "Hix"   |  "Hix"   |
+    |  "xaxb"  |  "axb"   |
+    |   "xx"   |    ""    |
+    |   "x"    |    ""    |
+    |    ""    |    ""    |
     | "Hello"  | "Hello"  |
     | "Hexllo" | "Hexllo" |
     | "xHxllo" | "Hxllo"  |

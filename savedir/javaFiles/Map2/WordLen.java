@@ -14,7 +14,7 @@ public final class WordLen
     /*___________________________________________________________________
     |                             Testcases                              |
     |____________________________________________________________________|
-    | strings (String[])              | expected (Map<String, Integer>)  |
+    |        strings (String[])       |  returns (Map<String, Integer>)  |
     |_________________________________|__________________________________|
     | {"a", "bb", "a", "bb"}          | {"bb": 2, "a": 1}                |
     | {"this", "and", "that", "and"}  | {"that": 4, "and": 3, "this": 4} |

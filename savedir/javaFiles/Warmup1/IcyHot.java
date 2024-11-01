@@ -11,15 +11,15 @@ public final class IcyHot
     /*__________________________
     |         Testcases         |
     |___________________________|
-    | temp1 | temp2 | expected  |
+    | temp1 | temp2 |  returns  |
     | (int) | (int) | (boolean) |
     |_______|_______|___________|
-    | 120   | -1    | true      |
-    | -1    | 120   | true      |
-    | 2     | 120   | false     |
-    | -1    | 100   | false     |
-    | -2    | -2    | false     |
-    | 120   | 120   | false     |
+    |  120  |   -1  |    true   |
+    |   -1  |  120  |    true   |
+    |   2   |  120  |   false   |
+    |   -1  |  100  |   false   |
+    |   -2  |   -2  |   false   |
+    |  120  |  120  |   false   |
     |_______|_______|__________*/
 
     public static final boolean icyHot(int temp1, int temp2)

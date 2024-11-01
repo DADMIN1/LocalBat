@@ -14,18 +14,18 @@ public final class Without2
     /*__________________________
     |         Testcases         |
     |___________________________|
-    | str         | expected    |
-    | (String)    | (String)    |
+    |     str     |   returns   |
+    |   (String)  |   (String)  |
     |_____________|_____________|
-    | "HelloHe"   | "lloHe"     |
-    | "HelloHi"   | "HelloHi"   |
-    | "Hi"        | ""          |
+    |  "HelloHe"  |   "lloHe"   |
+    |  "HelloHi"  |  "HelloHi"  |
+    |     "Hi"    |      ""     |
     | "Chocolate" | "Chocolate" |
-    | "xxx"       | "x"         |
-    | "xx"        | ""          |
-    | "x"         | "x"         |
-    | ""          | ""          |
-    | "Fruits"    | "Fruits"    |
+    |    "xxx"    |     "x"     |
+    |     "xx"    |      ""     |
+    |     "x"     |     "x"     |
+    |      ""     |      ""     |
+    |   "Fruits"  |   "Fruits"  |
     |_____________|____________*/
 
     public static final String without2(String str)

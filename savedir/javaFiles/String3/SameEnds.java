@@ -12,21 +12,21 @@ public final class SameEnds
     /*_______________________________
     |           Testcases            |
     |________________________________|
-    | string (String)     | expected |
+    |   string (String)   | returns  |
     |                     | (String) |
     |_____________________|__________|
-    | "abXYab"            | "ab"     |
-    | "xx"                | "x"      |
-    | "xxx"               | "x"      |
-    | "xxxx"              | "xx"     |
-    | "javaXYZjava"       | "java"   |
-    | "javajava"          | "java"   |
-    | "xavaXYZjava"       | ""       |
+    |       "abXYab"      |   "ab"   |
+    |         "xx"        |   "x"    |
+    |        "xxx"        |   "x"    |
+    |        "xxxx"       |   "xx"   |
+    |    "javaXYZjava"    |  "java"  |
+    |      "javajava"     |  "java"  |
+    |    "xavaXYZjava"    |    ""    |
     | "Hello! and Hello!" | "Hello!" |
-    | "x"                 | ""       |
-    | ""                  | ""       |
-    | "abcb"              | ""       |
-    | "mymmy"             | "my"     |
+    |         "x"         |    ""    |
+    |          ""         |    ""    |
+    |        "abcb"       |    ""    |
+    |       "mymmy"       |   "my"   |
     |_____________________|_________*/
 
     public static final String sameEnds(String string)

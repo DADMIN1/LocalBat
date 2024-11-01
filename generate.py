@@ -340,7 +340,7 @@ def TestcaseAsciiArt(testcases:list, functionInfo:dict, titlebox_padding:str = '
         if (functionInfo['needsMap'] or functionInfo['doesReturnList']):
             case["expected"] = testcaseStr.split(f' {arrow} ')[1].strip()
     
-    column_info = [*functionInfo['functionDef']['args'], {'identifier': 'expected', 'type': functionInfo['functionDef']['returnType']}]
+    column_info = [*functionInfo['functionDef']['args'], {'identifier': 'returns', 'type': functionInfo['functionDef']['returnType']}]
     column_strs = [[*case["restored_params"], case['expected']] for case in split_cases] 
     # asdf = [*zip(column_info, [*zip(*column_strs)])]
     columns = [
@@ -350,6 +350,9 @@ def TestcaseAsciiArt(testcases:list, functionInfo:dict, titlebox_padding:str = '
             "longestRowSize": max(len(row) for row in cStrs), 
             "headerRowSize": len(cInfo['identifier']) + len(cInfo['type']) + 3, # +3 for parentheses and space around type
             "header_oneline": True,  # identifier and type are on same line
+            "shortName": (len(cInfo['identifier']) < 3), # never split lines when name is only 1-2 chars
+            # leave List/Map/Array left-justified; center otherwise
+            "left-align": (('List' in cInfo['type']) or ('Map' in cInfo['type']) or (cInfo['type'].endswith('[]'))),
         } 
         for thing in [*zip(column_info, [*zip(*column_strs)])]
         for (cInfo, cStrs) in [thing]
@@ -359,7 +362,7 @@ def TestcaseAsciiArt(testcases:list, functionInfo:dict, titlebox_padding:str = '
     # every column needs 3 extra characters: two spaces and a '|'
     total_width = (len(columns)*3)-1
     for column in columns:
-        if column["headerRowSize"] > column["longestRowSize"]:
+        if ((column["headerRowSize"] > column["longestRowSize"]) and not column["shortName"]):
             column["header_oneline"] = False  # we'll move the type to a new line
             type_length = len(column['type']) + 2
             column["headerRowSize"] -= (type_length+1)
@@ -400,11 +403,11 @@ def TestcaseAsciiArt(testcases:list, functionInfo:dict, titlebox_padding:str = '
             zip(column_widths, [(column['header'], column['type'], column['header_oneline']) 
             for column in columns]
         )):
-        header_line += f" {header.strip().ljust(width)} |"
-        type_ = f" ({(type_.strip())})"
+        header_line += f" {header.strip().center(width)} |"
+        type_ = f"({(type_.strip())})"
         if isOneLine: type_ = ""
         elif len(type_) > width+2: type_ = type_.strip()
-        header_linetwo += f"{type_.ljust(width+2, ' ')}|"
+        header_linetwo += f"{type_.center(width+2, ' ')}|"
         #header_underline += f"{type_.strip().ljust(width+2, '_')}|"
         header_underline += ('_'*(width+2))+'|'
     header_line += "\n    "
@@ -417,10 +420,12 @@ def TestcaseAsciiArt(testcases:list, functionInfo:dict, titlebox_padding:str = '
     # ascii_art += '|' + ("_" * total_width) + '|' + "\n    "
     
     rows = [*zip(*[column["rows"] for column in columns])]
+    alignments = [column["left-align"] for column in columns]
     for row in rows:
         ascii_art += "|"
-        for (width, col) in zip(column_widths, row): 
-            ascii_art += f" {col.strip().ljust(width)} |"
+        for (width, col, lalign) in zip(column_widths, row, alignments):
+            if lalign: ascii_art += f" {col.strip().ljust(width)} |";
+            else: ascii_art += f" {col.strip().center(width)} |";
         ascii_art += "\n    "
     # final_line = '|' + ("_" * (total_width-1)) + "*/\n\n"
     final_line = f"{header_underline.removesuffix('_|\n    ')}*/\n\n"
@@ -512,7 +517,7 @@ def GenerateSection(section_name: str, only_missing_files=False):
     return failures
 
 
-def GenerateAll(only_missing=True):
+def GenerateAll(only_missing=False):
     jsondumps, java_subs = sub_savedirs
     json_section_dirs = [subdir.name for subdir in jsondumps.glob("./*/")]
     java_alreadyExist = [d.name for d in java_subs.glob("./*/")]

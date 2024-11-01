@@ -13,24 +13,24 @@ public final class OneTwo
     /*_________________________________________________________________________________
     |                                    Testcases                                     |
     |__________________________________________________________________________________|
-    | str (String)                            | expected (String)                      |
+    |               str (String)              |            returns (String)            |
     |_________________________________________|________________________________________|
-    | "abc"                                   | "bca"                                  |
-    | "tca"                                   | "cat"                                  |
-    | "tcagdo"                                | "catdog"                               |
-    | "chocolate"                             | "hocolctea"                            |
-    | "1234567890"                            | "231564897"                            |
-    | "xabxabxabxabxabxabxab"                 | "abxabxabxabxabxabxabx"                |
-    | "abcdefx"                               | "bcaefd"                               |
-    | "abcdefxy"                              | "bcaefd"                               |
-    | "abcdefxyz"                             | "bcaefdyzx"                            |
-    | ""                                      | ""                                     |
-    | "x"                                     | ""                                     |
-    | "xy"                                    | ""                                     |
-    | "xyz"                                   | "yzx"                                  |
+    |                  "abc"                  |                 "bca"                  |
+    |                  "tca"                  |                 "cat"                  |
+    |                 "tcagdo"                |                "catdog"                |
+    |               "chocolate"               |              "hocolctea"               |
+    |               "1234567890"              |              "231564897"               |
+    |         "xabxabxabxabxabxabxab"         |        "abxabxabxabxabxabxabx"         |
+    |                "abcdefx"                |                "bcaefd"                |
+    |                "abcdefxy"               |                "bcaefd"                |
+    |               "abcdefxyz"               |              "bcaefdyzx"               |
+    |                    ""                   |                   ""                   |
+    |                   "x"                   |                   ""                   |
+    |                   "xy"                  |                   ""                   |
+    |                  "xyz"                  |                 "yzx"                  |
     | "abcdefghijklkmnopqrstuvwxyz1234567890" | "bcaefdhigkljmnkpqostrvwuyzx231564897" |
-    | "abcdefghijklkmnopqrstuvwxyz123456789"  | "bcaefdhigkljmnkpqostrvwuyzx231564897" |
-    | "abcdefghijklkmnopqrstuvwxyz12345678"   | "bcaefdhigkljmnkpqostrvwuyzx231564"    |
+    |  "abcdefghijklkmnopqrstuvwxyz123456789" | "bcaefdhigkljmnkpqostrvwuyzx231564897" |
+    |  "abcdefghijklkmnopqrstuvwxyz12345678"  |  "bcaefdhigkljmnkpqostrvwuyzx231564"   |
     |_________________________________________|_______________________________________*/
 
     public static final String oneTwo(String str)

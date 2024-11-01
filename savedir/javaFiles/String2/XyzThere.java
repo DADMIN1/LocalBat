@@ -12,23 +12,23 @@ public final class XyzThere
     /*_____________________________
     |          Testcases           |
     |______________________________|
-    | str (String)     | expected  |
+    |   str (String)   |  returns  |
     |                  | (boolean) |
     |__________________|___________|
-    | "abcxyz"         | true      |
-    | "abc.xyz"        | false     |
-    | "xyz.abc"        | true      |
-    | "abcxy"          | false     |
-    | "xyz"            | true      |
-    | "xy"             | false     |
-    | "x"              | false     |
-    | ""               | false     |
-    | "abc.xyzxyz"     | true      |
-    | "abc.xxyz"       | true      |
-    | ".xyz"           | false     |
-    | "12.xyz"         | false     |
-    | "12xyz"          | true      |
-    | "1.xyz.xyz2.xyz" | false     |
+    |     "abcxyz"     |    true   |
+    |    "abc.xyz"     |   false   |
+    |    "xyz.abc"     |    true   |
+    |     "abcxy"      |   false   |
+    |      "xyz"       |    true   |
+    |       "xy"       |   false   |
+    |       "x"        |   false   |
+    |        ""        |   false   |
+    |   "abc.xyzxyz"   |    true   |
+    |    "abc.xxyz"    |    true   |
+    |      ".xyz"      |   false   |
+    |     "12.xyz"     |   false   |
+    |     "12xyz"      |    true   |
+    | "1.xyz.xyz2.xyz" |   false   |
     |__________________|__________*/
 
     public static final boolean xyzThere(String str)

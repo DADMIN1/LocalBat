@@ -14,20 +14,20 @@ public final class MirrorEnds
     /*_____________________________
     |          Testcases           |
     |______________________________|
-    | string (String)   | expected |
+    |  string (String)  | returns  |
     |                   | (String) |
     |___________________|__________|
-    | "abXYZba"         | "ab"     |
-    | "abca"            | "a"      |
-    | "aba"             | "aba"    |
-    | "abab"            | ""       |
-    | "xxx"             | "xxx"    |
-    | "xxYxx"           | "xxYxx"  |
-    | "Hi and iH"       | "Hi "    |
-    | "x"               | "x"      |
-    | ""                | ""       |
-    | "123and then 321" | "123"    |
-    | "band andab"      | "ba"     |
+    |     "abXYZba"     |   "ab"   |
+    |       "abca"      |   "a"    |
+    |       "aba"       |  "aba"   |
+    |       "abab"      |    ""    |
+    |       "xxx"       |  "xxx"   |
+    |      "xxYxx"      | "xxYxx"  |
+    |    "Hi and iH"    |  "Hi "   |
+    |        "x"        |   "x"    |
+    |         ""        |    ""    |
+    | "123and then 321" |  "123"   |
+    |    "band andab"   |   "ba"   |
     |___________________|_________*/
 
     public static final String mirrorEnds(String string)

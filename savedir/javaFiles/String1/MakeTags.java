@@ -13,16 +13,16 @@ public final class MakeTags
     /*_________________________________________________
     |                    Testcases                     |
     |__________________________________________________|
-    | tag       | word     | expected (String)         |
-    | (String)  | (String) |                           |
+    |    tag    |   word   |      returns (String)     |
+    |  (String) | (String) |                           |
     |___________|__________|___________________________|
-    | "i"       | "Yay"    | "<i>Yay</i>"              |
-    | "i"       | "Hello"  | "<i>Hello</i>"            |
-    | "cite"    | "Yay"    | "<cite>Yay</cite>"        |
-    | "address" | "here"   | "<address>here</address>" |
-    | "body"    | "Heart"  | "<body>Heart</body>"      |
-    | "i"       | "i"      | "<i>i</i>"                |
-    | "i"       | ""       | "<i></i>"                 |
+    |    "i"    |  "Yay"   |        "<i>Yay</i>"       |
+    |    "i"    | "Hello"  |       "<i>Hello</i>"      |
+    |   "cite"  |  "Yay"   |     "<cite>Yay</cite>"    |
+    | "address" |  "here"  | "<address>here</address>" |
+    |   "body"  | "Heart"  |    "<body>Heart</body>"   |
+    |    "i"    |   "i"    |         "<i>i</i>"        |
+    |    "i"    |    ""    |         "<i></i>"         |
     |___________|__________|__________________________*/
 
     public static final String makeTags(String tag, String word)

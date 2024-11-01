@@ -13,24 +13,24 @@ public final class TwoChar
     /*____________________________
     |          Testcases          |
     |_____________________________|
-    | str      | index | expected |
+    |   str    | index | returns  |
     | (String) | (int) | (String) |
     |__________|_______|__________|
-    | "java"   | 0     | "ja"     |
-    | "java"   | 2     | "va"     |
-    | "java"   | 3     | "ja"     |
-    | "java"   | 4     | "ja"     |
-    | "java"   | -1    | "ja"     |
-    | "Hello"  | 0     | "He"     |
-    | "Hello"  | 1     | "el"     |
-    | "Hello"  | 99    | "He"     |
-    | "Hello"  | 3     | "lo"     |
-    | "Hello"  | 4     | "He"     |
-    | "Hello"  | 5     | "He"     |
-    | "Hello"  | -7    | "He"     |
-    | "Hello"  | 6     | "He"     |
-    | "Hello"  | -1    | "He"     |
-    | "yay"    | 0     | "ya"     |
+    |  "java"  |   0   |   "ja"   |
+    |  "java"  |   2   |   "va"   |
+    |  "java"  |   3   |   "ja"   |
+    |  "java"  |   4   |   "ja"   |
+    |  "java"  |   -1  |   "ja"   |
+    | "Hello"  |   0   |   "He"   |
+    | "Hello"  |   1   |   "el"   |
+    | "Hello"  |   99  |   "He"   |
+    | "Hello"  |   3   |   "lo"   |
+    | "Hello"  |   4   |   "He"   |
+    | "Hello"  |   5   |   "He"   |
+    | "Hello"  |   -7  |   "He"   |
+    | "Hello"  |   6   |   "He"   |
+    | "Hello"  |   -1  |   "He"   |
+    |  "yay"   |   0   |   "ya"   |
     |__________|_______|_________*/
 
     public static final String twoChar(String str, int index)

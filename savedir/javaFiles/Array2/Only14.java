@@ -11,24 +11,24 @@ public final class Only14
     /*_________________________
     |        Testcases         |
     |__________________________|
-    | nums (int[]) | expected  |
+    | nums (int[]) |  returns  |
     |              | (boolean) |
     |______________|___________|
-    | {1, 4, 1, 4} | true      |
-    | {1, 4, 2, 4} | false     |
-    | {1, 1}       | true      |
-    | {4, 1}       | true      |
-    | {2}          | false     |
-    | {}           | true      |
-    | {1, 4, 1, 3} | false     |
-    | {3, 1, 3}    | false     |
-    | {1}          | true      |
-    | {4}          | true      |
-    | {3, 4}       | false     |
-    | {1, 3, 4}    | false     |
-    | {1, 1, 1}    | true      |
-    | {1, 1, 1, 5} | false     |
-    | {4, 1, 4, 1} | true      |
+    | {1, 4, 1, 4} |    true   |
+    | {1, 4, 2, 4} |   false   |
+    | {1, 1}       |    true   |
+    | {4, 1}       |    true   |
+    | {2}          |   false   |
+    | {}           |    true   |
+    | {1, 4, 1, 3} |   false   |
+    | {3, 1, 3}    |   false   |
+    | {1}          |    true   |
+    | {4}          |    true   |
+    | {3, 4}       |   false   |
+    | {1, 3, 4}    |   false   |
+    | {1, 1, 1}    |    true   |
+    | {1, 1, 1, 5} |   false   |
+    | {4, 1, 4, 1} |    true   |
     |______________|__________*/
 
     public static final boolean only14(int[] nums)

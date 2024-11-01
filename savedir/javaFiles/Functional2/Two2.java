@@ -15,7 +15,7 @@ public final class Two2
     /*_________________________________________
     |                Testcases                 |
     |__________________________________________|
-    | nums (List<Integer>)   | expected        |
+    |  nums (List<Integer>)  |     returns     |
     |                        | (List<Integer>) |
     |________________________|_________________|
     | [1, 2, 3]              | [4, 6]          |

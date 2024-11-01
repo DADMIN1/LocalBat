@@ -11,28 +11,28 @@ public final class No14
     /*_________________________
     |        Testcases         |
     |__________________________|
-    | nums (int[]) | expected  |
+    | nums (int[]) |  returns  |
     |              | (boolean) |
     |______________|___________|
-    | {1, 2, 3}    | true      |
-    | {1, 2, 3, 4} | false     |
-    | {2, 3, 4}    | true      |
-    | {1, 1, 4, 4} | false     |
-    | {2, 2, 4, 4} | true      |
-    | {2, 3, 4, 1} | false     |
-    | {2, 1, 1}    | true      |
-    | {1, 4}       | false     |
-    | {2}          | true      |
-    | {2, 1}       | true      |
-    | {1}          | true      |
-    | {4}          | true      |
-    | {}           | true      |
-    | {1, 1, 1, 1} | true      |
-    | {9, 4, 4, 1} | false     |
-    | {4, 2, 3, 1} | false     |
-    | {4, 2, 3, 5} | true      |
-    | {4, 4, 2}    | true      |
-    | {1, 4, 4}    | false     |
+    | {1, 2, 3}    |    true   |
+    | {1, 2, 3, 4} |   false   |
+    | {2, 3, 4}    |    true   |
+    | {1, 1, 4, 4} |   false   |
+    | {2, 2, 4, 4} |    true   |
+    | {2, 3, 4, 1} |   false   |
+    | {2, 1, 1}    |    true   |
+    | {1, 4}       |   false   |
+    | {2}          |    true   |
+    | {2, 1}       |    true   |
+    | {1}          |    true   |
+    | {4}          |    true   |
+    | {}           |    true   |
+    | {1, 1, 1, 1} |    true   |
+    | {9, 4, 4, 1} |   false   |
+    | {4, 2, 3, 1} |   false   |
+    | {4, 2, 3, 5} |    true   |
+    | {4, 4, 2}    |    true   |
+    | {1, 4, 4}    |   false   |
     |______________|__________*/
 
     public static final boolean no14(int[] nums)

@@ -10,35 +10,35 @@ public final class Less20
     So for example 38 and 39 return true, but 40 returns false. 
     See also: Introduction to Mod */
 
-    /*__________________
-    |     Testcases     |
-    |___________________|
-    | n     | expected  |
-    | (int) | (boolean) |
-    |_______|___________|
-    | 18    | true      |
-    | 19    | true      |
-    | 20    | false     |
-    | 8     | false     |
-    | 17    | false     |
-    | 23    | false     |
-    | 25    | false     |
-    | 30    | false     |
-    | 31    | false     |
-    | 58    | true      |
-    | 59    | true      |
-    | 60    | false     |
-    | 61    | false     |
-    | 62    | false     |
-    | 1017  | false     |
-    | 1018  | true      |
-    | 1019  | true      |
-    | 1020  | false     |
-    | 1021  | false     |
-    | 1022  | false     |
-    | 1023  | false     |
-    | 37    | false     |
-    |_______|__________*/
+    /*____________________
+    |      Testcases      |
+    |_____________________|
+    | n (int) |  returns  |
+    |         | (boolean) |
+    |_________|___________|
+    |    18   |    true   |
+    |    19   |    true   |
+    |    20   |   false   |
+    |    8    |   false   |
+    |    17   |   false   |
+    |    23   |   false   |
+    |    25   |   false   |
+    |    30   |   false   |
+    |    31   |   false   |
+    |    58   |    true   |
+    |    59   |    true   |
+    |    60   |   false   |
+    |    61   |   false   |
+    |    62   |   false   |
+    |   1017  |   false   |
+    |   1018  |    true   |
+    |   1019  |    true   |
+    |   1020  |   false   |
+    |   1021  |   false   |
+    |   1022  |   false   |
+    |   1023  |   false   |
+    |    37   |   false   |
+    |_________|__________*/
 
     public static final boolean less20(int n)
     {

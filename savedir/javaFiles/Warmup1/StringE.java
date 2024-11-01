@@ -11,15 +11,15 @@ public final class StringE
     /*______________________
     |       Testcases       |
     |_______________________|
-    | str       | expected  |
-    | (String)  | (boolean) |
+    |    str    |  returns  |
+    |  (String) | (boolean) |
     |___________|___________|
-    | "Hello"   | true      |
-    | "Heelle"  | true      |
-    | "Heelele" | false     |
-    | "Hll"     | false     |
-    | "e"       | true      |
-    | ""        | false     |
+    |  "Hello"  |    true   |
+    |  "Heelle" |    true   |
+    | "Heelele" |   false   |
+    |   "Hll"   |   false   |
+    |    "e"    |    true   |
+    |     ""    |   false   |
     |___________|__________*/
 
     public static final boolean stringE(String str)

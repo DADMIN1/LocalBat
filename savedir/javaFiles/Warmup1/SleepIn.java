@@ -13,13 +13,13 @@ public final class SleepIn
     /*__________________________________
     |             Testcases             |
     |___________________________________|
-    | weekday   | vacation  | expected  |
+    |  weekday  |  vacation |  returns  |
     | (boolean) | (boolean) | (boolean) |
     |___________|___________|___________|
-    | false     | false     | true      |
-    | true      | false     | false     |
-    | false     | true      | true      |
-    | true      | true      | true      |
+    |   false   |   false   |    true   |
+    |    true   |   false   |   false   |
+    |   false   |    true   |    true   |
+    |    true   |    true   |    true   |
     |___________|___________|__________*/
 
     public static final boolean sleepIn(boolean weekday, boolean vacation)

@@ -13,15 +13,15 @@ public final class Front22
     /*________________________
     |        Testcases        |
     |_________________________|
-    | str      | expected     |
-    | (String) | (String)     |
+    |   str    |   returns    |
+    | (String) |   (String)   |
     |__________|______________|
     | "kitten" | "kikittenki" |
-    | "Ha"     | "HaHaHa"     |
-    | "abc"    | "ababcab"    |
-    | "ab"     | "ababab"     |
-    | "a"      | "aaa"        |
-    | ""       | ""           |
+    |   "Ha"   |   "HaHaHa"   |
+    |  "abc"   |  "ababcab"   |
+    |   "ab"   |   "ababab"   |
+    |   "a"    |    "aaa"     |
+    |    ""    |      ""      |
     | "Logic"  | "LoLogicLo"  |
     |__________|_____________*/
 

@@ -13,20 +13,20 @@ public final class WordAppend
     /*________________________________________________________________________________
     |                                    Testcases                                    |
     |_________________________________________________________________________________|
-    | strings (String[])                                              | expected      |
-    |                                                                 | (String)      |
+    |                        strings (String[])                       |    returns    |
+    |                                                                 |    (String)   |
     |_________________________________________________________________|_______________|
-    | {"a", "b", "a"}                                                 | "a"           |
-    | {"a", "b", "a", "c", "a", "d", "a"}                             | "aa"          |
-    | {"a", "", "a"}                                                  | "a"           |
-    | {}                                                              | ""            |
-    | {"a", "b", "b", "a", "a"}                                       | "ba"          |
-    | {"a", "b", "b", "b", "a", "c", "a", "a"}                        | "baa"         |
-    | {"a", "b", "b", "b", "a", "c", "a", "a", "a", "b", "a"}         | "baaba"       |
-    | {"not", "and", "or", "and", "this", "and", "or", "that", "not"} | "andornot"    |
-    | {"a", "b", "c"}                                                 | ""            |
+    | {"a", "b", "a"}                                                 |      "a"      |
+    | {"a", "b", "a", "c", "a", "d", "a"}                             |      "aa"     |
+    | {"a", "", "a"}                                                  |      "a"      |
+    | {}                                                              |       ""      |
+    | {"a", "b", "b", "a", "a"}                                       |      "ba"     |
+    | {"a", "b", "b", "b", "a", "c", "a", "a"}                        |     "baa"     |
+    | {"a", "b", "b", "b", "a", "c", "a", "a", "a", "b", "a"}         |    "baaba"    |
+    | {"not", "and", "or", "and", "this", "and", "or", "that", "not"} |   "andornot"  |
+    | {"a", "b", "c"}                                                 |       ""      |
     | {"this", "or", "that", "and", "this", "and", "that"}            | "thisandthat" |
-    | {"xx", "xx", "yy", "xx", "zz", "yy", "zz", "xx"}                | "xxyyzzxx"    |
+    | {"xx", "xx", "yy", "xx", "zz", "yy", "zz", "xx"}                |   "xxyyzzxx"  |
     |_________________________________________________________________|______________*/
 
     public static final String wordAppend(String[] strings)

@@ -11,20 +11,20 @@ public final class DoubleX
     /*_____________________
     |      Testcases       |
     |______________________|
-    | str      | expected  |
+    |   str    |  returns  |
     | (String) | (boolean) |
     |__________|___________|
-    | "axxbb"  | true      |
-    | "axaxax" | false     |
-    | "xxxxx"  | true      |
-    | "xaxxx"  | false     |
-    | "aaaax"  | false     |
-    | ""       | false     |
-    | "abc"    | false     |
-    | "x"      | false     |
-    | "xx"     | true      |
-    | "xax"    | false     |
-    | "xaxx"   | false     |
+    | "axxbb"  |    true   |
+    | "axaxax" |   false   |
+    | "xxxxx"  |    true   |
+    | "xaxxx"  |   false   |
+    | "aaaax"  |   false   |
+    |    ""    |   false   |
+    |  "abc"   |   false   |
+    |   "x"    |   false   |
+    |   "xx"   |    true   |
+    |  "xax"   |   false   |
+    |  "xaxx"  |   false   |
     |__________|__________*/
 
     public static final boolean doubleX(String str)

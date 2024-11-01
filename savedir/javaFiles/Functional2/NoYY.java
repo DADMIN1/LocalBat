@@ -15,8 +15,8 @@ public final class NoYY
     /*____________________________________________
     |                  Testcases                  |
     |_____________________________________________|
-    | strings             | expected              |
-    | (List<String>)      | (List<String>)        |
+    |       strings       |        returns        |
+    |    (List<String>)   |     (List<String>)    |
     |_____________________|_______________________|
     | ["a", "b", "c"]     | ["ay", "by", "cy"]    |
     | ["a", "b", "cy"]    | ["ay", "by"]          |

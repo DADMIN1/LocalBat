@@ -14,17 +14,17 @@ public final class Array6
     /*____________________________________
     |              Testcases              |
     |_____________________________________|
-    | nums (int[])    | index | expected  |
+    |   nums (int[])  | index |  returns  |
     |                 | (int) | (boolean) |
     |_________________|_______|___________|
-    | {1, 6, 4}       | 0     | true      |
-    | {1, 4}          | 0     | false     |
-    | {6}             | 0     | true      |
-    | {}              | 0     | false     |
-    | {6, 2, 2}       | 0     | true      |
-    | {2, 5}          | 0     | false     |
-    | {1, 9, 4, 6, 6} | 0     | true      |
-    | {2, 5, 6}       | 0     | true      |
+    | {1, 6, 4}       |   0   |    true   |
+    | {1, 4}          |   0   |   false   |
+    | {6}             |   0   |    true   |
+    | {}              |   0   |   false   |
+    | {6, 2, 2}       |   0   |    true   |
+    | {2, 5}          |   0   |   false   |
+    | {1, 9, 4, 6, 6} |   0   |    true   |
+    | {2, 5, 6}       |   0   |    true   |
     |_________________|_______|__________*/
 
     public static final boolean array6(int[] nums, int index)

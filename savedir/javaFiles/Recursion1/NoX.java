@@ -11,14 +11,14 @@ public final class NoX
     /*____________________
     |      Testcases      |
     |_____________________|
-    | str      | expected |
+    |   str    | returns  |
     | (String) | (String) |
     |__________|__________|
-    | "xaxb"   | "ab"     |
-    | "abc"    | "abc"    |
-    | "xx"     | ""       |
-    | ""       | ""       |
-    | "axxbxx" | "ab"     |
+    |  "xaxb"  |   "ab"   |
+    |  "abc"   |  "abc"   |
+    |   "xx"   |    ""    |
+    |    ""    |    ""    |
+    | "axxbxx" |   "ab"   |
     | "Hellox" | "Hello"  |
     |__________|_________*/
 

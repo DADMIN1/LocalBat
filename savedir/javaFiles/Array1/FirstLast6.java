@@ -12,22 +12,22 @@ public final class FirstLast6
     /*_____________________________
     |          Testcases           |
     |______________________________|
-    | nums (int[])     | expected  |
+    |   nums (int[])   |  returns  |
     |                  | (boolean) |
     |__________________|___________|
-    | {1, 2, 6}        | true      |
-    | {6, 1, 2, 3}     | true      |
-    | {13, 6, 1, 2, 3} | false     |
-    | {13, 6, 1, 2, 6} | true      |
-    | {3, 2, 1}        | false     |
-    | {3, 6, 1}        | false     |
-    | {3, 6}           | true      |
-    | {6}              | true      |
-    | {3}              | false     |
-    | {5, 6}           | true      |
-    | {5, 5}           | false     |
-    | {1, 2, 3, 4, 6}  | true      |
-    | {1, 2, 3, 4}     | false     |
+    | {1, 2, 6}        |    true   |
+    | {6, 1, 2, 3}     |    true   |
+    | {13, 6, 1, 2, 3} |   false   |
+    | {13, 6, 1, 2, 6} |    true   |
+    | {3, 2, 1}        |   false   |
+    | {3, 6, 1}        |   false   |
+    | {3, 6}           |    true   |
+    | {6}              |    true   |
+    | {3}              |   false   |
+    | {5, 6}           |    true   |
+    | {5, 5}           |   false   |
+    | {1, 2, 3, 4, 6}  |    true   |
+    | {1, 2, 3, 4}     |   false   |
     |__________________|__________*/
 
     public static final boolean firstLast6(int[] nums)

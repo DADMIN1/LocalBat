@@ -14,8 +14,7 @@ public final class No34
     /*_________________________________________________________
     |                        Testcases                         |
     |__________________________________________________________|
-    | strings (List<String>)          | expected               |
-    |                                 | (List<String>)         |
+    |      strings (List<String>)     | returns (List<String>) |
     |_________________________________|________________________|
     | ["a", "bb", "ccc"]              | ["a", "bb"]            |
     | ["a", "bb", "ccc", "dddd"]      | ["a", "bb"]            |

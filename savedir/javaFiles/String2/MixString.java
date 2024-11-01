@@ -10,26 +10,26 @@ public final class MixString
     the first char of b, the second char of a, the second char of b, 
     and so on. Any leftover chars go at the end of the result. */
 
-    /*_______________________________________
-    |               Testcases                |
-    |________________________________________|
-    | a        | b (String)  | expected      |
-    | (String) |             | (String)      |
-    |__________|_____________|_______________|
-    | "abc"    | "xyz"       | "axbycz"      |
-    | "Hi"     | "There"     | "HTihere"     |
-    | "xxxx"   | "There"     | "xTxhxexre"   |
-    | "xxx"    | "X"         | "xXxx"        |
-    | "2/"     | "27 around" | "22/7 around" |
-    | ""       | "Hello"     | "Hello"       |
-    | "Abc"    | ""          | "Abc"         |
-    | ""       | ""          | ""            |
-    | "a"      | "b"         | "ab"          |
-    | "ax"     | "b"         | "abx"         |
-    | "a"      | "bx"        | "abx"         |
-    | "So"     | "Long"      | "SLoong"      |
-    | "Long"   | "So"        | "LSoong"      |
-    |__________|_____________|______________*/
+    /*_________________________________________
+    |                Testcases                 |
+    |__________________________________________|
+    | a (String) |  b (String) |    returns    |
+    |            |             |    (String)   |
+    |____________|_____________|_______________|
+    |   "abc"    |    "xyz"    |    "axbycz"   |
+    |    "Hi"    |   "There"   |   "HTihere"   |
+    |   "xxxx"   |   "There"   |  "xTxhxexre"  |
+    |   "xxx"    |     "X"     |     "xXxx"    |
+    |    "2/"    | "27 around" | "22/7 around" |
+    |     ""     |   "Hello"   |    "Hello"    |
+    |   "Abc"    |      ""     |     "Abc"     |
+    |     ""     |      ""     |       ""      |
+    |    "a"     |     "b"     |      "ab"     |
+    |    "ax"    |     "b"     |     "abx"     |
+    |    "a"     |     "bx"    |     "abx"     |
+    |    "So"    |    "Long"   |    "SLoong"   |
+    |   "Long"   |     "So"    |    "LSoong"   |
+    |____________|_____________|______________*/
 
     public static final String mixString(String a, String b)
     {

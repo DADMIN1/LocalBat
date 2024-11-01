@@ -9,25 +9,25 @@ public final class CountTriple
     /* We'll say that a "triple" in a string is a char appearing three times in a row. 
     Return the number of triples in the given string. The triples may overlap. */
 
-    /*____________________________
-    |          Testcases          |
-    |_____________________________|
-    | str (String)     | expected |
-    |                  | (int)    |
-    |__________________|__________|
-    | "abcXXXabc"      | 1        |
-    | "xxxabyyyycd"    | 3        |
-    | "a"              | 0        |
-    | ""               | 0        |
-    | "XXXabc"         | 1        |
-    | "XXXXabc"        | 2        |
-    | "XXXXXabc"       | 3        |
-    | "222abyyycdXXX"  | 3        |
-    | "abYYYabXXXXXab" | 4        |
-    | "abYYXabXXYXXab" | 0        |
-    | "abYYXabXXYXXab" | 0        |
-    | "122abhhh2"      | 1        |
-    |__________________|_________*/
+    /*___________________________
+    |         Testcases          |
+    |____________________________|
+    |   str (String)   | returns |
+    |                  |  (int)  |
+    |__________________|_________|
+    |   "abcXXXabc"    |    1    |
+    |  "xxxabyyyycd"   |    3    |
+    |       "a"        |    0    |
+    |        ""        |    0    |
+    |     "XXXabc"     |    1    |
+    |    "XXXXabc"     |    2    |
+    |    "XXXXXabc"    |    3    |
+    | "222abyyycdXXX"  |    3    |
+    | "abYYYabXXXXXab" |    4    |
+    | "abYYXabXXYXXab" |    0    |
+    | "abYYXabXXYXXab" |    0    |
+    |   "122abhhh2"    |    1    |
+    |__________________|________*/
 
     public static final int countTriple(String str)
     {

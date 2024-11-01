@@ -13,24 +13,24 @@ public final class NearTen
     /*__________________
     |     Testcases     |
     |___________________|
-    | num   | expected  |
+    |  num  |  returns  |
     | (int) | (boolean) |
     |_______|___________|
-    | 12    | true      |
-    | 17    | false     |
-    | 19    | true      |
-    | 31    | true      |
-    | 6     | false     |
-    | 10    | true      |
-    | 11    | true      |
-    | 21    | true      |
-    | 22    | true      |
-    | 23    | false     |
-    | 54    | false     |
-    | 155   | false     |
-    | 158   | true      |
-    | 3     | false     |
-    | 1     | true      |
+    |   12  |    true   |
+    |   17  |   false   |
+    |   19  |    true   |
+    |   31  |    true   |
+    |   6   |   false   |
+    |   10  |    true   |
+    |   11  |    true   |
+    |   21  |    true   |
+    |   22  |    true   |
+    |   23  |   false   |
+    |   54  |   false   |
+    |  155  |   false   |
+    |  158  |    true   |
+    |   3   |   false   |
+    |   1   |    true   |
     |_______|__________*/
 
     public static final boolean nearTen(int num)

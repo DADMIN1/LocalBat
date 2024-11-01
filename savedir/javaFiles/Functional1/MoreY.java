@@ -14,8 +14,8 @@ public final class MoreY
     /*______________________________________________
     |                   Testcases                   |
     |_______________________________________________|
-    | strings            | expected (List<String>)  |
-    | (List<String>)     |                          |
+    |      strings       |  returns (List<String>)  |
+    |   (List<String>)   |                          |
     |____________________|__________________________|
     | ["a", "b", "c"]    | ["yay", "yby", "ycy"]    |
     | ["hello", "there"] | ["yhelloy", "ytherey"]   |

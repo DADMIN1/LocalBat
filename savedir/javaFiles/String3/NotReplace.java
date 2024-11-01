@@ -13,19 +13,19 @@ public final class NotReplace
     /*______________________________________________
     |                   Testcases                   |
     |_______________________________________________|
-    | str (String)      | expected (String)         |
+    |    str (String)   |      returns (String)     |
     |___________________|___________________________|
-    | "is test"         | "is not test"             |
-    | "is-is"           | "is not-is not"           |
-    | "This is right"   | "This is not right"       |
-    | "This is isabell" | "This is not isabell"     |
-    | ""                | ""                        |
-    | "is"              | "is not"                  |
-    | "isis"            | "isis"                    |
+    |     "is test"     |       "is not test"       |
+    |      "is-is"      |      "is not-is not"      |
+    |  "This is right"  |    "This is not right"    |
+    | "This is isabell" |   "This is not isabell"   |
+    |         ""        |             ""            |
+    |        "is"       |          "is not"         |
+    |       "isis"      |           "isis"          |
     | "Dis is bliss is" | "Dis is not bliss is not" |
-    | "is his"          | "is not his"              |
-    | "xis yis"         | "xis yis"                 |
-    | "AAAis is"        | "AAAis is not"            |
+    |      "is his"     |        "is not his"       |
+    |     "xis yis"     |         "xis yis"         |
+    |     "AAAis is"    |       "AAAis is not"      |
     |___________________|__________________________*/
 
     public static final String notReplace(String str)

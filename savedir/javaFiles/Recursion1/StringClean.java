@@ -12,14 +12,14 @@ public final class StringClean
     /*____________________________________
     |              Testcases              |
     |_____________________________________|
-    | str (String)       | expected       |
-    |                    | (String)       |
+    |    str (String)    |    returns     |
+    |                    |    (String)    |
     |____________________|________________|
-    | "yyzzza"           | "yza"          |
-    | "abbbcdd"          | "abcd"         |
-    | "Hello"            | "Helo"         |
-    | "XXabcYY"          | "XabcY"        |
-    | "112ab445"         | "12ab45"       |
+    |      "yyzzza"      |     "yza"      |
+    |     "abbbcdd"      |     "abcd"     |
+    |      "Hello"       |     "Helo"     |
+    |     "XXabcYY"      |    "XabcY"     |
+    |     "112ab445"     |    "12ab45"    |
     | "Hello Bookkeeper" | "Helo Bokeper" |
     |____________________|_______________*/
 

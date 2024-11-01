@@ -13,20 +13,20 @@ public final class DelDel
     /*________________________
     |        Testcases        |
     |_________________________|
-    | str         | expected  |
-    | (String)    | (String)  |
+    |     str     |  returns  |
+    |   (String)  |  (String) |
     |_____________|___________|
-    | "adelbc"    | "abc"     |
-    | "adelHello" | "aHello"  |
-    | "adedbc"    | "adedbc"  |
-    | "abcdel"    | "abcdel"  |
-    | "add"       | "add"     |
-    | "ad"        | "ad"      |
-    | "a"         | "a"       |
-    | ""          | ""        |
-    | "del"       | "del"     |
-    | "adel"      | "a"       |
-    | "aadelbb"   | "aadelbb" |
+    |   "adelbc"  |   "abc"   |
+    | "adelHello" |  "aHello" |
+    |   "adedbc"  |  "adedbc" |
+    |   "abcdel"  |  "abcdel" |
+    |    "add"    |   "add"   |
+    |     "ad"    |    "ad"   |
+    |     "a"     |    "a"    |
+    |      ""     |     ""    |
+    |    "del"    |   "del"   |
+    |    "adel"   |    "a"    |
+    |  "aadelbb"  | "aadelbb" |
     |_____________|__________*/
 
     public static final String delDel(String str)

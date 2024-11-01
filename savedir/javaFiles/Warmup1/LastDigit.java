@@ -10,20 +10,20 @@ public final class LastDigit
     such as with 27 and 57. Note that the % "mod" operator computes remainders, 
     so 17 % 10 is 7. */
 
-    /*__________________________
-    |         Testcases         |
-    |___________________________|
-    | a     | b     | expected  |
-    | (int) | (int) | (boolean) |
-    |_______|_______|___________|
-    | 7     | 17    | true      |
-    | 6     | 17    | false     |
-    | 3     | 113   | true      |
-    | 114   | 113   | false     |
-    | 114   | 4     | true      |
-    | 10    | 0     | true      |
-    | 11    | 0     | false     |
-    |_______|_______|__________*/
+    /*______________________________
+    |           Testcases           |
+    |_______________________________|
+    | a (int) | b (int) |  returns  |
+    |         |         | (boolean) |
+    |_________|_________|___________|
+    |    7    |    17   |    true   |
+    |    6    |    17   |   false   |
+    |    3    |   113   |    true   |
+    |   114   |   113   |   false   |
+    |   114   |    4    |    true   |
+    |    10   |    0    |    true   |
+    |    11   |    0    |   false   |
+    |_________|_________|__________*/
 
     public static final boolean lastDigit(int a, int b)
     {

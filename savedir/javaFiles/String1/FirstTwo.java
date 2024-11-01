@@ -14,17 +14,17 @@ public final class FirstTwo
     /*_____________________
     |      Testcases       |
     |______________________|
-    | str       | expected |
-    | (String)  | (String) |
+    |    str    | returns  |
+    |  (String) | (String) |
     |___________|__________|
-    | "Hello"   | "He"     |
-    | "abcdefg" | "ab"     |
-    | "ab"      | "ab"     |
-    | "a"       | "a"      |
-    | ""        | ""       |
-    | "Kitten"  | "Ki"     |
-    | "hi"      | "hi"     |
-    | "hiya"    | "hi"     |
+    |  "Hello"  |   "He"   |
+    | "abcdefg" |   "ab"   |
+    |    "ab"   |   "ab"   |
+    |    "a"    |   "a"    |
+    |     ""    |    ""    |
+    |  "Kitten" |   "Ki"   |
+    |    "hi"   |   "hi"   |
+    |   "hiya"  |   "hi"   |
     |___________|_________*/
 
     public static final String firstTwo(String str)

@@ -12,17 +12,17 @@ public final class StringX
     /*_________________________
     |        Testcases         |
     |__________________________|
-    | str         | expected   |
-    | (String)    | (String)   |
+    |     str     |  returns   |
+    |   (String)  |  (String)  |
     |_____________|____________|
-    | "xxHxix"    | "xHix"     |
-    | "abxxxcd"   | "abcd"     |
-    | "xabxxxcdx" | "xabcdx"   |
-    | "xKittenx"  | "xKittenx" |
-    | "Hello"     | "Hello"    |
-    | "xx"        | "xx"       |
-    | "x"         | "x"        |
-    | ""          | ""         |
+    |   "xxHxix"  |   "xHix"   |
+    |  "abxxxcd"  |   "abcd"   |
+    | "xabxxxcdx" |  "xabcdx"  |
+    |  "xKittenx" | "xKittenx" |
+    |   "Hello"   |  "Hello"   |
+    |     "xx"    |    "xx"    |
+    |     "x"     |    "x"     |
+    |      ""     |     ""     |
     |_____________|___________*/
 
     public static final String stringX(String str)

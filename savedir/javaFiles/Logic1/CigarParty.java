@@ -15,20 +15,20 @@ public final class CigarParty
     /*_______________________________
     |           Testcases            |
     |________________________________|
-    | cigars | isWeekend | expected  |
+    | cigars | isWeekend |  returns  |
     | (int)  | (boolean) | (boolean) |
     |________|___________|___________|
-    | 30     | false     | false     |
-    | 50     | false     | true      |
-    | 70     | true      | true      |
-    | 30     | true      | false     |
-    | 50     | true      | true      |
-    | 60     | false     | true      |
-    | 61     | false     | false     |
-    | 40     | false     | true      |
-    | 39     | false     | false     |
-    | 40     | true      | true      |
-    | 39     | true      | false     |
+    |   30   |   false   |   false   |
+    |   50   |   false   |    true   |
+    |   70   |    true   |    true   |
+    |   30   |    true   |   false   |
+    |   50   |    true   |    true   |
+    |   60   |   false   |    true   |
+    |   61   |   false   |   false   |
+    |   40   |   false   |    true   |
+    |   39   |   false   |   false   |
+    |   40   |    true   |    true   |
+    |   39   |    true   |   false   |
     |________|___________|__________*/
 
     public static final boolean cigarParty(int cigars, boolean isWeekend)

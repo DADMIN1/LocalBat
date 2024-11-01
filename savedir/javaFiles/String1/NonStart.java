@@ -9,22 +9,22 @@ public final class NonStart
     /* Given 2 strings, return their concatenation, except omit the first char of each. 
     The strings will be at least length 1. */
 
-    /*_________________________________
-    |            Testcases             |
-    |__________________________________|
-    | a        | b        | expected   |
-    | (String) | (String) | (String)   |
-    |__________|__________|____________|
-    | "Hello"  | "There"  | "ellohere" |
-    | "java"   | "code"   | "avaode"   |
-    | "shotl"  | "java"   | "hotlava"  |
-    | "ab"     | "xy"     | "by"       |
-    | "ab"     | "x"      | "b"        |
-    | "x"      | "ac"     | "c"        |
-    | "a"      | "x"      | ""         |
-    | "kit"    | "kat"    | "itat"     |
-    | "mart"   | "dart"   | "artart"   |
-    |__________|__________|___________*/
+    /*_____________________________________
+    |              Testcases               |
+    |______________________________________|
+    | a (String) | b (String) |  returns   |
+    |            |            |  (String)  |
+    |____________|____________|____________|
+    |  "Hello"   |  "There"   | "ellohere" |
+    |   "java"   |   "code"   |  "avaode"  |
+    |  "shotl"   |   "java"   | "hotlava"  |
+    |    "ab"    |    "xy"    |    "by"    |
+    |    "ab"    |    "x"     |    "b"     |
+    |    "x"     |    "ac"    |    "c"     |
+    |    "a"     |    "x"     |     ""     |
+    |   "kit"    |   "kat"    |   "itat"   |
+    |   "mart"   |   "dart"   |  "artart"  |
+    |____________|____________|___________*/
 
     public static final String nonStart(String a, String b)
     {

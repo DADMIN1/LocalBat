@@ -12,22 +12,22 @@ public final class BobThere
     /*______________________________
     |           Testcases           |
     |_______________________________|
-    | str (String)      | expected  |
+    |    str (String)   |  returns  |
     |                   | (boolean) |
     |___________________|___________|
-    | "abcbob"          | true      |
-    | "b9b"             | true      |
-    | "bac"             | false     |
-    | "bbb"             | true      |
-    | "abcdefb"         | false     |
-    | "123abcbcdbabxyz" | true      |
-    | "b12"             | false     |
-    | "b1b"             | true      |
-    | "b12b1b"          | true      |
-    | "bbc"             | false     |
-    | "bbb"             | true      |
-    | "bb"              | false     |
-    | "b"               | false     |
+    |      "abcbob"     |    true   |
+    |       "b9b"       |    true   |
+    |       "bac"       |   false   |
+    |       "bbb"       |    true   |
+    |     "abcdefb"     |   false   |
+    | "123abcbcdbabxyz" |    true   |
+    |       "b12"       |   false   |
+    |       "b1b"       |    true   |
+    |      "b12b1b"     |    true   |
+    |       "bbc"       |   false   |
+    |       "bbb"       |    true   |
+    |        "bb"       |   false   |
+    |        "b"        |   false   |
     |___________________|__________*/
 
     public static final boolean bobThere(String str)

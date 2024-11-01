@@ -15,19 +15,19 @@ public final class ScoresAverage
     Write your helper method after your scoresAverage() method in the JavaBat text area. 
     Normally you would compute averages with doubles, but here we use ints so the expected results are exact. */
 
-    /*____________________________________
-    |              Testcases              |
-    |_____________________________________|
-    | scores (int[])           | expected |
-    |                          | (int)    |
-    |__________________________|__________|
-    | {2, 2, 4, 4}             | 4        |
-    | {4, 4, 4, 2, 2, 2}       | 4        |
-    | {3, 4, 5, 1, 2, 3}       | 4        |
-    | {5, 6}                   | 6        |
-    | {5, 4}                   | 5        |
-    | {5, 4, 5, 6, 2, 1, 2, 3} | 5        |
-    |__________________________|_________*/
+    /*___________________________________
+    |             Testcases              |
+    |____________________________________|
+    |      scores (int[])      | returns |
+    |                          |  (int)  |
+    |__________________________|_________|
+    | {2, 2, 4, 4}             |    4    |
+    | {4, 4, 4, 2, 2, 2}       |    4    |
+    | {3, 4, 5, 1, 2, 3}       |    4    |
+    | {5, 6}                   |    6    |
+    | {5, 4}                   |    5    |
+    | {5, 4, 5, 6, 2, 1, 2, 3} |    5    |
+    |__________________________|________*/
 
     public static final int scoresAverage(int[] scores)
     {

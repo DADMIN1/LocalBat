@@ -15,7 +15,7 @@ public final class Square56
     /*_________________________________________
     |                Testcases                 |
     |__________________________________________|
-    | nums (List<Integer>)  | expected         |
+    |  nums (List<Integer>) |     returns      |
     |                       | (List<Integer>)  |
     |_______________________|__________________|
     | [3, 1, 4]             | [19, 11]         |

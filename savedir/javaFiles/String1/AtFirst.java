@@ -12,16 +12,16 @@ public final class AtFirst
     /*____________________
     |      Testcases      |
     |_____________________|
-    | str      | expected |
+    |   str    | returns  |
     | (String) | (String) |
     |__________|__________|
-    | "hello"  | "he"     |
-    | "hi"     | "hi"     |
-    | "h"      | "h@"     |
-    | ""       | "@@"     |
-    | "kitten" | "ki"     |
-    | "java"   | "ja"     |
-    | "j"      | "j@"     |
+    | "hello"  |   "he"   |
+    |   "hi"   |   "hi"   |
+    |   "h"    |   "h@"   |
+    |    ""    |   "@@"   |
+    | "kitten" |   "ki"   |
+    |  "java"  |   "ja"   |
+    |   "j"    |   "j@"   |
     |__________|_________*/
 
     public static final String atFirst(String str)

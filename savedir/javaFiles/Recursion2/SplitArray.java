@@ -15,22 +15,22 @@ public final class SplitArray
     /*____________________________________
     |              Testcases              |
     |_____________________________________|
-    | nums (int[])            | expected  |
+    |       nums (int[])      |  returns  |
     |                         | (boolean) |
     |_________________________|___________|
-    | {2, 2}                  | true      |
-    | {2, 3}                  | false     |
-    | {5, 2, 3}               | true      |
-    | {5, 2, 2}               | false     |
-    | {1, 1, 1, 1, 1, 1}      | true      |
-    | {1, 1, 1, 1, 1}         | false     |
-    | {}                      | true      |
-    | {1}                     | false     |
-    | {3, 5}                  | false     |
-    | {5, 3, 2}               | true      |
-    | {2, 2, 10, 10, 1, 1}    | true      |
-    | {1, 2, 2, 10, 10, 1, 1} | false     |
-    | {1, 2, 3, 10, 10, 1, 1} | true      |
+    | {2, 2}                  |    true   |
+    | {2, 3}                  |   false   |
+    | {5, 2, 3}               |    true   |
+    | {5, 2, 2}               |   false   |
+    | {1, 1, 1, 1, 1, 1}      |    true   |
+    | {1, 1, 1, 1, 1}         |   false   |
+    | {}                      |    true   |
+    | {1}                     |   false   |
+    | {3, 5}                  |   false   |
+    | {5, 3, 2}               |    true   |
+    | {2, 2, 10, 10, 1, 1}    |    true   |
+    | {1, 2, 2, 10, 10, 1, 1} |   false   |
+    | {1, 2, 3, 10, 10, 1, 1} |    true   |
     |_________________________|__________*/
 
     public static final boolean splitArray(int[] nums)

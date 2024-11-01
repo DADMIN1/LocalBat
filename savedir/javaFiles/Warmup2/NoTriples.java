@@ -12,18 +12,18 @@ public final class NoTriples
     /*__________________________________
     |             Testcases             |
     |___________________________________|
-    | nums (int[])          | expected  |
+    |      nums (int[])     |  returns  |
     |                       | (boolean) |
     |_______________________|___________|
-    | {1, 1, 2, 2, 1}       | true      |
-    | {1, 1, 2, 2, 2, 1}    | false     |
-    | {1, 1, 1, 2, 2, 2, 1} | false     |
-    | {1, 1, 2, 2, 1, 2, 1} | true      |
-    | {1, 2, 1}             | true      |
-    | {1, 1, 1}             | false     |
-    | {1, 1}                | true      |
-    | {1}                   | true      |
-    | {}                    | true      |
+    | {1, 1, 2, 2, 1}       |    true   |
+    | {1, 1, 2, 2, 2, 1}    |   false   |
+    | {1, 1, 1, 2, 2, 2, 1} |   false   |
+    | {1, 1, 2, 2, 1, 2, 1} |    true   |
+    | {1, 2, 1}             |    true   |
+    | {1, 1, 1}             |   false   |
+    | {1, 1}                |    true   |
+    | {1}                   |    true   |
+    | {}                    |    true   |
     |_______________________|__________*/
 
     public static final boolean noTriples(int[] nums)

@@ -15,8 +15,8 @@ public final class NoZ
     /*____________________________________________________
     |                      Testcases                      |
     |_____________________________________________________|
-    | strings (List<String>)           | expected         |
-    |                                  | (List<String>)   |
+    |      strings (List<String>)      |     returns      |
+    |                                  |  (List<String>)  |
     |__________________________________|__________________|
     | ["aaa", "bbb", "aza"]            | ["aaa", "bbb"]   |
     | ["hziz", "hzello", "hi"]         | ["hi"]           |

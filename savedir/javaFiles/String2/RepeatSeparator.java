@@ -12,20 +12,20 @@ public final class RepeatSeparator
     /*_______________________________________________
     |                   Testcases                    |
     |________________________________________________|
-    | word     | sep      | count | expected         |
-    | (String) | (String) | (int) | (String)         |
+    |   word   |   sep    | count | returns (String) |
+    | (String) | (String) | (int) |                  |
     |__________|__________|_______|__________________|
-    | "Word"   | "X"      | 3     | "WordXWordXWord" |
-    | "This"   | "And"    | 2     | "ThisAndThis"    |
-    | "This"   | "And"    | 1     | "This"           |
-    | "Hi"     | "-n-"    | 2     | "Hi-n-Hi"        |
-    | "AAA"    | ""       | 1     | "AAA"            |
-    | "AAA"    | ""       | 0     | ""               |
-    | "A"      | "B"      | 5     | "ABABABABA"      |
-    | "abc"    | "XX"     | 3     | "abcXXabcXXabc"  |
-    | "abc"    | "XX"     | 2     | "abcXXabc"       |
-    | "abc"    | "XX"     | 1     | "abc"            |
-    | "XYZ"    | "a"      | 2     | "XYZaXYZ"        |
+    |  "Word"  |   "X"    |   3   | "WordXWordXWord" |
+    |  "This"  |  "And"   |   2   |  "ThisAndThis"   |
+    |  "This"  |  "And"   |   1   |      "This"      |
+    |   "Hi"   |  "-n-"   |   2   |    "Hi-n-Hi"     |
+    |  "AAA"   |    ""    |   1   |      "AAA"       |
+    |  "AAA"   |    ""    |   0   |        ""        |
+    |   "A"    |   "B"    |   5   |   "ABABABABA"    |
+    |  "abc"   |   "XX"   |   3   | "abcXXabcXXabc"  |
+    |  "abc"   |   "XX"   |   2   |    "abcXXabc"    |
+    |  "abc"   |   "XX"   |   1   |      "abc"       |
+    |  "XYZ"   |   "a"    |   2   |    "XYZaXYZ"     |
     |__________|__________|_______|_________________*/
 
     public static final String repeatSeparator(String word, String sep, int count)

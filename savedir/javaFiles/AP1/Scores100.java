@@ -12,15 +12,15 @@ public final class Scores100
     /*_______________________________
     |           Testcases            |
     |________________________________|
-    | scores (int[])     | expected  |
+    |   scores (int[])   |  returns  |
     |                    | (boolean) |
     |____________________|___________|
-    | {1, 100, 100}      | true      |
-    | {1, 100, 99, 100}  | false     |
-    | {100, 1, 100, 100} | true      |
-    | {100, 1, 100, 1}   | false     |
-    | {1, 2, 3, 4, 5}    | false     |
-    | {1, 2, 100, 4, 5}  | false     |
+    | {1, 100, 100}      |    true   |
+    | {1, 100, 99, 100}  |   false   |
+    | {100, 1, 100, 100} |    true   |
+    | {100, 1, 100, 1}   |   false   |
+    | {1, 2, 3, 4, 5}    |   false   |
+    | {1, 2, 100, 4, 5}  |   false   |
     |____________________|__________*/
 
     public static final boolean scores100(int[] scores)

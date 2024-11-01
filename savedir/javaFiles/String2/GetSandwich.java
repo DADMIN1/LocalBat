@@ -13,21 +13,21 @@ public final class GetSandwich
     /*________________________________________
     |                Testcases                |
     |_________________________________________|
-    | str (String)             | expected     |
-    |                          | (String)     |
+    |       str (String)       |   returns    |
+    |                          |   (String)   |
     |__________________________|______________|
-    | "breadjambread"          | "jam"        |
-    | "xxbreadjambreadyy"      | "jam"        |
-    | "xxbreadyy"              | ""           |
-    | "xxbreadbreadjambreadyy" | "breadjam"   |
-    | "breadAbread"            | "A"          |
-    | "breadbread"             | ""           |
-    | "abcbreaz"               | ""           |
-    | "xyz"                    | ""           |
-    | ""                       | ""           |
-    | "breadbreaxbread"        | "breax"      |
-    | "breaxbreadybread"       | "y"          |
-    | "breadbreadbreadbread"   | "breadbread" |
+    |     "breadjambread"      |    "jam"     |
+    |   "xxbreadjambreadyy"    |    "jam"     |
+    |       "xxbreadyy"        |      ""      |
+    | "xxbreadbreadjambreadyy" |  "breadjam"  |
+    |      "breadAbread"       |     "A"      |
+    |       "breadbread"       |      ""      |
+    |        "abcbreaz"        |      ""      |
+    |          "xyz"           |      ""      |
+    |            ""            |      ""      |
+    |    "breadbreaxbread"     |   "breax"    |
+    |    "breaxbreadybread"    |     "y"      |
+    |  "breadbreadbreadbread"  | "breadbread" |
     |__________________________|_____________*/
 
     public static final String getSandwich(String str)

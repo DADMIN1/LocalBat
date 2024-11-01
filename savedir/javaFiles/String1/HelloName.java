@@ -12,19 +12,19 @@ public final class HelloName
     /*_______________________________
     |           Testcases            |
     |________________________________|
-    | name       | expected (String) |
-    | (String)   |                   |
+    |    name    |  returns (String) |
+    |  (String)  |                   |
     |____________|___________________|
-    | "Bob"      | "Hello Bob!"      |
-    | "Alice"    | "Hello Alice!"    |
-    | "X"        | "Hello X!"        |
-    | "Dolly"    | "Hello Dolly!"    |
-    | "Alpha"    | "Hello Alpha!"    |
-    | "Omega"    | "Hello Omega!"    |
-    | "Goodbye"  | "Hello Goodbye!"  |
+    |   "Bob"    |    "Hello Bob!"   |
+    |  "Alice"   |   "Hello Alice!"  |
+    |    "X"     |     "Hello X!"    |
+    |  "Dolly"   |   "Hello Dolly!"  |
+    |  "Alpha"   |   "Hello Alpha!"  |
+    |  "Omega"   |   "Hello Omega!"  |
+    | "Goodbye"  |  "Hello Goodbye!" |
     | "ho ho ho" | "Hello ho ho ho!" |
-    | "xyz!"     | "Hello xyz!!"     |
-    | "Hello"    | "Hello Hello!"    |
+    |   "xyz!"   |   "Hello xyz!!"   |
+    |  "Hello"   |   "Hello Hello!"  |
     |____________|__________________*/
 
     public static final String helloName(String name)

@@ -15,7 +15,7 @@ public final class Topping2
     /*____________________________________________________________________________________________________________
     |                                                  Testcases                                                  |
     |_____________________________________________________________________________________________________________|
-    | map (Map<String, String>)                  | expected (Map<String, String>)                                 |
+    |         map (Map<String, String>)          |                 returns (Map<String, String>)                  |
     |____________________________________________|________________________________________________________________|
     | {"ice cream": "cherry"}                    | {"yogurt": "cherry", "ice cream": "cherry"}                    |
     | {"spinach": "dirt", "ice cream": "cherry"} | {"yogurt": "cherry", "spinach": "nuts", "ice cream": "cherry"} |

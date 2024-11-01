@@ -12,23 +12,23 @@ public final class Either24
     /*__________________________________
     |             Testcases             |
     |___________________________________|
-    | nums (int[])          | expected  |
+    |      nums (int[])     |  returns  |
     |                       | (boolean) |
     |_______________________|___________|
-    | {1, 2, 2}             | true      |
-    | {4, 4, 1}             | true      |
-    | {4, 4, 1, 2, 2}       | false     |
-    | {1, 2, 3, 4}          | false     |
-    | {3, 5, 9}             | false     |
-    | {1, 2, 3, 4, 4}       | true      |
-    | {2, 2, 3, 4}          | true      |
-    | {1, 2, 3, 2, 2, 4}    | true      |
-    | {1, 2, 3, 2, 2, 4, 4} | false     |
-    | {1, 2}                | false     |
-    | {2, 2}                | true      |
-    | {4, 4}                | true      |
-    | {2}                   | false     |
-    | {}                    | false     |
+    | {1, 2, 2}             |    true   |
+    | {4, 4, 1}             |    true   |
+    | {4, 4, 1, 2, 2}       |   false   |
+    | {1, 2, 3, 4}          |   false   |
+    | {3, 5, 9}             |   false   |
+    | {1, 2, 3, 4, 4}       |    true   |
+    | {2, 2, 3, 4}          |    true   |
+    | {1, 2, 3, 2, 2, 4}    |    true   |
+    | {1, 2, 3, 2, 2, 4, 4} |   false   |
+    | {1, 2}                |   false   |
+    | {2, 2}                |    true   |
+    | {4, 4}                |    true   |
+    | {2}                   |   false   |
+    | {}                    |   false   |
     |_______________________|__________*/
 
     public static final boolean either24(int[] nums)

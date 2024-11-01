@@ -9,29 +9,29 @@ public final class Old35
     /* Return true if the given non-negative number is a multiple of 3 or 5, 
     but not both. Use the % "mod" operator -- see Introduction to Mod */
 
-    /*__________________
-    |     Testcases     |
-    |___________________|
-    | n     | expected  |
-    | (int) | (boolean) |
-    |_______|___________|
-    | 3     | true      |
-    | 10    | true      |
-    | 15    | false     |
-    | 5     | true      |
-    | 9     | true      |
-    | 8     | false     |
-    | 7     | false     |
-    | 6     | true      |
-    | 17    | false     |
-    | 18    | true      |
-    | 29    | false     |
-    | 20    | true      |
-    | 21    | true      |
-    | 22    | false     |
-    | 45    | false     |
-    | 99    | true      |
-    |_______|__________*/
+    /*____________________
+    |      Testcases      |
+    |_____________________|
+    | n (int) |  returns  |
+    |         | (boolean) |
+    |_________|___________|
+    |    3    |    true   |
+    |    10   |    true   |
+    |    15   |   false   |
+    |    5    |    true   |
+    |    9    |    true   |
+    |    8    |   false   |
+    |    7    |   false   |
+    |    6    |    true   |
+    |    17   |   false   |
+    |    18   |    true   |
+    |    29   |   false   |
+    |    20   |    true   |
+    |    21   |    true   |
+    |    22   |   false   |
+    |    45   |   false   |
+    |    99   |    true   |
+    |_________|__________*/
 
     public static final boolean old35(int n)
     {

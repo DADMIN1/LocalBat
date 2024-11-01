@@ -13,27 +13,27 @@ public final class StarOut
     /*_________________________
     |        Testcases         |
     |__________________________|
-    | str (String)  | expected |
+    |  str (String) | returns  |
     |               | (String) |
     |_______________|__________|
-    | "ab*cd"       | "ad"     |
-    | "ab**cd"      | "ad"     |
-    | "sm*eilly"    | "silly"  |
-    | "sm*eil*ly"   | "siy"    |
-    | "sm**eil*ly"  | "siy"    |
-    | "sm***eil*ly" | "siy"    |
-    | "stringy*"    | "string" |
-    | "*stringy"    | "tringy" |
-    | "*str*in*gy"  | "ty"     |
-    | "abc"         | "abc"    |
-    | "a*bc"        | "c"      |
-    | "ab"          | "ab"     |
-    | "a*b"         | ""       |
-    | "a"           | "a"      |
-    | "a*"          | ""       |
-    | "*a"          | ""       |
-    | "*"           | ""       |
-    | ""            | ""       |
+    |    "ab*cd"    |   "ad"   |
+    |    "ab**cd"   |   "ad"   |
+    |   "sm*eilly"  | "silly"  |
+    |  "sm*eil*ly"  |  "siy"   |
+    |  "sm**eil*ly" |  "siy"   |
+    | "sm***eil*ly" |  "siy"   |
+    |   "stringy*"  | "string" |
+    |   "*stringy"  | "tringy" |
+    |  "*str*in*gy" |   "ty"   |
+    |     "abc"     |  "abc"   |
+    |     "a*bc"    |   "c"    |
+    |      "ab"     |   "ab"   |
+    |     "a*b"     |    ""    |
+    |      "a"      |   "a"    |
+    |      "a*"     |    ""    |
+    |      "*a"     |    ""    |
+    |      "*"      |    ""    |
+    |       ""      |    ""    |
     |_______________|_________*/
 
     public static final String starOut(String str)

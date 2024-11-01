@@ -12,14 +12,14 @@ public final class LastTwo
     /*____________________
     |      Testcases      |
     |_____________________|
-    | str      | expected |
+    |   str    | returns  |
     | (String) | (String) |
     |__________|__________|
     | "coding" | "codign" |
-    | "cat"    | "cta"    |
-    | "ab"     | "ba"     |
-    | "a"      | "a"      |
-    | ""       | ""       |
+    |  "cat"   |  "cta"   |
+    |   "ab"   |   "ba"   |
+    |   "a"    |   "a"    |
+    |    ""    |    ""    |
     |__________|_________*/
 
     public static final String lastTwo(String str)

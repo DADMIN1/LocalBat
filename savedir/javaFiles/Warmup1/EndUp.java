@@ -13,16 +13,16 @@ public final class EndUp
     /*________________________
     |        Testcases        |
     |_________________________|
-    | str        | expected   |
-    | (String)   | (String)   |
+    |    str     |  returns   |
+    |  (String)  |  (String)  |
     |____________|____________|
-    | "Hello"    | "HeLLO"    |
+    |  "Hello"   |  "HeLLO"   |
     | "hi there" | "hi thERE" |
-    | "hi"       | "HI"       |
+    |    "hi"    |    "HI"    |
     | "woo hoo"  | "woo HOO"  |
-    | "xyz12"    | "xyZ12"    |
-    | "x"        | "X"        |
-    | ""         | ""         |
+    |  "xyz12"   |  "xyZ12"   |
+    |    "x"     |    "X"     |
+    |     ""     |     ""     |
     |____________|___________*/
 
     public static final String endUp(String str)

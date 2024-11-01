@@ -13,21 +13,21 @@ public final class ParenBit
     /*__________________________________________
     |                 Testcases                 |
     |___________________________________________|
-    | str (String)             | expected       |
-    |                          | (String)       |
+    |       str (String)       |    returns     |
+    |                          |    (String)    |
     |__________________________|________________|
-    | "xyz(abc)123"            | "(abc)"        |
-    | "x(hello)"               | "(hello)"      |
-    | "(xy)1"                  | "(xy)"         |
-    | "not really (possible)"  | "(possible)"   |
-    | "(abc)"                  | "(abc)"        |
-    | "(abc)xyz"               | "(abc)"        |
-    | "(abc)x"                 | "(abc)"        |
-    | "(x)"                    | "(x)"          |
-    | "()"                     | "()"           |
-    | "res (ipsa) loquitor"    | "(ipsa)"       |
+    |      "xyz(abc)123"       |    "(abc)"     |
+    |        "x(hello)"        |   "(hello)"    |
+    |         "(xy)1"          |     "(xy)"     |
+    | "not really (possible)"  |  "(possible)"  |
+    |         "(abc)"          |    "(abc)"     |
+    |        "(abc)xyz"        |    "(abc)"     |
+    |         "(abc)x"         |    "(abc)"     |
+    |          "(x)"           |     "(x)"      |
+    |           "()"           |      "()"      |
+    |  "res (ipsa) loquitor"   |    "(ipsa)"    |
     | "hello(not really)there" | "(not really)" |
-    | "ab(ab)ab"               | "(ab)"         |
+    |        "ab(ab)ab"        |     "(ab)"     |
     |__________________________|_______________*/
 
     public static final String parenBit(String str)

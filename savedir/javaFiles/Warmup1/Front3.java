@@ -13,16 +13,16 @@ public final class Front3
     /*__________________________
     |         Testcases         |
     |___________________________|
-    | str         | expected    |
-    | (String)    | (String)    |
+    |     str     |   returns   |
+    |   (String)  |   (String)  |
     |_____________|_____________|
-    | "Java"      | "JavJavJav" |
+    |    "Java"   | "JavJavJav" |
     | "Chocolate" | "ChoChoCho" |
-    | "abc"       | "abcabcabc" |
-    | "abcXYZ"    | "abcabcabc" |
-    | "ab"        | "ababab"    |
-    | "a"         | "aaa"       |
-    | ""          | ""          |
+    |    "abc"    | "abcabcabc" |
+    |   "abcXYZ"  | "abcabcabc" |
+    |     "ab"    |   "ababab"  |
+    |     "a"     |    "aaa"    |
+    |      ""     |      ""     |
     |_____________|____________*/
 
     public static final String front3(String str)

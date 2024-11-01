@@ -11,22 +11,22 @@ public final class CatDog
     /*______________________________
     |           Testcases           |
     |_______________________________|
-    | str (String)      | expected  |
+    |    str (String)   |  returns  |
     |                   | (boolean) |
     |___________________|___________|
-    | "catdog"          | true      |
-    | "catcat"          | false     |
-    | "1cat1cadodog"    | true      |
-    | "catxxdogxxxdog"  | false     |
-    | "catxdogxdogxcat" | true      |
-    | "catxdogxdogxca"  | false     |
-    | "dogdogcat"       | false     |
-    | "dogogcat"        | true      |
-    | "dog"             | false     |
-    | "cat"             | false     |
-    | "ca"              | true      |
-    | "c"               | true      |
-    | ""                | true      |
+    |      "catdog"     |    true   |
+    |      "catcat"     |   false   |
+    |   "1cat1cadodog"  |    true   |
+    |  "catxxdogxxxdog" |   false   |
+    | "catxdogxdogxcat" |    true   |
+    |  "catxdogxdogxca" |   false   |
+    |    "dogdogcat"    |   false   |
+    |     "dogogcat"    |    true   |
+    |       "dog"       |   false   |
+    |       "cat"       |   false   |
+    |        "ca"       |    true   |
+    |        "c"        |    true   |
+    |         ""        |    true   |
     |___________________|__________*/
 
     public static final boolean catDog(String str)

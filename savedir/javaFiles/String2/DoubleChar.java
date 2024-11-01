@@ -12,18 +12,18 @@ public final class DoubleChar
     /*________________________________
     |            Testcases            |
     |_________________________________|
-    | str        | expected (String)  |
-    | (String)   |                    |
+    |    str     |  returns (String)  |
+    |  (String)  |                    |
     |____________|____________________|
-    | "The"      | "TThhee"           |
-    | "AAbb"     | "AAAAbbbb"         |
+    |   "The"    |      "TThhee"      |
+    |   "AAbb"   |     "AAAAbbbb"     |
     | "Hi-There" | "HHii--TThheerree" |
-    | "Word!"    | "WWoorrdd!!"       |
-    | "!!"       | "!!!!"             |
-    | ""         | ""                 |
-    | "a"        | "aa"               |
-    | "."        | ".."               |
-    | "aa"       | "aaaa"             |
+    |  "Word!"   |    "WWoorrdd!!"    |
+    |    "!!"    |       "!!!!"       |
+    |     ""     |         ""         |
+    |    "a"     |        "aa"        |
+    |    "."     |        ".."        |
+    |    "aa"    |       "aaaa"       |
     |____________|___________________*/
 
     public static final String doubleChar(String str)

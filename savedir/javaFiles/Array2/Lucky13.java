@@ -11,21 +11,21 @@ public final class Lucky13
     /*_________________________
     |        Testcases         |
     |__________________________|
-    | nums (int[]) | expected  |
+    | nums (int[]) |  returns  |
     |              | (boolean) |
     |______________|___________|
-    | {0, 2, 4}    | true      |
-    | {1, 2, 3}    | false     |
-    | {1, 2, 4}    | false     |
-    | {2, 7, 2, 8} | true      |
-    | {2, 7, 1, 8} | false     |
-    | {3, 7, 2, 8} | false     |
-    | {2, 7, 2, 1} | false     |
-    | {1, 2}       | false     |
-    | {2, 2}       | true      |
-    | {2}          | true      |
-    | {3}          | false     |
-    | {}           | true      |
+    | {0, 2, 4}    |    true   |
+    | {1, 2, 3}    |   false   |
+    | {1, 2, 4}    |   false   |
+    | {2, 7, 2, 8} |    true   |
+    | {2, 7, 1, 8} |   false   |
+    | {3, 7, 2, 8} |   false   |
+    | {2, 7, 2, 1} |   false   |
+    | {1, 2}       |   false   |
+    | {2, 2}       |    true   |
+    | {2}          |    true   |
+    | {3}          |   false   |
+    | {}           |    true   |
     |______________|__________*/
 
     public static final boolean lucky13(int[] nums)

@@ -13,30 +13,30 @@ public final class XyzMiddle
     /*________________________________
     |            Testcases            |
     |_________________________________|
-    | str (String)        | expected  |
+    |     str (String)    |  returns  |
     |                     | (boolean) |
     |_____________________|___________|
-    | "AAxyzBB"           | true      |
-    | "AxyzBB"            | true      |
-    | "AxyzBBB"           | false     |
-    | "AxyzBBBB"          | false     |
-    | "AAAxyzB"           | false     |
-    | "AAAxyzBB"          | true      |
-    | "AAAAxyzBB"         | false     |
-    | "AAAAAxyzBBB"       | false     |
-    | "1x345xyz12x4"      | true      |
-    | "xyzAxyzBBB"        | true      |
-    | "xyzAxyzBxyz"       | true      |
-    | "xyzxyzAxyzBxyzxyz" | true      |
-    | "xyzxyzxyzBxyzxyz"  | true      |
-    | "xyzxyzAxyzxyzxyz"  | true      |
-    | "xyzxyzAxyzxyzxy"   | false     |
-    | "AxyzxyzBB"         | false     |
-    | ""                  | false     |
-    | "x"                 | false     |
-    | "xy"                | false     |
-    | "xyz"               | true      |
-    | "xyzz"              | true      |
+    |      "AAxyzBB"      |    true   |
+    |       "AxyzBB"      |    true   |
+    |      "AxyzBBB"      |   false   |
+    |      "AxyzBBBB"     |   false   |
+    |      "AAAxyzB"      |   false   |
+    |      "AAAxyzBB"     |    true   |
+    |     "AAAAxyzBB"     |   false   |
+    |    "AAAAAxyzBBB"    |   false   |
+    |    "1x345xyz12x4"   |    true   |
+    |     "xyzAxyzBBB"    |    true   |
+    |    "xyzAxyzBxyz"    |    true   |
+    | "xyzxyzAxyzBxyzxyz" |    true   |
+    |  "xyzxyzxyzBxyzxyz" |    true   |
+    |  "xyzxyzAxyzxyzxyz" |    true   |
+    |  "xyzxyzAxyzxyzxy"  |   false   |
+    |     "AxyzxyzBB"     |   false   |
+    |          ""         |   false   |
+    |         "x"         |   false   |
+    |         "xy"        |   false   |
+    |        "xyz"        |    true   |
+    |        "xyzz"       |    true   |
     |_____________________|__________*/
 
     public static final boolean xyzMiddle(String str)

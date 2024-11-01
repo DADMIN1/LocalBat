@@ -11,18 +11,18 @@ public final class EndsLy
     /*_____________________
     |      Testcases       |
     |______________________|
-    | str      | expected  |
+    |   str    |  returns  |
     | (String) | (boolean) |
     |__________|___________|
-    | "oddly"  | true      |
-    | "y"      | false     |
-    | "oddy"   | false     |
-    | "oddl"   | false     |
-    | "olydd"  | false     |
-    | "ly"     | true      |
-    | ""       | false     |
-    | "falsey" | false     |
-    | "evenly" | true      |
+    | "oddly"  |    true   |
+    |   "y"    |   false   |
+    |  "oddy"  |   false   |
+    |  "oddl"  |   false   |
+    | "olydd"  |   false   |
+    |   "ly"   |    true   |
+    |    ""    |   false   |
+    | "falsey" |   false   |
+    | "evenly" |    true   |
     |__________|__________*/
 
     public static final boolean endsLy(String str)

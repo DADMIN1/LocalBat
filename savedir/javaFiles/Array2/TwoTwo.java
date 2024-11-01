@@ -11,26 +11,26 @@ public final class TwoTwo
     /*____________________________
     |          Testcases          |
     |_____________________________|
-    | nums (int[])    | expected  |
+    |   nums (int[])  |  returns  |
     |                 | (boolean) |
     |_________________|___________|
-    | {4, 2, 2, 3}    | true      |
-    | {2, 2, 4}       | true      |
-    | {2, 2, 4, 2}    | false     |
-    | {1, 3, 4}       | true      |
-    | {1, 2, 2, 3, 4} | true      |
-    | {1, 2, 3, 4}    | false     |
-    | {2, 2}          | true      |
-    | {2, 2, 7}       | true      |
-    | {2, 2, 7, 2, 1} | false     |
-    | {4, 2, 2, 2}    | true      |
-    | {2, 2, 2}       | true      |
-    | {1, 2}          | false     |
-    | {2}             | false     |
-    | {1}             | true      |
-    | {}              | true      |
-    | {5, 2, 2, 3}    | true      |
-    | {2, 2, 5, 2}    | false     |
+    | {4, 2, 2, 3}    |    true   |
+    | {2, 2, 4}       |    true   |
+    | {2, 2, 4, 2}    |   false   |
+    | {1, 3, 4}       |    true   |
+    | {1, 2, 2, 3, 4} |    true   |
+    | {1, 2, 3, 4}    |   false   |
+    | {2, 2}          |    true   |
+    | {2, 2, 7}       |    true   |
+    | {2, 2, 7, 2, 1} |   false   |
+    | {4, 2, 2, 2}    |    true   |
+    | {2, 2, 2}       |    true   |
+    | {1, 2}          |   false   |
+    | {2}             |   false   |
+    | {1}             |    true   |
+    | {}              |    true   |
+    | {5, 2, 2, 3}    |    true   |
+    | {2, 2, 5, 2}    |   false   |
     |_________________|__________*/
 
     public static final boolean twoTwo(int[] nums)

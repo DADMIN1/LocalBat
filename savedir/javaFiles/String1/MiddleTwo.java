@@ -12,14 +12,14 @@ public final class MiddleTwo
     /*________________________
     |        Testcases        |
     |_________________________|
-    | str (String) | expected |
+    | str (String) | returns  |
     |              | (String) |
     |______________|__________|
-    | "string"     | "ri"     |
-    | "code"       | "od"     |
-    | "Practice"   | "ct"     |
-    | "ab"         | "ab"     |
-    | "0123456789" | "45"     |
+    |   "string"   |   "ri"   |
+    |    "code"    |   "od"   |
+    |  "Practice"  |   "ct"   |
+    |     "ab"     |   "ab"   |
+    | "0123456789" |   "45"   |
     |______________|_________*/
 
     public static final String middleTwo(String str)

@@ -14,8 +14,8 @@ public final class NoLong
     /*_______________________________________________________
     |                       Testcases                        |
     |________________________________________________________|
-    | strings (List<String>)         | expected              |
-    |                                | (List<String>)        |
+    |     strings (List<String>)     |        returns        |
+    |                                |     (List<String>)    |
     |________________________________|_______________________|
     | ["this", "not", "too", "long"] | ["not", "too"]        |
     | ["a", "bbb", "cccc"]           | ["a", "bbb"]          |

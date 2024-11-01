@@ -12,16 +12,16 @@ public final class MixStart
     /*_________________________
     |        Testcases         |
     |__________________________|
-    | str (String) | expected  |
+    | str (String) |  returns  |
     |              | (boolean) |
     |______________|___________|
-    | "mix snacks" | true      |
-    | "pix snacks" | true      |
-    | "piz snacks" | false     |
-    | "nix"        | true      |
-    | "ni"         | false     |
-    | "n"          | false     |
-    | ""           | false     |
+    | "mix snacks" |    true   |
+    | "pix snacks" |    true   |
+    | "piz snacks" |   false   |
+    |    "nix"     |    true   |
+    |     "ni"     |   false   |
+    |     "n"      |   false   |
+    |      ""      |   false   |
     |______________|__________*/
 
     public static final boolean mixStart(String str)

@@ -11,19 +11,19 @@ public final class PairStar
     /*____________________________
     |          Testcases          |
     |_____________________________|
-    | str (String) | expected     |
-    |              | (String)     |
+    | str (String) |   returns    |
+    |              |   (String)   |
     |______________|______________|
-    | "hello"      | "hel*lo"     |
-    | "xxyy"       | "x*xy*y"     |
-    | "aaaa"       | "a*a*a*a"    |
-    | "aaab"       | "a*a*ab"     |
-    | "aa"         | "a*a"        |
-    | "a"          | "a"          |
-    | ""           | ""           |
+    |   "hello"    |   "hel*lo"   |
+    |    "xxyy"    |   "x*xy*y"   |
+    |    "aaaa"    |  "a*a*a*a"   |
+    |    "aaab"    |   "a*a*ab"   |
+    |     "aa"     |    "a*a"     |
+    |     "a"      |     "a"      |
+    |      ""      |      ""      |
     | "noadjacent" | "noadjacent" |
-    | "abba"       | "ab*ba"      |
-    | "abbba"      | "ab*b*ba"    |
+    |    "abba"    |   "ab*ba"    |
+    |   "abbba"    |  "ab*b*ba"   |
     |______________|_____________*/
 
     public static final String pairStar(String str)

@@ -15,7 +15,7 @@ public final class MapAB4
     /*____________________________________________________________________________
     |                                  Testcases                                  |
     |_____________________________________________________________________________|
-    | map (Map<String, String>)             | expected (Map<String, String>)      |
+    |       map (Map<String, String>)       |    returns (Map<String, String>)    |
     |_______________________________________|_____________________________________|
     | {"a": "aaa", "b": "bb", "c": "cake"}  | {"a": "aaa", "b": "bb", "c": "aaa"} |
     | {"a": "aa", "b": "bbb", "c": "cake"}  | {"a": "aa", "b": "bbb", "c": "bbb"} |

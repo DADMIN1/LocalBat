@@ -10,25 +10,25 @@ public final class CloseFar
     while the other is "far", differing from both other values by 2 or more. 
     Note: Math.abs(num) computes the absolute value of a number. */
 
-    /*__________________________________
-    |             Testcases             |
-    |___________________________________|
-    | a     | b     | c     | expected  |
-    | (int) | (int) | (int) | (boolean) |
-    |_______|_______|_______|___________|
-    | 1     | 2     | 10    | true      |
-    | 1     | 2     | 3     | false     |
-    | 4     | 1     | 3     | true      |
-    | 4     | 5     | 3     | false     |
-    | 4     | 3     | 5     | false     |
-    | -1    | 10    | 0     | true      |
-    | 0     | -1    | 10    | true      |
-    | 10    | 10    | 8     | true      |
-    | 10    | 8     | 9     | false     |
-    | 8     | 9     | 10    | false     |
-    | 8     | 9     | 7     | false     |
-    | 8     | 6     | 9     | true      |
-    |_______|_______|_______|__________*/
+    /*________________________________________
+    |                Testcases                |
+    |_________________________________________|
+    | a (int) | b (int) | c (int) |  returns  |
+    |         |         |         | (boolean) |
+    |_________|_________|_________|___________|
+    |    1    |    2    |    10   |    true   |
+    |    1    |    2    |    3    |   false   |
+    |    4    |    1    |    3    |    true   |
+    |    4    |    5    |    3    |   false   |
+    |    4    |    3    |    5    |   false   |
+    |    -1   |    10   |    0    |    true   |
+    |    0    |    -1   |    10   |    true   |
+    |    10   |    10   |    8    |    true   |
+    |    10   |    8    |    9    |   false   |
+    |    8    |    9    |    10   |   false   |
+    |    8    |    9    |    7    |   false   |
+    |    8    |    6    |    9    |    true   |
+    |_________|_________|_________|__________*/
 
     public static final boolean closeFar(int a, int b, int c)
     {

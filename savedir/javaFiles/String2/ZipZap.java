@@ -13,19 +13,19 @@ public final class ZipZap
     /*_______________________
     |       Testcases        |
     |________________________|
-    | str        | expected  |
-    | (String)   | (String)  |
+    |    str     |  returns  |
+    |  (String)  |  (String) |
     |____________|___________|
-    | "zipXzap"  | "zpXzp"   |
-    | "zopzop"   | "zpzp"    |
-    | "zzzopzop" | "zzzpzp"  |
-    | "zibzap"   | "zibzp"   |
-    | "zip"      | "zp"      |
-    | "zi"       | "zi"      |
-    | "z"        | "z"       |
-    | ""         | ""        |
-    | "zzp"      | "zp"      |
-    | "abcppp"   | "abcppp"  |
+    | "zipXzap"  |  "zpXzp"  |
+    |  "zopzop"  |   "zpzp"  |
+    | "zzzopzop" |  "zzzpzp" |
+    |  "zibzap"  |  "zibzp"  |
+    |   "zip"    |    "zp"   |
+    |    "zi"    |    "zi"   |
+    |    "z"     |    "z"    |
+    |     ""     |     ""    |
+    |   "zzp"    |    "zp"   |
+    |  "abcppp"  |  "abcppp" |
     | "azbcppp"  | "azbcppp" |
     | "azbcpzpp" | "azbcpzp" |
     |____________|__________*/

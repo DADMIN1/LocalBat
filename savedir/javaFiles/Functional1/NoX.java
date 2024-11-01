@@ -14,7 +14,7 @@ public final class NoX
     /*_______________________________________________________
     |                       Testcases                        |
     |________________________________________________________|
-    | strings (List<String>)     | expected (List<String>)   |
+    |   strings (List<String>)   |   returns (List<String>)  |
     |____________________________|___________________________|
     | ["ax", "bb", "cx"]         | ["a", "bb", "c"]          |
     | ["xxax", "xbxbx", "xxcx"]  | ["a", "bb", "c"]          |

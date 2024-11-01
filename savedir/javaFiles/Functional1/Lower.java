@@ -15,7 +15,7 @@ public final class Lower
     /*____________________________________________________________
     |                          Testcases                          |
     |_____________________________________________________________|
-    | strings (List<String>)       | expected (List<String>)      |
+    |    strings (List<String>)    |    returns (List<String>)    |
     |______________________________|______________________________|
     | ["Hello", "Hi"]              | ["hello", "hi"]              |
     | ["AAA", "BBB", "ccc"]        | ["aaa", "bbb", "ccc"]        |

@@ -12,17 +12,17 @@ public final class WithoutEnd
     /*__________________________
     |         Testcases         |
     |___________________________|
-    | str (String) | expected   |
-    |              | (String)   |
+    | str (String) |  returns   |
+    |              |  (String)  |
     |______________|____________|
-    | "Hello"      | "ell"      |
-    | "java"       | "av"       |
-    | "coding"     | "odin"     |
-    | "code"       | "od"       |
-    | "ab"         | ""         |
+    |   "Hello"    |   "ell"    |
+    |    "java"    |    "av"    |
+    |   "coding"   |   "odin"   |
+    |    "code"    |    "od"    |
+    |     "ab"     |     ""     |
     | "Chocolate!" | "hocolate" |
-    | "kitten"     | "itte"     |
-    | "woohoo"     | "ooho"     |
+    |   "kitten"   |   "itte"   |
+    |   "woohoo"   |   "ooho"   |
     |______________|___________*/
 
     public static final String withoutEnd(String str)

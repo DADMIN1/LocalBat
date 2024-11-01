@@ -12,19 +12,19 @@ public final class WithoutX
     /*____________________
     |      Testcases      |
     |_____________________|
-    | str      | expected |
+    |   str    | returns  |
     | (String) | (String) |
     |__________|__________|
-    | "xHix"   | "Hi"     |
-    | "xHi"    | "Hi"     |
-    | "Hxix"   | "Hxi"    |
-    | "Hi"     | "Hi"     |
-    | "xxHi"   | "xHi"    |
-    | "Hix"    | "Hi"     |
-    | "xaxbx"  | "axb"    |
-    | "xx"     | ""       |
-    | "x"      | ""       |
-    | ""       | ""       |
+    |  "xHix"  |   "Hi"   |
+    |  "xHi"   |   "Hi"   |
+    |  "Hxix"  |  "Hxi"   |
+    |   "Hi"   |   "Hi"   |
+    |  "xxHi"  |  "xHi"   |
+    |  "Hix"   |   "Hi"   |
+    | "xaxbx"  |  "axb"   |
+    |   "xx"   |    ""    |
+    |   "x"    |    ""    |
+    |    ""    |    ""    |
     | "Hello"  | "Hello"  |
     | "Hexllo" | "Hexllo" |
     |__________|_________*/

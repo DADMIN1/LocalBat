@@ -12,20 +12,20 @@ public final class FrontAgain
     /*_____________________
     |      Testcases       |
     |______________________|
-    | str      | expected  |
+    |   str    |  returns  |
     | (String) | (boolean) |
     |__________|___________|
-    | "edited" | true      |
-    | "edit"   | false     |
-    | "ed"     | true      |
-    | "jj"     | true      |
-    | "jjj"    | true      |
-    | "jjjj"   | true      |
-    | "jjjk"   | false     |
-    | "x"      | false     |
-    | ""       | false     |
-    | "java"   | false     |
-    | "javaja" | true      |
+    | "edited" |    true   |
+    |  "edit"  |   false   |
+    |   "ed"   |    true   |
+    |   "jj"   |    true   |
+    |  "jjj"   |    true   |
+    |  "jjjj"  |    true   |
+    |  "jjjk"  |   false   |
+    |   "x"    |   false   |
+    |    ""    |   false   |
+    |  "java"  |   false   |
+    | "javaja" |    true   |
     |__________|__________*/
 
     public static final boolean frontAgain(String str)

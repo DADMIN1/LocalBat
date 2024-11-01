@@ -11,23 +11,23 @@ public final class Has22
     /*_______________________________
     |           Testcases            |
     |________________________________|
-    | nums (int[])       | expected  |
+    |    nums (int[])    |  returns  |
     |                    | (boolean) |
     |____________________|___________|
-    | {1, 2, 2}          | true      |
-    | {1, 2, 1, 2}       | false     |
-    | {2, 1, 2}          | false     |
-    | {2, 2, 1, 2}       | true      |
-    | {1, 3, 2}          | false     |
-    | {1, 3, 2, 2}       | true      |
-    | {2, 3, 2, 2}       | true      |
-    | {4, 2, 4, 2, 2, 5} | true      |
-    | {1, 2}             | false     |
-    | {2, 2}             | true      |
-    | {2}                | false     |
-    | {}                 | false     |
-    | {3, 3, 2, 2}       | true      |
-    | {5, 2, 5, 2}       | false     |
+    | {1, 2, 2}          |    true   |
+    | {1, 2, 1, 2}       |   false   |
+    | {2, 1, 2}          |   false   |
+    | {2, 2, 1, 2}       |    true   |
+    | {1, 3, 2}          |   false   |
+    | {1, 3, 2, 2}       |    true   |
+    | {2, 3, 2, 2}       |    true   |
+    | {4, 2, 4, 2, 2, 5} |    true   |
+    | {1, 2}             |   false   |
+    | {2, 2}             |    true   |
+    | {2}                |   false   |
+    | {}                 |   false   |
+    | {3, 3, 2, 2}       |    true   |
+    | {5, 2, 5, 2}       |   false   |
     |____________________|__________*/
 
     public static final boolean has22(int[] nums)

@@ -12,16 +12,16 @@ public final class MiddleThree
     /*___________________________
     |         Testcases          |
     |____________________________|
-    | str (String)    | expected |
+    |   str (String)  | returns  |
     |                 | (String) |
     |_________________|__________|
-    | "Candy"         | "and"    |
-    | "and"           | "and"    |
-    | "solving"       | "lvi"    |
-    | "Hi yet Hi"     | "yet"    |
-    | "java yet java" | "yet"    |
-    | "Chocolate"     | "col"    |
-    | "XabcxyzabcX"   | "xyz"    |
+    |     "Candy"     |  "and"   |
+    |      "and"      |  "and"   |
+    |    "solving"    |  "lvi"   |
+    |   "Hi yet Hi"   |  "yet"   |
+    | "java yet java" |  "yet"   |
+    |   "Chocolate"   |  "col"   |
+    |  "XabcxyzabcX"  |  "xyz"   |
     |_________________|_________*/
 
     public static final String middleThree(String str)

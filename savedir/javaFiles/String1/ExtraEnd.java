@@ -12,14 +12,14 @@ public final class ExtraEnd
     /*____________________
     |      Testcases      |
     |_____________________|
-    | str      | expected |
+    |   str    | returns  |
     | (String) | (String) |
     |__________|__________|
     | "Hello"  | "lololo" |
-    | "ab"     | "ababab" |
-    | "Hi"     | "HiHiHi" |
+    |   "ab"   | "ababab" |
+    |   "Hi"   | "HiHiHi" |
     | "Candy"  | "dydydy" |
-    | "Code"   | "dedede" |
+    |  "Code"  | "dedede" |
     |__________|_________*/
 
     public static final String extraEnd(String str)

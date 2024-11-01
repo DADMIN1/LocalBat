@@ -13,24 +13,24 @@ public final class NestParen
     /*________________________
     |        Testcases        |
     |_________________________|
-    | str         | expected  |
-    | (String)    | (boolean) |
+    |     str     |  returns  |
+    |   (String)  | (boolean) |
     |_____________|___________|
-    | "(())"      | true      |
-    | "((()))"    | true      |
-    | "(((x))"    | false     |
-    | "((())"     | false     |
-    | "((()()"    | false     |
-    | "()"        | true      |
-    | ""          | true      |
-    | "(yy)"      | false     |
-    | "(())"      | true      |
-    | "(((y))"    | false     |
-    | "((y)))"    | false     |
-    | "((()))"    | true      |
-    | "(())))"    | false     |
-    | "((yy())))" | false     |
-    | "(((())))"  | true      |
+    |    "(())"   |    true   |
+    |   "((()))"  |    true   |
+    |   "(((x))"  |   false   |
+    |   "((())"   |   false   |
+    |   "((()()"  |   false   |
+    |     "()"    |    true   |
+    |      ""     |    true   |
+    |    "(yy)"   |   false   |
+    |    "(())"   |    true   |
+    |   "(((y))"  |   false   |
+    |   "((y)))"  |   false   |
+    |   "((()))"  |    true   |
+    |   "(())))"  |   false   |
+    | "((yy())))" |   false   |
+    |  "(((())))" |    true   |
     |_____________|__________*/
 
     public static final boolean nestParen(String str)

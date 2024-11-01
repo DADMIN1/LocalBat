@@ -11,17 +11,17 @@ public final class AllStar
     /*__________________________________
     |             Testcases             |
     |___________________________________|
-    | str         | expected (String)   |
-    | (String)    |                     |
+    |     str     |   returns (String)  |
+    |   (String)  |                     |
     |_____________|_____________________|
-    | "hello"     | "h*e*l*l*o"         |
-    | "abc"       | "a*b*c"             |
-    | "ab"        | "a*b"               |
-    | "a"         | "a"                 |
-    | ""          | ""                  |
-    | "3.14"      | "3*.*1*4"           |
+    |   "hello"   |     "h*e*l*l*o"     |
+    |    "abc"    |       "a*b*c"       |
+    |     "ab"    |        "a*b"        |
+    |     "a"     |         "a"         |
+    |      ""     |          ""         |
+    |    "3.14"   |      "3*.*1*4"      |
     | "Chocolate" | "C*h*o*c*o*l*a*t*e" |
-    | "1234"      | "1*2*3*4"           |
+    |    "1234"   |      "1*2*3*4"      |
     |_____________|____________________*/
 
     public static final String allStar(String str)

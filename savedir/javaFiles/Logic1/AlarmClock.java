@@ -15,18 +15,18 @@ public final class AlarmClock
     /*_____________________________
     |          Testcases           |
     |______________________________|
-    | day   | vacation  | expected |
+    |  day  |  vacation | returns  |
     | (int) | (boolean) | (String) |
     |_______|___________|__________|
-    | 1     | false     | "7:00"   |
-    | 5     | false     | "7:00"   |
-    | 0     | false     | "10:00"  |
-    | 6     | false     | "10:00"  |
-    | 0     | true      | "off"    |
-    | 6     | true      | "off"    |
-    | 1     | true      | "10:00"  |
-    | 3     | true      | "10:00"  |
-    | 5     | true      | "10:00"  |
+    |   1   |   false   |  "7:00"  |
+    |   5   |   false   |  "7:00"  |
+    |   0   |   false   | "10:00"  |
+    |   6   |   false   | "10:00"  |
+    |   0   |    true   |  "off"   |
+    |   6   |    true   |  "off"   |
+    |   1   |    true   | "10:00"  |
+    |   3   |    true   | "10:00"  |
+    |   5   |    true   | "10:00"  |
     |_______|___________|_________*/
 
     public static final String alarmClock(int day, boolean vacation)

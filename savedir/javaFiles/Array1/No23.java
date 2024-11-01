@@ -11,20 +11,20 @@ public final class No23
     /*____________________
     |      Testcases      |
     |_____________________|
-    | nums    | expected  |
+    |   nums  |  returns  |
     | (int[]) | (boolean) |
     |_________|___________|
-    | {4, 5}  | true      |
-    | {4, 2}  | false     |
-    | {3, 5}  | false     |
-    | {1, 9}  | true      |
-    | {2, 9}  | false     |
-    | {1, 3}  | false     |
-    | {1, 1}  | true      |
-    | {2, 2}  | false     |
-    | {3, 3}  | false     |
-    | {7, 8}  | true      |
-    | {8, 7}  | true      |
+    | {4, 5}  |    true   |
+    | {4, 2}  |   false   |
+    | {3, 5}  |   false   |
+    | {1, 9}  |    true   |
+    | {2, 9}  |   false   |
+    | {1, 3}  |   false   |
+    | {1, 1}  |    true   |
+    | {2, 2}  |   false   |
+    | {3, 3}  |   false   |
+    | {7, 8}  |    true   |
+    | {8, 7}  |    true   |
     |_________|__________*/
 
     public static final boolean no23(int[] nums)

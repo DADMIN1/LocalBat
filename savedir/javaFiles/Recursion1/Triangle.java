@@ -10,21 +10,21 @@ public final class Triangle
     the next row down has 2 blocks, the next row has 3 blocks, 
     and so on. Compute recursively (no loops or multiplication) the total number of blocks in such a triangle with the given number of rows. */
 
-    /*_________________
-    |    Testcases     |
-    |__________________|
-    | rows  | expected |
-    | (int) | (int)    |
-    |_______|__________|
-    | 0     | 0        |
-    | 1     | 1        |
-    | 2     | 3        |
-    | 3     | 6        |
-    | 4     | 10       |
-    | 5     | 15       |
-    | 6     | 21       |
-    | 7     | 28       |
-    |_______|_________*/
+    /*________________
+    |    Testcases    |
+    |_________________|
+    |  rows | returns |
+    | (int) |  (int)  |
+    |_______|_________|
+    |   0   |    0    |
+    |   1   |    1    |
+    |   2   |    3    |
+    |   3   |    6    |
+    |   4   |    10   |
+    |   5   |    15   |
+    |   6   |    21   |
+    |   7   |    28   |
+    |_______|________*/
 
     public static final int triangle(int rows)
     {

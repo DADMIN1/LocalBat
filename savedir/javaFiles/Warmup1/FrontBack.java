@@ -11,17 +11,17 @@ public final class FrontBack
     /*__________________________
     |         Testcases         |
     |___________________________|
-    | str         | expected    |
-    | (String)    | (String)    |
+    |     str     |   returns   |
+    |   (String)  |   (String)  |
     |_____________|_____________|
-    | "code"      | "eodc"      |
-    | "a"         | "a"         |
-    | "ab"        | "ba"        |
-    | "abc"       | "cba"       |
-    | ""          | ""          |
+    |    "code"   |    "eodc"   |
+    |     "a"     |     "a"     |
+    |     "ab"    |     "ba"    |
+    |    "abc"    |    "cba"    |
+    |      ""     |      ""     |
     | "Chocolate" | "ehocolatC" |
-    | "aavJ"      | "Java"      |
-    | "hello"     | "oellh"     |
+    |    "aavJ"   |    "Java"   |
+    |   "hello"   |   "oellh"   |
     |_____________|____________*/
 
     public static final String frontBack(String str)

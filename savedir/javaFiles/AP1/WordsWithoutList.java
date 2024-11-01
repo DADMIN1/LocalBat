@@ -15,14 +15,14 @@ public final class WordsWithoutList
     /*________________________________________________________________
     |                            Testcases                            |
     |_________________________________________________________________|
-    | words (String[])              | len   | expected (List)         |
+    |        words (String[])       |  len  |      returns (List)     |
     |                               | (int) |                         |
     |_______________________________|_______|_________________________|
-    | {"a", "bb", "b", "ccc"}       | 1     | ["bb", "ccc"]           |
-    | {"a", "bb", "b", "ccc"}       | 3     | ["a", "bb", "b"]        |
-    | {"a", "bb", "b", "ccc"}       | 4     | ["a", "bb", "b", "ccc"] |
-    | {"xx", "yyy", "x", "yy", "z"} | 1     | ["xx", "yyy", "yy"]     |
-    | {"xx", "yyy", "x", "yy", "z"} | 2     | ["yyy", "x", "z"]       |
+    | {"a", "bb", "b", "ccc"}       |   1   | ["bb", "ccc"]           |
+    | {"a", "bb", "b", "ccc"}       |   3   | ["a", "bb", "b"]        |
+    | {"a", "bb", "b", "ccc"}       |   4   | ["a", "bb", "b", "ccc"] |
+    | {"xx", "yyy", "x", "yy", "z"} |   1   | ["xx", "yyy", "yy"]     |
+    | {"xx", "yyy", "x", "yy", "z"} |   2   | ["yyy", "x", "z"]       |
     |_______________________________|_______|________________________*/
 
     public static final List wordsWithoutList(String[] words, int len)

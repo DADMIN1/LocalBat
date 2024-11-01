@@ -15,17 +15,17 @@ public final class Split53
     /*________________________________
     |            Testcases            |
     |_________________________________|
-    | nums (int[])        | expected  |
+    |     nums (int[])    |  returns  |
     |                     | (boolean) |
     |_____________________|___________|
-    | {1, 1}              | true      |
-    | {1, 1, 1}           | false     |
-    | {2, 4, 2}           | true      |
-    | {2, 2, 2, 1}        | false     |
-    | {3, 3, 5, 1}        | true      |
-    | {3, 5, 8}           | false     |
-    | {2, 4, 6}           | true      |
-    | {3, 5, 6, 10, 3, 3} | true      |
+    | {1, 1}              |    true   |
+    | {1, 1, 1}           |   false   |
+    | {2, 4, 2}           |    true   |
+    | {2, 2, 2, 1}        |   false   |
+    | {3, 3, 5, 1}        |    true   |
+    | {3, 5, 8}           |   false   |
+    | {2, 4, 6}           |    true   |
+    | {3, 5, 6, 10, 3, 3} |    true   |
     |_____________________|__________*/
 
     public static final boolean split53(int[] nums)

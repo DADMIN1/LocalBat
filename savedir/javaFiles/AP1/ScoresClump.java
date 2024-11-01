@@ -13,18 +13,18 @@ public final class ScoresClump
     /*____________________________
     |          Testcases          |
     |_____________________________|
-    | scores (int[])  | expected  |
+    |  scores (int[]) |  returns  |
     |                 | (boolean) |
     |_________________|___________|
-    | {3, 4, 5}       | true      |
-    | {3, 4, 6}       | false     |
-    | {1, 3, 5, 5}    | true      |
-    | {2, 4, 5, 6}    | true      |
-    | {2, 4, 5, 7}    | false     |
-    | {2, 4, 4, 7}    | true      |
-    | {3, 3, 6, 7, 9} | false     |
-    | {3, 3, 7, 7, 9} | true      |
-    | {4, 5, 8}       | false     |
+    | {3, 4, 5}       |    true   |
+    | {3, 4, 6}       |   false   |
+    | {1, 3, 5, 5}    |    true   |
+    | {2, 4, 5, 6}    |    true   |
+    | {2, 4, 5, 7}    |   false   |
+    | {2, 4, 4, 7}    |    true   |
+    | {3, 3, 6, 7, 9} |   false   |
+    | {3, 3, 7, 7, 9} |    true   |
+    | {4, 5, 8}       |   false   |
     |_________________|__________*/
 
     public static final boolean scoresClump(int[] scores)

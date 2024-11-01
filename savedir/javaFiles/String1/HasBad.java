@@ -13,19 +13,19 @@ public final class HasBad
     /*______________________
     |       Testcases       |
     |_______________________|
-    | str       | expected  |
-    | (String)  | (boolean) |
+    |    str    |  returns  |
+    |  (String) | (boolean) |
     |___________|___________|
-    | "badxx"   | true      |
-    | "xbadxx"  | true      |
-    | "xxbadxx" | false     |
-    | "code"    | false     |
-    | "bad"     | true      |
-    | "ba"      | false     |
-    | "xba"     | false     |
-    | "xbad"    | true      |
-    | ""        | false     |
-    | "badyy"   | true      |
+    |  "badxx"  |    true   |
+    |  "xbadxx" |    true   |
+    | "xxbadxx" |   false   |
+    |   "code"  |   false   |
+    |   "bad"   |    true   |
+    |    "ba"   |   false   |
+    |   "xba"   |   false   |
+    |   "xbad"  |    true   |
+    |     ""    |   false   |
+    |  "badyy"  |    true   |
     |___________|__________*/
 
     public static final boolean hasBad(String str)

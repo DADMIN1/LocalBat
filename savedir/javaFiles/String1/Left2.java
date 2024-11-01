@@ -12,17 +12,17 @@ public final class Left2
     /*__________________________
     |         Testcases         |
     |___________________________|
-    | str         | expected    |
-    | (String)    | (String)    |
+    |     str     |   returns   |
+    |   (String)  |   (String)  |
     |_____________|_____________|
-    | "Hello"     | "lloHe"     |
-    | "java"      | "vaja"      |
-    | "Hi"        | "Hi"        |
-    | "code"      | "deco"      |
-    | "cat"       | "tca"       |
-    | "12345"     | "34512"     |
+    |   "Hello"   |   "lloHe"   |
+    |    "java"   |    "vaja"   |
+    |     "Hi"    |     "Hi"    |
+    |    "code"   |    "deco"   |
+    |    "cat"    |    "tca"    |
+    |   "12345"   |   "34512"   |
     | "Chocolate" | "ocolateCh" |
-    | "bricks"    | "icksbr"    |
+    |   "bricks"  |   "icksbr"  |
     |_____________|____________*/
 
     public static final String left2(String str)

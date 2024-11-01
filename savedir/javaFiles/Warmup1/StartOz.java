@@ -13,21 +13,21 @@ public final class StartOz
     /*________________________
     |        Testcases        |
     |_________________________|
-    | str (String) | expected |
+    | str (String) | returns  |
     |              | (String) |
     |______________|__________|
-    | "ozymandias" | "oz"     |
-    | "bzoo"       | "z"      |
-    | "oxx"        | "o"      |
-    | "oz"         | "oz"     |
-    | "ounce"      | "o"      |
-    | "o"          | "o"      |
-    | "abc"        | ""       |
-    | ""           | ""       |
-    | "zoo"        | ""       |
-    | "aztec"      | "z"      |
-    | "zzzz"       | "z"      |
-    | "oznic"      | "oz"     |
+    | "ozymandias" |   "oz"   |
+    |    "bzoo"    |   "z"    |
+    |    "oxx"     |   "o"    |
+    |     "oz"     |   "oz"   |
+    |   "ounce"    |   "o"    |
+    |     "o"      |   "o"    |
+    |    "abc"     |    ""    |
+    |      ""      |    ""    |
+    |    "zoo"     |    ""    |
+    |   "aztec"    |   "z"    |
+    |    "zzzz"    |   "z"    |
+    |   "oznic"    |   "oz"   |
     |______________|_________*/
 
     public static final String startOz(String str)

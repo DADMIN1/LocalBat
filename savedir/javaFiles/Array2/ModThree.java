@@ -11,21 +11,21 @@ public final class ModThree
     /*__________________________________
     |             Testcases             |
     |___________________________________|
-    | nums (int[])          | expected  |
+    |      nums (int[])     |  returns  |
     |                       | (boolean) |
     |_______________________|___________|
-    | {2, 1, 3, 5}          | true      |
-    | {2, 1, 2, 5}          | false     |
-    | {2, 4, 2, 5}          | true      |
-    | {1, 2, 1, 2, 1}       | false     |
-    | {9, 9, 9}             | true      |
-    | {1, 2, 1}             | false     |
-    | {1, 2}                | false     |
-    | {1}                   | false     |
-    | {}                    | false     |
-    | {9, 7, 2, 9}          | false     |
-    | {9, 7, 2, 9, 2, 2}    | false     |
-    | {9, 7, 2, 9, 2, 2, 6} | true      |
+    | {2, 1, 3, 5}          |    true   |
+    | {2, 1, 2, 5}          |   false   |
+    | {2, 4, 2, 5}          |    true   |
+    | {1, 2, 1, 2, 1}       |   false   |
+    | {9, 9, 9}             |    true   |
+    | {1, 2, 1}             |   false   |
+    | {1, 2}                |   false   |
+    | {1}                   |   false   |
+    | {}                    |   false   |
+    | {9, 7, 2, 9}          |   false   |
+    | {9, 7, 2, 9, 2, 2}    |   false   |
+    | {9, 7, 2, 9, 2, 2, 6} |    true   |
     |_______________________|__________*/
 
     public static final boolean modThree(int[] nums)

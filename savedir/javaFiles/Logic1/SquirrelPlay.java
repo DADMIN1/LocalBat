@@ -14,22 +14,22 @@ public final class SquirrelPlay
     /*______________________________
     |           Testcases           |
     |_______________________________|
-    | temp  | isSummer  | expected  |
+    |  temp |  isSummer |  returns  |
     | (int) | (boolean) | (boolean) |
     |_______|___________|___________|
-    | 70    | false     | true      |
-    | 95    | false     | false     |
-    | 95    | true      | true      |
-    | 90    | false     | true      |
-    | 90    | true      | true      |
-    | 50    | false     | false     |
-    | 50    | true      | false     |
-    | 100   | false     | false     |
-    | 100   | true      | true      |
-    | 105   | true      | false     |
-    | 59    | false     | false     |
-    | 59    | true      | false     |
-    | 60    | false     | true      |
+    |   70  |   false   |    true   |
+    |   95  |   false   |   false   |
+    |   95  |    true   |    true   |
+    |   90  |   false   |    true   |
+    |   90  |    true   |    true   |
+    |   50  |   false   |   false   |
+    |   50  |    true   |   false   |
+    |  100  |   false   |   false   |
+    |  100  |    true   |    true   |
+    |  105  |    true   |   false   |
+    |   59  |   false   |   false   |
+    |   59  |    true   |   false   |
+    |   60  |   false   |    true   |
     |_______|___________|__________*/
 
     public static final boolean squirrelPlay(int temp, boolean isSummer)

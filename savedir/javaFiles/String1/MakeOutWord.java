@@ -13,14 +13,14 @@ public final class MakeOutWord
     /*___________________________________
     |             Testcases              |
     |____________________________________|
-    | out      | word     | expected     |
-    | (String) | (String) | (String)     |
+    |   out    |   word   |   returns    |
+    | (String) | (String) |   (String)   |
     |__________|__________|______________|
-    | "<<>>"   | "Yay"    | "<<Yay>>"    |
-    | "<<>>"   | "WooHoo" | "<<WooHoo>>" |
-    | "[[]]"   | "word"   | "[[word]]"   |
-    | "HHoo"   | "Hello"  | "HHHellooo"  |
-    | "abyz"   | "YAY"    | "abYAYyz"    |
+    |  "<<>>"  |  "Yay"   |  "<<Yay>>"   |
+    |  "<<>>"  | "WooHoo" | "<<WooHoo>>" |
+    |  "[[]]"  |  "word"  |  "[[word]]"  |
+    |  "HHoo"  | "Hello"  | "HHHellooo"  |
+    |  "abyz"  |  "YAY"   |  "abYAYyz"   |
     |__________|__________|_____________*/
 
     public static final String makeOutWord(String out, String word)

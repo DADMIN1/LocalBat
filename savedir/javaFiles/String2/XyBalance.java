@@ -13,27 +13,27 @@ public final class XyBalance
     /*______________________________
     |           Testcases           |
     |_______________________________|
-    | str (String)      | expected  |
+    |    str (String)   |  returns  |
     |                   | (boolean) |
     |___________________|___________|
-    | "aaxbby"          | true      |
-    | "aaxbb"           | false     |
-    | "yaaxbb"          | false     |
-    | "yaaxbby"         | true      |
-    | "xaxxbby"         | true      |
-    | "xaxxbbyx"        | false     |
-    | "xxbxy"           | true      |
-    | "xxbx"            | false     |
-    | "bbb"             | true      |
-    | "bxbb"            | false     |
-    | "bxyb"            | true      |
-    | "xy"              | true      |
-    | "y"               | true      |
-    | "x"               | false     |
-    | ""                | true      |
-    | "yxyxyxyx"        | false     |
-    | "yxyxyxyxy"       | true      |
-    | "12xabxxydxyxyzz" | true      |
+    |      "aaxbby"     |    true   |
+    |      "aaxbb"      |   false   |
+    |      "yaaxbb"     |   false   |
+    |     "yaaxbby"     |    true   |
+    |     "xaxxbby"     |    true   |
+    |     "xaxxbbyx"    |   false   |
+    |      "xxbxy"      |    true   |
+    |       "xxbx"      |   false   |
+    |       "bbb"       |    true   |
+    |       "bxbb"      |   false   |
+    |       "bxyb"      |    true   |
+    |        "xy"       |    true   |
+    |        "y"        |    true   |
+    |        "x"        |   false   |
+    |         ""        |    true   |
+    |     "yxyxyxyx"    |   false   |
+    |    "yxyxyxyxy"    |    true   |
+    | "12xabxxydxyxyzz" |    true   |
     |___________________|__________*/
 
     public static final boolean xyBalance(String str)

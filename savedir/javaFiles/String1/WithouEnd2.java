@@ -12,15 +12,15 @@ public final class WithouEnd2
     /*________________________
     |        Testcases        |
     |_________________________|
-    | str         | expected  |
-    | (String)    | (String)  |
+    |     str     |  returns  |
+    |   (String)  |  (String) |
     |_____________|___________|
-    | "Hello"     | "ell"     |
-    | "abc"       | "b"       |
-    | "ab"        | ""        |
-    | "a"         | ""        |
-    | ""          | ""        |
-    | "coldy"     | "old"     |
+    |   "Hello"   |   "ell"   |
+    |    "abc"    |    "b"    |
+    |     "ab"    |     ""    |
+    |     "a"     |     ""    |
+    |      ""     |     ""    |
+    |   "coldy"   |   "old"   |
     | "java code" | "ava cod" |
     |_____________|__________*/
 

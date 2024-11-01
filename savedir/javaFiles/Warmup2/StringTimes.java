@@ -8,23 +8,23 @@ public final class StringTimes
 {
     /* Given a string and a non-negative int n, return a larger string that is n copies of the original string. */
 
-    /*_____________________________________
-    |              Testcases               |
-    |______________________________________|
-    | str       | n     | expected         |
-    | (String)  | (int) | (String)         |
-    |___________|_______|__________________|
-    | "Hi"      | 2     | "HiHi"           |
-    | "Hi"      | 3     | "HiHiHi"         |
-    | "Hi"      | 1     | "Hi"             |
-    | "Hi"      | 0     | ""               |
-    | "Hi"      | 5     | "HiHiHiHiHi"     |
-    | "Oh Boy!" | 2     | "Oh Boy!Oh Boy!" |
-    | "x"       | 4     | "xxxx"           |
-    | ""        | 4     | ""               |
-    | "code"    | 2     | "codecode"       |
-    | "code"    | 3     | "codecodecode"   |
-    |___________|_______|_________________*/
+    /*_______________________________________
+    |               Testcases                |
+    |________________________________________|
+    |    str    | n (int) | returns (String) |
+    |  (String) |         |                  |
+    |___________|_________|__________________|
+    |    "Hi"   |    2    |      "HiHi"      |
+    |    "Hi"   |    3    |     "HiHiHi"     |
+    |    "Hi"   |    1    |       "Hi"       |
+    |    "Hi"   |    0    |        ""        |
+    |    "Hi"   |    5    |   "HiHiHiHiHi"   |
+    | "Oh Boy!" |    2    | "Oh Boy!Oh Boy!" |
+    |    "x"    |    4    |      "xxxx"      |
+    |     ""    |    4    |        ""        |
+    |   "code"  |    2    |    "codecode"    |
+    |   "code"  |    3    |  "codecodecode"  |
+    |___________|_________|_________________*/
 
     public static final String stringTimes(String str, int n)
     {

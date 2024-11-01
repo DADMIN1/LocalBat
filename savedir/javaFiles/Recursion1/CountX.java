@@ -8,21 +8,21 @@ public final class CountX
 {
     /* Given a string, compute recursively (no loops) the number of lowercase 'x' chars in the string. */
 
-    /*________________________
-    |        Testcases        |
-    |_________________________|
-    | str (String) | expected |
-    |              | (int)    |
-    |______________|__________|
-    | "xxhixx"     | 4        |
-    | "xhixhix"    | 3        |
-    | "hi"         | 0        |
-    | "h"          | 0        |
-    | "x"          | 1        |
-    | ""           | 0        |
-    | "hihi"       | 0        |
-    | "hiAAhi12hi" | 0        |
-    |______________|_________*/
+    /*_______________________
+    |       Testcases        |
+    |________________________|
+    | str (String) | returns |
+    |              |  (int)  |
+    |______________|_________|
+    |   "xxhixx"   |    4    |
+    |  "xhixhix"   |    3    |
+    |     "hi"     |    0    |
+    |     "h"      |    0    |
+    |     "x"      |    1    |
+    |      ""      |    0    |
+    |    "hihi"    |    0    |
+    | "hiAAhi12hi" |    0    |
+    |______________|________*/
 
     public static final int countX(String str)
     {

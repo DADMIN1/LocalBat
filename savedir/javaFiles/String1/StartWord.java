@@ -16,24 +16,24 @@ public final class StartWord
     /*_______________________________
     |           Testcases            |
     |________________________________|
-    | str      | word     | expected |
+    |   str    |   word   | returns  |
     | (String) | (String) | (String) |
     |__________|__________|__________|
-    | "hippo"  | "hi"     | "hi"     |
-    | "hippo"  | "xip"    | "hip"    |
-    | "hippo"  | "i"      | "h"      |
-    | "hippo"  | "ix"     | ""       |
-    | "h"      | "ix"     | ""       |
-    | ""       | "i"      | ""       |
-    | "hip"    | "zi"     | "hi"     |
-    | "hip"    | "zip"    | "hip"    |
-    | "hip"    | "zig"    | ""       |
-    | "h"      | "z"      | "h"      |
+    | "hippo"  |   "hi"   |   "hi"   |
+    | "hippo"  |  "xip"   |  "hip"   |
+    | "hippo"  |   "i"    |   "h"    |
+    | "hippo"  |   "ix"   |    ""    |
+    |   "h"    |   "ix"   |    ""    |
+    |    ""    |   "i"    |    ""    |
+    |  "hip"   |   "zi"   |   "hi"   |
+    |  "hip"   |  "zip"   |  "hip"   |
+    |  "hip"   |  "zig"   |    ""    |
+    |   "h"    |   "z"    |   "h"    |
     | "hippo"  | "xippo"  | "hippo"  |
-    | "hippo"  | "xyz"    | ""       |
-    | "hippo"  | "hip"    | "hip"    |
-    | "kitten" | "cit"    | "kit"    |
-    | "kit"    | "cit"    | "kit"    |
+    | "hippo"  |  "xyz"   |    ""    |
+    | "hippo"  |  "hip"   |  "hip"   |
+    | "kitten" |  "cit"   |  "kit"   |
+    |  "kit"   |  "cit"   |  "kit"   |
     |__________|__________|_________*/
 
     public static final String startWord(String str, String word)

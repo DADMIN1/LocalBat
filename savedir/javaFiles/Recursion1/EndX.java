@@ -11,21 +11,21 @@ public final class EndX
     /*______________________
     |       Testcases       |
     |_______________________|
-    | str       | expected  |
-    | (String)  | (String)  |
+    |    str    |  returns  |
+    |  (String) |  (String) |
     |___________|___________|
-    | "xxre"    | "rexx"    |
-    | "xxhixx"  | "hixxxx"  |
+    |   "xxre"  |   "rexx"  |
+    |  "xxhixx" |  "hixxxx" |
     | "xhixhix" | "hihixxx" |
-    | "hiy"     | "hiy"     |
-    | "h"       | "h"       |
-    | "x"       | "x"       |
-    | "xx"      | "xx"      |
-    | ""        | ""        |
-    | "bxx"     | "bxx"     |
-    | "bxax"    | "baxx"    |
-    | "axaxax"  | "aaaxxx"  |
-    | "xxhxi"   | "hixxx"   |
+    |   "hiy"   |   "hiy"   |
+    |    "h"    |    "h"    |
+    |    "x"    |    "x"    |
+    |    "xx"   |    "xx"   |
+    |     ""    |     ""    |
+    |   "bxx"   |   "bxx"   |
+    |   "bxax"  |   "baxx"  |
+    |  "axaxax" |  "aaaxxx" |
+    |  "xxhxi"  |  "hixxx"  |
     |___________|__________*/
 
     public static final String endX(String str)

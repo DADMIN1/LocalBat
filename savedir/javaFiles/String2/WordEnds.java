@@ -14,22 +14,22 @@ public final class WordEnds
     /*______________________________________
     |               Testcases               |
     |_______________________________________|
-    | str (String)    | word     | expected |
+    |   str (String)  |   word   | returns  |
     |                 | (String) | (String) |
     |_________________|__________|__________|
-    | "abcXY123XYijk" | "XY"     | "c13i"   |
-    | "XY123XY"       | "XY"     | "13"     |
-    | "XY1XY"         | "XY"     | "11"     |
-    | "XYXY"          | "XY"     | "XY"     |
-    | "XY"            | "XY"     | ""       |
-    | "Hi"            | "XY"     | ""       |
-    | ""              | "XY"     | ""       |
-    | "abc1xyz1i1j"   | "1"      | "cxziij" |
-    | "abc1xyz1"      | "1"      | "cxz"    |
-    | "abc1xyz11"     | "1"      | "cxz11"  |
-    | "abc1xyz1abc"   | "abc"    | "11"     |
-    | "abc1xyz1abc"   | "b"      | "acac"   |
-    | "abc1abc1abc"   | "abc"    | "1111"   |
+    | "abcXY123XYijk" |   "XY"   |  "c13i"  |
+    |    "XY123XY"    |   "XY"   |   "13"   |
+    |     "XY1XY"     |   "XY"   |   "11"   |
+    |      "XYXY"     |   "XY"   |   "XY"   |
+    |       "XY"      |   "XY"   |    ""    |
+    |       "Hi"      |   "XY"   |    ""    |
+    |        ""       |   "XY"   |    ""    |
+    |  "abc1xyz1i1j"  |   "1"    | "cxziij" |
+    |    "abc1xyz1"   |   "1"    |  "cxz"   |
+    |   "abc1xyz11"   |   "1"    | "cxz11"  |
+    |  "abc1xyz1abc"  |  "abc"   |   "11"   |
+    |  "abc1xyz1abc"  |   "b"    |  "acac"  |
+    |  "abc1abc1abc"  |  "abc"   |  "1111"  |
     |_________________|__________|_________*/
 
     public static final String wordEnds(String str, String word)

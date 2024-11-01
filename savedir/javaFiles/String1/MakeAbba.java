@@ -8,22 +8,21 @@ public final class MakeAbba
 {
     /* Given two strings, a and b, return the result of putting them together in the order abba, e.g. "Hi" and "Bye" returns "HiByeByeHi". */
 
-    /*_______________________________________
-    |               Testcases                |
-    |________________________________________|
-    | a        | b        | expected         |
-    | (String) | (String) | (String)         |
-    |__________|__________|__________________|
-    | "Hi"     | "Bye"    | "HiByeByeHi"     |
-    | "Yo"     | "Alice"  | "YoAliceAliceYo" |
-    | "What"   | "Up"     | "WhatUpUpWhat"   |
-    | "aaa"    | "bbb"    | "aaabbbbbbaaa"   |
-    | "x"      | "y"      | "xyyx"           |
-    | "x"      | ""       | "xx"             |
-    | ""       | "y"      | "yy"             |
-    | "Bo"     | "Ya"     | "BoYaYaBo"       |
-    | "Ya"     | "Ya"     | "YaYaYaYa"       |
-    |__________|__________|_________________*/
+    /*___________________________________________
+    |                 Testcases                  |
+    |____________________________________________|
+    | a (String) | b (String) | returns (String) |
+    |____________|____________|__________________|
+    |    "Hi"    |   "Bye"    |   "HiByeByeHi"   |
+    |    "Yo"    |  "Alice"   | "YoAliceAliceYo" |
+    |   "What"   |    "Up"    |  "WhatUpUpWhat"  |
+    |   "aaa"    |   "bbb"    |  "aaabbbbbbaaa"  |
+    |    "x"     |    "y"     |      "xyyx"      |
+    |    "x"     |     ""     |       "xx"       |
+    |     ""     |    "y"     |       "yy"       |
+    |    "Bo"    |    "Ya"    |    "BoYaYaBo"    |
+    |    "Ya"    |    "Ya"    |    "YaYaYaYa"    |
+    |____________|____________|_________________*/
 
     public static final String makeAbba(String a, String b)
     {

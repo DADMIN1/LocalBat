@@ -11,23 +11,23 @@ public final class More14
     /*_______________________________
     |           Testcases            |
     |________________________________|
-    | nums (int[])       | expected  |
+    |    nums (int[])    |  returns  |
     |                    | (boolean) |
     |____________________|___________|
-    | {1, 4, 1}          | true      |
-    | {1, 4, 1, 4}       | false     |
-    | {1, 1}             | true      |
-    | {1, 6, 6}          | true      |
-    | {1}                | true      |
-    | {1, 4}             | false     |
-    | {6, 1, 1}          | true      |
-    | {1, 6, 4}          | false     |
-    | {1, 1, 4, 4, 1}    | true      |
-    | {1, 1, 6, 4, 4, 1} | true      |
-    | {}                 | false     |
-    | {4, 1, 4, 6}       | false     |
-    | {4, 1, 4, 6, 1}    | false     |
-    | {1, 4, 1, 4, 1, 6} | true      |
+    | {1, 4, 1}          |    true   |
+    | {1, 4, 1, 4}       |   false   |
+    | {1, 1}             |    true   |
+    | {1, 6, 6}          |    true   |
+    | {1}                |    true   |
+    | {1, 4}             |   false   |
+    | {6, 1, 1}          |    true   |
+    | {1, 6, 4}          |   false   |
+    | {1, 1, 4, 4, 1}    |    true   |
+    | {1, 1, 6, 4, 4, 1} |    true   |
+    | {}                 |   false   |
+    | {4, 1, 4, 6}       |   false   |
+    | {4, 1, 4, 6, 1}    |   false   |
+    | {1, 4, 1, 4, 1, 6} |    true   |
     |____________________|__________*/
 
     public static final boolean more14(int[] nums)

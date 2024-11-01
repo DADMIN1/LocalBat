@@ -10,19 +10,19 @@ public final class ConCat
     However, if the concatenation creates a double-char, then omit one of the chars, 
     so "abc" and "cat" yields "abcat". */
 
-    /*_________________________________
-    |            Testcases             |
-    |__________________________________|
-    | a        | b        | expected   |
-    | (String) | (String) | (String)   |
-    |__________|__________|____________|
-    | "abc"    | "cat"    | "abcat"    |
-    | "dog"    | "cat"    | "dogcat"   |
-    | "abc"    | ""       | "abc"      |
-    | ""       | "cat"    | "cat"      |
-    | "pig"    | "g"      | "pig"      |
-    | "pig"    | "doggy"  | "pigdoggy" |
-    |__________|__________|___________*/
+    /*_____________________________________
+    |              Testcases               |
+    |______________________________________|
+    | a (String) | b (String) |  returns   |
+    |            |            |  (String)  |
+    |____________|____________|____________|
+    |   "abc"    |   "cat"    |  "abcat"   |
+    |   "dog"    |   "cat"    |  "dogcat"  |
+    |   "abc"    |     ""     |   "abc"    |
+    |     ""     |   "cat"    |   "cat"    |
+    |   "pig"    |    "g"     |   "pig"    |
+    |   "pig"    |  "doggy"   | "pigdoggy" |
+    |____________|____________|___________*/
 
     public static final String conCat(String a, String b)
     {

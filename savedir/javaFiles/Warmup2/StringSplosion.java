@@ -11,19 +11,19 @@ public final class StringSplosion
     /*___________________________________
     |             Testcases              |
     |____________________________________|
-    | str      | expected (String)       |
+    |   str    |     returns (String)    |
     | (String) |                         |
     |__________|_________________________|
-    | "Code"   | "CCoCodCode"            |
-    | "abc"    | "aababc"                |
-    | "ab"     | "aab"                   |
-    | "x"      | "x"                     |
-    | "fade"   | "ffafadfade"            |
-    | "There"  | "TThTheTherThere"       |
+    |  "Code"  |       "CCoCodCode"      |
+    |  "abc"   |         "aababc"        |
+    |   "ab"   |          "aab"          |
+    |   "x"    |           "x"           |
+    |  "fade"  |       "ffafadfade"      |
+    | "There"  |    "TThTheTherThere"    |
     | "Kitten" | "KKiKitKittKitteKitten" |
-    | "Bye"    | "BByBye"                |
-    | "Good"   | "GGoGooGood"            |
-    | "Bad"    | "BBaBad"                |
+    |  "Bye"   |         "BByBye"        |
+    |  "Good"  |       "GGoGooGood"      |
+    |  "Bad"   |         "BBaBad"        |
     |__________|________________________*/
 
     public static final String stringSplosion(String str)

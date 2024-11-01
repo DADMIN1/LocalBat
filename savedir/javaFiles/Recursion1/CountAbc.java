@@ -8,25 +8,25 @@ public final class CountAbc
 {
     /* Count recursively the total number of "abc" and "aba" substrings that appear in the given string. */
 
-    /*______________________
-    |       Testcases       |
-    |_______________________|
-    | str        | expected |
-    | (String)   | (int)    |
-    |____________|__________|
-    | "abc"      | 1        |
-    | "abcxxabc" | 2        |
-    | "abaxxaba" | 2        |
-    | "ababc"    | 2        |
-    | "abxbc"    | 0        |
-    | "aaabc"    | 1        |
-    | "hello"    | 0        |
-    | ""         | 0        |
-    | "ab"       | 0        |
-    | "aba"      | 1        |
-    | "aca"      | 0        |
-    | "aaa"      | 0        |
-    |____________|_________*/
+    /*_____________________
+    |      Testcases       |
+    |______________________|
+    |    str     | returns |
+    |  (String)  |  (int)  |
+    |____________|_________|
+    |   "abc"    |    1    |
+    | "abcxxabc" |    2    |
+    | "abaxxaba" |    2    |
+    |  "ababc"   |    2    |
+    |  "abxbc"   |    0    |
+    |  "aaabc"   |    1    |
+    |  "hello"   |    0    |
+    |     ""     |    0    |
+    |    "ab"    |    0    |
+    |   "aba"    |    1    |
+    |   "aca"    |    0    |
+    |   "aaa"    |    0    |
+    |____________|________*/
 
     public static final int countAbc(String str)
     {

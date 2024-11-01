@@ -11,19 +11,19 @@ public final class MinCat
     omit chars from the longer string so it is the same length as the shorter string. 
     So "Hello" and "Hi" yield "loHi". The strings may be any length. */
 
-    /*_________________________________
-    |            Testcases             |
-    |__________________________________|
-    | a        | b        | expected   |
-    | (String) | (String) | (String)   |
-    |__________|__________|____________|
-    | "Hello"  | "Hi"     | "loHi"     |
-    | "Hello"  | "java"   | "ellojava" |
-    | "java"   | "Hello"  | "javaello" |
-    | "abc"    | "x"      | "cx"       |
-    | "x"      | "abc"    | "xc"       |
-    | "abc"    | ""       | ""         |
-    |__________|__________|___________*/
+    /*_____________________________________
+    |              Testcases               |
+    |______________________________________|
+    | a (String) | b (String) |  returns   |
+    |            |            |  (String)  |
+    |____________|____________|____________|
+    |  "Hello"   |    "Hi"    |   "loHi"   |
+    |  "Hello"   |   "java"   | "ellojava" |
+    |   "java"   |  "Hello"   | "javaello" |
+    |   "abc"    |    "x"     |    "cx"    |
+    |    "x"     |   "abc"    |    "xc"    |
+    |   "abc"    |     ""     |     ""     |
+    |____________|____________|___________*/
 
     public static final String minCat(String a, String b)
     {

@@ -13,15 +13,15 @@ public final class ExtraFront
     /*____________________
     |      Testcases      |
     |_____________________|
-    | str      | expected |
+    |   str    | returns  |
     | (String) | (String) |
     |__________|__________|
     | "Hello"  | "HeHeHe" |
-    | "ab"     | "ababab" |
-    | "H"      | "HHH"    |
-    | ""       | ""       |
+    |   "ab"   | "ababab" |
+    |   "H"    |  "HHH"   |
+    |    ""    |    ""    |
     | "Candy"  | "CaCaCa" |
-    | "Code"   | "CoCoCo" |
+    |  "Code"  | "CoCoCo" |
     |__________|_________*/
 
     public static final String extraFront(String str)

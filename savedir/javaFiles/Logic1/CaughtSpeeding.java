@@ -13,25 +13,25 @@ public final class CaughtSpeeding
     the result is 1. If speed is 81 or more, the result is 2. 
     Unless it is your birthday -- on that day, your speed can be 5 higher in all cases. */
 
-    /*______________________________
-    |           Testcases           |
-    |_______________________________|
-    | speed | isBirthday | expected |
-    | (int) | (boolean)  | (int)    |
-    |_______|____________|__________|
-    | 60    | false      | 0        |
-    | 65    | false      | 1        |
-    | 65    | true       | 0        |
-    | 80    | false      | 1        |
-    | 85    | false      | 2        |
-    | 85    | true       | 1        |
-    | 70    | false      | 1        |
-    | 75    | false      | 1        |
-    | 75    | true       | 1        |
-    | 40    | false      | 0        |
-    | 40    | true       | 0        |
-    | 90    | false      | 2        |
-    |_______|____________|_________*/
+    /*_____________________________
+    |          Testcases           |
+    |______________________________|
+    | speed | isBirthday | returns |
+    | (int) | (boolean)  |  (int)  |
+    |_______|____________|_________|
+    |   60  |   false    |    0    |
+    |   65  |   false    |    1    |
+    |   65  |    true    |    0    |
+    |   80  |   false    |    1    |
+    |   85  |   false    |    2    |
+    |   85  |    true    |    1    |
+    |   70  |   false    |    1    |
+    |   75  |   false    |    1    |
+    |   75  |    true    |    1    |
+    |   40  |   false    |    0    |
+    |   40  |    true    |    0    |
+    |   90  |   false    |    2    |
+    |_______|____________|________*/
 
     public static final int caughtSpeeding(int speed, boolean isBirthday)
     {

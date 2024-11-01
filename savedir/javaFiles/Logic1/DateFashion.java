@@ -14,25 +14,25 @@ public final class DateFashion
     then the result is 2 (yes). With the exception that if either of you has style of 2 or less, 
     then the result is 0 (no). Otherwise the result is 1 (maybe). */
 
-    /*_________________________
-    |        Testcases         |
-    |__________________________|
-    | you   | date  | expected |
-    | (int) | (int) | (int)    |
-    |_______|_______|__________|
-    | 5     | 10    | 2        |
-    | 5     | 2     | 0        |
-    | 5     | 5     | 1        |
-    | 3     | 3     | 1        |
-    | 10    | 2     | 0        |
-    | 2     | 9     | 0        |
-    | 9     | 9     | 2        |
-    | 10    | 5     | 2        |
-    | 2     | 2     | 0        |
-    | 3     | 7     | 1        |
-    | 2     | 7     | 0        |
-    | 6     | 2     | 0        |
-    |_______|_______|_________*/
+    /*________________________
+    |        Testcases        |
+    |_________________________|
+    |  you  |  date | returns |
+    | (int) | (int) |  (int)  |
+    |_______|_______|_________|
+    |   5   |   10  |    2    |
+    |   5   |   2   |    0    |
+    |   5   |   5   |    1    |
+    |   3   |   3   |    1    |
+    |   10  |   2   |    0    |
+    |   2   |   9   |    0    |
+    |   9   |   9   |    2    |
+    |   10  |   5   |    2    |
+    |   2   |   2   |    0    |
+    |   3   |   7   |    1    |
+    |   2   |   7   |    0    |
+    |   6   |   2   |    0    |
+    |_______|_______|________*/
 
     public static final int dateFashion(int you, int date)
     {

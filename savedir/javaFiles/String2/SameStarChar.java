@@ -12,25 +12,25 @@ public final class SameStarChar
     /*_________________________
     |        Testcases         |
     |__________________________|
-    | str (String) | expected  |
+    | str (String) |  returns  |
     |              | (boolean) |
     |______________|___________|
-    | "xy*yzz"     | true      |
-    | "xy*zzz"     | false     |
-    | "*xa*az"     | true      |
-    | "*xa*bz"     | false     |
-    | "*xa*a*"     | true      |
-    | ""           | true      |
-    | "*xa*a*a"    | true      |
-    | "*xa*a*b"    | false     |
-    | "*12*2*2"    | true      |
-    | "12*2*3*"    | false     |
-    | "abcDEF"     | true      |
-    | "XY*YYYY*Z*" | false     |
-    | "XY*YYYY*Y*" | true      |
-    | "12*2*3*"    | false     |
-    | "*"          | true      |
-    | "**"         | true      |
+    |   "xy*yzz"   |    true   |
+    |   "xy*zzz"   |   false   |
+    |   "*xa*az"   |    true   |
+    |   "*xa*bz"   |   false   |
+    |   "*xa*a*"   |    true   |
+    |      ""      |    true   |
+    |  "*xa*a*a"   |    true   |
+    |  "*xa*a*b"   |   false   |
+    |  "*12*2*2"   |    true   |
+    |  "12*2*3*"   |   false   |
+    |   "abcDEF"   |    true   |
+    | "XY*YYYY*Z*" |   false   |
+    | "XY*YYYY*Y*" |    true   |
+    |  "12*2*3*"   |   false   |
+    |     "*"      |    true   |
+    |     "**"     |    true   |
     |______________|__________*/
 
     public static final boolean sameStarChar(String str)

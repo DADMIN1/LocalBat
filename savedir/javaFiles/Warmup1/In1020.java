@@ -8,20 +8,20 @@ public final class In1020
 {
     /* Given 2 int values, return true if either of them is in the range 10..20 inclusive. */
 
-    /*__________________________
-    |         Testcases         |
-    |___________________________|
-    | a     | b     | expected  |
-    | (int) | (int) | (boolean) |
-    |_______|_______|___________|
-    | 12    | 99    | true      |
-    | 21    | 12    | true      |
-    | 8     | 99    | false     |
-    | 99    | 10    | true      |
-    | 20    | 20    | true      |
-    | 21    | 21    | false     |
-    | 9     | 9     | false     |
-    |_______|_______|__________*/
+    /*______________________________
+    |           Testcases           |
+    |_______________________________|
+    | a (int) | b (int) |  returns  |
+    |         |         | (boolean) |
+    |_________|_________|___________|
+    |    12   |    99   |    true   |
+    |    21   |    12   |    true   |
+    |    8    |    99   |   false   |
+    |    99   |    10   |    true   |
+    |    20   |    20   |    true   |
+    |    21   |    21   |   false   |
+    |    9    |    9    |   false   |
+    |_________|_________|__________*/
 
     public static final boolean in1020(int a, int b)
     {

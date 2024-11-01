@@ -9,25 +9,25 @@ public final class Diff21
     /* Given an int n, return the absolute difference between n and 21, 
     except return double the absolute difference if n is over 21. */
 
-    /*_________________
-    |    Testcases     |
-    |__________________|
-    | n     | expected |
-    | (int) | (int)    |
-    |_______|__________|
-    | 19    | 2        |
-    | 10    | 11       |
-    | 21    | 0        |
-    | 22    | 2        |
-    | 25    | 8        |
-    | 30    | 18       |
-    | 0     | 21       |
-    | 1     | 20       |
-    | 2     | 19       |
-    | -1    | 22       |
-    | -2    | 23       |
-    | 50    | 58       |
-    |_______|_________*/
+    /*__________________
+    |     Testcases     |
+    |___________________|
+    | n (int) | returns |
+    |         |  (int)  |
+    |_________|_________|
+    |    19   |    2    |
+    |    10   |    11   |
+    |    21   |    0    |
+    |    22   |    2    |
+    |    25   |    8    |
+    |    30   |    18   |
+    |    0    |    21   |
+    |    1    |    20   |
+    |    2    |    19   |
+    |    -1   |    22   |
+    |    -2   |    23   |
+    |    50   |    58   |
+    |_________|________*/
 
     public static final int diff21(int n)
     {

@@ -12,18 +12,18 @@ public final class Double23
     /*____________________
     |      Testcases      |
     |_____________________|
-    | nums    | expected  |
+    |   nums  |  returns  |
     | (int[]) | (boolean) |
     |_________|___________|
-    | {2, 2}  | true      |
-    | {3, 3}  | true      |
-    | {2, 3}  | false     |
-    | {3, 2}  | false     |
-    | {4, 5}  | false     |
-    | {2}     | false     |
-    | {3}     | false     |
-    | {}      | false     |
-    | {3, 4}  | false     |
+    | {2, 2}  |    true   |
+    | {3, 3}  |    true   |
+    | {2, 3}  |   false   |
+    | {3, 2}  |   false   |
+    | {4, 5}  |   false   |
+    | {2}     |   false   |
+    | {3}     |   false   |
+    | {}      |   false   |
+    | {3, 4}  |   false   |
     |_________|__________*/
 
     public static final boolean double23(int[] nums)

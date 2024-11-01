@@ -13,13 +13,13 @@ public final class MonkeyTrouble
     /*__________________________________
     |             Testcases             |
     |___________________________________|
-    | aSmile    | bSmile    | expected  |
+    |   aSmile  |   bSmile  |  returns  |
     | (boolean) | (boolean) | (boolean) |
     |___________|___________|___________|
-    | true      | true      | true      |
-    | false     | false     | true      |
-    | true      | false     | false     |
-    | false     | true      | false     |
+    |    true   |    true   |    true   |
+    |   false   |   false   |    true   |
+    |    true   |   false   |   false   |
+    |   false   |    true   |   false   |
     |___________|___________|__________*/
 
     public static final boolean monkeyTrouble(boolean aSmile, boolean bSmile)

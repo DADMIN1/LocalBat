@@ -10,20 +10,20 @@ public final class FrontTimes
     or whatever is there if the string is less than length 3. 
     Return n copies of the front; */
 
-    /*__________________________________
-    |             Testcases             |
-    |___________________________________|
-    | str         | n     | expected    |
-    | (String)    | (int) | (String)    |
-    |_____________|_______|_____________|
-    | "Chocolate" | 2     | "ChoCho"    |
-    | "Chocolate" | 3     | "ChoChoCho" |
-    | "Abc"       | 3     | "AbcAbcAbc" |
-    | "Ab"        | 4     | "AbAbAbAb"  |
-    | "A"         | 4     | "AAAA"      |
-    | ""          | 4     | ""          |
-    | "Abc"       | 0     | ""          |
-    |_____________|_______|____________*/
+    /*____________________________________
+    |              Testcases              |
+    |_____________________________________|
+    |     str     | n (int) |   returns   |
+    |   (String)  |         |   (String)  |
+    |_____________|_________|_____________|
+    | "Chocolate" |    2    |   "ChoCho"  |
+    | "Chocolate" |    3    | "ChoChoCho" |
+    |    "Abc"    |    3    | "AbcAbcAbc" |
+    |     "Ab"    |    4    |  "AbAbAbAb" |
+    |     "A"     |    4    |    "AAAA"   |
+    |      ""     |    4    |      ""     |
+    |    "Abc"    |    0    |      ""     |
+    |_____________|_________|____________*/
 
     public static final String frontTimes(String str, int n)
     {

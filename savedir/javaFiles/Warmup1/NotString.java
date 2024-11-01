@@ -13,16 +13,16 @@ public final class NotString
     /*_________________________
     |        Testcases         |
     |__________________________|
-    | str       | expected     |
-    | (String)  | (String)     |
+    |    str    |   returns    |
+    |  (String) |   (String)   |
     |___________|______________|
-    | "candy"   | "not candy"  |
-    | "x"       | "not x"      |
-    | "not bad" | "not bad"    |
-    | "bad"     | "not bad"    |
-    | "not"     | "not"        |
-    | "is not"  | "not is not" |
-    | "no"      | "not no"     |
+    |  "candy"  | "not candy"  |
+    |    "x"    |   "not x"    |
+    | "not bad" |  "not bad"   |
+    |   "bad"   |  "not bad"   |
+    |   "not"   |    "not"     |
+    |  "is not" | "not is not" |
+    |    "no"   |   "not no"   |
     |___________|_____________*/
 
     public static final String notString(String str)

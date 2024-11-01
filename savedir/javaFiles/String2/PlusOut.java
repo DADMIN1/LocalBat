@@ -13,19 +13,19 @@ public final class PlusOut
     /*_____________________________________________
     |                  Testcases                   |
     |______________________________________________|
-    | str (String)    | word     | expected        |
-    |                 | (String) | (String)        |
+    |   str (String)  |   word   |     returns     |
+    |                 | (String) |     (String)    |
     |_________________|__________|_________________|
-    | "12xy34"        | "xy"     | "++xy++"        |
-    | "12xy34"        | "1"      | "1+++++"        |
-    | "12xy34xyabcxy" | "xy"     | "++xy++xy+++xy" |
-    | "abXYabcXYZ"    | "ab"     | "ab++ab++++"    |
-    | "abXYabcXYZ"    | "abc"    | "++++abc+++"    |
-    | "abXYabcXYZ"    | "XY"     | "++XY+++XY+"    |
-    | "abXYxyzXYZ"    | "XYZ"    | "+++++++XYZ"    |
-    | "--++ab"        | "++"     | "++++++"        |
-    | "aaxxxxbb"      | "xx"     | "++xxxx++"      |
-    | "123123"        | "3"      | "++3++3"        |
+    |     "12xy34"    |   "xy"   |     "++xy++"    |
+    |     "12xy34"    |   "1"    |     "1+++++"    |
+    | "12xy34xyabcxy" |   "xy"   | "++xy++xy+++xy" |
+    |   "abXYabcXYZ"  |   "ab"   |   "ab++ab++++"  |
+    |   "abXYabcXYZ"  |  "abc"   |   "++++abc+++"  |
+    |   "abXYabcXYZ"  |   "XY"   |   "++XY+++XY+"  |
+    |   "abXYxyzXYZ"  |  "XYZ"   |   "+++++++XYZ"  |
+    |     "--++ab"    |   "++"   |     "++++++"    |
+    |    "aaxxxxbb"   |   "xx"   |    "++xxxx++"   |
+    |     "123123"    |   "3"    |     "++3++3"    |
     |_________________|__________|________________*/
 
     public static final String plusOut(String str, String word)

@@ -12,20 +12,20 @@ public final class SeeColor
     /*_______________________
     |       Testcases        |
     |________________________|
-    | str         | expected |
-    | (String)    | (String) |
+    |     str     | returns  |
+    |   (String)  | (String) |
     |_____________|__________|
-    | "redxx"     | "red"    |
-    | "xxred"     | ""       |
-    | "blueTimes" | "blue"   |
-    | "NoColor"   | ""       |
-    | "red"       | "red"    |
-    | "re"        | ""       |
-    | "blu"       | ""       |
-    | "blue"      | "blue"   |
-    | "a"         | ""       |
-    | ""          | ""       |
-    | "xyzred"    | ""       |
+    |   "redxx"   |  "red"   |
+    |   "xxred"   |    ""    |
+    | "blueTimes" |  "blue"  |
+    |  "NoColor"  |    ""    |
+    |    "red"    |  "red"   |
+    |     "re"    |    ""    |
+    |    "blu"    |    ""    |
+    |    "blue"   |  "blue"  |
+    |     "a"     |    ""    |
+    |      ""     |    ""    |
+    |   "xyzred"  |    ""    |
     |_____________|_________*/
 
     public static final String seeColor(String str)

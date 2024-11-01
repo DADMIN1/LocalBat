@@ -11,19 +11,19 @@ public final class ChangeXY
     /*______________________
     |       Testcases       |
     |_______________________|
-    | str       | expected  |
-    | (String)  | (String)  |
+    |    str    |  returns  |
+    |  (String) |  (String) |
     |___________|___________|
-    | "codex"   | "codey"   |
-    | "xxhixx"  | "yyhiyy"  |
+    |  "codex"  |  "codey"  |
+    |  "xxhixx" |  "yyhiyy" |
     | "xhixhix" | "yhiyhiy" |
-    | "hiy"     | "hiy"     |
-    | "h"       | "h"       |
-    | "x"       | "y"       |
-    | ""        | ""        |
-    | "xxx"     | "yyy"     |
-    | "yyhxyi"  | "yyhyyi"  |
-    | "hihi"    | "hihi"    |
+    |   "hiy"   |   "hiy"   |
+    |    "h"    |    "h"    |
+    |    "x"    |    "y"    |
+    |     ""    |     ""    |
+    |   "xxx"   |   "yyy"   |
+    |  "yyhxyi" |  "yyhyyi" |
+    |   "hihi"  |   "hihi"  |
     |___________|__________*/
 
     public static final String changeXY(String str)

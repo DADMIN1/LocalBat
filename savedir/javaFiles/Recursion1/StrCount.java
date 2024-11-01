@@ -10,27 +10,27 @@ public final class StrCount
     compute recursively the number of times that sub appears in the string, 
     without the sub strings overlapping. */
 
-    /*____________________________________
-    |              Testcases              |
-    |_____________________________________|
-    | str (String)  | sub      | expected |
-    |               | (String) | (int)    |
-    |_______________|__________|__________|
-    | "catcowcat"   | "cat"    | 2        |
-    | "catcowcat"   | "cow"    | 1        |
-    | "catcowcat"   | "dog"    | 0        |
-    | "cacatcowcat" | "cat"    | 2        |
-    | "xyx"         | "x"      | 2        |
-    | "iiiijj"      | "i"      | 4        |
-    | "iiiijj"      | "ii"     | 2        |
-    | "iiiijj"      | "iii"    | 1        |
-    | "iiiijj"      | "j"      | 2        |
-    | "iiiijj"      | "jj"     | 1        |
-    | "aaabababab"  | "ab"     | 4        |
-    | "aaabababab"  | "aa"     | 1        |
-    | "aaabababab"  | "a"      | 6        |
-    | "aaabababab"  | "b"      | 4        |
-    |_______________|__________|_________*/
+    /*___________________________________
+    |             Testcases              |
+    |____________________________________|
+    |  str (String) |   sub    | returns |
+    |               | (String) |  (int)  |
+    |_______________|__________|_________|
+    |  "catcowcat"  |  "cat"   |    2    |
+    |  "catcowcat"  |  "cow"   |    1    |
+    |  "catcowcat"  |  "dog"   |    0    |
+    | "cacatcowcat" |  "cat"   |    2    |
+    |     "xyx"     |   "x"    |    2    |
+    |    "iiiijj"   |   "i"    |    4    |
+    |    "iiiijj"   |   "ii"   |    2    |
+    |    "iiiijj"   |  "iii"   |    1    |
+    |    "iiiijj"   |   "j"    |    2    |
+    |    "iiiijj"   |   "jj"   |    1    |
+    |  "aaabababab" |   "ab"   |    4    |
+    |  "aaabababab" |   "aa"   |    1    |
+    |  "aaabababab" |   "a"    |    6    |
+    |  "aaabababab" |   "b"    |    4    |
+    |_______________|__________|________*/
 
     public static final int strCount(String str, String sub)
     {

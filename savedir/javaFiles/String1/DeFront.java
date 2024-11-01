@@ -13,28 +13,28 @@ public final class DeFront
     /*____________________
     |      Testcases      |
     |_____________________|
-    | str      | expected |
+    |   str    | returns  |
     | (String) | (String) |
     |__________|__________|
-    | "Hello"  | "llo"    |
-    | "java"   | "va"     |
-    | "away"   | "aay"    |
-    | "axy"    | "ay"     |
-    | "abc"    | "abc"    |
-    | "xby"    | "by"     |
-    | "ab"     | "ab"     |
-    | "ax"     | "a"      |
-    | "axb"    | "ab"     |
-    | "aaa"    | "aa"     |
-    | "xbc"    | "bc"     |
-    | "bbb"    | "bb"     |
-    | "bazz"   | "zz"     |
-    | "ba"     | ""       |
+    | "Hello"  |  "llo"   |
+    |  "java"  |   "va"   |
+    |  "away"  |  "aay"   |
+    |  "axy"   |   "ay"   |
+    |  "abc"   |  "abc"   |
+    |  "xby"   |   "by"   |
+    |   "ab"   |   "ab"   |
+    |   "ax"   |   "a"    |
+    |  "axb"   |   "ab"   |
+    |  "aaa"   |   "aa"   |
+    |  "xbc"   |   "bc"   |
+    |  "bbb"   |   "bb"   |
+    |  "bazz"  |   "zz"   |
+    |   "ba"   |    ""    |
     | "abxyz"  | "abxyz"  |
-    | "hi"     | ""       |
-    | "his"    | "s"      |
-    | "xz"     | ""       |
-    | "zzz"    | "z"      |
+    |   "hi"   |    ""    |
+    |  "his"   |   "s"    |
+    |   "xz"   |    ""    |
+    |  "zzz"   |   "z"    |
     |__________|_________*/
 
     public static final String deFront(String str)

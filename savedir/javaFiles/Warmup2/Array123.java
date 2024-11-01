@@ -12,19 +12,19 @@ public final class Array123
     /*_______________________________
     |           Testcases            |
     |________________________________|
-    | nums (int[])       | expected  |
+    |    nums (int[])    |  returns  |
     |                    | (boolean) |
     |____________________|___________|
-    | {1, 1, 2, 3, 1}    | true      |
-    | {1, 1, 2, 4, 1}    | false     |
-    | {1, 1, 2, 1, 2, 3} | true      |
-    | {1, 1, 2, 1, 2, 1} | false     |
-    | {1, 2, 3, 1, 2, 3} | true      |
-    | {1, 2, 3}          | true      |
-    | {1, 1, 1}          | false     |
-    | {1, 2}             | false     |
-    | {1}                | false     |
-    | {}                 | false     |
+    | {1, 1, 2, 3, 1}    |    true   |
+    | {1, 1, 2, 4, 1}    |   false   |
+    | {1, 1, 2, 1, 2, 3} |    true   |
+    | {1, 1, 2, 1, 2, 1} |   false   |
+    | {1, 2, 3, 1, 2, 3} |    true   |
+    | {1, 2, 3}          |    true   |
+    | {1, 1, 1}          |   false   |
+    | {1, 2}             |   false   |
+    | {1}                |   false   |
+    | {}                 |   false   |
     |____________________|__________*/
 
     public static final boolean array123(int[] nums)

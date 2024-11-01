@@ -10,23 +10,23 @@ public final class StringMatch
     So "xxcaazz" and "xxbaaz" yields 3, since the "xx", "aa", 
     and "az" substrings appear in the same place in both strings. */
 
-    /*___________________________________
-    |             Testcases              |
-    |____________________________________|
-    | a (String) | b (String) | expected |
-    |            |            | (int)    |
-    |____________|____________|__________|
-    | "xxcaazz"  | "xxbaaz"   | 3        |
-    | "abc"      | "abc"      | 2        |
-    | "abc"      | "axc"      | 0        |
-    | "hello"    | "he"       | 1        |
-    | "he"       | "hello"    | 1        |
-    | "h"        | "hello"    | 0        |
-    | ""         | "hello"    | 0        |
-    | "aabbccdd" | "abbbxxd"  | 1        |
-    | "aaxxaaxx" | "iaxxai"   | 3        |
-    | "iaxxai"   | "aaxxaaxx" | 3        |
-    |____________|____________|_________*/
+    /*__________________________________
+    |             Testcases             |
+    |___________________________________|
+    | a (String) | b (String) | returns |
+    |            |            |  (int)  |
+    |____________|____________|_________|
+    | "xxcaazz"  |  "xxbaaz"  |    3    |
+    |   "abc"    |   "abc"    |    2    |
+    |   "abc"    |   "axc"    |    0    |
+    |  "hello"   |    "he"    |    1    |
+    |    "he"    |  "hello"   |    1    |
+    |    "h"     |  "hello"   |    0    |
+    |     ""     |  "hello"   |    0    |
+    | "aabbccdd" | "abbbxxd"  |    1    |
+    | "aaxxaaxx" |  "iaxxai"  |    3    |
+    |  "iaxxai"  | "aaxxaaxx" |    3    |
+    |____________|____________|________*/
 
     public static final int stringMatch(String a, String b)
     {

@@ -12,14 +12,14 @@ public final class Right2
     /*____________________
     |      Testcases      |
     |_____________________|
-    | str      | expected |
+    |   str    | returns  |
     | (String) | (String) |
     |__________|__________|
     | "Hello"  | "loHel"  |
-    | "java"   | "vaja"   |
-    | "Hi"     | "Hi"     |
-    | "code"   | "deco"   |
-    | "cat"    | "atc"    |
+    |  "java"  |  "vaja"  |
+    |   "Hi"   |   "Hi"   |
+    |  "code"  |  "deco"  |
+    |  "cat"   |  "atc"   |
     | "12345"  | "45123"  |
     |__________|_________*/
 

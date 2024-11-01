@@ -11,17 +11,17 @@ public final class StartHi
     /*_______________________
     |       Testcases        |
     |________________________|
-    | str        | expected  |
-    | (String)   | (boolean) |
+    |    str     |  returns  |
+    |  (String)  | (boolean) |
     |____________|___________|
-    | "hi there" | true      |
-    | "hi"       | true      |
-    | "hello hi" | false     |
-    | "he"       | false     |
-    | "h"        | false     |
-    | ""         | false     |
-    | "ho hi"    | false     |
-    | "hi ho"    | true      |
+    | "hi there" |    true   |
+    |    "hi"    |    true   |
+    | "hello hi" |   false   |
+    |    "he"    |   false   |
+    |    "h"     |   false   |
+    |     ""     |   false   |
+    |  "ho hi"   |   false   |
+    |  "hi ho"   |    true   |
     |____________|__________*/
 
     public static final boolean startHi(String str)

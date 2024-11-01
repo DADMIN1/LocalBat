@@ -12,15 +12,15 @@ public final class BackAround
     /*_____________________
     |      Testcases       |
     |______________________|
-    | str      | expected  |
-    | (String) | (String)  |
+    |   str    |  returns  |
+    | (String) |  (String) |
     |__________|___________|
-    | "cat"    | "tcatt"   |
+    |  "cat"   |  "tcatt"  |
     | "Hello"  | "oHelloo" |
-    | "a"      | "aaa"     |
-    | "abc"    | "cabcc"   |
-    | "read"   | "dreadd"  |
-    | "boo"    | "obooo"   |
+    |   "a"    |   "aaa"   |
+    |  "abc"   |  "cabcc"  |
+    |  "read"  |  "dreadd" |
+    |  "boo"   |  "obooo"  |
     |__________|__________*/
 
     public static final String backAround(String str)

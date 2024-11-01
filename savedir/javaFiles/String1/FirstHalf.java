@@ -11,16 +11,16 @@ public final class FirstHalf
     /*________________________
     |        Testcases        |
     |_________________________|
-    | str (String) | expected |
+    | str (String) | returns  |
     |              | (String) |
     |______________|__________|
-    | "WooHoo"     | "Woo"    |
+    |   "WooHoo"   |  "Woo"   |
     | "HelloThere" | "Hello"  |
-    | "abcdef"     | "abc"    |
-    | "ab"         | "a"      |
-    | ""           | ""       |
+    |   "abcdef"   |  "abc"   |
+    |     "ab"     |   "a"    |
+    |      ""      |    ""    |
     | "0123456789" | "01234"  |
-    | "kitten"     | "kit"    |
+    |   "kitten"   |  "kit"   |
     |______________|_________*/
 
     public static final String firstHalf(String str)

@@ -12,19 +12,19 @@ public final class StringBits
     /*__________________________
     |         Testcases         |
     |___________________________|
-    | str (String)   | expected |
+    |  str (String)  | returns  |
     |                | (String) |
     |________________|__________|
-    | "Hello"        | "Hlo"    |
-    | "Hi"           | "H"      |
-    | "Heeololeo"    | "Hello"  |
-    | "HiHiHi"       | "HHH"    |
-    | ""             | ""       |
-    | "Greetings"    | "Getns"  |
-    | "Chocoate"     | "Coot"   |
-    | "pi"           | "p"      |
+    |    "Hello"     |  "Hlo"   |
+    |      "Hi"      |   "H"    |
+    |  "Heeololeo"   | "Hello"  |
+    |    "HiHiHi"    |  "HHH"   |
+    |       ""       |    ""    |
+    |  "Greetings"   | "Getns"  |
+    |   "Chocoate"   |  "Coot"  |
+    |      "pi"      |   "p"    |
     | "Hello Kitten" | "HloKte" |
-    | "hxaxpxpxy"    | "happy"  |
+    |  "hxaxpxpxy"   | "happy"  |
     |________________|_________*/
 
     public static final String stringBits(String str)

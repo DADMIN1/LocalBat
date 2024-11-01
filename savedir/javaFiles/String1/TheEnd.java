@@ -13,19 +13,19 @@ public final class TheEnd
     /*___________________________________
     |             Testcases              |
     |____________________________________|
-    | str         | front     | expected |
-    | (String)    | (boolean) | (String) |
+    |     str     |   front   | returns  |
+    |   (String)  | (boolean) | (String) |
     |_____________|___________|__________|
-    | "Hello"     | true      | "H"      |
-    | "Hello"     | false     | "o"      |
-    | "oh"        | true      | "o"      |
-    | "oh"        | false     | "h"      |
-    | "x"         | true      | "x"      |
-    | "x"         | false     | "x"      |
-    | "java"      | true      | "j"      |
-    | "chocolate" | false     | "e"      |
-    | "1234"      | true      | "1"      |
-    | "code"      | false     | "e"      |
+    |   "Hello"   |    true   |   "H"    |
+    |   "Hello"   |   false   |   "o"    |
+    |     "oh"    |    true   |   "o"    |
+    |     "oh"    |   false   |   "h"    |
+    |     "x"     |    true   |   "x"    |
+    |     "x"     |   false   |   "x"    |
+    |    "java"   |    true   |   "j"    |
+    | "chocolate" |   false   |   "e"    |
+    |    "1234"   |    true   |   "1"    |
+    |    "code"   |   false   |   "e"    |
     |_____________|___________|_________*/
 
     public static final String theEnd(String str, boolean front)

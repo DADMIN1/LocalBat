@@ -10,26 +10,26 @@ public final class LoneTeen
     Given 2 int values, return true if one or the other is teen, 
     but not both. */
 
-    /*__________________________
-    |         Testcases         |
-    |___________________________|
-    | a     | b     | expected  |
-    | (int) | (int) | (boolean) |
-    |_______|_______|___________|
-    | 13    | 99    | true      |
-    | 21    | 19    | true      |
-    | 13    | 13    | false     |
-    | 14    | 20    | true      |
-    | 20    | 15    | true      |
-    | 16    | 17    | false     |
-    | 16    | 9     | true      |
-    | 16    | 18    | false     |
-    | 13    | 19    | false     |
-    | 13    | 20    | true      |
-    | 6     | 18    | true      |
-    | 99    | 13    | true      |
-    | 99    | 99    | false     |
-    |_______|_______|__________*/
+    /*______________________________
+    |           Testcases           |
+    |_______________________________|
+    | a (int) | b (int) |  returns  |
+    |         |         | (boolean) |
+    |_________|_________|___________|
+    |    13   |    99   |    true   |
+    |    21   |    19   |    true   |
+    |    13   |    13   |   false   |
+    |    14   |    20   |    true   |
+    |    20   |    15   |    true   |
+    |    16   |    17   |   false   |
+    |    16   |    9    |    true   |
+    |    16   |    18   |   false   |
+    |    13   |    19   |   false   |
+    |    13   |    20   |    true   |
+    |    6    |    18   |    true   |
+    |    99   |    13   |    true   |
+    |    99   |    99   |   false   |
+    |_________|_________|__________*/
 
     public static final boolean loneTeen(int a, int b)
     {

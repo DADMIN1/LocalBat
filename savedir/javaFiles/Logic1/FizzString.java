@@ -14,25 +14,25 @@ public final class FizzString
     /*______________________
     |       Testcases       |
     |_______________________|
-    | str      | expected   |
-    | (String) | (String)   |
+    |   str    |  returns   |
+    | (String) |  (String)  |
     |__________|____________|
-    | "fig"    | "Fizz"     |
-    | "dib"    | "Buzz"     |
-    | "fib"    | "FizzBuzz" |
-    | "abc"    | "abc"      |
-    | "fooo"   | "Fizz"     |
-    | "booo"   | "booo"     |
-    | "ooob"   | "Buzz"     |
+    |  "fig"   |   "Fizz"   |
+    |  "dib"   |   "Buzz"   |
+    |  "fib"   | "FizzBuzz" |
+    |  "abc"   |   "abc"    |
+    |  "fooo"  |   "Fizz"   |
+    |  "booo"  |   "booo"   |
+    |  "ooob"  |   "Buzz"   |
     | "fooob"  | "FizzBuzz" |
-    | "f"      | "Fizz"     |
-    | "b"      | "Buzz"     |
-    | "abcb"   | "Buzz"     |
-    | "Hello"  | "Hello"    |
-    | "Hellob" | "Buzz"     |
-    | "af"     | "af"       |
-    | "bf"     | "bf"       |
-    | "fb"     | "FizzBuzz" |
+    |   "f"    |   "Fizz"   |
+    |   "b"    |   "Buzz"   |
+    |  "abcb"  |   "Buzz"   |
+    | "Hello"  |  "Hello"   |
+    | "Hellob" |   "Buzz"   |
+    |   "af"   |    "af"    |
+    |   "bf"   |    "bf"    |
+    |   "fb"   | "FizzBuzz" |
     |__________|___________*/
 
     public static final String fizzString(String str)
