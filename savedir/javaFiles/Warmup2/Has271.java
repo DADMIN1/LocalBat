@@ -10,28 +10,28 @@ public final class Has271
     7, 1 pattern: a value, followed by the value plus 5, followed by the value minus 1. 
     Additionally the 271 counts even if the "1" differs by 2 or less from the correct value. */
 
-    /*____________________________________
-    |              Testcases              |
-    |_____________________________________|
-    | nums (int[])            | expected  |
-    |                         | (boolean) |
-    |_________________________|___________|
-    | { 1, 2, 7, 1 }          | true      |
-    | { 1, 2, 8, 1 }          | false     |
-    | { 2, 7, 1 }             | true      |
-    | { 3, 8, 2 }             | true      |
-    | { 2, 7, 3 }             | true      |
-    | { 2, 7, 4 }             | false     |
-    | { 2, 7, -1 }            | true      |
-    | { 2, 7, -2 }            | false     |
-    | { 4, 5, 3, 8, 0 }       | true      |
-    | { 2, 7, 5, 10, 4 }      | true      |
-    | { 2, 7, -2, 4, 9, 3 }   | true      |
-    | { 2, 7, 5, 10, 1 }      | false     |
-    | { 2, 7, -2, 4, 10, 2 }  | false     |
-    | { 1, 1, 4, 9, 0 }       | false     |
-    | { 1, 1, 4, 9, 4, 9, 2 } | true      |
-    |_________________________|__________*/
+    /*__________________________________
+    |             Testcases             |
+    |___________________________________|
+    | nums (int[])          | expected  |
+    |                       | (boolean) |
+    |_______________________|___________|
+    | {1, 2, 7, 1}          | true      |
+    | {1, 2, 8, 1}          | false     |
+    | {2, 7, 1}             | true      |
+    | {3, 8, 2}             | true      |
+    | {2, 7, 3}             | true      |
+    | {2, 7, 4}             | false     |
+    | {2, 7, -1}            | true      |
+    | {2, 7, -2}            | false     |
+    | {4, 5, 3, 8, 0}       | true      |
+    | {2, 7, 5, 10, 4}      | true      |
+    | {2, 7, -2, 4, 9, 3}   | true      |
+    | {2, 7, 5, 10, 1}      | false     |
+    | {2, 7, -2, 4, 10, 2}  | false     |
+    | {1, 1, 4, 9, 0}       | false     |
+    | {1, 1, 4, 9, 4, 9, 2} | true      |
+    |_______________________|__________*/
 
     public static final boolean has271(int[] nums)
     {

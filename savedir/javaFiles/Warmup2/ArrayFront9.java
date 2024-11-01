@@ -9,25 +9,25 @@ public final class ArrayFront9
     /* Given an array of ints, return true if one of the first 4 elements in the array is a 9. 
     The array length may be less than 4. */
 
-    /*______________________________
-    |           Testcases           |
-    |_______________________________|
-    | nums (int[])      | expected  |
-    |                   | (boolean) |
-    |___________________|___________|
-    | { 1, 2, 9, 3, 4 } | true      |
-    | { 1, 2, 3, 4, 9 } | false     |
-    | { 1, 2, 3, 4, 5 } | false     |
-    | { 9, 2, 3 }       | true      |
-    | { 1, 9, 9 }       | true      |
-    | { 1, 2, 3 }       | false     |
-    | { 1, 9 }          | true      |
-    | { 5, 5 }          | false     |
-    | { 2 }             | false     |
-    | { 9 }             | true      |
-    | {  }              | false     |
-    | { 3, 9, 2, 3, 3 } | true      |
-    |___________________|__________*/
+    /*____________________________
+    |          Testcases          |
+    |_____________________________|
+    | nums (int[])    | expected  |
+    |                 | (boolean) |
+    |_________________|___________|
+    | {1, 2, 9, 3, 4} | true      |
+    | {1, 2, 3, 4, 9} | false     |
+    | {1, 2, 3, 4, 5} | false     |
+    | {9, 2, 3}       | true      |
+    | {1, 9, 9}       | true      |
+    | {1, 2, 3}       | false     |
+    | {1, 9}          | true      |
+    | {5, 5}          | false     |
+    | {2}             | false     |
+    | {9}             | true      |
+    | {}              | false     |
+    | {3, 9, 2, 3, 3} | true      |
+    |_________________|__________*/
 
     public static final boolean arrayFront9(int[] nums)
     {

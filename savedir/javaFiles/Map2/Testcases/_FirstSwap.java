@@ -41,16 +41,16 @@ public final class _FirstSwap
 
     public static final void Validate(boolean printSuccess)
     {
-        final String[] strings0 = { "ab", "ac" }; 
-        final String[] strings1 = { "ax", "bx", "cx", "cy", "by", "ay", "aaa", "azz" }; 
-        final String[] strings2 = { "ax", "bx", "ay", "by", "ai", "aj", "bx", "by" }; 
-        final String[] strings3 = { "ax", "bx", "cx", "ay", "cy", "aaa", "abb" }; 
-        final String[] strings4 = { "easy", "does", "it", "every", "ice", "eaten" }; 
-        final String[] strings5 = { "list", "of", "words", "swims", "over", "lily", "water", "wait" }; 
-        final String[] strings6 = { "4", "8", "15", "16", "23", "42" }; 
-        final String[] strings7 = { "aaa" }; 
-        final String[] strings8 = {  }; 
-        final String[] strings9 = { "a", "b", "c", "xx", "yy", "zz" }; 
+        final String[] strings0 = {"ab", "ac"}; 
+        final String[] strings1 = {"ax", "bx", "cx", "cy", "by", "ay", "aaa", "azz"}; 
+        final String[] strings2 = {"ax", "bx", "ay", "by", "ai", "aj", "bx", "by"}; 
+        final String[] strings3 = {"ax", "bx", "cx", "ay", "cy", "aaa", "abb"}; 
+        final String[] strings4 = {"easy", "does", "it", "every", "ice", "eaten"}; 
+        final String[] strings5 = {"list", "of", "words", "swims", "over", "lily", "water", "wait"}; 
+        final String[] strings6 = {"4", "8", "15", "16", "23", "42"}; 
+        final String[] strings7 = {"aaa"}; 
+        final String[] strings8 = {}; 
+        final String[] strings9 = {"a", "b", "c", "xx", "yy", "zz"}; 
 
         final String[][] resultsArray = {
             FirstSwap.firstSwap(strings0),

@@ -23,12 +23,12 @@ public final class _WordsCount
 
     public static final void Validate(boolean printSuccess)
     {
-        final String[] words0 = { "a", "bb", "b", "ccc" }; 
-        final String[] words1 = { "a", "bb", "b", "ccc" }; 
-        final String[] words2 = { "a", "bb", "b", "ccc" }; 
-        final String[] words3 = { "xx", "yyy", "x", "yy", "z" }; 
-        final String[] words4 = { "xx", "yyy", "x", "yy", "z" }; 
-        final String[] words5 = { "xx", "yyy", "x", "yy", "z" }; 
+        final String[] words0 = {"a", "bb", "b", "ccc"}; 
+        final String[] words1 = {"a", "bb", "b", "ccc"}; 
+        final String[] words2 = {"a", "bb", "b", "ccc"}; 
+        final String[] words3 = {"xx", "yyy", "x", "yy", "z"}; 
+        final String[] words4 = {"xx", "yyy", "x", "yy", "z"}; 
+        final String[] words5 = {"xx", "yyy", "x", "yy", "z"}; 
 
         final int[] resultsArray = {
             WordsCount.wordsCount(words0, 1),

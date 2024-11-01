@@ -11,17 +11,17 @@ public final class WordLen
     /* Given an array of strings, return a Map<String, Integer> containing a key for every different string in the array, 
     and the value is that string's length. */
 
-    /*_____________________________________________________________________
-    |                              Testcases                               |
-    |______________________________________________________________________|
-    | strings (String[])                | expected (Map<String, Integer>)  |
-    |___________________________________|__________________________________|
-    | { "a", "bb", "a", "bb" }          | {"bb": 2, "a": 1}                |
-    | { "this", "and", "that", "and" }  | {"that": 4, "and": 3, "this": 4} |
-    | { "code", "code", "code", "bug" } | {"code": 4, "bug": 3}            |
-    | {  }                              | {}                               |
-    | { "z" }                           | {"z": 1}                         |
-    |___________________________________|_________________________________*/
+    /*___________________________________________________________________
+    |                             Testcases                              |
+    |____________________________________________________________________|
+    | strings (String[])              | expected (Map<String, Integer>)  |
+    |_________________________________|__________________________________|
+    | {"a", "bb", "a", "bb"}          | {"bb": 2, "a": 1}                |
+    | {"this", "and", "that", "and"}  | {"that": 4, "and": 3, "this": 4} |
+    | {"code", "code", "code", "bug"} | {"code": 4, "bug": 3}            |
+    | {}                              | {}                               |
+    | {"z"}                           | {"z": 1}                         |
+    |_________________________________|_________________________________*/
 
     public static final Map<String, Integer> wordLen(String[] strings)
     {

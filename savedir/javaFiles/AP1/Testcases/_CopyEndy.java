@@ -45,18 +45,18 @@ public final class _CopyEndy
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 9, 11, 90, 22, 6 }; 
-        final int[] nums1 = { 9, 11, 90, 22, 6 }; 
-        final int[] nums2 = { 12, 1, 1, 13, 0, 20 }; 
-        final int[] nums3 = { 12, 1, 1, 13, 0, 20 }; 
-        final int[] nums4 = { 0 }; 
-        final int[] nums5 = { 10, 11, 90 }; 
-        final int[] nums6 = { 90, 22, 100 }; 
-        final int[] nums7 = { 12, 11, 10, 89, 101, 4 }; 
-        final int[] nums8 = { 13, 2, 2, 0 }; 
-        final int[] nums9 = { 13, 2, 2, 0 }; 
-        final int[] nums10 = { 13, 2, 13, 2, 0, 30 }; 
-        final int[] nums11 = { 13, 2, 13, 2, 0, 30 }; 
+        final int[] nums0 = {9, 11, 90, 22, 6}; 
+        final int[] nums1 = {9, 11, 90, 22, 6}; 
+        final int[] nums2 = {12, 1, 1, 13, 0, 20}; 
+        final int[] nums3 = {12, 1, 1, 13, 0, 20}; 
+        final int[] nums4 = {0}; 
+        final int[] nums5 = {10, 11, 90}; 
+        final int[] nums6 = {90, 22, 100}; 
+        final int[] nums7 = {12, 11, 10, 89, 101, 4}; 
+        final int[] nums8 = {13, 2, 2, 0}; 
+        final int[] nums9 = {13, 2, 2, 0}; 
+        final int[] nums10 = {13, 2, 13, 2, 0, 30}; 
+        final int[] nums11 = {13, 2, 13, 2, 0, 30}; 
 
         final int[][] resultsArray = {
             CopyEndy.copyEndy(nums0, 2),

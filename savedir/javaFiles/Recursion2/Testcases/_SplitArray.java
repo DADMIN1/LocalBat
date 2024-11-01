@@ -37,19 +37,19 @@ public final class _SplitArray
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 2, 2 }; 
-        final int[] nums1 = { 2, 3 }; 
-        final int[] nums2 = { 5, 2, 3 }; 
-        final int[] nums3 = { 5, 2, 2 }; 
-        final int[] nums4 = { 1, 1, 1, 1, 1, 1 }; 
-        final int[] nums5 = { 1, 1, 1, 1, 1 }; 
-        final int[] nums6 = {  }; 
-        final int[] nums7 = { 1 }; 
-        final int[] nums8 = { 3, 5 }; 
-        final int[] nums9 = { 5, 3, 2 }; 
-        final int[] nums10 = { 2, 2, 10, 10, 1, 1 }; 
-        final int[] nums11 = { 1, 2, 2, 10, 10, 1, 1 }; 
-        final int[] nums12 = { 1, 2, 3, 10, 10, 1, 1 }; 
+        final int[] nums0 = {2, 2}; 
+        final int[] nums1 = {2, 3}; 
+        final int[] nums2 = {5, 2, 3}; 
+        final int[] nums3 = {5, 2, 2}; 
+        final int[] nums4 = {1, 1, 1, 1, 1, 1}; 
+        final int[] nums5 = {1, 1, 1, 1, 1}; 
+        final int[] nums6 = {}; 
+        final int[] nums7 = {1}; 
+        final int[] nums8 = {3, 5}; 
+        final int[] nums9 = {5, 3, 2}; 
+        final int[] nums10 = {2, 2, 10, 10, 1, 1}; 
+        final int[] nums11 = {1, 2, 2, 10, 10, 1, 1}; 
+        final int[] nums12 = {1, 2, 3, 10, 10, 1, 1}; 
 
         final boolean[] resultsArray = {
             SplitArray.splitArray(nums0),

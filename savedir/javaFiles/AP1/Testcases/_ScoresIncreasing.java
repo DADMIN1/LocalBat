@@ -23,12 +23,12 @@ public final class _ScoresIncreasing
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] scores0 = { 1, 3, 4 }; 
-        final int[] scores1 = { 1, 3, 2 }; 
-        final int[] scores2 = { 1, 1, 4 }; 
-        final int[] scores3 = { 1, 1, 2, 4, 4, 7 }; 
-        final int[] scores4 = { 1, 1, 2, 4, 3, 7 }; 
-        final int[] scores5 = { -5, 4, 11 }; 
+        final int[] scores0 = {1, 3, 4}; 
+        final int[] scores1 = {1, 3, 2}; 
+        final int[] scores2 = {1, 1, 4}; 
+        final int[] scores3 = {1, 1, 2, 4, 4, 7}; 
+        final int[] scores4 = {1, 1, 2, 4, 3, 7}; 
+        final int[] scores5 = {-5, 4, 11}; 
 
         final boolean[] resultsArray = {
             ScoresIncreasing.scoresIncreasing(scores0),

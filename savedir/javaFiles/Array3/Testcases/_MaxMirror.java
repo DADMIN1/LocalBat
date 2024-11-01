@@ -41,21 +41,21 @@ public final class _MaxMirror
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 1, 2, 3, 8, 9, 3, 2, 1 }; 
-        final int[] nums1 = { 1, 2, 1, 4 }; 
-        final int[] nums2 = { 7, 1, 2, 9, 7, 2, 1 }; 
-        final int[] nums3 = { 21, 22, 9, 8, 7, 6, 23, 24, 6, 7, 8, 9, 25, 7, 8, 9 }; 
-        final int[] nums4 = { 1, 2, 1, 20, 21, 1, 2, 1, 2, 23, 24, 2, 1, 2, 1, 25 }; 
-        final int[] nums5 = { 1, 2, 3, 2, 1 }; 
-        final int[] nums6 = { 1, 2, 3, 3, 8 }; 
-        final int[] nums7 = { 1, 2, 7, 8, 1, 7, 2 }; 
-        final int[] nums8 = { 1, 1, 1 }; 
-        final int[] nums9 = { 1 }; 
-        final int[] nums10 = {  }; 
-        final int[] nums11 = { 9, 1, 1, 4, 2, 1, 1, 1 }; 
-        final int[] nums12 = { 5, 9, 9, 4, 5, 4, 9, 9, 2 }; 
-        final int[] nums13 = { 5, 9, 9, 6, 5, 4, 9, 9, 2 }; 
-        final int[] nums14 = { 5, 9, 1, 6, 5, 4, 1, 9, 5 }; 
+        final int[] nums0 = {1, 2, 3, 8, 9, 3, 2, 1}; 
+        final int[] nums1 = {1, 2, 1, 4}; 
+        final int[] nums2 = {7, 1, 2, 9, 7, 2, 1}; 
+        final int[] nums3 = {21, 22, 9, 8, 7, 6, 23, 24, 6, 7, 8, 9, 25, 7, 8, 9}; 
+        final int[] nums4 = {1, 2, 1, 20, 21, 1, 2, 1, 2, 23, 24, 2, 1, 2, 1, 25}; 
+        final int[] nums5 = {1, 2, 3, 2, 1}; 
+        final int[] nums6 = {1, 2, 3, 3, 8}; 
+        final int[] nums7 = {1, 2, 7, 8, 1, 7, 2}; 
+        final int[] nums8 = {1, 1, 1}; 
+        final int[] nums9 = {1}; 
+        final int[] nums10 = {}; 
+        final int[] nums11 = {9, 1, 1, 4, 2, 1, 1, 1}; 
+        final int[] nums12 = {5, 9, 9, 4, 5, 4, 9, 9, 2}; 
+        final int[] nums13 = {5, 9, 9, 6, 5, 4, 9, 9, 2}; 
+        final int[] nums14 = {5, 9, 1, 6, 5, 4, 1, 9, 5}; 
 
         final int[] resultsArray = {
             MaxMirror.maxMirror(nums0),

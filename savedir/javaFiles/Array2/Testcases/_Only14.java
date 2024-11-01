@@ -41,21 +41,21 @@ public final class _Only14
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 1, 4, 1, 4 }; 
-        final int[] nums1 = { 1, 4, 2, 4 }; 
-        final int[] nums2 = { 1, 1 }; 
-        final int[] nums3 = { 4, 1 }; 
-        final int[] nums4 = { 2 }; 
-        final int[] nums5 = {  }; 
-        final int[] nums6 = { 1, 4, 1, 3 }; 
-        final int[] nums7 = { 3, 1, 3 }; 
-        final int[] nums8 = { 1 }; 
-        final int[] nums9 = { 4 }; 
-        final int[] nums10 = { 3, 4 }; 
-        final int[] nums11 = { 1, 3, 4 }; 
-        final int[] nums12 = { 1, 1, 1 }; 
-        final int[] nums13 = { 1, 1, 1, 5 }; 
-        final int[] nums14 = { 4, 1, 4, 1 }; 
+        final int[] nums0 = {1, 4, 1, 4}; 
+        final int[] nums1 = {1, 4, 2, 4}; 
+        final int[] nums2 = {1, 1}; 
+        final int[] nums3 = {4, 1}; 
+        final int[] nums4 = {2}; 
+        final int[] nums5 = {}; 
+        final int[] nums6 = {1, 4, 1, 3}; 
+        final int[] nums7 = {3, 1, 3}; 
+        final int[] nums8 = {1}; 
+        final int[] nums9 = {4}; 
+        final int[] nums10 = {3, 4}; 
+        final int[] nums11 = {1, 3, 4}; 
+        final int[] nums12 = {1, 1, 1}; 
+        final int[] nums13 = {1, 1, 1, 5}; 
+        final int[] nums14 = {4, 1, 4, 1}; 
 
         final boolean[] resultsArray = {
             Only14.only14(nums0),

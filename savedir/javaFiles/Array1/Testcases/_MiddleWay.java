@@ -33,12 +33,12 @@ public final class _MiddleWay
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] a0 = { 1, 2, 3 }; final int[] b0 = { 4, 5, 6 }; 
-        final int[] a1 = { 7, 7, 7 }; final int[] b1 = { 3, 8, 0 }; 
-        final int[] a2 = { 5, 2, 9 }; final int[] b2 = { 1, 4, 5 }; 
-        final int[] a3 = { 1, 9, 7 }; final int[] b3 = { 4, 8, 8 }; 
-        final int[] a4 = { 1, 2, 3 }; final int[] b4 = { 3, 1, 4 }; 
-        final int[] a5 = { 1, 2, 3 }; final int[] b5 = { 4, 1, 1 }; 
+        final int[] a0 = {1, 2, 3}; final int[] b0 = {4, 5, 6}; 
+        final int[] a1 = {7, 7, 7}; final int[] b1 = {3, 8, 0}; 
+        final int[] a2 = {5, 2, 9}; final int[] b2 = {1, 4, 5}; 
+        final int[] a3 = {1, 9, 7}; final int[] b3 = {4, 8, 8}; 
+        final int[] a4 = {1, 2, 3}; final int[] b4 = {3, 1, 4}; 
+        final int[] a5 = {1, 2, 3}; final int[] b5 = {4, 1, 1}; 
 
         final int[][] resultsArray = {
             MiddleWay.middleWay(a0, b0),

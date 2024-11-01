@@ -33,12 +33,12 @@ public final class _SwapEnds
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 1, 2, 3, 4 }; 
-        final int[] nums1 = { 1, 2, 3 }; 
-        final int[] nums2 = { 8, 6, 7, 9, 5 }; 
-        final int[] nums3 = { 3, 1, 4, 1, 5, 9 }; 
-        final int[] nums4 = { 1, 2 }; 
-        final int[] nums5 = { 1 }; 
+        final int[] nums0 = {1, 2, 3, 4}; 
+        final int[] nums1 = {1, 2, 3}; 
+        final int[] nums2 = {8, 6, 7, 9, 5}; 
+        final int[] nums3 = {3, 1, 4, 1, 5, 9}; 
+        final int[] nums4 = {1, 2}; 
+        final int[] nums5 = {1}; 
 
         final int[][] resultsArray = {
             SwapEnds.swapEnds(nums0),

@@ -6,7 +6,7 @@ def IsolateArrayParameters(functionCall: str):
     current_string = functionCall.partition('[')[2]
     while(len(current_string) > 0):
         (before, sep, after) = current_string.partition(']') # find end of current array
-        if sep == ']': found_arrays.append('{ ' + before + ' }') # ensuring it's not empty (not found)
+        if sep == ']': found_arrays.append('{' + before + '}') # ensuring it's not empty (not found)
         current_string = after.partition('[')[2]
     return found_arrays
 
@@ -32,7 +32,7 @@ def PythonBad(testcases: list[str], containsArray:bool, containsList:bool, conta
         # because the objects returned by 'Arrays,asList' and 'Map.of' are both immutable; they will throw a runtime error,
         # if they are modified inside the function taking them as parameters. No warnings/errors given by compiler or IDE.
         if containsArray: # need to rewrite arrays from '[...]' to '{...}'
-            split_cases[-1]['functionCall'] = split_cases[-1]['functionCall'].replace('[', '{ ').replace(']', ' }')
+            split_cases[-1]['functionCall'] = split_cases[-1]['functionCall'].replace('[', '{').replace(']', '}')
         if containsList: # need to make ArrayList
             split_cases[-1]['functionCall'] = split_cases[-1]['functionCall'].replace('[', "new ArrayList<>(Arrays.asList(").replace(']', '))')
         if containsMap: # { key1: value1, key2: value2 }  ->  new HashMap<>(Map.of(key1, value1, key2, value2));

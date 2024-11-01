@@ -45,18 +45,18 @@ public final class _CopyEvens
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 3, 2, 4, 5, 8 }; 
-        final int[] nums1 = { 3, 2, 4, 5, 8 }; 
-        final int[] nums2 = { 6, 1, 2, 4, 5, 8 }; 
-        final int[] nums3 = { 6, 1, 2, 4, 5, 8 }; 
-        final int[] nums4 = { 3, 1, 4, 1, 5 }; 
-        final int[] nums5 = { 2 }; 
-        final int[] nums6 = { 6, 2, 4, 8 }; 
-        final int[] nums7 = { 6, 2, 4, 8 }; 
-        final int[] nums8 = { 6, 2, 4, 8 }; 
-        final int[] nums9 = { 1, 8, 4 }; 
-        final int[] nums10 = { 1, 8, 4 }; 
-        final int[] nums11 = { 2, 8, 4 }; 
+        final int[] nums0 = {3, 2, 4, 5, 8}; 
+        final int[] nums1 = {3, 2, 4, 5, 8}; 
+        final int[] nums2 = {6, 1, 2, 4, 5, 8}; 
+        final int[] nums3 = {6, 1, 2, 4, 5, 8}; 
+        final int[] nums4 = {3, 1, 4, 1, 5}; 
+        final int[] nums5 = {2}; 
+        final int[] nums6 = {6, 2, 4, 8}; 
+        final int[] nums7 = {6, 2, 4, 8}; 
+        final int[] nums8 = {6, 2, 4, 8}; 
+        final int[] nums9 = {1, 8, 4}; 
+        final int[] nums10 = {1, 8, 4}; 
+        final int[] nums11 = {2, 8, 4}; 
 
         final int[][] resultsArray = {
             CopyEvens.copyEvens(nums0, 2),

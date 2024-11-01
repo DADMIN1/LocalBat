@@ -39,15 +39,15 @@ public final class _MergeTwo
 
     public static final void Validate(boolean printSuccess)
     {
-        final String[] a0 = { "a", "c", "z" }; final String[] b0 = { "b", "f", "z" }; 
-        final String[] a1 = { "a", "c", "z" }; final String[] b1 = { "c", "f", "z" }; 
-        final String[] a2 = { "f", "g", "z" }; final String[] b2 = { "c", "f", "g" }; 
-        final String[] a3 = { "a", "c", "z" }; final String[] b3 = { "a", "c", "z" }; 
-        final String[] a4 = { "a", "b", "c", "z" }; final String[] b4 = { "a", "c", "z" }; 
-        final String[] a5 = { "a", "c", "z" }; final String[] b5 = { "a", "b", "c", "z" }; 
-        final String[] a6 = { "a", "c", "z" }; final String[] b6 = { "a", "c", "z" }; 
-        final String[] a7 = { "a", "c", "z" }; final String[] b7 = { "a", "c", "y", "z" }; 
-        final String[] a8 = { "x", "y", "z" }; final String[] b8 = { "a", "b", "z" }; 
+        final String[] a0 = {"a", "c", "z"}; final String[] b0 = {"b", "f", "z"}; 
+        final String[] a1 = {"a", "c", "z"}; final String[] b1 = {"c", "f", "z"}; 
+        final String[] a2 = {"f", "g", "z"}; final String[] b2 = {"c", "f", "g"}; 
+        final String[] a3 = {"a", "c", "z"}; final String[] b3 = {"a", "c", "z"}; 
+        final String[] a4 = {"a", "b", "c", "z"}; final String[] b4 = {"a", "c", "z"}; 
+        final String[] a5 = {"a", "c", "z"}; final String[] b5 = {"a", "b", "c", "z"}; 
+        final String[] a6 = {"a", "c", "z"}; final String[] b6 = {"a", "c", "z"}; 
+        final String[] a7 = {"a", "c", "z"}; final String[] b7 = {"a", "c", "y", "z"}; 
+        final String[] a8 = {"x", "y", "z"}; final String[] b8 = {"a", "b", "z"}; 
 
         final String[][] resultsArray = {
             MergeTwo.mergeTwo(a0, b0, 3),

@@ -35,18 +35,18 @@ public final class _BigDiff
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 10, 3, 5, 6 }; 
-        final int[] nums1 = { 7, 2, 10, 9 }; 
-        final int[] nums2 = { 2, 10, 7, 2 }; 
-        final int[] nums3 = { 2, 10 }; 
-        final int[] nums4 = { 10, 2 }; 
-        final int[] nums5 = { 10, 0 }; 
-        final int[] nums6 = { 2, 3 }; 
-        final int[] nums7 = { 2, 2 }; 
-        final int[] nums8 = { 2 }; 
-        final int[] nums9 = { 5, 1, 6, 1, 9, 9 }; 
-        final int[] nums10 = { 7, 6, 8, 5 }; 
-        final int[] nums11 = { 7, 7, 6, 8, 5, 5, 6 }; 
+        final int[] nums0 = {10, 3, 5, 6}; 
+        final int[] nums1 = {7, 2, 10, 9}; 
+        final int[] nums2 = {2, 10, 7, 2}; 
+        final int[] nums3 = {2, 10}; 
+        final int[] nums4 = {10, 2}; 
+        final int[] nums5 = {10, 0}; 
+        final int[] nums6 = {2, 3}; 
+        final int[] nums7 = {2, 2}; 
+        final int[] nums8 = {2}; 
+        final int[] nums9 = {5, 1, 6, 1, 9, 9}; 
+        final int[] nums10 = {7, 6, 8, 5}; 
+        final int[] nums11 = {7, 7, 6, 8, 5, 5, 6}; 
 
         final int[] resultsArray = {
             BigDiff.bigDiff(nums0),

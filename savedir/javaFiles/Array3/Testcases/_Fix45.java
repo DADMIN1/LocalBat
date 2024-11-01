@@ -57,24 +57,24 @@ public final class _Fix45
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 5, 4, 9, 4, 9, 5 }; 
-        final int[] nums1 = { 1, 4, 1, 5 }; 
-        final int[] nums2 = { 1, 4, 1, 5, 5, 4, 1 }; 
-        final int[] nums3 = { 4, 9, 4, 9, 5, 5, 4, 9, 5 }; 
-        final int[] nums4 = { 5, 5, 4, 1, 4, 1 }; 
-        final int[] nums5 = { 4, 2, 2, 5 }; 
-        final int[] nums6 = { 4, 2, 4, 2, 5, 5 }; 
-        final int[] nums7 = { 4, 2, 4, 5, 5 }; 
-        final int[] nums8 = { 1, 1, 1 }; 
-        final int[] nums9 = { 4, 5 }; 
-        final int[] nums10 = { 5, 4, 1 }; 
-        final int[] nums11 = {  }; 
-        final int[] nums12 = { 5, 4, 5, 4, 1 }; 
-        final int[] nums13 = { 4, 5, 4, 1, 5 }; 
-        final int[] nums14 = { 3, 4, 5 }; 
-        final int[] nums15 = { 4, 1, 5 }; 
-        final int[] nums16 = { 5, 4, 1 }; 
-        final int[] nums17 = { 2, 4, 2, 5 }; 
+        final int[] nums0 = {5, 4, 9, 4, 9, 5}; 
+        final int[] nums1 = {1, 4, 1, 5}; 
+        final int[] nums2 = {1, 4, 1, 5, 5, 4, 1}; 
+        final int[] nums3 = {4, 9, 4, 9, 5, 5, 4, 9, 5}; 
+        final int[] nums4 = {5, 5, 4, 1, 4, 1}; 
+        final int[] nums5 = {4, 2, 2, 5}; 
+        final int[] nums6 = {4, 2, 4, 2, 5, 5}; 
+        final int[] nums7 = {4, 2, 4, 5, 5}; 
+        final int[] nums8 = {1, 1, 1}; 
+        final int[] nums9 = {4, 5}; 
+        final int[] nums10 = {5, 4, 1}; 
+        final int[] nums11 = {}; 
+        final int[] nums12 = {5, 4, 5, 4, 1}; 
+        final int[] nums13 = {4, 5, 4, 1, 5}; 
+        final int[] nums14 = {3, 4, 5}; 
+        final int[] nums15 = {4, 1, 5}; 
+        final int[] nums16 = {5, 4, 1}; 
+        final int[] nums17 = {2, 4, 2, 5}; 
 
         final int[][] resultsArray = {
             Fix45.fix45(nums0),

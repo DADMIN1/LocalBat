@@ -24,11 +24,11 @@ public final class _WordsWithoutList
 
     public static final void Validate(boolean printSuccess)
     {
-        final String[] words0 = { "a", "bb", "b", "ccc" }; 
-        final String[] words1 = { "a", "bb", "b", "ccc" }; 
-        final String[] words2 = { "a", "bb", "b", "ccc" }; 
-        final String[] words3 = { "xx", "yyy", "x", "yy", "z" }; 
-        final String[] words4 = { "xx", "yyy", "x", "yy", "z" }; 
+        final String[] words0 = {"a", "bb", "b", "ccc"}; 
+        final String[] words1 = {"a", "bb", "b", "ccc"}; 
+        final String[] words2 = {"a", "bb", "b", "ccc"}; 
+        final String[] words3 = {"xx", "yyy", "x", "yy", "z"}; 
+        final String[] words4 = {"xx", "yyy", "x", "yy", "z"}; 
 
         final List<?>[] resultsArray = {
             WordsWithoutList.wordsWithoutList(words0, 1),

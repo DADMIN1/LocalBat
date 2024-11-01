@@ -33,17 +33,17 @@ public final class _WordAppend
 
     public static final void Validate(boolean printSuccess)
     {
-        final String[] strings0 = { "a", "b", "a" }; 
-        final String[] strings1 = { "a", "b", "a", "c", "a", "d", "a" }; 
-        final String[] strings2 = { "a", "", "a" }; 
-        final String[] strings3 = {  }; 
-        final String[] strings4 = { "a", "b", "b", "a", "a" }; 
-        final String[] strings5 = { "a", "b", "b", "b", "a", "c", "a", "a" }; 
-        final String[] strings6 = { "a", "b", "b", "b", "a", "c", "a", "a", "a", "b", "a" }; 
-        final String[] strings7 = { "not", "and", "or", "and", "this", "and", "or", "that", "not" }; 
-        final String[] strings8 = { "a", "b", "c" }; 
-        final String[] strings9 = { "this", "or", "that", "and", "this", "and", "that" }; 
-        final String[] strings10 = { "xx", "xx", "yy", "xx", "zz", "yy", "zz", "xx" }; 
+        final String[] strings0 = {"a", "b", "a"}; 
+        final String[] strings1 = {"a", "b", "a", "c", "a", "d", "a"}; 
+        final String[] strings2 = {"a", "", "a"}; 
+        final String[] strings3 = {}; 
+        final String[] strings4 = {"a", "b", "b", "a", "a"}; 
+        final String[] strings5 = {"a", "b", "b", "b", "a", "c", "a", "a"}; 
+        final String[] strings6 = {"a", "b", "b", "b", "a", "c", "a", "a", "a", "b", "a"}; 
+        final String[] strings7 = {"not", "and", "or", "and", "this", "and", "or", "that", "not"}; 
+        final String[] strings8 = {"a", "b", "c"}; 
+        final String[] strings9 = {"this", "or", "that", "and", "this", "and", "that"}; 
+        final String[] strings10 = {"xx", "xx", "yy", "xx", "zz", "yy", "zz", "xx"}; 
 
         final String[] resultsArray = {
             WordAppend.wordAppend(strings0),

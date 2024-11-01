@@ -37,19 +37,19 @@ public final class _GroupSum
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 2, 4, 8 }; 
-        final int[] nums1 = { 2, 4, 8 }; 
-        final int[] nums2 = { 2, 4, 8 }; 
-        final int[] nums3 = { 2, 4, 8 }; 
-        final int[] nums4 = { 2, 4, 8 }; 
-        final int[] nums5 = { 2, 4, 8 }; 
-        final int[] nums6 = { 1 }; 
-        final int[] nums7 = { 9 }; 
-        final int[] nums8 = { 9 }; 
-        final int[] nums9 = {  }; 
-        final int[] nums10 = { 10, 2, 2, 5 }; 
-        final int[] nums11 = { 10, 2, 2, 5 }; 
-        final int[] nums12 = { 10, 2, 2, 5 }; 
+        final int[] nums0 = {2, 4, 8}; 
+        final int[] nums1 = {2, 4, 8}; 
+        final int[] nums2 = {2, 4, 8}; 
+        final int[] nums3 = {2, 4, 8}; 
+        final int[] nums4 = {2, 4, 8}; 
+        final int[] nums5 = {2, 4, 8}; 
+        final int[] nums6 = {1}; 
+        final int[] nums7 = {9}; 
+        final int[] nums8 = {9}; 
+        final int[] nums9 = {}; 
+        final int[] nums10 = {10, 2, 2, 5}; 
+        final int[] nums11 = {10, 2, 2, 5}; 
+        final int[] nums12 = {10, 2, 2, 5}; 
 
         final boolean[] resultsArray = {
             GroupSum.groupSum(0, nums0, 10),

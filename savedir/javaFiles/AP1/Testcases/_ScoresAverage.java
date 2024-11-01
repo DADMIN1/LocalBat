@@ -23,12 +23,12 @@ public final class _ScoresAverage
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] scores0 = { 2, 2, 4, 4 }; 
-        final int[] scores1 = { 4, 4, 4, 2, 2, 2 }; 
-        final int[] scores2 = { 3, 4, 5, 1, 2, 3 }; 
-        final int[] scores3 = { 5, 6 }; 
-        final int[] scores4 = { 5, 4 }; 
-        final int[] scores5 = { 5, 4, 5, 6, 2, 1, 2, 3 }; 
+        final int[] scores0 = {2, 2, 4, 4}; 
+        final int[] scores1 = {4, 4, 4, 2, 2, 2}; 
+        final int[] scores2 = {3, 4, 5, 1, 2, 3}; 
+        final int[] scores3 = {5, 6}; 
+        final int[] scores4 = {5, 4}; 
+        final int[] scores5 = {5, 4, 5, 6, 2, 1, 2, 3}; 
 
         final int[] resultsArray = {
             ScoresAverage.scoresAverage(scores0),

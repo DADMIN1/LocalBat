@@ -9,18 +9,18 @@ public final class CommonEnd
     /* Given 2 arrays of ints, a and b, return true if they have the same first element or they have the same last element. 
     Both arrays will be length 1 or more. */
 
-    /*______________________________________
-    |               Testcases               |
-    |_______________________________________|
-    | a (int[])   | b (int[])   | expected  |
-    |             |             | (boolean) |
-    |_____________|_____________|___________|
-    | { 1, 2, 3 } | { 7, 3 }    | true      |
-    | { 1, 2, 3 } | { 7, 3, 2 } | false     |
-    | { 1, 2, 3 } | { 1, 3 }    | true      |
-    | { 1, 2, 3 } | { 1 }       | true      |
-    | { 1, 2, 3 } | { 2 }       | false     |
-    |_____________|_____________|__________*/
+    /*__________________________________
+    |             Testcases             |
+    |___________________________________|
+    | a (int[]) | b (int[]) | expected  |
+    |           |           | (boolean) |
+    |___________|___________|___________|
+    | {1, 2, 3} | {7, 3}    | true      |
+    | {1, 2, 3} | {7, 3, 2} | false     |
+    | {1, 2, 3} | {1, 3}    | true      |
+    | {1, 2, 3} | {1}       | true      |
+    | {1, 2, 3} | {2}       | false     |
+    |___________|___________|__________*/
 
     public static final boolean commonEnd(int[] a, int[] b)
     {

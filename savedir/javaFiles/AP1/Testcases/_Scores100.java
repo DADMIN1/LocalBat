@@ -23,12 +23,12 @@ public final class _Scores100
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] scores0 = { 1, 100, 100 }; 
-        final int[] scores1 = { 1, 100, 99, 100 }; 
-        final int[] scores2 = { 100, 1, 100, 100 }; 
-        final int[] scores3 = { 100, 1, 100, 1 }; 
-        final int[] scores4 = { 1, 2, 3, 4, 5 }; 
-        final int[] scores5 = { 1, 2, 100, 4, 5 }; 
+        final int[] scores0 = {1, 100, 100}; 
+        final int[] scores1 = {1, 100, 99, 100}; 
+        final int[] scores2 = {100, 1, 100, 100}; 
+        final int[] scores3 = {100, 1, 100, 1}; 
+        final int[] scores4 = {1, 2, 3, 4, 5}; 
+        final int[] scores5 = {1, 2, 100, 4, 5}; 
 
         final boolean[] resultsArray = {
             Scores100.scores100(scores0),

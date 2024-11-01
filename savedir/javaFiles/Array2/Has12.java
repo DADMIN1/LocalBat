@@ -8,30 +8,30 @@ public final class Has12
 {
     /* Given an array of ints, return true if there is a 1 in the array with a 2 somewhere later in the array. */
 
-    /*_________________________________
-    |            Testcases             |
-    |__________________________________|
-    | nums (int[])         | expected  |
-    |                      | (boolean) |
-    |______________________|___________|
-    | { 1, 3, 2 }          | true      |
-    | { 3, 1, 2 }          | true      |
-    | { 3, 1, 4, 5, 2 }    | true      |
-    | { 3, 1, 4, 5, 6 }    | false     |
-    | { 3, 1, 4, 1, 6, 2 } | true      |
-    | { 2, 1, 4, 1, 6, 2 } | true      |
-    | { 2, 1, 4, 1, 6 }    | false     |
-    | { 1 }                | false     |
-    | { 2, 1, 3 }          | false     |
-    | { 2, 1, 3, 2 }       | true      |
-    | { 2 }                | false     |
-    | { 3, 2 }             | false     |
-    | { 3, 1, 3, 2 }       | true      |
-    | { 3, 5, 9 }          | false     |
-    | { 3, 5, 1 }          | false     |
-    | { 3, 2, 1 }          | false     |
-    | { 1, 2 }             | true      |
-    |______________________|__________*/
+    /*_______________________________
+    |           Testcases            |
+    |________________________________|
+    | nums (int[])       | expected  |
+    |                    | (boolean) |
+    |____________________|___________|
+    | {1, 3, 2}          | true      |
+    | {3, 1, 2}          | true      |
+    | {3, 1, 4, 5, 2}    | true      |
+    | {3, 1, 4, 5, 6}    | false     |
+    | {3, 1, 4, 1, 6, 2} | true      |
+    | {2, 1, 4, 1, 6, 2} | true      |
+    | {2, 1, 4, 1, 6}    | false     |
+    | {1}                | false     |
+    | {2, 1, 3}          | false     |
+    | {2, 1, 3, 2}       | true      |
+    | {2}                | false     |
+    | {3, 2}             | false     |
+    | {3, 1, 3, 2}       | true      |
+    | {3, 5, 9}          | false     |
+    | {3, 5, 1}          | false     |
+    | {3, 2, 1}          | false     |
+    | {1, 2}             | true      |
+    |____________________|__________*/
 
     public static final boolean has12(int[] nums)
     {

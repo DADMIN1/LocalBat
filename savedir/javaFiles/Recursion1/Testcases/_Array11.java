@@ -29,15 +29,15 @@ public final class _Array11
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 1, 2, 11 }; 
-        final int[] nums1 = { 11, 11 }; 
-        final int[] nums2 = { 1, 2, 3, 4 }; 
-        final int[] nums3 = { 1, 11, 3, 11, 11 }; 
-        final int[] nums4 = { 11 }; 
-        final int[] nums5 = { 1 }; 
-        final int[] nums6 = {  }; 
-        final int[] nums7 = { 11, 2, 3, 4, 11, 5 }; 
-        final int[] nums8 = { 11, 5, 11 }; 
+        final int[] nums0 = {1, 2, 11}; 
+        final int[] nums1 = {11, 11}; 
+        final int[] nums2 = {1, 2, 3, 4}; 
+        final int[] nums3 = {1, 11, 3, 11, 11}; 
+        final int[] nums4 = {11}; 
+        final int[] nums5 = {1}; 
+        final int[] nums6 = {}; 
+        final int[] nums7 = {11, 2, 3, 4, 11, 5}; 
+        final int[] nums8 = {11, 5, 11}; 
 
         final int[] resultsArray = {
             Array11.array11(nums0, 0),

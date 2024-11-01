@@ -39,20 +39,20 @@ public final class _Sum67
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 1, 2, 2 }; 
-        final int[] nums1 = { 1, 2, 2, 6, 99, 99, 7 }; 
-        final int[] nums2 = { 1, 1, 6, 7, 2 }; 
-        final int[] nums3 = { 1, 6, 2, 2, 7, 1, 6, 99, 99, 7 }; 
-        final int[] nums4 = { 1, 6, 2, 6, 2, 7, 1, 6, 99, 99, 7 }; 
-        final int[] nums5 = { 2, 7, 6, 2, 6, 7, 2, 7 }; 
-        final int[] nums6 = { 2, 7, 6, 2, 6, 2, 7 }; 
-        final int[] nums7 = { 1, 6, 7, 7 }; 
-        final int[] nums8 = { 6, 7, 1, 6, 7, 7 }; 
-        final int[] nums9 = { 6, 8, 1, 6, 7 }; 
-        final int[] nums10 = {  }; 
-        final int[] nums11 = { 6, 7, 11 }; 
-        final int[] nums12 = { 11, 6, 7, 11 }; 
-        final int[] nums13 = { 2, 2, 6, 7, 7 }; 
+        final int[] nums0 = {1, 2, 2}; 
+        final int[] nums1 = {1, 2, 2, 6, 99, 99, 7}; 
+        final int[] nums2 = {1, 1, 6, 7, 2}; 
+        final int[] nums3 = {1, 6, 2, 2, 7, 1, 6, 99, 99, 7}; 
+        final int[] nums4 = {1, 6, 2, 6, 2, 7, 1, 6, 99, 99, 7}; 
+        final int[] nums5 = {2, 7, 6, 2, 6, 7, 2, 7}; 
+        final int[] nums6 = {2, 7, 6, 2, 6, 2, 7}; 
+        final int[] nums7 = {1, 6, 7, 7}; 
+        final int[] nums8 = {6, 7, 1, 6, 7, 7}; 
+        final int[] nums9 = {6, 8, 1, 6, 7}; 
+        final int[] nums10 = {}; 
+        final int[] nums11 = {6, 7, 11}; 
+        final int[] nums12 = {11, 6, 7, 11}; 
+        final int[] nums13 = {2, 2, 6, 7, 7}; 
 
         final int[] resultsArray = {
             Sum67.sum67(nums0),

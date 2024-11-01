@@ -43,17 +43,17 @@ public final class _ZeroFront
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 1, 0, 0, 1 }; 
-        final int[] nums1 = { 0, 1, 1, 0, 1 }; 
-        final int[] nums2 = { 1, 0 }; 
-        final int[] nums3 = { 0, 1 }; 
-        final int[] nums4 = { 1, 1, 1, 0 }; 
-        final int[] nums5 = { 2, 2, 2, 2 }; 
-        final int[] nums6 = { 0, 0, 1, 0 }; 
-        final int[] nums7 = { -1, 0, 0, -1, 0 }; 
-        final int[] nums8 = { 0, -3, 0, -3 }; 
-        final int[] nums9 = {  }; 
-        final int[] nums10 = { 9, 9, 0, 9, 0, 9 }; 
+        final int[] nums0 = {1, 0, 0, 1}; 
+        final int[] nums1 = {0, 1, 1, 0, 1}; 
+        final int[] nums2 = {1, 0}; 
+        final int[] nums3 = {0, 1}; 
+        final int[] nums4 = {1, 1, 1, 0}; 
+        final int[] nums5 = {2, 2, 2, 2}; 
+        final int[] nums6 = {0, 0, 1, 0}; 
+        final int[] nums7 = {-1, 0, 0, -1, 0}; 
+        final int[] nums8 = {0, -3, 0, -3}; 
+        final int[] nums9 = {}; 
+        final int[] nums10 = {9, 9, 0, 9, 0, 9}; 
 
         final int[][] resultsArray = {
             ZeroFront.zeroFront(nums0),

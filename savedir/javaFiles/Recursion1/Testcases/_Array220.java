@@ -39,20 +39,20 @@ public final class _Array220
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 1, 2, 20 }; 
-        final int[] nums1 = { 3, 30 }; 
-        final int[] nums2 = { 3 }; 
-        final int[] nums3 = {  }; 
-        final int[] nums4 = { 3, 3, 30, 4 }; 
-        final int[] nums5 = { 2, 19, 4 }; 
-        final int[] nums6 = { 20, 2, 21 }; 
-        final int[] nums7 = { 20, 2, 21, 210 }; 
-        final int[] nums8 = { 2, 200, 2000 }; 
-        final int[] nums9 = { 0, 0 }; 
-        final int[] nums10 = { 1, 2, 3, 4, 5, 6 }; 
-        final int[] nums11 = { 1, 2, 3, 4, 5, 50, 6 }; 
-        final int[] nums12 = { 1, 2, 3, 4, 5, 51, 6 }; 
-        final int[] nums13 = { 1, 2, 3, 4, 4, 50, 500, 6 }; 
+        final int[] nums0 = {1, 2, 20}; 
+        final int[] nums1 = {3, 30}; 
+        final int[] nums2 = {3}; 
+        final int[] nums3 = {}; 
+        final int[] nums4 = {3, 3, 30, 4}; 
+        final int[] nums5 = {2, 19, 4}; 
+        final int[] nums6 = {20, 2, 21}; 
+        final int[] nums7 = {20, 2, 21, 210}; 
+        final int[] nums8 = {2, 200, 2000}; 
+        final int[] nums9 = {0, 0}; 
+        final int[] nums10 = {1, 2, 3, 4, 5, 6}; 
+        final int[] nums11 = {1, 2, 3, 4, 5, 50, 6}; 
+        final int[] nums12 = {1, 2, 3, 4, 5, 51, 6}; 
+        final int[] nums13 = {1, 2, 3, 4, 4, 50, 500, 6}; 
 
         final boolean[] resultsArray = {
             Array220.array220(nums0, 0),

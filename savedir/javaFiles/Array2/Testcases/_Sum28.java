@@ -35,18 +35,18 @@ public final class _Sum28
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 2, 3, 2, 2, 4, 2 }; 
-        final int[] nums1 = { 2, 3, 2, 2, 4, 2, 2 }; 
-        final int[] nums2 = { 1, 2, 3, 4 }; 
-        final int[] nums3 = { 2, 2, 2, 2 }; 
-        final int[] nums4 = { 1, 2, 2, 2, 2, 4 }; 
-        final int[] nums5 = {  }; 
-        final int[] nums6 = { 2 }; 
-        final int[] nums7 = { 8 }; 
-        final int[] nums8 = { 2, 2, 2 }; 
-        final int[] nums9 = { 2, 2, 2, 2, 2 }; 
-        final int[] nums10 = { 1, 2, 2, 1, 2, 2 }; 
-        final int[] nums11 = { 5, 2, 2, 2, 4, 2 }; 
+        final int[] nums0 = {2, 3, 2, 2, 4, 2}; 
+        final int[] nums1 = {2, 3, 2, 2, 4, 2, 2}; 
+        final int[] nums2 = {1, 2, 3, 4}; 
+        final int[] nums3 = {2, 2, 2, 2}; 
+        final int[] nums4 = {1, 2, 2, 2, 2, 4}; 
+        final int[] nums5 = {}; 
+        final int[] nums6 = {2}; 
+        final int[] nums7 = {8}; 
+        final int[] nums8 = {2, 2, 2}; 
+        final int[] nums9 = {2, 2, 2, 2, 2}; 
+        final int[] nums10 = {1, 2, 2, 1, 2, 2}; 
+        final int[] nums11 = {5, 2, 2, 2, 4, 2}; 
 
         final boolean[] resultsArray = {
             Sum28.sum28(nums0),

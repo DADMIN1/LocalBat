@@ -9,19 +9,19 @@ public final class ScoresIncreasing
     /* Given an array of scores, return true if each score is equal or greater than the one before. 
     The array will be length 2 or more. */
 
-    /*_________________________________
-    |            Testcases             |
-    |__________________________________|
-    | scores (int[])       | expected  |
-    |                      | (boolean) |
-    |______________________|___________|
-    | { 1, 3, 4 }          | true      |
-    | { 1, 3, 2 }          | false     |
-    | { 1, 1, 4 }          | true      |
-    | { 1, 1, 2, 4, 4, 7 } | true      |
-    | { 1, 1, 2, 4, 3, 7 } | false     |
-    | { -5, 4, 11 }        | true      |
-    |______________________|__________*/
+    /*_______________________________
+    |           Testcases            |
+    |________________________________|
+    | scores (int[])     | expected  |
+    |                    | (boolean) |
+    |____________________|___________|
+    | {1, 3, 4}          | true      |
+    | {1, 3, 2}          | false     |
+    | {1, 1, 4}          | true      |
+    | {1, 1, 2, 4, 4, 7} | true      |
+    | {1, 1, 2, 4, 3, 7} | false     |
+    | {-5, 4, 11}        | true      |
+    |____________________|__________*/
 
     public static final boolean scoresIncreasing(int[] scores)
     {

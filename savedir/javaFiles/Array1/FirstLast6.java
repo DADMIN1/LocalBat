@@ -9,26 +9,26 @@ public final class FirstLast6
     /* Given an array of ints, return true if 6 appears as either the first or last element in the array. 
     The array will be length 1 or more. */
 
-    /*_______________________________
-    |           Testcases            |
-    |________________________________|
-    | nums (int[])       | expected  |
-    |                    | (boolean) |
-    |____________________|___________|
-    | { 1, 2, 6 }        | true      |
-    | { 6, 1, 2, 3 }     | true      |
-    | { 13, 6, 1, 2, 3 } | false     |
-    | { 13, 6, 1, 2, 6 } | true      |
-    | { 3, 2, 1 }        | false     |
-    | { 3, 6, 1 }        | false     |
-    | { 3, 6 }           | true      |
-    | { 6 }              | true      |
-    | { 3 }              | false     |
-    | { 5, 6 }           | true      |
-    | { 5, 5 }           | false     |
-    | { 1, 2, 3, 4, 6 }  | true      |
-    | { 1, 2, 3, 4 }     | false     |
-    |____________________|__________*/
+    /*_____________________________
+    |          Testcases           |
+    |______________________________|
+    | nums (int[])     | expected  |
+    |                  | (boolean) |
+    |__________________|___________|
+    | {1, 2, 6}        | true      |
+    | {6, 1, 2, 3}     | true      |
+    | {13, 6, 1, 2, 3} | false     |
+    | {13, 6, 1, 2, 6} | true      |
+    | {3, 2, 1}        | false     |
+    | {3, 6, 1}        | false     |
+    | {3, 6}           | true      |
+    | {6}              | true      |
+    | {3}              | false     |
+    | {5, 6}           | true      |
+    | {5, 5}           | false     |
+    | {1, 2, 3, 4, 6}  | true      |
+    | {1, 2, 3, 4}     | false     |
+    |__________________|__________*/
 
     public static final boolean firstLast6(int[] nums)
     {

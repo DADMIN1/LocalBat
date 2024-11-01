@@ -43,22 +43,22 @@ public final class _BigHeights
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] heights0 = { 5, 3, 6, 7, 2 }; 
-        final int[] heights1 = { 5, 3, 6, 7, 2 }; 
-        final int[] heights2 = { 5, 3, 6, 7, 2 }; 
-        final int[] heights3 = { 5, 3, 6, 7, 3 }; 
-        final int[] heights4 = { 5, 3, 6, 7, 2 }; 
-        final int[] heights5 = { 5, 13, 6, 7, 2 }; 
-        final int[] heights6 = { 5, 13, 6, 7, 2 }; 
-        final int[] heights7 = { 5, 13, 6, 7, 2 }; 
-        final int[] heights8 = { 5, 13, 6, 7, 2 }; 
-        final int[] heights9 = { 5, 13, 6, 7, 2 }; 
-        final int[] heights10 = { 1, 2, 3, 4, 5, 4, 3, 2, 10 }; 
-        final int[] heights11 = { 1, 2, 3, 4, 5, 4, 3, 2, 10 }; 
-        final int[] heights12 = { 1, 2, 3, 14, 5, 4, 3, 2, 10 }; 
-        final int[] heights13 = { 1, 2, 3, 14, 5, 4, 3, 2, 10 }; 
-        final int[] heights14 = { 1, 2, 3, 14, 5, 4, 3, 2, 10 }; 
-        final int[] heights15 = { 1, 2, 3, 14, 5, 4, 3, 2, 10 }; 
+        final int[] heights0 = {5, 3, 6, 7, 2}; 
+        final int[] heights1 = {5, 3, 6, 7, 2}; 
+        final int[] heights2 = {5, 3, 6, 7, 2}; 
+        final int[] heights3 = {5, 3, 6, 7, 3}; 
+        final int[] heights4 = {5, 3, 6, 7, 2}; 
+        final int[] heights5 = {5, 13, 6, 7, 2}; 
+        final int[] heights6 = {5, 13, 6, 7, 2}; 
+        final int[] heights7 = {5, 13, 6, 7, 2}; 
+        final int[] heights8 = {5, 13, 6, 7, 2}; 
+        final int[] heights9 = {5, 13, 6, 7, 2}; 
+        final int[] heights10 = {1, 2, 3, 4, 5, 4, 3, 2, 10}; 
+        final int[] heights11 = {1, 2, 3, 4, 5, 4, 3, 2, 10}; 
+        final int[] heights12 = {1, 2, 3, 14, 5, 4, 3, 2, 10}; 
+        final int[] heights13 = {1, 2, 3, 14, 5, 4, 3, 2, 10}; 
+        final int[] heights14 = {1, 2, 3, 14, 5, 4, 3, 2, 10}; 
+        final int[] heights15 = {1, 2, 3, 14, 5, 4, 3, 2, 10}; 
 
         final int[] resultsArray = {
             BigHeights.bigHeights(heights0, 2, 4),

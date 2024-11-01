@@ -35,13 +35,13 @@ public final class _ShiftLeft
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 6, 2, 5, 3 }; 
-        final int[] nums1 = { 1, 2 }; 
-        final int[] nums2 = { 1 }; 
-        final int[] nums3 = {  }; 
-        final int[] nums4 = { 1, 1, 2, 2, 4 }; 
-        final int[] nums5 = { 1, 1, 1 }; 
-        final int[] nums6 = { 1, 2, 3 }; 
+        final int[] nums0 = {6, 2, 5, 3}; 
+        final int[] nums1 = {1, 2}; 
+        final int[] nums2 = {1}; 
+        final int[] nums3 = {}; 
+        final int[] nums4 = {1, 1, 2, 2, 4}; 
+        final int[] nums5 = {1, 1, 1}; 
+        final int[] nums6 = {1, 2, 3}; 
 
         final int[][] resultsArray = {
             ShiftLeft.shiftLeft(nums0),

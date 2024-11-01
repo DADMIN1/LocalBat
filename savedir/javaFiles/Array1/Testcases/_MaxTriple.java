@@ -31,16 +31,16 @@ public final class _MaxTriple
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 1, 2, 3 }; 
-        final int[] nums1 = { 1, 5, 3 }; 
-        final int[] nums2 = { 5, 2, 3 }; 
-        final int[] nums3 = { 1, 2, 3, 1, 1 }; 
-        final int[] nums4 = { 1, 7, 3, 1, 5 }; 
-        final int[] nums5 = { 5, 1, 3, 7, 1 }; 
-        final int[] nums6 = { 5, 1, 7, 3, 7, 8, 1 }; 
-        final int[] nums7 = { 5, 1, 7, 9, 7, 8, 1 }; 
-        final int[] nums8 = { 5, 1, 7, 3, 7, 8, 9 }; 
-        final int[] nums9 = { 2, 2, 5, 1, 1 }; 
+        final int[] nums0 = {1, 2, 3}; 
+        final int[] nums1 = {1, 5, 3}; 
+        final int[] nums2 = {5, 2, 3}; 
+        final int[] nums3 = {1, 2, 3, 1, 1}; 
+        final int[] nums4 = {1, 7, 3, 1, 5}; 
+        final int[] nums5 = {5, 1, 3, 7, 1}; 
+        final int[] nums6 = {5, 1, 7, 3, 7, 8, 1}; 
+        final int[] nums7 = {5, 1, 7, 9, 7, 8, 1}; 
+        final int[] nums8 = {5, 1, 7, 3, 7, 8, 9}; 
+        final int[] nums9 = {2, 2, 5, 1, 1}; 
 
         final int[] resultsArray = {
             MaxTriple.maxTriple(nums0),

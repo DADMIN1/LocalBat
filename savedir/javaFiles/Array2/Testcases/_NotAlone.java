@@ -41,16 +41,16 @@ public final class _NotAlone
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 1, 2, 3 }; 
-        final int[] nums1 = { 1, 2, 3, 2, 5, 2 }; 
-        final int[] nums2 = { 3, 4 }; 
-        final int[] nums3 = { 3, 3 }; 
-        final int[] nums4 = { 1, 3, 1, 2 }; 
-        final int[] nums5 = { 3 }; 
-        final int[] nums6 = {  }; 
-        final int[] nums7 = { 7, 1, 6 }; 
-        final int[] nums8 = { 1, 1, 1 }; 
-        final int[] nums9 = { 1, 1, 1, 2 }; 
+        final int[] nums0 = {1, 2, 3}; 
+        final int[] nums1 = {1, 2, 3, 2, 5, 2}; 
+        final int[] nums2 = {3, 4}; 
+        final int[] nums3 = {3, 3}; 
+        final int[] nums4 = {1, 3, 1, 2}; 
+        final int[] nums5 = {3}; 
+        final int[] nums6 = {}; 
+        final int[] nums7 = {7, 1, 6}; 
+        final int[] nums8 = {1, 1, 1}; 
+        final int[] nums9 = {1, 1, 1, 2}; 
 
         final int[][] resultsArray = {
             NotAlone.notAlone(nums0, 2),

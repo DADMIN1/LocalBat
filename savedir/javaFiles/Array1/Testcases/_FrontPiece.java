@@ -37,14 +37,14 @@ public final class _FrontPiece
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 1, 2, 3 }; 
-        final int[] nums1 = { 1, 2 }; 
-        final int[] nums2 = { 1 }; 
-        final int[] nums3 = {  }; 
-        final int[] nums4 = { 6, 5, 0 }; 
-        final int[] nums5 = { 6, 5 }; 
-        final int[] nums6 = { 3, 1, 4, 1, 5 }; 
-        final int[] nums7 = { 6 }; 
+        final int[] nums0 = {1, 2, 3}; 
+        final int[] nums1 = {1, 2}; 
+        final int[] nums2 = {1}; 
+        final int[] nums3 = {}; 
+        final int[] nums4 = {6, 5, 0}; 
+        final int[] nums5 = {6, 5}; 
+        final int[] nums6 = {3, 1, 4, 1, 5}; 
+        final int[] nums7 = {6}; 
 
         final int[][] resultsArray = {
             FrontPiece.frontPiece(nums0),

@@ -43,22 +43,22 @@ public final class _CommonTwo
 
     public static final void Validate(boolean printSuccess)
     {
-        final String[] a0 = { "a", "c", "x" }; final String[] b0 = { "b", "c", "d", "x" }; 
-        final String[] a1 = { "a", "c", "x" }; final String[] b1 = { "a", "b", "c", "x", "z" }; 
-        final String[] a2 = { "a", "b", "c" }; final String[] b2 = { "a", "b", "c" }; 
-        final String[] a3 = { "a", "a", "b", "b", "c" }; final String[] b3 = { "a", "b", "c" }; 
-        final String[] a4 = { "a", "a", "b", "b", "c" }; final String[] b4 = { "a", "b", "b", "b", "c" }; 
-        final String[] a5 = { "a", "a", "b", "b", "c" }; final String[] b5 = { "a", "b", "b", "c", "c" }; 
-        final String[] a6 = { "b", "b", "b", "b", "c" }; final String[] b6 = { "a", "b", "b", "b", "c" }; 
-        final String[] a7 = { "a", "b", "c", "c", "d" }; final String[] b7 = { "a", "b", "b", "c", "d", "d" }; 
-        final String[] a8 = { "a", "a", "b", "b", "c" }; final String[] b8 = { "b", "b", "b" }; 
-        final String[] a9 = { "a", "a", "b", "b", "c" }; final String[] b9 = { "c", "c" }; 
-        final String[] a10 = { "a", "a", "b", "b", "c" }; final String[] b10 = { "b", "b", "b", "x" }; 
-        final String[] a11 = { "a", "a", "b", "b", "c" }; final String[] b11 = { "b", "b" }; 
-        final String[] a12 = { "a" }; final String[] b12 = { "a", "b" }; 
-        final String[] a13 = { "a" }; final String[] b13 = { "b" }; 
-        final String[] a14 = { "a", "a" }; final String[] b14 = { "b", "b" }; 
-        final String[] a15 = { "a", "b" }; final String[] b15 = { "a", "b" }; 
+        final String[] a0 = {"a", "c", "x"}; final String[] b0 = {"b", "c", "d", "x"}; 
+        final String[] a1 = {"a", "c", "x"}; final String[] b1 = {"a", "b", "c", "x", "z"}; 
+        final String[] a2 = {"a", "b", "c"}; final String[] b2 = {"a", "b", "c"}; 
+        final String[] a3 = {"a", "a", "b", "b", "c"}; final String[] b3 = {"a", "b", "c"}; 
+        final String[] a4 = {"a", "a", "b", "b", "c"}; final String[] b4 = {"a", "b", "b", "b", "c"}; 
+        final String[] a5 = {"a", "a", "b", "b", "c"}; final String[] b5 = {"a", "b", "b", "c", "c"}; 
+        final String[] a6 = {"b", "b", "b", "b", "c"}; final String[] b6 = {"a", "b", "b", "b", "c"}; 
+        final String[] a7 = {"a", "b", "c", "c", "d"}; final String[] b7 = {"a", "b", "b", "c", "d", "d"}; 
+        final String[] a8 = {"a", "a", "b", "b", "c"}; final String[] b8 = {"b", "b", "b"}; 
+        final String[] a9 = {"a", "a", "b", "b", "c"}; final String[] b9 = {"c", "c"}; 
+        final String[] a10 = {"a", "a", "b", "b", "c"}; final String[] b10 = {"b", "b", "b", "x"}; 
+        final String[] a11 = {"a", "a", "b", "b", "c"}; final String[] b11 = {"b", "b"}; 
+        final String[] a12 = {"a"}; final String[] b12 = {"a", "b"}; 
+        final String[] a13 = {"a"}; final String[] b13 = {"b"}; 
+        final String[] a14 = {"a", "a"}; final String[] b14 = {"b", "b"}; 
+        final String[] a15 = {"a", "b"}; final String[] b15 = {"a", "b"}; 
 
         final int[] resultsArray = {
             CommonTwo.commonTwo(a0, b0),

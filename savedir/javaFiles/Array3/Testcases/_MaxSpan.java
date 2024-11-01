@@ -31,16 +31,16 @@ public final class _MaxSpan
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 1, 2, 1, 1, 3 }; 
-        final int[] nums1 = { 1, 4, 2, 1, 4, 1, 4 }; 
-        final int[] nums2 = { 1, 4, 2, 1, 4, 4, 4 }; 
-        final int[] nums3 = { 3, 3, 3 }; 
-        final int[] nums4 = { 3, 9, 3 }; 
-        final int[] nums5 = { 3, 9, 9 }; 
-        final int[] nums6 = { 3, 9 }; 
-        final int[] nums7 = { 3, 3 }; 
-        final int[] nums8 = {  }; 
-        final int[] nums9 = { 1 }; 
+        final int[] nums0 = {1, 2, 1, 1, 3}; 
+        final int[] nums1 = {1, 4, 2, 1, 4, 1, 4}; 
+        final int[] nums2 = {1, 4, 2, 1, 4, 4, 4}; 
+        final int[] nums3 = {3, 3, 3}; 
+        final int[] nums4 = {3, 9, 3}; 
+        final int[] nums5 = {3, 9, 9}; 
+        final int[] nums6 = {3, 9}; 
+        final int[] nums7 = {3, 3}; 
+        final int[] nums8 = {}; 
+        final int[] nums9 = {1}; 
 
         final int[] resultsArray = {
             MaxSpan.maxSpan(nums0),

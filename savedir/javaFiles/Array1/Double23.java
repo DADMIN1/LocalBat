@@ -9,22 +9,22 @@ public final class Double23
     /* Given an int array, return true if the array contains 2 twice, 
     or 3 twice. The array will be length 0, 1, or 2. */
 
-    /*_____________________
-    |      Testcases       |
-    |______________________|
-    | nums     | expected  |
-    | (int[])  | (boolean) |
-    |__________|___________|
-    | { 2, 2 } | true      |
-    | { 3, 3 } | true      |
-    | { 2, 3 } | false     |
-    | { 3, 2 } | false     |
-    | { 4, 5 } | false     |
-    | { 2 }    | false     |
-    | { 3 }    | false     |
-    | {  }     | false     |
-    | { 3, 4 } | false     |
-    |__________|__________*/
+    /*____________________
+    |      Testcases      |
+    |_____________________|
+    | nums    | expected  |
+    | (int[]) | (boolean) |
+    |_________|___________|
+    | {2, 2}  | true      |
+    | {3, 3}  | true      |
+    | {2, 3}  | false     |
+    | {3, 2}  | false     |
+    | {4, 5}  | false     |
+    | {2}     | false     |
+    | {3}     | false     |
+    | {}      | false     |
+    | {3, 4}  | false     |
+    |_________|__________*/
 
     public static final boolean double23(int[] nums)
     {

@@ -35,18 +35,18 @@ public final class _ScoresSpecial
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] a0 = { 12, 10, 4 }; final int[] b0 = { 2, 20, 30 }; 
-        final int[] a1 = { 20, 10, 4 }; final int[] b1 = { 2, 20, 10 }; 
-        final int[] a2 = { 12, 11, 4 }; final int[] b2 = { 2, 20, 31 }; 
-        final int[] a3 = { 1, 20, 2, 50 }; final int[] b3 = { 3, 4, 5 }; 
-        final int[] a4 = { 3, 4, 5 }; final int[] b4 = { 1, 50, 2, 20 }; 
-        final int[] a5 = { 10, 4, 20, 30 }; final int[] b5 = { 20 }; 
-        final int[] a6 = { 10, 4, 20, 30 }; final int[] b6 = { 20 }; 
-        final int[] a7 = { 10, 4, 20, 30 }; final int[] b7 = { 3, 20, 99 }; 
-        final int[] a8 = { 10, 4, 20, 30 }; final int[] b8 = { 30, 20, 99 }; 
-        final int[] a9 = {  }; final int[] b9 = { 2 }; 
-        final int[] a10 = {  }; final int[] b10 = { 20 }; 
-        final int[] a11 = { 14, 10, 4 }; final int[] b11 = { 4, 20, 30 }; 
+        final int[] a0 = {12, 10, 4}; final int[] b0 = {2, 20, 30}; 
+        final int[] a1 = {20, 10, 4}; final int[] b1 = {2, 20, 10}; 
+        final int[] a2 = {12, 11, 4}; final int[] b2 = {2, 20, 31}; 
+        final int[] a3 = {1, 20, 2, 50}; final int[] b3 = {3, 4, 5}; 
+        final int[] a4 = {3, 4, 5}; final int[] b4 = {1, 50, 2, 20}; 
+        final int[] a5 = {10, 4, 20, 30}; final int[] b5 = {20}; 
+        final int[] a6 = {10, 4, 20, 30}; final int[] b6 = {20}; 
+        final int[] a7 = {10, 4, 20, 30}; final int[] b7 = {3, 20, 99}; 
+        final int[] a8 = {10, 4, 20, 30}; final int[] b8 = {30, 20, 99}; 
+        final int[] a9 = {}; final int[] b9 = {2}; 
+        final int[] a10 = {}; final int[] b10 = {20}; 
+        final int[] a11 = {14, 10, 4}; final int[] b11 = {4, 20, 30}; 
 
         final int[] resultsArray = {
             ScoresSpecial.scoresSpecial(a0, b0),

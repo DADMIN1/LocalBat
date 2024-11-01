@@ -35,18 +35,18 @@ public final class _TripleUp
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 1, 4, 5, 6, 2 }; 
-        final int[] nums1 = { 1, 2, 3 }; 
-        final int[] nums2 = { 1, 2, 4 }; 
-        final int[] nums3 = { 1, 2, 4, 5, 7, 6, 5, 6, 7, 6 }; 
-        final int[] nums4 = { 1, 2, 4, 5, 7, 6, 5, 7, 7, 6 }; 
-        final int[] nums5 = { 1, 2 }; 
-        final int[] nums6 = { 1 }; 
-        final int[] nums7 = {  }; 
-        final int[] nums8 = { 10, 9, 8, -100, -99, -98, 100 }; 
-        final int[] nums9 = { 10, 9, 8, -100, -99, 99, 100 }; 
-        final int[] nums10 = { -100, -99, -99, 100, 101, 102 }; 
-        final int[] nums11 = { 2, 3, 5, 6, 8, 9, 2, 3 }; 
+        final int[] nums0 = {1, 4, 5, 6, 2}; 
+        final int[] nums1 = {1, 2, 3}; 
+        final int[] nums2 = {1, 2, 4}; 
+        final int[] nums3 = {1, 2, 4, 5, 7, 6, 5, 6, 7, 6}; 
+        final int[] nums4 = {1, 2, 4, 5, 7, 6, 5, 7, 7, 6}; 
+        final int[] nums5 = {1, 2}; 
+        final int[] nums6 = {1}; 
+        final int[] nums7 = {}; 
+        final int[] nums8 = {10, 9, 8, -100, -99, -98, 100}; 
+        final int[] nums9 = {10, 9, 8, -100, -99, 99, 100}; 
+        final int[] nums10 = {-100, -99, -99, 100, 101, 102}; 
+        final int[] nums11 = {2, 3, 5, 6, 8, 9, 2, 3}; 
 
         final boolean[] resultsArray = {
             TripleUp.tripleUp(nums0),

@@ -27,9 +27,9 @@ public final class _MidThree
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 1, 2, 3, 4, 5 }; 
-        final int[] nums1 = { 8, 6, 7, 5, 3, 0, 9 }; 
-        final int[] nums2 = { 1, 2, 3 }; 
+        final int[] nums0 = {1, 2, 3, 4, 5}; 
+        final int[] nums1 = {8, 6, 7, 5, 3, 0, 9}; 
+        final int[] nums2 = {1, 2, 3}; 
 
         final int[][] resultsArray = {
             MidThree.midThree(nums0),

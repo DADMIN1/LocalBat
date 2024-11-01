@@ -45,18 +45,18 @@ public final class _ZeroMax
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 0, 5, 0, 3 }; 
-        final int[] nums1 = { 0, 4, 0, 3 }; 
-        final int[] nums2 = { 0, 1, 0 }; 
-        final int[] nums3 = { 0, 1, 5 }; 
-        final int[] nums4 = { 0, 2, 0 }; 
-        final int[] nums5 = { 1 }; 
-        final int[] nums6 = { 0 }; 
-        final int[] nums7 = {  }; 
-        final int[] nums8 = { 7, 0, 4, 3, 0, 2 }; 
-        final int[] nums9 = { 7, 0, 4, 3, 0, 1 }; 
-        final int[] nums10 = { 7, 0, 4, 3, 0, 0 }; 
-        final int[] nums11 = { 7, 0, 1, 0, 0, 7 }; 
+        final int[] nums0 = {0, 5, 0, 3}; 
+        final int[] nums1 = {0, 4, 0, 3}; 
+        final int[] nums2 = {0, 1, 0}; 
+        final int[] nums3 = {0, 1, 5}; 
+        final int[] nums4 = {0, 2, 0}; 
+        final int[] nums5 = {1}; 
+        final int[] nums6 = {0}; 
+        final int[] nums7 = {}; 
+        final int[] nums8 = {7, 0, 4, 3, 0, 2}; 
+        final int[] nums9 = {7, 0, 4, 3, 0, 1}; 
+        final int[] nums10 = {7, 0, 4, 3, 0, 0}; 
+        final int[] nums11 = {7, 0, 1, 0, 0, 7}; 
 
         final int[][] resultsArray = {
             ZeroMax.zeroMax(nums0),

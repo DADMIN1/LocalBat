@@ -39,15 +39,15 @@ public final class _MakeLast
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 4, 5, 6 }; 
-        final int[] nums1 = { 1, 2 }; 
-        final int[] nums2 = { 3 }; 
-        final int[] nums3 = { 0 }; 
-        final int[] nums4 = { 7, 7, 7 }; 
-        final int[] nums5 = { 3, 1, 4 }; 
-        final int[] nums6 = { 1, 2, 3, 4 }; 
-        final int[] nums7 = { 1, 2, 3, 0 }; 
-        final int[] nums8 = { 2, 4 }; 
+        final int[] nums0 = {4, 5, 6}; 
+        final int[] nums1 = {1, 2}; 
+        final int[] nums2 = {3}; 
+        final int[] nums3 = {0}; 
+        final int[] nums4 = {7, 7, 7}; 
+        final int[] nums5 = {3, 1, 4}; 
+        final int[] nums6 = {1, 2, 3, 4}; 
+        final int[] nums7 = {1, 2, 3, 0}; 
+        final int[] nums8 = {2, 4}; 
 
         final int[][] resultsArray = {
             MakeLast.makeLast(nums0),

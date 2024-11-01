@@ -45,23 +45,23 @@ public final class _TwoTwo
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 4, 2, 2, 3 }; 
-        final int[] nums1 = { 2, 2, 4 }; 
-        final int[] nums2 = { 2, 2, 4, 2 }; 
-        final int[] nums3 = { 1, 3, 4 }; 
-        final int[] nums4 = { 1, 2, 2, 3, 4 }; 
-        final int[] nums5 = { 1, 2, 3, 4 }; 
-        final int[] nums6 = { 2, 2 }; 
-        final int[] nums7 = { 2, 2, 7 }; 
-        final int[] nums8 = { 2, 2, 7, 2, 1 }; 
-        final int[] nums9 = { 4, 2, 2, 2 }; 
-        final int[] nums10 = { 2, 2, 2 }; 
-        final int[] nums11 = { 1, 2 }; 
-        final int[] nums12 = { 2 }; 
-        final int[] nums13 = { 1 }; 
-        final int[] nums14 = {  }; 
-        final int[] nums15 = { 5, 2, 2, 3 }; 
-        final int[] nums16 = { 2, 2, 5, 2 }; 
+        final int[] nums0 = {4, 2, 2, 3}; 
+        final int[] nums1 = {2, 2, 4}; 
+        final int[] nums2 = {2, 2, 4, 2}; 
+        final int[] nums3 = {1, 3, 4}; 
+        final int[] nums4 = {1, 2, 2, 3, 4}; 
+        final int[] nums5 = {1, 2, 3, 4}; 
+        final int[] nums6 = {2, 2}; 
+        final int[] nums7 = {2, 2, 7}; 
+        final int[] nums8 = {2, 2, 7, 2, 1}; 
+        final int[] nums9 = {4, 2, 2, 2}; 
+        final int[] nums10 = {2, 2, 2}; 
+        final int[] nums11 = {1, 2}; 
+        final int[] nums12 = {2}; 
+        final int[] nums13 = {1}; 
+        final int[] nums14 = {}; 
+        final int[] nums15 = {5, 2, 2, 3}; 
+        final int[] nums16 = {2, 2, 5, 2}; 
 
         final boolean[] resultsArray = {
             TwoTwo.twoTwo(nums0),

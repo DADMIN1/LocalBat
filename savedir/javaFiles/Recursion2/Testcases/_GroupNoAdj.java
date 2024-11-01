@@ -35,18 +35,18 @@ public final class _GroupNoAdj
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 2, 5, 10, 4 }; 
-        final int[] nums1 = { 2, 5, 10, 4 }; 
-        final int[] nums2 = { 2, 5, 10, 4 }; 
-        final int[] nums3 = { 2, 5, 10, 4, 2 }; 
-        final int[] nums4 = { 2, 5, 10, 4 }; 
-        final int[] nums5 = { 10, 2, 2, 3, 3 }; 
-        final int[] nums6 = { 10, 2, 2, 3, 3 }; 
-        final int[] nums7 = {  }; 
-        final int[] nums8 = { 1 }; 
-        final int[] nums9 = { 9 }; 
-        final int[] nums10 = { 9 }; 
-        final int[] nums11 = { 5, 10, 4, 1 }; 
+        final int[] nums0 = {2, 5, 10, 4}; 
+        final int[] nums1 = {2, 5, 10, 4}; 
+        final int[] nums2 = {2, 5, 10, 4}; 
+        final int[] nums3 = {2, 5, 10, 4, 2}; 
+        final int[] nums4 = {2, 5, 10, 4}; 
+        final int[] nums5 = {10, 2, 2, 3, 3}; 
+        final int[] nums6 = {10, 2, 2, 3, 3}; 
+        final int[] nums7 = {}; 
+        final int[] nums8 = {1}; 
+        final int[] nums9 = {9}; 
+        final int[] nums10 = {9}; 
+        final int[] nums11 = {5, 10, 4, 1}; 
 
         final boolean[] resultsArray = {
             GroupNoAdj.groupNoAdj(0, nums0, 12),

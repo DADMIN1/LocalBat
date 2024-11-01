@@ -27,14 +27,14 @@ public final class _Array6
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 1, 6, 4 }; 
-        final int[] nums1 = { 1, 4 }; 
-        final int[] nums2 = { 6 }; 
-        final int[] nums3 = {  }; 
-        final int[] nums4 = { 6, 2, 2 }; 
-        final int[] nums5 = { 2, 5 }; 
-        final int[] nums6 = { 1, 9, 4, 6, 6 }; 
-        final int[] nums7 = { 2, 5, 6 }; 
+        final int[] nums0 = {1, 6, 4}; 
+        final int[] nums1 = {1, 4}; 
+        final int[] nums2 = {6}; 
+        final int[] nums3 = {}; 
+        final int[] nums4 = {6, 2, 2}; 
+        final int[] nums5 = {2, 5}; 
+        final int[] nums6 = {1, 9, 4, 6, 6}; 
+        final int[] nums7 = {2, 5, 6}; 
 
         final boolean[] resultsArray = {
             Array6.array6(nums0, 0),

@@ -23,12 +23,12 @@ public final class _Sum3
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 1, 2, 3 }; 
-        final int[] nums1 = { 5, 11, 2 }; 
-        final int[] nums2 = { 7, 0, 0 }; 
-        final int[] nums3 = { 1, 2, 1 }; 
-        final int[] nums4 = { 1, 1, 1 }; 
-        final int[] nums5 = { 2, 7, 2 }; 
+        final int[] nums0 = {1, 2, 3}; 
+        final int[] nums1 = {5, 11, 2}; 
+        final int[] nums2 = {7, 0, 0}; 
+        final int[] nums3 = {1, 2, 1}; 
+        final int[] nums4 = {1, 1, 1}; 
+        final int[] nums5 = {2, 7, 2}; 
 
         final int[] resultsArray = {
             Sum3.sum3(nums0),

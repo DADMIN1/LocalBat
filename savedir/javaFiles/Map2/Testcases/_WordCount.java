@@ -31,15 +31,15 @@ public final class _WordCount
 
     public static final void Validate(boolean printSuccess)
     {
-        final String[] strings0 = { "a", "b", "a", "c", "b" }; 
-        final String[] strings1 = { "c", "b", "a" }; 
-        final String[] strings2 = { "c", "c", "c", "c" }; 
-        final String[] strings3 = {  }; 
-        final String[] strings4 = { "this", "and", "this", "" }; 
-        final String[] strings5 = { "x", "y", "x", "Y", "X" }; 
-        final String[] strings6 = { "123", "0", "123", "1" }; 
-        final String[] strings7 = { "d", "a", "e", "d", "a", "d", "b", "b", "z", "a", "a", "b", "z", "x", "b", "f", "x", "two", "b", "one", "two" }; 
-        final String[] strings8 = { "apple", "banana", "apple", "apple", "tea", "coffee", "banana" }; 
+        final String[] strings0 = {"a", "b", "a", "c", "b"}; 
+        final String[] strings1 = {"c", "b", "a"}; 
+        final String[] strings2 = {"c", "c", "c", "c"}; 
+        final String[] strings3 = {}; 
+        final String[] strings4 = {"this", "and", "this", ""}; 
+        final String[] strings5 = {"x", "y", "x", "Y", "X"}; 
+        final String[] strings6 = {"123", "0", "123", "1"}; 
+        final String[] strings7 = {"d", "a", "e", "d", "a", "d", "b", "b", "z", "a", "a", "b", "z", "x", "b", "f", "x", "two", "b", "one", "two"}; 
+        final String[] strings8 = {"apple", "banana", "apple", "apple", "tea", "coffee", "banana"}; 
 
         final Map<?,?>[] resultsArray = {
             WordCount.wordCount(strings0),

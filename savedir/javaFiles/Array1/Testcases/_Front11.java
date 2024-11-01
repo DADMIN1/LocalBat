@@ -35,13 +35,13 @@ public final class _Front11
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] a0 = { 1, 2, 3 }; final int[] b0 = { 7, 9, 8 }; 
-        final int[] a1 = { 1 }; final int[] b1 = { 2 }; 
-        final int[] a2 = { 1, 7 }; final int[] b2 = {  }; 
-        final int[] a3 = {  }; final int[] b3 = { 2, 8 }; 
-        final int[] a4 = {  }; final int[] b4 = {  }; 
-        final int[] a5 = { 3 }; final int[] b5 = { 1, 4, 1, 9 }; 
-        final int[] a6 = { 1, 4, 1, 9 }; final int[] b6 = {  }; 
+        final int[] a0 = {1, 2, 3}; final int[] b0 = {7, 9, 8}; 
+        final int[] a1 = {1}; final int[] b1 = {2}; 
+        final int[] a2 = {1, 7}; final int[] b2 = {}; 
+        final int[] a3 = {}; final int[] b3 = {2, 8}; 
+        final int[] a4 = {}; final int[] b4 = {}; 
+        final int[] a5 = {3}; final int[] b5 = {1, 4, 1, 9}; 
+        final int[] a6 = {1, 4, 1, 9}; final int[] b6 = {}; 
 
         final int[][] resultsArray = {
             Front11.front11(a0, b0),

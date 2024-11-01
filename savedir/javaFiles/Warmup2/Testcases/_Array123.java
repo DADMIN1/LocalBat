@@ -31,16 +31,16 @@ public final class _Array123
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 1, 1, 2, 3, 1 }; 
-        final int[] nums1 = { 1, 1, 2, 4, 1 }; 
-        final int[] nums2 = { 1, 1, 2, 1, 2, 3 }; 
-        final int[] nums3 = { 1, 1, 2, 1, 2, 1 }; 
-        final int[] nums4 = { 1, 2, 3, 1, 2, 3 }; 
-        final int[] nums5 = { 1, 2, 3 }; 
-        final int[] nums6 = { 1, 1, 1 }; 
-        final int[] nums7 = { 1, 2 }; 
-        final int[] nums8 = { 1 }; 
-        final int[] nums9 = {  }; 
+        final int[] nums0 = {1, 1, 2, 3, 1}; 
+        final int[] nums1 = {1, 1, 2, 4, 1}; 
+        final int[] nums2 = {1, 1, 2, 1, 2, 3}; 
+        final int[] nums3 = {1, 1, 2, 1, 2, 1}; 
+        final int[] nums4 = {1, 2, 3, 1, 2, 3}; 
+        final int[] nums5 = {1, 2, 3}; 
+        final int[] nums6 = {1, 1, 1}; 
+        final int[] nums7 = {1, 2}; 
+        final int[] nums8 = {1}; 
+        final int[] nums9 = {}; 
 
         final boolean[] resultsArray = {
             Array123.array123(nums0),

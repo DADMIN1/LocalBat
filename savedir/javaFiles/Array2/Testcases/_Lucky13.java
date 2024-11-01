@@ -35,18 +35,18 @@ public final class _Lucky13
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 0, 2, 4 }; 
-        final int[] nums1 = { 1, 2, 3 }; 
-        final int[] nums2 = { 1, 2, 4 }; 
-        final int[] nums3 = { 2, 7, 2, 8 }; 
-        final int[] nums4 = { 2, 7, 1, 8 }; 
-        final int[] nums5 = { 3, 7, 2, 8 }; 
-        final int[] nums6 = { 2, 7, 2, 1 }; 
-        final int[] nums7 = { 1, 2 }; 
-        final int[] nums8 = { 2, 2 }; 
-        final int[] nums9 = { 2 }; 
-        final int[] nums10 = { 3 }; 
-        final int[] nums11 = {  }; 
+        final int[] nums0 = {0, 2, 4}; 
+        final int[] nums1 = {1, 2, 3}; 
+        final int[] nums2 = {1, 2, 4}; 
+        final int[] nums3 = {2, 7, 2, 8}; 
+        final int[] nums4 = {2, 7, 1, 8}; 
+        final int[] nums5 = {3, 7, 2, 8}; 
+        final int[] nums6 = {2, 7, 2, 1}; 
+        final int[] nums7 = {1, 2}; 
+        final int[] nums8 = {2, 2}; 
+        final int[] nums9 = {2}; 
+        final int[] nums10 = {3}; 
+        final int[] nums11 = {}; 
 
         final boolean[] resultsArray = {
             Lucky13.lucky13(nums0),

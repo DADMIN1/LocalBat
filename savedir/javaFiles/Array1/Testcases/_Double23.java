@@ -29,15 +29,15 @@ public final class _Double23
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 2, 2 }; 
-        final int[] nums1 = { 3, 3 }; 
-        final int[] nums2 = { 2, 3 }; 
-        final int[] nums3 = { 3, 2 }; 
-        final int[] nums4 = { 4, 5 }; 
-        final int[] nums5 = { 2 }; 
-        final int[] nums6 = { 3 }; 
-        final int[] nums7 = {  }; 
-        final int[] nums8 = { 3, 4 }; 
+        final int[] nums0 = {2, 2}; 
+        final int[] nums1 = {3, 3}; 
+        final int[] nums2 = {2, 3}; 
+        final int[] nums3 = {3, 2}; 
+        final int[] nums4 = {4, 5}; 
+        final int[] nums5 = {2}; 
+        final int[] nums6 = {3}; 
+        final int[] nums7 = {}; 
+        final int[] nums8 = {3, 4}; 
 
         final boolean[] resultsArray = {
             Double23.double23(nums0),

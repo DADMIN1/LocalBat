@@ -39,20 +39,20 @@ public final class _Sum13
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 1, 2, 2, 1 }; 
-        final int[] nums1 = { 1, 1 }; 
-        final int[] nums2 = { 1, 2, 2, 1, 13 }; 
-        final int[] nums3 = { 1, 2, 13, 2, 1, 13 }; 
-        final int[] nums4 = { 13, 1, 2, 13, 2, 1, 13 }; 
-        final int[] nums5 = {  }; 
-        final int[] nums6 = { 13 }; 
-        final int[] nums7 = { 13, 13 }; 
-        final int[] nums8 = { 13, 0, 13 }; 
-        final int[] nums9 = { 13, 1, 13 }; 
-        final int[] nums10 = { 5, 7, 2 }; 
-        final int[] nums11 = { 5, 13, 2 }; 
-        final int[] nums12 = { 0 }; 
-        final int[] nums13 = { 13, 0 }; 
+        final int[] nums0 = {1, 2, 2, 1}; 
+        final int[] nums1 = {1, 1}; 
+        final int[] nums2 = {1, 2, 2, 1, 13}; 
+        final int[] nums3 = {1, 2, 13, 2, 1, 13}; 
+        final int[] nums4 = {13, 1, 2, 13, 2, 1, 13}; 
+        final int[] nums5 = {}; 
+        final int[] nums6 = {13}; 
+        final int[] nums7 = {13, 13}; 
+        final int[] nums8 = {13, 0, 13}; 
+        final int[] nums9 = {13, 1, 13}; 
+        final int[] nums10 = {5, 7, 2}; 
+        final int[] nums11 = {5, 13, 2}; 
+        final int[] nums12 = {0}; 
+        final int[] nums13 = {13, 0}; 
 
         final int[] resultsArray = {
             Sum13.sum13(nums0),

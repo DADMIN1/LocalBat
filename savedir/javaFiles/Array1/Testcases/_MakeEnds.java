@@ -37,14 +37,14 @@ public final class _MakeEnds
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 1, 2, 3 }; 
-        final int[] nums1 = { 1, 2, 3, 4 }; 
-        final int[] nums2 = { 7, 4, 6, 2 }; 
-        final int[] nums3 = { 1, 2, 2, 2, 2, 2, 2, 3 }; 
-        final int[] nums4 = { 7, 4 }; 
-        final int[] nums5 = { 7 }; 
-        final int[] nums6 = { 5, 2, 9 }; 
-        final int[] nums7 = { 2, 3, 4, 1 }; 
+        final int[] nums0 = {1, 2, 3}; 
+        final int[] nums1 = {1, 2, 3, 4}; 
+        final int[] nums2 = {7, 4, 6, 2}; 
+        final int[] nums3 = {1, 2, 2, 2, 2, 2, 2, 3}; 
+        final int[] nums4 = {7, 4}; 
+        final int[] nums5 = {7}; 
+        final int[] nums6 = {5, 2, 9}; 
+        final int[] nums7 = {2, 3, 4, 1}; 
 
         final int[][] resultsArray = {
             MakeEnds.makeEnds(nums0),

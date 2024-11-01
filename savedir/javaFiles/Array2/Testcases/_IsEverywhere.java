@@ -43,22 +43,22 @@ public final class _IsEverywhere
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 1, 2, 1, 3 }; 
-        final int[] nums1 = { 1, 2, 1, 3 }; 
-        final int[] nums2 = { 1, 2, 1, 3, 4 }; 
-        final int[] nums3 = { 2, 1, 2, 1 }; 
-        final int[] nums4 = { 2, 1, 2, 1 }; 
-        final int[] nums5 = { 2, 1, 2, 3, 1 }; 
-        final int[] nums6 = { 3, 1 }; 
-        final int[] nums7 = { 3, 1 }; 
-        final int[] nums8 = { 3 }; 
-        final int[] nums9 = {  }; 
-        final int[] nums10 = { 1, 2, 1, 2, 3, 2, 5 }; 
-        final int[] nums11 = { 1, 2, 1, 1, 1, 2 }; 
-        final int[] nums12 = { 2, 1, 2, 1, 1, 2 }; 
-        final int[] nums13 = { 2, 1, 2, 2, 2, 1, 1, 2 }; 
-        final int[] nums14 = { 2, 1, 2, 2, 2, 1, 2, 1 }; 
-        final int[] nums15 = { 2, 1, 2, 1, 2 }; 
+        final int[] nums0 = {1, 2, 1, 3}; 
+        final int[] nums1 = {1, 2, 1, 3}; 
+        final int[] nums2 = {1, 2, 1, 3, 4}; 
+        final int[] nums3 = {2, 1, 2, 1}; 
+        final int[] nums4 = {2, 1, 2, 1}; 
+        final int[] nums5 = {2, 1, 2, 3, 1}; 
+        final int[] nums6 = {3, 1}; 
+        final int[] nums7 = {3, 1}; 
+        final int[] nums8 = {3}; 
+        final int[] nums9 = {}; 
+        final int[] nums10 = {1, 2, 1, 2, 3, 2, 5}; 
+        final int[] nums11 = {1, 2, 1, 1, 1, 2}; 
+        final int[] nums12 = {2, 1, 2, 1, 1, 2}; 
+        final int[] nums13 = {2, 1, 2, 2, 2, 1, 1, 2}; 
+        final int[] nums14 = {2, 1, 2, 2, 2, 1, 2, 1}; 
+        final int[] nums15 = {2, 1, 2, 1, 2}; 
 
         final boolean[] resultsArray = {
             IsEverywhere.isEverywhere(nums0, 1),

@@ -41,21 +41,21 @@ public final class _GroupSum5
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 2, 5, 10, 4 }; 
-        final int[] nums1 = { 2, 5, 10, 4 }; 
-        final int[] nums2 = { 2, 5, 10, 4 }; 
-        final int[] nums3 = { 2, 5, 4, 10 }; 
-        final int[] nums4 = { 3, 5, 1 }; 
-        final int[] nums5 = { 3, 5, 1 }; 
-        final int[] nums6 = { 1, 3, 5 }; 
-        final int[] nums7 = { 3, 5, 1 }; 
-        final int[] nums8 = { 2, 5, 10, 4 }; 
-        final int[] nums9 = { 2, 5, 10, 4 }; 
-        final int[] nums10 = { 2, 5, 10, 4 }; 
-        final int[] nums11 = { 1 }; 
-        final int[] nums12 = { 9 }; 
-        final int[] nums13 = { 9 }; 
-        final int[] nums14 = {  }; 
+        final int[] nums0 = {2, 5, 10, 4}; 
+        final int[] nums1 = {2, 5, 10, 4}; 
+        final int[] nums2 = {2, 5, 10, 4}; 
+        final int[] nums3 = {2, 5, 4, 10}; 
+        final int[] nums4 = {3, 5, 1}; 
+        final int[] nums5 = {3, 5, 1}; 
+        final int[] nums6 = {1, 3, 5}; 
+        final int[] nums7 = {3, 5, 1}; 
+        final int[] nums8 = {2, 5, 10, 4}; 
+        final int[] nums9 = {2, 5, 10, 4}; 
+        final int[] nums10 = {2, 5, 10, 4}; 
+        final int[] nums11 = {1}; 
+        final int[] nums12 = {9}; 
+        final int[] nums13 = {9}; 
+        final int[] nums14 = {}; 
 
         final boolean[] resultsArray = {
             GroupSum5.groupSum5(0, nums0, 19),

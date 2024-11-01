@@ -45,18 +45,18 @@ public final class _Make2
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] a0 = { 4, 5 }; final int[] b0 = { 1, 2, 3 }; 
-        final int[] a1 = { 4 }; final int[] b1 = { 1, 2, 3 }; 
-        final int[] a2 = {  }; final int[] b2 = { 1, 2 }; 
-        final int[] a3 = { 1, 2 }; final int[] b3 = {  }; 
-        final int[] a4 = { 3 }; final int[] b4 = { 1, 2, 3 }; 
-        final int[] a5 = { 3 }; final int[] b5 = { 1 }; 
-        final int[] a6 = { 3, 1, 4 }; final int[] b6 = {  }; 
-        final int[] a7 = { 1 }; final int[] b7 = { 1 }; 
-        final int[] a8 = { 1, 2, 3 }; final int[] b8 = { 7, 8 }; 
-        final int[] a9 = { 7, 8 }; final int[] b9 = { 1, 2, 3 }; 
-        final int[] a10 = { 7 }; final int[] b10 = { 1, 2, 3 }; 
-        final int[] a11 = { 5, 4 }; final int[] b11 = { 2, 3, 7 }; 
+        final int[] a0 = {4, 5}; final int[] b0 = {1, 2, 3}; 
+        final int[] a1 = {4}; final int[] b1 = {1, 2, 3}; 
+        final int[] a2 = {}; final int[] b2 = {1, 2}; 
+        final int[] a3 = {1, 2}; final int[] b3 = {}; 
+        final int[] a4 = {3}; final int[] b4 = {1, 2, 3}; 
+        final int[] a5 = {3}; final int[] b5 = {1}; 
+        final int[] a6 = {3, 1, 4}; final int[] b6 = {}; 
+        final int[] a7 = {1}; final int[] b7 = {1}; 
+        final int[] a8 = {1, 2, 3}; final int[] b8 = {7, 8}; 
+        final int[] a9 = {7, 8}; final int[] b9 = {1, 2, 3}; 
+        final int[] a10 = {7}; final int[] b10 = {1, 2, 3}; 
+        final int[] a11 = {5, 4}; final int[] b11 = {2, 3, 7}; 
 
         final int[][] resultsArray = {
             Make2.make2(a0, b0),

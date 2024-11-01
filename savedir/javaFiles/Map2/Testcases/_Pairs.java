@@ -27,13 +27,13 @@ public final class _Pairs
 
     public static final void Validate(boolean printSuccess)
     {
-        final String[] strings0 = { "code", "bug" }; 
-        final String[] strings1 = { "man", "moon", "main" }; 
-        final String[] strings2 = { "man", "moon", "good", "night" }; 
-        final String[] strings3 = {  }; 
-        final String[] strings4 = { "a", "b" }; 
-        final String[] strings5 = { "are", "codes", "and", "cods" }; 
-        final String[] strings6 = { "apple", "banana", "tea", "coffee" }; 
+        final String[] strings0 = {"code", "bug"}; 
+        final String[] strings1 = {"man", "moon", "main"}; 
+        final String[] strings2 = {"man", "moon", "good", "night"}; 
+        final String[] strings3 = {}; 
+        final String[] strings4 = {"a", "b"}; 
+        final String[] strings5 = {"are", "codes", "and", "cods"}; 
+        final String[] strings6 = {"apple", "banana", "tea", "coffee"}; 
 
         final Map<?,?>[] resultsArray = {
             Pairs.pairs(strings0),

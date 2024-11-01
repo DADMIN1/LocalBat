@@ -35,18 +35,18 @@ public final class _ArrayFront9
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 1, 2, 9, 3, 4 }; 
-        final int[] nums1 = { 1, 2, 3, 4, 9 }; 
-        final int[] nums2 = { 1, 2, 3, 4, 5 }; 
-        final int[] nums3 = { 9, 2, 3 }; 
-        final int[] nums4 = { 1, 9, 9 }; 
-        final int[] nums5 = { 1, 2, 3 }; 
-        final int[] nums6 = { 1, 9 }; 
-        final int[] nums7 = { 5, 5 }; 
-        final int[] nums8 = { 2 }; 
-        final int[] nums9 = { 9 }; 
-        final int[] nums10 = {  }; 
-        final int[] nums11 = { 3, 9, 2, 3, 3 }; 
+        final int[] nums0 = {1, 2, 9, 3, 4}; 
+        final int[] nums1 = {1, 2, 3, 4, 9}; 
+        final int[] nums2 = {1, 2, 3, 4, 5}; 
+        final int[] nums3 = {9, 2, 3}; 
+        final int[] nums4 = {1, 9, 9}; 
+        final int[] nums5 = {1, 2, 3}; 
+        final int[] nums6 = {1, 9}; 
+        final int[] nums7 = {5, 5}; 
+        final int[] nums8 = {2}; 
+        final int[] nums9 = {9}; 
+        final int[] nums10 = {}; 
+        final int[] nums11 = {3, 9, 2, 3, 3}; 
 
         final boolean[] resultsArray = {
             ArrayFront9.arrayFront9(nums0),

@@ -23,11 +23,11 @@ public final class _WordLen
 
     public static final void Validate(boolean printSuccess)
     {
-        final String[] strings0 = { "a", "bb", "a", "bb" }; 
-        final String[] strings1 = { "this", "and", "that", "and" }; 
-        final String[] strings2 = { "code", "code", "code", "bug" }; 
-        final String[] strings3 = {  }; 
-        final String[] strings4 = { "z" }; 
+        final String[] strings0 = {"a", "bb", "a", "bb"}; 
+        final String[] strings1 = {"this", "and", "that", "and"}; 
+        final String[] strings2 = {"code", "code", "code", "bug"}; 
+        final String[] strings3 = {}; 
+        final String[] strings4 = {"z"}; 
 
         final Map<?,?>[] resultsArray = {
             WordLen.wordLen(strings0),

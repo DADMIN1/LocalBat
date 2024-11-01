@@ -27,14 +27,14 @@ public final class _Split53
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 1, 1 }; 
-        final int[] nums1 = { 1, 1, 1 }; 
-        final int[] nums2 = { 2, 4, 2 }; 
-        final int[] nums3 = { 2, 2, 2, 1 }; 
-        final int[] nums4 = { 3, 3, 5, 1 }; 
-        final int[] nums5 = { 3, 5, 8 }; 
-        final int[] nums6 = { 2, 4, 6 }; 
-        final int[] nums7 = { 3, 5, 6, 10, 3, 3 }; 
+        final int[] nums0 = {1, 1}; 
+        final int[] nums1 = {1, 1, 1}; 
+        final int[] nums2 = {2, 4, 2}; 
+        final int[] nums3 = {2, 2, 2, 1}; 
+        final int[] nums4 = {3, 3, 5, 1}; 
+        final int[] nums5 = {3, 5, 8}; 
+        final int[] nums6 = {2, 4, 6}; 
+        final int[] nums7 = {3, 5, 6, 10, 3, 3}; 
 
         final boolean[] resultsArray = {
             Split53.split53(nums0),

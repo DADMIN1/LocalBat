@@ -21,10 +21,10 @@ public final class _FirstChar
 
     public static final void Validate(boolean printSuccess)
     {
-        final String[] strings0 = { "salt", "tea", "soda", "toast" }; 
-        final String[] strings1 = { "aa", "bb", "cc", "aAA", "cCC", "d" }; 
-        final String[] strings2 = {  }; 
-        final String[] strings3 = { "apple", "bells", "salt", "aardvark", "bells", "sun", "zen", "bells" }; 
+        final String[] strings0 = {"salt", "tea", "soda", "toast"}; 
+        final String[] strings1 = {"aa", "bb", "cc", "aAA", "cCC", "d"}; 
+        final String[] strings2 = {}; 
+        final String[] strings3 = {"apple", "bells", "salt", "aardvark", "bells", "sun", "zen", "bells"}; 
 
         final Map<?,?>[] resultsArray = {
             FirstChar.firstChar(strings0),

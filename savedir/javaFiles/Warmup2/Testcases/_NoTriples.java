@@ -29,15 +29,15 @@ public final class _NoTriples
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 1, 1, 2, 2, 1 }; 
-        final int[] nums1 = { 1, 1, 2, 2, 2, 1 }; 
-        final int[] nums2 = { 1, 1, 1, 2, 2, 2, 1 }; 
-        final int[] nums3 = { 1, 1, 2, 2, 1, 2, 1 }; 
-        final int[] nums4 = { 1, 2, 1 }; 
-        final int[] nums5 = { 1, 1, 1 }; 
-        final int[] nums6 = { 1, 1 }; 
-        final int[] nums7 = { 1 }; 
-        final int[] nums8 = {  }; 
+        final int[] nums0 = {1, 1, 2, 2, 1}; 
+        final int[] nums1 = {1, 1, 2, 2, 2, 1}; 
+        final int[] nums2 = {1, 1, 1, 2, 2, 2, 1}; 
+        final int[] nums3 = {1, 1, 2, 2, 1, 2, 1}; 
+        final int[] nums4 = {1, 2, 1}; 
+        final int[] nums5 = {1, 1, 1}; 
+        final int[] nums6 = {1, 1}; 
+        final int[] nums7 = {1}; 
+        final int[] nums8 = {}; 
 
         final boolean[] resultsArray = {
             NoTriples.noTriples(nums0),

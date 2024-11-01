@@ -37,19 +37,19 @@ public final class _MatchUp
 
     public static final void Validate(boolean printSuccess)
     {
-        final String[] a0 = { "aa", "bb", "cc" }; final String[] b0 = { "aaa", "xx", "bb" }; 
-        final String[] a1 = { "aa", "bb", "cc" }; final String[] b1 = { "aaa", "b", "bb" }; 
-        final String[] a2 = { "aa", "bb", "cc" }; final String[] b2 = { "", "", "ccc" }; 
-        final String[] a3 = { "", "", "ccc" }; final String[] b3 = { "aa", "bb", "cc" }; 
-        final String[] a4 = { "", "", "" }; final String[] b4 = { "", "bb", "cc" }; 
-        final String[] a5 = { "aa", "bb", "cc" }; final String[] b5 = { "", "", "" }; 
-        final String[] a6 = { "aa", "", "ccc" }; final String[] b6 = { "", "bb", "cc" }; 
-        final String[] a7 = { "x", "y", "z" }; final String[] b7 = { "y", "z", "x" }; 
-        final String[] a8 = { "", "y", "z" }; final String[] b8 = { "", "y", "x" }; 
-        final String[] a9 = { "x", "y", "z" }; final String[] b9 = { "xx", "yyy", "zzz" }; 
-        final String[] a10 = { "x", "y", "z" }; final String[] b10 = { "xx", "yyy", "" }; 
-        final String[] a11 = { "b", "x", "y", "z" }; final String[] b11 = { "a", "xx", "yyy", "zzz" }; 
-        final String[] a12 = { "aaa", "bb", "c" }; final String[] b12 = { "aaa", "xx", "bb" }; 
+        final String[] a0 = {"aa", "bb", "cc"}; final String[] b0 = {"aaa", "xx", "bb"}; 
+        final String[] a1 = {"aa", "bb", "cc"}; final String[] b1 = {"aaa", "b", "bb"}; 
+        final String[] a2 = {"aa", "bb", "cc"}; final String[] b2 = {"", "", "ccc"}; 
+        final String[] a3 = {"", "", "ccc"}; final String[] b3 = {"aa", "bb", "cc"}; 
+        final String[] a4 = {"", "", ""}; final String[] b4 = {"", "bb", "cc"}; 
+        final String[] a5 = {"aa", "bb", "cc"}; final String[] b5 = {"", "", ""}; 
+        final String[] a6 = {"aa", "", "ccc"}; final String[] b6 = {"", "bb", "cc"}; 
+        final String[] a7 = {"x", "y", "z"}; final String[] b7 = {"y", "z", "x"}; 
+        final String[] a8 = {"", "y", "z"}; final String[] b8 = {"", "y", "x"}; 
+        final String[] a9 = {"x", "y", "z"}; final String[] b9 = {"xx", "yyy", "zzz"}; 
+        final String[] a10 = {"x", "y", "z"}; final String[] b10 = {"xx", "yyy", ""}; 
+        final String[] a11 = {"b", "x", "y", "z"}; final String[] b11 = {"a", "xx", "yyy", "zzz"}; 
+        final String[] a12 = {"aaa", "bb", "c"}; final String[] b12 = {"aaa", "xx", "bb"}; 
 
         final int[] resultsArray = {
             MatchUp.matchUp(a0, b0),

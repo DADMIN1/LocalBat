@@ -35,13 +35,13 @@ public final class _WordsWithout
 
     public static final void Validate(boolean printSuccess)
     {
-        final String[] words0 = { "a", "b", "c", "a" }; 
-        final String[] words1 = { "a", "b", "c", "a" }; 
-        final String[] words2 = { "a", "b", "c", "a" }; 
-        final String[] words3 = { "b", "c", "a", "a" }; 
-        final String[] words4 = { "xx", "yyy", "x", "yy", "x" }; 
-        final String[] words5 = { "xx", "yyy", "x", "yy", "x" }; 
-        final String[] words6 = { "aa", "ab", "ac", "aa" }; 
+        final String[] words0 = {"a", "b", "c", "a"}; 
+        final String[] words1 = {"a", "b", "c", "a"}; 
+        final String[] words2 = {"a", "b", "c", "a"}; 
+        final String[] words3 = {"b", "c", "a", "a"}; 
+        final String[] words4 = {"xx", "yyy", "x", "yy", "x"}; 
+        final String[] words5 = {"xx", "yyy", "x", "yy", "x"}; 
+        final String[] words6 = {"aa", "ab", "ac", "aa"}; 
 
         final String[][] resultsArray = {
             WordsWithout.wordsWithout(words0, "a"),

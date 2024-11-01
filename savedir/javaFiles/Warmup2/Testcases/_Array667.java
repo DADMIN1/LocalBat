@@ -37,19 +37,19 @@ public final class _Array667
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 6, 6, 2 }; 
-        final int[] nums1 = { 6, 6, 2, 6 }; 
-        final int[] nums2 = { 6, 7, 2, 6 }; 
-        final int[] nums3 = { 6, 6, 2, 6, 7 }; 
-        final int[] nums4 = { 1, 6, 3 }; 
-        final int[] nums5 = { 6, 1 }; 
-        final int[] nums6 = {  }; 
-        final int[] nums7 = { 3, 6, 7, 6 }; 
-        final int[] nums8 = { 3, 6, 6, 7 }; 
-        final int[] nums9 = { 6, 3, 6, 6 }; 
-        final int[] nums10 = { 6, 7, 6, 6 }; 
-        final int[] nums11 = { 1, 2, 3, 5, 6 }; 
-        final int[] nums12 = { 1, 2, 3, 6, 6 }; 
+        final int[] nums0 = {6, 6, 2}; 
+        final int[] nums1 = {6, 6, 2, 6}; 
+        final int[] nums2 = {6, 7, 2, 6}; 
+        final int[] nums3 = {6, 6, 2, 6, 7}; 
+        final int[] nums4 = {1, 6, 3}; 
+        final int[] nums5 = {6, 1}; 
+        final int[] nums6 = {}; 
+        final int[] nums7 = {3, 6, 7, 6}; 
+        final int[] nums8 = {3, 6, 6, 7}; 
+        final int[] nums9 = {6, 3, 6, 6}; 
+        final int[] nums10 = {6, 7, 6, 6}; 
+        final int[] nums11 = {1, 2, 3, 5, 6}; 
+        final int[] nums12 = {1, 2, 3, 6, 6}; 
 
         final int[] resultsArray = {
             Array667.array667(nums0),

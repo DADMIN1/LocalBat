@@ -25,13 +25,13 @@ public final class _GroupSumClump
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 2, 4, 8 }; 
-        final int[] nums1 = { 1, 2, 4, 8, 1 }; 
-        final int[] nums2 = { 2, 4, 4, 8 }; 
-        final int[] nums3 = { 8, 2, 2, 1 }; 
-        final int[] nums4 = { 8, 2, 2, 1 }; 
-        final int[] nums5 = { 1 }; 
-        final int[] nums6 = { 9 }; 
+        final int[] nums0 = {2, 4, 8}; 
+        final int[] nums1 = {1, 2, 4, 8, 1}; 
+        final int[] nums2 = {2, 4, 4, 8}; 
+        final int[] nums3 = {8, 2, 2, 1}; 
+        final int[] nums4 = {8, 2, 2, 1}; 
+        final int[] nums5 = {1}; 
+        final int[] nums6 = {9}; 
 
         final boolean[] resultsArray = {
             GroupSumClump.groupSumClump(0, nums0, 10),

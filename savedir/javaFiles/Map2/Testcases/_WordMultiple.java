@@ -25,12 +25,12 @@ public final class _WordMultiple
 
     public static final void Validate(boolean printSuccess)
     {
-        final String[] strings0 = { "a", "b", "a", "c", "b" }; 
-        final String[] strings1 = { "c", "b", "a" }; 
-        final String[] strings2 = { "c", "c", "c", "c" }; 
-        final String[] strings3 = {  }; 
-        final String[] strings4 = { "this", "and", "this" }; 
-        final String[] strings5 = { "d", "a", "e", "d", "a", "d", "b", "b", "z", "a", "a", "b", "z", "x" }; 
+        final String[] strings0 = {"a", "b", "a", "c", "b"}; 
+        final String[] strings1 = {"c", "b", "a"}; 
+        final String[] strings2 = {"c", "c", "c", "c"}; 
+        final String[] strings3 = {}; 
+        final String[] strings4 = {"this", "and", "this"}; 
+        final String[] strings5 = {"d", "a", "e", "d", "a", "d", "b", "b", "z", "a", "a", "b", "z", "x"}; 
 
         final Map<?,?>[] resultsArray = {
             WordMultiple.wordMultiple(strings0),

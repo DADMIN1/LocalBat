@@ -11,19 +11,19 @@ public final class Pairs
     /* Given an array of non-empty strings, create and return a Map<String, 
     String> as follows: for each string add its first character as a key with its last character as the value. */
 
-    /*__________________________________________________________________________________
-    |                                     Testcases                                     |
-    |___________________________________________________________________________________|
-    | strings (String[])                     | expected (Map<String, String>)           |
-    |________________________________________|__________________________________________|
-    | { "code", "bug" }                      | {"b": "g", "c": "e"}                     |
-    | { "man", "moon", "main" }              | {"m": "n"}                               |
-    | { "man", "moon", "good", "night" }     | {"g": "d", "m": "n", "n": "t"}           |
-    | {  }                                   | {}                                       |
-    | { "a", "b" }                           | {"a": "a", "b": "b"}                     |
-    | { "are", "codes", "and", "cods" }      | {"a": "d", "c": "s"}                     |
-    | { "apple", "banana", "tea", "coffee" } | {"a": "e", "b": "a", "c": "e", "t": "a"} |
-    |________________________________________|_________________________________________*/
+    /*________________________________________________________________________________
+    |                                    Testcases                                    |
+    |_________________________________________________________________________________|
+    | strings (String[])                   | expected (Map<String, String>)           |
+    |______________________________________|__________________________________________|
+    | {"code", "bug"}                      | {"b": "g", "c": "e"}                     |
+    | {"man", "moon", "main"}              | {"m": "n"}                               |
+    | {"man", "moon", "good", "night"}     | {"g": "d", "m": "n", "n": "t"}           |
+    | {}                                   | {}                                       |
+    | {"a", "b"}                           | {"a": "a", "b": "b"}                     |
+    | {"are", "codes", "and", "cods"}      | {"a": "d", "c": "s"}                     |
+    | {"apple", "banana", "tea", "coffee"} | {"a": "e", "b": "a", "c": "e", "t": "a"} |
+    |______________________________________|_________________________________________*/
 
     public static final Map<String, String> pairs(String[] strings)
     {

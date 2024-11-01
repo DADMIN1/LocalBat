@@ -9,21 +9,21 @@ public final class FrontPiece
     /* Given an int array of any length, return a new array of its first 2 elements. 
     If the array is smaller than length 2, use whatever elements are present. */
 
-    /*_____________________________
-    |          Testcases           |
-    |______________________________|
-    | nums (int[])      | expected |
-    |                   | (int[])  |
-    |___________________|__________|
-    | { 1, 2, 3 }       | {1, 2}   |
-    | { 1, 2 }          | {1, 2}   |
-    | { 1 }             | {1}      |
-    | {  }              | {}       |
-    | { 6, 5, 0 }       | {6, 5}   |
-    | { 6, 5 }          | {6, 5}   |
-    | { 3, 1, 4, 1, 5 } | {3, 1}   |
-    | { 6 }             | {6}      |
-    |___________________|_________*/
+    /*___________________________
+    |         Testcases          |
+    |____________________________|
+    | nums (int[])    | expected |
+    |                 | (int[])  |
+    |_________________|__________|
+    | {1, 2, 3}       | {1, 2}   |
+    | {1, 2}          | {1, 2}   |
+    | {1}             | {1}      |
+    | {}              | {}       |
+    | {6, 5, 0}       | {6, 5}   |
+    | {6, 5}          | {6, 5}   |
+    | {3, 1, 4, 1, 5} | {3, 1}   |
+    | {6}             | {6}      |
+    |_________________|_________*/
 
     public static final int[] frontPiece(int[] nums)
     {

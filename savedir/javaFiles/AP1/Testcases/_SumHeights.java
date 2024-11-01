@@ -35,18 +35,18 @@ public final class _SumHeights
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] heights0 = { 5, 3, 6, 7, 2 }; 
-        final int[] heights1 = { 5, 3, 6, 7, 2 }; 
-        final int[] heights2 = { 5, 3, 6, 7, 2 }; 
-        final int[] heights3 = { 5, 3, 6, 7, 2 }; 
-        final int[] heights4 = { 1, 2, 3, 4, 5, 4, 3, 2, 10 }; 
-        final int[] heights5 = { 1, 2, 3, 4, 5, 4, 3, 2, 10 }; 
-        final int[] heights6 = { 1, 2, 3, 4, 5, 4, 3, 2, 10 }; 
-        final int[] heights7 = { 1, 2, 3, 4, 5, 4, 3, 2, 10 }; 
-        final int[] heights8 = { 1, 2, 3, 4, 5, 4, 3, 2, 10 }; 
-        final int[] heights9 = { 1, 2, 3, 4, 5, 4, 3, 2, 10 }; 
-        final int[] heights10 = { 10, 8, 7, 7, 7, 6, 7 }; 
-        final int[] heights11 = { 10, 8, 7, 7, 7, 6, 7 }; 
+        final int[] heights0 = {5, 3, 6, 7, 2}; 
+        final int[] heights1 = {5, 3, 6, 7, 2}; 
+        final int[] heights2 = {5, 3, 6, 7, 2}; 
+        final int[] heights3 = {5, 3, 6, 7, 2}; 
+        final int[] heights4 = {1, 2, 3, 4, 5, 4, 3, 2, 10}; 
+        final int[] heights5 = {1, 2, 3, 4, 5, 4, 3, 2, 10}; 
+        final int[] heights6 = {1, 2, 3, 4, 5, 4, 3, 2, 10}; 
+        final int[] heights7 = {1, 2, 3, 4, 5, 4, 3, 2, 10}; 
+        final int[] heights8 = {1, 2, 3, 4, 5, 4, 3, 2, 10}; 
+        final int[] heights9 = {1, 2, 3, 4, 5, 4, 3, 2, 10}; 
+        final int[] heights10 = {10, 8, 7, 7, 7, 6, 7}; 
+        final int[] heights11 = {10, 8, 7, 7, 7, 6, 7}; 
 
         final int[] resultsArray = {
             SumHeights.sumHeights(heights0, 2, 4),

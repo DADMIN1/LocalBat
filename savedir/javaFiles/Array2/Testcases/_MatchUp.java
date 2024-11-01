@@ -33,17 +33,17 @@ public final class _MatchUp
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums10 = { 1, 2, 3 }; final int[] nums20 = { 2, 3, 10 }; 
-        final int[] nums11 = { 1, 2, 3 }; final int[] nums21 = { 2, 3, 5 }; 
-        final int[] nums12 = { 1, 2, 3 }; final int[] nums22 = { 2, 3, 3 }; 
-        final int[] nums13 = { 5, 3 }; final int[] nums23 = { 5, 5 }; 
-        final int[] nums14 = { 5, 3 }; final int[] nums24 = { 4, 4 }; 
-        final int[] nums15 = { 5, 3 }; final int[] nums25 = { 3, 3 }; 
-        final int[] nums16 = { 5, 3 }; final int[] nums26 = { 2, 2 }; 
-        final int[] nums17 = { 5, 3 }; final int[] nums27 = { 1, 1 }; 
-        final int[] nums18 = { 5, 3 }; final int[] nums28 = { 0, 0 }; 
-        final int[] nums19 = { 4 }; final int[] nums29 = { 4 }; 
-        final int[] nums110 = { 4 }; final int[] nums210 = { 5 }; 
+        final int[] nums10 = {1, 2, 3}; final int[] nums20 = {2, 3, 10}; 
+        final int[] nums11 = {1, 2, 3}; final int[] nums21 = {2, 3, 5}; 
+        final int[] nums12 = {1, 2, 3}; final int[] nums22 = {2, 3, 3}; 
+        final int[] nums13 = {5, 3}; final int[] nums23 = {5, 5}; 
+        final int[] nums14 = {5, 3}; final int[] nums24 = {4, 4}; 
+        final int[] nums15 = {5, 3}; final int[] nums25 = {3, 3}; 
+        final int[] nums16 = {5, 3}; final int[] nums26 = {2, 2}; 
+        final int[] nums17 = {5, 3}; final int[] nums27 = {1, 1}; 
+        final int[] nums18 = {5, 3}; final int[] nums28 = {0, 0}; 
+        final int[] nums19 = {4}; final int[] nums29 = {4}; 
+        final int[] nums110 = {4}; final int[] nums210 = {5}; 
 
         final int[] resultsArray = {
             MatchUp.matchUp(nums10, nums20),

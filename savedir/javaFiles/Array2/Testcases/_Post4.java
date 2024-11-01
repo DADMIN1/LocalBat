@@ -41,16 +41,16 @@ public final class _Post4
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 2, 4, 1, 2 }; 
-        final int[] nums1 = { 4, 1, 4, 2 }; 
-        final int[] nums2 = { 4, 4, 1, 2, 3 }; 
-        final int[] nums3 = { 4, 2 }; 
-        final int[] nums4 = { 4, 4, 3 }; 
-        final int[] nums5 = { 4, 4 }; 
-        final int[] nums6 = { 4 }; 
-        final int[] nums7 = { 2, 4, 1, 4, 3, 2 }; 
-        final int[] nums8 = { 4, 1, 4, 2, 2, 2 }; 
-        final int[] nums9 = { 3, 4, 3, 2 }; 
+        final int[] nums0 = {2, 4, 1, 2}; 
+        final int[] nums1 = {4, 1, 4, 2}; 
+        final int[] nums2 = {4, 4, 1, 2, 3}; 
+        final int[] nums3 = {4, 2}; 
+        final int[] nums4 = {4, 4, 3}; 
+        final int[] nums5 = {4, 4}; 
+        final int[] nums6 = {4}; 
+        final int[] nums7 = {2, 4, 1, 4, 3, 2}; 
+        final int[] nums8 = {4, 1, 4, 2, 2, 2}; 
+        final int[] nums9 = {3, 4, 3, 2}; 
 
         final int[][] resultsArray = {
             Post4.post4(nums0),

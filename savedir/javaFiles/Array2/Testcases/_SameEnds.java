@@ -39,20 +39,20 @@ public final class _SameEnds
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 5, 6, 45, 99, 13, 5, 6 }; 
-        final int[] nums1 = { 5, 6, 45, 99, 13, 5, 6 }; 
-        final int[] nums2 = { 5, 6, 45, 99, 13, 5, 6 }; 
-        final int[] nums3 = { 1, 2, 5, 2, 1 }; 
-        final int[] nums4 = { 1, 2, 5, 2, 1 }; 
-        final int[] nums5 = { 1, 2, 5, 2, 1 }; 
-        final int[] nums6 = { 1, 2, 5, 2, 1 }; 
-        final int[] nums7 = { 1, 1, 1 }; 
-        final int[] nums8 = { 1, 1, 1 }; 
-        final int[] nums9 = { 1, 1, 1 }; 
-        final int[] nums10 = { 1, 1, 1 }; 
-        final int[] nums11 = { 1 }; 
-        final int[] nums12 = {  }; 
-        final int[] nums13 = { 4, 2, 4, 5 }; 
+        final int[] nums0 = {5, 6, 45, 99, 13, 5, 6}; 
+        final int[] nums1 = {5, 6, 45, 99, 13, 5, 6}; 
+        final int[] nums2 = {5, 6, 45, 99, 13, 5, 6}; 
+        final int[] nums3 = {1, 2, 5, 2, 1}; 
+        final int[] nums4 = {1, 2, 5, 2, 1}; 
+        final int[] nums5 = {1, 2, 5, 2, 1}; 
+        final int[] nums6 = {1, 2, 5, 2, 1}; 
+        final int[] nums7 = {1, 1, 1}; 
+        final int[] nums8 = {1, 1, 1}; 
+        final int[] nums9 = {1, 1, 1}; 
+        final int[] nums10 = {1, 1, 1}; 
+        final int[] nums11 = {1}; 
+        final int[] nums12 = {}; 
+        final int[] nums13 = {4, 2, 4, 5}; 
 
         final boolean[] resultsArray = {
             SameEnds.sameEnds(nums0, 1),

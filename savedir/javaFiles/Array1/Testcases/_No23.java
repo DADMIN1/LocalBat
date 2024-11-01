@@ -33,17 +33,17 @@ public final class _No23
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 4, 5 }; 
-        final int[] nums1 = { 4, 2 }; 
-        final int[] nums2 = { 3, 5 }; 
-        final int[] nums3 = { 1, 9 }; 
-        final int[] nums4 = { 2, 9 }; 
-        final int[] nums5 = { 1, 3 }; 
-        final int[] nums6 = { 1, 1 }; 
-        final int[] nums7 = { 2, 2 }; 
-        final int[] nums8 = { 3, 3 }; 
-        final int[] nums9 = { 7, 8 }; 
-        final int[] nums10 = { 8, 7 }; 
+        final int[] nums0 = {4, 5}; 
+        final int[] nums1 = {4, 2}; 
+        final int[] nums2 = {3, 5}; 
+        final int[] nums3 = {1, 9}; 
+        final int[] nums4 = {2, 9}; 
+        final int[] nums5 = {1, 3}; 
+        final int[] nums6 = {1, 1}; 
+        final int[] nums7 = {2, 2}; 
+        final int[] nums8 = {3, 3}; 
+        final int[] nums9 = {7, 8}; 
+        final int[] nums10 = {8, 7}; 
 
         final boolean[] resultsArray = {
             No23.no23(nums0),

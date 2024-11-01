@@ -31,16 +31,16 @@ public final class _Start1
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] a0 = { 1, 2, 3 }; final int[] b0 = { 1, 3 }; 
-        final int[] a1 = { 7, 2, 3 }; final int[] b1 = { 1 }; 
-        final int[] a2 = { 1, 2 }; final int[] b2 = {  }; 
-        final int[] a3 = {  }; final int[] b3 = { 1, 2 }; 
-        final int[] a4 = { 7 }; final int[] b4 = {  }; 
-        final int[] a5 = { 7 }; final int[] b5 = { 1 }; 
-        final int[] a6 = { 1 }; final int[] b6 = { 1 }; 
-        final int[] a7 = { 7 }; final int[] b7 = { 8 }; 
-        final int[] a8 = {  }; final int[] b8 = {  }; 
-        final int[] a9 = { 1, 3 }; final int[] b9 = { 1 }; 
+        final int[] a0 = {1, 2, 3}; final int[] b0 = {1, 3}; 
+        final int[] a1 = {7, 2, 3}; final int[] b1 = {1}; 
+        final int[] a2 = {1, 2}; final int[] b2 = {}; 
+        final int[] a3 = {}; final int[] b3 = {1, 2}; 
+        final int[] a4 = {7}; final int[] b4 = {}; 
+        final int[] a5 = {7}; final int[] b5 = {1}; 
+        final int[] a6 = {1}; final int[] b6 = {1}; 
+        final int[] a7 = {7}; final int[] b7 = {8}; 
+        final int[] a8 = {}; final int[] b8 = {}; 
+        final int[] a9 = {1, 3}; final int[] b9 = {1}; 
 
         final int[] resultsArray = {
             Start1.start1(a0, b0),

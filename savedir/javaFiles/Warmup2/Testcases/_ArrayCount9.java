@@ -25,13 +25,13 @@ public final class _ArrayCount9
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 1, 2, 9 }; 
-        final int[] nums1 = { 1, 9, 9 }; 
-        final int[] nums2 = { 1, 9, 9, 3, 9 }; 
-        final int[] nums3 = { 1, 2, 3 }; 
-        final int[] nums4 = {  }; 
-        final int[] nums5 = { 4, 2, 4, 3, 1 }; 
-        final int[] nums6 = { 9, 2, 4, 3, 1 }; 
+        final int[] nums0 = {1, 2, 9}; 
+        final int[] nums1 = {1, 9, 9}; 
+        final int[] nums2 = {1, 9, 9, 3, 9}; 
+        final int[] nums3 = {1, 2, 3}; 
+        final int[] nums4 = {}; 
+        final int[] nums5 = {4, 2, 4, 3, 1}; 
+        final int[] nums6 = {9, 2, 4, 3, 1}; 
 
         final int[] resultsArray = {
             ArrayCount9.arrayCount9(nums0),

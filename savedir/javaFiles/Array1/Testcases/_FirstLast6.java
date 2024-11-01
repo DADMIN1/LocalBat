@@ -37,19 +37,19 @@ public final class _FirstLast6
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 1, 2, 6 }; 
-        final int[] nums1 = { 6, 1, 2, 3 }; 
-        final int[] nums2 = { 13, 6, 1, 2, 3 }; 
-        final int[] nums3 = { 13, 6, 1, 2, 6 }; 
-        final int[] nums4 = { 3, 2, 1 }; 
-        final int[] nums5 = { 3, 6, 1 }; 
-        final int[] nums6 = { 3, 6 }; 
-        final int[] nums7 = { 6 }; 
-        final int[] nums8 = { 3 }; 
-        final int[] nums9 = { 5, 6 }; 
-        final int[] nums10 = { 5, 5 }; 
-        final int[] nums11 = { 1, 2, 3, 4, 6 }; 
-        final int[] nums12 = { 1, 2, 3, 4 }; 
+        final int[] nums0 = {1, 2, 6}; 
+        final int[] nums1 = {6, 1, 2, 3}; 
+        final int[] nums2 = {13, 6, 1, 2, 3}; 
+        final int[] nums3 = {13, 6, 1, 2, 6}; 
+        final int[] nums4 = {3, 2, 1}; 
+        final int[] nums5 = {3, 6, 1}; 
+        final int[] nums6 = {3, 6}; 
+        final int[] nums7 = {6}; 
+        final int[] nums8 = {3}; 
+        final int[] nums9 = {5, 6}; 
+        final int[] nums10 = {5, 5}; 
+        final int[] nums11 = {1, 2, 3, 4, 6}; 
+        final int[] nums12 = {1, 2, 3, 4}; 
 
         final boolean[] resultsArray = {
             FirstLast6.firstLast6(nums0),

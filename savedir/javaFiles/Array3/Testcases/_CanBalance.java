@@ -33,17 +33,17 @@ public final class _CanBalance
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 1, 1, 1, 2, 1 }; 
-        final int[] nums1 = { 2, 1, 1, 2, 1 }; 
-        final int[] nums2 = { 10, 10 }; 
-        final int[] nums3 = { 10, 0, 1, -1, 10 }; 
-        final int[] nums4 = { 1, 1, 1, 1, 4 }; 
-        final int[] nums5 = { 2, 1, 1, 1, 4 }; 
-        final int[] nums6 = { 2, 3, 4, 1, 2 }; 
-        final int[] nums7 = { 1, 2, 3, 1, 0, 2, 3 }; 
-        final int[] nums8 = { 1, 2, 3, 1, 0, 1, 3 }; 
-        final int[] nums9 = { 1 }; 
-        final int[] nums10 = { 1, 1, 1, 2, 1 }; 
+        final int[] nums0 = {1, 1, 1, 2, 1}; 
+        final int[] nums1 = {2, 1, 1, 2, 1}; 
+        final int[] nums2 = {10, 10}; 
+        final int[] nums3 = {10, 0, 1, -1, 10}; 
+        final int[] nums4 = {1, 1, 1, 1, 4}; 
+        final int[] nums5 = {2, 1, 1, 1, 4}; 
+        final int[] nums6 = {2, 3, 4, 1, 2}; 
+        final int[] nums7 = {1, 2, 3, 1, 0, 2, 3}; 
+        final int[] nums8 = {1, 2, 3, 1, 0, 1, 3}; 
+        final int[] nums9 = {1}; 
+        final int[] nums10 = {1, 1, 1, 2, 1}; 
 
         final boolean[] resultsArray = {
             CanBalance.canBalance(nums0),

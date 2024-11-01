@@ -39,20 +39,20 @@ public final class _Either24
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 1, 2, 2 }; 
-        final int[] nums1 = { 4, 4, 1 }; 
-        final int[] nums2 = { 4, 4, 1, 2, 2 }; 
-        final int[] nums3 = { 1, 2, 3, 4 }; 
-        final int[] nums4 = { 3, 5, 9 }; 
-        final int[] nums5 = { 1, 2, 3, 4, 4 }; 
-        final int[] nums6 = { 2, 2, 3, 4 }; 
-        final int[] nums7 = { 1, 2, 3, 2, 2, 4 }; 
-        final int[] nums8 = { 1, 2, 3, 2, 2, 4, 4 }; 
-        final int[] nums9 = { 1, 2 }; 
-        final int[] nums10 = { 2, 2 }; 
-        final int[] nums11 = { 4, 4 }; 
-        final int[] nums12 = { 2 }; 
-        final int[] nums13 = {  }; 
+        final int[] nums0 = {1, 2, 2}; 
+        final int[] nums1 = {4, 4, 1}; 
+        final int[] nums2 = {4, 4, 1, 2, 2}; 
+        final int[] nums3 = {1, 2, 3, 4}; 
+        final int[] nums4 = {3, 5, 9}; 
+        final int[] nums5 = {1, 2, 3, 4, 4}; 
+        final int[] nums6 = {2, 2, 3, 4}; 
+        final int[] nums7 = {1, 2, 3, 2, 2, 4}; 
+        final int[] nums8 = {1, 2, 3, 2, 2, 4, 4}; 
+        final int[] nums9 = {1, 2}; 
+        final int[] nums10 = {2, 2}; 
+        final int[] nums11 = {4, 4}; 
+        final int[] nums12 = {2}; 
+        final int[] nums13 = {}; 
 
         final boolean[] resultsArray = {
             Either24.either24(nums0),

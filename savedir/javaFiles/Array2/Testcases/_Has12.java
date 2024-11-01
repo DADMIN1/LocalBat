@@ -45,23 +45,23 @@ public final class _Has12
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 1, 3, 2 }; 
-        final int[] nums1 = { 3, 1, 2 }; 
-        final int[] nums2 = { 3, 1, 4, 5, 2 }; 
-        final int[] nums3 = { 3, 1, 4, 5, 6 }; 
-        final int[] nums4 = { 3, 1, 4, 1, 6, 2 }; 
-        final int[] nums5 = { 2, 1, 4, 1, 6, 2 }; 
-        final int[] nums6 = { 2, 1, 4, 1, 6 }; 
-        final int[] nums7 = { 1 }; 
-        final int[] nums8 = { 2, 1, 3 }; 
-        final int[] nums9 = { 2, 1, 3, 2 }; 
-        final int[] nums10 = { 2 }; 
-        final int[] nums11 = { 3, 2 }; 
-        final int[] nums12 = { 3, 1, 3, 2 }; 
-        final int[] nums13 = { 3, 5, 9 }; 
-        final int[] nums14 = { 3, 5, 1 }; 
-        final int[] nums15 = { 3, 2, 1 }; 
-        final int[] nums16 = { 1, 2 }; 
+        final int[] nums0 = {1, 3, 2}; 
+        final int[] nums1 = {3, 1, 2}; 
+        final int[] nums2 = {3, 1, 4, 5, 2}; 
+        final int[] nums3 = {3, 1, 4, 5, 6}; 
+        final int[] nums4 = {3, 1, 4, 1, 6, 2}; 
+        final int[] nums5 = {2, 1, 4, 1, 6, 2}; 
+        final int[] nums6 = {2, 1, 4, 1, 6}; 
+        final int[] nums7 = {1}; 
+        final int[] nums8 = {2, 1, 3}; 
+        final int[] nums9 = {2, 1, 3, 2}; 
+        final int[] nums10 = {2}; 
+        final int[] nums11 = {3, 2}; 
+        final int[] nums12 = {3, 1, 3, 2}; 
+        final int[] nums13 = {3, 5, 9}; 
+        final int[] nums14 = {3, 5, 1}; 
+        final int[] nums15 = {3, 2, 1}; 
+        final int[] nums16 = {1, 2}; 
 
         final boolean[] resultsArray = {
             Has12.has12(nums0),

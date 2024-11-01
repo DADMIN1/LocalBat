@@ -23,11 +23,11 @@ public final class _Word0
 
     public static final void Validate(boolean printSuccess)
     {
-        final String[] strings0 = { "a", "b", "a", "b" }; 
-        final String[] strings1 = { "a", "b", "a", "c", "b" }; 
-        final String[] strings2 = { "c", "b", "a" }; 
-        final String[] strings3 = { "c", "c", "c", "c" }; 
-        final String[] strings4 = {  }; 
+        final String[] strings0 = {"a", "b", "a", "b"}; 
+        final String[] strings1 = {"a", "b", "a", "c", "b"}; 
+        final String[] strings2 = {"c", "b", "a"}; 
+        final String[] strings3 = {"c", "c", "c", "c"}; 
+        final String[] strings4 = {}; 
 
         final Map<?,?>[] resultsArray = {
             Word0.word0(strings0),

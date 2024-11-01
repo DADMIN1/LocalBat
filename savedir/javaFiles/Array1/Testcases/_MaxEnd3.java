@@ -37,14 +37,14 @@ public final class _MaxEnd3
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 1, 2, 3 }; 
-        final int[] nums1 = { 11, 5, 9 }; 
-        final int[] nums2 = { 2, 11, 3 }; 
-        final int[] nums3 = { 11, 3, 3 }; 
-        final int[] nums4 = { 3, 11, 11 }; 
-        final int[] nums5 = { 2, 2, 2 }; 
-        final int[] nums6 = { 2, 11, 2 }; 
-        final int[] nums7 = { 0, 0, 1 }; 
+        final int[] nums0 = {1, 2, 3}; 
+        final int[] nums1 = {11, 5, 9}; 
+        final int[] nums2 = {2, 11, 3}; 
+        final int[] nums3 = {11, 3, 3}; 
+        final int[] nums4 = {3, 11, 11}; 
+        final int[] nums5 = {2, 2, 2}; 
+        final int[] nums6 = {2, 11, 2}; 
+        final int[] nums7 = {0, 0, 1}; 
 
         final int[][] resultsArray = {
             MaxEnd3.maxEnd3(nums0),

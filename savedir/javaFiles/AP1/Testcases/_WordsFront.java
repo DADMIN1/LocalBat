@@ -33,12 +33,12 @@ public final class _WordsFront
 
     public static final void Validate(boolean printSuccess)
     {
-        final String[] words0 = { "a", "b", "c", "d" }; 
-        final String[] words1 = { "a", "b", "c", "d" }; 
-        final String[] words2 = { "a", "b", "c", "d" }; 
-        final String[] words3 = { "a", "b", "c", "d" }; 
-        final String[] words4 = { "Hi", "There" }; 
-        final String[] words5 = { "Hi", "There" }; 
+        final String[] words0 = {"a", "b", "c", "d"}; 
+        final String[] words1 = {"a", "b", "c", "d"}; 
+        final String[] words2 = {"a", "b", "c", "d"}; 
+        final String[] words3 = {"a", "b", "c", "d"}; 
+        final String[] words4 = {"Hi", "There"}; 
+        final String[] words5 = {"Hi", "There"}; 
 
         final String[][] resultsArray = {
             WordsFront.wordsFront(words0, 1),

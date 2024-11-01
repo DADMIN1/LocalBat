@@ -41,16 +41,16 @@ public final class _WithoutTen
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 1, 10, 10, 2 }; 
-        final int[] nums1 = { 10, 2, 10 }; 
-        final int[] nums2 = { 1, 99, 10 }; 
-        final int[] nums3 = { 10, 13, 10, 14 }; 
-        final int[] nums4 = { 10, 13, 10, 14, 10 }; 
-        final int[] nums5 = { 10, 10, 3 }; 
-        final int[] nums6 = { 1 }; 
-        final int[] nums7 = { 13, 1 }; 
-        final int[] nums8 = { 10 }; 
-        final int[] nums9 = {  }; 
+        final int[] nums0 = {1, 10, 10, 2}; 
+        final int[] nums1 = {10, 2, 10}; 
+        final int[] nums2 = {1, 99, 10}; 
+        final int[] nums3 = {10, 13, 10, 14}; 
+        final int[] nums4 = {10, 13, 10, 14, 10}; 
+        final int[] nums5 = {10, 10, 3}; 
+        final int[] nums6 = {1}; 
+        final int[] nums7 = {13, 1}; 
+        final int[] nums8 = {10}; 
+        final int[] nums9 = {}; 
 
         final int[][] resultsArray = {
             WithoutTen.withoutTen(nums0),

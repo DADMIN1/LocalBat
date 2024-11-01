@@ -41,16 +41,16 @@ public final class _Pre4
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 1, 2, 4, 1 }; 
-        final int[] nums1 = { 3, 1, 4 }; 
-        final int[] nums2 = { 1, 4, 4 }; 
-        final int[] nums3 = { 1, 4, 4, 2 }; 
-        final int[] nums4 = { 1, 3, 4, 2, 4 }; 
-        final int[] nums5 = { 4, 4 }; 
-        final int[] nums6 = { 3, 3, 4 }; 
-        final int[] nums7 = { 1, 2, 1, 4 }; 
-        final int[] nums8 = { 2, 1, 4, 2 }; 
-        final int[] nums9 = { 2, 1, 2, 1, 4, 2 }; 
+        final int[] nums0 = {1, 2, 4, 1}; 
+        final int[] nums1 = {3, 1, 4}; 
+        final int[] nums2 = {1, 4, 4}; 
+        final int[] nums3 = {1, 4, 4, 2}; 
+        final int[] nums4 = {1, 3, 4, 2, 4}; 
+        final int[] nums5 = {4, 4}; 
+        final int[] nums6 = {3, 3, 4}; 
+        final int[] nums7 = {1, 2, 1, 4}; 
+        final int[] nums8 = {2, 1, 4, 2}; 
+        final int[] nums9 = {2, 1, 2, 1, 4, 2}; 
 
         final int[][] resultsArray = {
             Pre4.pre4(nums0),

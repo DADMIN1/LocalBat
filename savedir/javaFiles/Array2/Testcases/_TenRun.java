@@ -43,17 +43,17 @@ public final class _TenRun
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 2, 10, 3, 4, 20, 5 }; 
-        final int[] nums1 = { 10, 1, 20, 2 }; 
-        final int[] nums2 = { 10, 1, 9, 20 }; 
-        final int[] nums3 = { 1, 2, 50, 1 }; 
-        final int[] nums4 = { 1, 20, 50, 1 }; 
-        final int[] nums5 = { 10, 10 }; 
-        final int[] nums6 = { 10, 2 }; 
-        final int[] nums7 = { 0, 2 }; 
-        final int[] nums8 = { 1, 2 }; 
-        final int[] nums9 = { 1 }; 
-        final int[] nums10 = {  }; 
+        final int[] nums0 = {2, 10, 3, 4, 20, 5}; 
+        final int[] nums1 = {10, 1, 20, 2}; 
+        final int[] nums2 = {10, 1, 9, 20}; 
+        final int[] nums3 = {1, 2, 50, 1}; 
+        final int[] nums4 = {1, 20, 50, 1}; 
+        final int[] nums5 = {10, 10}; 
+        final int[] nums6 = {10, 2}; 
+        final int[] nums7 = {0, 2}; 
+        final int[] nums8 = {1, 2}; 
+        final int[] nums9 = {1}; 
+        final int[] nums10 = {}; 
 
         final int[][] resultsArray = {
             TenRun.tenRun(nums0),

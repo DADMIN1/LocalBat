@@ -35,18 +35,18 @@ public final class _HaveThree
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 3, 1, 3, 1, 3 }; 
-        final int[] nums1 = { 3, 1, 3, 3 }; 
-        final int[] nums2 = { 3, 4, 3, 3, 4 }; 
-        final int[] nums3 = { 1, 3, 1, 3, 1, 2 }; 
-        final int[] nums4 = { 1, 3, 1, 3, 1, 3 }; 
-        final int[] nums5 = { 1, 3, 3, 1, 3 }; 
-        final int[] nums6 = { 1, 3, 1, 3, 1, 3, 4, 3 }; 
-        final int[] nums7 = { 3, 4, 3, 4, 3, 4, 4 }; 
-        final int[] nums8 = { 3, 3, 3 }; 
-        final int[] nums9 = { 1, 3 }; 
-        final int[] nums10 = { 3 }; 
-        final int[] nums11 = { 1 }; 
+        final int[] nums0 = {3, 1, 3, 1, 3}; 
+        final int[] nums1 = {3, 1, 3, 3}; 
+        final int[] nums2 = {3, 4, 3, 3, 4}; 
+        final int[] nums3 = {1, 3, 1, 3, 1, 2}; 
+        final int[] nums4 = {1, 3, 1, 3, 1, 3}; 
+        final int[] nums5 = {1, 3, 3, 1, 3}; 
+        final int[] nums6 = {1, 3, 1, 3, 1, 3, 4, 3}; 
+        final int[] nums7 = {3, 4, 3, 4, 3, 4, 4}; 
+        final int[] nums8 = {3, 3, 3}; 
+        final int[] nums9 = {1, 3}; 
+        final int[] nums10 = {3}; 
+        final int[] nums11 = {1}; 
 
         final boolean[] resultsArray = {
             HaveThree.haveThree(nums0),

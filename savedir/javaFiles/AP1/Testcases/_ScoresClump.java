@@ -29,15 +29,15 @@ public final class _ScoresClump
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] scores0 = { 3, 4, 5 }; 
-        final int[] scores1 = { 3, 4, 6 }; 
-        final int[] scores2 = { 1, 3, 5, 5 }; 
-        final int[] scores3 = { 2, 4, 5, 6 }; 
-        final int[] scores4 = { 2, 4, 5, 7 }; 
-        final int[] scores5 = { 2, 4, 4, 7 }; 
-        final int[] scores6 = { 3, 3, 6, 7, 9 }; 
-        final int[] scores7 = { 3, 3, 7, 7, 9 }; 
-        final int[] scores8 = { 4, 5, 8 }; 
+        final int[] scores0 = {3, 4, 5}; 
+        final int[] scores1 = {3, 4, 6}; 
+        final int[] scores2 = {1, 3, 5, 5}; 
+        final int[] scores3 = {2, 4, 5, 6}; 
+        final int[] scores4 = {2, 4, 5, 7}; 
+        final int[] scores5 = {2, 4, 4, 7}; 
+        final int[] scores6 = {3, 3, 6, 7, 9}; 
+        final int[] scores7 = {3, 3, 7, 7, 9}; 
+        final int[] scores8 = {4, 5, 8}; 
 
         final boolean[] resultsArray = {
             ScoresClump.scoresClump(scores0),

@@ -33,12 +33,12 @@ public final class _Fix23
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 1, 2, 3 }; 
-        final int[] nums1 = { 2, 3, 5 }; 
-        final int[] nums2 = { 1, 2, 1 }; 
-        final int[] nums3 = { 3, 2, 1 }; 
-        final int[] nums4 = { 2, 2, 3 }; 
-        final int[] nums5 = { 2, 3, 3 }; 
+        final int[] nums0 = {1, 2, 3}; 
+        final int[] nums1 = {2, 3, 5}; 
+        final int[] nums2 = {1, 2, 1}; 
+        final int[] nums3 = {3, 2, 1}; 
+        final int[] nums4 = {2, 2, 3}; 
+        final int[] nums5 = {2, 3, 3}; 
 
         final int[][] resultsArray = {
             Fix23.fix23(nums0),

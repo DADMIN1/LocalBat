@@ -35,18 +35,18 @@ public final class _ModThree
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 2, 1, 3, 5 }; 
-        final int[] nums1 = { 2, 1, 2, 5 }; 
-        final int[] nums2 = { 2, 4, 2, 5 }; 
-        final int[] nums3 = { 1, 2, 1, 2, 1 }; 
-        final int[] nums4 = { 9, 9, 9 }; 
-        final int[] nums5 = { 1, 2, 1 }; 
-        final int[] nums6 = { 1, 2 }; 
-        final int[] nums7 = { 1 }; 
-        final int[] nums8 = {  }; 
-        final int[] nums9 = { 9, 7, 2, 9 }; 
-        final int[] nums10 = { 9, 7, 2, 9, 2, 2 }; 
-        final int[] nums11 = { 9, 7, 2, 9, 2, 2, 6 }; 
+        final int[] nums0 = {2, 1, 3, 5}; 
+        final int[] nums1 = {2, 1, 2, 5}; 
+        final int[] nums2 = {2, 4, 2, 5}; 
+        final int[] nums3 = {1, 2, 1, 2, 1}; 
+        final int[] nums4 = {9, 9, 9}; 
+        final int[] nums5 = {1, 2, 1}; 
+        final int[] nums6 = {1, 2}; 
+        final int[] nums7 = {1}; 
+        final int[] nums8 = {}; 
+        final int[] nums9 = {9, 7, 2, 9}; 
+        final int[] nums10 = {9, 7, 2, 9, 2, 2}; 
+        final int[] nums11 = {9, 7, 2, 9, 2, 2, 6}; 
 
         final boolean[] resultsArray = {
             ModThree.modThree(nums0),

@@ -8,27 +8,27 @@ public final class More14
 {
     /* Given an array of ints, return true if the number of 1's is greater than the number of 4's */
 
-    /*_________________________________
-    |            Testcases             |
-    |__________________________________|
-    | nums (int[])         | expected  |
-    |                      | (boolean) |
-    |______________________|___________|
-    | { 1, 4, 1 }          | true      |
-    | { 1, 4, 1, 4 }       | false     |
-    | { 1, 1 }             | true      |
-    | { 1, 6, 6 }          | true      |
-    | { 1 }                | true      |
-    | { 1, 4 }             | false     |
-    | { 6, 1, 1 }          | true      |
-    | { 1, 6, 4 }          | false     |
-    | { 1, 1, 4, 4, 1 }    | true      |
-    | { 1, 1, 6, 4, 4, 1 } | true      |
-    | {  }                 | false     |
-    | { 4, 1, 4, 6 }       | false     |
-    | { 4, 1, 4, 6, 1 }    | false     |
-    | { 1, 4, 1, 4, 1, 6 } | true      |
-    |______________________|__________*/
+    /*_______________________________
+    |           Testcases            |
+    |________________________________|
+    | nums (int[])       | expected  |
+    |                    | (boolean) |
+    |____________________|___________|
+    | {1, 4, 1}          | true      |
+    | {1, 4, 1, 4}       | false     |
+    | {1, 1}             | true      |
+    | {1, 6, 6}          | true      |
+    | {1}                | true      |
+    | {1, 4}             | false     |
+    | {6, 1, 1}          | true      |
+    | {1, 6, 4}          | false     |
+    | {1, 1, 4, 4, 1}    | true      |
+    | {1, 1, 6, 4, 4, 1} | true      |
+    | {}                 | false     |
+    | {4, 1, 4, 6}       | false     |
+    | {4, 1, 4, 6, 1}    | false     |
+    | {1, 4, 1, 4, 1, 6} | true      |
+    |____________________|__________*/
 
     public static final boolean more14(int[] nums)
     {

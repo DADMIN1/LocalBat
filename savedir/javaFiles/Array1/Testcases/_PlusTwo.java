@@ -27,9 +27,9 @@ public final class _PlusTwo
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] a0 = { 1, 2 }; final int[] b0 = { 3, 4 }; 
-        final int[] a1 = { 4, 4 }; final int[] b1 = { 2, 2 }; 
-        final int[] a2 = { 9, 2 }; final int[] b2 = { 3, 4 }; 
+        final int[] a0 = {1, 2}; final int[] b0 = {3, 4}; 
+        final int[] a1 = {4, 4}; final int[] b1 = {2, 2}; 
+        final int[] a2 = {9, 2}; final int[] b2 = {3, 4}; 
 
         final int[][] resultsArray = {
             PlusTwo.plusTwo(a0, b0),

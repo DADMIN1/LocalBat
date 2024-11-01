@@ -37,19 +37,19 @@ public final class _LinearIn
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] outer0 = { 1, 2, 4, 6 }; final int[] inner0 = { 2, 4 }; 
-        final int[] outer1 = { 1, 2, 4, 6 }; final int[] inner1 = { 2, 3, 4 }; 
-        final int[] outer2 = { 1, 2, 4, 4, 6 }; final int[] inner2 = { 2, 4 }; 
-        final int[] outer3 = { 2, 2, 4, 4, 6, 6 }; final int[] inner3 = { 2, 4 }; 
-        final int[] outer4 = { 2, 2, 2, 2, 2 }; final int[] inner4 = { 2, 2 }; 
-        final int[] outer5 = { 2, 2, 2, 2, 2 }; final int[] inner5 = { 2, 4 }; 
-        final int[] outer6 = { 2, 2, 2, 2, 4 }; final int[] inner6 = { 2, 4 }; 
-        final int[] outer7 = { 1, 2, 3 }; final int[] inner7 = { 2 }; 
-        final int[] outer8 = { 1, 2, 3 }; final int[] inner8 = { -1 }; 
-        final int[] outer9 = { 1, 2, 3 }; final int[] inner9 = {  }; 
-        final int[] outer10 = { -1, 0, 3, 3, 3, 10, 12 }; final int[] inner10 = { -1, 0, 3, 12 }; 
-        final int[] outer11 = { -1, 0, 3, 3, 3, 10, 12 }; final int[] inner11 = { 0, 3, 12, 14 }; 
-        final int[] outer12 = { -1, 0, 3, 3, 3, 10, 12 }; final int[] inner12 = { -1, 10, 11 }; 
+        final int[] outer0 = {1, 2, 4, 6}; final int[] inner0 = {2, 4}; 
+        final int[] outer1 = {1, 2, 4, 6}; final int[] inner1 = {2, 3, 4}; 
+        final int[] outer2 = {1, 2, 4, 4, 6}; final int[] inner2 = {2, 4}; 
+        final int[] outer3 = {2, 2, 4, 4, 6, 6}; final int[] inner3 = {2, 4}; 
+        final int[] outer4 = {2, 2, 2, 2, 2}; final int[] inner4 = {2, 2}; 
+        final int[] outer5 = {2, 2, 2, 2, 2}; final int[] inner5 = {2, 4}; 
+        final int[] outer6 = {2, 2, 2, 2, 4}; final int[] inner6 = {2, 4}; 
+        final int[] outer7 = {1, 2, 3}; final int[] inner7 = {2}; 
+        final int[] outer8 = {1, 2, 3}; final int[] inner8 = {-1}; 
+        final int[] outer9 = {1, 2, 3}; final int[] inner9 = {}; 
+        final int[] outer10 = {-1, 0, 3, 3, 3, 10, 12}; final int[] inner10 = {-1, 0, 3, 12}; 
+        final int[] outer11 = {-1, 0, 3, 3, 3, 10, 12}; final int[] inner11 = {0, 3, 12, 14}; 
+        final int[] outer12 = {-1, 0, 3, 3, 3, 10, 12}; final int[] inner12 = {-1, 10, 11}; 
 
         final boolean[] resultsArray = {
             LinearIn.linearIn(outer0, inner0),

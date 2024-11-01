@@ -29,15 +29,15 @@ public final class _Has23
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 2, 5 }; 
-        final int[] nums1 = { 4, 3 }; 
-        final int[] nums2 = { 4, 5 }; 
-        final int[] nums3 = { 2, 2 }; 
-        final int[] nums4 = { 3, 2 }; 
-        final int[] nums5 = { 3, 3 }; 
-        final int[] nums6 = { 7, 7 }; 
-        final int[] nums7 = { 3, 9 }; 
-        final int[] nums8 = { 9, 5 }; 
+        final int[] nums0 = {2, 5}; 
+        final int[] nums1 = {4, 3}; 
+        final int[] nums2 = {4, 5}; 
+        final int[] nums3 = {2, 2}; 
+        final int[] nums4 = {3, 2}; 
+        final int[] nums5 = {3, 3}; 
+        final int[] nums6 = {7, 7}; 
+        final int[] nums7 = {3, 9}; 
+        final int[] nums8 = {9, 5}; 
 
         final boolean[] resultsArray = {
             Has23.has23(nums0),

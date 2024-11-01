@@ -39,15 +39,15 @@ public final class _EvenOdd
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 1, 0, 1, 0, 0, 1, 1 }; 
-        final int[] nums1 = { 3, 3, 2 }; 
-        final int[] nums2 = { 2, 2, 2 }; 
-        final int[] nums3 = { 3, 2, 2 }; 
-        final int[] nums4 = { 1, 1, 0, 1, 0 }; 
-        final int[] nums5 = { 1 }; 
-        final int[] nums6 = { 1, 2 }; 
-        final int[] nums7 = { 2, 1 }; 
-        final int[] nums8 = {  }; 
+        final int[] nums0 = {1, 0, 1, 0, 0, 1, 1}; 
+        final int[] nums1 = {3, 3, 2}; 
+        final int[] nums2 = {2, 2, 2}; 
+        final int[] nums3 = {3, 2, 2}; 
+        final int[] nums4 = {1, 1, 0, 1, 0}; 
+        final int[] nums5 = {1}; 
+        final int[] nums6 = {1, 2}; 
+        final int[] nums7 = {2, 1}; 
+        final int[] nums8 = {}; 
 
         final int[][] resultsArray = {
             EvenOdd.evenOdd(nums0),

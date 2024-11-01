@@ -37,14 +37,14 @@ public final class _Reverse3
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 1, 2, 3 }; 
-        final int[] nums1 = { 5, 11, 9 }; 
-        final int[] nums2 = { 7, 0, 0 }; 
-        final int[] nums3 = { 2, 1, 2 }; 
-        final int[] nums4 = { 1, 2, 1 }; 
-        final int[] nums5 = { 2, 11, 3 }; 
-        final int[] nums6 = { 0, 6, 5 }; 
-        final int[] nums7 = { 7, 2, 3 }; 
+        final int[] nums0 = {1, 2, 3}; 
+        final int[] nums1 = {5, 11, 9}; 
+        final int[] nums2 = {7, 0, 0}; 
+        final int[] nums3 = {2, 1, 2}; 
+        final int[] nums4 = {1, 2, 1}; 
+        final int[] nums5 = {2, 11, 3}; 
+        final int[] nums6 = {0, 6, 5}; 
+        final int[] nums7 = {7, 2, 3}; 
 
         final int[][] resultsArray = {
             Reverse3.reverse3(nums0),

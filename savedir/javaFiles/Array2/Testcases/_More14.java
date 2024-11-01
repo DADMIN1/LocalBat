@@ -39,20 +39,20 @@ public final class _More14
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 1, 4, 1 }; 
-        final int[] nums1 = { 1, 4, 1, 4 }; 
-        final int[] nums2 = { 1, 1 }; 
-        final int[] nums3 = { 1, 6, 6 }; 
-        final int[] nums4 = { 1 }; 
-        final int[] nums5 = { 1, 4 }; 
-        final int[] nums6 = { 6, 1, 1 }; 
-        final int[] nums7 = { 1, 6, 4 }; 
-        final int[] nums8 = { 1, 1, 4, 4, 1 }; 
-        final int[] nums9 = { 1, 1, 6, 4, 4, 1 }; 
-        final int[] nums10 = {  }; 
-        final int[] nums11 = { 4, 1, 4, 6 }; 
-        final int[] nums12 = { 4, 1, 4, 6, 1 }; 
-        final int[] nums13 = { 1, 4, 1, 4, 1, 6 }; 
+        final int[] nums0 = {1, 4, 1}; 
+        final int[] nums1 = {1, 4, 1, 4}; 
+        final int[] nums2 = {1, 1}; 
+        final int[] nums3 = {1, 6, 6}; 
+        final int[] nums4 = {1}; 
+        final int[] nums5 = {1, 4}; 
+        final int[] nums6 = {6, 1, 1}; 
+        final int[] nums7 = {1, 6, 4}; 
+        final int[] nums8 = {1, 1, 4, 4, 1}; 
+        final int[] nums9 = {1, 1, 6, 4, 4, 1}; 
+        final int[] nums10 = {}; 
+        final int[] nums11 = {4, 1, 4, 6}; 
+        final int[] nums12 = {4, 1, 4, 6, 1}; 
+        final int[] nums13 = {1, 4, 1, 4, 1, 6}; 
 
         final boolean[] resultsArray = {
             More14.more14(nums0),

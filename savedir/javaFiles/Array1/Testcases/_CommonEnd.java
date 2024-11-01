@@ -21,11 +21,11 @@ public final class _CommonEnd
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] a0 = { 1, 2, 3 }; final int[] b0 = { 7, 3 }; 
-        final int[] a1 = { 1, 2, 3 }; final int[] b1 = { 7, 3, 2 }; 
-        final int[] a2 = { 1, 2, 3 }; final int[] b2 = { 1, 3 }; 
-        final int[] a3 = { 1, 2, 3 }; final int[] b3 = { 1 }; 
-        final int[] a4 = { 1, 2, 3 }; final int[] b4 = { 2 }; 
+        final int[] a0 = {1, 2, 3}; final int[] b0 = {7, 3}; 
+        final int[] a1 = {1, 2, 3}; final int[] b1 = {7, 3, 2}; 
+        final int[] a2 = {1, 2, 3}; final int[] b2 = {1, 3}; 
+        final int[] a3 = {1, 2, 3}; final int[] b3 = {1}; 
+        final int[] a4 = {1, 2, 3}; final int[] b4 = {2}; 
 
         final boolean[] resultsArray = {
             CommonEnd.commonEnd(a0, b0),

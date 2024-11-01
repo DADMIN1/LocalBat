@@ -29,15 +29,15 @@ public final class _CountClumps
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 1, 2, 2, 3, 4, 4 }; 
-        final int[] nums1 = { 1, 1, 2, 1, 1 }; 
-        final int[] nums2 = { 1, 1, 1, 1, 1 }; 
-        final int[] nums3 = { 1, 2, 3 }; 
-        final int[] nums4 = { 2, 2, 1, 1, 1, 2, 1, 1, 2, 2 }; 
-        final int[] nums5 = { 0, 2, 2, 1, 1, 1, 2, 1, 1, 2, 2 }; 
-        final int[] nums6 = { 0, 0, 2, 2, 1, 1, 1, 2, 1, 1, 2, 2 }; 
-        final int[] nums7 = { 0, 0, 0, 2, 2, 1, 1, 1, 2, 1, 1, 2, 2 }; 
-        final int[] nums8 = {  }; 
+        final int[] nums0 = {1, 2, 2, 3, 4, 4}; 
+        final int[] nums1 = {1, 1, 2, 1, 1}; 
+        final int[] nums2 = {1, 1, 1, 1, 1}; 
+        final int[] nums3 = {1, 2, 3}; 
+        final int[] nums4 = {2, 2, 1, 1, 1, 2, 1, 1, 2, 2}; 
+        final int[] nums5 = {0, 2, 2, 1, 1, 1, 2, 1, 1, 2, 2}; 
+        final int[] nums6 = {0, 0, 2, 2, 1, 1, 1, 2, 1, 1, 2, 2}; 
+        final int[] nums7 = {0, 0, 0, 2, 2, 1, 1, 1, 2, 1, 1, 2, 2}; 
+        final int[] nums8 = {}; 
 
         final int[] resultsArray = {
             CountClumps.countClumps(nums0),

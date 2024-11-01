@@ -35,18 +35,18 @@ public final class _SplitOdd10
 
     public static final void Validate(boolean printSuccess)
     {
-        final int[] nums0 = { 5, 5, 5 }; 
-        final int[] nums1 = { 5, 5, 6 }; 
-        final int[] nums2 = { 5, 5, 6, 1 }; 
-        final int[] nums3 = { 6, 5, 5, 1 }; 
-        final int[] nums4 = { 6, 5, 5, 1, 10 }; 
-        final int[] nums5 = { 6, 5, 5, 5, 1 }; 
-        final int[] nums6 = { 1 }; 
-        final int[] nums7 = {  }; 
-        final int[] nums8 = { 10, 7, 5, 5 }; 
-        final int[] nums9 = { 10, 0, 5, 5 }; 
-        final int[] nums10 = { 10, 7, 5, 5, 2 }; 
-        final int[] nums11 = { 10, 7, 5, 5, 1 }; 
+        final int[] nums0 = {5, 5, 5}; 
+        final int[] nums1 = {5, 5, 6}; 
+        final int[] nums2 = {5, 5, 6, 1}; 
+        final int[] nums3 = {6, 5, 5, 1}; 
+        final int[] nums4 = {6, 5, 5, 1, 10}; 
+        final int[] nums5 = {6, 5, 5, 5, 1}; 
+        final int[] nums6 = {1}; 
+        final int[] nums7 = {}; 
+        final int[] nums8 = {10, 7, 5, 5}; 
+        final int[] nums9 = {10, 0, 5, 5}; 
+        final int[] nums10 = {10, 7, 5, 5, 2}; 
+        final int[] nums11 = {10, 7, 5, 5, 1}; 
 
         final boolean[] resultsArray = {
             SplitOdd10.splitOdd10(nums0),
