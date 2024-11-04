@@ -1,7 +1,8 @@
 # LocalBat
 A webscraper for <a href="https://codingbat.com">CodingBat</a> that generates Java files for local/offline use.
 
-![LocalBat side-by-side comparison](https://github.com/user-attachments/assets/a919a5a9-2d9b-4156-958e-546e30a7b8c3)
+![VScodeHoriz](https://github.com/user-attachments/assets/dd58f18c-b7e1-48ad-b4ce-c5eac2227061)
+
 
 A java file is generated for each problem on the website, organized into subdirectories by section.\
 A file is generated ranking the problems by difficulty: 
@@ -13,7 +14,7 @@ The problem data scraped from the pages on the website is stored in .json files 
 And the generated .java files are under:
 <a href="https://github.com/DADMIN1/LocalBat/tree/master/savedir/javaFiles">/savedir/javaFiles/</a>
 
-All of the java files can be run to validate the solution against the simple testcases provided on the site.
+All of the java files can be run to validate the solution against the testcases provided on the site.
 
 ![LocalBat validation screenshot](https://github.com/user-attachments/assets/9ef2bfd6-9db7-4649-a0f3-ac7fd3c072bb)
 
@@ -50,16 +51,5 @@ All of the java files can be run to validate the solution against the simple tes
 
   ![5 hit_f5](https://github.com/user-attachments/assets/cdac8f3d-814a-4cb7-99bf-04356845f0a2)
   ![6 populated_workspace](https://github.com/user-attachments/assets/c2f7a563-ae5f-44d0-98a6-e56496ef1927)
-
-
-## 5) Disable launch errors
-  Pick any file and write in a solution.\
-  Run the file (CTRL+F11), and a popup will appear asking for confirmation: "Errors exist in required projects: localBat"\
-  This warning will always appear because all of the unsolved problems in other files lack a return statement.
-
-  ![7 launch_ignore_errors](https://github.com/user-attachments/assets/a7973e72-c402-43cc-841e-fb72deba2c92)
-
-  The warning is irrelevant because each file runs independently.\
-  Check the box to 'Always launch without asking' to avoid this annoyance.
 
 ### Setup is complete!
