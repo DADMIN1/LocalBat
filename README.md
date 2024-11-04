@@ -50,6 +50,7 @@ All of the java files can be run to validate the solution against the testcases 
   If not, refresh it once or twice by hitting 'F5'
 
   ![5 hit_f5](https://github.com/user-attachments/assets/cdac8f3d-814a-4cb7-99bf-04356845f0a2)
-  ![6 populated_workspace](https://github.com/user-attachments/assets/c2f7a563-ae5f-44d0-98a6-e56496ef1927)
+  ![EclipseBigHeights](https://github.com/user-attachments/assets/4c3399fd-922f-4e4c-b9be-96617a53bdad)
+
 
 ### Setup is complete!
