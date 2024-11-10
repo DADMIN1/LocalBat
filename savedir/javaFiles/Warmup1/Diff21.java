@@ -35,6 +35,8 @@ public final class Diff21
     }
 
     public static final void main(String[] args) {
-        _Diff21.Validate(true);  // pass 'false' to print failed tests only.
+        //_Diff21.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_Diff21.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _Diff21.Validate();
     }
 }

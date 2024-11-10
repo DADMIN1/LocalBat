@@ -30,6 +30,8 @@ public final class SeriesUp
     }
 
     public static final void main(String[] args) {
-        _SeriesUp.Validate(true);  // pass 'false' to print failed tests only.
+        //_SeriesUp.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_SeriesUp.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _SeriesUp.Validate();
     }
 }

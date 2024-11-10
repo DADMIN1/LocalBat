@@ -3,6 +3,18 @@ import String2.GetSandwich;
 
 public final class _GetSandwich
 {
+    public static boolean printSuccesses = true;
+    public static boolean getStacktraces = false;
+
+    static final class TestResult {
+        private String result;
+        private RuntimeException caught = null;
+        TestResult(String str) {
+            try { result = GetSandwich.getSandwich(str); }
+            catch (RuntimeException exception) { caught = exception; }
+        }
+    }
+
     static final String[] testcaseStrings = {
         "getSandwich(\"breadjambread\")",
         "getSandwich(\"xxbreadjambreadyy\")",
@@ -33,40 +45,52 @@ public final class _GetSandwich
         "breadbread",
     };
 
-    public static final void Validate(boolean printSuccess)
+    public static final boolean Validate()
     {
-        final String[] resultsArray = {
-            GetSandwich.getSandwich("breadjambread"),
-            GetSandwich.getSandwich("xxbreadjambreadyy"),
-            GetSandwich.getSandwich("xxbreadyy"),
-            GetSandwich.getSandwich("xxbreadbreadjambreadyy"),
-            GetSandwich.getSandwich("breadAbread"),
-            GetSandwich.getSandwich("breadbread"),
-            GetSandwich.getSandwich("abcbreaz"),
-            GetSandwich.getSandwich("xyz"),
-            GetSandwich.getSandwich(""),
-            GetSandwich.getSandwich("breadbreaxbread"),
-            GetSandwich.getSandwich("breaxbreadybread"),
-            GetSandwich.getSandwich("breadbreadbreadbread"),
+        final TestResult[] results = {
+            new TestResult("breadjambread"),
+            new TestResult("xxbreadjambreadyy"),
+            new TestResult("xxbreadyy"),
+            new TestResult("xxbreadbreadjambreadyy"),
+            new TestResult("breadAbread"),
+            new TestResult("breadbread"),
+            new TestResult("abcbreaz"),
+            new TestResult("xyz"),
+            new TestResult(""),
+            new TestResult("breadbreaxbread"),
+            new TestResult("breaxbreadybread"),
+            new TestResult("breadbreadbreadbread"),
         };
 
         boolean allTestsPassed = true;
-        for (int i = 0; i < resultsArray.length; ++i)
+        boolean prevTestPassed = false;
+        for (int i = 0; i < results.length; ++i)
         {
-            if (!resultsArray[i].equals(expectedResults[i]))
-            {
+            if (results[i].caught != null) {
                 allTestsPassed = false;
-                System.out.println("\n[-] #"+(i+1)+" failed!");
-                System.out.println(testcaseStrings[i]+";");
-                System.out.println("    received: "+resultsArray[i]);
+                if(prevTestPassed) { System.out.println(); prevTestPassed = false; }
+                System.out.print("[!] #"+(i+1)+" - ");
+                System.out.println(testcaseStrings[i]+" - Failed! [EXCEPTION]");
+                System.out.println(results[i].caught.getClass().getName());
+                System.out.println(results[i].caught.getMessage());
+                if(getStacktraces) results[i].caught.printStackTrace();
+                System.out.println(); continue;
+            }
+            if (!results[i].result.equals(expectedResults[i])) {
+                allTestsPassed = false;
+                if(prevTestPassed) { System.out.println(); prevTestPassed = false; }
+                System.out.print("[x] #"+(i+1)+" - ");
+                System.out.println(testcaseStrings[i]+" - Failed!");
+                System.out.println("    received: "+results[i].result);
                 System.out.println("    expected: "+expectedResults[i]);
-                System.out.println("\n");
-            } else if (printSuccess) { 
-                System.out.println("[✔] #"+(i+1)+" - "+testcaseStrings[i]);
+                System.out.println();
+            } else if (printSuccesses) {
+                prevTestPassed = true;
+                System.out.println("[✓] #"+(i+1)+" - "+testcaseStrings[i]);
             }
         }
-        if (allTestsPassed) System.out.println("\n ✔✔✔  ~ All tests passed. ~  ✔✔✔");
+        if (allTestsPassed) System.out.println("\n ✓✓✓  ~ All tests passed. ~  ✓✓✓");
         System.out.println();
-        return;
+        return allTestsPassed;
     }
 }

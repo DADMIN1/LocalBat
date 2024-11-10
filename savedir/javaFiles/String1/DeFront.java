@@ -43,6 +43,8 @@ public final class DeFront
     }
 
     public static final void main(String[] args) {
-        _DeFront.Validate(true);  // pass 'false' to print failed tests only.
+        //_DeFront.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_DeFront.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _DeFront.Validate();
     }
 }

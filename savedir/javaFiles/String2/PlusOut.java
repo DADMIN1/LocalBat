@@ -34,6 +34,8 @@ public final class PlusOut
     }
 
     public static final void main(String[] args) {
-        _PlusOut.Validate(true);  // pass 'false' to print failed tests only.
+        //_PlusOut.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_PlusOut.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _PlusOut.Validate();
     }
 }

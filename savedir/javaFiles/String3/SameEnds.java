@@ -35,6 +35,8 @@ public final class SameEnds
     }
 
     public static final void main(String[] args) {
-        _SameEnds.Validate(true);  // pass 'false' to print failed tests only.
+        //_SameEnds.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_SameEnds.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _SameEnds.Validate();
     }
 }

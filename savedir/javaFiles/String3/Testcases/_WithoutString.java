@@ -3,6 +3,18 @@ import String3.WithoutString;
 
 public final class _WithoutString
 {
+    public static boolean printSuccesses = true;
+    public static boolean getStacktraces = false;
+
+    static final class TestResult {
+        private String result;
+        private RuntimeException caught = null;
+        TestResult(String base, String remove) {
+            try { result = WithoutString.withoutString(base, remove); }
+            catch (RuntimeException exception) { caught = exception; }
+        }
+    }
+
     static final String[] testcaseStrings = {
         "withoutString(\"Hello there\", \"llo\")",
         "withoutString(\"Hello there\", \"e\")",
@@ -47,47 +59,59 @@ public final class _WithoutString
         "Hi ",
     };
 
-    public static final void Validate(boolean printSuccess)
+    public static final boolean Validate()
     {
-        final String[] resultsArray = {
-            WithoutString.withoutString("Hello there", "llo"),
-            WithoutString.withoutString("Hello there", "e"),
-            WithoutString.withoutString("Hello there", "x"),
-            WithoutString.withoutString("This is a FISH", "IS"),
-            WithoutString.withoutString("THIS is a FISH", "is"),
-            WithoutString.withoutString("THIS is a FISH", "iS"),
-            WithoutString.withoutString("abxxxxab", "xx"),
-            WithoutString.withoutString("abxxxab", "xx"),
-            WithoutString.withoutString("abxxxab", "x"),
-            WithoutString.withoutString("xxx", "x"),
-            WithoutString.withoutString("xxx", "xx"),
-            WithoutString.withoutString("xyzzy", "Y"),
-            WithoutString.withoutString("", "x"),
-            WithoutString.withoutString("abcabc", "b"),
-            WithoutString.withoutString("AA22bb", "2"),
-            WithoutString.withoutString("1111", "1"),
-            WithoutString.withoutString("1111", "11"),
-            WithoutString.withoutString("MkjtMkx", "Mk"),
-            WithoutString.withoutString("Hi HoHo", "Ho"),
+        final TestResult[] results = {
+            new TestResult("Hello there", "llo"),
+            new TestResult("Hello there", "e"),
+            new TestResult("Hello there", "x"),
+            new TestResult("This is a FISH", "IS"),
+            new TestResult("THIS is a FISH", "is"),
+            new TestResult("THIS is a FISH", "iS"),
+            new TestResult("abxxxxab", "xx"),
+            new TestResult("abxxxab", "xx"),
+            new TestResult("abxxxab", "x"),
+            new TestResult("xxx", "x"),
+            new TestResult("xxx", "xx"),
+            new TestResult("xyzzy", "Y"),
+            new TestResult("", "x"),
+            new TestResult("abcabc", "b"),
+            new TestResult("AA22bb", "2"),
+            new TestResult("1111", "1"),
+            new TestResult("1111", "11"),
+            new TestResult("MkjtMkx", "Mk"),
+            new TestResult("Hi HoHo", "Ho"),
         };
 
         boolean allTestsPassed = true;
-        for (int i = 0; i < resultsArray.length; ++i)
+        boolean prevTestPassed = false;
+        for (int i = 0; i < results.length; ++i)
         {
-            if (!resultsArray[i].equals(expectedResults[i]))
-            {
+            if (results[i].caught != null) {
                 allTestsPassed = false;
-                System.out.println("\n[-] #"+(i+1)+" failed!");
-                System.out.println(testcaseStrings[i]+";");
-                System.out.println("    received: "+resultsArray[i]);
+                if(prevTestPassed) { System.out.println(); prevTestPassed = false; }
+                System.out.print("[!] #"+(i+1)+" - ");
+                System.out.println(testcaseStrings[i]+" - Failed! [EXCEPTION]");
+                System.out.println(results[i].caught.getClass().getName());
+                System.out.println(results[i].caught.getMessage());
+                if(getStacktraces) results[i].caught.printStackTrace();
+                System.out.println(); continue;
+            }
+            if (!results[i].result.equals(expectedResults[i])) {
+                allTestsPassed = false;
+                if(prevTestPassed) { System.out.println(); prevTestPassed = false; }
+                System.out.print("[x] #"+(i+1)+" - ");
+                System.out.println(testcaseStrings[i]+" - Failed!");
+                System.out.println("    received: "+results[i].result);
                 System.out.println("    expected: "+expectedResults[i]);
-                System.out.println("\n");
-            } else if (printSuccess) { 
-                System.out.println("[✔] #"+(i+1)+" - "+testcaseStrings[i]);
+                System.out.println();
+            } else if (printSuccesses) {
+                prevTestPassed = true;
+                System.out.println("[✓] #"+(i+1)+" - "+testcaseStrings[i]);
             }
         }
-        if (allTestsPassed) System.out.println("\n ✔✔✔  ~ All tests passed. ~  ✔✔✔");
+        if (allTestsPassed) System.out.println("\n ✓✓✓  ~ All tests passed. ~  ✓✓✓");
         System.out.println();
-        return;
+        return allTestsPassed;
     }
 }

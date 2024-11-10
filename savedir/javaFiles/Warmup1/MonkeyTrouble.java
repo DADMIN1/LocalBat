@@ -28,6 +28,8 @@ public final class MonkeyTrouble
     }
 
     public static final void main(String[] args) {
-        _MonkeyTrouble.Validate(true);  // pass 'false' to print failed tests only.
+        //_MonkeyTrouble.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_MonkeyTrouble.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _MonkeyTrouble.Validate();
     }
 }

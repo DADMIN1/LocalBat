@@ -31,6 +31,8 @@ public final class EndUp
     }
 
     public static final void main(String[] args) {
-        _EndUp.Validate(true);  // pass 'false' to print failed tests only.
+        //_EndUp.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_EndUp.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _EndUp.Validate();
     }
 }

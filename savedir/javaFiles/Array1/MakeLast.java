@@ -32,6 +32,8 @@ public final class MakeLast
     }
 
     public static final void main(String[] args) {
-        _MakeLast.Validate(true);  // pass 'false' to print failed tests only.
+        //_MakeLast.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_MakeLast.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _MakeLast.Validate();
     }
 }

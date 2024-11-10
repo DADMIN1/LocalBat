@@ -34,6 +34,8 @@ public final class NoTeen
     }
 
     public static final void main(String[] args) {
-        _NoTeen.Validate(true);  // pass 'false' to print failed tests only.
+        //_NoTeen.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_NoTeen.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _NoTeen.Validate();
     }
 }

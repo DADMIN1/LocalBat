@@ -36,6 +36,8 @@ public final class NoYY
     }
 
     public static final void main(String[] args) {
-        _NoYY.Validate(true);  // pass 'false' to print failed tests only.
+        //_NoYY.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_NoYY.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _NoYY.Validate();
     }
 }

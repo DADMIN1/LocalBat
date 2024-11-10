@@ -36,6 +36,8 @@ public final class LessBy10
     }
 
     public static final void main(String[] args) {
-        _LessBy10.Validate(true);  // pass 'false' to print failed tests only.
+        //_LessBy10.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_LessBy10.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _LessBy10.Validate();
     }
 }

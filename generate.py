@@ -197,6 +197,9 @@ def WriteTestcaseFile(packageName:str, pagedata: dict):
     if doesReturnList: resultArrayReturnType = "List<?>" # '<?>' just suppresses a warning telling you to specify the List type
     elif doesReturnMap: resultArrayReturnType = "Map<?,?>"
     
+    sig_parameters = ", ".join([f"{arg['type']} {arg['identifier']}" for arg in functionDefinition['args']])
+    fcall_passthrough = f"{functionDefinition['name']}(" + ", ".join([f"{arg['identifier']}" for arg in functionDefinition['args']]) + ')'
+    
     printArray_FunctionDefinition = f"    public static final String printArray({returnType} array)"+"""
     {
         String result = "[";
@@ -204,6 +207,18 @@ def WriteTestcaseFile(packageName:str, pagedata: dict):
         if (result.length() > 2) result = result.substring(0, result.length()-2);
         return result + "]";
     }\n\n"""
+    
+    # 'static' is required to define a nested class
+    # containing class has full access to nested classes' fields, so 'private' specifier doesn't cause any problems. 
+    testresult_classdef = "\n        ".join([
+        "    static final class TestResult {",
+        f"private {resultArrayReturnType} result;",
+        "private RuntimeException caught = null;",
+        f"TestResult({sig_parameters})"+' {',  
+        "    try { result = "+f"{title}.{fcall_passthrough}"+"; }",  # calling the function from the real class here 
+        "    catch (RuntimeException exception) { caught = exception; }",
+        "}\n",
+    ]) + "    }\n\n"
     
     with open(testcase_filepath, "w", encoding="utf-8") as file:
         file.write(f"package {packageName}.Testcases;\n")
@@ -216,6 +231,11 @@ def WriteTestcaseFile(packageName:str, pagedata: dict):
         file.write('\n')
         
         file.write(f"public final class {testCasesClassname}\n"+"{\n")
+        file.write("    public static boolean printSuccesses = true;\n")
+        file.write("    public static boolean getStacktraces = false;\n")
+        file.write('\n')
+        
+        file.write(testresult_classdef)
         
         # map for testcase number -> string of function call
         testcase_map: dict = { i: testcase for i, testcase in enumerate(pagedata["testcases"])}
@@ -232,7 +252,7 @@ def WriteTestcaseFile(packageName:str, pagedata: dict):
         needToSupressNewline = False
         
         # Validation function
-        file.write("    public static final void Validate(boolean printSuccess)\n    {\n")
+        file.write("    public static final boolean Validate()\n    {\n")
         # writing the array declarations (can't inline into function calls)
         for array in testCases['arrays']:
             if(len(array) == 0): needToSupressNewline=True; continue # there is always one entry per testcase, but they're empty if no arary parameters exist
@@ -242,45 +262,59 @@ def WriteTestcaseFile(packageName:str, pagedata: dict):
         if not needToSupressNewline: file.write('\n')
         
         # storing results of function calls
-        file.write(f"        final {resultArrayReturnType}[] resultsArray = "+"{\n")
+        file.write(f"        final TestResult[] results = "+"{\n")
         for functionCall in testCases["functionCalls"]:
-            file.write(f"            {title}.{functionCall},\n") # calling the real class here 
+            file.write(f"            new TestResult{functionCall.lstrip(functionDefinition['name'])},\n") # calling function in 'TestResult' constructor 
         file.write("        };\n") # closing resultsArray
         
         expectedResultStr = f"expectedResults[i]"
-        resultsArrayStr = "resultsArray[i]"
-        comparisonStr = f"resultsArray[i] != expectedResults[i]"
+        resultsArrayStr = "results[i].result"
+        comparisonStr = f"results[i].result != expectedResults[i]"
         # arrays and lists cannot be directly compared in java (it does a pointer comparison), need to use '.equals()' instead
         
         if doesReturnArray: 
             expectedResultStr = f"printArray({expectedResultStr})"
             resultsArrayStr = f"printArray({resultsArrayStr})"
-            comparisonStr = f"!Arrays.equals(resultsArray[i], expectedResults[i])"
+            comparisonStr = f"!Arrays.equals(results[i].result, expectedResults[i])"
         
         if doesReturnList or needsMap or (returnType == "String"):
-            comparisonStr = f"!resultsArray[i].equals(expectedResults[i])"
+            comparisonStr = f"!results[i].result.equals(expectedResults[i])"
         
         # running testcases, comparing results
+        # unicode U+2713 is "check-mark": ✓
         # unicode U+2714 is "heavy check-mark": ✔
+        maybe_newline = "if(prevTestPassed) { System.out.println(); prevTestPassed = false; }"
         file.write(f'''
         boolean allTestsPassed = true;
-        for (int i = 0; i < resultsArray.length; ++i)
+        boolean prevTestPassed = false;
+        for (int i = 0; i < results.length; ++i)
         '''+'{'+f'''
-            if ({comparisonStr})
-            '''+'{'+f'''
+            if (results[i].caught != null) '''+'{'+f'''
                 allTestsPassed = false;
-                System.out.println("\\n[-] #"+(i+1)+" failed!");
-                System.out.println(testcaseStrings[i]+";");
+                {maybe_newline}
+                System.out.print("[!] #"+(i+1)+" - ");
+                System.out.println(testcaseStrings[i]+" - Failed! [EXCEPTION]");
+                System.out.println(results[i].caught.getClass().getName());
+                System.out.println(results[i].caught.getMessage());
+                if(getStacktraces) results[i].caught.printStackTrace();
+                System.out.println(); continue;
+            '''+'}'+f'''
+            if ({comparisonStr}) '''+'{'+f'''
+                allTestsPassed = false;
+                {maybe_newline}
+                System.out.print("[x] #"+(i+1)+" - ");
+                System.out.println(testcaseStrings[i]+" - Failed!");
                 System.out.println("    received: "+{resultsArrayStr});
                 System.out.println("    expected: "+{expectedResultStr});
-                System.out.println("\\n");
-            '''+'''} else if (printSuccess) { 
-                System.out.println("[\u2714] #"+(i+1)+" - "+testcaseStrings[i]);
+                System.out.println();
+            '''+'''} else if (printSuccesses) {
+                prevTestPassed = true;
+                System.out.println("[\u2713] #"+(i+1)+" - "+testcaseStrings[i]);
             }
         }
-        if (allTestsPassed) System.out.println("\\n \u2714\u2714\u2714  ~ All tests passed. ~  \u2714\u2714\u2714");
+        if (allTestsPassed) System.out.println("\\n \u2713\u2713\u2713  ~ All tests passed. ~  \u2713\u2713\u2713");
         System.out.println();
-        return;\n''')
+        return allTestsPassed;\n''')
         
         file.write("    }\n") # closing Validate function
         file.write("}\n") # closing Testcase class
@@ -439,10 +473,10 @@ def WriteJavaFile(packageName:str, data: dict):
     packagedir = sub_savedirs[1] / packageName
     if not packagedir.exists(): packagedir.mkdir()
     filepath = packagedir / f'{title}.java'
-    if ((title == "MakePi") and (filepath.exists())): return;  # never re-generate; testcase formatting gets screwed
     print(f"    generating {packageName}.{filepath.stem}...")
     
     function_info = WriteTestcaseFile(packageName, data)
+    if((title == "MakePi") and (filepath.exists())): return; # never re-generate main file; testcase formatting gets screwed
     testcases = function_info["testCases"]
     returnsList = testcases["returnsList"]
     
@@ -480,7 +514,9 @@ def WriteJavaFile(packageName:str, data: dict):
         # function declaration provided by codingbat and main function
         file.write(f"    {functionDeclaration}\n")
         file.write("    public static final void main(String[] args) {\n")
-        file.write(f"        _{title}.Validate(true);  // pass 'false' to print failed tests only.\n")
+        file.write(f"        //_{title}.printSuccesses = false;  // set 'false' to print failing tests only.\n")
+        file.write(f"        //_{title}.getStacktraces = true;  // set 'true' for stacktraces on exceptions.\n")
+        file.write(f"        _{title}.Validate();\n")
         file.write("    }\n") # closing main function
         file.write("}\n") # closing Main class
     
@@ -564,6 +600,7 @@ if __name__ == "__main__":
     # GenerateSection("Array-3")
     # GenerateSection("String-1")
     
+    # testdata = LoadFile("Array-1", "makePi")
     # testdata = LoadFile("Array-1", "biggerTwo")
     # testdata = LoadFile("String-1", "makeOutWord")
     # testdata = LoadFile("AP-1", "wordsWithoutList")

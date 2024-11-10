@@ -31,6 +31,8 @@ public final class MakeEnds
     }
 
     public static final void main(String[] args) {
-        _MakeEnds.Validate(true);  // pass 'false' to print failed tests only.
+        //_MakeEnds.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_MakeEnds.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _MakeEnds.Validate();
     }
 }

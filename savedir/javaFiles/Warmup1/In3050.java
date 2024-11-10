@@ -35,6 +35,8 @@ public final class In3050
     }
 
     public static final void main(String[] args) {
-        _In3050.Validate(true);  // pass 'false' to print failed tests only.
+        //_In3050.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_In3050.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _In3050.Validate();
     }
 }

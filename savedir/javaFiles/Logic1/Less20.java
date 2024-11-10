@@ -46,6 +46,8 @@ public final class Less20
     }
 
     public static final void main(String[] args) {
-        _Less20.Validate(true);  // pass 'false' to print failed tests only.
+        //_Less20.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_Less20.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _Less20.Validate();
     }
 }

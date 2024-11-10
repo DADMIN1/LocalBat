@@ -30,6 +30,8 @@ public final class FizzArray3
     }
 
     public static final void main(String[] args) {
-        _FizzArray3.Validate(true);  // pass 'false' to print failed tests only.
+        //_FizzArray3.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_FizzArray3.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _FizzArray3.Validate();
     }
 }

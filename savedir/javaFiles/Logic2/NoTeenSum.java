@@ -43,6 +43,8 @@ public final class NoTeenSum
     }
 
     public static final void main(String[] args) {
-        _NoTeenSum.Validate(true);  // pass 'false' to print failed tests only.
+        //_NoTeenSum.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_NoTeenSum.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _NoTeenSum.Validate();
     }
 }

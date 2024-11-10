@@ -3,6 +3,18 @@ import AP1.ScoresClump;
 
 public final class _ScoresClump
 {
+    public static boolean printSuccesses = true;
+    public static boolean getStacktraces = false;
+
+    static final class TestResult {
+        private boolean result;
+        private RuntimeException caught = null;
+        TestResult(int[] scores) {
+            try { result = ScoresClump.scoresClump(scores); }
+            catch (RuntimeException exception) { caught = exception; }
+        }
+    }
+
     static final String[] testcaseStrings = {
         "scoresClump([3, 4, 5])",
         "scoresClump([3, 4, 6])",
@@ -27,7 +39,7 @@ public final class _ScoresClump
         false,
     };
 
-    public static final void Validate(boolean printSuccess)
+    public static final boolean Validate()
     {
         final int[] scores0 = {3, 4, 5}; 
         final int[] scores1 = {3, 4, 6}; 
@@ -39,35 +51,47 @@ public final class _ScoresClump
         final int[] scores7 = {3, 3, 7, 7, 9}; 
         final int[] scores8 = {4, 5, 8}; 
 
-        final boolean[] resultsArray = {
-            ScoresClump.scoresClump(scores0),
-            ScoresClump.scoresClump(scores1),
-            ScoresClump.scoresClump(scores2),
-            ScoresClump.scoresClump(scores3),
-            ScoresClump.scoresClump(scores4),
-            ScoresClump.scoresClump(scores5),
-            ScoresClump.scoresClump(scores6),
-            ScoresClump.scoresClump(scores7),
-            ScoresClump.scoresClump(scores8),
+        final TestResult[] results = {
+            new TestResult(scores0),
+            new TestResult(scores1),
+            new TestResult(scores2),
+            new TestResult(scores3),
+            new TestResult(scores4),
+            new TestResult(scores5),
+            new TestResult(scores6),
+            new TestResult(scores7),
+            new TestResult(scores8),
         };
 
         boolean allTestsPassed = true;
-        for (int i = 0; i < resultsArray.length; ++i)
+        boolean prevTestPassed = false;
+        for (int i = 0; i < results.length; ++i)
         {
-            if (resultsArray[i] != expectedResults[i])
-            {
+            if (results[i].caught != null) {
                 allTestsPassed = false;
-                System.out.println("\n[-] #"+(i+1)+" failed!");
-                System.out.println(testcaseStrings[i]+";");
-                System.out.println("    received: "+resultsArray[i]);
+                if(prevTestPassed) { System.out.println(); prevTestPassed = false; }
+                System.out.print("[!] #"+(i+1)+" - ");
+                System.out.println(testcaseStrings[i]+" - Failed! [EXCEPTION]");
+                System.out.println(results[i].caught.getClass().getName());
+                System.out.println(results[i].caught.getMessage());
+                if(getStacktraces) results[i].caught.printStackTrace();
+                System.out.println(); continue;
+            }
+            if (results[i].result != expectedResults[i]) {
+                allTestsPassed = false;
+                if(prevTestPassed) { System.out.println(); prevTestPassed = false; }
+                System.out.print("[x] #"+(i+1)+" - ");
+                System.out.println(testcaseStrings[i]+" - Failed!");
+                System.out.println("    received: "+results[i].result);
                 System.out.println("    expected: "+expectedResults[i]);
-                System.out.println("\n");
-            } else if (printSuccess) { 
-                System.out.println("[✔] #"+(i+1)+" - "+testcaseStrings[i]);
+                System.out.println();
+            } else if (printSuccesses) {
+                prevTestPassed = true;
+                System.out.println("[✓] #"+(i+1)+" - "+testcaseStrings[i]);
             }
         }
-        if (allTestsPassed) System.out.println("\n ✔✔✔  ~ All tests passed. ~  ✔✔✔");
+        if (allTestsPassed) System.out.println("\n ✓✓✓  ~ All tests passed. ~  ✓✓✓");
         System.out.println();
-        return;
+        return allTestsPassed;
     }
 }

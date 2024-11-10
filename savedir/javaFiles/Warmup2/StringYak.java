@@ -30,6 +30,8 @@ public final class StringYak
     }
 
     public static final void main(String[] args) {
-        _StringYak.Validate(true);  // pass 'false' to print failed tests only.
+        //_StringYak.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_StringYak.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _StringYak.Validate();
     }
 }

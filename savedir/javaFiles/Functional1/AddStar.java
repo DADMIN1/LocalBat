@@ -30,6 +30,8 @@ public final class AddStar
     }
 
     public static final void main(String[] args) {
-        _AddStar.Validate(true);  // pass 'false' to print failed tests only.
+        //_AddStar.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_AddStar.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _AddStar.Validate();
     }
 }

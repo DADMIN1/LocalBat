@@ -34,6 +34,8 @@ public final class Close10
     }
 
     public static final void main(String[] args) {
-        _Close10.Validate(true);  // pass 'false' to print failed tests only.
+        //_Close10.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_Close10.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _Close10.Validate();
     }
 }

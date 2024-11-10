@@ -39,6 +39,8 @@ public final class SumLimit
     }
 
     public static final void main(String[] args) {
-        _SumLimit.Validate(true);  // pass 'false' to print failed tests only.
+        //_SumLimit.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_SumLimit.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _SumLimit.Validate();
     }
 }

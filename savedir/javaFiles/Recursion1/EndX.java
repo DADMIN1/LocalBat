@@ -34,6 +34,8 @@ public final class EndX
     }
 
     public static final void main(String[] args) {
-        _EndX.Validate(true);  // pass 'false' to print failed tests only.
+        //_EndX.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_EndX.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _EndX.Validate();
     }
 }

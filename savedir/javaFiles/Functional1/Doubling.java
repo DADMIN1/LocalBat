@@ -32,6 +32,8 @@ public final class Doubling
     }
 
     public static final void main(String[] args) {
-        _Doubling.Validate(true);  // pass 'false' to print failed tests only.
+        //_Doubling.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_Doubling.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _Doubling.Validate();
     }
 }

@@ -34,6 +34,8 @@ public final class RepeatSeparator
     }
 
     public static final void main(String[] args) {
-        _RepeatSeparator.Validate(true);  // pass 'false' to print failed tests only.
+        //_RepeatSeparator.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_RepeatSeparator.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _RepeatSeparator.Validate();
     }
 }

@@ -35,6 +35,8 @@ public final class GHappy
     }
 
     public static final void main(String[] args) {
-        _GHappy.Validate(true);  // pass 'false' to print failed tests only.
+        //_GHappy.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_GHappy.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _GHappy.Validate();
     }
 }

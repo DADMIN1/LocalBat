@@ -43,6 +43,8 @@ public final class Count8
     }
 
     public static final void main(String[] args) {
-        _Count8.Validate(true);  // pass 'false' to print failed tests only.
+        //_Count8.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_Count8.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _Count8.Validate();
     }
 }

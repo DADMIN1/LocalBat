@@ -31,6 +31,8 @@ public final class WithoutEnd
     }
 
     public static final void main(String[] args) {
-        _WithoutEnd.Validate(true);  // pass 'false' to print failed tests only.
+        //_WithoutEnd.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_WithoutEnd.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _WithoutEnd.Validate();
     }
 }

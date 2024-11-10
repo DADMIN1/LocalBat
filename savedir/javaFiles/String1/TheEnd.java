@@ -34,6 +34,8 @@ public final class TheEnd
     }
 
     public static final void main(String[] args) {
-        _TheEnd.Validate(true);  // pass 'false' to print failed tests only.
+        //_TheEnd.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_TheEnd.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _TheEnd.Validate();
     }
 }

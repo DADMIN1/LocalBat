@@ -42,6 +42,8 @@ public final class XyBalance
     }
 
     public static final void main(String[] args) {
-        _XyBalance.Validate(true);  // pass 'false' to print failed tests only.
+        //_XyBalance.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_XyBalance.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _XyBalance.Validate();
     }
 }

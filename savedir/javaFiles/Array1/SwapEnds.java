@@ -28,6 +28,8 @@ public final class SwapEnds
     }
 
     public static final void main(String[] args) {
-        _SwapEnds.Validate(true);  // pass 'false' to print failed tests only.
+        //_SwapEnds.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_SwapEnds.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _SwapEnds.Validate();
     }
 }

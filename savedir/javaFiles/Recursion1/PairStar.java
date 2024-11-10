@@ -32,6 +32,8 @@ public final class PairStar
     }
 
     public static final void main(String[] args) {
-        _PairStar.Validate(true);  // pass 'false' to print failed tests only.
+        //_PairStar.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_PairStar.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _PairStar.Validate();
     }
 }

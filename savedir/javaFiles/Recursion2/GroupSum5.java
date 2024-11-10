@@ -41,6 +41,8 @@ public final class GroupSum5
     }
 
     public static final void main(String[] args) {
-        _GroupSum5.Validate(true);  // pass 'false' to print failed tests only.
+        //_GroupSum5.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_GroupSum5.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _GroupSum5.Validate();
     }
 }

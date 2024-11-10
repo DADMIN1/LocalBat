@@ -35,6 +35,8 @@ public final class HaveThree
     }
 
     public static final void main(String[] args) {
-        _HaveThree.Validate(true);  // pass 'false' to print failed tests only.
+        //_HaveThree.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_HaveThree.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _HaveThree.Validate();
     }
 }

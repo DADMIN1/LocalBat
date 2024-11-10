@@ -42,6 +42,8 @@ public final class PosNeg
     }
 
     public static final void main(String[] args) {
-        _PosNeg.Validate(true);  // pass 'false' to print failed tests only.
+        //_PosNeg.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_PosNeg.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _PosNeg.Validate();
     }
 }

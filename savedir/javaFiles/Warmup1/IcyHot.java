@@ -28,6 +28,8 @@ public final class IcyHot
     }
 
     public static final void main(String[] args) {
-        _IcyHot.Validate(true);  // pass 'false' to print failed tests only.
+        //_IcyHot.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_IcyHot.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _IcyHot.Validate();
     }
 }

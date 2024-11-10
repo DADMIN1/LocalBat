@@ -32,6 +32,8 @@ public final class RepeatEnd
     }
 
     public static final void main(String[] args) {
-        _RepeatEnd.Validate(true);  // pass 'false' to print failed tests only.
+        //_RepeatEnd.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_RepeatEnd.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _RepeatEnd.Validate();
     }
 }

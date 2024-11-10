@@ -33,6 +33,8 @@ public final class CountHi
     }
 
     public static final void main(String[] args) {
-        _CountHi.Validate(true);  // pass 'false' to print failed tests only.
+        //_CountHi.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_CountHi.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _CountHi.Validate();
     }
 }

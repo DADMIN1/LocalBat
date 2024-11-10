@@ -39,6 +39,8 @@ public final class InOrderEqual
     }
 
     public static final void main(String[] args) {
-        _InOrderEqual.Validate(true);  // pass 'false' to print failed tests only.
+        //_InOrderEqual.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_InOrderEqual.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _InOrderEqual.Validate();
     }
 }

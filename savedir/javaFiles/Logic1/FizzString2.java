@@ -44,6 +44,8 @@ public final class FizzString2
     }
 
     public static final void main(String[] args) {
-        _FizzString2.Validate(true);  // pass 'false' to print failed tests only.
+        //_FizzString2.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_FizzString2.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _FizzString2.Validate();
     }
 }

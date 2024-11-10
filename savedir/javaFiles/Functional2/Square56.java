@@ -36,6 +36,8 @@ public final class Square56
     }
 
     public static final void main(String[] args) {
-        _Square56.Validate(true);  // pass 'false' to print failed tests only.
+        //_Square56.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_Square56.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _Square56.Validate();
     }
 }

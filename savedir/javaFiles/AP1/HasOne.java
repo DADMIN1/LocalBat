@@ -34,6 +34,8 @@ public final class HasOne
     }
 
     public static final void main(String[] args) {
-        _HasOne.Validate(true);  // pass 'false' to print failed tests only.
+        //_HasOne.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_HasOne.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _HasOne.Validate();
     }
 }

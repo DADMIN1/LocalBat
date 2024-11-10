@@ -33,6 +33,8 @@ public final class Array123
     }
 
     public static final void main(String[] args) {
-        _Array123.Validate(true);  // pass 'false' to print failed tests only.
+        //_Array123.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_Array123.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _Array123.Validate();
     }
 }

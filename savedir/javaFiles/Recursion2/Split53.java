@@ -34,6 +34,8 @@ public final class Split53
     }
 
     public static final void main(String[] args) {
-        _Split53.Validate(true);  // pass 'false' to print failed tests only.
+        //_Split53.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_Split53.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _Split53.Validate();
     }
 }

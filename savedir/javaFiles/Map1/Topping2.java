@@ -31,6 +31,8 @@ public final class Topping2
     }
 
     public static final void main(String[] args) {
-        _Topping2.Validate(true);  // pass 'false' to print failed tests only.
+        //_Topping2.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_Topping2.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _Topping2.Validate();
     }
 }

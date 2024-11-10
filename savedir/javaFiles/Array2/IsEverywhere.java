@@ -39,6 +39,8 @@ public final class IsEverywhere
     }
 
     public static final void main(String[] args) {
-        _IsEverywhere.Validate(true);  // pass 'false' to print failed tests only.
+        //_IsEverywhere.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_IsEverywhere.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _IsEverywhere.Validate();
     }
 }

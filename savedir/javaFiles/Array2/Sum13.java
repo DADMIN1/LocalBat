@@ -38,6 +38,8 @@ public final class Sum13
     }
 
     public static final void main(String[] args) {
-        _Sum13.Validate(true);  // pass 'false' to print failed tests only.
+        //_Sum13.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_Sum13.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _Sum13.Validate();
     }
 }

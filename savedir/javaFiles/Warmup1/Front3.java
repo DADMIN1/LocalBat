@@ -31,6 +31,8 @@ public final class Front3
     }
 
     public static final void main(String[] args) {
-        _Front3.Validate(true);  // pass 'false' to print failed tests only.
+        //_Front3.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_Front3.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _Front3.Validate();
     }
 }

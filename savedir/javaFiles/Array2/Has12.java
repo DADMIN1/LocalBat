@@ -39,6 +39,8 @@ public final class Has12
     }
 
     public static final void main(String[] args) {
-        _Has12.Validate(true);  // pass 'false' to print failed tests only.
+        //_Has12.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_Has12.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _Has12.Validate();
     }
 }

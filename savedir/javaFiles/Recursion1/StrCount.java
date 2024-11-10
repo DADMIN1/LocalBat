@@ -38,6 +38,8 @@ public final class StrCount
     }
 
     public static final void main(String[] args) {
-        _StrCount.Validate(true);  // pass 'false' to print failed tests only.
+        //_StrCount.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_StrCount.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _StrCount.Validate();
     }
 }

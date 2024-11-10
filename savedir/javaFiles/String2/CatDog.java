@@ -35,6 +35,8 @@ public final class CatDog
     }
 
     public static final void main(String[] args) {
-        _CatDog.Validate(true);  // pass 'false' to print failed tests only.
+        //_CatDog.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_CatDog.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _CatDog.Validate();
     }
 }

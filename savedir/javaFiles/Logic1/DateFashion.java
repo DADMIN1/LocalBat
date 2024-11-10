@@ -40,6 +40,8 @@ public final class DateFashion
     }
 
     public static final void main(String[] args) {
-        _DateFashion.Validate(true);  // pass 'false' to print failed tests only.
+        //_DateFashion.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_DateFashion.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _DateFashion.Validate();
     }
 }

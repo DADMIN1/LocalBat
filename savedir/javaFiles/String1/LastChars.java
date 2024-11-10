@@ -33,6 +33,8 @@ public final class LastChars
     }
 
     public static final void main(String[] args) {
-        _LastChars.Validate(true);  // pass 'false' to print failed tests only.
+        //_LastChars.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_LastChars.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _LastChars.Validate();
     }
 }

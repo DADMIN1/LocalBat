@@ -34,6 +34,8 @@ public final class ModThree
     }
 
     public static final void main(String[] args) {
-        _ModThree.Validate(true);  // pass 'false' to print failed tests only.
+        //_ModThree.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_ModThree.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _ModThree.Validate();
     }
 }

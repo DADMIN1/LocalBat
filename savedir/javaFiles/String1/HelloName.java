@@ -33,6 +33,8 @@ public final class HelloName
     }
 
     public static final void main(String[] args) {
-        _HelloName.Validate(true);  // pass 'false' to print failed tests only.
+        //_HelloName.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_HelloName.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _HelloName.Validate();
     }
 }

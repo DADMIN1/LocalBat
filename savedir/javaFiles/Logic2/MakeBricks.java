@@ -55,6 +55,8 @@ public final class MakeBricks
     }
 
     public static final void main(String[] args) {
-        _MakeBricks.Validate(true);  // pass 'false' to print failed tests only.
+        //_MakeBricks.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_MakeBricks.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _MakeBricks.Validate();
     }
 }

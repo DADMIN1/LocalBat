@@ -38,6 +38,8 @@ public final class LinearIn
     }
 
     public static final void main(String[] args) {
-        _LinearIn.Validate(true);  // pass 'false' to print failed tests only.
+        //_LinearIn.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_LinearIn.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _LinearIn.Validate();
     }
 }

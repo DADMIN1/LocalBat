@@ -42,6 +42,8 @@ public final class StarOut
     }
 
     public static final void main(String[] args) {
-        _StarOut.Validate(true);  // pass 'false' to print failed tests only.
+        //_StarOut.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_StarOut.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _StarOut.Validate();
     }
 }

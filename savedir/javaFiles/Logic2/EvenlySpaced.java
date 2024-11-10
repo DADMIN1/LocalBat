@@ -38,6 +38,8 @@ public final class EvenlySpaced
     }
 
     public static final void main(String[] args) {
-        _EvenlySpaced.Validate(true);  // pass 'false' to print failed tests only.
+        //_EvenlySpaced.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_EvenlySpaced.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _EvenlySpaced.Validate();
     }
 }

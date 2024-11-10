@@ -36,6 +36,8 @@ public final class More14
     }
 
     public static final void main(String[] args) {
-        _More14.Validate(true);  // pass 'false' to print failed tests only.
+        //_More14.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_More14.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _More14.Validate();
     }
 }

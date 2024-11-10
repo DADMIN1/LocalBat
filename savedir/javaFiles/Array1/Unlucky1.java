@@ -42,6 +42,8 @@ public final class Unlucky1
     }
 
     public static final void main(String[] args) {
-        _Unlucky1.Validate(true);  // pass 'false' to print failed tests only.
+        //_Unlucky1.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_Unlucky1.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _Unlucky1.Validate();
     }
 }

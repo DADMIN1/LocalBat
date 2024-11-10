@@ -33,6 +33,8 @@ public final class Post4
     }
 
     public static final void main(String[] args) {
-        _Post4.Validate(true);  // pass 'false' to print failed tests only.
+        //_Post4.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_Post4.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _Post4.Validate();
     }
 }

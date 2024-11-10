@@ -40,6 +40,8 @@ public final class MaxMirror
     }
 
     public static final void main(String[] args) {
-        _MaxMirror.Validate(true);  // pass 'false' to print failed tests only.
+        //_MaxMirror.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_MaxMirror.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _MaxMirror.Validate();
     }
 }

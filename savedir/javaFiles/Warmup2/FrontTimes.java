@@ -31,6 +31,8 @@ public final class FrontTimes
     }
 
     public static final void main(String[] args) {
-        _FrontTimes.Validate(true);  // pass 'false' to print failed tests only.
+        //_FrontTimes.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_FrontTimes.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _FrontTimes.Validate();
     }
 }

@@ -30,6 +30,8 @@ public final class AnswerCell
     }
 
     public static final void main(String[] args) {
-        _AnswerCell.Validate(true);  // pass 'false' to print failed tests only.
+        //_AnswerCell.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_AnswerCell.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _AnswerCell.Validate();
     }
 }

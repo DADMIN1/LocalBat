@@ -46,6 +46,8 @@ public final class RoundSum
     }
 
     public static final void main(String[] args) {
-        _RoundSum.Validate(true);  // pass 'false' to print failed tests only.
+        //_RoundSum.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_RoundSum.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _RoundSum.Validate();
     }
 }

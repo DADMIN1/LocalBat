@@ -39,6 +39,8 @@ public final class In1To10
     }
 
     public static final void main(String[] args) {
-        _In1To10.Validate(true);  // pass 'false' to print failed tests only.
+        //_In1To10.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_In1To10.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _In1To10.Validate();
     }
 }

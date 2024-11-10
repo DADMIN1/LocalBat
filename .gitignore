@@ -4,4 +4,7 @@ __pycache__/
 .venv/
 activate
 failure_screenshots/
+savedir/javaFiles/testpackage/
+TODO.txt
+Testcase_Formatting_Sandbox
 

@@ -3,6 +3,18 @@ import AP1.BigHeights;
 
 public final class _BigHeights
 {
+    public static boolean printSuccesses = true;
+    public static boolean getStacktraces = false;
+
+    static final class TestResult {
+        private int result;
+        private RuntimeException caught = null;
+        TestResult(int[] heights, int start, int end) {
+            try { result = BigHeights.bigHeights(heights, start, end); }
+            catch (RuntimeException exception) { caught = exception; }
+        }
+    }
+
     static final String[] testcaseStrings = {
         "bigHeights([5, 3, 6, 7, 2], 2, 4)",
         "bigHeights([5, 3, 6, 7, 2], 0, 1)",
@@ -41,7 +53,7 @@ public final class _BigHeights
         3,
     };
 
-    public static final void Validate(boolean printSuccess)
+    public static final boolean Validate()
     {
         final int[] heights0 = {5, 3, 6, 7, 2}; 
         final int[] heights1 = {5, 3, 6, 7, 2}; 
@@ -60,42 +72,54 @@ public final class _BigHeights
         final int[] heights14 = {1, 2, 3, 14, 5, 4, 3, 2, 10}; 
         final int[] heights15 = {1, 2, 3, 14, 5, 4, 3, 2, 10}; 
 
-        final int[] resultsArray = {
-            BigHeights.bigHeights(heights0, 2, 4),
-            BigHeights.bigHeights(heights1, 0, 1),
-            BigHeights.bigHeights(heights2, 0, 4),
-            BigHeights.bigHeights(heights3, 0, 4),
-            BigHeights.bigHeights(heights4, 1, 1),
-            BigHeights.bigHeights(heights5, 1, 2),
-            BigHeights.bigHeights(heights6, 0, 2),
-            BigHeights.bigHeights(heights7, 1, 4),
-            BigHeights.bigHeights(heights8, 0, 4),
-            BigHeights.bigHeights(heights9, 0, 3),
-            BigHeights.bigHeights(heights10, 0, 3),
-            BigHeights.bigHeights(heights11, 4, 8),
-            BigHeights.bigHeights(heights12, 0, 3),
-            BigHeights.bigHeights(heights13, 7, 8),
-            BigHeights.bigHeights(heights14, 3, 8),
-            BigHeights.bigHeights(heights15, 2, 8),
+        final TestResult[] results = {
+            new TestResult(heights0, 2, 4),
+            new TestResult(heights1, 0, 1),
+            new TestResult(heights2, 0, 4),
+            new TestResult(heights3, 0, 4),
+            new TestResult(heights4, 1, 1),
+            new TestResult(heights5, 1, 2),
+            new TestResult(heights6, 0, 2),
+            new TestResult(heights7, 1, 4),
+            new TestResult(heights8, 0, 4),
+            new TestResult(heights9, 0, 3),
+            new TestResult(heights10, 0, 3),
+            new TestResult(heights11, 4, 8),
+            new TestResult(heights12, 0, 3),
+            new TestResult(heights13, 7, 8),
+            new TestResult(heights14, 3, 8),
+            new TestResult(heights15, 2, 8),
         };
 
         boolean allTestsPassed = true;
-        for (int i = 0; i < resultsArray.length; ++i)
+        boolean prevTestPassed = false;
+        for (int i = 0; i < results.length; ++i)
         {
-            if (resultsArray[i] != expectedResults[i])
-            {
+            if (results[i].caught != null) {
                 allTestsPassed = false;
-                System.out.println("\n[-] #"+(i+1)+" failed!");
-                System.out.println(testcaseStrings[i]+";");
-                System.out.println("    received: "+resultsArray[i]);
+                if(prevTestPassed) { System.out.println(); prevTestPassed = false; }
+                System.out.print("[!] #"+(i+1)+" - ");
+                System.out.println(testcaseStrings[i]+" - Failed! [EXCEPTION]");
+                System.out.println(results[i].caught.getClass().getName());
+                System.out.println(results[i].caught.getMessage());
+                if(getStacktraces) results[i].caught.printStackTrace();
+                System.out.println(); continue;
+            }
+            if (results[i].result != expectedResults[i]) {
+                allTestsPassed = false;
+                if(prevTestPassed) { System.out.println(); prevTestPassed = false; }
+                System.out.print("[x] #"+(i+1)+" - ");
+                System.out.println(testcaseStrings[i]+" - Failed!");
+                System.out.println("    received: "+results[i].result);
                 System.out.println("    expected: "+expectedResults[i]);
-                System.out.println("\n");
-            } else if (printSuccess) { 
-                System.out.println("[✔] #"+(i+1)+" - "+testcaseStrings[i]);
+                System.out.println();
+            } else if (printSuccesses) {
+                prevTestPassed = true;
+                System.out.println("[✓] #"+(i+1)+" - "+testcaseStrings[i]);
             }
         }
-        if (allTestsPassed) System.out.println("\n ✔✔✔  ~ All tests passed. ~  ✔✔✔");
+        if (allTestsPassed) System.out.println("\n ✓✓✓  ~ All tests passed. ~  ✓✓✓");
         System.out.println();
-        return;
+        return allTestsPassed;
     }
 }

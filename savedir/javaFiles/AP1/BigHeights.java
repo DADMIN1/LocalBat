@@ -42,6 +42,8 @@ public final class BigHeights
     }
 
     public static final void main(String[] args) {
-        _BigHeights.Validate(true);  // pass 'false' to print failed tests only.
+        //_BigHeights.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_BigHeights.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _BigHeights.Validate();
     }
 }

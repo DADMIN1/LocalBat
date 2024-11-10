@@ -34,6 +34,8 @@ public final class MissingChar
     }
 
     public static final void main(String[] args) {
-        _MissingChar.Validate(true);  // pass 'false' to print failed tests only.
+        //_MissingChar.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_MissingChar.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _MissingChar.Validate();
     }
 }

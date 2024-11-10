@@ -34,6 +34,8 @@ public final class ShareDigit
     }
 
     public static final void main(String[] args) {
-        _ShareDigit.Validate(true);  // pass 'false' to print failed tests only.
+        //_ShareDigit.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_ShareDigit.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _ShareDigit.Validate();
     }
 }

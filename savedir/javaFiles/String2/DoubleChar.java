@@ -32,6 +32,8 @@ public final class DoubleChar
     }
 
     public static final void main(String[] args) {
-        _DoubleChar.Validate(true);  // pass 'false' to print failed tests only.
+        //_DoubleChar.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_DoubleChar.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _DoubleChar.Validate();
     }
 }

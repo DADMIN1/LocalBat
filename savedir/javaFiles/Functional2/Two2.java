@@ -33,6 +33,8 @@ public final class Two2
     }
 
     public static final void main(String[] args) {
-        _Two2.Validate(true);  // pass 'false' to print failed tests only.
+        //_Two2.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_Two2.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _Two2.Validate();
     }
 }

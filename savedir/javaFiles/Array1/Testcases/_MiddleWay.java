@@ -5,6 +5,18 @@ import java.util.ArrayList;
 
 public final class _MiddleWay
 {
+    public static boolean printSuccesses = true;
+    public static boolean getStacktraces = false;
+
+    static final class TestResult {
+        private int[] result;
+        private RuntimeException caught = null;
+        TestResult(int[] a, int[] b) {
+            try { result = MiddleWay.middleWay(a, b); }
+            catch (RuntimeException exception) { caught = exception; }
+        }
+    }
+
     static final String[] testcaseStrings = {
         "middleWay([1, 2, 3], [4, 5, 6])",
         "middleWay([7, 7, 7], [3, 8, 0])",
@@ -31,7 +43,7 @@ public final class _MiddleWay
         return result + "]";
     }
 
-    public static final void Validate(boolean printSuccess)
+    public static final boolean Validate()
     {
         final int[] a0 = {1, 2, 3}; final int[] b0 = {4, 5, 6}; 
         final int[] a1 = {7, 7, 7}; final int[] b1 = {3, 8, 0}; 
@@ -40,32 +52,44 @@ public final class _MiddleWay
         final int[] a4 = {1, 2, 3}; final int[] b4 = {3, 1, 4}; 
         final int[] a5 = {1, 2, 3}; final int[] b5 = {4, 1, 1}; 
 
-        final int[][] resultsArray = {
-            MiddleWay.middleWay(a0, b0),
-            MiddleWay.middleWay(a1, b1),
-            MiddleWay.middleWay(a2, b2),
-            MiddleWay.middleWay(a3, b3),
-            MiddleWay.middleWay(a4, b4),
-            MiddleWay.middleWay(a5, b5),
+        final TestResult[] results = {
+            new TestResult(a0, b0),
+            new TestResult(a1, b1),
+            new TestResult(a2, b2),
+            new TestResult(a3, b3),
+            new TestResult(a4, b4),
+            new TestResult(a5, b5),
         };
 
         boolean allTestsPassed = true;
-        for (int i = 0; i < resultsArray.length; ++i)
+        boolean prevTestPassed = false;
+        for (int i = 0; i < results.length; ++i)
         {
-            if (!Arrays.equals(resultsArray[i], expectedResults[i]))
-            {
+            if (results[i].caught != null) {
                 allTestsPassed = false;
-                System.out.println("\n[-] #"+(i+1)+" failed!");
-                System.out.println(testcaseStrings[i]+";");
-                System.out.println("    received: "+printArray(resultsArray[i]));
+                if(prevTestPassed) { System.out.println(); prevTestPassed = false; }
+                System.out.print("[!] #"+(i+1)+" - ");
+                System.out.println(testcaseStrings[i]+" - Failed! [EXCEPTION]");
+                System.out.println(results[i].caught.getClass().getName());
+                System.out.println(results[i].caught.getMessage());
+                if(getStacktraces) results[i].caught.printStackTrace();
+                System.out.println(); continue;
+            }
+            if (!Arrays.equals(results[i].result, expectedResults[i])) {
+                allTestsPassed = false;
+                if(prevTestPassed) { System.out.println(); prevTestPassed = false; }
+                System.out.print("[x] #"+(i+1)+" - ");
+                System.out.println(testcaseStrings[i]+" - Failed!");
+                System.out.println("    received: "+printArray(results[i].result));
                 System.out.println("    expected: "+printArray(expectedResults[i]));
-                System.out.println("\n");
-            } else if (printSuccess) { 
-                System.out.println("[✔] #"+(i+1)+" - "+testcaseStrings[i]);
+                System.out.println();
+            } else if (printSuccesses) {
+                prevTestPassed = true;
+                System.out.println("[✓] #"+(i+1)+" - "+testcaseStrings[i]);
             }
         }
-        if (allTestsPassed) System.out.println("\n ✔✔✔  ~ All tests passed. ~  ✔✔✔");
+        if (allTestsPassed) System.out.println("\n ✓✓✓  ~ All tests passed. ~  ✓✓✓");
         System.out.println();
-        return;
+        return allTestsPassed;
     }
 }

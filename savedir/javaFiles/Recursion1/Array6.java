@@ -33,6 +33,8 @@ public final class Array6
     }
 
     public static final void main(String[] args) {
-        _Array6.Validate(true);  // pass 'false' to print failed tests only.
+        //_Array6.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_Array6.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _Array6.Validate();
     }
 }

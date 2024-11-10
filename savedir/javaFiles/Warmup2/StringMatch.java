@@ -34,6 +34,8 @@ public final class StringMatch
     }
 
     public static final void main(String[] args) {
-        _StringMatch.Validate(true);  // pass 'false' to print failed tests only.
+        //_StringMatch.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_StringMatch.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _StringMatch.Validate();
     }
 }

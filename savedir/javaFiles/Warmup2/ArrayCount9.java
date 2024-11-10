@@ -29,6 +29,8 @@ public final class ArrayCount9
     }
 
     public static final void main(String[] args) {
-        _ArrayCount9.Validate(true);  // pass 'false' to print failed tests only.
+        //_ArrayCount9.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_ArrayCount9.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _ArrayCount9.Validate();
     }
 }

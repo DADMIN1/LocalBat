@@ -31,6 +31,8 @@ public final class MinCat
     }
 
     public static final void main(String[] args) {
-        _MinCat.Validate(true);  // pass 'false' to print failed tests only.
+        //_MinCat.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_MinCat.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _MinCat.Validate();
     }
 }

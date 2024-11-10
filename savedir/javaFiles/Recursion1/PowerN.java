@@ -34,6 +34,8 @@ public final class PowerN
     }
 
     public static final void main(String[] args) {
-        _PowerN.Validate(true);  // pass 'false' to print failed tests only.
+        //_PowerN.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_PowerN.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _PowerN.Validate();
     }
 }

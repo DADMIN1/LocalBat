@@ -29,6 +29,8 @@ public final class FirstChar
     }
 
     public static final void main(String[] args) {
-        _FirstChar.Validate(true);  // pass 'false' to print failed tests only.
+        //_FirstChar.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_FirstChar.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _FirstChar.Validate();
     }
 }

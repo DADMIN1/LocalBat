@@ -30,6 +30,8 @@ public final class NTwice
     }
 
     public static final void main(String[] args) {
-        _NTwice.Validate(true);  // pass 'false' to print failed tests only.
+        //_NTwice.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_NTwice.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _NTwice.Validate();
     }
 }

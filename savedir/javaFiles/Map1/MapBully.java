@@ -31,6 +31,8 @@ public final class MapBully
     }
 
     public static final void main(String[] args) {
-        _MapBully.Validate(true);  // pass 'false' to print failed tests only.
+        //_MapBully.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_MapBully.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _MapBully.Validate();
     }
 }

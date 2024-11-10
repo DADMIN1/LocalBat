@@ -35,6 +35,8 @@ public final class ZeroFront
     }
 
     public static final void main(String[] args) {
-        _ZeroFront.Validate(true);  // pass 'false' to print failed tests only.
+        //_ZeroFront.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_ZeroFront.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _ZeroFront.Validate();
     }
 }

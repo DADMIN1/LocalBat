@@ -20,6 +20,6 @@ public final class MakePi
     }
 
     public static final void main(String[] args) {
-        _MakePi.Validate(true);  // pass 'false' to print failed tests only.
+        _MakePi.Validate();
     }
 }

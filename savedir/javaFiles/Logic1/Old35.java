@@ -39,6 +39,8 @@ public final class Old35
     }
 
     public static final void main(String[] args) {
-        _Old35.Validate(true);  // pass 'false' to print failed tests only.
+        //_Old35.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_Old35.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _Old35.Validate();
     }
 }

@@ -42,6 +42,8 @@ public final class GroupSum
     }
 
     public static final void main(String[] args) {
-        _GroupSum.Validate(true);  // pass 'false' to print failed tests only.
+        //_GroupSum.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_GroupSum.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _GroupSum.Validate();
     }
 }

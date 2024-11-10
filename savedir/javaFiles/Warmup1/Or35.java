@@ -45,6 +45,8 @@ public final class Or35
     }
 
     public static final void main(String[] args) {
-        _Or35.Validate(true);  // pass 'false' to print failed tests only.
+        //_Or35.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_Or35.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _Or35.Validate();
     }
 }

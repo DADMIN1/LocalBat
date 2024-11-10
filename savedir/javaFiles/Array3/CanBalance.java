@@ -33,6 +33,8 @@ public final class CanBalance
     }
 
     public static final void main(String[] args) {
-        _CanBalance.Validate(true);  // pass 'false' to print failed tests only.
+        //_CanBalance.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_CanBalance.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _CanBalance.Validate();
     }
 }

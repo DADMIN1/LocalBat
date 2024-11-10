@@ -32,6 +32,8 @@ public final class ChangeXY
     }
 
     public static final void main(String[] args) {
-        _ChangeXY.Validate(true);  // pass 'false' to print failed tests only.
+        //_ChangeXY.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_ChangeXY.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _ChangeXY.Validate();
     }
 }

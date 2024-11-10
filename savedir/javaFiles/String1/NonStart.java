@@ -32,6 +32,8 @@ public final class NonStart
     }
 
     public static final void main(String[] args) {
-        _NonStart.Validate(true);  // pass 'false' to print failed tests only.
+        //_NonStart.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_NonStart.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _NonStart.Validate();
     }
 }

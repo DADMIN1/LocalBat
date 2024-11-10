@@ -29,6 +29,8 @@ public final class MakeMiddle
     }
 
     public static final void main(String[] args) {
-        _MakeMiddle.Validate(true);  // pass 'false' to print failed tests only.
+        //_MakeMiddle.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_MakeMiddle.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _MakeMiddle.Validate();
     }
 }

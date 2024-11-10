@@ -29,6 +29,8 @@ public final class Scores100
     }
 
     public static final void main(String[] args) {
-        _Scores100.Validate(true);  // pass 'false' to print failed tests only.
+        //_Scores100.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_Scores100.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _Scores100.Validate();
     }
 }

@@ -32,6 +32,8 @@ public final class StringSplosion
     }
 
     public static final void main(String[] args) {
-        _StringSplosion.Validate(true);  // pass 'false' to print failed tests only.
+        //_StringSplosion.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_StringSplosion.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _StringSplosion.Validate();
     }
 }

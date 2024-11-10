@@ -43,6 +43,8 @@ public final class GroupSum6
     }
 
     public static final void main(String[] args) {
-        _GroupSum6.Validate(true);  // pass 'false' to print failed tests only.
+        //_GroupSum6.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_GroupSum6.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _GroupSum6.Validate();
     }
 }

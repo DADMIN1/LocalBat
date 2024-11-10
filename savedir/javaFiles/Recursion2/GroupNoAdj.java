@@ -37,6 +37,8 @@ public final class GroupNoAdj
     }
 
     public static final void main(String[] args) {
-        _GroupNoAdj.Validate(true);  // pass 'false' to print failed tests only.
+        //_GroupNoAdj.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_GroupNoAdj.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _GroupNoAdj.Validate();
     }
 }

@@ -3,6 +3,18 @@ import Recursion1.CountHi2;
 
 public final class _CountHi2
 {
+    public static boolean printSuccesses = true;
+    public static boolean getStacktraces = false;
+
+    static final class TestResult {
+        private int result;
+        private RuntimeException caught = null;
+        TestResult(String str) {
+            try { result = CountHi2.countHi2(str); }
+            catch (RuntimeException exception) { caught = exception; }
+        }
+    }
+
     static final String[] testcaseStrings = {
         "countHi2(\"ahixhi\")",
         "countHi2(\"ahibhi\")",
@@ -41,44 +53,56 @@ public final class _CountHi2
         1,
     };
 
-    public static final void Validate(boolean printSuccess)
+    public static final boolean Validate()
     {
-        final int[] resultsArray = {
-            CountHi2.countHi2("ahixhi"),
-            CountHi2.countHi2("ahibhi"),
-            CountHi2.countHi2("xhixhi"),
-            CountHi2.countHi2("hixhi"),
-            CountHi2.countHi2("hixhhi"),
-            CountHi2.countHi2("hihihi"),
-            CountHi2.countHi2("hihihix"),
-            CountHi2.countHi2("xhihihix"),
-            CountHi2.countHi2("xxhi"),
-            CountHi2.countHi2("hixxhi"),
-            CountHi2.countHi2("hi"),
-            CountHi2.countHi2("xxxx"),
-            CountHi2.countHi2("h"),
-            CountHi2.countHi2("x"),
-            CountHi2.countHi2(""),
-            CountHi2.countHi2("Hellohi"),
+        final TestResult[] results = {
+            new TestResult("ahixhi"),
+            new TestResult("ahibhi"),
+            new TestResult("xhixhi"),
+            new TestResult("hixhi"),
+            new TestResult("hixhhi"),
+            new TestResult("hihihi"),
+            new TestResult("hihihix"),
+            new TestResult("xhihihix"),
+            new TestResult("xxhi"),
+            new TestResult("hixxhi"),
+            new TestResult("hi"),
+            new TestResult("xxxx"),
+            new TestResult("h"),
+            new TestResult("x"),
+            new TestResult(""),
+            new TestResult("Hellohi"),
         };
 
         boolean allTestsPassed = true;
-        for (int i = 0; i < resultsArray.length; ++i)
+        boolean prevTestPassed = false;
+        for (int i = 0; i < results.length; ++i)
         {
-            if (resultsArray[i] != expectedResults[i])
-            {
+            if (results[i].caught != null) {
                 allTestsPassed = false;
-                System.out.println("\n[-] #"+(i+1)+" failed!");
-                System.out.println(testcaseStrings[i]+";");
-                System.out.println("    received: "+resultsArray[i]);
+                if(prevTestPassed) { System.out.println(); prevTestPassed = false; }
+                System.out.print("[!] #"+(i+1)+" - ");
+                System.out.println(testcaseStrings[i]+" - Failed! [EXCEPTION]");
+                System.out.println(results[i].caught.getClass().getName());
+                System.out.println(results[i].caught.getMessage());
+                if(getStacktraces) results[i].caught.printStackTrace();
+                System.out.println(); continue;
+            }
+            if (results[i].result != expectedResults[i]) {
+                allTestsPassed = false;
+                if(prevTestPassed) { System.out.println(); prevTestPassed = false; }
+                System.out.print("[x] #"+(i+1)+" - ");
+                System.out.println(testcaseStrings[i]+" - Failed!");
+                System.out.println("    received: "+results[i].result);
                 System.out.println("    expected: "+expectedResults[i]);
-                System.out.println("\n");
-            } else if (printSuccess) { 
-                System.out.println("[✔] #"+(i+1)+" - "+testcaseStrings[i]);
+                System.out.println();
+            } else if (printSuccesses) {
+                prevTestPassed = true;
+                System.out.println("[✓] #"+(i+1)+" - "+testcaseStrings[i]);
             }
         }
-        if (allTestsPassed) System.out.println("\n ✔✔✔  ~ All tests passed. ~  ✔✔✔");
+        if (allTestsPassed) System.out.println("\n ✓✓✓  ~ All tests passed. ~  ✓✓✓");
         System.out.println();
-        return;
+        return allTestsPassed;
     }
 }

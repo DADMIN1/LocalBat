@@ -35,6 +35,8 @@ public final class TripleUp
     }
 
     public static final void main(String[] args) {
-        _TripleUp.Validate(true);  // pass 'false' to print failed tests only.
+        //_TripleUp.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_TripleUp.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _TripleUp.Validate();
     }
 }

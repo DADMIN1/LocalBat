@@ -31,6 +31,8 @@ public final class SumDouble
     }
 
     public static final void main(String[] args) {
-        _SumDouble.Validate(true);  // pass 'false' to print failed tests only.
+        //_SumDouble.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_SumDouble.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _SumDouble.Validate();
     }
 }

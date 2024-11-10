@@ -39,6 +39,8 @@ public final class Array220
     }
 
     public static final void main(String[] args) {
-        _Array220.Validate(true);  // pass 'false' to print failed tests only.
+        //_Array220.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_Array220.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _Array220.Validate();
     }
 }

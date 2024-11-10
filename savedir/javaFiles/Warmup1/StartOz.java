@@ -36,6 +36,8 @@ public final class StartOz
     }
 
     public static final void main(String[] args) {
-        _StartOz.Validate(true);  // pass 'false' to print failed tests only.
+        //_StartOz.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_StartOz.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _StartOz.Validate();
     }
 }

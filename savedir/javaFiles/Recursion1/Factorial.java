@@ -32,6 +32,8 @@ public final class Factorial
     }
 
     public static final void main(String[] args) {
-        _Factorial.Validate(true);  // pass 'false' to print failed tests only.
+        //_Factorial.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_Factorial.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _Factorial.Validate();
     }
 }

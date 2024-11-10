@@ -36,6 +36,8 @@ public final class ParenBit
     }
 
     public static final void main(String[] args) {
-        _ParenBit.Validate(true);  // pass 'false' to print failed tests only.
+        //_ParenBit.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_ParenBit.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _ParenBit.Validate();
     }
 }

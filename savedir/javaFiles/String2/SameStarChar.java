@@ -39,6 +39,8 @@ public final class SameStarChar
     }
 
     public static final void main(String[] args) {
-        _SameStarChar.Validate(true);  // pass 'false' to print failed tests only.
+        //_SameStarChar.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_SameStarChar.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _SameStarChar.Validate();
     }
 }

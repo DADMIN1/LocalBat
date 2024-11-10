@@ -35,6 +35,8 @@ public final class No34
     }
 
     public static final void main(String[] args) {
-        _No34.Validate(true);  // pass 'false' to print failed tests only.
+        //_No34.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_No34.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _No34.Validate();
     }
 }

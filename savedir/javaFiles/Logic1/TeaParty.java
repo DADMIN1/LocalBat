@@ -39,6 +39,8 @@ public final class TeaParty
     }
 
     public static final void main(String[] args) {
-        _TeaParty.Validate(true);  // pass 'false' to print failed tests only.
+        //_TeaParty.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_TeaParty.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _TeaParty.Validate();
     }
 }

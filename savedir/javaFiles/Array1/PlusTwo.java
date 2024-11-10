@@ -25,6 +25,8 @@ public final class PlusTwo
     }
 
     public static final void main(String[] args) {
-        _PlusTwo.Validate(true);  // pass 'false' to print failed tests only.
+        //_PlusTwo.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_PlusTwo.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _PlusTwo.Validate();
     }
 }

@@ -38,6 +38,8 @@ public final class EndOther
     }
 
     public static final void main(String[] args) {
-        _EndOther.Validate(true);  // pass 'false' to print failed tests only.
+        //_EndOther.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_EndOther.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _EndOther.Validate();
     }
 }

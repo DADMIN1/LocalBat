@@ -3,6 +3,18 @@ import AP1.CommonTwo;
 
 public final class _CommonTwo
 {
+    public static boolean printSuccesses = true;
+    public static boolean getStacktraces = false;
+
+    static final class TestResult {
+        private int result;
+        private RuntimeException caught = null;
+        TestResult(String[] a, String[] b) {
+            try { result = CommonTwo.commonTwo(a, b); }
+            catch (RuntimeException exception) { caught = exception; }
+        }
+    }
+
     static final String[] testcaseStrings = {
         "commonTwo([\"a\", \"c\", \"x\"], [\"b\", \"c\", \"d\", \"x\"])",
         "commonTwo([\"a\", \"c\", \"x\"], [\"a\", \"b\", \"c\", \"x\", \"z\"])",
@@ -41,7 +53,7 @@ public final class _CommonTwo
         2,
     };
 
-    public static final void Validate(boolean printSuccess)
+    public static final boolean Validate()
     {
         final String[] a0 = {"a", "c", "x"}; final String[] b0 = {"b", "c", "d", "x"}; 
         final String[] a1 = {"a", "c", "x"}; final String[] b1 = {"a", "b", "c", "x", "z"}; 
@@ -60,42 +72,54 @@ public final class _CommonTwo
         final String[] a14 = {"a", "a"}; final String[] b14 = {"b", "b"}; 
         final String[] a15 = {"a", "b"}; final String[] b15 = {"a", "b"}; 
 
-        final int[] resultsArray = {
-            CommonTwo.commonTwo(a0, b0),
-            CommonTwo.commonTwo(a1, b1),
-            CommonTwo.commonTwo(a2, b2),
-            CommonTwo.commonTwo(a3, b3),
-            CommonTwo.commonTwo(a4, b4),
-            CommonTwo.commonTwo(a5, b5),
-            CommonTwo.commonTwo(a6, b6),
-            CommonTwo.commonTwo(a7, b7),
-            CommonTwo.commonTwo(a8, b8),
-            CommonTwo.commonTwo(a9, b9),
-            CommonTwo.commonTwo(a10, b10),
-            CommonTwo.commonTwo(a11, b11),
-            CommonTwo.commonTwo(a12, b12),
-            CommonTwo.commonTwo(a13, b13),
-            CommonTwo.commonTwo(a14, b14),
-            CommonTwo.commonTwo(a15, b15),
+        final TestResult[] results = {
+            new TestResult(a0, b0),
+            new TestResult(a1, b1),
+            new TestResult(a2, b2),
+            new TestResult(a3, b3),
+            new TestResult(a4, b4),
+            new TestResult(a5, b5),
+            new TestResult(a6, b6),
+            new TestResult(a7, b7),
+            new TestResult(a8, b8),
+            new TestResult(a9, b9),
+            new TestResult(a10, b10),
+            new TestResult(a11, b11),
+            new TestResult(a12, b12),
+            new TestResult(a13, b13),
+            new TestResult(a14, b14),
+            new TestResult(a15, b15),
         };
 
         boolean allTestsPassed = true;
-        for (int i = 0; i < resultsArray.length; ++i)
+        boolean prevTestPassed = false;
+        for (int i = 0; i < results.length; ++i)
         {
-            if (resultsArray[i] != expectedResults[i])
-            {
+            if (results[i].caught != null) {
                 allTestsPassed = false;
-                System.out.println("\n[-] #"+(i+1)+" failed!");
-                System.out.println(testcaseStrings[i]+";");
-                System.out.println("    received: "+resultsArray[i]);
+                if(prevTestPassed) { System.out.println(); prevTestPassed = false; }
+                System.out.print("[!] #"+(i+1)+" - ");
+                System.out.println(testcaseStrings[i]+" - Failed! [EXCEPTION]");
+                System.out.println(results[i].caught.getClass().getName());
+                System.out.println(results[i].caught.getMessage());
+                if(getStacktraces) results[i].caught.printStackTrace();
+                System.out.println(); continue;
+            }
+            if (results[i].result != expectedResults[i]) {
+                allTestsPassed = false;
+                if(prevTestPassed) { System.out.println(); prevTestPassed = false; }
+                System.out.print("[x] #"+(i+1)+" - ");
+                System.out.println(testcaseStrings[i]+" - Failed!");
+                System.out.println("    received: "+results[i].result);
                 System.out.println("    expected: "+expectedResults[i]);
-                System.out.println("\n");
-            } else if (printSuccess) { 
-                System.out.println("[✔] #"+(i+1)+" - "+testcaseStrings[i]);
+                System.out.println();
+            } else if (printSuccesses) {
+                prevTestPassed = true;
+                System.out.println("[✓] #"+(i+1)+" - "+testcaseStrings[i]);
             }
         }
-        if (allTestsPassed) System.out.println("\n ✔✔✔  ~ All tests passed. ~  ✔✔✔");
+        if (allTestsPassed) System.out.println("\n ✓✓✓  ~ All tests passed. ~  ✓✓✓");
         System.out.println();
-        return;
+        return allTestsPassed;
     }
 }

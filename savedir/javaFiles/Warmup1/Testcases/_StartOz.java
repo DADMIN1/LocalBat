@@ -3,6 +3,18 @@ import Warmup1.StartOz;
 
 public final class _StartOz
 {
+    public static boolean printSuccesses = true;
+    public static boolean getStacktraces = false;
+
+    static final class TestResult {
+        private String result;
+        private RuntimeException caught = null;
+        TestResult(String str) {
+            try { result = StartOz.startOz(str); }
+            catch (RuntimeException exception) { caught = exception; }
+        }
+    }
+
     static final String[] testcaseStrings = {
         "startOz(\"ozymandias\")",
         "startOz(\"bzoo\")",
@@ -33,40 +45,52 @@ public final class _StartOz
         "oz",
     };
 
-    public static final void Validate(boolean printSuccess)
+    public static final boolean Validate()
     {
-        final String[] resultsArray = {
-            StartOz.startOz("ozymandias"),
-            StartOz.startOz("bzoo"),
-            StartOz.startOz("oxx"),
-            StartOz.startOz("oz"),
-            StartOz.startOz("ounce"),
-            StartOz.startOz("o"),
-            StartOz.startOz("abc"),
-            StartOz.startOz(""),
-            StartOz.startOz("zoo"),
-            StartOz.startOz("aztec"),
-            StartOz.startOz("zzzz"),
-            StartOz.startOz("oznic"),
+        final TestResult[] results = {
+            new TestResult("ozymandias"),
+            new TestResult("bzoo"),
+            new TestResult("oxx"),
+            new TestResult("oz"),
+            new TestResult("ounce"),
+            new TestResult("o"),
+            new TestResult("abc"),
+            new TestResult(""),
+            new TestResult("zoo"),
+            new TestResult("aztec"),
+            new TestResult("zzzz"),
+            new TestResult("oznic"),
         };
 
         boolean allTestsPassed = true;
-        for (int i = 0; i < resultsArray.length; ++i)
+        boolean prevTestPassed = false;
+        for (int i = 0; i < results.length; ++i)
         {
-            if (!resultsArray[i].equals(expectedResults[i]))
-            {
+            if (results[i].caught != null) {
                 allTestsPassed = false;
-                System.out.println("\n[-] #"+(i+1)+" failed!");
-                System.out.println(testcaseStrings[i]+";");
-                System.out.println("    received: "+resultsArray[i]);
+                if(prevTestPassed) { System.out.println(); prevTestPassed = false; }
+                System.out.print("[!] #"+(i+1)+" - ");
+                System.out.println(testcaseStrings[i]+" - Failed! [EXCEPTION]");
+                System.out.println(results[i].caught.getClass().getName());
+                System.out.println(results[i].caught.getMessage());
+                if(getStacktraces) results[i].caught.printStackTrace();
+                System.out.println(); continue;
+            }
+            if (!results[i].result.equals(expectedResults[i])) {
+                allTestsPassed = false;
+                if(prevTestPassed) { System.out.println(); prevTestPassed = false; }
+                System.out.print("[x] #"+(i+1)+" - ");
+                System.out.println(testcaseStrings[i]+" - Failed!");
+                System.out.println("    received: "+results[i].result);
                 System.out.println("    expected: "+expectedResults[i]);
-                System.out.println("\n");
-            } else if (printSuccess) { 
-                System.out.println("[✔] #"+(i+1)+" - "+testcaseStrings[i]);
+                System.out.println();
+            } else if (printSuccesses) {
+                prevTestPassed = true;
+                System.out.println("[✓] #"+(i+1)+" - "+testcaseStrings[i]);
             }
         }
-        if (allTestsPassed) System.out.println("\n ✔✔✔  ~ All tests passed. ~  ✔✔✔");
+        if (allTestsPassed) System.out.println("\n ✓✓✓  ~ All tests passed. ~  ✓✓✓");
         System.out.println();
-        return;
+        return allTestsPassed;
     }
 }

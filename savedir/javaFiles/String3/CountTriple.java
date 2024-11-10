@@ -35,6 +35,8 @@ public final class CountTriple
     }
 
     public static final void main(String[] args) {
-        _CountTriple.Validate(true);  // pass 'false' to print failed tests only.
+        //_CountTriple.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_CountTriple.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _CountTriple.Validate();
     }
 }

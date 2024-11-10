@@ -34,6 +34,8 @@ public final class SumDigits
     }
 
     public static final void main(String[] args) {
-        _SumDigits.Validate(true);  // pass 'false' to print failed tests only.
+        //_SumDigits.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_SumDigits.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _SumDigits.Validate();
     }
 }

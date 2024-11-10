@@ -35,6 +35,8 @@ public final class ComboString
     }
 
     public static final void main(String[] args) {
-        _ComboString.Validate(true);  // pass 'false' to print failed tests only.
+        //_ComboString.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_ComboString.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _ComboString.Validate();
     }
 }

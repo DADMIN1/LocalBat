@@ -34,6 +34,8 @@ public final class Lucky13
     }
 
     public static final void main(String[] args) {
-        _Lucky13.Validate(true);  // pass 'false' to print failed tests only.
+        //_Lucky13.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_Lucky13.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _Lucky13.Validate();
     }
 }

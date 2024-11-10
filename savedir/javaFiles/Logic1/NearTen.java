@@ -39,6 +39,8 @@ public final class NearTen
     }
 
     public static final void main(String[] args) {
-        _NearTen.Validate(true);  // pass 'false' to print failed tests only.
+        //_NearTen.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_NearTen.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _NearTen.Validate();
     }
 }

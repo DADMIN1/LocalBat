@@ -36,6 +36,8 @@ public final class WithoutX2
     }
 
     public static final void main(String[] args) {
-        _WithoutX2.Validate(true);  // pass 'false' to print failed tests only.
+        //_WithoutX2.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_WithoutX2.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _WithoutX2.Validate();
     }
 }

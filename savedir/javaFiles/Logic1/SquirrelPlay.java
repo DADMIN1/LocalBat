@@ -38,6 +38,8 @@ public final class SquirrelPlay
     }
 
     public static final void main(String[] args) {
-        _SquirrelPlay.Validate(true);  // pass 'false' to print failed tests only.
+        //_SquirrelPlay.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_SquirrelPlay.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _SquirrelPlay.Validate();
     }
 }

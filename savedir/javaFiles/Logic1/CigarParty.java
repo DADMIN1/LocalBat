@@ -37,6 +37,8 @@ public final class CigarParty
     }
 
     public static final void main(String[] args) {
-        _CigarParty.Validate(true);  // pass 'false' to print failed tests only.
+        //_CigarParty.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_CigarParty.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _CigarParty.Validate();
     }
 }

@@ -38,6 +38,8 @@ public final class StrCopies
     }
 
     public static final void main(String[] args) {
-        _StrCopies.Validate(true);  // pass 'false' to print failed tests only.
+        //_StrCopies.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_StrCopies.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _StrCopies.Validate();
     }
 }

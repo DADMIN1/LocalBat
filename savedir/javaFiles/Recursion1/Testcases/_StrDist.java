@@ -3,6 +3,18 @@ import Recursion1.StrDist;
 
 public final class _StrDist
 {
+    public static boolean printSuccesses = true;
+    public static boolean getStacktraces = false;
+
+    static final class TestResult {
+        private int result;
+        private RuntimeException caught = null;
+        TestResult(String str, String sub) {
+            try { result = StrDist.strDist(str, sub); }
+            catch (RuntimeException exception) { caught = exception; }
+        }
+    }
+
     static final String[] testcaseStrings = {
         "strDist(\"catcowcat\", \"cat\")",
         "strDist(\"catcowcat\", \"cow\")",
@@ -37,42 +49,54 @@ public final class _StrDist
         2,
     };
 
-    public static final void Validate(boolean printSuccess)
+    public static final boolean Validate()
     {
-        final int[] resultsArray = {
-            StrDist.strDist("catcowcat", "cat"),
-            StrDist.strDist("catcowcat", "cow"),
-            StrDist.strDist("cccatcowcatxx", "cat"),
-            StrDist.strDist("abccatcowcatcatxyz", "cat"),
-            StrDist.strDist("xyx", "x"),
-            StrDist.strDist("xyx", "y"),
-            StrDist.strDist("xyx", "z"),
-            StrDist.strDist("z", "z"),
-            StrDist.strDist("x", "z"),
-            StrDist.strDist("", "z"),
-            StrDist.strDist("hiHellohihihi", "hi"),
-            StrDist.strDist("hiHellohihihi", "hih"),
-            StrDist.strDist("hiHellohihihi", "o"),
-            StrDist.strDist("hiHellohihihi", "ll"),
+        final TestResult[] results = {
+            new TestResult("catcowcat", "cat"),
+            new TestResult("catcowcat", "cow"),
+            new TestResult("cccatcowcatxx", "cat"),
+            new TestResult("abccatcowcatcatxyz", "cat"),
+            new TestResult("xyx", "x"),
+            new TestResult("xyx", "y"),
+            new TestResult("xyx", "z"),
+            new TestResult("z", "z"),
+            new TestResult("x", "z"),
+            new TestResult("", "z"),
+            new TestResult("hiHellohihihi", "hi"),
+            new TestResult("hiHellohihihi", "hih"),
+            new TestResult("hiHellohihihi", "o"),
+            new TestResult("hiHellohihihi", "ll"),
         };
 
         boolean allTestsPassed = true;
-        for (int i = 0; i < resultsArray.length; ++i)
+        boolean prevTestPassed = false;
+        for (int i = 0; i < results.length; ++i)
         {
-            if (resultsArray[i] != expectedResults[i])
-            {
+            if (results[i].caught != null) {
                 allTestsPassed = false;
-                System.out.println("\n[-] #"+(i+1)+" failed!");
-                System.out.println(testcaseStrings[i]+";");
-                System.out.println("    received: "+resultsArray[i]);
+                if(prevTestPassed) { System.out.println(); prevTestPassed = false; }
+                System.out.print("[!] #"+(i+1)+" - ");
+                System.out.println(testcaseStrings[i]+" - Failed! [EXCEPTION]");
+                System.out.println(results[i].caught.getClass().getName());
+                System.out.println(results[i].caught.getMessage());
+                if(getStacktraces) results[i].caught.printStackTrace();
+                System.out.println(); continue;
+            }
+            if (results[i].result != expectedResults[i]) {
+                allTestsPassed = false;
+                if(prevTestPassed) { System.out.println(); prevTestPassed = false; }
+                System.out.print("[x] #"+(i+1)+" - ");
+                System.out.println(testcaseStrings[i]+" - Failed!");
+                System.out.println("    received: "+results[i].result);
                 System.out.println("    expected: "+expectedResults[i]);
-                System.out.println("\n");
-            } else if (printSuccess) { 
-                System.out.println("[✔] #"+(i+1)+" - "+testcaseStrings[i]);
+                System.out.println();
+            } else if (printSuccesses) {
+                prevTestPassed = true;
+                System.out.println("[✓] #"+(i+1)+" - "+testcaseStrings[i]);
             }
         }
-        if (allTestsPassed) System.out.println("\n ✔✔✔  ~ All tests passed. ~  ✔✔✔");
+        if (allTestsPassed) System.out.println("\n ✓✓✓  ~ All tests passed. ~  ✓✓✓");
         System.out.println();
-        return;
+        return allTestsPassed;
     }
 }

@@ -34,6 +34,8 @@ public final class CountAbc
     }
 
     public static final void main(String[] args) {
-        _CountAbc.Validate(true);  // pass 'false' to print failed tests only.
+        //_CountAbc.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_CountAbc.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _CountAbc.Validate();
     }
 }

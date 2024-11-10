@@ -31,6 +31,8 @@ public final class Math1
     }
 
     public static final void main(String[] args) {
-        _Math1.Validate(true);  // pass 'false' to print failed tests only.
+        //_Math1.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_Math1.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _Math1.Validate();
     }
 }

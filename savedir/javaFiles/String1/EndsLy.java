@@ -31,6 +31,8 @@ public final class EndsLy
     }
 
     public static final void main(String[] args) {
-        _EndsLy.Validate(true);  // pass 'false' to print failed tests only.
+        //_EndsLy.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_EndsLy.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _EndsLy.Validate();
     }
 }

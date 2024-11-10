@@ -3,6 +3,18 @@ import Array3.LinearIn;
 
 public final class _LinearIn
 {
+    public static boolean printSuccesses = true;
+    public static boolean getStacktraces = false;
+
+    static final class TestResult {
+        private boolean result;
+        private RuntimeException caught = null;
+        TestResult(int[] outer, int[] inner) {
+            try { result = LinearIn.linearIn(outer, inner); }
+            catch (RuntimeException exception) { caught = exception; }
+        }
+    }
+
     static final String[] testcaseStrings = {
         "linearIn([1, 2, 4, 6], [2, 4])",
         "linearIn([1, 2, 4, 6], [2, 3, 4])",
@@ -35,7 +47,7 @@ public final class _LinearIn
         false,
     };
 
-    public static final void Validate(boolean printSuccess)
+    public static final boolean Validate()
     {
         final int[] outer0 = {1, 2, 4, 6}; final int[] inner0 = {2, 4}; 
         final int[] outer1 = {1, 2, 4, 6}; final int[] inner1 = {2, 3, 4}; 
@@ -51,39 +63,51 @@ public final class _LinearIn
         final int[] outer11 = {-1, 0, 3, 3, 3, 10, 12}; final int[] inner11 = {0, 3, 12, 14}; 
         final int[] outer12 = {-1, 0, 3, 3, 3, 10, 12}; final int[] inner12 = {-1, 10, 11}; 
 
-        final boolean[] resultsArray = {
-            LinearIn.linearIn(outer0, inner0),
-            LinearIn.linearIn(outer1, inner1),
-            LinearIn.linearIn(outer2, inner2),
-            LinearIn.linearIn(outer3, inner3),
-            LinearIn.linearIn(outer4, inner4),
-            LinearIn.linearIn(outer5, inner5),
-            LinearIn.linearIn(outer6, inner6),
-            LinearIn.linearIn(outer7, inner7),
-            LinearIn.linearIn(outer8, inner8),
-            LinearIn.linearIn(outer9, inner9),
-            LinearIn.linearIn(outer10, inner10),
-            LinearIn.linearIn(outer11, inner11),
-            LinearIn.linearIn(outer12, inner12),
+        final TestResult[] results = {
+            new TestResult(outer0, inner0),
+            new TestResult(outer1, inner1),
+            new TestResult(outer2, inner2),
+            new TestResult(outer3, inner3),
+            new TestResult(outer4, inner4),
+            new TestResult(outer5, inner5),
+            new TestResult(outer6, inner6),
+            new TestResult(outer7, inner7),
+            new TestResult(outer8, inner8),
+            new TestResult(outer9, inner9),
+            new TestResult(outer10, inner10),
+            new TestResult(outer11, inner11),
+            new TestResult(outer12, inner12),
         };
 
         boolean allTestsPassed = true;
-        for (int i = 0; i < resultsArray.length; ++i)
+        boolean prevTestPassed = false;
+        for (int i = 0; i < results.length; ++i)
         {
-            if (resultsArray[i] != expectedResults[i])
-            {
+            if (results[i].caught != null) {
                 allTestsPassed = false;
-                System.out.println("\n[-] #"+(i+1)+" failed!");
-                System.out.println(testcaseStrings[i]+";");
-                System.out.println("    received: "+resultsArray[i]);
+                if(prevTestPassed) { System.out.println(); prevTestPassed = false; }
+                System.out.print("[!] #"+(i+1)+" - ");
+                System.out.println(testcaseStrings[i]+" - Failed! [EXCEPTION]");
+                System.out.println(results[i].caught.getClass().getName());
+                System.out.println(results[i].caught.getMessage());
+                if(getStacktraces) results[i].caught.printStackTrace();
+                System.out.println(); continue;
+            }
+            if (results[i].result != expectedResults[i]) {
+                allTestsPassed = false;
+                if(prevTestPassed) { System.out.println(); prevTestPassed = false; }
+                System.out.print("[x] #"+(i+1)+" - ");
+                System.out.println(testcaseStrings[i]+" - Failed!");
+                System.out.println("    received: "+results[i].result);
                 System.out.println("    expected: "+expectedResults[i]);
-                System.out.println("\n");
-            } else if (printSuccess) { 
-                System.out.println("[✔] #"+(i+1)+" - "+testcaseStrings[i]);
+                System.out.println();
+            } else if (printSuccesses) {
+                prevTestPassed = true;
+                System.out.println("[✓] #"+(i+1)+" - "+testcaseStrings[i]);
             }
         }
-        if (allTestsPassed) System.out.println("\n ✔✔✔  ~ All tests passed. ~  ✔✔✔");
+        if (allTestsPassed) System.out.println("\n ✓✓✓  ~ All tests passed. ~  ✓✓✓");
         System.out.println();
-        return;
+        return allTestsPassed;
     }
 }

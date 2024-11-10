@@ -44,6 +44,8 @@ public final class Love6
     }
 
     public static final void main(String[] args) {
-        _Love6.Validate(true);  // pass 'false' to print failed tests only.
+        //_Love6.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_Love6.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _Love6.Validate();
     }
 }

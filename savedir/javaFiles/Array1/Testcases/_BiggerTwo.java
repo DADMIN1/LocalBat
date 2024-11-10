@@ -5,6 +5,18 @@ import java.util.ArrayList;
 
 public final class _BiggerTwo
 {
+    public static boolean printSuccesses = true;
+    public static boolean getStacktraces = false;
+
+    static final class TestResult {
+        private int[] result;
+        private RuntimeException caught = null;
+        TestResult(int[] a, int[] b) {
+            try { result = BiggerTwo.biggerTwo(a, b); }
+            catch (RuntimeException exception) { caught = exception; }
+        }
+    }
+
     static final String[] testcaseStrings = {
         "biggerTwo([1, 2], [3, 4])",
         "biggerTwo([3, 4], [1, 2])",
@@ -33,7 +45,7 @@ public final class _BiggerTwo
         return result + "]";
     }
 
-    public static final void Validate(boolean printSuccess)
+    public static final boolean Validate()
     {
         final int[] a0 = {1, 2}; final int[] b0 = {3, 4}; 
         final int[] a1 = {3, 4}; final int[] b1 = {1, 2}; 
@@ -43,33 +55,45 @@ public final class _BiggerTwo
         final int[] a5 = {1, 3}; final int[] b5 = {2, 2}; 
         final int[] a6 = {6, 7}; final int[] b6 = {3, 1}; 
 
-        final int[][] resultsArray = {
-            BiggerTwo.biggerTwo(a0, b0),
-            BiggerTwo.biggerTwo(a1, b1),
-            BiggerTwo.biggerTwo(a2, b2),
-            BiggerTwo.biggerTwo(a3, b3),
-            BiggerTwo.biggerTwo(a4, b4),
-            BiggerTwo.biggerTwo(a5, b5),
-            BiggerTwo.biggerTwo(a6, b6),
+        final TestResult[] results = {
+            new TestResult(a0, b0),
+            new TestResult(a1, b1),
+            new TestResult(a2, b2),
+            new TestResult(a3, b3),
+            new TestResult(a4, b4),
+            new TestResult(a5, b5),
+            new TestResult(a6, b6),
         };
 
         boolean allTestsPassed = true;
-        for (int i = 0; i < resultsArray.length; ++i)
+        boolean prevTestPassed = false;
+        for (int i = 0; i < results.length; ++i)
         {
-            if (!Arrays.equals(resultsArray[i], expectedResults[i]))
-            {
+            if (results[i].caught != null) {
                 allTestsPassed = false;
-                System.out.println("\n[-] #"+(i+1)+" failed!");
-                System.out.println(testcaseStrings[i]+";");
-                System.out.println("    received: "+printArray(resultsArray[i]));
+                if(prevTestPassed) { System.out.println(); prevTestPassed = false; }
+                System.out.print("[!] #"+(i+1)+" - ");
+                System.out.println(testcaseStrings[i]+" - Failed! [EXCEPTION]");
+                System.out.println(results[i].caught.getClass().getName());
+                System.out.println(results[i].caught.getMessage());
+                if(getStacktraces) results[i].caught.printStackTrace();
+                System.out.println(); continue;
+            }
+            if (!Arrays.equals(results[i].result, expectedResults[i])) {
+                allTestsPassed = false;
+                if(prevTestPassed) { System.out.println(); prevTestPassed = false; }
+                System.out.print("[x] #"+(i+1)+" - ");
+                System.out.println(testcaseStrings[i]+" - Failed!");
+                System.out.println("    received: "+printArray(results[i].result));
                 System.out.println("    expected: "+printArray(expectedResults[i]));
-                System.out.println("\n");
-            } else if (printSuccess) { 
-                System.out.println("[✔] #"+(i+1)+" - "+testcaseStrings[i]);
+                System.out.println();
+            } else if (printSuccesses) {
+                prevTestPassed = true;
+                System.out.println("[✓] #"+(i+1)+" - "+testcaseStrings[i]);
             }
         }
-        if (allTestsPassed) System.out.println("\n ✔✔✔  ~ All tests passed. ~  ✔✔✔");
+        if (allTestsPassed) System.out.println("\n ✓✓✓  ~ All tests passed. ~  ✓✓✓");
         System.out.println();
-        return;
+        return allTestsPassed;
     }
 }

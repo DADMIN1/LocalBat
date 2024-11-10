@@ -3,6 +3,18 @@ import Logic1.SpecialEleven;
 
 public final class _SpecialEleven
 {
+    public static boolean printSuccesses = true;
+    public static boolean getStacktraces = false;
+
+    static final class TestResult {
+        private boolean result;
+        private RuntimeException caught = null;
+        TestResult(int n) {
+            try { result = SpecialEleven.specialEleven(n); }
+            catch (RuntimeException exception) { caught = exception; }
+        }
+    }
+
     static final String[] testcaseStrings = {
         "specialEleven(22)",
         "specialEleven(23)",
@@ -49,48 +61,60 @@ public final class _SpecialEleven
         true,
     };
 
-    public static final void Validate(boolean printSuccess)
+    public static final boolean Validate()
     {
-        final boolean[] resultsArray = {
-            SpecialEleven.specialEleven(22),
-            SpecialEleven.specialEleven(23),
-            SpecialEleven.specialEleven(24),
-            SpecialEleven.specialEleven(21),
-            SpecialEleven.specialEleven(11),
-            SpecialEleven.specialEleven(12),
-            SpecialEleven.specialEleven(10),
-            SpecialEleven.specialEleven(9),
-            SpecialEleven.specialEleven(8),
-            SpecialEleven.specialEleven(0),
-            SpecialEleven.specialEleven(1),
-            SpecialEleven.specialEleven(2),
-            SpecialEleven.specialEleven(121),
-            SpecialEleven.specialEleven(122),
-            SpecialEleven.specialEleven(123),
-            SpecialEleven.specialEleven(46),
-            SpecialEleven.specialEleven(49),
-            SpecialEleven.specialEleven(52),
-            SpecialEleven.specialEleven(54),
-            SpecialEleven.specialEleven(55),
+        final TestResult[] results = {
+            new TestResult(22),
+            new TestResult(23),
+            new TestResult(24),
+            new TestResult(21),
+            new TestResult(11),
+            new TestResult(12),
+            new TestResult(10),
+            new TestResult(9),
+            new TestResult(8),
+            new TestResult(0),
+            new TestResult(1),
+            new TestResult(2),
+            new TestResult(121),
+            new TestResult(122),
+            new TestResult(123),
+            new TestResult(46),
+            new TestResult(49),
+            new TestResult(52),
+            new TestResult(54),
+            new TestResult(55),
         };
 
         boolean allTestsPassed = true;
-        for (int i = 0; i < resultsArray.length; ++i)
+        boolean prevTestPassed = false;
+        for (int i = 0; i < results.length; ++i)
         {
-            if (resultsArray[i] != expectedResults[i])
-            {
+            if (results[i].caught != null) {
                 allTestsPassed = false;
-                System.out.println("\n[-] #"+(i+1)+" failed!");
-                System.out.println(testcaseStrings[i]+";");
-                System.out.println("    received: "+resultsArray[i]);
+                if(prevTestPassed) { System.out.println(); prevTestPassed = false; }
+                System.out.print("[!] #"+(i+1)+" - ");
+                System.out.println(testcaseStrings[i]+" - Failed! [EXCEPTION]");
+                System.out.println(results[i].caught.getClass().getName());
+                System.out.println(results[i].caught.getMessage());
+                if(getStacktraces) results[i].caught.printStackTrace();
+                System.out.println(); continue;
+            }
+            if (results[i].result != expectedResults[i]) {
+                allTestsPassed = false;
+                if(prevTestPassed) { System.out.println(); prevTestPassed = false; }
+                System.out.print("[x] #"+(i+1)+" - ");
+                System.out.println(testcaseStrings[i]+" - Failed!");
+                System.out.println("    received: "+results[i].result);
                 System.out.println("    expected: "+expectedResults[i]);
-                System.out.println("\n");
-            } else if (printSuccess) { 
-                System.out.println("[✔] #"+(i+1)+" - "+testcaseStrings[i]);
+                System.out.println();
+            } else if (printSuccesses) {
+                prevTestPassed = true;
+                System.out.println("[✓] #"+(i+1)+" - "+testcaseStrings[i]);
             }
         }
-        if (allTestsPassed) System.out.println("\n ✔✔✔  ~ All tests passed. ~  ✔✔✔");
+        if (allTestsPassed) System.out.println("\n ✓✓✓  ~ All tests passed. ~  ✓✓✓");
         System.out.println();
-        return;
+        return allTestsPassed;
     }
 }

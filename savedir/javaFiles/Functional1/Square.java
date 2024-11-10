@@ -30,6 +30,8 @@ public final class Square
     }
 
     public static final void main(String[] args) {
-        _Square.Validate(true);  // pass 'false' to print failed tests only.
+        //_Square.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_Square.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _Square.Validate();
     }
 }

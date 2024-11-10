@@ -38,6 +38,8 @@ public final class WordEnds
     }
 
     public static final void main(String[] args) {
-        _WordEnds.Validate(true);  // pass 'false' to print failed tests only.
+        //_WordEnds.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_WordEnds.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _WordEnds.Validate();
     }
 }

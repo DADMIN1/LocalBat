@@ -30,6 +30,8 @@ public final class ShiftLeft
     }
 
     public static final void main(String[] args) {
-        _ShiftLeft.Validate(true);  // pass 'false' to print failed tests only.
+        //_ShiftLeft.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_ShiftLeft.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _ShiftLeft.Validate();
     }
 }

@@ -35,6 +35,8 @@ public final class CopyEvens
     }
 
     public static final void main(String[] args) {
-        _CopyEvens.Validate(true);  // pass 'false' to print failed tests only.
+        //_CopyEvens.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_CopyEvens.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _CopyEvens.Validate();
     }
 }

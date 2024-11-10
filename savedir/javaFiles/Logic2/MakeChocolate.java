@@ -48,6 +48,8 @@ public final class MakeChocolate
     }
 
     public static final void main(String[] args) {
-        _MakeChocolate.Validate(true);  // pass 'false' to print failed tests only.
+        //_MakeChocolate.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_MakeChocolate.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _MakeChocolate.Validate();
     }
 }

@@ -36,6 +36,8 @@ public final class Make2
     }
 
     public static final void main(String[] args) {
-        _Make2.Validate(true);  // pass 'false' to print failed tests only.
+        //_Make2.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_Make2.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _Make2.Validate();
     }
 }

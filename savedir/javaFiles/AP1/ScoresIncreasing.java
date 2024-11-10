@@ -29,6 +29,8 @@ public final class ScoresIncreasing
     }
 
     public static final void main(String[] args) {
-        _ScoresIncreasing.Validate(true);  // pass 'false' to print failed tests only.
+        //_ScoresIncreasing.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_ScoresIncreasing.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _ScoresIncreasing.Validate();
     }
 }

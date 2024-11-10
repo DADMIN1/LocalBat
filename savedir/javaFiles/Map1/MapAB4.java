@@ -40,6 +40,8 @@ public final class MapAB4
     }
 
     public static final void main(String[] args) {
-        _MapAB4.Validate(true);  // pass 'false' to print failed tests only.
+        //_MapAB4.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_MapAB4.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _MapAB4.Validate();
     }
 }

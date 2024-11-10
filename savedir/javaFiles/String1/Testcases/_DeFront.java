@@ -3,6 +3,18 @@ import String1.DeFront;
 
 public final class _DeFront
 {
+    public static boolean printSuccesses = true;
+    public static boolean getStacktraces = false;
+
+    static final class TestResult {
+        private String result;
+        private RuntimeException caught = null;
+        TestResult(String str) {
+            try { result = DeFront.deFront(str); }
+            catch (RuntimeException exception) { caught = exception; }
+        }
+    }
+
     static final String[] testcaseStrings = {
         "deFront(\"Hello\")",
         "deFront(\"java\")",
@@ -47,47 +59,59 @@ public final class _DeFront
         "z",
     };
 
-    public static final void Validate(boolean printSuccess)
+    public static final boolean Validate()
     {
-        final String[] resultsArray = {
-            DeFront.deFront("Hello"),
-            DeFront.deFront("java"),
-            DeFront.deFront("away"),
-            DeFront.deFront("axy"),
-            DeFront.deFront("abc"),
-            DeFront.deFront("xby"),
-            DeFront.deFront("ab"),
-            DeFront.deFront("ax"),
-            DeFront.deFront("axb"),
-            DeFront.deFront("aaa"),
-            DeFront.deFront("xbc"),
-            DeFront.deFront("bbb"),
-            DeFront.deFront("bazz"),
-            DeFront.deFront("ba"),
-            DeFront.deFront("abxyz"),
-            DeFront.deFront("hi"),
-            DeFront.deFront("his"),
-            DeFront.deFront("xz"),
-            DeFront.deFront("zzz"),
+        final TestResult[] results = {
+            new TestResult("Hello"),
+            new TestResult("java"),
+            new TestResult("away"),
+            new TestResult("axy"),
+            new TestResult("abc"),
+            new TestResult("xby"),
+            new TestResult("ab"),
+            new TestResult("ax"),
+            new TestResult("axb"),
+            new TestResult("aaa"),
+            new TestResult("xbc"),
+            new TestResult("bbb"),
+            new TestResult("bazz"),
+            new TestResult("ba"),
+            new TestResult("abxyz"),
+            new TestResult("hi"),
+            new TestResult("his"),
+            new TestResult("xz"),
+            new TestResult("zzz"),
         };
 
         boolean allTestsPassed = true;
-        for (int i = 0; i < resultsArray.length; ++i)
+        boolean prevTestPassed = false;
+        for (int i = 0; i < results.length; ++i)
         {
-            if (!resultsArray[i].equals(expectedResults[i]))
-            {
+            if (results[i].caught != null) {
                 allTestsPassed = false;
-                System.out.println("\n[-] #"+(i+1)+" failed!");
-                System.out.println(testcaseStrings[i]+";");
-                System.out.println("    received: "+resultsArray[i]);
+                if(prevTestPassed) { System.out.println(); prevTestPassed = false; }
+                System.out.print("[!] #"+(i+1)+" - ");
+                System.out.println(testcaseStrings[i]+" - Failed! [EXCEPTION]");
+                System.out.println(results[i].caught.getClass().getName());
+                System.out.println(results[i].caught.getMessage());
+                if(getStacktraces) results[i].caught.printStackTrace();
+                System.out.println(); continue;
+            }
+            if (!results[i].result.equals(expectedResults[i])) {
+                allTestsPassed = false;
+                if(prevTestPassed) { System.out.println(); prevTestPassed = false; }
+                System.out.print("[x] #"+(i+1)+" - ");
+                System.out.println(testcaseStrings[i]+" - Failed!");
+                System.out.println("    received: "+results[i].result);
                 System.out.println("    expected: "+expectedResults[i]);
-                System.out.println("\n");
-            } else if (printSuccess) { 
-                System.out.println("[✔] #"+(i+1)+" - "+testcaseStrings[i]);
+                System.out.println();
+            } else if (printSuccesses) {
+                prevTestPassed = true;
+                System.out.println("[✓] #"+(i+1)+" - "+testcaseStrings[i]);
             }
         }
-        if (allTestsPassed) System.out.println("\n ✔✔✔  ~ All tests passed. ~  ✔✔✔");
+        if (allTestsPassed) System.out.println("\n ✓✓✓  ~ All tests passed. ~  ✓✓✓");
         System.out.println();
-        return;
+        return allTestsPassed;
     }
 }

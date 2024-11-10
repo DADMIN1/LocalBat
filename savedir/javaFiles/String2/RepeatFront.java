@@ -34,6 +34,8 @@ public final class RepeatFront
     }
 
     public static final void main(String[] args) {
-        _RepeatFront.Validate(true);  // pass 'false' to print failed tests only.
+        //_RepeatFront.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_RepeatFront.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _RepeatFront.Validate();
     }
 }

@@ -36,6 +36,8 @@ public final class MergeTwo
     }
 
     public static final void main(String[] args) {
-        _MergeTwo.Validate(true);  // pass 'false' to print failed tests only.
+        //_MergeTwo.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_MergeTwo.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _MergeTwo.Validate();
     }
 }

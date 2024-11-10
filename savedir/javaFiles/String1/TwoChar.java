@@ -39,6 +39,8 @@ public final class TwoChar
     }
 
     public static final void main(String[] args) {
-        _TwoChar.Validate(true);  // pass 'false' to print failed tests only.
+        //_TwoChar.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_TwoChar.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _TwoChar.Validate();
     }
 }

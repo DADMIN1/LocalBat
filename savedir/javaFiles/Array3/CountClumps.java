@@ -32,6 +32,8 @@ public final class CountClumps
     }
 
     public static final void main(String[] args) {
-        _CountClumps.Validate(true);  // pass 'false' to print failed tests only.
+        //_CountClumps.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_CountClumps.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _CountClumps.Validate();
     }
 }

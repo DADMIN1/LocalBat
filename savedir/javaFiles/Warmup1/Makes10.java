@@ -31,6 +31,8 @@ public final class Makes10
     }
 
     public static final void main(String[] args) {
-        _Makes10.Validate(true);  // pass 'false' to print failed tests only.
+        //_Makes10.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_Makes10.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _Makes10.Validate();
     }
 }

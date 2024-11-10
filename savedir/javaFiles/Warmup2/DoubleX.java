@@ -33,6 +33,8 @@ public final class DoubleX
     }
 
     public static final void main(String[] args) {
-        _DoubleX.Validate(true);  // pass 'false' to print failed tests only.
+        //_DoubleX.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_DoubleX.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _DoubleX.Validate();
     }
 }

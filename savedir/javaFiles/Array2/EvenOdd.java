@@ -33,6 +33,8 @@ public final class EvenOdd
     }
 
     public static final void main(String[] args) {
-        _EvenOdd.Validate(true);  // pass 'false' to print failed tests only.
+        //_EvenOdd.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_EvenOdd.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _EvenOdd.Validate();
     }
 }

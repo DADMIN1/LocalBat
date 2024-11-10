@@ -28,6 +28,8 @@ public final class RotateLeft3
     }
 
     public static final void main(String[] args) {
-        _RotateLeft3.Validate(true);  // pass 'false' to print failed tests only.
+        //_RotateLeft3.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_RotateLeft3.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _RotateLeft3.Validate();
     }
 }

@@ -29,6 +29,8 @@ public final class WordLen
     }
 
     public static final void main(String[] args) {
-        _WordLen.Validate(true);  // pass 'false' to print failed tests only.
+        //_WordLen.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_WordLen.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _WordLen.Validate();
     }
 }

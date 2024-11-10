@@ -35,6 +35,8 @@ public final class CountPairs
     }
 
     public static final void main(String[] args) {
-        _CountPairs.Validate(true);  // pass 'false' to print failed tests only.
+        //_CountPairs.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_CountPairs.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _CountPairs.Validate();
     }
 }

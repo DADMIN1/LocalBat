@@ -28,6 +28,8 @@ public final class StringE
     }
 
     public static final void main(String[] args) {
-        _StringE.Validate(true);  // pass 'false' to print failed tests only.
+        //_StringE.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_StringE.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _StringE.Validate();
     }
 }

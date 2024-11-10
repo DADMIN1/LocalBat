@@ -3,6 +3,18 @@ import Logic2.MakeChocolate;
 
 public final class _MakeChocolate
 {
+    public static boolean printSuccesses = true;
+    public static boolean getStacktraces = false;
+
+    static final class TestResult {
+        private int result;
+        private RuntimeException caught = null;
+        TestResult(int small, int big, int goal) {
+            try { result = MakeChocolate.makeChocolate(small, big, goal); }
+            catch (RuntimeException exception) { caught = exception; }
+        }
+    }
+
     static final String[] testcaseStrings = {
         "makeChocolate(4, 1, 9)",
         "makeChocolate(4, 1, 10)",
@@ -57,52 +69,64 @@ public final class _MakeChocolate
         3,
     };
 
-    public static final void Validate(boolean printSuccess)
+    public static final boolean Validate()
     {
-        final int[] resultsArray = {
-            MakeChocolate.makeChocolate(4, 1, 9),
-            MakeChocolate.makeChocolate(4, 1, 10),
-            MakeChocolate.makeChocolate(4, 1, 7),
-            MakeChocolate.makeChocolate(6, 2, 7),
-            MakeChocolate.makeChocolate(4, 1, 5),
-            MakeChocolate.makeChocolate(4, 1, 4),
-            MakeChocolate.makeChocolate(5, 4, 9),
-            MakeChocolate.makeChocolate(9, 3, 18),
-            MakeChocolate.makeChocolate(3, 1, 9),
-            MakeChocolate.makeChocolate(1, 2, 7),
-            MakeChocolate.makeChocolate(1, 2, 6),
-            MakeChocolate.makeChocolate(1, 2, 5),
-            MakeChocolate.makeChocolate(6, 1, 10),
-            MakeChocolate.makeChocolate(6, 1, 11),
-            MakeChocolate.makeChocolate(6, 1, 12),
-            MakeChocolate.makeChocolate(6, 1, 13),
-            MakeChocolate.makeChocolate(6, 2, 10),
-            MakeChocolate.makeChocolate(6, 2, 11),
-            MakeChocolate.makeChocolate(6, 2, 12),
-            MakeChocolate.makeChocolate(60, 100, 550),
-            MakeChocolate.makeChocolate(1000, 1000000, 5000006),
-            MakeChocolate.makeChocolate(7, 1, 12),
-            MakeChocolate.makeChocolate(7, 1, 13),
-            MakeChocolate.makeChocolate(7, 2, 13),
+        final TestResult[] results = {
+            new TestResult(4, 1, 9),
+            new TestResult(4, 1, 10),
+            new TestResult(4, 1, 7),
+            new TestResult(6, 2, 7),
+            new TestResult(4, 1, 5),
+            new TestResult(4, 1, 4),
+            new TestResult(5, 4, 9),
+            new TestResult(9, 3, 18),
+            new TestResult(3, 1, 9),
+            new TestResult(1, 2, 7),
+            new TestResult(1, 2, 6),
+            new TestResult(1, 2, 5),
+            new TestResult(6, 1, 10),
+            new TestResult(6, 1, 11),
+            new TestResult(6, 1, 12),
+            new TestResult(6, 1, 13),
+            new TestResult(6, 2, 10),
+            new TestResult(6, 2, 11),
+            new TestResult(6, 2, 12),
+            new TestResult(60, 100, 550),
+            new TestResult(1000, 1000000, 5000006),
+            new TestResult(7, 1, 12),
+            new TestResult(7, 1, 13),
+            new TestResult(7, 2, 13),
         };
 
         boolean allTestsPassed = true;
-        for (int i = 0; i < resultsArray.length; ++i)
+        boolean prevTestPassed = false;
+        for (int i = 0; i < results.length; ++i)
         {
-            if (resultsArray[i] != expectedResults[i])
-            {
+            if (results[i].caught != null) {
                 allTestsPassed = false;
-                System.out.println("\n[-] #"+(i+1)+" failed!");
-                System.out.println(testcaseStrings[i]+";");
-                System.out.println("    received: "+resultsArray[i]);
+                if(prevTestPassed) { System.out.println(); prevTestPassed = false; }
+                System.out.print("[!] #"+(i+1)+" - ");
+                System.out.println(testcaseStrings[i]+" - Failed! [EXCEPTION]");
+                System.out.println(results[i].caught.getClass().getName());
+                System.out.println(results[i].caught.getMessage());
+                if(getStacktraces) results[i].caught.printStackTrace();
+                System.out.println(); continue;
+            }
+            if (results[i].result != expectedResults[i]) {
+                allTestsPassed = false;
+                if(prevTestPassed) { System.out.println(); prevTestPassed = false; }
+                System.out.print("[x] #"+(i+1)+" - ");
+                System.out.println(testcaseStrings[i]+" - Failed!");
+                System.out.println("    received: "+results[i].result);
                 System.out.println("    expected: "+expectedResults[i]);
-                System.out.println("\n");
-            } else if (printSuccess) { 
-                System.out.println("[✔] #"+(i+1)+" - "+testcaseStrings[i]);
+                System.out.println();
+            } else if (printSuccesses) {
+                prevTestPassed = true;
+                System.out.println("[✓] #"+(i+1)+" - "+testcaseStrings[i]);
             }
         }
-        if (allTestsPassed) System.out.println("\n ✔✔✔  ~ All tests passed. ~  ✔✔✔");
+        if (allTestsPassed) System.out.println("\n ✓✓✓  ~ All tests passed. ~  ✓✓✓");
         System.out.println();
-        return;
+        return allTestsPassed;
     }
 }

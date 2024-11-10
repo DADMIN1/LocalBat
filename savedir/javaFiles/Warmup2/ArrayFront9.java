@@ -35,6 +35,8 @@ public final class ArrayFront9
     }
 
     public static final void main(String[] args) {
-        _ArrayFront9.Validate(true);  // pass 'false' to print failed tests only.
+        //_ArrayFront9.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_ArrayFront9.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _ArrayFront9.Validate();
     }
 }

@@ -35,6 +35,8 @@ public final class ScoresAverage
     }
 
     public static final void main(String[] args) {
-        _ScoresAverage.Validate(true);  // pass 'false' to print failed tests only.
+        //_ScoresAverage.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_ScoresAverage.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _ScoresAverage.Validate();
     }
 }

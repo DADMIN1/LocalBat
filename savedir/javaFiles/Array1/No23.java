@@ -33,6 +33,8 @@ public final class No23
     }
 
     public static final void main(String[] args) {
-        _No23.Validate(true);  // pass 'false' to print failed tests only.
+        //_No23.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_No23.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _No23.Validate();
     }
 }

@@ -32,6 +32,8 @@ public final class NoZ
     }
 
     public static final void main(String[] args) {
-        _NoZ.Validate(true);  // pass 'false' to print failed tests only.
+        //_NoZ.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_NoZ.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _NoZ.Validate();
     }
 }

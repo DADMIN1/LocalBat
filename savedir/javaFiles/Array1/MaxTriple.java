@@ -34,6 +34,8 @@ public final class MaxTriple
     }
 
     public static final void main(String[] args) {
-        _MaxTriple.Validate(true);  // pass 'false' to print failed tests only.
+        //_MaxTriple.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_MaxTriple.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _MaxTriple.Validate();
     }
 }

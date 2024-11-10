@@ -31,6 +31,8 @@ public final class MoreY
     }
 
     public static final void main(String[] args) {
-        _MoreY.Validate(true);  // pass 'false' to print failed tests only.
+        //_MoreY.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_MoreY.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _MoreY.Validate();
     }
 }

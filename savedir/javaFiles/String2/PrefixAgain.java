@@ -35,6 +35,8 @@ public final class PrefixAgain
     }
 
     public static final void main(String[] args) {
-        _PrefixAgain.Validate(true);  // pass 'false' to print failed tests only.
+        //_PrefixAgain.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_PrefixAgain.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _PrefixAgain.Validate();
     }
 }

@@ -34,6 +34,8 @@ public final class Count11
     }
 
     public static final void main(String[] args) {
-        _Count11.Validate(true);  // pass 'false' to print failed tests only.
+        //_Count11.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_Count11.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _Count11.Validate();
     }
 }

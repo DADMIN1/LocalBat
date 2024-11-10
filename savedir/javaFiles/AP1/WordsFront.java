@@ -28,6 +28,8 @@ public final class WordsFront
     }
 
     public static final void main(String[] args) {
-        _WordsFront.Validate(true);  // pass 'false' to print failed tests only.
+        //_WordsFront.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_WordsFront.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _WordsFront.Validate();
     }
 }

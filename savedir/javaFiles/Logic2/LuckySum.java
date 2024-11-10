@@ -36,6 +36,8 @@ public final class LuckySum
     }
 
     public static final void main(String[] args) {
-        _LuckySum.Validate(true);  // pass 'false' to print failed tests only.
+        //_LuckySum.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_LuckySum.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _LuckySum.Validate();
     }
 }

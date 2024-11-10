@@ -28,6 +28,8 @@ public final class MiddleTwo
     }
 
     public static final void main(String[] args) {
-        _MiddleTwo.Validate(true);  // pass 'false' to print failed tests only.
+        //_MiddleTwo.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_MiddleTwo.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _MiddleTwo.Validate();
     }
 }

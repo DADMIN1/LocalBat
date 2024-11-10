@@ -33,6 +33,8 @@ public final class ScoresClump
     }
 
     public static final void main(String[] args) {
-        _ScoresClump.Validate(true);  // pass 'false' to print failed tests only.
+        //_ScoresClump.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_ScoresClump.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _ScoresClump.Validate();
     }
 }

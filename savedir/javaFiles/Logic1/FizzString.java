@@ -41,6 +41,8 @@ public final class FizzString
     }
 
     public static final void main(String[] args) {
-        _FizzString.Validate(true);  // pass 'false' to print failed tests only.
+        //_FizzString.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_FizzString.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _FizzString.Validate();
     }
 }

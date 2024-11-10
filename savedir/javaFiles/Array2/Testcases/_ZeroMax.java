@@ -5,6 +5,18 @@ import java.util.ArrayList;
 
 public final class _ZeroMax
 {
+    public static boolean printSuccesses = true;
+    public static boolean getStacktraces = false;
+
+    static final class TestResult {
+        private int[] result;
+        private RuntimeException caught = null;
+        TestResult(int[] nums) {
+            try { result = ZeroMax.zeroMax(nums); }
+            catch (RuntimeException exception) { caught = exception; }
+        }
+    }
+
     static final String[] testcaseStrings = {
         "zeroMax([0, 5, 0, 3])",
         "zeroMax([0, 4, 0, 3])",
@@ -43,7 +55,7 @@ public final class _ZeroMax
         return result + "]";
     }
 
-    public static final void Validate(boolean printSuccess)
+    public static final boolean Validate()
     {
         final int[] nums0 = {0, 5, 0, 3}; 
         final int[] nums1 = {0, 4, 0, 3}; 
@@ -58,38 +70,50 @@ public final class _ZeroMax
         final int[] nums10 = {7, 0, 4, 3, 0, 0}; 
         final int[] nums11 = {7, 0, 1, 0, 0, 7}; 
 
-        final int[][] resultsArray = {
-            ZeroMax.zeroMax(nums0),
-            ZeroMax.zeroMax(nums1),
-            ZeroMax.zeroMax(nums2),
-            ZeroMax.zeroMax(nums3),
-            ZeroMax.zeroMax(nums4),
-            ZeroMax.zeroMax(nums5),
-            ZeroMax.zeroMax(nums6),
-            ZeroMax.zeroMax(nums7),
-            ZeroMax.zeroMax(nums8),
-            ZeroMax.zeroMax(nums9),
-            ZeroMax.zeroMax(nums10),
-            ZeroMax.zeroMax(nums11),
+        final TestResult[] results = {
+            new TestResult(nums0),
+            new TestResult(nums1),
+            new TestResult(nums2),
+            new TestResult(nums3),
+            new TestResult(nums4),
+            new TestResult(nums5),
+            new TestResult(nums6),
+            new TestResult(nums7),
+            new TestResult(nums8),
+            new TestResult(nums9),
+            new TestResult(nums10),
+            new TestResult(nums11),
         };
 
         boolean allTestsPassed = true;
-        for (int i = 0; i < resultsArray.length; ++i)
+        boolean prevTestPassed = false;
+        for (int i = 0; i < results.length; ++i)
         {
-            if (!Arrays.equals(resultsArray[i], expectedResults[i]))
-            {
+            if (results[i].caught != null) {
                 allTestsPassed = false;
-                System.out.println("\n[-] #"+(i+1)+" failed!");
-                System.out.println(testcaseStrings[i]+";");
-                System.out.println("    received: "+printArray(resultsArray[i]));
+                if(prevTestPassed) { System.out.println(); prevTestPassed = false; }
+                System.out.print("[!] #"+(i+1)+" - ");
+                System.out.println(testcaseStrings[i]+" - Failed! [EXCEPTION]");
+                System.out.println(results[i].caught.getClass().getName());
+                System.out.println(results[i].caught.getMessage());
+                if(getStacktraces) results[i].caught.printStackTrace();
+                System.out.println(); continue;
+            }
+            if (!Arrays.equals(results[i].result, expectedResults[i])) {
+                allTestsPassed = false;
+                if(prevTestPassed) { System.out.println(); prevTestPassed = false; }
+                System.out.print("[x] #"+(i+1)+" - ");
+                System.out.println(testcaseStrings[i]+" - Failed!");
+                System.out.println("    received: "+printArray(results[i].result));
                 System.out.println("    expected: "+printArray(expectedResults[i]));
-                System.out.println("\n");
-            } else if (printSuccess) { 
-                System.out.println("[✔] #"+(i+1)+" - "+testcaseStrings[i]);
+                System.out.println();
+            } else if (printSuccesses) {
+                prevTestPassed = true;
+                System.out.println("[✓] #"+(i+1)+" - "+testcaseStrings[i]);
             }
         }
-        if (allTestsPassed) System.out.println("\n ✔✔✔  ~ All tests passed. ~  ✔✔✔");
+        if (allTestsPassed) System.out.println("\n ✓✓✓  ~ All tests passed. ~  ✓✓✓");
         System.out.println();
-        return;
+        return allTestsPassed;
     }
 }

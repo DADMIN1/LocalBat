@@ -3,6 +3,18 @@ import String2.BobThere;
 
 public final class _BobThere
 {
+    public static boolean printSuccesses = true;
+    public static boolean getStacktraces = false;
+
+    static final class TestResult {
+        private boolean result;
+        private RuntimeException caught = null;
+        TestResult(String str) {
+            try { result = BobThere.bobThere(str); }
+            catch (RuntimeException exception) { caught = exception; }
+        }
+    }
+
     static final String[] testcaseStrings = {
         "bobThere(\"abcbob\")",
         "bobThere(\"b9b\")",
@@ -35,41 +47,53 @@ public final class _BobThere
         false,
     };
 
-    public static final void Validate(boolean printSuccess)
+    public static final boolean Validate()
     {
-        final boolean[] resultsArray = {
-            BobThere.bobThere("abcbob"),
-            BobThere.bobThere("b9b"),
-            BobThere.bobThere("bac"),
-            BobThere.bobThere("bbb"),
-            BobThere.bobThere("abcdefb"),
-            BobThere.bobThere("123abcbcdbabxyz"),
-            BobThere.bobThere("b12"),
-            BobThere.bobThere("b1b"),
-            BobThere.bobThere("b12b1b"),
-            BobThere.bobThere("bbc"),
-            BobThere.bobThere("bbb"),
-            BobThere.bobThere("bb"),
-            BobThere.bobThere("b"),
+        final TestResult[] results = {
+            new TestResult("abcbob"),
+            new TestResult("b9b"),
+            new TestResult("bac"),
+            new TestResult("bbb"),
+            new TestResult("abcdefb"),
+            new TestResult("123abcbcdbabxyz"),
+            new TestResult("b12"),
+            new TestResult("b1b"),
+            new TestResult("b12b1b"),
+            new TestResult("bbc"),
+            new TestResult("bbb"),
+            new TestResult("bb"),
+            new TestResult("b"),
         };
 
         boolean allTestsPassed = true;
-        for (int i = 0; i < resultsArray.length; ++i)
+        boolean prevTestPassed = false;
+        for (int i = 0; i < results.length; ++i)
         {
-            if (resultsArray[i] != expectedResults[i])
-            {
+            if (results[i].caught != null) {
                 allTestsPassed = false;
-                System.out.println("\n[-] #"+(i+1)+" failed!");
-                System.out.println(testcaseStrings[i]+";");
-                System.out.println("    received: "+resultsArray[i]);
+                if(prevTestPassed) { System.out.println(); prevTestPassed = false; }
+                System.out.print("[!] #"+(i+1)+" - ");
+                System.out.println(testcaseStrings[i]+" - Failed! [EXCEPTION]");
+                System.out.println(results[i].caught.getClass().getName());
+                System.out.println(results[i].caught.getMessage());
+                if(getStacktraces) results[i].caught.printStackTrace();
+                System.out.println(); continue;
+            }
+            if (results[i].result != expectedResults[i]) {
+                allTestsPassed = false;
+                if(prevTestPassed) { System.out.println(); prevTestPassed = false; }
+                System.out.print("[x] #"+(i+1)+" - ");
+                System.out.println(testcaseStrings[i]+" - Failed!");
+                System.out.println("    received: "+results[i].result);
                 System.out.println("    expected: "+expectedResults[i]);
-                System.out.println("\n");
-            } else if (printSuccess) { 
-                System.out.println("[✔] #"+(i+1)+" - "+testcaseStrings[i]);
+                System.out.println();
+            } else if (printSuccesses) {
+                prevTestPassed = true;
+                System.out.println("[✓] #"+(i+1)+" - "+testcaseStrings[i]);
             }
         }
-        if (allTestsPassed) System.out.println("\n ✔✔✔  ~ All tests passed. ~  ✔✔✔");
+        if (allTestsPassed) System.out.println("\n ✓✓✓  ~ All tests passed. ~  ✓✓✓");
         System.out.println();
-        return;
+        return allTestsPassed;
     }
 }

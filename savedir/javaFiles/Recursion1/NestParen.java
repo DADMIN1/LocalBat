@@ -39,6 +39,8 @@ public final class NestParen
     }
 
     public static final void main(String[] args) {
-        _NestParen.Validate(true);  // pass 'false' to print failed tests only.
+        //_NestParen.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_NestParen.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _NestParen.Validate();
     }
 }

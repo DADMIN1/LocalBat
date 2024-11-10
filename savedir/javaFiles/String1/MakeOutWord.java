@@ -29,6 +29,8 @@ public final class MakeOutWord
     }
 
     public static final void main(String[] args) {
-        _MakeOutWord.Validate(true);  // pass 'false' to print failed tests only.
+        //_MakeOutWord.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_MakeOutWord.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _MakeOutWord.Validate();
     }
 }

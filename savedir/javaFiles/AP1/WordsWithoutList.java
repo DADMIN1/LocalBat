@@ -31,6 +31,8 @@ public final class WordsWithoutList
     }
 
     public static final void main(String[] args) {
-        _WordsWithoutList.Validate(true);  // pass 'false' to print failed tests only.
+        //_WordsWithoutList.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_WordsWithoutList.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _WordsWithoutList.Validate();
     }
 }

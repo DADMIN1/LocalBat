@@ -30,6 +30,8 @@ public final class MapShare
     }
 
     public static final void main(String[] args) {
-        _MapShare.Validate(true);  // pass 'false' to print failed tests only.
+        //_MapShare.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_MapShare.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _MapShare.Validate();
     }
 }

@@ -30,6 +30,8 @@ public final class FrontBack
     }
 
     public static final void main(String[] args) {
-        _FrontBack.Validate(true);  // pass 'false' to print failed tests only.
+        //_FrontBack.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_FrontBack.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _FrontBack.Validate();
     }
 }

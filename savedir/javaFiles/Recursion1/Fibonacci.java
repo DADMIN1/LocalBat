@@ -35,6 +35,8 @@ public final class Fibonacci
     }
 
     public static final void main(String[] args) {
-        _Fibonacci.Validate(true);  // pass 'false' to print failed tests only.
+        //_Fibonacci.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_Fibonacci.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _Fibonacci.Validate();
     }
 }

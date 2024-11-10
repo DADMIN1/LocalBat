@@ -36,6 +36,8 @@ public final class GetSandwich
     }
 
     public static final void main(String[] args) {
-        _GetSandwich.Validate(true);  // pass 'false' to print failed tests only.
+        //_GetSandwich.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_GetSandwich.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _GetSandwich.Validate();
     }
 }

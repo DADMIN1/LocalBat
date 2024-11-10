@@ -44,6 +44,8 @@ public final class WithoutString
     }
 
     public static final void main(String[] args) {
-        _WithoutString.Validate(true);  // pass 'false' to print failed tests only.
+        //_WithoutString.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_WithoutString.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _WithoutString.Validate();
     }
 }

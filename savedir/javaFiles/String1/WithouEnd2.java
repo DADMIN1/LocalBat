@@ -30,6 +30,8 @@ public final class WithouEnd2
     }
 
     public static final void main(String[] args) {
-        _WithouEnd2.Validate(true);  // pass 'false' to print failed tests only.
+        //_WithouEnd2.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_WithouEnd2.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _WithouEnd2.Validate();
     }
 }

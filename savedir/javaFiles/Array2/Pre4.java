@@ -33,6 +33,8 @@ public final class Pre4
     }
 
     public static final void main(String[] args) {
-        _Pre4.Validate(true);  // pass 'false' to print failed tests only.
+        //_Pre4.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_Pre4.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _Pre4.Validate();
     }
 }

@@ -31,6 +31,8 @@ public final class BiggerTwo
     }
 
     public static final void main(String[] args) {
-        _BiggerTwo.Validate(true);  // pass 'false' to print failed tests only.
+        //_BiggerTwo.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_BiggerTwo.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _BiggerTwo.Validate();
     }
 }

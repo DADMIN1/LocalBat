@@ -38,6 +38,8 @@ public final class ScoreUp
     }
 
     public static final void main(String[] args) {
-        _ScoreUp.Validate(true);  // pass 'false' to print failed tests only.
+        //_ScoreUp.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_ScoreUp.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _ScoreUp.Validate();
     }
 }

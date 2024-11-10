@@ -32,6 +32,8 @@ public final class MaxEnd3
     }
 
     public static final void main(String[] args) {
-        _MaxEnd3.Validate(true);  // pass 'false' to print failed tests only.
+        //_MaxEnd3.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_MaxEnd3.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _MaxEnd3.Validate();
     }
 }

@@ -30,6 +30,8 @@ public final class ExtraFront
     }
 
     public static final void main(String[] args) {
-        _ExtraFront.Validate(true);  // pass 'false' to print failed tests only.
+        //_ExtraFront.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_ExtraFront.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _ExtraFront.Validate();
     }
 }

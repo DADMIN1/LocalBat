@@ -33,6 +33,8 @@ public final class FirstTwo
     }
 
     public static final void main(String[] args) {
-        _FirstTwo.Validate(true);  // pass 'false' to print failed tests only.
+        //_FirstTwo.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_FirstTwo.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _FirstTwo.Validate();
     }
 }

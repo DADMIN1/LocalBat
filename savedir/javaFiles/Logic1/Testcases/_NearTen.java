@@ -3,6 +3,18 @@ import Logic1.NearTen;
 
 public final class _NearTen
 {
+    public static boolean printSuccesses = true;
+    public static boolean getStacktraces = false;
+
+    static final class TestResult {
+        private boolean result;
+        private RuntimeException caught = null;
+        TestResult(int num) {
+            try { result = NearTen.nearTen(num); }
+            catch (RuntimeException exception) { caught = exception; }
+        }
+    }
+
     static final String[] testcaseStrings = {
         "nearTen(12)",
         "nearTen(17)",
@@ -39,43 +51,55 @@ public final class _NearTen
         true,
     };
 
-    public static final void Validate(boolean printSuccess)
+    public static final boolean Validate()
     {
-        final boolean[] resultsArray = {
-            NearTen.nearTen(12),
-            NearTen.nearTen(17),
-            NearTen.nearTen(19),
-            NearTen.nearTen(31),
-            NearTen.nearTen(6),
-            NearTen.nearTen(10),
-            NearTen.nearTen(11),
-            NearTen.nearTen(21),
-            NearTen.nearTen(22),
-            NearTen.nearTen(23),
-            NearTen.nearTen(54),
-            NearTen.nearTen(155),
-            NearTen.nearTen(158),
-            NearTen.nearTen(3),
-            NearTen.nearTen(1),
+        final TestResult[] results = {
+            new TestResult(12),
+            new TestResult(17),
+            new TestResult(19),
+            new TestResult(31),
+            new TestResult(6),
+            new TestResult(10),
+            new TestResult(11),
+            new TestResult(21),
+            new TestResult(22),
+            new TestResult(23),
+            new TestResult(54),
+            new TestResult(155),
+            new TestResult(158),
+            new TestResult(3),
+            new TestResult(1),
         };
 
         boolean allTestsPassed = true;
-        for (int i = 0; i < resultsArray.length; ++i)
+        boolean prevTestPassed = false;
+        for (int i = 0; i < results.length; ++i)
         {
-            if (resultsArray[i] != expectedResults[i])
-            {
+            if (results[i].caught != null) {
                 allTestsPassed = false;
-                System.out.println("\n[-] #"+(i+1)+" failed!");
-                System.out.println(testcaseStrings[i]+";");
-                System.out.println("    received: "+resultsArray[i]);
+                if(prevTestPassed) { System.out.println(); prevTestPassed = false; }
+                System.out.print("[!] #"+(i+1)+" - ");
+                System.out.println(testcaseStrings[i]+" - Failed! [EXCEPTION]");
+                System.out.println(results[i].caught.getClass().getName());
+                System.out.println(results[i].caught.getMessage());
+                if(getStacktraces) results[i].caught.printStackTrace();
+                System.out.println(); continue;
+            }
+            if (results[i].result != expectedResults[i]) {
+                allTestsPassed = false;
+                if(prevTestPassed) { System.out.println(); prevTestPassed = false; }
+                System.out.print("[x] #"+(i+1)+" - ");
+                System.out.println(testcaseStrings[i]+" - Failed!");
+                System.out.println("    received: "+results[i].result);
                 System.out.println("    expected: "+expectedResults[i]);
-                System.out.println("\n");
-            } else if (printSuccess) { 
-                System.out.println("[✔] #"+(i+1)+" - "+testcaseStrings[i]);
+                System.out.println();
+            } else if (printSuccesses) {
+                prevTestPassed = true;
+                System.out.println("[✓] #"+(i+1)+" - "+testcaseStrings[i]);
             }
         }
-        if (allTestsPassed) System.out.println("\n ✔✔✔  ~ All tests passed. ~  ✔✔✔");
+        if (allTestsPassed) System.out.println("\n ✓✓✓  ~ All tests passed. ~  ✓✓✓");
         System.out.println();
-        return;
+        return allTestsPassed;
     }
 }

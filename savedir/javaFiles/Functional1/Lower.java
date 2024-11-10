@@ -31,6 +31,8 @@ public final class Lower
     }
 
     public static final void main(String[] args) {
-        _Lower.Validate(true);  // pass 'false' to print failed tests only.
+        //_Lower.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_Lower.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _Lower.Validate();
     }
 }

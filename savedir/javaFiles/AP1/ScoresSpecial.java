@@ -37,6 +37,8 @@ public final class ScoresSpecial
     }
 
     public static final void main(String[] args) {
-        _ScoresSpecial.Validate(true);  // pass 'false' to print failed tests only.
+        //_ScoresSpecial.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_ScoresSpecial.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _ScoresSpecial.Validate();
     }
 }

@@ -41,6 +41,8 @@ public final class CommonTwo
     }
 
     public static final void main(String[] args) {
-        _CommonTwo.Validate(true);  // pass 'false' to print failed tests only.
+        //_CommonTwo.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_CommonTwo.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _CommonTwo.Validate();
     }
 }

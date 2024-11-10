@@ -36,6 +36,8 @@ public final class BobThere
     }
 
     public static final void main(String[] args) {
-        _BobThere.Validate(true);  // pass 'false' to print failed tests only.
+        //_BobThere.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_BobThere.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _BobThere.Validate();
     }
 }

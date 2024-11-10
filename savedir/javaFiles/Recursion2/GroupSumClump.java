@@ -34,6 +34,8 @@ public final class GroupSumClump
     }
 
     public static final void main(String[] args) {
-        _GroupSumClump.Validate(true);  // pass 'false' to print failed tests only.
+        //_GroupSumClump.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_GroupSumClump.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _GroupSumClump.Validate();
     }
 }

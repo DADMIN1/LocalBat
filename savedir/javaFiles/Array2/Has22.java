@@ -36,6 +36,8 @@ public final class Has22
     }
 
     public static final void main(String[] args) {
-        _Has22.Validate(true);  // pass 'false' to print failed tests only.
+        //_Has22.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_Has22.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _Has22.Validate();
     }
 }

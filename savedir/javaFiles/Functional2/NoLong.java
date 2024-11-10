@@ -33,6 +33,8 @@ public final class NoLong
     }
 
     public static final void main(String[] args) {
-        _NoLong.Validate(true);  // pass 'false' to print failed tests only.
+        //_NoLong.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_NoLong.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _NoLong.Validate();
     }
 }

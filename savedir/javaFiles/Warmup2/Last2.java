@@ -36,6 +36,8 @@ public final class Last2
     }
 
     public static final void main(String[] args) {
-        _Last2.Validate(true);  // pass 'false' to print failed tests only.
+        //_Last2.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_Last2.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _Last2.Validate();
     }
 }

@@ -5,6 +5,18 @@ import java.util.ArrayList;
 
 public final class _FizzBuzz
 {
+    public static boolean printSuccesses = true;
+    public static boolean getStacktraces = false;
+
+    static final class TestResult {
+        private String[] result;
+        private RuntimeException caught = null;
+        TestResult(int start, int end) {
+            try { result = FizzBuzz.fizzBuzz(start, end); }
+            catch (RuntimeException exception) { caught = exception; }
+        }
+    }
+
     static final String[] testcaseStrings = {
         "fizzBuzz(1, 6)",
         "fizzBuzz(1, 8)",
@@ -43,40 +55,52 @@ public final class _FizzBuzz
         return result + "]";
     }
 
-    public static final void Validate(boolean printSuccess)
+    public static final boolean Validate()
     {
-        final String[][] resultsArray = {
-            FizzBuzz.fizzBuzz(1, 6),
-            FizzBuzz.fizzBuzz(1, 8),
-            FizzBuzz.fizzBuzz(1, 11),
-            FizzBuzz.fizzBuzz(1, 16),
-            FizzBuzz.fizzBuzz(1, 4),
-            FizzBuzz.fizzBuzz(1, 2),
-            FizzBuzz.fizzBuzz(50, 56),
-            FizzBuzz.fizzBuzz(15, 17),
-            FizzBuzz.fizzBuzz(30, 36),
-            FizzBuzz.fizzBuzz(1000, 1006),
-            FizzBuzz.fizzBuzz(99, 102),
-            FizzBuzz.fizzBuzz(14, 20),
+        final TestResult[] results = {
+            new TestResult(1, 6),
+            new TestResult(1, 8),
+            new TestResult(1, 11),
+            new TestResult(1, 16),
+            new TestResult(1, 4),
+            new TestResult(1, 2),
+            new TestResult(50, 56),
+            new TestResult(15, 17),
+            new TestResult(30, 36),
+            new TestResult(1000, 1006),
+            new TestResult(99, 102),
+            new TestResult(14, 20),
         };
 
         boolean allTestsPassed = true;
-        for (int i = 0; i < resultsArray.length; ++i)
+        boolean prevTestPassed = false;
+        for (int i = 0; i < results.length; ++i)
         {
-            if (!Arrays.equals(resultsArray[i], expectedResults[i]))
-            {
+            if (results[i].caught != null) {
                 allTestsPassed = false;
-                System.out.println("\n[-] #"+(i+1)+" failed!");
-                System.out.println(testcaseStrings[i]+";");
-                System.out.println("    received: "+printArray(resultsArray[i]));
+                if(prevTestPassed) { System.out.println(); prevTestPassed = false; }
+                System.out.print("[!] #"+(i+1)+" - ");
+                System.out.println(testcaseStrings[i]+" - Failed! [EXCEPTION]");
+                System.out.println(results[i].caught.getClass().getName());
+                System.out.println(results[i].caught.getMessage());
+                if(getStacktraces) results[i].caught.printStackTrace();
+                System.out.println(); continue;
+            }
+            if (!Arrays.equals(results[i].result, expectedResults[i])) {
+                allTestsPassed = false;
+                if(prevTestPassed) { System.out.println(); prevTestPassed = false; }
+                System.out.print("[x] #"+(i+1)+" - ");
+                System.out.println(testcaseStrings[i]+" - Failed!");
+                System.out.println("    received: "+printArray(results[i].result));
                 System.out.println("    expected: "+printArray(expectedResults[i]));
-                System.out.println("\n");
-            } else if (printSuccess) { 
-                System.out.println("[✔] #"+(i+1)+" - "+testcaseStrings[i]);
+                System.out.println();
+            } else if (printSuccesses) {
+                prevTestPassed = true;
+                System.out.println("[✓] #"+(i+1)+" - "+testcaseStrings[i]);
             }
         }
-        if (allTestsPassed) System.out.println("\n ✔✔✔  ~ All tests passed. ~  ✔✔✔");
+        if (allTestsPassed) System.out.println("\n ✓✓✓  ~ All tests passed. ~  ✓✓✓");
         System.out.println();
-        return;
+        return allTestsPassed;
     }
 }

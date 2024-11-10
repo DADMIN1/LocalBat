@@ -36,6 +36,8 @@ public final class ZipZap
     }
 
     public static final void main(String[] args) {
-        _ZipZap.Validate(true);  // pass 'false' to print failed tests only.
+        //_ZipZap.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_ZipZap.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _ZipZap.Validate();
     }
 }

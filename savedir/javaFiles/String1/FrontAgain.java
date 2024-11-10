@@ -34,6 +34,8 @@ public final class FrontAgain
     }
 
     public static final void main(String[] args) {
-        _FrontAgain.Validate(true);  // pass 'false' to print failed tests only.
+        //_FrontAgain.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_FrontAgain.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _FrontAgain.Validate();
     }
 }

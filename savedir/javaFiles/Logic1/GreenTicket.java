@@ -37,6 +37,8 @@ public final class GreenTicket
     }
 
     public static final void main(String[] args) {
-        _GreenTicket.Validate(true);  // pass 'false' to print failed tests only.
+        //_GreenTicket.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_GreenTicket.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _GreenTicket.Validate();
     }
 }

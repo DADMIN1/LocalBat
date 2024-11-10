@@ -37,6 +37,8 @@ public final class LoneTeen
     }
 
     public static final void main(String[] args) {
-        _LoneTeen.Validate(true);  // pass 'false' to print failed tests only.
+        //_LoneTeen.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_LoneTeen.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _LoneTeen.Validate();
     }
 }

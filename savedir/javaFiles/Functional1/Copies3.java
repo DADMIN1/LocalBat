@@ -30,6 +30,8 @@ public final class Copies3
     }
 
     public static final void main(String[] args) {
-        _Copies3.Validate(true);  // pass 'false' to print failed tests only.
+        //_Copies3.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_Copies3.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _Copies3.Validate();
     }
 }

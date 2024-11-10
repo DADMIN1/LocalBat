@@ -38,6 +38,8 @@ public final class Has77
     }
 
     public static final void main(String[] args) {
-        _Has77.Validate(true);  // pass 'false' to print failed tests only.
+        //_Has77.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_Has77.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _Has77.Validate();
     }
 }

@@ -33,6 +33,8 @@ public final class NoNeg
     }
 
     public static final void main(String[] args) {
-        _NoNeg.Validate(true);  // pass 'false' to print failed tests only.
+        //_NoNeg.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_NoNeg.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _NoNeg.Validate();
     }
 }

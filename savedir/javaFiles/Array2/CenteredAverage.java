@@ -42,6 +42,8 @@ public final class CenteredAverage
     }
 
     public static final void main(String[] args) {
-        _CenteredAverage.Validate(true);  // pass 'false' to print failed tests only.
+        //_CenteredAverage.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_CenteredAverage.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _CenteredAverage.Validate();
     }
 }

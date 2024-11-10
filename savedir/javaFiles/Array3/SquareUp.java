@@ -28,6 +28,8 @@ public final class SquareUp
     }
 
     public static final void main(String[] args) {
-        _SquareUp.Validate(true);  // pass 'false' to print failed tests only.
+        //_SquareUp.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_SquareUp.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _SquareUp.Validate();
     }
 }

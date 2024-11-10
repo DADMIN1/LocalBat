@@ -28,6 +28,8 @@ public final class LastTwo
     }
 
     public static final void main(String[] args) {
-        _LastTwo.Validate(true);  // pass 'false' to print failed tests only.
+        //_LastTwo.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_LastTwo.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _LastTwo.Validate();
     }
 }

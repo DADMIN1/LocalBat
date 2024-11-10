@@ -34,6 +34,8 @@ public final class TenRun
     }
 
     public static final void main(String[] args) {
-        _TenRun.Validate(true);  // pass 'false' to print failed tests only.
+        //_TenRun.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_TenRun.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _TenRun.Validate();
     }
 }

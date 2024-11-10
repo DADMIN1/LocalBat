@@ -38,6 +38,8 @@ public final class SumHeights
     }
 
     public static final void main(String[] args) {
-        _SumHeights.Validate(true);  // pass 'false' to print failed tests only.
+        //_SumHeights.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_SumHeights.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _SumHeights.Validate();
     }
 }

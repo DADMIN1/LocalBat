@@ -39,6 +39,8 @@ public final class SplitOdd10
     }
 
     public static final void main(String[] args) {
-        _SplitOdd10.Validate(true);  // pass 'false' to print failed tests only.
+        //_SplitOdd10.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_SplitOdd10.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _SplitOdd10.Validate();
     }
 }

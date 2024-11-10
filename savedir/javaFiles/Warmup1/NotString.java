@@ -31,6 +31,8 @@ public final class NotString
     }
 
     public static final void main(String[] args) {
-        _NotString.Validate(true);  // pass 'false' to print failed tests only.
+        //_NotString.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_NotString.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _NotString.Validate();
     }
 }

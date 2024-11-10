@@ -31,6 +31,8 @@ public final class Front22
     }
 
     public static final void main(String[] args) {
-        _Front22.Validate(true);  // pass 'false' to print failed tests only.
+        //_Front22.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_Front22.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _Front22.Validate();
     }
 }

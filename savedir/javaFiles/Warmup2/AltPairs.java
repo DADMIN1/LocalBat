@@ -31,6 +31,8 @@ public final class AltPairs
     }
 
     public static final void main(String[] args) {
-        _AltPairs.Validate(true);  // pass 'false' to print failed tests only.
+        //_AltPairs.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_AltPairs.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _AltPairs.Validate();
     }
 }

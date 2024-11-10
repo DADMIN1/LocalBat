@@ -36,6 +36,8 @@ public final class AllSwap
     }
 
     public static final void main(String[] args) {
-        _AllSwap.Validate(true);  // pass 'false' to print failed tests only.
+        //_AllSwap.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_AllSwap.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _AllSwap.Validate();
     }
 }

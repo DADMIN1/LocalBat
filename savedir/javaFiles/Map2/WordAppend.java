@@ -35,6 +35,8 @@ public final class WordAppend
     }
 
     public static final void main(String[] args) {
-        _WordAppend.Validate(true);  // pass 'false' to print failed tests only.
+        //_WordAppend.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_WordAppend.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _WordAppend.Validate();
     }
 }

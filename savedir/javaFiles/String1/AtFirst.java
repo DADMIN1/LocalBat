@@ -30,6 +30,8 @@ public final class AtFirst
     }
 
     public static final void main(String[] args) {
-        _AtFirst.Validate(true);  // pass 'false' to print failed tests only.
+        //_AtFirst.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_AtFirst.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _AtFirst.Validate();
     }
 }

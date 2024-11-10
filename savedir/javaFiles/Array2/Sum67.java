@@ -38,6 +38,8 @@ public final class Sum67
     }
 
     public static final void main(String[] args) {
-        _Sum67.Validate(true);  // pass 'false' to print failed tests only.
+        //_Sum67.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_Sum67.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _Sum67.Validate();
     }
 }

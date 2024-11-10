@@ -32,6 +32,8 @@ public final class RightDigit
     }
 
     public static final void main(String[] args) {
-        _RightDigit.Validate(true);  // pass 'false' to print failed tests only.
+        //_RightDigit.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_RightDigit.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _RightDigit.Validate();
     }
 }

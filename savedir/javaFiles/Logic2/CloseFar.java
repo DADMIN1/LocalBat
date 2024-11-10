@@ -36,6 +36,8 @@ public final class CloseFar
     }
 
     public static final void main(String[] args) {
-        _CloseFar.Validate(true);  // pass 'false' to print failed tests only.
+        //_CloseFar.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_CloseFar.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _CloseFar.Validate();
     }
 }

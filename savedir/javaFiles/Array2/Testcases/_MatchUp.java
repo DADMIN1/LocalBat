@@ -3,6 +3,18 @@ import Array2.MatchUp;
 
 public final class _MatchUp
 {
+    public static boolean printSuccesses = true;
+    public static boolean getStacktraces = false;
+
+    static final class TestResult {
+        private int result;
+        private RuntimeException caught = null;
+        TestResult(int[] nums1, int[] nums2) {
+            try { result = MatchUp.matchUp(nums1, nums2); }
+            catch (RuntimeException exception) { caught = exception; }
+        }
+    }
+
     static final String[] testcaseStrings = {
         "matchUp([1, 2, 3], [2, 3, 10])",
         "matchUp([1, 2, 3], [2, 3, 5])",
@@ -31,7 +43,7 @@ public final class _MatchUp
         1,
     };
 
-    public static final void Validate(boolean printSuccess)
+    public static final boolean Validate()
     {
         final int[] nums10 = {1, 2, 3}; final int[] nums20 = {2, 3, 10}; 
         final int[] nums11 = {1, 2, 3}; final int[] nums21 = {2, 3, 5}; 
@@ -45,37 +57,49 @@ public final class _MatchUp
         final int[] nums19 = {4}; final int[] nums29 = {4}; 
         final int[] nums110 = {4}; final int[] nums210 = {5}; 
 
-        final int[] resultsArray = {
-            MatchUp.matchUp(nums10, nums20),
-            MatchUp.matchUp(nums11, nums21),
-            MatchUp.matchUp(nums12, nums22),
-            MatchUp.matchUp(nums13, nums23),
-            MatchUp.matchUp(nums14, nums24),
-            MatchUp.matchUp(nums15, nums25),
-            MatchUp.matchUp(nums16, nums26),
-            MatchUp.matchUp(nums17, nums27),
-            MatchUp.matchUp(nums18, nums28),
-            MatchUp.matchUp(nums19, nums29),
-            MatchUp.matchUp(nums110, nums210),
+        final TestResult[] results = {
+            new TestResult(nums10, nums20),
+            new TestResult(nums11, nums21),
+            new TestResult(nums12, nums22),
+            new TestResult(nums13, nums23),
+            new TestResult(nums14, nums24),
+            new TestResult(nums15, nums25),
+            new TestResult(nums16, nums26),
+            new TestResult(nums17, nums27),
+            new TestResult(nums18, nums28),
+            new TestResult(nums19, nums29),
+            new TestResult(nums110, nums210),
         };
 
         boolean allTestsPassed = true;
-        for (int i = 0; i < resultsArray.length; ++i)
+        boolean prevTestPassed = false;
+        for (int i = 0; i < results.length; ++i)
         {
-            if (resultsArray[i] != expectedResults[i])
-            {
+            if (results[i].caught != null) {
                 allTestsPassed = false;
-                System.out.println("\n[-] #"+(i+1)+" failed!");
-                System.out.println(testcaseStrings[i]+";");
-                System.out.println("    received: "+resultsArray[i]);
+                if(prevTestPassed) { System.out.println(); prevTestPassed = false; }
+                System.out.print("[!] #"+(i+1)+" - ");
+                System.out.println(testcaseStrings[i]+" - Failed! [EXCEPTION]");
+                System.out.println(results[i].caught.getClass().getName());
+                System.out.println(results[i].caught.getMessage());
+                if(getStacktraces) results[i].caught.printStackTrace();
+                System.out.println(); continue;
+            }
+            if (results[i].result != expectedResults[i]) {
+                allTestsPassed = false;
+                if(prevTestPassed) { System.out.println(); prevTestPassed = false; }
+                System.out.print("[x] #"+(i+1)+" - ");
+                System.out.println(testcaseStrings[i]+" - Failed!");
+                System.out.println("    received: "+results[i].result);
                 System.out.println("    expected: "+expectedResults[i]);
-                System.out.println("\n");
-            } else if (printSuccess) { 
-                System.out.println("[✔] #"+(i+1)+" - "+testcaseStrings[i]);
+                System.out.println();
+            } else if (printSuccesses) {
+                prevTestPassed = true;
+                System.out.println("[✓] #"+(i+1)+" - "+testcaseStrings[i]);
             }
         }
-        if (allTestsPassed) System.out.println("\n ✔✔✔  ~ All tests passed. ~  ✔✔✔");
+        if (allTestsPassed) System.out.println("\n ✓✓✓  ~ All tests passed. ~  ✓✓✓");
         System.out.println();
-        return;
+        return allTestsPassed;
     }
 }

@@ -30,6 +30,8 @@ public final class ConCat
     }
 
     public static final void main(String[] args) {
-        _ConCat.Validate(true);  // pass 'false' to print failed tests only.
+        //_ConCat.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_ConCat.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _ConCat.Validate();
     }
 }

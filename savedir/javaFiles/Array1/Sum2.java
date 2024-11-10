@@ -32,6 +32,8 @@ public final class Sum2
     }
 
     public static final void main(String[] args) {
-        _Sum2.Validate(true);  // pass 'false' to print failed tests only.
+        //_Sum2.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_Sum2.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _Sum2.Validate();
     }
 }

@@ -29,6 +29,8 @@ public final class BackAround
     }
 
     public static final void main(String[] args) {
-        _BackAround.Validate(true);  // pass 'false' to print failed tests only.
+        //_BackAround.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_BackAround.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _BackAround.Validate();
     }
 }

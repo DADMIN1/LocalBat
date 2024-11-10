@@ -39,6 +39,8 @@ public final class CaughtSpeeding
     }
 
     public static final void main(String[] args) {
-        _CaughtSpeeding.Validate(true);  // pass 'false' to print failed tests only.
+        //_CaughtSpeeding.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_CaughtSpeeding.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _CaughtSpeeding.Validate();
     }
 }

@@ -31,6 +31,8 @@ public final class Reverse3
     }
 
     public static final void main(String[] args) {
-        _Reverse3.Validate(true);  // pass 'false' to print failed tests only.
+        //_Reverse3.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_Reverse3.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _Reverse3.Validate();
     }
 }

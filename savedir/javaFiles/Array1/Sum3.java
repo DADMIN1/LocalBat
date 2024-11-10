@@ -28,6 +28,8 @@ public final class Sum3
     }
 
     public static final void main(String[] args) {
-        _Sum3.Validate(true);  // pass 'false' to print failed tests only.
+        //_Sum3.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_Sum3.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _Sum3.Validate();
     }
 }

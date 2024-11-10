@@ -37,6 +37,8 @@ public final class CopyEndy
     }
 
     public static final void main(String[] args) {
-        _CopyEndy.Validate(true);  // pass 'false' to print failed tests only.
+        //_CopyEndy.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_CopyEndy.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _CopyEndy.Validate();
     }
 }

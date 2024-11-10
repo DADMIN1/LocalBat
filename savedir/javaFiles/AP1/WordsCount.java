@@ -28,6 +28,8 @@ public final class WordsCount
     }
 
     public static final void main(String[] args) {
-        _WordsCount.Validate(true);  // pass 'false' to print failed tests only.
+        //_WordsCount.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_WordsCount.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _WordsCount.Validate();
     }
 }

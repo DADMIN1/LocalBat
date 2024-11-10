@@ -39,6 +39,8 @@ public final class TeenSum
     }
 
     public static final void main(String[] args) {
-        _TeenSum.Validate(true);  // pass 'false' to print failed tests only.
+        //_TeenSum.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_TeenSum.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _TeenSum.Validate();
     }
 }

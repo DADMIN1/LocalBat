@@ -41,6 +41,8 @@ public final class No14
     }
 
     public static final void main(String[] args) {
-        _No14.Validate(true);  // pass 'false' to print failed tests only.
+        //_No14.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_No14.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _No14.Validate();
     }
 }

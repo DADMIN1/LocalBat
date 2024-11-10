@@ -35,6 +35,8 @@ public final class WithoutX
     }
 
     public static final void main(String[] args) {
-        _WithoutX.Validate(true);  // pass 'false' to print failed tests only.
+        //_WithoutX.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_WithoutX.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _WithoutX.Validate();
     }
 }

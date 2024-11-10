@@ -39,6 +39,8 @@ public final class SplitArray
     }
 
     public static final void main(String[] args) {
-        _SplitArray.Validate(true);  // pass 'false' to print failed tests only.
+        //_SplitArray.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_SplitArray.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _SplitArray.Validate();
     }
 }

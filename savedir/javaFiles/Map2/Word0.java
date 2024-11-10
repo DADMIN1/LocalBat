@@ -31,6 +31,8 @@ public final class Word0
     }
 
     public static final void main(String[] args) {
-        _Word0.Validate(true);  // pass 'false' to print failed tests only.
+        //_Word0.printSuccesses = false;  // set 'false' to print failing tests only.
+        //_Word0.getStacktraces = true;  // set 'true' for stacktraces on exceptions.
+        _Word0.Validate();
     }
 }
