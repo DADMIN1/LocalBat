@@ -111,7 +111,7 @@ def AnsiEscape(text:str, *args, reset=True):
     for arg in args:
       aarg = arg.upper()
       # foreground/background
-      lead_digit = "3"
+      lead_digit = "9"  # '9' is high-contrast FG range. normal FG codes are in range '3'
       if aarg.startswith("BG_"):
           aarg = aarg.removeprefix("BG_")
           lead_digit = "4"

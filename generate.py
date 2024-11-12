@@ -297,9 +297,9 @@ def WriteTestcaseFile(packageName:str, pagedata: dict):
                 {maybe_newline}
                 System.out.print("{AnsiEscape('[!]', 'RED', 'BOLD')} {AnsiEscape('#', 'BLUE', 'UNDERLINE', reset=False)}"+(i+1)+"{AnsiEscape(' - ', 'RESET', 'BLACK')}");
                 System.out.println(testcaseStrings[i]+" - {AnsiEscape('Failed!', 'ITALIC', 'REAPPLY', 'RED', 'BOLD')} {AnsiEscape('[EXCEPTION]', 'BG_BLACK', 'REVERSED')}");
-                System.out.println("{AnsiEscape('', 'RED', 'BG_BLACK', 'BOLD', reset=False)}"+results[i].caught.getClass().getName());
-                System.out.println("{AnsiEscape('', 'RESET', 'YELLOW', 'BG_BLACK', reset=False)}"+results[i].caught.getMessage());
-                if(getStacktraces) System.out.print("{AnsiEscape('', 'BLACK', 'ITALIC', reset=False)}");
+                System.out.println("{AnsiEscape('    ', 'RED', 'BG_BLACK', 'BOLD', reset=False)}"+results[i].caught.getClass().getName());
+                System.out.println("{AnsiEscape('    ', 'RESET', 'YELLOW', 'BG_BLACK', reset=False)}"+results[i].caught.getMessage());
+                if(getStacktraces) System.out.print("{AnsiEscape('    ', 'BLACK', 'ITALIC', reset=False)}");
                 if(getStacktraces) results[i].caught.printStackTrace();
                 System.out.println("{AnsiEscape('', 'RESET')}"); continue;
             '''+'}'+f'''
