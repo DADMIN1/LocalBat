@@ -16,18 +16,18 @@ public final class _BigDiff
     }
 
     static final String[] testcaseStrings = {
-        "bigDiff([10, 3, 5, 6])",
-        "bigDiff([7, 2, 10, 9])",
-        "bigDiff([2, 10, 7, 2])",
-        "bigDiff([2, 10])",
-        "bigDiff([10, 2])",
-        "bigDiff([10, 0])",
-        "bigDiff([2, 3])",
-        "bigDiff([2, 2])",
-        "bigDiff([2])",
-        "bigDiff([5, 1, 6, 1, 9, 9])",
-        "bigDiff([7, 6, 8, 5])",
-        "bigDiff([7, 7, 6, 8, 5, 5, 6])",
+        "\u001b[3;30mbigDiff\u001B[0;30m(\u001b[0;1m[10, 3, 5, 6]\u001B[0m\u001b[30m)",
+        "\u001b[3;30mbigDiff\u001B[0;30m(\u001b[0;1m[7, 2, 10, 9]\u001B[0m\u001b[30m)",
+        "\u001b[3;30mbigDiff\u001B[0;30m(\u001b[0;1m[2, 10, 7, 2]\u001B[0m\u001b[30m)",
+        "\u001b[3;30mbigDiff\u001B[0;30m(\u001b[0;1m[2, 10]\u001B[0m\u001b[30m)",
+        "\u001b[3;30mbigDiff\u001B[0;30m(\u001b[0;1m[10, 2]\u001B[0m\u001b[30m)",
+        "\u001b[3;30mbigDiff\u001B[0;30m(\u001b[0;1m[10, 0]\u001B[0m\u001b[30m)",
+        "\u001b[3;30mbigDiff\u001B[0;30m(\u001b[0;1m[2, 3]\u001B[0m\u001b[30m)",
+        "\u001b[3;30mbigDiff\u001B[0;30m(\u001b[0;1m[2, 2]\u001B[0m\u001b[30m)",
+        "\u001b[3;30mbigDiff\u001B[0;30m(\u001b[0;1m[2]\u001B[0m\u001b[30m)",
+        "\u001b[3;30mbigDiff\u001B[0;30m(\u001b[0;1m[5, 1, 6, 1, 9, 9]\u001B[0m\u001b[30m)",
+        "\u001b[3;30mbigDiff\u001B[0;30m(\u001b[0;1m[7, 6, 8, 5]\u001B[0m\u001b[30m)",
+        "\u001b[3;30mbigDiff\u001B[0;30m(\u001b[0;1m[7, 7, 6, 8, 5, 5, 6]\u001B[0m\u001b[30m)",
     };
 
     static final int[] expectedResults = {
@@ -75,6 +75,7 @@ public final class _BigDiff
             new TestResult(nums11),
         };
 
+        int successCount = 0;
         boolean allTestsPassed = true;
         boolean prevTestPassed = false;
         for (int i = 0; i < results.length; ++i)
@@ -82,28 +83,30 @@ public final class _BigDiff
             if (results[i].caught != null) {
                 allTestsPassed = false;
                 if(prevTestPassed) { System.out.println(); prevTestPassed = false; }
-                System.out.print("[!] #"+(i+1)+" - ");
-                System.out.println(testcaseStrings[i]+" - Failed! [EXCEPTION]");
-                System.out.println(results[i].caught.getClass().getName());
-                System.out.println(results[i].caught.getMessage());
+                System.out.print("\u001b[31;1m[!]\u001B[0m \u001b[34;4m#"+(i+1)+"\u001b[0;30m - \u001B[0m");
+                System.out.println(testcaseStrings[i]+" - \u001b[3;31;1mFailed!\u001B[0;31;1m \u001b[40;7m[EXCEPTION]\u001B[0m");
+                System.out.println("\u001b[31;40;1m"+results[i].caught.getClass().getName());
+                System.out.println("\u001b[0;33;40m"+results[i].caught.getMessage());
+                if(getStacktraces) System.out.print("\u001b[30;3m");
                 if(getStacktraces) results[i].caught.printStackTrace();
-                System.out.println(); continue;
+                System.out.println("\u001b[0m\u001B[0m"); continue;
             }
             if (results[i].result != expectedResults[i]) {
                 allTestsPassed = false;
                 if(prevTestPassed) { System.out.println(); prevTestPassed = false; }
-                System.out.print("[x] #"+(i+1)+" - ");
-                System.out.println(testcaseStrings[i]+" - Failed!");
-                System.out.println("    received: "+results[i].result);
-                System.out.println("    expected: "+expectedResults[i]);
+                System.out.print("\u001b[31;1m[X]\u001B[0m \u001b[34;4m#"+(i+1)+"\u001b[0;30m - \u001B[0m");
+                System.out.println(testcaseStrings[i]+" - \u001b[31;1;3mFailed!\u001B[0m");
+                System.out.println("    \u001b[34;3;4mreceived:\u001B[0m \u001b[1m"+results[i].result);
+                System.out.println("    \u001b[36;3;4mexpected:\u001B[0m \u001b[1m"+expectedResults[i]);
                 System.out.println();
             } else if (printSuccesses) {
+                successCount += 1;
                 prevTestPassed = true;
-                System.out.println("[✓] #"+(i+1)+" - "+testcaseStrings[i]);
+                System.out.println("\u001b[32;1m[✓] \u001B[0m\u001b[34;4m#"+(i+1)+"\u001b[0;30m - \u001B[0m"+testcaseStrings[i]);
             }
         }
-        if (allTestsPassed) System.out.println("\n ✓✓✓  ~ All tests passed. ~  ✓✓✓");
-        System.out.println();
+        if (allTestsPassed) System.out.println("\n \u001b[32;1m✓✓✓\u001B[0;1m\u001b[36;40m  ~  All tests passed  ~  \u001B[0m\u001b[32;1m✓✓✓\u001B[0m");
+        else System.out.println("\n\u001b[32;1;40m "+successCount+"\u001B[0;1;40m / \u001b[34m"+results.length+"\u001b[30m tests passed \u001B[0m");
         return allTestsPassed;
     }
 }

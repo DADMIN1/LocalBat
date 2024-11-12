@@ -18,16 +18,16 @@ public final class _FirstSwap
     }
 
     static final String[] testcaseStrings = {
-        "firstSwap([\"ab\", \"ac\"])",
-        "firstSwap([\"ax\", \"bx\", \"cx\", \"cy\", \"by\", \"ay\", \"aaa\", \"azz\"])",
-        "firstSwap([\"ax\", \"bx\", \"ay\", \"by\", \"ai\", \"aj\", \"bx\", \"by\"])",
-        "firstSwap([\"ax\", \"bx\", \"cx\", \"ay\", \"cy\", \"aaa\", \"abb\"])",
-        "firstSwap([\"easy\", \"does\", \"it\", \"every\", \"ice\", \"eaten\"])",
-        "firstSwap([\"list\", \"of\", \"words\", \"swims\", \"over\", \"lily\", \"water\", \"wait\"])",
-        "firstSwap([\"4\", \"8\", \"15\", \"16\", \"23\", \"42\"])",
-        "firstSwap([\"aaa\"])",
-        "firstSwap([])",
-        "firstSwap([\"a\", \"b\", \"c\", \"xx\", \"yy\", \"zz\"])",
+        "\u001b[3;30mfirstSwap\u001B[0;30m(\u001b[0;1m[\"ab\", \"ac\"]\u001B[0m\u001b[30m)",
+        "\u001b[3;30mfirstSwap\u001B[0;30m(\u001b[0;1m[\"ax\", \"bx\", \"cx\", \"cy\", \"by\", \"ay\", \"aaa\", \"azz\"]\u001B[0m\u001b[30m)",
+        "\u001b[3;30mfirstSwap\u001B[0;30m(\u001b[0;1m[\"ax\", \"bx\", \"ay\", \"by\", \"ai\", \"aj\", \"bx\", \"by\"]\u001B[0m\u001b[30m)",
+        "\u001b[3;30mfirstSwap\u001B[0;30m(\u001b[0;1m[\"ax\", \"bx\", \"cx\", \"ay\", \"cy\", \"aaa\", \"abb\"]\u001B[0m\u001b[30m)",
+        "\u001b[3;30mfirstSwap\u001B[0;30m(\u001b[0;1m[\"easy\", \"does\", \"it\", \"every\", \"ice\", \"eaten\"]\u001B[0m\u001b[30m)",
+        "\u001b[3;30mfirstSwap\u001B[0;30m(\u001b[0;1m[\"list\", \"of\", \"words\", \"swims\", \"over\", \"lily\", \"water\", \"wait\"]\u001B[0m\u001b[30m)",
+        "\u001b[3;30mfirstSwap\u001B[0;30m(\u001b[0;1m[\"4\", \"8\", \"15\", \"16\", \"23\", \"42\"]\u001B[0m\u001b[30m)",
+        "\u001b[3;30mfirstSwap\u001B[0;30m(\u001b[0;1m[\"aaa\"]\u001B[0m\u001b[30m)",
+        "\u001b[3;30mfirstSwap\u001B[0;30m(\u001b[0;1m[]\u001B[0m\u001b[30m)",
+        "\u001b[3;30mfirstSwap\u001B[0;30m(\u001b[0;1m[\"a\", \"b\", \"c\", \"xx\", \"yy\", \"zz\"]\u001B[0m\u001b[30m)",
     };
 
     static final String[][] expectedResults = {
@@ -77,6 +77,7 @@ public final class _FirstSwap
             new TestResult(strings9),
         };
 
+        int successCount = 0;
         boolean allTestsPassed = true;
         boolean prevTestPassed = false;
         for (int i = 0; i < results.length; ++i)
@@ -84,28 +85,30 @@ public final class _FirstSwap
             if (results[i].caught != null) {
                 allTestsPassed = false;
                 if(prevTestPassed) { System.out.println(); prevTestPassed = false; }
-                System.out.print("[!] #"+(i+1)+" - ");
-                System.out.println(testcaseStrings[i]+" - Failed! [EXCEPTION]");
-                System.out.println(results[i].caught.getClass().getName());
-                System.out.println(results[i].caught.getMessage());
+                System.out.print("\u001b[31;1m[!]\u001B[0m \u001b[34;4m#"+(i+1)+"\u001b[0;30m - \u001B[0m");
+                System.out.println(testcaseStrings[i]+" - \u001b[3;31;1mFailed!\u001B[0;31;1m \u001b[40;7m[EXCEPTION]\u001B[0m");
+                System.out.println("\u001b[31;40;1m"+results[i].caught.getClass().getName());
+                System.out.println("\u001b[0;33;40m"+results[i].caught.getMessage());
+                if(getStacktraces) System.out.print("\u001b[30;3m");
                 if(getStacktraces) results[i].caught.printStackTrace();
-                System.out.println(); continue;
+                System.out.println("\u001b[0m\u001B[0m"); continue;
             }
             if (!Arrays.equals(results[i].result, expectedResults[i])) {
                 allTestsPassed = false;
                 if(prevTestPassed) { System.out.println(); prevTestPassed = false; }
-                System.out.print("[x] #"+(i+1)+" - ");
-                System.out.println(testcaseStrings[i]+" - Failed!");
-                System.out.println("    received: "+printArray(results[i].result));
-                System.out.println("    expected: "+printArray(expectedResults[i]));
+                System.out.print("\u001b[31;1m[X]\u001B[0m \u001b[34;4m#"+(i+1)+"\u001b[0;30m - \u001B[0m");
+                System.out.println(testcaseStrings[i]+" - \u001b[31;1;3mFailed!\u001B[0m");
+                System.out.println("    \u001b[34;3;4mreceived:\u001B[0m \u001b[1m"+printArray(results[i].result));
+                System.out.println("    \u001b[36;3;4mexpected:\u001B[0m \u001b[1m"+printArray(expectedResults[i]));
                 System.out.println();
             } else if (printSuccesses) {
+                successCount += 1;
                 prevTestPassed = true;
-                System.out.println("[✓] #"+(i+1)+" - "+testcaseStrings[i]);
+                System.out.println("\u001b[32;1m[✓] \u001B[0m\u001b[34;4m#"+(i+1)+"\u001b[0;30m - \u001B[0m"+testcaseStrings[i]);
             }
         }
-        if (allTestsPassed) System.out.println("\n ✓✓✓  ~ All tests passed. ~  ✓✓✓");
-        System.out.println();
+        if (allTestsPassed) System.out.println("\n \u001b[32;1m✓✓✓\u001B[0;1m\u001b[36;40m  ~  All tests passed  ~  \u001B[0m\u001b[32;1m✓✓✓\u001B[0m");
+        else System.out.println("\n\u001b[32;1;40m "+successCount+"\u001B[0;1;40m / \u001b[34m"+results.length+"\u001b[30m tests passed \u001B[0m");
         return allTestsPassed;
     }
 }

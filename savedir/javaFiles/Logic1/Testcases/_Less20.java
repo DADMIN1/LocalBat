@@ -16,28 +16,28 @@ public final class _Less20
     }
 
     static final String[] testcaseStrings = {
-        "less20(18)",
-        "less20(19)",
-        "less20(20)",
-        "less20(8)",
-        "less20(17)",
-        "less20(23)",
-        "less20(25)",
-        "less20(30)",
-        "less20(31)",
-        "less20(58)",
-        "less20(59)",
-        "less20(60)",
-        "less20(61)",
-        "less20(62)",
-        "less20(1017)",
-        "less20(1018)",
-        "less20(1019)",
-        "less20(1020)",
-        "less20(1021)",
-        "less20(1022)",
-        "less20(1023)",
-        "less20(37)",
+        "\u001b[3;30mless20\u001B[0;30m(\u001b[0;1m18\u001B[0m\u001b[30m)",
+        "\u001b[3;30mless20\u001B[0;30m(\u001b[0;1m19\u001B[0m\u001b[30m)",
+        "\u001b[3;30mless20\u001B[0;30m(\u001b[0;1m20\u001B[0m\u001b[30m)",
+        "\u001b[3;30mless20\u001B[0;30m(\u001b[0;1m8\u001B[0m\u001b[30m)",
+        "\u001b[3;30mless20\u001B[0;30m(\u001b[0;1m17\u001B[0m\u001b[30m)",
+        "\u001b[3;30mless20\u001B[0;30m(\u001b[0;1m23\u001B[0m\u001b[30m)",
+        "\u001b[3;30mless20\u001B[0;30m(\u001b[0;1m25\u001B[0m\u001b[30m)",
+        "\u001b[3;30mless20\u001B[0;30m(\u001b[0;1m30\u001B[0m\u001b[30m)",
+        "\u001b[3;30mless20\u001B[0;30m(\u001b[0;1m31\u001B[0m\u001b[30m)",
+        "\u001b[3;30mless20\u001B[0;30m(\u001b[0;1m58\u001B[0m\u001b[30m)",
+        "\u001b[3;30mless20\u001B[0;30m(\u001b[0;1m59\u001B[0m\u001b[30m)",
+        "\u001b[3;30mless20\u001B[0;30m(\u001b[0;1m60\u001B[0m\u001b[30m)",
+        "\u001b[3;30mless20\u001B[0;30m(\u001b[0;1m61\u001B[0m\u001b[30m)",
+        "\u001b[3;30mless20\u001B[0;30m(\u001b[0;1m62\u001B[0m\u001b[30m)",
+        "\u001b[3;30mless20\u001B[0;30m(\u001b[0;1m1017\u001B[0m\u001b[30m)",
+        "\u001b[3;30mless20\u001B[0;30m(\u001b[0;1m1018\u001B[0m\u001b[30m)",
+        "\u001b[3;30mless20\u001B[0;30m(\u001b[0;1m1019\u001B[0m\u001b[30m)",
+        "\u001b[3;30mless20\u001B[0;30m(\u001b[0;1m1020\u001B[0m\u001b[30m)",
+        "\u001b[3;30mless20\u001B[0;30m(\u001b[0;1m1021\u001B[0m\u001b[30m)",
+        "\u001b[3;30mless20\u001B[0;30m(\u001b[0;1m1022\u001B[0m\u001b[30m)",
+        "\u001b[3;30mless20\u001B[0;30m(\u001b[0;1m1023\u001B[0m\u001b[30m)",
+        "\u001b[3;30mless20\u001B[0;30m(\u001b[0;1m37\u001B[0m\u001b[30m)",
     };
 
     static final boolean[] expectedResults = {
@@ -92,6 +92,7 @@ public final class _Less20
             new TestResult(37),
         };
 
+        int successCount = 0;
         boolean allTestsPassed = true;
         boolean prevTestPassed = false;
         for (int i = 0; i < results.length; ++i)
@@ -99,28 +100,30 @@ public final class _Less20
             if (results[i].caught != null) {
                 allTestsPassed = false;
                 if(prevTestPassed) { System.out.println(); prevTestPassed = false; }
-                System.out.print("[!] #"+(i+1)+" - ");
-                System.out.println(testcaseStrings[i]+" - Failed! [EXCEPTION]");
-                System.out.println(results[i].caught.getClass().getName());
-                System.out.println(results[i].caught.getMessage());
+                System.out.print("\u001b[31;1m[!]\u001B[0m \u001b[34;4m#"+(i+1)+"\u001b[0;30m - \u001B[0m");
+                System.out.println(testcaseStrings[i]+" - \u001b[3;31;1mFailed!\u001B[0;31;1m \u001b[40;7m[EXCEPTION]\u001B[0m");
+                System.out.println("\u001b[31;40;1m"+results[i].caught.getClass().getName());
+                System.out.println("\u001b[0;33;40m"+results[i].caught.getMessage());
+                if(getStacktraces) System.out.print("\u001b[30;3m");
                 if(getStacktraces) results[i].caught.printStackTrace();
-                System.out.println(); continue;
+                System.out.println("\u001b[0m\u001B[0m"); continue;
             }
             if (results[i].result != expectedResults[i]) {
                 allTestsPassed = false;
                 if(prevTestPassed) { System.out.println(); prevTestPassed = false; }
-                System.out.print("[x] #"+(i+1)+" - ");
-                System.out.println(testcaseStrings[i]+" - Failed!");
-                System.out.println("    received: "+results[i].result);
-                System.out.println("    expected: "+expectedResults[i]);
+                System.out.print("\u001b[31;1m[X]\u001B[0m \u001b[34;4m#"+(i+1)+"\u001b[0;30m - \u001B[0m");
+                System.out.println(testcaseStrings[i]+" - \u001b[31;1;3mFailed!\u001B[0m");
+                System.out.println("    \u001b[34;3;4mreceived:\u001B[0m \u001b[1m"+results[i].result);
+                System.out.println("    \u001b[36;3;4mexpected:\u001B[0m \u001b[1m"+expectedResults[i]);
                 System.out.println();
             } else if (printSuccesses) {
+                successCount += 1;
                 prevTestPassed = true;
-                System.out.println("[✓] #"+(i+1)+" - "+testcaseStrings[i]);
+                System.out.println("\u001b[32;1m[✓] \u001B[0m\u001b[34;4m#"+(i+1)+"\u001b[0;30m - \u001B[0m"+testcaseStrings[i]);
             }
         }
-        if (allTestsPassed) System.out.println("\n ✓✓✓  ~ All tests passed. ~  ✓✓✓");
-        System.out.println();
+        if (allTestsPassed) System.out.println("\n \u001b[32;1m✓✓✓\u001B[0;1m\u001b[36;40m  ~  All tests passed  ~  \u001B[0m\u001b[32;1m✓✓✓\u001B[0m");
+        else System.out.println("\n\u001b[32;1;40m "+successCount+"\u001B[0;1;40m / \u001b[34m"+results.length+"\u001b[30m tests passed \u001B[0m");
         return allTestsPassed;
     }
 }

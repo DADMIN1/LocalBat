@@ -16,14 +16,14 @@ public final class _StartHi
     }
 
     static final String[] testcaseStrings = {
-        "startHi(\"hi there\")",
-        "startHi(\"hi\")",
-        "startHi(\"hello hi\")",
-        "startHi(\"he\")",
-        "startHi(\"h\")",
-        "startHi(\"\")",
-        "startHi(\"ho hi\")",
-        "startHi(\"hi ho\")",
+        "\u001b[3;30mstartHi\u001B[0;30m(\u001b[0;1m\"hi there\"\u001B[0m\u001b[30m)",
+        "\u001b[3;30mstartHi\u001B[0;30m(\u001b[0;1m\"hi\"\u001B[0m\u001b[30m)",
+        "\u001b[3;30mstartHi\u001B[0;30m(\u001b[0;1m\"hello hi\"\u001B[0m\u001b[30m)",
+        "\u001b[3;30mstartHi\u001B[0;30m(\u001b[0;1m\"he\"\u001B[0m\u001b[30m)",
+        "\u001b[3;30mstartHi\u001B[0;30m(\u001b[0;1m\"h\"\u001B[0m\u001b[30m)",
+        "\u001b[3;30mstartHi\u001B[0;30m(\u001b[0;1m\"\"\u001B[0m\u001b[30m)",
+        "\u001b[3;30mstartHi\u001B[0;30m(\u001b[0;1m\"ho hi\"\u001B[0m\u001b[30m)",
+        "\u001b[3;30mstartHi\u001B[0;30m(\u001b[0;1m\"hi ho\"\u001B[0m\u001b[30m)",
     };
 
     static final boolean[] expectedResults = {
@@ -50,6 +50,7 @@ public final class _StartHi
             new TestResult("hi ho"),
         };
 
+        int successCount = 0;
         boolean allTestsPassed = true;
         boolean prevTestPassed = false;
         for (int i = 0; i < results.length; ++i)
@@ -57,28 +58,30 @@ public final class _StartHi
             if (results[i].caught != null) {
                 allTestsPassed = false;
                 if(prevTestPassed) { System.out.println(); prevTestPassed = false; }
-                System.out.print("[!] #"+(i+1)+" - ");
-                System.out.println(testcaseStrings[i]+" - Failed! [EXCEPTION]");
-                System.out.println(results[i].caught.getClass().getName());
-                System.out.println(results[i].caught.getMessage());
+                System.out.print("\u001b[31;1m[!]\u001B[0m \u001b[34;4m#"+(i+1)+"\u001b[0;30m - \u001B[0m");
+                System.out.println(testcaseStrings[i]+" - \u001b[3;31;1mFailed!\u001B[0;31;1m \u001b[40;7m[EXCEPTION]\u001B[0m");
+                System.out.println("\u001b[31;40;1m"+results[i].caught.getClass().getName());
+                System.out.println("\u001b[0;33;40m"+results[i].caught.getMessage());
+                if(getStacktraces) System.out.print("\u001b[30;3m");
                 if(getStacktraces) results[i].caught.printStackTrace();
-                System.out.println(); continue;
+                System.out.println("\u001b[0m\u001B[0m"); continue;
             }
             if (results[i].result != expectedResults[i]) {
                 allTestsPassed = false;
                 if(prevTestPassed) { System.out.println(); prevTestPassed = false; }
-                System.out.print("[x] #"+(i+1)+" - ");
-                System.out.println(testcaseStrings[i]+" - Failed!");
-                System.out.println("    received: "+results[i].result);
-                System.out.println("    expected: "+expectedResults[i]);
+                System.out.print("\u001b[31;1m[X]\u001B[0m \u001b[34;4m#"+(i+1)+"\u001b[0;30m - \u001B[0m");
+                System.out.println(testcaseStrings[i]+" - \u001b[31;1;3mFailed!\u001B[0m");
+                System.out.println("    \u001b[34;3;4mreceived:\u001B[0m \u001b[1m"+results[i].result);
+                System.out.println("    \u001b[36;3;4mexpected:\u001B[0m \u001b[1m"+expectedResults[i]);
                 System.out.println();
             } else if (printSuccesses) {
+                successCount += 1;
                 prevTestPassed = true;
-                System.out.println("[✓] #"+(i+1)+" - "+testcaseStrings[i]);
+                System.out.println("\u001b[32;1m[✓] \u001B[0m\u001b[34;4m#"+(i+1)+"\u001b[0;30m - \u001B[0m"+testcaseStrings[i]);
             }
         }
-        if (allTestsPassed) System.out.println("\n ✓✓✓  ~ All tests passed. ~  ✓✓✓");
-        System.out.println();
+        if (allTestsPassed) System.out.println("\n \u001b[32;1m✓✓✓\u001B[0;1m\u001b[36;40m  ~  All tests passed  ~  \u001B[0m\u001b[32;1m✓✓✓\u001B[0m");
+        else System.out.println("\n\u001b[32;1;40m "+successCount+"\u001B[0;1;40m / \u001b[34m"+results.length+"\u001b[30m tests passed \u001B[0m");
         return allTestsPassed;
     }
 }

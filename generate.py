@@ -242,6 +242,8 @@ def WriteTestcaseFile(packageName:str, pagedata: dict):
         file.write("    static final String[] testcaseStrings = {\n")
         for (k, v) in testcase_map.items():
             v = v.split(" \u2192 ", maxsplit=1)[0] # discarding everything to the right of the function call
+            vsplit = v.split('(', maxsplit=1)
+            v = f"{AnsiEscape(vsplit[0], 'ITALIC', 'REAPPLY', 'BLACK')}({AnsiEscape(vsplit[1].removesuffix(')'), 'RESET', 'BOLD')}{AnsiEscape(')', 'BLACK', reset=False)}"
             file.write(f"        \"{v.replace('"', '\\"')}\",\n") # escaping quotes
         file.write("    };\n\n") # closing testcaseStrings()
         
@@ -285,6 +287,7 @@ def WriteTestcaseFile(packageName:str, pagedata: dict):
         # unicode U+2714 is "heavy check-mark": ✔
         maybe_newline = "if(prevTestPassed) { System.out.println(); prevTestPassed = false; }"
         file.write(f'''
+        int successCount = 0;
         boolean allTestsPassed = true;
         boolean prevTestPassed = false;
         for (int i = 0; i < results.length; ++i)
@@ -292,28 +295,30 @@ def WriteTestcaseFile(packageName:str, pagedata: dict):
             if (results[i].caught != null) '''+'{'+f'''
                 allTestsPassed = false;
                 {maybe_newline}
-                System.out.print("[!] #"+(i+1)+" - ");
-                System.out.println(testcaseStrings[i]+" - Failed! [EXCEPTION]");
-                System.out.println(results[i].caught.getClass().getName());
-                System.out.println(results[i].caught.getMessage());
+                System.out.print("{AnsiEscape('[!]', 'RED', 'BOLD')} {AnsiEscape('#', 'BLUE', 'UNDERLINE', reset=False)}"+(i+1)+"{AnsiEscape(' - ', 'RESET', 'BLACK')}");
+                System.out.println(testcaseStrings[i]+" - {AnsiEscape('Failed!', 'ITALIC', 'REAPPLY', 'RED', 'BOLD')} {AnsiEscape('[EXCEPTION]', 'BG_BLACK', 'REVERSED')}");
+                System.out.println("{AnsiEscape('', 'RED', 'BG_BLACK', 'BOLD', reset=False)}"+results[i].caught.getClass().getName());
+                System.out.println("{AnsiEscape('', 'RESET', 'YELLOW', 'BG_BLACK', reset=False)}"+results[i].caught.getMessage());
+                if(getStacktraces) System.out.print("{AnsiEscape('', 'BLACK', 'ITALIC', reset=False)}");
                 if(getStacktraces) results[i].caught.printStackTrace();
-                System.out.println(); continue;
+                System.out.println("{AnsiEscape('', 'RESET')}"); continue;
             '''+'}'+f'''
             if ({comparisonStr}) '''+'{'+f'''
                 allTestsPassed = false;
                 {maybe_newline}
-                System.out.print("[x] #"+(i+1)+" - ");
-                System.out.println(testcaseStrings[i]+" - Failed!");
-                System.out.println("    received: "+{resultsArrayStr});
-                System.out.println("    expected: "+{expectedResultStr});
+                System.out.print("{AnsiEscape('[X]', 'RED', 'BOLD')} {AnsiEscape('#', 'BLUE', 'UNDERLINE', reset=False)}"+(i+1)+"{AnsiEscape(' - ', 'RESET', 'BLACK')}");
+                System.out.println(testcaseStrings[i]+" - {AnsiEscape('Failed!', 'RED', 'BOLD', 'ITALIC')}");
+                System.out.println("    {AnsiEscape('received:', 'BLUE', 'ITALIC', 'UNDERLINE')} {AnsiEscape('', 'BOLD', reset=False)}"+{resultsArrayStr});
+                System.out.println("    {AnsiEscape('expected:', 'CYAN', 'ITALIC', 'UNDERLINE')} {AnsiEscape('', 'BOLD', reset=False)}"+{expectedResultStr});
                 System.out.println();
             '''+'''} else if (printSuccesses) {
+                successCount += 1;
                 prevTestPassed = true;
-                System.out.println("[\u2713] #"+(i+1)+" - "+testcaseStrings[i]);
+                System.out.println("'''+AnsiEscape("[\u2713] ", "GREEN", "BOLD") + AnsiEscape('#', 'BLUE', 'UNDERLINE', reset=False)+'"+(i+1)+"'+f"{AnsiEscape(' - ', 'RESET', 'BLACK')}"+'''"+testcaseStrings[i]);
             }
         }
-        if (allTestsPassed) System.out.println("\\n \u2713\u2713\u2713  ~ All tests passed. ~  \u2713\u2713\u2713");
-        System.out.println();
+        if (allTestsPassed) System.out.println("\\n '''+AnsiEscape("\u2713\u2713\u2713", "GREEN", "REAPPLY", "BOLD")+AnsiEscape("  ~  All tests passed  ~  ", "CYAN", "BG_BLACK")+AnsiEscape("\u2713\u2713\u2713", "GREEN", "BOLD")+'''");
+        else System.out.println("\\n'''+AnsiEscape(' "+successCount+"', "GREEN", "REAPPLY", "BOLD", "BG_BLACK") + f' / {AnsiEscape("", "BLUE", reset=False)}"+results.length+"{AnsiEscape(" tests passed ", "BLACK")}"' + ''');
         return allTestsPassed;\n''')
         
         file.write("    }\n") # closing Validate function

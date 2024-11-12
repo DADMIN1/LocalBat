@@ -84,3 +84,75 @@ def ConstructDifficultyTable(saveResult:bool = False) -> dict[str, dict[str, flo
     
     return difficulty_table
 
+
+ANSI_RESET = r"\u001B[0m"
+# empty sequences ('[m'), zero ('[0m'), and just a semicolon ('[;m') are all equivalent.
+
+
+# Prepends ANSI escape-sequences, then (optionally) appends a reset
+def AnsiEscape(text:str, *args, reset=True):
+    """ 
+    :param str text:
+    :param str args: colors and/or formatting.
+        Background-color is specified by prepending 'BG_' to the color.
+        Passing 'REAPPLY' will preserve all following args in the sequence (re-applied after the reset)
+    :param bool reset: append ANSI_RESET after text. (default=True).
+        Pass 'RESET' (in args) to insert mid-sequence instead.
+    """
+    # FG/BG colors are handled seperately; sequences specifying only one will preserve the other.
+    # in the same way, sequences specifying only colors will preserve format-flags, and vice-versa.
+    # Unfortunately, 'RESET'/'ANSI_RESET' will clear both, and 'REAPPLY' cannot overcome this limitation.
+    # Note that preserving colors while resetting format-flags is impossible.
+    
+    sequence = r"\u001b["
+    carryflag = False
+    carried_args = []
+    
+    for arg in args:
+      aarg = arg.upper()
+      # foreground/background
+      lead_digit = "3"
+      if aarg.startswith("BG_"):
+          aarg = aarg.removeprefix("BG_")
+          lead_digit = "4"
+      
+      subseq = ""
+      match(aarg):
+        case "WHITE":   subseq = f"{lead_digit}7"
+        case "BLACK":   subseq = f"{lead_digit}0"
+        case "RED":     subseq = f"{lead_digit}1"
+        case "GREEN":   subseq = f"{lead_digit}2"
+        case "YELLOW":  subseq = f"{lead_digit}3"
+        case "BLUE":    subseq = f"{lead_digit}4"
+        case "MAGENTA": subseq = f"{lead_digit}5"
+        case "CYAN":    subseq = f"{lead_digit}6"
+        
+        # format codes
+        case "BOLD":      subseq = "1"
+        case "ITALIC":    subseq = "3"
+        case "UNDERLINE": subseq = "4"
+        case "REVERSED":  subseq = "7" # swaps application of FG/BG (values are unchanged). Actual behavior is somewhat inconsistent;
+          # Terminals may override either of the FG/BG colors if it decides there isn't enough contrast, but it's not symmetric.
+          # Because of this, some color-combinations are only possible by swapping FG/BG and then reversing.
+          # for example, RED/BG_BLACK is reverse-only, but BLACK/BG_RED is impossible; FG is set to white instead.
+          # whereas MAGENTA/BG_BLACK can be set directly. 
+          # 'BOLD' may influence this behavior?
+        
+        # special args
+        case "RESET":   subseq = "0"
+        case "REAPPLY": carryflag = True; continue;  # marks all following arguments for reapplication after reset
+        case _: assert False, f"unrecognized arg: {arg}"
+      
+      sequence += f'{subseq};'
+      if carryflag: carried_args.append(subseq);
+    
+    # 'm' ends the escape sequence
+    sequence = f"{sequence.removesuffix(';')}m{text}"
+    if reset:
+      sequence += ANSI_RESET
+      if carryflag:
+        sequence = sequence.removesuffix('m')
+        for arg in carried_args: sequence += f";{arg}";
+        sequence += 'm'
+    
+    return sequence
