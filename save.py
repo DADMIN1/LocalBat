@@ -85,6 +85,31 @@ def ConstructDifficultyTable(saveResult:bool = False) -> dict[str, dict[str, flo
     return difficulty_table
 
 
+def ConstructSectionManifests():
+    problem_lists = { 
+        k[:-2]+k[-1] : [Capitalize(n) for n in v] # removing the dashes from section names, capitalizing file-names 
+        for k,v in GetProblemLists().items() 
+    }
+    problem_counts = { k : len(v) for k,v in problem_lists.items() }
+    validation_calls = { 
+        section : {
+            name : f'{section}.Testcases._{name}.suppressOutput = true; return {section}.Testcases._{name}.Validate();'
+            for name in sorted(namelist, key=lambda N: len(N)) # sorting problems by name-length
+        } for section, namelist in sorted(problem_lists.items(), key=lambda T: len(T[0])) # sorting sections by section-name length
+    }
+    qualname_map = {
+        f'{section}.{problem_name}' : val
+        for (section, problems) in validation_calls.items()
+        for (problem_name, val) in problems.items()
+    }
+    return {
+        'problem_lists' : problem_lists,
+        'problem_counts' : problem_counts,
+        'validation_calls' : qualname_map,
+    }
+
+
+
 ANSI_RESET = r"\u001B[0m"
 # empty sequences ('[m'), zero ('[0m'), and just a semicolon ('[;m') are all equivalent.
 
