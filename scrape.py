@@ -13,7 +13,7 @@ from selenium.common.exceptions import NoSuchElementException
 
 def StartupSelenium() -> webdriver:
     options = FirefoxOptions()
-    options.add_argument('--headless')
+    #options.add_argument('--headless')
     driver = webdriver.Firefox(options=options)
     driver.implicitly_wait(5)
     # driver.delete_all_cookies()
