@@ -476,10 +476,10 @@ def TestcaseAsciiArt(testcases:list, functionInfo:dict, titlebox_padding:str = '
     return ascii_art
 
 
-def WriteJavaFile(packageName:str, data: dict):
+def WriteJavaFile(packageName:str, data: dict, *, provided_code=None, targetDir=sub_savedirs[1]):
     title = Capitalize(data["title"])
     packageName = packageName.replace('-','')  # eclipse doesn't allow names to include dashes
-    packagedir = sub_savedirs[1] / packageName
+    packagedir = targetDir / packageName
     if not packagedir.exists(): packagedir.mkdir()
     filepath = packagedir / f'{title}.java'
     print(f"    generating {packageName}.{filepath.stem}...")
@@ -492,11 +492,13 @@ def WriteJavaFile(packageName:str, data: dict):
     prompt = ReformatPrompt(data["prompt"]).replace('\n', '\n    ') # indent each line
     testcase_comment = TestcaseAsciiArt(data["testcases"], function_info)
     
-    # adding static to declaration and cleaning up braces/whitespace
-    functionDeclaration = data['provided_code'].rsplit(') {\n ', maxsplit=1)[0] + ')'
-    if not functionDeclaration.startswith("public"): functionDeclaration = "public "+functionDeclaration
-    functionDeclaration = functionDeclaration.replace("public ", "public static final ")
-    functionDeclaration += "\n    {\n        "+f"{function_info['functionDef']['functionBody']}"+"\n    }\n"
+    if not provided_code:
+        # adding static to declaration and cleaning up braces/whitespace
+        functionDeclaration = data['provided_code'].rsplit(') {\n ', maxsplit=1)[0] + ')'
+        if not functionDeclaration.startswith("public"): functionDeclaration = "public "+functionDeclaration
+        functionDeclaration = functionDeclaration.replace("public ", "public static final ")
+        functionDeclaration += "\n    {\n        "+f"{function_info['functionDef']['functionBody']}"+"\n    }\n"
+    else: functionDeclaration = provided_code;
     
     with open(filepath, "w", encoding="utf-8") as file:
         file.write(f"package {packageName};\n")
@@ -529,7 +531,8 @@ def WriteJavaFile(packageName:str, data: dict):
         file.write("    }\n") # closing main function
         file.write("}\n") # closing Main class
     
-    print(f"\tdone writing: {filepath.relative_to(cwd)}\n")
+    if filepath.is_relative_to(cwd): print(f"\tdone writing: {filepath.relative_to(cwd)}\n");
+    else: print(f"\tdone writing: {filepath.relative_to(targetDir.parent)}\n");
     return
 
 
@@ -562,7 +565,7 @@ def GenerateSection(section_name: str, only_missing_files=False):
     return failures
 
 
-def GenerateAll(only_missing=False):
+def GenerateAll(only_missing=True):
     jsondumps, java_subs = sub_savedirs
     json_section_dirs = [subdir.name for subdir in jsondumps.glob("./*/")]
     java_alreadyExist = [d.name for d in java_subs.glob("./*/")]

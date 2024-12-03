@@ -7,4 +7,4 @@ failure_screenshots/
 savedir/javaFiles/testpackage/
 TODO.txt
 Testcase_Formatting_Sandbox
-
+*.db
