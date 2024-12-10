@@ -11,9 +11,9 @@ from selenium.webdriver import Keys, ActionChains
 from selenium.common.exceptions import NoSuchElementException
 
 
-def StartupSelenium() -> webdriver:
+def StartupSelenium(headless:bool = True) -> webdriver:
     options = FirefoxOptions()
-    options.add_argument('--headless')
+    if headless: options.add_argument('--headless');
     driver = webdriver.Firefox(options=options)
     driver.implicitly_wait(5)
     # driver.delete_all_cookies()
@@ -99,6 +99,8 @@ def GetExtendedTestcases(driver: webdriver, textarea, returnType: str) -> list[s
     # Even if the visual cursor is centered, the actual cursor can randomly start in the middle of the first line
     cursor_position = textarea.get_property("style")['top']
     # so move it down until it's on the right line.
+    # TODO: use cursor height instead of hardcoded 13; then line-num = top/height (first line is 0)
+    cursor_height = textarea.get_property("style")['height']
     while cursor_position != "13px": # the lines are 13px.
         sleep(0.1) # print("waiting..."); sleep(0.25)
         if cursor_position == "0px": textarea.send_keys(Keys.ARROW_DOWN)

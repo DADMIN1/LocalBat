@@ -1,0 +1,15 @@
+# login is required for some functionality in 'submit.py'
+# copy/rename this template to 'login.py' and fill out this struct
+CODINGBAT_CREDS = {
+    "username": "",
+    "password": "",
+}
+
+# set 'True' to prevent any login attempt
+CODINGBAT_DISABLE_LOGIN = False
+
+# erase creds if login disabled, otherwise check that credentials are provided.
+if CODINGBAT_DISABLE_LOGIN: CODINGBAT_CREDS = { "username": "", "password": "" };
+else:
+    for (k,v) in CODINGBAT_CREDS.items(): assert (len(v) > 0), f"missing login info: {k}";
+    del k; del v;
