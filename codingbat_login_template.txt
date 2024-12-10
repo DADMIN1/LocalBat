@@ -1,12 +1,22 @@
 # login is required for some functionality in 'submit.py'
-# copy/rename this template to 'login.py' and fill out this struct
+# rename this file to 'codingbat_login.py' and fill out this struct
 CODINGBAT_CREDS = {
     "username": "",
     "password": "",
 }
 
-# set 'True' to prevent any login attempt
+# set 'True' to completely disable login functionality
 CODINGBAT_DISABLE_LOGIN = False
+
+#######################################
+# don't edit anything below this line #
+#######################################
+
+def GET_CREDS(login_enabled=(not CODINGBAT_DISABLE_LOGIN), usernameOnly=False) -> dict|str:
+    creds = CODINGBAT_CREDS
+    if not login_enabled: creds = { "username": "", "password": "" };
+    if usernameOnly: return creds["username"];
+    return creds
 
 # erase creds if login disabled, otherwise check that credentials are provided.
 if CODINGBAT_DISABLE_LOGIN: CODINGBAT_CREDS = { "username": "", "password": "" };

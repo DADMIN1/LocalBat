@@ -109,10 +109,77 @@ def ConstructSectionManifests():
     }
 
 
+# returns the map with entries formatted to match either the 'jsonDumps' or 'javafiles' (alt) schema (or both)
+# the map structure is: {section: {problem_name:problem_id}}
+def ConstructProblemIDMap(alt:bool=False, both:bool=False, alwaysInList=False) -> dict|list[dict]:
+    section_manifests = GetProblemLists()
+    problemID_map = {
+      section_name: {
+          k:v for (k,v) in {
+          problem_name: LoadFile(section_name, problem_name)["url"].rsplit('/',maxsplit=1)[1]
+          for problem_name in sorted(problem_list) # sorted by problem_name
+        }.items()
+      } for (section_name, problem_list) in section_manifests.items()
+    }
+    altform_map = { # recreating map in alternate form
+        k[:-2]+k[-1] : {Capitalize(n):pID for (n,pID) in v.items()} # removing the dashes from section names, capitalizing file-names 
+        for (k,v) in problemID_map.items()
+    }
+    
+    if both: return [problemID_map, altform_map]
+    result = problemID_map 
+    if alt: result = altform_map
+    if alwaysInList: return [result]
+    return result
+
+
+# TODO: option to recreate/update existing files
+# with 'both=True', returns the pair: [map, altmap]
+def LoadProblemIDMap(alt:bool=False, both:bool=False, create_ifmissing:bool=True) -> dict|list[dict]:
+    idmap_filename = "problem_id_map"
+    filenames = [savedir/f"{idmap_filename}.json", savedir/f"{idmap_filename}_alt.json"]
+    if not both:
+        if alt: filenames.pop(0)
+        else: filenames.pop(1)
+    
+    # constructing/writing any missing maps 
+    for filename in filenames:
+        if not filename.exists():
+            if not create_ifmissing: print(f"WARNING: {filename} does not exist and will not be written!"); continue;
+            constructedMaps = ConstructProblemIDMap(alt, both, True)
+            # if either file doesn't exist, both files are rewritten (for simplicity)
+            for (fpath, constructedMap) in zip(filenames, constructedMaps):
+                print(f"\nwriting problem_id_map to: {fpath.relative_to(cwd)}")
+                with fpath.open('w',encoding="utf-8") as mapfile: json.dump(constructedMap, mapfile, indent=2);
+                print(f"finished writing {fpath.relative_to(cwd)}\n")
+            # end function after save - avoiding duplicate/redundant writes (and loads)
+            if both: return constructedMaps
+            return constructedMaps[0]
+    
+    for fpath in filenames: print(f"loading problem_id_map: {fpath.relative_to(cwd)}")
+    loadedMaps = [json.load(fpath.open('r',encoding="utf-8")) for fpath in filenames]
+    if len(loadedMaps) == 1: return loadedMaps[0]
+    return loadedMaps
+
+
+# debug/testing
+def PrintProblemIDMaps(alt:bool=False, both:bool=False, create_ifmissing:bool=True):
+    problemID_maps = LoadProblemIDMap(alt, both, create_ifmissing)
+    if not both: problemID_maps = [problemID_maps]
+    for section_map in problemID_maps:
+        print(f"\n{'-'*25}\n{'-'*25}\n")
+        for (section, id_map) in section_map.items():
+            print(f"\n{section}: "+'{')
+            longest = max(len(n) for n in id_map.keys())
+            for (problemName, problem_id) in id_map.items():
+                print(f"  {problemName}:{' '*(longest-len(problemName))} {problem_id}")
+            print('}')
+        print(f"\n{'-'*25}\n{'-'*25}\n")
+    return
+
 
 ANSI_RESET = r"\u001B[0m"
 # empty sequences ('[m'), zero ('[0m'), and just a semicolon ('[;m') are all equivalent.
-
 
 # Prepends ANSI escape-sequences, then (optionally) appends a reset
 def AnsiEscape(text:str, *args, reset=True):

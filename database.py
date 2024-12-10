@@ -431,6 +431,14 @@ def WriteJavaValidation():
     return
 
 
+def LoadSolutions() -> list[sqlite3.Row]:
+    db = LoadDB()
+    archived = [row for row in db.execute("SELECT problem,section,fullText FROM Archive WHERE status = -1;")]
+    db.close()
+    # print(archived)
+    return archived
+
+
 # regenerates java files with archived solutions
 def RestoreSolutions(targetDir=sub_savedirs[1]):
     print(f"restoring archived solutions to: {targetDir}")

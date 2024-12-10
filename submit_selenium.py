@@ -80,12 +80,6 @@ def SubmitSolutions(solutions):
 
 
 # TODO: finish the submission code
-def LoadSolutions():
-    db = LoadDB()
-    archived = [row for row in db.execute("SELECT problem,section,fullText FROM Archive WHERE status = -1;")]
-    db.close()
-    print(archived)
-    return archived
 
 
 if __name__ == "__main__":
