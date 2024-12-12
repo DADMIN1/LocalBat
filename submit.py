@@ -87,26 +87,65 @@ def SubmitTest(skip_login:bool=True):
     return
 
 
-def Main():
+def ResetAll():
+    db = LoadDB()
+    print("Resetting status of all submissions!")
+    with db: rowcount = db.execute("UPDATE Archive SET status=-1 WHERE TRUE;");
+    print(f"{rowcount} submissions reset!")
+    db.close()
+    return
+
+
+def UpdateStatuses(resultMap:dict):
+    accepted = [problem for (problem, result) in resultMap.items() if result['all_correct']]
+    rejected = [problem for (problem, result) in resultMap.items() if not result['all_correct']]
+    print(f"accepted: {accepted}")
+    print(f"rejected: {rejected}")
+    statusCode = {
+      -2: "unsubmitted & unqueued",
+      -1: "queued for submit",
+       0: "rejected",
+       1: "accepted",
+    }
+    def BoolToInt(B:bool):
+        if B: return 1; 
+        else: return 0;
+    
+    db = LoadDB()
+    with db: rowcount = db.executemany(
+    "UPDATE Archive SET status=:status WHERE problem=:problem and section=:section and status=-1;", [
+        {"problem":problemName, "section":result['section'], "status":BoolToInt(result['all_correct'])} 
+        for (problemName, result) in resultMap.items()
+    ]).rowcount
+    db.close()
+    return rowcount
+
+
+def SubmitAll(skip_login=False):
     problemID_map = LoadProblemIDMap(alt=True)
     archived = LoadSolutions()
-    cookieJar = CreateSession()
+    cookieJar = CreateSession(skip_login=skip_login)
+    
     resultMap = {
-        problem: Submit(problemID_map[section][problem], fulltext.replace('\\n', '\n'), cookieJar)
-        for (problem, section, fulltext) in archived
+        problem: {
+            "section":section, 
+            **Submit(problemID_map[section][problem], fulltext.replace('\\n', '\n'), cookieJar)
+        } for (problem, section, fulltext) in archived
     }
-    # TODO: check result and update problem's status
-    for (problem, result) in resultMap.items():
-        print(f"{problem} : {result}")
+    for (problem, result) in resultMap.items(): print(f"{problem} : {result}");
+    
+    if CODINGBAT_DISABLE_LOGIN: print ("Skipping status updates! [No Login]"); return resultMap;
+    updated_rowcount = UpdateStatuses(resultMap)
+    assert(updated_rowcount == len(resultMap))
     return resultMap
 
- 
+
 # TODO: get list of completed problems (from website), retrieve solutions from 'done' page?
 
 if __name__ == "__main__":
-    Main()
-    # SubmitTest(True)
-    # SubmitTest(False)
+    SubmitAll()
+    # SubmitTest(skip_login=True)
+    # SubmitTest(skip_login=False)
     # PrintProblemIDMaps()
     # problemID_map = LoadProblemIDMap(alt=True)
     # archived = LoadSolutions()
