@@ -137,6 +137,7 @@ def SubmitAll(skip_login=False):
     if CODINGBAT_DISABLE_LOGIN: print ("Skipping status updates! [No Login]"); return resultMap;
     updated_rowcount = UpdateStatuses(resultMap)
     assert(updated_rowcount == len(resultMap))
+    WriteJavaDatabase() # updating the 'Database.java' file to exclude accepted solutions
     return resultMap
 
 

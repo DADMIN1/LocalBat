@@ -94,7 +94,7 @@ def Commit():
     db = LoadDB()
     with db: rowcount = db.execute('''INSERT INTO Archive 
         SELECT SectionManifest.problem, SectionManifest.section,
-        group_concat(CONCAT(returnType,' ',functionName,' (',parameters,') ',functionBody), '\\n\\n ') AS fullText,
+        group_concat(CONCAT(returnType,' ',functionName,' (',parameters,') \\n',functionBody), '\\n\\n ') AS fullText,
         SectionManifest.lastcheck AS timestamp, -1 AS status
         FROM SectionManifest JOIN Solutions 
         WHERE Solutions.section = SectionManifest.section AND Solutions.problem = SectionManifest.problem
@@ -454,7 +454,7 @@ def RestoreSolutions(targetDir=sub_savedirs[1]):
         with open (sub_savedirs[0] / section_name / str(problem_name+".json")) as file:
             jsonData = json.load(file)
             provided_code = "public static final "+fullText.replace(r"\n\n", r"\n\npublic static final ") # jank hack to apply qualifiers to all functions (in WriteJavaFile) 
-            WriteJavaFile(section_name, jsonData, provided_code=provided_code.replace(r'\n','\n    '), targetDir=targetDir)
+            WriteJavaFile(section_name, jsonData, provided_code=provided_code.replace(r'\n','\n    ')+'\n', targetDir=targetDir)
     print("finished restoring solutions")
     return
 
