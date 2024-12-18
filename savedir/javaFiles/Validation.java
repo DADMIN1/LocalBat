@@ -206,6 +206,7 @@ class Parser
     static final StandardJavaFileManager fileManager = compiler.getStandardFileManager(null, null, StandardCharsets.UTF_8);
     static final String javaVersion = System.getProperty("java.specification.version");
     //static final String highestJavaVer = Arrays.asList(compiler.getSourceVersions().toArray()).getLast().toString().replace("RELEASE_","");
+    static final String ParamList(List<?> paramList) { return paramList.toString().replace(",", ", "); }
 
     static final JavacTask CreateTask(List<File> sourceFiles) {
         final Iterable<? extends JavaFileObject> compilationUnits = fileManager.getJavaFileObjectsFromFiles(sourceFiles);
@@ -226,7 +227,7 @@ class Parser
         .filter((mem) -> !mem.getName().toString().equals("main"))
         .map(F -> new Validation.FunctionRec(
             F.getName().toString(), F.getReturnType().toString(),
-            F.getParameters().toString(), F.getBody().toString()
+            ParamList(F.getParameters()), F.getBody().toString()
         )).toList();
     }
 }
