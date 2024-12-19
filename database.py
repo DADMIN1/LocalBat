@@ -278,8 +278,9 @@ def WriteJavaValidation():
         }
     }\n'''
     
+    # SQL escapes apostrophes with a second apostrophe, not backslash. seriously.
     sql_functions = r'''
-    static final String QuoteSQL(String str) { return "'"+str.replace("'", "\\'")+"'"; };
+    static final String QuoteSQL(String str) { return "'"+str.replace("'", "''")+"'"; };
     static final void WriteSQL(Map<String, SectionManifest> sectionManifests)
     {
         System.out.println("-- BEGIN SQL --\n");
@@ -456,23 +457,36 @@ def LoadSolutions() -> list[sqlite3.Row]:
     return archived
 
 
-# regenerates java files with archived solutions
-def RestoreSolutions(targetDir=sub_savedirs[1]):
-    print(f"restoring archived solutions to: {targetDir}")
-    userinput = input("proceed? [Y/N]: ")
-    if not userinput.capitalize() == 'Y': print("cancelled."); return;
+# regenerates java files with archived solutions.
+# Specify problem or section names, otherwise it will restore all known solutions.
+def RestoreSolutions(*names, targetDir=sub_savedirs[1], ask_confirm=True, restore_all=False):
+    # warning: code in the database gets auto-formatted (by the Java compiler); your code-style will likely not be preserved.
+    print(f"restoring archived solutions to: {targetDir}") # TODO: list files that would be affected
+    has_names:bool = (len(names) > 0)
+    if (has_names): ask_confirm = False;
+    if ask_confirm:
+        if (not has_names): print("ALL archived solutions will be restored! (problem/section names not provided)")
+        userinput = input("proceed? [Y/N]: ")
+        if not userinput.capitalize() == 'Y': print("cancelled."); return;
+        if(not has_names):restore_all = True;
+    if ((not has_names) and not restore_all): print("problem/section names not specified for restore; exiting."); return;
+    
     db = LoadDB()
-    solutions = [row for row in db.execute("SELECT DISTINCT problem,section,fullText FROM Archive;")]
+    solutions = [row for row in db.execute("SELECT DISTINCT problem,section,fullText FROM Archive;")] # TODO: filter here instead
     db.close()
     print(f"loaded {len(solutions)} solutions")
+    
+    restored_count = 0
     for (problem, section, fullText) in solutions:
+        if not (restore_all or (section in names) or (problem in names)): continue;
         section_name = section[:-1] + "-" + section[-1] # putting the dash back in
         problem_name = problem[0].lower() + problem[1:] # first letter lowercase
         with open (sub_savedirs[0] / section_name / str(problem_name+".json")) as file:
             jsonData = json.load(file)
             provided_code = "public static final "+fullText.replace(r"\n\n", r"\n\npublic static final") # jank hack to apply qualifiers to all functions (in WriteJavaFile)
             WriteJavaFile(section_name, jsonData, provided_code=provided_code.replace(r'\n','\n    ')+'\n', targetDir=targetDir)
-    print("finished restoring solutions")
+        restored_count += 1
+    print(f"finished restoring solutions (wrote {restored_count} files)") # TODO: count of actually modified files
     return
 
 
@@ -482,3 +496,7 @@ if __name__ == "__main__":
     #RestoreSolutions()
     #WriteJavaDatabase()
     #WriteJavaValidation()
+    
+    # RestoreSolutions("Warmup1")
+    # RestoreSolutions("Array1")
+    # RestoreSolutions("LastDigit", "MonkeyTrouble", "Warmup2")

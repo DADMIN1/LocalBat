@@ -6,3 +6,6 @@ Eclipse can display the character without any issue.
 
 Array1/MakePi: testcase does not get generated correctly
 
+Overwriting Java files (from outside IDE) may leave the compiled code for the old version cached;
+you may need to open each modified file in your IDE to trigger a cache update before running 'Validation.java'
+

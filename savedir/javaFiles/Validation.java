@@ -135,7 +135,7 @@ public class Validation
         return new String[][]{results.get(0).toArray(new String[0]), results.get(1).toArray(new String[0])};
     }
 
-    static final String QuoteSQL(String str) { return "'"+str.replace("'", "\\'")+"'"; };
+    static final String QuoteSQL(String str) { return "'"+str.replace("'", "''")+"'"; };
     static final void WriteSQL(Map<String, SectionManifest> sectionManifests)
     {
         System.out.println("-- BEGIN SQL --\n");
